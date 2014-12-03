@@ -36,6 +36,8 @@ A
 
   For more information, see `Creating Exercises and Tools`_.
 
+  See :ref:`Providing a Course Overview` for more information.
+
 .. _Advanced Editor_g:
  
 **Advanced Editor**

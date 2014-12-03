@@ -70,9 +70,9 @@ account. The course information appears together with your own information.
   :width: 500
   :alt: A course calendar integrated with a personal Google calendar
 
-To add the course calendar to your own calendar, view the course calendar in the
-course, and then click the **Google Calendar** icon in the lower-right corner of
-the course calendar.
+To add the course calendar to your own calendar, view the course calendar in
+the course, and then click the **Google Calendar** icon in the lower-right
+corner of the course calendar.
 
 For more information about Google calendars, see the `Google Calendar website
 <https://www.google.com/calendar>`_.

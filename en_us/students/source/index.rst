@@ -14,10 +14,12 @@ edX Guide for Students
    front_matter/index
    SFD_introduction
    sfd_dashboard_profile/index
-   SFD_video_player
+   SFD_course_search
    SFD_google_docs
    SFD_certificates
+   SFD_prerequisites
    SFD_mobile
+   SFD_student_notes
    SFD_mathformatting
    SFD_ORA
    sfd_discussions/index

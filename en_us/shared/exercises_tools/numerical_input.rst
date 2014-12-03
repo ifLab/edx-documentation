@@ -55,6 +55,7 @@ For more information about including a Python script in your problem, see
 Simple Editor
 ==================
 
+<<<<<<< HEAD
 #. Under **Add New Component**, select **Problem**.
 #. Under **Common Problem Types**, select **Numerical Input**.
 #. When the new Problem component appears, click **Edit**. The Simple Editor

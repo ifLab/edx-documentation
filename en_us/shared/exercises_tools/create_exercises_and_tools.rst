@@ -146,6 +146,13 @@ General Exercises and Tools
      - If you have an problem that is already written in LaTeX, you can use
        this problem type to easily convert your code into XML.
      - No support
+   * - .. image:: ../../../shared/building_and_running_chapters/Images/SFD_SN_bodyexample.png
+          :width: 100
+          :alt: Image of student notes in a course
+     - :ref:`Student Notes Tool`
+     - With student notes, students can make notes about what they read and
+       highlight passages in the course content.
+     - Provisional support
    * - .. image:: ../../../shared/building_and_running_chapters/Images/TextInputExample.png
           :width: 100
           :alt: Example text input problem

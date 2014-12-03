@@ -53,14 +53,14 @@ learners' grades.
    A list of the assignment types in your course displays. In this example,
    Homework is weighted as 0.3 (30%) of the grade.
 
-   .. image:: ../../../shared/building_and_running_chapters/Images/Grading_Configuration.png
+   .. image:: ../Images/Grading_Configuration.png
      :alt: XML of course assignment types and weights for grading
 
    In Studio, you define this information by selecting **Settings** >
    **Grading**. For more information, see :ref:`Configure the Assignment
    Types`.
 
-   .. image:: ../../../shared/building_and_running_chapters/Images/Grading_Configuration_Studio.png
+   .. image:: ../Images/Grading_Configuration_Studio.png
      :alt: Studio example of homework assignment type and grading weight
 
 .. important:: Any changes that you make to the course grading policy, to
@@ -239,7 +239,7 @@ on the Instructor Dashboard.
 
 #. Click **View Gradebook**. Grades are calculated and the gradebook displays.
 
-   .. image:: ../../../shared/building_and_running_chapters/Images/Student_Gradebook.png
+   .. image:: ../Images/Student_Gradebook.png
      :alt: Course gradebook with rows for students and columns for assignment
          types
 
@@ -312,7 +312,7 @@ To view the **Progress** page for a learner, follow these steps.
    To learn more about a particular assignment, move the cursor onto the value
    in the chart. A brief description displays.
 
-   .. image:: ../../../shared/building_and_running_chapters/Images/Student_Progress_mouseover.png
+   .. image:: ../Images/Student_Progress_mouseover.png
     :alt: Progress page with a tooltip for the X that was graphed for the last
           homework assignment, which indicates that the lowest homework score
           is dropped
@@ -321,7 +321,7 @@ To view the **Progress** page for a learner, follow these steps.
    contain assignments are listed on the right. The learner's individual
    problem scores display.
 
-   .. image:: ../../../shared/building_and_running_chapters/Images/Student_Progress_list.png
+   .. image:: ../Images/Student_Progress_list.png
     :alt: Bottom portion of a Progress page for the same student with the 
           score acheived for each problem in the first course subsection 
 
@@ -337,7 +337,7 @@ on the **Progress** page.
 In this example grade report, the indicated learner has a current grade of 0.43
 (43%).
 
-.. image:: ../../../shared/building_and_running_chapters/Images/Grade_Report_example.png
+.. image:: ../Images/Grade_Report_example.png
  :alt: A course grade report with a single student's information indicated by 
        a rectangle
 
@@ -355,7 +355,7 @@ In this example grade report, the indicated learner has a current grade of 0.43
 On the learner's **Progress** page, you see the same information graphically
 represented; however, the student's "total" of 43% is on the far right.
 
-.. image:: ../../../shared/building_and_running_chapters/Images/Student_Progress.png
+.. image:: ../Images/Student_Progress.png
  :alt: Progress page for a student also included on the grade report: includes 
        a column graph with the grade acheived for each assignment 
 
@@ -382,7 +382,7 @@ visualized as a chart with entries for all the assignments, total percentage
 earned in the course so far, and percent needed for each grade cutoff. Here is
 an example of a learner's progress through edX101.
  
-.. image:: ../../../shared/building_and_running_chapters/Images/StudentView_GradeCutoffs.png
+.. image:: ../Images/StudentView_GradeCutoffs.png
  :alt: Image of a student's Course Progress page with the grade cutoffs legend
        highlighted
  
@@ -398,7 +398,7 @@ Further down on the **Progress** page is a list of all the subsections in the
 course, with the scores recorded for the learner for all problems in the
 course. Here is the **Progress** page for the learner in the example above:
  
-.. image:: ../../../shared/building_and_running_chapters/Images/StudentView_Problems.png
+.. image:: ../Images/StudentView_Problems.png
    :width: 800
    :alt: Image of a student's Course Progress page with problems highlighted
  
@@ -457,7 +457,7 @@ To find the unique location identifier for a problem:
 
    Information about the problem displays, including its **location**. 
 
-   .. image:: ../../../shared/building_and_running_chapters/Images/Problem_URL.png
+   .. image:: ../Images/Problem_URL.png
     :alt: The Staff Debug view of a problem with the location identifier 
           indicated
 
@@ -469,9 +469,9 @@ viewer.
 
 .. _rescore:
 
-===================================================
-Rescore Student Submissions for a Problem
-===================================================
+==========================================
+Rescore Student Submissions for a Problem 
+==========================================
 
 Each problem that you define for your course includes a correct answer, and may
 also include a tolerance or acceptable alternatives. If you decide to make a
@@ -538,9 +538,9 @@ See :ref:`find_URL`. To rescore a problem:
 
 .. _reset_attempts:
 
-===================================================
-Reset Student Attempts for a Problem
-===================================================
+=====================================
+Reset Student Attempts for a Problem 
+=====================================
 
 When you create a problem, you can limit the number of times that a student can
 try to answer that problem correctly. If unexpected issues occur for a problem,
@@ -605,9 +605,9 @@ attempts for all students:
 
 .. _delete_state:
 
-=============================================
+==================================
 Delete Student State for a Problem
-=============================================
+==================================
 
 To delete a student's entire history for a problem from the database, you need
 that student's username or email address. 
@@ -643,3 +643,4 @@ See :ref:`find_URL`.
 #. In the **Student-Specific Grade Adjustment** section of the page, enter both
    the student’s email address or username and the unique problem identifier,
    and then click **Delete Student State for Problem**.
+   
