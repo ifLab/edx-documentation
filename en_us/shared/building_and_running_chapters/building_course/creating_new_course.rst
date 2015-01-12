@@ -36,7 +36,7 @@ Create a New Course
    Help site (http://help.edge.edx.org). Additionally, because this information
    becomes part of your course URL, the total number of characters in the
    following four fields must be 65 or fewer.
-
+   
   .. image:: ../../../shared/building_and_running_chapters/Images/new_course_info.png
      :width: 600
      :alt: Image of the course creation page in Studio.
@@ -47,6 +47,7 @@ Create a New Course
 
   * For **Organization**, enter the identifier for your organization. Do not
     include spaces or special characters.
+
 
   * For **Course Number**, enter both a subject abbreviation and a number. For
     example, for public health course number 207, enter **PH207**. For math
@@ -64,7 +65,10 @@ Create a New Course
     that you define for the course. For more information, see :ref:`Scheduling
     Your Course`.
 
+
 4. Select **Save.**
+
+5. Click **Save.**
 
 You then see the empty course outline.
 

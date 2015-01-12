@@ -262,4 +262,3 @@ Replace the placeholders in the following template with your information.
       </article>
     </section>
   </section>
-

@@ -23,7 +23,7 @@ Also see:
 * :ref:`Additional Transcripts`
 * :ref:`Steps for sjson files`
 
-.. note:: Review :ref:`Best Practices for Accessible Media` before adding 
+.. note:: Review :ref:`Best Practices for Accessible Media` before adding
  videos to your course.
 
 To help course teams protect video assets, the edX video player hides video
@@ -65,14 +65,14 @@ When you create your video, edX recommends the following compression specs.
      - H.264 .mp4
      - H.264 .mp4
    * - Resolution & Frame Rate (see note)
-     - 1920x1080, progressive, 29.97 fps 
+     - 1920x1080, progressive, 29.97 fps
      - 1280x720, progressive, 29.97 fps
    * - Aspect
      - 1.0
      - 1.0
    * - Bit Rate
-     - VBR, 2 pass 
-     - VBR, 2 pass  
+     - VBR, 2 pass
+     - VBR, 2 pass
    * - Target VBR
      - 5 mbps
      - 1 mbps
@@ -83,7 +83,7 @@ When you create your video, edX recommends the following compression specs.
      - AAC 44.1 / 192 kbps
      - AAC 44.1 / 192 kbps
 
-.. note:: Typically you export at the same frame rate that was used when you 
+.. note:: Typically you export at the same frame rate that was used when you
  created the media file. For example, if you create the file in a country that
  uses the PAL system, you export at 25 fps instead of the NTSC standard of
  29.97 fps.
@@ -134,7 +134,7 @@ You can also provide transcripts in different formats, such as .pdf, and you
 can provide transcripts in different languages. For more information about
 these options, see :ref:`Additional Transcripts`.
 
-.. note:: Historically, some courses used .sjson files for video transcripts. 
+.. note:: Historically, some courses used .sjson files for video transcripts.
  Use of .sjson files is no longer recommended; however, if transcripts in your
  course use this format, see :ref:`Steps for sjson files`.
 
@@ -177,7 +177,7 @@ Other Sites
 You can use any video backup site that you want. However, keep in mind that the
 site where you post the videos may have to handle a lot of traffic.
 
-.. note:: The URL for the video that you post on a third-party site must end 
+.. note:: The URL for the video that you post on a third-party site must end
  in .mp4, .webm, .mpeg, or .ogg. (To help make sure all standard browsers can
  play your video, we **strongly** recommend that you use .mp4 format.) EdX
  cannot support videos that you post on sites such as Vimeo.
@@ -218,8 +218,8 @@ Step 4. Create a Video Component
     :alt: Image of the video component editor
     :width: 500
 
-   You replace the default values with your own. 
-   
+   You replace the default values with your own.
+
 3. In the **Component Display Name** field, enter an identifying name for this
    video. This name appears as a heading above the video and as a tooltip in
    the learning sequence at the top of the **Courseware** page.
@@ -228,7 +228,7 @@ Step 4. Create a Video Component
    URLs follow.
 
    ::
-   
+
       http://youtu.be/OEoXaMPEzfM
       http://www.youtube.com/watch?v=OEoXaMPEzfM
       https://s3.amazonaws.com/edx-course-videos/edx-edx101/EDXSPCPJSP13-G030300.mp4
@@ -241,12 +241,12 @@ Step 4. Create a Video Component
     for another version, click **Add URLs for additional versions**. The first
     listed video that is compatible with the student's computer plays.
 
-5. Next to **Default Timed Transcript**, select an option. 
+5. Next to **Default Timed Transcript**, select an option.
 
    * If edX already has a transcript for this video, Studio automatically
      finds the transcript and associates the transcript with the video. This
      situation can occur when you reuse a video from an existing course.
-     
+
      If you want to modify the transcript, click **Download Transcript for
      Editing**. You can then make your changes and upload the new file by
      clicking **Upload New Transcript**.
@@ -269,7 +269,7 @@ Step 4. Create a Video Component
      transcript uses the .srt format, click **Upload New Transcript** to upload
      the transcript file from your computer.
 
-     .. note:: 
+     .. note::
 
         * If your transcript uses the .sjson format, do not use this setting.
           For more information, see :ref:`Steps for sjson files`.
@@ -282,7 +282,7 @@ Step 4. Create a Video Component
    description of each option, see :ref:`Video Advanced Options`.
 
 #. Click **Save.**
-  
+
 .. _Video Advanced Options:
 
 ==================
@@ -325,6 +325,31 @@ The following options appear on the **Advanced** tab in the video component.
         students by using the **Upload Handout** field. For more information,
         see :ref:`Additional Transcripts`.
 
+    * - **EdX Video ID**
+      - An optional field used only by course teams that are working with
+        edX to process and host video files.
+
+    * - **License**
+      - Optionally, you can set the license for the video, if you want to
+        release the video with a license different from that of the overall
+        course license.
+
+        * Select **All Rights Reserved** to indicate to students that you own
+          the copyright for the video.
+
+        * Select **Creative Commons** to grant others the right to share and
+          use the video. You must then select the Creative Commons license
+          options to apply:
+
+          .. image:: ../../../shared/building_and_running_chapters/Images/creative-commons-license-course.png
+            :alt: The Creative Commons license options
+
+          See :ref:`Licensing a Course` for more information about license
+          options.
+
+          The license options you select control the copyright notice students
+          see for the video.
+
     * - **Show Transcript**
       - Specifies whether the transcript plays along with the video by default.
     * - **Transcript Languages**
@@ -362,7 +387,7 @@ The following options appear on the **Advanced** tab in the video component.
       - The time you want the video to start if you do not want the entire
         video to play. Use HH:MM:SS format. The maximum value is 23:59:59.
 
-        .. note:: Learners who download and play the video in the mobile 
+        .. note:: Learners who download and play the video in the mobile
          app see the entire video file. Only videos that play in a browser
          start playing at the specified start time.
 
@@ -370,7 +395,7 @@ The following options appear on the **Advanced** tab in the video component.
       - The time you want the video to stop if you do not want the entire video
         to play. Use HH:MM:SS format. The maximum value is 23:59:59.
 
-        .. note:: Learners who download and play the video in the mobile 
+        .. note:: Learners who download and play the video in the mobile
          app see the entire video file. Only videos that play in a browser
          stop playing at the specified stop time.
 
@@ -406,9 +431,9 @@ in the video component to associate the .srt file with the video.
    table of contents, open the video component for the video.
 
 #. On the **Advanced** tab, scroll down to **Transcript Languages**, and then
-   click **Add**. 
+   click **Add**.
 
-#. In the drop-down list that appears, select **Table of Contents**. 
+#. In the drop-down list that appears, select **Table of Contents**.
 
    An **Upload** button appears.
 
@@ -497,9 +522,9 @@ each language, and then associate the .srt file with the video in Studio.
 
 #. In the **Upload translation** dialog box, click **Upload**.
 
-#. Repeat steps 2 - 5 for any additional languages. 
+#. Repeat steps 2 - 5 for any additional languages.
 
-.. note:: Make sure that all your transcript file names are unique to each 
+.. note:: Make sure that all your transcript file names are unique to each
  video and language. If you use the same transcript name in more than one video
  component, the same transcript will play for each video. To avoid this
  problem, you could name your foreign language transcript files according to
@@ -531,12 +556,12 @@ in the video component.
 
 #. Obtain the .sjson file from a media company such as 3Play.
 #. Change the name of the .sjson file to use the following format.
-   
+
    ``subs_{video filename}.srt.sjson``
-   
+
    For example, if the name of your video is **Lecture1a**, the name of your
    .sjson file must be **subs_Lecture1a.srt.sjson**.
-   
+
 #. Upload the .sjson file for your video to the **Files & Uploads** page.
 #. Create a new video component.
 #. On the **Basic** tab, enter the name that you want students to see in the
@@ -545,7 +570,7 @@ in the video component.
    may resemble one of the following.
 
    ::
-   
+
       http://youtu.be/OEoXaMPEzfM
       http://www.youtube.com/watch?v=OEoXaMPEzfM
       https://s3.amazonaws.com/edx-course-videos/edx-edx101/EDXSPCPJSP13-G030300.mp4
