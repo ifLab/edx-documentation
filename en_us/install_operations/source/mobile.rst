@@ -6,54 +6,147 @@
 Setting up the edX Mobile Applications
 ######################################
 
-This chapter is intended for those are who are building the edX mobile
+This section is intended for those are who are building the edX mobile
 applications and customizing their Open edX installation to support their use.
 
-.. contents:: Chapter Contents:
+.. contents:: Section Contents 
+   :local:
 
-****
-Code
-****
+.. Mark, this option ^ prevents the section name from appearing as a link. What do you think about standardizing on this format at the beginning of each rst? 
 
-There are currently two edX mobile applications, one for iOS and one for Android. You can find the source code and additional documentation for each:
+******************************
+Accessing the Source Code
+******************************
 
-- iOS: http://github.com/edx/edx-app-ios
+There are currently two edX mobile applications, one for iOS and one for
+Android. You can find the source code and additional documentation for each
+application here.
 
-- Android http://github.com/edx/edx-app-android
+* iOS: http://github.com/edx/edx-app-ios
 
-**************
-Authentication
-**************
+* Android: http://github.com/edx/edx-app-android
 
-The edX mobile apps require you to adjust your ``edx-platform`` configuration settings in ``lms.env.json`` to enable mobile API support.
+*****************************************
+Configuring Mobile Application Features
+*****************************************
 
-In particular, you need to add the following under the features section:
+For the mobile API, authentication, and other features to work correctly with
+the edX mobile applications, you enable them.
 
-.. code-block:: json
+* You can enable the features temporarily in the ``lms.env.json`` file.
+  Configuration settings added to this file are reset to their default values
+  each time you update ``edx-platform``.
 
-    "FEATURES" : {
-        ...
-        "ENABLE_MOBILE_REST_API": true,
-        "ENABLE_OAUTH2_PROVIDER": true,
-        ...
-    }
+* You can also define the configuration that you want in the 
+  ``server-vars.yml`` file. Configuration settings made in this file are 
+  reapplied automatically when you update you update ``edx-platform``.
 
-You also need to set the following configuration value at the top level of the configuration dictionary:
+After you enable the features, you add an OAuth client.
 
-.. code-block:: json
+====================================
+Enable Features in ``lms.env.json``
+====================================
 
-    "OAUTH_ENFORCE_SECURE": ""
+You can enable the mobile application features in the ``lms.env.json`` file.
+Configuration settings added to this file are reset to their default values
+each time you update edx-platform.
+
+#. In the ``edx/app/edxapp/lms.env.json`` file, add the following lines to the
+   features section.
+
+   .. code-block:: json
+
+       "FEATURES" : {
+           ...
+           "ENABLE_MOBILE_REST_API": true,
+           "ENABLE_OAUTH2_PROVIDER": true,
+           "ENABLE_THIRD_PARTY_AUTH": true,
+           "ENABLE_COMBINED_LOGIN_REGISTRATION": true
+       }
+
+#. To complete configuration of OAuth2 authentication, add the following line
+   at the top level of the configuration dictionary. 
+
+   .. code-block:: json
+
+       "OAUTH_ENFORCE_SECURE": " ",
+
+   For example, you can add this line immediately after the closing
+   parenthesis for the Features section.
+
+#. Save the ``edx/app/edxapp/lms.env.json`` file.
+
+#. Restart the server.
+
+=======================================
+Enable Features in ``server-vars.yml``
+=======================================
+
+You can enable the mobile application features in the ``server-vars.yml``
+file. Configuration settings added to this file are reapplied automatically
+when you update you update edx-platform.
+
+#. In the ``/edx/app/edx_ansible/server-vars.yml`` file, add the following
+   lines to the edX app features section.
+
+   .. code-block:: json
+
+       EDXAPP_FEATURES:
+         ENABLE_MOBILE_REST_API: true
+         ENABLE_OAUTH2_PROVIDER: true
+         ENABLE_VIDEO_UPLOAD_PIPELINE: true
+         ENABLE_THIRD_PARTY_AUTH: true
+         ENABLE_COMBINED_LOGIN_REGISTRATION: true
+         OAUTH_ENFORCE_SECURE: true
+
+#. Save the ``/edx/app/edx_ansible/server-vars.yml`` file.
+
+=======================================
+Create a Client for Authentication 
+=======================================
+
+You create an OAuth key and secret that is specific to 
+your installation for use by the mobile applications. 
+
+#. Log in to the Django administration console at ``<YOUR_EDX_INSTALLATION>/admin``. 
+
+#. In the **Oauth2** section, select **Clients**. 
+
+#. Select **Add client** and create a client.
+
+#. Add the ID and the secret for the client to your custom configuration. For
+   information about how to set up your custom configuration, see the GitHub
+   repository for `iOS`_ or `Android`_.
+
+************************************
+Configuring Video Modules for Mobile
+************************************
+
+Courseware videos must be specifically prepared to ensure that they are in
+mobile accessible formats. Video modules in mobile-available courses should
+have low resolution encodings that are readily accessible by mobile
+devices.
+
+To configure a video module with a low resolution encoding for mobile in edX
+Studio, you edit the video component. On the **Advanced** tab, in the **Video
+File URLs** field, enter the URL to the mobile-targeted video as the first URL
+in the list. For more information, see `Working with Video Components`_ in
+*Building and Running an Open edX Course*.
+
+Alternatively, if you edit the course directly in XML, enter the URL to the
+mobile-targeted video as the first URL in the list of ``html5_sources``. For
+more information, see `Video Components`_ in the *edX Open Learning XML
+Guide*.
+
+****************************************
+Enable Push Notification 
+****************************************
+
+To send push notifications to the edX mobile applications, you install the
+``edx_notifications`` application and customize the configuration to identify
+your push messaging service or push notification server.
+
+For more information, see https://github.com/edx/edx-notifications.
 
 
-Additionally, you need to create an OAuth key and secret specific to your installation for use by the apps. You can do this by logging into the Django administration console at ``<YOUR_EDX_INSTALLATION>/admin``. From there, choose **Clients** under the **Oauth2** section. If you don't already have any clients set up, you will need to add one. Choose **Add client** and create a client. The client id and secret that you see will need to be added to your mobile app configuration. For more information about how to do that, see the documentation for each app linked above.
-
-
-*****
-Video
-*****
-
-Courseware videos must be specifically prepared to ensure they're in mobile accessible formats.  Video modules in mobile-available courses should have low resolution encodings that can be readily accessible by mobile devices.  
-
-To configure a video module with a low resolution encoding for mobile, enter the URL to the mobile-targeted video as the first URL in the "Video File URLs" list in the video module's Advanced Editor in edX Studio.
-
-Alternatively, if the course is edited directly in XML, enter the URL to the mobile-targeted video as the first URL in the list of html5_sources.
+   

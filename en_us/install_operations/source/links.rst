@@ -36,5 +36,8 @@
 
 .. _Enable Google Calendars in the Course: http://edx.readthedocs.org/projects/open-edx-building-and-running-a-course/en/named-release-birch/exercises_tools/google_calendar.html#enable-google-calendars-in-the-course
 
-
 .. _Enable Google Drive Files in edX Studio: http://edx.readthedocs.org/projects/open-edx-building-and-running-a-course/en/named-release-birch/exercises_tools/google_docs.html#enable-google-drive-files-in-your-course
+.. _iOS: http://github.com/edx/edx-app-ios
+.. _Android: http://github.com/edx/edx-app-android
+.. _Working with Video Components: http://edx.readthedocs.org/projects/open-edx-building-and-running-a-course/en/named-release-birch/creating_content/create_video.html
+.. _Video Components: http://edx.readthedocs.org/projects/edx-open-learning-xml/en/latest/components/video-components.html
