@@ -39,7 +39,7 @@ the edX mobile applications, you enable them.
 
 * You can also define the configuration that you want in the 
   ``server-vars.yml`` file. Configuration settings made in this file are 
-  reapplied automatically when you update you update ``edx-platform``.
+  reapplied automatically when you update ``edx-platform``.
 
 After you enable the features, you add an OAuth client.
 
@@ -82,9 +82,13 @@ each time you update edx-platform.
 Enable Features in ``server-vars.yml``
 =======================================
 
-You can enable the mobile application features in the ``server-vars.yml``
-file. Configuration settings added to this file are reapplied automatically
-when you update you update edx-platform.
+You can enable many of the mobile application features in the 
+``server-vars.yml`` file. Configuration settings added to this file 
+are reapplied automatically when you update ``edx-platform``.
+   
+.. note:: Currently, you must manually add 
+          ``"OAUTH_ENFORCE_SECURE": " ",`` to the
+          ``edx/app/edxapp/lms.env.json`` file.
 
 #. In the ``/edx/app/edx_ansible/server-vars.yml`` file, add the following
    lines to the edX app features section.
@@ -97,7 +101,6 @@ when you update you update edx-platform.
          ENABLE_VIDEO_UPLOAD_PIPELINE: true
          ENABLE_THIRD_PARTY_AUTH: true
          ENABLE_COMBINED_LOGIN_REGISTRATION: true
-         OAUTH_ENFORCE_SECURE: true
 
 #. Save the ``/edx/app/edx_ansible/server-vars.yml`` file.
 
@@ -142,11 +145,62 @@ Guide*.
 Enable Push Notification 
 ****************************************
 
-To send push notifications to the edX mobile applications, you install the
-``edx_notifications`` application and customize the configuration to identify
-your push messaging service or push notification server.
+You enable push notification by configuring both the ``edx-platform``
+repository and the edX mobile applications.
+
+============================================
+Set Up Your Open edX Platform Repository  
+============================================
+
+To send push notifications from edX Studio to the edX mobile applications, you
+install the ``edx_notifications`` application and customize its configuration
+to identify your push messaging service or push notification server.
 
 For more information, see https://github.com/edx/edx-notifications.
 
+================================================================
+Configure Push Notification in Your Open edX Mobile Applications
+================================================================
 
-   
+For the edX mobile applications, the ``PUSH_NOTIFICATIONS`` key enables push
+notification support.
+
+If you are using Parse to provide notification delivery, you also add the
+following keys.
+
+::
+
+    PARSE:
+      NOTIFICATIONS_ENABLED: true
+      APPLICATION_ID: {your application id}
+      CLIENT_KEY: {your client key}
+
+
+Configure the edX Mobile Application for iOS
+************************************************
+
+To use a push notification service other than Parse with with your edX Mobile
+Application for iOS, you implement the `OEXPushProvider.h`_ protocol.
+
+The following classes are used for push notifications.
+
+* The `OEXParsePushProvider.m`_ class handles Parse setup.
+
+* The `OEXPushNotificationManager.m`_ class handles push registration and
+  dispatch.
+
+Configure the edX Mobile Application for Android
+************************************************
+
+To use Parse for push notification services with your edX Mobile Application
+for Android, you update the `AndroidManifest.xml`_ manifest file.
+
+The following classes are used for push notifications.
+
+* The `EdxParsePushBroadcastReceiver.java`_ class intercepts Parse
+  notification events and adds custom behaviors.
+
+* The `UserNotificationManager.java`_ class handles push registration and
+  dispatch.
+
+* The `ParseNotificationDelegate.java`_ class handles Parse registration.
