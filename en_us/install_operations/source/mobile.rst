@@ -11,8 +11,7 @@ applications and customizing their Open edX installation to support their use.
 
 .. contents:: Section Contents 
    :local:
-
-.. Mark, this option ^ prevents the section name from appearing as a link. What do you think about standardizing on this format at the beginning of each rst? 
+   :depth: 1
 
 ******************************
 Accessing the Source Code
