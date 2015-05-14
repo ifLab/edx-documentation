@@ -142,5 +142,5 @@ the license at the bottom right of the video player:
  :alt: A video with a pointer to the license.
  :width: 600
 
-For a Creative Commons license, learners can click on the license to get more
+For a Creative Commons license, learners can select the license to get more
 information.
