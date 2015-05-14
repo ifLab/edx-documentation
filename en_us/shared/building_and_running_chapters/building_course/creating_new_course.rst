@@ -6,10 +6,9 @@ Creating a New Course
 
 This topic describes how to create and set up your course with Studio.
 
-* :ref:`Create a New Course`
-* :ref:`Edit Your Course`
-* :ref:`Use the Course Checklist`
-* :ref:`Add Course Team Members`
+.. contents:: Section Contents
+  :local:
+  :depth: 1
 
 Another way to create a course is to re-run an existing course. See
 :ref:`Rerun a Course`.
