@@ -4,9 +4,10 @@
 Glossary
 ############
 
-:ref:`A` - :ref:`C` - :ref:`D` - :ref:`E` - :ref:`F` - :ref:`G` - :ref:`H` 
-- :ref:`I` - :ref:`K` - :ref:`L` - :ref:`M` - :ref:`N` - :ref:`O` - :ref:`P` 
-- :ref:`R` - :ref:`S` - :ref:`T` - :ref:`V` - :ref:`W` - :ref:`XYZ<X>`
+:ref:`A` - :ref:`B` - :ref:`C` - :ref:`D` - :ref:`E` - :ref:`F` 
+- :ref:`G` - :ref:`H` - :ref:`I` - :ref:`K` - :ref:`L` 
+- :ref:`M` - :ref:`N` - :ref:`O` - :ref:`P` - :ref:`R` 
+- :ref:`S` - :ref:`T` - :ref:`V` - :ref:`W` - :ref:`XYZ<X>`
 
 .. _A:
 
@@ -51,6 +52,17 @@ A
   The category of graded student work, such as homework, exams, and exercises.
 
   For more information, see `Establishing a Grading Policy`_.
+
+.. _B:
+
+****
+B
+****
+
+**Bumper Video**
+
+  A short video file that plays automatically before the selected video.
+  Typically, bumper videos contain promotional content.
 
 .. _C:
 
