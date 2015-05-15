@@ -710,11 +710,13 @@ list, the original name, which is present in the ``event_type`` field for all
 events, is followed by a newer, revised name. The revised name is present in
 the ``name`` field only for events that have an ``event_source`` of 'mobile'.
 
+* ``do_not_show_again_video``
 * ``hide_transcript``/``edx.video.transcript.hidden``
 * ``load_video``/``edx.video.loaded``
 * ``pause_video``/``edx.video.paused``
 * ``play_video``/``edx.video.played``
 * ``seek_video``/``edx.video.position.changed``
+* ``skip_video``
 * ``show_transcript``/``edx.video.transcript.shown``
 * ``speed_change_video`` 
 * ``stop_video``/``edx.video.stopped``
@@ -743,6 +745,21 @@ an interaction with the video player begins with a :ref:`play_video` event.
 **History**: The edX mobile app for iOS began to emit a subset of the video
 events on 25 Feb 2015. The edX mobile app for Android began to emit a subset
 of the video events on 23 Dec 2014.
+
+``do_not_show_again_video``
+****************************
+
+When a user selects **** to 
+
+
+**Event Source**: Browser
+
+**History**: Added to Open edX 8 Jun 2015.
+
+``event`` **Member Fields**: 
+
+&&&
+
 
 ``hide_transcript``/``edx.video.transcript.hidden``
 ***************************************************
@@ -897,6 +914,7 @@ that the edX mobile app emits also include a ``name`` field with a value of
 
 **History**: 
 
+* Uopdated 6 Jun 2015 to inckude the ``event.is_bumper`` member field.
 * Updated 5 May 2015 to include the effect of a **Video Start Time**. 
 * Updated 25 Feb 2015 to include events emitted by the edX mobile app for iOS.
 * Updated 23 Dec 2014 to include events emitted by the edX mobile app for
@@ -982,6 +1000,9 @@ fields, see :ref:`Example Mobile App Event`.
        prior to October 2014, use an HTML-escaped version of the
        ``courseware_studentmodule.module_id``. For example, 
        ``i4x-HarvardX-PH207x-video-Simple_Random_Sample``.
+   * - ``is_bumper``
+     -  Boolean
+     -  &&&
 
 
 Example: Browser-Emitted ``play_video`` Event 

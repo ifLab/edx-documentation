@@ -30,6 +30,8 @@ Alphabetical Event List
      - :ref:`AB_Event_Types`
    * - ``delete-student-module-state``
      - :ref:`Instructor_Event_Types`
+   * - ``do_not_show_again_video``
+     - :ref:`video`
    * - ``dump-answer-dist-csv``
      - :ref:`Instructor_Event_Types`
    * - ``dump-graded-assignments-config``
@@ -211,6 +213,8 @@ Alphabetical Event List
    * - ``show_answer``
      - :ref:`problem`
    * - ``show_transcript``
+     - :ref:`video`
+   * - ``skip_video``
      - :ref:`video`
    * - ``speed_change_video``
      - :ref:`video`
