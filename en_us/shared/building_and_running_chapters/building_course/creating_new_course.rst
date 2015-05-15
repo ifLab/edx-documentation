@@ -67,8 +67,6 @@ Create a New Course
 
 4. Select **Save.**
 
-5. Click **Save.**
-
 You then see the empty course outline.
 
 .. _Edit Your Course:

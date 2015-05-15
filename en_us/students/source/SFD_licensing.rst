@@ -26,8 +26,8 @@ content or videos that have All Rights Reserved licenses.
 Creative Commons License
 ****************************
 
-The Creative Commons license indicates to that you can share or reuse course
-content or videos, depending on the license options the course author selected.
+The Creative Commons license indicates that you can share or reuse course
+content or videos, depending on the license options the instructor selected.
 
 A Creative Commons license has one or more of the following options.
 
@@ -40,8 +40,8 @@ A Creative Commons license has one or more of the following options.
    * - **Attribution**
      - This option allows you to copy, distribute, display, and perform
        copyrighted work but only if they give credit the way you request. This
-       option is enabled for all Creative Commons licenses. This option is
-       always selected.
+       option is always selected for edX courses and videos under a Creative
+       Commons license.
    * - **Noncommercial**
      - This option allows you to distribute, display, and perform work
        -- and derivative works based upon it -- but for non-commercial purposes
@@ -55,15 +55,16 @@ A Creative Commons license has one or more of the following options.
        license identical to the license that governs the work. This option
        cannot be in use with the **No Derivatives** option.
 
-See the `Creative Commons website`_ for more information.
+For more information, see the `Creative Commons website`_.
 
-.. _Creative Commons website: http://creativecommons.org/
+.. _Creative Commons website: http://creativecommons.org/licenses
 
 *************************************
 Viewing Licenses
 *************************************
 
-If the course author has set a license for the course, you see the license a the bottom of the page when you view content in the **Courseware** tab.
+If the course author has set a license for the course, you see the license a
+the bottom of the page when you view content in the **Courseware** tab.
 
 .. image:: ../../shared/building_and_running_chapters/Images/learner_course_license.png
   :alt: A course unit page with a pointer to the license.
@@ -77,4 +78,4 @@ the license at the bottom right of the video player:
  :width: 600
 
 For a license that reserves some, but not all, rights, you can select the
-license to get more information about your rights.
+license to get see information about your rights.

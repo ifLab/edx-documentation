@@ -24,11 +24,11 @@ Protecting Videos
 To help course teams protect video assets, the edX video player hides video
 URLs from learners by default. This functionality is in effect for all video
 files, including YouTube videos and videos that you have posted in other
-locations. Leaners can still download videos if you select the **Video
+locations. Learners can still download videos if you select the **Video
 Download Allowed** option for your video components. For more information about
-posting non-YouTube videos online, see :ref:`Post the Video Online`. For more
-information about options that you can set when you create a video component,
-see :ref:`Video Advanced Options`.
+posting videos not hosted on YouTube, see :ref:`Post the Video Online`. For
+more information about options that you can set when you create a video
+component, see :ref:`Video Advanced Options`.
 
 .. _Create the Video:
 
@@ -326,8 +326,8 @@ The following options appear on the **Advanced** tab in the video component.
 
     * - **License**
       - Optionally, you can set the license for the video, if you want to
-        release the video with a license different from that of the overall
-        course license.
+        release the video with a license different from the overall course
+        license.
 
         * Select **All Rights Reserved** to indicate to learners that you own
           the copyright for the video.
@@ -336,11 +336,9 @@ The following options appear on the **Advanced** tab in the video component.
           use the video. You must then select the Creative Commons license
           options to apply.
 
-          See :ref:`Licensing a Course` for more information about license
-          options.
-
-          The license options you select control the copyright notice learners
-          see for the video.
+          The license options that you select control the copyright notice that
+          learners see for the video. For more information, see :ref:`Licensing
+          a Course`.
 
     * - **Show Transcript**
       - Specifies whether the transcript plays along with the video by default.
@@ -425,7 +423,7 @@ in the video component to associate the .srt file with the video.
 #. On the **Advanced** tab, scroll down to **Transcript Languages**, and then
    click **Add**.
 
-#. In the drop-down list that appears, select **Table of Contents**.
+#. In the dropdown list that appears, select **Table of Contents**.
 
    An **Upload** button appears.
 
