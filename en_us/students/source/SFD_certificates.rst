@@ -70,44 +70,26 @@ list/allschools/verified/allcourses>`_.
 如果你对认证证书的计费有任何问题或意见，请联系我们： `billing@edx.org <mailto://billing@edx.org>`_. 请在邮件中写明你的订单号，但**不要写你的信用卡信息**。
 
 =========================
-XSeries Certificates
+系列证书
 =========================
 
-XSeries certificates show that you've successfully earned a verified certificate
-for each course in a series of courses that make up an XSeries.
+系列证书表明你已完整了一组系列课程的学习，且已获得系列课程中每门课程的认证证书。
 
 ****************************
-Changing a Certificate Type
+更改证书种类
 ****************************
 
-You may register for one type of certificate but later decide that you want a
-different type of certificate. For example, you may register for an honor code
-certificate, but you might later want to change to a verified certificate. You
-can change the certificate type until registration for verified certificates
-ends for your course, usually two or more weeks after the course starts.
+你可能在注册时已选择一种证书的类别，但之后又想要更换为其他类别的证书。举个例子，你可能在注册时选择了“荣誉证书”，但后来又想要把它更改为“认证证书”。一般来说，直到一门课程的认证证书注册工作结束之前，大约在课程开始后的两周或更长的时间内，你都可以更换证书的类别。
 
-* To upgrade to a verified certificate, go to your dashboard, and then select
-  **Challenge Yourself!** under the name of your course. You'll then follow the
-  onscreen instructions to register for a verified certificate.
+* 要把证书升级为认证证书，请前往仪表盘，然后选择课程名下的**自我挑战！**按钮，之后请跟随屏幕上的提示将证书升级为认证证书。
 
-  If registration for verified certificates has closed, you can't change your
-  certificate type. Registration for verified certificates typically closes two
-  weeks after the course has started, or after at least one assignment due date
-  has passed.
+  如果注册认证证书的窗口已经关闭，那么你不能再改变证书的种类。注册认证证书的窗口一般会在课程开始后的两周后关闭，或者在至少一项评定截止日期过期后终止。
 
-* To change from a verified certificate to an honor code certificate, go to your
-  dashboard, and then select **Unregister** under the name of your course. The
-  edX support team will contact you with information about a refund. You must
-  change to an honor code certificate before verified certificate registration
-  closes for your course if you want to receive a refund.
+* 要将认证证书更改为荣誉证书，请前往仪表盘，然后选择课程名下的**取消注册**按钮。edX工作团队将会联系你商讨退款事宜。如果想要获得退款，你必须在认证证书注册窗口关闭前将认证证书更换为荣誉证书。
 
-  If you don't see the **Unregister** button, registration for verified
-  certificates has closed. Registration for verified certificates typically
-  closes two weeks after the course has started, or after at least one
-  assignment due date has passed. 
+  如果你没有找到**取消注册**按钮，那么说明认证证书注册窗口已被关闭。注册认证证书的窗口一般会在课程开始后的两周后关闭，或者在至少一项评定截止日期过期后终止。
 
-If you have questions about changing your certificate type, you can contact the
-edX support team at `technical@edx.org <mailto://technical@edx.org>`_. 
+如果关于更换证书有任何疑问，请联系edX工作团队： `technical@edx.org <mailto://technical@edx.org>`_。 
 
 *************************
 Receiving a Certificate
