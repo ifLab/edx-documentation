@@ -1,15 +1,15 @@
 .. _SFD_ORA:
 
 ###########################################
-开放式互动评判
+公开互动评判问题
 ###########################################
 
-在一个开放式互动评判中，你可以给可能没有简单或确切答案的问题书面解答。 在开放式互动
-评判中，你也可以提交带有图片的解答。
+在一个公开互动评判问题中，你可以给可能没有简单或确切答案的问题书面解答。在公开互动
+评判问题中，你也可以提交带有图片的解答。
 
-开放式互动评判可以包括互评，自评，或两者皆有。 在互评中，你可以对你的同学提交的解答
-进行评判或者打分，你的同学也可以对你提交的解答进行同样的操作。 在自评中你只可以对自
-己的解答进行评判。 你需要将待评判的解答与教师给出的参考答案进行比较，来完成评判。
+公开互动评判问题可以包括互评，自评，或两者皆有。 在互评中，你可以对你的同学提交的解
+答进行评判或者打分，你的同学也可以对你提交的解答进行同样的操作。 在自评中你只可以对
+自己的解答进行评判。 你需要将待评判的解答与教师给出的参考答案进行比较，来完成评判。
 
 标准答案是一个解答中所应该达到的要求的列表。 标准答案由 *标准* 和 *选项* 组成。 
 *标准* 是每个解答所应具有的特点，例如解答所应包含的话题。 *选项* 描述解答符合标准的
@@ -25,11 +25,10 @@
 你就能在完成了这个问题的每一步之后，在自己的得分下面查看到它。
 
 ************************
-Student Instructions
+学生手册
 ************************
 
-When you come to an open response assessment in the course, you will see the
-questions and a response field for each question. After you submit your
+当你进入课程中的开放式互动评判时，你能看到 After you submit your
 responses, you will assess some of your peers' responses, your own responses, or
 both, depending on the assignment. You can see the steps that your assignment
 includes below each response field.
