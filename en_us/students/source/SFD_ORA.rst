@@ -54,15 +54,10 @@
 
 你要在每个问题下的 **Your Response** 面下的答题区域中作答。
 当你完成所有题目的解答时，点击 **提交你的答案，进入下一步** 。
-如果你不想马上完成答案的提交
-After you submit your responses, if other students have already submitted
-responses, the peer assessment step starts immediately. However, you don't have
-to start grading right away. If you want to stop working and come back later,
-just refresh or reopen your browser when you come back. New peer responses will
-be available for you to grade.
+如果你不想马上完成答案的提交，你可以点击 **保存当前进度** 将目前的答案保存为草稿，在以后可以再提交。
+在你提交答案之后，如果此时已有别的学生已经提交了答案，便会立刻进入互评。 不过你并不需要马上开始评判别人的答案。 如果你想暂停学习，稍后再继续，只需要在回来后刷新或者重新打开浏览器，新的互评答案便会为你准备好。
 
-If no other students have submitted responses yet, you see the following
-message.
+如果并没有其他学生提交了答案，你就会看见下面的信息。
 
 .. code-block:: xml
 
@@ -71,41 +66,33 @@ message.
   have submitted responses. You'll receive your grade after you complete the peer assessment
   and self assessment steps, and after your peers have assessed your response.
 
-Note that you can view your own responses at any time after you submit them. To
-do this, for the response you want to view, click the **Your Response** heading
-to expand the response field. You'll see your response, the status of your
-response, and information about additional steps you have to complete before you
-receive your grade.
+注意，你可以在提交答案之后随时查看你已提交的答案。 点击 **Your Response** 便可以展开答题区域，你可以在其中看到你的答案及其状态，以及在得到成绩前还需需完成的步骤。
 
 .. image:: /Images/PA_S_ReviewResponse.png
    :alt: Image of the Response field collapsed and then expanded
    :width: 500
 
 
-Submit an Image with Your Response
+提交带图片的答案
 ***********************************
 
-Some assignments ask you to submit an image with your text response. If you can
-submit an image, you will see buttons that you use to upload your image. You can
-only upload one image in each response, and your response must include some text
-along with the image. You cannot submit a response that does not contain any
-text.
+有些问题会要求你提交带图片的书面解答。如果在答题区域下方有上传你图片的按钮，就说明这个问题可以提交带图片的解答。 每道题你仅能上传一张照片，而且答案除了图片必须有必要的文字说明，你不能提交一个没有文字解答的答案。
 
-.. note:: The image file must be a .jpg or .png file, and it must be smaller than 5 MB in size.
+.. note:: 图片的格式必须是 .jpg 或者 .png ，大小必须小于5MB。
 
 .. image:: /Images/PA_Upload_ChooseFile.png 
    :alt: Open response assessment example with Choose File and Upload Your Image buttons circled
    :width: 500
 
-To upload your image, complete these steps.
+上传图片的步骤如下：
 
-#. Click **Choose File**.
-#. In the dialog box that opens, select the file that you want, and then click **Open**.
-#. When the dialog box closes, click **Upload Your Image**.
+#.点击 **选择文件**.
+#.再打开的对话框中选择需要的文件，点击 **打开** 。
+#.当对话框关闭时，点击 **Upload Your Image** 。
 
-Your image appears below the response field, and the name of the image file
-appears next to the **Choose File** button. If you want to change the image,
-follow steps 1-3 again. You can only upload one image per response.
+你的图片会出现在答题区域的下方，图片的名称在 **选择文件** 按钮旁显示。
+如果你想要更换图片，只需重复步骤1-3。
+再次强调，每道题只能提交一个图片。
 
 .. image:: /Images/PA_Upload_WithImage.png
    :alt: Example response with an image of Paris
