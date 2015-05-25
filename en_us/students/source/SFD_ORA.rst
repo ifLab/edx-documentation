@@ -4,12 +4,12 @@
 公开互动评判问题
 ###########################################
 
-在一个公开互动评判问题中，你可以给可能没有简单或确切答案的问题书面解答。在公开互动评判问题中，你也可以提交带有图片的解答。
+在一个公开互动评判问题中，你可以给可能没有简单或确切答案的问题书面解答。在公开互动评判问题中，你也可以提交带有图片的答案。
 
-公开互动评判问题可以包括互评，自评，或两者皆有。 在互评中，你可以对你的同学提交的解答进行评判或者打分，你的同学也可以对你提交的解答进行同样的操作。 在自评中你只可以对自己的解答进行评判。 你需要将待评判的解答与教师给出的参考答案进行比较，来完成评判。
+公开互动评判问题可以包括互评，自评，或两者皆有。 在互评中，你可以对你的同学提交的答案进行评判或者打分，你的同学也可以对你提交的答案进行同样的操作。 在自评中你只可以对自己的答案进行评判。 你需要将待评判的解答与教师给出的参考答案进行比较，来完成评判。
 
-标准答案是一个解答中所应该达到的要求的列表。 标准答案由 *标准* 和 *选项* 组成。 
-*标准* 是每个解答所应具有的特点，例如解答所应包含的话题。 *选项* 描述解答符合标准的程度。 下面图片展示了一个参考答案，其包含了两个标准，每个标准下面又有多个选项。
+标准答案是一个答案中所应该达到的要求的列表。 标准答案由 *标准* 和 *选项* 组成。 
+*标准* 是每个解答所应具有的特点，例如答案所应包含的议题。 *选项* 描述答案符合标准的程度。 下面图片展示了一个参考答案，其包含了两个标准，每个标准下面又有多个选项。
 
 .. image:: /Images/PA_S_Rubric.png
    :alt: Rubric showing criteria and options
@@ -17,7 +17,7 @@
 
 在你评判一个解答时，你需要选择最能描述解答体现标准程度的选项。
 
-有的老师会创建一个 **最佳解答** 单元来展示这个问题的高分解答和其得分。 如果有这个单元，你就能在完成了这个问题的每一步之后，在自己的得分下面查看到它。
+有的老师会创建一个 **最佳解答** 单元来展示这个问题的高分答案和其得分。 如果有这个单元，你就能在完成了这个问题的每一步之后，在自己的得分下面查看到它。
 
 ************************
 学生手册
@@ -31,9 +31,9 @@
 
 下面我们为你演示完成一个包含学生学习，互评，自评的公开互动评判问题的流程。
 
-#. 提交你对该问题的解答。
-#. 学习标准答案即评判标准。
-#. 评判别的学生提交的解答。
+#. 提交你对该问题的答案。
+#. 学习标准答案。
+#. 评判别的学生提交的答案。
 #. 评判自己提交的解答。
 #. 获得自己的成绩以及互评的反馈。
 
@@ -45,23 +45,16 @@
   You have not completed the peer assessment step and self assessment step of this problem.
 
 =====================
-Submit Your Response
+提交你的答案
 =====================
 
-Read each question carefully. Some instructors include important information in
-the question, such as how long a response must be, or specific topics your
-response must cover.
+请仔细阅读没一个问题。 有的题目中隐含了非常重要的信息，例如将答案的长度限制，或者你的答案必须包含的特殊话题。
 
-.. note:: The total word count for all responses within the assessment cannot be
-   more than 10,000 words (approximately the equivalent of 20 pages of 8.5x11
-   paper, with text single-spaced).
+.. note::每道题的解答的总字数不能超过超过10000字（约相当于20张8.5*11的文本单倍行距的纸）。
 
-For each question, type your response into the field under **Your Response**.
-When you have completed responses for all the questions, click **Submit your
-response and move to the next step**. If you don't want to finish your response
-all at once, you can click **Save Your Progress** to save a draft of your
-responses, and then come back and submit them later.
-
+你要在每个问题下的 **Your Response** 面下的答题区域中作答。
+当你完成所有题目的解答时，点击 **提交你的答案，进入下一步** 。
+如果你不想马上完成答案的提交
 After you submit your responses, if other students have already submitted
 responses, the peer assessment step starts immediately. However, you don't have
 to start grading right away. If you want to stop working and come back later,
