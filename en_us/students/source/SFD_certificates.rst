@@ -12,7 +12,7 @@
 
 因为edX课程不是学分制的，所以证书并不包含像大学课程那样明确的成绩或学习时间。此外，edX课程的成绩单也是无法获得的。
 
-.. note:: 证书列出了你在仪表盘上显示的全名。在课程结束之前，请确保仪表盘上的名字是正确的。如果要更改你的全名，请访问仪表盘，然后选择左侧栏中的 **全名** 下的 **编辑** 一项。
+.. note:: 证书列出了你在仪表盘上显示的全名。在课程结束之前，请确保仪表盘上的名字是正确的。如果要更改你的全名，请访问仪表盘，然后选择左侧栏中的**全名**下的**编辑**一项。
 
 ****************************
 选择一个证书的种类
@@ -29,7 +29,7 @@
    :alt: Dashboard with color indications for audit, honor code, and verified courses
 
 
-.. note:: 有极少数的课程不提供证书，它们和edX的其他课程一样属于可信来源。如果想要证明你已完成这门课程，可以打印课程中的 **进度** 一页。
+.. note:: 有极少数的课程不提供证书，它们和edX的其他课程一样属于可信来源。如果想要证明你已完成这门课程，可以打印课程中的**进度**一页。
 
 
 =========================
@@ -67,135 +67,88 @@
 若希望获知所有提供认证证书的课程，请参阅 `edX课程目录 <https://www.edx.org/course-
 list/allschools/verified/allcourses>`_.
 
-如果你对认证证书的计费有任何问题或意见，请联系我们： `billing@edx.org <mailto://billing@edx.org>`_. 请在邮件中写明你的订单号，但 **不要写你的信用卡信息**。
+如果你对认证证书的计费有任何问题或意见，请联系我们： `billing@edx.org <mailto://billing@edx.org>`_. 请在邮件中写明你的订单号，但**不要写你的信用卡信息**。
 
 =========================
-XSeries Certificates
+系列证书
 =========================
 
-XSeries certificates show that you've successfully earned a verified certificate
-for each course in a series of courses that make up an XSeries.
+系列证书表明你已完整了一组系列课程的学习，且已获得系列课程中每门课程的认证证书。
 
 ****************************
-Changing a Certificate Type
+更改证书种类
 ****************************
 
-You may register for one type of certificate but later decide that you want a
-different type of certificate. For example, you may register for an honor code
-certificate, but you might later want to change to a verified certificate. You
-can change the certificate type until registration for verified certificates
-ends for your course, usually two or more weeks after the course starts.
+你可能在注册时已选择一种证书的类别，但之后又想要更换为其他类别的证书。举个例子，你可能在注册时选择了“荣誉证书”，但后来又想要把它更改为“认证证书”。一般来说，直到一门课程的认证证书注册工作结束之前，大约在课程开始后的两周或更长的时间内，你都可以更换证书的类别。
 
-* To upgrade to a verified certificate, go to your dashboard, and then select
-  **Challenge Yourself!** under the name of your course. You'll then follow the
-  onscreen instructions to register for a verified certificate.
+* 要把证书升级为认证证书，请前往仪表盘，然后选择课程名下的**自我挑战！**按钮，之后请跟随屏幕上的提示将证书升级为认证证书。
 
-  If registration for verified certificates has closed, you can't change your
-  certificate type. Registration for verified certificates typically closes two
-  weeks after the course has started, or after at least one assignment due date
-  has passed.
+  如果注册认证证书的窗口已经关闭，那么你不能再改变证书的种类。注册认证证书的窗口一般会在课程开始后的两周后关闭，或者在至少一项评定截止日期过期后终止。
 
-* To change from a verified certificate to an honor code certificate, go to your
-  dashboard, and then select **Unregister** under the name of your course. The
-  edX support team will contact you with information about a refund. You must
-  change to an honor code certificate before verified certificate registration
-  closes for your course if you want to receive a refund.
+* 要将认证证书更改为荣誉证书，请前往仪表盘，然后选择课程名下的**取消注册**按钮。edX工作团队将会联系你商讨退款事宜。如果想要获得退款，你必须在认证证书注册窗口关闭前将认证证书更换为荣誉证书。
 
-  If you don't see the **Unregister** button, registration for verified
-  certificates has closed. Registration for verified certificates typically
-  closes two weeks after the course has started, or after at least one
-  assignment due date has passed. 
+  如果你没有找到**取消注册**按钮，那么说明认证证书注册窗口已被关闭。注册认证证书的窗口一般会在课程开始后的两周后关闭，或者在至少一项评定截止日期过期后终止。
 
-If you have questions about changing your certificate type, you can contact the
-edX support team at `technical@edx.org <mailto://technical@edx.org>`_. 
+如果关于更换证书有任何疑问，请联系edX工作团队： `technical@edx.org <mailto://technical@edx.org>`_。 
 
 *************************
-Receiving a Certificate
+获取证书
 *************************
 
-Certificates are distributed shortly after a course ends--usually within two
-weeks. After the course ends, you'll see the following message under the course
-name on your dashboard:
+在课程结束后，一般会在两周时间内完成证书的分发，你将在仪表盘的课程名下看到如下信息：
 
 ``Final course details are being wrapped up at this time. Your final standing
 will be available shortly.``
 
-When your certificate is ready, your dashboard will show you your final grade
-for the class as well as a link to your certificate.
+当你的证书就绪，仪表盘会上显示你的证书链接并附上这门课程的最终成绩。
 
 .. image:: /Images/SFD_Cert_DownloadButton.png
    :width: 500
    :alt: Dashboard with course name, grade, and link to certificate
 
-If you want a paper copy of your certificate, you can select **Download Your Certificate (PDF)** to download and print the certificate from your dashboard.
+如果你想要证书的纸质版，你可以选择**下载证书（PDF）**来保存并打印它。
 
-.. note:: Your certificate lists the full name that appears on your dashboard. 
-  Before your course ends, make sure that the name on your dashboard is correct. 
-  To change your full name, go to your dashboard, and then select **edit** under 
-  **Full Name** in the left pane.
+.. note:: 证书列出了你在仪表盘上显示的全名。在课程结束之前，请确保仪表盘上的名字是正确的。如果要更改你的全名，请访问仪表盘，然后选择左侧栏中的**全名**下的**编辑**一项。
 
 =============================================
-Receiving Certificates for Self-Paced Courses
+获取自由进度课程的证书
 =============================================
 
-While most edX courses have specific start and end dates, a few courses are
-self-paced. You can start these courses anytime and work through the courseware
-at your own pace.
+大多数edX课程有着明确的开始时间和结束时间，然而也有一小部分课程是可以自由制定进度计划的。你可以在任何时间开始这门课程，浏览课件并自主学习。
 
-Receiving a certificate for a self-paced course is similar to receiving a
-certificate for a regular course. After you've completed all course assignments
-and the final exam (if applicable), a certificate is generated automatically.
-You don't have to complete any additional steps to obtain your certificate.
+获取自由进度课程的证书和普通课程课程在方式上非常相近。当你完成课程的所有任务并通过结课测试（如果有的话）后，证书将会自动生成，你不需要进行任何额外的操作即可获取你的证书。
 
-Be aware, however, that different self-paced courses issue certificates at
-different intervals. Some courses issue certificates once a month, and others issue
-certificates less frequently. For more information about your course's specific
-certificate schedule, see the About page or the **Course Info** tab for your
-course.
+但请注意，不同的自由进度课程对于证书的获得有着不一样的限制。有些证书一个月仅能获取一次，而其他课程可能规定地时间更长。若想获取更多关于证书颁发计划的信息，请查阅课程的“关于页面”或**课程信息**便签。
 
 .. _SFD On Demand Certificates: 
 
-On-Demand Certificates
+基于条件的证书颁发方式
 *********************************
 
-A few self-paced courses offer on-demand certificates. These certificates
-allow you to request and download your certificate as soon as you complete
-enough of the course with a high enough grade to qualify for a certificate.
-You do not have to wait until you finish the course. You can usually find out
-if a course offers on-demand certificates on the course About page.
+少量的自由进度课程提供基于条件的证书颁发方式。当完成课程要求并达到规定的分数时，你可以立即获得一份证书。在这种方式下，你不需要完成课程后才能获得证书。通常你可以在课程的“关于”页面上看到这门课程是否提供基于条件的证书颁发方式。
 
-If a course offers on-demand certificates, as soon as you have qualified for a
-certificate, you see the following message at the top of the course
-**Progress** page.
+如果一门课程提供基于条件的证书颁发方式，那么当你有获取证书的资格时，在课程的**进度**一页上会出现如下信息：
 
 .. image:: /Images/SFD_Cert_QualifiedOnDemand.png
   :width: 500
   :alt: Image of the top of a Progress page, with the text "Congratulations,
       you've qualified for a certificate!"
 
-You can request your certificate at any time after you have qualified for the
-certificate. Note, however, that if you request your certificate before the
-end of the course, the grade that you see on your dashboard no longer updates
-automatically as you complete coursework. Your **Progress** page continues to
-reflect your current grade. To update your grade on your dashboard, request
-your certificate again.
+当拥有证书的资格时，你可以在任何时间获取证书。但请注意，如果在课程结束之前获取证书的话，那么当完成课程后，仪表盘上不会自动更新你的课程进度。你的**进度**页面仍然会显示你当时的成绩。若想要在仪表盘上更新成绩，请再次申请证书。
 
-.. note:: Your course grade does not appear on your certificate.
+.. note:: 你的课程成绩不会出现在证书上。
 
 
 .. _Request Download Certificate:
 
-Request and Download a Certificate
+获取并下载证书
 ====================================
 
-To receive your certificate at any time after you have qualified for the
-certificate, follow these steps.
+当拥有证书资格后，若要在任何时间获取你的证书，请进行如下步骤：
 
-#. On the course **Progress** page, select **Request Certificate**.
+#. 打开课程的**进度**页面，选择**获取证书**。
 
-   The certificate creation process may take up to 48 hours. After your
-   certificate has been created, you see the following message on your
-   **Progress** page.
+   证书生成系统可能最多会花费48小时来产生证书，在你的证书生成完毕后，在你的**进度**页面上会显示如下信息：
 
    .. image:: /Images/SFD_Certs_CertificateAvailable.png
     :width: 500
@@ -203,19 +156,13 @@ certificate, follow these steps.
         available. You can now download your certificate as a PDF here or on
         your dashboard."
 
-#. Download your certificate from the **Progress** page or from your dashboard.
+#. 在仪表盘的**进度**页面上下载你的证书。
 
-   * To download your certificate from the **Progress** page, select
-     **Download Your Certificate** in the upper right corner of the page.
+   * 要从**进度**页面上下载证书，请选择页面右上角的**下载证书**按钮。
 
-   * To download your certificate from your dashboard, select **Download Your
-     Certificate** next to the name of your course.
+   * 若要从仪表盘上下载证书，请选择课程名旁的**下载证书**按钮。
 
-Update Your Certificate
+更新证书
 ========================
 
-If you want to update your certificate with a different name or an improved
-grade, click **Update Certificate** on either your **Progress** page or
-your dashboard to request and download a new certificate. If you want to
-change the name on the certificate, make sure that you change your full name
-on the **Account Settings** page before you request the new certificate.
+如果你希望用不同的名字或更高的成绩来更新你的证书，请在你的**进度**页面或仪表盘上点击**更新证书**按钮以获取并下载新的证书。如果你希望更改证书上的名字，请确保在获取新证书前在**账户设置**页面修改了你的全名。
