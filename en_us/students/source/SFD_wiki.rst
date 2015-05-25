@@ -1,19 +1,12 @@
 .. _SFD Wiki:
 
 ########################
-The Course Wiki
+课程Wiki
 ########################
 
-Some courses include a wiki, which provides a public forum for both students and
-course staff to access, share, and collaboratively edit information about the
-course. If your course includes a wiki, you access it by selecting the **Wiki**
-tab at the top of any page. (If your course does not include a wiki, you don't
-see this tab.)
+一些课程有自己的Wiki，它为所有的学生和教员提供了一个公共的论坛用来访问、共享和协作编辑关于课程的信息。如果你的课程含有Wiki，你可以通过选择任一页面顶部的 **Wiki** 选项卡来访问（如果你的课程不含Wiki，你将看不到这个标签）。你的导师可能会使用Wiki来实现以下功能：
 
-Your course instructor may use the wiki for the following purposes, among
-others:
-
-* Sharing answers to course FAQs and collecting new FAQs.
+* 将答案共享到课程常见问题解答中并且收集新的常见问题。
 * Sharing editable course information, such as download and installation
   instructions for software required for the course.
 * Allowing students to create and share resources, perhaps as part of a
