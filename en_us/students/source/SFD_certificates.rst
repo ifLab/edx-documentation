@@ -122,32 +122,21 @@ will be available shortly.``
 
 .. _SFD On Demand Certificates: 
 
-On-Demand Certificates
+基于条件的证书颁发方式
 *********************************
 
-A few self-paced courses offer on-demand certificates. These certificates
-allow you to request and download your certificate as soon as you complete
-enough of the course with a high enough grade to qualify for a certificate.
-You do not have to wait until you finish the course. You can usually find out
-if a course offers on-demand certificates on the course About page.
+少量的自由进度课程提供基于条件的证书颁发方式。当完成课程要求并达到规定的分数时，你可以立即获得一份证书。在这种方式下，你不需要完成课程后才能获得证书。通常你可以在课程的“关于”页面上看到这门课程是否提供基于条件的证书颁发方式。
 
-If a course offers on-demand certificates, as soon as you have qualified for a
-certificate, you see the following message at the top of the course
-**Progress** page.
+如果一门课程提供基于条件的证书颁发方式，那么当你有获取证书的资格时，在课程的**进度**一页上会出现如下信息：
 
 .. image:: /Images/SFD_Cert_QualifiedOnDemand.png
   :width: 500
   :alt: Image of the top of a Progress page, with the text "Congratulations,
       you've qualified for a certificate!"
 
-You can request your certificate at any time after you have qualified for the
-certificate. Note, however, that if you request your certificate before the
-end of the course, the grade that you see on your dashboard no longer updates
-automatically as you complete coursework. Your **Progress** page continues to
-reflect your current grade. To update your grade on your dashboard, request
-your certificate again.
+当拥有证书的资格时，你可以在任何时间获取证书。但请注意，如果在课程结束之前获取证书的话，那么当完成课程后，仪表盘上不会自动更新你的课程进度。你的**进度**页面仍然会显示你当时的成绩。若想要在仪表盘上更新成绩，请再次申请证书。
 
-.. note:: Your course grade does not appear on your certificate.
+.. note:: 你的课程成绩不会出现在证书上。
 
 
 .. _Request Download Certificate:
