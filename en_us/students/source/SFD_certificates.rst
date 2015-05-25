@@ -141,17 +141,14 @@ will be available shortly.``
 
 .. _Request Download Certificate:
 
-Request and Download a Certificate
+获取并下载证书
 ====================================
 
-To receive your certificate at any time after you have qualified for the
-certificate, follow these steps.
+当拥有证书资格后，若要在任何时间获取你的证书，请进行如下步骤：
 
-#. On the course **Progress** page, select **Request Certificate**.
+#. 打开课程的**进度**页面，选择**获取证书**。
 
-   The certificate creation process may take up to 48 hours. After your
-   certificate has been created, you see the following message on your
-   **Progress** page.
+   证书生成系统可能最多会花费48小时来产生证书，在你的证书生成完毕后，在你的**进度**页面上会显示如下信息：
 
    .. image:: /Images/SFD_Certs_CertificateAvailable.png
     :width: 500
@@ -159,19 +156,13 @@ certificate, follow these steps.
         available. You can now download your certificate as a PDF here or on
         your dashboard."
 
-#. Download your certificate from the **Progress** page or from your dashboard.
+#. 在仪表盘的**进度**页面上下载你的证书。
 
-   * To download your certificate from the **Progress** page, select
-     **Download Your Certificate** in the upper right corner of the page.
+   * 要从**进度**页面上下载证书，请选择页面右上角的**下载证书**按钮。
 
-   * To download your certificate from your dashboard, select **Download Your
-     Certificate** next to the name of your course.
+   * 若要从仪表盘上下载证书，请选择课程名旁的**下载证书**按钮。
 
-Update Your Certificate
+更新证书
 ========================
 
-If you want to update your certificate with a different name or an improved
-grade, click **Update Certificate** on either your **Progress** page or
-your dashboard to request and download a new certificate. If you want to
-change the name on the certificate, make sure that you change your full name
-on the **Account Settings** page before you request the new certificate.
+如果你希望用不同的名字或更高的成绩来更新你的证书，请在你的**进度**页面或仪表盘上点击**更新证书**按钮以获取并下载新的证书。如果你希望更改证书上的名字，请确保在获取新证书前在**账户设置**页面修改了你的全名。
