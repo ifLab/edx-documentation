@@ -1,10 +1,10 @@
-.. _SFD Mobile:
+﻿.. _SFD Mobile:
 
 ########################
-The edX Mobile App
+edX 移动端 App
 ########################
 
-The edX mobile app is a companion to the `edx.org`_ website. You can use the
+edX mobile app is a companion to the `edx.org`_ website. You can use the
 app to download course videos so that you can watch them whenever you want to,
 even without an Internet connection. To access the rest of the course,
 including course discussions, homework, and quizzes, you use a web
