@@ -3,24 +3,17 @@
 .. _Adding a Wiki Article:
 
 ********************************
-Adding a Wiki Article
+添加一篇Wiki文章
 ********************************
 
-When you add an article to the wiki, be aware of what level you are currently
-viewing, to make sure that you add your new article to the correct level in the
-course wiki.
-
-To move down a level in the wiki, click the **See all children** link; to move
-up, click the appropriate level in the wiki breadcrumb trail links at the top of
-the page.
+当你添加一篇Wiki文章的时候，你要意识到自己的当前查看等级，确保你添加的新文章在正确的课程Wiki上。
+请点击 **查看所有学生** 链接，点击Wiki页面顶部的链接来提高浏览的即时性。
 
 ===============================
-Add Articles at the Same Level
+添加即时的文章
 ===============================
 
-Follow these steps to add a wiki article at your current level. If you do not
-have permissions to add an article, when you click the **Add Article** button, a
-message indicates "Permission Denied" .
+如果你点击 **添加文章** 按钮后提示一条“权限被拒绝”的信息，表示你没有添加一篇文章的权限。请跟随下列步骤来添加一个即时的Wiki文章。
 
 #. In your course, click **Wiki**.
 #. Navigate to the level where you want to add a new article.
@@ -51,9 +44,9 @@ message indicates "Permission Denied" .
 .. _Editing a Wiki Article:
 
 ********************************
-Editing a Wiki Article
+编辑一篇Wiki文章
 ********************************
-
+`
 If you have permissions to edit an article, you see an **Edit** button and icon to the right of the article content.
 
 Follow these steps to make changes to a wiki article.
@@ -68,7 +61,7 @@ Follow these steps to make changes to a wiki article.
 .. _Searching for Wiki Articles:
 
 ********************************
-Searching for Wiki Articles
+Wiki文章搜索
 ********************************
 
 A **Filter** field is available only if any level of the wiki contains multiple
@@ -80,7 +73,7 @@ articles with that text string in their titles.
 .. _Managing Versions of a Wiki Article:
 
 ***********************************
-Managing Versions of Wiki Articles
+管理Wiki文章版本
 ***********************************
 
 The wiki includes a change history for each article. You can view each past
