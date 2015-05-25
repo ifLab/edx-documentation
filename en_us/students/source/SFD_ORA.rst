@@ -23,29 +23,21 @@
 学生手册
 ************************
 
-当你进入课程中的开放式互动评判时，你能看到 After you submit your
-responses, you will assess some of your peers' responses, your own responses, or
-both, depending on the assignment. You can see the steps that your assignment
-includes below each response field.
+当你进入课程中的公开互动评判问题时，你能看到待解答的问题，每个问题下面有一块答题区域。 在你提交完自己的解答之后，就需要依据问题的类型进行自评，或者互评，或者两者都进行。 你能在每个问题的答题区域看到这个问题所需要进行的步骤。
 
 .. image:: /Images/PA_S_AsmtWithResponse.png
    :alt: Open response assessment example with question, response field, and assessment types and status labeled
    :width: 550
 
-Here, we will walk you through the process of completing an open response
-assessment that includes a student training step, a peer assessment, and a self
-assessment.
+下面我们为你演示完成一个包含学生学习，互评，自评的公开互动评判问题的流程。
 
-#. Submit your responses to the questions.
-#. Learn to assess responses.
-#. Assess responses that other students have submitted.
-#. Assess your own responses to the questions.
-#. Receive your score and provide feedback on the peer assessment.
+#. 提交你对该问题的解答。
+#. 学习标准答案即评判标准。
+#. 评判别的学生提交的解答。
+#. 评判自己提交的解答。
+#. 获得自己的成绩以及互评的反馈。
 
-At any time during the assessment, you can see your progress through the
-assignment at the bottom of the page under **Your Grade**. A message tells you
-the steps that you still have to perform before you can receive your grade. For
-example, you might see the following message:
+在答题的任何时候，你均可以在页面底部的 **你的成绩** 下面查看到该问题当前的进度。 会有如下图所示的提示信息提示你获得成绩前所需完成的任务。 
 
 .. code-block:: xml
 
