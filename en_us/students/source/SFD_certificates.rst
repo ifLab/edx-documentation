@@ -92,48 +92,33 @@ list/allschools/verified/allcourses>`_.
 如果关于更换证书有任何疑问，请联系edX工作团队： `technical@edx.org <mailto://technical@edx.org>`_。 
 
 *************************
-Receiving a Certificate
+获取证书
 *************************
 
-Certificates are distributed shortly after a course ends--usually within two
-weeks. After the course ends, you'll see the following message under the course
-name on your dashboard:
+在课程结束后，一般会在两周时间内完成证书的分发，你将在仪表盘的课程名下看到如下信息：
 
 ``Final course details are being wrapped up at this time. Your final standing
 will be available shortly.``
 
-When your certificate is ready, your dashboard will show you your final grade
-for the class as well as a link to your certificate.
+当你的证书就绪，仪表盘会上显示你的证书链接并附上这门课程的最终成绩。
 
 .. image:: /Images/SFD_Cert_DownloadButton.png
    :width: 500
    :alt: Dashboard with course name, grade, and link to certificate
 
-If you want a paper copy of your certificate, you can select **Download Your Certificate (PDF)** to download and print the certificate from your dashboard.
+如果你想要证书的纸质版，你可以选择**下载证书（PDF）**来保存并打印它。
 
-.. note:: Your certificate lists the full name that appears on your dashboard. 
-  Before your course ends, make sure that the name on your dashboard is correct. 
-  To change your full name, go to your dashboard, and then select **edit** under 
-  **Full Name** in the left pane.
+.. note:: 证书列出了你在仪表盘上显示的全名。在课程结束之前，请确保仪表盘上的名字是正确的。如果要更改你的全名，请访问仪表盘，然后选择左侧栏中的**全名**下的**编辑**一项。
 
 =============================================
-Receiving Certificates for Self-Paced Courses
+获取自由进度课程的证书
 =============================================
 
-While most edX courses have specific start and end dates, a few courses are
-self-paced. You can start these courses anytime and work through the courseware
-at your own pace.
+大多数edX课程有着明确的开始时间和结束时间，然而也有一小部分课程是可以自由制定进度计划的。你可以在任何时间开始这门课程，浏览课件并自主学习。
 
-Receiving a certificate for a self-paced course is similar to receiving a
-certificate for a regular course. After you've completed all course assignments
-and the final exam (if applicable), a certificate is generated automatically.
-You don't have to complete any additional steps to obtain your certificate.
+获取自由进度课程的证书和普通课程课程在方式上非常相近。当你完成课程的所有任务并通过结课测试（如果有的话）后，证书将会自动生成，你不需要进行任何额外的操作即可获取你的证书。
 
-Be aware, however, that different self-paced courses issue certificates at
-different intervals. Some courses issue certificates once a month, and others issue
-certificates less frequently. For more information about your course's specific
-certificate schedule, see the About page or the **Course Info** tab for your
-course.
+但请注意，不同的自由进度课程对于证书的获得有着不一样的限制。有些证书一个月仅能获取一次，而其他课程可能规定地时间更长。若想获取更多关于证书颁发计划的信息，请查阅课程的“关于页面”或**课程信息**便签。
 
 .. _SFD On Demand Certificates: 
 
