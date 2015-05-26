@@ -187,41 +187,32 @@
 当你完成足够数量的互评之后，你就可以进行自评了。 你会看到自己的答案和互评时用到的答题要点，评判过程与互评基本相同。 完成自评后，点击 **提交自评** 。
 
 ==========================================
-Receive Your Score and Provide Feedback
+获得成绩并提供反馈
 ==========================================
 
-After you submit your self assessment, if other students are still assessing
-your responses, you see the following message under the **Assess Your Response**
-step.
+在你提交自评之后，如果别的同学在评判你的文章，将会在自评模块下面看到如下的提示信息。
 
 .. code-block:: xml
 
-  Your Grade: Waiting for Peer Assessment
+  你的成绩：正在互评中请稍后
 
-  Your response is still undergoing peer assessment. After your peers have assessed your
-  response, you'll see their feedback and receive your final grade.
+  你的答案正在进行互评，在你的同学完成互评后，你将看到同学们的反馈和你最终的得分。
 
-If you see this message, keep checking back periodically until the peer
-assessments of your work are complete.
+看到这条消息，请定期回来查看，直到你的同学完成对你答案的互评。
 
-When peer assessment is complete, you can see the scores you received from all
-of your peers, as well as your self assessment. You can also see any additional
-comments that your peers have provided.
+当对你答案的互评完成后，你将会收到你所有同学给你打出的分数，以及自评的得分。 你还可以看到所有同学写给你的评价。
 
 .. image:: /Images/PA_AllScores.png
    :alt: A student's response with peer and self assessment scores
    :width: 550
 
-If you want to, you can provide feedback on the scores that you received under **Provide Feedback on Peer Assessments**.
+如果你愿意，你还可以在 **提供互评反馈** 中提交对自己成绩的反馈。
 
 =================================================
-Assess Additional Peer Responses (optional)
+进行额外的互评（非必要环节）
 =================================================
 
-If you have assessed the required number of peer responses and completed your
-self assessment, you can assess additional peer responses. To do this, click the
-**Assess Peers** heading. If any responses remain to be assessed, a new response
-opens.
+如果你你已经完成了规定数量的互评，而且完成了自评，你就可以点击 **互评** 标题进行额外的互评，对仍需要评判的答案进行评判。
 
 ***********************
 Peer Assessment Scoring
