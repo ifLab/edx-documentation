@@ -8,8 +8,8 @@
 
 公开互动评判问题可以包括互评，自评，或两者皆有。 在互评中，你可以对你的同学提交的答案进行评判或者打分，你的同学也可以对你提交的答案进行同样的操作。 在自评中你只可以对自己的答案进行评判。 你需要将待评判的解答与教师给出的参考答案进行比较，来完成评判。
 
-标准答案是一个答案中所应该达到的要求的列表。 标准答案由 *标准* 和 *选项* 组成。 
-*标准* 是每个解答所应具有的特点，例如答案所应包含的议题。 *选项* 描述答案符合标准的程度。 下面图片展示了一个参考答案，其包含了两个标准，每个标准下面又有多个选项。
+答题要点是一个答案中所应该达到的要求的列表。 标准答案由 *标准* 和 *选项* 组成。 
+*标准* 是每个解答所应具有的特点，例如答案所应包含的议题。 *选项* 描述答案符合标准的程度。 下面图片展示了一个答题要点，其包含了两个标准，每个标准下面又有多个选项。
 
 .. image:: /Images/PA_S_Rubric.png
    :alt: Rubric showing criteria and options
@@ -32,7 +32,7 @@
 下面我们为你演示完成一个包含学生学习，互评，自评的公开互动评判问题的流程。
 
 #. 提交你对该问题的答案。
-#. 学习标准答案。
+#. 学习如何进行评判。
 #. 评判别的学生提交的答案。
 #. 评判自己提交的解答。
 #. 获得自己的成绩以及互评的反馈。
@@ -100,68 +100,53 @@
 
 
 ============================
-Learn to Assess Responses
+学习如何评判
 ============================
 
-In this step, you will learn to assess responses effectively by reviewing and
-assessing sample responses that the instructor has provided. You will try to
-select the same options for the response as the instructor selected.
+在这一环节，你将学习老师的提供的答题要点，并练习为示例答案进行评判，以熟练掌握有效的评判方式。 你为示例答案选择的选项应该尽量与老师的选择相同。
 
-.. note:: Not all instructors provide sample responses for training. If the
-   instructor did provide sample responses, this step does not appear in the
-   assignment.
+.. note:: 并不是所有的标准答案都会提供示例供你练习评判。 如果标准答案并没有提供示例，那么练习这一环节将不会出现。
+   
+   
 
-After you submit your response, one of the sample responses opens, together with
-the rubric for the assignment. Read the sample response and the rubric
-carefully, select the options that you think best reflect the response, and then
-click **Compare your selections with the instructor's selections**.
+在你提交答案之后，一个示例答案和答题要点便会打开。 请仔细阅读示例和答题要点，选择最能反映答题要点在示例中体现程度的选项，然后点击 **与老师的选择对比**
 
-* If all of your selections are the same as the instructor's selections, the
-  next sample response opens automatically.
+* 如果你的选择和老师的完全相同，便会自动进入下一个示例。
 
-* If any option that you select is not the same as the instructor's selection,
-  you see the response again, and the following message appears above the
-  response.
+* 如果你的选择和老师不同之处，你就会看到下面的提示信息出现在示例答案的上面。
 
 .. code-block:: xml
 
-  Learning to Assess Responses
-  Your assessment differs from the instructor's assessment of this response. Review the
-  response and consider why the instructor may have assessed it differently. Then, try 
-  the assessment again.
+  学习如何评判
+  你对该示例答案的评判与老师不同。 请重新阅读示例，并仔细思考老师的评判与你的不同的原因，然后再次进行你的评判。
 
-For each of the criteria, you see one of the following two messages, depending
-on whether your selections matched those of the instructor.
+你可以看到针对每个标准有如下的两种提示信息，来说明你的选择是否与老师的相同。
 
 .. code-block:: xml
 
-  Selected Options Agree
-  The option you selected is the option that the instructor selected.
+  选择的选项相同
+  您选择的选项是老师选择的选项。
 
 .. code-block:: xml
+  
+  选择的选项不同
+  您选择的选项不是老师选择的选项。
 
-  Selected Options Differ
-  The option you selected is not the option that the instructor selected.
-
-In the following example, the student chose one correct option and one incorrect
-option.
+在下面的例子中，该学生选择了一个正确的选项和一个错误的选项。
 
 .. image:: /Images/PA_TrainingAssessment_Scored.png
    :alt: Sample training response, scored
    :width: 500
 
-You continue to assess the sample response until the options you select for all
-criteria match the options that the instructor selected.
+你需要不断地修改自己的评判，直到自己对每个标准的选择与老师的完全相同。
 
-When you have successfully assessed all of the sample responses, you move to the
-next step in the assignment.
+完成所有的示例评判后，便会进入下一个环节。
 
 =====================
-Assess Peer Responses
+互评
 =====================
 
-When the peer assessment step starts, you see each original question, another
-student's responses, and the rubric for the assignment. Above the responses you
+当互评环节开始时，你会看见原问题，另一个学生的答案以及这个问题的答题要点。 Above the responses you
 can see how many responses you are expected to assess and how many you have
 already assessed.
 
