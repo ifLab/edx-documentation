@@ -298,15 +298,12 @@ replacement response, your grade is zero for the assignment.
 
 
 ******************************************************
-Try an Example Open Response Assessment Problem
+体验公开评判问题
 ******************************************************
 
-If you want to try an example open response assessment problem, check out the
-edX demonstration course, `DemoX <https://www.edx.org/course/edx/edx-
-demox-1-demox-4116#.VBxWCLZ8GoV>`_. In addition to giving you a tour of a
-typical edX course, DemoX contains `information about open response assessments 
-<https://courses.edx.org/courses/edX/DemoX.1/2014/courseware/70a1e3505d83411bb72
-393048ac4afd8/1e5cd9f233a2453f83731ccbd863b731/>`_ and an `example peer
+如果你想体验公开评判问题，请查看edX的示例课程 `DemoX <https://www.edx.org/course/edx/edx-
+demox-1-demox-4116#.VBxWCLZ8GoV>`_。 为了使你能体验到最真实的edX课程，DemoX包含了 `information about open response assessments <https://courses.edx.org/courses/edX/DemoX.1/2014/courseware/70a1e3505d83411bb72
+393048ac4afd8/1e5cd9f233a2453f83731ccbd863b731/>`_ 和 `example peer
 assessment <https://courses.edx.org/courses/edX/DemoX.1/2014/courseware/70a1e350
 5d83411bb72393048ac4afd8/1e5cd9f233a2453f83731ccbd863b731/2>`_.
 
