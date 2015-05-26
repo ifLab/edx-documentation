@@ -3,122 +3,106 @@
 .. _Adding a Wiki Article:
 
 ********************************
-Adding a Wiki Article
+添加一篇Wiki文章
 ********************************
 
-When you add an article to the wiki, be aware of what level you are currently
-viewing, to make sure that you add your new article to the correct level in the
-course wiki.
-
-To move down a level in the wiki, click the **See all children** link; to move
-up, click the appropriate level in the wiki breadcrumb trail links at the top of
-the page.
+当你添加一篇Wiki文章的时候，你要清楚自己的当前查看等级，确保你添加的新文章在正确的课程Wiki上。
+请点击 **查看所有子文章** 链接，点击Wiki页面顶部的链接来提高浏览的即时性。
 
 ===============================
-Add Articles at the Same Level
+添加即时的文章
 ===============================
 
-Follow these steps to add a wiki article at your current level. If you do not
-have permissions to add an article, when you click the **Add Article** button, a
-message indicates "Permission Denied" .
+请跟随下列步骤来添加一个即时的Wiki文章。如果你没有添加文章的权限，那么点击 **添加文章** 按钮，将会弹出一条 **权限被拒绝** 的提示。
 
-#. In your course, click **Wiki**.
-#. Navigate to the level where you want to add a new article.
-#. Click the **Add Article** button near the top right of the page.
-#. On the new article page, add a title for the page, and optionally a few
-   keywords to create a "slug" that provides a more specific location identifier for your article.
-#. Add contents to the article. You can enter plain text and use Markdown syntax to add formatting. For help with Markdown syntax, click the link to the cheat sheet at the upper right corner of the **Contents** field.
-#. When you have finished entering content for your wiki article, click **Create Article**.
+#. 在你的课程中点击 **Wiki** 。
+#. 选择你希望添加新文章的等级。
+#. 点击在顶部右侧的 **添加文章** 按钮。
+#. 在新文章页面，为文章添加一个标题和一些可选的关键字来创建一个别名，以及更具体的文章标识符。
+#. 添加文章的内容，你可以输入文本并使用Markdown进行格式化，想要获得Markdown的语法支持，可以点击 **内容** 页面右上角的cheat sheet按钮。
+#. 当你完成Wiki文章内容的输入后，点击 **创建文章** 。
 
 =====================================
-Add Articles Below the Current Level
+添加当前文章的子文章
 =====================================
 
-Follow these steps to add a child article to your current article. If you do not
-have permissions to add an article, when you click the **Add Article** button, a
-message indicates "Permission Denied" .
+跟随下列步骤来完成一篇当前文章下子文章的创建，如果你没有添加文章的权限，那么点击 **添加文章** 按钮，将会弹出一条 **权限被拒绝** 的提示。
 
-#. In your course, click **Wiki**.
-#. Navigate to the level above where you want to add the new child article.
-#. Click **See all children**.
-#. Click the **Add Article** button under the wiki title.
-#. On the new article page, add a title for the page, and optionally a few
-   keywords to create a "slug" that provides a more specific location identifier for your article.
-#. Add contents to the article. You can enter plain text and use Markdown syntax to add formatting. For help with Markdown syntax, click the link to the cheat sheet at the upper right corner of the **Contents** field.
-#. When you have finished entering content for your wiki article, click 
-   **Create Article**.
+#. 在你的课程中点击 **Wiki** 。
+#. 选择你希望添加新的子文章的等级。
+#. 点击 **查看所有子文章** 。
+#. 点击Wiki标题下部的 **添加文章** 按钮。
+#. 在新文章页面，为文章添加一个标题和一些可选的关键字来创建一个别名，以及更具体的文章标识符。
+#. 添加文章的内容，你可以输入文本并使用Markdown进行格式化，想要获得Markdown的语法支持，可以点击 **内容** 页面右上角的cheat sheet按钮。
+#. 当你完成Wiki文章内容的输入后，点击 **创建文章** 。
    
 .. _Editing a Wiki Article:
 
 ********************************
-Editing a Wiki Article
+编辑一篇Wiki文章
 ********************************
+`
+如果你有编辑一篇文章的权限，你可以在当前文章内容右侧看到 **编辑** 按钮。
 
-If you have permissions to edit an article, you see an **Edit** button and icon to the right of the article content.
+跟随下面的步骤来修改一篇Wiki文章。
 
-Follow these steps to make changes to a wiki article.
-
-#. In your course, click **Wiki**.
-#. Navigate to the article you want to edit.
-#. Click **Edit**.
-#. Make your changes. For help with Markdown syntax, click the link to the cheat sheet at the upper right corner of the **Contents** field.
-#. In the **Summary** field at the bottom left, below the **Contents** field, enter a short description of the changes you made. This description appears in the **Changes** list, and helps other users of the wiki understand what changes you made to the article.
-#. When you have finished making edits, click **Save changes**.
+#. 在你的课程中点击 **Wiki** 。
+#. 选择你希望编辑的文章。
+#. 点击 **编辑** 。
+#. 修改文章，想要获得Markdown的语法支持，可以点击 **内容** 页面右上角的cheat sheet按钮。
+#. 在 **内容** 栏底部左侧的 **总结** 栏内，输入简短的改动描述。这些描述将会在 **变更** 列表内显示，并且帮助其他Wiki用户了解你对本文章进行了怎样的修改。
+#. 当你完成了编辑后，点击 **保存变更** 。
 
 .. _Searching for Wiki Articles:
 
 ********************************
-Searching for Wiki Articles
+Wiki文章搜索
 ********************************
 
-A **Filter** field is available only if any level of the wiki contains multiple
-articles.
+只有在各层次文章含有多篇文章的情况下 **过滤** 栏才可以使用。
 
-Enter a text string in the **Filter** field to find a list of all
-articles with that text string in their titles.
+在 **过滤** 栏内输入一段文字来显示所有标题包含此段文字的所有文章。
   
 .. _Managing Versions of a Wiki Article:
 
 ***********************************
-Managing Versions of Wiki Articles
+管理Wiki文章版本
 ***********************************
 
-The wiki includes a change history for each article. You can view each past
-version of the article, roll back to a selected earlier version of the article,
-or merge the current version of the article with a selected earlier version.
+Wiki包含了所有文章的变更历史，你可以查看每篇文章的历史版本，或者回滚到以前版本的文章，或者将文章的当前版本与选定的早期版本进行归并。
 
 =====================================================
-View a List of Previous Versions of a Wiki Article
+查看Wiki文章的历史版本
 =====================================================
 
-#. In your course, click **Wiki**.
-#. Navigate to the wiki article for which you want to see the change history.
-#. Click **Changes**. Previously saved versions of the current article are listed, with the most recent at the top.
+#. 在你的课程中点击 **Wiki** 。
+#. 选中你希望查看历史版本的Wiki文章。
+#. 点击 **变更** ，之前保存的版本和当前版本的文章将被按照时间顺序列出。
 
 =====================================================
-View a Previous Version of a Wiki Article
+浏览一篇历史Wiki文章
 =====================================================
 
-#. On the **Changes** page for your wiki, select the revision of the article that you want to view.
-#. Click **Preview this revision** to see the article as it appeared after the revision was made.
+#. 在Wiki的 **变更** 页面，选择你想查看的文章修订。
+#. 点击 **浏览本次修订** 来查看经过本次修订的文章版本。
 
 =====================================================
-See Line by Line Changes in a Previous Version
+分条查看历史版本变更
 =====================================================
 
-#. On the **Changes** page for your wiki, select the revision of the article that you want to view.
-#. Click the linked date, time, and author information to see the line-by-line changes made in that revision. Text that is highlighted in red has been replaced by the text that is highlighted in green below it.
+#. 在Wiki的 **变更** 页面，选择要查看的文章的修订。
+#. 点击变更日期，时间，和作者信息来分条查看当次变更的变化记录，修改中被删除的部分会用红色标记，添加的部分会用绿色标记。
 
 =====================================================
-Replace a Current Version with a Previous Version
+用以前版本替换当前版本
 =====================================================
 
-#. On the **Changes** page for your wiki, select the revision of the article that you want to roll back to. 
-#. Click **Switch to selected version** to replace the current version with the selected one.
+#. 在Wiki的 **变更** 页面，选择你想要回滚的历史修改版本。
+#. 点击 **切换到所选版本** 来用选中版本替换当前版本。
 
 =====================================================
-Combine a Current Version with a Previous Version
+整合当前版本与历史版本
 =====================================================
 
-#. On the **Changes** page for your wiki, select the revision of the article that you want to merge with the current version.
-#. Click **Merge selected with current** to combine the current and the selected versions.
+#. 在Wiki的 **变更** 页面，选择你想要归并的历史修改版本。
+#. 点击 **归并所选版本** 来把所选版本归并到当前版本上来。
