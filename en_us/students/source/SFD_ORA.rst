@@ -8,14 +8,14 @@
 
 公开互动评判问题可以包括互评，自评，或两者皆有。 在互评中，你可以对你的同学提交的答案进行评判或者打分，你的同学也可以对你提交的答案进行同样的操作。 在自评中你只可以对自己的答案进行评判。 你需要将待评判的解答与教师给出的参考答案进行比较，来完成评判。
 
-答题要点是一个答案中所应该达到的要求的列表。 标准答案由 *标准* 和 *选项* 组成。 
-*标准* 是每个解答所应具有的特点，例如答案所应包含的议题。 *选项* 描述答案符合标准的程度。 下面图片展示了一个答题要点，其包含了两个标准，每个标准下面又有多个选项。
+得分要点是一个答案中所应该达到的要求的列表。 得分要点由 *要点* 和 *选项* 组成。 
+*要点* 是每个解答所应具有的特点，例如答案所应包含的议题。 *选项* 描述答案符合要点的程度。 下面图片展示了一个得分要点，其包含了两个要点，每个要点下面又有多个选项。
 
 .. image:: /Images/PA_S_Rubric.png
    :alt: Rubric showing criteria and options
    :width: 500
 
-在你评判一个解答时，你需要选择最能描述解答体现标准程度的选项。
+在你评判一个解答时，你需要选择最能描述解答体现要点程度的选项。
 
 有的老师会创建一个 **最佳解答** 单元来展示这个问题的高分答案和其得分。 如果有这个单元，你就能在完成了这个问题的每一步之后，在自己的得分下面查看到它。
 
@@ -103,13 +103,13 @@
 学习如何评判
 ============================
 
-在这一环节，你将学习老师的提供的答题要点，并练习为示例答案进行评判，以熟练掌握有效的评判方式。 你为示例答案选择的选项应该尽量与老师的选择相同。
+在这一环节，你将学习老师的提供的得分要点，并练习为示例答案进行评判，以熟练掌握有效的评判方式。 你为示例答案选择的选项应该尽量与老师的选择相同。
 
-.. note:: 并不是所有的标准答案都会提供示例供你练习评判。 如果标准答案并没有提供示例，那么练习这一环节将不会出现。
+.. note:: 并不是所有的要点答案都会提供示例供你练习评判。 如果要点答案并没有提供示例，那么练习这一环节将不会出现。
    
    
 
-在你提交答案之后，一个示例答案和答题要点便会打开。 请仔细阅读示例和答题要点，选择最能反映答题要点在示例中体现程度的选项，然后点击 **与老师的选择对比**
+在你提交答案之后，一个示例答案和得分要点便会打开。 请仔细阅读示例和得分要点，选择最能反映得分要点在示例中体现程度的选项，然后点击 **与老师的选择对比**
 
 * 如果你的选择和老师的完全相同，便会自动进入下一个示例。
 
@@ -120,7 +120,7 @@
   学习如何评判
   你对该示例答案的评判与老师不同。 请重新阅读示例，并仔细思考老师的评判与你的不同的原因，然后再次进行你的评判。
 
-你可以看到针对每个标准有如下的两种提示信息，来说明你的选择是否与老师的相同。
+你可以看到针对每个要点有如下的两种提示信息，来说明你的选择是否与老师的相同。
 
 .. code-block:: xml
 
@@ -138,7 +138,7 @@
    :alt: Sample training response, scored
    :width: 500
 
-你需要不断地修改自己的评判，直到自己对每个标准的选择与老师的完全相同。
+你需要不断地修改自己的评判，直到自己对每个要点的选择与老师的完全相同。
 
 完成所有的示例评判后，便会进入下一个环节。
 
@@ -146,15 +146,15 @@
 进行互评
 =====================
 
-当互评环节开始时，你会看见原问题，另一个学生的答案以及这个问题的答题要点。 如下图所示，在答案上面你能看到自己需要评判的答案数量和已完成的数量。 
+当互评环节开始时，你会看见原问题，另一个学生的答案以及这个问题的得分要点。 如下图所示，在答案上面你能看到自己需要评判的答案数量和已完成的数量。 
 
 .. image:: /Images/PA_S_PeerAssmt.png
    :alt: In-progress peer assessment
    :width: 500
 
-你评判的方式和你在上一步“学习如何评价”中的相同，只需在答题要点中选择相应的选项即可。 这个环节在答题要点下面增加一个评论区，你可以在这里对别人的答案进行评论。
+你评判的方式和你在上一步“学习如何评价”中的相同，只需在得分要点中选择相应的选项即可。 这个环节在得分要点下面增加一个评论区，你可以在这里对别人的答案进行评论。
 
-.. note:: 答案的每个标准都可以有一个评论区。 每个评论区中，你的评论不能超过300字。 除了分段评价，还有一个总评区域。 如下图中，每个标准下都有一个评论区，在所有标准结束后还有一个总评区域。
+.. note:: 答案的每个要点都可以有一个评论区。 每个评论区中，你的评论不能超过300字。 除了分段评价，还有一个总评区域。 如下图中，每个要点下都有一个评论区，在所有要点结束后还有一个总评区域。
 
     .. image:: /Images/PA_CriterionAndOverallComments.png
        :alt: Rubric with comment fields under each criterion and under overall response
@@ -184,7 +184,7 @@
 进行自评
 =====================
 
-当你完成足够数量的互评之后，你就可以进行自评了。 你会看到自己的答案和互评时用到的答题要点，评判过程与互评基本相同。 完成自评后，点击 **提交自评** 。
+当你完成足够数量的互评之后，你就可以进行自评了。 你会看到自己的答案和互评时用到的得分要点，评判过程与互评基本相同。 完成自评后，点击 **提交自评** 。
 
 ==========================================
 获得成绩并提供反馈
@@ -215,77 +215,63 @@
 如果你你已经完成了规定数量的互评，而且完成了自评，你就可以点击 **互评** 标题进行额外的互评，对仍需要评判的答案进行评判。
 
 ***********************
-Peer Assessment Scoring
+互评得分
 ***********************
 
-Peer assessments are scored by criteria. An individual criterion's score is the
-*median*, not average, of the scores that each peer assessor gave that
-criterion. For example, if the Ideas criterion in a peer assessment receives a
-10 from one student, a 7 from a second student, and an 8 from a third student,
-the Ideas criterion's score is 8.
+互评的得分是以每个要点的得分来呈现的，每个要点得分的分数是所有人给出分数的中位数，而不是平均数。 例如，有三个学生对你答案中的思想要点进行了评分，三人分别给出了10分，7分，和8分，则思想要点的最后得分为8分。
 
-Your final score for a peer assessment is the sum of the median scores for each individual criterion. 
+你最后的互评得分是每个要点得分的中位数之和。
 
-For example, a response might receive the following scores from peer assessors.
+例如，下图展示了一个答案所得到的互评分数。
 
 .. list-table::
    :widths: 25 10 10 10 10
    :stub-columns: 1
    :header-rows: 1
 
-   * - Criterion Name
-     - Peer 1
-     - Peer 2
-     - Peer 3
-     - Median
-   * - Ideas (out of 10)
+   * - 要点名称
+     - 学生 1
+     - 学生 2
+     - 学生 3
+     - 中位数
+   * - 思想（满分10分）
      - 10
      - 7
      - 8
      - **8**
-   * - Content (out of 10)
+   * - 内容（满分10分）
      - 7
      - 9
      - 8
      - **8**
-   * - Grammar (out of 5)
+   * - 语法（满分5分）
      - 4
      - 4
      - 5
      - **4**
 
-To calculate the final score, the system adds the median scores for each criterion:
+系统求出所有中位数的和，作为这个答案的最后得分:
 
-  **Ideas median (8/10) + Content median (8/10) + Grammar median (4/5) = final score (20/25)**
+  **思想 中位数 (8/10) + 内容 中位数 (8/10) + 语法 中位数 (4/5) = 最终得分 (20/25)**
 
-Note, again, that your final score is not the median of the scores that each individual peer assessor gave the response.
+再次注意，你的最后得分不是别人给你评判总分的中位数。
 
 ==================================
-View Top Responses (optional)
+查看高分选项（非必要环节）
 ==================================
 
-If the instructor has included a **Top Responses** section, you can see the
-highest-scoring responses that your peers have submitted. This section only
-appears after you have completed all the steps of the assignment.
-
+如果老师提供了 **高分答案** 这个单元，你就可以看到所有提交答案中得分最高的答案。 这部分只会在你已经完成了解答该问题的全部步骤之后出现。
 .. image:: /Images/PA_TopResponses.png
    :alt: Section that shows the text and scores of the top three responses for the assignment
    :width: 500
 
 
 ********************************
-Cancelled Responses
+答案被撤销
 ********************************
+如果老师觉得你已经提交的答案不正确，她可以撤销你的答案，不让其接受互评。 在公开评判问题中会有提示信息告知你的答案被撤销的日期和时间，以及老师给出的撤销原因。
 
-If the instructor deems a response that you have submitted to be inappropriate,
-she can cancel that response and remove it from peer grading. In the open
-response assessment you see an indicator that your submission was cancelled,
-with the date and time of the cancellation, and a comment by the instructor
-about the reason.
-
-The instructor might allow you to submit a replacement response for the
-cancelled one, or she might not. If she does not allow you to submit a
-replacement response, your grade is zero for the assignment.
+由老师来决定你是否能提交一个新的答案顶替被撤销的答案，如果不能，那你该问题的成绩为0.
 
 
 ******************************************************
