@@ -1,7 +1,7 @@
 .. _Course Discussions Index:
 
 ######################################
-Course Discussions
+课程讨论
 ######################################
 
 .. toctree::
