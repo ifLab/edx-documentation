@@ -41,8 +41,8 @@
 
 .. code-block:: xml
 
-  Not Completed
-  You have not completed the peer assessment step and self assessment step of this problem.
+  未完成
+  你还没有完成互评和自评环节。
 
 =====================
 提交你的答案
@@ -61,12 +61,10 @@
 
 .. code-block:: xml
 
-  Waiting for Peer Responses
-  All submitted peer responses have been assessed. Check back later to see if more students
-  have submitted responses. You'll receive your grade after you complete the peer assessment
-  and self assessment steps, and after your peers have assessed your response.
+  正在等待互评
+  所有已提交的答案均已被评判。 请稍后再查看是否有更多的同学提交了答案。 你只有完成了互评和自评环节才能得到自己的得分。
 
-注意，你可以在提交答案之后随时查看你已提交的答案。 点击 **Your Response** 便可以展开答题区域，你可以在其中看到你的答案及其状态，以及在得到成绩前还需需完成的步骤。
+注意，你可以在提交答案之后随时查看你已提交的答案。 点击 **你的答案** 便可以展开答题区域，你可以在其中看到你的答案及其状态，以及在得到成绩前还需需完成的步骤。
 
 .. image:: /Images/PA_S_ReviewResponse.png
    :alt: Image of the Response field collapsed and then expanded
@@ -88,7 +86,7 @@
 
 #.点击 **选择文件**.
 #.再打开的对话框中选择需要的文件，点击 **打开** 。
-#.当对话框关闭时，点击 **Upload Your Image** 。
+#.当对话框关闭时，点击 **上传图片** 。
 
 你的图片会出现在答题区域的下方，图片的名称在 **选择文件** 按钮旁显示。
 如果你想要更换图片，只需重复步骤1-3。
