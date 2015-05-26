@@ -33,8 +33,8 @@
 
 #. 提交你对该问题的答案。
 #. 学习如何进行评判。
-#. 评判别的学生提交的答案。
-#. 评判自己提交的解答。
+#. 进行互评。
+#. 进行自评。
 #. 获得自己的成绩以及互评的反馈。
 
 在答题的任何时候，你均可以在页面底部的 **你的成绩** 下面查看到该问题当前的进度。 会有如下图所示的提示信息提示你获得成绩前所需完成的任务。 
@@ -143,55 +143,37 @@
 完成所有的示例评判后，便会进入下一个环节。
 
 =====================
-互评
+进行互评
 =====================
 
-当互评环节开始时，你会看见原问题，另一个学生的答案以及这个问题的答题要点。 Above the responses you
-can see how many responses you are expected to assess and how many you have
-already assessed.
+当互评环节开始时，你会看见原问题，另一个学生的答案以及这个问题的答题要点。 如下图所示，在答案上面你能看到自己需要评判的答案数量和已完成的数量。 
 
 .. image:: /Images/PA_S_PeerAssmt.png
    :alt: In-progress peer assessment
    :width: 500
 
-You assess other students' responses by selecting options in the rubric, in the
-same way you assessed the sample responses in the "learn to assess responses"
-step. Additionally, this step has a field below the rubric where you can provide
-comments about the student's responses.
+你评判的方式和你在上一步“学习如何评价”中的相同，只需在答题要点中选择相应的选项即可。 这个环节在答题要点下面增加一个评论区，你可以在这里对别人的答案进行评论。
 
-.. note:: Some assessments have an additional **Comments** field for one or more
-   of the assessment's individual criteria. You can enter up to 300 characters
-   in these fields. In the following image, both criteria have a **Comments**
-   field. There is also a field for overall comments on the response.
+.. note:: 答案的每个标准都可以有一个评论区。 每个评论区中，你的评论不能超过300字。 除了分段评价，还有一个总评区域。 如下图中，每个标准下都有一个评论区，在所有标准结束后还有一个总评区域。
 
     .. image:: /Images/PA_CriterionAndOverallComments.png
        :alt: Rubric with comment fields under each criterion and under overall response
        :width: 600
 
-After you have selected options in the rubric and provided additional comments
-about the responses, click **Submit your assessment and move to response
-#<number>**.
+在你完成了评判并提交了评论之后，点击 **提交你的评判，移至第#<编号>号答案** 。
 
-When you submit your assessment of the first student's responses, another set of
-responses opens for you. Assess these responses in the same way that you
-assessed the first student's responses, and then submit your assessment. You
-will repeat these steps until you have assessed the required number of
-responses. The number in the upper-right corner of the step is updated as you
-assess each set of responses.
+当你评判完第一个同学的答案时，另一个同学的答案就会打开。 你需要用相同的方式来评判这位同学的答案，并提交你的评判。 你要不断重复上面的步骤，直到你完成了规定数量的互评。 右上角会显示你已经完成的互评数量，和你需要完成的总数。
 
-Assess Additional Peer Responses
+超额互评
 ********************************
 
-You can assess more peer responses if you want to. After you assess the required
-number of responses, the step "collapses" so that only the **Assess Peers**
-heading is visible.
+如果你愿意，你可以进行比规定数量多的互评。 如下图所示，当你完成规定数量的互评时，这个环节就在“结束”了，你只能看到互评的标题。
 
 .. image:: /Images/PA_PAHeadingCollapsed.png
    :width: 500
    :alt: The peer assessment step with just the heading visible
 
-To assess more responses, click the **Assess Peers** heading to expand the step,
-then click **Continue Assessing Peers**.
+想要进行更多互评，请点击 **互评** 的标题展开该环节，然后再点击 **继续互评** 即可。
 
 .. image:: /Images/PA_ContinueGrading.png
    :width: 500
@@ -199,13 +181,10 @@ then click **Continue Assessing Peers**.
 
 
 =====================
-Assess Your Response
+进行自评
 =====================
 
-When you have completed the required number of peer assessments, your self
-assessment opens. You see your responses along with the same rubric that you
-used in the peer assessment step. Assess your responses, then click **Submit
-Your Assessment**.
+当你完成足够数量的互评之后，你就可以进行自评了。 你会看到自己的答案和互评时用到的答题要点，评判过程与互评基本相同。 完成自评后，点击 **提交自评** 。
 
 ==========================================
 Receive Your Score and Provide Feedback
