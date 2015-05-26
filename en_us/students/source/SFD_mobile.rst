@@ -38,7 +38,7 @@ edX移动端app是‘edx.org’网站的一个衍生产品。你可以用这个a
 
 我们计划未来将此设备应用于安卓平板和iPad。
 ================================================
-我怎么发送问题和建议到edX?
+如何发送问题和建议到edX?
 ================================================
 
 我们很高兴能够收到您关于移动端app的反馈. 在 **我的课程**
@@ -51,26 +51,27 @@ edX移动端app是‘edx.org’网站的一个衍生产品。你可以用这个a
 *************************
 
 ======================================
-我需要一个edX账户吗?
+是否需要一个edX账户?
 ======================================
 
 在加入课程之前，你需要拥有一个edX账户。你可以在edX移动端app上注册一个edX账户，或者在浏览器上访问`edx.org`_ website.当你新建一个账户，你需要连接到互联网。
 
 ======================================
-我如何创建一个edX账户？
+如何创建一个edX账户？
 ======================================
 
 当你打开edX移动端app, 选择 **注册并开始学习**. 你可以用你的邮箱地址或facebook或google账号来创建一个edX账号。你同样提交以下信息。
 
 * 你的名字。
-* The username that will identify you to course teams and to other learners.你的用户名会
+* 这将确定你当然团队和其他学习者的用户名。
+你的用户名会区分你的团队和其他学习者。
 * 一个密码。
 * 您所在的国家或地区。 
 
 创建完用户后，你可以寻找感兴趣的课程并加入。
 
 ==================================================
-如何找到课程以加入？
+如何找到课程并加入？
 ==================================================
 
 当你打开app并登录你的edX账户时，你会看到你当前加入的课程以移动版呈现在列表中。在列表结尾，选择 **找到一个移动版课程**.
@@ -88,7 +89,7 @@ edX移动端app是‘edx.org’网站的一个衍生产品。你可以用这个a
 
 
 ========================================
-我如何退出一门课程？
+如何退出一门课程？
 ========================================
 
 退出一门课程, 使用浏览器来访问 `edx.org`_ website. 在你的 :ref:`dashboard<SFD Learner Dashboard>`上退出课程.
@@ -100,12 +101,11 @@ edX移动端app是‘edx.org’网站的一个衍生产品。你可以用这个a
 *************************
 
 ========================================================
-我可以选修一门课程完全是我的移动设备上？
-？这句有问题
+如何在我的移动设备上选修一门课程？
 ========================================================
 
-不是在这个时候。 利用edX移动端app, 你可以下载课程视频，以便在没有网络连接的时候观看。 To complete other work,
-including readings, homework problems, and exams, use a computer.
+不是在这个时候。 （/这句有问题）利用edX移动端app, 你可以下载课程视频，以便在没有网络连接的时候观看。 
+用电脑来完成其他工作，包括阅读，作业和考试。
 
 ========================================================
 如何在讨论区发布问题？
@@ -123,8 +123,7 @@ including readings, homework problems, and exams, use a computer.
 如何下载视频？
 ================================
 
-要下载视频, select the "download" icon that appears to the right of each
-section, subsection, or video name. 
+要下载视频, 选择出现在每个章节，小节或食品名称旁边的 "下载" 图标。
 
 * 如果你选择下载一个章节或小段，你会下载那个章节或小段的所有内容。
 * 如果你选择下载一个视频，仅会下载那个视频。
@@ -139,69 +138,60 @@ section, subsection, or video name.
 在这个app中视频数据将会用到多少数据？
 ================================================
 
-Course videos are optimized for mobile playback, but watching or downloading any
-video can result in heavy data use. We recommend using a Wi-Fi connection if you
-intend to watch or download a lot of videos. The edX app has a **Download only
-on Wi-Fi** setting that is enabled by default to help you avoid using your
-cellular network accidentally.
+视频为手机播放进行了优化，但观看或下载任何视频都可能会导致大量的数据使用。
+如果你打算观看或下载大量视频，我们建议你使用Wi-Fi链接。
+edX的app有一个 **仅在Wi-Fi环境下下载** 设置，默认情况下使用此设置，以避免用到你的手机移动网络。
 
 ========================================================================
-What are the numbers to the right of section and subsection names?
+章节和小节名字右边的数字是什么？
 ========================================================================
 
-The number to the right of a section or subsection name is the number of videos
-in that section or subsection.
+章节和小节名字右边的数字是该视频在该节或该小节的编号。
 
 .. image:: /Images/Mob_NumberVideos.png
    :width: 300
    :alt: List of sections with the number of videos circled.
 
 ========================================================
-视频名称左侧的源泉是什么？
+视频名称左侧的圆圈是什么？
 ========================================================
 
-The circle indicates whether you have already played a video. A blue circle
-means that you have not started playing the video. A half-filled circle means
-that you played part of the video. A gray circle means that you played the
-entire video.
+圆圈表明您是否已经播放过的视频。
+一个蓝色的圆圈意味着你还没有开始播放视频。
+一个半实心圆圈你播放过视频的一部分。
+灰色的圆圈意味着你播放过整个视频。
 
 ========================================
 如何全屏观看视频？
 ========================================
 
-Rotate your phone until the video changes to landscape, or select "full
-screen" in the bottom right corner of the video screen.
+旋转你的手机，直到视频变为横向，或者在视频屏幕的右下角选择“全屏幕”。
 
 .. image:: /Images/Mob_FullScreenIcon.png
    :width: 300
    :alt: Video with "full screen" icon circled.
 
 ==================================
-How can I see captions?
 如何查看看字幕？
 ==================================
 
-While a video plays, select **Settings** (the "gear" icon) at the lower right,
-and then select **Closed Captions**. If the video has captions, a list of
-available languages appears. Select the language that you want from the list.
+视频播放时, 选择右下角的 **设置** ( "齿轮" 图标) ,
+然后选择 **关闭字幕**. 如果视频有字幕, 会出现一个列表的可选语言。
+在列表里选择你所需要的语言。
 
 .. image:: /Images/Mob_CCwithLanguages.png
    :width: 500
    :alt: Video with closed caption language menu visible.
 
-Some courses have captions in only one language, while others offer several
-language choices.
+有些课程有只用一种语言的字幕，而其他提供了几个提供语言的选择。
 
 ==================================
-Can I speed up the videos?
+如何加速视频？
 ==================================
 
-You can change video speeds on the iPhone app. While a video plays, select
-**Settings** (the "gear" icon) at the lower right, and then select **Video
-Speed**.
+你可以在iPhone上改变视频速度。当视频播放的时候，选择右下角的 **设置** ("齿轮" 图标) , 然后选择 **视频速度**。
 
-On the Android app, videos currently run only in their original speeds. We are
-working on the ability to change video speeds.
+在app上, 影片目前只在原来的速度运行。 我们正在致力于改变视频速度改变功能。
 
 ========================================
 如何更改我的下载设置？
@@ -211,14 +201,13 @@ working on the ability to change video speeds.
 
    .. image:: /Images/Mob_Menu.png
       :width: 300
-      :alt: Mobile "My Courses" page with an arrow pointing to the menu in the
-        upper left corner.
+      :alt: 移动“我的课程”页面有一个箭头指向左上角的菜单。
 
 #. S选择 **我的设置**. 
 
 #. 改变 **仅在Wi-Fi环境下下载** 设置。
 
-.. note:: 假如你正在用Wi-Fi网络，默认情况下,这个app被设置为它仅下载内容,包括视频。如果你更改了设置，你的手机流量可能会超出预算。
+.. 注解:: 假如你正在用Wi-Fi网络，默认情况下,这个app被设置为它仅下载内容,包括视频。如果你更改了设置，你的手机流量可能会超出预算。
 
 ==================================
 如何删除已下载视频？
@@ -230,11 +219,9 @@ working on the ability to change video speeds.
 
 #. 在 **所有视频** 页面, 选择包含你想删除的视频的课程。然后，选择**最近视频**。
 
-#. 在视频列表的底部, 选择 **编辑**. 一个 "选择" icon
-   appears next to each video name and at the top of the page.
-
-#. Select the videos that you want to delete. To select all of the videos,
-   select the icon at the top of the page.
+#. 在视频列表的底部, 选择 **编辑**。在页面上方，每个视频旁边会出现一个 "选择" 图标。
+ 
+#. 选择你要删除的视频。 要选择所有的视频，选择页面顶部的图标。
 
 #. 选择 **删除**。
 
@@ -245,16 +232,11 @@ working on the ability to change video speeds.
 *************************
 
 ==========================================================================================
-I see "This video is not available" when I try to watch a video. What can I do?
-我看到“视频不可用”
+当场是观看视频时，看到“视频不可用”。我可以做什么？
 ==========================================================================================
 
-If you have problems viewing videos, make sure that you have an Internet
-connection and then try to view or download the video again.
 如果你在观看视频的时候发生问题，请确保以你已经连接上互联网，然后尝试再次查看和下载视频。
-If problems persist, let us know. On the **My Courses** page, select the
-假如问题仍然发生，请让我们知道。在页面，选择“菜单”图标，然后选择 **提交反馈**
-"menu" icon, and then select **Submit Feedback**.
+假如问题仍然发生，请让我们知道。在页面，选择“菜单”图标，然后选择 **提交反馈**。
 
 
 .. _Google Play: https://play.google.com/store/apps/details?id=org.edx.mobile
