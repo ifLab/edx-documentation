@@ -1,17 +1,13 @@
 .. _Course Discussions:
 
 ####################
-Course Discussions
+课程讨论
 ####################
 
-Course discussions give you the opportunity to start conversations with other
-students, ask questions that other students or course staff can answer, and
-participate in the course community. If you have not previously participated in
-an online discussion forum, see the introductory :ref:`Anatomy of edX Course
-Discussions` section.
+课程讨论为你提供了一个和其他同学交流的机会，你可以向其他同学或者教职人员提出问题并寻求解答，你还可以参加到课程社区中。 如果你之前从没参加过线上讨论论坛，你可以在这里查看介绍 :ref:`Anatomy of edX Course
+Discussions` .
 
-This chapter also describes features of edX discussions that can make your
-participation more effective:
+本章还介绍了edX的讨论功能的特点，可以让你的参与更高效：
 
 * :ref:`Explore Posts`
 
