@@ -21,4 +21,4 @@
 
 .. include:: ../../shared/running_course/wiki_tasks.rst 
 
-每门课程的Wiki都是edX-wide Wiki的一个子Wiki，在任何Wiki内，你可以点击页面左顶部的 **Wiki**链接到edX-wide Wiki。如果想要回到你的课程Wiki，点击页面顶部的 **Wiki** 按钮。
+每门课程的Wiki都是edX-wide Wiki的一个子Wiki，在任何Wiki内，你可以点击页面左顶部的 **Wiki** 链接到edX-wide Wiki。如果想要回到你的课程Wiki，点击页面顶部的 **Wiki** 按钮。
