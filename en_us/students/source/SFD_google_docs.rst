@@ -1,78 +1,55 @@
 .. _Google Drive:
 
 ####################################
-Embedded Files and Calendars
+可嵌入的文件和日历
 ####################################
 
-Courses can include files, such as documents, spreadsheets, and presentations,
-and a calendar. Your instructor uses Google to create and maintain these files
-and calendars. They appear in the body of your course just like any other
-course content.
+课程能够包含附件,比如文档,电子表格，演示和日历. 你的教师使用Google创建主要并维护这些文件和日历.它们就像任何其他的课程内容一样在你的课程中出现.
 
-.. note:: Google services are not available in some regions and countries. 
- If Google services are not available in your area, you might see an "image
- unavailable" message in the place of the Google file or calendar. Your
- instructor might provide alternative resources if Google services are not
- available for you.
-
+.. 注意:: Google的服务在一些国家和宗教并不可获得. 如果你的地区刚好在内的话,你可能就会在Google文件或者日历中看到"image unavailable"的提示. 这时你的教师可能会提供一些可替代的资源来代替它。
 ***********************
-Google Drive Files
+Google Drive文件
 ***********************
 
-Your course might include the following types of Google Drive files.
+你的课程可能包含以下几种类型的Google Drive文件.
 
-* Google Docs (text documents)
-* Google Drawings (images)
-* Google Forms (forms or surveys)
-* Google Slides (presentations)
-* Google Sheets (spreadsheets)
+* Google Docs (文本文档)
+* Google Drawings (图像)
+* Google Forms (调查)
+* Google Slides (幻灯片)
+* Google Sheets (电子表格)
 
-For example, your course might include a spreadsheet that resembles this one.
+比如,你的课程可能包含一份像下面一样的电子表格.
 
 .. image:: /Images/google-spreadsheet.png
   :width: 500
   :alt: A Google spreadsheet in a course
 
-You can interact with these Google Drive files in your course. For example,
-you can complete forms, look through the slides in a presentation, and enter
-different values in a spreadsheet. However, you cannot save changes that you
-make to the Google Drive file.
+你可以用这些Google Drive在你的课程上完成互动.比如,你可以填写表格,在演示中观看幻灯片,在电子表格中输入不同的值. 然而这并不能保存你对的Google Drive文件做出的改变.
 
 ***********************
-Google Calendars
+Google 日历
 ***********************
 
-If your course includes a Google calendar, you see that calendar in the body of
-the course. You can also add it to your own Google calendar.
+如果你的课程包含一个谷歌日历, 你在你的课程中看到了这个日历.你也可以把它添加到你的Google 日历中.
 
 .. image:: /Images/google-calendar.png
   :width: 500
   :alt: A Google calendar in a course
-
-By default, the view that opens in the course calendar is the view that the
-instructor set. You can change the view by clicking the **Week**, **Month**, or
-**Agenda** tabs in the upper-right corner.
-
-When you view the calendar in your course, the dates and times on the calendar
-automatically adjust to your local time. Your time zone information appears in
-the lower-left corner of the screen.
+一般情况下,在课程日历打开后的看到的是老师的设置.你可以通过单击 **周**, **月**, 或者**议程** 等右上角的标签来改变设置.
+当你浏览你课程中的日历是, 日历上的日期和时间会自动调整为你的本地时间. 你的时间区域信息会出现在你屏幕的左下角.
 
 =====================================================
 Add the Course Calendar to Your Own Calendar
 =====================================================
 
-If you have your own Google calendar, you can add the Google calendar from a
-course to it. After you add a calendar, you see that calendar whenever you
-view your personal calendar, even if you are not signed in to your edX
-account. The course information appears together with your own information.
+如果你有你自己的Google日历,你可以将你的课程中的日历添加到你自己的Google日历中去.当你添加一个日历后,当你在看你个人的日历时即使你没有登录你的edX账户，你也会看到这个日历. 课程信息也会和你自己的信息一起出现.
 
 .. image:: /Images/google_cal_integrated.png
   :width: 500
   :alt: A course calendar integrated with a personal Google calendar
 
-To add the course calendar to your own calendar, view the course calendar in the
-course, and then click the **Google Calendar** icon in the lower-right corner of
-the course calendar.
+要添加课程日历在你的日历中时, 先在课程中浏览日历, 然后单击右下角的 **Google日历** 图标.
 
-For more information about Google calendars, see the `Google Calendar website
+需要更多关于Google日历的信息, 请参考 `Google 日历
 <https://www.google.com/calendar>`_.
