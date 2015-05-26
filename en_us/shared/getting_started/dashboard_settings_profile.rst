@@ -1,38 +1,26 @@
 .. _SFD Dashboard Settings Profile:
 
 ###################################################
-Exploring Your Dashboard, Settings, and Profile
+搜索你的仪表板、设置和配置文件
 ###################################################
 
-After you create an edX account, you can view a list of your current
-courses, change your account settings, or create a profile. You can access
-course, account, or profile information from any edX page, whether you are in a
-course or browsing the course catalog.
+您创建一个edX账号后，您可以查看您当前的课程列表，更改您的帐户设置，或创建一个配置文件。
+您可以从任何edX页面获取您的账户或个人资料信息，无论你是在一门课程中或浏览课程目录中。
 
-* Your :ref:`dashboard<SFD Learner Dashboard>` gives you access to course
-  information, such as start and end dates, email settings, and certificates.
-  To access your dashboard at any time, select your username in the upper
-  right corner of any edX page.
-* The :ref:`Account Settings<SFD Account Settings>` page allows you to change
-  settings such as your email address, education level, and country or region,
-  and to link your edX account to a Facebook or Google account. To access
-  your account settings at any time, select the arrow next to your username in
-  the upper right corner of any edX page, and then select **Account
-  Settings**.
-* On your :ref:`profile page<SFD Profile Page>`, you can create a profile that
-  includes an image and biographical information. To access your profile at
-  any time, select the arrow next to your username in the upper right
-  corner of any edX page, and then select **My Profile**.
+* Your :ref:`dashboard<SFD Learner Dashboard>` 允许您访问课程信息，如开始和结束日期，电子邮件设置和证书。
+选择任何edX页面的右上角您的用户名，您可以在任何时间访问您的仪表盘。
+* The :ref:`Account Settings<SFD Account Settings>` 该页面允许您更改设置，比如您的电子邮件地址、教育程度以及国家或地区，并且您可以将您的edX账户链接到Facebook或谷歌账户。
+若您想在任何时间查看您的账户设置，在任何edX页面的右上角选择您的用户名，然后选择**账户设置**。
+* On your :ref:`profile page<SFD Profile Page>`  您可以创建一个配置文件，包括图像和传记资料。若要访问您的个人资料在任何时候，请在任何edX页面的右上角选中您的用户名，然后选择**我的个人资料**。
 
 .. _SFD Learner Dashboard:
 
 *********************************
-Exploring the Learner Dashboard
+搜索学习者的仪表板
 *********************************
 
-When you create an edX account or enroll in an edX course, you automatically
-go to your dashboard. You can also access your dashboard at any time by
-selecting your username in the upper right corner of any edX page.
+当您创建一个edX账户或者登陆您的edX的课程，您会自动跳转到您的仪表板。
+你也可以在任何时候在任何edX页面的右上角选中您的用户名来访问您的仪表板。
 
 .. image:: ../../../shared/getting_started/Images/SFD_Dashboard.png
  :width: 500
@@ -42,90 +30,71 @@ selecting your username in the upper right corner of any edX page.
 .. dashboards, so it's not 100% accurate. It's good enough for now, but I plan
 .. to update it when the new dashboard releases.
 
-Your dashboard contains important information about your courses. You can take
-several actions on your dashboard.
+您的仪表板包括关于您的课程的重要信息。您可以在您的仪表板上进行一系列操作。
 
-* Access your current and archived courses.
+* 访问您当前和已归档的课程。
 
-  To access a current or archived course, select **View Course** or **View
-  Archived Course**. Note that archived courses may provide limited access to
-  content.
+  为了访问您当前或已归档的课程，请选择 **查看课程** or **查看已归档课程**。需要注意的是存档的课程只可以提供有限的访问内容。
 
-* See when courses start or end.
+* 查看课程已开始还是已结束。
 
-  Course start and end dates appear below the name of the course.
+  课程的开始日期和截止日期显示在课程的名称下方。
 
-  * If a course has not yet started, you see the course start date.
-  * If a course has started but not ended, you see the course end date.
-  * If a course has ended, you see the course end date.
+  * 如果一个课程还没有开始，您可以看到课程开始日期。
+  * 如果一个课程已开始但是还没有结束，您可以看到课程的结束日期。
+  * 如果一个课程已经结束，您可以看到结束日期。
 
-* Change your course email settings.
+* 更改您课程的电子邮件设置。
 
-  #. Select the Options icon for the course, and then select **Course emails**. 
-  #. Select or clear the **Receive course emails** check box, and then select
-     **Save Settings**.
+  #. 选择课程选项图标，然后选择**课程电子邮件**。
+  #. 选中或清除**接收电子邮件**复选框，然后选择**保存设置**。
 
-* Unenroll from a course.
+* 取消注册的课程。
 
-  To unenroll, select the Options icon for the course, select **Unenroll**, and
-  then select **Unenroll** in the confirmation dialog box.
+  要取消注册，选择该课程的选项图标，选择**取消注册**，然后选择**取消注册**的确认对话框。
 
-* View your grades in courses that you have completed.
+* 查看您已完成的课程的成绩。
 
-  Your final grade appears under the name of the course.
+  您最终的成绩显示在该课程的名称下方。
 
-* Download a certificate.
+* 下载证书。
 
-  To download a certificate, select **Download Your Certificate (PDF)** or
-  **Download Your ID Verified Certificate (PDF)**. You can then print the PDF
-  certificate.
+  若您需要下载证书，请选择**下载您的证书（PDF）**或**下载你的ID身份认证（PDF）**。然后，您可以打印PDF证书。
 
 .. _SFD Account Settings: 
 
 ****************************************
-Exploring the Account Settings Page
+探索帐户设置页面
 ****************************************
 
-When you create an account on edX, some basic information is required,
-including your email address and your name. You can also provide additional,
-optional information when you create your account, such as the level of
-education you have completed. Course staff can access this information to find
-out more about the learners who enroll in their courses. This information also
-helps edX increase the quality and quantity of our courses.
+当您在edX创建一个账户，一些基本信息需要您提供，包括您的电子邮件地址和姓名。
+当您创建您的edX账户时，您可以提供额外的可选的信息，比如您当前的受教育程度。
+课程的相关工作人员可以访问这些信息，以了解更多有关注册他们课程的学习者的资料。
+这些信息也有助于帮助edX提高我们的课程的质量和数量。
 
 .. _SFD Basic Information:
 
 ==========================================
-View or Change Basic Account Information
+查看或更改基本帐户信息
 ==========================================
 
-Basic account information includes the following information. This information
-is required for every account on edX. 
+基本账户信息包括以下信息。这些信息是每个edX帐户所必须的。
 
-* **Username**: The name that identifies you on edx.org. Note that you cannot
-  change your edX username.
-* **Full Name**: The name that appears on your edX certificates. Other learners
-  cannot see your full name.
-* **Email Address**: The email address you use to sign in to edX. You may receive
-  communications from edX and your courses at this address.
-* **Password**: Your password on edx.org. To reset your password, select **Reset
-  Password**. EdX then sends a message to the email address in the **Email
-  Address** field. You select the link in the message to finish resetting your
-  password.
-* **Language**: The language that the edX site uses during your visits. The edX site is currently
-  available in a limited number of languages.
-* **Country or Region**: The country or region that you live in.
+* **用户名**: 一个用来在edx.org上识别您的名称。注意，您不可以更改您的edX用户名。
+* **全名**: 在您edX证书上的名称。其他的学习者无法看到您的全名。
+* **电子邮件地址**: 该电子邮件用来登陆edX。并且该邮箱可以会收到来自edX和您的课程的信息。
+* **密码**: 您登陆edx.org的密码。选择**重设密码**以重新设置您的密码。然后edX将发送电子邮件到您的电子邮件地址。您可以选择邮件中的连接地址来完成重新设置您的密码。
+* **语言**: 在您访问edX站点时所使用的语言。目前edX站点所使用的语言有限。
+* **国家和地区**: 您居住的国家或地区。
 
-To view or change this information, follow these steps.
+请参考以下步骤以查看或者更改这些信息。
 
-.. note:: You cannot change your edX username.
+.. 注意:: 您无法更改您的edX用户名。
 
-#. On any edX page, select the arrow next to your username in the upper right
-   corner, and then select **Account Settings**.
-#. On the **Account Settings** page, locate the **Basic Account Information
-   (required)** section, and then make your changes.
+#. 在任何edX页面上，选择页面右上角您的账户名旁边的箭头，并且选择**账户设置**。
+#. 在**帐户设置页面**，找到**基本帐户信息（必需）**部分，然后进行更改。
 
-EdX saves your changes automatically.
+edX会自动保存您的更改。
 
 .. _SFD Additional Info:
 
