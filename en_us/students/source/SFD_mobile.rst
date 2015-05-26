@@ -1,168 +1,142 @@
 ﻿.. _SFD Mobile:
 
 ########################
-edX 移动端 App
+
 ########################
 
-edX mobile app is a companion to the `edx.org`_ website. You can use the
-app to download course videos so that you can watch them whenever you want to,
-even without an Internet connection. To access the rest of the course,
-including course discussions, homework, and quizzes, you use a web
-browser on a computer.
+edX移动端app是‘edx.org’网站的一个衍生产品。你可以用这个app来下载课程视频，因此你可以在任何时刻观看，即使是没有网络连接的情况下。要链接课程剩余部分，包括课程讨论，作业和小测，你可以在电脑商使用一个网页浏览器。
 
-The edX mobile app is currently available for Android smartphones and iPhones.
-For more information, check the answers to frequently asked questions in these
-categories.
+目前移动端的edX-app可以在安卓智能手机以及iphone上使用。
+查询更多的信息，请阅读以下目录内常见问题下的答案。
+* `常见问题`_
+* `新手入门`_
+* `课件相关问题`_
+* `视频相关问题`_
+* `故障排除`_
 
-* `General Questions`_
-* `Getting Started`_
-* `Courseware Questions`_
-* `Video Questions`_
-* `Troubleshooting`_
-
-.. _General Questions:
+.. _ 常见问题:
 
 *************************
-General Questions
+常见问题
 *************************
 
 ================================
-How do I get the mobile app?
+如何获得该移动端app?
 ================================
 
-The Android app is available in the `Google Play`_ Store. The iPhone app is
-available in the Apple `App Store`_.
-
+安卓版本可在`Google Play`_ 商店下载。iPhone版本可在苹果的`App Store`下载。
 ================================
-How much does the app cost?
+这个app需要花费多少钱？
 ================================
-
-The app is free. You do not have to pay or buy anything to download or use it.
+这个app是免费的。你不需要支付或者买任何东西来下载和使用。
 
 ========================================
-What platforms does the app run on?
+这个app在什么平台上能够运行？
 ========================================
+目前，edX移动app可以在安卓智能机和iPhone上使用。
+对于iPhone来说，你的设备必须更新至iOS7或更新版本。
 
-Right now, the edX mobile app is available for Android smartphones and
-iPhones. For the iPhone app, your device must be running iOS 7 or later.
-
-We plan to make the app available on Android tablets and iPads in the
-future.
-
+我们计划未来将此设备应用于安卓平板和iPad。
 ================================================
-How can I send questions or comments to edX?
+我怎么发送问题和建议到edX?
 ================================================
 
-We are glad to receive your feedback on our mobile app. On the **My Courses**
-page, select the menu in the upper left corner, and then select **Submit
-Feedback**.
+我们很高兴能够收到您关于移动端app的反馈. 在 **我的课程**
+页面, 选择左上角的菜单，然后选择**提交反馈**.
 
-.. _Getting Started:
+.. _新手入门:
 
 *************************
-Getting Started
+新手入门
 *************************
 
 ======================================
-Do I need an edX account?
+我需要一个edX账户吗?
 ======================================
 
-You need to have an edX account before you can enroll in courses. You can sign
-up for an edX account in the edX mobile app, or use a browser to go to the
-`edx.org`_ website. When you create your account, you need to be connected to
-the Internet.
+在加入课程之前，你需要拥有一个edX账户。你可以在edX移动端app上注册一个edX账户，或者在浏览器上访问`edx.org`_ website.当你新建一个账户，你需要连接到互联网。
 
 ======================================
-How do I create an edX account?
+我如何创建一个edX账户？
 ======================================
 
-When you open the edX mobile app, select **Sign up and start learning**. You
-can create an edX account using your email address or your Facebook or Google
-account. You also provide the following information.
+当你打开edX移动端app, 选择 **注册并开始学习**. 你可以用你的邮箱地址或facebook或google账号来创建一个edX账号。你同样提交以下信息。
 
-* Your name.
-* The username that will identify you to course teams and to other learners.
-* A password.
-* Your country or region. 
+* 你的名字。
+* The username that will identify you to course teams and to other learners.你的用户名会
+* 一个密码。
+* 您所在的国家或地区。 
 
-After you create your account, you can find courses that interest you and
-enroll in them.
+创建完用户后，你可以寻找感兴趣的课程并加入。
 
 ==================================================
-How do I find courses to take?
+如何找到课程以加入？
 ==================================================
 
-When you open the app and sign in to your edX account, you see a list of the
-mobile-friendly courses that you are currently enrolled in. At the end of the
-list, select **Find a Mobile-Friendly Course**.
+当你打开app并登录你的edX账户时，你会看到你当前加入的课程以移动版呈现在列表中。在列表结尾，选择 **找到一个移动版课程**.
 
-You can also use the menu at the top of the page. Select **Find Courses**.
+你通用可以使用页面上方的菜单。选择**查找课程**.
 
    .. image:: /Images/Mob_Menu.png
       :width: 300
       :alt: Mobile "My Courses" page with an arrow pointing to the menu in the
         upper left corner.
 
-To sign up for a course, click **Enroll**.
+要注册一个课程，点击**加入**。
 
-Only select courses are offered on the edX mobile app right now. We are
-working hard to make all edX courses mobile-friendly. We are adding more
-mobile courses every day, so check back often to see new available courses.
+目前只能选择课程提供的edX移动端app。我们正在努力使所有的课程都适应于移动端。每天我们都在添加移动端课程，所以请经常回来看看新的课程。
+
 
 ========================================
-How do I unenroll from a course?
+我如何退出一门课程？
 ========================================
 
-To unenroll from a course, use a browser to go to the `edx.org`_ website. You
-unenroll from courses on your :ref:`dashboard<SFD Learner Dashboard>`.
+退出一门课程, 使用浏览器来访问 `edx.org`_ website. 在你的 :ref:`dashboard<SFD Learner Dashboard>`上退出课程.
 
-.. _Courseware Questions:
+.. _课件相关课程:
 
 *************************
-Courseware Questions
+课件相关课程
 *************************
 
 ========================================================
-Can I take a course entirely on my mobile device?
+我可以选修一门课程完全是我的移动设备上？
+？这句有问题
 ========================================================
 
-Not at this time. With the edX mobile app, you can download course videos to
-watch when you do not have an Internet connection. To complete other work,
+不是在这个时候。 利用edX移动端app, 你可以下载课程视频，以便在没有网络连接的时候观看。 To complete other work,
 including readings, homework problems, and exams, use a computer.
 
 ========================================================
-How do I post questions on the discussion board?
+如何在讨论区发布问题？
 ========================================================
 
-Right now, you cannot use the app to participate in course discussions. To
-read or contribute to the discussions, use a computer.
+目前，你不可以使用这个app来参加课程讨论。阅读或参与讨论需要用到电脑。
 
-.. _Video Questions:
+.. _视频相关问题:
 
 *************************
-Video Questions
+视频相关问题
 *************************
 
 ================================
-How do I download videos?
+如何下载视频？
 ================================
 
-To download videos, select the "download" icon that appears to the right of each
+要下载视频, select the "download" icon that appears to the right of each
 section, subsection, or video name. 
 
-* If you select download for a section or subsection, you download all of the
-  videos in that section or subsection.
-* If you select download for a video, you download only that video.
+* 如果你选择下载一个章节或小段，你会下载那个章节或小段的所有内容。
+* 如果你选择下载一个视频，仅会下载那个视频。
 
 .. image:: /Images/Mob_DownloadIcon.png
    :width: 300
    :alt: List of sections with the "download" icon circled.
 
-To download videos, you must be connected to the Internet. After you download
-a video, you can watch it any time.
+下载时务必连接到互联网。下载后，你可以在任意时间观看。
 
 ================================================
-How much data will the videos in this app use?
+在这个app中视频数据将会用到多少数据？
 ================================================
 
 Course videos are optimized for mobile playback, but watching or downloading any
@@ -183,7 +157,7 @@ in that section or subsection.
    :alt: List of sections with the number of videos circled.
 
 ========================================================
-What are the circles to the left of the video name?
+视频名称左侧的源泉是什么？
 ========================================================
 
 The circle indicates whether you have already played a video. A blue circle
@@ -192,7 +166,7 @@ that you played part of the video. A gray circle means that you played the
 entire video.
 
 ========================================
-How can I make the video full screen?
+如何全屏观看视频？
 ========================================
 
 Rotate your phone until the video changes to landscape, or select "full
@@ -204,6 +178,7 @@ screen" in the bottom right corner of the video screen.
 
 ==================================
 How can I see captions?
+如何查看看字幕？
 ==================================
 
 While a video plays, select **Settings** (the "gear" icon) at the lower right,
@@ -229,57 +204,56 @@ On the Android app, videos currently run only in their original speeds. We are
 working on the ability to change video speeds.
 
 ========================================
-How do I change my download settings?
+如何更改我的下载设置？
 ========================================
 
-#. On the **My Courses** page, select the menu in the upper left corner.
+#. 在 **我的课程** 页面, 选择在左上角的菜单。.
 
    .. image:: /Images/Mob_Menu.png
       :width: 300
       :alt: Mobile "My Courses" page with an arrow pointing to the menu in the
         upper left corner.
 
-#. Select **My Settings**. 
+#. S选择 **我的设置**. 
 
-#. Change the **Wi-Fi only download** setting.
+#. 改变 **仅在Wi-Fi环境下下载** 设置。
 
-.. note:: By default, the app is set so that it only downloads content, 
-  including videos, if you are on a Wi-Fi network. If you change this setting, 
-  you might exceed the data allowance for your cellular plan.
+.. note:: 假如你正在用Wi-Fi网络，默认情况下,这个app被设置为它仅下载内容,包括视频。如果你更改了设置，你的手机流量可能会超出预算。
 
 ==================================
-How do I delete downloaded videos?
+如何删除已下载视频？
 ==================================
  
-#. On the **My Courses** page, select the menu in the upper left corner.
+#. 在 **我的课程** 页面, 选择左上角的菜单。
 
-#. Select **My Videos**.
+#. 选择 **我的视频**.
 
-#. On the **All Videos** page, select the course that has the video that you
-   want to delete. Alternatively, select **Recent Videos**.
+#. 在 **所有视频** 页面, 选择包含你想删除的视频的课程。然后，选择**最近视频**。
 
-#. At the bottom of the list of videos, select **Edit**. A "selection" icon
+#. 在视频列表的底部, 选择 **编辑**. 一个 "选择" icon
    appears next to each video name and at the top of the page.
 
 #. Select the videos that you want to delete. To select all of the videos,
    select the icon at the top of the page.
 
-#. Select **Delete**.
+#. 选择 **删除**。
 
-.. _Troubleshooting:
+.. _故障排除:
 
 *************************
-Troubleshooting
+故障解决
 *************************
 
 ==========================================================================================
 I see "This video is not available" when I try to watch a video. What can I do?
+我看到“视频不可用”
 ==========================================================================================
 
 If you have problems viewing videos, make sure that you have an Internet
 connection and then try to view or download the video again.
-
+如果你在观看视频的时候发生问题，请确保以你已经连接上互联网，然后尝试再次查看和下载视频。
 If problems persist, let us know. On the **My Courses** page, select the
+假如问题仍然发生，请让我们知道。在页面，选择“菜单”图标，然后选择 **提交反馈**
 "menu" icon, and then select **Submit Feedback**.
 
 
