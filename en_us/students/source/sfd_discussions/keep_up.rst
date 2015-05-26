@@ -14,12 +14,10 @@
 在 **讨论** 页面上列出的帖子有视觉线索帮助你将新的帖子，或者有你尚未阅读的回复及评论的帖子，与你已经完成阅读的帖子区别开。
 
 ==================
-Sort by Activity
+按活动排序
 ==================
 
-Color-coded callout images appear when you sort the list of posts **by recent
-activity** or **by most activity**. This is the default view when you open the
-**Discussion** page.
+当你按最近的活动或者最多活动的方式排列帖子时，便会出现彩色的标注图标。这是你打开 **讨论** 页面的默认视图模式。
 
 * *灰色背景上的灰色标注图标** 说明你已经阅读这个帖子和所有它的回复及评价。
 
@@ -39,15 +37,12 @@ activity** or **by most activity**. This is the default view when you open the
        unread
 
 ==================
-Sort by Votes
+按被赞量排序
 ==================
 
-You can also sort the list of posts by number of votes. To do this, click the
-sorting list in the upper-right corner of the list of posts, and then click **by
-most votes**.
+你也可以用被赞的数量来对帖子排序，点击右上角的排列方式列表，选择 **by most votes** 。
 
-If you sort by most votes, the number of votes that the post has received
-appears in place of the callouts. For more information, see :ref:`Vote for Posts
+如果你选择按被赞数量的方式排列，帖子被赞的数量会替换标注图片。了解更多的信息请查看 :ref:`Vote for Posts
 or Responses`.
 
 .. image:: /Images/Disc_SortByVotes.png
