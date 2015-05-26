@@ -2,29 +2,26 @@
 .. _Add or Edit a Contribution:
 
 #########################################################
-Add, Edit, or Delete a Post, Response, or Comment
+添加，编辑，或者删除一个帖子，回复或评论
 #########################################################
 
-You can add, edit, or delete contributions to discussions from inside the course
-or from the **Discussion** page.
+你可以在课程内或者在 **讨论** 页面中向一个讨论中增加，编辑，或者删除条目。
 
 * :ref:`Add a Post`
 * :ref:`Add Response`
 * :ref:`Edit or Delete`
 
 ************************************
-Add a Post, Response, or Comment
+添加帖子，回复或者评论
 ************************************
 
 .. _Add a Post:
 
 ==============
-Add a Post
+添加一个帖子
 ==============
 
-When you add a post to a discussion in your course, you decide what type of
-post to make and the topic of the post. You then add the post either directly
-inside the course unit or on the **Discussion** page.
+当你向课程中的讨论添加一个帖子时，你要考虑决定帖子的种类，帖子的话题。 之后你可以直接将帖子添加进课程单元或者 **讨论** 页面。
 
 .. _Determine Post Type:
 
