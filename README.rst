@@ -1,5 +1,5 @@
 ###################
-EdX Documentation
+EdX 文档
 ###################
 
 The edx-documentation repo contains source files for most of the documentation
