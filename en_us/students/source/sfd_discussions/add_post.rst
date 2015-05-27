@@ -2,59 +2,44 @@
 .. _Add or Edit a Contribution:
 
 #########################################################
-Add, Edit, or Delete a Post, Response, or Comment
+创建，编辑，或者删除一个帖子，回复或评论
 #########################################################
 
-You can add, edit, or delete contributions to discussions from inside the course
-or from the **Discussion** page.
+你可以在课程内或者在 **讨论** 页面中向一个讨论中创建，编辑，或者删除条目。
 
 * :ref:`Add a Post`
 * :ref:`Add Response`
 * :ref:`Edit or Delete`
 
 ************************************
-Add a Post, Response, or Comment
+创建帖子，回复或者评论
 ************************************
 
 .. _Add a Post:
 
 ==============
-Add a Post
+创建一个帖子
 ==============
 
-When you add a post to a discussion in your course, you decide what type of
-post to make and the topic of the post. You then add the post either directly
-inside the course unit or on the **Discussion** page.
+当你在课程中的讨论创建一个帖子时，你要考虑决定帖子的种类，帖子的话题。 之后你可以直接将帖子添加进课程单元或者 **讨论** 页面。
 
 .. _Determine Post Type:
 
 **************************************************
-Determine the Post Type: Discussion or Question
+决定帖子的类型：讨论或者提问
 **************************************************
 
-To make sure that other students and the course team can find and respond to
-your post, decide what type of post you want to make: either question or
-discussion.
+为了确保别的同学或者课程团队能够看到并回复你的帖子，你需要决定你的帖子是讨论类型还是提问类型。
 
-* A *question* post raises an issue so that the discussion staff or community
-  can provide answers. 
+* *问题* 帖子提出一个问题，负责讨论部分的员工或者社区会做出解答。 
 
-* A *discussion* post starts a conversation by sharing thoughts and
-  reflections, and inviting community participation.
+* *讨论* 帖子发起一个对话，可以在其中分享想法和思考，还可以邀请社区参与。
 
-If you have any difficulty deciding which type of post you want to add, think
-about whether you want to get concrete information (a question) or start an
-open-ended conversation (a discussion). If you are asking a question about the
-course and need an answer from the course team, be sure to create your post as
-a question, so that the course team sees that a response is required and
-responds appropriately.
+如果你无法决定你将要创建的帖子的种类，仔细想想你想要得到直接的信息（问题），还是开始一段开放的对话（讨论）。 如果你需要课程团队来解答课程问题，切记将帖子创建为问题，这样课程团队就能看到有问题需要答复并及时作出回复。
 
-After you make your post, on the **Discussion** page for your course, a
-question mark image identifies posts that ask questions and a conversation
-bubble image identifies posts that start discussions.
+在你制作好自己的帖子后，在你课程的 **讨论** 页面上，帖子的种类由图标表示，问号代表问题，对话框代表讨论。
 
-.. note:: You can change the post type from discussion to question or vice
-   versa at any time after you add your post. For more information, see
+.. note::你可以在帖子创建之后改换帖子的类型。 获得更多信息请查看
    :ref:`Edit or Delete`.
    
 

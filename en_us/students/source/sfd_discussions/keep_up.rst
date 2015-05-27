@@ -2,45 +2,34 @@
 .. _Keep Up with New Activity:
 
 ################################
-Keep Up with New Activity
+跟上新的动态
 ################################
 
 .. _Read New or Updated Posts:
 
 ****************************
-Read New or Updated Posts
+阅读新的或者更新过的帖子
 ****************************
 
-The list of posts on the **Discussion** page provides visual cues to help you
-distinguish posts that are new, or that have responses or comments that you have
-not read yet, from exchanges that you have already read completely.
+在 **讨论** 页面上列出的帖子有视觉线索帮助你将新的帖子，或者有你尚未阅读的回复及评论的帖子，与你已经完成阅读的帖子区别开。
 
 ==================
-Sort by Activity
+按活动排序
 ==================
 
-Color-coded callout images appear when you sort the list of posts **by recent
-activity** or **by most activity**. This is the default view when you open the
-**Discussion** page.
+当你按最近的活动或者最多活动的方式排列帖子时，便会出现彩色的标注图标。这是你打开 **讨论** 页面的默认视图模式。
 
-* A **gray callout image on a gray background** indicates that you have read the
-  post and all of its responses and comments.
+* *灰色背景上的灰色标注图标** 说明你已经阅读这个帖子和所有它的回复及评价。
 
-* A **white callout image on a gray background** indicates that you have read the
-  original post, but the post has new responses or comments that you have not
-  read yet.
+* **灰色背景上的白色标注图标** 说明你已经阅读了帖子的原文，但是并没有阅读帖子的新回复或者新评论。
 
-* A **blue callout image on a white background** indicates that you have not yet
-  read the post.
+* **白色背景上的蓝色标注图标** 说明你还没有阅读这篇帖子。
 
 .. image:: /Images/Discussion_colorcoding.png 
   :alt: The list of posts with posts showing differently colored backgrounds 
         and callout images
 
-The number in each callout image indicates the total number of contributions in
-the exchange (the post and its responses and comments). To see the number of
-contributions that you haven't read yet, move your cursor over the callout
-image.
+标注图标中的数字说明了在交流中的总条目（帖子本身和回复以及评论）。 将你的光标移动到标注图片上，来查看你现在还没有阅读的条目。
 
 .. image:: /Images/Discussion_mouseover.png
  :width: 300
@@ -48,15 +37,12 @@ image.
        unread
 
 ==================
-Sort by Votes
+按被赞量排序
 ==================
 
-You can also sort the list of posts by number of votes. To do this, click the
-sorting list in the upper-right corner of the list of posts, and then click **by
-most votes**.
+你也可以用被赞的数量来对帖子排序，点击右上角的排列方式列表，选择 **按最多被赞数量** 。
 
-If you sort by most votes, the number of votes that the post has received
-appears in place of the callouts. For more information, see :ref:`Vote for Posts
+如果你选择按被赞数量的方式排列，帖子被赞的数量会替换标注图片。了解更多的信息请查看 :ref:`Vote for Posts
 or Responses`.
 
 .. image:: /Images/Disc_SortByVotes.png
@@ -67,13 +53,10 @@ or Responses`.
 
 
 ****************************
-Receive Daily Digests
+接收每日摘要
 ****************************
 
-You have the option to receive an email message each day that summarizes
-discussion activity for the posts you are following. To receive this daily
-digest, click **Discussion** to go to the discussions home page, and then select
-the **Receive updates** check box in the right pane.
+你可以设置接收一个你关注的帖子上讨论的摘要的email。 你可以点击 **讨论** 进入讨论版块的主页，然后在右边窗口中的复选框勾选 **接收更新** ，来接收这个每日摘要。
 
 .. image:: /Images/Disc_RecUpdatesBox.png
   :width: 500

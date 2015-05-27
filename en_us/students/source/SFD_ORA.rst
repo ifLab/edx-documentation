@@ -1,9 +1,17 @@
 .. _SFD_ORA:
 
 ###########################################
-开放式互动评定（来自网络）
+公开互动评判问题
 ###########################################
 
+<<<<<<< HEAD
+在一个公开互动评判问题中，你可以给可能没有简单或确切答案的问题书面解答。在公开互动评判问题中，你也可以提交带有图片的答案。
+
+公开互动评判问题可以包括互评，自评，或两者皆有。 在互评中，你可以对你的同学提交的答案进行评判或者打分，你的同学也可以对你提交的答案进行同样的操作。 在自评中你只可以对自己的答案进行评判。 你需要将待评判的解答与教师给出的参考答案进行比较，来完成评判。
+
+得分要点是一个答案中所应该达到的要求的列表。 得分要点由 *要点* 和 *选项* 组成。 
+*要点* 是每个解答所应具有的特点，例如答案所应包含的议题。 *选项* 描述答案符合要点的程度。 下面图片展示了一个得分要点，其包含了两个要点，每个要点下面又有多个选项。
+=======
 在一个开放式互动评分中，你可以给可能没有简单或确切答案的问题提供书面解答。在开放式
 互动评分中，你也可以提交带有图片的解答。
 
@@ -14,119 +22,88 @@
 标准答案是一个解答中所应该达到的要求的列表。 标准答案由 *标准* 和 *选项*
 组成。 *标准* 是每个解答所应具有的特点，例如解答所应包含的话题。 *符合度* 是解答符合标准的程度。 
 下面图片展示了一个包含两个标准的参考答案，每个标准下面又有多个 *符合度*  。
+>>>>>>> bcc2a9a5d33e77557d2c70f971bae6122f65e3d3
 
 .. image:: /Images/PA_S_Rubric.png
    :alt: Rubric showing criteria and options
    :width: 500
 
-在你评定一个解答时，你需要选择最能描述解答体现标准程度的选项。
+在你评判一个解答时，你需要选择最能描述解答体现要点程度的选项。
 
-有的老师会创建一个 **最佳解答** 单元来展示这个问题的高分解答和其得分。如果有这个单元，你就能在
-完成了这个问题的每一步之后，在自己的得分下面查看到它。
+有的老师会创建一个 **最佳解答** 单元来展示这个问题的高分答案和其得分。 如果有这个单元，你就能在完成了这个问题的每一步之后，在自己的得分下面查看到它。
 
 ************************
-Student Instructions
+学生手册
 ************************
 
-When you come to an open response assessment in the course, you will see the
-questions and a response field for each question. After you submit your
-responses, you will assess some of your peers' responses, your own responses, or
-both, depending on the assignment. You can see the steps that your assignment
-includes below each response field.
+当你进入课程中的公开互动评判问题时，你能看到待解答的问题，每个问题下面有一块答题区域。 在你提交完自己的解答之后，就需要依据问题的类型进行自评，或者互评，或者两者都进行。 你能在每个问题的答题区域看到这个问题所需要进行的步骤。
 
 .. image:: /Images/PA_S_AsmtWithResponse.png
    :alt: Open response assessment example with question, response field, and assessment types and status labeled
    :width: 550
 
-Here, we will walk you through the process of completing an open response
-assessment that includes a student training step, a peer assessment, and a self
-assessment.
+下面我们为你演示完成一个包含学生学习，互评，自评的公开互动评判问题的流程。
 
-#. Submit your responses to the questions.
-#. Learn to assess responses.
-#. Assess responses that other students have submitted.
-#. Assess your own responses to the questions.
-#. Receive your score and provide feedback on the peer assessment.
+#. 提交你对该问题的答案。
+#. 学习如何进行评判。
+#. 进行互评。
+#. 进行自评。
+#. 获得自己的成绩以及互评的反馈。
 
-At any time during the assessment, you can see your progress through the
-assignment at the bottom of the page under **Your Grade**. A message tells you
-the steps that you still have to perform before you can receive your grade. For
-example, you might see the following message:
+在答题的任何时候，你均可以在页面底部的 **你的成绩** 下面查看到该问题当前的进度。 会有如下图所示的提示信息提示你获得成绩前所需完成的任务。 
 
 .. code-block:: xml
 
-  Not Completed
-  You have not completed the peer assessment step and self assessment step of this problem.
+  未完成
+  你还没有完成互评和自评环节。
 
 =====================
-Submit Your Response
+提交你的答案
 =====================
 
-Read each question carefully. Some instructors include important information in
-the question, such as how long a response must be, or specific topics your
-response must cover.
+请仔细阅读没一个问题。 有的题目中隐含了非常重要的信息，例如将答案的长度限制，或者你的答案必须包含的特殊话题。
 
-.. note:: The total word count for all responses within the assessment cannot be
-   more than 10,000 words (approximately the equivalent of 20 pages of 8.5x11
-   paper, with text single-spaced).
+.. note::每道题的解答的总字数不能超过超过10000字（约相当于20张8.5*11的文本单倍行距的纸）。
 
-For each question, type your response into the field under **Your Response**.
-When you have completed responses for all the questions, click **Submit your
-response and move to the next step**. If you don't want to finish your response
-all at once, you can click **Save Your Progress** to save a draft of your
-responses, and then come back and submit them later.
+你要在每个问题下的 **你的答案** 面下的答题区域中作答。
+当你完成所有题目的解答时，点击 **提交你的答案，进入下一步** 。
+如果你不想马上完成答案的提交，你可以点击 **保存当前进度** 将目前的答案保存为草稿，在以后可以再提交。
+在你提交答案之后，如果此时已有别的学生已经提交了答案，便会立刻进入互评。 不过你并不需要马上开始评判别人的答案。 如果你想暂停学习，稍后再继续，只需要在回来后刷新或者重新打开浏览器，新的互评答案便会为你准备好。
 
-After you submit your responses, if other students have already submitted
-responses, the peer assessment step starts immediately. However, you don't have
-to start grading right away. If you want to stop working and come back later,
-just refresh or reopen your browser when you come back. New peer responses will
-be available for you to grade.
-
-If no other students have submitted responses yet, you see the following
-message.
+如果并没有其他学生提交了答案，你就会看见下面的信息。
 
 .. code-block:: xml
 
-  Waiting for Peer Responses
-  All submitted peer responses have been assessed. Check back later to see if more students
-  have submitted responses. You'll receive your grade after you complete the peer assessment
-  and self assessment steps, and after your peers have assessed your response.
+  正在等待互评
+  所有已提交的答案均已被评判。 请稍后再查看是否有更多的同学提交了答案。 你只有完成了互评和自评环节才能得到自己的得分。
 
-Note that you can view your own responses at any time after you submit them. To
-do this, for the response you want to view, click the **Your Response** heading
-to expand the response field. You'll see your response, the status of your
-response, and information about additional steps you have to complete before you
-receive your grade.
+注意，你可以在提交答案之后随时查看你已提交的答案。 点击 **你的答案** 便可以展开答题区域，你可以在其中看到你的答案及其状态，以及在得到成绩前还需需完成的步骤。
 
 .. image:: /Images/PA_S_ReviewResponse.png
    :alt: Image of the Response field collapsed and then expanded
    :width: 500
 
 
-Submit an Image with Your Response
+提交带图片的答案
 ***********************************
 
-Some assignments ask you to submit an image with your text response. If you can
-submit an image, you will see buttons that you use to upload your image. You can
-only upload one image in each response, and your response must include some text
-along with the image. You cannot submit a response that does not contain any
-text.
+有些问题会要求你提交带图片的书面解答。如果在答题区域下方有上传你图片的按钮，就说明这个问题可以提交带图片的解答。 每道题你仅能上传一张照片，而且答案除了图片必须有必要的文字说明，你不能提交一个没有文字解答的答案。
 
-.. note:: The image file must be a .jpg or .png file, and it must be smaller than 5 MB in size.
+.. note:: 图片的格式必须是 .jpg 或者 .png ，大小必须小于5MB。
 
 .. image:: /Images/PA_Upload_ChooseFile.png 
    :alt: Open response assessment example with Choose File and Upload Your Image buttons circled
    :width: 500
 
-To upload your image, complete these steps.
+上传图片的步骤如下：
 
-#. Click **Choose File**.
-#. In the dialog box that opens, select the file that you want, and then click **Open**.
-#. When the dialog box closes, click **Upload Your Image**.
+#. 点击 **选择文件**.
+#. 再打开的对话框中选择需要的文件，点击 **打开** 。
+#. 当对话框关闭时，点击 **上传图片** 。
 
-Your image appears below the response field, and the name of the image file
-appears next to the **Choose File** button. If you want to change the image,
-follow steps 1-3 again. You can only upload one image per response.
+你的图片会出现在答题区域的下方，图片的名称在 **选择文件** 按钮旁显示。
+如果你想要更换图片，只需重复步骤1-3。
+再次强调，每道题只能提交一个图片。
 
 .. image:: /Images/PA_Upload_WithImage.png
    :alt: Example response with an image of Paris
@@ -134,113 +111,80 @@ follow steps 1-3 again. You can only upload one image per response.
 
 
 ============================
-Learn to Assess Responses
+学习如何评判
 ============================
 
-In this step, you will learn to assess responses effectively by reviewing and
-assessing sample responses that the instructor has provided. You will try to
-select the same options for the response as the instructor selected.
+在这一环节，你将学习老师的提供的得分要点，并练习为示例答案进行评判，以熟练掌握有效的评判方式。 你为示例答案选择的选项应该尽量与老师的选择相同。
 
-.. note:: Not all instructors provide sample responses for training. If the
-   instructor did provide sample responses, this step does not appear in the
-   assignment.
+.. note:: 并不是所有的要点答案都会提供示例供你练习评判。 如果要点答案并没有提供示例，那么练习这一环节将不会出现。
+   
+   
 
-After you submit your response, one of the sample responses opens, together with
-the rubric for the assignment. Read the sample response and the rubric
-carefully, select the options that you think best reflect the response, and then
-click **Compare your selections with the instructor's selections**.
+在你提交答案之后，一个示例答案和得分要点便会打开。 请仔细阅读示例和得分要点，选择最能反映得分要点在示例中体现程度的选项，然后点击 **与老师的选择对比**
 
-* If all of your selections are the same as the instructor's selections, the
-  next sample response opens automatically.
+* 如果你的选择和老师的完全相同，便会自动进入下一个示例。
 
-* If any option that you select is not the same as the instructor's selection,
-  you see the response again, and the following message appears above the
-  response.
+* 如果你的选择和老师不同之处，你就会看到下面的提示信息出现在示例答案的上面。
 
 .. code-block:: xml
 
-  Learning to Assess Responses
-  Your assessment differs from the instructor's assessment of this response. Review the
-  response and consider why the instructor may have assessed it differently. Then, try 
-  the assessment again.
+  学习如何评判
+  你对该示例答案的评判与老师不同。 请重新阅读示例，并仔细思考老师的评判与你的不同的原因，然后再次进行你的评判。
 
-For each of the criteria, you see one of the following two messages, depending
-on whether your selections matched those of the instructor.
+你可以看到针对每个要点有如下的两种提示信息，来说明你的选择是否与老师的相同。
 
 .. code-block:: xml
 
-  Selected Options Agree
-  The option you selected is the option that the instructor selected.
+  选择的选项相同
+  您选择的选项是老师选择的选项。
 
 .. code-block:: xml
+  
+  选择的选项不同
+  您选择的选项不是老师选择的选项。
 
-  Selected Options Differ
-  The option you selected is not the option that the instructor selected.
-
-In the following example, the student chose one correct option and one incorrect
-option.
+在下面的例子中，该学生选择了一个正确的选项和一个错误的选项。
 
 .. image:: /Images/PA_TrainingAssessment_Scored.png
    :alt: Sample training response, scored
    :width: 500
 
-You continue to assess the sample response until the options you select for all
-criteria match the options that the instructor selected.
+你需要不断地修改自己的评判，直到自己对每个要点的选择与老师的完全相同。
 
-When you have successfully assessed all of the sample responses, you move to the
-next step in the assignment.
+完成所有的示例评判后，便会进入下一个环节。
 
 =====================
-Assess Peer Responses
+进行互评
 =====================
 
-When the peer assessment step starts, you see each original question, another
-student's responses, and the rubric for the assignment. Above the responses you
-can see how many responses you are expected to assess and how many you have
-already assessed.
+当互评环节开始时，你会看见原问题，另一个学生的答案以及这个问题的得分要点。 如下图所示，在答案上面你能看到自己需要评判的答案数量和已完成的数量。 
 
 .. image:: /Images/PA_S_PeerAssmt.png
    :alt: In-progress peer assessment
    :width: 500
 
-You assess other students' responses by selecting options in the rubric, in the
-same way you assessed the sample responses in the "learn to assess responses"
-step. Additionally, this step has a field below the rubric where you can provide
-comments about the student's responses.
+你评判的方式和你在上一步“学习如何评价”中的相同，只需在得分要点中选择相应的选项即可。 这个环节在得分要点下面增加一个评论区，你可以在这里对别人的答案进行评论。
 
-.. note:: Some assessments have an additional **Comments** field for one or more
-   of the assessment's individual criteria. You can enter up to 300 characters
-   in these fields. In the following image, both criteria have a **Comments**
-   field. There is also a field for overall comments on the response.
+.. note:: 答案的每个要点都可以有一个评论区。 每个评论区中，你的评论不能超过300字。 除了分段评价，还有一个总评区域。 如下图中，每个要点下都有一个评论区，在所有要点结束后还有一个总评区域。
 
     .. image:: /Images/PA_CriterionAndOverallComments.png
        :alt: Rubric with comment fields under each criterion and under overall response
        :width: 600
 
-After you have selected options in the rubric and provided additional comments
-about the responses, click **Submit your assessment and move to response
-#<number>**.
+在你完成了评判并提交了评论之后，点击 **提交你的评判，移至第 #<编号>号答案** 。
 
-When you submit your assessment of the first student's responses, another set of
-responses opens for you. Assess these responses in the same way that you
-assessed the first student's responses, and then submit your assessment. You
-will repeat these steps until you have assessed the required number of
-responses. The number in the upper-right corner of the step is updated as you
-assess each set of responses.
+当你评判完第一个同学的答案时，另一个同学的答案就会打开。 你需要用相同的方式来评判这位同学的答案，并提交你的评判。 你要不断重复上面的步骤，直到你完成了规定数量的互评。 右上角会显示你已经完成的互评数量，和你需要完成的总数。
 
-Assess Additional Peer Responses
+超额互评
 ********************************
 
-You can assess more peer responses if you want to. After you assess the required
-number of responses, the step "collapses" so that only the **Assess Peers**
-heading is visible.
+如果你愿意，你可以进行比规定数量多的互评。 如下图所示，当你完成规定数量的互评时，这个环节就在“结束”了，你只能看到互评的标题。
 
 .. image:: /Images/PA_PAHeadingCollapsed.png
    :width: 500
    :alt: The peer assessment step with just the heading visible
 
-To assess more responses, click the **Assess Peers** heading to expand the step,
-then click **Continue Assessing Peers**.
+想要进行更多互评，请点击 **互评** 的标题展开该环节，然后再点击 **继续互评** 即可。
 
 .. image:: /Images/PA_ContinueGrading.png
    :width: 500
@@ -248,104 +192,86 @@ then click **Continue Assessing Peers**.
 
 
 =====================
-Assess Your Response
+进行自评
 =====================
 
-When you have completed the required number of peer assessments, your self
-assessment opens. You see your responses along with the same rubric that you
-used in the peer assessment step. Assess your responses, then click **Submit
-Your Assessment**.
+当你完成足够数量的互评之后，你就可以进行自评了。 你会看到自己的答案和互评时用到的得分要点，评判过程与互评基本相同。 完成自评后，点击 **提交自评** 。
 
 ==========================================
-Receive Your Score and Provide Feedback
+获得成绩并提供反馈
 ==========================================
 
-After you submit your self assessment, if other students are still assessing
-your responses, you see the following message under the **Assess Your Response**
-step.
+在你提交自评之后，如果别的同学在评判你的文章，将会在自评模块下面看到如下的提示信息。
 
 .. code-block:: xml
 
-  Your Grade: Waiting for Peer Assessment
+  你的成绩：正在互评中请稍后
 
-  Your response is still undergoing peer assessment. After your peers have assessed your
-  response, you'll see their feedback and receive your final grade.
+  你的答案正在进行互评，在你的同学完成互评后，你将看到同学们的反馈和你最终的得分。
 
-If you see this message, keep checking back periodically until the peer
-assessments of your work are complete.
+看到这条消息，请定期回来查看，直到你的同学完成对你答案的互评。
 
-When peer assessment is complete, you can see the scores you received from all
-of your peers, as well as your self assessment. You can also see any additional
-comments that your peers have provided.
+当对你答案的互评完成后，你将会收到你所有同学给你打出的分数，以及自评的得分。 你还可以看到所有同学写给你的评价。
 
 .. image:: /Images/PA_AllScores.png
    :alt: A student's response with peer and self assessment scores
    :width: 550
 
-If you want to, you can provide feedback on the scores that you received under **Provide Feedback on Peer Assessments**.
+如果你愿意，你还可以在 **提供互评反馈** 中提交对自己成绩的反馈。
 
 =================================================
-Assess Additional Peer Responses (optional)
+进行额外的互评（非必要环节）
 =================================================
 
-If you have assessed the required number of peer responses and completed your
-self assessment, you can assess additional peer responses. To do this, click the
-**Assess Peers** heading. If any responses remain to be assessed, a new response
-opens.
+如果你你已经完成了规定数量的互评，而且完成了自评，你就可以点击 **互评** 标题进行额外的互评，对仍需要评判的答案进行评判。
 
 ***********************
-Peer Assessment Scoring
+互评得分
 ***********************
 
-Peer assessments are scored by criteria. An individual criterion's score is the
-*median*, not average, of the scores that each peer assessor gave that
-criterion. For example, if the Ideas criterion in a peer assessment receives a
-10 from one student, a 7 from a second student, and an 8 from a third student,
-the Ideas criterion's score is 8.
+互评的得分是以每个要点的得分来呈现的，每个要点得分的分数是所有人给出分数的中位数，而不是平均数。 例如，有三个学生对你答案中的思想要点进行了评分，三人分别给出了10分，7分，和8分，则思想要点的最后得分为8分。
 
-Your final score for a peer assessment is the sum of the median scores for each individual criterion. 
+你最后的互评得分是每个要点得分的中位数之和。
 
-For example, a response might receive the following scores from peer assessors.
+例如，下图展示了一个答案所得到的互评分数。
 
 .. list-table::
    :widths: 25 10 10 10 10
    :stub-columns: 1
    :header-rows: 1
 
-   * - Criterion Name
-     - Peer 1
-     - Peer 2
-     - Peer 3
-     - Median
-   * - Ideas (out of 10)
+   * - 要点名称
+     - 学生 1
+     - 学生 2
+     - 学生 3
+     - 中位数
+   * - 思想（满分10分）
      - 10
      - 7
      - 8
      - **8**
-   * - Content (out of 10)
+   * - 内容（满分10分）
      - 7
      - 9
      - 8
      - **8**
-   * - Grammar (out of 5)
+   * - 语法（满分5分）
      - 4
      - 4
      - 5
      - **4**
 
-To calculate the final score, the system adds the median scores for each criterion:
+系统求出所有中位数的和，作为这个答案的最后得分:
 
-  **Ideas median (8/10) + Content median (8/10) + Grammar median (4/5) = final score (20/25)**
+  **思想 中位数 (8/10) + 内容 中位数 (8/10) + 语法 中位数 (4/5) = 最终得分 (20/25)**
 
-Note, again, that your final score is not the median of the scores that each individual peer assessor gave the response.
+再次注意，你的最后得分不是别人给你评判总分的中位数。
 
 ==================================
-View Top Responses (optional)
+查看高分选项（非必要环节）
 ==================================
 
-If the instructor has included a **Top Responses** section, you can see the
-highest-scoring responses that your peers have submitted. This section only
-appears after you have completed all the steps of the assignment.
+如果老师提供了 **高分答案** 这个单元，你就可以看到所有提交答案中得分最高的答案。 这部分只会在你已经完成了解答该问题的全部步骤之后出现。
 
 .. image:: /Images/PA_TopResponses.png
    :alt: Section that shows the text and scores of the top three responses for the assignment
@@ -353,30 +279,19 @@ appears after you have completed all the steps of the assignment.
 
 
 ********************************
-Cancelled Responses
+答案被撤销
 ********************************
+如果老师觉得你已经提交的答案不正确，她可以撤销你的答案，不让其接受互评。 在公开评判问题中会有提示信息告知你的答案被撤销的日期和时间，以及老师给出的撤销原因。
 
-If the instructor deems a response that you have submitted to be inappropriate,
-she can cancel that response and remove it from peer grading. In the open
-response assessment you see an indicator that your submission was cancelled,
-with the date and time of the cancellation, and a comment by the instructor
-about the reason.
-
-The instructor might allow you to submit a replacement response for the
-cancelled one, or she might not. If she does not allow you to submit a
-replacement response, your grade is zero for the assignment.
+由老师来决定你是否能提交一个新的答案顶替被撤销的答案，如果不能，那你该问题的成绩为0.
 
 
 ******************************************************
-Try an Example Open Response Assessment Problem
+体验公开评判问题
 ******************************************************
 
-If you want to try an example open response assessment problem, check out the
-edX demonstration course, `DemoX <https://www.edx.org/course/edx/edx-
-demox-1-demox-4116#.VBxWCLZ8GoV>`_. In addition to giving you a tour of a
-typical edX course, DemoX contains `information about open response assessments 
-<https://courses.edx.org/courses/edX/DemoX.1/2014/courseware/70a1e3505d83411bb72
-393048ac4afd8/1e5cd9f233a2453f83731ccbd863b731/>`_ and an `example peer
-assessment <https://courses.edx.org/courses/edX/DemoX.1/2014/courseware/70a1e350
-5d83411bb72393048ac4afd8/1e5cd9f233a2453f83731ccbd863b731/2>`_.
+如果你想体验公开评判问题，请查看edX的示例课程 `DemoX <https://www.edx.org/course/edx/edx-
+demox-1-demox-4116#.VBxWCLZ8GoV>`_ 。 为了使你能体验到最真实的edX课程，DemoX包含了 `公开评判问题的信息 <https://courses.edx.org/courses/edX/DemoX.1/2014/courseware/70a1e3505d83411bb72
+393048ac4afd8/1e5cd9f233a2453f83731ccbd863b731/>`_  和 `互评示例 <https://courses.edx.org/courses/edX/DemoX.1/2014/courseware/70a1e350
+5d83411bb72393048ac4afd8/1e5cd9f233a2453f83731ccbd863b731/2>`_ 。
 
