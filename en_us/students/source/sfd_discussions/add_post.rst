@@ -46,189 +46,141 @@
 .. _Determine Post Topic:
 
 *************************
-Determine the Post Topic
+决定帖子的主题
 *************************
 
-Every post in the course discussions has an associated topic. The course team
-creates the list of discussion topics for each course, and you'll choose a topic
-from the list when you create your post. Before you add a post, you should look
-through the list of topics in the course discussions so that you can decide
-which topic is the most appropriate for your post. For more information, see
+每个帖子都有一个相关的主题。课程团队为每个课程都创建了一个讨论话题的列表，你可以从列表中为你的帖子选取一个主题。 在你创建帖子之前，应该浏览课程讨论中的主题列表，然后选出与你帖子内容最相近的主题。 获得更多信息请查看
 :ref:`Explore Posts`.
 
-After you've decided on a post type and topic, you can add your post on the
-**Discussion** page or in the body of the course.
+在你决定
+帖子的种类和主题之后，你就可以向 **讨论** 页面或者课程模块中添加你的帖子了。
 
 ************************************
-Add a Post on the Discussion Page
+在讨论页面中创建帖子
 ************************************
 
-You can add a post for course-wide or content-specific discussion
-topics on the **Discussion** page.
+你可以在 **讨论** 页面中向课程范围或者具体内容的讨论中添加帖子。
 
-#. Click the **Discussion** page.
+#. 点击 **讨论** 页面。
 
-#. In the upper-right corner, click **New Post**.
+#. 点击右上角的 **新建帖子** 。
 
-#. Click **Question** or **Discussion** to select the type of post that you want
-   to create.
+#. 点击 **问题** 或者 **讨论** 来选择你想创建帖子的类型。
 
-#. Select the most appropriate discussion topic for your post.
+#. 选择最适合你帖子的话题。
 
   .. image:: /Images/Discussion_course_wide_post.png
     :width: 300 
     :alt: Selecting the topic for a new post on the Discussion page 
 
-5. In the **Title** box, supply a short, descriptive title. The title is the
-   part of your post that others see when they are browsing on the
-   **Discussion** page or scrolling through one of the content-specific topics.
+5. 在 **标题** 框中提供一个简短的描述性标题。 标题是你帖子的一部分，别人会在浏览讨论页面或者查看某个具体话题时看到这个标题。
 
-#. Enter the complete text of your post. To format the text or add links or
-   images, click the buttons above the text field.
+#. 输入你帖子的完整内容，如需格式化文本，添加链接或者图片，点击文本区域上面的按钮。
 
 
-In a few courses, you can add posts, responses, and comments anonymously. If
-this is the case, you'll see a **Post Anonymously** check box under the field
-where you enter your text. When you post anonymously, discussion staff can see your
-username, but other students cannot.
+在一些课程中，你可以创建匿名的帖子，回复或者评论。 在这种情况下，你将会在你输入帖子内容时在输入框下面看到一个 **匿名帖子** 的选择框。 当你匿名发布文章时，只有工作人员能看到你的用户名，而别的学生不能。
 
 ************************************
-Add a Post in a Course Unit
+在课程模块中创建帖子
 ************************************
 
-If you come to a discussion as you work through the units in your course, or if
-you know where in the course a particular discussion originates, you can add a
-post for that discussion right from the unit in your course. This only applies
-to content-specific discussions.
+如果你在课程学习中来到了一个讨论，或者你知道特定的讨论在课程中的起源，你就能直接在你的课程模块中创建你的帖子。 这仅适用于内容特定的讨论。
 
-#. Click **Courseware**.
+#. 点击 **课件** 。
 
-#. Open the unit in the course that includes the discussion topic that you want
-   to add to.
+#. 打开课件中包含你想创建帖子的主题的单元。
 
-#. Click **Show Discussion** to read what others have already contributed to the
-   conversation.
+#. 点击 **查看讨论** 来阅读别人在对话中已经提交的条目。
 
-   You can scroll through the posts that have already been added: the title and
-   the first sentence or two of each post appear. To read an entire post, view
-   the responses to it, and see any comments, click **Expand discussion**.
+   你可以通过显示出的标题和每个帖子的开头1,2句话来浏览别人已经创建的帖子。点击 **展开讨论** 查看帖子的全文，对帖子的评论以及回复。
   
-4. Click **New Post** to add a post.
+4. 点击 **新建帖子** 来创建一个帖子。
 
    .. image:: /Images/Discussion_content_specific_post.png
      :width: 500
      :alt: Adding a post about specific course content
 
-5. Click **Question** or **Discussion** to select the type of post you want to
-   create.
+5. 点击 **问题** 或者 **讨论** 来选择你想创建帖子的类型。
 
-#. In the **Title** field, enter a short, descriptive identifier for your post.
-   The title is the part of your post that others see when they are browsing on
-   the **Discussion** page or scrolling through one of the content-specific
-   topics.
+#. 在 **标题** 框中提供一个简短的描述性标题。 标题是你帖子的一部分，别人会在浏览讨论页面或者查看某个具体话题时看到这个标题。
 
-#. Enter the complete text of your post. Click the buttons above the text field
-   to see options for formatting the text and for adding links or images.
+#. 输入你帖子的完整内容，如需格式化文本，添加链接或者图片，点击文本区域上面的按钮。
 
 
-In a few courses, you can add posts, responses, and comments anonymously. If
-this is the case, you'll see a **Post Anonymously** check box under the field
-where you enter your text. When you post anonymously, discussion staff can see your
-username, but other students cannot.
+在一些课程中，你可以创建匿名的帖子，回复或者评论。 在这种情况下，你将会在你输入帖子内容时在输入框下面看到一个 **匿名帖子** 的选择框。 当你匿名发布文章时，只有工作人员能看到你的用户名，而别的学生不能。
 
 .. _Add Response:
 
 ==============================
-Add a Response or Comment
+创建回复或评论
 ==============================
 
+你可以在原帖子中创建一个回复，或者在一个已有评论下面创建评论来加入一个正在进行的讨论。
 
-To participate in an ongoing discussion, you reply to the initial post by
-adding a response, or expand on a particular response by adding a comment.
-
-The same options for formatting the text and for adding links or images are
-available for responses and comments as for posts.
+回复和评论也可以格式化文本，添加链接或者图片，操作和帖子的相同。
 
 **************************************************
-Add a Response or Comment on the Discussion Page
+在讨论页面中创建回复或评论
 **************************************************
 
-You can add a response or comment to course-wide or content-specific discussion
-topics on the **Discussion** page.
+你可以在 **讨论** 页面中向课程范围或者具体内容的讨论中添加回复或评论。
 
-#. On the **Discussion** page, find the post that you want to contribute to. To
-   help you decide where to add your thoughts, review the current responses and
-   their comments.
+#. 在 **讨论** 页面，找到你你想要评论或者回复的帖子。 阅读已有的回复和评论能帮助你确定你添加自己想法的位置。
 
-   For more information about finding posts by searching, sorting, or using
-   filters, see :ref:`Explore Posts`.
+   有关查找帖子搜索，排序，或者使用过滤器的详细信息在 :ref:`Explore Posts`.
 
-#. Add a response or comment.
+#. 创建回复或评论。
 
- - To add a response to the post, click **Add A Response**. When your response
-   is complete, click **Submit**.
+ - 点击 **创建回复** 来创建回复。 当你完成创建时，点击 **提交** 。
 
   .. image:: /Images/Discussion_add_response.png
     :width: 500
     :alt: The **Add A Response** button located between a post and its 
           responses 
 
- - To add a comment to a response, click inside the **Add a comment** field below
-   the response. When your comment is complete, click **Submit**.  
+ - 点击创建回复区域中回复下面的 **创建评论** 来创建评论。 当你完成创建时，点击 **提交**  
 
 *******************************************
-Add a Response or Comment in a Course Unit
+在课程模块中创建评论或回复
 *******************************************
 
-You can add a response or comment to a content-specific discussion
-topic inside the course.
+你可以在课程中具体的讨论中创建回复或者评论。
 
-#. In the unit that contains the discussion topic where you want to make
-   your contribution, click **Show Discussion**. 
+#. 在包含你想创建条目的讨论主题的单元中，点击 **显示讨论** 。
 
-#. Scroll to the post that you want to contribute to. To help you decide
-   where to add your thoughts, review the current responses and their comments.
+#. 浏览已有帖子找到你想评论或回复的条目，阅读已有的回复和评论能帮助你确定你添加自己想法的位置。
 
-#. Under the text of the post, click **Expand discussion**.
+#. 点击帖子正文下面的 **展开讨论** 。
    
   .. image:: /Images/Discussion_expand.png
     :width: 500
     :alt: The **Expand discussion** link under a post
 
-4. Add a response or comment.
+4. 创建你的回复或评论。
 
- - To add a response to the post, click **Add A Response**. When your response
-   is complete, click **Submit**.
+ - 点击 **创建回复** 来创建回复。 当你完成创建时，点击 **提交** 。
 
- - To add a comment to a response, click inside the **Add a comment** field below
-   the response. When your comment is complete, click **Submit**.
+ - 点击创建回复区域中回复下面的 **创建评论** 来创建评论。 当你完成创建时，点击 **提交**
 
 .. _Edit or Delete:
 
 *******************************************
-Edit or Delete a Post, Response, or Comment
+编辑或删除你的帖子，回复或评论
 *******************************************
 
-You can edit or delete your own posts, responses, or comments at any time. You
-cannot edit or delete contributions from other students.
+你可以随时修改自己的帖子，回复或者评论。 但是你无权修改或者删除别的学生的。
 
-#. Locate the contribution that you want to edit or delete, either in the body
-   of the course or on the **Discussion** page.
+#. 在课程内或者在 **讨论** 页面内找到你想要编辑或者删除的条目。
 
-#. In the upper-right corner of the contribution, click the "More" icon (...). A
-   menu opens.
+#. 点击条目右上角的更多按钮，打开菜单。
 
    .. image:: /Images/Disc_EditDelete.png
     :width: 500
     :alt: Response with the "More" menu expanded, showing Edit, Delete, and Report options
 
-#. Edit or delete the contribution.
+#. 编辑或者删除条目
 
- - To edit the contribution, click **Edit**, make the changes that you want in
-   the text editor that opens, and then click **Update Response**. For posts,
-   you can change the post topic and the post type as well as the text of the
-   post.
+ - 点击 **编辑** 来开始编辑。在你完成修改后，点击 **更新回复**。你还可以编辑帖子的主题和类型。
 
- - To delete the contribution, click **Delete**, and then click **OK** in the
-   pop-up confirmation box.
+ - 点击 **删除** 之后点击弹出的确认框中点击 **确认** 来完成删除。
 
