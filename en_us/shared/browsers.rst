@@ -3,18 +3,17 @@
 .. _Browsers:
 
 ####################
-edX Browser Support
+edX浏览器支持
 ####################
 
-The edX Platform runs on the following browsers.
+edX平台可以在一下浏览器使用：
 
 * `Chrome <https://www.google.com/chrome>`_
 * `Safari <https://www.apple.com/safari>`_
 * `Firefox <https://mozilla.org/firefox>`_
 * `Internet Explorer <https://microsoft.com/ie>`_
 
-.. note:: If you use the Safari browser, be aware that it does not support the 
- search feature for the `edX documentation`_. This is a known limitation.
+.. note:: 如果你使用Safari浏览器，注意，它不支持 `edX文档`_ 的搜索功能，这是一个众所周知的局限。
 
 The edX Platform is routinely tested and verified on the current
 and previous version of each of these browsers. We generally encourage the
@@ -122,6 +121,6 @@ courses and learners.
 
 For more information about edX Insights, see `Using edX Insights`_.
 
-.. _edX documentation: http://docs.edx.org
+.. _edX文档: http://docs.edx.org
 .. _Building and Running an edX Course: http://edx.readthedocs.org/projects/edx-partner-course-staff/en/latest/
 .. _Using edX Insights: http://edx-insights.readthedocs.org/en/latest/

@@ -1,16 +1,13 @@
 *******
-Read Me
+读我
 *******
 
-The *edX Guide for Students* is created using RST_ files and Sphinx_. You, the
-user community, can help update and revise this documentation project on
-GitHub::
+*edX学生使用手册* 是用 RST_ 以及 Sphinx_ 创建的。你作为用户群体，可以帮助我们在GitHub上更新和修改本文档。
 
   https://github.com/edx/edx-platform/docs/en_us/data/source
 
-To suggest a revision, fork the project, make changes in your fork, and submit
-a pull request back to the original project: this is known as the `GitHub Flow`_.
-All pull requests need approval from edX. For more information, contact edX at `docs@edx.org`_.
+想要做一些修改的话，可以先把项目fork到自己的GitHub下，在你的fork下修改之后提交一个pull request到原始项目下。Git链接： `GitHub Flow`_.
+所有的pull request都会经过edX的审核，想要获取更多的信息，请联系edX：`docs@edx.org`_ 。
 
 .. _docs@edx.org: docs@edx.org
 .. _Sphinx: http://sphinx-doc.org/
