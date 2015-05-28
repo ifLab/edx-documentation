@@ -2,132 +2,94 @@
 .. _Explore Posts:
 
 #########################
-Explore Posts
+浏览帖子
 #########################
 
-Finding out whether someone else has already asked the same question or
-initiated a conversation about the subject that interests you, and then
-reading and contributing to that exchange instead of starting a new one, helps
-make the time that everyone spends with the course discussions more productive.
-You can search for something specific, or you can browse through the posts in a
-single discussion topic.
-
+找到是否有人已经问了相同的问题，或者已经有你感兴趣的讨论主题，并阅读帖子或参与到讨论中，而不是重新提问或创建讨论，这样能使课程讨论更加高效。
+你可以搜索特定的内容，也可以浏览一个讨论话题下的帖子。
 .. _Search Discussions:
 
+
 ******************************
-Search the Discussions
+寻找讨论
 ******************************
 
-To search for text, click **All Discussions** and enter a phrase, a word, or part of
-a word in the **Search all posts** field above the list of posts. When you
-press Enter, the search tries to find:
+你可以点击 **所有讨论** 然后在所有帖子列表的上面的 **搜索所有帖子** 区域中输入关键字或关键词。 当你看下回车时，这个搜索会尝试去寻找：
 
-* A match or close match to your text in any post, response, or comment. The
-  display updates to show a list of the posts that have a match at any level of
-  interaction.
+* 符合或最接近你要求的帖子，回复，或者评论。 会有一个列表显示所有和你搜索要求相关的帖子。
 
-* A similar value in any post, response, or comment (if no exact matches are
-  found). A "No results found for {text}. Showing results for {similar}"
-  message appears above the posts that have similar text at any interaction
-  level.
+* 如果没有找到确切的项目，就会显示相近的帖子，回复或评论。 在所有包含相似关键字词的文章上面会出现提示信息“没找到符合{关键字}的内容，显示相近的内容”。
 
-* Any usernames that are an exact match to your text. A "Show posts by
-  {username}" option appears above any posts that have an exact text match at
-  any interaction level. Click the username in the message to read that user's
-  posts, responses, and comments. For more information about viewing
-  contributions from a specific user, see :ref:`View from Participant`.
+* 如果有用户名和你符合你的关键词，就会在符合要求的内容上出现“按{用户名}显示帖子”。 点击提示信息中的用户名来查看该用户的所有帖子，回复和评论。 从 :ref:`View from Participant`  获得更多关于查看特定用户所创建的所有条目的信息。
 
 .. _Discussion Topics:
 
 *********************************************
-View Discussions about a Specific Topic
+查看特定主题的讨论
 *********************************************
 
-Every post in the course discussions has an associated topic. When a participant
-creates a post, the participant selects a topic from a list of topics that the
-course team has provided. You can look through topics in the discussions to find
-one that you're interested in.
+每个课程讨论的帖子都有一个相关的主题。 当一个用户创建帖子时，作者会从课程团队提供的话题列表中选择一个话题。 你可以可以浏览讨论中的话题来寻找你感性趣的内容。
 
-Discussion topics for edX courses can be *course-wide* or *content-specific*.
+edX的讨论主题可以是 **课程范围** 的或者 **特定内容** 的。
 
-* *Course-wide* discussion topics cover matters that affect the entire course,
-  and may include topics such as "Frequently Asked Questions" and
-  "Troubleshooting".
+* **课程范围** 的讨论话题包含了会影响整个课程的内容，像“常见问题”和“故障排除”这样的话题会包含在其中。
 
-* *Content-specific* discussion topics cover specific video lectures, reading
-  assignments, homework problems, or other course content. 
+* **特定内容** 的讨论话题涵盖了具体的视屏课程，阅读问题，家庭作业的问题，或者其他课程内容。
 
 =======================================
-View Topics on the Discussion Page
+在讨论页面上查看话题
 =======================================
 
-On the **Discussion** page, you can view both course-wide and content-specific
-discussions. Click **All Discussions** in the upper left corner of the left pane
-to see all discussion topics in the course. To see all the discussions in an
-individual topic, click the topic name.
+在 **讨论** 页面中，课程范围的和特定内容的讨论你都能看到。点击左窗口左上角的 **所有讨论**  来查看课程中全部的讨论话题。 点击话题名查看其中的内容。
 
-Note that course-wide topics do not have other topics indented below them, while
-content-specific topics are indented under a category name. For content-specific
-topics, you can click either the category name to see all the posts in that
-category, or you can click an individual topic name.
+注意，课程范围的话题下不再包含其他话题，而特定内容的话题则包含于一个类别名。 你可以点击类别名查看其下包含的特定内容的话题，你也可以点击具体的话题名来查看特定内容的话题。
 
   .. image:: /Images/Disc_TopicList.png
      :width: 400
      :alt: Discussion topic list expanded, showing all course discussion topics
 
 =======================================
-View Topics in a Course Unit
+在课程模块中查看话题
 =======================================
 
-Content-specific topics are located in specific units in the course. They typically appear below the content they apply to. 
+特定内容的话题在课程对应的单元中，它们只会出现在它们所属的内容下。 
 
-You can access a content-specific topic by viewing the unit that
-contains the topic. To see the discussion, click **Show Discussion**.
+你可以通过查看包含该话题的课程单元来查看特定内容的话题。 点击 **显示讨论** 你就能看到讨论了。
 
 .. image:: /Images/Discussion_content_specific.png
    :width: 500
    :alt: A discussion topic that appears below text inside the course, identified
        by a "Show Discussion" link
 
-You can also use the **Discussion** page to access a discussion in the unit
-where that topic is located. 
+你可以通过 **讨论** 页面找到话题所在的课程单元。
 
-#. In the list of topics, click the topic that you want.
-#. Click the name of a post to open the post in the right pane.
-#. In the right pane, click the name of the discussion topic below the text of
-   the post to go to the discussion inside the unit.
+#. 在话题列表中点击你想要的话题。
+#. 点击你想阅读的帖子。 帖子会在右窗口中显示。
+#. 点击右窗口中文章下面的讨论话题进入课程单元内部的讨论。
 
 .. image:: /Images/Disc_LinkToCourse.png
     :width: 800
     :alt: Post on the Discussion page with a link back to the course unit
 
 *****************************************
-View Only Unread or Unanswered Posts
+仅查看未读的或者无回复的帖子
 *****************************************
 
-To limit the posts shown on the **Discussion** page, you can select one of the
-filter options. Above the list of posts, the **Show all** filter is selected by
-default.
+你可以设置在帖子列表上面的过滤器选项来减少 **讨论** 页面显示的帖子，默认选项为显示所有。
 
-* To list only the discussions and questions that you have not yet viewed,
-  select **Unread**.
+* **未读**模式只显示你没有看过的讨论或者问题。
 
-* To list only question posts that do not yet have any responses marked as
-  answers, select **Unanswered**.
+* **无回复** 模式只显示目前还有任何人回复的问题帖子。
 
 .. image:: /Images/Disc_Unread.png
  :width: 300
  :alt: List of unread topics with the "Unread" filter circled
 
 *****************************************
-View Pinned Posts
+查看置顶的帖子
 *****************************************
 
-Pinned posts appear at the top of the list of posts when you view all
-discussions. Pinned posts can contain important information about the course or
-any part of the course, such as a particular video or problem. The pinned post
-may originate from anyone in the course, including students and staff, but only
-members of course staff can pin posts.
+你能在查看所有讨论时在话题列表的顶部看到置顶的帖子。 置顶的帖子一般包含重要的课程信息或者课程某部分的信息，尤其是食品或者问题。 置顶帖子可能是包括学生或者工作人员在内的任何人创建的，但是只有工作人员有讲一个帖子置顶的权限。
 
 .. image:: /Images/Disc_Pinned.png
  :width: 300
@@ -136,30 +98,20 @@ members of course staff can pin posts.
 .. _View from Participant:
 
 *************************************************
-View Contributions from a Specific Participant
+查看特定用户的条目
 *************************************************
 
-You can review all the posts, responses, and comments that a specific
-participant has made, both for students and for course staff. To do this, click
-the username that appears at the top of any of the participant's contributions. A page
-opens that shows the following information about the participant. 
+学生和老师均可查看一个特定用户创建的帖子，回复和评论。 点击你想查看用户的任一条目上的用户名，就会打开一个有下列用户信息的页面。
 
-* The participant's username.
+* 用户的用户名。
 
-* The participant's role (for example, student or community TA).
+* 用户的身份（例如学生或者社区的技术分析员）
 
-* The number of posts the participant has created (listed in the upper-left corner
-  as the number of discussions started).
+* 该用户已创建的帖子数（在左上角发起的讨论数量中显示）
 
-* The total number of responses and comments the participant has added to other
-  posts (listed in the upper-left corner as the number of comments).
+* 该用户已创建的回复或者评论数（在左上角的评论数量中显示）
 
-* A list of all the posts that contain a contribution from the participant,
-  whether the participant created the original post or contributed a response or
-  comment to a different post. The list of posts includes the title of the post
-  and the username of the participant who created the post. To see the comments
-  or responses on any post, click **View Discussion** below the post to open the
-  discussion on the **Discussion** page.
+* 一个该用户创建的所有条目的列表，其中包括他（她）原创的帖子和在不同帖子中创建的回复和评论。 列表中的帖子包括帖子的名字和作者。 点击帖子下面的 **查看讨论** 进入 **讨论** 页面浏览帖子中的回复和评论。
 
 .. image:: /Images/Disc_UserContributions.png
  :width: 800
