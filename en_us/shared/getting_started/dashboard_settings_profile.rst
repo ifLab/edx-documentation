@@ -99,67 +99,55 @@ edX会自动保存您的更改。
 .. _SFD Additional Info:
 
 ==========================================
-Specify Additional Information
+制定附加信息
 ==========================================
 
-Additional account information is optional and includes the following
-information. 
+其他帐户信息是可选的，包括以下信息。 
 
-* **Education Completed**: The highest level of education that you have completed.
-* **Gender**: The gender you identify as.
-* **Year of Birth**: The year that you were born.  
-* **Preferred Language**: The language that you prefer to communicate in.
+* **已受教育**: 您已受的教育的最高水平。
+* **性别**: 您的性别。
+* **出生年份**: 您的出生年份。  
+* **首选语言**: 您交流所首选的语言。
 
-To view or change this information, follow these steps.
+要查看或更改此信息，请按照下列步骤操作。
 
-#. On any edX page, select the arrow next to your username in the upper right
-   corner, and then select **Account Settings**.
-#. On the **Account Settings** page, locate the **Additional Information
-   (optional)** section, and then make your changes.
+#. 在任何edX页面的右上角选择您的用户名，然后选择**账户设置**。
+#. 在**账户设置**页面，找到**附加信息（可选）**部分，然后进行更改。
 
-EdX saves your changes automatically.
+edX会自动保存您的更改。
 
 ==========================================
-Link or Unlink a Social Media Account
+链接或取消链接到社交媒体帐户
 ==========================================
 
-You can link your edX account to your Facebook or Google account. If you
-link your accounts, you can sign in to edX automatically by signing in to
-Facebook or Google.
+您可以将您的帐户EDX链接到你的Facebook或谷歌帐户。如果您已链接您的帐户，您可以使用Facebook或谷歌账户自动登录。
 
-To link your accounts, follow these steps.
+链接您的账户请参考以下步骤。
 
-#. On any edX page, select the arrow next to your username in the upper right
-   corner, and then select **Account Settings**.
-#. In the **Connected Accounts**
-   section, select **Link** next to either Facebook or Google.
+#. 在任何edX页面的右上角选择您的用户名，然后选择**账户设置**。
+#. 在**链接帐户**部分，选择**链接**到Facebook或者谷歌。
 
-   If you want to unlink your edX account from your Facebook or Google
-   account, select **Unlink** next to either Facebook or Google in the
-   **Connected Accounts** section.
+   如果你想将你的edX账户取消与Facebook或谷歌帐户的链接，在**链接帐户**部分，选择**取消链接**到Facebook或者谷歌。
 
 .. _SFD Profile Page:
 
 *************************************
-Exploring the Profile Page
+探索个人主页
 *************************************
 
-Your edX profile allows you to share information about yourself with the edX
-community. Your profile can include an image that identifies you on the edX
-site as well as your location and other biographical information. Course teams
-and other learners in your courses can view your profile.
+您的edX个人资料可以让在edX讨论区分享您的个人资料。您的edX个人资料可以包含您在edX站点的识别头像，以及您的位置和其他个人履历。课程团队和课程学习者可以在您的课程中查看您的个人资料。
 
-You can share a limited profile or a full profile.
+您可以分享有限的或者全部个人资料。
 
-.. note:: Learners under 13 years of age can only share a limited profile.
+.. note:: 十三岁以下的学习者只能分享有限的资料。
 
-A limited profile can include only your username and an image.
+有限的资料可以只包含您的用户名以及头像。
 
 .. image:: ../../../shared/getting_started/Images/SFD_Prof_Limited.png
  :width: 400
  :alt: A learner's limited profile showing only username and image
 
-A full profile can include biographical information.
+全部个人信息可以包含个人履历。
 
 .. image:: ../../../shared/getting_started/Images/SFD_Prof_Full.png
  :width: 500
@@ -167,99 +155,75 @@ A full profile can include biographical information.
      biographical paragraph
 
 ================================
-Create or Edit a Limited Profile
+创建或者编辑有限的个人资料
 ================================
 
-A limited profile includes only your username and, optionally, an image.
+有限的资料仅包括你的用户名和头像（可选）。
 
-To create or edit a limited profile, follow these steps.
+创建或编辑有限资料，请参考以下步骤的操作。
 
-#. On any edX page, select the arrow next to your username in the upper right
-   corner, and then select **My Profile**.
-#. On your profile page, locate **edX learners can see my** in the
-   upper left corner of the page, and then select **Limited Profile**.
+#. 在任何edX页面的右上角选择您的用户名，然后选择**我的资料**。
+#. 在您的个人资料页面，在页面的左上角找到**edX学习者可以看到我的信息**，然后选择**限制个人信息**。
 
-#. (optional) Add an image that you want to associate with your edX username.
-   Your image must be a .gif, .jpg, or .png file. The image must be between
-   100 bytes and 1 MB in size. If you do not add an image, the placeholder
-   image appears as your profile image.
+#. （可选）添加一个头像与您的edX用户名关联。
+   您的头像必须是一个.gif、.jpg或者.png格式的文件。大小在0.1KB到100MB之间。如果您不添加头像，则头像栏会显示您的个人资料图片。
   
-   #. Move your cursor over the placeholder image, and then select **Upload Image**.
-   #. In the dialog box, select the image file that you want, and then click
-      **Open**.
+   #. 将光标移动到头像栏，然后选择**上传图片**。
+   #. 在弹出的对话框中，选择您想要的图像文件，然后单击**打开**。
 
-   To change or remove your profile image, move your cursor over your image,
-   and then select either **Change Image** or **Remove**. When you remove your
-   profile image, the placeholder image appears as your profile image.
+   更改或删除您的个人资料图片，请将光标移到头像，然后选择**更改图片**或**删除**。当您删除您的头像的时候，头像栏会显示您的个人资料图片。
 
-EdX saves your changes automatically.
+edX会自动保存您的更改。
 
 ================================
-Create or Edit a Full Profile
+创建或编辑完整的个人资料
 ================================
 
-.. note:: You must specify your year of birth on the **Account Settings** page 
-     before you share a full profile. If you are under age 13, you can only
-     share a limited profile.
+.. note:: 您必须在您分享您的全部个人资料之前在账户设置页面制定您的出生年份。如果您的年龄没有超过13周岁，您只能分享有限的个人资料。
 
-A full profile can include the following information. Your username and
-country or region are required.
+完整的个人资料可以包含以下信息。您的用户名、国家或地区是必须要求的。
  
-* Your username.
-* An image that you select to identify you on the edX site.
-* Your country or region.
-* Your preferred language.
-* A paragraph about yourself. You might include your interests, goals, or
-  other information that you want to share. This paragraph can contain up to
-  3000 characters.
+* 您的用户名。
+* 您选择的头像作为edX站点上的身份标识。
+* 您的国家或地区。
+* 您的首选语言。
+* 一段自己的简介，可以包含您的兴趣、志向或者其他您想要分享的信息。要求3000个字母以内。
 
-To create or edit your profile, follow these steps.
+参考以下步骤，创建或者编辑您的个人信息。
 
-#. On any edX page, select the arrow next to your username in the upper right
-   corner, and then select **My Profile**.
-#. Locate **edX learners can see my** in the upper left corner of the page,
-   and then select **Full Profile**.
-#. On your profile page, move your cursor over the information that you
-   want to add or change.
+#. 在任何edX页面的右上角选择您的用户名，然后选择**我的资料**。
+#. 在您的个人资料页面，在页面的左上角找到**edX学习者可以看到我的信息**，然后选择**完整个人信息**。
+#. 在您的个人信息页面，将光标移动到要添加或者修改的信息。
 
-   If you have not added information to the field, the field appears
-   highlighted and surrounded by a dashed line.
+   如果您还没有添加任何信息，会有高亮和虚线框提示。
 
    .. image:: ../../../shared/getting_started/Images/SFD_Prof_Add_Info.png
     :width: 300
     :alt: A profile page with the "Add language" field highlighted and
         surrounded by a dashed line
 
-   If the field already has information, the field appears highlighted, and a
-   pencil icon appears in the upper right corner.
+   如果该字段已经有信息，则会有高亮显示，并且会有铅笔图标出现在其右上角。
 
    .. image:: ../../../shared/getting_started/Images/SFD_Prof_Edit_Info.png
     :width: 500
     :alt: A profile page with the "About Me" field highlighted
 
-#. Move your cursor inside the field, and then either enter text in the field
-   or select a different option from a list.
+#. 将您的光标移动到信息框内，然后您可以输入文本或者从列表中选择不同的选项。
 
-EdX saves your changes automatically.
+edX会自动保存您的更改。
 
-.. note:: If you change the profile type selection from **Full Profile** 
- to **Limited Profile**, your location, language, and descriptive paragraph
- are not visible on your profile page. However, this information is saved. To
- make this information visible again, select **Full Profile**.
+.. note:: 如果您将您的个人资料类型从**全部个人资料**更改为**有限个人资料**，您的地址，语言，简介在您的个人资料页面上都不可见。但是，这些信息会被保存。若想让这些信息可见，请选择**全部个人资料**。
 
 ================================
-View Another Learner's Profile
+查看其他学习者的个人资料
 ================================
 
-You view other learners' profiles through the course discussions.
+您可以通过课程讨论来浏览其他学习者的个人资料。
 
-#. On the **Discussion** page, select the username of any learner in a post, a
-   response, or a comment.
-#. When the **Active Threads** page for that learner opens, select the
-   learner's username in the upper left corner of the page.
+#. 在**讨论**页面，在链接、回复或者评论处选择用户名。
+#. 当**活跃的主题**页面打开时，在页面的左上角选择学习者的用户名。
 
-The following image shows a learner's username in a post, the learner's
-username on the **Active Threads** page, and the learner's profile page.
+下图显示了学习者的用户名，在链接处、在**活跃的主题**页面、在学习者的个人信息页面。
 
 .. image:: ../../../shared/getting_started/Images/SFD_Prof_from_Disc.png
   :width: 600
