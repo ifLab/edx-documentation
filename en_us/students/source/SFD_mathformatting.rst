@@ -1,13 +1,10 @@
 .. _Math Formatting:
 
 #####################################################################
-Entering Mathematical and Scientific Expressions
+输入数学公式和科学表达式
 #####################################################################
 
-For some math, science, and other problems, you'll enter a numerical or math
-expression, such as a formula, into a response field. You enter your response as
-plain text, and the edX system then converts your text into numbers and symbols
-that appear below the response field:
+对于一些数学，科学和其他的问题而言,你需要输入一些数学表达式, 比如将一个公式插入到一个响应区中. 你只要输入纯文本, 然后edX系统就会将你的文本转换成数字和符号出现在如下的响应区中:
 
 .. image:: /Images/Math5.png
  :width: 150
@@ -26,129 +23,97 @@ that appear below the response field:
  :alt: Image of a numerical input probem rendered by the parser
 
 
-Additionally, some edX courses have a built-in calculator tool that you can use
-while you work through the course. If the course has a calculator, the
-calculator appears as a small icon in the lower-right corner of all pages in the
-courseware.
-
+此外, 一些edX课程还附带有计算器小工具，你可以使用它当你完成本课程的教学任务. 如果这门课程有一个计算器, 那么这个计算器会以一个小图标的形式出现在所有课件的右下角.
 .. image:: /Images/Calc_Locate.png
   :width: 600
   :alt: Courseware page with an arrow pointing to the calculator
 
-When you select the icon, the calculator opens along the lower edge of the
-browser window. You can close the calculator by selecting the X just above the
-upper-right corner of the calculator.
+当你点击这个图标时,这个计算机就会沿着浏览器的下边缘展开。不用时你可以通过打击右上角的红叉叉关闭计算器.
 
 .. image:: /Images/Calc_Showing.png
   :width: 600
   :alt: Courseware page with the calculator visible along the edge of the browser
 
-Both the calculator and the response fields in math problems accept a selection
-of characters that represent numbers, operators, constants, functions, and other
-mathematical concepts. You may recognize parts of this system if you've used
-math programs before.
 
-.. note:: You can select the circled ``i`` icon on the right side of the 
-  calculator input field to see a pop-up hint that has an abbreviated list of
-  these characters.
+如果你以前使用过的数学的话，无论是使用计算器还是数学问题中的响应区接受选择字符表示数字，运算符，常量，函数，还是其他
+数学概念。你也许就会认识这个系统的一部分.
+
+.. 注意:: 你可以点击输入区右边的 ``i`` 图标查看弹出的提示(有一个简短的列表).
 
 ****************************
-Entering Math Expressions
+输入数学表达式
 ****************************
 
-When you enter your plain text into the calculator or the response field,
-follow these guidelines:
+当你进入纯文本到计算器或响应区，
+请遵循这些指南：
 
-* **Arithmetical operations**: Use standard characters for addition (+),
-  subtraction (-), multiplication (*), and division (/).
+* **算术运算**: 使用标准的字符： 加 (+),
+  减 (-), 乘 (*), 除 (/).
   
-  * **Multiplication**: Be sure to indicate multiplication explicitly. That is,
-    instead of ``mc^2`` type ``m*c^2``, and instead of ``5a+4b+3c`` type
-    ``5*a+4*b+3*c``.
+  * **乘法**: 一定要明确表示乘法. 比如``m*c^2``不是不能写成，``5*a+4*b+3*c``不能写成``5a+4b+3c``.
     
-* **Operation order**: Use parentheses (``( )``) to specify the order of
-  operations and to make your expression as clear as possible. Use curved
-  parentheses (``( )``) only. Do not use brackets (``[ ]``) or braces (``{
-  }``).
-* **Exponents or superscripts**: Insert a caret (^) before an exponent or
-  superscript. If the exponent or superscript includes multiple characters or
-  is an expression, surround the expression with parentheses. For example, you
-  can enter ``x^n`` or ``x^(n-1)``.
-* **Subscripts**: Insert an underscore (_) before a subscript to indicate a
-  subscript. If the subscript has multiple characters, type the characters
-  without a space. For example, you can enter ``v_IN-v_OUT``. Note, however,
-  that subscripts cannot currently include operators or parentheses.
-* Avoid whitespace.
-* Don't use equal signs (=).
-* Because the system is case-sensitive, make sure you use uppercase and
-  lowercase letters carefully.
+* **运算顺序**: 使用括号 (``( )``) 指定操作顺序，并尽可能表达清楚. 只使用小括号 (``( )``) . 而不使用中括号 (``[ ]``) 或者大括号 (``{}``).
+* **指数运算**: 在指数前插入一个 (^) 符号. 如果这个指数包含多个运算符或者表达式, 请用括号括住这个表达式. 比如, 比如你可以输入    ``x^n`` 或者 ``x^(n-1)``.
+* **下标**: 在下标前插入一个下划线（_）表示下标. 如果下标有多个字符，不要输入空格. 比如，你可以输入 ``v_IN-v_OUT``. 注意, 目前下标还不能包含括号.
+* 避免空格.
+* 不要使用等号 (=).
+* 由于这个系统时区分大小写的, 请确保你的大小写正确.
 
-For more information about the types of characters you can use, see below.
+以下是你可以用到的更多关于字符类型的信息.
 
-.. note:: The edX system accepts both constants and metric affixes. Be 
-  careful to distinguish between constants and metric affixes. Constants stand
-  alone, while metric affixes must be combined with numbers.
+.. 注意:: edX系统支持度量和度量词缀. 请认真辨别常量和度量的区别. 常量单独存在，而度量必须数字结合.
 
-  For example, ``c`` can be a constant representing the speed of light or a
-  metric affix meaning "centi". When you use ``c`` as a metric affix, don't
-  include a space between ``c`` and the number. When you use ``c`` as a
-  constant, indicate multiplication explicitly. The following examples show the
-  difference:
+  比如, ``c`` 可以代表常量光速也能代表度量"厘". 当你使用 ``c`` 作为一个度量时, 不要在 ``c`` 和数字间有空格.当你使用 ``c`` 作为一个常量时, 乘法要使用*. 下面的例子便是两者的差异:
 
-  * ``2c`` = ``0.02`` (2 multiplied by 0.01)
-  * ``2*c`` = ``599584916.0`` (the speed of light multiplied by 2)
+  * ``2c`` = ``0.02`` (0.01乘于2)
+  * ``2*c`` = ``599584916.0`` (光速的2倍)
 
-  * ``2M`` = ``2,000,000`` (2 multiplied by 1,000,000)
-  * ``2*M`` = 2 multiplied by the variable M
+  * ``2M`` = ``2,000,000`` (1,000,000乘于2)
+  * ``2*M`` = 变量M乘于2
 
-  For more information, see :ref:`Scientific Notation` or :ref:`Constants`.
+  更多的信息请参考:ref:`Scientific Notation` or :ref:`Constants`.
 
 ============
-Numbers
+数字
 ============
 
-You can use the following types of numbers:
+你可以使用以下几种类型的数字:
 
-- Integers: 2520
-- Fractions: 2/3
-- Normal floats: 3.14
-- Floats with no integer part: .98
+- 整数: 2520
+- 分数: 2/3
+- 小数: 3.14
+- 没有整数部分的小数: .98
 
-The largest number you can use is **1.7977e+308**, which is the largest float
-possible in the Python programming language. 
+你能使用的最大数是 **1.7977e+308**, 这是Python语言中支持的最大浮点数. 
 
 .. _Scientific Notation:
 
 ======================================
-Scientific Notation and Metric Affixes
+科学记数法和度量词缀
 ======================================
 
-You can enter metric affixes or scientific notation to indicate very large or
-very small numbers. For scientific notation, you can type either a caret (^) or
-the letter ``e`` followed by a number to indicate an exponent. You can use both
-positive and negative exponents.
+你可以使用科学技术法或者度量词缀来表示一个很大或者很小的数. 对于科学计数法, 你可以使用符号(^) 或者在字母 ``e`` 后面加一个指数. You can use both positive and negative exponents.
 
-For example, to indicate ``0.012``, you can enter either of the following expressions:
+比如，你可以使用以下的表达方式表示``0.012``:
 
 * ``1.2^-2``
 * ``1.2e-2``
 
-To indicate ``-440,000``, you can enter either of the following expressions:
+你可以用以下方法表示``-440,000``:
 
 * ``-4.4^5``
 * ``-4.4e5``
 
-The following table shows how to enter numbers with metric affixes, with
-scientific notation, and with ``e`` notation.
+下面是如何用度量词，科学计数法，和字符``e``表示数字的方法.
 
 .. list-table::
   :header-rows: 1
 
-  * - To enter this number
-    - Use this metric affix
-    - Use this scientific notation
-    - Use this ``e`` notation
-    - Other notation
+  * - 要输入的数字
+    - 用度量词表示
+    - 用科学计数法表示
+    - 用字符``e``表示
+    - 其他表示方法
   * - 0.1
     - 1d (deci)
     - 10^-1
@@ -200,113 +165,105 @@ scientific notation, and with ``e`` notation.
     - 1e12
     - 
 
-.. note:: When you use metric affixes or ``e`` notation, make sure you do not 
-  include spaces between the number and the metric affix or the ``e``.
+.. 注意:: 当你使用度量词和字符``e``时, 请确保度量词或``e``与数字之间没有间距.
 
 .. _Constants:
 
 ============
-Constants
+常数
 ============
 
-You can use several different constants in your mathematical expressions.
+你可以使用几种不同的常数数学表达式。
 
-.. note:: When you enter constants multiplied by a number, make sure to 
-  indicate the multiplication explicitly. For example, enter ``2*c`` instead of
-  ``2c`` and ``-4*i`` instead of ``-4i``.
+.. 注意:: 当使用常数与一个数字相乘时, 请确保中间有``*``号.比如, 正确输入``2*c`` 而不是  ``2c``，正确输入``-4*i``而不是``-4i``.
 
-.. Should I include another example in the note?
-
+.. 我应该使用另一个值得注意的例子吗？
 
 .. list-table::
   :widths: 10 60
   :header-rows: 1
 
-  * - Constant
-    - Value
+  * - 常数
+    - 值
   * - ``c`` 
-    - The speed of light in m/s (2.998^8)
+    - 光速： m/s (2.998^8)
   * - ``e``
-    - Euler's number (2.718...)
+    - 欧拉常数 (2.718...)
   * - ``g``
-    - Gravity (9.80 m/s^2)
+    - 重力加速度 (9.80 m/s^2)
   * - ``i``
-    - The square root of -1
+    - -1的平方根
   * - ``j``
-    - The square root of -1
+    - 同样也是-1的平方根
   * - ``k``
-    - The Boltzmann constant (~1.38^-23 in Joules/Kelvin)
+    - 玻尔兹曼常数(~1.38^-23 in Joules/Kelvin)
   * - ``pi``
-    - The ratio of a circle's circumference to its diameter (3.14159...)
+    - 圆周率(3.14159...)
   * - ``q``
-    - The fundamental charge (~1.602^-19 Coloumbs)
+    - 基本电荷单位(~1.602^-19 Coloumbs)
   * - ``T``
-    - The positive difference between 0K and 0°C (273.15)
+    - 0开氏温度与0摄氏温度之间的差(273.15)
 
 ==================
-Greek Letters
+希腊字母
 ==================
 
-To use any of the following Greek letters, type the name of the letter in the
-calculator or the response field.
+你可以使用以下的希腊字母.
 
 .. list-table::
    :widths: 20 20 20 20
    :header-rows: 0
 
-   * - alpha
-     - beta
-     - gamma
-     - delta
-   * - epsilon
-     - varepsilon
-     - zeta
-     - eta
-   * - theta
-     - vartheta
-     - iota
-     - kappa
-   * - lambda
-     - mu
-     - nu
-     - xi
-   * - pi
-     - rho
-     - sigma
-     - tau
-   * - upsilon
-     - phi
+   * - Α α：阿尔法 Alpha 
+     - Β β：贝塔 Beta
+     - Γ γ：伽玛 Gamma 
+     - Δ δ：德尔塔 Delte 
+   * - Ε ε：艾普西龙 Epsilon 
+     -   ε：varepsilon
+     - Ζ ζ  ：捷塔 Zeta 
+     - Ε η：依塔 Eta 
+   * - Θ θ：西塔 Theta 
+     -   ϑ vartheta
+     - Ι ι：艾欧塔 Iota 
+     - Κ κ：喀帕 Kappa 
+   * - ∧ λ：拉姆达 Lambda 
+     - Μ μ：缪 Mu 
+     - Ν ν：拗 Nu 
+     - Ξ ξ：克西 Xi 
+   * - ∏ π：派 Pi 
+     - Ρ ρ：柔 Rho 
+     - ∑ σ：西格玛 Sigma 
+     - Τ τ：套 Tau 
+   * - Υ υ：宇普西龙 Upsilon 
+     - Φ φ： 佛爱  Phi   
      - varphi
-     - chi
-   * - psi
-     - omega
+     - Χ χ：器 Chi 
+   * - Ψ ψ：普赛 Psi 
+     - Ω ω：欧米伽 Omega
      - 
      - 
 
-.. note:: ``epsilon`` is the lunate version, whereas ``varepsilon`` looks 
-  like a backward 3.
+.. 注意:: ``ε epsilon``是半月形的, 然而 ``varepsilon ε``像一个倒着的3.
 
 
 ============
-Functions
+函数
 ============
 
-To use a function, type the letters that represent the function, and then
-surround the expression in that function with parentheses. For example, to
-represent the square root of ``4*a+b``, type ``sqrt(4*a+b)``.
+要使用函数,先把代表函数表达式打出来, 然后用括号括住这个表达式. 比如, 要表达``4*a+b``的平方根, 可以使用``sqrt(4*a+b)``.
 
-You can use the following functions:
+你可以使用以下的函数:
 
-* Common functions 
+* 普通函数
 
-  * sqrt
-  * log10
-  * log2
-  * ln
-  * exp
-  * abs
+  *平方根函数 sqrt
+  * 以10为底的对数函数 log10
+  * 以2为底的对数函数 log2
+  * 自然对数函数
+  * e为底的指数函数 exp
+  * 绝对值函数 abs
 
-* Trigonometric functions and their inverses
+* 三角函数与反三角函数
 
   * sin 
   * cos
@@ -321,7 +278,7 @@ You can use the following functions:
   * arccsc
   * arccot
 
-* Hyperbolic trigonometric functions and their inverses
+* 双曲三角函数及其逆函数
 
   * sinh
   * cosh
@@ -336,8 +293,5 @@ You can use the following functions:
   * arccsch
   * arccoth
 
-* Factorials: Enter factorials as ``fact(3)`` or ``factorial(3)``. You must use
-  integers. For example, you can't enter ``fact(1.5)``.
-* A "parallel resistors" operator (``||``). For example, ``1 || 2`` represents
-  the resistance of a pair of parallel resistors (of resistance 1 and 2 ohms),
-  evaluating to 2/3 (ohms).
+* 阶乘函数: E要输入阶乘``fact(3)``或者``factorial(3)``. 你只能使用整数.比如,你不能输入``fact(1.5)``.
+* A "并联电阻" 运算符 (``||``).比如, ``1 || 2``代表一对并联的电阻 (1欧姆电阻和2欧姆电阻并联)总电阻为2/3 (ohms).
