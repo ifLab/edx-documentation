@@ -1,7 +1,7 @@
 .. _Dashboard Index:
 
 ######################################
-Your Dashboard, Settings, and Profile
+你的仪表盘，配置以及外观
 ######################################
 
 .. toctree::
