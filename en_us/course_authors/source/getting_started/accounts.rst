@@ -1,56 +1,43 @@
 .. _Getting Started with edX:
 
 #############################
-Getting Started with edX
+开始使用edX
 #############################
 
-The following sections provide an introduction to edX and instructions for
-getting started on edX websites.
+以下版块介绍了edx的相关信息及edx网站的使用说明。
 
 * :ref:`edX.org and edX Edge`
 * :ref:`Create an Account`
 * :ref:`edX101_section`
 
-This information is intended for course staff. You might want to include the
-details about the registration process and password policies in your
-communications with prospective students.
+这些信息是为课程教员准备的。在和潜在学生交流中，教员需要了解注册过程及密码策略
+的详细信息。
 
-For information about enrolling students in a course, see
-:ref:`enroll_student`.
+查看一门课程中注册学生的相关信息请点击:ref:`enroll_student`。
 
 .. _edX.org and edX Edge:
 
 *************************
-edX.org and edX Edge
+edX.org 和 edX Edge
 *************************
 
-To explore edX courses, you can register on edX.org_, edX Edge_,
-or both. These sites are visually and functionally the same, but the content
-and purpose are different.
+想体验edx课程，您可登陆 edX.org_,或者 edX Edge_ 进行注册。
+这两个网站在外观和功能上一样，但是内容和目的不同。
 
-* edX.org hosts massive open online courses (MOOCs) from edX institutional
-  partners. To publish courses on edX.org, you must have an agreement with edX
-  and specific approval from your organization. Courses on edX.org are publicly
-  listed in the edX course catalog and are open to learners from around the
-  world.
+* edX.org网站拥有很多来自合作机构的大型开放式网络课程。想要在edX.org上发布课程，
+  您必须与edX达成协议，并且获得您所在学校的支持。edX.org上的课程都陈列在课程目
+  录下，并对全世界的学生开放。
 
-* EdX Edge is edX's more private site. Courses on Edge are not published on
-  edX.org. Any member of a partner course team can create and publish courses,
-  including test courses, on Edge without receiving approval from edX or a
-  partner institution. 
+* EdX Edge 是edX中私密性较高的网站。Edge上的课程不会在edX.org中发布。在Edge上
+  发布课程，包括测试课程，都无需得到edX或者学校的批准。但是，由于Edge中没有课
+  程目录，因此无法使用类似Google的搜索引擎查找课程。除非您邀请学生，或者拥有
+  该课程网址的学生才能加入您在Edge上的课程。
 
-  However, Edge does not have a course catalog, and courses cannot be found
-  through search engines such as Google. Only learners whom you explicitly
-  invite or who have the URL for your course can participate in your course on
-  Edge. Note that you can invite an unlimited number of learners to participate
-  in an Edge course.
+  EdX Edge同时也拥有小型私有在线课程。
 
-  EdX Edge also hosts small private online courses (SPOCs).
-
-.. note:: 
- All course data and accounts on Edge and edX.org are separate. If you want
- to use both edX.org and Edge, you must go through the registration process on
- both sites.
+.. 注意:: 
+ Edge和edX.org的课程数据及账号是不同的。只有分别在这两个网站上完成注册，才可
+ 以同时使用这两个网站。
 
 .. _Edge: http://edge.edx.org
 .. _edX.org: http://edx.org
@@ -61,7 +48,7 @@ and purpose are different.
 Create an Account
 *************************
 
-To get started, you create, or *register*, an account on edX.org or Edge.  
+ 首先，您得在edX.org和Edge上注册账号。  
 
 #. Go to the `edx.org registration`_ or `Edge registration`_ page.
 
