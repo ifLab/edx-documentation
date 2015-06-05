@@ -53,7 +53,7 @@ edX.org 和 edX Edge
 
 #. 进入 `edx.org registration`_ 或 `Edge registration`_ 页面.
 
-#. 您也可以选择使用**Facebook** 或 **Google** 账号作为您的edX账号。
+#. 您也可以选择使用 **Facebook** 或 **Google** 账号作为您的edX账号。
 
 #. 如果您选择不使用Facebook或Google创建账户, 您需要在注册表中填写所有
    标记了星号(*)的信息。 
