@@ -46,32 +46,28 @@ edX.org 和 edX Edge
 .. _Create an Account:
 
 *************************
-Create an Account
+创建账户
 *************************
 
  首先，您得在edX.org和Edge上注册账号。  
 
-#. Go to the `edx.org registration`_ or `Edge registration`_ page.
+#. 进入 `edx.org registration`_ 或 `Edge registration`_ 页面.
 
-#. Optionally, select **Facebook** or **Google** to use your Facebook or Google
-   account to set up your edX account.
+#. 您也可以选择使用**Facebook** 或 **Google** 账号作为您的edX账号。
 
-#. If you do not use Facebook or Google to create your account, in the
-   registration form, enter your information in the fields that have an
-   asterisk (*).
+#. 如果您选择不使用Facebook或Google创建账户, 您需要在注册表中填写所有
+   标记了星号(*)的信息。 
 
-  .. note::  
-   Learners will see the name that you enter in the **Public username** field,
-   not the name in the **Full name** field.
+  .. 注意::  
+   学生会看见您的 **用户名** 而不是 **全名**。
 
-  If you are at an edX partner institution, you should use your
-  institutional e-mail address.
+  如果您所在的机构是edX的合作伙伴之一，您应该使用官方邮箱注册。
 
-4. For edx.org, select  **I agree to the edX Terms of Service
-   and Honor Code**, and then select **Create your account**.
+4. 注册edX.org，请选择 **同意“服务条款”和“荣誉准则”
+   **, 并选择 **创建您的账户**。
 
-   For Edge, select both **I agree to the Terms of Service** and **I agree
-   to the Honor Code**, and then select **Create My Edge Account**.
+   注册Edge，请选择 **同意“服务条款”** 和 **同意
+   “荣誉准则”**, 并选择 **创建我的Edge账户**。
 
 5. In the activation email message, select the link to complete the activation.
    When your account has been activated, your browser opens to an "Activation
