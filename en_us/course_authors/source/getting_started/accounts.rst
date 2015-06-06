@@ -36,7 +36,7 @@ edX.org 和 edX Edge
 
   EdX Edge同时也拥有小型私有在线课程。
 
-.. 注意:: 
+.. note:: 
  Edge和edX.org的课程数据及账号是不同的。只有分别在这两个网站上完成注册，才可
  以同时使用这两个网站。
 
@@ -58,7 +58,7 @@ edX.org 和 edX Edge
 #. 如果您选择不使用Facebook或Google创建账户, 您需要在注册表中填写所有
    标记了星号(*)的信息。 
 
-  .. 注意::  
+  .. note::  
    学生会看见您的 **用户名** 而不是 **全名**。
 
   如果您所在的机构是edX的合作伙伴之一，您应该使用官方邮箱注册。
@@ -92,7 +92,7 @@ EdX提供了 `edX Demo course`_ 和 `Overview of Creating an edX Course`_
 * edX Demo course 让新学员探索和学习如何参与edX课程，我们建议您在创建您的
   课程之前先熟悉学生参与课程的全部过程。
 
-  .. 注意::
+  .. note::
     您可以在您的课程资料中添加关于edX Demo course的信息，并建议新生在参加您的
     课程前先学习edX Demo Course。
 
