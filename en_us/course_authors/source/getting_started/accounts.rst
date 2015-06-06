@@ -74,7 +74,7 @@ edX.org 和 edX Edge
 
 您可以在
 :ref:`account settings<SFD Account Settings>` 页面中修改账户信息和重置密码。
-注意，您的账户设置内容可以通过学生管理系统和学生课程面板访问，Studio和Studio
+注意，您的账户设置内容可以通过学习管理系统和学生课程面板访问，Studio和Studio
 控制面板则无法访问该内容。
 
 .. _Edge registration: http://edge.edx.org/register
@@ -93,9 +93,8 @@ EdX提供了 `edX Demo course`_ 和 `Overview of Creating an edX Course`_
   课程之前先熟悉学生参与课程的全部过程。
 
   .. 注意::
-    You can include information about the edX Demo course in your course
-    materials, and recommend that new learners take the edX Demo course before
-    proceeding with your course.
+    您可以在您的课程资料中添加关于edX Demo course的信息，并建议新生在参加您的
+    课程前先学习edX Demo Course。
 
 * Overview of Creating an edX Course is an example of a course built with
   Studio. It is a self-paced walk-through of planning, building, and running
