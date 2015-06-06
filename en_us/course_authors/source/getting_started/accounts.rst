@@ -69,9 +69,8 @@ edX.org 和 edX Edge
    注册Edge，请选择 **同意“服务条款”** 和 **同意
    “荣誉准则”**, 并选择 **创建我的Edge账户**。
 
-5. In the activation email message, select the link to complete the activation.
-   When your account has been activated, your browser opens to an "Activation
-   Complete" page that contains a link to your dashboard.
+5. 点击激活邮件中的链接以完成激活。完成激活您的账户后，您的浏览器会显示“注册成功”
+   页面，点击此页面中的链接可以返回您的课程面板。 
 
 You can modify your account information and reset your password from the
 :ref:`account settings<SFD Account Settings>` page. Note that account settings
