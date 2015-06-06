@@ -49,7 +49,7 @@ edX.org 和 edX Edge
 创建账户
 *************************
 
- 首先，您得在edX.org和Edge上注册账号。  
+ 首先，您需要在edX.org和Edge上注册账号。  
 
 #. 进入 `edx.org registration`_ 或 `Edge registration`_ 页面.
 
@@ -70,12 +70,14 @@ edX.org 和 edX Edge
    “荣誉准则”**, 并选择 **创建我的Edge账户**。
 
 5. 点击激活邮件中的链接以完成激活。完成激活您的账户后，您的浏览器会显示“注册成功”
-   页面，点击此页面中的链接可以返回您的课程面板。 
+   页面，点击此页面中的链接可以返回您的课程控制面板。 
 
-You can modify your account information and reset your password from the
-:ref:`account settings<SFD Account Settings>` page. Note that account settings
-are available from the LMS and learner dashboard, not from Studio or the
-Studio dashboard.
+
+您可以在
+:ref:`account settings<SFD Account Settings>` 页面中修改账户信息和重置密码。
+注意，您的账户设置内容可以通过学生管理系统和学生课程面板访问，Studio和Studio
+控制面板则无法访问该内容。
+
 
 .. _Edge registration: http://edge.edx.org/register
 .. _edX.org registration: https://courses.edx.org/register
