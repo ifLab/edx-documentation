@@ -72,12 +72,10 @@ edX.org 和 edX Edge
 5. 点击激活邮件中的链接以完成激活。完成激活您的账户后，您的浏览器会显示“注册成功”
    页面，点击此页面中的链接可以返回您的课程控制面板。 
 
-
 您可以在
 :ref:`account settings<SFD Account Settings>` 页面中修改账户信息和重置密码。
 注意，您的账户设置内容可以通过学生管理系统和学生课程面板访问，Studio和Studio
 控制面板则无法访问该内容。
-
 
 .. _Edge registration: http://edge.edx.org/register
 .. _edX.org registration: https://courses.edx.org/register
@@ -85,17 +83,16 @@ edX.org 和 edX Edge
 .. _edX101_section:
 
 ******************************
-The edX Demo Course and edX101
+edX Demo Course 和 edX101
 ******************************
 
-EdX provides the `edX Demo course`_ and `Overview of Creating an edX Course`_
-to help familiarize you with taking and creating edX courses.
+EdX提供了 `edX Demo course`_ 和 `Overview of Creating an edX Course`_
+帮助您熟悉如何参加、制作edX课程。
 
-* The edX Demo course allows new students to explore and learn how to take
-  an edX course. We recommend that you become familiar with the way students
-  experience an edX course before you begin building your first course.
+* edX Demo course 让新学员探索和学习如何参与edX课程，我们建议您在创建您的
+  课程之前先熟悉学生参与课程的全部过程。
 
-  .. note::
+  .. 注意::
     You can include information about the edX Demo course in your course
     materials, and recommend that new learners take the edX Demo course before
     proceeding with your course.
