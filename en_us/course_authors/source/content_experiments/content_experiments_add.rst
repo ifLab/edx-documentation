@@ -6,7 +6,7 @@
 
 在您 :ref:`enable content experiments <Enable Content Experiments>` 以及
 :ref:`set up group configurations in Studio <Set up Group Configurations in edX
-Studio>`之后，您可以为您的课程添加内容实验，请参阅：
+Studio>` 之后，您可以为您的课程添加内容实验，请参阅：
 
 * :ref:`Add a Content Experiment in Studio`
 * :ref:`Add a Content Experiment in OLX`
