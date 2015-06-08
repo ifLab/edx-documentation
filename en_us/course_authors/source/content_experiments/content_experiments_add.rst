@@ -1,7 +1,7 @@
 .. _Add Content Experiments to Your Course:
 
 #########################################
-Add Content Experiments to Your Course
+为您的课程添加内容实验
 #########################################
 
 After you :ref:`enable content experiments <Enable Content Experiments>` and
