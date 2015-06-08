@@ -136,9 +136,8 @@ use a group configuration<View Experiments that Use a Group Configuration>` 。
 
 5. 点击 **创建** 可添加一个新的模式。
    
-The group configuration is then listed in the page. You can see the number of
-groups that the configuration contains, as well as whether the configuration is
-in use in the course:
+完成创建后，新的分组模式就会出现在页面列表中。您可以看见该模式下包含的小组数量，
+以及该分组模式在课堂上的使用状况。
 
 .. image:: ../../../shared/building_and_running_chapters/Images/group_configurations_one_listed.png
  :width: 800
@@ -149,96 +148,88 @@ in use in the course:
 .. _Edit a Group Configuration:
 
 =============================
-Edit a Group Configuration
+编辑分组模式
 =============================
 
-.. important:: You can change the name of a group configuration at any time.
-   However, before you modify any other characteristics of a group configuration
-   that is currently used in a running course, review `Guidelines for Modifying
-   Group Configurations`_.
+.. important:: 您可随时更改分组模式的名称。但是，如果您想更改该模式的其他元素，
+   尤其是正在课堂上使用的分组模式，请先参考 `Guidelines for Modifying Group Configurations` 。
 
-#. On the **Group Configurations** page, hover over the group configuration and
-   click **Edit**.
+#. 在 **分组模式** 页面中， 将鼠标悬停在某个模式上，
+   单击 **编辑** 。
    
    .. image:: ../../../shared/building_and_running_chapters/Images/group_configurations_edit.png
     :alt: The Group Configurations page with Edit button
 
-   The following page opens:
+   打开如下页面：
 
    .. image:: ../../../shared/building_and_running_chapters/Images/save-group-config.png
     :alt: Edit a Group Configuration page
 
-#. Modify the name and description as needed.
+#. 根据需要更改模式名称或描述。
 
-#. Modify groups in the configuration as needed. See `Create a Group
-   Configuration`_ for details.
+#. 根据需要更改模式下的小组。 详情参考： `Create a Group
+   Configuration`_ 。
    
-#. Click **Save** to save your changes.
+#. 单击 **保存** 保存更改。
 
 .. _Delete a Group Configuration:
 
 =============================
-Delete a Group Configuration
+删除分组模式
 =============================
 
 .. note:: 
- You can only delete a group configuration that is not currently used in a
- content experiment. You cannot delete a group configuration that is used in a
- content experiment.
+ 您无法删除目前正在内容实验中使用的分组模式。
 
-#. On the **Group Configurations** page, hover over the group configuration and
-   click the Delete icon. 
+#. 在 **分组模式** 页面中，将鼠标悬停在某个分组模式上，单击
+   删除图标。
 
   .. image:: ../../../shared/building_and_running_chapters/Images/group-configuration-delete.png
    :alt: Edit a Group Configuration page
 
-2. When prompted to confirm the deletion, click **Delete**.
+2. 在跳出的删除确认框中，单击 **删除**.
 
 
 .. _View Experiments that Use a Group Configuration:
 
 ===============================================
-View Experiments that Use a Group Configuration
+查看分组模式在内容实验中的使用状况
 ===============================================
 
-You can view the experiments that use each of your group configurations.
+当使用分组模式时，您可以查看正在使用某个模式的内容实验。
 
-On the **Group Configurations** page, click the name of a group to see its
-details. You see links to experiments that use the group configuration:
+在 **分组模式** page, 页面中，单击某个分组可以查看该组的详细信息。
+您可在页面中看见一个链接，指向正在使用该模式的内容实验：
 
 .. image:: ../../../shared/building_and_running_chapters/Images/group_configurations_experiments.png
  :alt: A group configuration with the experiments using it circled
 
-Click a link to go to the unit page that contains the experiment.
+单击某个链接转到包含该内容实验的单元页面。
 
 
 ===============================================
-View a Group Configuration from an Experiment
+在实验中查看分组模式
 ===============================================
 
-When working with a content experiment, you can view details about the group
-configuration used by that experiment in two ways:
+当您在进行内容实验时，您可以使用以下两种方式查看该实验使用的分组模式详情：
 
-* In a unit that contains a content experiment, in the content experiment block,
-  click the name of the group configuration.
+* 在包含该实验的单元页面中，单击分组模式的名称即可。
 
 .. image:: ../../../shared/building_and_running_chapters/Images/content_experiment_group_config_link.png
  :alt: Content experiment in the unit page with the group configuration link
      circled
 
-* At the top of the content experiment page, click the name of the group
-  configuration.
+* 或者，在内容实验页面顶部，单击分组模式名称。
 
 .. image:: ../../../shared/building_and_running_chapters/Images/content_experiment_page_group_config_link.png
  :alt: Content experiment page with the group configuration link circled
 
-In both cases, the group configuration opens:
+上述两种方法都可以打开该分组模式：
 
 .. image:: ../../../shared/building_and_running_chapters/Images/group_configurations_experiments.png
  :alt: A Group Configuration with the experiments using it circled
 
-You can use the link in the group configuration to return to the unit that
-contains the content experiment.
+您可以使用分组模式页面中的链接回到对应的内容实验页面。
 
 .. import OLX-content experiment doc that's shared in OLX guide.
 
