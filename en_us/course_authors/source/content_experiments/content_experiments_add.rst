@@ -17,24 +17,22 @@ Studio>` 之后，您可以为您的课程添加内容实验，请参阅：
 在Studio添加内容实验
 ********************************************
 
-You can add a content experiment in a unit or container page. In Studio, you
-create and view content for all groups in the content experiment in a container
-page for the experiment, as shown in `Create Content for Groups in the Content
-Experiment`_.
+您可以在单元页面或容器页面中添加内容实验。
+在Studio中，您可以创建并查看某个容器页面中所有学习组的实验内容。
+请参阅  `Create Content for Groups in the Content
+Experiment`_ 。
 
-When a student views the unit with the content experiment, she has no
-indication there is a content experiment in the unit, and the content
-experiment display name is not shown. She sees only the content that you
-configure for the group she is assigned to. To the student, the unit with the
-content experiment is no different than any other unit.
+当学生查看带有内容实验的课程单元时，不会察觉到正在进行的内容实验。
+她看不见实验名称，只能看见您给他所在的实验小组分配的内容。
+对于学生而言，带有内容实验的课程单元与其他课程单元无异。
 
-To configure a content experiment in Studio, you:
+在Studio中配置内容实验，您需要：
 
 #. `Create the content experiment`_.
 #. `Create content for groups in the content experiment`_.
    
-After you configure a content experiment, you can change its group
-configuration. See `Change the Group Configuration for a Content Experiment`_.
+成功创建内容实验后，您可以更改分组模式。
+详情请参阅 `Change the Group Configuration for a Content Experiment`_ 。
 
 ===============================
 创建内容实验
@@ -118,7 +116,7 @@ configuration. See `Change the Group Configuration for a Content Experiment`_.
 
 #. 单击 **保存** 。
 
-#. 现在您需要为新创建的实验组添加模块或组件。单击**查看** 打开内容实验页面。
+#. 现在您需要为新创建的实验组添加模块或组件。单击 **查看** 打开内容实验页面。
 
    您会发现，新创建的分组模式下空空如也，您在之前的分组模式中添加的模块和组件都被转移到了 **非活动组** 区域中。
 
