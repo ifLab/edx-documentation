@@ -78,7 +78,7 @@ Studio是用来在edx上制作课程的工具。
 
 在Studio中的课程大纲页面，点击 **在线浏览**， 您就可以在Edge上查看课程了。
 
-您也可以直接登录 Edge_. ， 您可以在 **我的课程** 控制面板中看见您之前创建的课程：
+您也可以直接登录 Edge_ ， 您可以在 **我的课程** 控制面板中看见您之前创建的课程：
 
 .. image:: ../../../shared/building_and_running_chapters/Images/new_course.png
  :width: 600
