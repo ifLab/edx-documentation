@@ -4,10 +4,9 @@
 为您的课程添加内容实验
 #########################################
 
-After you :ref:`enable content experiments <Enable Content Experiments>` and
+在您 :ref:`enable content experiments <Enable Content Experiments>` 以及
 :ref:`set up group configurations in Studio <Set up Group Configurations in edX
-Studio>`, you
-can add content experiments to your course. See:
+Studio>`之后，您可以为您的课程添加内容实验，请参阅：
 
 * :ref:`Add a Content Experiment in Studio`
 * :ref:`Add a Content Experiment in OLX`
@@ -15,7 +14,7 @@ can add content experiments to your course. See:
 .. _Add a Content Experiment in Studio:
 
 ********************************************
-Add a Content Experiment in Studio
+在Studio添加内容实验
 ********************************************
 
 You can add a content experiment in a unit or container page. In Studio, you
