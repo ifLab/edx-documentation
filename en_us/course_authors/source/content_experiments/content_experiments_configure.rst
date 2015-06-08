@@ -119,24 +119,22 @@ use a group configuration<View Experiments that Use a Group Configuration>` 。
    :width: 800
    :alt: Create a New Group Configuration page
 
-2. Enter a name in the **Group Configuration Name** field. Use a meaningful
-name, because you will select from group configuration names when you create
-content experiments. Students do not see the group configuration name.
+2. 在 **分组模式名称** 中输入名称。 请使用符合意义的名称，因为您将在创建内容实验中选择分组模式。
+学生页面将不会显示分组模式名称。
 
-#. Optionally, enter a description for the new group configuration.
+#. 根据需要为模式名称添加描述。
    
-#. By default, a new configuration already contains two groups. Modify the
-   groups or add and delete groups as needed. A group configuration must have at
-   least one group.
+#. 新的模式将默认含有两个小组。根据需要更改、添加或删除模式下的小组。
+   每个模式中必须含有至少一个小组。
 
-  * Modify group names as needed. You see group names in the unit page in
-    Studio, but group names are not visible to students.       
-  * Click **Add another group** to include another group as part of
-    the configuration. 
-  * Click the **X** to the right of an existing group to remove it from the
-    configuration. A group configuration must have at least one group.
+  * 根据需要更改模式名称。 您可以在Studio单元页中看到小组名称，
+    小组名称对学生不可见。       
+  * 点击 **添加一个小组** 来为当前模式添加一个新的小组。
+    
+  * 点击现有小组右边的 **X** 按钮可将该小组从模式中删除。
+    每个模式中必须含有至少一个小组。
 
-5. Click **Create** to save the new group configuration.
+5. 点击 **创建** 可添加一个新的模式。
    
 The group configuration is then listed in the page. You can see the number of
 groups that the configuration contains, as well as whether the configuration is
