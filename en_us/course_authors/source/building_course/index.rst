@@ -6,8 +6,8 @@
 
 本章节说明如何创建您的课程。
 
-想了解关于如何在Studio Outline中添加您的课程内容，请参考
- :ref:`Developing Your Course Index`.
+想了解关于如何在Studio Outline中添加您的课程内容，
+请参考:ref:`Developing Your Course Index`.
 
 .. toctree::
    :maxdepth: 2
