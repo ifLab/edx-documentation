@@ -152,7 +152,8 @@ use a group configuration<View Experiments that Use a Group Configuration>` 。
 =============================
 
 .. important:: 您可随时更改分组模式的名称。但是，如果您想更改该模式的其他元素，
-   尤其是正在课堂上使用的分组模式，请先参考 `Guidelines for Modifying Group Configurations` 。
+   尤其是正在课堂上使用的分组模式，请先参考  `Guidelines for Modifying
+   Group Configurations`_.
 
 #. 在 **分组模式** 页面中， 将鼠标悬停在某个模式上，
    单击 **编辑** 。
