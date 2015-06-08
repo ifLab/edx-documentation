@@ -168,7 +168,7 @@ use a group configuration<View Experiments that Use a Group Configuration>` 。
 
 #. 根据需要更改模式名称或描述。
 
-#. 根据需要更改模式下的小组。 详情参考：:ref: `Create a Group
+#. 根据需要更改模式下的小组。 详情参考:  `Create a Group
    Configuration`_ 。
    
 #. 单击 **保存** 保存更改。
