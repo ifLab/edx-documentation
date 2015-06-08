@@ -97,9 +97,8 @@ EdX提供了 `edX Demo course`_ 和 `Overview of Creating an edX Course`_
     课程前先学习edX Demo Course。
 
 
-* Overview of Creating an edX Course is an example of a course built with
-  Studio. It is a self-paced walk-through of planning, building, and running
-  your own online course.
+* Overview of Creating an edX Course是利用Studio工具制作课程的实例，Studio课程
+  制作工具可以让您自由掌握课程制作和课程维护的进度。
 
 .. _Overview of Creating an edX Course: https://www.edx.org/course/overview-creating-edx-course-edx-edx101#.VHKBz76d9BV
 
