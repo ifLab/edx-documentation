@@ -1,11 +1,10 @@
 .. _Getting Started with Studio:
 
 ###########################
-Getting Started with Studio
+开始了解Studio
 ###########################
 
-This topic describes the tools you use to build an edX course, and how to
-create your first course.
+本章节主要说明创建edX课程的工具，及如何利用Studio工具创建第一个edX课程。
 
 * :ref:`What is Studio?`
 * :ref:`Use Studio on Edge`
@@ -13,46 +12,40 @@ create your first course.
 * :ref:`View Your Course on Edge`
 * :ref:`Register Your Course on edX.org`
 
-If you are using an instance of Open edX, some specifics in this section might 
-not apply.
+如果您使用一个edX开放平台实例， 本章的一些细节可能会不适用于这个平台。 
 
 .. _What is Studio?:        
             
 ***************
-What is Studio?
+什么是Studio？
 ***************
 
-Studio is the edX tool you use to build your courses. 
+Studio是用来在edx上制作课程的工具。
 
-You use Studio to create course content, problems, videos, and other resources
-for students.
+您可以利用Studio为学生制作课程内容、问题、视频及其他资源。
 
-With Studio, you can also manage your schedule and course team, set grading
-policies, publish your course, and more.
+您也可以利用Studio管理您的时间安排和课程团队，制定评分规则，发布课程等等。
 
-You use Studio directly through your browser. You do not need any additional
-software.
+您可以直接通过浏览器使用Studio，无需借助其他软件。
 
 .. _Use Studio on Edge:
 
 ******************
-Use Studio on Edge
+在Edge上使用Studio
 ******************
 
-You also use Studio on Edge to build your own courses.
+您可以在Edge上使用Studio制作课程。
 
-Go to: https://studio.edge.edx.org. Sign in with the account you created on
-Edge.
+详细信息请点击 https://studio.edge.edx.org. 并用Edge账号登录。
 
-You must then request access to create courses.
+您必须请求获得创建课程的权限。
 
-#. Select the **+** icon to expand the field labeled **Becoming a Course
-   Creator in Studio**.
+#. 点击 **+** 图标展开标签 **成为Studio课程
+   制作的一员**。
 
-#. Select **Request the Ability to Create Courses**.
+#. 选择**请求获得创建课程的权限**。
 
-EdX evaluates your request. When course creation permissions are granted,
-you are notified by email.
+之后，EdX会审核您的请求。一旦获得准许，我们就会邮件通知您。
 
 .. _Studio: https://studio.edge.edx.org
 .. _Edge: http://edge.edx.org
@@ -60,62 +53,59 @@ you are notified by email.
 .. _Create Your First Course:  
   
 ***************************
-Create Your First Course
+创建您的第一节课程
 ***************************
 
-When you receive notice that you can create courses, log in to Studio_.
+当您收到允许创建课程的通知后，请登陆 Studio_。
 
-You see the following page, which is your **My Courses** dashboard:
+您会看到以下页面，即**我的课程** 的控制面板。
 
 .. image:: ../../../shared/building_and_running_chapters/Images/first_course.png
  :width: 600
  :alt: The Studio home page where you create your first course.
 
-Select **Create Your First Course** and follow instructions in ths
-:ref:`Creating a New Course` section.
+选择 **创建我的第一节课程** 并按照
+:ref:`Creating a New Course` 中的步骤进行操作。
 
-When you've created the course, you can view it on Edge.
+完成创建课程后，您可以在Edge中查看已创建的课程。
   
 .. _View Your Course on Edge:
     
 ************************
-View Your Course on Edge
+在Edge上查看课程
 ************************
 
-You can now view the course you just created, even though it does not contain
-any content.
+现在您可以查看之前创建的课程，即使里面没有任何内容。
 
-In the Course Outline in Studio, select **View Live**. The course opens on
-Edge.
+在Studio中的课程大纲页面，点击 **在线浏览**， 您就可以在Edge上查看课程了。
 
-You can also go directly to Edge_. Log in if prompted. You see the course you
-just created listed on your **My Courses** dashboard:
+您也可以直接登录Edge_. ， 您可以在 **我的课程** 控制面板中看见您之前创建的课程：
 
 .. image:: ../../../shared/building_and_running_chapters/Images/new_course.png
  :width: 600
  :alt: The Edge Dashboard.
 
-You can view the course and see that there is no content yet.
+您可以查看刚创建的课程，虽然里面没有任何内容。
 
 .. _Register Your Course on edx.org:
 
 ************************************
-View Your Course on edX.org
+在edX.org上查看课程
 ************************************
 
-If your organization has an agreement with edX and approval to do so, you can
-create a course on edX. To see the content of your course as students will see
-it, you must enroll in your course. You can then view it on the LMS.
+如果您所在的大学与edX达成了协议并且支持您的工作，那么您就可以在edX上创建课程。
+想知道您的课程将以什么形式呈现给学生，您必须先注册自己的课程，这样您就可以在
+学习管理系统（LMS）上查看了。
 
-#. In Studio, create your course and add content.
+#. 在Studio中创建您的课程，并添加课程内容。
 
-#. On the **Course Outline** page, select the blue **View
-   Live** button in the upper right corner of the page.
+#. 在 **课程大纲** 页面，点击电脑屏幕右上角的蓝色 **在线
+   浏览** 按钮。
 
-   Your course enrollment page opens in a new tab on the LMS.
+   您课程的注册页面将会在学习管理系统的新页面打开。
 
-#. Select the blue **Enroll** button to enroll in your course. After you enroll
-   in your course, it opens in the LMS.
+#. 点击蓝色的 **注册** 按钮注册您的课程。 一旦成功注册，它就会显示在学习
+   管理系统中。
 
-#. To continue working on your course, in your browser, switch back to the tab
-   that shows Studio. You will still be on the **Course Outline** page.
+#. 想要继续修改您的课程，只需点击浏览器的返回按钮直至显示Studio窗口。
+   您依然停留在 **课程大纲** 页面。
