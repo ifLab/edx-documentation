@@ -1,11 +1,10 @@
 .. _Configure Your Course for Content Experiments:
 
 #####################################################
-Configure Your Course for Content Experiments
+配置带有内容实验的课程
 #####################################################
 
-This chapter describes how to configure your course so that you can use content
-experiments. See:
+本章将描述如何配置一堂带有内容实验的课程。以下是章节一览：
 
 * :ref:`Enable Content Experiments`
 * :ref:`Overview of Group Configurations`
@@ -16,27 +15,24 @@ experiments. See:
 .. _Enable Content Experiments:
 
 ****************************************
-Enable Content Experiments
+启用内容实验
 ****************************************
 
-To enable content experiments in your course, you add ``split_test`` to the
-**Advanced Modules List** in Advanced Settings.
+想要启用内容实验，您需要在高级设置中的 **高级模块列表** 下添加 ``split_test`` 。
 
 .. note::  
-  ``split_test`` is the internal edX Platform name for a content experiment.
+  ``split_test`` 即“内容实验”在edX平台中的内部名称。
 
-#. From the **Settings** menu, select **Advanced Settings**.
+#. 在 **设置** 菜单中，选择 **高级设置** 。
 
-#. On the **Advanced Settings** page, locate **Advanced Modules List**.
+#. 在 **高级设置** 页面中，选择 **高级模块列表** 。
 
-#. In the **Advanced Modules List** field, add ``"split_test"``. Be sure that
-   you include the double quotation marks.
+#. 在 **高级模块列表** 字段下，添加 ``"split_test"``。注意，包括双引号。
 
-   If you have multiple values, ensure that they are separated by commas
-   (``,``).
+   如果您需要输入多个值，值与值之间请用逗号分隔
+   (``,``)。
 
-   For example, the text in the **Advanced Modules List** field may resemble
-   the following:
+   例如，在 **高级模块列表** 字段中的文字内容如下：
 
    .. code-block:: json
      
@@ -46,91 +42,78 @@ To enable content experiments in your course, you add ``split_test`` to the
        "split_test"
      ]
 
-#. At the bottom of the page, click **Save Changes**.
+#. 在页面底部，单击 **保存更改** 。
 
 .. _Overview of Group Configurations:
 
 ****************************************
-Overview of Group Configurations
+分组模式概述
 ****************************************
 
-Before you can create content experiments, you must specify at least one group
-configuration for your course.
+在创建内容实验之前，您需要为您的课程指定至少一种分组模式。
 
-A group configuration defines how many groups of students are in an experiment.
-You can have any number of group configurations in your course. When you create
-a content experiment, you select the group configuration to use.
+分组模式决定了某项内容实验中学生组的数量。您在课程中可以配置任意数量的分组。
+当创建内容实验时，您可以选择需要使用的分组模式。
 
-For example, you may want to do two different experiments at different times
-during your course. In one content experiment, students either see a video or
-complete a reading assignment. You can then include problems so that you can
-see which group learned the material more completely. For this content
-experiment, you need a group configuration that assigns your students to two
-experiment groups.
+例如，您可以在课堂上安排两组不同时段的内容实验，其中一项的实验内容是看一段视频或完成一项阅读任务。
+您可以在实验中就某一问题提出探讨，以确定哪一组对实验材料掌握得更透彻。
+在这个实验中，您应该将学生分为两个组。
 
-In the other content experiment, you can present the same question using four 
-different types of problems. For this content experiment, you need a
-group configuration that assigns your students to four experiment groups.
+而在另一个实验中，您可能需要就同一探讨主题以四种不同方式提问，这种情况下，就应该将学生配置为四个学习组。
 
 =======================================
-Assigning Students to Experiment Groups
+将学生分配到学习组
 =======================================
 
-The edX Platform assigns students to each experiment group in a group
-configuration.
+edX 平台通过分组模式将学生分成不同学习组。
 
-Experiment group assignments are:
+分组方式有如下几种：
 
-* Dynamic
+* 动态分组法
 
-  The edX Platform assigns a student to an experiment group the first time he or
-  she views a content experiment that uses the group configuration.
+  当某个学生第一次查看带有分组模式的内容实验时，edX 平台会将该学生分到某个小组中。
 
-* Random
+* 随机分组法
   
-  You cannot control which students are assigned to which experiment group. 
+  系统随机将某个学生随机分到某个小组里。
   
-* Evenly distributed
+* 平均分配法
   
-  The edX Platform keeps track of the size of experiment groups, and assigns new
-  students to groups evenly. For example, if you have two experiment groups in a
-  configuration, each group includes 50% of the students in the course; if you
-  have four experiment groups, each group includes 25% of the students.
+  edX平台会随时跟踪每个组的规模，平均地将新学生分配到每个组中。
+  例如，如果您的一个分组模式中有两个学习组，每个小组将包含该课程学生总数的50%；
+  如果分组模式中有四个学习组，每个小组将包含该课程学生总数的25%。
 
-* Permanent
+* 永久分配法
   
-  Students remain in their assigned experiment groups regardless of how many
-  content experiments you set up that use the same group configuration.
+  无论您设立了多少组分组模式相同的内容实验，学生的分组都固定不变。
 
 
 .. _Set up Group Configurations in edX Studio:
 
 ************************************************
-Set up Group Configurations in edX Studio 
+在edX Studio中设置分组模式 
 ************************************************
 
 .. note:: 
-  You must :ref:`enable content experiments<Enable Content Experiments>` before
-  you can set up group configurations.
+  您需要先 :ref:`enable content experiments<Enable Content Experiments>` 才能进行本项工作。
 
-To set up group configurations, on the **Settings** menu, select **Group
-Configurations**. The **Group Configurations** page opens.
+要设置分组模式，在 **设置** 菜单下选择 **分组模式** ，打开 **分组模式** 页面。
 
-From this page you can :ref:`create<Create a Group Configuration>`,
-:ref:`edit<Edit a Group Configuration>`, and :ref:`delete<Delete a Group
-Configuration>` group configurations. You can also :ref:`view experiments that
-use a group configuration<View Experiments that Use a Group Configuration>`.
+在该页面中您可以:ref:`create<Create a Group Configuration>`,
+:ref:`edit<Edit a Group Configuration>` ，以及 :ref:`delete<Delete a Group
+Configuration>` 分组模式。您也可以 :ref:`view experiments that
+use a group configuration<View Experiments that Use a Group Configuration>` 。
 
 .. _Create a Group Configuration:
 
 =============================
-Create a Group Configuration
+创建分组模式
 =============================
 
-You can create a group configuration at any time.
+您可随时创建想要的分组模式。
 
-#. On the **Group Configurations** page, under **Experiment Groups**, click
-   **New Experiment Group**. The following page opens:
+#. 在 **分组模式** 页面，在 **学习组** 下，单击
+   **新的学习组** 按钮打开下面的页面：
 
   .. image:: ../../../shared/building_and_running_chapters/Images/create-group-config.png
    :width: 800
