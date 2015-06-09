@@ -1,23 +1,21 @@
 .. _Sample Student Login Guide:
 
 ======================================
-Sample Student Login Guide 
+学生登录指南示例 
 ======================================
 
-Create a login guide for your individual course.
+您需要为每堂课程创建一份登陆指南。
 
-**STUDENT LOGIN GUIDE FOR [COURSE NUMBER]**
+**【课程号】的登陆指南**
 
 
-How to Set Up Your edX Account and Enroll in Your Class
+如何设置您的edX帐户并注册课程
 
-Welcome to [COURSE NAME] on edX! This guide will walk you through setting up
-your student account with edX, enrolling in [COURSE NAME], and accessing the
-course materials.
+欢迎来到【课程名】edX课程！本指南将指导您如何设置您的学生账户、注册【课程名】以及获取课程资料。 
 
-**Step 1: Open the course enrollment page**
+**第一步：打开课程注册页面**
 
-*Example*
+*例：*
 
 .. code-block:: html
 
@@ -27,10 +25,9 @@ course materials.
     https://edge.edx.org/courses/edX/PHOTO101/Digital_SLR_Photography_101/about
 
 
-The above URL should bring you to the course enrollment page: [REPLACE WITH
-SCREENSHOT OF YOUR ENROLLMENT PAGE]
+以上两个URL指向课程注册页面，实际页面以您的屏幕截图为准。
 
-*Example*
+*例：*
 
 .. image:: ../../../shared/building_and_running_chapters/Images/image302.png
  :width: 600 
@@ -38,48 +35,40 @@ SCREENSHOT OF YOUR ENROLLMENT PAGE]
 
 
 
-**Step 2: Request to enroll in the course** Click on the blue Enroll in [NUMBER
-OF YOUR CLASS] button: [REPLACE WITH PART OF YOUR SCREENSHOT ABOVE]
+**第二步：申请注册课程。** 单击页面中的蓝色注册按钮。 【将图片替换为您的屏幕截图】
 
 .. image:: ../../../shared/building_and_running_chapters/Images/image303.png
  :width: 600 
  :alt: Image of the registration button
 
-A pop-up user authentication window will appear. It will ask you to log in or
-sign up for edX. (If you already have an account with edX, use it to log in. You
-should now be enrolled in the course. Skip to Step 5. Otherwise, go on with Step
-3.)
+此时会弹出用户登录认证窗口，要求您登录或注册edX账户。注册成功后请进行第5步，否则，重复第3步。
 
 .. image:: ../../../shared/building_and_running_chapters/Images/Image305.png
  :width: 600 
  :alt: Image of the registration page
 
 
-**Step 3: Create your account with edX**
+**第3步：创建您的edX帐户**
 
-Fill out the form in the pop-up window. (Some tips: Use an email address you
-check regularly. Also, the username you choose will also be your screen name in
-the course. This means the only name we will know you by is the username (not a
-first and last name). Please include your last name as part of your username so
-we can tell who you are in the course discussions.)
+请填写弹出窗口中的注册信息表：（小贴士：尽量填写您经常使用的email地址。除此之外，
+您的用户名将是您在课程中显示的名称，我们只能通过用户名确认您的身份，而不是真实姓名。
+所以请尽量将您的真实名字作为用户名的一部分，以便我们在论坛中确认您的身份。）
 
 
-**Step 4: Activate your edX account**
+**第4步：激活帐户**
 
-Check your email. This is where your course activation link has been sent. You must click on this to finalize your access to the course.
+接收激活邮件。邮件中是您的课程激活链接，单击链接，即完成注册的最后一步。
 
-Congratulations! You should now have an edX account and be enrolled in [ENTER
-YOUR COURSE NUMBER].
+恭喜！您现在已经拥有了自己的edX帐户，并成功注册【课程号】。
 
-Proceed with Step 5 to access the class materials.
+继续第5步进入您的课程资料。
 
 
-**Step 5: Log in to edX and go the course website**
+**第5步：登录edX，访问课程主页。**
 
-Log in to your account on edX at https://edge.edx.org/
-by using the username and password you just created.
-You will be taken to the main landing page of your edX edge account, which should now include a listing for [ENTER YOUR COURSE NUMBER]: [REPLACE WITH SCREENSHOT OF YOUR COURSE]
+使用您刚刚创建的用户名和密码登录您edX帐户，网址 https://edge.edx.org/
+成功后，即来到您的edX客户端主界面。页面中有一张【课程号】的清单。【将图片替换为您的屏幕截图】
 
-You can now click **View Courseware** to enter the main course website. 
+现在，您可以单击 **查看课件** ，进入课程主页面。
 
-If you are experiencing problems with enrollment or with accessing the class website, please contact [SUPPORT CONTACT NAME] at [CLASS SUPPORT EMAIL].
+如果您在登录或访问课程主页过程中出现问题，请通过【课程帮助邮箱】联系【技术人员】。
