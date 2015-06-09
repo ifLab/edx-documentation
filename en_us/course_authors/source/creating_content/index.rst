@@ -9,11 +9,9 @@
 了解添加习题和学习工具的相关信息，请参阅 :ref:`Exercises and Tools
 Index` 。
 
-了解如何从任意拖拽内容生成的随机化配置添加到内容库，请参阅
- :ref:`Content Libraries` 。
+了解如何从任意拖拽内容生成的随机化配置添加到内容库，请参阅 :ref:`Content Libraries` 。
 
-了解如何在Studio Outline页面中建立您的课程内容，请参阅
- :ref:`Developing Your Course Index` 。
+了解如何在Studio Outline页面中建立您的课程内容，请参阅 :ref:`Developing Your Course Index` 。
 
 
 
