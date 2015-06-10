@@ -4,21 +4,19 @@
 Guidelines for Creating Accessible Content
 ###################################################
 
+EdX致力于打造一个创新型在线学习交流平台，该平台对包括有障碍人群在内的所有学习者开放。
+本教程旨在帮助课程团队在课程设计以及提供指导的过程中认识到可访问性的重要之处，以便服务更加广大的学习群体。
+所谓在线指导的*可访问性*，指的是教学信息以及教学活动对所有学生的可访问程度，包括有生理或其他方面障碍的学生。
+
+本教程的内容基于国际上关于网页普及度（W3C WCAG 2.0）和通用设计（即最易访问、无需适应期、无需特殊加工的设计）的标准和原则。导师在这些标准和原则的指导下设计课程时，需为学生提供包容性较强的教学体验，即，需要考虑到因人而异的学习风格和学习需求。譬如，有些学生在身体上可能有不便之处，有些学生的母语并不是英语，有些学生可能碰见技术问题，比如网速太慢，或是无法使用工作室等等，还有些学生可能由于年龄问题，在综合能力上存在问题，等等。但就本教程的目的而言，我们假设所有终端用户都具有相关技术以及能够兼容的软件。
+
+当然，无法预见的可访问性障碍也会偶尔出现。
+为使您在使用EDX平台时能够避免这些问题，我们建议您使用学院资源库中的资源，以方便身体有缺陷的学生使用。
+大多数学院都对身体上有障碍的人群提供帮助服务以及相关信息技术资源，以提供使用建议及技术支持。这些技术人员在肢体障碍人群便利研究学方面都经过专业训练，能够根据课程目标以及固有的教学方法为您提供建议。
  
-EdX strives to create an innovative, online-learning platform that promotes accessibility for everyone, including learners with disabilities. 
-We intend for these guidelines to help the course teams understand the importance of considering accessibility when designing courses and provide guidance so that they can serve the widest possible audience. 
-*Accessibility* in online instruction refers to the degree to which information and activities are available to all students equally, regardless of physical or other disabilities.
+随着技术水平和可访问性的逐渐提高，我们计划定期对本教程进行升级。
 
-Our guidance is based on international standards and principles for web accessibility (W3C WCAG 2.0) and universal design (usable by all, to the greatest extent possible, without the need for adaptation or specialized design). 
-Instructors who build courses based on these principles promote the opportunity to create an inclusive experience that considers the diverse set of learning styles and needs of all learners—including learners with disabilities, learners who speak English as a second language, learners with technical issues such as low bandwidth internet or no access to audio, and learners with age-related capability issues. For purposes of these guidelines, we have assumed that end users will be equipped with the appropriate adaptive technology and compatible software.
-
-Occasionally, unanticipated accessibility barriers will arise. 
-To supplement the accessibility you can achieve within the edX platform, we recommend that you engage the resources available at your institution to support learners with disabilities. 
-Most institutions offer disability support services and information technology resources that provide accessibility advice and support. These professionals are trained in making disability accommodation decisions and can advise you on what accommodations may be appropriate in light of the goals of the course and the inherent instructional methodologies employed.
-
-As technology and accessibility improvements are constantly emerging, we plan to update these guidelines periodically. 
-
-See the following sections for more information:
+如需了解更多信息，请参考以下章节：
 
 * :ref:`Supporting Learners with Diverse Needs`
 * :ref:`Accessibility Best Practices`
@@ -28,45 +26,42 @@ See the following sections for more information:
 .. _Supporting Learners with Diverse Needs:
 
 ************************************************************
-Supporting Learners with Diverse Needs
+如何满足不同学习者的学习需求
 ************************************************************
 
-Almost one-fifth of the world's population has some kind of disability. 
-Online courses can reduce many barriers to education for these learners by providing access to courses from any location, at any time, and through the use of assistive technologies.
+大约五分之一的世界人口带有某种形式的残疾。
+在线授课能为这些学习者减少许多教育方面的障碍。我们能随时随地授课，并为身体有残疾的学习者提供辅助技术服务。
 
-EdX is dedicated to creating a platform that is not only itself accessible, but also enables course creators to create accessible content. 
-If you encounter platform issues that you believe may affect your ability to provide accessible course content, please contact us at accessibility@edx.org. 
-We also welcome your comments and questions.
+EDX不仅致力于将自身打造成可访问性较高的平台，同时也帮助课程设计者设计出可访问性较高的课程内容。
+如果您在课程设计过程中发现任何您认为有碍可访问性的问题，请及时联系我们，联系方式是accessibility@edx.org。
+欢迎您的评价和咨询。
 
-In the following sections, we outline guidelines for creating and delivering course content that allows students to use built-in accessibility functionality (such as magnification and zoom features), assistive technologies, and alternative formats. 
-These practices consider learners such as the following:
+在接下来的章节中，我们将提供大纲式的指南，以帮助用户设计并发布课程内容，使学生能够使用内置辅助功能（比如文字放大功能及图片缩放功能）、辅助工具以及课程的其他形式。这些方案包括如下内容：
 
-* Blind learners who use a screen reader, which reads page text aloud, or a Braille display device, which renders page text in Braille.
+* 盲人学生可使用屏幕朗读器，该工具能大声朗读页面中的文本，或使用盲文显示设备，将文本转换成盲文。
 
-* Low-vision learners who use screen magnification software to enlarge text and other onscreen content.
+* 弱视力学生可使用放大软件将文本及其他内容放大查看。
 
-* Learners with vision impairments, such as difficulty seeing in low-light conditions, who modify their browser or operating system to change background colors and text settings to make text easier to read.
+* 有视力障碍的学生，比如在弱光条件下阅读困难，可改变浏览器或操作系统的背景颜色，或通过文本设置解决阅读障碍。
 
-* Learners with learning disabilities, such as dyslexia, who use text-to-speech technology that reads page content aloud.
+* 有学习障碍的学习者，比如患有阅读障碍症的学生，可使用“文本发声”工具，该工具可以大声朗读文本内容。
 
-* Physically disabled learners who use switching devices, voice recognition software, or eye-gaze activated technology instead of a standard mouse or keyboard to control their computer.
+* 身体有缺陷的学生可使用开关装置、语音识别软件以及眼动激活工具代替传统的鼠标和键盘来控制电脑。
 
-* Learners who modify their operating system settings to make the mouse or keyboard easier to use.
+* 学生可通过调整操作系统设置，使鼠标和键盘更加容易使用。
 
-* Learners with hearing impairments who cannot access audio content and need the equivalent information in an alternative format, such as captions or a transcript.
+* 有听力障碍的学生无法学习音频，可通过字幕、文字记录等其他形式获取相同的信息。
 
-We highly recommend that you implement the best practices shared with you in this document and other widely available resources (some of which are referred to herein). 
-As mentioned above, if you cannot easily address these barriers, we recommend that you consult with any disability-related resources at your institution 
-(Disability Services, Assistive Technology, or Accessibility). 
-While your ability to support students in the MOOC context may be different from supporting on-campus students, 
-we encourage you to develop a plan to respond to students who inform you of accessibility barriers to learning. 
-However, given the large numbers of learners enrolling in many of the courses, you will quickly see how important it is to address accessibility concerns when creating a course.
+我们强烈建议您采用本文中我们为您提供的最佳方案，或是其他可访问性较高的资源（有一些资源在本文中亦有所提及）。
+正如上文所述，如果您在解决障碍的过程中遇见问题，建议您参考贵校资源库中关于残疾人的资源（比如残疾人服务、辅助科技，以及普遍性相关的资源，等等）。
+鉴于在MOOC环境下为学生服务与在校园环境下不同，建议您为在学习中碰见问题的学生建立问答机制。
+然而，如果课程的学习者较多，您很快就会发现，设计课程时，可访问性十分重要。
 
 
 .. _Accessibility Best Practices:
 
 ************************************************************
-Accessibility Best Practices
+最佳可访问性方案
 ************************************************************
 
 * :ref:`Best Practices for Universal Design for Learning`
@@ -81,134 +76,130 @@ Accessibility Best Practices
 .. _Best Practices for Universal Design for Learning:
 
 ====================================================
-Best Practices for Universal Design for Learning
+最佳通用教学设计方案
 ====================================================
 
-Universal Design for Learning focuses on delivering courses in a format so that as many of your learners as possible can 
-successfully interact with the learning resources and activities you provide them, without compromising on pedagogic rigor and quality.
+通用教学设计旨在以合适的形式传授课程，尽量确保所有学生都能与课上提供的教学资源和教学活动进行互动，无需在教学标准和质量方面作出妥协。
 
-The principles of Universal Design for Learning can be summarized as:
+通用教学设计的原则可总结如下：
 
-#. Present information and content in different ways.
-#. Differentiate the ways that students can express what they know.
-#. Stimulate interest and motivation for learning.
+#. 用多种形式提供信息内容。
+#. 学生阐述习得内容的方式应多元化。
+#. 激发学习兴趣和学习动力。
 
-Instructors can apply these principles in course design by:
+教师可通过以下方式将这些原则融入课程设计中：
 
-* Designing resources and activities that can be accessed by learners in different ways 
-  (for example, providing text that allows a student to enlarge it or change color, a diagram with an equivalent text description, or a video with audio and text captions).
+* 尽量使设计的学习资源和学习活动能够让学生以不同形式获得
+  （例如，设计能够放大或调整背景颜色的文本；给图标配上相应的文字描述；给音频或视频配上字幕）。 
 
-* Providing multiple ways for learners to engage with information and demonstrate their knowledge. 
-  This is particularly important when developing exercises and assessments.
+* 为学生获得信息、阐述习得知识提供多种多样的方式，
+  这在布置练习、作业时尤为重要。
   
-* Identifying activities that require specific sensory or physical capability, such as activities that require color identification, 
-  for which accommodating the specific accessibility needs of students will be difficult or impossible. 
-  In these cases, consider whether there is a pedagogical justification for these requirements. 
-  If there is a justification, consider communicating these requirements to prospective students in the course description and establish a 
-  plan for responding to students who encounter barriers that can be addressed without fundamental alteration. 
-  If there is no justification for the requirements, we recommend that you modify the learning activities to be more flexible and broadly accessible.
+* 明确哪些学习活动需要具备某种感官能力或体能要求， 比如辨色能力，等等，
+  这些活动对于某些身体上有特殊问题的学生而言不容易完成，或是根本无法完成。
+  在这些情况下，教师就必须考虑，这些要求对于教学而言是否必要？ 
+  如果确实必要，教师在课程描述中应向欲参加本课程的学生说明要求，并在不改变课程本质的情况下为有学习困难的学生建立问答机制；如果不必要，我们建议您调整教学活动，使课程更灵活、可访问性更强。
   
-**Resources**
+**资源**
 
-* Delivering Accessible Digital Learning (JISC Techdis) provides a useful overview of an inclusive approach to course design: 
+* JISC Techdis 为您提供包容性的课程设计方法： 
   http://www.jisctechdis.ac.uk/techdis/resources/accessiblecontent
 
-* The National Center on Universal Design for Learning provides a helpful overview on Universal Design for Learning: 
+* 国家通用教学设计中心为您提供通用教学设计方法：
   http://www.udlcenter.org/implementation/postsecondary
 
 
 .. _Best Practices for Readability:
 
 ====================================================
-Best Practices for Readability
+最佳可读性方案
 ====================================================
 
-EdX courses have a global and diverse audience. 
-Learners will be better positioned to access the concepts of your content if it is written in clear, straightforward language and the content is well structured. 
-Use appropriate terminology to your subject area, but keep it as clear and unambiguous as possible to help learners who:
+EDX 课程的听众遍布全球、差异性强。
+课程内容应直截了当、结构合理，学生便能一目了然。
+合理使用学科术语，保证术语清晰，尽量不产生歧义，以便以下学生能更好理解：
 
-* Are not native English speakers; or
-* Have a disability that affects reading, such as dyslexia or a visual impairment.
+* 英语不是母语的学生。
+* 身体有不便之处，影响阅读的学生，如阅读障碍症患者或有视力障碍的学生。
 
-To produce content that is more readable by all students:
+为保证所有学生都能阅读、接受课程内容，教师应当：
 
-* Make the names of elements such as course sections, subsections, units, components, and discussion topics descriptive 
-  and easy to skim by putting the important information first in the name. 
-  These names are used in navigation menus, page headings, and section headings and are signposts that help learners navigate your course and read course content. 
-  “Front-loading” menus and headings particularly helps screen reader users, who can more quickly assess the relevance of a link or heading.
+*设计章节名、小节名、单元名、讨论话题名等元素时，
+  将重要信息放在靠前位置，使标题描述性更强，更易理解。
+  导航菜单标题、页面标题以及章节标题能够帮助学生快速导航课程，阅读课程内容。 
+  “提前加载”菜单和标题尤其能够帮助屏幕阅读器使用者更快速地判断某个链接或标题是否与所需内容相关。
 
-* When creating written learning resources, break text into sections by using HTML elements, such as headings, paragraphs, and lists. 
-  Long blocks of unbroken text are a barrier to most readers. Segmented content is more inviting and is easier to navigate and search. 
-  See :ref:`Best Practices for HTML Markup` for guidance on creating accessible HTML.
+* 当创建文本类的学习资源时，使用HTML元素将文本切分成小标题、小段落以及小列表等等。
+  大段大段的长文本堆积在一起，会给大部分读者带来阅读障碍。如果将内容细分，就更有吸引力，也更易导航、搜索。
+  更多有关使用HTML的内容请参看 :ref:`Best Practices for HTML Markup` for guidance on creating accessible HTML.
 
-* Avoid jargon. If unfamiliar words or phrases are relevant to the subject, explain them when they are first used, and include a glossary with your course materials. 
-  When using an abbreviation or acronym, write out the phrase the first time it appears: for example, “National Aeronautics and Space Administration (NASA).”
+* 避免使用晦涩难懂的术语。 如果出现与主题相关的生词、短语，在该词第一次出现时应予以解释，并在课程材料中附上术语表。
+  使用缩略语或缩写时，应在第一次使用时写出全称，如：“美国国家航空和宇宙航行局（NASA）。”
 
-* Use link text that clearly explains the link destination (for example, “Review the Course Syllabus”). 
-  Avoid using constructs like “You can review the Course Syllabus here.” For links that point to documents rather than web pages, 
-  include the document type in the link (e.g., “Course Syllabus (PDF)”).
+* 链接文本应简洁清晰地说明链接指向（如，“点击回到课程大纲”）。
+  尽量不要使用模糊赘余的语言，比如“您可以从这里回到课程大纲，”等等。如果链接指向不是网页，而是文件，
+  应在链接中注明文件格式（例如：“课程大纲（PDF）”）。 
 
-**Resources**
+**资源**
 
-* The Center for Plain Language provides detailed resources on writing clearly and concisely, in language appropriate for your content and target audience: 
+* 清晰语言中心为您提供详细资料，关于如何简洁明了地写出适合目标读者水平的教学内容：
   http://centerforplainlanguage.org/about-plain-language/checklist/
 
 .. _Best Practices for Accessible PDFs:
 
 ====================================================
-Best Practices for Accessible PDFs
+PDF文件最佳兼容方案
 ====================================================
 
-PDF is a common format for course materials, including textbooks supplied by publishers. 
-However, converting materials to PDFs can create accessibility barriers, particularly for learners with visual impairments. 
-To improve the accessibility of your PDFs, review the guidance below about preparing documents for conversion, using Adobe Acrobat Professional, 
-and working with third-party suppliers.
+PDF格式是课程资料，包括许多出版商的课本经常使用的格式。
+然而将材料转换成PDF格式可能会产生可访问性障碍，尤其是对于有视力障碍的学生而言。
+为使您的PDF文件更易访问，请阅读以下教程。
+以下教程主要关于：准备待转换文件、使用Adobe Acrobat Professional软件以及与第三方供应商合作。
 
 +++++++++++++++++++++++++++++++++++++++++++++
-Converting Microsoft Office documents to PDF
+将Microsoft Office文件转换为PDF格式
 +++++++++++++++++++++++++++++++++++++++++++++
-The teaching materials that you will convert to PDFs may use different formats—for example, your syllabus may be in Word, 
-your presentation slides in PowerPoint, and your textbooks in publisher-supplied PDF. 
-Use the tools available in the applicable software to create well-structured source documents. 
-This early step helps minimize issues that may be difficult or impossible to address later in the conversion process.
+您的教学材料可能是各种不同的格式，比如，教学大纲是Word格式，幻灯片是PPT格式，出版商提供的课本又是PDF格式，您需要将它们都转换成PDF格式。
+您需要使用各种工具、软件，建立结构良好的源文件。
+下面的简易步骤将帮助您尽量避免转换过程中可能出现的难以解决、或无法解决的问题。
 
-**Preparing Word documents**
+**准备Word文档**
 
-* Keep formatting simple. Use headings, paragraphs, lists, images, and captions, and tables for tabular data. 
-  Don’t add unnecessary indents, rules, columns, blank lines, and typographic variation. The simpler the formatting, the easier it will be to make an accessible PDF document.
+* 尽量保持格式简单。您可以添加标题、段落、列表、图片、注释、数据表格等内容， 
+  但不要添加不必要的缩进格式、文字规则、空白列、空白行，等，也不要改变排版格式。格式越简单，越容易转换成PDF。
 
-* Use styles for formatting your text, such as Normal, Heading 1, and Heading 2, rather than manually formatting text using bold and indents. 
-  Add alternative text to images (see :ref:`Best Practices for Describing Images`) using Word’s picture formatting options.
+* 使用系统规定的风格来格式化文本，例如标题1、标题2，不要使用黑体字、缩进等方法手动格式化文本。
+  使用Word的图片格式选项为图片添加替代文本 (见 :ref:`Best Practices for Describing Images`) 。
 
-**Preparing PowerPoint documents**
+**准备PPT文件**
 
-* To help make your content accessible and comprehensible to learners who use screen reading software, start in Outline view and include all of your content as text. 
-  Add design elements and images after completing the outline, and use PowerPoint’s picture formatting options to include detailed descriptions of images that convey information. Avoid adding animations or transitions, as they will not be saved with the PDF format.
+* 为使课程内容可访问性更强、更易被屏幕阅读软件使用者理解，建议使用大纲视图准备PPT中的文本内容。
+  完成大纲后，可添加设计元素和图片，使用PPT的图片格式选项为传递信息的图片添加描述。请不要添加动画效果和过渡效果，因为PDF格式不支持这些效果。
 
-* Use the Home > Drawing > Arrange > Selection Pane option to view the reading order of objects on each slide. If the reading order is not logical, reorder the objects.
+* 单击“开始” > “绘图” > “选择窗格”以查看每张幻灯片的阅读顺序，如果不合逻辑，则重新组织。
 
-* Use the Home > Slides > Reset option to give each slide a unique and informative title. The title can be hidden if preferred.
+* 单击“开始” > “幻灯片” > “重新设置”选项卡，为每张幻灯片设计一个独一无二且能传达信息的标题（可隐藏）。
 
-* Identify column headers for any data table using PowerPoint’s table formatting options (Tables > Table Options > Header Row), 
-  and ensure that each header contains informative text describing the data in that column.
+* 如果有表格，通过PPT的表格格式选项确定表格每一列的题头（表格 > 表格选项 > 标题行），
+  每个题头需描述、传达该列数据内容。 
 
-**Preparing Excel spreadsheets**
+**准备EXCEL表格**
 
-* Use a unique and informative title for each worksheet tab.
+* 每张工作表的标题需独一无二，且传达表格信息。
 
-* Include text alternatives for images (see :ref:`Best Practices for Describing Images`) using Excel’s picture formatting options.
+* 使用Excel的图片格式选项为图片添加备选文本（见“最佳图片描述方案”）。
 
-* Identify column headers using Excel’s table formatting options (Table > Table Options > Header Row), and include in each header cell informative text describing the data in that column.
+* 使用表格格式选项确定表格每一列的题头（表格 > 表格选项 > 标题行），每个题头单元格需描述所在列的信息。
 
-* Do not use blank cells for formatting.
+* 设置格式时，不要出现空白单元格。
 
-* Use descriptive link text rather than URLs in data cells.
+* 若单元格含有数据，应使用描述性的链接文本，不要使用资源定位符。
 
-**Converting Word, PowerPoint, and Excel documents to PDF**
+**将Word, PowerPoint, Excel文件转换成PDF格式**
 
-To generate PDFs from Microsoft Office documents, use the **Save as PDF** option. 
-Make sure the **Document Structure Tags for Accessibility** option is selected (consult your software documentation for more details). 
-Note that PDFs generated from Windows versions of Office will be more accessible than those generated from Mac OS.
+存Microsoft Office文件时，选择 **输出为PDF文件** 选项以生成PDF文件。
+注意 **将标题转换为书签** 选项前应挑勾（如需更多信息请参考您的软件文档）。
+Windows系统下转换的PDF文件比Mac OS系统更方便使用。
 
 +++++++++++++++++++++++++++++++++++++++++++++
 Working with third-party supplied PDFs
