@@ -1,7 +1,7 @@
 .. _Guidelines for Creating Accessible Content:
 
 ###################################################
-Guidelines for Creating Accessible Content
+创建无障碍课程指南
 ###################################################
 
 EdX致力于打造一个创新型在线学习交流平台，该平台对包括有障碍人群在内的所有学习者开放。
@@ -228,164 +228,155 @@ PDF文件的可访问性升级
 * PDF文件是由可访问性不佳的文件生成而得的，或
 * PDF文件生成过程中没有保存可访问信息的来源。
 
-In such cases, you need special software, such as Adobe Acrobat Professional, to enhance the accessibility of the PDF. 
-PDFs that are created from scanned documents require a preliminary Optical Character Recognition (OCR) step to generate a text version of the document. 
-The procedure checks documents for accessibility barriers, adds properties and tags for document structure, sets the document’s language, and adds alternative text for images.
+在这些情况下，您需要通过专门的软件提高PDF文件的可访问性，如Adobe Acrobat Professional。扫描文件生成的PDF需要先通过光学字符辨识技术（OCR）生成文本文件。
+可访问性升级中，应检查文件是否存在可访问性障碍、为文档结构添加属性和标签、设置文件语言，以及为图片添加替代文本。
 
-**Resources**
+**资源**
 
-* Microsoft provides detailed guidance on generating accessible PDFs from Microsoft Office applications, including Word, Excel, and PowerPoint:
+* 微软公司为您提供详细教程，教您如何将Word, Excel, PowerPoint等Microsoft Office文件转换成PDF格式：
   http://office.microsoft.com/en-gb/word-help/create-accessible-pdfs-HA102478227.aspx
 
-* Adobe provides a detailed accessibility PDF repair workflow using Acrobat XI: 
+* Adobe公司生产的Acrobat XI软件为您提供PDF可访问性修复的详细工作流程：
   http://www.adobe.com/content/dam/Adobe/en/accessibility/products/acroba t/pdfs/acrobat-xi-pdf-accessibility-repair-workflow.pdf
 
-* Adobe Accessibility (Adobe) is a comprehensive collection of resources on PDF authoring and repair, using Adobe’s products: 
+* Adobe公司提供的Adobe Accessibility教程是关于PDF编程与修复的综合教程：
   http://www.adobe.com/accessibility.html
 
-* PDF Accessibility (University of Washington) provides a step-by-step guide to creating accessible PDFs from different sources and using different applications: 
+* 华盛顿大学的PDF Accessibility教程手把手教您如何将不同来源的文件转换为可访问的PDF格式，以及如何使用各种软件：
   http://www.washington.edu/accessibility/pdf/
 
-* PDF Accessibility (WebAIM) provides a detailed and illustrated guide on creating accessible PDFs: 
+* WebAIM公司的PDF Accessibility教程为您图解如何建立可访问的PDF文件：
   http://webaim.org/techniques/acrobat/
 
-* The National Center of Disability and Access to Education has a collection of one- page “cheat sheets” on accessible document authoring: 
+* 国家残疾人及受教育中心为您提供文件编程备忘录： 
   http://ncdae.org/resources/cheatsheets/
 
-* The Accessible Digital Office Document (ADOD) Project provides guidance on creating accessible Office documents: 
+* ADOD项目为您提供可访问文件创建指南： 
   http://adod.idrc.ocad.ca/
 
 .. _Best Practices for Custom Content Types:
 
 ====================================================
-Best Practices for Custom Content Types
+最佳自定义内容方案
 ====================================================
-Using different content types can significantly add to the learning experience. 
-We discuss below how to design several custom content types to be accessible to students with disabilities.
+采用不同风格的教学内容能提高教学体验。
+下面我们将讨论如何设计几种自定义的内容，并使之能被身体有残疾的学生接受。
 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-Information graphics (charts, diagrams, illustrations)
+信息制图法（图标、略图、插图）
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-Although images can be helpful for communicating concepts and information, they present challenges for people with visual impairments. 
-For example, a chart that requires color perception or a diagram with tiny labels and annotations will likely be difficult to comprehend for learners with color blindness or low vision. 
-All images present a barrier to learners who are blind.
+图片有助于传授概念和信息，但对于有视力障碍的人来说则是困难。
+例如，使用不同颜色来表明不同比例的图表，或标签、注释字体很小的表格对于色盲和近视患者来说很难理解。
+盲人则更不必说。
 
-The following are best practices for making information graphics accessible to visually impaired students:
+若希望信息图表能被视力障碍学生理解，以下是最佳方案：
 
-* Avoid using only color to distinguish important features of the image. For example, on a line graph, use a different symbol as well as color to distinguish the data elements.
-* Whenever possible, use an image format, such as SVG, that supports scaling. Consider providing a high-resolution version of complex graphics that have small but essential details.
-* Provide a text alternative that describes the information in the graphic. For charts and graphs, a text alternative could be a table displaying the same data. 
-  See :ref:`Best Practices for Describing Images` for details about providing text alternatives for images.
+* 避免只使用颜色来区分图片的重要元素。例如，在线状图表中，除不同颜色的线条外，应采取另一种方案区别数据。
+* 尽量使用可以缩放的图片格式，如SVG格式。若图标较复杂，带有重要却字体很小的细节，应尽量提供高清版本。
+* 使用替代文本描述图标信息。对图表而言，替代文本可以是含有相同数据的表格。关于提供替代文本，详见
+   :ref:`Best Practices for Describing Images` 。
 
 +++++++++++++++++++++++++++++++++++++++++++
-Math content
+数学内容
 +++++++++++++++++++++++++++++++++++++++++++
 
-Math in online courses has been challenging to deliver in a way that is accessible to people with vision impairments. 
-Instructors frequently create images of equations rather than including text equations. 
-Math images cannot be modified by people who need a high-contrast display and cannot be read by screen reader software.
-EdX uses MathJax to render math content in a format that is clear, readable, and accessible to people who use screen readers. 
-MathJax works together with math notation, like LaTeX and MathML, to render mathematical equations as text instead of images. 
-We recommend that you use MathJax to display your math content. 
-You can learn more about using MathJax in the MathJax documentation on accessibility (see the link in “Resources” below). 
-We will update these guidelines as improvements to MathJax are developed.
+在线课程中的数学内容很难保证视力障碍学生能够理解。
+教师通常习惯使用方程图片，而不会手写方程式。
+如果没有对比度较高的显示器，则很难调整图片，并且，屏幕阅读软件也无法识别图片。
+EDX采用MathJax技术，使数学内容清晰、可读，能被屏幕阅读器识别。
+MathJax工具采用数学符号语言，如LaTex和MathML，使方程式以文本格式呈现。
+我们建议您使用MathJax展示数学内容。您可以在MathJax软件文档中了解更多细节。
+随着该工具的改良，我们将及时更新本教程。
 
 ++++++++++++++++++++++++++++++++++++++++++++
-Simulations and interactive modules
+模拟模块和互动模块
 ++++++++++++++++++++++++++++++++++++++++++++
 
-Simulations, including animated or gamified content, can enhance the learning experience. 
-In particular, they benefit learners who may have difficulty acquiring knowledge from reading and processing textual content alone. 
-However, simulations can also present some groups of learners with difficulties. 
-To minimize barriers, consider the intended learning outcome of the simulation. 
-Is it to reinforce understanding that can also come from textual content or a video lecture, or is it to convey new knowledge that other course resources can’t cover? 
-Providing alternative resources will help mitigate the impact of any barriers.
+模拟模块使用生动有趣的内容改善学习体验。
+这些内容尤其能够帮助获得知识困难的学生，让他们摆脱单一的读写文本。
+然而，模拟模块也会给某些学习者造成困难。
+为尽量避免麻烦，教师应再三考虑模拟过程背后的教学目的。
+为帮助理解，是使用文本还是使用视频？为传授新知识，是否只有模拟模块才能做到？
+为减少麻烦，最好准备备选资源。
 
-Although you can design simulations to avoid many accessibility barriers, some barriers, particularly in simulations supplied by third parties, 
-may be difficult or impossible to address for technical or pedagogic reasons. 
-Understanding the nature of these barriers can help you provide workarounds for learners who are affected. 
-Keep in mind that attempted workarounds for simulations supplied by third parties may require the supplier’s consent if copyrighted material is involved.
+尽管通过设计模块能尽量避免可访问性障碍，但是出于技术等原因，仍然会有问题产生，尤其是对于第三方提供的模拟模块。
+正确理解问题的实质有助于为学习者提供更好的学习环境。
+记住：考虑到版权问题，使用某些模拟工作区需要经过第三方的授权。
 
-Consider the following questions when creating simulations, keeping in mind that as the course instructor, 
-you enjoy considerable freedom in selecting course objectives and outcomes. 
-Additionally, if the visual components of a simulation are so central to your course design, 
-providing alternate text description and other accommodations may not be practical or feasible:
+创建模拟工作区时，请记住，作为课程老师，您可以随心所欲地选择课程目标和课程效果。
+另外，如果图片图像是课程的中心内容，那么添加文本描述或是其他处理方案都不是特别现实。试考虑以下问题：
 
-* Does the simulation require vision to understand? If so, provide text describing the concepts that the simulation conveys.
-* Is the mouse necessary to operate the simulation? If so, provide text describing the concepts that the simulation conveys.
-* Does the simulation include flashing or flickering content that could trigger seizures? If so and this content is critical to the nature of the simulation:
+* 模拟模块有视力要求吗？如果有，应为模块内容提供描述文本。
+* 模块对鼠标是否有要求？如果有，应为模块内容提供描述文本。
+* 模拟内容是否包含闪光、闪烁等可能触发癫痫症的元素？如果有，那么：
  
-  * do not require learners to use the simulation for a required assessment
-    activity; and
-  * provide a warning that the simulation contains flickering or flashing content.
+  * 不要让患有该症状的学生使用模拟模块，
+    并且
+  * 警告注明：该模块含有闪光、闪烁元素。
 
-As best practices continue to emerge in this area, we will update these guidelines.
+如有更好方案，我们会及时更新本教程。
 
 ++++++++++++++++++++++++++++++++++++++++++++
-Online exercises and assessments
+在线练习与测评
 ++++++++++++++++++++++++++++++++++++++++++++
 
-For activities and assessments, consider difficulties students may have in completing an activity and consider using multiple assessment options, 
-keeping in mind that some of the end users have disabilities. 
-Focus on activities that allow students to complete the activity and submit their work without difficulties.
+设计测试时，应考虑学生在完成测试的过程中是否可能遇见困难。尽量使测试手段多样化，
+始终牢记，终端用户包括残疾人。课堂活动应尽量避免学生方面的困难。
 
-Some students take longer to read information and input responses, such as students with visual or mobility impairments and students who need time to comprehend the information. 
-If an exercise has a time limit, consider whether it’s long enough to allow students to respond. Advanced planning may help cut down on the number of students requesting 
-time extensions.
+有些学生阅读速度和反应速度较慢，例如视力障碍或行动障碍症患者，还有些学生需要花很长时间理解信息。
+因此，如果测试有时间限制，请考虑时间是否足够所有学生作出回答。
+如果提前做好计划，要求延时的学生就不会那么多。
 
-Some online exercise question types may be difficult for students who have vision or mobility impairments. For example:
+有些在线练习的问题对于视力或行动障碍的学生而言比较困难。例如：
 
-* Exercises requiring fine hand-eye coordination, such as image mapped input or drag and drop exercises, 
-  may present difficulties to students who have limited mobility. Consider alternatives that do not require fine motor skills, unless, of course, 
-  such skills are necessary for effective participation in the course. For example, for a drag-and-drop exercise mapping atoms to compounds, provide a
-  checkbox or multiple-choice exercise.
+* 对手眼协调要求交高的练习，如含有图像的练习或要求用鼠标拖拽的联系
+  这些问题对行动力受限的学生来说困难较大。 如果不妨碍课程的有效参与，
+  尽量不要选择要求行动能力的练习形式。 例如，在原子与化合物匹配练习中，
+  不妨用多项选择的形式代替鼠标拖拽的形式。
 
-* Highly visual stimuli, such as word clouds, may not be accessible to students
-  who have visual impairments. Provide a text alternative that conveys the same information, such as an ordered list of words in the word cloud.
+* 对视觉刺激性较高的练习，如文字云，不适合视觉障碍的学生。
+  为这些学生提供等效的替代文本，如词汇表等。
 
 ++++++++++++++++++++++++++++++++++++++++++++    
-Third-party content
+第三方内容
 ++++++++++++++++++++++++++++++++++++++++++++
 
-When including links to third-party content in your course, be mindful as to the accessibility of such third party resources, 
-which may not be readily accessible to learners with disabilities. We recommend that you test any links prior to sharing them with users.
+若课程中含有指向第三方内容的链接，注意该内容的可访问性。在给学生分享链接之前，建议先做可访问性测试。
 
-You can use the eReader tool or :ref:`Add Files to a Course` to incorporate third-party textbooks and other 
-publications in PDF format into your course. You can also incorporate such materials into your course in HTML format. 
-See :ref:`Best Practices for Accessible PDFs` for guidance on working with third- party supplied PDFs, and :ref:`Best Practices for HTML Markup` 
-for guidance on creating accessible HTML.
+您可使用eReader工具，或通过给课程添加文件的形式来协调课程内容与第三方内容，如课本、PDF文件等，HTML格式也能达到上述效果。如需了解更多细节，请参考
+ :ref:`Best Practices for Accessible PDFs` 以及 :ref:`Best Practices for HTML Markup` 
+两节。
 
 
-**Resources**
+**资源**
 
-* Effective Practices for Description of Science Content within Digital Talking Books, from the National Center for Accessible Media, provides best practices for describing graphs, 
-  charts, diagrams, and illustrations: 
+* 国家可访问媒体中心，关于图表设计方案：
   http://ncam.wgbh.org/experience_learn/educational_media/stemdx
 
-* The University of Washington’s DO-IT project provides guidance on creating accessible math content: 
+* 华盛顿大学，关于如何创建可访问的数学内容：
   http://www.washington.edu/doit/Faculty/articles?465
 
-* AccessSTEM provides guidance on creating accessible science, technology, engineering and math educational content: 
+* AccessSTEM项目，关于如何创建可访问的科技、工程、数学领域的教学内容：
   http://www.washington.edu/doit/Stem/
 
-* The National Center on Educational Outcomes (NCEO) provides Principles and Characteristics of Inclusive Assessment and Accountability Systems: 
+* 国家教育生产中心，关于评估系统：
   http://www.cehd.umn.edu/nceo/onlinepubs/Synthesis40.html
 
-* MathJax provides guidance on creating accessible pages with the display engine: 
+* Mathjax公司，关于创建可访问的页面：
   http://www.mathjax.org/resources/articles-and-presentations/accessible-pages-with-mathjax/
 
 .. _Best Practices for Describing Images:
 
 ====================================================
-Best Practices for Describing Images
+最佳图像描述方案
 ====================================================
 
-Pictures, diagrams, maps, charts, and icons can present information very effectively. 
-However, some visually impaired students, including people who use screen reader software, need text alternatives to understand the information conveyed by these images. 
-The text alternative for an image depends on the image’s context and purpose, and may not be a straight description of the image’s visual characteristics.
+图片、略图、地图、图表、图标等元素能有效表达信息。
+然而使用屏幕阅读软件的视力障碍者则需要替代文本来帮助理解信息。
+图像的替代文本取决于图片上下文及目的，并不一定是对于图片表面特征的直接描述。
 
-Use the following guidelines when you include images in your course:
+课程中包含图片时，阅读以下教程：
 
 * Provide a short text description that conveys the purpose of the image, unless the image conveys a concept or is the only source for the information it presents, 
   in which case a long text description is appropriate. Note that you don’t need to provide a long description if the information appears elsewhere on the page. 
