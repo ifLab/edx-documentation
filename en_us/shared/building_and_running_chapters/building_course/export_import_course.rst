@@ -1,118 +1,105 @@
 .. _Exporting and Importing a Course:
 
 #####################################
-Exporting and Importing a Course
+输出和导入课程
 #####################################
 
-You can :ref:`Export a Course` and :ref:`Import a Course` through Studio. 
+您可以通过Studio :ref:`Export a Course` 和 :ref:`Import a Course`  
 
-When you import and export a course, you work with :ref:`.tar.gz files <Work
-with the targz file>`.
+您将使用 :ref:`.tar.gz files <Work
+with the targz file>`对课程进行导入和输出。
 
-To duplicate an existing course for a new run, course creators can use the
-course re-run option. See :ref:`Rerun a Course`.
+复制并重新开设已有的课程，请选择课程重开选项。详情请参考 :ref:`Rerun a Course`.
 
 .. caution::
-  Before exporting and importing a course, ensure that links in the course to
-  other course content use the ``/jump_to_id/<unit identifier>`` syntax. If a
-  link does not use the ``/jump_to_id/<unit identifier>`` syntax, the link will
-  be broken if you export then import the course. For more information, see
-  :ref:`Add a Link to a Course Unit`.
+  在输出和导入课程之前，请确保课程间的链接使用 ``/jump_to_id/<unit identifier>`` 语法。 
+  如果未使用 ``/jump_to_id/<unit identifier>`` 语法， 您在输出再导入课程时链接会失效。
+  详情请参阅 :ref:`Add a Link to a Course Unit`.
 
 .. _Export a Course:
 
 ***************
-Export a Course
+输出课程
 ***************
 
-There are several reasons you may want to export your course:
+输出课程的原因如下：
 
-* To save your work
-* To edit the XML in your course directly
-* To create a backup copy of your course, which you can import if you want to
-  revert the course back to a previous state
-* To share with another instructor for another class
-* To create a copy of your course that you can later import into another course
-  instance and customize 
+* 保存工作成果
+* 直接在课程中编辑可扩展标记语言
+* 复制课程，若您之后想将课程改回之前的版本，您可以导入您先前输出的版本
+* 与其他教师分享，供上课使用
+* 复制课程以便之后导入其他课程并进行客制化 
  
-When you export your course, Studio creates a **.tar.gz** file that includes
-the following course data:
+输出课程时，Studio会创建 **.tar.gz** 文档，包括以下课程资料： 
  
-* Course content (all Sections, Subsections, and Units)
-* Course structure
-* Individual problems
-* Pages
-* Course assets
-* Course settings
+* 课程内容（所有章节、小节和单元）
+* 课程结构
+* 个人问题
+* 页面
+* 课程优点
+* 课程设定
 
-The following data is not exported with your course:
+输出的课程资料不包括以下资料：
  
-* User data
-* Course team data
-* Discussion data
-* Certificates
+* 用户资料
+* 课程小组资料
+* 讨论区资料
+* 修课证书
 
 
-#. From the **Tools** menu, select **Export**.
-#. Select **Export Course Content**.
+#. 从工具栏中选择输出
+#. 点击输出课程内容
 
-When the export completes you can then access the .tar.gz file on your
-computer.
+输出完成后，您就能在电脑上进入tar.gz文档
 
 .. _Import a Course:
 
 ***************
-Import a Course
+ 导入课程
 ***************
 
 .. warning::
-	Content of the imported course replaces all the content of this course.
-	**You cannot undo a course import**. We recommend that you first export the
-	current course, so you have a backup copy of it.
+	导入的课程会取代之前之前的所有课程内容。导入课程是无法取消的。
+	我们建议您首先输出课程内容，做好备份。
  
-There are several reasons you may want to import a course. For example:
+导入课程的可能原因如下：
 
-* To load a course you developed outside of Studio.
-* To run a new version of a course that was not created in Studio.
+* 载入在Studio以外的环境内开发的课程
+* 为在Studio以外的环境开发的课程创建新版本
 
-The course that you import must be in a .tar.gz file (that is, a .tar file
-compressed with GNU Zip). This .tar.gz file must contain a course.xml file in a
-course data directory. The tar.gz file must have the same name as the course
-data directory. It may also contain other files.
+您导入的课程必须是tar.gz格式的文档（文档是经过GNU Zip解压而成的）。
+至少必须包含一个 course.xml文档位于课程资料目录。
+此tar.gz文档必须与课程资料目录命名相同。目录中可能包含其他文件。
  
-If your course uses legacy layout structures, you may not be able to edit the
-course in Studio. To make sure that your course is completely editable, ensure
-that all components are embedded in a unit.
+如果您的课程使用传统式格式，您可能无法在Studio中编辑课程。
+为了保证您的课程完全可编辑，请确保所有的组件都已包含在单元内。
  
-The import process has five stages. During the first two stages, you must stay
-on the Course Import page. You can leave this page after the Unpacking stage
-has completed. EdX recommends, however, that you don't make important changes
-to your course until the import operation has completed.
+导入课程有五个步骤。在前两个步骤中，你必须保留导入界面。
+在解压完成后您能离开导入界面。
+然而，我们建议您不要对课程进行重大修改，直到导入完成。
  
-To import a course:
- 
-#. From the **Tools** menu, select **Import**.
-#. Select **Choose a File to Import**.
-#. Locate the file that you want, and then Select **Open**.
-#. Select **Replace my course with the one above**.
+导入课程：
+
+#. 从工具栏中选择 **导入**
+#. 点击选择 **导入文件**
+#. 找到您要的文档，然后点击 **打开**
+#. 点击 **替代以上我的课程** 
 
 .. note:: 
- When you import a course, important dates, such as the course start date and
- time, are overwritten. After the import is complete, you should check dates to
- ensure they are set as intended. For more information, see
- :ref:`Scheduling Your Course`.
+ 当您导入课程时，课程开始时间等重要日期将会被重写。
+ 导入完成后，您应查看日期以确保其符合您的意愿。详情请参阅： :ref:`Scheduling Your Course`.
  
 .. _Work with the targz file:
 
 ******************************
-Work with the .tar.gz file
+.tar.gz文件
 ******************************
 
-Courses are exported and imported in .tar.gz files.  
+课程将以.tar.gz文件的形式导入和输出。
  
-To extract and compress .tar.gz files, you will need a third-party program.
+您将需要第三方工具以压缩和解压.tar.gz类型文件。
 
-If you are using Microsoft Windows, see the following resources.
+如果您使用 Microsoft Windows，请参考以下资源：
 
 * `How to Unpack a tar File in Windows
   <http://www.haskell.org/haskellwiki/How_to_unpack_a_tar_file_in_Windows>`_
@@ -125,7 +112,7 @@ If you are using Microsoft Windows, see the following resources.
   files/#windows>`_ section of the `How to Open .tar.gz Files
   <http://www.ofzenandcomputing.com /how-to-open-tar-gz-files/>`_ page
 
-If you are using a Macintosh computer, see the following resources:  
+如果您使用Mac OS X，请参考以下资源：
 
 * The `Mac OS X <http://www.ofzenandcomputing.com/how-to-open-tar-gz-
   files/#mac- os-x>`_ section of the `How to Open .tar.gz Files
