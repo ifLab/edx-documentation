@@ -237,7 +237,7 @@ PDF文件的可访问性升级
   http://office.microsoft.com/en-gb/word-help/create-accessible-pdfs-HA102478227.aspx
 
 * Adobe公司生产的Acrobat XI软件为您提供PDF可访问性修复的详细工作流程：
-  http://www.adobe.com/content/dam/Adobe/en/accessibility/products/acroba t/pdfs/acrobat-xi-pdf-accessibility-repair-workflow.pdf
+  http://www.adobe.com/content/dam/Adobe/en/accessibility/products/acrobat/pdfs/acrobat-xi-pdf-accessibility-repair-workflow.pdf
 
 * Adobe公司提供的Adobe Accessibility教程是关于PDF编程与修复的综合教程：
   http://www.adobe.com/accessibility.html
@@ -274,8 +274,7 @@ PDF文件的可访问性升级
 
 * 避免只使用颜色来区分图片的重要元素。例如，在线状图表中，除不同颜色的线条外，应采取另一种方案区别数据。
 * 尽量使用可以缩放的图片格式，如SVG格式。若图标较复杂，带有重要却字体很小的细节，应尽量提供高清版本。
-* 使用替代文本描述图标信息。对图表而言，替代文本可以是含有相同数据的表格。关于提供替代文本，详见
-   :ref:`Best Practices for Describing Images` 。
+* 使用替代文本描述图标信息。对图表而言，替代文本可以是含有相同数据的表格。关于提供替代文本，详见 :ref:`Best Practices for Describing Images` 。
 
 +++++++++++++++++++++++++++++++++++++++++++
 数学内容
@@ -344,8 +343,7 @@ MathJax工具采用数学符号语言，如LaTex和MathML，使方程式以文�
 
 若课程中含有指向第三方内容的链接，注意该内容的可访问性。在给学生分享链接之前，建议先做可访问性测试。
 
-您可使用eReader工具，或通过给课程添加文件的形式来协调课程内容与第三方内容，如课本、PDF文件等，HTML格式也能达到上述效果。如需了解更多细节，请参考
- :ref:`Best Practices for Accessible PDFs` 以及 :ref:`Best Practices for HTML Markup` 
+您可使用eReader工具，或通过给课程添加文件的形式来协调课程内容与第三方内容，如课本、PDF文件等，HTML格式也能达到上述效果。如需了解更多细节，请参考 :ref:`Best Practices for Accessible PDFs` 以及 :ref:`Best Practices for HTML Markup` 
 两节。
 
 
@@ -395,7 +393,7 @@ MathJax工具采用数学符号语言，如LaTex和MathML，使方程式以文�
 
   * 不提供信息的图像无需描述文字。例如，如果某个链接文本读作“教学大纲（PDF）”，那么该链接后的PDF图标则无需描述。只是为了美观的图片同理。
   
-* HTML图像元素的alt属性应附上描述文字，如下: (参阅 :ref:`Add an Image to an HTML Component` for more information about adding images):
+* HTML图像元素的alt属性应附上描述文字，如下: (参阅 :ref:`Add an Image to an HTML Component` )
 
   ``<img src="image.jpg" alt="Photo of Ponte Vecchio">``
 
@@ -438,8 +436,7 @@ MathJax工具采用数学符号语言，如LaTex和MathML，使方程式以文�
 
 制作字幕的第一步是记录下视频内容的文本。如果您的视频自带原文，那么您只需回顾视频，修改原文即可。如果没有原文，您需要自行转录原文，或雇佣专业人员操作。许多公司有偿提供视频同步字幕（即，用时间编码使字幕与视频同步）。
 
-edX平台支持.srt格式的字幕文件。当您向平台上传视频时，也应上传.srt格式的同步字幕。如需了解更多关于添加同步字幕的内容，请参看
- :ref:`Working with Video Components` for details on how to add timed transcripts.
+edX平台支持.srt格式的字幕文件。当您向平台上传视频时，也应上传.srt格式的同步字幕。如需了解更多关于添加同步字幕的内容，请参看 :ref:`Working with Video Components` 
 
 
 ++++++++++++++++++++++++++++++++++++++++++++
