@@ -12,7 +12,7 @@
        & News" section containing a dated post and a "Course Handouts" frame
        with a list of links.
 
-.. contents:: Section Contents 
+.. contents:: 内容包括： 
    :local:
    :depth: 1
 
