@@ -409,7 +409,7 @@ MathJax工具采用数学符号语言，如LaTex和MathML，使方程式以文�
   
   ``<img src="image.jpg" alt="Diagram of Ponte Vecchio"> <p><a href="description.html">Description of Ponte Vecchio Diagram</a></p>``
 
-**Resources**
+**资源**
 
 * Dey Alexander，如何选择合适的图片替代文本：
   http://www.4syllables.com.au/2010/12/text-alternatives-decision-tree/
@@ -485,7 +485,7 @@ HTML格式是创建可访问内容的最佳选择。各大浏览器和设备均�
 * 使用表格元素标记数据组（即在表格中效果最好的信息），每一行每一列均应有相关描述。
   用<th>元素标记行与列的题头，以便屏幕阅读器有效描述表格内容。
 
-**Resources**
+**资源**
 
 * WebAIM公司，如何使用基础标记反应网页的语义结构：
   http://webaim.org/techniques/semanticstructure/
