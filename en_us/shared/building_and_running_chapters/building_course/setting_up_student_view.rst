@@ -138,8 +138,7 @@ Course`.
 确保您的视频简介符合 :ref:`Compression
 Specifications` 和 :ref:`Video Formats` 要求。
 
-#. 上传课程视频至YouTube视频网站。记录网址上
-    **watch?v =** 和 **&feature** 的中间部分。 如下列样例绿框中出现的代码。
+#.上传课程视频至YouTube视频网站。记录网址上 **watch?v =** 和 **&feature** 的中间部分。如下列样例绿框中出现的代码。
 
    .. image:: ../../../shared/building_and_running_chapters/Images/image127.png
     :alt: Image of a sample course video.
