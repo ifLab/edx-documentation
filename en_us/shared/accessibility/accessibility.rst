@@ -378,147 +378,128 @@ MathJax工具采用数学符号语言，如LaTex和MathML，使方程式以文�
 
 课程中包含图片时，阅读以下教程：
 
-* Provide a short text description that conveys the purpose of the image, unless the image conveys a concept or is the only source for the information it presents, 
-  in which case a long text description is appropriate. Note that you don’t need to provide a long description if the information appears elsewhere on the page. 
-  For example, you don’t need to describe a chart if the same data appears as text in a data table.
+* 如果图片涉及概念，或是是所表达信息的唯一来源，可以配上较长的文字描述，
+  否则，应提供简短的描述文字阐明图片目的。如果图片信息在其他地方再次出现，则无需添加描述。 
+  例如，如果某个图表中的数据在文本表格中出现过，则无需添加描述。
   
-  * For a representative image, such as a photograph of Ponte Vecchio, a short
-    description could be “Photo of Ponte Vecchio.” If the photograph’s purpose is to provide detailed information about the location, the long description should be more specific: “Photo of Ponte Vecchio showing its three stone arches and the Arno River.”
+  * 对于象征性的图片，如Ponte Vecchio的照片，
+    描述文字可为：“Ponte Vecchio的照片”。若图片目的是说明该地位置的详细信息，则需相应添加更多地点描述。
 
-  * For a chart, diagram, or illustration, the short description might be “Diagram of Ponte Vecchio.” The long description should include the details conveyed visually, such as dimensions and materials used.
+  * 如果是图表、略图或插图，简短描述可以是“Ponte Vecchio的图表”，而较长的描述则应包含更多视觉细节，如分层或是采用的材料等等。
 
-  * For a map, a short description might be “Map showing location of Ponte Vecchio.” If the map is intended to provide directions to the bridge, the long description should provide text directions.
+  * 如果是地图，短描述可以是“Ponte Vecchio位置地图”，若地图旨在描述该地方位，则应添加相应的文本内容。
   
-  * For icons, the short description should be the equivalent to the information that the icon provides. For example, for a Course Syllabus link containing a PDF icon, the text equivalent for the icon would be “PDF,” which would be read as “Course Syllabus PDF.”
+  * 如果是图标，短描述应与图标信息相同。例如，如果教学大纲的链接指向PDF文件，则标注“PDF”，屏幕阅读器读作“教学大纲PDF”。
 
-  * For an image that serves primarily as a link to another web page, the short description should describe the link’s destination, not the image. For example, an image of a question mark that serves as a link to a Help page should be described as “help,” not “question mark.”
+  * 如果一个图像是指向某个网页的链接，描述文字应描述链接指向的内容，而不是图像内容。如，一个问号如果指向“帮助”页面，描述文字应为“帮助”而非“问号”。
 
-  * Images that don’t provide information don’t need text descriptions. For example, a PDF icon that is followed by link text reading “Course Syllabus (PDF)” does not need a description. Another example is a banner graphic whose function is purely aesthetic.
+  * 不提供信息的图像无需描述文字。例如，如果某个链接文本读作“教学大纲（PDF）”，那么该链接后的PDF图标则无需描述。只是为了美观的图片同理。
   
-* Include the short description in the alt attribute of the HTML image element, as follows (see :ref:`Add an Image to an HTML Component` for more information about adding images):
+* HTML图像元素的alt属性应附上描述文字，如下: (参阅 :ref:`Add an Image to an HTML Component` for more information about adding images):
 
   ``<img src="image.jpg" alt="Photo of Ponte Vecchio">``
 
-* Include an empty alt attribute for non-informative images. When image elements do not include an alt attribute, screen reader software may skip the image, announce the image filename, or, in the case of a linked image, announce the link URL. An empty alt attribute tells screen reader software to skip the image.
+* 不含信息的图片的alt属性应设为空值。当图片元素的alt属性值为空时，屏幕阅读软件会自动跳过改图，直接朗读文件名，或在链接图片中朗读链接URL名。
 
   ``<img src="image.jpg" alt="">``
   
-* Consider using a caption to display long descriptions so that the information is available to all users. In the following example, the image element includes the short description as the alt attribute and the paragraph element includes the long description.
+* 为保证所有用户都能理解信息，可以使用字幕显示较长的描述。在下面的例子中，图片元素带有短描述，alt属性及段落元素配有长描述。
   
   ``<img src="image.jpg" alt="Photo of Ponte Vecchio"><p>Photo of Ponte Vecchio showing its three stone arches and the Arno river</p>``
     
-* Alternatively, provide long descriptions by creating an additional unit or downloadable file that contains the descriptive text and providing a link to the unit or file below the image.
+* 添加长描述的方法还有很多，比如创建一个额外单元，创建可下载的文字描述文件，记得在图片下方为这些单元、文件提供链接。
   
   ``<img src="image.jpg" alt="Diagram of Ponte Vecchio"> <p><a href="description.html">Description of Ponte Vecchio Diagram</a></p>``
 
 **Resources**
 
-* A decision tree for choosing appropriate alternative text for images (Dey Alexander): 
+* Dey Alexander，如何选择合适的图片替代文本：
   http://www.4syllables.com.au/2010/12/text-alternatives-decision- tree/
-* General guidance on appropriate use of alternative text for images (WebAim): 
+* WebAim，图片替代文本使用指南：
   http://webaim.org/techniques/alttext/
-* HTML5: A more detailed description of techniques for providing useful alternative text for images: 
+* HTML5：图片替代文本详细技术： 
   http://dev.w3.org/html5/alt-techniques/
-* The DIAGRAM Center, established by the US Department of Education (Office of Special Education Programs), provides guidance on ways to make it easier, faster, and more cost effective to create and use accessible images: 
+* 美国教育部图表中心，如何更加方便、快捷、经济地使用普及性高的图片：
   http://www.diagramcenter.org/webinars.html
 
 .. _Best Practices for Accessible Media:
 
 ====================================================
-Best Practices for Accessible Media
+最佳媒体使用方案
 ====================================================
 
-Media-based course materials help convey concepts and bring course information to life. 
-We require all edX courses to use videos with interactive, screen-reader- accessible transcripts. 
-This built-in universal design mechanism helps enhance your course’s accessibility. 
-When you create your course, you need to factor in time and resources for creating these transcripts.
+课程中加入媒体元素有助于表达概念、将课程信息带入生活。我们要求所有edX课程使用互动视频，且提供屏幕阅读器可阅读的视频字幕。这种内置的通用设计机制能使您的课程普及性更强。创建课程时，请您下功夫准备字幕。
 
 ++++++++++++++++++++++++++++++++++++++++++++  
-Audio transcription
+音频字幕
 ++++++++++++++++++++++++++++++++++++++++++++  
 
-Audio transcripts are essential for presenting audible content to students who can’t hear and are helpful to students who are not native English speakers. 
-Synchronized transcripts allow students who can’t hear to follow along with the video and navigate to a specific section of the video by clicking the transcript text. 
-Additionally, all students can use transcripts of media-based learning materials for study and review.
+字幕对于有听力障碍的学生非常重要，对母语不是英语的学生也很有帮助。同步字幕能使失聪学生跟上视频进度，还可以通过点击字幕文本将视频导航至指定处。更何况，所有学生都可使用字幕学习、复习。
 
-A transcript starts with a text version of the video’s spoken content. 
-If you created your video using a script, you have a great start on creating the transcript. 
-Just review the recorded video and update the script as needed. 
-Otherwise, you’ll need to transcribe the video yourself or engage someone to do it. 
-There are many companies that will create timed video transcripts (i.e., transcripts that synchronize the text with the video using time codes) for a fee.
+制作字幕的第一步是记录下视频内容的文本。如果您的视频自带原文，那么您只需回顾视频，修改原文即可。如果没有原文，您需要自行转录原文，或雇佣专业人员操作。许多公司有偿提供视频同步字幕（即，用时间编码使字幕与视频同步）。
 
-The edX platform supports the use of transcripts in .srt format. 
-When you integrate a video file into the platform, you should also upload the .srt file of the timed transcript for such video. 
-See :ref:`Working with Video Components` for details on how to add timed transcripts.
+edX平台支持.srt格式的字幕文件。当您向平台上传视频时，也应上传.srt格式的同步字幕。如需了解更多关于添加同步字幕的内容，请参看
+ :ref:`Working with Video Components` for details on how to add timed transcripts.
 
 
 ++++++++++++++++++++++++++++++++++++++++++++
-Video description
+视频描述
 ++++++++++++++++++++++++++++++++++++++++++++
 
-When creating video segments, consider how to convey information to learners who can’t see. 
-For many topics, you can fully cover concepts in the spoken presentation. 
-If practical, you might also describe visual information, for example, by speaking as you are writing on a tablet.
+创建视频片段时，应考虑如何给盲人学习者传递信息。许多主题可以通过视频中的语言部分表述，但尽量还是描述一下可视信息，比如，在写字板上写字时，应边写边说。
 
 ++++++++++++++++++++++++++++++++++++++++++++
-Downloadable transcripts
+创建可下载字幕
 ++++++++++++++++++++++++++++++++++++++++++++
 
-For both audio and video transcripts, consider including a text file that students can download and review using tools such as word processing, screen reader, or literacy software. 
-The downloadable transcript should be text only, without time codes.
+音频或视频文件请提供可以下载的字幕文本，以便学生使用文字处理、屏幕阅读器以及读写软件等工具进行复习。字幕文本应是纯文本，不应带有时间编码。
 
 **Resources**
 
-* Accessible Digital Media Guidelines provides detailed advice on creating online video and audio with accessibility in mind: 
+* 如何创建普及性较高的在线视频、音频文件： 
   http://ncam.wgbh.org/invent_build/web_multimedia/accessible-digital-media-guide
 
 
 .. _Best Practices for HTML Markup:
 
 ====================================================
-Best Practices for HTML Markup
+最佳HTML标记方案
 ====================================================
   
-HTML is the best format for creating accessible content. It is well supported and adaptable across browsers and devices, 
-the information in the markup helps assistive technologies, such as screen reader software, provide information and functionality to people with vision impairments.
+HTML格式是创建可访问内容的最佳选择。各大浏览器和设备均支持该格式，标记中的信息同时也支持各项辅助技术，如屏幕阅读软件等，因此对视力障碍人群而言仍然有效。
 
-To make it easier for our course teams to create content with good HTML markup, we are working to make all templates in edX Studio conform to the best practices set forth below. 
-In the interim, we recommend that you manually add the appropriate HTML tagging. 
-Depending on the type of component you are adding to your course in edX Studio, the raw HTML data will be available either automatically or by selecting the “Advanced Editor” or “HTML” views.
+为使我们课程团队能更加方便地将MTML标记加入课程内容，我们正努力将EDX工作室的所有模板转换为下面将要提到的格式。在此期间，我们建议您手动添加合适的HTML标签。因为您的课程可能含有不同元素，HTML行数据有些会自动呈现，有些需要选择“提前编辑”或“HTML”选项方能看见。
 
-Keep the following guidelines in mind when you create HTML content:
+创建HTML内容时，请参考下面的教程：
 
-* Use HTML to describe your content’s *meaning* rather than its *appearance*. A phrase marked as a level 1 heading (<h1>) clearly indicates the topic of the page, 
-  while a phrase marked as bold text (<bold> or <strong>) may be a heading or may just be text that the instructor wants to emphasize. 
-  A group of items marked up as a list are related in the code, without relying on visual cues such as bullets and indents. 
-  Coding meaning into content is particularly useful for students using screen readers, which, for example, can read through headings or announce the number of items in a list.
+*  HTML应描述课程内容的内涵而非表象。如某个短语被标记为“一级标题” (<h1>) 显然该短语是本页的标题。
+  而如果被标记为“加粗文本” (<bold> or <strong>) 则既有可能是标题，也可能只是教师想强调的内容。 
+  如果一系列项目被共同标记为“list”，则代表相关代码，不需再添加项目符号或缩进符号。 
+  编码意义对于屏幕阅读器使用者而言尤为方便，因为该软件能快速阅读标题，或报出某个列表中的项目数量。
 
-* Use HTML heading levels in sequential order to represent the structure of the document. Well-structured headings help students navigate a page and find what they are looking for.
+* 将HTML标题等级按特定顺序排列可以象征文件的结构。结构良好的标题有助于学生快速浏览页面，找到需要的资源。
 
-* Use HTML list elements to group related items and make content easier to skim and read. HTML offers three kinds of lists:
+*  利用HTML的列表功能将相关项目分组，是内容更易浏览。HTML支持三种列表：
 
-  #. Unordered lists, where each item is marked with a bullet.
-  #. Ordered lists, where each item is listed with a number.
-  #. Definition lists, where each item is represented using term and description pairs (like a dictionary).
+  #. 无序列表，其中项目以项目符号标记。
+  #. 有序列表，其中项目以数字顺序排列。
+  #. 定义表，其中每个项目都有对应的术语或描述（类似字典）。
 
-* Use table elements to mark up data sets—that is, information that works best in a grid format—with descriptive rows and columns. 
-  Mark up row and column headers using the <th> element so screen readers can effectively describe the content in the table.
+* 使用表格元素标记数据组（即在表格中效果最好的信息），每一行每一列均应有相关描述。
+  用<th>元素标记行与列的题头，以便屏幕阅读器有效描述表格内容。
 
 **Resources**
 
-* Creating Semantic Structure provides guidance on reflecting the semantic structure of a web page in the underlying markup (WebAIM): 
+* WebAIM公司，如何使用基础标记反应网页的语义结构：
   http://webaim.org/techniques/semanticstructure/
   
-* Creating Accessible Tables provides specific guidance on creating data tables with the appropriate semantic structure so that screen readers can correctly present the information (WebAIM): 
+* WebAIM公司，如何创建屏幕阅读器可正确表现信息的数据表：
   http://webaim.org/techniques/tables/data
 
 .. _Conclusion:
 
 ************************************************************
-Conclusion
+小结
 ************************************************************
 
-At edX, the heart of our mission is to provide global access to higher-level learning with only a computer and the Internet. 
-We have designed a platform that enables course creators to reach thousands of learners, some of whom will lack the typical backgrounds and resources of resident students taking traditional courses on college campuses. 
-We hope that these guidelines prove useful to you as you work with your institution’s disability support services and information technology resources to comply with applicable accessibility laws. 
-As we are all on this learning venture together, we encourage you to share your thoughts with us at accessibility@edx.org.
+EDX的核心任务是通过电脑和互联网为全球提供高等教育。我们设计的平台能让课程创始人与成千上万的学习者联系，其中有些学生没有寄宿生的条件，无法从学校获得资源。希望这些教程能给您提供帮助，使您能够为残疾人提供更好的服务，更好地贯彻普及性、易用性法规。希望我们共同打造这个平台，欢迎您将想法反馈给我们，联系方式是 accessibility@edx.org.
