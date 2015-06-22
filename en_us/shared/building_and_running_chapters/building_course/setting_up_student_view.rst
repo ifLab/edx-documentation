@@ -1,49 +1,46 @@
 .. _Setting Details About Your Course:
 
 ######################################################
-Setting Details About Your Course
+设置课程细节
 ######################################################
 
-This topic describes how to set details about your course in Studio. The
-details you set affect the information learners see on their dashboards. For
-more information, see :ref:`SFD Dashboard Settings Profile`.
+此章讲述如何在Studio中设置您的课程细节。
+您所设置的细节内容将会影响学生面板中看到的信息。
+详情请参阅 :ref:`SFD Dashboard Settings Profile`。
 
 .. contents:: Section Contents
   :local:
   :depth: 1
 
-For information about setting important dates, see :ref:`Scheduling Your
+设置重要日期相关内容请参阅 :ref:`Scheduling Your
 Course`.
 
-For information about setting the course license, see :ref:`Licensing a
+设置课程证书相关内容请参阅 :ref:`Licensing a
 Course`.
 
 .. _The Course About Page:
 
 ***********************************
-The Course About Page
+课程总结页面
 ***********************************
 
-The following example shows the course About page. Learners can see the
-About page before they enroll in the course, and may decide to enroll
-based on the content of the page. 
+下图是总结页面的例子。学生可以在注册之前看到此页面，并且可能在浏览页面内容后决定注册。
 
 .. image:: ../../../shared/building_and_running_chapters/Images/about_page.png
  :alt: An image of the course About page.
  :width: 600
 
-You configure the contents of this page in Studio, as described in this topic.
+正如此章所讲述的，您通过Studio设置页面内容。
 
 .. _The Learner Dashboard:
 
 ***********************************
-The Learner Dashboard
+学生控制面板
 ***********************************
 
-If a learner enrolls in your course, the course is then listed on the **Current
-Courses** dashboard, with the course image. From the dashboard, a learner can
-open a course that has started. If the course has not started, the learner can
-see the start date, as explained in :ref:`Scheduling Your Course`.
+如果学生注册您的课程，之后课程和课程图片会在控制面板上显示。
+学生从控制面板上能点开开始的课程。
+正如 :ref:`Scheduling Your Course` 此章所讲述的，如果课程无法开始，学生能看看开始日期。
 
 .. image:: ../../../shared/building_and_running_chapters/Images/dashboard-course-start-and-end.png
  :width: 600
@@ -53,46 +50,39 @@ see the start date, as explained in :ref:`Scheduling Your Course`.
 .. _Describe Your Course:
 
 ************************
-Describe Your Course
+描述您的课程
 ************************
 
-Learners see the description of your course on the course About page.
+学生将在您的课程页面中看到您对课程的描述。
 
-For example, the course description is circled in the following course About
-page.
+例如，课程描述在以下课程总结页面以环形结构展开。
 
 .. image:: ../../../shared/building_and_running_chapters/Images/about-page-course-description.png
  :alt: Image of a course summary with the description circled.
  :width: 600
 
-.. note:: For courses on edX.org, you must communicate the course description
- to your edX Program Manager, to ensure the content is accurate on the course
- About page.
+.. note:: 您必须与您的edX项目经理就edX.org网页上的课程描述进行交流，以确保课程总结页面的内容是正确的。
 
-#. From the **Settings** menu, select **Schedule & Details**.
+#. 从设置栏中选择时间表和详情
 
-#. Scroll down to the **Introducing Your Course** section, then locate the
-   **Course Overview** field.
+#. 从上至下滚动介绍课程内容，然后找到课程概况位置
 
    .. image:: ../../../shared/building_and_running_chapters/Images/course_overview.png
     :alt: Image of the HTML course description.
     :width: 600
 
-#. Overwrite the content as needed for your course, following the directions in
-   the boilerplate text. Do not edit HTML tags. For a template that includes
-   placeholders, see :ref:`A Template For Course Overview`.
+#. 根据需要，依据模版文本重写课程内容。不要编辑超文本标记语言（HTML）的标签。
+   模版应当包括占位符，请阅览课程概况模版。 :ref:`A Template For Course Overview`
  
-#. Select **your course summary page** in the text beneath the field to test
-   how the description will appear to learners.
+#. 点击文本下方的课程总结页面，检测学生如何看到课程描述。
 
-#. When you make changes, a **Save Changes** button appears at the bottom right
-   of the page. Select **Save Changes** when you have completed the course
-   description.
+#. 当您修改内容时，**保存修改** 按钮将出现在页面下方。
+   完成课程描述后请点击 **保存修改** 按钮。
 
 .. _Add a Course Image:
 
 ************************
-Add a Course Image
+添加课程相关图片
 ************************
 
 The course image that you add in Studio appears on the dashboard. It should be
