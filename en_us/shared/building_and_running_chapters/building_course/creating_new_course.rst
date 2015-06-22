@@ -1,20 +1,19 @@
 .. _Creating a New Course:
 
 ###########################
-Creating a New Course
+新建课程
 ###########################
 
-This topic describes how to create and set up your course with Studio.
+本章描述如何使用Studio创建和安排课程。
 
 .. contents:: Section Contents
   :local:
   :depth: 1
 
-Another way to create a course is to re-run an existing course. See
-:ref:`Rerun a Course`.
+另一种创建课程的方式是重开现有课程，详情参阅:ref:`Rerun a Course`.
 
-You can also :ref:`Export a Course` and :ref:`Import a Course` through Studio.
-You can do this when you need to edit the course in XML.
+您也可以通过Studio :ref:`Export a Course` 和 :ref:`Import a Course` 。
+你需要使用可扩展标记语言（XML）编辑课程时，就可以这样做。
 
 .. _Edge: http://edge.edx.org
 .. _edXorg: http://edx.org
@@ -22,155 +21,134 @@ You can do this when you need to edit the course in XML.
 .. _Create a New Course:
   
 *******************
-Create a New Course
+新建课程
 *******************
 
-#. Log in to Studio.
-#. Select **New Course**.
-#. Enter course information as needed and select **Create**.
+#. 登入Studio
+#. 点击 **新课程**
+#. 根据需要进入课程信息，点击 **新建**
 
-  .. note::  Enter new course information carefully. This information becomes
-   part of the URL for your course. For courses on edx.org and edX Edge, to
-   change the URL after the course is created, you must contact edX through the
-   Help site (http://help.edge.edx.org). Additionally, because this information
-   becomes part of your course URL, the total number of characters in the
-   following four fields must be 65 or fewer.
+  .. note::  小心输入新课程信息。信息会成为你课程域名（URL）的一部分。
+    若欲在课程创建之后改变课程域名（URL）的话，你必须联系edX管理人员协助处理，
+    相关信息请参考http://help.edge.edx.org。此外，由于信息会成为课程课程域名（URL）的一部分，
+    所以以下四个方面的字元总数是少于或等于65。
    
   .. image:: ../../../shared/building_and_running_chapters/Images/new_course_info.png
      :width: 600
      :alt: Image of the course creation page in Studio.
 
-  * For **Course Name**, enter the title of your course. For example, the name
-    may be "Sets, Maps, and Symmetry Groups". Use title capitalization for the
-    course title.
+  * 请于课程名称栏输入 **课程标题**。例如，名字为“Sets, Maps and
+    Symmetry Groups”。若课程名称是英文，课程标题首字母要大写。
 
-  * For **Organization**, enter the identifier for your organization. Do not
-    include spaces or special characters.
-
-
-  * For **Course Number**, enter both a subject abbreviation and a number. For
-    example, for public health course number 207, enter **PH207**. For math
-    course 101x, enter **Math101x**. Do not include spaces or special
-    characters in the course number.
-
-    .. note:: If your course will be open to the world, be sure to include the
-      "x". If it is exclusively an on-campus offering, do not include the "x".*
-
-  * For **Course Run**, enter the term in which your course will run. For
-    example, enter 2014SOND or T2_2014. Do not include spaces or special
-    characters.
-
-    The value that you enter for the run does not affect the course start date
-    that you define for the course. For more information, see :ref:`Scheduling
-    Your Course`.
+  * 请于 **组织名称**栏输入您大学的名称。
+    不要包含空格键和特殊的字符。
 
 
-4. Select **Save.**
+  * 请于 **课程编码**栏输入课程英文缩写和课程代码。
+    例如，编号为207的公共卫生课程，就输入 **PH207**。
+     编号101x的为数学课程，就输入 **Math101x**。
+    不要包含空格键和特殊字符。
 
-You then see the empty course outline.
+    .. note:: 如果您的课程将对全球开放的话，请于课程编号后要输入 “x”。
+      相反，如果课程只是针对学校范围内开放的话，请不要在课程编号后输入“x”。*
+
+  * 就 **课程运作**而言，输入能让课程运行的术语。
+    例如，输入2014SOND 或 T2_2014。
+    不要包含空格键和特殊的字符。
+
+    输入的课程运作的日期不影响默认课程开始日期。查看课程设置重要日期以便获取更多信息。
+    查看课程设置重要日期以便获取更多信息。 :ref:`Scheduling Your Course`.
+
+
+4. 点击 **保存**
+
+之后你只看到课程大纲。
 
 .. _Edit Your Course:
 
 ************************
-Edit Your Course
+编辑课程
 ************************
 
-After you create a course, the course opens in Studio automatically and you
-can begin editing.
+创建新课程时，Studio会自动打开课程，之后您就可以开始编辑了。
 
-When you return to Studio later, the Studio **My Courses** dashboard page lists
-the courses that you created as well as any courses for which you have course
-staff privileges.
+如果您之后再次使用Studio，Studio登录页面会显示您的课程信息。 
 
 .. image:: ../../../shared/building_and_running_chapters/Images/open_course.png
   :width: 600
   :alt: Image of the course on the Studio dashboard
  
-To open a course, select the course name. The Studio **Course Outline** page
-appears.
+打开课程，单击课程名称。你将进入在线课程。
 
 .. _Use the Course Checklist:
 
 ************************
-Use the Course Checklist
+使用课程核对清单
 ************************
 
-You can use a Course Checklist within Studio to help you work through the tasks
-of building a course.
+通过创建课程任务，您能在Studio的帮助下使用课程核对清单以完成工作任务。
 
-Categories of tasks in the Course Checklist include:
+课程核对清单包括以下几类：
 
-* Getting Started with Studio
-* Draft a Rough Course Outline
-* Explore edX's Support Tools
-* Draft Your Course About Page
+* 使Studio处于初始状态
+* 拟定粗略的课程大纲
+* 研究edX的帮助工具 
+* 拟定课程页面
 
-From the **Tools** menu, select **Checklists**.
+从 **工具栏** 中选定 **核对清单**。
 
 .. image:: ../../../shared/building_and_running_chapters/Images/checklist.png
   :width: 600
   :alt: Image of the course checklist in Studio.
 
-As shown in the example above, for the **Add Course Team Members** task, if you
-hover over a task, a button is displayed that takes you to the page to complete
-that task.
+正如上图所显示的增添课程小组人员任务一样，如果你将鼠标悬停在某个任务上的话，就会出现一个能帮你完成任务的页面按钮。
 
-You can expand and collapse sections of the checklist as needed.
+根据你的需要，可以展开和收起本页面部分内容。
 
-You can check tasks as you complete them. Studio saves your changes
-automatically. Other course staff can see your changes.
+完成任务之后你能进行检查。Studio会自动保存改动部分。其他课程学习人员也能看见你改动的部分。 
 
 .. _Add Course Team Members:
 
 ************************
-Add Course Team Members
+增添课程小组成员
 ************************
 
-Course team members are users who help you build your course. Before you can
-assign Staff or Admin access to a team member:
+课程小组成员指的是能帮你创建课程的用户。
+添加或删除课程小组成员，或赋予其他小组成员管理权限之前，请先确保：
 
-* You must be an Admin.
+* 你是管理员
 
-* The team member that you want to add must register a user account and
-  activate the account.
+* 小组新成员已经在Studio上注册，而且是活跃账户
 
-* You need the same, registered email address for the team member you want to
-  add.
+* 你需要小组成员的注册邮箱地址
 
-Other course team members can edit the course and perform all tasks except
-adding and removing other team members and granting Admin access.
+除了添加和删除其他小组新成员以及赋予他们管理权限之外，其他小组成员能编辑课程和操作所有任务。
 
-.. note::  Any course team member can delete content created by other team
- members.
+.. note::  任何一个课程小组成员都能删除其他小组成员创建的内容。
 
-To add a course team member:
+添加课程小组成员：
 
-#. Ensure you have Admin access.
-#. Ensure that the new team member has registered and activated an account.
-#. In Studio, from the **Settings** menu, select **Course Team**.
-#. Select **Add a New Team Member**.
-#. Enter the new team member's email address, then select **ADD USER**. 
+#. 确保你已经有超级管理员权限
+#. 确保小组新成员已经在Studio上注册
+#. 从设置菜单中选择课程小组
+#. 点击添加小组新成员
+#. 输入小组新成员的电子邮箱地址，然后点击 **添加用户**
 
-The new team member can now work on the course in Studio. 
+新小组成员现在可以参与课程工作了。
 
-* To preview the course in the LMS, the team member must enroll in the course.
+* 小组成员必须登记参加课程以后才能在学习管理系统中查看课程。
 
-* To moderate course discussions, the team member must also have one of the
-  discussion roles. For more information, see
-  :ref:`Assigning_discussion_roles`.
+* 小组成员必须是讨论角色才能参与课程讨论。详情参考 :ref:`Assigning_discussion_roles`.
 
-You can also assign privileged roles to users when you work in the LMS.
+在学习管理系统下工作时，你也能让用户享受些特权。
 
-.. note:: The LMS "Course Staff" role is the same as the Studio "Staff" role, 
- and the LMS "Instructors" role is the same as the Studio "Admin" role.
+.. note:: 学习管理系统中的“课程员工”角色与Studio中的“员工”角色相同，
+ 学习管理系统中的“导师”角色与Studio中的“管理员”角色相同。
 
-Regardless of where the role is assigned, these administrative team members
-can work on your course in both Studio and the LMS (after enrollment). For
-more information about assigning roles while you run your course, see
+无论赋予谁特权，小组管理成员能在学习管理系统和Studio下完成课程。
+课程运作过程中，分配角色的详情，请见人员配置。 
 :ref:`Course_Staffing`.
 
-You can also designate teams of people to beta test your course and to
-moderate and manage its discussions by assigning other LMS roles. The beta
-testers and discussion administrators must be enrolled in your course, but
-they do not need to have Staff or Admin access. For more information, see
-:ref:`Beta_Testing` and :ref:`Assigning_discussion_roles`.
+您也可以指定小组来测试课程以及分派学习管理系统角色参与和管理讨论区。
+测试小组和讨论区管理员必须登记参与您的课程，但是他们不需要拥有员工或管理员权限。
+详情请参阅 :ref:`Beta_Testing` and :ref:`Assigning_discussion_roles`。
