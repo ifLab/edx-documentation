@@ -47,14 +47,13 @@
 您可以为评分标准、课程讲义或其他用途创建页面。
 示例如下。
 
-* A dynamic HTML calendar, using the template in :ref:`Code for Dynamic HTML
-  Schedule`.
+* 动态HTML日程使用 :ref:`Code for Dynamic HTML
+  Schedule` 模板。
 
-* An instant hangout. See :ref:`Google Instant Hangout` for more information.
+* 即使搜索框，详见 :ref:`Google Instant Hangout` 。
 
-#. In Studio, from the **Content** menu, select **Pages**. A page titled
-   **Pages** opens. This page contains a list of the pages that appear in the
-   navigation bar in your course.
+#. 在Studio中的 **内容** 菜单点击 **页面** 。一个标题为 **页面** 的页面开启。 
+   该页面包含课程导航栏中显示的所有页面列表。
 
    .. image:: ../../../shared/building_and_running_chapters/Images/pages_page.png
     :width: 600
