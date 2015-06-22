@@ -27,27 +27,25 @@
 * Wiki
 * 进程
 
-您可以更改 **讨论**， **Wiki**， **Progress**
-pages, and you can hide the **Wiki** page.
+您可以更改 **讨论**， **Wiki**， **进程** 页面的排列顺序。
+您可以隐藏 **Wiki** 页面。
 
 .. _Add Page:
 
 ****************
-Add a Page
+添加页面
 ****************
 
-You can add pages to your course. Each page appears for learners in the
-navigation bar for your course. 
+您可以在您的课程中添加新页面。所有页面将在课程的导航栏中对所有学生显示。
 
-For example, the following navigation bar includes the default pages as well as
-the additional Course Schedule and Supplements & Instructor's blog pages.
+如下导航栏中包含默认页面、课程表、补充材料和导师的博客页面。
 
 .. image:: ../../../shared/building_and_running_chapters/Images/page_bar_lms.png
  :width: 600
  :alt: Image of the navigation bar in the LMS.
 
-You can create other pages for the grading policy, course slides, or any other
-purpose. More examples of pages you can add follow. 
+您可以为评分标准、课程讲义或其他用途创建页面。
+示例如下。
 
 * A dynamic HTML calendar, using the template in :ref:`Code for Dynamic HTML
   Schedule`.
@@ -62,101 +60,91 @@ purpose. More examples of pages you can add follow.
     :width: 600
     :alt: Image of the Pages page.
 
-#. Select **Add a New Page**. A page with the title **Empty** is added to the
-   list.
+#. 点击 **添加一个新页面**。一个标题为空的新页面添加到列表中。
 
    .. image:: ../../../shared/building_and_running_chapters/Images/pages_empty.png
     :width: 600
     :alt: Image of the Pages page with a new Empty page.
 
-#. In the row for the new page, select **Edit**. The HTML editor opens.  
+#. 在新页面行中，选择 **编辑** 。HTML 编辑器开启。  
 
    .. image:: ../../../shared/building_and_running_chapters/Images/pages_editor.png
     :width: 600
     :alt: Image of the page editor.
 
-#. Enter content for your page. 
+#. 在您的页面中输入内容
 
-   For more information about using the editor, see :ref:`Options for Editing
+   使用编辑器的详细操作，请参考 :ref:`Options for Editing
    HTML Components`.
 
-#. Select **Settings** to edit the **Display Name**. The display name is the
-   name of the page visible to learners in the course.
+#. 单击 **设置** 编辑 **可见名称** 。可见名称是该课程中学生可见页面的名称。 
 
-#. Select **Save**. 
+#. 单击 **保存**
 
-The new page is immediately available to learners if the course has started.
+如果课程已经开始，新页面将立即对学生开放。
 
 .. _Show or Hide the Course Wiki Page:
 
 ************************************************
-Hide or Show the Course Wiki Page
+隐藏和显示“维基百科”页面
 ************************************************
 
-By default, your course includes a wiki page. Learners and course staff can
-use the wiki to post content and comment on others' content.
+系统默认的设置中，您的课程会包含一个“维基百科”页面。
+学生及课程工作人员可使用该页面发表内容评论。
 
-If you do not want to use a wiki in your course, you can hide the page.
+如果不想在课堂上使用该页面，可将该页面隐藏。
 
-In the **Pages** list, the eye icon that appears next to the **Wiki** page
-indicates that the wiki is visible in your course. 
+ **维基** 一栏中，边上的眼睛图标表示该页面在课程中可见。
 
-Select the eye icon to hide the **Wiki** page. The icon changes as shown in
-this example.
+单击眼睛图标，图标会发生变化，意味着该页面不可见。
 
 .. image:: ../../../shared/building_and_running_chapters/Images/pages_wiki_off.png
  :alt: Image of the Pages page with the Wiki made visible
 
-Select it again to make the **Wiki** page visible.
+再次点击，又会恢复原状。
 
-.. note:: Content remains in the wiki when you hide the page. For example, 
- if a student bookmarks a wiki topic, then you hide the **Wiki** page, the
- student can still use the bookmark to access that wiki topic. All content that
- was previously posted in the wiki remains available after you hide the wiki
- page, and any students logged in to edX can access the content if they know
- the URL.
+.. note:: 
+ 隐藏“维基”页面后，页面中的内容仍然会保留。
+ 例如，某个学生给某个“维基百科”主题添加了书签，隐藏页面后，仍然可以用书签导航至该主题。
+ 所有之前发表的内容在该页面隐藏后均保留，只要知道URL，所有使用EDX的学员均可访问该内容。
 
 .. _Reorder Pages:
 
 ****************
-Reorder Pages
+排序页面
 ****************
 
-To reorder the pages in your course you can drag a page to different location
-in the navigation bar and drop it there.
+想要排序页面，拖拽页面标签至相应位置即可。
 
-To move a page, hover over the element handle on the right side of the page
-row until the mouse pointer changes to a four-headed arrow. Then select and
-drag the page to the location that you want.
+要移动某个页面，将鼠标悬停在页面标签右边的句柄上直至鼠标指针变成四方向箭头，
+然后单击、拖拽页面到目标位置。
 
-.. note:: You cannot reorder the **Courseware** or **Course Info** pages.
+.. note:: 您无法对 **课件** 和 **课程信息** 页面进行排序。
 
 .. _Delete a Page:
 
 ****************
-Delete a Page
+删除页面
 ****************
 
-To delete a page that you previously added, select the trash can icon in the
-row for the page. You are prompted to confirm the deletion.
+单击页面标签行的垃圾桶图标以删除某个添加的页面，删除之前会有警告提示。
 
 .. note:: 
-  You cannot delete the **Courseware**, **Course Info**, **Discussion**, or
-  **Progress** pages. You can hide the course **Wiki** page.
+  您无法删除 **课件**、 **课程信息**、 **讨论** 和
+  **进程** 页面。您可以隐藏 **Wiki** 页面。
 
 .. _Code for Dynamic HTML Schedule:
 
 ********************************
-Code for Dynamic HTML Schedule
+动态HTML日程代码
 ********************************
 
-You can use the following code in a page to provide a dynamic HTML schedule in
-your course.
+您可使用以下代码为您的课程添加动态HTML代码：
 
 .. note:: 
-  Paste the following code into the page using either :ref:`the visual editor
-  <Work with HTML code>` or the :ref:`raw HTML editor <The Raw HTML Editor>`.
-  Do not paste the code directly into the visual editor.
+  将以下代码粘贴到 :ref:`the visual editor
+  <Work with HTML code>` 或者 :ref:`raw HTML editor <The Raw HTML Editor>` 页面。
+  请勿直接将代码粘贴到视图编辑器中。
 
 .. code-block:: html
 
