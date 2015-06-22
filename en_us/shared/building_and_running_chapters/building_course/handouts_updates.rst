@@ -35,8 +35,8 @@
    * 如果您更改了补充日期，新的日期会在 **课程信息** 中显示。
      然而，一经上传，资料对所有已登记学生可见。
 
-4. Select **Post**. Your update appears on your course's **Course Info** page
-   immediately.
+4. 选择 **发布** ，您的补充资料将立即出现在 **课程信息** 页面。
+
 
 .. _Add Course Handouts:
 
