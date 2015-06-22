@@ -108,8 +108,7 @@ with the targz file>`对课程进行导入和输出。
   
 * `The gzip Home Page <http://www.gzip.org/>`_
 
-*  在 `Windows <http://www.ofzenandcomputing.com/how-to-open-tar-gz-files/#windows>`_ 
-系统下的 `How to Open .tar.gz Files <http://www.ofzenandcomputing.com /how-to-open-tar-gz-files/>`_ 页面。
+*  在 `Windows <http://www.ofzenandcomputing.com/how-to-open-tar-gz-files/#windows>`_ 系统下的 `How to Open .tar.gz Files <http://www.ofzenandcomputing.com /how-to-open-tar-gz-files/>`_ 页面。
 
 如果您使用Mac OS X，请参考以下资源：
 
