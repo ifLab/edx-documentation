@@ -30,7 +30,8 @@
 
   .. note::  小心输入新课程信息。信息会成为你课程域名（URL）的一部分。
     若欲在课程创建之后改变课程域名（URL）的话，你必须联系edX管理人员协助处理，
-    相关信息请参考http://help.edge.edx.org。此外，由于信息会成为课程课程域名（URL）的一部分，
+    相关信息请参考http://help.edge.edx.org
+    此外，由于信息会成为课程课程域名（URL）的一部分，
     所以以下四个方面的字元总数是少于或等于65。
    
   .. image:: ../../../shared/building_and_running_chapters/Images/new_course_info.png
@@ -46,7 +47,7 @@
 
   * 请于 **课程编码**栏输入课程英文缩写和课程代码。
     例如，编号为207的公共卫生课程，就输入 **PH207**。
-     编号101x的为数学课程，就输入 **Math101x**。
+    编号101x的为数学课程，就输入 **Math101x**。
     不要包含空格键和特殊字符。
 
     .. note:: 如果您的课程将对全球开放的话，请于课程编号后要输入 “x”。
@@ -151,4 +152,4 @@
 
 您也可以指定小组来测试课程以及分派学习管理系统角色参与和管理讨论区。
 测试小组和讨论区管理员必须登记参与您的课程，但是他们不需要拥有员工或管理员权限。
-详情请参阅 :ref:`Beta_Testing` and :ref:`Assigning_discussion_roles`。
+详情请参阅 :ref:`Beta_Testing` 和 :ref:`Assigning_discussion_roles`。
