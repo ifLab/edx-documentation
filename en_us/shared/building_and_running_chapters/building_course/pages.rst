@@ -1,10 +1,10 @@
 .. _Adding Pages to a Course:
 
 ###########################
-Adding Pages to a Course
+为课程添加页面
 ###########################
 
-This topic describes how to add pages, or tabs, to your course.
+本章节描述如何为您的课程添加页面和标签。
 
 * :ref:`Default Pages`
 * :ref:`Add Page`
@@ -16,18 +16,18 @@ This topic describes how to add pages, or tabs, to your course.
 .. _Default Pages:
 
 *******************
-Default Pages
+默认页面
 *******************
 
-By default, your course includes these pages.
+默认情况，您的课程包含以下页面。
 
-* Courseware
-* Course Info
-* Discussion
+* 课件
+* 课程信息
+* 讨论
 * Wiki
-* Progress
+* 进程
 
-You can change the order of the **Discussion**, **Wiki**, and **Progress**
+您可以更改 **讨论**， **Wiki**， **Progress**
 pages, and you can hide the **Wiki** page.
 
 .. _Add Page:
