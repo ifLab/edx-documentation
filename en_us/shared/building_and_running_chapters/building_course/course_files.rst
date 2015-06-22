@@ -79,8 +79,7 @@
 提供外部文件或图片的链接。
 
 * 使用 **Studio URL** 可将组件、补充资料和讲义链接至文件、图片。
-   更多细节请参考 :ref:`Add an Image to
-  an HTML Component`. 您无法使用 web URL 来引用您课程内部的文件和图片。
+   更多细节请参考 :ref:`Add an Image to an HTML Component`. 您无法使用 web URL 来引用您课程内部的文件和图片。
 
 * 使用 **Web URL** 来
   
