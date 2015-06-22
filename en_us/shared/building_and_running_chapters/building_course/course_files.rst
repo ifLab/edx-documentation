@@ -1,13 +1,11 @@
 .. _Add Files to a Course:
 
 ###########################
-Adding Files to a Course
+给课程添加文件
 ###########################
 
-To use images and other files in your course, you upload the files to your
-course by using Studio, and then you add links to the files in the course
-content. You can also use uploaded files in bulk email messages sent from the
-Instructor Dashboard.
+想要为您的课程添加图片或文件，您需要先通过Studio将文件上传到您的课程，再将文件地址添加到课程内容中。
+您也可以使用从教师面板发出的大容量邮件中的文件。 
 
 * :ref:`File Size`
 * :ref:`Upload a File`
@@ -21,170 +19,141 @@ Instructor Dashboard.
 .. _File Size:
 
 *******************
-File Size
+文件大小
 *******************
 
-The maximum size for an uploaded file is 50 MB.
+上传的文件大小不能超过 50 MB。
 
-We recommend that you use standard compression tools to reduce PDF and image
-file sizes before you add the files to your course. If you have to use files
-that are larger than 50 MB after compression, contact your edX program manager.
+在将文件添加到您的课程之前，我们推荐您使用压缩工具将PDF文件或图片文件进行压缩。
+如果您必须使用压缩后仍超出 50 MB的文件，请联系您的edX项目经理。
 
-If you have video or audio files or large data sets to share with your
-students, use YouTube or another hosting service to host these files. Do not
-use the Files & Uploads page to add these files to your course. If you are an
-edX partner and you need to store large data sets, contact your edX program
-manager.
+如果您需要和学生分享视频或音频文件等大尺寸文件，请用YouTube或者其他网站存储这些文件。
+请勿将这些文件通过“文件&上传”页面上传到您的课程里。如果edX合作伙伴需要储存大尺寸文件，请联系您的edX项目经理。
 
 
 .. _Upload a File:
 
 *******************
-Upload a File
+上传文件
 *******************
  
-You upload the files in Studio on the **Files & Uploads** page.
+您将在Studio中的**文件与上传**页面中上传文件。
 
 .. note:: 
- Ensure that you obtain copyright permissions for files and images you upload
- to your course, and that you cite sources appropriately.
+ 请确保您拥有所上传文件或图片的版权许可，以及标明正确的引用来源。
 
-To upload files:
+如何上传文件：
  
-#. Create or locate the file on your computer.
+#. 在您的本地计算机上创建文件
    
    .. note:: 
-    When URLs are generated for uploaded files, the file name becomes part of
-    the URL and is visible to students when they access the file. Avoid using
-    file names that contain information about the file contents that should not
-    be shared, such as ``Answerkey.pdf``.
+    由于文件名属于URL的一部分，学生在打开URL时也能看见文件名。因此不要将文件名设置为“答案.pdf”等。
 
-#. From the **Content** menu, select **Files & Uploads**.
+#. 单击**内容**菜单，选择**文件与上传**
 
-#. Select **Upload New File**.
+#. 单击**上传新文件**
 
-#. In the **Upload New File** dialog box, select **Choose File**.
+#. 在跳出的对话框中，单击**选择文件**
    
-#. In the **Open** dialog box, select one or more files to upload, then select
-   **Open**.
+#. 在**打开**对话框中，选择一个或多个上传的文件，单击**打开**
 
    .. note::
-      If you upload a file that has the same name as an existing course file,
-      the original file is overwritten without warning.
+      如果上传的文件与已有课程文件重名，则原文件会在无警告的情况下被覆盖。
 
-#. To upload additional files, select **Load Another File** and repeat the
-   previous step.
+#. 想要继续添加文件，单击**继续添加**，重复以上步骤
 
-#. To close the dialog box, select the **X** in the top right corner.
+#. 单击右上角的**X**关闭对话框
 
-The **Files & Uploads** page refreshes to show the uploaded file.
+关闭对话框时，新文件会出现在**文件与上传**页面。
 
 .. _File URLs:
 
 ********************************************
-Use File URLs to Reference Uploaded Files
+使用文件的URL作为引用源
 ********************************************
 
-After you upload a file, you can use the URLs listed for it. On the **Files &
-Uploads** page, the **URL** column lists a Studio URL and web URL for each
-file.
+在**文件与上传**页面，每个文件都有**Studio URL**和**web URL**。
 
-Use the web URL if you want to perform either of the following actions.
-Add a file or image to a bulk email message...
-Provide a link to the file or image from outside the course.
+如果您需要进行以下操作，请使用web URL：
+通过大容量邮件添加文件或图片...
+提供外部文件或图片的链接。
 
-* You use the **Studio URL** to add a file or image to a component, a course
-  update, or course handouts. For more information, see :ref:`Add an Image to
-  an HTML Component`. You cannot use the web URL to link to a file or image
-  from within your course.
+* 使用**Studio URL**可将组件、补充资料和讲义链接至文件、图片。
+   更多细节请参考 :ref:`Add an Image to
+  an HTML Component`. 您无法使用 web URL 来引用您课程内部的文件和图片。
 
-* Use the **Web URL** to:
+* 使用**Web URL**来
   
-  * Add a file or image to a bulk email message in the LMS. For more
-    information, see :ref:`Send_Bulk_Email`.
+  * 将文件或图片添加到学习管理系统的大容量邮件中。 详情请参考 :ref:`Send_Bulk_Email`.
 
-  * To provide a link to the file or image from outside the course.
+  * 提供外部文件或图片的链接
 
 .. note:: 
-  You can lock a file if you do not want anyone outside your course to view the
-  file. When you lock a file, the web URL only allows file access to learners
-  who are signed in to edX and enrolled in the course. For more information,
-  see :ref:`Lock a File`.
+  如果您不想让课堂以外的人查看文件，您可以锁定文件。
+  锁定文件以后，web URL只允许注册本课程的学生查看。
+  更多信息请参阅： :ref:`Lock a File`.
 
-To copy a URL from the file list, select the URL in the **URL** column
-and copy it.
+双击选中**URL**栏中的值进行复制。
 
 .. _Sort Files:
 
 *********************
-Sort Files
+文件排序
 *********************
 
-On the **Files & Uploads** page, you can sort your files by any column that has
-a blue column header. For example, to sort the list by name, select the
-**Name** column header.
+在**文件与上传**页面中，您可以按照任何蓝色标题值排列文件。例如，点击**文件名**列可按照文件名排序文件。
 
-Change the sort order by selecting a sortable column header. The direction of
-the arrow in the column header indicates whether the order is ascending or
-descending. Each time you select the column header, the sort order reverses.
+两种排序方式均可在正序与倒序形式中切换，单击列标题即可。
 
-The current sort order is shown at the top of the file list, and the active
-sort column header is underlined.
+当前排序顺序显示在文件列表顶部，排序顺序以下划线标出。
 
 .. _Filter Files:
 
 *********************
-Filter Files
+筛选文件
 *********************
 
-You can filter the list of files by type so that only a selected type of file
-is visible. The list remains in the current sort order.
+您可以选择可见文件类型以过滤文件列表。列表将保持当前的排列方式。
 
 .. list-table::
    :widths: 10 20
 
-   * - **Type**
-     - **File Types Include**
-   * - Images
-     - .gif, .ico, .jpg, .jpeg, .png, .tif, or .tiff
-   * - Documents 
-     - .pdf, .txt, Microsoft Office and Open Office documents, presentations,
-       or spreadsheets
-   * - Other
-     - Files not included in the other types, such as .html, .js, or .sjson
+   * - **类型**
+     - **文件类型包括**
+   * - 图片
+     - .gif、 .ico、 .jpg、 .jpeg、 .png、 .tif 或 .tiff
+   * - 文档 
+     - .pdf、 .txt、 Microsoft Office 和 Open Office 文档，演示文稿或电子表格
+       或电子表格
+   * - 其他
+     - 其他类型如 .html、 .js 或 .sjson 
 
-To filter the list of files by type:
+通过类型筛选列表或文件：
  
-#. On the **Files & Uploads** page, select the **Type** column header.
+#. 在**文件与上传**页面中，选中**类型**列。
 
-#. In the drop-down list, select the type of file that you want to view. 
+#. 在下拉列表中选择您需要查看的文件类型。
 
-The list refreshes to show only the type of file you selected, and the column
-header changes to reflect the type of file that you have filtered by.
+更新后的列表只包含您选择的文件类型，列名也相应变化。
 
-To reset the list and view files of all types, select **Show All** in the
-**Type** drop-down list.
+点击**类型**下拉列表中的**查看全部**可以重新设置条件以及查看所有类型的文件。
 
 .. _Find Files:
 
 *******************
-Find Files
+查找文件
 *******************
 
-The **Files & Uploads** page lists up to 50 files.  If your course has more
-than 50 files, additional files are listed on other pages.
+**文件与上传**每页最多显示50个文件，如果您的课程文件数量超过50个，其余的文件将显示在其他页面。
 
-The range of the files listed on the page, and the total number of files, are
-shown at the top of the page.
+页面内容最上方会显示当前页面停留在哪个文件页以及文件总数。
 
-You can navigate through the pages in these ways.
+您可通过以下两种方法浏览文件页：
 
-* Select the **<** and **>** buttons at the top and bottom of the list to
-  navigate to the previous and next pages.
+* 点击文件列表最上方和最下方的**<**和**>**按钮在上一页与下一页之前切换
 
-* At the bottom of the page, you can edit the first number in the page range.
-  Select the number to place your cursor in the field, then enter the page
-  number you want to jump to.
+* 在页面底部点击页码跳转至某页
+  在输入框中输入页码可直接跳转至该页面。
 
   .. image:: ../../../shared/building_and_running_chapters/Images/file_pagination.png
    :width: 250
@@ -193,27 +162,21 @@ You can navigate through the pages in these ways.
 .. _Lock a File:
  
 *******************
-Lock a File
+锁定文件
 *******************
 
-By default, anyone can access a file you upload if they know the web URL, even
-if they are not enrolled in your course. You can prevent outside access to a
-file by locking the file. When you lock a file, the web URL only allows
-learners who are enrolled in your course and signed in to edX to access the
-file.
-
-To lock a file, select the lock icon in the right column. 
+系统默认，即使是课堂外的人，只要知道文件的URL就可以下载您上传的文件，
+如果您不想让他们访问您的文件，请点击**锁定**按钮。
 
 .. _Delete a File:
 
 *******************
-Delete a File
+删除文件
 *******************
 
-To delete a file, select the **x** icon in the row for file.  You are prompted
-to confirm the deletion.
+点击文件旁边的**X**图标以删除文件，文件删除前会有警告提示。
 
 .. warning:: 
-  After you delete a file, links to the file from course content will be
-  broken. You must update links to files that you need to delete.
+  如果您的文件包含链接，文件删除后链接将被破坏。
+  所以删除文件前，请先将链接备份至其他位置。
  
