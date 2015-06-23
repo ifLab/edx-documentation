@@ -37,8 +37,7 @@
  :alt: An image of the dashboard showing courses with start and end dates
 
 .. note:: 如果您的课程将出现在edX.org上，您必须与您的edX项目经理一起准备您的课程概要页面内容。
- 包括课程概览，图片和视频。更多信息请参阅`edX101 <https://www.edx.org/course/overview-
- creating-edx-course-edx-edx101#.VLA9IWTF- RU>`_. 中的 `About
+ 包括课程概览，图片和视频。更多信息请参阅`edX101 <https://www.edx.org/course/overview-creating-edx-course-edx-edx101#.VLA9IWTF- RU>`_. 中的 `About
  page lesson <https://www.edx.org/course/overview- creating-edx-course-edx-
  edx101#.VLA9IWTF-RU>`_ 一节。
 
@@ -99,38 +98,36 @@
 遵循以下步骤添加课程图片：
 
 #. 在 **设置** 菜单中选择 **时间表与详情** 。
-#. Scroll down to the **Course Image** section.
-#. To select an image from your computer, click **Upload Course Image**, then
-   follow the prompts to find and upload your image.
-#. View your dashboard to see how the image will appear to students.
+#. 向下滚动找到 **课程图片** 一栏。
+#. 从您的本地计算机中选择一张图片，点击 **上传课程图片** ，
+   然后按照提示找到并上传您的图片。
+#. 浏览您的使用界面，并查看如何向学生显示该图片。
 
 .. _Add a Course Video:
 
 *********************************
-Add a Course Introduction Video
+添加课程视频简介
 *********************************
 
-To excite and entice potential students to enroll, each course can have a course
-introduction video. The video should reveal some of the personality the
-instructors bring to the course.
+为吸引潜在的学生前来注册，您可以为课程添加视频简介。
+视频应展示该课程讲师的部分授课风格
 
 .. image:: ../../../shared/building_and_running_chapters/Images/about-page-course-video.png
  :alt: Image of the course video in the course About page.
 
-The video should answer these key questions.
+视频应回答下列重要问题：
 
-* Who is teaching the course?
-* What university or college is the course affiliated with?
-* What topics and concepts does your course cover?
-* Why should a learner enroll in your course?
+* 谁将讲授这门课程？
+* 这门课程隶属哪所大学或学院？
+* 这门课程涵盖哪些主题及知识概念？
+* 学生为什么要注册学习此门课程？
 
-The video should deliver your message as concisely as possible and have a run
-time of less than 2 minutes.
+上传的视频简介应尽可能地简明传达您的信息，且时长至少为两分钟。
 
-Ensure your course introduction video follows the same :ref:`Compression
-Specifications` and :ref:`Video Formats` guidelines as course content videos.
+确保您的视频简介符合 :ref:`Compression
+Specifications` 和 :ref:`Video Formats` 
 
-To add a course introduction video:
+视频简介添加步骤：
 
 
 #. Upload the course video to YouTube. Make note of the code that appears
