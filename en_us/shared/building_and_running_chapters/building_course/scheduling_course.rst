@@ -46,7 +46,7 @@
 *******************************************
 
 EdX建议您认真考虑课程的注册起始日期和结束日期。
-在您决定了日期以后，您将在Studio中的 **日程与细节**页面中设定日期。
+在您决定了日期以后，您将在Studio中的 **日程与细节** 页面中设定日期。
 EdX建议您在计划开始课程前一周确认所有重要日期。
 
 .. note::
@@ -105,67 +105,57 @@ CourseWide Discussion Topics` 。
 注册结束时间不能晚于课程结束时间。
 
 .. important:: 
-  For partner courses on edx.org, when the enrollment end date passes,
-  the course is no longer listed in the course catalog. EdX encourages you to
-  keep enrollment open as long as possible. For more information, contact your
-  edX program manager.
+  在edx.org的合作伙伴课程中，一旦过了注册截止日期，课程就不再显示在目录中了。
+  edX建议您尽可能地维持开放注册状态。更多信息请询问您的edX项目经理。
 
 .. _Set Start and End Dates:
 
 *******************************************
-Set Course and Enrollment Dates and Times
+ 设定课程时间和注册时间
 *******************************************
 
-You set dates and times for the course and for course enrollment in Studio.
+您将在Studio中为课程设定起止时间和注册时间。
 
-#. From the **Settings** menu, select **Schedule and Details**.
+#. 在 **设置** 菜单中选择 **日程与细节**
 
-#. Locate the **Course Schedule** section of the **Schedule & Details** page,
-   and replace the placeholder dates and times with your own information.
+#. 在 **日程与细节** 页面中选择 **课程时间表** ，
+   并用您的信息替代默认日期和时间。
 
-   When you make changes, a **Save Changes** button appears in the lower right
-   corner of the page.
+   修改后请点击页面右下角的保存按钮。
 
-#. When you finish entering your dates and times, select **Save Changes**.
+#. 输入日期和时间后，请保存您的修改。
 
 .. note:: 
- The Time fields on this page, and the times that learners see, use Universal
- Coordinated Time (UTC).
+ 本页面中的时间域以及学生看到的时间均为格林尼治时间(UTC)。
 
-EdX recommends that you verify that all important dates are correct one week
-before you plan to start the course.
+我们建议您在计划开课前一星期确认所有重要时间准确。
 
 .. _Advertise a Different Start Date:
 
 ====================================
-Advertise a Different Start Date
+设置显示开始日期
 ====================================
 
-You can advertise a start date for your course that is different from the
-course start date you set in the **Schedule and Details** page. You might want
-to do this if there is uncertainty about the exact start date. For example, you
-could advertise the start date as **Spring, 2015**.
+您能设置显示开始日期，这与时间表和详情页面的设置课程开始日期不同。
+您若对准确的开始日期不确定，可能会想要这样做。
+例如，您可以将开始日期显示成 **2015年春季** 。
 
-To set an advertised start date in Studio, follow these steps.
+设置显示开始日期：
 
-#. From the **Settings** menu, select **Advanced Settings**.
-#. Find the **Course Advertised Start Date** policy key. The default value is
-   **null**.
-#. Enter the value you want to display as the advertised start date. You can
-   use any string, enclosed in double quotation marks. If you format the string
-   as a date (for example, as 02/01/2015), the value is parsed and presented to
-   learners as as a date.
+#. 从设置栏中选择高级设置
+
+#. 找到显示开始的关键按键，默认值为零。
+  
+#. 输入您想显示的开始日期。您能使用任何字符，附上双引号。若您想将字符格式化为日期，
+  （例如，格式化为 02/01/2014），其价值就被语法化，呈现给学生的是日期。
 
   .. image:: ../../../shared/building_and_running_chapters/Images/advertised_start.png
    :alt: Image of the advertised start date policy key with a value of "anytime, self-paced".
    :width: 600
 
-4. Select **Save Changes** at the bottom of the page.
+4. 在本页的末尾点击保存改动
 
-Learners now see the value of the **Course Advertised Start Date** policy key
-as the course start date on their dashboards.
+现在学生可以在学生面板中看到 **课程显示开始日期** 。
 
-If you do not change the default course start date (01/01/2030), and the
-**Course Advertised Start Date** policy value is ``null``, then the 
-dashboard does not list a start date for the course. Learners just see that
-the course has not yet started.
+如果您没有更改默认开始日期(01/01/2030)，**课程显示开始日期** 将为空值。
+课程面板将不会显示该课程的开始日期。学生只能看到目前课程未开始状态。
