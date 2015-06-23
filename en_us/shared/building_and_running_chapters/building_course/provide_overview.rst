@@ -37,7 +37,7 @@
  :alt: An image of the dashboard showing courses with start and end dates
 
 .. note:: 如果您的课程将出现在edX.org上，您必须与您的edX项目经理一起准备您的课程概要页面内容。
- 包括课程概览，图片和视频。更多信息请参阅`edX101 <https://www.edx.org/course/overview-creating-edx-course-edx-edx101#.VLA9IWTF- RU>`_. 中的 `About
+ 包括课程概览，图片和视频。更多信息请参阅`edX101 <https://www.edx.org/course/overview-creating-edx-course-edx-edx101#.VLA9IWTF-RU>`_. 中的 `About
  page lesson <https://www.edx.org/course/overview- creating-edx-course-edx-
  edx101#.VLA9IWTF-RU>`_ 一节。
 
@@ -169,27 +169,25 @@ Specifications` 和 :ref:`Video Formats`
 .. _Specify Prerequisite Courses:
 
 ===================================
-Specify Prerequisite Courses
+指定预备知识课程
 ===================================
 
-You can require that your students pass a particular edX course before they
-enroll in your course. Students see information about course prerequisites on
-the course About page.
+您可以要求学生在注册您的课程之前修过特定的edX课程。
+学生可以在课程概述页面中看到本课程预备知识相关信息。
 
 .. image:: ../../../shared/building_and_running_chapters/Images/PrereqAboutPage.png
   :width: 500
   :alt: A course About page with prerequisite course information circled
 
-If students have not completed the prerequisite course, they can enroll in your
-course and then see your course on the Student Dashboard. However, unlike with
-other courses, the Student Dashboard does not provide a link to the courseware.
-The Student Dashboard includes a link to the About page for the prerequisite
-course. Students can enroll in the prerequisite course from the About page.
+没有完成预备知识课程的学生仍可以注册您的课程并在学生课程面板中查看课程。
+但是，与其他课程有所不同，学生课程面板不会显示课件链接。
+学生课程面板中将包含预备知识课程概述页面的链接。学生可以在这里注册预备知识课程。
 
 .. image:: ../../../shared/building_and_running_chapters/Images/Prereq_StudentDashboard.png
   :width: 500
   :alt: The Student Dashboard with an available course and a course that is
       unavailable because it has a prerequisite
+
 
 To specify a prerequisite course, you must be a course author in both the
 current course and in the prerequisite course.
