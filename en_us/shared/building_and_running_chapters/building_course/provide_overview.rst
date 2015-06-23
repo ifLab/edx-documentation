@@ -130,49 +130,41 @@ Specifications` 和 :ref:`Video Formats`
 视频简介添加步骤：
 
 
-#. Upload the course video to YouTube. Make note of the code that appears
-   between **watch?v =** and **&feature** in the URL. This code appears in the
-   box below.
+#. 上传课程视频至YouTube视频网站。
+   记录网址上 **watch?v =** 到 **&feature** 的中间部分。如下列样例绿框中出现的代码。
+   
 
   .. image:: ../../../shared/building_and_running_chapters/Images/image127.png
     :alt: Image of a sample course video
     
-2. From the **Settings** menu, select **Schedule & Details**.
-#. Scroll down to the **Course Introduction Video** section.
-#. In the field below the video box, enter the YouTube video ID (the code you
-   copied in step 1). When you add the code, the video automatically loads in
-   the video box. Studio automatically saves your changes.
-
+2. 在导览列上，点击设置之后，点击时程表与课程介绍。
+#. 向下滚动鼠标至课程视频简介区块。
+#. 在视频框下方栏位，输入YouTube视频ID（即步骤一中复制的代码）。
+   在您添加代码后，视频将自动装载至视频框中。Stidio将自动保存您的变更。
 
 .. _Set Course Time Requirements:
 
 ************************************
-Set Course Time Requirements
+设置课程时间需求
 ************************************
 
-To specify the number of hours that you expect students to spend on the course
-each week, follow these steps.
+课程一周大概所需时间将显示在课程概要页面底部。
+遵循以下步骤设置课程时间需求：
 
-#. From the **Settings** menu, select **Schedule & Details**.
-#. Scroll down to the **Requirements** section.
-#. In the **Hours of Effort per Week** field, enter the number of hours you
-   expect students to work on this course each week.
-#. View your course About page to see how the requirements will appear to
-   students.
+#. 点击设置之后，点击时程表与课程介绍。
+#. 下滑鼠标至课程需求。
+#. 在一周课程所需时间一栏内，输入您期望学生每周学习此门课程的小时数。
+#. 浏览您的课程概要页面，查看如何向学生展示该时间量。
 
 
 .. _Set Course Prerequisites:
 
 ********************************************
-Set Course Prerequisites
+设置课程预备知识
 ********************************************
 
-You might want to make sure that your students have a specific set of skills and
-knowledge before they take your course. In addition to suggesting general
-requirements in your course overview, you can require students to :ref:`complete
-specific prerequisite courses<Specify Prerequisite Courses>`, or :ref:`take an
-entrance exam<Require an Entrance Exam>`, or both.
-
+您可能希望确认学生在上课之前具备特定的基础知识和技能。
+为了满足您在课程概述中描述的一般要求，您可以要求学生 :ref:`complete specific prerequisite courses<Specify Prerequisite Courses>` 或者 :ref:`take an entrance exam<Require an Entrance Exam>` ，或两项同时进行。
 
 .. _Specify Prerequisite Courses:
 
