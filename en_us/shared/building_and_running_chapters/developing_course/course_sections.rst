@@ -58,18 +58,15 @@
 
 如果出现下列情况，学生仍然可以看见已过发布日期的内容：
 
-* The release date for the subsection that contains that content has passed.
-* The unit has been published.
-* The unit is not hidden from students.
+* 包含次容的章节已经过了发布日期。
+* 已经发布的目标单元。
+* 未对学生隐藏的单元。
 
 ************************************************
-Release Statuses of Sections
+章节的发布状态
 ************************************************
 
-As an course author, you control the release status of sections.  For the
-content of a section to be visible to students, the section must be released.
-See the following topics for more information about the possible release
-statuses of sections.
+课程制作者可以控制各个章节的发布状态。学生只能看见发布的章节，了解章节的发布状态，请参考以下信息：
 
 * `Unscheduled`_
 * `Scheduled`_
@@ -78,14 +75,12 @@ statuses of sections.
 * `Staff Only Content`_
 
 ========================
-Unscheduled
+尚未设置发布时间
 ========================
 
-If you do not change the :ref:`course start date<Set Start and End Dates>`
-default value, ``1/1/2030 00:00:00 UTC``, when you create a new section, its
-release date will appear as ``Unscheduled``. When the section release date is
-unscheduled, students cannot see any content in that section, regardless of
-the publishing status of that content.
+如果您在创建新章节时没有修改 :ref:`course start date<Set Start and End Dates>`
+默认开始时间 ``1/1/2030 00:00:00 UTC``，那么该章节的发布日期会显示为 ``Unscheduled`` 。
+处于这种状态下，学生无法看见该章节中的任何内容，不管该部分内容是否发布。
 
 If you have modified the course start date, when you create a new section, the
 default release date is the course start date.
