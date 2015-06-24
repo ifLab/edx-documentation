@@ -1,14 +1,13 @@
 .. _Beta_Testing:
 
 #############################
-Beta Testing a Course
+贝塔测试
 #############################
 
-When a course is being designed in Studio, the course team can choose **View
-Live** to assess their progress in designing the course, test their work, find
-gaps and errors, and mimic the student experience. To gather information about
-the overall experience of taking a course, you can also conduct a beta test of
-the course.
+
+在Studio中设计课程时，课程团队可选择 **查看课程现况** 选项对课程设计流程进行评估，
+或者对课程进行测试，查错补缺，并模拟学生的课堂体验。为收集宏观课堂体验信息，
+您可以对课程进行贝塔测试（译注：一种验收测试）。
 
 * :ref:`Beta_Process`
 * :ref:`Qualities_Testers`
@@ -21,36 +20,27 @@ the course.
 .. _Beta_Process:
 
 ******************************************
-The Beta Testing Process
+贝塔测试流程
 ******************************************
 
-During a beta test, you gather information about the experience of taking your
-course in an effort to improve its quality. The phases of the beta testing
-process, and some questions that you may find useful to consider as you prepare
-for each phase, follow.
+贝塔测试中，为提升课程质量，您需要收集关于课堂体验的信息。
+贝塔测试的各个阶段，以及各个阶段中您需要考虑的问题，陈列如下：
 
-#. **Planning**: What are your objectives for the test? What is the schedule
-   for testing?
+#.  **制定计划** ：测试目的是什么？测试日程是怎样的？
 
-#. **Recruitment**: How many testers do you need? How much time do you expect
-   testers to spend? When do you need them to complete their feedback?
+#. **征募测试员**：本次测试需要多少名测试员？您对每个测试员的期望工作时间是多长？
+   您何时需要测试员提交反馈报告？
 
-#. **Provide access to your course**: Can testers access your entire course
-   immediately, or are its sections and subsections available at different
-   times? How will that affect the schedule?
+#. **开放课程**：您的课程是一次性全部对测试员开放，还是分阶段、分时段向测试员开放？
+   不同的开放模式对测试日程将造成何种影响？
 
-#. **Collect feedback**: How do you want testers to provide feedback? Who
-   checks for feedback, and how often?
+#. **收集反馈信息**：您希望测试员以何种形式提交反馈？由谁来检查反馈情况，多久检查一次？
 
-#. **Evaluate feedback**: How is feedback evaluated? Who decides what changes
-   to make as a result, and on what schedule?
+#. **评估反馈结果**：如何评估反馈结果？最终由谁决定结论？在何时作出结论？
 
-#. **Conclusion**: How do you acknowledge the efforts of your testers? What do
-   you share with them about the results of their efforts?
+#. **作出结论**: ：如何证实测试员所做的工作？如何与他们一起分享工作成果？
 
-There is no one answer to any of these questions. They are included here as
-background on the role that beta testing can play in the preparation of your
-course.
+以上这些问题都没有确定的答案，只是作为贝塔测试在课程准备过程中的铺垫。
 
 .. _Qualities_Testers:
 
@@ -78,67 +68,57 @@ testers do not receive certificates when they complete a course.
  when they are available to all students.
 
 ==================================
-Qualities of Good Beta Testers
+优秀测试员应具备的资质
 ==================================
 
-A beta test is valuable in part because it is unscripted. Your beta testers are
-not following a predetermined series of steps, or using a particular computer
-environment, when they access your course. When you recruit beta testers,
-however, you may find these skills and characteristics to be helpful.
+贝塔测试的价值很大程度上来自于它的临时性。
+测试员接受测试时不按套路出牌，测试环境也并非事先规定好的。
+然而，招募测试员时，您需要注意招募对象是否具有以下的特征或技能：
 
-* Curiosity.
+* 求知欲
 
-* Attention to detail for identifying problems and inconsistencies.
+* 重视细节，善于发现问题及异象
 
-* Solid communication skills for reporting problems to course staff. 
+* 善于沟通，善于向课程工作人员汇报问题
 
-Your beta testers should also have varying levels of knowledge about the course
-content:
+同时，测试员应具备课程内容相关的知识水平：
 
-* To recognize when material is wrong or missing, at least one tester should
-  know the content well.
+* 能够辨别课程材料是否缺失，是否有问题，所以，至少要有一名充分了解课程的测试员。
 
-* To identify material that is unclear, at least one tester should be less
-  familiar with the content.
+* 辨别材料是否有模糊之处，所以，至少也要有一名对课程不甚了解的测试员。
 
-Depending on the objectives you set for your beta test, you might want to
-consider recruiting testers who use assistive technologies, who have different
-native languages, or who have varying levels of familiarity with computer
-software.
+根据不同测试目标，您需要招募各种各样的测试员。
+有些擅长使用辅助技术，有些精通各种本地语言，有些具备不同程度的计算机软件技术，等等。
+
 
 =========================================
-Using Course Staff as Beta Testers 
+让课程工作人员充当测试员
 =========================================
 
-Course staff can provide valuable feedback about your course. However, they are
-typically stakeholders in the success of your course and have a significant
-amount of knowledge about it. As a result, they can be too close to the course
-to interact with it in the same way as students will. They can also be either
-reluctant to provide feedback, or overly zealous.
+课程员工能提供重要的课程反馈信息。
+但是，他们对于课程的成功而言是典型的利益相关者，同时对课程可谓了若指掌。
+因此，比起普通学生，他们课程似乎“知道的太多了”，与课程的互动空间也较小。
+他们对于课程的反馈要么显得不耐烦，要么又过分热情。
 
-If you do want a staff member to be a beta tester, a different, second email
-address must be used for this additional role. The privileges of the course
-staff role override those of a beta tester, so a second registration on the
-site, as well as activation and enrollment in the course, are necessary using
-this second email address. The staff member must log in using the second email
-address (with the beta tester role) in order to experience the course as a
-student.
+如果您真的想让工作人员充当测试员，那么必须让他们再另外申请一个用于测试的邮箱地址。
+因为工作人员的账号比普通测试员的账号拥有更多权限，所以必须使用另一个账号注册、激活、报名。
+工作人员作为测试员时，必须使用这个专用账号登陆，才能拥有和学生一模一样的课程体验。
 
 .. _What_Test:
 
 *********************************
-What to Test
+测试内容
 *********************************
 
-Beta testers should interact with everything in the course. 
+测试员应测试课程中的所有内容，包括：
 
-* Click all links.
+* 点击所有链接
 
-* Watch all videos.
+* 观看所有视频
 
-* Download video transcripts and other files.
+* 下载视频文本及其他文件
 
-* Complete all problems. 
+* 完成所有问题
 
 Beta testers can use a desktop computer to access an edX website, the edX
 mobile app on a smartphone, or both to complete their tests. As they work,
@@ -147,38 +127,35 @@ beta testers log issues and questions for the course team.
 .. _How_Testers_See_Course:
 
 ******************************************
-How Beta Testers See Course Content
+测试员如何查看课程内容
 ******************************************
 
-To beta test a course, you: 
+贝塔测试时，您需要：
 
-* Define a number of days before section and subsection release days for
-  testing to begin.
+* 在发布课程小节内容及子内容之前，规定几个测试日期。
 
-* Identify beta testers.
+* 确定测试员身份。
 
-Designated beta testers see course content before students can. The matrix
-that follows shows the course content that beta testers can access earlier
-than other students.
+指定测试员后，他们能在学生之前查看课程内容。查看课件时机如下：
 
 +-------------------------------------------+------+------+
-|                                           | Yes  |  No  |
+|                                           | 是   |  否  |
 +===========================================+======+======+
-| Before the Course Enrollment Date         |  X   |      |
+| 课程录取开始前                            |  X   |      |
 +-------------------------------------------+------+------+
-| Before the Course Start Date              |  X   |      |
+| 课程开始前                                |  X   |      |
 +-------------------------------------------+------+------+
-| Before the section Release Day            |  X   |      |
+| 课程小结内容发布前                        |  X   |      |
 +-------------------------------------------+------+------+
-| Before the subsection Release Day         |  X   |      |
+| 课程小节子内容发布前                      |  X   |      |
 +-------------------------------------------+------+------+
-| Before the unit is Published              |      |   X  |
+| 课程单元发布前                            |      |   X  |
 +-------------------------------------------+------+------+
-| Before a draft replaces a live unit       |      |   X  |
+| 课程草案替换课程单元前                    |      |   X  |
 +-------------------------------------------+------+------+
 
-The course team can continue to add content in Studio after the beta test
-begins. When new content is ready for testing, be sure to :ref:`publish the
+测试开始后，课程团队可继续在Studio中添加内容。
+准备测试新内容时，请确保 :ref:`publish the
 unit<Publish a Unit>`.
 
 .. important:: When you set up the beta test and define when it starts, verify 
@@ -187,7 +164,7 @@ unit<Publish a Unit>`.
  attempt to access any other content in the course.
 
 ================================
-Define When the Beta Test Starts
+指定测试开始时间
 ================================
 
 To define the start of the beta test, you use Studio to specify a number of
@@ -203,33 +180,32 @@ your course.
 #. Click **Save Changes**.
 
 ===========
-Example
+例：
 ===========
 
 .. Is this example helpful? how can we assess whether it is frightening/confusing to course team, or helpful?
 
-Beta tester access to courseware for a course with **Days Early for Beta Users**
-= 20 and 2 sections:
+下面的例子中，“测试员提前日期”值为20，表格展示的是测试员对课程各项内容的访问日期及权限。
 
 +-------------------------------------------+------------------------------------------------+
-| Course Enrollment Date = 31 August        | 31 August; earlier if enrolled by course staff |
+| 课程录取日期 = 8月31日                    | 测试时间：8月31日，录取人员为课程工作人员则更早|
 +===========================================+================================================+
-| Course Start Date = 15 September          | 26 August                                      |
+| 课程开始日期 = 9月15日                    | 8月26日                                        |
 +-------------------------------------------+------------------------------------------------+
-| section 1 Release Day = 15 September      | 26 August                                      |
+| 第一节发布日期 = 9月15日                  | 8月26日                                        |
 +-------------------------------------------+------------------------------------------------+
-| section 2 Release Day = 22 September      | 2 September                                    |
+| 第二节发布日期 = 9月22日                  | 9月2日                                         |
 +-------------------------------------------+------------------------------------------------+
-| subsection 1 Release Day = 22 September   | 2 September                                    |
+| 第一小节发布日期 = 9月22日                | 9月2日                                         |
 +-------------------------------------------+------------------------------------------------+
-| subsection 2 Release Day = 24 September   | 4 September                                    |
+| 第二小节发布日期 = 9月24日                | 9月4日                                         |
 +-------------------------------------------+------------------------------------------------+
-| subsection 2, unit 1 Visibility = Public  | 4 September                                    |
+| 第一单元第二小节 可见性 = 公开            | 9月4日                                         |
 +-------------------------------------------+------------------------------------------------+
-| subsection 2, unit 2 Visibility = Public; | 4 September for Public version;                |
-| draft in progress                         | No access to draft                             |
+| 第二单元第二小节 可见性 = 公开;           | 公开部分：9月4日                               |
+| 草案进行中                                | 草案部分：无访问权限                           |
 +-------------------------------------------+------------------------------------------------+
-| subsection 2, unit 3 Visibility = Private | No access                                      |
+| 第三单元第二小节 可见性 = 私有            | 无访问权限                                     |
 +-------------------------------------------+------------------------------------------------+
 
 In this example, the beta testers cannot access all of the courseware when the
