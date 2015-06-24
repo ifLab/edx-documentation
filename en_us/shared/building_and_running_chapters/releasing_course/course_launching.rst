@@ -35,48 +35,32 @@ Students>` 作为标准。
 * 确保所有视频、文本及下载链接都已准备就绪。
 * 检查所有作业、提问环节，确认作业、任务上交日期。详见
   :ref:`Working with Problem Components`.
-* Use edX Insights to review the answers that beta testers submitted for
-  problems, and to proofread your display names, accessible labels, and answer
-  text.
+* 使用edX Insights来查看贝塔测试员提交的问题答案，并校对您的显示名称、可用标签和答案文本。
 * 核查课程团队及贝塔测试员的反馈报告，确保课程已经从头到尾测试过了。
 
-**Welcome Students**
+**欢迎学生**
 
-* Two months before the course start date, prepare and send a welcome email
-  message to currently enrolled students. See :ref:`Prelaunch Reminder` and
+* 课程开始前两个月，请给当前录取的所有学生发送一封欢迎邮件。详见 :ref:`Prelaunch Reminder` 以及
   :ref:`Send_Bulk_Email`.
-* Compose a welcome message and add it to the **Course Info** page. See
+* 写一封欢迎邮件，挂上 **课程信息** 页面。详见
   :ref:`Add a Course Update`.
-* Verify that a syllabus and other references are available on the **Course
-  Handouts** page. See :ref:`Add Course Handouts`.
-* One month before the course start date, prepare and send a welcome email
-  message to currently enrolled students.
-* One week before the course start date, prepare and send a welcome email
-  message to currently enrolled students.
-* Add an "Introduce Yourself" post to a discussion topic. For a MOOC, you may
-  want to manage the size of the thread by distributing student responses
-  across multiple threads. For example, you can start different threads for
-  introductions based on geographical location, such as "Introduce Yourself:
-  Europe", "Introduce Yourself: North America", etc. See
+* 确认 **课程讲义** 页面有您的教学大纲和其他参考资料。详见 :ref:`Add Course Handouts`.
+* 课程开始前一个月，再给当前录取的学生发一封欢迎邮件
+* 课程开始前一周，再发一次欢迎邮件
+* 在讨论课题中发布一条 **自我介绍** 帖。在大型开放式在线课程中，您需要管理每条帖子的规模。
+  您可以发布多条自我介绍帖，根据所在地域分类，比如， **自我介绍：欧洲** ， **自我介绍：北美** ，等等。
+  详见
   :ref:`Running_discussions`.
-* On the course start date, prepare and send a launch email message to
-  currently enrolled students. See :ref:`Launch Day Welcome`. 
+* 在课程开始当天，给当前录取的学生发送一封提示邮件。详见 :ref:`Launch Day Welcome`. 
 
-**Prepare Staff**
+**准备工作人员事宜**
 
-* Define communication methods for all course contributors, including staff,
-  instructors, and the discussion team. For example, set up a course-specific
-  email address.
-* Verify that all course contributors know how to record their work, report
-  issues, and collaborate on tasks.
-* Verify that the instructors and course staff selected for your course
-  have the correct role assignments in the LMS. See :ref:`Course_Staffing`.
-* Verify that the people you have given the discussion admin, discussion
-  moderator, and community TA roles have registered and activated their user
-  accounts and enrolled in the course. See
+* 为所有课程幕后团队——工作人员、导师、讨论项目管理团队等——规定统一的沟通方式，比如课程专用的公共邮箱等。
+* 确认所有课程团队是否已经了解如何记录工作、报告问题及任务合作。
+* 检查所有导师、工作人员在学习管理系统中是否有对应的身份。详见 :ref:`Course_Staffing`.
+* 确认所有讨论项目管理员、协调员及社群助教是否都已经注册、激活了自己的账户；是否已纳入课程；是否在教师控制面板上被分配到了对应的角色。详见
   :ref:`Assigning_discussion_roles`.
-* Define methods for managing discussions and guidance for discussion
-  moderators, and distribute to the discussion team. See
+* 规定讨论项目协调员的讨论管理办法、引导守则，并分发至整个讨论项目团队。详见
   :ref:`Moderating_discussions` and :ref:`Guidance for Discussion Moderators`.
 
 
