@@ -208,73 +208,57 @@ your course.
 | 第三单元第二小节 可见性 = 私有            | 无访问权限                                     |
 +-------------------------------------------+------------------------------------------------+
 
-In this example, the beta testers cannot access all of the courseware when the
-beta test starts on 26 August: they can access section 1 but not section 2. You
-may want to provide a schedule of section availability to your testers so that
-they can plan their time appropriately. Future release dates do not display to
-the beta testers in the courseware.
+在本例中，测试员在8月26日测试开始后只能看见第一节的内容，但是无法看见第二节。
+您可以就课程权限开放日期做一个日程表，以供测试员合理安排时间。
+课件中不会提示测试员后续内容的发布时间。
 
 .. _Add_Testers:
 
 *********************************
-Adding Beta Testers 
+添加测试员
 *********************************
 
-Before you can add beta testers:
+添加测试员之前：
 
-* You need the email address or username of each beta tester. 
+* 您需要每个测试员的邮箱地址或用户名。 
 
-* Each beta tester must register and activate a user account for that email
-  address/username.
+* 每个测试员需要为邮箱地址或用户名注册、激活一个用户帐户。
 
-When you add beta testers, note the following. 
+添加测试员时，请注意：
 
-* If the beta test starts before the course **Enrollment Start Date**, testers
-  cannot enroll themselves in your course. However, you can enroll the beta
-  testers prior to the **Enrollment Start Date**.
+* 如果测试开始日期在 **课程录取开始日期** 之前，测试员无法自主报名您的课程，但您可以主动将测试员添加进上课名单中。
 
-* If you add the beta testers after the defined start of the beta test, and
-  they are enrolled in the course, they see your course on their **Current
-  Courses** dashboards when they log in.
+* 测试开始后，如果添加的测试员同时也参加了课程，他们可以在 **当前课程** 控制面板中查看课程现状。
 
-* If you add beta testers before the test starts, or if they are not enrolled,
-  they do not see your course on their dashboards. You can enroll the beta
-  testers in the course yourself, and you may want to send an email message to
-  remind them when the test begins.
+* 如果您在测试开始前添加测试员，或测试员不参与课程，他们就无法在控制面板中查看课程。
+  您可以主动将测试员纳入上课名单，同时您可以发邮件通知他们测试开始时间。
 
 .. _Add_Testers_Bulk:
 
 ================================
-Add Multiple Beta Testers
+添加多个测试员
 ================================
 
-If you have a number of beta testers that you want to add, you can use the
-"batch add" option to add them all at once, rather than individually. With this
-feature, you have options to enroll the beta testers in the course (before or
-after the **Enrollment Start Date**) and send an email message to notify the
-beta testers that they have been added.
+您可以使用“批量添加”选项一次性添加多名测试员。
+您可以使用这项功能将测试员纳入课程名单（录取日期前后均可），同时向他们发送一封提醒邮件，告诉他们您已经将他们纳入课程。
 
-To add multiple beta testers:
+步骤：
 
-#. View the live version of your course.
+#. 查看课程当前状态
 
-#. Click **Instructor**, and then click **Membership**. 
+#. 单击 **导师** ，再单击 **成员** 。 
 
-#. In the **Batch Beta Tester Addition** section of the page, enter one or more
-   addresses or usernames separated by commas or line feeds (the Enter key).
-   You can also copy data from a CSV file of email addresses and paste it here.
- 
-#. To enroll the beta testers in your course, leave **Auto Enroll** selected.
-   If the beta test starts before the course **Enrollment Start Date**, testers
-   cannot enroll themselves in your course.
+#. 在 **批量添加测试员** 区域中键入一个或多个测试员的邮箱地址或用户名，用逗号或回车键分隔。
+   您也可以复制CSV文件中的邮件地址，粘贴到此处。
 
-#. To send an email message to the beta testers, leave **Notify users by
-   email** selected. An example of the message that is sent to a beta tester
-   who is not enrolled in the course follows.
+#. 为将测试员纳入课程，您需选中 **自动纳入** 选项。如果测试日期早于课程录取日期，测试员无法自主加入课程。
+
+#. 如果想要发电子邮件提醒测试员，请选中 **通过电子邮件提醒用户** 选项。
+   下面的例子是一封电邮，收件人是一名尚未加入课程（或者是被自动加入课程）的测试员：
 
 .. image:: ../../../shared/building_and_running_chapters/Images/Beta_tester_email.png
-  :alt: "You have been invited to be a beta tester for {course name} at {URL}. 
-        Visit {link} to join the course and begin the beta test."
+  :alt: "课程工作人员邀请您加入{URL} 中 {course name} 课程的贝塔测试
+        访问 {link} 加入课程，开始上课。"
 
 6. Click **Add beta testers**.
 
