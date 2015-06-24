@@ -150,9 +150,6 @@
 
 学生可以浏览已发布小节中的内容，但并不是所有内容，只有小节中处于发布状态的单元才对学生可见，如下图所示：
 
-The following example shows how a released subsection displays in the
-outline, summarized with a blue bar.
-
 .. image:: ../../../shared/building_and_running_chapters/Images/subsection-released.png
  :alt: A released subsection
 
