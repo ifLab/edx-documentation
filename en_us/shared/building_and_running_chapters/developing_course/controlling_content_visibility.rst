@@ -78,31 +78,25 @@ course as staff<View Your Live Course>`.
 * :ref:`Units<Hide a Unit from Students>`
 
 .. note::
- 当您
- When you make a previously hidden section or subsection visible to learners,
- some content in the section or subsection may remain hidden. If you have
- explicitly set a subsection or unit to be hidden from learners, this
- subsection or unit remains hidden even when you change the visibility of the
- parent section or subsection. Unpublished units remain unpublished, and
- changes to published units remain unpublished.
+ 当您将之前对学生隐藏的章节或子章节设置为对学生可见时，章节中的一些内容也许会保持隐藏状态。
+ 如果您特地将某一子章节或单元设置为对学生隐藏模式，当您更改父章节的可见性时，此子章节或单元将保留隐藏模式。
+ 未发布单元保持未发布状态，对已发布单元的修改也保持未发布状态。
 
 .. _Hiding Graded Content:
 
 =====================
-Hiding Graded Content
+隐藏评分内容
 =====================
 
-If you hide a section, subsection, or unit that contains graded problems,
-grading is not affected. The hidden problems are still counted when the edX
-platform calculates grades. If a problem was at time visible and learners
-submitted answers for it, they still receive the credit they earned if you
-later hide the problem.
+如果您隐藏了一个包含评分问题的章节、子章节或单元，评分将不受影响。
+edX平台计算成绩时将包含隐藏的问题。如果某个问题在学生提交答案时可见，那么即使将来您隐藏了该问题，学生仍然能获得该问题的分数。
 
 .. _Content Groups:
 
 **************
-Content Groups
+内容组
 **************
+
 
 If you have cohorts enabled in your course, you can use content groups to
 designate  particular components in your course as visible only to specific
