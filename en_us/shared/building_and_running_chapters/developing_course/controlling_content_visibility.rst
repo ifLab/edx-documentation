@@ -1,49 +1,45 @@
 .. _Controlling Content Visibility:
 
 ###################################
-Controlling Content Visibility
+设置内容可见性
 ###################################
 
-As course staff, you must carefully control which content is visible to
-students and when.
+作为教员，您必须认真考虑何时将哪些课程内容对学生开放。
 
-You control content visibility through these features in Studio:
+课程内容的可见性取决于以下几点：
 
 * `Release Dates`_
 * `Unit Publishing Status`_
 * `Content Hidden from Students`_
 * `Content Groups`_
   
-These features work together to control content visibility for students.
+这些属性将共同控制内容对学生是否可见。
 
 .. _Release Dates:
 
 ***********************
-Release Dates
+发布日期
 ***********************
 
-You schedule release dates for sections and subsections. By default, a
-subsection inherits the release date of the section it is in, though you can
-change it to another date.
+您需要为章节和子章节设定发布日期。
+默认情况下，子章节与所在章节的发布日期相同，当然，您也可以改变此日期。
 
-By defining release dates, you can ensure that content is available to students
-as planned without requiring manual intervention at that future time.
+指定发布日期后，您可以确认内容是否按计划对学生开放，且未来不需要手动调整此设置。
 
-Published units are not visible to students until the scheduled release date.
-When the section and subsection have different release dates, published units
-are not visible until both dates have passed.
+在发布日期之前，公共单元对学生不可见。
+章节和子章节的发布日期不同时，公共单元将在其中较晚的日期之后可见。
 
-Prior to the release date, content is visible to course staff
-:ref:`previewing the course <Preview Course Content>` or :ref:`viewing the live
+发布日期之前，内容对教员可见。
+:ref:`previewing the course <Preview Course Content>` 或 :ref:`viewing the live
 course as staff<View Your Live Course>`.
 
-See:
+请参阅：
 
 * :ref:`Set a Section Release Date`
 * :ref:`Set a Subsection Release Date`
 
 ***********************
-Unit Publishing Status
+单元发布状态
 ***********************
 
 You publish units to make them visible to students. Students see the last
@@ -68,7 +64,7 @@ changes to individual units.  See:
 .. _Content Hidden from Students:
 
 *****************************
-Content Hidden from Students
+对学生隐藏内容
 *****************************
 
 You can hide content from students. Such content is never visible to students,
