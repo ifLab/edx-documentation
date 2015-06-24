@@ -126,15 +126,10 @@
 Scheduled with Unpublished Changes
 ==================================
 
-You can make changes to a published unit before its parent subsection
-is released. 
+在父小节发布日期到达之前，您可以对已发布的单元进行更改。
 
-In this situation, when the release date for the subsection passes, the last
-published version of units within the subsection are made visible to students.
-The changes in units are not visible to students until you publish them.
-
-The following example shows how a scheduled subsection with unpublished changes
-displays in the outline, summarized with a yellow bar.
+这样，一旦发布父小节，学生就能看见该小节中最新版本的单元内容。
+但是，如果您不重新发布更改后的单元，那么更改后的单元还是无法对学生显示。如下图所示：
 
 .. image:: ../../../shared/building_and_running_chapters/Images/section-scheduled-with-changes.png
  :alt: A scheduled subsection with unpublished changes
@@ -144,11 +139,7 @@ displays in the outline, summarized with a yellow bar.
 Released with Unpublished Changes
 ==================================
 
-If you modify a unit within a released subsection, those modifications are not
-visible to students until you publish them.
-
-The following example shows how a released section that has unpublished changes
-displays in the outline, summarized with a yellow bar.
+如果您更改了已发布小节中的一个单元，您必须重新发布该单元，否则学生无法看见最新内容，如下图所示：
 
 .. image:: ../../../shared/building_and_running_chapters/Images/section-released-with-changes.png
  :alt: A released subsection with unpublished changes
@@ -157,8 +148,7 @@ displays in the outline, summarized with a yellow bar.
 Released
 ===========================
 
-A subsection that is released is visible to students; however, students see
-only units within the subsection that are published.
+学生可以浏览已发布小节中的内容，但并不是所有内容，只有小节中处于发布状态的单元才对学生可见，如下图所示：
 
 The following example shows how a released subsection displays in the
 outline, summarized with a blue bar.
@@ -170,12 +160,7 @@ outline, summarized with a blue bar.
 Staff Only Content
 ===========================
 
-A subsection can contain a unit that is hidden from students and available to
-staff only. That unit is not visible to students, even if the subsection has
-been released.
-
-The following example shows how an subsection that contains a unit that is
-hidden from students displays in the outline, summarized with a black bar.
+小节中可以包含只对教员可见的单元，即使发布该小节，学生也无法浏览只对教员开放的内容。如下图所示：
 
 .. image:: ../../../shared/building_and_running_chapters/Images/section-hidden-unit.png
  :alt: A section with a hidden unit 
@@ -186,52 +171,47 @@ hidden from students displays in the outline, summarized with a black bar.
 Create a Subsection
 ****************************
 
-To create a new subsection:
+如何创建一个小节：
 
-#. In the outline, expand the section in which you want to create a new
-   subsection.
-#. Click **New Subsection** at the bottom of the expanded section. A new
-   subsection appears at the end of the section, with the subsection name
-   selected.
-#. Enter the name for the new subsection. A descriptive name can help learners
-   locate content in the courseware. It can also help you select content when
-   you analyze performance in edX Insights.
-#. :ref:`Add units<Create a Unit>` to the new subsection as needed.
+#. 在“课程大纲”页面，首先扩展您要新建小节的章节。
+#. 单击章节下方的“新建小节”，如此，一个没有内容的新小节就出现在章节下方。
+#. 输入小节名，该名称会出现在学生的课件库中。
+   一个描述确切的名称将帮助学生找到内容的所在位置，也将帮助您在edX Insights中分析绩效时查找内容。
+#. :ref:`Add units<Create a Unit>` 到创建好的章节里。
    
-It is recommended that you :ref:`test course content <Testing Your Course
-Content>` as you create new subsections.
+我们建议您在创建小节的过程中 :ref:`test course content <Testing Your Course
+Content>` 。
 
 ********************************
-Change a Subsection Name
+更改小节名称
 ********************************
 
-To change a subsection name, click the Edit icon next to the subsection name.
-The name field becomes editable. Enter the new name and tab or click out of the
-field to save the name.
+点击小节名称旁边的编辑按钮，输入新名称，点击“保存”。
 
 .. _Set a Subsection Release Date:
 
 ********************************
-Set a Subsection Release Date
+设置小节的发布日期
 ********************************
 
-To set the subsection release date:
+按照以下步骤设置小节发布日期：
 
-#. Click the Settings icon in the subsection box.
+#. 点击小节中的“设置”按钮。
    
    .. image:: ../../../shared/building_and_running_chapters/Images/subsections-settings-icon.png
     :alt: The subsection settings icon circled
 
-   The **Settings** dialog box opens.
+   打开 **设置** 对话框。
 
-#. Enter the release date and time for the section.
+#. 输入章节的发布日期和时间：
 
    .. image:: ../../../shared/building_and_running_chapters/Images/subsection-settings-release.png
     :alt: The subsection release date settings
 
-#. Click **Save**.
+#. 点击 **保存** 。
 
-For more information, see :ref:`Release Dates`.
+
+欲了解更多信息，请查看 :ref:`Release Dates`.
 
 .. _Set the Assignment Type and Due Date for a Subsection:
 
@@ -239,89 +219,78 @@ For more information, see :ref:`Release Dates`.
 Set the Assignment Type and Due Date for a Subsection
 ********************************************************
 
-You set the assignment type for problems at the subsection level. 
+任务类型设置会作用到小节中所有的问题。
 
-When you set the assignment type for a subsection, all problems within the
-subsection are graded and weighted as a single type.  For example, if you
-designate the assignment type for a subsection as **Homework**, then all
-problem types in that subsection are graded as homework.
+一旦您为小节设置了任务类型，那么该小节中的所有问题都会被归纳为这种任务类型。
+例如，您将一小节中的任务类型设置成 **家庭作业** ，那么这个小节中的所有问题都被归纳为“家庭作业”。
 
-To set the assignment type and due date for a subsection:
+如何设置小节的任务类型及截止日期：
 
-#. Click the Settings icon in the subsection box.
+#. 点击小节中的“设置”按钮，即弹出设置对话框。
    
    .. image:: ../../../shared/building_and_running_chapters/Images/subsections-settings-icon.png
     :alt: The subsection settings icon circled
 
-   The Settings dialog box opens.
+   
 
-#. Select the assignment type for this subsection in the **Grade as** field.
+#. 选择任务类型：
    
    .. image:: ../../../shared/building_and_running_chapters/Images/subsection-settings-grading.png
     :alt: The subsection settings with the assignment type and due date circled
 
-#. Enter or select a due date and time for problems in this subsection.
-#. Click **Save**.
+#. 选择截止日期。
+#. 点击 **保存** 。
 
-For more information, see :ref:`Establish a Grading Policy`.
+详细信息请参见 :ref:`Establish a Grading Policy`.
 
 .. _Publish all Units in a Subsection:
 
 **********************************
-Publish all Units in a Subsection
+发布小节中的所有单元
 **********************************
 
-To publish all new and changed units in a subsection, click the publish icon in
-the box for the subsection.
+点击小节中的“发布”按钮，发布新建及修改的单元：
 
 .. image:: ../../../shared/building_and_running_chapters/Images/outline-publish-icon-subsection.png
  :alt: Publishing icon for a subsection
 
 .. note:: 
- The publish icon only appears when there is new or changed content within the
- subsection.
+ 只有对小节做出修改后，才会出现“发布”按钮。
 
-See :ref:`Unit Publishing Status` for information about statuses and visibility
-to students.
+有关单元发布状态及对学生可见性等相关信息，请查看 :ref:`Unit Publishing Status` 
 
 .. _Hide a Subsection from Students:
 
 ********************************
-Hide a Subsection from Students
+对学生隐藏小节
 ********************************
 
-You can hide all content in a subsection from students, regardless of the
-status of units within the section.
+无论小节中的单元发布状态如何，您都可以对学生隐藏所有内容。
 
-For more information, see :ref:`Content Hidden from Students`.
+更多信息请参阅 :ref:`Content Hidden from Students`.
 
-To hide a subsection from students:
+如何对学生隐藏小节内容
 
-#. Click the Settings icon in the subsection box.
+#. 点击“设置”按钮。
    
    .. image:: ../../../shared/building_and_running_chapters/Images/subsections-settings-icon.png
     :alt: The subsection settings icon circled
 
-   The **Settings** dialog box opens.
+   弹出 **设置** 对话框。
 
-#. Check **Hide from students**.
+#. 点击 **对学生隐藏** 按钮
 
    .. image:: ../../../shared/building_and_running_chapters/Images/subsection-settings-hidden.png
     :alt: The subsection hide from students setting
 
-#. Click **Save**.
+#.  点击 **保存** 。
 
-Now, no content in the subsection is visible to students.
+至此，所有内容都对学生隐藏了。
 
-To make the subsection visible to students, repeat these steps and clear the
-**Hide from students** check box.
+要对学生开放此小节，只需重复以上步骤，清除 **对学生隐藏** 复选框。
 
 .. warning::
- When you clear the **Hide from students** check box for a subsection, not all
- content in the subsection is necessarily made visible to students. If you
- explicitly set a unit to be hidden from students, it remains hidden from
- students. Unpublished units remain unpublished, and changes to published units
- remain unpublished.
+ 清除“对学生隐藏”复选框并不会将所有内容呈现给学生，特别是单独设置了对学生隐藏的单元，及尚未发布的内容。
 
 .. _Delete a Subsection:
 
