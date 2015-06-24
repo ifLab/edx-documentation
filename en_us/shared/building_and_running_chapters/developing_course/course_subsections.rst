@@ -1,11 +1,10 @@
 .. _Developing Course Subsections:
 
 ###################################
-Developing Course Subsections
+构建课程小节
 ###################################
 
-To develop subsections in your course, you must first understand the
-following topics.
+构建课程小节之前您必须了解以下信息：
 
 * `What is a Subsection?`_
 * `Viewing Subsections in the Outline`_
@@ -13,7 +12,7 @@ following topics.
 * `Subsections and Visibility to Students`_
 * `Release Statuses of Subsections`_
   
-Subsection tasks:
+小节操作：
 
 * `Create a Subsection`_
 * `Change a Subsection Name`_
@@ -25,59 +24,52 @@ Subsection tasks:
 
 
 ****************************
-What Is a Subsection?
+什么是小节？
 ****************************
 
-Sections are divided into subsections, which in turn contain one or more units.
-A subsection may represent a topic in your course, or another organizing
-principle. Subsections are sometimes called "lessons" or "learning sequences".
+小节是章节的组成部分，一个小节通常包括一个或多个单元。小节通常代表课程的某个主题，或者其他组织形式。
+小节有时也被称为“课”或“学习顺序”。
 
 
 ***********************************
-Viewing Subsections in the Outline
+小节在课程大纲中的显示方式
 ***********************************
 
-The following example shows three subsections in a section, all collapsed, in
-the course outline.
+下图呈现了三个收起的小节在大纲中的显示方式：
 
 .. image:: ../../../shared/building_and_running_chapters/Images/subsections.png
  :alt: Three collapsed subsections in the outline
 
 
 *********************************
-The Student View of a Subsection
+小节在学生端的呈现样式
 *********************************
 
-Students see subsections in the Courseware tab, listed beneath the expanded
-section. In the following example, seven subsections are circled, and the first
-is open.
+学生可以在课件库中查看小节，如下图所示：
 
 .. image:: ../../../shared/building_and_running_chapters/Images/subsections_student.png
  :alt: The student view of the outline
 
 
 ************************************************
-Subsections and Visibility to Students
+小节与对学生可见性
 ************************************************
 
-Students cannot see any content in a subsection if the subsection's release
-date is unscheduled or has not passed.
+学生无法观看未设置发布日期及发布日期未到的小节内容。
 
-If a subsection's release date has passed, students can see content in the
-subsection if the following three conditions are met.
+学生如果想观看已过发布日期的课程内容，必须满足以下三个条件：
 
-* The release date of the parent section has passed.
-* The units have been published.
-* The units are not hidden from students.
+* 父章节的发布日期已到。
+* 单元发布完成。
+* 发布单元没有对学生隐藏。
 
 ************************************************
-Release Statuses of Subsections
+小节发布状态
 ************************************************
 
-As a course author, you control the release status of subsections.  For the
-content of a subsection to be visible to students, the subsection must be
-released. See the following topics for more information about the possible
-release statuses of subsections.
+课程制作者能控制小节的发布状态。
+只有当小节处于发布状态时，学生才能看见内容。
+点击以下链接查看更多信息：
 
 * `Scheduled with the Section`_
 * `Unscheduled`_
@@ -87,57 +79,48 @@ release statuses of subsections.
 * `Released`_
 
 ==========================
-Scheduled with the Section
+与章节同时发布
 ==========================
 
-When you create a subsection, it is set by default to release at the same time
-as the section it is in. Therefore, published content in the subsection is
-visible to students at the date and time the section is released.
+由于课程小节的发布日期默认与章节一致，因此一旦发布章节内容，学生就可以浏览小节中的内容。
 
-The following example shows how an subsection in the Scheduled with Section
-state displays in the outline, summarized with a green bar.
+下图展示了默认发布日期与所在章节发布日期相同的小节在课程大纲中的显示模式：
+
 
 .. image:: ../../../shared/building_and_running_chapters/Images/subsection-scheduled.png
  :alt: A subsection scheduled to release with the section
 
 
 ========================
-Unscheduled
+未设置发布日期
 ========================
 
-If the parent section is unscheduled, when you create a new subsection it
-will also be unscheduled.
+如果未设置父章节的发布日期，那么新建的小节也自动默认未设置发布日期。
 
-Regardless of the publishing status of units within the subsection, no content
-in an unscheduled subsection is visible to students.
+无论小节中的单元是否发布，学生都无法看见未发布的小节内容。
 
-The following example shows how an unscheduled subsection displays in the
-outline, summarized with a gray bar.
+下图展示了未设置发布日期的小节在大纲中的显示模式：
 
 .. image:: ../../../shared/building_and_running_chapters/Images/subsection-unscheduled.png
  :alt: An unscheduled subsection
 
-Content in the subsection is not visible to students until you set a release
-date and the date passes.
+除非您设置小节的发布日期，否则学生无法浏览该部分内容。
 
 
 ===================================
-Scheduled Later than the Section
+晚于章节发布
 ===================================
 
-You can set a subsection to release on a date after the section releases. 
+小节的发布日期可以晚于章节的发布日期。 
 
-Content in a subsection that is scheduled for release on a future date is not
-visible to students, even if some or all of the units in the subsection are
-published.
+无论小节中的单元是否发布，学生都只有在小节发布日期时才能看见该部分内容。
 
-The following example shows the way that a subsection that will release after
-its parent subsection displays in the course outline.
+下图中，小节的发布日期就晚于父章节的发布日期：
 
 .. image:: ../../../shared/building_and_running_chapters/Images/subsection-scheduled-different.png
  :alt: A subsection scheduled to release later than the section
 
-The scheduled date must pass for the subsection to be visible to students.
+只有在发布日期到了后，学生才能看见该小节的内容。
 
 ==================================
 Scheduled with Unpublished Changes
