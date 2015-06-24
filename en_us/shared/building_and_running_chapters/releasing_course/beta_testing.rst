@@ -38,34 +38,28 @@
 
 #. **评估反馈结果**：如何评估反馈结果？最终由谁决定结论？在何时作出结论？
 
-#. **作出结论**: ：如何证实测试员所做的工作？如何与他们一起分享工作成果？
+#. **作出结论** ：如何证实测试员所做的工作？如何与他们一起分享工作成果？
 
 以上这些问题都没有确定的答案，只是作为贝塔测试在课程准备过程中的铺垫。
 
 .. _Qualities_Testers:
 
 ***************************************
-The Beta Testing Role 
+贝塔测试角色 
 ***************************************
 
-Beta testers have early access to the course. Beta testers are not members of
-the course team or staff: they don't have information about "how it's supposed
-to work". They use their own computers and Internet connections to view
-videos, follow links, and complete problems. They interact with the course as
-students will to find, and make, mistakes.
+贝塔测试员有提前进入课程的权限。
+贝塔测试员不是授课团队的成员，他们不知道课程是如何进行的。
+他们通过本地计算机和网络浏览视频、点击链接以及完成问题。
+他们以学生的角度发现和提出错误。
 
-However, beta testers are not the same as other students in the course,
-either. They have privileged access to the course and have more time to review
-and complete the course materials than the enrolled students do. Course
-discussions are not open before the course start date, so beta testers cannot
-participate in community conversations. As a result of these differences, beta
-testers do not receive certificates when they complete a course.
+然而，贝塔测试员和课程中的其他学生不同。
+他们比注册学生拥有更多的时间来学习和完成课程材料。
+课程讨论区在课程开始日期前不可用，所以贝塔测试员不能参加社区讨论。
+与学生不同，贝塔测试员完成课程后无法获得资格证书。
 
-.. note:: If one of your beta testers wishes to earn a certificate for the 
- course, she must create a separate user account with a different username and
- email address. She can then use that separate, non-privileged user account to
- enroll in the course and repeat the work, completing assignments and exams
- when they are available to all students.
+.. note:: 如果您的贝塔测试员希望获得资格证书，她必须用不同的用户名和邮箱地址重新注册一个账号。
+ 她可以使用没有特权的账号注册此课程，然后将学习过程重复一遍，完成对学生开放的所有学习任务和考试。
 
 ==================================
 优秀测试员应具备的资质
@@ -119,6 +113,8 @@ testers do not receive certificates when they complete a course.
 * 下载视频文本及其他文件
 
 * 完成所有问题
+
+贝塔测试员可以使用台式电脑进入edX网站或使用智能手机上的edX应用来完成测试。
 
 Beta testers can use a desktop computer to access an edX website, the edX
 mobile app on a smartphone, or both to complete their tests. As they work,
