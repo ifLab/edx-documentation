@@ -260,53 +260,41 @@ your course.
   :alt: "课程工作人员邀请您加入{URL} 中 {course name} 课程的贝塔测试
         访问 {link} 加入课程，开始上课。"
 
-6. Click **Add beta testers**.
+6. 单击 **添加贝塔测试员**
 
-To remove the Beta Tester role from one or more users, enter their email
-addresses in the **Batch Add Beta Testers** field and then click **Remove beta
-testers**. 
+如果您想取消一个或多个测试员的测试资格，在 **批量添加测试员** 字段后键入他们的邮件地址，单击 **移除贝塔测试员** 。
 
-.. note:: The **Auto Enroll** option has no effect when you click **Remove 
- beta testers**. The user's role as a beta tester is removed; course
- enrollment is not affected.
+.. note:: 单击 **移除贝塔测试员** 后，**自动纳入** 选项失效。指定用户的测试员资格失效，课程报名、录取不受影响。
 
 ================================
-Add Beta Testers Individually
+添加单个测试员
 ================================
 
-To add a single beta tester:
+步骤：
 
-#. View the live version of your course.
+#. 查看课程现况
 
-#. Click **Instructor** then **Membership**.
+#. 单击 **导师** 然后单击 **成员** 。
 
-#. In the **Administration List Management** section, use the drop-down list to
-   select **Beta Testers**.
+#. 在 **管理名单** 字段后的下拉列表中，选测 **贝塔测试员** 。
 
-#. Under the list of users who currently have that role, enter an email address
-   or username and click **Add Beta Tester**. 
+#. 在测试员用户名列表中，键入想要添加的测试员的邮箱地址或用户名，单击 **添加贝塔测试员** 。
 
-   If the beta test starts before the **Enrollment Start Date** of your course,
-   you can also enroll the beta tester. See :ref:`Enrollment`.
+   如果测试开始于录取日期之前，您也可以通过此功能将测试员纳入课程。详见 :ref:`Enrollment`.
 
-To remove the Beta Tester role from users individually, find the user in the
-list of beta testers, and then click **Revoke access** to the right of that
-user's email address.
+如果您想移除某个测试员，在测试员名单中找到他的邮箱地址，单击右侧的 **取消权限** 。
 
 .. _Issue_Reporting_During_Course:
 
 *********************************
-Reporting Issues During a Course
+课程中的问题报告
 *********************************
 
-Despite the efforts of the course team and the beta testers, additional
-problems, questions, and issues can occur while a course is running.
+尽管课程团队和测试员团队作出了极大努力，但是在课程运行过程中仍然会出现各种问题、疑问或争议。
 
-* Often, students report issues by asking questions in a discussion. Your
-  discussion administration team can watch for posts that indicate problems.
+* 学生通常会通过在讨论中的提问来反映问题。所以，您的讨论项目管理团队应注意含有提问的帖子。
 
-* To let students know the best way to report problems, you can post
-  information on the **Course Info** page or post it in a discussion.
+* 为使学生了解报告问题的最佳方法，您可在 **课程信息** 页面或讨论中发帖提供相关信息。
 
 .. per Mark 19 Feb 14: eventually we want to provide more guidance for students:  course issues > use discussions, platform issues > submit issue to edx.
 
