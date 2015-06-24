@@ -63,24 +63,22 @@ course as staff<View Your Live Course>`.
 对学生隐藏内容
 *****************************
 
-You can hide content from students. Such content is never visible to students,
-regardless of the release and publishing status.
+您可以对学生隐藏内容。无论发布状态如何，这些内容将永远对学生不可见。
 
-You might hide a unit from students, for example, when that unit contains an
-answer to a problem in another unit of that subsection. After the problem's due
-date, you could make the unit with the answer visible.
+在某些情况下，您也许希望对学生隐藏单元。例如，某些单元中包含了此章节中其他单元问题的答案。
+在问题截至日期之前，您可以设置包含答案的单元不可见。
 
-You could also hide a unit from students if you wanted to use that unit to
-provide instructions or guidance meant only for course staff. Only course staff
-would see that unit in the course.
+如果您想将某些单元用于向课程教员提供指导或说明，您也可以对学生隐藏此单元。
+只有课程教员能看到这些单元。
 
-You can hide content at different levels:
+您可以隐藏不同等级的内容：
 
 * :ref:`Sections<Hide a Section from Students>`
 * :ref:`Subsections<Hide a Subsection from Students>`
 * :ref:`Units<Hide a Unit from Students>`
 
 .. note::
+ 当您
  When you make a previously hidden section or subsection visible to learners,
  some content in the section or subsection may remain hidden. If you have
  explicitly set a subsection or unit to be hidden from learners, this
