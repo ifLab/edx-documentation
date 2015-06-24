@@ -123,7 +123,7 @@
 只有在发布日期到了后，学生才能看见该小节的内容。
 
 ==================================
-Scheduled with Unpublished Changes
+计划发布的小节中含有未发布修改
 ==================================
 
 在父小节发布日期到达之前，您可以对已发布的单元进行更改。
@@ -136,7 +136,7 @@ Scheduled with Unpublished Changes
 
 
 ==================================
-Released with Unpublished Changes
+已发布的小节中含有未发布修改
 ==================================
 
 如果您更改了已发布小节中的一个单元，您必须重新发布该单元，否则学生无法看见最新内容，如下图所示：
@@ -145,7 +145,7 @@ Released with Unpublished Changes
  :alt: A released subsection with unpublished changes
 
 ===========================
-Released
+已发布
 ===========================
 
 学生可以浏览已发布小节中的内容，但并不是所有内容，只有小节中处于发布状态的单元才对学生可见，如下图所示：
@@ -157,7 +157,7 @@ outline, summarized with a blue bar.
  :alt: A released subsection
 
 ===========================
-Staff Only Content
+仅对教员可见内容
 ===========================
 
 小节中可以包含只对教员可见的单元，即使发布该小节，学生也无法浏览只对教员开放的内容。如下图所示：
@@ -168,7 +168,7 @@ Staff Only Content
 .. _Create a Subsection:
 
 ****************************
-Create a Subsection
+创建小节
 ****************************
 
 如何创建一个小节：
@@ -216,7 +216,7 @@ Content>` 。
 .. _Set the Assignment Type and Due Date for a Subsection:
 
 ********************************************************
-Set the Assignment Type and Due Date for a Subsection
+设置任务类型和截止日期
 ********************************************************
 
 任务类型设置会作用到小节中所有的问题。
@@ -295,22 +295,19 @@ Set the Assignment Type and Due Date for a Subsection
 .. _Delete a Subsection:
 
 ********************************
-Delete a Subsection
+删除小节
 ********************************
 
-When you delete a subsection, you delete all units within the subsection.
+删除小节就是删除小节里包含的所有内容。
 
 .. warning::  
- You cannot restore course content after you delete it. To ensure you do not
- delete content you may need later, you can move any unused content to a
- section in your course that you set to never release.
+ 删除的课程内容无法恢复。您可以将暂时不用的课程内容存放在一个章节中，并将该章节设置成“永不发布”。
 
-To delete a subsection:
+如何删除小节：
 
-#. Click the delete icon in the subsection that you want to delete.
+#. 点击小节中的“删除”按钮：
 
   .. image:: ../../../shared/building_and_running_chapters/Images/subsection-delete.png
    :alt: The subsection with Delete icon circled
 
-2. When you receive the confirmation prompt, click **Yes, delete this
-   subsection**.
+2. 在弹出的确认对话框中选择“是”即可删除该小节。
