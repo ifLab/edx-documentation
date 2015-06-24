@@ -1,11 +1,10 @@
 .. _Developing Course Units:
 
 ###################################
-Developing Course Units
+构建课程单元
 ###################################
 
-When working with units in the course outline, ensure you understand the
-following topics.
+在大纲中创建单元前，请先了解以下信息：
 
 * `What is a Unit?`_
 * `Viewing Units in the Outline`_
@@ -14,7 +13,7 @@ following topics.
 * `Unit Publishing Status and Visibility to Students`_
 * `Unit Publishing Status`_
 
-When developing your course, you complete the following tasks with units.
+创建课程单元时，您需要完成以下任务：
 
 * `Create a Unit`_
 * `Edit a Unit`_
@@ -25,42 +24,37 @@ When developing your course, you complete the following tasks with units.
 * `Hide a Unit from Students`_
 * `Delete a Unit`_
 
-You add content to units with :ref:`course components<Developing Course
-Components>`.
+您可以通过 :ref:`course components<Developing Course
+Components>` 为单元添加内容。
 
 .. _What is a Unit?:
 
 ****************************
-What is a Unit?
+什么是单元？
 ****************************
 
-A unit is a part of a :ref:`subsection<Developing Course Subsections>` that
-students view as a single page.
+单元是 :ref:`subsection<Developing Course Subsections>` 的组成部分
 
-A unit contains one or more :ref:`components<Developing Course Components>`,
-such as :ref:`HTML content<Working with HTML Components>`,
-:ref:`problems<Working with Problem Components>`, :ref:`discussions<Working
-with Discussion Components>`, and
-:ref:`videos<Working with Video Components>`.
+一个单元通常包含若干个 :ref:`components<Developing Course Components>`,
+如 :ref:`HTML content<Working with HTML Components>`、
+:ref:`problems<Working with Problem Components>`、 :ref:`discussions<Working
+with Discussion Components>`， 和
+:ref:`videos<Working with Video Components>`。
 
 ****************************
-Viewing Units in the Outline
+在大纲中查看单元
 ****************************
 
-To view units in the outline, you :ref:`expand<Navigating the Course Outline>`
-the parent section and subsection.
+在课程大纲中，您可以扩展父章节、小节查看单元内容： :ref:`expand<Navigating the Course Outline>`
 
 .. image:: ../../../shared/building_and_running_chapters/Images/outline-callouts.png
  :alt: An outline with callouts for sections, subsections, and units
 
 ****************************
-Viewing the Unit Page
+查看单元页面
 ****************************
 
-When you click on a unit name in the outline, the **Unit** page opens.
-
-The following example shows a unit page with two components, with circles and
-text to show different areas and controls in the page.
+在大纲中点击单元名称，即可打开单元页面。如下图
 
 .. image:: ../../../shared/building_and_running_chapters/Images/unit-page.png
  :alt: The Unit page
@@ -69,13 +63,8 @@ text to show different areas and controls in the page.
 Viewing Units as a Student 
 ****************************
 
-To a student using the edX Learning Management System, each unit in the
-subsection appears as a link in the learning sequence at the top of the
-**Courseware** page. The contents of the active unit appear below the learning
-sequence.
+在学习管理系统中，所有小节中的单元都以链接的形式出现在页面上方的课程进度条中，活动单元就在链接下方显示，如下图所示：
 
-The following image shows a subsection that has five units, which are circled
-in the learning sequence above the video, with the first unit open.
 
 .. image:: ../../../shared/building_and_running_chapters/Images/Units_LMS.png
  :alt: Image of units from the student's point of view
