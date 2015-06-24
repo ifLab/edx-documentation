@@ -1,11 +1,10 @@
 .. _Developing Course Sections:
 
 ###################################
-Developing Course Sections
+创建课程章节
 ###################################
 
-To develop sections in your course, you must first understand the following
-topics.
+创建课程章节之前，您必须了解以下内容：
 
 * `What is a Section?`_
 * `Viewing Sections in the Outline`_
@@ -14,7 +13,7 @@ topics.
 * `Release Statuses of Sections`_
 
   
-Section tasks:
+创建章节时需完成的任务:
 
 * `Create a Section`_
 * `Change a Section Name`_
@@ -25,42 +24,39 @@ Section tasks:
 
 
 ****************************
-What Is a Section?
+什么是章节？
 ****************************
 
-A section is the topmost category in your course. A section can represent a
-time period in your course, a chapter, or another organizing principle. A
-section contains one or more subsections.
+章节应是课程目录中的第一级标题。
+一个章节可以表示一段时间，一章内容或其他组织形式。
+一个章节应包含一个或多个小节。
 
 ********************************
-Viewing Sections in the Outline
+在课程大纲中预览章节
 ********************************
 
-The following example shows four sections, all collapsed, in the course outline.
+下图显示了大纲中四个收起的章节：
 
 .. image:: ../../../shared/building_and_running_chapters/Images/sections-outline.png
  :alt: Four sections in the outline
 
 ******************************
-The Student View of a Section
+学生界面中的章节
 ******************************
 
-Students see sections in the **Courseware** tab. Students can expand one
-section at a time to see its contents. In the following example, three sections
-are circled, and the third one is expanded to show its subsections.
+学生可以在课件库中查看章节，并可以通过展开章节查看全部内容。
+如下图所示，方框中有三个章节，其中第三个章节展开了所有的小节内容：
 
 .. image:: ../../../shared/building_and_running_chapters/Images/sections_student.png
  :alt: The students view of the course with two sections circled
 
 ************************************************
-Sections and Visibility to Students
+章节对学生的可见性
 ************************************************
 
-Students cannot see any content in the section if the section's release date is
-unscheduled or has not passed.
+学生无法看见任何尚未发布或者已过发布期限的章节。
 
-If a section's release date has passed, students can see content in the section
-if:
+如果出现下列情况，学生仍然可以看见已过发布日期的内容：
 
 * The release date for the subsection that contains that content has passed.
 * The unit has been published.
