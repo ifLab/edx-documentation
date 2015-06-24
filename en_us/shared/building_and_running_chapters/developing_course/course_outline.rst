@@ -128,12 +128,59 @@ Studio课程大纲中显示的内容将直接呈现在学生学习管理系统�
       set your course to require an entrance exam in Studio. For more
       information, see :ref:`Require an Entrance Exam`.
 
- 详细信息请参见以下内容：
+.. _Modify Settings for Objects in the Course Outline:
+
+***************************************************
+Modify Settings for Objects in the Course Outline
+***************************************************
+
+You modify settings for sections, subsections, and units in the course outline.
+Specifically, you can complete the following tasks:
+
+* :ref:`Set a Section Release Date`
+* :ref:`Hide a Section from Students`
+* :ref:`Set a Subsection Release Date`
+* :ref:`Set the Assignment Type and Due Date for a Subsection`
+* :ref:`Hide a Subsection from Students`
+* :ref:`Hide a Unit from Students`
+
+To modify settings for a section, subsection, or unit, click the settings icon
+for that object. In the following example, the settings icon is circled for a
+section, a subsection, and two units:
+
+.. image:: ../../../shared/building_and_running_chapters/Images/settings-icons.png
+ :alt: Settings icons in the course outline
+
+For more information, see the links above.
+
+
+.. _Publish Content from the Course Outline:
+
+************************************************
+Publish Content from the Course Outline
+************************************************
+
+You can publish new and changed units for an entire section or subsection. You
+can also publish individual units.
+
+To publish new and changed units, click the publish icon for a section,
+subsection, or unit. In the following example, the publish icon is circled for
+a section, subsection, and unit:
+
+.. image:: ../../../shared/building_and_running_chapters/Images/outline-publish-icons.png
+ :alt: Publishing icons in the course outline
+
+.. note:: 
+ The publish icon only appears when there is new or changed content within the
+ object.
+
+For more information, see:
 
 * :ref:`Unit Publishing Status`
 * :ref:`Publish all Units in a Section`
 * :ref:`Publish all Units in a Subsection`
 * :ref:`Publish a Unit`
+
 
 .. _Reorganize the Course Outline:
 
