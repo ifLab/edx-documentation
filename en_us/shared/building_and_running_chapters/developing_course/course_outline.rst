@@ -131,7 +131,7 @@ Studio课程大纲中显示的内容将直接呈现在学生学习管理系统�
 .. _Modify Settings for Objects in the Course Outline:
 
 ***************************************************
-Modify Settings for Objects in the Course Outline
+如何在课程大纲中更改内容设置
 ***************************************************
 
 You modify settings for sections, subsections, and units in the course outline.
