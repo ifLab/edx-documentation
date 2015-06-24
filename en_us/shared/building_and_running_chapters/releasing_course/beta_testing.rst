@@ -115,10 +115,7 @@
 * 完成所有问题
 
 贝塔测试员可以使用台式电脑进入edX网站或使用智能手机上的edX应用来完成测试。
-
-Beta testers can use a desktop computer to access an edX website, the edX
-mobile app on a smartphone, or both to complete their tests. As they work,
-beta testers log issues and questions for the course team.
+工作期间，贝塔测试员为授课团队记录学习过程中出现的问题。
 
 .. _How_Testers_See_Course:
 
@@ -163,17 +160,13 @@ unit<Publish a Unit>`.
 指定测试开始时间
 ================================
 
-To define the start of the beta test, you use Studio to specify a number of
-days before the release day that is defined for each section and subsection in
-your course.
+在发布每节课之前，您将通过Studio指定一个时间来进行贝塔测试。
 
-#. In Studio, from the **Settings** menu select **Advanced Settings**.
+#. 在Studio的设置菜单里选择 **高级设置** 。 
 
-#. In the field for the **Days Early for Beta Users** policy key, enter the
-   number of days before each section and subsection release day for beta
-   testers to have access.
+#. 在 **为贝塔测试用户指定时间** 一栏中输入贝塔测试日期，此日期应在每章节发布之前的几天。
 
-#. Click **Save Changes**.
+#. 点击 **保存修改** 。
 
 ===========
 例：
