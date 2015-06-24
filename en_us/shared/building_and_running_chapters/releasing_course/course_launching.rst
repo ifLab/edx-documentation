@@ -61,6 +61,6 @@ Students>` 作为标准。
 * 确认所有讨论项目管理员、协调员及社群助教是否都已经注册、激活了自己的账户；是否已纳入课程；是否在教师控制面板上被分配到了对应的角色。详见
   :ref:`Assigning_discussion_roles`.
 * 规定讨论项目协调员的讨论管理办法、引导守则，并分发至整个讨论项目团队。详见
-  :ref:`Moderating_discussions` and :ref:`Guidance for Discussion Moderators`.
+  :ref:`Moderating_discussions` 以及 :ref:`Guidance for Discussion Moderators`.
 
 
