@@ -42,19 +42,15 @@ course as staff<View Your Live Course>`.
 单元发布状态
 ***********************
 
-You publish units to make them visible to students. Students see the last
-published version of a unit if the section and subsection it is in are
-released.
+发布单元使其对学生可见。如果章节和子章节已经发布，学生将看到最新发布的版本。
 
-Students do not see units that have never been published, and they do not see
-unpublished changes to units or components within units.  Therefore, you can
-make changes to units in released subsections without disrupting the student
-experience.
+学生不会看到未发布的单元，他们也看不到单元中未发布的修改内容或组建。
+因此，您可以在不影响学生体验的情况下对已发布的章节进行修改。
 
-For more information, see :ref:`Unit Publishing Status`.
+更多内容请参阅 :ref:`Unit Publishing Status`.
 
-You can publish all changes in a section or subsection at once, or publish
-changes to individual units.  See:
+您可以一次性发布对某个章节或子章节的全部修改，或者只发布对独立单元的修改。
+请参考以下内容：
 
 * :ref:`Publish all Units in a Section`
 * :ref:`Publish all Units in a Subsection`
