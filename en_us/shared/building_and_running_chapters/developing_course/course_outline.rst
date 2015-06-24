@@ -95,7 +95,7 @@ Studio课程大纲中显示的内容将直接呈现在学生学习管理系统�
 .. _Add Content in the Course Outline:
 
 ************************************************
-如何在课程大纲中添加内容
+在课程大纲中添加内容
 ************************************************
 
 您可以直接在大纲中添加章节、小节及单元。
@@ -131,11 +131,10 @@ Studio课程大纲中显示的内容将直接呈现在学生学习管理系统�
 .. _Modify Settings for Objects in the Course Outline:
 
 ***************************************************
-如何在课程大纲中更改内容设置
+在课程大纲中更改内容设置
 ***************************************************
 
-You modify settings for sections, subsections, and units in the course outline.
-Specifically, you can complete the following tasks:
+您可以在课程大纲中更改章节、小节及单元的设置，包括：
 
 * :ref:`Set a Section Release Date`
 * :ref:`Hide a Section from Students`
@@ -144,37 +143,31 @@ Specifically, you can complete the following tasks:
 * :ref:`Hide a Subsection from Students`
 * :ref:`Hide a Unit from Students`
 
-To modify settings for a section, subsection, or unit, click the settings icon
-for that object. In the following example, the settings icon is circled for a
-section, a subsection, and two units:
+点击“设置”按钮更改更改章节、小节及单元的设置。如下图圆圈标记所示：
 
 .. image:: ../../../shared/building_and_running_chapters/Images/settings-icons.png
  :alt: Settings icons in the course outline
 
-For more information, see the links above.
+详细信息请点击上文中的链接。
 
 
 .. _Publish Content from the Course Outline:
 
 ************************************************
-Publish Content from the Course Outline
+在课程大纲中发布内容
 ************************************************
 
-You can publish new and changed units for an entire section or subsection. You
-can also publish individual units.
+您可以发布整个章节、小节中的新单元或者修改后的单元，也可以单独发布单元。
 
-To publish new and changed units, click the publish icon for a section,
-subsection, or unit. In the following example, the publish icon is circled for
-a section, subsection, and unit:
+点击章节、小节中的“发布”按钮发布新单元或者修改后的单元内容。如下图圆圈标记所示：
 
 .. image:: ../../../shared/building_and_running_chapters/Images/outline-publish-icons.png
  :alt: Publishing icons in the course outline
 
 .. note:: 
- The publish icon only appears when there is new or changed content within the
- object.
+ 只有在课程内容发生改变时“发布”按钮才会显现。
 
-For more information, see:
+详细信息请参见以下内容：
 
 * :ref:`Unit Publishing Status`
 * :ref:`Publish all Units in a Section`
@@ -185,7 +178,7 @@ For more information, see:
 .. _Reorganize the Course Outline:
 
 ************************************************
-如何重新整理课程大纲
+重新整理课程大纲
 ************************************************
 
 在大纲页面中，您可以通过移动章节、小节及单元的位置重组课程大纲。
@@ -203,11 +196,8 @@ For more information, see:
 .. image:: ../../../shared/building_and_running_chapters/Images/outline-drag-new-location.png
  :alt: A subsection being dragged to a new section 	
 
-If you did not expand the section or subsection you are moving the object to,
-the outline of that section or subsection turns blue when you have moved the
-object to a valid location. You can then release the mouse button. For example,
-in the image below, the subsection Lesson 1 - Getting Started is being moved to
-the collapsed section Introduction:
+如果您没有扩展目标章节，那么移动要素至有效的位置时，目标章节会出现蓝色的边框，这时您可以松开鼠标。
+如下图所示，“第一课——入门指南”会移至到收起的章节“介绍”后。
 
 .. image:: ../../../shared/building_and_running_chapters/Images/outline-drag-new-location-collapsed.png
  :alt: A subsection being dragged to a new section 
@@ -215,24 +205,20 @@ the collapsed section Introduction:
 .. _Delete Content in the Course Outline:
 
 ************************************************
-Delete Content in the Course Outline
+在课程大纲中删除内容
 ************************************************
 
-You delete sections, subsections, and units from the course outline.
+您可以在课程大纲中删除章节、小节及单元。
 
 .. warning::  
- You cannot restore course content after you delete it. To ensure you do not
- delete content you may need later, you can move any unused content to a
- section in your course that you set to never release.
+ 删除的内容无法恢复。为避免删除有用到的内容，我们建议您将目前不需要的内容移到某一章节中然后设置成不发布的状态。
 
-Click the delete icon in the box for the object you want to delete:
+点击“删除”按钮删除不需要的内容。
 
 .. image:: ../../../shared/building_and_running_chapters/Images/outline-delete.png
  :alt: The outline with Delete icons circled
 
-You are prompted to confirm the deletion.
+之后会弹出对话框让您确认删除。
 
 .. note::
- When you delete an object, all objects that it contains are deleted. For
- example, when you delete a subsection, all units in that subsection are
- deleted.
+ 确认“删除”将删掉该要素中包含的所有内容。例如，您删除某一小节的内容，那么该小节中的所有单元也会随之删除。
