@@ -1,54 +1,44 @@
 .. _Launch:
 
 ##############################
-Course Launching Activities 
+课程发布事宜 
 ##############################
 
-To launch a course, you prepare the course itself, the staff, and the
-students. This chapter includes a :ref:`Course Launch Checklist` to use as a
-model for your schedule of activities.
+发布课程前，您需要妥善准备好课程内容、课程工作人员，以及学生相关的所有事宜。
+本章的 :ref:`Course Launch Checklist` 一节可作为您的计划模板。
 
-To help you communicate to the course staff or to all course participants
-before the course launches and while it is running, you can send email messages
-from the Instructor Dashboard. See :ref:`Bulk Email`. The chapter on bulk email
-also includes a set of :ref:`example messages to students<Example Messages to
-Students>` that you can use as guidelines when you write your own email
-messages.
+您可以通过导师控制面板的 **群发邮件** 功能批量发送发邮件，以便在课程发布前及时与课程员工及其他参与者沟通。
+详见 :ref:`Bulk Email` 一节。您撰写邮件时，也可参考本章中的 :ref:`example messages to students<Example Messages to
+Students>` 作为标准。
 
 .. _Course Launch Checklist:
 
 ****************************
-Course Launch Checklist
+课程发布事宜清单
 ****************************
 
-As the start date for your course approaches, a checklist or time line of
-activities can help you make sure that your course, and your students, are
-ready to begin. Suggestions for activities to complete before your course
-starts follow.
+随着课程开始日期将至，您需要准备一个活动清单或时间表，以检查所有课程及学生事宜是否已经准备妥当。
+以下是课程开始前建议您完成的一些事宜：
 
-**Verify Course Settings**
+**检查课程设置**
 
-* Check the course start date and time in Studio. See :ref:`Scheduling Your
+* 在Studio中核查课程开始日期及时间。详见 :ref:`Scheduling Your
   Course`.
-* Review the grading policy, and set a grace period for homework assignment
-  due dates. See :ref:`Establish a Grading Policy`.
-* Confirm that any optional features that you want your course to include, such
-  as student cohorts, are enabled and configured. See
-  :ref:`Cohorts Overview`.
+* 再次核查评分规则，为作业上交设置几天宽限期。详见 :ref:`Establish a Grading Policy`.
+* 确认所有您想添加的功能是否都设置完毕了。比如学生分队功能是否已经启用？是否配置妥当？等等。
+  详见 :ref:`Cohorts Overview`.
 
-**Review First Week Content**
+**核查第一周的课程内容**
 
-* Verify that all units are present and published. See :ref:`Developing Course
+* 确认所有课程单元已经发布完毕。详见 :ref:`Developing Course
   Units`.
-* Verify that videos, transcripts, and download links are in place and
-  working.
-* Check all assignments for completeness and verify their due dates. See
+* 确保所有视频、文本及下载链接都已准备就绪。
+* 检查所有作业、提问环节，确认作业、任务上交日期。详见
   :ref:`Working with Problem Components`.
 * Use edX Insights to review the answers that beta testers submitted for
   problems, and to proofread your display names, accessible labels, and answer
   text.
-* Review feedback from the course team and beta testers to be sure that the
-  content has been thoroughly reviewed and tested.
+* 核查课程团队及贝塔测试员的反馈报告，确保课程已经从头到尾测试过了。
 
 **Welcome Students**
 
