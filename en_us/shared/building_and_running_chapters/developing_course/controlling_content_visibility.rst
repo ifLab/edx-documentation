@@ -97,10 +97,7 @@ edX平台计算成绩时将包含隐藏的问题。如果某个问题在学生�
 内容组
 **************
 
+如果您的课程中含有群，您可以通过设置内容组实现将特定内容对特定小组的学生可见。
 
-If you have cohorts enabled in your course, you can use content groups to
-designate  particular components in your course as visible only to specific
-groups of learners.
-
-For details, see :ref:`About Content Groups` and :ref:`Cohorted Courseware
-Overview`.
+详情请参阅 :ref:`About Content Groups` 和 :ref:`Cohorted Courseware
+Overview` 。
