@@ -228,60 +228,51 @@ Content>` 。
 .. _Hide a Section from Students:
 
 ********************************
-Hide a Section from Students
+对学生隐藏章节
 ********************************
 
-You can hide all content in a section from students, regardless of the status
-of subsections and units within the section.
+无论章节中的小节、单元发布状态如何，您都可以对学生隐藏所有内容。
 
-For more information, see :ref:`Content Hidden from Students`.
+更多内容请参阅 :ref:`Content Hidden from Students`。
 
-To hide a section from students:
+如何对学生隐藏章节内容：
 
-#. Click the Settings icon in the section box.
+#. 点击“设置”按钮。
    
    .. image:: ../../../shared/building_and_running_chapters/Images/section-settings-box.png
     :alt: The section settings icon circled
 
-   The **Settings** dialog box opens.
+   弹出 **设置对** 话框。
 
-#. Check **Hide from students**.
+#. 点击 **对学生隐藏** 按钮。
 
    .. image:: ../../../shared/building_and_running_chapters/Images/section-settings-hide.png
     :alt: The section hide from students setting
 
-#. Click **Save**.
+#. 点击 **保存** 。
 
-Now, no content in the section is visible to students.
+至此，所有内容都对学生隐藏了。
 
-To make the section visible to students, repeat these steps and clear the
-**Hide from students** check box.
+要对学生开放此章节，只需重复以上步骤，清除 **对学生隐藏** 复选框。
 
 .. warning::
- When you clear the **Hide from students** check box for a section, not all
- content in the section is necessarily made visible to students. If you
- explicitly set a subsection or unit to be hidden from students, it remains
- hidden from students. Unpublished units remain unpublished, and changes to
- published units remain unpublished.
+清除 **对学生隐藏** 复选框并不会将所有内容呈现给学生，特别是单独设置了对学生隐藏的小节、单元，及尚未发布的内容。
 
 ********************************
-Delete a Section
+删除章节
 ********************************
 
-When you delete a section, you delete all subsections and units within the
-section.
+删除章节就是删除章节里包含的所有内容。
+
 
 .. warning::  
- You cannot restore course content after you delete it. To ensure you do not
- delete content you may need later, you can move any unused content to a
- section in your course that you set to never release.
+  删除的课程内容无法恢复。您可以将暂时不用的课程内容存放在一个章节中，并将该章节设置成“永不发布”。
 
-To delete a section:
+如何删除章节：
 
-#. Click the delete icon in the section that you want to delete.
+#. 点击章节中的“删除”按钮：
 
   .. image:: ../../../shared/building_and_running_chapters/Images/section-delete.png
    :alt: The section with Delete icon circled
 
-2. When you receive the confirmation prompt, click **Yes, delete this
-   section**.
+2. 在弹出的确认对话框中选择“是”即可删除该章节。
