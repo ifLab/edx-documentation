@@ -369,106 +369,91 @@ the unit.
 .. _View a Published Unit:
 
 ****************************
-View a Published Unit
+浏览已发布的单元
 ****************************
 
-To view the last published version of a unit in the LMS, click **View Live
-Version**.
+在学习管理系统中，您可以点击 **查看已发布版本** 浏览已发布的单元内容。
 
 .. image:: ../../../shared/building_and_running_chapters/Images/unit_view_live_button.png
  :alt: Unit page with View Live Version button circled
 
-The unit page opens in the LMS in Staff view. You may be prompted to log in to
-the LMS.
+单元页面会在学习管理系统中呈现，如果您没有登录会提示您先登录学习管理系统。
 
-If the unit status is `Draft (Unpublished Changes)`_, you do not see your
-changes in the LMS until you publish the unit again.
+如果单元的发布状态为 `Draft (Unpublished Changes)`_，您必须重新发布单元，否则您无法查看更改后的版本；
 
-If the unit status is `Draft (Never Published)`_, the **View Live Version**
-button is not enabled.
+如果单元的发布状态为 `Draft (Never Published)`_，那么 **查看已发布版本** 将无法使用。
 
 .. _Hide a Unit from Students:
 
 ****************************
-Hide a Unit from Students
+对学生隐藏单元内容
 ****************************
 
-You can prevent students from seeing a unit regardless of the unit status or
-the release schedules of the section and subsection. 
+不管单元的发布状态如何，或者父章节和小节的发布日期是否到达，您都可以对学生隐藏单元内容。
 
-For more information, see :ref:`Content Hidden from Students`.
+详细信息请查看 :ref:`Content Hidden from Students`.
 
-You can hide a unit from students using the course outline or the unit page.
+您可以在课程大纲或者单元页面隐藏单元。
 
 =======================================
-Use the Unit Page to Hide a Unit
+在单元页面中隐藏单元
 =======================================
 
-Select the **Hide from students** check box in the status panel.
+如下图，在单元发布状态面板选中 **对学生隐藏** 的复选框。
 
 .. image:: ../../../shared/building_and_running_chapters/Images/unit-hide.png
  :alt: Unit status panel with Hide from Students checked
 
-For more information, see :ref:`Controlling Content Visibility`.
+详细信息请查看 :ref:`Controlling Content Visibility`。
 
 =======================================
-Use the Outline to Hide a Unit
+在课程大纲中隐藏单元
 =======================================
 
-#. Click the Settings icon in the unit box.
+#. 点击该单元旁边的“设置”按钮
    
    .. image:: ../../../shared/building_and_running_chapters/Images/outline-unit-settings.png
     :alt: The unit settings icon circled
 
-   The **Settings** dialog box opens.
+   弹出设置对话框。
 
-#. Check **Hide from students**.
+#. 选中 **对学生隐藏** 的复选框。
 
    .. image:: ../../../shared/building_and_running_chapters/Images/outline-unit-settings-dialog.png
     :alt: The unit hide from students setting
 
-#. Click **Save**.
+#. 点击 **保存** 。
 
 =======================================
-Make a Hidden Unit Visible to Students
+使隐藏的单元对学生可见
 =======================================
 
-Before you make a hidden unit visible to students, be aware that course content
-will immediately be visible to students, as follows.
+在下列情况下，如果选择将隐藏的单元对学生可见，那么学生可以立刻查看这部分内容：
 
-* For a hidden unit that previously was published, clearing the check box
-  publishes the current content for the unit. If you made changes to the unit
-  while is was hidden, those draft changes are published.
+* 对于已发布的隐藏文档，只需清除“发布单元现有内容”复选框。
+  如果您编辑已隐藏的文档，文档的发布状态会由“草稿”变为“已发布”。
 
-* When you make a section or subsection that was previously hidden visible to
-  students, draft content in units is *not* published. Changes you made since
-  last publishing units are not made visible to students.
+* 单元所在的父章节、小节之前是对学生隐藏的，且您对单元内容进行了修改，
+  也没有重新发布修改后的单元。
 
-You can make a hidden unit visible to students from the unit page or the course
-outline. Follow the instructions above and clear the **Hide from students**
-check box.
+您可以在单元页面或者课程大纲中将隐藏的单元对学生可见。
 
-You are prompted to confirm that you want to make the unit visible to students.
+进行此操作时，系统会向您确认是否真的希望将该单元内容对学生可见。
 
 ********************************
-Delete a Unit
+删除单元
 ********************************
 
-You delete a unit from the course outline.
-
-When you delete a unit, you delete all components within the unit.
+您可以在课程大纲中删除单元。删除单元的同时也会删除单元组件。
 
 .. warning::  
- You cannot restore course content after you delete it. To ensure you do not
- delete content you may need later, you can move any unused content to a
- section in you
+ 单元一旦删除就不能恢复，因此建议您将之后会用到的内容移到别的章节中。
 
-To delete a unit:
+如何删除单元：
 
-#. Click the delete icon in the box for the unit you want to delete.
+#. 如下图，点击想要删除单元旁边的“删除”按钮；
 
 .. image:: ../../../shared/building_and_running_chapters/Images/section-delete.png
  :alt: The section with Delete icon circled
 
-2. When you receive the confirmation prompt, click **Yes, delete this
-   unit**.
+2. 在确认对话框中点击“是”即可删除该单元。
