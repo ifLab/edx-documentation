@@ -221,45 +221,39 @@ unit<Preview Course Content>`。
 #. 在 **课程大纲** 页面，首先扩展您要新建小节的小节。
 
 #. 单击小节下方的 **新建小节** ，如此，一个没有内容的新单元就出现在小节下方。
-#. 输入单元名。Supply an identifying name. A
-   descriptive name can help learners locate content in the courseware. It can
-   also help you select content when you analyze performance in edX Insights.
+#. 输入单元名。描述性强的名称能帮助学生在课件中找到相应内容，同时也帮助您在edX Insights中分析绩效时选择内容。
 #. 为单元 :ref:`Add components<Add a Component>` 。
 
-To create a new unit from a unit page:
+如何在单元页面中新建单元
 
-#. In the **Unit Location** panel, click **New Unit**.
+#. 在单元页面，点击 **新建单元** 。
 
    .. image:: ../../../shared/building_and_running_chapters/Images/unit_location.png
     :alt: The Unit Location panel in the Unit page
 
-   The unit page for the new unit opens automatically.
+   自动弹出新建单元页面。
 
-#. On the unit page, the unit name is selected. Supply an identifying name. A
-   descriptive name can help learners locate content in the courseware. It can
-   also help you select content when you analyze performance in edX Insights.
+#. 在单元页面，输入单元名。描述性强的名称能帮助学生在课件中找到相应内容，同时也帮助您在edX Insights中分析绩效时选择内容。
 
-#. :ref:`Add components<Add a Component>` to the new unit as needed.
+#. 为单元 :ref:`Add components<Add a Component>` 。
 
-You must then :ref:`publish the unit<Publish a Unit>` to make it visible to
-students.
+只有 :ref:`publish the unit<Publish a Unit>` ，学生才能看见单元内容。
 
 
 .. _Edit a Unit:
 
 **************
-Edit a Unit
+编辑单元
 **************
 
-You can edit a unit in the following ways.
+您可以通过以下方式编辑单元：
 
 * `Edit the unit name`_
 * :ref:`Develop components<Developing Course Components>`
 * `Reorganize Components in Units`_
 
-When you make any of these changes, if you previously published the unit, the
-state changes to `Draft (Unpublished Changes)`_. You must then :ref:`publish
-the unit<Publish a Unit>` to make your edits visible to students.
+对单元进行编辑，该单元的发布状态会显示为 `Draft (Unpublished Changes)`_，您必须重新 :ref:`publish
+the unit<Publish a Unit>` ，只有这样学生才能看见修改后的内容。
 
 
 ==============================
