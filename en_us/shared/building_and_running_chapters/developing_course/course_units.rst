@@ -257,36 +257,30 @@ the unit<Publish a Unit>` ，只有这样学生才能看见修改后的内容。
 
 
 ==============================
-Edit the Unit Name
+编辑单元名
 ==============================
 
-To edit a unit name, click the Edit icon next to the name.
+点击单元名旁边的图标以编辑单元名。
 
 .. image:: ../../../shared/building_and_running_chapters/Images/unit-edit-icon.png
   :alt: The Edit Unit Name icon
 
-The name field becomes editable. Enter the new name and then press the Tab key
-or click out of the field to save the name.
+重新输入单元名称后，保存。
 
 ==============================
-Reorganize Components in Units
+重组单元组件
 ==============================
 
-You can reorganize components within a unit by dragging and dropping them to
-new locations.
+您可以通过拖放和移动组件位置来重组单元内的各个组件。
 
-To move a component, hover over the handle on the right of the component's box
-until the cursor changes to a four-headed arrow. For example, in the image
-below, the handle for the discussion component is selected.
+移动组件时，先将鼠标悬停在组件的右上方直至光标变为“四向箭头”，如下图所示：
 
 .. image:: ../../../shared/building_and_running_chapters/Images/unit-drag-selected.png
   :alt: A discussion component selected to drag it
 
-Then, click and drag the component to the location that you want. 
+其次，按住数遍拖动组件至新的位置。
 
-A dashed outline indicates where the component will land when you release the
-mouse button. For example, in the image below, the discussion component is
-being moved to the top of the unit.
+最后，当出现虚线框提示您组件重新安放的位置时，您就可以松开鼠标，如下图所示：
 
 .. image:: ../../../shared/building_and_running_chapters/Images/unit-drag-moved.png
  :alt: A component being dragged to a new location  
@@ -294,92 +288,82 @@ being moved to the top of the unit.
 .. _Preview a Unit:
 
 ****************************
-Preview a Unit
+预览单元
 ****************************
 
-You preview a unit to review and test the content before it is visible to
-students.
+您可以通过预览单元来检测单元内容在学生端的显示样式
 
 You can preview a unit before it is published and before the course is live.
 In a live course, after the unit is published and if there are no pending
 changes, previewing a unit is exactly the same as viewing the live version of
 the unit.
 
-To preview the unit, in the unit page, click **Preview**.
+预览单元内容只需在单元页面点击“预览更改”按钮。
 
 .. image:: ../../../shared/building_and_running_chapters/Images/preview_changes.png
  :alt: A course unit page, with the Preview button circled
 
-The unit opens in preview mode.
+即会弹出预览窗口，如下图所示：
 
 .. image:: ../../../shared/building_and_running_chapters/Images/preview_mode.png
  :alt: The unit in preview mode in the LMS
 
-When you are revising a previously published unit, it is helpful to preview
-your changes in one window and :ref:`view the published unit<View a Published
-Unit>` in a second window.
+编辑已发布单元时，您可以在两个窗口对比更改前和更改后的单元内容。
 
 .. _Publish a Unit:
 
 ****************************
-Publish a Unit
+发布单元
 ****************************
 
-Publishing a unit makes the current version of the unit in Studio available to
-students, if the release date for the section and subsection have passed.
+如果父章节及小节的发布日期已到，且发布该单元，学生才能看见单元内容。
 
-You publish a unit that has a status of `Draft (Never Published)`_ or `Draft
-(Unpublished Changes)`_. When you publish a unit, the status changes to
-`Published and Live`_ or `Published Not Yet Released`_.
+您可以发布状态为 `Draft (Never Published)`_ 或者 `Draft
+(Unpublished Changes)`_的单元。当您发布单元后，单元的发布状态会显示为
+`Published and Live`_ 或者 `Published Not Yet Released`_。
 
-You can publish a unit from the unit page or the course outline.
+您可以从单元页面或者课程大纲中发布单元。
 
 =======================================
-Use the Unit Page to Publish a Unit
+从单元页面中能发布单元
 =======================================
 
-To publish the unit, click **Publish** in the status panel:
+如下图所示，在单元状态面板中点击 **发布** 按钮：
 
 .. image:: ../../../shared/building_and_running_chapters/Images/unit-publish-button.png
  :alt: Unit status panel with Publish button circled
 
 
 =======================================
-Use the Outline to Publish a Unit
+从课程大纲中能发布单元
 =======================================
 
-To publish a unit from the outline, click the publish icon in the box for the
-unit:
+如下图所示，在课程大纲中点击该单元旁边的发布按钮：
 
 .. image:: ../../../shared/building_and_running_chapters/Images/outline-publish-icon-unit.png
  :alt: Publishing icon for a unit
 
 .. note:: 
- The publish icon only appears when there is new or changed content in the
- unit.
+ 只有对该单元做出修改后才会出现发布按钮。
 
 .. _Discard Changes to a Unit:
 
 ****************************
-Discard Changes to a Unit
+放弃对单元的修改
 ****************************
 
-When you modify a published unit, your changes are saved in Studio, though the
-changes aren't visible to students until you publish the unit again.
+当您编辑一个已发布单元时，修改的内容会自动保存在Studio中。
+但是如果你不重新发布该单元，学生就无法看见修改后的单元内容。
 
-In certain situations, you may decide that you never want to publish your
-changes. You can discard the changes so that Studio reverts to the last
-published version of the unit.
+如果您并不希望重新发布修改后的单元，在这种情况下，您可以放弃对单元的修改，这样Studio中的内容就会恢复到更改之前的版本。
 
-To discard changes and revert the Studio version of the unit to the last
-published version, click **Discard Changes** in the status panel.
+只需点击状态面板中的 **放弃修改** 就可以让Studio中的内容恢复到更改之前的版本。
 
 .. image:: ../../../shared/building_and_running_chapters/Images/unit-discard-changes.png
  :alt: Unit status panel with Discard Changes circled
 
 .. caution::
- When you discard changes to a unit, the changes are permanently deleted. You
- cannot retrieve discarded changes or undo the action.
+“放弃修改”会永久地彻底删除更改内容。
 
 
 .. _View a Published Unit:
