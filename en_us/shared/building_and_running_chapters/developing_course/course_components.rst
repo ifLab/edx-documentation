@@ -1,10 +1,10 @@
 .. _Developing Course Components:
 
 ###################################
-Developing Course Components
+创建课程组件
 ###################################
 
-This chapter describes how you develop course components. See:
+本章主要描述如何创建课程组件：
 
 * `What is a Component`_
 * `Add a Component`_
@@ -13,7 +13,7 @@ This chapter describes how you develop course components. See:
 * `Delete a Component`_
 * `Components that Contain Other Components`_
 
-For more information about specific component types, see:
+要了解更多有关特殊组件类型的信息，请参考以下章节内容：
 
 * :ref:`Creating Course Content Index`
 * :ref:`Exercises and Tools Index`
@@ -21,30 +21,22 @@ For more information about specific component types, see:
 .. _What is a Component:
 
 ********************
-What is a Component?
+什么是组件
 ********************
 
-A component is the part of a unit that contains your actual course content. A
-unit can contain one or more components.
+课程组件是单元的组成部分，包括了您最具体的课程内容。一个单元可能包含一个或多个课程组件。
 
-A student can view the names of all components in a unit by moving the cursor
-over each unit in the learning sequence at the top of the page.
+学生能看见某个单元下所有元素的名称，只需将鼠标停留在课程进度条的某个单元上即可。
 
 .. image:: ../../../shared/building_and_running_chapters/Images/ComponentNames_CourseRibbon.png
  :alt: Image of the component list for a unit
 
-By default, Studio includes four types of components.
+系统默认的课程组件有以下四种：
 
-* **Discussion components** provide discussion spaces in the body of your
-  course. Students can explore ideas about a lesson with their peers in a
-  discussion space.
-* **HTML components** allow you to add text, images, and some types of learning
-  tools to your course. Content in HTML components is formatted as HTML.
-* **Problem components** enable you to add many different types of exercises
-  and problems to you course, from simple multiple choice problems to complex
-  circuit schematic exercises.
-* **Video components** contain the videos that you want to include in your
-  course.
+* **讨论组件** 该组件在为您的课程提供讨论空间，以便学生就某节课交换意见。
+* **HTML组件** 该组件是您能够给课程添加文本、图像以及其他不同类型的学习工具。该板块中的内容默认为HTML格式。
+* **问答组件** 该组件方便您布置各种练习题或进行课堂提问，从简单的单项选择，到复杂的电路原理图的练习均可。
+* **视频组件** 该组件包括您在课程中要播放的视频。
 
 .. _Add a Component:
 
