@@ -41,63 +41,59 @@
 .. _Add a Component:
 
 ********************
-Add a Component
+添加组件
 ********************
 
-To add a component to the unit, click the component type that you want under
-**Add New Component**.
+在 **添加新组件** 选项下单击您想添加的组件类型以添加组件。
 
 .. image:: ../../../shared/building_and_running_chapters/Images/AddNewComponent.png
   :alt: Image of adding a new component
 
-For more information, see the documentation for the specific component type
-that you want:
+更多信息请参考相应组件的软件文档：
 
 - :ref:`Working with Discussion Components`
 - :ref:`Working with HTML Components`
 - :ref:`Working with Problem Components`
 - :ref:`Working with Video Components`
   
-After you add a component, it is not visible to students until you
-:ref:`publish the unit<Publish a Unit>`.
+添加组件以后，您必须
+:ref:`publish the unit<Publish a Unit>` ，学生才能看到。
 
 .. _Edit a Component:
 
 ********************
-Edit a Component
+编辑组件
 ********************
 
-To edit a component, click **Edit**:
+点击 **编辑** 以编辑组件。
 
 .. image:: ../../../shared/building_and_running_chapters/Images/unit-edit.png
   :alt: Image of a unit with Edit icon circled
 
-Then follow instructions for the type of component you are editing.
+按照指导编辑组件。
 
-After you edit a component, the changes are not visible to students until you
-:ref:`publish the unit<Publish a Unit>`.
+编辑组件之后，您需要
+:ref:`publish the unit<Publish a Unit>` 让学生看到组件。
 
 =====================================
-Set the Display Name for a Component
+设置组件的显示名
 =====================================
 
-Each component has a display name that shows in the component header when you
-can edit the component. The display name also shows to students when they move
-the cursor over the unit icon in the learning sequence.
+所有组件都有显示名，当编辑组件时，显示名会出现在标题栏。
+当学生将鼠标指针停留在某个单元标记上时，也能看见组件的显示名。
 
-To set the display name for a component:
+如何设置组件的显示名：
 
-#. Edit the component.
-#. Click **Settings**.
-#. Edit the **Display Name** field.
+#. 编辑组件
+#. 单击 **设置**
+#. 在 **显示名** 一栏输入名称内容
 
   .. image:: ../../../shared/building_and_running_chapters/Images/display-name.png
    :alt: Image of the Display Name field for a component.
 
-4. Click **Save**.
+4. 单击 **保存**
 
-Different types of components have different fields in the Settings dialog box,
-but all have the **Display Name** field.
+不同的板块类型在“设置”对话框中的字段不同，但都有 **显示名** 字段。
 
 .. _Duplicate a Component:
 
