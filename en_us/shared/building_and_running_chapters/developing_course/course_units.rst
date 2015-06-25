@@ -60,7 +60,7 @@ with Discussion Components>`， 和
  :alt: The Unit page
 
 ****************************
-Viewing Units as a Student 
+以学生视角查看单元 
 ****************************
 
 在学习管理系统中，所有小节中的单元都以链接的形式出现在页面上方的课程进度条中，活动单元就在链接下方显示，如下图所示：
@@ -101,16 +101,16 @@ Viewing Units as a Student
 .. _Unit States and Visibility to Students:
 
 *************************************************
-Unit Publishing Status and Visibility to Students
+单元发布状态与对学生可见性
 *************************************************
 
 以下信息总结了学生是否可以查看单元内容的情况：
 
 * 学生无法看见发布状态为 `Draft (Never
-  Published)`_的单元。
+  Published)`_ 的单元。
 
 * 学生无法看见发布状态为 `Visible to Staff
-  Only`_。详细信息请查看 `Hide a Unit from Students`_ 。
+  Only`_ 。详细信息请查看 `Hide a Unit from Students`_ 。
 
 * 学生无法看见发布状态为 `Published Not Yet
   Released`_ 的单元。 到了发布日期后，该单元的状态会变为 `Published and Live`_。
@@ -141,7 +141,7 @@ Unit Publishing Status and Visibility to Students
 草稿（永不发布）
 ========================
 
-当您新建一个单元，并添加组件后，这个单元的发布状态会显示为 **Draft (Never Published)**，如下图所示：
+当您新建一个单元，并添加组件后，这个单元的发布状态会显示为 **草稿（永不发布）**，如下图所示：
 
 .. image:: ../../../shared/building_and_running_chapters/Images/unit-never-published.png
  :alt: Status panel of a unit that has never been published
@@ -293,10 +293,8 @@ the unit<Publish a Unit>` ，只有这样学生才能看见修改后的内容。
 
 您可以通过预览单元来检测单元内容在学生端的显示样式
 
-You can preview a unit before it is published and before the course is live.
-In a live course, after the unit is published and if there are no pending
-changes, previewing a unit is exactly the same as viewing the live version of
-the unit.
+您可以在发布之前或课程开始之前预览单元。
+在线课程中，已发布的单元如果没有作修改，预览单元将和在线版本相同。
 
 预览单元内容只需在单元页面点击“预览更改”按钮。
 
