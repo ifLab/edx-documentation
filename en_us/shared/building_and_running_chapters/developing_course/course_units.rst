@@ -156,12 +156,10 @@ unit<Preview Course Content>`。
 .. _Published and Live:
 
 ====================
-Published and Live
+已发布且可在线观看
 ====================
 
-The release date for the section and subsection have passed. You've published
-the unit and haven't made any changes to it. You and students both see the
-current version of the unit.
+当单元所在的章节、小节已到发布日期，且您发布了该单元也没有修改单元内容，那么您和学生都能看见当前版本的内容。
 
 .. image:: ../../../shared/building_and_running_chapters/Images/unit-published.png
  :alt: Status panel of a unit that is published
@@ -169,11 +167,10 @@ current version of the unit.
 .. _Published Not Yet Released:
 
 ====================================
-Published (not yet released)
+已发布但尚不可在线观看
 ====================================
 
-You've published the unit, but the release date hasn't passed. Students cannot
-see this unit until the release date passes.
+虽然您已经发布了该单元，但是还未到发布日期，所以学生是无法看见该部分内容的。
 
 .. image:: ../../../shared/building_and_running_chapters/Images/unit-published_unreleased.png
  :alt: Status panel of a unit that is published but not released
@@ -181,41 +178,32 @@ see this unit until the release date passes.
 .. _Draft (Unpublished Changes):
 
 ===========================
-Draft (Unpublished changes)
+草稿（尚未发布更改内容）
 =========================== 
 
-When you edit a published unit, whether or not it is released, the unit's
-publishing status changes to **Draft (Unpublished Changes)**, as shown in the
-status panel.
+对已发布的单元进行发布时，无论是否到发布日期，这个单元的发布状态会自动显示为 **草稿（尚未发布更改内容）**，如下图所示：
 
 .. image:: ../../../shared/building_and_running_chapters/Images/unit-pending-changes.png
  :alt: Status panel of a unit that has pending changes
 
-In Studio, you see the draft of the content that you're working on. If the
-release date has passed, students see the last published version of the unit.
-If the release date hasn't passed, students can't see your content.
+在Studio中，您可以查看正在编辑的单元。如果该单元的发布日期已到，学生可以看见上一次发布的内容，但是，如果发布日期尚未到，学生是无法查看该单元内容的。
 
-You must :ref:`publish the unit<Publish a Unit>` for students to see your
-changes.
 
-You can :ref:`preview the changes to a unit<Preview Course Content>` to test
-how your changes will appear to students after you publish the unit.
+只有您 :ref:`publish the unit<Publish a Unit>` 学生才能看见。
+
+您可以 :ref:`preview the changes to a unit<Preview Course Content>` ，以测试该部分内容在发布后是如何在学生端显示的。
 
 .. _Visible to Staff Only:
 
 ===========================
-Visible to Staff Only
+仅对教员可见
 ===========================
 
-When you :ref:`hide a unit from students<Hide a Unit from Students>`, the
-unit's publishing status changes to **Visible to Staff Only**.
+当您 :ref:`hide a unit from students<Hide a Unit from Students>`，该单元的发布状态会显示成 **仅对教员显示**。
 
-The publishing status of a unit can be **Visible to Staff Only** if you hid the
-parent :ref:`section<Hide a Section from Students>` or :ref:`subsection<Hide a
-Subsection from Students>` from students.
+如果您对学生隐藏单元的父章节或者父小节，该单元的发布状态也会显示为 **仅对教员显示**。
 
-Students never see a unit with this status, even if it has been published and
-the release date has passed.
+在这种状态下，无论发布日期是否到达，学生都无法查看单元内容的。
 
 .. image:: ../../../shared/building_and_running_chapters/Images/unit-unpublished.png
  :alt: Status panel of a unit that has pending changes
@@ -223,22 +211,20 @@ the release date has passed.
 .. _Create a Unit:
 
 ****************************
-Create a Unit
+新建单元
 ****************************
 
-You can create a unit from the outline or create a unit in the same subsection
-from the unit page.
+您可以在课程大纲或者单元所在的小节中新建单元。
 
-To create a unit from the outline:
+如何在大纲中创建单元：
 
-#. In the outline, expand the subsection in which you want to create a new
-   unit.
-#. Click **New Unit** at the bottom of the expanded subsection. A new
-   page opens for you to add components to the unit.
-#. On the unit page, the unit name is selected. Supply an identifying name. A
+#. 在 **课程大纲** 页面，首先扩展您要新建小节的小节。
+
+#. 单击小节下方的 **新建小节** ，如此，一个没有内容的新单元就出现在小节下方。
+#. 输入单元名。Supply an identifying name. A
    descriptive name can help learners locate content in the courseware. It can
    also help you select content when you analyze performance in edX Insights.
-#. :ref:`Add components<Add a Component>` to the new unit as needed.
+#. 为单元 :ref:`Add components<Add a Component>` 。
 
 To create a new unit from a unit page:
 
