@@ -98,46 +98,42 @@
 .. _Duplicate a Component:
 
 **********************
-Duplicate a Component
+复制组件
 **********************
 
-When you duplicate a component, a new copy of that component is added directly
-beneath the first component. You can then modify the duplicate. In many cases,
-duplicating a component and editing a copy is a faster way to create new
-content.
+当复制某个板块时，该组件的正下方会出现一个新拷贝，您可对它进行操作。
+通常而言，复制组件然后编辑拷贝能更快地创建新内容。
 
-To duplicate a component, click the Duplicate icon in the component header:
+单击组件标题栏中的“复制”图标：
 
 .. image:: ../../../shared/building_and_running_chapters/Images/unit-dup.png
   :alt: Image of a unit with Duplicate icon circled
 
-Then follow instructions for the type of component you are editing.
+按照提示编辑您的组件。
 
-After you duplicate a component, the new component is not visible to students
-until you :ref:`publish the unit<Publish a Unit>`.
+复制组件之后，您需要重新 :ref:`publish the unit<Publish a Unit>` ，学生才能看到新的组件。
 
-.. note::  You cannot duplicate a content experiment.
+.. note::  您不能复制内容实验。
 
 .. _Delete a Component:
 
 **********************
-Delete a Component
+删除组件
 **********************
 
 .. caution:: 
- Be sure you want to delete the component. You can not undo the deletion.
+ 删除组件前请再次确认是否真的需要删除。删除操作是不可逆的。
 
-To delete a component:
+遵循以下步骤删除组件：
 
-#. Click the Delete icon in the component header:
+#. 点击标题旁边的删除按钮：
 
 .. image:: ../../../shared/building_and_running_chapters/Images/unit-delete.png
   :alt: Image of a unit with Delete icon circled
 
-2. When you receive the confirmation prompt, click **Yes, delete this
-   component**.
+2. 当确认框弹出时，点击 **是的，删除这个组件** 。
 
-After you delete a component, the component remians visible to students until you :ref:`publish the unit<Publish a Unit>`.
+组件删除后，您需要重新 :ref:`publish the unit<Publish a Unit>` ，否则学生仍能看到已删除的组件。
 
 .. _Components that Contain Other Components:
 
