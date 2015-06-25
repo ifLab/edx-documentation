@@ -72,32 +72,31 @@ Viewing Units as a Student
 .. _The Unit Workflow:
 
 ************************************************
-The Unit Workflow
+单元工作流程
 ************************************************
 
-When you have set up the :ref:`section<Developing Course Sections>` and
-:ref:`subsection<Developing Course Subsections>` in the course outline, you
-then work with units.
+当您在课程大纲中完成 :ref:`section<Developing Course Sections>` 和
+:ref:`subsection<Developing Course Subsections>` 后，您就可以开始搭建单元。
 
-The typical workflow is:
+基本的操作步骤如下：
 
 #. :ref:`Create a new unit<Create a Unit>`.
 #. :ref:`Add components to the unit<Add a Component>`.
 #. :ref:`Publish the unit<Publish a Unit>`.
    
-After you publish the unit, you can:
+发布单元后，您可以进行一下操作：
 
 #. :ref:`Modify components in the unit<Developing Course Components>`.
 #. :ref:`Publish the changes to the unit<Publish a Unit>`.
    
-The following diagram shows the typical unit development workflow.
+下图显示了搭建单元的流程：
 
 .. image:: ../../../shared/building_and_running_chapters/Images/workflow-create-unit.png
  :alt: Diagram of the unit development workflow
    
-As you work through these steps, the **publishing status** of the unit changes.
-The publishing status controls the content available to students, along with
-:ref:`release dates<Release Dates>`. See the next section for more information.
+完成以上步骤后，单元的 **发布状态** 就会发生改变。
+课程内容是否对学生可见取决于单元的发布状态及
+:ref:`release dates<Release Dates>`，详细信息请参看下一节。
 
 .. _Unit States and Visibility to Students:
 
@@ -105,34 +104,30 @@ The publishing status controls the content available to students, along with
 Unit Publishing Status and Visibility to Students
 *************************************************
 
-The following information summarizes whether or not students can see a unit.
+以下信息总结了学生是否可以查看单元内容的情况：
 
-* Students never see a unit with the publishing status `Draft (Never
-  Published)`_.
+* 学生无法看见发布状态为 `Draft (Never
+  Published)`_的单元。
 
-* Students never see a unit with the publishing status `Visible to Staff
-  Only`_. See `Hide a Unit from Students`_ for more information.
+* 学生无法看见发布状态为 `Visible to Staff
+  Only`_。详细信息请查看 `Hide a Unit from Students`_ 。
 
-* Students do not see a unit with the publishing status `Published Not Yet
-  Released`_ until the :ref:`release date <Release Dates>`. On the release
-  date, the status changes to `Published and Live`_.
+* 学生无法看见发布状态为 `Published Not Yet
+  Released`_ 的单元。 到了发布日期后，该单元的状态会变为 `Published and Live`_。
 
-* If the publishing status is `Published and Live`_, students see the current
-  version of the unit.
+* 当单元的发布状态为 `Published and Live`_，学生可以查看当前版本的单元内容。
   
-* If the publishing status is `Draft (Unpublished Changes)`_, students see the
-  last published version of the unit if the :ref:`release date <Release Dates>`
-  for the containing section and subsection has passed.
+* 如果单元的状态为 `Draft (Unpublished Changes)`_，且该单元所在的小节、章节的发布日期已过，那么学生只能看见上一版本的内容。 
 
-For more information, see :ref:`Controlling Content Visibility`.
+详细信息请查看 :ref:`Controlling Content Visibility`.
 
 .. _Unit Publishing Status:
 
 ************************************************
-Unit Publishing Status
+单元的发布状态
 ************************************************ 
 
-As an course author, you work with units with the following statuses.
+课程制作者可以控制课程单元的发布状态：
 
 * `Draft (Never published)`_
 * `Published and Live`_
@@ -143,23 +138,20 @@ As an course author, you work with units with the following statuses.
 .. _Draft (Never Published):
 
 ========================
-Draft (Never published)
+草稿（永不发布）
 ========================
 
-When you create a new unit and add components to it, the unit's publishing
-status is **Draft (Never Published)**, as shown in the status panel.
+当您新建一个单元，并添加组件后，这个单元的发布状态会显示为 **Draft (Never Published)**，如下图所示：
 
 .. image:: ../../../shared/building_and_running_chapters/Images/unit-never-published.png
  :alt: Status panel of a unit that has never been published
 
-In Studio, you see the version of the content that you're working on. Students
-never see a unit with this status, even if the release date has passed.
+在Studio中，您可以查看正在搭建的课程内容。当单元的发布状态为“草稿（永不发布）”时，即使发布日期已过，学生也无法查看该内容。
 
-Though you do not see the unit in the LMS, you can :ref:`preview the
-unit<Preview Course Content>`.
+虽然您无法在学习管理系统（LMS）中查看该单元，但是您可以 :ref:`preview the
+unit<Preview Course Content>`。
 
-You must :ref:`publish the unit<Publish a Unit>` for it to be included in the
-LMS.
+若想让该单元显示在学习管理系统（LMS）中您必须 :ref:`publish the unit<Publish a Unit>` 。
 
 .. _Published and Live:
 
