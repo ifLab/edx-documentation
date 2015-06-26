@@ -138,57 +138,51 @@
 .. _Components that Contain Other Components:
 
 ******************************************
-Components that Contain Other Components
+组件嵌套
 ******************************************
 
-For specific use cases, you configure course content so that components contain
-other components.  For example, if you want to include conditional components
-or content experiments, you have to create components inside components. See
+在特定情况下，您可能会设置组件中嵌套另一个组件。
+例如，如果您希望组件中包含条件组件或内容实验，您必须在创建嵌套组件。
+详情请参考
 :ref:`Creating Content Experiments` for more information.
 
-The component that contains other components is referred to as the *parent*;
-the contained components are referred to as *children*.
+包含其他组件的组件称为 **父组件**；被包含的组件称为 **子组件** 。
 
-In the unit page, a parent component appears with the display name and a
-**View** link. For example:
+在单元页中，父组件显示组件名和 **查看** 链接，如下：
 
 .. image:: ../../../shared/building_and_running_chapters/Images/component_container.png
  :alt: Image of a unit page with a parent component
 
 
 ==================================================
-Edit a Parent Component
+编辑父组件
 ==================================================
 
-A parent component does not directly contain content. Content such as HTML,
-videos, or problems are in the child components.
+父组件不直接包含内容。HTML文件、视频和程序都包含在子组件中。
 
-A parent component has a display name. When the unit is private or in draft,
-click **Edit** in the parent component to change the display name.
+父组件显示组件名。当单元为草稿或属性为私有时，点击父组件中的 **编辑** 项更改组件名。
 
 .. note:: 
-  Parent components of a specific type, such as content experiments, have
-  additional attributes that you edit.
+  特殊类型的父组件，如内容实验，可以编辑附加属性。
+  
 
 
 ======================================
-View Child Components
+查看子组件
 ======================================
 
-When you click **View** in the parent component, the parent component page
-opens, showing all child components. In this example, Child Component A
-contains an HTML component and a video:
+当您在父组件中点击 **查看** 时，父组件页面开启，页面中显示所有的子组件。
+下图中子组件含有HTML组件和视频文件：
 
 .. image:: ../../../shared/building_and_running_chapters/Images/child-components-a.png
  :alt: Image of an expanded child component
 
-Click the arrow next to a child component name to collapse it and hide the
-component's contents:
+单击子组件名旁边的箭头可以收起组件内容：
 
 .. image:: ../../../shared/building_and_running_chapters/Images/child-components.png
  :alt: Image of a child component page
 
-Click the arrow again to expand the component.
+再次点击箭头可以展开内容：
 
 See:
 
@@ -198,7 +192,7 @@ See:
 * `Delete a Component`_
 
 ======================================
-Add a Child Component
+添加子组件
 ======================================
 
 If the containing unit is private or in draft, you can add a child component in
