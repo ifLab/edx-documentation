@@ -230,8 +230,7 @@ s.org/projects/devdata/en/latest/course_data_formats/course_xml.html>`_ 。
         <vertical url_name="131a499ddaa3474194c1aa2eced34455"/>
     </vertical>
 
-The ``<vertical url_name="131a499ddaa3474194c1aa2eced34455"/>`` element above
-references the parent component file that contains the child components:
+上例中的 ``<vertical url_name="131a499ddaa3474194c1aa2eced34455"/>`` 元素引用自父组件。
  
 .. code-block:: xml
 
