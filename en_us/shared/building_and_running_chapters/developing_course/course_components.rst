@@ -239,8 +239,7 @@ s.org/projects/devdata/en/latest/course_data_formats/course_xml.html>`_ 。
         <vertical url_name="c5c8b27c2c5546e784432f3b2b6cf2ea"/>
     </vertical>
 
-The two verticals referenced by the parent component refer to the child
-components, which contain the actual content of your course:
+两个引用自父组件的vertical包含了您课程中的实际内容。
 
 .. code-block:: xml
 
@@ -256,12 +255,10 @@ components, which contain the actual content of your course:
         <problem url_name="b40ecbe4ed1b4280ae93e2a158edae6f"/>
     </vertical>
 
-Theoretically, there is no limit to the levels of component nesting you can use
-in your course.
-
+理论上，组件嵌套的层数是无限的。
 
 ======================================
-The Student View of Nested Components
+The Student View of Nested Components 学生 
 ======================================
 
 For students, all parent and child components are displayed on the unit page.
