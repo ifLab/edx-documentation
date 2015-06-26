@@ -197,35 +197,12 @@
 
 如果组件内含的单元为私有属性或草稿，您可以为此组件添加子组件。
 
-打开父组件并展开内容，在 **添加新组件** 下选择您想添加的组件类型。
+更多关于使用XML文件的信息，包括关于术语的信息，请参阅 `edX XML Tutorial <http://edx.readthedoc
+s.org/projects/devdata/en/latest/course_data_formats/course_xml.html>`_ 。
 
-.. image:: ../../../shared/building_and_running_chapters/Images/AddNewComponent.png
-  :alt: Image of adding a new component
+下图是Studio中用来创建单元和组件的XML。
 
-更多信息请参考：
-
-- :ref:`Working with Discussion Components`
-- :ref:`Working with HTML Components`
-- :ref:`Working with Problem Components`
-- :ref:`Working with Video Components`
-
-
-======================================
-组件中的XML文件
-======================================
-
-
-You develop parent and child components in XML, then import the XML course into
-Studio to verify that the structure is as you intended. 
-
-For more information about working with your course's XML files, including
-information about terminology, see the `edX XML Tutorial <http://edx.readthedoc
-s.org/projects/devdata/en/latest/course_data_formats/course_xml.html>`_.
-
-The following examples show the XML used to create the unit and components
-shown in Studio above.
-
-The XML for the unit is:
+单元的XML是：
 
 .. code-block:: xml
 
