@@ -77,30 +77,27 @@ change<Publish a Unit>` 之后学生所看到的界面。
 查看在线课程
 ******************************************
 
-When you are working in Studio, you can test your course by viewing it in the
-LMS. In the LMS, you can see your course as a student sees it. You can see your
-course in `Staff View`_ or `Student View`_. If you are using content groups to
-designate specific content as visible only to particular content groups, you can
-see your course as a content group would see it.
+当您使用Studio时，您可以通过在学习管理系统中浏览课程进行测试。
+您可以使用 `Staff View`_ 和 `Student View`_ 浏览课程。
+如果您使用内容组将内容设置为特定小组可见，您也可以以小组成员视角查看内容。
 
-While you work in Studio, you can switch to your live course to see how your
-course appears to students in two ways.
+当您使用Studio时，您可以由以下两种方式切换至学生视角：
 
-* From the outline page, click **View Live**.
+* 在大纲页面中点击 **在线查看**
    
   .. image:: ../../../shared/building_and_running_chapters/Images/test-outline-view-live.png
    :alt: View live button on the outline
 
-* In a unit page, click **View Live Version**.
+* 在单元页面中点击 **查看在线版本**
    
   .. image:: ../../../shared/building_and_running_chapters/Images/test-unit-view-live.png
    :alt: View Live Version button on the unit page
 
 =================
-Staff View
+员工视角
 =================
 
-You see the course in the **Staff View**.
+您可以用 **员工视角** 查看内容。
 
 .. image:: ../../../shared/building_and_running_chapters/Images/Live_Course_Staff_View.png
  :alt: Image of the Courseware page in a live course with Staff View indicated
