@@ -30,50 +30,40 @@
  
 当您预览课程内容时，您将在Studio看到最新的课程内容。
 您将看到单元的发布状态： :ref:`Draft
-(Never Published)`、 :ref:`Draft (Unpublished Changes)`或 :ref:`Visible to
+(Never Published)`、 :ref:`Draft (Unpublished Changes)` 或 :ref:`Visible to
 Staff Only` 。
 
-如果您使用内容小组并指定单元中的组件仅对特定小组可见，可见性状态
-If you use content groups and have designated components in a unit as visible
-only to particular groups, the visibility status indicates that some content in
-the unit is visible only to particular groups. For information about previewing
-course content if you use content groups to designate content as visible only to
-particular groups, see :ref:`Preview Cohort Specific Courseware`.
+如果您使用内容小组并指定单元中的组件仅对特定小组可见，可见性状态指某些单元中的内容仅对特定小组可见。
+更多关于预览仅对特定小组可见的课程内容，请参阅 :ref:`Preview Cohort Specific Courseware`.
 
-For example, you :ref:`publish a unit<Publish a Unit>` with a video and a
-discussion.
+例如，您可以 :ref:`publish a unit<Publish a Unit>` ，其中可以包含视频和讨论区。
 
 .. image:: ../../../shared/building_and_running_chapters/Images/test-unit-studio.png
  :alt: A unit in Studio with a video and discussion
 
-Students see the same content in the LMS.
+学生在学习管理系统中将看到相同内容。
 
 .. image:: ../../../shared/building_and_running_chapters/Images/test-unit-lms.png
  :alt: A unit in the LMS with a video and discussion
 
-You later decide to add a multiple choice problem to the unit, before the
-discussion. Before you publish this change, you can see how the question will
-look to students by previewing the unit in the LMS.
+如果您稍后决定在讨论之前往单元中添加多选题。
+在发布修改之前，您可以通过预览单元查看该问题将如何呈现在学生界面。
 
 .. image:: ../../../shared/building_and_running_chapters/Images/test-unit-studio-added-comp.png
  :alt: A unit in Studio with a video and multiple choice problem. (The
    discussion component below the multiple choice problem is not included in
    the screen capture).
 
-
-When you click **Preview** and select to view the course as a **Student**, you
-see the unit in the LMS with the multiple choice question. This preview shows
-how students will experience the unit after you :ref:`publish the
-change<Publish a Unit>`.
+点击 **预览** 然后选择以 **学生** 视角浏览课程。您将看到学习管理系统中的单元包含的多选题。
+预览中将呈现您在 :ref:`publish the
+change<Publish a Unit>` 之后学生所看到的界面。
 
 .. image:: ../../../shared/building_and_running_chapters/Images/test-unit-lms-added-comp.png
  :alt: A unit in the LMS with "View as Student" selected, showing a video and
   a multiple choice problem. (The discussion component below the multiple
   choice problem is not included in the screen capture).
 
-
-In the live course, students continue to see the existing content, without the
-multiple choice question, until you :ref:`publish the change<Publish a Unit>`.
+在线课程中，学生仍将看到原有的课程内容。只有您 :ref:`publish the change<Publish a Unit>` ，之后，学生才能看到多选题。
 
 .. note:: When the unit's state is :ref:`Published and Live`, the preview and
    the live version of the courseware are exactly the same. Selecting either
@@ -84,7 +74,7 @@ multiple choice question, until you :ref:`publish the change<Publish a Unit>`.
 .. _View Your Live Course:
 
 ******************************************
-View Your Live Course
+查看在线课程
 ******************************************
 
 When you are working in Studio, you can test your course by viewing it in the
