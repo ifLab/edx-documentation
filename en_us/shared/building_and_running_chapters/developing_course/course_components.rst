@@ -269,31 +269,26 @@ s.org/projects/devdata/en/latest/course_data_formats/course_xml.html>`_ 。
 
 .. note:: 
  嵌套组件的可见性取决于所在单元的可见性。父单元必须是对学生公开的属性，学生才能看到嵌套组件。
- 更多信息请参阅： :ref:`Unit States and Visibility to Students`.
+ 更多信息请参阅： :ref:`Unit States and Visibility to Students` 。
 
 
 *******************************
-Reorganizing Child Components 
+重组子组件
 *******************************
 
-You can reorganize child components through the same drag and drop process you
-use for other objects in your course outline. You hover over the element handle
-on the right side of the screen until the mouse pointer changes to a four-
-headed arrow. Then, click and drag the element to the location that you want.
+与课程大纲中其他部件一样，您可以通过拽操作重组子组件。
+将鼠标悬停在屏幕右边的元素上，直到光标变成四向箭头。
+然后点击并拖拽元素到您希望的位置。
 
-Furthermore, when you have multiple levels of nesting, you can drag a child
-component into a different parent component, if both parents are expanded. For
-example, you can select the video component that is in Child Component A and
-drag it into Child Component B. Select the video component, and as you drag it
-into Child Component B, release the mouse button when a dashed outline of the
-component you are moving appears in the new location:
+此外，当您对组件进行多级嵌套时，您可以将子组件拖拽到不同的父组件下。
+例如，您可以选择A子组件中的视频组件，然后将它拖进B子组件。
+选择视频组件，拖拽到B组件然后松开右键。组件就会出现在新的位置里。
 
 .. image:: ../../../shared/building_and_running_chapters/Images/drag_child_component.png
  :alt: Image of dragging a child component to a new location
 
-You can also drag a child component outside of a parent, so that the child
-moves to the same level as the parent.
+您也可以将子组件拖拽出父组件，该组件就和父组件处于同一层级了。
 
 .. note:: 
-  For content experiments, you cannot drag a child component outside of a test
-  group.
+  您不能将内容实验拖拽出测试组。
+
