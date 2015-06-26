@@ -258,23 +258,22 @@ s.org/projects/devdata/en/latest/course_data_formats/course_xml.html>`_ 。
 理论上，组件嵌套的层数是无限的。
 
 ======================================
-The Student View of Nested Components 学生 
+学生视角查看嵌套组件 
 ======================================
 
-For students, all parent and child components are displayed on the unit page.
-The following example shows the student view of the unit described above:
+在学生视角中，所有父组件和子组件都陈列在单元页面中。
+下图是学生视角中的单元界面：
 
 .. image:: ../../../shared/building_and_running_chapters/Images/nested_components_student_view.png
  :alt: Image of the student's view of nested components
 
 .. note:: 
- The visibility of nested components depends on the visibility of 
- the parent unit. The parent unit must be public for students to see nested
- components. For more information, see :ref:`Unit States and Visibility to Students`.
+ 嵌套组件的可见性取决于所在单元的可见性。父单元必须是对学生公开的属性，学生才能看到嵌套组件。
+ 更多信息请参阅： :ref:`Unit States and Visibility to Students`.
 
 
 *******************************
-Reorganizing Child Components
+Reorganizing Child Components 
 *******************************
 
 You can reorganize child components through the same drag and drop process you
