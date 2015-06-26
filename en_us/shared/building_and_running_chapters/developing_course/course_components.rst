@@ -197,6 +197,25 @@
 
 如果组件内含的单元为私有属性或草稿，您可以为此组件添加子组件。
 
+打开父组件页面，在 **添加新组件** 栏中选择您想添加的子组件类型。
+
+.. image:: ../../../shared/building_and_running_chapters/Images/AddNewComponent.png
+  :alt: Image of adding a new component
+
+更多信息请查阅：
+
+- :ref:`Working with Discussion Components`
+- :ref:`Working with HTML Components`
+- :ref:`Working with Problem Components`
+- :ref:`Working with Video Components`
+
+
+======================================
+组件中的XML文件
+======================================
+
+如果您用XML创建组件，您可以将XML课程导入Studio中以确认其结构是否符合您的要求。
+
 更多关于使用XML文件的信息，包括关于术语的信息，请参阅 `edX XML Tutorial <http://edx.readthedoc
 s.org/projects/devdata/en/latest/course_data_formats/course_xml.html>`_ 。
 
