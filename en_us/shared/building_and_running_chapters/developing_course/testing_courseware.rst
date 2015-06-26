@@ -1,42 +1,39 @@
 .. _Testing Your Course Content:
 
 ###########################
-Testing Your Course Content
+测试您的课程内容
 ###########################
 
-The way your course looks in Studio is not the way that students will see and
-experience it when it is live. 
+在Studio的在线课程中，学生和您看到的界面是不同的。
 
-It is recommended that you test your content continually as you build your
-course, so you can interact with your course from a student's point of view.
+我们建议您建好课程后持续进行测试，这样您就可以和用学生的视角体验课程。
 
-To test your content, you can:
+以下步骤测试您的内容：
 
 * `Preview Course Content`_
 * `View Your Live Course`_
 
-.. note:: If you use content groups in your course to designate content as
-  visible only to particular students, see :ref:`Preview Cohort Specific
+.. note:: 
+  如果您建立内容组将课程内容设置为部分学生可见，请参考 :ref:`Preview Cohort Specific
   Courseware`.
 
-For information about setting up a beta test for your course, see
+更多关于贝塔测试的内容请参考
 :ref:`Beta_Testing`.
 
 .. _Preview Course Content:
 
 *************************
-Preview Course Content
+预览课程内容
 *************************
 
-You can preview course content before a course is live or before you publish
-specific units, to test how content will appear to students when it is
-released.
+您可以在课程上线或发布特定单元之前预览课程内容，这样您就可以审查课程将如何呈现在学生面前。
  
-When you preview course content, you see the latest course content configured
-in Studio. You see content in units with the publishing status :ref:`Draft
-(Never Published)`, :ref:`Draft (Unpublished Changes)`, or :ref:`Visible to
-Staff Only`.
+当您预览课程内容时，您将在Studio看到最新的课程内容。
+您将看到单元的发布状态： :ref:`Draft
+(Never Published)`、 :ref:`Draft (Unpublished Changes)`或 :ref:`Visible to
+Staff Only` 。
 
+如果您使用内容小组并指定单元中的组件仅对特定小组可见，可见性状态
 If you use content groups and have designated components in a unit as visible
 only to particular groups, the visibility status indicates that some content in
 the unit is visible only to particular groups. For information about previewing
