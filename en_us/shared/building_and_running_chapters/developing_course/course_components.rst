@@ -184,7 +184,7 @@
 
 再次点击箭头可以展开内容：
 
-See:
+详情请参阅：
 
 * `Edit a Component`_
 * `Set the Display Name for a Component`_
@@ -195,18 +195,14 @@ See:
 添加子组件
 ======================================
 
-If the containing unit is private or in draft, you can add a child component in
-its parent component.
+如果组件内含的单元为私有属性或草稿，您可以为此组件添加子组件。
 
-To add a child component, open and expand the parent component. Then click the
-component type that you want under **Add New Component** within the parent
-component.
+打开父组件并展开内容，在 **添加新组件** 下选择您想添加的组件类型。
 
 .. image:: ../../../shared/building_and_running_chapters/Images/AddNewComponent.png
   :alt: Image of adding a new component
 
-For more information, see the documentation for the specific component type
-that you want:
+更多信息请参考：
 
 - :ref:`Working with Discussion Components`
 - :ref:`Working with HTML Components`
