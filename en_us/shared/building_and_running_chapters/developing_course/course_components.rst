@@ -211,8 +211,9 @@
 
 
 ======================================
-XML for Parent and Child Components
+组件中的XML文件
 ======================================
+
 
 You develop parent and child components in XML, then import the XML course into
 Studio to verify that the structure is as you intended. 
