@@ -82,16 +82,12 @@ Content>` 。
 学生可以在 :ref:`HTML components<Working with HTML
 Components>` 和视频脚本中通过 **课件** 栏左上角的 **搜索** 框搜索课程文本。
 
+Studio必须为内容建立索引，学生才能搜索您的课程。当您 :ref:`publish<Publish a
+Unit>` 时，Studio自动给所有新课程内容建立索引。
 
-Before learners can search your course, Studio must index the content. Studio
-indexes all new course content automatically when you :ref:`publish<Publish a
-Unit>` the content. 
-
-If necessary, you can manually reindex all of the content in your course at any
-time. Typically, you would only manually reindex your course content if learners
-see unexpected search results. To reindex your course content, select **Reindex
-Content** in the upper-right corner of the **Course Outline** page. Reindexing
-usually takes less than 30 seconds.
+如果有必要，您随时可以手动重新建立索引。
+一般情况下，您仅在学生看到不希望得到的搜索结果时重建课程内容索引。
+在 **课程大纲** 页面的右上角选择 **为内容重建索引** 。重建过程只需要不到30秒。
 
 .. _Revising Content:
 
