@@ -283,10 +283,9 @@ HTML组件模板
     :alt: Image of the Insert link dialog box with a link to a unit identifier
 
   .. caution::
-    Ensure you use ``/jump_to_id/<unit identifier>`` as the URL value. Do not
-    use the URL of the unit that you see in the browser address bar.  If you do
-    not use ``/jump_to_id/<unit identifier>``, the link will be broken if you
-    export then import the course.
+    确保您的URL值为 ``/jump_to_id/<unit identifier>`` 格式。
+    不要使用浏览器地址栏中的地址。
+    如果您没有使用 ``/jump_to_id/<unit identifier>`` 格式，您在导入和导出操作时链接将会失效。
 
 6. 如果想在新窗口中打开链接，单击“目标”字段后的下拉箭头，选择“新窗口”。如不需要，保留默认设置即可。
 
@@ -300,8 +299,8 @@ HTML组件模板
 添加文件链接
 ***********************************
 
-You can add a link in an HTML component to any file that is uploaded for the
-course. For more information about uploading files, see :ref:`Add Files to a
+您可以添加任何已上传至课程中的文件链接。
+更多细节请参考 :ref:`Add Files to a
 Course`.
 
 .. tip:: 
@@ -347,18 +346,15 @@ Course`.
 在给HTML组件添加图像之前，请先回顾 :ref:`Best Practices for Describing Images` 一节的内容。
 
 .. note:: 
- Ensure that you obtain copyright permissions for images you use in
- your course, and that you cite sources appropriately.
+ 确保您拥有引用图片的使用权，并正确引用图片。
 
 要添加图像，首先需要您上传图像文件的URL，然后才能添加图像链接。
 
 .. tip:: 
- When adding images, open the HTML component and the **Files &
- Uploads** page in separate browser windows. You can then more quickly copy and
- paste image URLs.
+ 当您添加图片时，打开HTML组件和 **文件与上传** 页面。您可以更高效地操作。
 
-#. On the **Files & Uploads** page, copy the **Studio** URL of the image that
-   you want. For an example illustration, see :ref:`Add a Link to a File`.
+
+#. 在 **文件与上传** 页面，复制图片的URL。具体事例请参照  :ref:`Add a Link to a File`.
 
   .. note:: 
    添加链接时只能使用文件的“嵌入URL”，而非“外部URL”。
