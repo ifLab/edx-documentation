@@ -350,7 +350,6 @@ Studio中的问题视图
 
 +-------------------+--------------------------------------+
 | **总是**          | 学生点击显示答案按钮时，显示答案。   |
-|                   |                                      |
 +-------------------+--------------------------------------+
 | **已回答**        | 在学生回答问题之后显示答案。         |
 |                   |                                      |
@@ -358,43 +357,29 @@ Studio中的问题视图
 |                   | 前不可见。（学生回答问题之后，问题   |
 |                   | 为已尝试和已回答状态。               |
 |                   | 问题重置之后，问题将是尝试而未解答   |
-|                   | 状态。                               |
+|                   | 状态。）                             |
++-------------------+--------------------------------------+
+| **已尝试**        | 在学生尝试回答问题之后显示答案。     |
 |                   |                                      |
+|                   | 如果问题重置，答案将持续显示。       |
+|                   | （当学生回答问题之后，问题为已尝试   |
+|                   | 已回答状态。问题重置之后，问题将是   |
+|                   | 尝试而未解答状态。）                 |
 +-------------------+--------------------------------------+
-| **Attempted**     | Show the answer after the student    |
-|                   | tries to answer the problem.         |
-|                   |                                      |
-|                   | If the question can be, and is,      |
-|                   | reset, the answer                    |
-|                   | *continues to show*.                 |
-|                   | (When a student answers a question,  |
-|                   | the question is considered to be     |
-|                   | both attempted and                   |
-|                   | answered. When the question is       |
-|                   | reset, the question is still         |
-|                   | attempted, but not yet answered.)    |
+| **关闭**          | 学生用完所有的回答问题限制次数或者   |
+|                   | 问题过期时，显示答案。               |
 +-------------------+--------------------------------------+
-| **Closed**        | Show the answer after the student    |
-|                   | has used up all his attempts to      |
-|                   | answer the problem or the due date   |
-|                   | has passed.                          |
+| **完成**          | 学生正确回答问题之后，学生用完限制   |
+|                   | 回答的次数，或者问题过期，显示答案。 |
++-------------------+--------------------------------------|
+| **正确或过期**    | 学生正确回答问题之后，或者问题过期   |
+|                   | 显示答案。                           |
 +-------------------+--------------------------------------+
-| **Finished**      | Show the answer after the student    |
-|                   | has answered the problem correctly,  |
-|                   | the student has no attempts left, or |
-|                   | the problem due date has passed.     |
+| **过期**          | 问题过期时，显示答案。               |
 +-------------------+--------------------------------------+
-| **Correct or      | Show the answer after the student    |
-| Past Due**        | has answered the problem correctly   |
-|                   | or the problem due date has passed.  |
-+-------------------+--------------------------------------+
-| **Past Due**      | Show the answer after the due date   |
-|                   | for the problem has passed.          |
-+-------------------+--------------------------------------+
-| **Never**         | Never show the answer. In this case, |
-|                   | the **Show Answer** button does not  |
-|                   | appear next to the problem in Studio |
-|                   | or in the LMS.                       |
+| **永不**          | 永不显示答案。在这种情况下，显示答案 |
+|                   | 按钮不会出现在Studio或者LMS的问题    |
+|                   | 旁边。                               |
 +-------------------+--------------------------------------+
 
 .. _Show Reset Button:
