@@ -362,17 +362,16 @@ Course`.
    you want. For an example illustration, see :ref:`Add a Link to a File`.
 
   .. note:: 
-   You must use the **Studio** URL to add the image, not the **Web** URL.
+   添加链接时只能使用文件的“嵌入URL”，而非“外部URL”。
 
 2. In the HTML component where you want to add the link, click the image icon
    in the toolbar.
 
-#. In the **Insert image** dialog box, enter the Studio URL for the file in the
-   **URL** field.
+#.  打开“插入链接”对话框，在“URL”字段后输入以下内容：
 
    ``/static/{FileName}.{type}``
 
-   Make sure to include both forward slashes (/).
+   记得保留所有“/”字符。
 
    .. image:: ../../../shared/building_and_running_chapters/Images/HTML_Insert-Edit_Image.png
     :alt: Image of the Insert image dialog box with a reference to a file
@@ -382,84 +381,73 @@ Course`.
    to be fully accessible. See :ref:`Best Practices for Describing Images` for
    more information.
 
-#. As needed, customize the image dimensions. Keep **Constrain proportions**
-   checked to ensure the image keeps the same width and height proportions. 
+#. 您可以自定义图像尺寸。在“固定比例”项后挑勾，以确保图片的长宽比例为固定值。
 
    With **Constrain proportions** selected, you only change one dimension. When
    you tab out of the field, the other dimension changes to a value that
    maintains the same image proportions.
 
-#. To change the spacing and border of the image, click the **Advanced** tab. 
+#. 如要改变图片间距和边界，单击“高级”选项卡
 
    .. image:: ../../../shared/building_and_running_chapters/Images/HTML_Insert-Edit_Image_Advanced.png
     :alt: Image of the Insert image dialog box Advanced tab
 
-#. Enter the **Vertical space**, **Horizontal space**, and **Border** as
-   needed. The values you enter are automatically added to the **Style** field.
+#. 键入“垂直间距”、“水平间距”及“边界”。您输入的数值会自动添加到“风格”字段中。
 
-#. Click **OK** to insert the image in the HTML component.
+#. 单击“确认”，完成图片在HTML组件中的插入。
 
-#. Save the HTML component and test the image.
+#. 保存HTML组件，调试图片链接。
 
 
 .. _Import LaTeX Code:
 
 ****************************************
-Import LaTeX Code into an HTML Component
+在HTML组件中输入拉泰勒编码
 ****************************************
 
-You can import LaTeX code into an HTML component. You might do this, for
-example, if you want to create "beautiful math" such as the following.
+您可在HTML组件中通过输入拉泰勒编码以创建“美观的数学公式”，如图：
 
 .. image:: ../../../shared/building_and_running_chapters/Images/HTML_LaTeX_LMS.png
  :alt: Image of math formulas created with LaTeX
 
 .. warning:: 
- The LaTeX processor that Studio uses to convert LaTeX code to XML is a third-
- party tool. We recommend that you use this feature with caution. If you do use
- it, make sure to work with your Program Manager.
+ EDX工作室使用拉泰勒编码处理器将拉泰勒编码转换成可扩展标示语言，该处理器是第三方工具，建议您在使用前务必小心谨慎。如果您确实真的需要使用，请与项目经理取得联系。
 
-This feature is not enabled by default. To enable it, you have to change the
-advanced settings in your course.
+本功能系统并不默认激活，要激活该功能，需更改课程的高级设置。
 
-To create an HTML component that contains LaTeX code:
+如何创建包含拉泰勒编码的HTML组件：
 
-#. Enable the policy key in your course.
+#. 激活课程的构建函式
 
-   #. In Studio, click **Settings**, and then click **Advanced Settings**.
+   #. 在Studio中，单击“设置”>“高级设置”
    #. In the field for the **Enable LaTeX Compiler** policy key, change
       **false** to **true**.
-   #. At the bottom of the page, click **Save Changes**.
+   #. 在页面底部，单击“保存更改”。
 
-#. In the unit where you want to create the component, click **html** under
-   **Add New Component**, and then click **E-text Written in LaTeX**. The new
-   component is added to the unit.
+#. 在您希望创建HTML组件的单元中，单击“添加新组件”菜单下的“html”，然后单击“E-text Written in LaTeX”，新组件就会添加到单元中。
 
-#. Click **Edit** to open the new component. The component editor opens.
+#. 单击“编辑”，打开新组件编辑器。
 
   .. image:: ../../../shared/building_and_running_chapters/Images/latex_component.png
    :alt: Image of the HTML component editor with the LaTeX compiler.
 
-4. In the component editor, click **Launch Latex Source Compiler**. The LaTeX
-   editor opens.
+4. 在编辑器中，单击“Launch Latex Source Complier.”打开拉泰勒编码编辑器。
 
    .. image:: ../../../shared/building_and_running_chapters/Images/HTML_LaTeXEditor.png
     :alt: Image of the HTML component editor with the LaTeX compiler
 
-#. Write LaTeX code as needed. You can also upload a LaTeX file into the editor
-   from your computer by clicking **Upload** in the bottom right corner.
+#. 写入需要的拉泰勒编码。您可点击右下角的“上传”按钮从电脑中上传拉泰勒编码文件。
 
-#. When you have written or uploaded the LaTeX code you need, click **Save &
-   Compile to edX XML** in the lower-left corner.
+#. 完成上一步骤后，单击左下角的“Save & Compile to edX XML”以保存。
 
-   The component editor closes. You can see the way your LaTeX content looks.
+
+   关闭编辑器。您现在可以看见您的拉泰勒编码内容。
 
    .. image:: ../../../shared/building_and_running_chapters/Images/HTML_LaTeX_CompEditor.png
     :alt: Image of the LaTeX component
 
-#. On the unit page, click **Preview** to verify that your content looks the
-   way you want it to in the LMS.
+#. 在单元界面中，单击“预览”确认内容是否与您将上传到LMS的内容形式一致。
 
-   If you see errors, go back to the unit page. Click **Edit** to open the
-   component again, and then click **Launch Latex Source Compiler** in the
-   lower-left corner of the component editor to edit the LaTeX code.
+
+   如果发现错误，回到单元界面，单击“编辑”再次打开组件，单击组件编辑器左下角的 **Launch Latex Source Complier** 以再次编辑拉泰勒编码。
+
