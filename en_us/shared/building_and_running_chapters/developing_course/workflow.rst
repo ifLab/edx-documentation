@@ -62,17 +62,17 @@ Content>` 。
 确保课程内容对学生可见
 ******************************************************
 
-When you create your content, you'll also specify if and when students will be
-able to see it. Content visibility depends on several factors: 
+在创建课程内容的同时，您还应该考虑何时将课程内容对学生开放。
+课程内容的可见性取决于以下几点：
 
-* The :ref:`course start date <Set Start and End Dates>`
-* The release dates of the :ref:`section<Set a Section Release Date>` and
-  :ref:`subsection<Set a Subsection Release Date>`
-* The :ref:`publishing status<Hide a Unit from Students>` of the unit
-* The :ref:`Hide content from students<Hide a Unit from Students>` setting
-* The use of :ref:`Content Groups`
+*  :ref:`course start date <Set Start and End Dates>`
+*  :ref:`section<Set a Section Release Date>` 、
+  :ref:`subsection<Set a Subsection Release Date>` 的发布日期
+* 单元的 :ref:`publishing status<Hide a Unit from Students>` 
+*  :ref:`Hide content from students<Hide a Unit from Students>` 设置
+*  :ref:`Content Groups`
   
-For more information, see :ref:`Controlling Content Visibility`.
+详细信息请见 :ref:`Controlling Content Visibility`.
 
 .. _Making Course Content Searchable:
 
@@ -97,14 +97,13 @@ usually takes less than 30 seconds.
 .. _Revising Content:
 
 ****************************
-Revising Content
+校正课程内容
 ****************************
 
-You can revise your course content at any time. 
+您可以在任何时候校正课程内容。
 
-* When you :ref:`reorganize sections, subsections, and units<Reorganize the
-  Course Outline>` in the outline, the new order is immediately visible to
-  students if the section and subsection are released.
+* 如果章节、小节处于发布状态，那么您在调整 :ref:`reorganize sections, subsections, and units<Reorganize the
+  Course Outline>` 时，学生可以立刻看见。
 
 * When you :ref:`edit a unit<Edit a Unit>`, or :ref:`components<Add a
   Component>` within a unit, you must :ref:`publish<Publish a Unit>` those
