@@ -1,19 +1,17 @@
 .. _Working with Video Components:
 
 #############################
-Working with Video Components
+创建影片组件
 #############################
 
-You can create videos of your lectures and add them to your course to
-supplement other components, such as discussions and problems, to promote
-active learning. Adding a video to your course has several steps.
+您能创建一个您的演讲影片，并且可以将其他组成部分，例如，讨论和遇到的问题，添加到课程中是学生积极学习。
+将视频添加到您的课程中有以下几个步骤。
 
 .. contents:: Section Contents
   :local:
   :depth: 1
 
-.. note:: Review :ref:`Best Practices for Accessible Media` before adding
- videos to your course.
+.. note:: 在将影片添加到您的课程之前，回顾 :ref:`Best Practices for Accessible Media` 。
 
 .. _Protecting Videos:
 
@@ -33,21 +31,19 @@ component, see :ref:`Video Advanced Options`.
 .. _Create the Video:
 
 ************************
-Step 1. Create the Video
+步骤1. 创建影片
 ************************
 
-Your videos can contain whatever content you want to include in the course. The
-`Creating Videos`_ section of `edX101 Overview of Creating an edX Course`_ has
-some helpful pointers for creating good video content.
+您的影片能保存任何您想要保存的内容。`edX101 Overview of Creating an edX Course`_ 中的
+`Creating Videos`_ 部分能够帮助您如何创建影片内容。
 
 .. _Compression Specifications:
 
 ====================================
-Compression Specifications
+压缩详述
 ====================================
 
-When you create your video, edX recommends the following compression specs.
-(Note that these are recommended but not required.)
+创建影片时，edX建议参照以下压缩详述。
 
 .. list-table::
    :widths: 10 20 20
@@ -86,40 +82,30 @@ When you create your video, edX recommends the following compression specs.
 .. _Video Formats:
 
 ==================
-Video Formats
+影片格式
 ==================
 
-The edX video player supports videos in .mp4, .webm, .mpeg, and .ogg format.
-However, to help make sure all standard browsers can play your video, we
-strongly recommend that you use the **.mp4 format**.
+edX视频播放器支持mp4, .webm, .mpeg, and .ogg格式。
+然而，为了确保所有标准浏览器均能播放您的影片， 我们强烈建议您使用 **.mp4 format** 格式。
 
 .. _Create Transcript:
 
 *********************************************
-Step 2. Create or Obtain a Video Transcript
+步骤2. 创建或保存影片字幕
 *********************************************
 
-Transcripts are required for your videos. Transcripts are required for deaf or
-hard of hearing learners to understand audio content, and helpful for learners
-who speak other languages. You can allow learners to download transcripts so
-that they can read them offline. You associate a transcript with a video when
-you create the video component.
+我们强烈建议您将影片与有限的字幕相结合。
+对于那些母语是非英语、不能看见影片或这想要回顾影片内容的学生来说，字幕对他们是十分有用的。
+您的影片播放的同时字幕也会自动滚动播放。要是学生点击字幕中的单词，影片会显示该词。
+您能让学生下载字幕以便他们能在线阅读。在创建影片组件时，您能将影片和字幕相结合。
 
-Timed transcripts in the SubRip Text (.srt) format are strongly recommended. A
-transcript in the .srt format appears next to its associated video and
-automatically scrolls as the video plays. A learner can click a word in the
-transcript to jump to the point in the video where that word is spoken.
+自动播放影片的前提是您的字幕必须是srt格式的文档。
+若想创建和保存srt格式的字幕，您可以和提供字幕服务的公司合作。
+EdX可以和3Play Media公司合作。You Tube也能提供字幕服务。
 
-To create or obtain a transcript in .srt format, you can work with a company
-that provides captioning services. EdX works with `3Play Media
-<http://www.3playmedia.com>`_. `YouTube <http://www.youtube.com/>`_ also
-provides captioning services.
-
-When you upload an .srt file, a .txt file is created automatically. You can
-allow learners to download these transcript files. If you allow your learners
-to download transcripts, a **Download transcript** button appears under the
-video. Learners can then select either **SubRip (.srt) file** or **Text (.txt)
-file** to download the .srt or .txt transcript.
+您上传srt文档时，文本文件会自动生成。学生可以下载srt文档或文本文档（txt）。
+若您允许学生下载副本，影片下方会出现下载副本按钮。
+学生能够自行选择SubRip文档（.srt文档）或文本文档（.txt）来下载.srt格式或文本文档（txt）格式的副本。
 
 .. image:: ../../../shared/building_and_running_chapters/Images/Video_DownTrans_srt-txt.png
    :width: 500
@@ -136,12 +122,14 @@ these options, see :ref:`Additional Transcripts`.
 .. _Post the Video Online:
 
 *****************************
-Step 3. Post the Video Online
+步骤3 在网上发布影片
 *****************************
 
-All course videos should be posted to YouTube. By default, the edX video player
-accesses your YouTube videos.
+所有课程应在You Tube上发布。通过默认设置，edX影片播放器能够播放You Tube的影片。
 
+然而，由于You Tube不是在任何地方下均有效的，所以我们建议您将影片也上传到至第三方网站，例如亚马逊S3。
+当学生浏览您的课程时，要是You Tube不适用于学生所在地或You Tube无法播放，上传至备用网站的影片能自动播放。
+您也能让学生从备用网站上下载影片。
 Because YouTube is not available in all locations, however, we recommend that
 you also post copies of your videos on a third-party site such as `Amazon S3
 <http://aws.amazon.com/s3/>`_. When a learner views a video in your course, if
@@ -149,33 +137,28 @@ YouTube is not available in that learner's location or if the YouTube video
 does not play, the video on the backup site starts playing automatically. You
 can also allow the learners to download the video from the backup site.
 
-After you post your video online, make sure you have the URL for the video. If
-you host copies of your video in more than one place, make sure you have the
-URL for each video location.
+在网上公布影片之后，确保您有影片的统一资源定位符（URL）。
+若您在多处复制了您的影片，确保您有每一个副本所在位置的统一资源定位符（URL）。 
 
 ==================
 YouTube
 ==================
 
-After you create your video, upload the video to `YouTube
+在创建影片后，将影片上传至 `YouTube
 <http://www.youtube.com/>`_.
 
-.. note:: YouTube only hosts videos of up to 15 minutes. If you create a
- 0.75-speed option, you must make sure that your 1.0-speed video segments are
- only 11.25 minutes long so that YouTube can host all speeds. YouTube offers
- paid accounts that relax this restriction.
+.. note:: You Tube只能上传最长15分钟的影片。
+  如果您选择0.75倍播放速度，您必须确定影片片段只有11.25分钟，如此一来才能确保影片全部上传至You Tube。
+  You Tube有提供付费机制可以解除这个限制。
 
 ==================
-Other Sites
+其他网站 
 ==================
 
-You can use any video backup site that you want. However, keep in mind that the
-site where you post the videos may have to handle a lot of traffic.
+您能使用任何备用网站。然而，切记您上传影片的网站可能需要面对网络繁忙的情况。
 
-.. note:: The URL for the video that you post on a third-party site must end
- in .mp4, .webm, .mpeg, or .ogg. (To help make sure all standard browsers can
- play your video, we **strongly** recommend that you use .mp4 format.) EdX
- cannot support videos that you post on sites such as Vimeo.
+.. note:: 最终您上传至第三方网站的影片统一资源定位符（URL）必须是mp4, .webm, .mpeg, 或.ogg格式。
+（为了确保所有标准浏览器均能播放影片，我们强烈建议您用mp4,或webm.格式）EdX不支持类似Vimeo等网站上的视频。
 
 If you (or your beta testers or learners) encounter an error when you view a
 course video, it might be the result of one of these browser-related problems.
@@ -201,10 +184,10 @@ course video, it might be the result of one of these browser-related problems.
 .. _Create a Video Component:
 
 ********************************
-Step 4. Create a Video Component
+步骤4 创建影片组件
 ********************************
 
-#. Under **Add New Component**, click **Video**.
+#. 在新增组件下，点击影片
 
 #. When the new video component appears, click **Edit**. The video editor opens
    to the **Basic** tab.
