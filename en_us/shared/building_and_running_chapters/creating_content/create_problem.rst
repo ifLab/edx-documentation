@@ -1,27 +1,22 @@
 .. _Working with Problem Components:
 
 ################################
-Working with Problem Components
+创建问题组件
 ################################
 
 ******************************
-Overview of Problem Components
+问题组件概况
 ******************************
 
-The problem component allows you to add interactive, automatically
-graded exercises to your course content. You can create many different
-types of problems in Studio.
+问题组件允许您在您课程内容中添加互动式及自动评分的练习。
+您可以在Studio下创建不同类型的问题。
 
-All problems receive a point score, but, by default, problems do not count
-toward a student's grade. If you want the problems to count toward the
-student's grade, change the assignment type of the subsection that contains the
-problems.
+通过默认设置，所有问题都会得分，但是不会计算学生的总分。
+若您想让这些问题计算学生的总分，修改保存问题的小节的作业类型。
 
-This section covers the basics of Problem components: what they look like to
-you and your students, and the options that every problem component has. For
-more information about individual problem types, see :ref:`Create Exercises`.
+本章讲述的是问题组件的基础知识，即：您与学生所见的视图，每个问题组件的选项。欲知单个问题类型，请见 :ref:`Create Exercises`.
 
-For more information, see the following topics.
+欲知更多信息，请浏览以下主题：
 
 * :ref:`Problem Student View`
 * :ref:`Problem Studio View`
@@ -34,40 +29,28 @@ For more information, see the following topics.
 .. _Problem Student View:
 
 ************************************
-The Student View of a Problem
+学生视图下的问题
 ************************************
 
-All problems on the edX platform have several component parts.
+凡是出现在edX平台的所有问题均包含以下功能。
 
 .. image:: ../../../shared/building_and_running_chapters/Images/AnatomyOfExercise1.png
  :alt: Image of a problem from a student's point of view, with callouts for 
        elements of the problem
 
-#. **Problem text.** The problem text can contain any standard HTML formatting.
+#. **问题文本** 问题文本允许使用任何标准HTML格式。
 
-#. **Response field with the student's answer.** Students enter answers
-   in *response fields*. The appearance of the response field depends on
-   the type of the problem.
+#. **学生答案填写区域** 学生在此区域输入答案。回答区域的样式随着问题类型而变化。
 
-#. **Rendered answer.** For some problem types, Studio uses MathJax to
-   render plain text as "beautiful math".
+#. **提交答案** 对于一些问题类型，Studio使用MathJax提交完美的数学公式。
 
-#. **Check button.** The student clicks **Check** to submit a response
-   or find out if his answer is correct. If the answer is correct, a green
-   check mark appears. If it is incorrect, a red X appears. When the
-   student clicks the **Check button**, Studio saves the grade and current
-   state of the problem.
+#. **检查按钮** T学生点击检查，查询上交的答案是否争取。若答案正确的话，则出现绿色的打勾符号。
 
-#. **Save button.** The student can click **Save** to save his current
-   response without submitting it for a grade. This allows the student to
-   stop working on a problem and come back to it later.
+#. **保存按钮** 学生点击保存，保存的是正确的答案，而非提交。因此，学生可回头修改问题的答案。
 
-#. **Show Answer button.** This button is optional. When the student
-   clicks **Show Answer**, the student sees both the correct answer (see 2
-   above) and the explanation (see 10 below). The instructor sets whether
-   the **Show Answer** button is visible.
+#. **显示答案按钮** 此按钮是可选择的。学生点击显示答案时，学生能看到正确答案（见上方第2点）和解题说明(见下方第10点）。教师可设置是否开放此功能。
 
-#. **Attempts.** The instructor may set a specific number of attempts or allow
+#. **提交答案次数** 教师可设定提交次数限定或不设定提交次数。The instructor may set a specific number of attempts or allow
    unlimited attempts for a problem. By default, the course-wide **Maximum
    Attempts** advanced setting is null, meaning that the maximum number of
    attempts for problems is unlimited. If the course-wide **Maximum Attempts**
