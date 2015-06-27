@@ -153,15 +153,14 @@ change<Publish a Unit>` 之后学生所看到的界面。
 当您用 **员工视角** 在学习管理系统中查看课程时。您可以直接打开Studio。
 
    
-* In a unit page, click **View Unit in Studio**.
+* 在单元页面中点击 **在Studio中查看单元**
   
   .. image:: ../../../shared/building_and_running_chapters/Images/Live_Studio_from_LMS_Unit.png
    :alt: The View Unit in Studio button in an LMS unit
 
-  The unit page opens in Studio.
+  单元页面在Studio中开启。
  
-* In the Instructor Dashboard, click **View Course in Studio** to open the
-  course outline.
+* 在导师面板中，点击 **在Studio中查看课程** 打开课程大纲
  
   .. image:: ../../../shared/building_and_running_chapters/Images/Live_Course_Instructor_Dashboard.png
     :alt: Image of the Instructor Dashboard in a live course with a View Course
