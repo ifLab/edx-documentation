@@ -412,8 +412,7 @@ Course`.
 #. 激活课程的构建函式
 
    #. 在Studio中，单击“设置”>“高级设置”
-   #. In the field for the **Enable LaTeX Compiler** policy key, change
-      **false** to **true**.
+   #. 在 **Enable LaTeX Compiler** 值中 ，将勾选 **是** 。
    #. 在页面底部，单击“保存更改”。
 
 #. 在您希望创建HTML组件的单元中，单击“添加新组件”菜单下的“html”，然后单击“E-text Written in LaTeX”，新组件就会添加到单元中。
