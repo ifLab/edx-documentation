@@ -334,8 +334,6 @@ Studio中的问题视图
 | **每个学生**      | 学生个人每次查看，                   |
 |                   | 都会看到相同版本的问题，             |
 |                   | 但此版本不同于其他学生查看的版本。   |
-|                   |                                      |
-|                   |                                      |
 +-------------------+--------------------------------------+
 
 .. note:: The edX Platform has a 20-seed limit for randomization.
@@ -385,35 +383,29 @@ Studio中的问题视图
 .. _Show Reset Button:
 
 =================
-Show Reset Button
+显示重置按钮
 =================
 
-This setting defines whether a **Reset** button is visible on the problem.
-Students can click **Reset** to clear any input that has not yet been submitted,
-and try again to answer the problem. If the student has already submitted an
-answer, clicking **Reset** clears the submission and, if the problem contains
-randomized variables and randomization is set to **On Reset**, changes the
-values the student sees in the problem. If the number of Maximum  Attempts that
-was set for this problem has been reached, the **Reset** button is not visible.
+此设置决定 **重置** 按钮是否在问题中可见。
+学生可以通过点击 **重置** 清除任何未提交的内容，并再次尝试回答问题。
+如果学生已经提交了答案，点击 **重置** 将清空提交内容。
+如果问题中包含随机数和设为 **重置** 属性的随机生成器，随机数值将改变。
+如果最多尝试次数已超过，**重置** 按钮将不可见。
 
-This problem-level setting overrides the course-level **Show Reset Button for
-Problems** setting.
+此问题层级的设置将覆盖课程层级的 **在问题中显示重置按钮** 属性。
 
 .. _Timer Between Attempts:
 
 =======================
-Timer Between Attempts
+尝试时间间隔
 =======================
 
-This setting specifies the number of seconds a student must wait between
-submissions for a problem that allows multiple attempts. If the value is 0, the
-student can attempt the problem again immediately after an incorrect attempt.
+此设定为学生在多次提交之间需要等待的秒数。
+如果值为0，学生在回答错误以后可以立即再次回答问题。
 
-Adding required wait time between attempts can help to prevent learners from
-simply guessing when multiple attempts are allowed.
+添加等待时间可以防止学生猜测答案。
 
-If a learner attempts a problem again before the required time has elapsed, she
-sees a message below the problem indicating the remaining wait time.
+如果学生在等待时间内再次尝试回答问题，她将看到以下信息：
 
 .. image:: ../../../shared/building_and_running_chapters/Images/problem_attempt_timer.png
  :alt: Problem with message that learner must wait before attempting again
@@ -454,7 +446,7 @@ sees a message below the problem indicating the remaining wait time.
    然后让所有学生回答新的问题。
 
 
-For information about how to review and adjust student grades in the LMS, see
+更多关于如何回顾和调整学生成绩的内容请参阅
 :ref:`Grades`.
 
 .. _Additional Work with Problems:
@@ -478,9 +470,8 @@ For information about how to review and adjust student grades in the LMS, see
 设置这样的问题，您可以在一个组件内设置多个问题。这些问题可以是不同题型的。
 
 .. note:: 
-  You cannot use a :ref:`Custom JavaScript` in a component that contains more
-  than one problem. Each custom JavaScript problem must be in its own
-  component.
+  您不能在含有多个问题的组件中使用 :ref:`Custom JavaScript` 
+  每个custom JavaScript问题必须在一个单独的组件中。 
 
 为了在一个组件内建立多个问题，可以新建一个空的进阶问题组件，然后在组件编辑器中为每个问题添加XML。
 您只需将XML添加到问题和答案中即可。您不必为其它内容添加代码，比如检查按钮。
