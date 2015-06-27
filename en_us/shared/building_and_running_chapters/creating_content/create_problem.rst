@@ -120,11 +120,11 @@ Studio中的问题视图
 .. _Simple Editor:
 
 =================
-The Simple Editor
+简易编辑器
 =================
 
-When you select the following problem types, the Simple Editor opens with a
-preformatted example problem.
+
+When you select the following problem types, the Simple Editor opens with a preformatted example problem.
 
 *  :ref:`Checkbox`: In checkbox problems, students select one or more options
    from a list of possible answers.
@@ -143,34 +143,25 @@ preformatted example problem.
 *  :ref:`Text Input`: In text input problems, students enter a short text
    answer to a question.
 
-This image shows an example multiple choice problem in the Simple Editor.
+下图显示的是简易编辑器中的多项选择题。
 
 .. image:: ../../../shared/building_and_running_chapters/Images//MultipleChoice_SimpleEditor.png
  :alt: The simple editor with numbered callouts for options and an example
      multiple choice problem to demonstrate the formatting.
 
-The Simple Editor includes a toolbar with options that provide the required
-formatting for different types of problems. When you select an option from the
-toolbar, formatted sample text appears in the Simple Editor. Alternatively,
-you can apply formatting to your own text by selecting the text and then one
-of the toolbar options.
+简单编辑器含有一个工具栏，可将您的问题文本格式化。当您选中文本，点击格式化按钮之后，简单编辑器就可自动将您的文本格式化。
 
-Descriptions of the toolbar options follow.
+工具栏按钮如下：
 
-1. **Heading 1**: Format text as a first level heading.
-2. **Multiple Choice**: Identify the text on each selected line as an answer
-   option for a multiple choice problem.
-3. **Checkboxes**: Identify the text on each selected line as an answer option
-   for a checkboxes problem.
-4. **Text Input**: Identify the correct answer for a text input problem.
-5. **Numerical Input**: Identify the correct answer, with an optional
-   tolerance, for a numerical input problem.
-6. **Dropdown**: Identify a comma-separated list as the answer options for a
-   dropdown problem.
-7. **Explanation**: Format text as an explanation that appears when students
-   click **Show Answer**.
-8. Open the problem in the Advanced Editor.
-9. Open a list of formatting hints.
+1. 创建1级标题
+2. 创建多个选项。
+3. 创建复选框选项。
+4. 创建文本输入选项。
+5. 创建数值输入选项。
+6. 创建下拉选项。
+7. 创建解析，当学生点击显示答案时，就会显示相关解析。
+8. 在进阶编辑器中打开问题。
+9. 打开格式提示清单。
 10. **Accessible Label**: Identify the question as the problem's accessible
     label. No toolbar option is available, but when you surround text with two
     pairs of angle brackets pointing inward (``>>question<<``), screen readers
@@ -182,20 +173,17 @@ Descriptions of the toolbar options follow.
 .. _Advanced Editor:
 
 ===================
-The Advanced Editor
+进阶编辑器
 ===================
 
-The **Advanced Editor** opens a problem in XML. Templates for problems such as
-such as drag and drop and math expression input open directly in the Advanced
-Editor.
+ **进阶编辑器** 要用XML打开问题。问题模板包括拖拽，下拉和数学表达式，这些都可在进阶编辑器中直接打开。
 
-The following image shows the multiple choice problem above in the Advanced
-Editor instead of the Simple Editor.
+下图显示的是进阶编辑器中打开的多项选择题。
 
 .. image:: ../../../shared/building_and_running_chapters/Images//MultipleChoice_AdvancedEditor.png
  :alt: Image of a problem in the advanced editor
 
-The following problem templates open in the Advanced Editor.
+以下问题模板可在进阶编辑器中打开。
 
 * :ref:`Circuit Schematic Builder` In circuit schematic problems, students
   create and modify circuits on an interactive grid and submit computer-
