@@ -42,25 +42,24 @@ Subsection>` 和 :ref:`units<Create a Unit>` 。
 您也可以通过:ref:`set the assignment type and due date<Set the Assignment Type and Due Date
 for a Subsection>` 检测每一小节的学习效果。
 
+在单元页面 :ref:`create components<Add a Component>` 。
 
-You :ref:`create components<Add a Component>` in the unit
-page.
 
-In addition, you :ref:`control content visibility<Controlling Content
-Visibility>` by setting release dates on the outline and publishing units.
+另外，您也可以通过设置课程发布时间及发布单元来 :ref:`control content visibility<Controlling Content
+Visibility>` 。
 
-The following diagram summarizes the content creation workflow:
+下图总结了创建课程内容的流程：
 
 .. image:: ../../../shared/building_and_running_chapters/Images/workflow-create-content.png
  :alt: Diagram of the content creation process
 
-It is recommended that you :ref:`test course content <Testing Your Course
-Content>` throughout the creation process.
+我们建议您在创建的过程中 :ref:`test course content <Testing Your Course
+Content>` 。
 
 .. _Making Course Content Visible to Students:
 
 ******************************************************
-Making Course Content Visible to Students
+确保课程内容对学生可见
 ******************************************************
 
 When you create your content, you'll also specify if and when students will be
