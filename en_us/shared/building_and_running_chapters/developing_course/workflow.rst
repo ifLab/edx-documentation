@@ -66,8 +66,7 @@ Content>` 。
 课程内容的可见性取决于以下几点：
 
 *  :ref:`course start date <Set Start and End Dates>`
-*  :ref:`section<Set a Section Release Date>` 、
-  :ref:`subsection<Set a Subsection Release Date>` 的发布日期
+*  :ref:`section<Set a Section Release Date>` 、 :ref:`subsection<Set a Subsection Release Date>` 的发布日期
 * 单元的 :ref:`publishing status<Hide a Unit from Students>` 
 *  :ref:`Hide content from students<Hide a Unit from Students>` 设置
 *  :ref:`Content Groups`
@@ -105,15 +104,13 @@ usually takes less than 30 seconds.
 * 如果章节、小节处于发布状态，那么您在调整 :ref:`reorganize sections, subsections, and units<Reorganize the
   Course Outline>` 时，学生可以立刻看见。
 
-* When you :ref:`edit a unit<Edit a Unit>`, or :ref:`components<Add a
-  Component>` within a unit, you must :ref:`publish<Publish a Unit>` those
-  changes to make them visible to students.
+* 在单元中 :ref:`edit a unit<Edit a Unit>` 或 :ref:`components<Add a
+  Component>` 后，您必须重新 :ref:`publish<Publish a Unit>` ，这样学生才能看见新的内容。
 
-The following diagram summarizes the content revision workflow and content
-visibility:
+下图总结了校正课程内容及控制内容可见性的流程
 
 .. image:: ../../../shared/building_and_running_chapters/Images/workflow-revise-content.png
  :alt: Diagram of the content creation process
 
-It is recommended that you :ref:`test course content <Testing Your Course
-Content>` during the revision process.
+我们建议您在校正内容的同时 :ref:`test course content <Testing Your Course
+Content>` 。
