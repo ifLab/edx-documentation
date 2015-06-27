@@ -50,31 +50,25 @@
 
 #. **显示答案按钮** 此按钮是可选择的。学生点击显示答案时，学生能看到正确答案（见上方第2点）和解题说明(见下方第10点）。教师可设置是否开放此功能。
 
-#. **提交答案次数** 教师可设定提交次数限定或不设定提交次数。The instructor may set a specific number of attempts or allow
-   unlimited attempts for a problem. By default, the course-wide **Maximum
-   Attempts** advanced setting is null, meaning that the maximum number of
-   attempts for problems is unlimited. If the course-wide **Maximum Attempts**
-   setting is changed to a specific number, the **Maximum Attempts** setting
-   for individual problems defaults to that number, and cannot be set to
-   unlimited.
+#. **提交答案次数** 教师可设定提交次数限定或不设定提交次数。
+   默认情况下，整个课程中所有问题的 **最多尝试次数** 是空值，这表示提交答案次数是无限的。
+   如果课程的 **最多尝试次数** 设定为一个特定的值，课程中的每个问题的尝试次数均为这个值，不能设为无限。
 
    .. image:: ../../../shared/building_and_running_chapters/Images//AnatomyOfExercise2.png
     :alt: Image of a problem from a student's point of view, with callouts for 
           attempts and showing the answer
 
-#. **Feedback.** After a student clicks **Check**, all problems return a
-   green check mark or a red X.
+#. **反馈** 学生点击检查按钮后，所有问题都会显示绿色复选标记或红X。
 
    .. image:: ../../../shared/building_and_running_chapters/Images//AnatomyofaProblem_Feedback.png
     :alt: Image of feedback checkmark and x from a student's point of view
 
-#. **Correct answer.** Most problems require that the instructor specify
-   a single correct answer.
+#. **正确答案** 大多数问题都需要教师指定一个唯一的正确答案。
 
-#. **Explanation.** The instructor may include an explanation that
-   appears when a student clicks **Show Answer**.
+#. **解析** 教师可以添加一些解析。当学生点击 **显示答案** 按钮时，会显示相关解析。
 
-#. **Reset button.** Students can click **Reset** to clear any input that has
+#. **重置按钮** 此按钮可以清除学生输入的内容，使问题保持原样。
+   
    not yet been submitted, and try again to answer the question. If the student
    has already submitted an answer, clicking **Reset** clears the submission
    and, if the problem contains randomized variables and randomization is set
@@ -82,61 +76,46 @@
    number of Maximum Attempts that was set for this problem has been reached,
    the **Reset** button is not visible.
 
-#. **Hide Answer button.**
+#. **隐藏答案按钮**
 
    .. image:: ../../../shared/building_and_running_chapters/Images//AnatomyOfExercise3.png
     :alt: A graded assignment shown in the left pane of the LMS for a course
 
-#. **Grading.** The instructor may specify whether a group of problems
-   is graded. If a group of problems is graded, a clock icon appears for
-   that assignment in the left pane.
+#. **分级** 教师可以决定一组问题是否进行分级。如果一组问题要进行分级的话，课程作业栏就会出现一个钟表图标。
 
    .. image:: ../../../shared/building_and_running_chapters/Images//clock_icon.png
 
-#. **Due date.** The date that the problem is due. A problem that is
-   past due does not have a **Check** button. It also does not accept
-   answers or provide feedback.
+#. **到期日** 问题是有期限的。过期的问题就不会有检查按钮了，也不能在进行回答或提供回馈了。
 
-.. note:: Problems can be **open** or **closed.** Closed problems do not 
-          have a **Check** button. Students can still see questions, solutions,
-          and revealed explanations, but they cannot check their work, submit
-          responses, or change an earlier score.
+.. note:: 问题可以打开或者关闭。关闭的问题没有检查按钮。
+          学生仍然可以看见问题，答案和解析，但是不能查看他们自己做的答案，不能提交答案，也不能更改早期的分数。
 
-There are also some attributes of problems that are not immediately
-visible. You can set these attributes in Studio.
 
-*  **Randomization.** For some problems, the instructor can specify
-   whether a problem will use randomly generated numbers that vary from
-   student to student.
+还有一些题没有立即可见的属性，您可以在Studio中设置这些属性。
 
-*  **Weight.** Different problems in a particular problem set may be
-   given different weights.
+*  **随机化** 对于有些问题，教师可以决定是否采用随机生成的方式，这样每个学生的问题都会不同。
 
-*  **Label.** To improve accessibility for students who have disabilities, each
-   problem needs a descriptive label. The label typically contains part or all
-   of the text of the question in the problem. Most templates include a space
-   for a label. You can find example labels in the documentation for each
-   problem or tool type.
+
+*  **问题权重** 在一组特定的问题中，不同问题权重也不同。
+
+*  **标签** 为提高有困难的同学的可访问性，每一个问题都需要有一个描述性标签。
+   这个标签通常包含部分或全部的问题文本。大部分的模板会留出标签的位置。您可以在每个题型或者工具类型的文件中找到示例标签。
+   
 
 .. _Problem Studio View:
 
 ************************************
-The Studio View of a Problem
+Studio中的问题视图
 ************************************
 
-All problems are written in XML. However, Studio offers two interfaces for
-editing problem components: the Simple Editor and the Advanced Editor.
+所有的问题都以XML写成。但是，Studio有两个编辑问题的界面：简易编辑器和进阶编辑器。
 
-*  The Simple Editor allows you to edit problems visually, without
-   having to work with XML. 
+*  简易编辑器可以让您进行可视化编辑，不必使用XML。
 
-*  The Advanced Editor converts the problem to edX's XML standard and
-   allows you to edit that XML directly.
+*  进阶编辑器将问题转换为edX的XML标准,您可以直接编辑XML。
 
-You can switch at any time from the Simple Editor to the Advanced Editor by
-clicking **Advanced Editor** in the top right corner of the Simple Editor
-interface. However, it is not possible to switch from the Advanced Editor to
-the Simple Editor. 
+通过点击简易编辑器界面右上角的进阶编辑器按钮，您可以随时从简易编辑器切换到进阶编辑器。
+但是您不能从进阶编辑器切换到简易编辑器。
 
 .. _Simple Editor:
 
