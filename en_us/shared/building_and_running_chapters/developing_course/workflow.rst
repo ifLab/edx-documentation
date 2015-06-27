@@ -17,40 +17,31 @@
 .. _Understanding Course Building Blocks:
 
 ************************************************
-Understanding Course Building Blocks
+了解组成课程内容的要素
 ************************************************
 
-Before you begin, you should understand the building blocks of an edX course.
+在创建课程内容之前，您应该了解组成edX课程内容的要素。
 
-* :ref:`The course outline<Developing Your Course Outline>` is the container
-  for all of your course content. The outline contains one or more sections.
-* :ref:`Course sections<Developing Course Sections>` are at the top level of
-  your course and typically represent a time period. A section contains one or
-  more subsections.
-* :ref:`Course subsections<Developing Course Subsections>` are parts of a
-  section, and usually represent a topic or other organizing principle. A
-  subsection contains one or more units.
-* :ref:`Course units <Developing Course Units>` are lessons in a subsection
-  that students view as single pages. A unit contains one or more components.
-* :ref:`Course components<Developing Course Components>` are objects within
-  units that contain your actual course content.
+* :ref:`The course outline<Developing Your Course Outline>` 是课程内容的容器，包括一个或多个章节。
+* :ref:`Course sections<Developing Course Sections>` 是构成课程内容的重要组成部分，包括一个或多个小节。
+* :ref:`Course subsections<Developing Course Subsections>` 是章节的组成部分，通常小节是按照主题或者其他规则划分的。一个小节中包括一个或者多个单元。
+* 小节中的课程就是 :ref:`Course units <Developing Course Units>` ，单元是由一个或者多个组件组成的。
+* :ref:`Course components<Developing Course Components>` 是单元中的内容，也是课程内容的组成部分。
 
 .. _Creating New Course Content:
 
 ****************************************
-Creating New Course Content
+创建新课程内容
 ****************************************
 
-Once you understand the way edX courses are structured, you can start
-organizing your content and entering it into Studio. 
+一旦您了解了edX课程的组成方式，您就可以开始组织您的课程内容，并将内容导入Studio。
 
-You create :ref:`sections<Create a Section>`, :ref:`subsections<Create a
-Subsection>`, and :ref:`units<Create a Unit>` in the :ref:`course
-outline<Developing Your Course Outline>`. 
+在:ref:`course outline<Developing Your Course Outline>` 中创建 :ref:`sections<Create a Section>` 、:ref:`subsections<Create a
+Subsection>` 和 :ref:`units<Create a Unit>` 。
 
-For graded subsections, you also
-:ref:`set the assignment type and due date<Set the Assignment Type and Due Date
-for a Subsection>`. 
+您也可以通过:ref:`set the assignment type and due date<Set the Assignment Type and Due Date
+for a Subsection>` 检测每一小节的学习效果。
+
 
 You :ref:`create components<Add a Component>` in the unit
 page.
