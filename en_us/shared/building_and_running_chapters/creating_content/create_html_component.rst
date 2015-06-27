@@ -220,7 +220,7 @@ HTML组件模板
 .. image:: ../../../shared/building_and_running_chapters/Images/HTML_Insert-EditLink_DBox.png
  :alt: Image of the Insert link dialog box
 
-You can:
+您可以：
 
 * :ref:`Add a Link to a Website`
 * :ref:`Add a Link to a Course Unit`
@@ -228,28 +228,25 @@ You can:
 
 .. _Add a Link to a Website:
 
-Add a Link to a Website
+添加网页链接
 ***********************************
 
-To add a link to a website:
+如何添加网页链接：
 
-#. Select the text that you want to make into the link.
+#. 选中您想要添加链接的文本
 
-#. Click the link icon in the toolbar.
+#. 单击工具栏中的“链接”图标
 
-#. In the **Insert link** dialog box, enter the URL of the website that you
-   want in the **URL** field.
+#. 打开“插入链接”对话框，在“URL”字段后键入指向网页的URL。
 
    .. image:: ../../../shared/building_and_running_chapters/Images/HTML_Insert-EditLink_Website.png
     :alt: Image of the Insert link dialog box
 
-#. If you want the link to open in a new window, click the drop-down arrow next
-   to the **Target** field, and then select **New Window**. If not, you can
-   leave the default value.
+#. 如果想在新窗口中打开链接，单击“目标”字段后的下拉箭头，选择“新窗口”。如不需要，保留默认设置即可。
 
-#. Click **OK**.
+#. 单击“确定”。
 
-#. Save the HTML component.
+#. 保存HTML组件。.
 
 #. To test the link, click **View Live Version** or **Preview**. When the unit
    opens in the LMS, click the linked text and verify that the correct URL
@@ -261,25 +258,23 @@ To add a link to a website:
 
 .. _Add a Link to a Course Unit:
 
-Add a Link to a Course Unit
+添加课程单元链接
 ***********************************
 
-You can add a link to a course unit in an HTML component.
+您可在HTML组件中添加课程链接：
 
-#. Obtain the unit identifier of the unit you're linking to. To do this, open
-   the unit page in Studio, and copy the unit ID from the **Unit Identifier**
-   field under **Unit Location** in the right pane.
+#. 获取链接目标单元的单元标识符。在工作室中打开“单元”界面，在面板右侧打开“单元位置”，复制“单元标识符”字段后的单元ID。
    
    .. image:: ../../../shared/building_and_running_chapters/Images/UnitIdentifier.png
     :alt: Image of the unit page with the unit identifier circled
 
-#. Open the HTML component where you want to add the link.
+#. 打开您想要添加链接的HTML组件。
 
-#. Select the text that you want to make into the link.
+#. 选中想要添加链接的文本。
 
-#. Click the link icon in the toolbar.
+#. 单击工具栏中的“链接”图标。
 
-#. In the **Insert link** dialog box, enter the following in the **URL** field.
+#. 打开“插入链接”对话框，在“URL”字段后输入以下内容：
 
    ``/jump_to_id/<unit identifier>``
 
