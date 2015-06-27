@@ -291,52 +291,42 @@ problems defaults to that number, and cannot be set to unlimited.
 
 接下来是一些计算分数的例子。
 
-*Example 1*
+*范例1*
 
-A problem's **Weight** setting is left blank. The problem has two
-response fields. Because the problem has two response fields, the
-maximum score is 2.0 points.
+一个问题的权重属性是空的。这个问题含两个应字段。因为有两个应字段，所以最大分值为2.0分。
+ 
+如果一个应字段中是正确答案，一个应字段是不正确答案，那么这个学生只能得到2分中的1.0分。
 
-If one response field contains a correct answer and the other response
-field contains an incorrect answer, the student's score is 1.0 out of 2
-points.
+*范例2*
 
-*Example 2*
+一个问题的权重属性为12，有三个字段。
 
-A problem's weight is set to 12. The problem has three response fields.
+如果一个学生的答案包含2个正确答案和1个错误答案，那么他的分数就是12分中的8分。
 
-If a student's response includes two correct answers and one incorrect
-answer, the student's score is 8.0 out of 12 points.
+*范例3*
 
-*Example 3*
+一个问题的权重属性为2，有四个应字段。
 
-A problem's weight is set to 2. The problem has four response fields.
-
-If a student's response contains one correct answer and three incorrect
-answers, the student's score is 0.5 out of 2 points.
+如果一个学生的答案包含1个正确答案和3个错误答案，那么他的分数就是2分中的0.5分。
 
 .. _Randomization:
 
 ===============
-Randomization
+随机化
 ===============
 
-This setting specifies whether certain values in your problem change each time
-a different student accesses the problem, or each time a single student tries
-to answer the problem. For example, the highlighted values in the problem below
-change each time a student submits an answer to the problem.
+随机化设定可以决定是否要在每次学生看到问题的时候，将其中指定的内容随机化呈现。
+例如，每当一个学生提交了一个问题的答案时，后面的问题要随机改变。
 
 .. image:: ../../../shared/building_and_running_chapters/Images/Rerandomize.png
  :alt: The same problem shown twice, with color highlighting on values that 
        can change
 
-If you want to change, or "randomize," specific values in your problem, you
-have to do both the following:
+如果您想将问题的指定内容进行变更或者随机化呈现，您需要做到以下两点：
 
-* Make sure that your problem contains a Python script that randomizes the
-  values that you want.
+* 确保您的问题包含一个Python脚本，能够将您想要的内容进行随机化处理。
 
-* Enable randomization in the Problem component. 
+* 问题组件内部的随机化处理。
 
 .. note:: Note that specifying this **Randomization** setting is different 
  from *problem randomization*. The **Randomization** setting randomizes
