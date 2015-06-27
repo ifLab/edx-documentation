@@ -84,10 +84,9 @@ HTML组件编辑选项
  :alt: Image of the HTML component editor
 
 .. note:: 
-  The visual editor is not available for :ref:`course handouts <Adding Course Updates and Handouts>`.
+  此编辑器不能用于 :ref:`course handouts <Adding Course Updates and Handouts>`.
 
-The following image shows call-outs for the editing options and is followed by
-descriptions.
+下图显示编辑器中的选项内容以及各项描述。
 
 .. image:: ../../../shared/building_and_running_chapters/Images/HTML_VisualView_Toolbar.png
   :alt: Image of the HTML editor, with call-outs for formatting buttons
@@ -248,12 +247,12 @@ HTML组件模板
 
 #. 保存HTML组件。.
 
-#. To test the link, click **View Live Version** or **Preview**. When the unit
-   opens in the LMS, click the linked text and verify that the correct URL
-   opens.
+#. 点击 **查看在线版本** 或 **预览** 测试链接。 
+   单元在LMS中打开以后，点击链接查看URL是否正确。
 
-   Note that if your link is to another HTML component in the course, the unit
-   of that destination component must be published for the link to work.
+
+   注意如果您的链接指向课程中的另一个HTML组件，所指向的单元必须为已发布状态，链接才有效。
+  
 
 
 .. _Add a Link to a Course Unit:
