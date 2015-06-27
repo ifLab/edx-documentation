@@ -185,44 +185,29 @@ When you select the following problem types, the Simple Editor opens with a pref
 
 以下问题模板可在进阶编辑器中打开。
 
-* :ref:`Circuit Schematic Builder` In circuit schematic problems, students
-  create and modify circuits on an interactive grid and submit computer-
-  generated analyses of the circuits for grading.
+* :ref:`Circuit Schematic Builder` 在电路原理问题中,学生可以在一个交互式网格中创建和修改电路，并提交计算机生成的电路分析来进行分级
 
-* :ref:`Custom JavaScript` With custom JavaScript display and grading problems,
-  you can incorporate problem types that you've created in HTML into Studio via
-  an IFrame.
+* :ref:`Custom JavaScript` 自定义JavaScript显示和分级问题,您可以通过IFrame将之前用HTML制作的题型并入到Studio中。
 
-* :ref:`Drag and Drop` Drag and drop problems require students to drag text or
-  objects to a specific location on an image.
+* :ref:`Drag and Drop` 拖放问题要求学生能够拖动文本或者将文本放到一张图像的指定位置。
 
-* :ref:`Image Mapped Input` Image mapped input problems require students to
-  click a specific location on an image.
+* :ref:`Image Mapped Input` 图像映射输入问题要求学生能够点击一张图像上的指定位置。
 
-* :ref:`Math Expression Input` Math expression input problems require students
-  to enter a mathematical expression as text, such as e=m\*c^2.
+* :ref:`Math Expression Input` 数学表达式输入问题还要求学生能够输入数学表达式的文本，如e=m*c^2。
 
-* :ref:`Problem with Adaptive Hint` These problems can give students feedback
-  or hints based on their responses. Problems with adaptive hints can be text
-  input or multiple choice problems.
+* :ref:`Problem with Adaptive Hint` 这些问题会根据学生的答案给予学生一些回馈或提示。
 
-* :ref:`Problem Written in LaTeX` This problem type allows you to convert
-  problems that you previously wrote in LaTeX into the edX format. Note that
-  this problem type is a prototype, and is not supported.
+* :ref:`Problem Written in LaTeX` 这类题型能够将您用LaTeX写好的问题转换为edX格式。注意这种题型仍然在试用中，未来可能不再支持这种题型。
 
-* :ref:`Write Your Own Grader` Custom Python-evaluated input (also called
-  "write-your-own-grader" problems evaluate students' responses using an
-  embedded Python script that you create. These problems can be any type.
+* :ref:`Write Your Own Grader` 自定义Python-评估输入（也被称作“自编分级”题型)能够通过您自己创建的嵌入式Python脚本来评估学生的答案。
 
 .. _Problem Settings:
 
 ******************
-Problem Settings
+问题设置
 ******************
 
-In addition to the text of the problem, problems that you create using a
-Problem component have the following settings. These settings appear on the
-**Settings** tab in the component editor.
+除了问题的文本,您使用问题组件创建的问题包括以下设置。这些设置在组件编辑器中的设置选项卡中。
 
 *  `Display Name`_
 *  `Maximum Attempts`_
@@ -236,12 +221,10 @@ Problem component have the following settings. These settings appear on the
  :alt: Image of the Settings tab in a Problem component
 
 ===============
-Display Name
+显示名称
 ===============
 
-This setting indicates the name of your problem. This name appears as a
-heading above the problem and as a tooltip in the learning sequence at the top
-of the **Courseware** page.
+此设置显示您问题的名称。问题名称将以问题标题的形式显示在LMS和页面上方的条状区域。
 
 .. image:: ../../../shared/building_and_running_chapters/Images/ProbComponent_LMS_DisplayName.png
  :alt: Image of the problem in a unit page from a student's point of view
@@ -251,9 +234,10 @@ Unique, descriptive display names help you identify problems quickly and
 accurately for analysis. For more information, see `Using edX Insights`_.
 
 ==============================
-Maximum Attempts
+最多答题次数
 ==============================
 
+此设置规定学生最多可尝试回答问题次数。系统默认学生的回答次数不受限制。
 This setting specifies the number of times a student is allowed to attempt
 answering the problem. By default, the course-wide **Maximum Attempts**
 advanced setting is null, meaning that the maximum number of attempts for
@@ -261,60 +245,51 @@ problems is unlimited. If the course-wide **Maximum Attempts** setting is
 changed to a specific number, the **Maximum Attempts** setting for individual
 problems defaults to that number, and cannot be set to unlimited.
 
-.. note:: Only questions that have a **Maximum Attempts** setting of 1 or 
- higher are included in the answer distribution computations used in edX
- Insights and the Student Answer Distribution report.
+.. note:: 将问题最多回答次数设置为1或者更多，问题才能出现在学生答题统计报告中，您可以在上课时下载该报告。
 
 
 .. _Problem Weight:
 
 ==============================
-Problem Weight
+问题权重
 ==============================
 
-.. note:: Studio stores scores for all problems, but scores only count 
-          toward a student's final grade if they are in a subsection that is
-          graded.
+.. note:: Studio可以保存所有问题的分数，但是只有这些分数属于某个小节，
+          并且这个小节被设定成计分后，才会对学生的期末成绩造成影响。
 
-This setting specifies the maximum number of points possible for the
-problem. The problem weight appears next to the problem title.
+这项设定可以规定问题的最大分值。问题的分值标在在问题题目后面。
 
 .. image:: ../../../shared/building_and_running_chapters/Images/ProblemWeight_DD.png
  :alt: Image of a problem from a student's point of view, with the possible 
        points circled
 
-By default, each response field, or "answer space", in a Problem
-component is worth one point. Any Problem component can have multiple
-response fields. For example, the Problem component above
-contains one dropdown problem that has three separate questions for students
-to answer, and thus has three response fields.
+系统默认，问题组件中的每一个应字段或者“答题框”都值1分。
+每一个问题组件都包含多个应字段。
+例如，上述问题组件包含一个下拉问题，这个下拉问题包含三个独立问题需要学生来回答，因此它有三个应字段。
 
-The following Problem component contains one text input problem,
-and has just one response field.
+下面的问题组件包含一道文本输入题，就只有一个应字段。
 
 .. image:: ../../../shared/building_and_running_chapters/Images/ProblemWeight_TI.png
  :alt: Image of a text input problem from a student's point of view
 
-Computing Scores
+计算分数
 ****************
 
-The score that a student earns for a problem is the result of the
-following formula:
+学生回答问题得分由以下公式计算得出：
 
-**Score = Weight × (Correct answers / Response fields)**
+**分数=问题权重×（正确答案/输入总和）**
 
-*  **Score** is the point score that the student receives.
+*  **分数** 指的是学生回答问题所得的分数。
 
-*  **Weight** is the problem's maximum possible point score.
+*  **问题权重** 指的是回答这个问题所能获得的最高分数。
 
-*  **Correct answers** is the number of response fields that contain correct
-   answers.
+*  **正确答案** 指的是所有回答中正确答案的数量。
 
-*  **Response fields** is the total number of response fields in the problem.
+*  **输入总和** 指的是所有这个题组本身所拥有的问题数量总和。
 
-**Examples**
+**范例**
 
-The following are some examples of computing scores.
+接下来是一些计算分数的例子。
 
 *Example 1*
 
