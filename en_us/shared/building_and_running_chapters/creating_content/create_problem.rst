@@ -328,32 +328,29 @@ problems defaults to that number, and cannot be set to unlimited.
 
 * 问题组件内部的随机化处理。
 
-.. note:: Note that specifying this **Randomization** setting is different 
- from *problem randomization*. The **Randomization** setting randomizes
- variables within a single problem. Problem randomization offers different
- problems or problem versions to different students. For more information, see
- :ref:`Problem Randomization`.
+.. note:: 此随机化设置不同于问题随机化处理。随机化设置是在一个问题内部进行随机处理。
+ 而问题随机化是指将不同问题或者同一问题的不同版本分配给不同的学生。更多信息,请参见
+ :ref:`Problem Randomization` 。
 
-To enable randomization, select an option for the **Randomization** setting.
-This setting has the following options.
+置随机化，选择随机化设置选项。此设置含四个选项。
 
 +-------------------+--------------------------------------+
-| **Always**        | Students see a different version of  |
-|                   | the problem each time they click     |
-|                   | **Check**.                           |
+| **总是**          | 学生每次点击检查按钮之后，           |
+|                   | 总会看到一个问题的不同版本。         |
+|                   |                                      |
 +-------------------+--------------------------------------+
-| **On Reset**      | Students see a different version of  |
-|                   | the problem each time they click     |
-|                   | **Reset**.                           |
+| **重置**          | 学生每次点击重置按钮之后，           |
+|                   | 总会看到一个问题的不同版本。         |
+|                   |                                      |
 +-------------------+--------------------------------------+
-| **Never**         | All students see the same version    |
-|                   | of the problem. This is the default. |
+| **从不**          | 所有学生都会看到问题的同一版本。     |
+|                   | 此为系统默认。                       |
 +-------------------+--------------------------------------+
-| **Per Student**   | Individual students see the same     |
-|                   | version of the problem each time     |
-|                   | they look at it, but that version    |
-|                   | is different from the version that   |
-|                   | other students see.                  |
+| **每个学生   **   | 学生个人每次查看，                   |
+|                   | 都会看到相同版本的问题，             |
+|                   | 但此版本不同于其他学生查看的版本。   |
+|                   |                                      |
+|                   |                                      |
 +-------------------+--------------------------------------+
 
 .. note:: The edX Platform has a 20-seed limit for randomization.
