@@ -278,9 +278,7 @@ HTML组件模板
 
    ``/jump_to_id/<unit identifier>``
 
-   Make sure to replace <unit identifier> (including the brackets) with the
-   unit identifier that you copied in step 1, and make sure to include both
-   forward slashes (/).
+   以上代码中的<unit identifier>即第二步中复制的单元ID（包括角括号），注意，所有“/”字符都要保留。
 
    .. image:: ../../../shared/building_and_running_chapters/Images/HTML_Insert-EditLink_CourseUnit.png
     :alt: Image of the Insert link dialog box with a link to a unit identifier
@@ -291,18 +289,16 @@ HTML组件模板
     not use ``/jump_to_id/<unit identifier>``, the link will be broken if you
     export then import the course.
 
-6. If you want the link to open in a new window, click the drop-down arrow next
-   to the **Target** field, and then select **New Window**. If not, you can
-   leave the default value.
+6. 如果想在新窗口中打开链接，单击“目标”字段后的下拉箭头，选择“新窗口”。如不需要，保留默认设置即可。
 
-#. Click **Insert**.
+#. 单击“确定”。
 
-#. Save the HTML component and test the link.
+#. 保存HTML组件，调试链接。
 
 .. _Add a Link to a File:
 
 
-Add a Link to a File
+添加文件链接
 ***********************************
 
 You can add a link in an HTML component to any file that is uploaded for the
@@ -310,60 +306,52 @@ course. For more information about uploading files, see :ref:`Add Files to a
 Course`.
 
 .. tip:: 
- When adding links to files, open the HTML component and the **Files &
- Uploads** page in separate browser windows. You can then more quickly copy and
- paste file URLs.
+ 您在HTML组件中添加的链接可以指向任何已经上传的课程文件。
+ 更多关于上传文件的信息请参考“添加课程文件”一节的内容。
 
-#. On the **Files & Uploads** page, copy the **Studio** URL of the file.
+#. 在“文件与上传”界面，复制文件的“嵌入URL”。
 
   .. image:: ../../../shared/building_and_running_chapters/Images/HTML_Link_File.png
    :alt: Image of Files and Uploads page with the Studio URL field circled 
   
   .. note:: 
-   You must use the **Studio** URL to link to the file, not the **Web** URL.
+   链接到文件必须使用文件的“嵌入URL”，而非“外部URL”。
 
-2. In the HTML component where you want to add the link, select the text that
-   you want to make into the link.
+2. 选择想要添加链接的文本。
 
-#. Click the link icon in the toolbar.
+#. 单击工具栏中的“链接”图标。
 
-#. In the **Insert link** dialog box, enter the Studio URL for the file in the
-   **URL** field.
+#. 打开“插入链接”对话框，在“URL”字段后输入以下内容：
 
    ``/static/{FileName}.{type}``
 
-   Make sure to include both forward slashes (/).
+   记住，保留所有“/”字符。
 
    .. image:: ../../../shared/building_and_running_chapters/Images/HTML_Insert-EditLink_File.png
     :alt: Image of the Insert link dialog box with a link to a file
 
-#. If you want the link to open in a new window, click the drop-down arrow next
-   to the **Target** field, and then select **New Window**. If not, you can
-   leave the default value.
+#. 如果想在新窗口中打开链接，单击“目标”字段后的下拉箭头，选择“新窗口”。如不需要，保留默认设置即可。
 
-#. Click **Insert**.
+#. 单击“插入”。
 
-#. Save the HTML component and test the link.
+#. 保存HTML组件，调试链接。
 
 .. _Add an Image to an HTML Component:
 
 ***********************************
-Add an Image to an HTML Component
+在HTML组件中添加图像
 ***********************************
 
-When using the visual editor, you can add any image that you have uploaded for
-the course to an HTML component. For more information about uploading images,
-see :ref:`Add Files to a Course`.
+使用可视化编辑器时，您可以给HTML组件添加已经上传的课程图像。
+更多关于上传图像的信息请参见 :ref:`Add Files to a Course`.
 
-Review :ref:`Best Practices for Describing Images` before you add images to
-HTML components.
+在给HTML组件添加图像之前，请先回顾 :ref:`Best Practices for Describing Images` 一节的内容。
 
 .. note:: 
  Ensure that you obtain copyright permissions for images you use in
  your course, and that you cite sources appropriately.
 
-To add an image, you'll need the URL of the image that you uploaded to the
-course. You'll then create a link to the image in the HTML component.
+要添加图像，首先需要您上传图像文件的URL，然后才能添加图像链接。
 
 .. tip:: 
  When adding images, open the HTML component and the **Files &
