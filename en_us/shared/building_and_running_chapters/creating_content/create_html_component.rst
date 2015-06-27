@@ -359,8 +359,7 @@ Course`.
   .. note:: 
    添加链接时只能使用文件的“嵌入URL”，而非“外部URL”。
 
-2. In the HTML component where you want to add the link, click the image icon
-   in the toolbar.
+2. 在HTML组件中点击需要添加链接的图片按钮。
 
 #.  打开“插入链接”对话框，在“URL”字段后输入以下内容：
 
@@ -371,16 +370,14 @@ Course`.
    .. image:: ../../../shared/building_and_running_chapters/Images/HTML_Insert-Edit_Image.png
     :alt: Image of the Insert image dialog box with a reference to a file
 
-4. Enter alternative text in the **Image description** field. This text becomes
-   the value of the ``alt`` attribute in HTML and is required for your course
-   to be fully accessible. See :ref:`Best Practices for Describing Images` for
-   more information.
+4. 在 **图片描述** 中填入内容。
+   此内容将是``alt``属性的值。必须输入此内容课程才有完全访问性。
+   更多信息请参考 :ref:`Best Practices for Describing Images` for
 
 #. 您可以自定义图像尺寸。在“固定比例”项后挑勾，以确保图片的长宽比例为固定值。
 
-   With **Constrain proportions** selected, you only change one dimension. When
-   you tab out of the field, the other dimension changes to a value that
-   maintains the same image proportions.
+   选择 **固定比例** 之后，您只能改变长或宽中的一项。另一项将按相同比例改变。
+
 
 #. 如要改变图片间距和边界，单击“高级”选项卡
 
