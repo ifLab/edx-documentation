@@ -350,22 +350,16 @@ Studio中的问题视图
 
 +-------------------+--------------------------------------+
 | **总是**          | 学生点击显示答案按钮时，显示答案。   |
-|                   | student clicks the **Show Answer**   |
 |                   |                                      |
 +-------------------+--------------------------------------+
-| **Answered**      | Show the answer after the student    |
-|                   | tries to answer the problem.         |
+| **已回答**        | 在学生回答问题之后显示答案。         |
 |                   |                                      |
-|                   | If the question can be, and is,      |
-|                   | reset, the answer                    |
-|                   | is not shown until the student tries |
-|                   | the problem again. (When a student   |
-|                   | answers a question, the question is  |
-|                   | considered to be                     |
-|                   | both attempted and answered. When    |
-|                   | the question is reset, the question  |
-|                   | is still attempted, but not yet      |
-|                   | answered.)                           |
+|                   | 如果问题重置，答案在学生再次回答之   |
+|                   | 前不可见。（学生回答问题之后，问题   |
+|                   | 为已尝试和已回答状态。               |
+|                   | 问题重置之后，问题将是尝试而未解答   |
+|                   | 状态。                               |
+|                   |                                      |
 +-------------------+--------------------------------------+
 | **Attempted**     | Show the answer after the student    |
 |                   | tries to answer the problem.         |
