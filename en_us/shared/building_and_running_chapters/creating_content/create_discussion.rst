@@ -43,17 +43,15 @@
    .. image:: ../../../shared/building_and_running_chapters/Images/Disc_Create_Edit.png
     :alt: Image of the discussion component with the Edit button circled
 
-#. 讨论组件编辑打开后，按照指示填写 **分类** 、 **显示** 名称及 **子分类** 区域。
+#. 讨论组件编辑打开后，按照指示填写 **分类** 、 **显示名称** 及 **子分类** 区域。
    
    .. image:: ../../../shared/building_and_running_chapters/Images/DiscussionComponentEditor.png
     :alt: Image of the discussion component editor with a category of "Getting Graded" and a subcategory of "Answering More Than Once"
 
-   The value in the **Display Name** field identifies the discussion in the
-   course content. The values in the **Category** and **Subcategory** fields
-   appear in the list of discussion topics on the **Discussion** tab. 
+   **显示名称** 域中的值定义课程内容中的讨论。
+   **分类** 和 **子分类** 区域的值显示在讨论主题列的 **讨论** 栏中。
 
-   .. note:: Each **Category**/**Subcategory** pair for the discussion topics
-      in your course must be unique.
+   .. note:: 每个讨论主题中的 **分类**/**子分类** 对必须是唯一的。 
 
    .. image:: ../../../shared/building_and_running_chapters/Images/Discussion_category_subcategory.png
     :alt: A list of discussions with the "Answering More Than Once" topic indented under "Getting Graded"
