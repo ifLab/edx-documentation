@@ -1,13 +1,15 @@
 .. _Working with Discussion Components:
 
 ###################################
-Working with Discussion Components
+创建讨论组件
 ###################################
 
 *******************
-Overview
+概况
 *******************
 
+您可在单元内添加讨论组件，提出有关本单元的问题，并且让学生回答和相互讨论。
+您
 You can add discussion components to a unit to pose questions related to the
 unit and give students a chance to respond and interact on a specific subject.
 Discussion topics that you create by adding discussion components in your
