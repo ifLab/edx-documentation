@@ -421,7 +421,7 @@ problems defaults to that number, and cannot be set to unlimited.
 .. _Show Reset Button:
 
 =================
-Show Reset Button
+修改已发布的问题
 =================
 
 This setting defines whether a **Reset** button is visible on the problem.
@@ -490,22 +490,17 @@ student scores update when the student's **Progress** page is refreshed. In a
 live section, students will see the effect of these changes.
 
 ===============
-Workarounds
+工作区
 ===============
 
-If you have to modify a released problem in a way that affects grading, you
-have two options within Studio to assure that every student has the opportunity
-to submit a new response and be regraded. Note that both options require you to
-ask your students to go back and resubmit answers to a problem.
+如果您不得不修改一个已经发布的问题，而且会影响分数，有两种方法来解决。
+注意，这两种方法都需要您的学生重新回答问题并提交答案。
 
-*  In the Problem component that you changed, increase the number of attempts
-   for the problem. Then ask all your students to redo the problem.
+*  在问题组件中，增加回答问题尝试次数，然后让学生重新答题。
 
-*  Delete the entire Problem component in Studio and create a new Problem
-   component with the content and settings that you want. (If the revisions you
-   must make are minor, duplicate the Problem component before you delete it
-   and revise the copy.) Then ask all your students to complete the new
-   problem.
+*  删除Studio中的整个问题组件，根据内容和设定，重新创建一个问题组件。
+   然后让所有学生回答新的问题。
+
 
 For information about how to review and adjust student grades in the LMS, see
 :ref:`Grades`.
@@ -513,126 +508,101 @@ For information about how to review and adjust student grades in the LMS, see
 .. _Additional Work with Problems:
 
 ************************************
-Additional Work with Problems
+创建问题的其他情况
 ************************************
 
-You have some further options when you work with problems. You can include more
-than one problem in a single problem component, or you can set up a problem
-that presents different versions to different students.
+当您创建问题时，可能会有多个选项。
+您可以在一个问题组件内设置多个问题，或者您可以将一个问题设置成不同学生做不同版本。
 
 .. _Multiple Problems in One Component:
 
 ====================================
-Multiple Problems in One Component
+一个组件内的多个问题
 ====================================
 
-You may want to create a problem that has more than one response type. For
-example, you may want to create a numerical input problem, and then include a
-multiple choice question about the numerical input problem. Or, you may want a
-student to be able to check the answers to many problems at one time. To do
-this, you can include multiple problems inside a single Problem component. The
-problems can be different types.
+您可能会创建一个问题，问题答案不只一种。
+例如，您想创建一个数值输入的问题，然后创建这个数值输入问题的多个选项。
+或者，您想让学生一次查看多个问题的答案。
+设置这样的问题，您可以在一个组件内设置多个问题。这些问题可以是不同题型的。
 
 .. note:: 
   You cannot use a :ref:`Custom JavaScript` in a component that contains more
   than one problem. Each custom JavaScript problem must be in its own
   component.
 
-To create multiple problems in one component, create a new Blank Advanced
-Problem component, and then add the XML for each problem in the component
-editor. You only need to include the XML for the problem and its answers. You
-do not have to include the code for other elements, such as the **Check**
-button.
+为了在一个组件内建立多个问题，可以新建一个空的进阶问题组件，然后在组件编辑器中为每个问题添加XML。
+您只需将XML添加到问题和答案中即可。您不必为其它内容添加代码，比如检查按钮。
 
-Elements such as the **Check**, **Show Answer**, and **Reset** buttons, as well
-as the settings that you select for the Problem component, apply to all of the
-problems in that component. Thus, if you set the maximum number of attempts to
-3, the student has three attempts to answer the entire set of problems in the
-component as a whole rather than three attempts to answer each problem
-individually. If a student clicks **Check**, the LMS scores all of the problems
-in the component at once. If a student clicks **Show Answer**, the answers for
-all the problems in the component appear.
+检查按钮，显示答案按钮，及重置按钮还有您为问题组件选择的设置，适用于组件内的所有问题中。
+因此，如果您将尝试答题次数设置为3，那么学生则有三次机会来回答组件内的整套题，而不是组件内每道题都可以回答3次。
+如果学生点击检查，那么LMS就会马上计算本组件内所有问题的得分。
+如果学生点击显示答案，那么组件内所有问题的答案都会显示出来。
 
 .. _Problem Randomization:
 
 ===========================
-Problem Randomization
+问题随机化
 ===========================
 
-You may want to present different students with different problems, or
-different versions of the same problem. To do this, you'll create a Problem
-component for each problem or version in Studio, and then edit your course
-outside of Studio to randomize the problem that students see.
+您可能想给不同学生出不同的题，或者同一问题使用不同版本。
+您可以用Studio为每个问题或同一问题的每个版本创建一个问题组件，然后对课程进行编辑，以使得学生查看问题时可以随机变化。
 
-Note that *problem randomization* is different from the **Randomization**
-setting in Studio. The **Randomization** setting randomizes variables within a
-single problem. Problem randomization offers different problems or problem
-versions to different students.
+请注意在Studio中，问题随机化与随机化设置是不同的。
+随机化设置是指一个问题内部的随机变化。
+问题随机化是让不同学生能查看不同问题或者同一问题的不同版本。
 
-.. note:: Creating problems with versions that can be randomized requires you 
- to export your course, edit some of your course's XML files in a text editor,
- and then re-import your course. We recommend that you create a backup copy of
- your course before you do this. We also recommend that you only edit your
- course files in the text editor if you're very familiar with editing XML.
+.. note:: 设置不同版本问题随机变化需要您将您的课程进行输出，在文本编辑器中编辑您课程中的XML文件，然后再将您的课程导入到Studio中。我们建议您操作之前，将您的课程进行备份。如果您对XML编辑不是很熟悉，我们建议您用文本编辑器编辑您的课程。
 
-Terminology
+术语
 ************
 
-Sections, subsections, units, and components have different names in the
-**Course Outline** view and in the list of files that you'll see after you
-export your course and open the .xml files for editing. The following table
-lists the names of these elements in the **Course Outline** view and in a list
-of files.
+段，节，单元和组件在课程预览视图中与课程导出后文件列表中的名称不同，打开XML文件进行编辑的时候，这些名称也不同。
 
 .. list-table::
    :widths: 15 15
    :header-rows: 0
 
-   * - Course Outline View
-     - File List
-   * - Section
-     - Chapter
-   * - Subsection
-     - Sequential
-   * - Unit
-     - Vertical
-   * - Component
-     - Discussion, HTML, problem, or video
+   * - 课程预览视图
+     - 文件列表
+   * - 段
+     - 章
+   * - 节
+     - 横向
+   * - 单元
+     - 纵向
+   * - 组件
+     - 讨论, HTML, 问题, 或视频
 
-For example, when you want to find a specific section in your course, you'll
-look in the **Chapter** folder when you open the list of files that your course
-contains. To find a unit, you'll look in the **Vertical** folder.
+例如，如果您想在您的课程里面找一个特定部分，您打开课程的文件列表，在章节文件夹中查找。要找某一章节，您就查找纵向文件夹。
 
 .. _Create Randomized Problems:
 
-Create Randomized Problems
+设置随机化问题
 ****************************
 
-#. In the unit where you want to create a randomized problem, create a separate
-   Problem component for each version or problem that you want to randomize.
-   For example, if you want to offer four versions or problems, you'll create
-   four separate Problem components. Make a note of the 32-digit unit ID that
-   appears in the **Unit Identifier** field under **Unit Location**.
+#. 在需要设置随机化问题的单元中，为每一个问题或者每一个问题版本创建一个单独的问题组件。
+   例如，您想要做4个问题版本，您就要创建4个单独的问题组件。
+   记录一个出现在单元位置的单元识别符字段的32位的单元ID。
+   
 
-#. Export your course. For information about how to do this, see
-   :ref:`Exporting and Importing a Course`. Save and extract the .tar.gz file
-   that contains your course in a memorable location so that you can find
-   it easily.
+#. 导出您的课程。相关信息，请查看
+   :ref:`Exporting and Importing a Course`。
+   保存包含您您课程的记忆位置的.tar.gz文件，这样您就能很容易的找到它。
 
-#. In the list of folders and files, open the **Vertical** folder.
+#. 在文件和文件夹列表中，打开纵向文件夹。
 
-   .. note:: If your unit is not published, open the **Drafts** folder, and 
-    then open the **Vertical** folder in the **Drafts** folder.
+   .. note:: 如果您这一单元还未发布，打开草稿文件夹，然后打开草稿中的纵向文件夹。
 
-#. In the **Vertical** folder, locate the .xml file that has the same name as
-   the unit ID that you noted in step 1, and then open the file in a text
-   editor such as Sublime 2. For example, if the unit ID is
-   e461de7fe2b84ebeabe1a97683360d31, you open the
-   e461de7fe2b84ebeabe1a97683360d31.xml file.
 
-   The file contains a list of all the components in the unit, together with
-   the URL names of the components. For example, the following file contains
-   four Problem components.
+#. 在纵向文件夹中，找到与您在第一步中标记的单元ID名称相同的.xml文件，
+   在文本编辑器中打开该文件，比如Sublime 2。
+   举个例子，如果这个单元ID是e461de7fe2b84ebeabe1a97683360d31，那么您就
+   打开e461de7fe2b84ebeabe1a97683360d31.xml这个文件。
+
+
+   这个文件包含了在这个单元所有的组件，以及这些组件在URL中的名称。
+   例如，以下文件包含4个问题组件。
+
 
    .. code-block:: xml
      
@@ -643,8 +613,7 @@ Create Randomized Problems
           <problem url_name="88987707294d4ff0ba3b86921438d0c0"/>
        </vertical>
 
-#. Add ``<randomize> </randomize>`` tags around the components for the problems
-   that you want to randomize.
+#. 为您要进行随机化处理的问题组件添加<随机化> </随机化>标签。
 
    .. code-block:: xml
       
@@ -657,29 +626,24 @@ Create Randomized Problems
          </randomize>
        </vertical>
 
-#. After you add the ``<randomize> </randomize>`` tags, save and close the .xml
-   file.
+#. 添加<随机化> </随机化>标签标签之后，保存并关闭.xml文件。
 
-#. Re-package your course as a .tar.gz file.
+#. 重新将您的课程压缩为a .tar.gz文件。
 
-   For information about how to do this on a Mac, see `How to Create a Tar GZip
-   File from the Command Line <http://osxdaily.com/2012/04/05/create-tar-gzip/>`_.
+   了解关于如何在Mac系统中操作的相关信息，请查看 <http://osxdaily.com/2012/04/05/create-tar-gzip/>`_.
 
-   For information about how to do this on a Windows computer, see `How to Make
-   a .tar.gz on Windows <http://stackoverflow.com/questions/12774707/how-to-make-a-tar-gz-on-windows>`_.
+   了解关于如何在windows系统操作的相关信息，请查看 <http://stackoverflow.com/questions/12774707/how-to-make-a-tar-gz-on-windows>`_.
 
-#. In Studio, re-import your course.
+#. 在Studio中，再次导入您的课程。
 
 .. note::
 
-  * Once you've implemented randomization, you can only see one of the versions
-    or problems in Studio. You can edit that single problem directly in Studio,
-    but to edit any of the other problems, you'll have to export your course,
-    edit the problems in a text editor, and then re-import the course. This is
-    true for instructors as well as course teams.
+  * 一旦您完成了随机化处理，您就只能在Studio中看到一个问题或者一个问题版本。
+    您可以在Studio中，直接编辑单个问题，但是若要编辑其他问题，则须将课程进行导出，
+    然后在文本编辑器中编辑您的课程。无论教师还是课程团队都要这样操作。
+    
   
-  * A .csv file for student responses contains the responses to each of the
-    problems in the problem bank.
+  * 学生答案生成的.csv文件包含了试题库中学生答的所有问题的答案。
 
 .. include:: ../../../shared/exercises_tools/adding_tooltip.rst
 
