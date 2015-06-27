@@ -119,47 +119,39 @@ change<Publish a Unit>` 之后学生所看到的界面。
 例如，在发布子章节之前，课程教员可以将所有问题完成一遍，以确保正确答案显示绿勾，其他答案显示红色的X。
 
 ============
-Student View
+学生视角
 ============
 
-When viewing your course in the LMS, you can use the **Student** view to see the
-course with all course content that is intended for all students.
+当您在学习管理系统中查看课程时，您可以使用 **学生** 视角来查看学生将看到的课程内容样式。
 
-.. note:: If you have enabled your course for cohorts and have designated some
-  content as visible only to certain content groups, you can select a content
-  group from the **View Course As** drop down list to see the content exactly
-  as a student in a cohort associated with that content group will see it. For
-  details, see :ref:`Preview Cohort Specific Courseware`.
+.. note:: 如果您建立了群并将您的课程设置为对特定内容小组可见，您可以在 **查看课程视角**
+  中的下拉列表里选择内容小组以查看小组成员浏览课程的形式。更多细节请参阅 :ref:`Preview Cohort Specific Courseware` 。
 
-To switch to the **Student** view, click **View this course as** and select
-**Student** from the drop down list.
+点击 **查看课程视角** 下拉列表，选择 **学生** 以切换至学生视角。
 
 .. image:: ../../../shared/building_and_running_chapters/Images/test-view-as-student.png
  :alt: Image of the View Course As drop down list with Staff, Student, and
   named content group options
 
-In **Student View**:
+在 **学生视角** 中：
 
-* You do not see sections or subsections that have not yet been released.
+* 您无法看到未发布的章节和子章节。
 
-* If the section and subsection are released, you see units that are
-  :ref:`Published and Live`. For units that are
-  :ref:`Draft (Unpublished Changes)`, you see the last published version of the
-  unit. 
+* 如果章节和子章节已发布，您可以看到 :ref:`Published and Live` 的章节。
+  您将能看到标记为 :ref:`Draft (Unpublished Changes)` 单元的最新发布版本。
 
-* You do not see units that are :ref:`Draft (Never Published)` or
-  :ref:`Visible to Staff Only`. To see these units, you must switch back to Instructor view or use Preview mode as described in :ref:`Preview Course Content`.
+* 您不能看到标记为 :ref:`Draft (Never Published)` 和 :ref:`Visible to Staff Only` 的单元。
+  要查看这些单元，您必须切换到导师视角 :ref:`Preview Course Content` 或中描述的预览模式。
 
-* You can access the Instructor Dashboard, which has features and reports that
-  help you run your course.
+* 您可以进入导师面板，该面板中的特性和报告将帮助您管理您的课程。
 
 
 *************************************
-Open Studio from Your Live Course
+在您的在线课程中打开Studio
 *************************************
 
-When you are viewing your course in the LMS as **Staff View**, you can open
-Studio directly.
+当您用 **员工视角** 在学习管理系统中查看课程时。您可以直接打开Studio。
+
    
 * In a unit page, click **View Unit in Studio**.
   
