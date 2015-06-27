@@ -68,13 +68,11 @@
 #. **解析** 教师可以添加一些解析。当学生点击 **显示答案** 按钮时，会显示相关解析。
 
 #. **重置按钮** 此按钮可以清除学生输入的内容，使问题保持原样。
-   
+   如果学生已经提交了答案，点击 **重置按钮** 清除已经提交的内容。
+   如果问题包含随机变量且随机化设置为 **重置** ，问题中的值将改变。
+   如果超过了最多尝试次数，重置按钮将不可见。
    not yet been submitted, and try again to answer the question. If the student
-   has already submitted an answer, clicking **Reset** clears the submission
-   and, if the problem contains randomized variables and randomization is set
-   to **On Reset**, changes the values the student sees in the problem. If the
-   number of Maximum Attempts that was set for this problem has been reached,
-   the **Reset** button is not visible.
+
 
 #. **隐藏答案按钮**
 
@@ -123,25 +121,18 @@ Studio中的问题视图
 简易编辑器
 =================
 
+当您选择下列问题类型时，简易编辑器将开启并显示一个问题示例。
 
-When you select the following problem types, the Simple Editor opens with a preformatted example problem.
+*  :ref:`Checkbox`: 在复选框问题中，学生在列表答案中，选出一项或多项。
 
-*  :ref:`Checkbox`: In checkbox problems, students select one or more options
-   from a list of possible answers.
+*  :ref:`Dropdown`: 在下拉问题中，学生从下拉列表中选择一个答案。
 
-*  :ref:`Dropdown`: In dropdown problems, students select one answer from a
-   dropdown list.
+*  :ref:`Multiple Choice`: 多项选择题要求学生直接从问题下的多个选项中选出一个答案
 
-*  :ref:`Multiple Choice`: Multiple choice problems require students to
-   select one answer from a list of choices that appear directly below
-   the question.
 
-*  :ref:`Numerical Input`: Numerical input problems require answers that
-   include only integers, fractions, and a few common constants and
-   operators.
+*  :ref:`Numerical Input`: 数值输入题要求答案只能为整数，分数，普通常量和运算符。
 
-*  :ref:`Text Input`: In text input problems, students enter a short text
-   answer to a question.
+*  :ref:`Text Input`: 在文本输入题中，学生要输入简短文本来回答问题。
 
 下图显示的是简易编辑器中的多项选择题。
 
