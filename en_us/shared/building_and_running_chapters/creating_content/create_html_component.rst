@@ -2,26 +2,24 @@
 
 
 #############################
-Working with HTML Components
+如何使用HTML组件
 #############################
 
 ***********************
-HTML Component Overview
+HTML组件概述
 ***********************
 
-HTML, or HyperText Markup Language, is the standard markup language used to
-create web pages. Web browsers present HTML code in a more readable format.
+HTML，即超文本标记语言，是构建网页的基本标记语言。
+网页浏览器的功能就是将HTML编码以更可读的格式呈现。
 
-When students see text and images in your course, they are seeing HTML code
-that is formatted and presented by their browsers. For more information about
-HTML, see `Wikipedia <http://en.wikipedia.org/wiki/HTML>`_.
+也就是说，当学生看见您在课堂上发布的文本或图片时，实际上看的是浏览器格式化后呈现的HTML编码。
+更多关于HTML的信息请参考维基百科。 `Wikipedia <http://en.wikipedia.org/wiki/HTML>`_.
 
-HTML components are the basic building blocks of your course content. You use
-HTML components to add and format text, links, images, and more. You can choose
-to create HTML components directly in HTML code, or using a visual editor that
-hides the HTML code details, as described below.
+HTML组件是您创建课程内容时的主要元素。
+您可使用HTML组件添加并格式化文本、链接、图像等等。
+您可以选择直接用HTML编码创建HTML组件，或者使用可视化编辑器，该工具会隐藏HTML编码的细节，这在后面的教程中会提到。
 
-For more information, see the following topics:
+更多信息请参考以下章节：
 
 * :ref:`Options for Editing HTML Components`
 * :ref:`The Visual Editor`
@@ -33,54 +31,46 @@ For more information, see the following topics:
 * :ref:`Import LaTeX Code`
 
 .. note:: 
- Review :ref:`Developing Your Course Index` and :ref:`Best Practices for HTML
- Markup` before you start working with HTML components.
+ 在开始创建HTML组件之前，请先回顾 :ref:`Developing Your Course Index` 和 :ref:`Best Practices for HTML
+ Markup` 中的内容。
 
-To add an instant hangout to an HTML component, see :ref:`Google Instant
-Hangout`.
+若想给HTML组件添加快速搜索框，参考 :ref:`Google Instant
+Hangout` 。
 
 
 .. _Options for Editing HTML Components:
 
 ********************************************
-Options for Editing HTML Components
+HTML组件编辑选项
 ********************************************
 
-You can work with HTML in two ways:
+您可以用以下两种方法操作HTML：
 
 * :ref:`The Visual Editor`
   
-  With the visual editor you can create, edit, and format content in a word
-  processing-like interface, without using HTML code directly. With the visual
-  editor, you can more easily format your content, and add links and images.
-  The visual editor provides access to HTML code so you can make small changes
-  to formatting, if required. However, the HTML view in the visual editor does
-  not provide the detailed control you can get with the raw HTML editor, and
-  does not support custom formatting or scripts.
+  您可使用可视化编辑器，通过一个类似文字处理的界面创建、编辑或格式化课程内容，而不需要直接使用HTML编码。
+  使用该编辑器，您可以更方便地格式化内容，或给内容添加链接和图像。
+  同时，该编辑器支持HTML编码，因此可以在格式化的过程中作出细小的改变。
+  不过，视觉化编辑器与原始HTML编辑器不同，前者中的HTML无法进行细节控制，同时也不支持自定义格式化或自定义脚本。
 
 * :ref:`The Raw HTML Editor`
 
-  With the raw HTML Editor, you work directly with HTML code. If you need to
-  use custom formatting or scripts in your content, you should use the raw HTML
-  editor.
+  在该编辑器中，您可直接使用HTML编码进行操作，同时可使用自定义格式化以及脚本模式。
 
 
-Set the Editor for an HTML Component
+为HTML组件设置编辑器
 ************************************
 
-You set the editor for an HTML component in the **Settings** tab:
+您可在 **设置** 标签下为HTML组件设定一个编辑器：
 
 .. image:: ../../../shared/building_and_running_chapters/Images/set_html_editor.png
  :alt: The Editor selection drop-down list in the HTML Component Settings tab
 
-Select **Visual** or **Raw**. When you change the editor, you must click
-**Save** and re-open the component to begin using the new editor.
+选择 **可视化编辑器** 或 **原始编辑器** 。当更改编辑器时，需单击 **保存** ，然后重新打开组件才能开始使用新的编辑器。
 
 .. warning:: 
- If you work with content in the raw HTML editor, then switch to the visual
- editor, you may lose custom HTML that you created. Therefore, it is
- recommended that you start by using the visual editor, then switch to the raw
- HTML editor when you need to create custom HTML.
+ 如果您原本在使用原始HTML编辑器，然后突然切换到可视化编辑器，那么您将丢失已经创建的自定义HTML内容。
+ 因此，如果您需要创建自定义HTML内容，建议您先使用可视化编辑器，然后再切换到原始编辑器。
 
 .. _The Visual Editor:
 
