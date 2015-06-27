@@ -166,44 +166,44 @@ HTML组件模板
 .. _Create an HTML Component:
 
 *****************************
-Create an HTML Component
+创建HTML组件
 *****************************
 
-To create an HTML component:
+如何创建HTML组件：
 
-1. Under **Add New Component**, click **HTML**.
+1.  在 **添加新组件** 菜单下，单击 **html** 。
 
   .. image:: ../../../shared/building_and_running_chapters/Images/NewComponent_HTML.png
    :alt: Image of adding a new HTML component
 
-2. Select the template. 
+2. 选择模板
 
-   The rest of these instructions assume you selected
-   **Text**, which creates an empty component with the visual editor selected.
+   接下来的教程假设您选择的是 **文本** 模板。选择后，会在编辑器中创建一个空组件。
 
-   An empty component appears at the bottom of the unit.
+
+   如图，单元下方出现了一个空组件：
 
   .. image:: ../../../shared/building_and_running_chapters/Images/HTMLComponent_Edit.png
    :alt: Image of an empty HTML component
 
-3. In the component, click **Edit**.
+3. 在该组件中，单击 **编辑** 。
 
-   The HTML component opens in the visual editor.
+   可视化编辑器打开的HTML组件：
 
   .. image:: ../../../shared/building_and_running_chapters/Images/HTMLEditor_empty.png
    :alt: Image of the HTML component editor
 
-4. Enter and format your content. You can :ref:`Work with HTML code` if needed.
+4. 输入内容并设置好格式。如有需要，请参考 :ref:`Work with HTML code` 。
 
-5. Enter a display name (the name that you want students to see). To do this,
-   click **Settings** in the upper-right corner of the component editor, and
-   then enter text in the **Display Name** field.
+5. 输入HTML的展示名（即想让学生看见的名称）。
+   单击右上角的 **设置** 选项，在 **展示名** 字段输入内容。
+   
 
-   To return to the text editor, click **Editor** in the upper-right corner.
+   再单击右上角的 **编辑** 返回组件界面。
 
-6. Click **Save** to save the HTML component.
+6. 单击 **保存** 以储存HTML组件。
 
-When using the visual editor, you can also:
+您还可以使用可视化编辑器：
 
 * :ref:`Add a Link in an HTML Component`
 * :ref:`Add an Image to an HTML Component`
@@ -212,11 +212,10 @@ When using the visual editor, you can also:
 .. _Add a Link in an HTML Component:
 
 ***********************************
-Add a Link in an HTML Component
+在HTML组件中添加链接
 ***********************************
 
-When using the visual editor, to add a link to a website, course unit, or file
-in an HTML component, you work with the **Insert link** dialog box.
+如使用可视化编辑器在HTML组件中添加指向网站、课程单元或文件的链接，您需要打开 **插入链接** 对话框。
 
 .. image:: ../../../shared/building_and_running_chapters/Images/HTML_Insert-EditLink_DBox.png
  :alt: Image of the Insert link dialog box
