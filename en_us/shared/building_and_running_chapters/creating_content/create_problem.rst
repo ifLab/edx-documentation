@@ -346,7 +346,7 @@ problems defaults to that number, and cannot be set to unlimited.
 | **从不**          | 所有学生都会看到问题的同一版本。     |
 |                   | 此为系统默认。                       |
 +-------------------+--------------------------------------+
-| **每个学生   **   | 学生个人每次查看，                   |
+| **每个学生**      | 学生个人每次查看，                   |
 |                   | 都会看到相同版本的问题，             |
 |                   | 但此版本不同于其他学生查看的版本。   |
 |                   |                                      |
@@ -358,16 +358,15 @@ problems defaults to that number, and cannot be set to unlimited.
 .. _Show Answer:
 
 ===============
-Show Answer
+显示答案
 ===============
 
-This setting defines when the problem shows the answer to the student.
-This setting has the following options.
+此设置决定何时将答案显示给学生看。此设置含多个选项。
 
 +-------------------+--------------------------------------+
-| **Always**        | Always show the answer when the      |
+| **总是**          | 学生点击显示答案按钮时，显示答案。   |
 |                   | student clicks the **Show Answer**   |
-|                   | button.                              |
+|                   |                                      |
 +-------------------+--------------------------------------+
 | **Answered**      | Show the answer after the student    |
 |                   | tries to answer the problem.         |
