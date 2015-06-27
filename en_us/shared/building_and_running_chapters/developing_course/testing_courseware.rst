@@ -65,10 +65,8 @@ change<Publish a Unit>` 之后学生所看到的界面。
 
 在线课程中，学生仍将看到原有的课程内容。只有您 :ref:`publish the change<Publish a Unit>` ，之后，学生才能看到多选题。
 
-.. note:: When the unit's state is :ref:`Published and Live`, the preview and
-   the live version of the courseware are exactly the same. Selecting either
-   of **View Live** or **Preview** gives you the same view.
-
+.. note:: 当单元处于 :ref:`Published and Live` 状态时，在预览模式和在线版本中的课件是完全一样的。 
+   选择 **在线查看** 或 **预览** 将呈现一样的内容。
 
  
 .. _View Your Live Course:
@@ -103,25 +101,22 @@ change<Publish a Unit>` 之后学生所看到的界面。
  :alt: Image of the Courseware page in a live course with Staff View indicated
   at top right and a View Unit in Studio button
  
-In **Staff View**:
+在 **员工视角** 中：
 
-* You see all units that are :ref:`Published and Live`. For units that are
-  :ref:`Draft (Unpublished Changes)` or :ref:`Visible to Staff Only`, you
-  see the last published version of the unit. You see these units
-  regardless of the release dates of the containing section or subsection.
+* 您将看到所有已经 :ref:`Published and Live` 的单元。而状态为 :ref:`Draft (Unpublished Changes)` 
+  或 :ref:`Visible to Staff Only` 的单元，您将能看到最新发布的版本。
+  无论单元内含的章节和子章节何时发布，您都能查看这些单元。
 
-* You do not see units that are :ref:`Draft (Never Published)`. To
-  see these units, you must use Preview mode as described in :ref:`Preview
-  Course Content`.
 
-* You can access the Instructor Dashboard, which has features and reports that
-  help you :ref:`run your course<Running Your Course Index>`.
+* 您将看不到属性为 :ref:`Draft (Never Published)` 的单元。
+  您必须使用在 :ref:`Preview Course Content` 中描述的预览模式才能看到这些单元。
 
-When you view your course in **Staff View**, you can execute tests to make sure
-that your course works the way you intend. For example,  before the release
-date of a subsection, members of the course team can work through the problems
-to verify that the correct answer gets a green check for correct, and that any
-answer other than the correct one gets a red X for incorrect.
+
+* 您可以进入导师面板，该面板中的特性和报告将能帮助您  :ref:`run your course<Running Your Course Index>` 。
+
+
+当您使用 **员工视角** 查看课程时，您可以进行测试，以确保课程按照您的意愿进行。
+例如，在发布子章节之前，课程教员可以将所有问题完成一遍，以确保正确答案显示绿勾，其他答案显示红色的X。
 
 ============
 Student View
