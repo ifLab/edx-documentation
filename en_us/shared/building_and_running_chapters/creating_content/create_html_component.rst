@@ -75,12 +75,10 @@ HTML组件编辑选项
 .. _The Visual Editor:
 
 *****************************************
-The Visual Editor
+可视化编辑器
 *****************************************
 
-The visual editor provides a "what you see is what you get" (WYSIWYG) interface
-that allows you to format text by clicking the formatting buttons at the top of
-the editor.
+可视化编辑器的处理界面有“所见即所得”的功能。您可单击编辑器顶部的格式编辑按钮以格式化文本。
 
 .. image:: ../../../shared/building_and_running_chapters/Images/HTMLEditor.png
  :alt: Image of the HTML component editor
@@ -94,33 +92,21 @@ descriptions.
 .. image:: ../../../shared/building_and_running_chapters/Images/HTML_VisualView_Toolbar.png
   :alt: Image of the HTML editor, with call-outs for formatting buttons
 
-#. Choose a formatting style for the selected paragraph, such as heading 1,
-   heading 2, or paragraph.
-#. Choose a font family for selected text, such as Arial, Courier New, or Times
-   New Roman.
-#. Format selected text in bold. The editor inserts ``<strong>`` tags around
-   the selected text.
-#. Format selected text in italics. The editor inserts ``<em>`` tags around the
-   selected text.
-#. Underline the selected text. The editor encloses the selected text in
-   the tag ``<span style="text-decoration: underline;">``.
-#. Apply a color to the selected text. The editor encloses the selected text in
-   the tag ``<span style="color: color-hex-code;">``.
-#. Format selected text as a code block. The editor inserts ``<code>`` tags
-   around the selected text, which is then displayed in a monospace font.
-#. Create a bulleted list. The editor inserts ``<ul>`` tags
-   around the selected text, and encloses each paragraph in ``<li>`` tags.
-#. Create a numbered list. The editor inserts ``<ol>`` tags
-   around the selected text, and encloses each paragraph in ``<li>`` tags.
-#. Decrease and increased the indentation of the selected paragraph.
-#. Format the selected paragraph as a blockquote. The editor inserts
-   ``<blockquote>`` tags around the selected text, which is then displayed as a
-   separate paragraph in a monospace font.
-#. Create a link from the selected text. See :ref:`Add a Link in an HTML
-   Component`.
-#. Delete the current link.
-#. Insert an image at the cursor. See :ref:`Add an Image to an HTML Component`.
-#. Work with HTML source code, described below.
+#. 为选中的段落选择格式风格，如标题1、标题2，等等；
+#. 为选中的文本设置字体，如Arial, Courier New, Times New Roman等；
+#. 加粗；
+#. 斜体；
+#. 下划线；
+#. 文字颜色
+#. 以编码形式格式化文本；
+#. 插入项目符号；
+#. 插入项目编号；
+#. 添加/删除缩进符；
+#. 将选中段落设置为引用格式；
+#. 为选中的文本添加链接，详见“在HTML组件中添加链接”的内容；
+#. 删除当前链接；
+#. 在光标位置插入图像，详见 :ref:`Add an Image to an HTML Component`.
+#. 使用HTML源代码，详见后文。
 
 
 .. _Work with HTML code:
