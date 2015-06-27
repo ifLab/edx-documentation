@@ -421,7 +421,7 @@ problems defaults to that number, and cannot be set to unlimited.
 .. _Show Reset Button:
 
 =================
-修改已发布的问题
+Show Reset Button
 =================
 
 This setting defines whether a **Reset** button is visible on the problem.
@@ -458,36 +458,24 @@ sees a message below the problem indicating the remaining wait time.
 .. _Modifying a Released Problem:
 
 *********************************
-Modifying a Released Problem
+修改已发布的问题
 *********************************
 
-.. warning:: Be careful when you modify problems after they have been 
- released! Changes that you make to published problems can affect the student
- experience in the course and analysis of course data.
+.. warning:: 当您已经发布问题之后，要做修改请务必格外小心！
 
-After a student submits a response to a problem, the edX Learning Management
-System (LMS) stores the student's response, the score that the student
-received, and the maximum score for the problem. For problems with a **Maximum
-Attempts** setting greater than 1, the LMS updates these values each time the
-student submits a new response to a problem. However, if an instructor changes
-a problem or its attributes, existing student information for that problem is
-not automatically updated.
+当学生回答一个问题并提交后，Studio就会保存学生的答案，保存学生得到的分数以及这个问题的最高分。
+当学生重新提交答案时，Studio会对这些内容进行更新。
+然而，如果教师对问题或者其属性进行变更，Studio无法将学生之前回答的情况进行自动更新。
 
-For example, you may release a problem and specify that its answer is 3.
-After some students have submitted responses, you notice that the answer
-should be 2 instead of 3. When you update the problem with the correct
-answer, the LMS does not update scores for students who originally answered 
-2 for the problem and received the wrong score.
+例如，当您已经发布一个问题，并将答案设置为3。
+一些学生提交答案之后，您才发现答案不是3，而是2。
+您更改答案后，对于提交了正确答案2的学生，Studio无法更改他们的分数，因此他们的得分是错的。
 
-For another example, you may change the number of response fields to
-three. Students who submitted answers before the change have a score of
-0, 1, or 2 out of 2.0 for that problem. Students who submitted answers
-after the change have scores of 0, 1, 2, or 3 out of 3.0 for the same
-problem.
+再举一个例子，您可能将一个问题的2个应字段改为3个应字段。
+那么之前提交答案的学生得出的分数可能是0,1或者2分。
+同一问题，修改之后提交答案的同学的分数则可能为0,1,2或者3分。
 
-If you change the weight setting for the problem in Studio, however, existing
-student scores update when the student's **Progress** page is refreshed. In a
-live section, students will see the effect of these changes.
+但是，如果您修改了问题的权重属性，刷新进程页面后，现有的分数也会更新。.
 
 ===============
 工作区
