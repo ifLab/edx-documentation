@@ -1,14 +1,13 @@
 .. _Getting Started with Course Content Development:
 
 ###############################################
-Getting Started with Course Content Development
+开始创建课程内容
 ###############################################
 
-When you are done :ref:`setting up your course<Setting up your Course Index>`,
-you are ready to build your course content.
+当您完成 :ref:`setting up your course<Setting up your Course Index>` 之后，
+您可以开始创建课程内容。
 
-This chapter provides an outline of the steps involved in developing your
-course content, with links to more details. See:
+本章简述建立课程内容过程中涉及的操作步骤，详情请点击以下链接：
 
 * `Understanding Course Building Blocks`_
 * `Creating New Course Content`_
