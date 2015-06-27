@@ -153,13 +153,12 @@ Studio中的问题视图
 7. 创建解析，当学生点击显示答案时，就会显示相关解析。
 8. 在进阶编辑器中打开问题。
 9. 打开格式提示清单。
-10. **Accessible Label**: Identify the question as the problem's accessible
-    label. No toolbar option is available, but when you surround text with two
-    pairs of angle brackets pointing inward (``>>question<<``), screen readers
-    use that text as the accessible label for the problem.
+10. 通过可用标签来识别问题。工具栏选项不可用，但当您使用两对尖角括号指向文本时， 
+    前台将此文本显示为问题的可用标签。
+    
 
-    In addition, edX Insights uses the accessible label to identify the
-    question in each problem. For more information, see `Using edX Insights`_.
+    此外，edX Insights使用可用标签来确定每个项目中的问题。
+    更多信息请参考 `Using edX Insights`_.
 
 .. _Advanced Editor:
 
@@ -220,21 +219,16 @@ Studio中的问题视图
 .. image:: ../../../shared/building_and_running_chapters/Images/ProbComponent_LMS_DisplayName.png
  :alt: Image of the problem in a unit page from a student's point of view
 
-In addition, edX Insights uses the display name to identify each problem.
-Unique, descriptive display names help you identify problems quickly and
-accurately for analysis. For more information, see `Using edX Insights`_.
+此外，edX Insights 使用显示名称确定每个问题。
+唯一且描述准确的显示名将帮助您快速而准确地找到需要分析的问题。
+更多信息请参阅  `Using edX Insights`_.
 
 ==============================
 最多答题次数
 ==============================
 
 此设置规定学生最多可尝试回答问题次数。系统默认学生的回答次数不受限制。
-This setting specifies the number of times a student is allowed to attempt
-answering the problem. By default, the course-wide **Maximum Attempts**
-advanced setting is null, meaning that the maximum number of attempts for
-problems is unlimited. If the course-wide **Maximum Attempts** setting is
-changed to a specific number, the **Maximum Attempts** setting for individual
-problems defaults to that number, and cannot be set to unlimited.
+如果课程范围内的最多答题次数设置为一个特定值，每个问题的默认值也为此特定值，不能将独立问题的值设为无限。
 
 .. note:: 将问题最多回答次数设置为1或者更多，问题才能出现在学生答题统计报告中，您可以在上课时下载该报告。
 
