@@ -61,10 +61,8 @@
 .. warning:: 您应使用这些步骤创建讨论组件。若您运用Studio中的复制键，那么讨论组件将保存相同的对话，
    即使用户上传的是不同的讨论。
 
-.. note:: On the *Discussion** tab, you cannot see category and subcategory
-   names of discussion components that you created until after the course has
-   started and the unit is released. For more details about when discussion
-   topics are visible, see :ref:`Visibility of Discussion Topics`.
+.. note:: 在 **讨论** 栏中，课程开始且单元发布之后，您才能看到讨论组件的分类和子分类名。
+   更多细节请参考 :ref:`Visibility of Discussion Topics` 。
 
 
 .. _A Students View of the Discussion:
@@ -83,14 +81,12 @@
 讨论区域在单元下方。单元正文中没有标签。相反，学生们在左边能看见“显示讨论”或“隐藏讨论”，右边   
 是蓝色的发布新帖按钮。 
 
-In the following example, the discussion component follows video and HTML
-components:
+下图中讨论组件在视频和HTML组件下方：
 
 .. image:: ../../../shared/building_and_running_chapters/Images/DiscussionComponent_LMS.png
   :alt: Image of a video component followed by a discussion component
 
-In the **Discussion** tab at the top of the page, students can find the
-category and subcategory of the discussion in the left pane.
+在页面顶端的 **讨论** 栏中，学生可以看到位于左侧的分类和子分类。
 
 .. image:: ../../../shared/building_and_running_chapters/Images/Discussion_category_subcategory.png
  :alt: Image of the Discussion page from a student's point of view
