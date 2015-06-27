@@ -112,64 +112,54 @@ descriptions.
 .. _Work with HTML code:
 
 
-Work with HTML code in the Visual editor
+在可视化编辑器中使用HTML代码
 *****************************************
 
-To work with HTML source code for the content you create in the visual editor,
-click **HTML**  in the editor toolbar. The HTML source code editor opens:
+如需使用您在可视化编辑器中的课程源代码，在编辑器工具栏中单击 **HTML** ，会出现以下界面：
 
 .. image:: ../../../shared/building_and_running_chapters/Images/HTML_source_code.png
  :alt: Image of the HTML source code editor
 
-Edit the HTML code as needed. 
+编辑即可。
 
-You should not add custom styles or scripts in the HTML code view in the
-visual editor. Use the raw HTML editor instead.
+请不要给编辑器中的HTML视图添加自定义风格或脚本。如果真的需要，请切换到原始HTML编辑器中操作。
 
-Click **OK** to close the source code editor and apply your changes in the
-visual editor. The visual editor then attempts to ensure the underlying HTML
-code is valid; for example, if you do not close a paragraph tag, the editor
-will close it for you.
+单击 **确定** 关闭源代码编辑器，在可视化编辑器中应用更改后的内容。
+可视化编辑器会尽量确保隐藏的HTML代码是有效的，比如，如果您忘记输入段落标记中的右括号，编辑器会自动帮您输入。
 
 .. warning:: 
- Clicking **OK** in the source code editor does not save your changes to the
- HTML component.  You return to the component editor, where your changes are
- applied.  You must then also click **Save** to save your changes and close the
- component. If you click **Cancel**, the changes you made in the HTML source
- code are lost.
+ 在源代码编辑器中单击 **确定** 不会保存您对HTML组件所作的更改。
+ 您需要回到组件编辑器，然后在组件编辑器中应用更改后的内容，并且单击 **保存** 以保存更改，然后再关闭组件。
+ 如果单击 **取消** ，则对编辑器中HTML源代码所做的更改将丢失。
 
 .. _The Raw HTML Editor:
 
 *****************************
-The Raw HTML Editor
+原始HTML编辑器
 *****************************
 
-When you select the raw editor for the HTML component, you edit your content in
-a text editor:
+如果您选择原始编辑器作为HTML组件的编辑器时，您将在一个文本编辑器中编辑内容：
 
 .. image:: ../../../shared/building_and_running_chapters/Images/raw_html_editor.png
  :alt: The raw HTML editor
 
-You must enter valid HTML. The raw HTML editor does not validate your HTML code.
-Therefore you should thoroughly test the HTML content in your course.
+您输入的HTML语言必须是有效的。原始HTML编辑器不会自动调整HTML代码。因此在课程中您必须反复调试HTML的内容。
 
 
 .. _HTML Component Templates:
 
 *****************************
-HTML Component Templates
+HTML组件模板
 *****************************
 
-When you create a new HTML component, you select from a list of templates:
+当创建新的HTML组件时，您需要选择组件模板：
 
 .. image:: ../../../shared/building_and_running_chapters/Images/html_templates.png
  :alt: The list of HTML Component templates
 
-The raw HTML template is set to use the raw HTML editor. All other templates
-use the visual editor.
+“原始HTML”模板默认为使用原始HTML编辑器，其他模板使用可视化编辑器。
 
-For any HTML component, you can change the editor, regardless of the template
-used to create the component. See `Set the Editor for an HTML Component`_.
+您也可以自主更改所有模板的编辑器。详见 `Set the Editor for an HTML Component`_.
 
 
 
