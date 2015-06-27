@@ -76,12 +76,12 @@ Content>` 。
 .. _Making Course Content Searchable:
 
 ***********************************
-Making Course Content Searchable
+确保课程内容可搜索
 ***********************************
 
-Learners can search course text in :ref:`HTML components<Working with HTML
-Components>` and video transcripts by using the **Search** box in the upper-left
-corner of the **Courseware** tab. 
+学生可以在 :ref:`HTML components<Working with HTML
+Components>` 和视频脚本中通过 **课件** 栏左上角的 **搜索** 框搜索课程文本。
+
 
 Before learners can search your course, Studio must index the content. Studio
 indexes all new course content automatically when you :ref:`publish<Publish a
