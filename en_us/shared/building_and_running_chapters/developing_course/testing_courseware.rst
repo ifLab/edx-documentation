@@ -166,15 +166,13 @@ change<Publish a Unit>` 之后学生所看到的界面。
     :alt: Image of the Instructor Dashboard in a live course with a View Course
         in Studio button
 
-  For information about the tasks you can complete on the Instructor Dashboard,
-  see :ref:`Running Your Course Index`.
+  更多关于导师面板中的操作内容，请参阅 :ref:`Running Your Course Index` 。
  
-* In the **Course Progress** page, click **View Grading in Studio** to open the
-  Grading page.
+* 在 **课程进程** 页面中点击 **在Studio中查看评分** 打开评分页面。
  
   .. image:: ../../../shared/building_and_running_chapters/Images/Student_Progress.png
      :alt: Image of the Course Progress page for a student with a View  Grading
          in Studio button
 
-  For information about checking a student's progress, see
-  :ref:`Review_grades`.
+  更多关于查看学生学习情况的信息请参阅
+  :ref:`Review_grades` 。
