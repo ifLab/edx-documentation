@@ -509,86 +509,73 @@ Questions`.
 #. 交代删除原因。例如，“含有违背道德准则的信息”
 
 ==================
-Delete Messages 
+删除消息 
 ==================
 
-Discussion moderators, community TAs, and discussion admins can delete the
-content of posts, responses, and comments. Posts that include spam or abusive
-language may need to be deleted, rather than edited.
+三种论坛管理职位均有权删除帖子、回复及评论的内容。
+含有垃圾信息以及不文明用语的帖子应直接删除。
 
-#. Log in to the site and then select the course on your **Current Courses**
-   dashboard.
 
-#. Open the **Discussion** page and then open the post with the content that
-   requires deletion. You can select a single topic from the drop-down list of
-   discussion topics, apply a filter, or search to locate the post.
+#. 登录官网，在“当前课程”面板中选择相应课程
 
-#. For the post or for the response or comment that you want to delete, click
-   the "More" icon and then **Delete**.
+#. 打开“讨论”页面，打开需要编辑的帖子。您可以从下拉列表中选择，
+   也可以通过筛选功能及搜索功能快速定位帖子
 
-#. Click **OK** to confirm the deletion.
+#. 找到需要删除的内容。单击右侧的“更多”图标，选择“删除”
+
+#. 单击“OK”
 
 .. how to communicate with the poster?
 
-.. important:: If a message is threatening or indicates serious harmful 
- intent, contact campus security at your institution. Report the incident
- before taking any other action.
+.. important:: 若发现帖子内容含有威胁性或强烈攻击性的内容，请联系所在学院的校园保卫处，
+  报告事件后再考虑采取进一步行动。
 
 ==================================
-Respond to Reports of Misuse
+批复不良信息报告
 ==================================
 
-Students have the option to report contributions that they find inappropriate.
-Moderators, community TAs, and admins can check for messages that have been
-flagged in this way and edit or delete them as needed.
+学生有权上报他们认为含有不良信息的内容。
+三种论坛管理职位均可查证这些内容，必要时可以编辑或删除该内容。
 
-#. View the live version of your course and click **Discussion** at the top of
-   the page.
+#. 查看课程现况，单击页面顶部的“讨论”面板
 
-#. In the list of posts on the left side of the page, use the filter drop-down
-   list (set to **Show all** by default) to select **Flagged**.
+#. 页面左侧显示的是帖子列表，使用筛选列表，选择“被标记的帖子”
 
-#. Review listed posts. A post is listed if it or any of its responses or
-   comments has been reported. The reported contribution includes a
-   **Reported** identifier.
+#. 重新查看帖子列表，此时列表中显示的是内容（包括评论、回复）被举报的帖子。
+   被举报的内容会带有“被举报”标识
 
-#. Edit or delete the post, response, or comment. Alternatively, remove the
-   flag: click the "More" icon and then **Unreport**.
+#. 重新审核帖子，编辑或删除相关内容，或者取消举报标记：
+   单击“更多”，选择“取消举报”。
 
 ===============
-Block Users
+冻结账户
 ===============
 
-For a student who continues to misuse the course discussions, you can unenroll
-the student from the course. See :ref:`unenroll_student`. If the enrollment
-period for the course is over, the student cannot re-enroll.
+如果发现有学生持续发布不良内容，您可以开除该学生。详见 :ref:`unenroll_student`. 
+如果课程招生时间已过，该生将无法重新参与课程。
 
 .. _Close_discussions:
 
 ******************************
-Close Discussions
+关闭论坛
 ******************************
 
-You can close the discussions for your course so that students cannot add
-messages. Course discussions can be closed temporarily, such as during an exam
-period, or permanently, such as when a course ends.
+您可以关闭课程论坛，关闭后，学生无法继续发布信息。
+论坛可以暂时关闭，譬如在考试的时候，也可以永久关闭，譬如在课程结课的时候。
 
-When you close the discussions for a course, all of the discussion topics in
-course units and all of the course-wide topics are affected.
+关闭论坛后，所有课程单元中的讨论课题以及全课堂讨论课题均会受到影响。
 
-* Existing discussion contributions remain available for review.
+* 已经发布的讨论、贡献内容仍然保留。
   
-* Students cannot add posts, respond to posts, or comment on responses.
-  However, students can continue to vote on existing threads, follow threads,
-  or report messages for misuse.
+* 论坛关闭后，学生无法发帖、回复、评论，
+  但是可以继续为已发布的帖子及收藏的帖子点赞，
+  也可以举报不良信息。
 
-* Course Staff, Instructors, Discussion Admins, Discussion Moderators,
-  and Discussion Community TAs are not affected when you close the discussions
-  for a course. Users with these roles can continue to add to discussions. 
+* 关闭论坛后，课程工作人员、导师、论坛管理员、论坛协调员、
+  论坛社区助教等职位的职能不受影响。这些职位可以继续发布讨论内容。
 
-.. note:: To make sure your students understand why they cannot add to 
-  discussions, you can add the dates that discussions are closed to the
-  **Course Info** page and post them to a General discussion.
+.. note:: 关闭论坛后，学生无法继续讨论。为使学生理解这种情况， 
+  您可在“课程信息”页面通知论坛关闭日期，并将该日期挂到“General”讨论课题下。
 
 =====================================
 Start-End Date Format Specification
