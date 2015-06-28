@@ -105,10 +105,6 @@ use cohorts, see :ref:`Set up Discussions in Cohorted Courses`.
 课堂讨论课题，在课堂上引导学生分享、查找信息。
 这类课题可以包含“反馈”、“答疑”、“技术支持”等字样。
 这类课题的可访问时间与课程的可访问时间一致。
-You can add additional course-wide discussion topics to guide how students
-share and find information during your course. Such course-wide topics might
-include Introduction and Announcements, Feedback, or Troubleshooting.
-Discussions in these topics can begin as soon as your course is available.
 
 .. note:: Make sure each discussion topic in your course has a unique name,
    whether it is a course-wide topic or a content-specific discussion topic
@@ -118,55 +114,50 @@ Discussions in these topics can begin as soon as your course is available.
    discussion topic named "General", because a course-wide discussion topic
    named "General" already exists in every course.
 
-To create a course-wide discussion topic, follow these steps.
+如何创建全课堂讨论课题：
 
-#. Open your course in Studio. 
+#. 在Studio中打开课程 
 
-#. Select **Settings**, then **Advanced Settings**.
+#. 单击“设置”→“高级设置”
 
-#. Scroll down to the **Discussion Topic Mapping** policy key. By default, its
-   value is:
+#. 将滚动滑块拖至“讨论课题映射”策略键。系统默认值应为：
 
  .. image:: ../../../shared/building_and_running_chapters/Images/Discussion_Add_initial.png
   :alt: Policy value of {"General": {"id": "i4x-edX-Open-edx_demo_course"}}
 
-4. Copy the three lines provided for the General topic and paste
-   them above the closing brace character (``}``):
+4. 复制“General”后的三行信息，粘贴到结尾的闭大括号前：
 
  .. image:: ../../../shared/building_and_running_chapters/Images/Discussion_Add_paste.png
   :alt: Policy value of {"General": {"id": "i4x-edX-Open-edx_demo_course"} 
         "General": {"id": "i4x-edX-Open-edx_demo_course"}}
 
-5. Replace the second "General" with the quoted name of your new topic.
+5. 将第二个“General”替换为新课题的名称，注意带上双引号
 
-#. Change the value for the second "id" to a unique identifier. For example,
-   append a reference to the name of the topic.
+#. 将第二个“id”值更改为另一个唯一的值。比如，可以为课题名附上一组独一无二的参数
 
 .. note:: In discussion topic IDs, you can use only alphanumeric characters
    and these special characters: underscore, hyphen, and period.
 
-7. Add a comma after the first closing brace (``},``).
+7. 在第一个闭大括号后输入一个逗号
 
  .. image:: ../../../shared/building_and_running_chapters/Images/Discussion_Add_name.png
   :alt: Policy value of {"General": {"id": "i4x-edX-Open-edx_demo_course"}, 
         "Course Q&A": {"id": "i4x-edX-Open-edx_demo_course_faq"}}
 
-8. Click **Save Changes**. Studio resequences and reformats your entry. Scroll
-   back to the **Discussion Topic Mapping** field to verify that your entry was
-   saved as you expect. Entries that do not contain all of the required
-   punctuation characters revert to the previous value when you save, and no
-   warning is presented.
+8. 单击“保存更改”。Studio会重新给您输入的值排序并设定格式。
+   将滚动条拖回“讨论课题映射”字段，确认输入内容是否已保存。
+   如果您在输入时漏掉了标点符号，输入内容不会保存，且没有警告提示。
 
-When students click the **Discussion** page for your course, the drop-down
-Discussion list now includes the topic you added.
+
+操作成功后，当学生单击课程的“讨论”页面时，您的课程即出现在下拉列表中。
 
  .. image:: ../../../shared/building_and_running_chapters/Images/NewCategory_Discussion.png
   :alt: Image of a new topic named Course Q&A in the list of discussions
 
-.. note:: In courses that use cohorts, the course-wide discussion topics that
-   you add are unified. All posts can be read and responded to by every
-   learner, regardless of the cohort that they belong to. You can optionally
-   configure these topics to be divided by cohort. See :ref:`Coursewide
+.. note:: 在分队课堂中，全课堂讨论课题对所有人均可见。
+   所有小队中的学生均可访问课题中的帖子及回复。
+   您也可以手动将这类课题配置为分队讨论课题。
+   详见 :ref:`Coursewide
    Discussion Topics and Cohorts`.
 
 .. _Create ContentSpecific Discussion Topics:
@@ -201,10 +192,10 @@ topics, see :ref:`Visibility of Discussion Topics`.
 .. _Assigning_discussion_roles:
 
 *************************************************
-Assign Discussion Administration Roles 
+安排讨论项目管理职能
 *************************************************
 
-You can designate a team of people to help you run course discussions.
+您需要指定一个团队帮助您运营讨论项目。
 
 .. note:: The course team that you set up in Studio (or the course staff and
    instructors you add on the Instructor Dashboard) are not automatically
