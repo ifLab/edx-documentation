@@ -2,19 +2,16 @@
 
 
 ##################################
-Managing Course Discussions
+管理课程讨论项目
 ##################################
 
-Discussions, or discussion forums, foster interaction among your students and
-between students and course staff. You can set up different topics to guide
-these interactions when you create your course, and then run and moderate
-discussions throughout the course to encourage participation and develop course
-community.
+讨论项目，即论坛，旨在构建学生与工作人员，以及学生与学生之间的有效沟通和交流。
+创建课程时，您可设立各种讨论课题引导课程参与人员之间的互动，
+同时通过运营、管理讨论项目活动鼓励学生参与课程、建立课程社区。
 
-Discussions are also excellent sources of feedback and ideas for the future.
+讨论项目（下或称“论坛”）同时也是课程反馈及未来创意的重要来源。
 
-For information about running and moderating discussions, see the following
-sections.
+关于运营、协调讨论项目的内容，请参见以下章节：
 
 * :ref:`Overview_discussions`
 
@@ -30,8 +27,7 @@ sections.
 
 * :ref:`Close_discussions`
   
-For information about how using cohorts in your course affects how your course
-team might moderate course discussions, see :ref:`Moderating Discussions for
+想了解更多关于分队功能对论坛协调事宜的影响，请参考 :ref:`Moderating Discussions for
 Cohorts`.
 
 .. note:: The :ref:`Discussions for Students and Staff` section describes
@@ -45,41 +41,32 @@ Cohorts`.
 .. _Overview_discussions:
 
 ********************************
-Overview
+概述
 ********************************
 
-Students and staff use course discussions to share ideas, exchange views,
-consider different viewpoints, and ask questions. In a discussion, there are
-three hierarchical levels of interaction.
+学生与员工可以通过论坛分享观点、交流看法、交换意见、解决问题。论坛中的互动分为三种。
 
-* A *post* is the first level of interaction. A post opens a new subject. Posts
-  can be made as questions, to solicit a concrete answer, or as discussions,
-  to start a conversation. When you add a post, you decide whether to add it
-  as a **Question** or as a **Discussion**.
+*  *帖子* 帖子通常用于展开新话题。帖子一般以问题的形式出现，
+  要么展开对话，要么引出一个值得关注的问题。您在发帖时，通常将其归类为“提问”或“讨论”。
 
-* A *response* is the second level of interaction. A response is a reply made
-  directly to a post to provide a solution or continue the conversation.
+*  *回复* 回复指的是关于某个帖子问题的直接回答，或某个对话的延续。
 
-* A *comment* is the third level of interaction. A comment is often a
-  clarification or side note made to a specific response, rather than to the
-  post as a whole.
+*  *评论* 评论指的是针对某条回复的补充说明或边注。
+  评论一般不针对整个帖子，只针对某条回复。
  
-The dialogue created by a post, its responses, and the comments on those
-responses is sometimes called a thread. Discussion threads are saved as part
-of the course history.
+由帖子、回复、评论组成的对话有时统称为“话题”。
 
-All course staff members and enrolled students can add posts, responses, and
-comments, and view all of the posts, responses, and comments made by other
-course participants. 
+所有员工及参与课程的学生均可发帖、回帖或发表评论，
+同时也可以查看其他课程参与者发布的帖子、回复及评语。
 
-Members of the course community, both staff and students, can be given
-permission to moderate or administer course discussions through a set of
-discussion administration roles. 
+课程社区的所有成员，包括员工和学生，均可以赋予论坛协调员或管理员等讨论项目管理职能。
+讨论话题可以保存，是课程历史的组成部分。
 
-.. note:: The course team that you set up in Studio (or the course staff and
-   instructors you add on the Instructor Dashboard) are not automatically
-   granted discussion administration privileges, which are required to view
-   all posts, for example in courses using cohorts.
+.. note:: “参与课堂讨论”一章描述了论坛的部分功能，这些功能对所有参加论坛的人都开放，
+   对论坛新人而言帮助也很大。对论坛新人而言帮助也很大。
+   您可以和学生一起分享其中的内容。
+   方式有很多，比如，您可以发一条名为“第一次使用论坛？”的帖子，
+   在帖子中提供您认为对学生最有用的信息。
 
    Discussion administration roles must be explicitly granted to members of
    the course team for them to moderate or administer course discussions. The
@@ -92,7 +79,7 @@ discussion administration roles.
 .. _Organizing_discussions:
 
 *************************************************
-Creating Discussion Topics for Your Course
+建立课堂讨论课题
 *************************************************
 
 Discussions in an edX course include both broad topics on course-wide areas of
