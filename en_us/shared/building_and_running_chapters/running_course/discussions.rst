@@ -393,22 +393,18 @@ of Discussion Topics`.
 :ref:`Assigning_discussion_roles`.
 
 ====================================================
-View Profile Information for Discussion Participants
+查看论坛参与者的个人信息
 ====================================================
 
-If you want to find out more about a specific discussion participant, you can
-view that learner's edX profile. Learners can have either a limited profile or a
-full profile.
+如果您想了解某个论坛参与者，您可以查看学生的edX信息。学生可以部分或全部开放信息。
 
-To view a learner's profile, follow these steps.
+以下步骤查看学生信息：
 
-#. On the **Discussion** page, select a username in a post,
-   response, or comment.
-#. On the **Active Threads** page for that learner, select the
-   learner's username.
+#. 在 **论坛** 页面选择帖子或回应或评论中的用户名。
 
-The following image shows a learner's username in a post, the learner's
-username on the **Active Threads** page, and the learner's profile page.
+#. 在 **活动记录** 页面点击学生的用户名。 
+
+下图呈现了帖子里、活动记录页面的用户名和学生个人页面。
 
 .. image:: ../../../shared/building_and_running_chapters/Images/SFD_Prof_from_Disc.png
   :width: 600
@@ -416,7 +412,7 @@ username on the **Active Threads** page, and the learner's profile page.
       that learner's active threads page in the course discussions, and an
       image of the learner's profile
 
-For more information, or to create your own profile, see `View, Create, or
+更多关于创建个人简介的内容请参考 `View, Create, or
 Edit an edX Profile <http://edx- guide-for-
 students.readthedocs.org/en/latest/sfd_your_information.html#sfd_pro
 file_page>`_.
