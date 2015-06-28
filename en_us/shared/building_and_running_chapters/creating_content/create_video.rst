@@ -71,11 +71,8 @@
      - AAC 44.1 / 192 kbps
      - AAC 44.1 / 192 kbps
 
-.. note:: 一般情况下，您
-Typically you export at the same frame rate that was used when you
- created the media file. For example, if you create the file in a country that
- uses the PAL system, you export at 25 fps instead of the NTSC standard of
- 29.97 fps.
+.. note:: 一般情况下，您导出文件的帧速率和创建时相同。
+  例如，如果您在一个使用PAL系统的国家创建文件，您导出的的文件将为25 fps而不是NTSC标准的 29.97 fps。
 
 .. _Video Formats:
 
@@ -165,9 +162,7 @@ YouTube
   例如，确保.mp4文件的HTTP header中的Content-Type设置为video/mp4，
   .webm文件的HTTP header中的Content-Type设置为video/webm 。
 
-
-  亚马逊存储服务的 **控制台用户指南** 提供了关于如何在视频备选网站中设置元数据的信息
- `editing object metadata`_.
+  亚马逊存储服务的 **控制台用户指南** 提供了关于如何在视频备选网站中设置元数据的信息 `editing object metadata`_.
 
 
 .. _Create a Video Component:
