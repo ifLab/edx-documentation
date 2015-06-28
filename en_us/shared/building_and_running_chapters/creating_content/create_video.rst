@@ -124,15 +124,10 @@ EdX可以和3Play Media公司合作。You Tube也能提供字幕服务。
 
 所有课程应在You Tube上发布。通过默认设置，edX影片播放器能够播放You Tube的影片。
 
-然而，由于You Tube不是在任何地方下均有效的，所以我们建议您将影片也上传到至第三方网站，例如亚马逊S3。
+然而，由于You Tube不是在任何地方下均有效的，所以我们建议您将影片也上传到至第三方网站，例如 `Amazon S3
+<http://aws.amazon.com/s3/>`_.
 当学生浏览您的课程时，要是You Tube不适用于学生所在地或You Tube无法播放，上传至备用网站的影片能自动播放。
 您也能让学生从备用网站上下载影片。
-Because YouTube is not available in all locations, however, we recommend that
-you also post copies of your videos on a third-party site such as `Amazon S3
-<http://aws.amazon.com/s3/>`_. When a learner views a video in your course, if
-YouTube is not available in that learner's location or if the YouTube video
-does not play, the video on the backup site starts playing automatically. You
-can also allow the learners to download the video from the backup site.
 
 在网上公布影片之后，确保您有影片的统一资源定位符（URL）。
 若您在多处复制了您的影片，确保您有每一个副本所在位置的统一资源定位符（URL）。 
