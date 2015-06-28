@@ -264,17 +264,17 @@ YouTube
         
         
 
-    * - **Downloadable Transcript URL**
-      - The URL for a non-.srt version of the transcript file posted on the
-        **Files & Uploads** page or on the Internet. Learners see a link to
-        download the non-.srt transcript below the video.
+    * - **可下载副本URL**
+      - 非.srt格式副本的统一资源定位符（URL）会发至文件和上传页面或公布在网上。
+        学生们能在影片下方看见下载非.srt格式副本的链接。
+        
 
-        When you add a transcript to this field, only the transcript that you
-        add is available for download. The .srt and .txt transcripts become
-        unavailable. If you want to provide a downloadable transcript in a
-        format other than .srt, edX recommends that you upload a handout for
-        learners by using the **Upload Handout** field. For more information,
-        see :ref:`Additional Transcripts`.
+        当您将副本添加至此区域时，只有您添加的附件能下载。
+        非.srt格式副本及文本文档副本无法下载。
+        若您提供的副本格式并非.srt，我们建议您通过上传讲义选项，上传学生讲义。
+        欲知更多信息，请见 :ref:`Additional Transcripts` .
+        
+        
 
     * - **EdX Video ID**
       - An optional field used only by course teams that are working with
