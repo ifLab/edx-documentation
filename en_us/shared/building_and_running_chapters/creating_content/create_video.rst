@@ -272,24 +272,21 @@ course video, it might be the result of one of these browser-related problems.
         若您选择“是”，影片下方会显示下载文档的链接。
         
 
-        By default, Studio creates a .txt transcript when you upload an .srt
-        transcript. Learners can download the .srt or .txt versions of the
-        transcript when you set **Download Transcript Allowed** to **True**. If
-        you want to provide the transcript for download in a different format
-        as well, such as .pdf, upload a file to Studio by using the **Upload
-        Handout** field.
+        通过默认设置，在你上传.srt副本文档的同时会生成文本文档副本。
+        您甚至成同意下载副本，学生们就能下载.srt副本及文本文档副本。
+        同时，若您希望能下载不同格式的文本。
+        例如，.pdf，通过上传讲义，将其上传至Studio。
+        
 
-    * - **Downloadable Transcript URL**
-      - The URL for a non-.srt version of the transcript file posted on the
-        **Files & Uploads** page or on the Internet. Learners see a link to
-        download the non-.srt transcript below the video.
+    * - **可下载副本URL**
+      - 非.srt格式副本的统一资源定位符（URL）会发至文件和上传页面或公布在网上。
+        学生们能在影片下方看见下载非.srt格式副本的链接。
+        
 
-        When you add a transcript to this field, only the transcript that you
-        add is available for download. The .srt and .txt transcripts become
-        unavailable. If you want to provide a downloadable transcript in a
-        format other than .srt, we recommend that you upload a handout for
-        learners by using the **Upload Handout** field. For more information,
-        see :ref:`Additional Transcripts`.
+        当您将副本添加至此区域时，只有您添加的附件能下载。
+        非.srt格式副本及文本文档副本无法下载。
+        若您提供的副本格式并非.srt，我们建议您通过上传讲义选项，上传学生讲义。
+        欲知更多信息，请见 :ref:`Additional Transcripts`.
 
     * - **EdX Video ID**
       - An optional field used only by course teams that are working with
@@ -344,33 +341,32 @@ course video, it might be the result of one of these browser-related problems.
     * - **Video ID**
       - An optional field used only by course teams that are working with
         edX to process and host video files.
-    * - **Video Start Time**
-      - The time you want the video to start if you do not want the entire
-        video to play. Use HH:MM:SS format. The maximum value is 23:59:59.
+    * - **影片开始时间**
+      - 若您不想播放所有视频，能设置影片开始时间。
+        将格式设置为 HH:MM:SS。最大值为23:59:59。
 
         .. note:: Learners who download and play the video in the mobile
          app see the entire video file. Only videos that play in a browser
          start playing at the specified start time.
 
-    * - **Video Stop Time**
-      - The time you want the video to stop if you do not want the entire video
-        to play. Use HH:MM:SS format. The maximum value is 23:59:59.
+    * - **影片结束时间**
+      - 若您不想播放所有视频，能设置影片结束时间。
+        将格式设置为 HH:MM:SS。最大值为23:59:59。
 
         .. note:: Learners who download and play the video in the mobile
          app see the entire video file. Only videos that play in a browser
          stop playing at the specified stop time.
 
     * - **YouTube IDs**
-      - If you have uploaded separate video files to YouTube for different
-        speeds of your video (YouTube ID for .75x speed, YouTube ID for 1.25x
-        speed, YouTube ID for 1.5x speed), enter the YouTube IDs for these
-        videos in these fields. These settings are optional, to support video
-        play on older browsers.
+      - 若您将独立且不同播放速率的影片上传至You Tube，
+       在此区域输入这些影片的You Tube号。
+        You Tube身份认证，拥有You Tube号的人能享受 .75x、1.25x及1.5x倍播放速度。
+
 
 .. _Video TOC:
 
 ***************************
-Video Table of Contents
+影片目录表
 ***************************
 
 You can add a table of contents for your video by adding an .srt transcript
