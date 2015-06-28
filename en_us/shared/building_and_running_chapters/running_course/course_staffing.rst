@@ -1,40 +1,37 @@
 .. _Course_Staffing:
 
 ##########################
-Staffing
+安置职工
 ##########################
 
-You can designate a team of people to help you run your course. Two roles are
-available to give your administrative team members access to different options
-for working with students, grades, and other members of the staff.
+您需要安排一个课程团队来帮助您更好地运营课程。
+您的课程管理团队应主要由两种职位组成，一种负责学生工作及评分事宜，
+一种负责课程的幕后工作，即：
 
-* Course Staff
+* 工作人员
 
-* Instructors
+* 导师
 
-You can assign these privileged roles when you work in either the LMS or in
-Studio, and the users who have these roles can work on your course in both the
-LMS and Studio. For more information on setting up a team in Studio, see
+您可以在学习管理系统或Studio中安排这两个工作，
+相关的工作人员也是通过这两个平台参与课程管理。
+关于如何在Studio中完成团队设置，参见
 :ref:`Add Course Team Members`.
 
-.. note:: The LMS "Course Staff" role is the same as the Studio "Staff" role, 
- and the LMS "Instructors" role is the same as the Studio "Admin" role.
+.. note:: Studio中的“工作人员”一职在学习管理系统中称为“课程工作人员”，
+学习管理系统中的“导师”一职在Studio中称为“管理员”。
 
-You can also designate teams of people to beta test your course and to
-moderate and manage its discussions by assigning other LMS roles. The beta
-testers and discussion administrators must be enrolled in your course, but
-they do not need to have the Course Staff or Instructors role or a Studio
-role. For more information, see :ref:`Beta_Testing` and
+同时，您还需要安排贝塔测试团队用于测试课程，以及学习管理系统中的讨论项目管理团队、
+协调团队用于管理课堂讨论。贝塔测试员及讨论项目管理团队无需担任“课程工作人员”及“导师”等职位，
+也无需在Studio中担任其他职责。更多信息请参考 see :ref:`Beta_Testing` 和
 :ref:`Assigning_discussion_roles`.
 
 ****************************
-Administrative Team Roles
+管理团队的职能
 ****************************
 
-To provide access to features on the LMS Instructor Dashboard you assign the
-Course Staff role or the Instructors role.
+“课程工作人员”及“导师”主要负责执行学习管理系统中，教师控制面板上的功能。
 
-**Course Staff** can: 
+“课程工作人员”的职能包括：
 
 * View the course before the Course Start Date. 
 
