@@ -443,8 +443,8 @@ file_page>`_.
 
 * 鼓励学生做出高质量的贡献：应该感谢那些发布积极帖子的学生以及踊跃回答问题的学生。
 
-* Check links, images, and videos in addition to the text of each message. Edit
-  offensive or inappropriate posts quickly, and explain why.
+* 除文本之外，检查信息中的连接、图片和视频。 
+  快速删除攻击性或不合理的帖子，并解释原因。
 
 * 审阅点赞人数较多的帖子，定期、公开地评选“明星楼主”。
 
