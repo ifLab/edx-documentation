@@ -152,15 +152,12 @@ YouTube
 .. note:: 最终您上传至第三方网站的影片统一资源定位符（URL）必须是mp4, .webm, .mpeg, 或.ogg格式。
 （为了确保所有标准浏览器均能播放影片，我们强烈建议您用mp4,或webm.格式）EdX不支持类似Vimeo等网站上的视频。
 
-If you (or your beta testers or learners) encounter an error when you view a
-course video, it might be the result of one of these browser-related problems.
+如果您（或您的贝塔测试员或学生）在看课程视频时遇到错误，也许是浏览器的原因。
 
-* Verify that the browser is up to date. For example, some older versions of
-  the Mozilla Firefox browser did not play .mp4 video files, and some older
-  versions of the Firefox browser did not play .webm video files. This problem
-  does not occur in more recent versions of these browsers.
+* 请确保浏览器为最新版本。例如，一些旧版本的Mozilla Firefox浏览器无法播放 .mp4格式的视频。
+  这个问题不存在新版本中。
 
-  For more information, see `Media formats supported by the HTML audio and
+  更多信息请参考  `Media formats supported by the HTML audio and
   video elements`_.
 
 * Verify that file metadata, particularly the MIME type, is correctly set on
