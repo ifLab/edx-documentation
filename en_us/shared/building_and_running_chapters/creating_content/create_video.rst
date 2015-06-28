@@ -276,14 +276,14 @@ YouTube
         
         
 
-    * - **EdX Video ID**
-      - An optional field used only by course teams that are working with
-        edX to process and host video files.
+    * - **EdX视频ID**
+      - 此选项只用于使用edX制作主视频文件的课程团队。
+        
 
-    * - **License**
-      - Optionally, you can set the license for the video, if you want to
-        release the video with a license different from the overall course
-        license.
+    * - **许可证书**
+      - 您可以选择为视频设置许可证书。
+        以满足您发布与课程证书不同的视频许可证的需求。
+        
 
         * Select **All Rights Reserved** to indicate to learners that you own
           the copyright for the video.
