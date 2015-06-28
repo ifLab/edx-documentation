@@ -618,32 +618,28 @@ Questions`.
 
 步骤：
 
-#. Open your course in Studio. 
+#. 在Studio中打开课程
 
-#. Select **Settings**, then **Advanced Settings**.
+#. 选择“设置”→“高级设置”
 
-#. Scroll down to the **Discussion Blackout Dates** policy key. 
+#. 将滚动条拖至“论坛关闭日期”策略键
 
-#. In the field for the value, place your cursor between the supplied square
-   brackets. Use the required date format specification to enter the start and
-   end dates for each time period during which you want discussions to be
-   closed.
+#. 在策略键后的区域内，将光标放在已有的两个方括号之间。
+   输入一个或多个开始-结束时间对，注意一定要采用之前提到的格式规范。
 
-   When you enter the dates and times from the example above, the value field
-   looks like this:
+   如果您输入上面例子中提到的日期，则出现下图：
 
    .. image:: ../../../shared/building_and_running_chapters/Images/Discussion_blackout_unformatted.png
      :alt: Policy value of [["2014-07-22T08:00", "2014-07-25T18:00"],
          ["2014-08-09T00:00", "2099-08-09T00:00"]]
 
-5. Click **Save Changes**.
+5. 单击“保存”
 
-   Studio reformats your entry to add line feeds and indentation, like this:
+   系统会将您输入的数据重组，加入换行符和缩进符，如图示：
 
    .. image:: ../../../shared/building_and_running_chapters/Images/Discussion_blackout_formatted.png
      :alt: Same policy value but with a line feed after each bracket and comma,
          and an indent before each date
 
-For examples of email messages that you can send to let students know when the
-course discussions are closed (or open), see :ref:`Example Messages to
+您需要发邮件提醒学生论坛关闭和开启的时间，详见 :ref:`Example Messages to
 Students`.
