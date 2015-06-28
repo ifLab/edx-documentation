@@ -197,54 +197,44 @@ topics, see :ref:`Visibility of Discussion Topics`.
 
 您需要指定一个团队帮助您运营讨论项目。
 
-.. note:: The course team that you set up in Studio (or the course staff and
-   instructors you add on the Instructor Dashboard) are not automatically
-   granted discussion administration roles.
+.. note:: 您在Studio中建立的课程团队（或您在教师控制面板中指定的课程工作人员及导师）
+   并不默认为论坛管理人员。
 
 
-   Discussion administration roles must be explicitly granted to members of
-   the course team for them to moderate or administer course discussions. The
-   course author, team members with Admin access (Studio), and Instructors
-   (Instructor Dashboard) can grant discussion administration roles.
+   论坛管理人员应由从课程团队中另外指定，其职责是协调、管理课堂讨论项目。
+   论坛管理人员可由课程作者、导师（教师控制面板中的）
+   或其他有管理权限的团队成员（Studio中的）担任。
 
 
-Different options for working with discussions are available through
-the following roles.
+论坛管理人员的分类及职能简述如下：
 
-* *Discussion moderators* can edit and delete messages at any level, review
-  messages flagged for misuse, close and reopen posts, pin posts, and endorse
-  responses. Posts made by moderators are marked as "By: Staff" in the list of
-  posts. Responses and comments made by moderators have a colored "Staff"
-  identifier. This role is often given to course team members who already have
-  the Course Staff role.
+* *论坛协调员* 论坛协调员可以编辑、删除所有消息（包括帖子、回复、评论）；
+  可以审核带有“误用信息”标签的帖子；可以封杀、取消封杀帖子；
+  可以将帖子置顶；可以批准回复。在帖子列表中，论坛协调员发布的帖子带有“By:staff”字样，
+  协调员发表的回复和评论带有加色的“Staff”标识。
+  协调员通常从已担任“课程工作人员”的团队成员中选派。
 
 .. removed this clause from 1st sentence per JAAkana and MHoeber: , and, if the
 .. course is cohorted, see posts from all cohorts
 
-* *Discussion community TAs* have the same options for working with discussions
-  as moderators. Posts made by community TAs are marked as "By: Community TA"
-  in the list of posts on the **Discussion** page. Responses and comments made
-  by community TAs have a colored "Community TA" identifier. This role is often
-  given to students.
+* *论坛社区助教* 助教的职能和协调员相同。助教发布的帖子带有“By: Community TA”字样，
+  发布的评论和回复带有加色的“Community TA”标识。助教通常由学生担任。
 
 .. I put this comment in to make the formatting of this bulleted list consistent when output using the sphinx template
 
-* *Discussion admins* have the same options for working with discussions as
-  moderators, and their posts, responses, and comments have the same "Staff"
-  identifiers. This role can be reserved for assignment to course team members
-  who have the Instructor role only: the discussion admins can then both
-  moderate discussions and give other users these discussion management roles
-  whenever necessary.
+* *论坛管理员* 拥有以上两种职位的所有职能。
+  管理员发布的帖子、回复、评论带有相同的“Staff”标识。
+  管理员只能由已担任导师的团队成员出任，
+  因为管理员除了具有协调员和助教的只能外，还能在必要的时候赋予其他用户论坛管理职能。
 
-Before you can assign roles to your discussion team, you need their email
-addresses or usernames.
 
-* To get this information for a course team member, on the Instructor Dashboard
-  click **Membership** and then select **Course Staff** or **Instructor** from
-  the drop-down list.
+安排论坛管理人员时，您需要提供他们的邮箱地址或用户名。
 
-* To get this information for an enrolled student, on the Instructor Dashboard
-  click **Data Download**, then **Download profile information as a CSV**.
+* 如何查看课程团队成员的信息？在教师控制面板中，单击“成员”，
+  然后从下拉列表中选择“课程工作人员”/“导师”。
+
+* 如何查看学生信息？在教师控制面板中，单击“数据下载”
+  “以CSV格式下载学生资料”
 
 
 ====================================
