@@ -316,11 +316,9 @@ Topics>` 包含默认"General"讨论主题，是立即可见的，无论课程�
 * 您每发布一个讨论课题，第一条帖子应描述如何使用这个课题。
   除了提供指导教程之外，这类“初始消息”还可作为今后学生创建帖子的范例。
 
-We strongly recommend that you do not create seed posts in content-specific
-discussion topics before the course starts or before the containing unit is
-released. The category and subcategory names for content-specific discussion
-topics are subject to the release visibility of their containing unit, and are
-not visible until the unit is released. For more details, see :ref:`Visibility
+我们强烈建议您不要在课程开始或单元发布前在特定内容讨论主题中创建基础贴。
+特定内容讨论主题的类名和子类名与所在单元的发布可见性相关联，在单元发布之前，
+这些主题是不可见的。更多细节请参考 :ref:`Visibility
 of Discussion Topics`.
 
 
