@@ -7,7 +7,7 @@
 您能创建一个您的演讲影片，并且可以将其他组成部分，例如，讨论和遇到的问题，添加到课程中是学生积极学习。
 将视频添加到您的课程中有以下几个步骤。
 
-.. contents:: Section Contents
+.. contents:: 步骤
   :local:
   :depth: 1
 
@@ -46,28 +46,28 @@
    :widths: 10 20 20
    :stub-columns: 1
 
-   * - Output
-     - **Publish to YouTube**
-     - **Publish downloadable file to AWS S3**
-   * - Codec
+   * - 输出
+     - **发布到You Tube**
+     - **AWS S3将下载好的文件发布到AWS S3上**
+   * - 编码解码器
      - H.264 .mp4
      - H.264 .mp4
-   * - Resolution & Frame Rate (see note)
+   * - 分辨率和帧速率
      - 1920x1080, progressive, 29.97 fps
      - 1280x720, progressive, 29.97 fps
-   * - Aspect
+   * - 版本
      - 1.0
      - 1.0
-   * - Bit Rate
+   * - 位速率
      - VBR, 2 pass
      - VBR, 2 pass
-   * - Target VBR
+   * - 目标可变速率
      - 5 mbps
      - 1 mbps
-   * - Max VBR
+   * - 最大可变速率
      - 7.5 mbps
      - 1.5 mbps
-   * - Audio
+   * - 声频
      - AAC 44.1 / 192 kbps
      - AAC 44.1 / 192 kbps
 
