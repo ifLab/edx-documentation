@@ -259,25 +259,17 @@ Topics` 。更多关于使用群配置讨论主题的内容请参考 :ref:`Set u
 讨论主题可见性
 **********************************
 
-您在
-The names that you specify as the category and subcategory names for
-discussion components are not visible on the **Discussion** tab until after
-the course has started and the unit is released.
+在课程开始且单元发布之前，
+您为讨论组件指定的种类和子类名称在 **论坛** 栏中不可见。
 
-However, "seed" posts that you create in content-specific discussion topics
-before a course starts or before the unit is released are immediately visible
-on the **Discussion** tab, even though the containing category or subcategory
-names are not visible. We recommend that you do not create posts in 
-content-specific discussion topics before a unit is released. For more
-information about release dates and the visibility of components, see
+然而，您创建在指定内容讨论主题中的基础帖在 **论坛** 栏中立即可见，
+尽管所包含的分类和子类名仍不可见。我们建议您在单元发布前不要在指定内容讨论主题中发帖。
+更多关于发布日期和组件可见性的信息请参阅
 :ref:`Controlling Content Visibility`.
 
-In contrast, :ref:`course-wide discussion topics<Create CourseWide Discussion
-Topics>` that you create on the **Advanced Settings** page in Studio,
-including the default "General" discussion topic, are immediately visible,
-regardless of whether the course has started. They are not associated with any
-particular section or subsection of the courseware, and are not subject to
-release dates.
+相反，您在Studio中的 **高级设置** 中创建的 :ref:`course-wide discussion topics<Create CourseWide Discussion
+Topics>` 包含默认"General"讨论主题，是立即可见的，无论课程是否已经开始。
+这些主题与任何特定的章节和小节无关，也不受限于发布日期。
 
 
 .. _Running_discussions:
