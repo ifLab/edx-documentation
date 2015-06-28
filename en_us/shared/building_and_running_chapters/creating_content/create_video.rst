@@ -189,21 +189,19 @@ course video, it might be the result of one of these browser-related problems.
 
 #. 在新增组件下，点击影片
 
-#. When the new video component appears, click **Edit**. The video editor opens
-   to the **Basic** tab.
+#. 当出现新的影片组件时，点击编辑。影片编辑者能看见原始码。
 
    .. image:: ../../../shared/building_and_running_chapters/Images/VideoComponentEditor.png
     :alt: Image of the video component editor
     :width: 500
 
-   You replace the default values with your own.
+   您能自行替代默认值。
 
-3. In the **Component Display Name** field, enter an identifying name for this
-   video. This name appears as a heading above the video and as a tooltip in
-   the learning sequence at the top of the **Courseware** page.
+3. 在显示组件名称栏位，填入您想让学生在鼠标划过页面时显示的提示文字。
+   这个文字将成为影片的标题文字。
 
-#. In the **Default Video URL** field, enter the URL of the video. Example
-   URLs follow.
+#. 在默认影片统一资源定位符（URL）栏位，输入影片的统一资源定位符（URL）。
+   例如，统一资源定位符（URL）可能类似于以下例子中的一种。
 
    ::
 
@@ -212,22 +210,18 @@ course video, it might be the result of one of these browser-related problems.
       https://s3.amazonaws.com/edx-course-videos/edx-edx101/EDXSPCPJSP13-G030300.mp4
       https://s3.amazonaws.com/edx-videos/edx101/video4.webm
 
-.. note:: To be sure that all learners can access a video, you might want to 
-    create multiple versions that use different encodings or hosting services.
-    After you post different versions on the Internet, you add each URL below
-    the default video URL. **These URLs cannot be YouTube URLs**. To add a URL
-    for another version, click **Add URLs for additional versions**. The first
-    listed video that is compatible with the learner's computer plays.
+.. note:: 为了确保所有学生均能播放影片，您能在互联网上公布影片的其他版本。
+    之后将这些影片的统一资源定位符（URL）添加至下方影片默认统一资源定位符（URL）。
+    这些统一资源定位符（URL）不能是You Tube网站的统一资源定位符（URL）。
+    想要将统一资源定位符（URL）添加至其他版本中，点击添加其他版本统一资源定位符（URL）。
+    与学生们电脑兼容的第一个列明影片将播放。
 
-5. Next to **Default Timed Transcript**, select an option.
+5. 下一个步骤是默认限时副本，选择一个选项。
 
-   * If edX already has a transcript for this video, Studio automatically
-     finds the transcript and associates the transcript with the video. This
-     situation can occur when you reuse a video from an existing course.
+   * 若edX已存有您的影片，例如，若您正在播放现有课程中的影片，Studio会自动找到副本并将其与影片连接起来。
 
-     If you want to modify the transcript, click **Download Transcript for
-     Editing**. You can then make your changes and upload the new file by
-     clicking **Upload New Transcript**.
+     若您想修改副本，点击下载副本及编辑。您能改动影片并通过点击上传新副本完成上传。
+
 
    * If edX does not have a transcript for the video, but YouTube has a
      transcript, Studio automatically finds the YouTube transcript and asks if
