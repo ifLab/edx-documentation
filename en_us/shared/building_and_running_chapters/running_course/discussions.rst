@@ -99,13 +99,12 @@ Topics` 。更多关于使用群配置讨论主题的内容请参考 :ref:`Set u
 这类课题可以包含“反馈”、“答疑”、“技术支持”等字样。
 这类课题的可访问时间与课程的可访问时间一致。
 
-.. note:: Make sure each discussion topic in your course has a unique name,
-   whether it is a course-wide topic or a content-specific discussion topic
-   that you add as a discussion component. If different discussion topics
-   share the same name, learners might be confused as to which discussion
-   topic they are participating in. For example, do not add a content-specific
-   discussion topic named "General", because a course-wide discussion topic
-   named "General" already exists in every course.
+.. note:: 确保您课程中的讨论主题有唯一的名称，
+   无论是全课堂讨论课题或是指定内容讨论课题。
+   如果不同的主题名称相同，学生会不知道自己在哪个主题中。
+   例如，不要添加名称为“General”的指定内容讨论课题，
+   因为全课程讨论问题中已经有叫“General”的问题了。
+
 
 如何创建全课堂讨论课题：
 
