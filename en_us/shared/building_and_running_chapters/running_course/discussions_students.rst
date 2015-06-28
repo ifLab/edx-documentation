@@ -81,22 +81,20 @@ edX课程通常包含几个全课堂讨论课题，譬如“常见问题解答�
 
 当您针对某个课题贡献帖子时，帖子通常分为“提问帖”和“讨论帖”。
 
-* A *question* post raises an issue so that the course staff and community can
-  provide answers. 
+* **提问帖** ，用于提问，课程工作人员和讨论社区均可解答。
 
-* A *discussion* post starts a conversation by sharing thoughts and reflections,
-  and inviting community participation.
+* **讨论帖** ，常用于展开对话、分享思路、交流反馈，及邀请其他成员参与讨论社区。
 
-When you add a post to a discussion topic, you must specify whether it is a question
-or a discussion. 
 
-After you make your post, on the **Discussion** page for your course, a
-question mark image identifies posts that ask questions and a conversation
-bubble image identifies posts that start discussions.
+发帖时，您需要决定帖子的类型。
+
+您访问“讨论”页面时，带有问号标记的帖子为提问帖，带有对话气泡标记的为讨论帖。 
 
 .. image:: ../../../shared/building_and_running_chapters/Images/Post_types_in_list.png
  :alt: The list of posts with images identifying questions and discussions 
 
+如果您不知道自己的帖子到底属于哪种类型，可以想想，
+您是想得到具体的信息（提问帖），还是只是想开展一次开放式的对话（讨论帖）？
 If you have any difficulty deciding which type of post you want to add, think
 about whether you want to get concrete information (a question) or start an
 open-ended conversation (a discussion). If you require an answer from the
@@ -107,46 +105,36 @@ team sees that a response is required and responds appropriately.
 .. _Find Posts:
 
 ******************************
-Find Posts
+查找帖子
 ******************************
 
-Finding out whether someone else has already asked the same question or
-initiated a conversation about the same subject that interests you, and then
-reading and contributing to that exchange instead of starting a new one, helps
-make the time that everyone spends with the course discussion more productive.
-You can search for something specific, or you can browse through the posts in a
-single discussion topic.
+您可以在发帖前试着找找其他人有没有提过和你类似的问题，或者发起您感兴趣的会话，
+如果有，不妨在其他类似的帖子下方发表内容，而不必新开一条帖子，如此，
+可以使大家的讨论效率最大化。
+您可以搜索特定内容，也可以专门浏览含有您感兴趣内容的讨论课题。
 
 =======================
-Search the Discussions
+搜索讨论内容
 =======================
 
-To search for text, click **Discussion** and enter a phrase, a word, or part of
-a word in the **Search all posts** field above the list of posts. When you
-press Enter, the search tries to find:
+您可以单击“讨论”页面，在帖子列表上方的“搜索所有帖子”字段中输入关键词、关键句子，
+甚至某个单词的一部分，从而搜索整个列表，查找您需要的内容。按回车键，搜索结果为：
 
-* A match or close match to your text in any post, response, or comment. The
-  display updates to show a list of the posts that have a match at any level of
-  interaction.
+* 含有与您输入的信息相同或部分相同内容的帖子、评论或回复。
+  页面中显示的是所有含有匹配信息的内容列表。
 
-* A similar value in any post, response, or comment (if no exact matches are
-  found). A "No results found for {text}. Showing results for {similar}"
-  message displays above the posts that have similar text at any interaction
-  level.
+* 如果找不到明确的匹配，则显示包含类似信息的内容。
+  页面中显示“无法匹配{您输入的内容}，以下是包含类似信息的内容”。
 
-* Any usernames that are an exact match to your text. A "Show posts by
-  {username}" option displays above any posts that have an exact text match at
-  any interaction level. Click the username in the message to read that user's
-  posts, responses, and comments.
+* 如果成功找到您想要的信息，内容上方会出现“查看该作者的其他帖子”选项。
+  单击作者的用户名，即可阅读该作者的其他内容。
 
 ==============================================
-Review Posts About a Single Topic
+查看某一课题中的所有历史帖子
 ==============================================
 
-To review posts about a particular part of the course or type of issue, click
-**Discussion** at the top of the page and then select a topic from the drop-
-down list. (**All Discussions** is selected by default.) Only posts about the
-topic you select appear in the list of posts.
+单击“讨论”，从下拉列表中选择关于某项课程内容或某类问题的课题。
+列表即只会显示您选择的那类帖子。
 
 .. image:: ../../../shared/building_and_running_chapters/Images/Discussion_filters.png
  :alt: The list of posts with callouts to identify the top filter to select 
