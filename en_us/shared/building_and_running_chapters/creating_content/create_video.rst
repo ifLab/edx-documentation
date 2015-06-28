@@ -89,16 +89,16 @@ edX视频播放器支持mp4, .webm, .mpeg, and .ogg格式。
 .. _Create Transcript:
 
 *********************************************
-步骤2. 创建或保存影片字幕
+步骤2. 创建或保存影片副本
 *********************************************
 
-我们强烈建议您将影片与有限的字幕相结合。
-对于那些母语是非英语、不能看见影片或这想要回顾影片内容的学生来说，字幕对他们是十分有用的。
-您的影片播放的同时字幕也会自动滚动播放。要是学生点击字幕中的单词，影片会显示该词。
-您能让学生下载字幕以便他们能在线阅读。在创建影片组件时，您能将影片和字幕相结合。
+我们强烈建议您将影片与有限的副本相结合。
+对于那些母语是非英语、不能看见影片或这想要回顾影片内容的学生来说，副本对他们是十分有用的。
+您的影片播放的同时副本也会自动滚动播放。要是学生点击副本中的单词，影片会显示该词。
+您能让学生下载副本以便他们能在线阅读。在创建影片组件时，您能将影片和副本相结合。
 
-自动播放影片的前提是您的字幕必须是srt格式的文档。
-若想创建和保存srt格式的字幕，您可以和提供字幕服务的公司合作。
+自动播放影片的前提是您的副本必须是srt格式的文档。
+若想创建和保存srt格式的副本，您可以和提供字幕服务的公司合作。
 EdX可以和3Play Media公司合作。You Tube也能提供字幕服务。
 
 您上传srt文档时，文本文件会自动生成。学生可以下载srt文档或文本文档（txt）。
@@ -109,13 +109,12 @@ EdX可以和3Play Media公司合作。You Tube也能提供字幕服务。
    :width: 500
    :alt: Video status bar showing srt and txt transcript download options
 
-You can also provide transcripts in different formats, such as .pdf, and you
-can provide transcripts in different languages. For more information about
-these options, see :ref:`Additional Transcripts`.
+您也可以提供其他形式的副本，如 .pdf，您也可以使用其他语言。
+更多选择信息请参照 :ref:`Additional Transcripts`.
 
-.. note:: Historically, some courses used .sjson files for video transcripts.
- Use of .sjson files is no longer recommended; however, if transcripts in your
- course use this format, see :ref:`Steps for sjson files`.
+.. note:: 以前有一些课程使用 .sjson文件作为视频副本。
+ 现在我们已经不再推荐这种方式。
+ 然而，如果您的副本是 .sjson格式，请参考 :ref:`Steps for sjson files` 。
 
 .. _Post the Video Online:
 
