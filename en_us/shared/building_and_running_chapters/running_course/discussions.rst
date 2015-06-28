@@ -155,14 +155,13 @@ Topics` 。更多关于使用群配置讨论主题的内容请参考 :ref:`Set u
 .. _Create ContentSpecific Discussion Topics:
 
 ============================================
-Create Content-Specific Discussion Topics
+创建内容指定讨论主题
 ============================================
 
-To create a content-specific discussion topic, you add a discussion component
-to a unit. Typically, you do this while you are designing and creating your
-course in Studio. Follow the instructions in :ref:`Working with Discussion
-Components`. The result is a discussion topic associated with a unit and its
-content. 
+您需要在单元中添加讨论组件。一般情况，您在Studio中创建课程的时候需要这么做。
+请遵循 :ref:`Working with Discussion Components` 中的指导内容。
+讨论主题将与所在单元相关联。
+
 
 .. warning:: Follow the recommended steps to add discussion components. Do not
    create discussion topics by using the **Duplicate** button in Studio, and
@@ -245,23 +244,19 @@ topics, see :ref:`Visibility of Discussion Topics`.
 
 
 ==============
-Remove Roles
+删除角色
 ==============
 
-To remove role privileges from a user, you must be the course author or
-an Instructor (that is, you are identified in Studio as a team member with
-Admin access or in the LMS as an Instructor).
+要删除用户的特权，您必须是课程作者或导师（您在Studio中有管理员权限
+或在LMS中是导师）。
 
-#. View the live version of the course.
+#. 查看课程在线版本
 
-#. Click **Instructor**, then click **Membership**.
+#. 选择 **导师** ，点击 **成员**
 
-#. In the Administration List Management section, use the drop-down list to
-   select Discussion Admins, Discussion Moderators, or Discussion Community
-   TAs.
+#. 在管理列表中的管理部分，选择下拉列表中的论坛管理员，论坛版主或讨论社区助教。
 
-#. From the list of users who currently have that role, select the user you
-   want to remove, then click **Revoke access**.
+#. 在列表中选择您想删除的用户，点击 **删除权限** 
 
 
 .. _Visibility of Discussion Topics:
