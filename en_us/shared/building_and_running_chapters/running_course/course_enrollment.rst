@@ -6,8 +6,7 @@
 
 课程编写者和导师可以招收学生、查看课程参与人数以及，在必要的情况下，从教师控制面板中开除学生。
 
- 在规定的招生时间内，学生可自行参与课程。
- ``www.edx.org`` 的课程对所有已注册edX账户的学生公开招生。
+在规定的招生时间内，学生可自行参与课程。 ``www.edx.org`` 的课程对所有已注册edX账户的学生公开招生。
 其他课程，比如在 ``edge.edx.org`` 网站中的课程，
 它们的招生只针对了解课程URL的学生或是其他指定范围的学生。
 
@@ -106,14 +105,12 @@
 
 * 学生可主动退出课程，课程作者或导师也可在必要的时候开除学生。
 
-  **Note**: 课程参与人数表示的是当前所有参与课程的学生及课程团队成员的总人数，
+  **注意**: 课程参与人数表示的是当前所有参与课程的学生及课程团队成员的总人数，
   而非历史数据。
 
-The total number of current enrollees is shown as the sum of the number of
-people who selected each of the certification tracks (verified, audit, or
-honor) that are available for your course.
+课程参与人数是所有选择证书（认证证书、旁听证书以及荣誉证书）学生的总人数。
 
-T如何查看课程参与人数：
+如何查看课程参与人数：
 
 #. 查看课程现况
 
