@@ -81,11 +81,9 @@ edX课程的论坛既可以添加您之前专门为某个课程单元设计好�
 也可以开展全课堂范围的讨论课题，比如“课程反馈帖”，“答疑帖”，“技术支持帖”等等。
 您可通过Studio添加各种不同类型的讨论课题。
 
-
-For more information about creating discussion topics, see :ref:`Create
-CourseWide Discussion Topics` and :ref:`Create ContentSpecific Discussion
-Topics`. For information about configuring discussion topics in courses that
-use cohorts, see :ref:`Set up Discussions in Cohorted Courses`.
+更多关于创建讨论主题的内容，请参考 :ref:`Create
+CourseWide Discussion Topics` 和 :ref:`Create ContentSpecific Discussion
+Topics` 。更多关于使用群配置讨论主题的内容请参考 :ref:`Set up Discussions in Cohorted Courses`.
 
 
 .. _Create CourseWide Discussion Topics:
