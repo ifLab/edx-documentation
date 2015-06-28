@@ -252,17 +252,17 @@ YouTube
       -  默认时限副本的原始码用的是副本文档的名称。
          此区域是自动添加的。
          您不需要改变这项设置。
-    * - **Download Transcript Allowed**
-      - Specifies whether you want to allow learners to download the timed
-        transcript. If you select **True**, a link to download the
-        file appears below the video.
+    * - **同意下载副本**
+      - 详细说明您是否同意让学生下载时限副本。
+        若您选择“是”，影片下方会显示下载文档的链接。
+        
 
-        By default, Studio creates a .txt transcript when you upload an .srt
-        transcript. Learners can download the .srt or .txt versions of the
-        transcript when you set **Download Transcript Allowed** to **True**. If
-        you want to provide the transcript for download in a different format
-        as well, such as .pdf, upload a file to Studio by using the **Upload
-        Handout** field.
+        通过默认设置，在你上传.srt副本文档的同时会生成文本文档副本。
+        您甚至成同意下载副本，学生们就能下载.srt副本及文本文档副本。
+        同时，若您希望能下载不同格式的文本，
+        例如，.pdf，通过上传讲义，将其上传至Studio。
+        
+        
 
     * - **Downloadable Transcript URL**
       - The URL for a non-.srt version of the transcript file posted on the
