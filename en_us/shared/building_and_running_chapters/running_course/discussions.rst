@@ -430,57 +430,44 @@ students.readthedocs.org/en/latest/sfd_your_information.html#sfd_pro
 file_page>`_.
 
 ========================================
-Provide Guidelines for Students
+为学生提供指导
 ========================================
 
-You can develop a set of best practices for discussion participation and make
-them available to students as a course handout file or on a defined page in
-your course. These guidelines can define your expectations and optionally
-introduce features of edX discussions.
+关于如何参与论坛活动，您可以选取几个最佳案例作为模范，
+然后以课程讲义文件的形式发放给学生，或在课程中单独开一个页面详述。
+您可以通过这些指南表达自己对学生的期望，也可以介绍edX论坛的功能。
 
-You can also share the :ref:`Discussions for Students and Staff` chapter with
-your students. It describes features that are available to all discussion
-participants, and may be useful to students who are new to online discussion
-forums.
+您也可以选择将 :ref:`Discussions for Students and Staff` 一章中的内容与学生共享。
+它描述了讨论参与者可以使用的所有功能，即使是论坛新手也可以从中受益良多。
 
 .. For a template that you can use to develop your own guidelines, see
 .. :ref:`Discussion Forum Guidelines`.
 
 ========================================
-Develop a Positive Discussion Culture
+培养积极的论坛文化
 ========================================
 
-Discussion monitors can cultivate qualities in their own discussion
-interactions to make their influence positive and their time productive.
+论坛管理者可以通过优化论坛互动行为，使论坛传播积极影响，最大化地利用讨论时间。
 
-* Encourage quality contributions: thank students whose posts have a positive
-  impact and who answer questions.
+* 鼓励学生做出高质量的贡献：应该感谢那些发布积极帖子的学生以及踊跃回答问题的学生。
 
 * Check links, images, and videos in addition to the text of each message. Edit
   offensive or inappropriate posts quickly, and explain why.
 
-* Review posts with a large number of votes and recognize "star posters"
-  publicly and regularly.
+* 审阅点赞人数较多的帖子，定期、公开地评选“明星楼主”。
 
-* Stay on topic yourself: before responding to a post, be sure to read it
-  completely.
+* 紧扣主题：请先读完帖子，再发表回复。
 
-* Maintain a positive attitude. Acknowledge problems and errors without
-  assigning blame.
+* 保持积极的态度：发现问题和错误时，不应指责抱怨。
 
-* Provide timely responses. More time needs to be scheduled for answering
-  discussion questions when deadlines for homework, quizzes, and other
-  milestones approach.
+* 及时回复：作业、小测验等重要事件的截止日期将近时，应多花时间回答论坛中提出的问题。
 
-* Discourage redundancy: before responding to a post, search for similar posts.
-  Make your response to the most pertinent or active post and then copy its URL
-  and use it to respond to the redundant threads.
+* 尽量减少赘余的帖子：在回复帖子之前，应看看有没有其他内容类似的帖子。
+  回复最紧扣主题或最活跃的帖子，并复制其URL用来回复其他类似的话题。
 
-* Publicize issues raised in the discussions: add questions and their answers
-  to an FAQ topic, or announce them on the Course Info page.
+* 将论坛中的问题公开发布：将问题和答案分享到FAQ课题中，或在“课程信息”页面中公布。
 
-For a template that you can use to develop guidelines for your course
-moderators, see :ref:`Guidance for Discussion Moderators`.
+本节内容的模板详见 :ref:`Guidance for Discussion Moderators`.
 
 .. _Find Question Posts and Discussion Posts:
 
