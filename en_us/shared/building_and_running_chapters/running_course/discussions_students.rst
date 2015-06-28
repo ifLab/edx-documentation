@@ -141,67 +141,58 @@ team sees that a response is required and responds appropriately.
        one topic and the filter below it to select by state 
 
 =======================================
-Review Only Unread or Unanswered Posts
+仅查看“未读”或“未解决”的帖子
 =======================================
 
-To limit the posts shown on the **Discussion** page, you can select one of the
-filter options. Above the list of posts, the **Show all** filter is selected
-by default.
+为控制“讨论”页面中帖子的数量，您可以通过页面上方的筛选功能选择某一类型的帖子，
+默认筛选条件为“所有帖子”。
 
-* To list only the discussions and questions that you have not yet viewed,
-  select **Unread**.
+* 选择“未读”，即可查看您尚未浏览的所有讨论帖及提问帖。
 
-* To list only question posts that do not yet have any responses marked as
-  answers, select **Unanswered**.
+* 选择“未解决”，即可查看所有没有满意答案的提问题。
 
 .. _Add a Post:
 
 ************************************
-Add a Post, Response, or Comment
+发帖、评论、回复
 ************************************
 
 ================================
-Add a Post
+发帖
 ================================
 
-To make sure that other students and the course team can find and respond to
-your post, determine the type for your post: either question or discussion.
+为保证其他学生及课程团队能够找到、回复您的帖子，请选择正确的帖子类型：“提问”还是“讨论”？
 
-Add a Post to a Content-Specific Discussion Topic
+在特殊讨论课题中发帖
 **************************************************
 
-#. Click **Courseware**.
+#. 单击“课件”
 
-#. Open the part of the course that includes the discussion topic that you want
-   to add to.
+#. 打开您想要发帖的课题
 
-#. To read what others have already contributed to the conversation, click
-   **Show Discussion**.
+#. 单击“查看讨论”查看其他人发布的内容
 
-   You can scroll through the posts that have already been added: the title and
-   the first sentence or two of each post appear. To read an entire post, view
-   the responses to it, and see any comments, click **Expand discussion**.
+   您可以快速浏览已经发布的帖子。通常，帖子只会显示标题和开头几句话。
+   如果您想查看帖子的完整内容以及其下的评论和回复，单击“展开讨论”。
   
-4. To add a post, click **New Post**.
+4. 如果您想发帖，单击“新帖子”
 
 .. image:: ../../../shared/building_and_running_chapters/Images/Discussion_content_specific_post.png
   :alt: Adding a post about specific course content
 
-5. Select the type of post: click **Question** or **Discussion**.
+5. 选择帖子类型：单击“提问”或“讨论”
 
-#. Enter a short, descriptive identifier for your post in the **Title** field.
-   The title is the part of your post that others see when they are browsing on
-   the **Discussion** page or scrolling through one of the content-specific
-   topics.
+#. 在“标题”字段中输入一段简短的描述性文字。标题是帖子的一部分，
+   其他人在浏览“讨论”页面或查看特殊讨论课题时将首先看见您的标题
 
-#. Enter the complete text. Options for formatting the text and for adding
-   links or images are available: click the buttons above the text field.
 
-Add a Post to a Course-Wide Discussion Topic
+#. 输入帖子的完整内容。您可以单击内容字段上方的按钮选择文本格式、添加链接、图片等等
+
+
+在全课堂讨论课题中发帖
 **************************************************
 
-You can also use this procedure to add a post to any of the content-specific
-discussion topics.
+您可根据以下流程在全课堂讨论课题中发帖。
 
 #. Click the **Discussion** page.
 
