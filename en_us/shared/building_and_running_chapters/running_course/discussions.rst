@@ -30,13 +30,11 @@
 想了解更多关于分队功能对论坛协调事宜的影响，请参考 :ref:`Moderating Discussions for
 Cohorts`.
 
-.. note:: The :ref:`Discussions for Students and Staff` section describes
-   features that are available to all discussion participants, and might be
-   useful to students who are new to online discussion forums. You can share
-   the section with your students by, for example, adding a "Never Used a
-   Discussion Forum Before?" post that includes the information you think will
-   be most useful to them.
-
+.. note:: :ref:`Discussions for Students and Staff` 部分描述的性能对所有论坛成员开放。
+   对论坛新人而言帮助也很大。
+   您可以和学生一起分享其中的内容。
+   方式有很多，比如，您可以发一条名为“第一次使用论坛？”的帖子，
+   在帖子中提供您认为对学生最有用的信息。
 
 .. _Overview_discussions:
 
@@ -63,17 +61,14 @@ Cohorts`.
 讨论话题可以保存，是课程历史的组成部分。
 
 .. note:: “参与课堂讨论”一章描述了论坛的部分功能，这些功能对所有参加论坛的人都开放，
-   对论坛新人而言帮助也很大。对论坛新人而言帮助也很大。
+   对论坛新人而言帮助也很大。
    您可以和学生一起分享其中的内容。
    方式有很多，比如，您可以发一条名为“第一次使用论坛？”的帖子，
    在帖子中提供您认为对学生最有用的信息。
 
-   Discussion administration roles must be explicitly granted to members of
-   the course team for them to moderate or administer course discussions. The
-   course author, team members with Admin access (Studio), and Instructors
-   (Instructor Dashboard) can grant discussion administration roles. For
-   information about adding discussion privileges, see
-   :ref:`Assigning_discussion_roles`.
+   论坛管理员角色必须为您课程团队中的教员。
+   课程作者、有管理权限的团队成员以及导师可以授予管理员权限。
+   更多关于添加论坛特权的内容请参考 :ref:`Assigning_discussion_roles`.
 
 
 .. _Organizing_discussions:
