@@ -45,50 +45,41 @@ edX课程论坛剖析
 先想想哪种形式更适合您想表达的内容。这可以让课堂讨论更加井然有序。
 
 ====================================
-Discussion Topics
+讨论课题
 ====================================
 
-Most edX courses include opportunities to discuss specific video lectures,
-reading assignments, homework problems, or other course content. Each of these
-content-specific discussion opportunities is called a *topic*. When these
-discussion topics are included in a course, they typically appear below the
-content they apply to.
+大多数edX课程都会为学生提供机会讨论视频课程、阅读任务、课后问题及其他课程内容。
+这种针对某个特定内容而设的讨论称为“课题”。特殊讨论课题通常出现在相应内容的下方。
 
 .. image:: ../../../shared/building_and_running_chapters/Images/Discussion_content_specific.png
  :alt: A discussion topic that appears below a video in the course, identified 
        by a "Show Discussion" link
 
-Most courses also include one or more topics for course-wide discussions, such
-as "Frequently Asked Questions" and "Troubleshooting". You access these topics
-on the **Discussion** page of the course: click the **All Discussions**
-drop-down.
+edX课程通常包含几个全课堂讨论课题，譬如“常见问题解答”、“疑难解答”等等。
+您可在课程的 **讨论** 页面访问这些课题：单击 所有 **讨论** 下拉箭头即可。
 
 .. image:: ../../../shared/building_and_running_chapters/Images/Discussion_course_wide.png
  :alt: Discussion topics are listed on the Discussion page when you click the 
        drop-down list at the left side of the page
 
-When you visit the **Discussion** page, you can read and add to any of the
-discussion topics. 
+访问 **讨论** 页面时，您可以阅读这些课题，并在其下发表内容。
 
-* Course-wide topics do not have other topics indented below them.
+* 全课堂讨论课题只有一个标题，其下不包含其他次级讨论内容。
 
-* Content-specific topics are indented under an identifying category name. 
+* 特殊讨论课题下通常会包含其他次级分类讨论。
 
-Notice that you can access content-specific topics both on the **Discussion**
-page and also while you are navigating through course content on the
-**Courseware** page. However, you can only access the course-wide topics on the
-**Discussion** page.
 
-Before you add a post, look through the topics. When you add your post to the
-most appropriate topic, others with the same interest can find, read, and
-respond to it more easily.
+注意，您不仅可以在 **讨论** 页面访问特殊讨论课题，也可以在浏览 **课件** 页面的课程内容时访问特殊讨论课题。
+但是全课堂讨论课题只能从 **讨论** 页面访问。
+
+请先浏览课题列表，然后选择最合适的课题发帖，这样能使其他兴趣相投的人更容易找到、阅读、回复您的帖子。
+
 
 ====================================
-Types of Discussion Posts
+讨论帖的类型
 ====================================
 
-When you make a contribution in a course discussion topic, you add your post
-as either a question or a discussion.
+当您针对某个课题贡献帖子时，帖子通常分为“提问帖”和“讨论帖”。
 
 * A *question* post raises an issue so that the course staff and community can
   provide answers. 
