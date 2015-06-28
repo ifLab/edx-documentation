@@ -447,44 +447,36 @@ course video, it might be the result of one of these browser-related problems.
 .. _Transcripts in Additional Languages:
 
 ====================================
-Transcripts in Additional Languages
+其他语言的副本 
 ====================================
 
-You can provide transcripts for your video in other languages. To do this,
-you work with a third-party service to obtain an .srt transcript file for
-each language, and then associate the .srt file with the video in Studio.
+您能上传其他语言的影片副本。
+想这样做的话，您需要与第三方服务商合作，以便保存每种语言的.srt格式的副本文档，
+之后将.srt格式文档与Studio中的影片相链接。 
 
-#. After you obtain the .srt files for additional languages, open the
-   video component for the video.
+#. 您在保存其他语言的.srt格式文档之后，打开影片组件。
 
-#. On the **Advanced** tab, scroll down to **Transcript Languages**, and then
-   click **Add**.
+#. 在高级选项栏位，下拉至副本语言，点击添加。
 
-#. In the drop-down list that appears, select the language for the transcript
-   that you want to add.
+#. 在显示的下拉菜单栏位，选择您想添加的副本语言。
 
-   An **Upload** button appears below the language.
+   语言下方显示上传按钮。
 
-#. Click **Upload**, browse to the .srt file for the language that you want,
-   and then click **Open**.
+#. 点击上传，浏览.srt格式文档语言，点击打开。
 
-#. In the **Upload translation** dialog box, click **Upload**.
+#. 在上传翻译对话框栏位，点击上传。
 
-#. Repeat steps 2 - 5 for any additional languages.
+#. 添加任意附加语言，操作同步骤2至步骤5相同。
 
-.. note:: Make sure that all your transcript file names are unique to each
- video and language. If you use the same transcript name in more than one video
- component, the same transcript will play for each video. To avoid this
- problem, you could name your foreign language transcript files according to
- the video's file name and the transcript language.
-
- For example, you have two videos, named video1.mp4 and video2.mp4. Each video
- has a Russian transcript and a Spanish transcript. You can name the
- transcripts for the first video video1_RU.srt and video1_ES.srt, and name the
- transcripts for the second video video2_RU.srt and video2_ES.srt.
-
-When your learners view the video, they can click the **CC** button at the
-bottom of the video player to select a language.
+.. note:: 确保所有您的副本文档名与每个影片及语言的名称不同。
+ 您在至少一个影片组件中使用相   同的副本名称，每个影片播放的都是同一副本。
+ 为了避免这一问题发生，您可根据影片文档名和副本语言，命名您的外语副本名称。
+ 
+ 例如，您有两份影片，分别命名为影片1.mp4和影片2.mp4。
+ 两个影片均有俄语和西班牙语副本。您能将第一个影片命名为影片1RU.srt和影片1 ES.srt，
+ 将副本命名为影片2RU.srt和影片2 ES.srt。 
+ 
+学生浏览影片时，他们能点击影片下方的CC按钮，选择语言。
 
 .. image:: ../../../shared/building_and_running_chapters/Images/Video_LanguageTranscripts_LMS.png
    :alt: Video playing with language options visible
