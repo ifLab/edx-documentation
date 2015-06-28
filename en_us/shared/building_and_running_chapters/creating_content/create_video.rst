@@ -282,15 +282,15 @@ YouTube
 
     * - **许可证书**
       - 您可以选择为视频设置许可证书。
-        以满足您发布与课程证书不同的视频许可证的需求。
+        以满足您发布与课程许可证不同的视频许可证的需求。
         
 
-        * Select **All Rights Reserved** to indicate to learners that you own
-          the copyright for the video.
+        * 选择 **版权所有** 像学生表明您拥有视频的版权。 
+          
 
-        * Select **Creative Commons** to grant others the right to share and
-          use the video. You must then select the Creative Commons license
-          options to apply.
+        * 选择 **CC协议** 授予他人分享视频的权利。
+          您必须选择申请CC协议证书。
+          
 
           The license options that you select control the copyright notice that
           learners see for the video. For more information, see :ref:`Licensing
