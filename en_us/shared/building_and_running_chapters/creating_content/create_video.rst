@@ -328,23 +328,23 @@ YouTube
         我们强烈建议您使用.mp4 或 .webm格式。
 
     * - **视频ID**
-      - An optional field used only by course teams that are working with
-        edX to process and host video files.
+      - 此选项仅用于使用edX制作主视频文件的课程团队。
+        
     * - **影片开始时间**
       - 若您不想播放所有视频，能设置影片开始时间。
         将格式设置为 HH:MM:SS。最大值为23:59:59。
 
-        .. note:: Learners who download and play the video in the mobile
-         app see the entire video file. Only videos that play in a browser
-         start playing at the specified start time.
+        .. note:: 在移动应用上下载并播放该视频的学生可以看到完整的视频文件。
+         只有在浏览器中播放视频时有特定开始时间。
+         
 
     * - **影片结束时间**
       - 若您不想播放所有视频，能设置影片结束时间。
         将格式设置为 HH:MM:SS。最大值为23:59:59。
 
-        .. note:: Learners who download and play the video in the mobile
-         app see the entire video file. Only videos that play in a browser
-         stop playing at the specified stop time.
+        .. note:: 在移动应用上下载并播放该视频的学生可以看到完整的视频文件。
+         只有在浏览器中播放视频时有特定结束时间。
+         
 
     * - **YouTube ID**
       - 若您将独立且不同播放速率的影片上传至You Tube，
