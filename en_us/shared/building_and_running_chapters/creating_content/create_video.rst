@@ -311,18 +311,18 @@ YouTube
         in a Web browser. If you select **False**, learners can use any
         compatible application to play the video, including Web browsers and
         mobile apps.
-    * - **Video Download Allowed**
-      - Specifies whether learners can download versions of this video in
-        different formats if they cannot use the edX video player or do not
-        have access to YouTube. If you select **True**, you must add
-        at least one non-YouTube URL in the **Video File URLs** field.
-    * - **Video File URLs**
-      - The URL or URLs where you posted non-YouTube versions of the video.
-        Every URL should end in .mp4, .webm, .mpeg, or .ogg and cannot be a
-        YouTube URL. Each learners will be able to view the first listed video
-        that is compatible with the his or her computer. To allow learners to
-        download these videos, you must set **Video Download Allowed** to
-        **True**.
+    * - **同意下载影片**
+      - 若学生们无法使用edX播放器或You Tube，
+        请详细说明他们能否下载此影片不同格式的版本。
+        若您选择“是”，必须在影片文件统一资源定位符（URL）区域
+        中添加至少一个非You Tube统一资源定位符（URL）。
+    * - **影片文档URL**
+      - 您发布过的非You-Tube版本的视频的URL。
+        最终，每个统一资源定位符（URL）必须是mpeg, .webm, .mp4, or .ogg格式，
+        而且不能是You Tube统一资源定位符（URL）。
+        每个学生均能浏览与其电脑兼容的第一个列明的影片。
+        您必须同意影片下载，学生才能下载影片。
+        
 
         To help make sure all standard browsers can play your video, we
         **strongly** recommend that you use the .mp4 format.
