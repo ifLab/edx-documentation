@@ -357,21 +357,18 @@ team sees that a response is required and responds appropriately.
 .. _Follow Posts:
 
 ==============================
-Follow Posts
+收藏帖子
 ==============================
 
-If you find a post particularly interesting and want to return to it in the
-future, you can follow it: view that post and click the "Follow" icon.
+如果您看见一条非常感兴趣的帖子，觉得日后可能还会再看，
+您可以收藏该帖：查看帖子，单击“收藏”标签即可。
 
 .. image:: ../../../shared/building_and_running_chapters/Images/Discussion_follow.png
  :alt: A post with the Follow icon circled
 
-Each post that you follow appears with a "Following" indicator in the list of
-posts.
+帖子列表中，您收藏的帖子下方会显示“已收藏”。
 
-To list only the posts that you are following, regardless of the discussion
-topic they apply to, click the drop-down Discussion list and select
-**Posts I'm Following**.
+如果您只想查看收藏的帖子，只需单击下拉列表中的“我收藏的帖子”即可。如图：
 
 .. image:: ../../../shared/building_and_running_chapters/Images/Discussion_filterfollowing.png
  :alt: The list of posts with the "Posts I'm Following" filter selected. Every
@@ -380,22 +377,17 @@ topic they apply to, click the drop-down Discussion list and select
 .. _Answer Questions:
 
 ============================================================
-Answer Questions and Mark Questions as Answered 
+回答问题/采纳答案
 ============================================================
 
-Anyone in a course can answer questions. Just add a response to the question
-post with your answer.
+所有参与课程的人均可回答问题。发表一条回复，附上您的回答即可。
 
-The person who posted the question (and staff members) can mark responses as
-correct: click the "Mark as Answer" icon that appears at upper right of
-the response.
+发帖人和课程工作人员可以判定回复是否正确：单击回复右上角的“采纳答案”图标即可。
 
 .. image:: ../../../shared/building_and_running_chapters/Images/Discussion_answer_question.png
  :alt: A question and a response, with the Mark as Answer icon circled
 
-After at least one response is marked as the answer, a check or tick mark image
-replaces the question mark image for the post in the list on the **Discussion**
-page.
+如果有答案被采纳，“讨论”页面中，帖子标题前的“？”会变成“√”。
 
 .. image:: ../../../shared/building_and_running_chapters/Images/Discussion_answers_in_list.png
  :alt: The list of posts with images identifying unanswered and answered
@@ -404,12 +396,10 @@ page.
 .. _Report Discussion Misuse:
 
 ==============================
-Report Discussion Misuse
+举报违规内容
 ==============================
 
-You can flag any post, response, or comment for a discussion moderator to
-review: view the contribution, click the "More" icon, and then click
-**Report**.
+您可以向论坛协调员举报任何您认为违规的内容：查看该内容，单击“更多”→“举报”。
 
 .. image:: ../../../shared/building_and_running_chapters/Images/Discussion_reportmisuse.png
  :alt: A post and a response with the "Report" link circled
