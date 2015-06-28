@@ -1,17 +1,13 @@
 .. _Discussions for Students and Staff:
 
 ###############################################
-Participating in Course Discussions
+参与课程讨论
 ###############################################
 
-Course discussions give you the opportunity to start conversations with other
-students, ask questions of the course team, and participate in the course
-community. If you have not previously participated in an online discussion
-forum, see the introductory :ref:`"anatomy"<Anatomy of edX Course Discussions>`
-section.
+课堂讨论是您有更多机会与其他学生交流、向课程团队提问，以及参与课程社区。
+如果您是第一次参加在线论坛，可以参考 :ref:`"anatomy"<Anatomy of edX Course Discussions>`
 
-This chapter also describes features of edX discussions that can make your
-participation more effective. These include ways to:
+本章还描述了edX论坛的功能，这些功能能使您的讨论效率最大化。这些功能包括：
 
 * :ref:`Find Posts`
 
@@ -24,32 +20,29 @@ participation more effective. These include ways to:
 .. _Anatomy of edX Course Discussions:
 
 **********************************
-Anatomy of edX Course Discussions 
+edX课程论坛剖析 
 **********************************
 
 ====================================
-Posts, Responses, and Comments
+帖子、回复与评论
 ====================================
 
 ::
 
-  Post: "Please introduce yourself."
-    - Reponse: "My name is Lee and I teach secondary school maths in Canberra,
-      Australia."
-    - Reponse: "Hello everyone, I am Sumei from Hong Kong, China."
-      - Comment: "Hi Sumei, I am taking this course in Hong Kong too. Maybe we
-        should make a study group!"
-      - Comment: "I'd like to join the Hong Kong study group too, I think it
-        will help me keep up with the homework."
-    - Response: "Hi from Johannesburg! I am taking the course to prepare for my
-      matric exams."
+  帖子：“请各位做个自我介绍吧！”
+    - 回复：“我叫Lee，现在在堪培拉，是一名中学数学老师。”
+      
+    - 回复：“大家好，我叫苏梅，来自中国香港。”
+      - 评论：“嗨苏梅，我也在香港上课。组个队不？”
+        
+      - 评论：“同求组队！希望组队能帮我解决作业问题= =。”
+        
+    - 回复：“哈喽，我在约翰内斯堡，我在上高考培训班。”
+      
 
-This example shows the different ways that you can contribute to a discussion.
-The *post* initiates the conversation, *responses* are replies to the post, and
-*comments* expand on specific responses. Before you add a post, response, or
-comment, take a moment to consider which of these options best suits the
-contribution that you want to make. This helps keep course discussions
-organized and easy to follow.
+本例涵盖了您在讨论中的不同贡献方式。“帖子”即话题，“回复”即对帖子内容的回复，
+“评论”则是观众针对某条回复的看法。在发布帖子、发表回复、评论之前，
+先想想哪种形式更适合您想表达的内容。这可以让课堂讨论更加井然有序。
 
 ====================================
 Discussion Topics
