@@ -354,60 +354,50 @@ of Discussion Topics`.
 缩小话题范围
 ======================================
 
-To encourage longer, threaded discussions rather than many similar, separate
-posts, the discussion team can use these techniques. However, be aware that
-long threads (with more than 200 responses and comments) can be difficult to
-read, and can therefore result in an unsatisfactory experience in the
-discussion.
+为了鼓励学生多发布更长、更线性化的讨论话题，
+少发布大同小异、支离破碎的散帖，论坛管理团队可以试试下面提到的几个技巧。
+但是请注意，长篇讨论（通常指回复、评论数量超过200条的讨论）阅读起来有一定难度，
+有可能影响学生的课堂体验。
 
-* Pin a post. Pinning a post makes it appear at the top of the list of posts on
-  the **Discussion** page. As a result, it is more likely that students will
-  see and respond to pinned posts. You can write your own post and then pin it,
-  or pin a post by any author. Select the "More" icon and then **Pin**.
+
+* 帖子置顶。帖子置顶功能可以使某条帖子出现在“讨论”页面中，
+  帖子列表的第一条，从而使更多学生能够看见、回复该帖。
+  您可以置顶自己写的帖子，也可以置顶其他人的帖子。
+  选择“更多”图标，然后点“置顶”即可。
 
     .. image:: ../../../shared/building_and_running_chapters/Images/Pin_Discussion.png
      :alt: Image of the pin icon for discussion posts
 
-* Endorse a response. Endorsing a response indicates that it provides value to
-  the discussion. Click the "check mark" (or tick mark) icon for the response.
+* 给回复点赞。点赞意味着您认为该条回复提供了有价值的信息。
+  单击右侧的“√”图标即可。
 
     .. image:: ../../../shared/building_and_running_chapters/Images/Endorse_Discussion.png
      :alt: Image of the Endorse button for discussion posts
 
-* Mark a question as answered. You use the same procedure to mark a response as
-  the correct answer to a question as you do to endorse contributions to a
-  discussion: click the "check mark" (or tick mark) icon for correct answers.
+* 将某个问题标记为“已回答”。操作方法同“点赞”。
 
-* Close a post. You can respond to a redundant post by (optionally) pasting in
-  a link to the post that you prefer students to contribute to, and prevent
-  further interaction by closing the post. Select the "More" icon and then
-  **Close** to close it.
+* 关闭帖子。如果您认为某条帖子很多余，可以在该帖的回复中粘贴一条链接，
+  指向您希望学生做出贡献的帖子，然后关闭本条帖子。
+  帖子关闭后，无法继续互动。选择“更多”图标中的“关闭”选项即可。
 
-* Provide post/response/comment guidelines. You can post information from the
-  :ref:`overview<Overview_discussions>` in this chapter, or the :ref:`anatomy
-  of edX discussions<Anatomy of edX Course Discussions>` in the next chapter,
-  in a course-wide discussion topic (such as General) to provide guidance about
-  when to start a new thread by adding a post, responding to an existing post,
-  or commenting on a response.
+* 通过帖子/回复/评论提供指导信息。您可在全课堂讨论课题的帖子中发布本章第一节中提到的内容，
+  也可以设计下一章“edX论坛剖析”中的内容，提示学生何时开始话题，如何回复帖子，如何评论回复。
 
 .. _Moderating_discussions:
 
 ***********************
-Moderate Discussions
+协调论坛工作
 ***********************
 
-The members of a course discussion team monitor discussions and keep them
-productive. They can also collect information, such as areas of particular
-confusion or interest, and relay it to the course staff.
+讨论团队成员会随时跟踪监控讨论项目，促使论坛高效运转。
+他们也可以从论坛中收集信息，比如学生对哪些知识存在疑问，
+对哪部分课程比较感兴趣，等等，并将这些信息转告给课程工作人员。
 
-Developing and sustaining a positive discussion culture requires that
-sufficient moderator time is dedicated to reviewing and responding to
-discussions. Keeping up-to-date with a large MOOC forum requires a commitment
-of 5 or more hours per week, and involves reading threads, replying to and
-editing posts, and communicating with the rest of the discussion team and
-course staff.
+如果希望培养并维持积极的论坛文化，则需花更多管理时间用于审核、回复论坛内容。
+一个大型开放式在线课程的论坛维护时间每周应不少于5小时，
+维护工作包括阅读讨论话题、回复、编辑讨论帖，以及和其他讨论团队成员及课程工作人员积极交流。
 
-For information on setting up moderators for your course, see
+更多信息请参考
 :ref:`Assigning_discussion_roles`.
 
 ====================================================
