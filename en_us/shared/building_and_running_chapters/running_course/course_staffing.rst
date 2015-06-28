@@ -33,29 +33,27 @@
 
 “课程工作人员”的职能包括：
 
-* View the course before the Course Start Date. 
+* 在课程开始日期之间预先查看课程
 
-* Enroll and unenroll students.
+* 招收、开除学生
 
-* Access student grades.
+* 调取学生成绩
 
-* Reset student attempts to answer a question correctly.
+* 重置学生正确回答问题的尝试次数
 
-* See course HTML errors.
+* 发现课程中的HTML错误
 
-* Send email messages to course participants.
+* 给课程参与者发邮件消息
 
-**Instructors** have access to all of the same options for running the course
-as the course staff. They can also:
+而 **导师** 除了具有以上职能外，还可以：
 
-* Add and remove Course Staff.
+* 添加、开除课程工作人员
 
-* Add and remove other Instructors.
+* 添加、开除其他导师
 
-* Add and remove Beta Testers.
+* 添加、开除贝塔测试员
 
-* Add and remove Discussion Admins, Discussion Moderators, and Discussion
-  Community TAs.
+* 添加、开除讨论项目管理员、协调员及讨论社区助教
 
 .. note:: To moderate course discussions, the team member must also have one 
  of the discussion roles. For more information, see
