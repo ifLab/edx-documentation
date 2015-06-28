@@ -32,7 +32,7 @@
 学生在参与课程之前，需要：
 
 #. 注册用户帐户。需提供有效的电子邮件地址用于登录
-   ``www.edx.org``， ``edge.edx.org``或者安装edX平台客户端。
+   ``www.edx.org``， ``edge.edx.org`` 或者安装edX平台客户端。
    每个平台的用户帐户均不能相同。
 
 #. 通过邮箱中的激活邮件来激活账户。
@@ -67,19 +67,18 @@
   邮件中交代了课程名称，同时提醒尚未注册的学生用户尽快使用收到本消息的邮件地址注册用户帐户。
 
 
-  An example of the email message that a student received when this option was
-  selected during enrollment follows. In this example, the student already had a
-  registered and activated edx.org account, and both **Auto Enroll** and
-  **Notify students by email** were selected.
+  面是一封邮件示例。在本例中，该学生已注册、激活了edx.org账户，
+  且 **自动添加** 和 **给学生发送通知邮件** 选项均处于选中状态。
+
 
   .. image:: ../../../shared/building_and_running_chapters/Images/Course_Enrollment_Email.png
         :alt: Email message inviting a student to enroll in an edx.org course
 
-To enroll students or staff members:
+如何添加学生或工作人员：
 
-#. View the live version of your course.
+#. 查看课程现况
 
-#. Click **Instructor**, then click **Membership**. 
+#. 单击 **导师** , **成员** 
 
 #. In the **Batch Enrollment** section of the page, enter the username or email
    address of the student, or enter multiple names or addresses separated by
