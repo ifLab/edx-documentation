@@ -16,17 +16,14 @@
 .. _Protecting Videos:
 
 ************************
-Protecting Videos
+视频保护
 ************************ 
 
-To help course teams protect video assets, the edX video player hides video
-URLs from learners by default. This functionality is in effect for all video
-files, including YouTube videos and videos that you have posted in other
-locations. Learners can still download videos if you select the **Video
-Download Allowed** option for your video components. For more information about
-posting videos not hosted on YouTube, see :ref:`Post the Video Online`. For
-more information about options that you can set when you create a video
-component, see :ref:`Video Advanced Options`.
+为了帮助教员团队保护视频资源，edX播放器默认隐藏视频URL。
+此默认设置应用于所有视频文件，包括YouTube视频和您发布在其他网站的视频。
+如果您选择了 **允许下载视频** 学生仍可以下载视频文件。
+更多关于在YouTube之外的网站发布视频的信息，请参考 :ref:`Post the Video Online` 。
+更多关于您可以设置的选项请参考  :ref:`Video Advanced Options`.
 
 .. _Create the Video:
 
@@ -74,7 +71,8 @@ component, see :ref:`Video Advanced Options`.
      - AAC 44.1 / 192 kbps
      - AAC 44.1 / 192 kbps
 
-.. note:: Typically you export at the same frame rate that was used when you
+.. note:: 一般情况下，您
+Typically you export at the same frame rate that was used when you
  created the media file. For example, if you create the file in a country that
  uses the PAL system, you export at 25 fps instead of the NTSC standard of
  29.97 fps.
