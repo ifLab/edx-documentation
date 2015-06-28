@@ -271,77 +271,64 @@ team sees that a response is required and responds appropriately.
 浏览新帖及更新帖
 ==============================
 
-The list of posts on the **Discussion** page provides visual cues to help you
-identify posts that are new, or that have responses or comments that you have
-not read yet, and to distinguish them from exchanges that you have already read
-completely.
+“讨论”页面的帖子列表提供了一系列的标识提示，
+帮助您快速找到新帖子以及含有未读评论、回复的帖子，
+并将它们与已经完全阅读过的帖子区分开。
 
-* Posts that you have not read yet have a blue callout image.
+* 完全未读的帖子带有蓝色气泡标记。
 
-* Posts that you have read, but with responses or comments that you have not
-  read yet, have a white callout image.
+* 已经阅读过内容，但是有些评论和回复尚未阅读的帖子，带有白色气泡标记。
  
-* Exchanges that you have read completely have a gray callout image and
-  background.
+* 已经完全阅读过的对话带有灰色气泡标记及灰色背景颜色。
 
  .. image:: ../../../shared/building_and_running_chapters/Images/Discussion_colorcoding.png
   :alt: The list of posts with posts showing differently colored backgrounds 
         and callout images
 
-The total number of contributions in the exchange (the post and its responses
-and comments) appears in each callout image. To see the number of contributions
-that you haven't read yet, move your cursor over the callout image.
+气泡标记中显示的是该会话中贡献的总数量（包括帖子、回复、评论）。
+将鼠标移到气泡标记上，即可查看未阅读的贡献数量。
 
 .. image:: ../../../shared/building_and_running_chapters/Images/Discussion_mouseover.png
  :alt: A post with 4 contributions total and a popup that shows only two are 
        unread 
 
-The color-coded callout images appear when you sort the list of posts **by
-recent activity** or **by most activity**. If you sort the list of posts by
-most votes instead, the number of votes that the post has received appears in
-place of the callouts. See :ref:`Vote for Posts or Responses`.
+只有通过“按活跃时间排序”和“按活跃度排序”分类出来的帖子才会显示不同颜色的气泡标记。
+如果您将帖子排序方法改为“按点赞数量排序”，则气泡标记出显示的是某条帖子的点赞人数。
+请参阅 :ref:`Vote for Posts or Responses`.
 
 ==============================
-Receive Daily Digests
+接收每日摘要
 ==============================
 
-You have the option to receive an email message each day that summarizes
-discussion activity for the posts you are following. To receive this daily
-digest, click **Discussion** and then select the **Receive updates** checkbox.
+您可以选择订阅每日摘要邮件，它会为您梳理正在关注的帖子的最近动态。
+单击“讨论”→“接收每日更新”即可。
 
 
 .. _React to Contributions:
 
 ************************************
-Provide Feedback on Contributions
+提供贡献反馈信息
 ************************************
 
-As you read the contributions that other students and staff make to discussion
-topics, you can provide feedback without writing a complete response or
-comment. You can:
+您在阅读其他学生或课程员工发表于讨论课题下的内容时，
+可以通过反馈功能表达自己的想法，而无需另写一条评论或回复。您可以：
 
-* :ref:`Vote for posts and responses<Vote for Posts or Responses>` to provide
-  positive feedback.
+* :ref:`Vote for posts and responses<Vote for Posts or Responses>` 即，积极反馈。
 
-* :ref:`Follow posts<Follow Posts>` so that you can check back in on
-  interesting conversations and questions easily.
+* :ref:`Follow posts<Follow Posts>` 收藏帖子后，可以在日后方便地查看该帖的内容。
 
 * :ref:`Answer questions, and mark your questions as answered<Answer
   Questions>`.
 
-* :ref:`Report a contribution<Report Discussion Misuse>` that is inappropriate
-  to the course staff.
+* :ref:`Report a contribution<Report Discussion Misuse>` 向课程工作人员举报违规内容。
 
-To select a feedback option, you use the icons at the top right of each post,
-response, or comment. When you move your cursor over these icons a label
-appears.
+您可以使用贡献内容右上角的图标选择相应的功能。您可将鼠标放在某个图标上，图标处会出现对应的功能标签。
 
 .. image:: ../../../shared/building_and_running_chapters/Images/Discussion_options_mouseover.png
  :alt: The icons at top right of a post, shown before the cursor is 
       placed over each one and with the Vote, Follow, and More labels
 
-When you click the "More" icon, a menu of the options that currently apply
-appears.
+单击“更多”图标，查看更多操作选项。
 
 .. image:: ../../../shared/building_and_running_chapters/Images/Discussion_More_menu.png
  :alt: The More icon expanded to show a menu with one option and a menu with 
@@ -350,25 +337,22 @@ appears.
 .. _Vote for Posts or Responses:
 
 ==============================
-Vote for Posts or Responses
+给帖子或回复点赞
 ==============================
 
-If you like a post or one of its responses, you can vote for it: view the
-post or response and click the "Vote" icon at top right.
+如果您喜欢某条帖子或者其下的回复，可以为它点赞：
+查看帖子或回复，单击右上角的“点赞”图标即可。
 
 .. image:: ../../../shared/building_and_running_chapters/Images/Discussion_vote.png
  :alt: A post with the Vote icon circled
 
-You can sort the list of posts so that the posts with the most votes appear at
-the top: click the drop-down list of sorting options and select **by most
-votes**.
+您可以将帖子按照点赞数量排序：单击排序选项列表，选择“按点赞数量排序”。
 
 .. image:: ../../../shared/building_and_running_chapters/Images/Discussion_sortvotes.png
  :alt: The list of posts with the "by most votes" sorting option and the 
        number of votes for the post circled
 
-The number of votes that each post has received displays in the list of posts.
-(Votes for responses are not included in the number.)
+每条帖子获得的点赞数量会出现在帖子列表中。（给回复点的赞不算在内）
 
 .. _Follow Posts:
 
