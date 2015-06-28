@@ -472,53 +472,41 @@ file_page>`_.
 .. _Find Question Posts and Discussion Posts:
 
 ==========================================
-Find Questions and Discussions
+查找提问和讨论
 ==========================================
 
-When students create posts, they specify the type of post to indicate whether
-they are asking for concrete information (a question) or starting an open-ended
-conversation (a discussion). 
+学生创建新帖子时需指定帖子的类型，是寻找准确的信息（提问）？
+还是开始一场开放性的对话（讨论）？
 
-On the **Discussion** page, a question mark image identifies posts that ask
-questions, and a conversation bubble image identifies posts that start
-discussions. When an answer is provided and marked as correct for a question, a
-check or tick mark image replaces the question mark image. See :ref:`Answer
+在“讨论”页面中，提问帖通常带有“问号”标记，讨论帖带有“对话气泡”标记。
+当提问帖的问题得到解决，且答案被采纳，问号标记自动变成“√”标记。详见 :ref:`Answer
 Questions`.
 
-In addition to these visual cues, filters can help you find questions and
-discussions that need review. Above the list of posts on the **Discussion**
-page, the **Show all** filter is selected by default. You can also select:
+除了通过这些标记辨别之外，您还可以通过论坛的筛选功能查找之前的提问帖和讨论帖。
+在“讨论”页面上方，筛选条件默认为“所有帖子”。您也可以将其更改为：
 
-* **Unread**, to list only the discussions and questions that you have not yet
-  viewed.
+* **未读** ，指的是所有您没有阅读过的帖子，包括提问帖和讨论帖。
 
-* **Unanswered**, to list only questions that do not yet have any responses
-  marked as answers.
+* **未解决** 指的是仍然没有最佳答案的提问帖。
 
 ==================
-Edit Messages
+编辑消息
 ==================
 
-Discussion moderators, community TAs, and admins can edit the content of posts,
-responses, and comments. Messages that include spoilers or solutions, or that
-contain inappropriate or off-topic material, should be edited quickly to remove
-text, images, or links.
+三种论坛管理职能均有权编辑和更改帖子、回复和评论的内容
+。一旦发现泄露机密、泄露答案，或含有不良信息、偏离主题信息的内容，
+应及时删除其文本、图片和链接。
 
-#. Log in to the site and then select the course on your **Current Courses**
-   dashboard.
+#. 登录官网，在“当前课程”面板中选择相应课程
 
-#. Open the **Discussion** page and then open the post with the content that
-   requires editing. You can select a single topic from the drop-down list of
-   discussion topics, apply a filter, or search to locate the post.
+#. 打开“讨论”页面，打开需要编辑的帖子。
+   您可以从下拉列表中选择，也可以通过筛选功能及搜索功能快速定位帖子
 
-#. For the post or for the response or comment that you want to edit, click the
-   "More" icon and then **Edit**.
+#. 找到需要修改的内容后，单击右侧的“更多”图标，选择“编辑”
 
-#. Remove the problematic portion of the message, or replace it with standard
-   text such as "[REMOVED BY MODERATOR]".
+#. 直接删除有问题的部分，可以附上一行字：“该内容已被管理员删除”
 
-#. Communicate the reason for your change. For example, "Posting a solution
-   violates the honor code."
+#. 交代删除原因。例如，“含有违背道德准则的信息”
 
 ==================
 Delete Messages 
