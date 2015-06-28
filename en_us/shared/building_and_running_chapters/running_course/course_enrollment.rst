@@ -80,89 +80,76 @@
 
 #. 单击 **导师** , **成员** 
 
-#. In the **Batch Enrollment** section of the page, enter the username or email
-   address of the student, or enter multiple names or addresses separated by
-   commas or new lines.
+#. 在 **批量添加** 字段后，输入学生的用户名或邮件地址，
+   多个用户名或地址之间用逗号分隔，或另起一行。
 
-  You can copy and paste data from a CSV file of email addresses. However,
-  note that this feature is better suited to courses with smaller enrollments,
-  rather than courses with massive enrollments.
+  您可以从CSV文件中复制邮件地址粘贴至此处。
+  但此功能不太适合规模较大的课程。
 
-4. To streamline the course enrollment process, leave **Auto Enroll** selected.
+4. 为简化工作流程，请尽量选择 **自动添加** 选项。
 
-#. To send students an email message, leave **Notify students by email**
-   selected.
+#. 如果要发送通知邮件，请勾选 **给学生发通知邮件** 选项。
 
-#. Click **Enroll**.
+#. 单击 **添加** 。
 
 .. _view_enrollment_count:
 
 ***************************
-View an Enrollment Count
+查看课程参与人数
 ***************************
 
-After you create a course, you can access the total number of people who are
-enrolled in it. When you view an enrollment count, note that:
+创建课程后，您可以查看参加课程的总人数。查看数据时，请注意：
 
-* In addition to students, the enrollment count includes the course author,
-  course team members, instructors, and course staff. (To work with a
-  course in Studio or the LMS, you must be enrolled in that course.)
+* 除学生外，参与课程的总人数也包括课程作者、课程团队成员、
+  导师以及课程工作人员。（为了更有效地管理Studio或学习管理系统中的课程，
+  您最好亲自参与该课程）
 
-* Students can unenroll from courses, and course authors and instructors can
-  unenroll students when necessary.
+* 学生可主动退出课程，课程作者或导师也可在必要的时候开除学生。
 
-  **Note**: The enrollment count displays the number of currently enrolled
-  students and course team staff. It is not a historical count of everyone who
-  has ever enrolled in the course.
+  **Note**: 课程参与人数表示的是当前所有参与课程的学生及课程团队成员的总人数，
+  而非历史数据。
 
 The total number of current enrollees is shown as the sum of the number of
 people who selected each of the certification tracks (verified, audit, or
 honor) that are available for your course.
 
-To view the enrollment count for a course:
+T如何查看课程参与人数：
 
-#. View the live version of your course.
+#. 查看课程现况
 
-#. Click **Instructor**, then click **Course Info** if necessary. 
+#. 单击 **导师** ， **课程信息**
 
-  The **Enrollment Information** section of the page that opens shows the
-  number of people who are currently enrolled in your course and in each of the
-  certification tracks.
+  在打开的页面中，“课程参与信息”字段后显示的是当前加入课程并得到认证的总人数。
+  
 
-You can also view or download a list of the people who are enrolled in the
-course. See :ref:`Student Data`.
+您也可以查看或下载课程参与人员列表，详见 :ref:`Student Data`.
 
 .. _unenroll_student:
 
 *********************************
-Unenroll Students from a Course
+开除学生
 *********************************
 
-You can remove students from a course by unenrolling them. To prevent students
-from re-enrolling, course enrollment must also be closed. You use Studio to
-set the **Enrollment End Date** for the course to a date in the past. See
-:ref:`Scheduling Your Course`.
+开除学生即意味着该学生被永久移除。为防止被开除的学生再次参与课程，
+应关闭课程招生功能，只需在Studio中将“招生截止日期”设置为一个过去的时间点即可。
+详见 :ref:`Scheduling Your Course`.
 
-**Note**: Unenrollment does not delete data for a student. An unenrolled
-student's state remains in the database and is reinstated if the student does
-re-enroll.
+**Note**: 开除学生不会删除学生数据。被开除的学生状态数据仍然保存在数据库中，
+如果学生重新参与课程，该状态数据会被重置。
 
-To unenroll students, you supply the email addresses of enrolled students. 
+如果您想开除某个学生，需提供该学生的邮箱地址：
 
-#. View the live version of your course.
+#. 查看课程现况
 
-#. Click **Membership**. 
+#. 单击“成员” 
 
-#. In the **Batch Enrollment** section of the page, enter a username or an email
-   address, or multiple names or addresses separated by commas or new lines.
+#. 在“批量添加”字段后，键入用户名或邮箱，多个用户名和邮箱之间用逗号分隔或另起一行
 
-#. To send students an email message, leave **Notify students by email**
-   selected.
+#. 如果希望用邮件通知学生，请勾选“给学生发送通知邮件”
 
-.. note:: The **Auto Enroll** option has no effect when you click **Unenroll**.
+.. note:: 单击“开除”后，“自动添加”选项将失效。
 
-5. Click **Unenroll**. The course is no longer listed on the students'
-   **Current Courses** dashboards, and the students can no longer contribute to
-   discussions or the wiki or access the courseware.
+5. 单击“开除”。课程即不再显示在该学生的“当前课程”面板上，
+   该生将无法贡献讨论项目、维基百科，并失去课件的访问权限。
 
 .. _Using edX Insights: http://edx-insights.readthedocs.org/en/latest/
