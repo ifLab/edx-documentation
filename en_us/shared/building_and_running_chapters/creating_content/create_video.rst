@@ -413,43 +413,36 @@ course video, it might be the result of one of these browser-related problems.
    :width: 500
    :alt: Video status bar showing srt and txt transcript download options
 
-If you want to provide a downloadable transcript in a format such as .pdf along
-with the .srt and .txt transcripts, we recommend that you use the **Upload
-Handout** field. When you do this, a **Download Handout** button appears to the
-right of the **Download Transcript** button, and learners can download the
-.srt, .txt, or handout version of the transcript.
+若您想要上传.pdf、.srt、txt格式副本的话，我们建议您在上传讲义区域操作。
+您这样操作的话，上传讲义按钮会出现在下载副本按钮右方，学生们能下载 .srt, .txt格式或与讲义格式相同的副本。
 
 .. image:: ../../../shared/building_and_running_chapters/Images/Video_DownTrans_srt-handout.png
    :width: 500
    :alt: Video status bar showing srt, txt, and handout transcript download
     options
 
-To add a downloadable transcript, you use the **Upload Handout** field.
+利用上传讲义区域，添加下载副本：
 
-#. Create or obtain your transcript as a .pdf or in another format.
-#. In the video component, click the **Advanced** tab.
-#. Locate **Upload Handout**, and then click **Upload**.
-#. In the **Upload File** dialog box, click **Choose File**.
-#. In the dialog box, select the file on your computer, and then click
-   **Open**.
-#. In the **Upload File** dialog box, click **Upload**.
+#. 创建或保存您的副本，副本可以是.pdf或其他格式。
+#. 在影片组件栏位，点击高级选项。
+#. 找到上传讲义，点击上传。
+#. 在上传文档对话框栏位，点击选择文档。
+#. 在对话框栏位，选择您电脑中存储的文档，点击打开。
+#. 在上传文档对话框栏位，点击上传。
 
-Before Studio added the **Upload Handout** feature, some courses posted
-transcript files on the **Files & Uploads** page or on the Internet, and then
-added a link to those files in the video component. **We no longer recommend
-this method.**  When you use this method, the **Download Transcript** button
-appears, but only the transcript that you add is available for download. The
-.srt and .txt transcripts become unavailable.
+在Studio添加上传讲义特性之前，确保一部分课程已公布至文档和上传页面或公布在网上，
+接着将链接添加至影片组件文档中。 **我们不建议您这样做。**
+您使用这种方法时，会显示下载副本，但是您添加的副本只能下载。
+无法识别.srt 和文本文档（txt）格式的副本。
 
 .. image:: ../../../shared/building_and_running_chapters/Images/Video_DownTrans_other.png
    :width: 500
    :alt: Video status bar showing Download Transcript button without srt and
     txt options
 
-If you want to use this method, you can post your transcript online, and then
-add the URL to the transcript in the **Downloadable Transcript URL** field.
-However, bear in mind that learners will not be able to download .srt or .txt
-transcripts.
+若您想使用此方法，将您的影片公布在网上，并将统一资源定位符（URL）添加至副本，
+该副本位于下载副本统一资源定位符（URL）区域内。
+但是，切记这样一来，学生将无法下载srt 和文本文档（txt）格式的副本。
 
 .. _Transcripts in Additional Languages:
 
