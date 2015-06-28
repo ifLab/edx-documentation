@@ -262,9 +262,10 @@ topics, see :ref:`Visibility of Discussion Topics`.
 .. _Visibility of Discussion Topics:
 
 **********************************
-Visibility of Discussion Topics
+讨论主题可见性
 **********************************
 
+您在
 The names that you specify as the category and subcategory names for
 discussion components are not visible on the **Discussion** tab until after
 the course has started and the unit is released.
