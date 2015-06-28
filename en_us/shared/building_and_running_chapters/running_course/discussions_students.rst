@@ -194,90 +194,81 @@ team sees that a response is required and responds appropriately.
 
 您可根据以下流程在全课堂讨论课题中发帖。
 
-#. Click the **Discussion** page.
+#. 单击“讨论”页面
 
-#. Click **New Post**.
+#. 单击“新帖子”
 
-#. Select the type of post: click **Question** or **Discussion**.
+#. 选择帖子类型：单击“提问”或“讨论”
 
-#. Select the most appropriate discussion topic for your post.
+#. 选择最合适的课题发帖
 
   .. image:: ../../../shared/building_and_running_chapters/Images/Discussion_course_wide_post.png
     :alt: Selecting the topic for a new post on the Discussion page 
 
-5. Supply a short, descriptive **Title**. The title is the part of your post
-   that others see when they are browsing on the **Discussion** page or
-   scrolling through one of the content-specific topics.
+5. 在“标题”字段中输入一段简短的描述性文字。
+   标题是帖子的一部分，其他人在浏览“讨论”页面或查看特殊讨论课题时将首先看见您的标题
 
-#. Enter the complete text. Options for formatting the text and for adding
-   links or images are available: click the buttons above the text field.
+#. 输入帖子的完整内容。您可以单击内容字段上方的按钮选择文本格式、
+   添加链接、图片等等
 
 ===========================
-Add a Response or Comment
+发表回复、评论
 ===========================
 
-To participate in an ongoing discussion, you reply to the initial post by
-adding a response, or expand on a particular response by adding a comment.
+在讨论中，您可以通过回复功能回复某条原创帖，或通过评论功能展开某条回复内容。
 
-The same options for formatting the text and for adding links or images are
-available for responses and comments as for posts.
+发表回复、评论时也可以使用添加链接等功能，具体操作与发帖时的操作相同。
 
-Add a Response or Comment to a Content-Specific Discussion Topic
+在特殊讨论课题中发表回复和评论
 ****************************************************************
 
-#. Click **Courseware**.
+#. 单击“课件”
 
-#. Open the part of the course with the discussion topic where you want to make
-   your contribution.
+#. 打开您想要发帖的课题
 
-#. Click **Show Discussion**.
+#. 单击“查看讨论”
 
-#. Scroll to the post where you want to add your thoughts.
+#. 浏览您想要发表看法的帖子
 
-#. Click **Expand discussion**.
+#. 单击“展开讨论”
    
   .. image:: ../../../shared/building_and_running_chapters/Images/Discussion_expand.png
     :alt: The **Expand discussion** link under a post
 
-6. Add a response or comment.
+6. 发表回复和评论
 
- - To add a response to the post, click **Add A Response**. When your response
-   is complete, click **Submit**.
+ - 单击“添加回复”对某条帖子内容发表回复。回复完成后，单击“提交回复”。
 
- - To add a comment to a response, click in the **Add a comment** field below
-   the response. When your comment is complete, click **Submit**.
 
-Add a Response or Comment to a Course-Wide Discussion Topic
+ - 单击某条回复下的“添加评论”字段。评论完毕后，单击“提交评论”。
+
+在全课堂讨论课题下发表回复及评论
 ************************************************************
 
-You can also use this procedure to add a response or comment to any of the
-content-specific discussion topics.
+您可根据以下流程在全课堂讨论课题中发帖。
 
-#. Click the **Discussion** page.
+#. 单击“讨论”页面
 
-#. Find the post that you want to contribute to. To help you decide where to
-   add your thoughts, review the current responses and their comments.
+#. 找到您想要的帖子。先浏览帖子中的回复和评论再决定是否发表看法
 
-#. Add a response or comment.
+#. 发表回复和评论
 
- - To add a response to the post, click **Add A Response**. When your response
-   is complete, click **Submit**.
+ - 单击“添加回复”对某条帖子内容发表回复。回复完成后，单击“提交回复”。
 
   .. image:: ../../../shared/building_and_running_chapters/Images/Discussion_add_response.png
     :alt: The **Add A Response** button located between a post and its 
           responses 
 
- - To add a comment to a response, click in the **Add a comment** field below
-   the response. When your comment is complete, click **Submit**.   
+ - 单击某条回复下的“添加评论”字段。评论完毕后，单击“提交评论”。
 
 .. _Keep Up with New Activity:
 
 ****************************************
-Keep Up with New Activity
+掌握帖子动态
 ****************************************
 
 ==============================
-Read New or Updated Posts
+浏览新帖及更新帖
 ==============================
 
 The list of posts on the **Discussion** page provides visual cues to help you
