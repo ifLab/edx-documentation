@@ -82,10 +82,10 @@ Cohorts`.
 建立课堂讨论课题
 *************************************************
 
-Discussions in an edX course include both broad topics on course-wide areas of
-interest such as "Feedback", "Troubleshooting", or "Technical Help", and the
-content-specific topics that you add to course units as discussion components.
-You create both types of discussion topics in Studio.
+edX课程的论坛既可以添加您之前专门为某个课程单元设计好的讨论模块，
+也可以开展全课堂范围的讨论课题，比如“课程反馈帖”，“答疑帖”，“技术支持帖”等等。
+您可通过Studio添加各种不同类型的讨论课题。
+
 
 For more information about creating discussion topics, see :ref:`Create
 CourseWide Discussion Topics` and :ref:`Create ContentSpecific Discussion
@@ -96,12 +96,15 @@ use cohorts, see :ref:`Set up Discussions in Cohorted Courses`.
 .. _Create CourseWide Discussion Topics:
 
 =====================================
-Create Course-Wide Discussion Topics
+创建全课堂讨论课题
 =====================================
 
-All courses include a page named **Discussion**. When you create a course, a
-course-wide discussion topic named "General" is already included by default.
+所有课程均包括一个名为“讨论”的页面。创建课程时，
+系统会在该页面中默认生成一个名为“General”的讨论课题。
 
+课堂讨论课题，在课堂上引导学生分享、查找信息。
+这类课题可以包含“反馈”、“答疑”、“技术支持”等字样。
+这类课题的可访问时间与课程的可访问时间一致。
 You can add additional course-wide discussion topics to guide how students
 share and find information during your course. Such course-wide topics might
 include Introduction and Announcements, Feedback, or Troubleshooting.
