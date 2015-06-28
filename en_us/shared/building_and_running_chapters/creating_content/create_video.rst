@@ -324,34 +324,34 @@ YouTube
         您必须同意影片下载，学生才能下载影片。
         
 
-        To help make sure all standard browsers can play your video, we
-        **strongly** recommend that you use the .mp4 format.
+        为使所有标准浏览器能播放您的影片，
+        我们强烈建议您使用.mp4 或 .webm格式。
 
     * - **Video ID**
       - An optional field used only by course teams that are working with
         edX to process and host video files.
-    * - **Video Start Time**
-      - The time you want the video to start if you do not want the entire
-        video to play. Use HH:MM:SS format. The maximum value is 23:59:59.
+    * - **影片开始时间**
+      - 若您不想播放所有视频，能设置影片开始时间。
+        将格式设置为 HH:MM:SS。最大值为23:59:59。
 
         .. note:: Learners who download and play the video in the mobile
          app see the entire video file. Only videos that play in a browser
          start playing at the specified start time.
 
-    * - **Video Stop Time**
-      - The time you want the video to stop if you do not want the entire video
-        to play. Use HH:MM:SS format. The maximum value is 23:59:59.
+    * - **影片结束时间**
+      - 若您不想播放所有视频，能设置影片结束时间。
+        将格式设置为 HH:MM:SS。最大值为23:59:59。
 
         .. note:: Learners who download and play the video in the mobile
          app see the entire video file. Only videos that play in a browser
          stop playing at the specified stop time.
 
-    * - **YouTube IDs**
-      - If you have uploaded separate video files to YouTube for different
-        speeds of your video (YouTube ID for .75x speed, YouTube ID for 1.25x
-        speed, YouTube ID for 1.5x speed), enter the YouTube IDs for these
-        videos in these fields. These settings are optional, to support video
-        play on older browsers.
+    * - **YouTube ID**
+      - 若您将独立且不同播放速率的影片上传至You Tube，
+        在此区域输入这些影片的You Tube号。  
+        (拥有You Tube号的人能享受 .75x、1.25x及1.5x倍播放速度)
+        
+        
 
 
 .. _Video TOC:
