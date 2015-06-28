@@ -160,14 +160,14 @@ YouTube
   更多信息请参考  `Media formats supported by the HTML audio and
   video elements`_.
 
-* Verify that file metadata, particularly the MIME type, is correctly set on
-  the host site. Internet Explorer 10 browsers do not play videos if the MIME
-  type is not set. For example, make sure that the HTTP header Content-Type
-  is set to video/mp4 for an .mp4 file, or to video/webm for a .webm file.
+* 确保文件元数据，尤其是MIME类型的元数据，在主站中正确设置。
+  IE 10浏览器无法播放未设置的MIME格式视频。
+  例如，确保.mp4文件的HTTP header中的Content-Type设置为video/mp4，
+  .webm文件的HTTP header中的Content-Type设置为video/webm 。
 
-  As an example of how you might set metadata on a video backup site, the
-  *Console User Guide* for the Amazon Simple Storage Service provides this
-  information about `editing object metadata`_.
+
+  亚马逊存储服务的 **控制台用户指南** 提供了关于如何在视频备选网站中设置元数据的信息
+ `editing object metadata`_.
 
 
 .. _Create a Video Component:
