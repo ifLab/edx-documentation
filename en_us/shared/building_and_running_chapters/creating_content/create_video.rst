@@ -257,36 +257,40 @@ course video, it might be the result of one of these browser-related problems.
 
 影片组件的高级选项中会出现以下选项。
 
+
 .. list-table::
     :widths: 30 70
 
-    * - **显示组件名**
-      - 您想让学生看见的名称，必须与原始码显示名是保持一致。
-        
-    * - **默认时限副本**
-      -  默认时限副本的原始码用的是副本文档的名称。此区域是自动添加的。
-         您不需要改变这项设置。 
-         
-    * - **同意下载副本**
-      - 详细说明您是否同意让学生下载时限副本。
-        若您选择“是”，影片下方会显示下载文档的链接。
-        
+    * - **Component Display Name**
+      - The name that you want your learners to see. This is the same as the
+        **Display Name** field on the **Basic** tab.
+    * - **Default Timed Transcript**
+      -  The name of the transcript file that is used in the **Default Timed
+         Transcript** field on the **Basic** page. This field is auto-populated.
+         You do not have to change this setting.
+    * - **Download Transcript Allowed**
+      - Specifies whether you want to allow learners to download the timed
+        transcript. If you select **True**, a link to download the
+        file appears below the video.
 
-        通过默认设置，在你上传.srt副本文档的同时会生成文本文档副本。
-        您甚至成同意下载副本，学生们就能下载.srt副本及文本文档副本。
-        同时，若您希望能下载不同格式的文本。
-        例如，.pdf，通过上传讲义，将其上传至Studio。
-        
+        By default, Studio creates a .txt transcript when you upload an .srt
+        transcript. Learners can download the .srt or .txt versions of the
+        transcript when you set **Download Transcript Allowed** to **True**. If
+        you want to provide the transcript for download in a different format
+        as well, such as .pdf, upload a file to Studio by using the **Upload
+        Handout** field.
 
-    * - **可下载副本URL**
-      - 非.srt格式副本的统一资源定位符（URL）会发至文件和上传页面或公布在网上。
-        学生们能在影片下方看见下载非.srt格式副本的链接。
-        
+    * - **Downloadable Transcript URL**
+      - The URL for a non-.srt version of the transcript file posted on the
+        **Files & Uploads** page or on the Internet. Learners see a link to
+        download the non-.srt transcript below the video.
 
-        当您将副本添加至此区域时，只有您添加的附件能下载。
-        非.srt格式副本及文本文档副本无法下载。
-        若您提供的副本格式并非.srt，我们建议您通过上传讲义选项，上传学生讲义。
-        欲知更多信息，请见 :ref:`Additional Transcripts`.
+        When you add a transcript to this field, only the transcript that you
+        add is available for download. The .srt and .txt transcripts become
+        unavailable. If you want to provide a downloadable transcript in a
+        format other than .srt, edX recommends that you upload a handout for
+        learners by using the **Upload Handout** field. For more information,
+        see :ref:`Additional Transcripts`.
 
     * - **EdX Video ID**
       - An optional field used only by course teams that are working with
@@ -316,7 +320,8 @@ course video, it might be the result of one of these browser-related problems.
     * - **Upload Handout**
       - Allows you to upload a handout to accompany this video. Your handout
         can be in any format. Learners can download the handout by clicking
-        **Download Handout** under the video.
+        **Download Handout** under the video.For more information, see
+        :ref:`Additional Transcripts`.
     * - **Video Available on Web Only**
       - If you select **True**, learners are only allowed to play this video
         in a Web browser. If you select **False**, learners can use any
@@ -341,26 +346,28 @@ course video, it might be the result of one of these browser-related problems.
     * - **Video ID**
       - An optional field used only by course teams that are working with
         edX to process and host video files.
-    * - **影片开始时间**
-      - 若您不想播放所有视频，能设置影片开始时间。
-        将格式设置为 HH:MM:SS。最大值为23:59:59。
+    * - **Video Start Time**
+      - The time you want the video to start if you do not want the entire
+        video to play. Use HH:MM:SS format. The maximum value is 23:59:59.
 
         .. note:: Learners who download and play the video in the mobile
          app see the entire video file. Only videos that play in a browser
          start playing at the specified start time.
 
-    * - **影片结束时间**
-      - 若您不想播放所有视频，能设置影片结束时间。
-        将格式设置为 HH:MM:SS。最大值为23:59:59。
+    * - **Video Stop Time**
+      - The time you want the video to stop if you do not want the entire video
+        to play. Use HH:MM:SS format. The maximum value is 23:59:59.
 
         .. note:: Learners who download and play the video in the mobile
          app see the entire video file. Only videos that play in a browser
          stop playing at the specified stop time.
 
     * - **YouTube IDs**
-      - 若您将独立且不同播放速率的影片上传至You Tube，
-       在此区域输入这些影片的You Tube号。
-        You Tube身份认证，拥有You Tube号的人能享受 .75x、1.25x及1.5x倍播放速度。
+      - If you have uploaded separate video files to YouTube for different
+        speeds of your video (YouTube ID for .75x speed, YouTube ID for 1.25x
+        speed, YouTube ID for 1.5x speed), enter the YouTube IDs for these
+        videos in these fields. These settings are optional, to support video
+        play on older browsers.
 
 
 .. _Video TOC:
@@ -369,47 +376,38 @@ course video, it might be the result of one of these browser-related problems.
 影片目录表
 ***************************
 
-You can add a table of contents for your video by adding an .srt transcript
-file that contains clickable links to different parts of the video. When your
-learners view the video, they can click the **CC** button at the bottom of the
-video player to switch between the main transcript for the video and the table
-of contents.
+通过将可点击的.srt格式副本添加到影片的各部分，您能添加影片目录表。
+学生观看影片时，他们能点击影片播放器下方的CC按钮，实现影片主要副本和影片目录表切换。
 
-To add a table of contents, you work with a third-party service to create
-the .srt transcript file. Then, you use the **Transcript Languages** setting
-in the video component to associate the .srt file with the video.
+为添加目录表，您将与第三方网站合作，以创建.srt格式副本文档。
+之后，您将通过影片组件设置的副本语言将.srt格式副本与影片相结合。
 
 .. image:: ../../../shared/building_and_running_chapters/Images/VideoTOC.png
    :alt: Image of a video with a transcript that has links to different parts
     of the video
    :width: 500
 
-#. After you obtain the .srt transcript file that will function as the
-   table of contents, open the video component for the video.
+#. .srt格式副本文档的作用是充当目录表，在保存其后，打开您的影片组件。
 
-#. On the **Advanced** tab, scroll down to **Transcript Languages**, and then
-   click **Add**.
+#. 在高级选项卡中，下拉至副本语言，点击添加。
 
-#. In the dropdown list that appears, select **Table of Contents**.
+#. 下拉列表出现之后，选择目录
 
-   An **Upload** button appears.
+   随后，显示上传按钮。 
 
-#. Click **Upload**, browse to the .srt file for the transcript, and then click
-   **Open**.
+#. 点击上传，浏览.srt格式副本文档，点击打开。
 
-#. In the **Upload translation** dialog box, click **Upload**.
+#. 在上传翻译对话框栏位，点击上传。
 
 .. _Additional Transcripts:
 
 **********************
-Additional Transcripts
+附加副本
 **********************
 
-By default, a .txt file is created when you upload an .srt file, and learners
-can download an .srt or .txt transcript when you set **Download Transcript
-Allowed** to **True**. The **Download Transcript** button appears below the
-video, and learners see the .srt and .txt options when they move the cursor
-over the button.
+由于默认设置，您上传.srt格式文档的同时文本文档（txt）会生成。
+您设置同意下载副本之后，学生们能下载.srt格式或文本文档（txt）格式文档。
+影片下方出现下载副本按钮，鼠标划过此按钮时，学生们能看到.srt格式或文本文档（txt）格式选项。
 
 .. image:: ../../../shared/building_and_running_chapters/Images/Video_DownTrans_srt-txt.png
    :width: 500
