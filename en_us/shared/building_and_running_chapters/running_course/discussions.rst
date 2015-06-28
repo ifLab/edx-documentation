@@ -238,23 +238,18 @@ topics, see :ref:`Visibility of Discussion Topics`.
 
 
 ====================================
-Assign Roles
+如何安排职位
 ====================================
 
-To assign a discussion administration role, you must be the course author or
-an Instructor (that is, you are identified in Studio as a team member with
-Admin access or in the LMS as an Instructor).
+首先，您必须是课程作者，或担任“导师”职位（即，您必须在Studio中有管理权限）。
 
-#. View the live version of the course.
+#. 查看课程现况
 
-#. Click **Instructor**, then click **Membership**.
+#. 单击“导师”→“成员”
 
-#. In the Administration List Management section, use the drop-down list to
-   select Discussion Admins, Discussion Moderators, or Discussion Community
-   TAs.
+#. 在“行政人员列表管理”字段的下拉列表中选择“论坛管理员”、“论坛协调员”或“论坛社区助教”
 
-#. Under the list of users who currently have that role, enter an email address
-   or username and click **Add** for the role type.
+#. 在用户列表中输入相应的邮箱地址或用户名，单击“添加”
 
 
 ==============
@@ -306,56 +301,46 @@ release dates.
 .. _Running_discussions:
 
 *********************
-Run a Discussion
+运营讨论项目
 *********************
 
-On an ongoing basis, the members of your discussion team run the course
-discussion by making contributions, endorsing responses, marking answers as
-correct, and guiding student messages into pertinent threads. Techniques that
-you can use throughout your course to make discussions successful follow.
+讨论项目管理团队可通过多种方式运营论坛，比如在帖子中作贡献、给回复点赞、
+认可某条回复等等，他们通过这些方法引导学生发布与话题相关的消息。
+下面的几个小技巧能帮助您有效管理讨论项目。
 
 ==========================================
-Use Conventions in Discussion Subjects
+编辑讨论帖主题时采用同一的命名规则
 ==========================================
 
-To identify certain types of messages and make them easier to find, you can
-define a set of standard tags to include in the subject of a post or in the
-body of a response or comment. Examples follow.
+为区分不同种类的消息，并使消息更方便查找，
+您可以指定一系列命名规则以区分不同种类的帖子主题以及回复、评论。如下例：
 
-* Use "[OFFICIAL]" at the start of announcements about changes to the course.
+* 通知变更事宜时可在帖子主题开头加上“[OFFICIAL]”字样
 
-* Provide information about corrected errors with a subject that begins
-  "[CORRECTIONS]" or "[ERRORS]".
+* 提供错误修复信息的帖子的主题可以用“ERRATA”开头
 
-* Ask students to use "[STAFF]" in the subject of each post that needs the
-  attention of a course staff member.
+* 告知学生，如果需要课程工作人员帮助时可以在帖子主题中加入“[STAFF]”字样
 
-Both your discussion team and your students can use tags like these to search
-the discussions more effectively.
+讨论项目管理团队和学生均可使用这类命名规则以便更有效地搜索信息。
 
-When a post is created its type must be selected: either "question" or
-"discussion". Members of the discussion team should be thoughtful when
-selecting the type for their posts, and encourage students to do the same. See
+创建新帖子时，必须选择帖子的类型，是“提问”还是“讨论”。
+讨论项目团队成员在选择发帖类型时应慎重，同时也应鼓励学生慎重发帖。详见
 :ref:`Find Question Posts and Discussion Posts`.
 
 .. future: changing the type of a post, maybe resequence or separate  conventions from post types
 
 ========================
-Seed Discussion Topics
+为讨论课题做铺垫
 ========================
 
-To help students learn how to get the most out of course discussions, and find
-the best discussion topic to use for their questions and conversations, you can
-seed discussion topics in course-wide discussion topics before the course starts. 
-Some examples follow.
+为帮助学生学会如何在课堂讨论中尽可能多地收获知识，
+教会学生如何根据自己的问题和讨论寻找最佳的讨论课题，
+您可以在课程开始之前发几篇帖子作为课堂讨论的“开胃菜”。示例如下：
 
-* In the General topic (which is included in every course by default), add an
-  [INTRO] post to initiate a thread for student and staff introductions.
+* 在“General”课题中，发布一条“[INTRO]”帖子，引导学生和员工做自我介绍。
 
-* For each course-wide discussion topic that you create, add an initial post
-  to describe the way you intend that discussion to be used. In addition to
-  providing guidance, these initial messages can act as models for learners to
-  follow when they create their own posts.
+* 您每发布一个讨论课题，第一条帖子应描述如何使用这个课题。
+  除了提供指导教程之外，这类“初始消息”还可作为今后学生创建帖子的范例。
 
 We strongly recommend that you do not create seed posts in content-specific
 discussion topics before the course starts or before the containing unit is
@@ -366,7 +351,7 @@ of Discussion Topics`.
 
 
 ======================================
-Minimize Thread Proliferation
+缩小话题范围
 ======================================
 
 To encourage longer, threaded discussions rather than many similar, separate
