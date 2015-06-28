@@ -244,33 +244,33 @@ course video, it might be the result of one of these browser-related problems.
         * 若您希望提供副本的格式是.pdf的话，勿用此项设置上传副本。
           欲知更多信息，请见 :ref:`Additional Transcripts`.
 
-6. Optionally, click **Advanced** to set more options for the video. For a
-   description of each option, see :ref:`Video Advanced Options`.
+6. 可自由选择点击高级，设置影片更多选项。
+   欲知每项选项详情，请看 :ref:`Video Advanced Options`.
 
-#. Click **Save.**
+#. 点击保存
 
 .. _Video Advanced Options:
 
 ==================
-Advanced Options
+高级选项
 ==================
 
-The following options appear on the **Advanced** tab in the video component.
+影片组件的高级选项中会出现以下选项。
 
 .. list-table::
     :widths: 30 70
 
-    * - **Component Display Name**
-      - The name that you want your learners to see. This is the same as the
-        **Display Name** field on the **Basic** tab.
-    * - **Default Timed Transcript**
-      -  The name of the transcript file that is used in the **Default Timed
-         Transcript** field on the **Basic** tab. This field is auto-populated.
-         You do not have to change this setting.
-    * - **Download Transcript Allowed**
-      - Specifies whether you want to allow learners to download the timed
-        transcript. If you select **True**, a link to download the
-        file appears below the video.
+    * - **显示组件名**
+      - 您想让学生看见的名称，必须与原始码显示名是保持一致。
+        
+    * - **默认时限副本**
+      -  默认时限副本的原始码用的是副本文档的名称。此区域是自动添加的。
+         您不需要改变这项设置。 
+         
+    * - **同意下载副本**
+      - 详细说明您是否同意让学生下载时限副本。
+        若您选择“是”，影片下方会显示下载文档的链接。
+        
 
         By default, Studio creates a .txt transcript when you upload an .srt
         transcript. Learners can download the .srt or .txt versions of the
