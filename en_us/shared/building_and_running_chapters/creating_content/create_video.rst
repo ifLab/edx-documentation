@@ -306,11 +306,11 @@ YouTube
         您的讲义可以是任何格式的。
         学生们可以在影片下方点击下载讲义完成下载。更多信息请见
         :ref:`Additional Transcripts`.
-    * - **Video Available on Web Only**
-      - If you select **True**, learners are only allowed to play this video
-        in a Web browser. If you select **False**, learners can use any
-        compatible application to play the video, including Web browsers and
-        mobile apps.
+    * - **视频仅在网页播放**
+      - 如果您选择 **是** ，学生只能在浏览器中播放该视频。
+        如果您选择 **否** ，学生可以使用任何应用播放该视频。
+        包括网页浏览器和移动应用。
+        
     * - **同意下载影片**
       - 若学生们无法使用edX播放器或You Tube，
         请详细说明他们能否下载此影片不同格式的版本。
@@ -327,7 +327,7 @@ YouTube
         为使所有标准浏览器能播放您的影片，
         我们强烈建议您使用.mp4 或 .webm格式。
 
-    * - **Video ID**
+    * - **视频ID**
       - An optional field used only by course teams that are working with
         edX to process and host video files.
     * - **影片开始时间**
