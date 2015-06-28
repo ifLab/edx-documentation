@@ -484,30 +484,26 @@ course video, it might be the result of one of these browser-related problems.
 .. _Steps for sjson files:
 
 **********************
-Steps for .sjson Files
+操作.sjson文档的步骤
 **********************
 
-If your course uses .sjson files, you upload the .sjson file for the video
-to the **Files & Uploads** page, and then specify the name of the .sjson file
-in the video component.
+若您的课程使用的是.sjson文档，您需要将影片.sjson文档上传至文档和上传页面。
+明确说明.sjson文档在影片组件中的名称。
 
-.. note:: Only older courses that have used .sjson files in the past should use
- .sjson files. All new courses should use .srt files.
+.. note:: 只有过去使用过.sjson文档的课程才能使用.sjson文档。所有新课程应用.srt文档。
 
-#. Obtain the .sjson file from a media company such as 3Play.
-#. Change the name of the .sjson file to use the following format.
+#. 选择媒体公司，例如3Play，并保存.sjson文档
+#. 修改.sjson文档名称以便使用以下格式：subs_FILENAME.srt.sjson。
 
    ``subs_{video filename}.srt.sjson``
 
-   For example, if the name of your video is **Lecture1a**, the name of your
-   .sjson file must be **subs_Lecture1a.srt.sjson**.
+   例如，若您的影片名称为第一讲a，
+   那么您.sjson文档名称必须是 **subs_Lecture1a.srt.sjson**.
 
-#. Upload the .sjson file for your video to the **Files & Uploads** page.
-#. Create a new video component.
-#. On the **Basic** tab, enter the name that you want learners to see in the
-   **Component Display Name** field.
-#. In the **Video URL** field, enter the URL of the video. For example, the URL
-   may resemble one of the following.
+#. 将影片的.sjson文档上传至文档和上传页面。
+#. 创建影片新组件。
+#. 在原始码栏位，输入您想让学生在显示组件区域看见的名称。
+#. 在影片统一资源定位符（URL）区域，输入影片统一资源定位符（URL）。例如，您会看到类似以下的情况：
 
    ::
 
@@ -515,12 +511,12 @@ in the video component.
       http://www.youtube.com/watch?v=OEoXaMPEzfM
       https://s3.amazonaws.com/edx-course-videos/edx-edx101/EDXSPCPJSP13-G030300.mp4
 
-#. Click the **Advanced** tab.
-#. In the **Default Timed Transcript** field, enter the file name of your
-   video. Do not include `subs_` or `.sjson`. For the example in step 2, you
-   would only enter **Lecture1a**.
-#. Set the other options that you want.
-#. Click **Save**.
+#. 点击高级选项。
+#. 在默认时限副本区域，输入影片的名称。
+   不能包含 `subs_` 或 `.sjson`。
+   例如，操作步骤2时，您只能输入 **Lecture1a** 。
+#. 设置您选择的其他选项。
+#. 点击保存。
 
 .. _Creating Videos: https://courses.edx.org/courses/edX/edX101/2014/courseware/c2a1714627a945afaceabdfb651088cf/9dd6e5fdf64b49a89feac208ab544760/
 
