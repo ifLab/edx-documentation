@@ -127,8 +127,7 @@ Topics` 。更多关于使用群配置讨论主题的内容请参考 :ref:`Set u
 
 #. 将第二个“id”值更改为另一个唯一的值。比如，可以为课题名附上一组独一无二的参数
 
-.. note:: In discussion topic IDs, you can use only alphanumeric characters
-   and these special characters: underscore, hyphen, and period.
+.. note:: 在讨论主题ID中，您只能使用字母和数字字符，以及以下特殊符号：下划线、连字符和句号。
 
 7. 在第一个闭大括号后输入一个逗号
 
@@ -163,15 +162,13 @@ Topics` 。更多关于使用群配置讨论主题的内容请参考 :ref:`Set u
 讨论主题将与所在单元相关联。
 
 
-.. warning:: Follow the recommended steps to add discussion components. Do not
-   create discussion topics by using the **Duplicate** button in Studio, and
-   do not reference the same discussion ID in more than one place in your
-   course. Duplicated discussion components will result in discussion topics
-   containing the same conversations, even if learners post in different
-   discussion topics.
+.. warning:: 按照推荐步骤添加讨论组件。
+   不要使用Studio中的 **复制** 创建讨论主题。
+   不要在不同区域多次使用同一个论坛ID。
+   复制讨论组件将导致讨论主题包含同样的对话，即使学生是在不同的讨论主题下发布信息。
 
-For more information about the visibility of content-specific discussion
-topics, see :ref:`Visibility of Discussion Topics`.
+
+更多关于指定内容讨论主题信息请参考 :ref:`Visibility of Discussion Topics`.
 
 .. note:: In courses with cohorts enabled, all content-specific discussion
    topics are divided by cohort when you first add them. Student posts to divided
