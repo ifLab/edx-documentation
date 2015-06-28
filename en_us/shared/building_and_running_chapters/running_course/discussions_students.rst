@@ -95,12 +95,7 @@ edX课程通常包含几个全课堂讨论课题，譬如“常见问题解答�
 
 如果您不知道自己的帖子到底属于哪种类型，可以想想，
 您是想得到具体的信息（提问帖），还是只是想开展一次开放式的对话（讨论帖）？
-If you have any difficulty deciding which type of post you want to add, think
-about whether you want to get concrete information (a question) or start an
-open-ended conversation (a discussion). If you require an answer from the
-course team, be sure to create your post as a question, so that the course
-team sees that a response is required and responds appropriately.
-
+如果您需要得到教员的回答，请确保您发布的是提问帖，这样教员才能合适地解答。
 
 .. _Find Posts:
 
