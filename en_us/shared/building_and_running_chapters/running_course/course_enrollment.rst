@@ -6,7 +6,7 @@
 
 课程编写者和导师可以招收学生、查看课程参与人数以及，在必要的情况下，从教师控制面板中开除学生。
 
-在规定的招生时间内，学生可自行参与课程。
+ 在规定的招生时间内，学生可自行参与课程。
  ``www.edx.org`` 的课程对所有已注册edX账户的学生公开招生。
 其他课程，比如在 ``edge.edx.org`` 网站中的课程，
 它们的招生只针对了解课程URL的学生或是其他指定范围的学生。
@@ -47,30 +47,25 @@
 .. _enroll_student:
 
 *********************************
-Enroll Students in a Course
+在课程中添加学生
 *********************************
 
-You enroll students, and other course staff members, in your course by
-supplying their email addresses. After the **Enrollment End Date** for a
-course students can no longer enroll themselves; however, you can still
-explicitly enroll students.
+如果您希望在课程中添加学生或其他课程工作人员，只需提供他们的邮件地址即可。
+招生日期截止后，学生无法再继续参与课程，但是，您仍然可以主动添加指定的学生。
 
-When you enroll people in a course you have these options:
+以下是添加学生的几种模式选择：
 
-* **Auto Enroll**. When you choose this option, the people who you enroll do
-  not need to complete an explicit course enrollment step. Of the list of email
-  addresses that you supply, those that correspond to a registered user account
-  are immediately enrolled in the course, and your course displays on the
-  **Current Courses** dashboard for those users on log in. Email addresses on
-  the list that do not match a registered user account are enrolled as soon as
-  that account is registered and activated.
+* **自动添加** 选择此项后，您希望添加的人员无需循规蹈矩地完成课程添加步骤。
+  在您提供的邮件地址列表中，已注册了用户帐户的地址会立即加入课程，
+  您的课程会显示在登录用户的 **当前课程** 控制面板中。
+  列表中未注册账户的地址在注册、激活用户帐户后也会立即加入课程。
+  
 
-  If you do not select **Auto Enroll**, the people who you enroll must also actively locate your course and enroll themselves in it. These students see the course on their dashboards after they have done so.
+  如果您没有选择这个选项，您希望添加的用户必须定位您的课程并自己主动加入课程。 加入后，学生才能在控制面板中看见您的课程。
 
-* **Notify students by email**. When you choose this option, an email message is
-  automatically sent to each of the email addresses that you supply. The message
-  includes the name of the course and, for students who are not already
-  enrolled, a reminder to use that same email address to enroll.
+* **给学生发送通知邮件** 选择此项后，系统会自动向您提供的邮件地址发送一封通知邮件。
+  邮件中交代了课程名称，同时提醒尚未注册的学生用户尽快使用收到本消息的邮件地址注册用户帐户。
+
 
   An example of the email message that a student received when this option was
   selected during enrollment follows. In this example, the student already had a
