@@ -245,13 +245,13 @@ YouTube
 .. list-table::
     :widths: 30 70
 
-    * - **Component Display Name**
-      - The name that you want your learners to see. This is the same as the
-        **Display Name** field on the **Basic** tab.
-    * - **Default Timed Transcript**
-      -  The name of the transcript file that is used in the **Default Timed
-         Transcript** field on the **Basic** page. This field is auto-populated.
-         You do not have to change this setting.
+    * - **显示组件名**
+      - 您想让学生看见的名称，必须与原始码显示名是保持一致。
+        
+    * - **默认时限副本**
+      -  默认时限副本的原始码用的是副本文档的名称。
+         此区域是自动添加的。
+         您不需要改变这项设置。
     * - **Download Transcript Allowed**
       - Specifies whether you want to allow learners to download the timed
         transcript. If you select **True**, a link to download the
