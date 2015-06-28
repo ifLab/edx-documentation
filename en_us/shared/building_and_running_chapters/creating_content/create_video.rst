@@ -272,7 +272,7 @@ YouTube
         当您将副本添加至此区域时，只有您添加的附件能下载。
         非.srt格式副本及文本文档副本无法下载。
         若您提供的副本格式并非.srt，我们建议您通过上传讲义选项，上传学生讲义。
-        欲知更多信息，请见 :ref:`Additional Transcripts` .
+        欲知更多信息，请见 :ref:`Additional Transcripts` 。
         
         
 
@@ -296,15 +296,15 @@ YouTube
           learners see for the video. For more information, see :ref:`Licensing
           a Course`.
 
-    * - **Show Transcript**
-      - Specifies whether the transcript plays along with the video by default.
-    * - **Transcript Languages**
-      - The transcript files for any additional languages. For more
-        information, see :ref:`Transcripts in Additional Languages`.
-    * - **Upload Handout**
-      - Allows you to upload a handout to accompany this video. Your handout
-        can be in any format. Learners can download the handout by clicking
-        **Download Handout** under the video.For more information, see
+    * - **副本展示**
+      - 详细说明是否通过默认设置，将副本和影片一起上传。
+    * - **副本语言**
+      - 副本文件可以添加任何语言。
+        欲知更多信息，请见 :ref:`Transcripts in Additional Languages`.
+    * - **上传讲义**
+      - 允许讲义和影片一起上传。
+        您的讲义可以是任何格式的。
+        学生们可以在影片下方点击下载讲义完成下载。更多信息请见
         :ref:`Additional Transcripts`.
     * - **Video Available on Web Only**
       - If you select **True**, learners are only allowed to play this video
