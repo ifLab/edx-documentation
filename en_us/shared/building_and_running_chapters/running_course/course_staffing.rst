@@ -62,30 +62,27 @@
 .. 12 Feb 14 Sarina: This all sounds right but there are other tasks (rescoring, etc) not mentioned. Probably worth nailing down what tasks can and cannot be done by a course staff.
 
 **********************
-Assign Staff Roles 
+安排员工职能 
 **********************
 
-Before you can assign the Course Staff or Instructors role to a team member:
+赋予团队成员“课程工作人员”或“导师”职能之前：
 
 * You must have the Instructors role.
 
-* You need the email address or username of each team member you want to add. 
+* 您需要知道每个团队成员的电子邮件地址或用户名
 
-* Each of those team members must register a user account for that email
-  address/username, activate the account, and enroll in your course.
+* 每个团队成员需要为该地址/用户名注册一个用户帐户，激活该账户，并参与课程
 
-To assign a staff role:
+如何赋予员工职能：
 
-#. View the live version of your course.
+#. 查看课程现况
 
-#. Click **Instructor**, then click **Membership**.
+#. 单击 **导师** ，**成员**
 
-#. In the **Administration List Management** section, use the drop-down list to
-   select **Course Staff** or **Instructors**.
+#. 在 **行政人员列表管理** 字段后，在下拉列表中选择 **课程工作人员** 或 **导师** 。
 
-#. Under the list of users who currently have that role, enter an email
-   address or username and click **Add** for the role type.
+#. 输入您想要赋予职能的员工的邮件地址或用户名，单击 **添加**
+ 
 
-To remove an assigned role, view the list of users and then click **Revoke
-access**.
+若想要取消某个员工的职能，查看用户名列表，单击 **取消访问权限** 。
 
