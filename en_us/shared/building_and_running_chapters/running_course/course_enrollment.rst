@@ -1,18 +1,15 @@
 .. _Enrollment:
 
 ##########################
-Enrollment
+招生
 ##########################
 
-Course authors and instructors can enroll students in a course, see how many
-people are enrolled, and, when necessary, unenroll students on the Instructor
-Dashboard.
+课程编写者和导师可以招收学生、查看课程参与人数以及，在必要的情况下，从教师控制面板中开除学生。
 
-Students can enroll themselves in a course during its defined enrollment
-period. For a ``www.edx.org`` course, enrollment is publicly available to
-anyone who registers an edX account. For other courses, such as those on
-``edge.edx.org``, enrollment is limited to students who know the course URL
-and students you explicitly enroll.
+在规定的招生时间内，学生可自行参与课程。
+ ``www.edx.org`` 的课程对所有已注册edX账户的学生公开招生。
+其他课程，比如在 ``edge.edx.org`` 网站中的课程，
+它们的招生只针对了解课程URL的学生或是其他指定范围的学生。
 
 * :ref:`registration_enrollment`
 
@@ -22,34 +19,30 @@ and students you explicitly enroll.
 
 * :ref:`unenroll_student`
 
-Data about course enrollment is also available from edX Insights. You access
-Insights from the Instructor Dashboard for your live course: after you click
-**Instructor**, click the link in the banner at the top of each page. For more
-information, see `Using edX Insights`_.
+关于课程招生的数据可在edX Insights 中查看。
+您可以在教师控制面板中查看当前课程的Insights：单击 **导师** ，
+然后单击页面标题栏中的链接即可。更多信息请参考 `Using edX Insights`_.
 
 .. _registration_enrollment:
 
 *********************************
-Registration and Enrollment
+注册及招生
 *********************************
 
-Before a student can enroll in a course, he or she must:
+学生在参与课程之前，需要：
 
-#. Register a user account, which includes supplying a valid email address, on
-   ``www.edx.org``, ``edge.edx.org``, or your implementation of the edX
-   platform. Each platform requires a separate user account.
+#. 注册用户帐户。需提供有效的电子邮件地址用于登录
+   ``www.edx.org``， ``edge.edx.org``或者安装edX平台客户端。
+   每个平台的用户帐户均不能相同。
 
-#. Activate the registered account by following the emailed instructions.
+#. 通过邮箱中的激活邮件来激活账户。
 
-As long as the course **Enrollment End Date** has not passed, students who
-have registered and activated user accounts can enroll themselves in
-``www.edx.org`` courses, or can enroll in other courses if they know the URL.
+只要课程招生日期没过，所有注册并激活账户的学生都可以参加
+``www.edx.org`` 中的课程，或者，如果知道课程的URL，也可以参与其他课程。
 
-Course authors and instructors, however, can enroll students in a course either
-before or after the students register their user accounts.
+但是，课程编写者及导师在课程中可以随时添加学生，无论该学生是否注册了用户帐户。
 
-To work on a course, all course staff members must also have registered and
-activated user accounts and be enrolled in the course.
+为方便管理工作，所有课程工作人员均必须注册、激活用户帐户，并参加课程。
 
 .. _enroll_student:
 
