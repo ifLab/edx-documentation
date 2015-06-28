@@ -578,51 +578,45 @@ Questions`.
   您可在“课程信息”页面通知论坛关闭日期，并将该日期挂到“General”讨论课题下。
 
 =====================================
-Start-End Date Format Specification
+开始-停止日期格式规范
 =====================================
 
-To close course discussions, you supply a start date and time and an end date
-and time in Studio. You enter the values in this format:
+您需要在Studio中设置论坛开始关闭与停止关闭的时间。请按下面的格式输入对应值:
 
 ``["YYYY-MM-DDTHH:MM", "YYYY-MM-DDTHH:MM"]``
 
-where:
+其中：
 
-* The dates and times that you enter are in the Universal Coordinated (UTC)
-  time zone, not in your local time zone.
+* 您输入的日期与时间应为世界标准时间，而非您所在时区时间。
 
-* You enter an actual letter **T** between the numeric date and time values. 
+* 数字日期与小时之间用大写字母T分隔。
 
-* The first date and time indicate when you want course discussions to close.
+* 第一个时间是论坛开始关闭的时间。
 
-* The second date and time indicate when you want course discussions to reopen.
+* 第二个时间为论坛重新开放的时间。
 
-* If you do not want the discussions to reopen, enter a date that is far in the
-  future.
+* 如果您希望永久关闭论坛，输入一个远在天边的日期即可。
 
-* Quotation marks enclose each date-time value.
+* 不要忘记双引号。
 
-* A comma and a space separate the start date-time from the end date-time.
+* 开始与结束时间之间用逗号分隔。
 
-* Square brackets enclose the start-end value pair.
+* 不要忘记方括号。
 
-* You can supply more than one complete start and end value pair. A comma and a
-  space separate each pair.
+* 您可以输入多个开始-结束时间对，每对时间之间用逗号加一个空格分隔。
 
-For example, to close course discussions temporarily for a final exam period in
-July, and then permanently on 9 August 2014, you enter:
+例如，如果您希望在七月份的期末考试期间暂时关闭论坛，
+然后在2014年8月9日永久关闭论坛，输入如下两组数值：
 
 ``["2014-07-22T08:00", "2014-07-25T18:00"], ["2014-08-09T00:00", "2099-08-09T00:00"]``
 
-You enter these values between an additional pair of square brackets which are
-supplied for you in Studio.
+每对方括号仅表示一组时间对。
 
 ============================================
-Define When Discussions Are Closed
+设置论坛关闭时间
 ============================================
 
-To define when discussions are closed to new contributions and when they
-reopen:
+步骤：
 
 #. Open your course in Studio. 
 
