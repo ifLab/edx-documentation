@@ -55,9 +55,8 @@
 
 * 添加、开除讨论项目管理员、协调员及讨论社区助教
 
-.. note:: To moderate course discussions, the team member must also have one 
- of the discussion roles. For more information, see
- :ref:`Assigning_discussion_roles`.
+.. note:: 加入课程讨论的成员必须有讨论角色。
+ 更多信息请参阅 :ref:`Assigning_discussion_roles` 。
 
 .. 12 Feb 14 Sarina: This all sounds right but there are other tasks (rescoring, etc) not mentioned. Probably worth nailing down what tasks can and cannot be done by a course staff.
 
@@ -67,7 +66,7 @@
 
 赋予团队成员“课程工作人员”或“导师”职能之前：
 
-* You must have the Instructors role.
+* 您需要拥有导师角色
 
 * 您需要知道每个团队成员的电子邮件地址或用户名
 
