@@ -170,12 +170,9 @@ Topics` 。更多关于使用群配置讨论主题的内容请参考 :ref:`Set u
 
 更多关于指定内容讨论主题信息请参考 :ref:`Visibility of Discussion Topics`.
 
-.. note:: In courses with cohorts enabled, all content-specific discussion
-   topics are divided by cohort when you first add them. Student posts to divided
-   discussion topics can only be read and responded to by members of the same
-   cohort. You can change the configuration of content-specific discussion topics
-   to make them unified and available to all students in the course. See
-   :ref:`Content Specific Discussion Topics and Cohorts`.
+.. note:: 在包含群组的课程中，所有指定内容讨论主题在您第一次添加的时候就已经分组。
+   学生只能看到相同群组中成员的回应。您可以更改内容讨论主题设置，使其对课堂中所有学生可见。
+    更多信息请参考 :ref:`Content Specific Discussion Topics and Cohorts`.
 
 .. _Assigning_discussion_roles:
 
