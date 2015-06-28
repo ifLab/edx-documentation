@@ -292,8 +292,8 @@ YouTube
           您必须选择申请CC协议证书。
           
 
-          The license options that you select control the copyright notice that
-          learners see for the video. For more information, see :ref:`Licensing
+          您选择的证书选项控制了学生所看视频的版权公告。 
+          更多信息请参考 :ref:`Licensing
           a Course`.
 
     * - **副本展示**
