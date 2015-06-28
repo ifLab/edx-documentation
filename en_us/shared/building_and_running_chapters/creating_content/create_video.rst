@@ -223,32 +223,26 @@ course video, it might be the result of one of these browser-related problems.
      若您想修改副本，点击下载副本及编辑。您能改动影片并通过点击上传新副本完成上传。
 
 
-   * If edX does not have a transcript for the video, but YouTube has a
-     transcript, Studio automatically finds the YouTube transcript and asks if
-     you want to import it. To use this YouTube transcript, click **Import
-     YouTube Transcript**. (If you want to modify the YouTube transcript,
-     import the YouTube transcript into Studio, and then click **Download
-     Transcript for Editing**. You can then make your changes and upload the
-     new file by clicking **Upload New Transcript**.)
+   * 若edX没有影片副本，而You Tube有的话，Studio会自动找到You Tube网站上的副本并询问您是否输入副本。
+     若要使用You Tube网站上的副本，点击输入You Tube副本。
+     （若您想修改You Tube副本，将其输入Studio，接着点击下载副本及编辑。）
+     这样，您能修改影片并通过点击上传新副本完成上传。
+     
 
-   * If both edX and YouTube have a transcript for your video, but the edX
-     transcript is out of date, you receive a message asking if you want to
-     replace the edX transcript with the YouTube transcript. To use the YouTube
-     transcript, click **Yes, replace the edX transcript with the YouTube
-     transcript**.
+   * 若edX和You Tube都有您的副本，但是edX过期的话，您将收到询问您是否用You Tube副本替代edX副本的消息。
+     若同意，点击是，You Tube副本替代edX副本。
 
-   * If neither edX nor YouTube has a transcript for your video, and your
-     transcript uses the .srt format, click **Upload New Transcript** to upload
-     the transcript file from your computer.
+
+   * 若edX和You Tube都没有您的副本，并且您的副本格式是.srt的话，点击上传新副本完成上传。
+   
 
      .. note::
 
-        * If your transcript uses the .sjson format, do not use this setting.
-          For more information, see :ref:`Steps for sjson files`.
+        * 若您的副本使用的是.sjson格式的话，勿用此项设置。
+          欲知更多信息，请见 :ref:`Steps for sjson files`.
 
-        * If you want to provide a transcript in a format such as .pdf,
-          do not use this setting to upload the transcript. For more
-          information, see :ref:`Additional Transcripts`.
+        * 若您希望提供副本的格式是.pdf的话，勿用此项设置上传副本。
+          欲知更多信息，请见 :ref:`Additional Transcripts`.
 
 6. Optionally, click **Advanced** to set more options for the video. For a
    description of each option, see :ref:`Video Advanced Options`.
