@@ -1,14 +1,12 @@
 .. _Grades:
 
 ############################
-Student Grades and Grading
+学生成绩与成绩评定
 ############################
 
-You can review information about how grading is configured for your course, and
-access student grades, at any time after you create the course. You can also
-make adjustments to student grading for a problem, for a single student or all
-students. For information about the grading data that you can access and the
-changes you can make, see the following topics.
+创建课程后，您可以随时回顾您课程的评分设置，并以此评定学生成绩。
+您可以为单个学生评分、为所有学生评分，或针对某道问题评分。
+关于评分数据以及评分时可以做出的改动，请看下面的内容：
 
 * :ref:`Review_grades`
 
@@ -22,76 +20,60 @@ changes you can make, see the following topics.
 
 * :ref:`Adjust_grades`
 
-To review student answers to the problems in your course, you can check the
-answer submitted by a specified student for a selected problem, download
-course-wide answer data, or review a graph of all answer data for a selected
-problem. See :ref:`Review_Answers`.
+您可以审核某个学生对于某道问题提交的答案，下载全课程范围内的答题数据，
+或者查看某道问题所有的答题数据图表。详见 :ref:`Review_Answers`.
 
-For information about how you establish a grading policy and work with the
-Problem components in your course, see :ref:`Establish a Grading Policy` or
+关于如何制定评分政策，以及如何使用提问模块，请参考 :ref:`Establish a Grading Policy` 或
 :ref:`Working with Problem Components`.
 
 .. _Review_grades:
 
 ********************************************************
-Review How Grading Is Configured for Your Course
+查看课程的评分设置
 ********************************************************
 
-You can review the assignment types that are graded and their respective
-weights on the Instructor Dashboard.
+您可在教师面板中查看需要评分的任务类型，以及他们对应的比重。
 
-You establish a grading policy for your course when you create it in Studio.
-While the course is running, you can view an XML representation of the
-assignment types in your course and how they are weighted to determine
-learners' grades.
+在Studio中创建课程时，您可以为课程制定评分标准。
+课程运行时，您可以查看课程中各项任务类型在学习管理系统中的表现以及它们的比重，以此决定学生的评分。
 
 ..  DOC-290: research this statement before including anything like it: Below the list of graded assignment types and their weights, each *public* subsection and unit that contains an assignment is listed.
 
-#. View the live version of your course.
+#. 查看课程现况
 
-#. Click **Instructor**, then click **Data Download** > **Grading
-   Configuration**.
+#. 单击“导师”→“数据下载”→“评分设置”
 
-   A list of the assignment types in your course displays. In this example,
-   Homework is weighted as 0.3 (30%) of the grade.
+   页面显示的是您课程中的任务列表。本例中，“作业”项目在评分中的比重为0.3（50%）。
 
    .. image:: ../../../shared/building_and_running_chapters/Images/Grading_Configuration.png
      :alt: XML of course assignment types and weights for grading
 
-   In Studio, you define this information by selecting **Settings** >
-   **Grading**. For more information, see :ref:`Configure the Assignment
+   在Studio中，您可以通过“设置”→“评分”更改这些信息。更多信息请参考 :ref:`Configure the Assignment
    Types`.
 
    .. image:: ../../../shared/building_and_running_chapters/Images/Grading_Configuration_Studio.png
      :alt: Studio example of homework assignment type and grading weight
 
-.. important:: Any changes that you make to the course grading policy, to
-   graded subsections, or to graded components after the course begins will
-   affect learners' experiences in the course as well as analysis of its data.
-   EdX recommends that you announce any unavoidable changes learners by using,
-   for example, the **Course Info** page. You should also carefully track
-   these changes for researchers.
+.. important:: 课程开始后，任何针对课程评分政策、
+   需评分内容以及评分组件的改动会影响学生的课堂体验以及课程数据分析。
+   如果不得不作出更改，请在“课程信息”等页面告知学生，
+   并仔细咨询研发人员。
 
 .. _Access_grades:
 
 ***********************************************************
-Generate a Grade Report for Enrolled Learners (All Courses)
+为所有学生生成成绩（适用于所有课程）
 ***********************************************************
 
-For any course, you can generate grades and then download a file with the
-results for each enrolled learner. 
+您可以为学生生成成绩，并下载成绩文件。
 
-When you initiate calculations to grade student work, a process starts on the
-edX servers. The complexity of your grading configuration and the number of
-students enrolled in your course affect how long this process takes. You can
-download a report of the calculated grades in a comma-separated values (.csv)
-file when the grading process is complete.
+当您第使用运算功能计算学生成绩时，edX服务器会自动开始一个进程。
+课程的评分设置以及学生数量决定了该进程时间长短。
+评分进程完成后，您可以下载CSV格式的学生成绩单。
 
-For courses with fewer than 200 students enrolled, you also have the option to
-review student grades on the Instructor Dashboard. See :ref:`gradebook`.
+如果课程学生人数少于200人，您还可以在教师面板中选择复核学生成绩。详见 :ref:`gradebook`.
 
-To generate and download the grade report for the learners who are currently
-enrolled in your course, follow these steps.
+如何生成成绩单：
 
 .. important:: Because the grade report file contains confidential, personally
    identifiable data which might be subject to the Family Educational Rights and
@@ -99,19 +81,15 @@ enrolled in your course, follow these steps.
    policies when you open or save this file.
 
 
-#. View the live version of your course.
+#. 查看课程现况
 
-#. Click **Instructor**, then click **Data Download**.
+#. 单击“导师”→“数据下载”
 
-#. To start the grading process, click **Generate Grade Report**.
+#. 单击“生成成绩单”
 
-   A status message indicates that the grading process is in progress. This
-   process can take some time to complete, but you can navigate away from this
-   page and do other work while it runs.
+   此时会显示评分进度。这个过程可能要花几分钟时间，但是您可以切到其他页面，边干其他工作边等候。
 
-4. To check the progress of the grading process, reload the page in your
-   browser and scroll down to the **Pending Instructor Tasks** section. The
-   status of active tasks is shown in the table.
+4. 刷新浏览器页面，将滚动条拖至“正在处理的教师任务”区域查看评分进程
 
    When the report is complete, a linked .csv filename becomes available above
    the **Pending Instructor Tasks** section. Filenames are in the format
