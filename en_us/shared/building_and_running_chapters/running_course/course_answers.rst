@@ -92,65 +92,54 @@ CSV文件包含以下几列：
        没有设置“随机选择”的题目则本值为空。即某道问题的显示名
        
        
-   * - Problem Display Name
-     - The **Display Name** defined for the problem.
-   * - Question
-     - The accessible label that appears above the answer choices or the
-       text entry field for the problem. In Studio's Simple Editor, this text is
-       surrounded by two pairs of angle brackets (>>Question<<). Blank for
-       questions that do not have an accessible label defined.
+   * - 题目显示名
+     - 即选项或文本输入字段上方的问题可访问性标签。
+   * - 提问
+     - 在Studio的“简易编辑器”中，该文本通常用两对角括号表示（>>问题<<）。
+       没有设置访问性标签的问题则本值为空。
+       
+       
 
-Entries are sorted by the value in each column, starting with the ModuleID on
-the left and continuing through the columns to the right.
+输入的值按照分类从左到右排列。
 
 .. _Download_Answer_Distributions:
 
 ===================================================
-Download the Student Answer Distribution Report
+下载学生答题分布报告
 ===================================================
 
-An automated process runs periodically on the edX servers to update the CSV file
-of student answer data. A link to the most recently updated version of the CSV
-file is available on the Instructor Dashboard.
+edX服务器会定期自动更新学生答题数据的CSV文件。
+教师面板中可以查看最新版本的CSV文件链接。
 
-To download the most recent file of student answer data:
+如何下载最新的学生答题数据文件：
 
-#. View the live version of your course.
+#. 查看课程现况
 
-#. Click **Instructor**, then click **Data Download**.
+#. 单击“导师”→“数据下载”
 
-#. At the bottom of the page, click the ``{course_id}_answer_distribution.csv``
-   file name. You may have to scroll down to find this file.
+#. 将滚动条拖至页面底部，单击 ``{course_id}_answer_distribution.csv``
+   文件名
 
 ==========================================================================
-Frequently Asked Questions about the Student Answer Distribution Report
+关于学生答题分布报告的常见问题
 ==========================================================================
 
 Answers to questions about the student answer distribution report follow.   
 
-**My course doesn't have a student answer distribution report. How can I
-generate it?**
+**我的课程没有学生答题分布报告，要怎么生成？**
 
-Student answer distribution reports are generated automatically, and refreshed
-several times each day. The ``{course_id}_answer_distribution.csv`` file
-displays after all of the ``{course_id}_grade_report_{date}.csv`` files. Be sure
-to scroll to the end of the list of available reports.
+学生答题分布报告是自动生成的，每隔几天会自动更新。 ``{course_id}_answer_distribution.csv`` 
+文件位于所有 ``{course_id}_grade_report_{date}.csv`` 文件后面。请一定将滚动条拖到最底部。
 
-**Why are some problems missing from this report? The ones that are missing do
-have the problem types listed under** :ref:`Review_Answers`.
+**为什么报告里漏掉了几道题目？漏掉的题目属于** :ref:`Review_Answers` **一节中列出来的题目类型。**
 
-This report includes only problems that at least one student has answered since
-early March 2014. For those problems, this report only includes activity that
-occurred after October 2013.
+本报告中的问题为2013年十月份至2014年三月份之前的问题，且至少要有一名学生回答。
 
-**Why don't I see an AnswerValue for some of my problems?**
+**为什么有些问题看不见“答案值”？**
 
-For checkboxes and multiple choice problems, the answer choices actually
-selected by a student after early March 2014 display as described in the
-previous answer. Answer choices selected by at least one student after October
-2013, but not selected since early March 2014, are included on the report but do
-not include an **AnswerValue**. The **ValueID** does display the internal
-identifiers, such as choice_1 and choice_2, for those answers.
+对于单选、多选题而言，只有2014年三月初之后选择的选项才有“答案值”。
+2013年十月至2014年3月初之间选择的选项也在报告中，但没有“答案值”。
+“值ID”显示的是这些选项的永久ID，比如“choice_1”、“choice_2”。
 
 **Why don't I see a Question for some of my problems?**
 
