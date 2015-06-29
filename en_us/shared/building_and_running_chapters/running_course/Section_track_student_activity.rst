@@ -1,18 +1,15 @@
 .. _Track Student Activity:
 
 ***********************
-Track Student Activity
+跟踪学生动态
 ***********************
 
-To monitor student activity during your course, you can review the number of
-students who, each week, interacted with your course. To be considered active,
-students must visit pages, play videos, add to discussions, submit answers to
-problems, or complete other course activities. The active student count is
-updated weekly.
+为监控学生动态，您可以每周查看学生与课程的互动次数。
+活跃的学生指的是那些经常访问页面、播放视频、参加讨论、提交问题答案，
+或完成其他课程活动的学生。“活跃学生”数量每周会刷新一次。
 
-To display the number of active students:
+如何查看活跃学生数量：
 
-#. View the live version of your course.
+#. 查看课程现况
 
-#. Click **Instructor**, then click **Analytics**. The count of active students
-   appears at the top of the page.
+#. 单击 **导师** → **分析** ，页面顶部显示的即为活跃学生数量。
