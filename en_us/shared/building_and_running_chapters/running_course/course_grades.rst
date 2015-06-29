@@ -144,23 +144,18 @@ each learner belongs to.
   :alt: A course grade report, opened in Excel, showing the grades achieved by 
         students on several homework assignments and the midterm
 
-The grade report .csv file contains one row of data for each learner, and
-columns that provide the following information.
+CSV文件每行显示一名学生的成绩，纵列信息如下：
 
-* Learner identifiers, including an internal **id**, **email** address, and
-  **username**.
+* 学生身份信息：包括永久ID、email地址和用户名。
 
-* The overall **grade**, with the total score a learner has currently attained
-  in the course. This value is expressed as a decimal: a learner with a grade
-  of 0.65 has earned 65% of the credit in the course, and a learner with a
-  grade of 1 has earned 100%.
+* 综合评分：即学生当前获得的总评分。该值表示为小数：
+  如果一个学生的评分为0.65，即表示他获得了本课程65%的学分，
+  如果为1，则表示满分。
 
-* Each **{assignment type} {number}** defined in your grading configuration,
-  with the score that the learner attained for that specific assignment. For
-  example, column HW 03 shows the scores for the third homework assignment.
+* 每个{assignment type} {number}表示学生的各项得分。
+  例如，HW03列显示的是该学生第三次作业的得分。
 
-* An **{assignment type} Avg** with each learner's current average score for
-  that assignment type: for example, HW Avg.
+* {assignment type} Avg表示该学生某项任务的平均分，比如HW Avg即作业平均分。
 
 * If :ref:`cohorts<Cohorts Overview>` are used in the course, a **Cohort Name**
   column indicates the name of the cohort that each learner belongs to, including
@@ -204,7 +199,7 @@ columns that provide the following information.
 .. _problem_report:
 
 *******************************************************************
-Generate a Problem Grade Report for Enrolled Students (All Courses)
+为所有学生生成成绩（适用于所有课程）
 *******************************************************************
 
 For any course, you can calculate grades for problems and generate a report
@@ -221,20 +216,15 @@ currently enrolled in your course, follow these steps.
    Educational Rights and Privacy Act (FERPA), be sure to follow your
    institution's data stewardship policies when you open or save this file.
 
-#. View the live version of your course.
+#. 查看课程现况
 
-#. Click **Instructor**, then click **Data Download**.
+#. 单击“导师”→“数据下载”
 
-#. To start the problem grading process, click **Generate Problem Grade
-   Report**.
+#. 单击“生成成绩单”
 
-   A status message indicates that the problem grading process is in progress.
-   This process can take some time to complete, but you can navigate away from
-   this page and do other work while it runs.
+   此时会显示评分进度。这个过程可能要花几分钟时间，但是您可以切到其他页面，边干其他工作边等候。
 
-4. To check the progress of the problem grading process, reload the page in your
-   browser and scroll down to the **Pending Instructor Tasks** section. The
-   status of active tasks is shown in the table.
+4. 刷新浏览器页面，将滚动条拖至“正在处理的教师任务”区域查看评分进程
 
    When the report is complete, a linked .csv filename becomes available above
    the **Pending Instructor Tasks** section. Filenames are in the format
@@ -247,17 +237,15 @@ currently enrolled in your course, follow these steps.
    You can open .csv files in a spreadsheet application to sort, graph, and
    compare data.
 
-.. note:: To prevent the accidental distribution of learner data, you can
-   download problem grade report files only by clicking the links on this
-   page. Do not copy these links for reuse elsewhere, as they expire within 5
-   minutes. The links on this page also expire if the page is open for more
-   than 5 minutes. If necessary, refresh the page to generate new links.
+.. note:: 为防止学生数据意外泄露，您只能通过本页面中的链接下载成绩单文件。
+   本链接的有效期只有5分钟，所以不要将本页面中的信息复制到其他地方再次使用。
+   另外，如果页面打开时间超过5分钟，链接一样会失效，请刷新页面获取新链接。
 
 
 .. _Interpret the Problem Grade Report:
 
 ====================================
-Interpret the Problem Grade Report
+解读成绩单
 ====================================
 
 A problem grade report for your course is a time-stamped .csv file that
@@ -277,16 +265,12 @@ learner, espressed as a decimal.
     each achieved on several quiz assignments. A column for a midterm is only
     partially visible.
 
-The .csv file contains one row of data for each learner, and columns that
-provide the following information.
+CSV文件每行显示一名学生的成绩，纵列信息如下：
 
-* Learner identifiers, including an internal **Student ID**, **Email** address, and
-  **Username**.
+* 学生身份信息：包括永久ID、email地址和用户名。
 
-* The **Final Grade**, with the total score that a learner has currently attained
-  in the course. This value is expressed as a decimal: a learner with a grade
-  of 0.65 has earned 65% of the credit in the course, and a learner with a
-  grade of 1 has earned 100%.
+* 综合评分：即学生当前获得的总评分。该值表示为小数：
+  如果一个学生的评分为0.65，即表示他获得了本课程65%的学分，如果为1，则表示满分。
 
 * For each problem (identified by assignment, subsection, and problem name), a
   column showing the number of points actually earned by each learner. If a
@@ -357,17 +341,15 @@ provide the following information.
 
 #. 单击“学生进度页面”。打开前文所说的图表。
 
-   The **Progress** page for the learner displays a chart with the grade for
-   each homework, lab, midterm, final, and any other assignment types in your
-   course, and the total grade earned for the course to date. The chart does not
+   “进度”页面中有一张图表，显示了该生目前每个评分项目的得分以及总分。
+   The chart does not
    reflect any cohort or experiment group assignments.
 
    .. image:: ../../../shared/building_and_running_chapters/Images/Student_Progress.png
     :alt: Progress page chart for a learner: includes a column graph with the 
           score achieved for each assignment 
 
-   To learn more about a particular assignment, move the cursor onto the value
-   in the chart. A brief description displays.
+   想了解某个项目的信息，将光标移到该值，会显示一段简短的描述文字。
 
    .. image:: ../../../shared/building_and_running_chapters/Images/Student_Progress_mouseover.png
     :alt: Progress page with a tooltip for the X that was graphed for the last
