@@ -174,7 +174,7 @@ CSV文件使用的是UTF-8编码，但是有些制表软件无法准确识别UTF
    .. image:: ../../../shared/building_and_running_chapters/Images/student_answer_excel.png
      :alt: A spreadsheet that replaces accented French characters with underscores
 
-    OpenOffice Calc 中的答案值:
+   OpenOffice Calc 中的答案值:
 
    .. image:: ../../../shared/building_and_running_chapters/Images/student_answer_calc.png
      :alt: A spreadsheet that displays accented French characters correctly
