@@ -78,66 +78,55 @@
   设置一个经常自检的课程邮件地址能有效处理这类紧急事件。
 
 ============================
-Content Questions 
+回复提问帖
 ============================
 
-* Assist with content questions sensitively, but be careful not to post
-  spoilers. Do not ask students to post their solutions!
+* 尽快回复提问帖中的问题，但是请注意不要泄露答案。千万不要叫学生把答案贴出来！
 
-* A good guiding question can be better than an answer.
+* 直接回答不如引导性提问。
 
 ============================
-Redundant posts 
+重复帖
 ============================
 
-* When possible, help discourage redundancy by responding to such posts with
-  links to an earlier or higher quality thread that asks the same question.
+* 尽量减少重复帖子的数量。您可以在某条重复的帖子下回复几个链接，
+  指向其他内容相同，但更加简洁或质量更优的帖子。
 
-* When responding to a post, search for similar posts and respond to the most
-  pertinent thread. Redirect the other posts to the thread with your response
-  and then close the redundant threads.
+* 回帖时，先搜索有没有其他类似的帖子，然后在最切题的帖子下回复。
+  引导其他学生查看您回复的帖子，然后删除多余的帖子。.
 
 ========================================================
-Off topic, inappropriate, or offensive posts 
+偏题帖、违规帖，以及含有攻击性内容的帖子
 ========================================================
 
-* Do not simply delete inappropriate or offensive posts. Instead, edit and
-  explain why the posts were edited. Inappropriate posts include spoilers,
-  solutions, and information on how to pirate educational materials.
+* 不要无脑删除这些帖子。最佳处理办法应该是：重新编辑帖子，并告知理由。
+  违规现象包括：泄露机密、泄露答案、发布盗版信息。
 
-* Check links that students post. If you find links to offensive sites and
-  materials, they need to be edited quickly.
-
-============================
-Bugs or errors 
-============================
-
-* Check to confirm that there is in fact an error.
-
- - If not, suggest to the students that they check their work. 
-
- - If so, contact course staff, and notify the thread that the error has been
-   reported.
-
-* Use language that does not assign blame or discourage users from the
-  platform. 
-
-  You might say: “Thanks for letting us know about that issue. We
-  are working with edX to get it fixed as quickly as possible.”
+* 仔细审核学生发布的链接。如果发现具有攻击性的内容，
+  应尽快予以处理（编辑或删除）。
 
 ============================
-Feature requests 
+系统漏洞与系统错误报告
 ============================
 
-* Keep an organized collection of feature requests cultivated by the course
-  team. That list can subsequently be shared with an edX product manager, who
-  will log those requests internally.
+* 检查是否真的出错了。
 
-* Reply to the post to let the person know that their request was heard,
-  without promising that the feature will be implemented.
+ - 如果没有，请建议学生再检查一遍自己的作业。 
 
-  You might say: “Thanks for your suggestion. I’ve logged it for review by edX
-  staff, who will prioritize feature requests on the development roadmap.”
+ - 如果确实出错，请联系课程工作人员，并提醒该会话中的其他学生。
 
-* Search the discussions for other similar requests, and respond to and close
-  those as well.
+* 语气平和，不要抱怨，不要沮丧。
+
+  您可以说：“谢谢您的告知。我们正在尽力解决您的问题”。
+
+============================
+功能建议帖 
+============================
+
+* 课程团队应有组织地收集这类帖子，汇集成列表后上报给edX产品经理，由产品经理写入内部日志。
+
+* 回复这类帖子时，应告知发帖人建议已经收到，但不要做任何承诺。
+
+  您可以说：“谢谢您的建议，我们已经把您的建议转达给edX工作人员，在以后的功能开发过程中，将优先考虑您建议开设的功能。”
+
+* 查找其他类似的建议帖，回复后，关闭该帖。
