@@ -385,86 +385,67 @@ provide the following information.
 解读学生进度页面
 =============================================
 
-The chart of a learner's scores on the **Progress** page and the rows of data
-on the grade report present assignment scores in a similar order. However, the
-total, cumulative score earned for the course is placed in a different position
-on the **Progress** page.
+学生进度图标各项目的排列顺序与成绩单中的顺序一致。但是，课程总分的位置不同。
 
-In this example grade report, the indicated learner has a current grade of 0.43
-(43%).
+在下面的成绩单中，学生当前得分为0.43
 
 .. image:: ../../../shared/building_and_running_chapters/Images/Grade_Report_example.png
  :alt: A course grade report with a single student's information indicated by 
        a rectangle
 
-* On each of the first four homework assignments the learner scored 1 (100%),
-  but currently has a 0 (0%) on each of the remaining three assignments.
+* 该生前四次的作业得分均为满分，但是最近三次得分均为0分
 
-  Notice, however, that the learner's current average score for homework
-  assignments is listed as 0.666666667 (67%): in this course, the homework
-  assignment with the lowest score is dropped, so this average is over six
-  assignments rather than all seven.
+  不过请注意，学生作业的平均得分为0.666666667:
+  在本课程作业评分中，会去掉一个最低分，
+  因此平均分是基于六次作业成绩得出的，而不是七次。
 
-* The learner has a score of 0.75 (75%) on the midterm, and a score of 0 (0%)
-  on the final.
+* 该生其中考试成绩为0.75，期末考试成绩为0。
 
-On the learner's **Progress** page, you see the same information graphically
-represented; however, the student's "total" of 43% is on the far right.
+在该生的“进度”页面中，您会发现，基本信息都差不多相同，但是最右侧的“总分”为43%
 
 .. image:: ../../../shared/building_and_running_chapters/Images/Student_Progress.png
  :alt: Progress page for a student also included on the grade report: includes 
        a column graph with the grade acheived for each assignment 
 
-The chart on the **Progress** page includes y-axis labels for the grade ranges
-defined for the course. In this example, Pass is set to 60%, so at the end of
-the course, learners with a grade of 0.60 or higher can receive certificates.
+进度图标的y轴显示的是两块成绩区域（0~60,60~100）本例中，
+及格分设置为60%，因此，课程结束后，成绩高于0.60的学生可以获得合格证书。
 
-.. note:: Learner scores on the **Progress** page are a snapshot of the 
- current state of the problem score database. They can, at times, be out of
- sync with actual problem scores. For example, asynchronicities can occur if
- the weight of a live problem was changed during an assignment, and not all
- learners have resubmitted their answers for that problem.
+.. note:: “进度”页面显示的分数是该生提问数据库中得分的及时快照。
+ 因此，这个分数与实际的答题分数可能会不同步。举个例子，在某次课堂任务中，
+ 已经发布的题目比重发生了变动，但是有些学生并没有重新提交答案，
+ 这就可能导致数据的不同步。
 
 .. _A Students View:
 
 =============================================
-A Learner's View of Course Progress
+学生视角下的课程进度页面
 =============================================
 
-Learners can check their progress by clicking **Progress** in the course
-navigation bar. The learner's progress through the graded part of the course
-displays at the top of this page, above the subsection scores. Progress is
-visualized as a chart with entries for all the assignments, total percentage
-earned in the course so far, and percent needed for each grade cutoff. Here is
-an example of a learner's progress through edX101.
+学生可以单击课程导航栏中的“进度”标签查看课程进度。
+页面顶部显示的是该学生已经评分的项目及得分，下面是各小节的得分。
+进度可以显示为一张图标，里面包含所有任务的得分、当前总得分以及每部分的及格分。
+试看下例：
  
 .. image:: ../../../shared/building_and_running_chapters/Images/StudentView_GradeCutoffs.png
  :alt: Image of a student's Course Progress page with the grade cutoffs legend
        highlighted
  
-The learner can see from this page that edX101 was graded as a Pass/Fail
-course with a cutoff of 34% and that the grading rubric contained one
-assignment type, called Learning Sequence, consisting of 11 assignments total.
-Furthermore, this particular learner has only submitted correct responses to
-two assignments, and her current total percent grade in the course is 6%. By
-hovering over each progress bar, learners can get further statistics of how
-much each assignment was counted as.
+该生可在本页面中发现，edX101课程的及格分为34%，评分项目包括一个任务类型，
+其下总共包含11个任务。该生目前只成功完成了两项任务，因此当前得分为6%。
+将鼠标悬停在各个任务标签上，可以查看每项任务占总分的比重是多少。
  
-Further down on the **Progress** page is a list of all the subsections in the
-course, with the scores recorded for the learner for all problems in the
-course. Here is the **Progress** page for the learner in the example above:
+再往下看，会看见该课程所有小节的列表，记录了该生在课程中回答问题的所有得分。试看下例：
  
 .. image:: ../../../shared/building_and_running_chapters/Images/StudentView_Problems.png
    :width: 800
    :alt: Image of a student's Course Progress page with problems highlighted
  
-Note that point scores from graded sections are called "Problem Scores",
-while point scores from ungraded sections are called "Practice Scores".
+注意，计分小节的得分称为“提问得分”，不计分小节的得分称为“实践得分”。
 
 .. _Adjust_grades:
 
 ***********************************
-Adjust Grades
+调整成绩
 ***********************************
 
 If you modify a problem or its settings after learners have attempted to answer
