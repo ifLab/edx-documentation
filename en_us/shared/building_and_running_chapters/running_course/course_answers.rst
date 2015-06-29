@@ -182,17 +182,14 @@ CSV文件使用的是UTF-8编码，但是有些制表软件无法准确识别UTF
 如果您再次发现类似问题，可以试着换一种制表软件，比如LibreOffice或者Apache OpenOffice。
 
 ==========================================================================
-Interpret the Student Answer Distribution Report
+解读学生答题分布报告
 ==========================================================================
 
-You can use the Student Answer Distribution report to review student responses
-to assignments, which can then help you evaluate the structure and completeness
-of your courseware and problem components.
+您可以使用答题分布报告了解学生对于作业内容的反馈，这能帮助您优化课程结构，完善课件及提问模块。
 
-As an example, you define a text input question in Studio to have a single
-correct answer, "Warfarin". When you produce the Student Answer Distribution
-report, you verify that this answer was in fact marked correct: there is a 1 in
-the **Correct Answer** column for this **AnswerValue**.
+比方说，您设计了一道文字输入题，正确答案只设置了一个，
+即“Warfarin”，当您生成答题分布报告后，您发现大部分学生都一字不差地答对了您的问题，
+因为“正确回答”列中显示了“1”。
 
 .. image:: ../../../shared/building_and_running_chapters/Images/SAD_Answer_Review.png
     :alt: In Excel, 5 rows show 5 answer values, 4 of which show comprehension of the question, but only 1 answer is marked as correct
@@ -211,40 +208,35 @@ identify.
 .. image:: ../../../shared/building_and_running_chapters/Images/SAD_Column_Chart.png
     :alt: In Excel, AnswerValue and Count columns next to each other, values for 4 rows selected, and a column chart of the count for the 4 answers
 
-In this example, the Student Answer Distribution report is open in Microsoft
-Excel. To create a chart that shows how many of your students chose various
-answers to a multiple choice question, you move the **AnswerValue** and
-**Count** columns next to each other. After you click and drag to select the
-report cells that contain the data you want to chart, you click the Charts
-toolbar and then click the type of chart you want.
+在本例中，报告的打开方式为Microsoft Excel。
+您可以将“答案值”和“计数”两列值并在一起，选择您需要制作图表的单元格域，
+单击“图表”工具栏，选择您想要的图标类型，即可制作图表，显示不同答案与学生人数的数量关系。
 
-.. note:: Refer to the help for the spreadsheet application that you use for information on using these options. You may have to make changes to your spreadsheet, such as reordering columns. Save a copy of the file you originally downloaded as a backup before you begin. 
+.. note:: 使用图表功能时，请参考所使用软件的操作指南。
+  在不同的软件中，您可能需要微调表格，比如重排纵列，等等。
+  在开始调整之前，记得将原文件备份，以防意外。
 
-You can adjust your course content based on common student mistakes. While most
-students in this example selected the correct answer, the number of incorrect
-answer(s) can guide future changes to the courseware.
+您可以根据学生常犯的错误调整课程内容。本例中，您可以根据正确性为“0”的答案调整将来的课件。
 
 .. _score_histogram:
 
 **************************************************
-View a Histogram of Scores for a Single Problem
+查看某个问题的得分立方图
 **************************************************
 
-You can view a chart of the score distribution for a specified problem. 
+您可以查看某道问题的得分分布图表。
 
-.. note:: To view the score distribution for a problem, you need its unique identifier. You can display a histogram for problems that have the  ``/problem/`` prefix in the unique identifier. See :ref:`find_URL`.
+.. note:: 您需要知道问题的ID，才能查看得分分布。您可以将ID前缀带有/problem/的问题制成得分立方图。详见 :ref:`find_URL`.
 
-To display the distribution of scores for a problem:
+如何显示得分立方图：
 
-#. View the live version of your course.
+#. 查看课程现况
 
-#. Click **Instructor**, then click **Analytics**. 
+#. 单击“导师”→“分析”
 
-#. In the Score Distribution section, select a problem by using its unique
-   identifier.
+#. 在“得分分布”区域，使用问题ID选择一个问题
 
-   The **Analytics** page updates to display a histogram of scores for that
-   problem.
+   “分析”页面会自动显示该问题的得分分布立方图。
 
    .. image:: ../../../shared/building_and_running_chapters/Images/score_histogram.png
      :alt: Graph of the number of students who received different scores for a
@@ -253,7 +245,7 @@ To display the distribution of scores for a problem:
 ..  **Question**: (sent to Olga 31 Jan 14) this is a tough UI to use: how do they correlate the codes in this drop-down with actual constructed problems? the copy-and-paste UI on the Student Admin page actually works a little better imo. LMS-2522
 
 ===================================================
-Interpret a Score Histogram
+如何解读得分立方图
 ===================================================
 
 The histogram of scores for a selected problem provides the following
@@ -263,26 +255,21 @@ information.
      :alt: Histogram with indicators for the number of students scored value and
          the x-axis numbers that indicate plotted scores
 
-* The x-axis indicates the number of points that students can receive for the
-  problem, unweighted. Although decimal values are marked on the x-axis, each
-  score is a whole number. The whole number value at the left of a plotted bar
-  is the score that applies to it.
+* X轴显示的是学生回答该问题的未加权得分。
+  尽管X轴中含有小数点，但是所有得分都为整数。
+  每个着色块左侧的整数值即为该题得分。
 
-* The y-axis indicates the number of students who have answered and checked the
-  problem.
+* Y轴显示的是回答问题并提交答案的学生人数。
 
-* Above the graph, a number of **students scored** displays. This number
-  indicates the total number of database records that exist for the problem: it
-  includes not only students who have answered and checked the problem to
-  receive a score, but also students who have opened the problem but not yet
-  completed it.
+* 图表上方显示的是“得分学生”的人数。这个数值即该问题数据库记录中的数值：
+  这个数值即该问题数据库记录中的数值：它不仅包括回答问题、
+  得到评分的学生人数，也包括打开问题，但没有做题的学生人数。
 
-* An automated process runs approximately weekly on the edX servers to update
-  score histograms. This process runs less frequently than the process that
-  updates the student answer distribution report: at certain times during a
-  course the number of students shown in a score histogram can be quite
-  different than the **Count** for the same problem in a student answer
-  distribution report.
+
+* edX服务器大概每隔一周会更新一次得分立方图。
+  这项更新的频率要低于学生答题分布报告的频率，
+  所以，在某一特定时间内，
+  得分立方图中显示的学生数量与答题分布报告“计数”一栏显示的数量可能会有出入。
 
 
 .. _Using edX Insights: http://edx-insights.readthedocs.org/en/latest/
