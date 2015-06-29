@@ -7,7 +7,7 @@
 课程创建后，您可以随时访问学生的数据信息。
 请看下面的章节：
 
-.. contents:: Section Contents:
+.. contents:: 内容包括:
   :local:
   :depth: 2
 
@@ -127,31 +127,27 @@ edX从官网登记用户中收集的个人信息可用于认证、联系及定�
 .. _Access_anonymized:
 
 ********************************
-Accessing Anonymized Student IDs
+获取解析后的学生ID
 ********************************
 
-Some of the tools that are available for use with the edX platform, including
-external graders and surveys, work with anonymized student data. If it becomes
-necessary for you to deanonymize previously anonymized data, you can download a
-CSV file to use for that purpose.
+edX平台的某些插件，比如外挂评分工具和调查工具，需要提供解析后的学生数据。
+如果您需要解析之前加密的数据，可以下载一个CSV文件。
 
-To download a file of assigned user IDs and anonymized user IDs:
+如何下载指定用户ID和匿名用户ID文件：
 
-#. View the live version of your course.
+#. 查看课程现况
 
-#. Click **Instructor**, then click **Data Download**.
+#. 单击 **导师** → **数据下载**
 
-#. Click **Get Student Anonymized IDs CSV**.
+#. 单击 **获取学生匿名ID的CSV** 。
 
-You are prompted to open or save the {course-id}-anon-id.csv file for your
-course. This file contains the user ID that is assigned to each student at
-registration and its corresponding edX-wide anonymized user ID and course
-specific anonymized user ID. Values are included for every student who ever
-enrolled for your course.
+此时您需要打开或保存课程的{course-id}-anon-id.csv文件。
+该文件包含了学生注册时系统自动分配的ID、edX范围内的匿名ID以及某课程范围内的匿名ID。
+只要是曾经参加过课程的学生，都拥有这三个ID。
 
-To research and deanonymize student data, you can use this file together with
-the ``{course_id}_student_profile_info_{date}.csv`` file of student data or the
-``{course_id}_grade_report_{date}.csv`` file of grades.
+您可将这个CSV文件与  ``{course_id}_student_profile_info_{date}.csv`` 学生数据文件、
+``{course_id}_grade_report_{date}.csv`` 学生成绩文件配合起来使用，
+达到解析学生数据的目的。
 
 .. only:: Open_edX
 
