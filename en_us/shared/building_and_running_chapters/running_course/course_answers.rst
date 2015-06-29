@@ -1,13 +1,10 @@
 .. _Review_Answers:
 
 ############################
-Answer Data
+回答问题数据
 ############################
 
-To review student answers to the problems in your course, you can review the
-answer submitted by a selected student for a specific problem, download a
-course-wide report of answer data, or review a histogram of student answers for
-a selected problem.
+您可以查阅某个学生对于某个问题提交的答案、下载课程范围内的答题数据报告，或查阅某个问题的答案立方图。
 
 * :ref:`Student_Answer_Submission`
 
@@ -21,55 +18,45 @@ available from edX Insights. For more information, see `Using edX Insights`_.
 .. _Student_Answer_Submission:
 
 ************************************************************
-Check a Student's Answer Submission and Submission History
+查看某个学生的答案及答题历史记录
 ************************************************************
 
-For a single student and problem, you can review the exact response submitted,
-the number of attempts made, and the date and time of the submission. You
-identify the student by supplying a username.
+您可以查看某个学生关于某道题目提交的具体回答内容、回答正确需要尝试的次数，
+以及答案提交日期、时间。您可通过用户名锁定学生。
 
-To review a response submitted by a student:
 
-#. View the live version of your course.
 
-#. Click **Courseware** and navigate to the unit that contains the problem
-   you want to review.
+#. 查看课程现况
 
-#. Display the problem and then click **Submission History** below the problem.
+#. 单击“课件”，导航至包含该问题的课程单元
 
-#. Enter the username for the student whose work you want to review, then click
-   **View History** at the end of the page.
+#. 查看问题，单击问题下方的“提交历史记录”
 
-  Information about the response or responses provided by the student displays.
+#. 输入您想查看学生的用户名，单击页面底部的“查看历史记录”，即出现该生回答问题的信息
 
-To close the Submission History Viewer, click on the browser page outside of the
-viewer.
+随便单击查看窗口外的页面即可关闭窗口。
    
 .. _Student_Answer_Distribution:
 
 ****************************************
-Student Answer Distribution
+学生答题分布
 ****************************************
 
-For certain types of problems in your course, you can download a CSV file with
-data about the distribution of student answers. Student answer distribution data
-is included in the file for problems of these types:
+您可下载学生答题分布数据的CSV文件。文件中显示的答题类型包括以下几类：
 
-* Checkboxes (``<choiceresponse>``)
-* Dropdown (``<optionresponse>``)
-* Multiple choice (``<multiplechoiceresponse>``)
-* Numerical input (``<numericalresponse>``)
-* Text input (``<stringresponse>``)
-* Math expression input (``<formularesponse>``)
+* 多项选择 (``<choiceresponse>``)
+* 下拉列表选择 (``<optionresponse>``)
+* 单项选择 (``<multiplechoiceresponse>``)
+* 数字输入 (``<numericalresponse>``)
+* 文本输入 (``<stringresponse>``)
+* 数学表达式输入 (``<formularesponse>``)
 
-The file includes a row for each problem-answer combination selected by your
-students. For example, for a problem that has a total of five possible answers
-the file includes up to five rows, one for each answer selected by at least one
-student. For problems with **Randomization** enabled in Studio (sometimes
-called rerandomization), there is one row for each problem-variant-answer
-combination selected by your students. See :ref:`Problem Settings`.
+该文件中，有一行显示的是您学生选择的所有“问题-答案”配对。
+例如，一道问题出现了五种意见不同的答案，则文件中会显示五行，
+每一行至少代表一名学生的观点。如果您在Studio中设置了带有“随机选择”功能的问题，
+则会另外再开一行。详见 :ref:`Problem Settings`.
 
-The CSV file contains the following columns:
+CSV文件包含以下几列：
 
 .. list-table::
    :widths: 20 60
