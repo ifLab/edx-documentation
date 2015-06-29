@@ -85,53 +85,44 @@ edX从官网登记用户中收集的个人信息可用于认证、联系及定�
 
 .. note:: 除了学生数据外，您还可以查看课程员工的数据信息。
 
-To download student data, follow these steps.
+如何下载学生数据：
 
-#. View the live version of your course.
+#. 查看课程现况
 
-#. Click **Instructor**, then click **Data Download**.
+#. 单击 **导师** → **数据下载**
 
-#. To download data about enrolled students in a CSV file, click **Download
-   profile information as a CSV**.
+#. 如果要下载CSV格式的文件，请单击 **将信息简报保存为CSV文件**
 
-  A status message indicates that report generation is in progress. This
-  process can take some time to complete, but you can navigate away from this
-  page and do other work while it runs.
+  此时会出现提示消息，显示下载正在进行中。
+  这个过程可能要持续一段时间，但是在等待过程中您可以跳到其他页面，干别的事情。
+  
+  如果想查看下载进度，可以在浏览器中重新加载页面，将滚动条拖至 **正在进行的教师任务** 区域。
 
-  To track the progress of the report process, reload the page in your browser
-  and scroll down to the **Pending Instructor Tasks** section.
+4. 单击页面底部的
+   ``{course_id}_student_profile_info_{date}.csv`` 文件名，打开或保存学生信息简报
 
-4. To open or save a student data report, click the
-   ``{course_id}_student_profile_info_{date}.csv`` file name at the bottom of
-   the page.
+  该文件包含所有学生提供的数据信息。
 
-  All student-supplied data is included in this file without truncation.
+如何查看学生数据：
 
-To view student data, follow these steps.
+.. note:: 仅当学生人数少于200时才可选择此功能。
 
-.. note:: This option is available only for courses with an enrollment of less 
- than 200.
+#. 查看课程现况
 
-#. View the live version of your course.
+#. 单击 **导师** → **数据下载**
 
-#. Click **Instructor**, then click **Data Download**.
+#. 单击 **列出学生信息简报** 查看学生数据
 
-#. To display data about enrolled students, click **List enrolled students'
-   profile information**. 
-
-   A table of the student data displays, with one row for each enrolled
-   student. Longer values, such as student goals, are truncated.
+   此时会打开一张学生数据表，每一行代表一个学生。比较长的内容，比如学习期望等，只能看见前几句话。
+   
 
  .. image:: ../../../shared/building_and_running_chapters/Images/StudentData_Table.png
   :alt: Table with columns for the collected data points and rows for each 
         student on the Instructor Dashboard
 
-For courses that have the cohorts feature enabled, this report also includes a
-Cohort column with each student's assigned cohort group.
+如果该课程启用了分队功能，则会增加“分队”栏，显示学生的分队情况。
 
-.. note:: The columns for language and location are included in this report 
- for backward compatibility only. This data is no longer collected during
- student registration.
+.. note:: 为保持向后兼容性，本报告包含“语言”和“所在地”栏。但在学生注册过程中，不会显示这两项。
 
 .. _Access_anonymized:
 
