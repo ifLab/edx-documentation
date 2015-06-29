@@ -55,8 +55,7 @@ edX从官网登记用户中收集的个人信息可用于认证、联系及定�
 * 电子邮箱地址
 * 出生年月
 * 性别
-* 教育水平 For more information about the reported values, see
-  `auth_userprofile.level_of_education`_ column in the *edX Research Guide*.
+* 教育水平 更多信息请参考 **edX研究指南** 中的  `auth_userprofile.level_of_education`_ 部分
 * 邮件地址
 * 学习期望
 
