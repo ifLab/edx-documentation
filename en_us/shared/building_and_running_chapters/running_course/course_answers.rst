@@ -12,8 +12,8 @@
 
 * :ref:`score_histogram`
 
-Student answer distribution data, including both charts and reports, is also
-available from edX Insights. For more information, see `Using edX Insights`_.
+学生回答问题数据包括图表和报告，这些在edX Insights中同样可用。
+更多信息请参阅 `Using edX Insights`_.
 
 .. _Student_Answer_Submission:
 
@@ -124,7 +124,7 @@ edX服务器会定期自动更新学生答题数据的CSV文件。
 关于学生答题分布报告的常见问题
 ==========================================================================
 
-Answers to questions about the student answer distribution report follow.   
+以下是一些关于学生答题分布报告的解答。
 
 **我的课程没有学生答题分布报告，要怎么生成？**
 
@@ -169,12 +169,12 @@ Excel表格会将这两个答案的“答案值”都显示为“0.5”。
 CSV文件使用的是UTF-8编码，但是有些制表软件无法准确识别UTF-8编码。
 比如说，某学生的法语答题报告在Microsoft Excel for Mac软件和OpenOffice Calc软件中显示的结果就不同。
 
-  Answer Values in Microsoft Excel for Mac:
+   Microsoft Excel for Mac 中的答案值:
 
    .. image:: ../../../shared/building_and_running_chapters/Images/student_answer_excel.png
      :alt: A spreadsheet that replaces accented French characters with underscores
 
-  Answer Values in OpenOffice Calc:
+    OpenOffice Calc 中的答案值:
 
    .. image:: ../../../shared/building_and_running_chapters/Images/student_answer_calc.png
      :alt: A spreadsheet that displays accented French characters correctly
@@ -194,16 +194,12 @@ CSV文件使用的是UTF-8编码，但是有些制表软件无法准确识别UTF
 .. image:: ../../../shared/building_and_running_chapters/Images/SAD_Answer_Review.png
     :alt: In Excel, 5 rows show 5 answer values, 4 of which show comprehension of the question, but only 1 answer is marked as correct
 
-However, as you view the report you notice other student answers that you did
-not set up to be marked as correct in Studio, but that you might (or might not)
-also consider to be correct, such as "Warfarin or Coumadin". The **Correct
-Answer** column shows that the other answers were marked incorrect (0), but for
-future iterations of your course you may want to revise the question or update
-the problem to evaluate additional variations of the answer as correct.
+但是，您在查看报告时，您未设置的其他学生的答案将被标记为正确的。
+您也可以认为是正确（或不正确）的。在正确答案列中显示其他被标记为不正确的答案。
+但是为了课程未来循环，您也许想校订问题或者更新问题来评估正确答案的其他变形。
 
-Many spreadsheet applications offer data visualization options, such as charts
-or graphs. Charts can help make your students' common misconceptions  easier to
-identify.
+很多制表应用软件提供数据图像化选择，比如图表或图形。
+图表帮助您更容易地找出学生普遍误解的内容。
 
 .. image:: ../../../shared/building_and_running_chapters/Images/SAD_Column_Chart.png
     :alt: In Excel, AnswerValue and Count columns next to each other, values for 4 rows selected, and a column chart of the count for the 4 answers
@@ -248,8 +244,7 @@ identify.
 如何解读得分立方图
 ===================================================
 
-The histogram of scores for a selected problem provides the following
-information.
+得分立方图提供以下信息
 
    .. image:: ../../../shared/building_and_running_chapters/Images/score_histogram_callouts.png
      :alt: Histogram with indicators for the number of students scored value and
