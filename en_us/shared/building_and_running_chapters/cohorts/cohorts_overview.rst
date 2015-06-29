@@ -2,7 +2,7 @@
 
 
 #############################
-Using Cohorts in Your Courses
+使用队列功能建立课程群
 #############################
 
 If you want to create smaller communities in your course, or design different
@@ -19,17 +19,14 @@ communities of students, then select a strategy for :ref:`assigning students to
 cohorts<Options for Assigning Students to Cohorts>`.
 
 .. note::    
-   * Every student must be assigned to a cohort. This ensures that
-     every student has the ability to read and contribute to course discussion
-     topics.
+   * 每个学生都必须分配到队列中。这样每个学生都能阅读所有讨论课题，并就课题贡献自己的力量。
 
-   * Each student can be in one and only one cohort. 
 
-   To provide students with a consistent experience throughout the course run,
-   do not change cohort configuration or a student's cohort assignment after
-   your course begins.
+   * 每个学生只能分配到一个队列中。
 
-For more information about using cohorts in courses, see:
+   为保证持续的课堂体验，课程开始后，不应变更学生的分队模式。
+
+更多信息请看以下两节的内容：
 
 * :ref:`Enabling and Configuring Cohorts`
 
@@ -38,13 +35,13 @@ For more information about using cohorts in courses, see:
 
 * :ref:`Moderating Discussions for Cohorts`
 
-For information about discussions in general, see :ref:`Discussions`.
+关于“课题讨论”的更多信息请参考 :ref:`Discussions`.
 
 
 .. _Options for Assigning Students to Cohorts:
 
 *****************************************
-Options for Assigning Students to Cohorts
+课题讨论选项
 *****************************************
 
 Students are assigned to cohorts either automatically or manually, depending on
@@ -94,74 +91,59 @@ following topics.
 .. _All Automated Assignment:
 
 ========================================================
-Automated Assignment: Making MOOC Discussions Manageable
+自动分队：让大规模的讨论更易管理
 ========================================================
 
-In very large courses, the number of posts that are made to course discussion
-topics can make for a daunting amount of daily reading. In such courses,
-dividing the enrollees into separate cohorts makes the volume of posts,
-responses, and comments by the members of each cohort more manageable, and is
-more likely to foster community feeling.
+在一些规模较大的课程中，关于某个讨论课题的帖子数量可谓堆积成山，
+令人望而却步。对这类课程而言，将课程参与者分为几个小队可以有效管理发帖、
+回帖以及评论数量，同时更有助于培养群体意识。
 
-If you use the automated assignment strategy, you create several "auto"
-(automated) cohorts. Learners are automatically and randomly assigned to one of
-the auto cohorts when they first view any course content, including the course
-**Discussion** page or content-specific discussion topics. In this way, each
-learner in your course is assigned to a cohort; no learner is unassigned.
+采用这种分队策略，您需要启用分队功能，并创建一组“自动”分队。
+创建成功后，当一个学生第一次查看“课程讨论”页面，或其他特殊讨论课题时，
+将被自动随机分配到某个小组中。所有被分到同一小组的学生组成一个队列。
 
-The following guidelines are based on the experiences of MOOC teams that have
-used cohorts in this way. They are suggested to help you determine how many
-automated cohorts to define for your course.
+这几条操作指南基于本平台对大规模在线开放课程团队的管理经验，
+能够帮助您在课程中正确决定自动分队队列的数量。
 
-* Each cohort should be large enough to inspire lively participation and
-  diverse points of view, but small enough to allow a sense of community to
-  develop. Cohorts formed by random assignment tend to be successful if they
-  include between 200 and 500 members.
+* 每个队列的规模不应太小，否则将很难调动学生的积极性，也很难从多方面角度收集意见；
+  同时也不应太大，否则容易使团队一盘散沙，丧失集体意识。
+  随机分组下的队列规模应在200至500人之间为宜。
 
-* For every 10,000 students who enroll, approximately 200 to 400 students
-  remain active in the discussions throughout the course run. 
+* 每10000名学生中，能从头到尾保持讨论积极性的约为200至400人左右。
 
-* Divide the estimated total enrollment of the course run by 10,000.
+* 将预计的课程参与人数除以10000。
 
-* Use the result as the number of automated cohorts to create.
+* 得到的结果即为自动分队队列的数量。
 
-For example, two days before it starts, a course has an enrollment of 80,000
-students. To create small communities within the discussions, the course team
-enables cohorts and then creates eight automated cohorts. As learners visit the
-**Discussion** page or view the course content, they are randomly assigned to
-one of the eight cohorts. In divided discussion topics, students read and
-respond only to contributions made by other members of the same cohort.
+比如，一项课程开始两天前，报名学生人数为80000人。
+课程团队启用分队功能，创建了8个自动分队队列。
+当学生访问讨论页面并查看讨论模块时，会被随机分配到一个队列中。
+在分队讨论课题中，学生只能阅读、回复同一小队成员发布的内容。
 
-For more information, see :ref:`Implementing the Automated Assignment
+更多信息请参考 :ref:`Implementing the Automated Assignment
 Strategy`.
 
 
 .. _All Manual Assignment:
 
 =====================================================
-Manual Assignment: Grouping by Common Characteristics
+手动分组：“人以群分”
 =====================================================
 
-In SPOCs and other courses with small- to medium-sized enrollments, known
-existing commonalities can be used to identify cohorts. An example is a course
-that enrolls students from different companies or with different educational
-backgrounds, or members of alumni or parent groups. When students are assigned
-to cohorts on the basis of a characteristic that they share, they can privately
-discuss applications for what they are learning and explore resources and ideas
-that are of particular interest.
+在SPOC（小型私人在线课程）以及其他中小规模的课堂中，
+教师可以根据学生的已知共性创建队列。比如，您的学生可能来自不同的公司，
+可能拥有不同教育背景，参加了不同的团体等等。将学生按照不同共性分组，
+学生能够私下讨论自己感兴趣的话题，从而寻找符合特定团体利益的资源和创意。
 
-To implement this assignment strategy, you identify the "real-world" cohorts
-that your students already belong to. You enable cohorts and then create
-"manual" cohorts to represent each of the real-world cohorts. You then manually
-assign each student to a cohort. Every student who enrolls, including those who
-enroll after the course starts, must be assigned to a cohort.
+在使用这种分组策略之前，您需要事先了解您的学生在现实生活中属于哪一类群体。
+您可以启用分队模式，并将默认设置修改为“手动”（manual）分组，
+然后您可以将学生一一分配到这些手动分队队列中。
+无论课程开始前后，所有加入课程的学生都必须至少被分配到一个队列中。
 
-.. note:: To ensure that every student is assigned to a cohort, you can set up a
-   single automated cohort, as described for the :ref:`hybrid assignment strategy<Hybrid Assignment>`. If you do not create an automated cohort, the
-   system automatically creates a :ref:`default cohort<Default Cohort Group>` and
-   assigns students to it if necessary.
+.. note:: 保证每个学生都有组可分，您可以在手动分队队列之外再创建一个单独的自动分队队列。
+   这部分内容会在下一节中提到。如果您没时间创建队列，系统会自动创建一个默认分队以保证所有学生都有组可分。
 
-For more information, see :ref:`Implementing the Manual Assignment Strategy`.
+更多信息请参考 :ref:`Implementing the Manual Assignment Strategy`.
 
 
 .. _Hybrid Assignment:
