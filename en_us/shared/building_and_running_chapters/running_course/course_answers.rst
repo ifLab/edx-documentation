@@ -24,7 +24,7 @@ available from edX Insights. For more information, see `Using edX Insights`_.
 您可以查看某个学生关于某道题目提交的具体回答内容、回答正确需要尝试的次数，
 以及答案提交日期、时间。您可通过用户名锁定学生。
 
-
+如何查看学生提交的内容：
 
 #. 查看课程现况
 
@@ -62,23 +62,23 @@ CSV文件包含以下几列：
    :widths: 20 60
    :header-rows: 1
 
-   * - Column
-     - Description
-   * - ModuleID
-     - The internal identifier for the Problem component.
-   * - PartID
-     - For a Problem component that contains multiple problems, the internal
-       identifier for each individual problem. For a Problem component that
-       contains a single problem, the internal identifier of that problem.
-   * - Correct Answer
-     - 0 if this **AnswerValue** is incorrect, or 1 if this **AnswerValue** is
-       correct.
-   * - Count
-     - The number of times that students entered or selected this answer as
-       their most recent submission for the problem or problem variant. For
-       problems with the number of **Attempts** set to a value greater than 1,
-       this means that each student contributes a maximum of 1 to this count,
-       even if the same answer is provided in multiple attempts.
+   * - 列
+     - 描述
+   * - 模块ID
+     - 即提问模块的永久ID
+   * - 部分ID
+     - 如果提问模块包含多个问题，每个问题都有自己的永久ID。
+       如果提问模块只包含一个问题，则该值与模块ID相同。
+        
+   * - 正确回答
+     - **答案值** 不正确则为0，正确则为1
+       
+   * - 回答次数
+     - 即学生最近提交某个答案的次数。
+       假设本值为X，如果某个问题的 **尝试** 值大于1，
+       则每个学生回答该答案的最大次数应在1~X之间，
+       哪怕该答案已被尝试多次。
+       
    * - ValueID
      - The internal identifier of the answer choice for checkboxes and multiple
        choice problems. Blank for dropdown, numerical input, text input, and
