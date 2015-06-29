@@ -47,30 +47,23 @@ cohorts<Options for Assigning Students to Cohorts>`.
 如果学生进入课程内容时，您没有创建任何自动队列，系统会自动生成一个默认自动队列。
 所有的学生都会被加入到队列中。
 
+选择您在创建课程队列时的基本政策。
+自动分配政策指您的课程中学生将被自动随机分配到队列中。
+手动分配政策指您将创建队列并将学生手动加入到队列中。
+您也可以使用混合分配方法，结合自动和手动队列。
+一般情况下，您想让队列拥有的特性决定了您应该使用何种分配方式。
 
-Determine the basic strategy that you will use to create cohorts for your
-course. An automated assignment strategy means that you create cohorts to which
-students are assigned automatically and randomly. A manual assignment strategy
-means that you create cohorts to which students are assigned only when you or
-your course team manually adds them. You can use a hybrid assignment method by
-creating a combination of automated and manual cohorts. Typically, your purpose
-in including the cohort feature in your course determines which assignment
-option you use for your course.
 
-.. note:: You can add students manually to any cohort, whether it was created as
-   an automated cohort or a manual cohort.
+.. note:: 您可以将学生手动加入到任何队列中。包括自动队列和手动队列。
 
-.. note:: Although you can change the assignment method of a cohort at any time
-   after you create it, you should have a cohort assignment strategy in mind as
-   you design your course, and only make changes to cohorts while the course is
-   running if absolutely necessary. Be aware of the implications of changing
-   cohort configuration while your course is running. For more information, see
-   :ref:`Altering Cohort Configuration`. In general, to provide students with a
-   consistent experience throughout the course run, do not change cohort
-   configuration or a student's cohort assignment after your course begins.
+.. note:: 尽管您可以随时改变分派方法，您在创建课程时仍应该在脑中有一套分配标准。
+   课程开始以后，尽量仅在非常必须的情况下改变分配政策。注意在课程开始以后，
+   更改分配政策造成的影响。更多信息请参考
+   :ref:`Altering Cohort Configuration` 。 
+   一般情况，为了向学生提供连贯的学习体验，请不要在课程开始后更改队列设置。
 
-For more information about strategies for assigning students to cohorts, see the
-following topics.
+
+更多关于分配政策的信息请看下列主题。
 
 * :ref:`All Automated Assignment`
 
@@ -182,8 +175,8 @@ Strategy` 和 :ref:`Implementing the Manual Assignment Strategy`.
 当学生访问“讨论”页面，或查看讨论课题时，手动分队队列以外的学生会自动分配到自动分队队列或默认队列中。
 
 分配到默认队列的学生会在查看讨论帖时看见一个名为“默认小组”的队列。
- If you want students to see a different name for the default
-cohort, you can change its name. For details about renaming cohorts, see
+如果您希望学生看到不同于默认队列的队列名称，您可以更改名称。
+更多细节请参考
 :ref:`Renaming a Cohort`.
 
 .. image:: ../../../shared/building_and_running_chapters/Images/post_visible_default.png
