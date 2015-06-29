@@ -386,41 +386,37 @@ consequences of these actions.
 .. _Changing Student Cohort Assignments:
 
 ***************************************************
-Change Student Cohort Assignments
+更改学生分队
 ***************************************************
 
-After your course starts and students begin to contribute to the course
-discussion, each post that they add is visible either to everyone or to the
-members of a single cohort. When you change the cohort that a student is
-assigned to, there are three results:
+当课程开始后，学生上传的内容要么对所有人可见，要么只对某一单独小组可见。
+当您更改某个学生的分队后，会出现如下三个现象：
 
-* The student continues to see the posts that are visible to everyone.
+* 该学生能继续看见对所有人可见的内容
 
-* The student sees the posts that are visible to his new cohort.
+* 该学生还能看见对新分组可见的内容
 
-* The student no longer sees the posts that are visible only to his original
-  cohort.
+* 仅对该学生之前所在分队可见的内容将对其不再可见
 
-The visibility of a post and its responses and comments does not change, even if
-the cohort assignment of its author changes. To a student, it can seem that
-posts have "disappeared".
+某项内容，以及关于该内容的回复、评论的可见性始终保持不变，
+哪怕该内容的作者的已经被分到别的队列，也是如此。
+所以，学生有时会看见内容突然“消失”，这是正常现象。
 
-To verify the cohort assignments for your students, download the  :ref:`student
-profile report<View and download student data>` for your course. If changes are
-needed, you can :ref:`assign students<Assign Students to Cohorts Manually>` to
-different cohorts manually on the **Cohorts** page of the Instructor Dashboard,
-or :ref:`upload cohort assignment changes<Assign Students to Cohort Groups by
-uploading CSV>` in a .csv file.
+为核实学生分队情况，请您下载您课程的学生简报。如果确实需要作出更改，您需要在教师指示板的“成员”页面中将学生手动分配到各个队列中。
+为核实学生分队情况，请您下载您课程的  :ref:`student
+profile report<View and download student data>` 。如果确实需要作出更改，
+您需要在教师指示板的“成员”页面中 :ref:`assign students<Assign Students to Cohorts Manually>`
+或者在.csv文件里 :ref:`upload cohort assignment changes<Assign Students to Cohort Groups by
+uploading CSV>` 
 
 
 .. _Renaming a Cohort:
 
 ***************
-Rename a Cohort
+重新命名队列
 ***************
 
-You can change the name of any cohort, including the system-created default
-cohort.
+您可以更改任何队列的名字。包括系统生成的默认队列。
 
 To rename a cohort, follow these steps.
 
