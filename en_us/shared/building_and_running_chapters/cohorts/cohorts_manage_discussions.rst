@@ -103,81 +103,62 @@ CourseWide Discussion Topics are Cohorted`.
 选择帖子的可见性
 ***************************************
 
-If you have the discussion admin, discussion moderator, or community TA role,
-you can make posts to divided discussion topics visible to everyone who is
-enrolled in the course or to the members of a selected cohort only. When
-you :ref:`add a post<Add a Post>`, the **Visible to** dropdown list appears
-above the **Title** field.
+如果您是讨论项目管理员、协调员或助教，
+您可以使分队讨论课题下的帖子对所有人可见，或仅对某一队列可见。
+当您 :ref:`add a post<Add a Post>` 时，“题目”字段上面会有可见群体的下拉列表。
 
-This example shows a new post being added to a content-specific
-discussion topic.
+下面的例子是一条正在添加的新帖子：
 
 .. image:: ../../../shared/building_and_running_chapters/Images/visible_to_contentspecific.png
  :alt: The fields and controls that appear when a staff member clicks 
        New Post for a content-specific topic
 
-As a discussion staff member, you can choose the visibility of your posts in
-topics that are divided by cohort. This means that you can add a single post
-with information that you want everyone to see, rather than having to write a
-separate post for each cohort. It also means that it is possible for you
-to unintentionally share information with a different audience than you
-intended.
+作为讨论项目工作人员，您可以选择分队讨论课题中您发布帖子的可见性。
+也就是说，您不需要为每个队列一一撰写帖子，只需要发布一条所有人均可见的帖子即可。
+但是这也意味着，您可能会无意间将信息泄露给您意料之外的群体。
 
-.. note:: Students do not choose the visibility of their posts. The 
- visibility of student posts is determined by the configuration of the topic
- they post in. See :ref:`Finding Out Who Can See a Post`.
+.. note:: 学生不能自主选择他们帖子的可见性。他们帖子的可见性取决于帖子所在课题的配置。
+   具体参见 :ref:`Finding Out Who Can See a Post`.
 
-Posts that discussion staff members add to unified discussion topics are always
-visible to all students, regardless of cohort assignment.
+工作人员在全课堂讨论课题下发的帖子对所有人可见。
 
 .. _Considerations When Editing Posts:
 
 ===================================
-Considerations When Editing Posts
+编辑帖子时需要考虑的问题
 ===================================
 
-It may be helpful to keep these additional considerations in mind when you edit
-posts in a course that includes cohorts.
+在分队课堂中编辑帖子时，请注意以下几点：
 
-* You cannot change the visibility of a post after it has been added. If you
-  notice that a post contains information that is not appropriate for the
-  cohort who can read it, edit the content of the post or delete the post.
+* 帖子发布以后无法更改可见性。
+  如果您觉得帖子中包含了某些对可见人群不太适合的内容，请重新编辑，或删除帖子。
 
-* If you change the topic that a post appears in, the visibility of the post
-  and its responses and comments **does not change**. This ensures that
-  students who are following the post, or who have contributed responses or
-  comments to it, will still be able to read it.
+* 如果您更改帖子所在的课题，帖子的可见性以及其下的回复、评论不会受影响。
+  这是为了保证正在跟踪帖子，或在帖子下发表了回复、评论的学生能够继续浏览该帖。
 
-* All of the responses and comments that are contributed to a post will be
-  visible to the same group of people as the post itself. You cannot change the
-  visibility of individual responses or comments.
+* 帖子的回复、评论与帖子共享同一可见群体。您不能更改某条回复或评论的可见性。
 
 .. _Viewing the Posts of a Cohort Group:
 
 *****************************
-Viewing the Posts of a Cohort
+查看某个队列的帖子
 *****************************
 
-When a course includes student cohorts, you can view posts and monitor
-discussion activity for one cohort at a time. You can also view all
-posts.
+分队课堂中，您可以随时查看发帖情况，监控讨论活动。
 
 .. note:: Course team members must have discussion moderator or admin
    privileges in addition to their course staff privileges to be able to view
    posts that are divided by cohort.
 
-Above the list of posts on the **Discussion** page, the **in all cohorts**
-filter is selected by default. You see every post when you make this selection,
-as shown in the illustration on the left. To limit the list so that you can
-view the same set of posts as the members of a cohort, select the name
-of that cohort as shown on the right.
+在“讨论”页面的帖子列表右上角，帖子筛选范围默认为“所有队列”。这种情况下，
+您可以看见所有帖子，如下面左图所示。您也可以通过更改筛选范围查看某一队列可见的帖子，
+只需选择该队列名称即可，如下面右图所示。
 
 .. image:: ../../../shared/building_and_running_chapters/Images/viewing_all_or_cohort.png
  :alt: The list of posts on the Discussion page, first showing all posts then 
   showing only posts that members of the University Alumni cohort can see
 
-Note that both of these lists include posts that are visible to
-everyone. When you filter the list by cohort, you see the same, complete
-set of posts that the members of the cohort see.
+注意，在任何筛选范围下都能看见对所有人可见的帖子。
+当您筛选某个队列的帖子时，您看见的和该队列成员看见的帖子情况完全一样。
 
-For other options that you can use to view posts, see :ref:`Find Posts`.
+关于查看帖子的更多选项，参考 :ref:`Find Posts`.
