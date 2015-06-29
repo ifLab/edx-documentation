@@ -5,9 +5,9 @@
 使用队列功能建立课程群
 #############################
 
-If you want to create smaller communities in your course, or design different
-course experiences for different groups of students, you can :ref:`set up
-cohorts<Enabling and Configuring Cohorts>` in your course.  
+如果您想在课程中建立更小的社区，或者为不同学生群体设计不同的课程体验，
+您可以在课程中 :ref:`set up
+cohorts<Enabling and Configuring Cohorts>` 。 
 队列功能可以在课堂内创建小型课程群体。同一队列的学生能够私下交流分享关于讨论课题的看法和经验。 
 队列讨论能培养学生的集体观念，为学生提供度身打造的课程体验，并鼓励学生参与更深层次的课程活动。
 
@@ -40,6 +40,7 @@ cohorts<Options for Assigning Students to Cohorts>`.
 *****************************************
 课题讨论选项
 *****************************************
+
 
 Students are assigned to cohorts either automatically or manually, depending on
 the types of cohort that you create in your course. Manual cohorts do not have
