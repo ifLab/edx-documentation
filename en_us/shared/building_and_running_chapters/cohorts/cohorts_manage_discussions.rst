@@ -2,67 +2,57 @@
 
 
 ##########################################################
-Managing Discussions in Courses with Student Cohorts
+管理有学生队列的论坛
 ##########################################################
 
-In courses that have cohorts enabled, every post has an indicator of who can
-read it: either all students, or only the members of a single cohort. For
-students, this is the only noticeable difference between discussions in
-courses that include cohorts when compared to courses that do not. You can
-share the examples in the :ref:`Read the Cohort Indicator in Posts` section
-with your students, along with the :ref:`Discussions for Students and Staff`
-section of this guide.
+在带有学生队列的课堂（下简称“分队课堂”）中管理讨论项目
+分队功能启用后，每条帖子都会有个提示，表明该帖子的可见群体：
+所有人，或者仅某一队列的成员。
+对于学生而言，这个提示是分队课堂与普通课堂唯一可见的不同之处。 
+您可以和学生一起研究 :ref:`Read the Cohort Indicator in Posts` 一节中的例子，
+以及 :ref:`Discussions for Students and Staff` 一节的内容。
 
-Staff members who have the discussion admin, discussion moderator, or
-community TA role see the same indicator of who can read each post. Unlike the
-students, however, staff members with discussion privileges can read and
-contribute to every post, regardless of the cohort assignment of the student
-who posted it.
+
+拥有讨论项目管理员、讨论项目协调员或助教身份的教职工也能通过提示语了解每条帖子的可见群体。
+但是与学生不同，讨论项目的工作人员可以阅读所有帖子并有所建树，无论该帖出自哪个队列的学生之手。
 
 .. note:: Course team members must have discussion moderator or admin
    privileges in addition to their course staff privileges to be able to view
    posts that are divided by cohort. For information about adding discussion
    privileges, see :ref:`Assigning_discussion_roles`.
 
-   Students who have the Community TA role can read and contribute to all
-   posts.
+   担任助教的学生也可以执行这些操作。
 
-In courses with the cohort feature enabled, course team members who have
-discussion moderator or admin privileges can also:
+在分队课堂中，讨论项目的工作人员可以：
 
-* Choose who will be able to see the posts that they add to divided topics. See
+* 在分队讨论中发帖，并制定该帖的可见群体。详见
   :ref:`Choosing the Visibility of a Post`.
 
-* Filter the posts that are listed on the **Discussion** page by cohort.
-  See :ref:`Viewing the Posts of a Cohort Group`.
+* 审核过滤“讨论”页面的帖子。详见 :ref:`Viewing the Posts of a Cohort Group`.
   
-All of the other options and features described in the :ref:`Discussions`
-section continue to be available to the discussion staff.
+其他在 :ref:`Discussions` 一节中提到的功能、选项均对讨论项目工作人员开放。
 
 .. _Finding Out Who Can See a Post:
 
 ********************************
-Identifying Who Can Read a Post
+确定某条帖子的可见群体
 ********************************
 
-In a course that includes cohorts, all posts include a cohort indicator above
-the title. This indicator appears after any student or staff member adds a
-post. Other than naming the cohorts carefully when you add them, no
-configuration is necessary to include this identifier.
+在分队课堂中，所有帖子的题目上方都有一行提示语。该提示语在学生/职工发帖后自动出现。
+添加分队时，您需要非常小心地为分队命名，但是这条提示语无需设置。
 
-Optionally, you can name your discussion topics to show students who will be
-able to view their posts. See :ref:`Apply Naming Conventions to Discussion
+或者，您也可以通过讨论课题名称告诉学生谁可以阅读他们的帖子。
+详见 :ref:`Apply Naming Conventions to Discussion
 Topics`.
 
 .. _Read the Cohort Indicator in Posts:
 
 ==================================
-Read the Cohort Indicator in Posts
+阅读帖子的队列提示语
 ==================================
 
-Every post includes a sentence that identifies whether everyone can see and
-contribute to it, or only the members of a cohort in the course. Examples
-follow.
+每条帖子上方都有一小句话，告诉大家谁可以阅读本帖并对本帖有所贡献，
+是所有人，还是仅某一组的成员。下面是一个例子：
 
 .. image:: ../../../shared/building_and_running_chapters/Images/post_visible_all.png
  :alt: A discussion topic post with "This post is visible to everyone" above 
@@ -72,44 +62,35 @@ follow.
  :alt: A discussion topic post with "This post is visible to" and a cohort name
        above the title
 
-You see this identifier after you add your post. All of the responses and
-comments that other contributors add to a post are visible to the same group of
-people as the post itself.
+这条提示语出现在您发帖后。同样地，所有关于该帖的回复、评论也仅对提示语中的人群可见。
 
 .. _Apply Naming Conventions to Discussion Topics:
 
 =========================================================
-Apply Naming Conventions to Discussion Topics
+为讨论课题应用命名约定
 =========================================================
 
-Optionally, course team members can give students the audience context of their
-posts before they add them. Indicating who will be able to read posts in the
-names of the topics themselves can be useful when a cohort is particularly
-sensitive about the privacy of their conversations.
+有时，课程团队成员可以在发布帖子之前就告知学生帖子的观众群体。
+尤其是当某个小队之间的私人谈话非常敏感的时候，通过讨论课题名称告知帖子的可见群体非常重要。
 
-For example, you add "(everyone)" to the names of the unified course-wide
-discussion topics in your course.
+例如，您可以在全课堂讨论课题名称中添加“(everyone)”字样（即“对所有人可见”）。
 
 .. image:: ../../../shared/building_and_running_chapters/Images/discussion_category_names.png
  :alt: The names you supply for course-wide topics in Studio appear on the 
        dropdown list of discussion topics in the live course
 
-When students visit the **Discussion** page and use dropdown lists to select a
-course-wide topic, the topic names indicate who can see the posts, responses,
-and comments.
+如此，当学生访问“讨论”页面，并在下拉列表中选择全课堂讨论课题时，
+课题名就可以告知他们，哪些人能阅读帖子并发表回复和评论。
 
-(In the illustration above, every topic name includes either "(everyone)" or
-"(private)". You may only find it necessary to explicitly identify topics that
-have a unified audience for all posts.)
+（在上图中，每个课题名都有（everyone）和（private）两种类型。
+您需要清楚地辨别，哪些课题下的所有帖子是对所有人可见的）
 
-For more information about adding and configuring course-wide discussion topics,
-see :ref:`Create CourseWide Discussion Topics` and :ref:`Specify Whether
+更多关于添加、配置全课堂讨论课题的内容，请参见 :ref:`Create CourseWide Discussion Topics` 
+和 :ref:`Specify Whether
 CourseWide Discussion Topics are Cohorted`.
 
-If desired, you could also apply a naming convention to the content-specific
-discussion topics that you add as Discussion components in Studio. For example,
-you could include an identifier like "(private)" or "(small group)" in the
-**Subcategory** name of every Discussion component that you add.
+如果需要，您还可以为特殊讨论课题应用命名约定，这类课题通常在Studio里以讨论模块的形式加入。
+例如，您可以在每个讨论模块的子类别名称中加入一条提示语，比如“(private)”或“(small group)”等。
 
 .. image:: ../../../shared/building_and_running_chapters/Images/discussion_topic_names.png
  :alt: The Subcategory name that you supply for a Discussion component in
@@ -119,7 +100,7 @@ you could include an identifier like "(private)" or "(small group)" in the
 .. _Choosing the Visibility of a Post:
 
 ***************************************
-Choosing the Visibility of a Post
+选择帖子的可见性
 ***************************************
 
 If you have the discussion admin, discussion moderator, or community TA role,
