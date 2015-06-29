@@ -16,10 +16,8 @@
 拥有讨论项目管理员、讨论项目协调员或助教身份的教职工也能通过提示语了解每条帖子的可见群体。
 但是与学生不同，讨论项目的工作人员可以阅读所有帖子并有所建树，无论该帖出自哪个队列的学生之手。
 
-.. note:: Course team members must have discussion moderator or admin
-   privileges in addition to their course staff privileges to be able to view
-   posts that are divided by cohort. For information about adding discussion
-   privileges, see :ref:`Assigning_discussion_roles`.
+.. note:: 为了保证教员可以按照列队查看帖子 ，教员必须有论坛版主或管理员特权。
+   更多关于添加论坛特权 的信息请参照 :ref:`Assigning_discussion_roles`.
 
    担任助教的学生也可以执行这些操作。
 
@@ -146,9 +144,7 @@ CourseWide Discussion Topics are Cohorted`.
 
 分队课堂中，您可以随时查看发帖情况，监控讨论活动。
 
-.. note:: Course team members must have discussion moderator or admin
-   privileges in addition to their course staff privileges to be able to view
-   posts that are divided by cohort.
+.. note:: 为了保证教员可以按照列队查看帖子 ，教员必须有论坛版主或管理员特权。
 
 在“讨论”页面的帖子列表右上角，帖子筛选范围默认为“所有队列”。这种情况下，
 您可以看见所有帖子，如下面左图所示。您也可以通过更改筛选范围查看某一队列可见的帖子，
