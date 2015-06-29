@@ -1,25 +1,21 @@
 .. _Guidance for Discussion Moderators:
 
 ######################################
-Guidance for Discussion Moderators
+论坛协调员指南
 ######################################
 
-Discussion forums are hugely important tools in running a successful MOOC;
-they allow for substantive community development, in addition to being
-excellent sources of feedback and ideas for future iterations of the course.
+论坛对于大规模在线开放课程而言是十分重要的课程工具。
+论坛可以促成许许多多的课程社区，同时也是课程未来选代时重要的反馈、创意来源。
 
-Moderators are the key to effectively managing these online communities.
-Moderators keep the discussions productive and relay important information
-(errors, student confusion with or interest in particular topics, and so on)
-to the rest of the course staff. Discussions can be moderated by any of a
-number of members of the course team, but dedicating enough time to moderation
-is the best way to cultivate a successful discussion culture.
+论坛协调员是在线社区高效管理的关键所在。
+他们促使讨论活动有效进行，并将重要信息（勘误、学生存疑、学生感兴趣的课题，等等）
+传播给其他课程工作人员。论坛协调员的数量不固定，
+但是想要培养良好的论坛文化，协调员必须尽心尽力。
 
-Feel free to use some or all of the information in this chapter to guide the
-contributions of your discussion moderators.
+希望本章的内容能对您的协调员工作有所帮助。
 
 **********************
-Responsibilities
+协调员的职责
 **********************
 
 * Answer basic questions posed by students, and direct students with questions
