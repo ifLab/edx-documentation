@@ -149,60 +149,46 @@ Strategy`.
 .. _Hybrid Assignment:
 
 =============================================================
-Hybrid Assignment: Accommodating Small Groups Within a Course
+混合分队：在课堂内创立小规模课程群体
 =============================================================
 
-For some courses, the manual assignment strategy is not feasible to execute, and
-the automated assignment strategy does not accommodate existing cohorts in the
-student body. The enrollment might be too large to complete manual assignments
-effectively, or only some of the students might have strong defining
-characteristics among an otherwise diverse student body. For these courses, you
-can use a hybrid of the two strategies to implement cohorts.
+对于某些课程而言，手动分队策略不太可行，自动分队策略又没法体现学生群体的共性。
+还有些课程，参与人数太多，手动分队效率太低，但是又存在部分学生，
+他们有非常典型的共性特征。对于这几类课程而言，您可以采用手动、自动两种分队模式混合的分队策略。
 
-An example is a course that enrolls members of an alumni association. The alumni
-want an opportunity to have private interactions, so manual assignment of those
-students to a cohort makes sense. For other students in the class, manual
-assignment is not needed: you can create one or more automated cohorts for the
-remaining learners in the course.
+比方说，有一个校友团体集体报名了某项课程。
+该团体希望能在课堂上有私下交流互动的空间，所以作为老师，
+您可以对这个团体单独采用手动分队策略，而对于其他学生而言则不必如此，
+只需给他们创建几个自动分队队列就可以了。
 
-Before you implement the hybrid strategy, you identify the characteristics that
-define existing cohorts in the student body. You also decide whether you want
-the remaining students in the course to be divided into their own, similarly-
-sized cohorts, or if you want them all to be in just one other cohort.
+采取混合分队策略前，您首先需要了解，您的学生群体中，
+哪部分学生是有强烈共性的？同时也要清楚，剩下的学生是不是也需要根据相似性分组，
+还是仅仅把他们分到一组里就可以了？
 
-After you enable cohorts, you create a manual cohort for each student group that
-you identified. You manually assign students who belong to each group to the
-corresponding cohort. You also set up automated cohorts for the other students
-in the course, or rely on the default automated cohort. Any students who are not
-assigned to a manual cohort are automatically assigned to one of the automated
-cohorts or to the default cohort when they first view any course content,
-including the course **Discussion** page or content-specific discussion topics.
-For best results when you use this strategy, you should complete all manual
-cohort assignments before the course starts and before students begin viewing
-course content and discussion topics.
+启用分队模式后，您需要为每个共性群体创建一个手动分队队列，
+然后根据共性将学生一一分配到相应的队列中。
+同时，您需要为其他学生创建几个自动分队队列，或者也可以使用系统自动默认生成的队列。
+当学生查看“讨论”页面，或在课堂上查看讨论课题时，
+那些没有被分配到手动分队队列中的学生会自动分配到自动分队队列或默认队列中。
+（为保证最佳效果，在采用本策略时，您最好在课程开始、学生查看讨论课题之前将手动分队队列设置完毕）
 
-For more information, see :ref:`Implementing the Automated Assignment
-Strategy` and :ref:`Implementing the Manual Assignment Strategy`.
+更多信息请参考 :ref:`Implementing the Automated Assignment
+Strategy` 和 :ref:`Implementing the Manual Assignment Strategy`.
 
 
 .. _Default Cohort Group:
 
 ===========================================================
-Ensuring That All Students Are Assigned: The Default Cohort
+系统默认分队：确保所有学生都有组可分
 ===========================================================
 
-If you enable cohorts in your course, all students must be assigned to a cohort.
-To ensure that there are no students in the course without a cohort, the system
-automatically creates a default cohort and assigns students to it if necessary.
+启用分队模式后，每个学生应至少分到一个队列中。为保证所有学生都有组可分。
 
-The default cohort is created only if you have not created at least one
-automated assignment cohort in your course by the time that the first student
-accesses your course content. Students who have not been manually assigned to a
-cohort when they access the course content are automatically assigned to the
-default cohort.
+如果您没有创建自动分队队列，系统会自动创建一个默认队列作为保底措施。
+当学生访问“讨论”页面，或查看讨论课题时，手动分队队列以外的学生会自动分配到自动分队队列或默认队列中。
 
-Students who are in the default cohort see a cohort name of "Default Group" in
-discussion posts. If you want students to see a different name for the default
+分配到默认队列的学生会在查看讨论帖时看见一个名为“默认小组”的队列。
+ If you want students to see a different name for the default
 cohort, you can change its name. For details about renaming cohorts, see
 :ref:`Renaming a Cohort`.
 
@@ -210,12 +196,8 @@ cohort, you can change its name. For details about renaming cohorts, see
  :alt: A discussion topic post with "This post is visible to Default Group" 
        above the title
 
-You can check the :ref:`student profile information report<View and download
-student data>` for your course to see if any students are assigned to the
-default cohort in your course, and change their cohort assignments. Note,
-however, that in divided discussion topics students can only see posts by
-members of their currently assigned cohort: when a student is reassigned, posts
-that he previously saw will seem to have "disappeared". To avoid negatively
-affecting the student experience, any cohort assignment changes should be done
-as early in the course run as possible, so that students' views of discussion
-posts and contributions remain consistent over time.
+您可以通过课程的 :ref:`student profile information report<View and download
+student data>` 查看究竟有多少学生被分配到了默认队列，以便您帮助他们重新分组。
+但是请注意，在分队讨论课题下，学生只能看见当前小队中的内容，
+也就是说，如果一个学生被重新分组，他看见的内容会暂时“消失”。
+所以，为保证学生能有流畅的课堂体验，更改分组应该尽早完成。
