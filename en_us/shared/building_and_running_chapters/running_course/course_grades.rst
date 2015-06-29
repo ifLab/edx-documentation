@@ -448,130 +448,101 @@ provide the following information.
 调整成绩
 ***********************************
 
-If you modify a problem or its settings after learners have attempted to answer
-it, learners' grades can be affected. For information about making changes to
-problems in Studio, see :ref:`Modifying a Released Problem`.
+学生回答完问题后，如果您更改问题，则会影响学生成绩。
+关于如何在Studio中更改问题，参考 :ref:`Modifying a Released Problem`.
 
-To recalculate the grades of affected learners when a correction or other
-change is unavoidable, you can make the following adjustments.
+如果不得不作出更改，则应该对受影响的学生重新计分：
 
-* Rescore the submitted answer to reevaluate student work on a problem. You
-  can rescore a problem for a single learner or for all of the students
-  enrolled in the course. See :ref:`rescore`.
+* 重新为提交的答案评分。您可以为单个学生或所有学生重新计分。详见 :ref:`rescore`.
 
-* Reset the number of times a learner has attempted to answer a problem to
-  zero so that he can try again. You can reset the number of attempts for a
-  single learner or for all learners enrolled in the course. See
+* 将学生尝试回答问题的次数归零，以便学生再次尝试。
+  您可以为单个学生或所有学生重新计算尝试次数。详见
   :ref:`reset_attempts`.
 
-* Delete a learners's database history, or "state", completely for a problem.
-  You can only delete learner state for one learner at a time. For example, you
-  realize that a problem needs to be rewritten after only a few of your
-  students have answered it. To resolve this situation, you rewrite the problem
-  and then delete learner state only for the affected students so that they can
-  try again. See :ref:`delete_state`.
+* 完全清除学生关于该问题的历史数据，或“历史状态”。您一次只能删除一名学生的数据。
+  比如，如果您发现只有少数学生需要删除数据，您可以重新编辑问题，
+  然后删除受影响学生的历史数据，以便学生再次尝试。详见 :ref:`delete_state`.
 
-To make adjustments to learner grades, you need the unique location identifier
-of the modified problem. See :ref:`find_URL`.
+您需要提供新问题的位置ID，才能调整学生成绩。详见 :ref:`find_URL`.
 
 .. _find_URL:
 
 ==================================================
-Find the Unique Location Identifier for a Problem
+查找某个问题的位置ID
 ==================================================
 
-When you create each of the problems for a course, edX assigns a unique
-location to it. To make grading adjustments for a problem, or to view data
-about it, you need to specify the problem location.
+创建课程问题时，edX系统会自动给问题分配一个独一无二的定位ID。
+您需要提供这个ID，才能调整学生的答题成绩，或查看问题相关数据。
 
-To find the unique location identifier for a problem:
+如何查找定位ID：
 
-#. View the live version of your course.
+#. 查看课程现况
 
-#. Click **Courseware** and navigate to the unit that contains the problem.
+#. 单击“课件”，导航至问题所在单元
 
-#. Display the problem and then click **Staff Debug Info**.
+#. 查看问题，单击“员工调试信息”
 
-   Information about the problem displays, including its **location**. 
+   问题相关信息即显示出来，包括“位置”。
 
    .. image:: ../../../shared/building_and_running_chapters/Images/Problem_URL.png
     :alt: The Staff Debug view of a problem with the location identifier 
           indicated
 
-4. To copy the location of the problem, select the entire location, right
-   click, and choose **Copy**.
+4. 选择整个定位ID，右击→“复制”。
 
-To close the Staff Debug viewer, click on the browser page outside of the
-viewer.
+随便点击查看窗口外的页面，即可关闭窗口。
 
 .. _rescore:
 
 ==========================================
-Rescore Student Submissions for a Problem 
+为学生答题重新计分
 ==========================================
 
-Each problem that you define for your course includes a correct answer, and may
-also include a tolerance or acceptable alternatives. If you decide to make a
-change to these values, you can rescore any responses that were already
-submitted. For a specified problem, you can rescore the work submitted by a
-single student, or rescore the submissions made by every enrolled student.
+您在课程中提出的每个问题都应有一个标准答案，
+同时提供其他可行答案。如果您决定对这些内容作出更改，
+则需对之前提交的答案重新评分。此项操作可以针对单个学生，也可针对所有学生。
 
-.. note:: You can only rescore problems that have a correct answer entered in 
- edX Studio. This procedure cannot be used to rescore problems that are scored
- by an external grader.
+.. note:: 只有在Studio中输入正确答案的问题才能重新评分，
+通过其他外挂评分插件输入答案的问题则无法执行重评操作。
 
-Rescore a Submission for an Individual Student
+为单个学生提交的答案重新评分
 -----------------------------------------------
 
-To rescore a problem for a single student, you need that student's username or
-email address.
+首先，您需要知道该生的用户名或email地址
 
-#. View the live version of your course.
+#. 查看课程现况
 
-#. Click **Courseware** and navigate to the component that contains the problem
-   you want to rescore.
+#. 单击“课件”，导航至问题所在组件
 
-#. Display the problem, then click **Staff Debug Info**. The Staff Debug viewer
-   opens.
+#. 查看问题，单击“员工调试信息”。打开查看窗口
 
-#. In the **Username** field, enter the student's email address or username,
-   then click **Rescore Student Submission**. A message indicates a successful
-   adjustment.
+#. 在“用户名”字段中输入该生的用户名或email地址，单击“答案重评”。成功后，会弹出消息提示
 
-#. To close the Staff Debug viewer, click on the browser page outside of the
-   viewer.
+#.  随便点击查看窗口外的页面，即可关闭窗口
 
-Rescore Submissions for All Students
+重评所有学生的答案
 ------------------------------------
 
-To specify the problem you want to rescore, you need its location identifier.
-See :ref:`find_URL`. To rescore a problem:
+您首先需要知道问题的定位ID，详见 :ref:`find_URL`. 
+重评学生的答案
 
-#. View the live version of your course.
+#. 查看课程现况
 
-#. Click **Instructor**, then click **Student Admin**. 
+#. 单击“导师”→“学生管理”
 
-#. In the **Course-Specific Grade Adjustment** section of the page, enter the
-   unique problem location, and then click **Rescore ALL students' problem
-   submissions**.
+#. 在“课程评分调整”区域内，输入问题的定位ID，单击“重评所有学生提交的答案”
 
-#. When you see a dialog box that notifies you that the rescore process is in
-   progress, click **OK**.
+#. 弹出的对话框提示您，重评工作正在进行，单击OK
 
-   This process can take some time to complete for all enrolled students. The
-   process runs in the background, so you can navigate away from this page and
-   do other work while it runs.
+   这一步可能要花几分钟时间，不过该进程可以后台运行，您可以边等待边干别的工作。
 
-6. To view the results of the rescore process, click either **Show Background
-   Task History for Student** or **Show Background Task History for Problem**.
+6. （原文序号错误）单击“查看后台学生历史任务”或“查看后台问题历史任务”查看重评进程。
 
-   A table displays the status of the rescore process for each student or problem.
+   此时会显示一个表格，阐明当前重评进程。
 
-.. note:: You can use a similar procedure to rescore the submission for a 
- problem by a single student. You work in the **Student-Specific Grade
- Adjustment** section of the page to enter both the student’s email address or
- username and the unique problem identifier, and then click **Rescore Student
- Submission**.
+.. note:: 本流程也可用于单个学生。
+   只需在“评分调整”区域内同时输入学生email地址/用户名以及问题定位ID，
+   单击“重评学生提交的答案”即可。
 
 .. _reset_attempts:
 
