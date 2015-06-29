@@ -7,15 +7,12 @@
 
 If you want to create smaller communities in your course, or design different
 course experiences for different groups of students, you can :ref:`set up
-cohorts<Enabling and Configuring Cohorts>` in your course.  In discussion topics
-that are divided by cohort, students can also communicate and share experiences
-privately within the cohort that they are assigned to. Cohort-specific
-discussion opportunities can help students develop a sense of community, provide
-specialized experiences, and encourage deeper, more meaningful course
-involvement.
+cohorts<Enabling and Configuring Cohorts>` in your course.  
+队列功能可以在课堂内创建小型课程群体。同一队列的学生能够私下交流分享关于讨论课题的看法和经验。 
+队列讨论能培养学生的集体观念，为学生提供度身打造的课程体验，并鼓励学生参与更深层次的课程活动。
 
-If you use cohorts in your course, you define a set of cohorts that reflect
-communities of students, then select a strategy for :ref:`assigning students to
+当您成功启用队列模式后，您需要通过定义一系列队列组来创建学生群体，
+并选择学生分队策略。请见 :ref:`assigning students to
 cohorts<Options for Assigning Students to Cohorts>`.
 
 .. note::    
