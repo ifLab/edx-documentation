@@ -79,19 +79,19 @@ CSV文件包含以下几列：
        则每个学生回答该答案的最大次数应在1~X之间，
        哪怕该答案已被尝试多次。
        
-   * - ValueID
-     - The internal identifier of the answer choice for checkboxes and multiple
-       choice problems. Blank for dropdown, numerical input, text input, and
-       math expression input problems.
-   * - AnswerValue
-     - The text label of the answer choice for checkboxes, dropdown, and
-       multiple choice problems. The value entered by the student for numerical
-       input, text input, and math expression input problems.
-   * - Variant
-     - For problems that use the **Randomization** setting in Studio, contains
-       the unique identifier for a variant of the problem. Blank for problems
-       that do not use the **Randomization** setting, or that use the **Never**
-       option for this setting.
+   * - 值ID
+     - 即单选、多选题中每个选项的永久ID。
+       其他提醒则本值为空。
+       
+   * - 答案值
+     - 即多选、下拉列表选择、单选题选项的文本标签，
+       以及数字输入、文本输入、表达式输入的值。
+       
+   * - 多样化
+     - 对于设置了“随机选择”的题目，每道题目的变体均有一个“变体”ID。
+       没有设置“随机选择”的题目则本值为空。即某道问题的显示名
+       
+       
    * - Problem Display Name
      - The **Display Name** defined for the problem.
    * - Question
