@@ -141,46 +141,33 @@ Answers to questions about the student answer distribution report follow.
 2013年十月至2014年3月初之间选择的选项也在报告中，但没有“答案值”。
 “值ID”显示的是这些选项的永久ID，比如“choice_1”、“choice_2”。
 
-**Why don't I see a Question for some of my problems?**
+**为什么我看不见有些题目的“Question”值？**
 
-The value in the **Question** column is the accessible label for the problem.
-For more information about how to set up labels for problems, see :ref:`Create
+“Question”列中的值为该题的可访问性标签。更多关于设置问题标签的信息可以参考 :ref:`Create
 Exercises`.
 
-Also, for problems that use the **Randomization** setting in Studio, if a
-particular answer has not been selected since early March 2014, the **Question**
-is blank for that answer.
+并且，对于设置了“随机选择”的题目，如果2014年三月初之前都没有人给出一个明确的答案，则该答案的“Question”值为空。
 
-**My students are saying that they answered a question, but it isn't showing up
-in the report. How can that be?**
+**我的学生说他们回答了一个问题，报告中确没有显示，这是怎么回事？**
 
-Only questions that have a **Maximum Attempts** setting of 1 or higher are
-included on the report.
+本报告只包含“最大尝试次数”超过1次的问题。
 
-**I made a correction to a problem after it was released. How can I tell which
-students tried to answer it before I made the change?**
+**题目发布后不久，我对题目做了更改。我怎样才能判断更改之前有哪些学生回答了我的问题？**
 
-Problem **Count** values reflect the entire problem history. If you change a
-problem after it is released, it may not be possible for you to determine which
-answers were given before and after you made the change.
+某道问题的“计数”值反映的是这道问题的历史操作记录。
+如果问题发布后您做出了更改，则无论更改前后，您的要求均不能满足。
 
-**Why is the same answer showing up in two different rows when I view the report
-in a spreadsheet?**
+**我在电子制表软件中查看报告时，为什么相同的答案显示在不同的两列中？**
 
-Some spreadsheet applications can alter the data in the CSV report for display
-purposes. For example, for different student answers of "0.5" and ".5" Excel
-correctly includes the two different lines from the CSV, but displays the
-**AnswerValue** on both of them as "0.5". If you notice answers that appear to
-be the same on separate lines with separate counts, you can review the actual,
-unaltered data by opening the CSV file in a text editor.
+有些制表软件为了显示方便，会自动转换CSV报告中的数据。
+比如，有些学生回答“0.5”，有些学生回答“ .5”，
+Excel表格会将这两个答案的“答案值”都显示为“0.5”。
+如果您再发现您所说的情况，可以在文本编辑器中查看原始的CSV文件。
 
-**Why are there strange characters in the report when I view it in a
-spreadsheet?**
+**为什么我在制表软件中查看报告时，会出现奇怪的字符？**
 
-The CSV file is UTF-8 encoded, but not all spreadsheet applications interpret
-and render UTF-8 encoded characters correctly. For example, a student answer
-distribution report with answer values in French displays differently in
-Microsoft Excel for Mac than in OpenOffice Calc.
+CSV文件使用的是UTF-8编码，但是有些制表软件无法准确识别UTF-8编码。
+比如说，某学生的法语答题报告在Microsoft Excel for Mac软件和OpenOffice Calc软件中显示的结果就不同。
 
   Answer Values in Microsoft Excel for Mac:
 
@@ -192,9 +179,7 @@ Microsoft Excel for Mac than in OpenOffice Calc.
    .. image:: ../../../shared/building_and_running_chapters/Images/student_answer_calc.png
      :alt: A spreadsheet that displays accented French characters correctly
 
-If you notice characters that do not display as expected in a spreadsheet, try a
-different spreadsheet application such as LibreOffice or Apache OpenOffice to
-open the CSV file.
+如果您再次发现类似问题，可以试着换一种制表软件，比如LibreOffice或者Apache OpenOffice。
 
 ==========================================================================
 Interpret the Student Answer Distribution Report
