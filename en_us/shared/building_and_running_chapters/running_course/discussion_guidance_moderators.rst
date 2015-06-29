@@ -18,85 +18,64 @@
 协调员的职责
 **********************
 
-* Answer basic questions posed by students, and direct students with questions
-  to the right resources: syllabi, course documents, course updates, useful
-  lecture segments, example problems, etc.
+* 回答学生提出的基本问题，并指导学生根据问题寻找合适的资源——大纲、课件、课程更新、讲座视频、例题，等等。
 
-* Relay reports of errata, common misconceptions and questions, highly
-  disruptive participants, bugs, and amusing or interesting posts to the most
-  appropriate course staff.
+* 将错误报告、常见疑问、、系统漏洞、优秀帖子以及严重影响课程的人汇报给相关课程工作人员。
 
-* Enforce the Honor Code by editing or deleting problem answers, or requests
-  for answers, promptly.
+* 及时编辑、删除不当内容，塑造良好的道德风气。
 
-* Edit out offensive content from the discussion, and remind the originators
-  of discussion etiquette and expectations.
+* 删除含有不当内容的讨论题，并提醒作者注意论坛守则，告诉他应该干什么，不该干什么。
 
-* Communicate problems and successes to your fellow moderators.
+* 和其他协调员沟通，交流问题与成功经验。
 
-* Identify students whose presence in the discussions has a strongly positive
-  impact. These students can be promoted to community TA role and publicly
-  acknowledged.
+* 善于发现表现积极的学生。这些学生应收到公开表扬，并可以晋升为社区助教。
 
-* Add helpful items to the FAQ or Course Info page. 
+* 在“FAQ”以及课程信息页面发布有用信息。
 
 ***************************************
-Qualities of good discussion moderators
+优秀协调员应具备的素质
 ***************************************
 
-* Good or great content knowledge: stellar students from previous years often
-  make good moderators.
+* 过硬的课程专业知识：优秀的协调员通常是上一年的优秀学生。
 
-* Solid communication skills: the ability to organize positive, consistent,
-  and effective communication with students, other moderators, and course
-  staff.
+* 善于沟通：善于和学生以及其他协调员、工作人员进行长期、积极的有效沟通。
 
-* Time: keeping up-to-date with the discussions for a large MOOC requires at
-  least 5 hours per week for reading posts, replying to or editing posts, and
-  communicating with the other moderators and course staff.
+* 良好的时间观念：大规模在线开放课程的协调员每周至少应花5小时用于读帖、
+  回帖、编辑帖子，以及和其他协调员及工作人员沟通。
 
-* Enthusiasm: this is the best predictor of moderator excellence! 
+* 工作热情：这是判断一个协调员是否优秀的最佳标准！
 
 ******************************************
-Best practices for discussion moderation
+论坛协调员的工作技巧
 ******************************************
 
-* Always maintain a positive attitude. Keeping a positive attitude is crucial
-  to encouraging participation in the discussion community.
+* 永远保持积极的态度。鼓励学生参与论坛社区时，积极的态度十分重要。
 
-* Encourage discussion between students. Actively thank students who answer
-  the questions of others.
+* 鼓励学生互相讨论。对于积极回答他人问题的学生应给予表扬和感谢。
 
-* Use the course’s FAQ and Course Info pages as resources. Provide links to
-  these pages in your responses when appropriate. Suggest that information be
-  added to these resources when necessary to respond to a common question or
-  fix confusion.
+* 利用课程的FAQ和“课程信息”页面中的资源。您在回复帖子时，
+  可以在适当的时候将这两个页面的链接粘贴进回复内容。
+  回答常见问题或答疑时，也可以使用这两个页面的资源作为参考。
 
-* Always make it obvious that you have read the student’s question. When you
-  post a response, make sure that you are on topic. Respond in the context of
-  the thread.
+* 让学生知道您已经阅读过他的问题：回帖时，请注意紧扣主题和上下文。
 
-* Develop a discussion persona. Try to answer your questions in your own
-  slightly unique way.
+* 形成独特的讨论风格：回答问题时，尽量采用与众不同的方式。
 
 *******************************************
-Guidelines for specific types of posts
+如何处理内容比较特殊的帖子？
 *******************************************
 
-Certain types of posts require more attention from the moderators than others,
-or might need to be handled in a particular way.
+有几类帖子需要协调员特别关注，或者需要特定的处理方法。
 
 ============================
-Time sensitive problems 
+时间紧急的提问帖
 ============================
 
-* Try to be present on discussion threads when assignment due dates are
-  approaching or new content is being released. The discussions tend to be
-  extra busy at these times.
+* 快考试的时候，或者新内容即将发布的时候，请您一定要及时关注论坛，因为这些时候往往是讨论的高峰期。
 
-* Alert the course staff about problems that need to be dealt with quickly,
-  such as problems with graded assignments. Setting up a course email address
-  that is checked frequently is a good way to manage such alerts.
+* 一旦发现需要快速解决的问题，比如评分系统出问题，
+  请及时提醒相关工作人员，等等。
+  设置一个经常自检的课程邮件地址能有效处理这类紧急事件。
 
 ============================
 Content Questions 
