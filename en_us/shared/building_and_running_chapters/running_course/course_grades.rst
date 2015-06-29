@@ -102,23 +102,21 @@
    You can open .csv files in a spreadsheet application to sort, graph, and
    compare data.
 
-.. note:: To prevent the accidental distribution of learner data, you can
-   download grade report files only by clicking the links on this page. Do not
-   copy these links for reuse elsewhere, as they expire within 5 minutes. The
-   links on this page also expire if the page is open for more than 5 minutes.
-   If necessary, refresh the page to generate new links.
+.. note:: 为防止学生数据意外泄露，您只能通过本页面中的链接下载成绩单文件。
+   本链接的有效期只有5分钟，所以不要将本页面中的信息复制到其他地方再次使用。
+   另外，如果页面打开时间超过5分钟，链接一样会失效，请刷新页面获取新链接。
 
 
 .. _Interpret the Grade Report:
 
 ==========================
-Interpret the Grade Report
+解读成绩单
 ==========================
 
 
-A grade report for your course is a time-stamped .csv file that identifies
-each enrolled learner by ID, email address, and username, and provides a
-snapshot of their cumulative course scores.
+成绩单是一个带有时间标记的CSV文件，其中包括：信息列，
+即定义学生身份的信息集合——ID，email，用户名，等等；
+任务列，即您课程中的所有评分项目
 
 Scores in the grade report are presented by assignment. There is a column for
 every assignment that is included in your grading configuration: each
@@ -304,80 +302,60 @@ provide the following information.
 .. _gradebook:
 
 ********************************************************
-Review Grades for Enrolled Learners (Small Courses)
+学生成绩复核（小规模课程）
 ********************************************************
 
-For courses with enrollments of up to 200 learners, you can review a gradebook
-on the Instructor Dashboard. 
+课程人数不到200人时，您可以查看教师面板中的成绩簿进行成绩复核。
 
-#. View the live version of your course.
+#. 查看课程现况
 
-#. Click **Instructor**, then click **Student Admin**. For courses with fewer
-   than 200 students enrolled, this tab includes a **Student Gradebook**
-   section.
+#. 单击“导师”→“学生管理”。如果课程学生人数少于200人，该标签会包含一个“学生成绩簿”子标签
 
-#. Click **View Gradebook**. Grades are calculated and the gradebook displays.
+#. 单击“查看成绩簿”
 
    .. image:: ../../../shared/building_and_running_chapters/Images/Student_Gradebook.png
      :alt: Course gradebook with rows for students and columns for assignment
          types
 
-The gradebook includes the following features.
+成绩簿包含下列功能：
 
-* You can click the username in each row to review that learner's
-  **Course Progress** page. See :ref:`check_student_progress`.
+* 您可以单击每行的学生用户名，查看该学生的“课程进度”页面。详见 :ref:`check_student_progress`.
 
-* There is a column for each **{assignment type} {number}** defined in your
-  grading configuration, with the scores that the learner attained for that
-  specific assignment.
+* 每列{assignment type} {number}显示的是学生在该项目中的得分。
 
-  The gradebook does not have a scroll bar, but it can be dragged: to see columns
-  that are hidden at one side of the grade book, click the gradebook and then
-  drag left or right to reveal those columns.
+  成绩簿没有滚动条，但是可以拖动：如果您想查看被边框挡住的内容，单击成绩簿后向左向右拖动即可。
 
-* For assignment types that include more than one assignment, an **{assignment
-  type} Avg** column displays each learner's current average score for that
-  assignment type.
+* 如果某个任务类型下包含多个任务，则{assignment type} Avg一栏中会显示该任务的当前平均分。
 
-* The **Total** column presents the total score that each learner has currently
-  attained in the course. This value is expressed as a whole number: a learner
-  with a grade of 65 has earned 65% of the credit in the course, and a learner
-  with a grade of 100 has earned 100%.
+* “总分”一栏显示的是学生目前获得的课程总学分。该值表示为整数：
+  65分表示该学生获得了65%的课程学分，满分为100。
 
-* To filter the data that displays you can use the **Search students** option.
-  This option is case-sensitive and limits the rows shown in the gradebook to
-  usernames that match your entry.
+* 您可使用“查找学生”选项筛选成绩数据信息。该选项区分大小写，请注意不要输入错误的用户名。
 
 
 .. _check_student_progress:
 
 ****************************************
-Check the Progress of a Single Learner
+查看学生进度
 ****************************************
 
-To check a single learner's progress, you can locate the specific row on the
-grade report or review the learner's **Progress** page. The **Progress** page
-includes a chart that plots the score the learner has earned for every graded
-assignment and the total grade as of the current date. Below the chart, each
-assignment and the score attained are listed.
+您可以在成绩单中找到该学生所在行，或通过该学生的“进度”页面查看该生的课程进度。
+“进度”页面中有一张图表，显示了该生目前每个评分项目的得分以及总分。
 
-To review a learner's **Progress** page, you supply an email address or
-username. You can check the progress for learners who are either enrolled in,
-or who have unenrolled from, the course.
+您需要提供email地址或用户名，才能查看某个学生的“进度”页面。
+您可查看课程内的学生，也可查看被开除的学生。
 
-Learners can view a similar chart and assignment list (of their own progress
-only) when they are logged in to the course. See :ref:`A Students View`.
+学生登录课程时也可以看见类似的图表，但只能看见自己的进度。详见 :ref:`A Students View`.
 
-To view the **Progress** page for a learner, follow these steps.
+如何查看学生的“进度”页面
 
-#. View the live version of your course.
+#. 查看课程现况
 
-#. Click **Instructor**, then click **Student Admin**.
+#. 单击“导师”→“学生管理”
 
-#. In the Student-Specific Grade Inspection section, enter the student's email
-   address or username.
+#. 在“查看学生成绩”区域，输入该学生的email地址或用户名
 
-#. Click **Student Progress Page**.
+#. 单击“学生进度页面”。打开前文所说的图表。
 
    The **Progress** page for the learner displays a chart with the grade for
    each homework, lab, midterm, final, and any other assignment types in your
@@ -396,16 +374,15 @@ To view the **Progress** page for a learner, follow these steps.
           homework assignment, which indicates that the lowest homework score
           is dropped
 
-   Below the chart, subsections are listed on the left and the units that
-   contain assignments are listed on the right. The learner's individual
-   problem scores display.
+   图表左下方列出的是课程小节，右下方列出的是包含任务的课程单元。
+   同时还会显示该学生回答问题的得分。
 
    .. image:: ../../../shared/building_and_running_chapters/Images/Student_Progress_list.png
     :alt: Bottom portion of a Progress page for the same student with the 
           score acheived for each problem in the first course subsection 
 
 =============================================
-Interpret the Student Progress Page
+解读学生进度页面
 =============================================
 
 The chart of a learner's scores on the **Progress** page and the rows of data
