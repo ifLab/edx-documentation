@@ -547,108 +547,82 @@ provide the following information.
 .. _reset_attempts:
 
 =====================================
-Reset Student Attempts for a Problem 
+学生答题尝试次数归零 
 =====================================
 
-When you create a problem, you can limit the number of times that a student can
-try to answer that problem correctly. If unexpected issues occur for a problem,
-you can reset the value for one particular student's attempts back to zero so
-that the student can begin work over again. If the unexpected behavior affects
-all of the students in your course, you can reset the number of attempts for
-all students to zero.
+创建问题时，您可以限制学生尝试回答问题的最大次数。
+如果某道问题出现了意外情况，您可以将某个学生的尝试次数归零，
+以便该生重新开始尝试。如果所有学生都受到了影响，则应将所有学生的尝试次数归零。
 
-Reset Attempts for an Individual Student
+将单个学生的尝试次数归零
 ---------------------------------------------
 
-To reset the number of attempts for a single student, you need that student's
-username or email address.
+首先，您需要提供该生的用户名或email地址
 
-#. View the live version of your course.
+#. 查看课程现况
 
-#. Click **Courseware** and navigate to the component that contains the problem
-   you want to reset.
+#. 单击“课件”，然后导航至问题所在的组件
 
-#. Display the problem, then click **Staff Debug Info**. The Staff Debug viewer
-   opens.
+#. 查看问题，单击“员工调试信息”
 
-#. In the **Username** field, enter the student's email address or username,
-   then click **Reset Student Attempts**. A message indicates a successful
-   adjustment.
+#. 在“用户名”字段中，输入该生的email地址或用户名，单击“尝试次数归零”，此时会弹出一条消息，提示操作成功。
 
-#. To close the Staff Debug viewer, click on the browser page outside of the
-   viewer.
+#. 随便点击查看窗口外的页面，即可关闭窗口
 
-Reset Attempts for All Students
+将所有学生的尝试次数归零
 ------------------------------------
 
-To reset the number of attempts that all enrolled students have for a problem,
-you need the unique identifier of the problem. See :ref:`find_URL`. To reset
-attempts for all students:
+您首先需要知道问题的定位ID，详见 :ref:`find_URL` 。
 
-#. View the live version of your course.
+然后：
 
-#. Click **Instructor**, then click **Student Admin**. 
+#. 查看课程现况
 
-#. To reset the number of attempts for all enrolled students, you work in the
-   **Course-Specific Grade Adjustment** section of the page. Enter the unique
-   problem location, then click **Reset ALL students' attempts**.
+#. 单击“导师”→“学生管理”
 
-#. A dialog opens to indicate that the reset process is in progress. Click
-   **OK**.
+#. 在“学生成绩调整”区域，输入该问题的定位ID，单击“重置所有学生的尝试次数”
 
-   This process can take some time to complete. The process runs in the
-   background, so you can navigate away from this page and do other work while
-   it runs.
+#. 此时会打开一个对话框，提示操作正在进行中，单击OK。
 
-5. To view the results of the reset process, click either **Show Background
-   Task History for Student** or **Show Background Task History for Problem**.
 
-   A table displays the status of the reset process for each student or
-   problem.
+   这一步可能要花几分钟时间，不过该进程可以后台运行，您可以边等待边干别的工作。
 
-.. note:: You can use a similar procedure to reset problem attempts for a 
- single student. You work in the **Student-Specific Grade Adjustment** section
- of the page to enter both the student’s email address or username and the
- unique problem identifier, and then click **Reset Student Attempts**.
+5. 单击“查看后台学生历史任务”或“查看后台问题历史任务”查看进程。
+
+   此时会出现一个表格，显示当前重评进程。
+
+.. note:: 本流程也可用于单个学生。
+   只需在“评分调整”区域内同时输入学生email地址/用户名以及问题定位ID，
+   单击“重置学生尝试次数”即可。
 
 .. _delete_state:
 
 ==================================
-Delete Student State for a Problem
+删除学生答题历史数据
 ==================================
 
-To delete a student's entire history for a problem from the database, you need
-that student's username or email address. 
+首先，您需要知道该生的用户名或email地址，才能删除该生的所有答题数据。
 
-.. important:: Student state is deleted permanently by this process. This 
- action cannot be undone.
+.. important:: 经本流程操作而删除的学生数据将无法恢复。
 
-You can use either the Staff Debug viewer or the Instructor Dashboard to delete
-student state.
+您可使用员工调试信息查看窗口或教师面板删除学生数据。
 
-To use the Staff Debug viewer:
+员工调适信息查看窗口：
 
-#. View the live version of your course.
+#. 查看课程现况
 
-#. Click **Courseware** and navigate to the component that contains the
-   problem.
+#. 单击“课件”，然后导航至问题所在的组件
 
-#. Display the problem, then click **Staff Debug Info**. The Staff Debug viewer
-   opens.
+#. 查看问题，单击“员工调试信息”，打开查看窗口
 
-#. In the **Username** field, enter the student's email address or username,
-   then click **Delete Student State**. A message indicates a successful
-   adjustment.
+#. 在“用户名”字段中，输入该生的email地址或用户名，
+   单击“删除学生数据”，此时会弹出一条消息，提示操作成功
 
-#. To close the Staff Debug viewer, click on the browser page outside of the
-   viewer.
+#. 随便点击查看窗口外的页面，即可关闭窗口
 
-To use the Instructor Dashboard, you need the unique identifier of the problem.
-See :ref:`find_URL`.
+如果使用教师面板操作，则需提供问题的定位ID。详见 :ref:`find_URL`.
 
-#. Click **Instructor**, then click **Student Admin**. 
+#. 单击“导师”→“学生管理”
 
-#. In the **Student-Specific Grade Adjustment** section of the page, enter both
-   the student’s email address or username and the unique problem identifier,
-   and then click **Delete Student State for Problem**.
+#. 在“评分调整”区域内同时输入学生email地址/用户名以及问题定位ID，单击“删除学生答题记录”
    
