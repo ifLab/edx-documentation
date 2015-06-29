@@ -41,16 +41,12 @@ cohorts<Options for Assigning Students to Cohorts>`.
 课题讨论选项
 *****************************************
 
+学生可以自动或手动加入队列，这取决于您在课程中创建的队列类型。
+只有您将学生加入手动队列，队列中才会有成员。
+自动队列随机加入没有分组（包括课程论坛页面或指定内容讨论主题）的学生。
+如果学生进入课程内容时，您没有创建任何自动队列，系统会自动生成一个默认自动队列。
+所有的学生都会被加入到队列中。
 
-Students are assigned to cohorts either automatically or manually, depending on
-the types of cohort that you create in your course. Manual cohorts do not have
-students assigned to them unless you manually add students. Automatic cohorts
-have students randomly assigned to them if students do not belong to any cohort
-by the time they access the course content (including the course **Discussion**
-page or content-specific discussion topics). If you have not created any
-automated cohorts by the time students access course content, a default
-automated cohort is created and used for automatic assignment, so that no
-student in the course is without a cohort.
 
 Determine the basic strategy that you will use to create cohorts for your
 course. An automated assignment strategy means that you create cohorts to which
