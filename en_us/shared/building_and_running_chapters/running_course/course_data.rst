@@ -55,18 +55,17 @@
    :alt: The Course Name in Studio and the Course Display Name in the LMS are boxed; the Course Run in Studio and the Course Name in the LMS are circled
    :width: 800
 
-* **课程是否已经开始**: 取决于“课程开始日期”以及当前日期。
+* **课程是否已经开始**: 取决于 **课程开始日期** 以及当前日期。
   开始日期可以在Studio中更改（如果是直播课程，则不推荐）：
   选择 **设置** → **日程与细节** 。
 
-* **Has the course ended**: Derived from the **Course End Date** and the
-  current date. This date can be changed in Studio (not recommended if your
-  course is live): select **Settings** > **Schedule & Details**.
+* **课程是否已经结束**: 取决于 **课程结束日期** 以及当前日期。
+  结束日期可以在Studio中更改（如果是直播课程，则不推荐）：
+  选择 **设置** → **日程与细节** 。
 
-* **Grade Cutoffs**: Specified in Studio when you define the cutoff for a
-  failing grade. Students who earn exactly the cutoff value pass the course.
-  Grading can be changed in Studio (not recommended if your course is live):
-  select **Settings** > **Grading**.
+* **成绩合格参数**: 在Studio中制定评分标准时设置。
+  成绩达到标准的学生即通过课程。评分标准可在Studio中更改（如果是直播课程，则不推荐）
+  选择 **设置** → **评分标准** 。
 
 
 
