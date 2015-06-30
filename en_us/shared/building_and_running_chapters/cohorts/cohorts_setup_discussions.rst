@@ -188,8 +188,8 @@ Discussion Topics>` 时，指定内容讨论主题的默认设置为按队列分
    
 3. 在 **指定内容讨论主题** 中，如果未被选中，选择 **选择性划分指定内容讨论主题**  。
    
-   .. warning:: If you make changes to cohort settings in a running course, be
-      aware of the implications of your changes. For more details, see
+   .. warning:: 如果您更改已开始课程的设置，请注意可能造成的影响。
+      细节请参阅
       :ref:`Altering Cohort Configuration`.
 
    所有您添加的指定内容讨论主题对所有学生可见。
@@ -203,10 +203,8 @@ Discussion Topics>` 时，指定内容讨论主题的默认设置为按队列分
    
 #. 点击 **保存** 。
    
-   The changes to your content-specific discussions are saved. The content-specific
-   discussion topics that you selected are saved as being divided by cohort. All other
-   content-specific discussion topics are unified.
+   您做出的修改已保存。
 
-For more information about managing discussions that are divided by cohort, see
+更多关于管理按队列分类讨论的信息请参阅
 :ref:`Moderating Discussions for Cohorts`.
 
