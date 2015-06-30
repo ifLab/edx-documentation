@@ -173,14 +173,11 @@ Discussion Topics>` 时，指定内容讨论主题的默认设置为按队列分
    您将把所有指定内容讨论主题设定为统一属性，除非您明确将其更改为按队列划分。
    这表示任何之前按队列划分的帖子、回复和评论现在对所有学生可见。
 
-
-   If you make changes to cohort settings in a running course, be aware of the
-   implications of your changes. For more details, see :ref:`Altering Cohort
+   如果您在已开始的课程中更改队列设置，注意更改可能造成的影响。
+   更多细节请参阅 :ref:`Altering Cohort
    Configuration`.
 
-
-To specify that only some content-specific discussion topics in your course are
-divided by cohort, follow these steps.
+按照以下步骤指定仅部分指定内容讨论主题按队列分类。
 
 #. 在学习管理系统中选择 **导师** ，然后选择 **队列** 。
 
