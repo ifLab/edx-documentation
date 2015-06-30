@@ -68,7 +68,7 @@
 .. _Use Re-Run to Create a Course:
 
 ********************************************
-Use Re-Run to Create a Course
+使用重开建立课程
 ********************************************
 
 Before you re-run a course, complete the following steps.
