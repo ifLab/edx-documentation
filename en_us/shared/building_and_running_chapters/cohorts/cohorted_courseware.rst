@@ -269,17 +269,17 @@ Courseware`.
     :widths: 15 30
     :header-rows: 1
 
-    * - Role
-      - When You "View As" This Role
-    * - Staff
-      - You see all content in the course, including content
-        that is hidden from students.
-    * - Student
-      - You see any content that is intended for all
-        students.
-    * - Student in <Content Group Name>            
-      - You see content that is intended for all students, as well
-        as any content specifically set to be visible to this content group.
+    * - 角色
+      - 当您使用此角色预览时
+    * - 教员
+      - 您将看到所有课程内容，包括对学生隐藏的内容。
+        
+    * - 学生
+      - 您将看到对所有学生可见的内容。
+        
+    * - <内容小组名> 中的学生           
+      - 您将看到对所有学生可见的内容，以及指定对此内容小组可见的内容。
+        
 
 #. In Studio, in the course outline, click **Preview**. You see your
    course section in the **Courseware** section of the LMS.
