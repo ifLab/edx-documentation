@@ -228,20 +228,18 @@ Courseware`.
 
 #. 在学习管理系统中，选择 **导师** ， **队列** 。  
 
-#. From the cohorts drop down list, select the cohort to which you want to
-   associate your content group.
+#. 在队列下拉列表中选择您想结合内容小组的队列。
    
-#. Click the **Settings** tab for the selected cohort.
+#. 点击已选队列的 **设置** 标签 。
 
-#. Under **Associated Content Group**, choose the **Select a Content Group** option.
+#. 在 **结合内容小组** 下选择 **选择内容小组** 选项。
 
-#. From the content group drop down list, select the content group that you want
-   your cohort to be associated with.
+#. 在内容小组下拉列表中选择您想结合的小组。
 
 .. image:: ../../../shared/building_and_running_chapters/Images/Cohorts_AssociateWithContentGroup.png
    :alt: Select a content group to associate with the cohort
 
-7. Click **Save**.
+7. 点击 **保存** 。
    
    You have now associated your content group with a cohort. Any course content
    that you :ref:`designate as visible to that content group<Specify Components
