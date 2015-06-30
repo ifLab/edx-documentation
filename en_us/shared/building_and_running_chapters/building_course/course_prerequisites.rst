@@ -47,13 +47,12 @@
 .. _Require an Entrance Exam:
 
 ****************************
-Require an Entrance Exam
+设置入学考试
 ****************************
 
-You can require your students to pass an entrance exam before they access your
-course materials. If you include an entrance exam, students who enroll in your 
-course see only the **Course Updates & News** page and an **Entrance Exam** tab 
-until they pass the exam.
+您可以要求学生在访问您的课程材料之前通过入学考试。
+如果课程含有入学考试，注册该课程的学生只能看到 **课程更新与新闻** 页面和 **入学考试** 标签，
+直到他们通过入学考试。
 
 .. image:: ../../../shared/building_and_running_chapters/Images/EntEx_LandingPage.png
   :width: 500
@@ -61,8 +60,7 @@ until they pass the exam.
       left
 
 
-After students pass the exam, they can access all released materials in your 
-course. 
+学生通过入学考试以后，他们可以访问所有已发布的课程资料。
 
 To require an entrance exam, follow these steps.
 
