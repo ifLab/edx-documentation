@@ -2,22 +2,20 @@
 
 
 ###################################
-Creating Cohort-Specific Courseware
+创建特定队列课件
 ###################################
 
-If you have :ref:`cohorts enabled<Enabling and Configuring Cohorts>` in your
-course, you can create different course experiences for students in different
-cohorts. 
+如果您在课程中已经 :ref:`cohorts enabled<Enabling and Configuring Cohorts>` ，
+您可以为不同队列的学生提供不同的课程体验。
 
-You can design your course so that some students are given different content
-than others. You do this by creating :ref:`content groups<About Content Groups>`
-in Studio, and designating specific components in your course as visible only to
-one or more content groups. Then, if you associate one or more cohorts with a
-content group, only the students in cohorts associated with that content group
-can see course content that you have designated for it.
+您可以使一些学生得到的内容与其他学生不同。
+您可以在Studio中建立 :ref:`content groups<About Content Groups>` ，
+将特定组件设定为仅对一个或多个内容小组可见。
+如果您将一个或多个队列结合到同一个内容小组中，
+只有这些队列中的成员能够看到您设定的内容。
 
-For more details about content groups, see :ref:`About Content Groups`. For an
-example of cohort-specific course content, see :ref:`Cohorted Courseware
+更多关于内容小组的内容请参考 :ref:`About Content Groups` 。 
+关于指定内容队列的示例请参考 :ref:`Cohorted Courseware
 Example`.
 
 
