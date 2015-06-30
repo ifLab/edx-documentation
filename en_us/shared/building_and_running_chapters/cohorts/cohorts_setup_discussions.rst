@@ -54,21 +54,19 @@ Discussion Topics>` 时，该主题是统一的，课程内的所有学生都可
 CourseWide Discussion Topics are Cohorted`.
 
 ====================================================================
-Example: Making Some Course-Wide Discussion Topics Divided by Cohort
+示例：按队列分类全课堂讨论主题
 ====================================================================
 
-Course-wide discussion topics are by default unified, so that all learners can
-participate. In some instances, however, you might decide that it makes sense to
-divide some course-wide discussion topics by cohort, so that members of each
-cohort only see and respond to posts made by learners in the same cohort.
+全课堂讨论主题是默认为统一属性，所以所有学生都能参与讨论。
+某些情况下，您可能决定按队列分类全课堂讨论主题，
+这样每个队列中的成员只能看到同队列中成员的回复和发帖。
 
-For example, in addition to the system-supplied General topic, you add three
-new course-wide discussion topics, for a total of four discussion topics.
+例如，除系统自带“一般说明”主题之外，您添加了三个新的全课堂讨论主题，一共为四个主题。
 
-* General
-* Course Q&A
-* Announcements
-* Brainstorming
+* 一般说明
+* 课程 Q&A
+* 声明
+* 头脑风暴
 
 The posts that you intend to make to the General and Course Q&A topics, and
 the subjects you expect students to explore there, are appropriate for a
