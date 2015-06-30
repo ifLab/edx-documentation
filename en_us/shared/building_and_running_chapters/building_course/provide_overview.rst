@@ -291,7 +291,7 @@ Specifications` 和 :ref:`Video Formats`
 .. _Set Important Dates for Your Course:
 
 ***********************************
-Set Important Dates for Your Course
+为课程设置重要日期
 ***********************************
 
 You must set dates and times for enrollment and for the course.
@@ -310,21 +310,19 @@ You must set dates and times for enrollment and for the course.
 .. _The Course Start Date:
 
 =======================
-The Course Start Date
+课程开始时间
 =======================
 
 
-.. note:: The default course start date is set far into the future, to
- **01/01/2030**. This is to ensure that your course does not start before
- you intend it to. You must change the course start date to the date you want
- students to begin using the course.
+.. note:: 默认情况下，课程开始时间为 **01/01/2030** ，
+以确保课程不会在您希望设定的时间之前开始。
+您必须将默认日期修改为您的课程开始的正确日期。
 
 Students see the course start date and time on their **Current Courses**
-dashboards and on the course About page. Students can see some parts of the
-course before the course start date. For example, students can see your **Course
-Info** page and course-wide discussion topics as soon as they enroll in your
-course. For more information about course-wide discussion topics, see
-:ref:`Create CourseWide Discussion Topics`.
+dashboards and on the course About page. 学生可以在课程开始之前看到课程的某些部分。
+例如，他们可以看到您的 **课程信息** 页面，一旦注册本课程以后，他们可以看到课内讨论主题。
+更多信息请参阅 :ref:`Create
+CourseWide Discussion Topics` 。
 
 The following example shows the course start date and time on the course About
 page:
@@ -348,29 +346,25 @@ courses, as in the following examples.
 .. _Set the Advertised Start Date:
 
 ======================================
-Set the Advertised Start Date
+设置显示开始日期
 ======================================
 
-You can set an advertised start date for your course that is different than the
-course start date you set in the **Schedule and Details** page. You may want to
-do this if there is uncertainty about the exact start date. For example, you
-could advertise the start date as **Spring, 2014**.
+您能设置显示开始日期，这与时间表和详情页面的设置课程开始日期不同。
+您若对准确的开始日期不确定，可能会想要这样做。
+例如，您可以将开始日期显示成 **2015年春季** 。
 
-To set an advertised start date:
+设置显示开始日期：
 
-#. From the **Settings** menu, select **Advanced Settings**.
-#. Find the **Course Advertised Start Date** policy key. The default value is
-   **null**.
-#. Enter the value you want to display as the advertised start date. You can
-   use any string, enclosed in double quotation marks. If you format the string
-   as a date (for example, as 02/01/2014), the value is parsed and presented to
-   students as a date.
+#. 从设置栏中选择高级设置
+#. 找到显示开始的关键按键，默认值为零。
+#. 输入您想显示的开始日期。您能使用任何字符，附上双引号。若您想将字符格式化为日期，
+   （例如，格式化为 02/01/2014），其值就被语法化，呈现给学生的是日期。
 
   .. image:: ../../../shared/building_and_running_chapters/Images/advertised_start.png
    :alt: Image of the advertised start date policy key with a value of "anytime,
        self-paced"
 
-4. Click **Save Changes** at the bottom of the page.
+4. 在本页的末尾点击保存改动
 
 The start date shown on the dashboard is now the value of the **Course
 Advertised Start Date** policy key:
@@ -380,10 +374,8 @@ Advertised Start Date** policy key:
  :alt: An image of a course listing in the student dashboard, with the
      advertised start date circled.
 
-If you do not change the default course start date (01/01/2030), and the
-**Course Advertised Start Date** policy value is ``null``, then the student
-dashboard does not list a start date for the course. Students just see that
-the course has not yet started.
+如果您没有更改默认开始日期(01/01/2030)，**课程显示开始日期** 将为空值。
+课程面板将不会显示该课程的开始日期。学生只能看到目前课程未开始状态。
 
 .. _The Course End Date:
 
