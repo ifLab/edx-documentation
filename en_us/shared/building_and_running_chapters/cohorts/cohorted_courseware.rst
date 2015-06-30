@@ -188,15 +188,14 @@ Groups`.
 .. image:: ../../../shared/building_and_running_chapters/Images/Cohorts_VisibilitySettingInUnit.png
   :alt: Screen capture of unit in course outline with visibility setting icon highlighted 
 
-3. In the **Editing visibility** dialog, select **Specific Content Groups**,
-   then select the checkbox for each content group for which you want the current
-   component to be visible.
+3. 在 **编辑可见性** 对话框中选择 **指定内容小组** 。
+   然后勾选您想设置当前组件可见的内容小组。
 
 .. image:: ../../../shared/building_and_running_chapters/Images/Cohorts_EditVisibility.png
   :width: 400
   :alt: Screen capture of unit in course outline with visibility setting icon highlighted 
 
-4. Click **Save**.
+4. 点击 **保存** 。
 
 The **Visibility Settings** icon for the component is now black, and the
 publishing details for the course section in the sidebar refresh to indicate
