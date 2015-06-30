@@ -162,18 +162,16 @@ Groups`.
 .. _Specify Components in Courseware as Visible Only to Certain Content Groups:
 
 *****************************************************************************
-Specify Components in Courseware as Visible Only to Particular Content Groups
+将指定组件设置为仅对特定内容小组可见
 *****************************************************************************
 
-After you create at least one content group, you can edit your course in Studio
-and modify the visibility settings of components that you want to make visible
-only to particular content groups.
+创建了内容小组之后，您可以在Studio中编辑课程并修改组件的可见性设置。
 
-.. note:: You do not need to edit the visibility settings of components that are
-   intended for all students. Components that you do not explicitly indicate as
-   visible to a group are visible to all students enrolled in your course,
-   regardless of the cohort that they belong to.
+.. note:: 您不需要修改您希望对所有学生可见的组件设置。
+   如果您没有指定对内容小组可见，组件将对所有参与课程的学生开放，
+   无论这些学生是否在队列中。
 
+您可以指定内容
 You can specify content as visible to content groups only at the component level
 in a unit. You cannot specify entire units, subsections, or sections for
 visibility to content groups.
