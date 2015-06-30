@@ -133,9 +133,9 @@ Groups`.
    :ref:`specify whether that unit is visible to the content group<Specify
    Components in Courseware as Visible Only to Certain Content Groups>`.
 
-For details about previewing your course to ensure that students in a cohort
-correctly see the content intended for them, see :ref:`Preview Cohort Specific
-Courseware`. For details about deleting content groups, see :ref:`Delete Content
+更多关于预览课程以确保队列中的学生能看到特定内容的细节请参阅 :ref:`Preview Cohort Specific
+Courseware`. 
+更多关于删除内容小组的细节请参阅 :ref:`Delete Content
 Groups`.
 
 
