@@ -118,13 +118,10 @@ discussion topics<Create ContentSpecific Discussion Topics>`  后，
 这些指定内容讨论主题默认按队列分类。
 学生只能看到本队列成员发布的帖子、回复以及评论。
 
+如果您想让所有指定内容讨论主题按队列分类，您不需要做任何操作。
+更多信息请参考 :ref:`Specify that All ContentSpecific Discussion Topics are Cohorted`.
 
-If you want all content-specific discussion topics in your course to be
-divided by cohort, you do not need to take any action. For more information,
-see :ref:`Specify that All ContentSpecific Discussion Topics are Cohorted`.
-
-Alternatively, you can specify that you want most of the content-specific
-discussion topics in your course to be unified, and make :ref:`only a few
+您也可以选择指定大多数指定内容讨论主题为统一属性，然后设置 :ref:`only a few
 discussion topics divided by cohort<Specify Some ContentSpecific Discussion
 Topics as Cohorted>`.
 
@@ -132,7 +129,7 @@ Topics as Cohorted>`.
 .. _Specify that All ContentSpecific Discussion Topics are Cohorted:
 
 *****************************************************************
-Specify that All Content-Specific Discussion Topics are Cohorted
+设置所有指定内容讨论主题按队列分类
 *****************************************************************
 
 The default behavior for content-specific discussion topics is that they are
