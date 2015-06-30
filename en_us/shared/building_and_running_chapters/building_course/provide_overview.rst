@@ -219,8 +219,8 @@ Specifications` 和 :ref:`Video Formats`
 按照以下步骤设置入学考试。
 
 #. 在Studio中打开您的课程。
-#. 在 **设置** 菜单中选择 **日程表与细节** 。 
-#. 在 **日程表与细节** 页面下滚到 **要求** 部分。 
+#. 在 **设置** 菜单中选择 **时间表与详情** 。 
+#. 在 **时间表与详情** 页面下滚到 **要求** 部分。 
 #. 选择 **要求学生访问课程资料之前通过入学考试** 。 
 #. 在页面底端选择 **保存修改** 。
 
@@ -294,18 +294,17 @@ Specifications` 和 :ref:`Video Formats`
 为课程设置重要日期
 ***********************************
 
-You must set dates and times for enrollment and for the course.
+您必须设置课程注册时间和起始时间。
 
-#. In Studio, from the **Settings** menu, select **Schedule and Details**.  
-#. Follow the on-screen text to enter the course and enrollment schedule.
+#. 在Studio中的 **设置** 菜单中选择 **时间表与详情** 。 
+#. 在文本框中输入课程和注册时间表。
 
    .. image:: ../../../shared/building_and_running_chapters/Images/schedule.png
     :width: 450
     :alt: An image of the course schedule page.
 
 
-.. note:: The **Time** fields on this page, and the times that students 
- see, use Universal Coordinated Time (UTC).
+.. note:: 本页中的 **时间** 和学生看到的时间均为格林尼治时间（UTC）。
 
 .. _The Course Start Date:
 
@@ -318,8 +317,7 @@ You must set dates and times for enrollment and for the course.
 以确保课程不会在您希望设定的时间之前开始。
 您必须将默认日期修改为您的课程开始的正确日期。
 
-Students see the course start date and time on their **Current Courses**
-dashboards and on the course About page. 学生可以在课程开始之前看到课程的某些部分。
+学生将在 **当前课程** 面板和课程信息页面中看到课程开始时间。学生可以在课程开始之前看到课程的某些部分。
 例如，他们可以看到您的 **课程信息** 页面，一旦注册本课程以后，他们可以看到课内讨论主题。
 更多信息请参阅 :ref:`Create
 CourseWide Discussion Topics` 。
