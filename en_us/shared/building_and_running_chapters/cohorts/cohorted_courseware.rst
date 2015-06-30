@@ -289,11 +289,10 @@ Courseware`.
    :alt: Visibility icon is black when visibility for a component is restricted
 
 
-The course view refreshes and the content is presented as a member of the
-selected content group would see it.
+此课程将以所选内容小组成员的视角呈现。
 
-After your course is live, you can also see the live version as a student would
-see it, by clicking **View Live** from Studio. For more information, see
+课程上线之后，您也可以以学生视角查看在线版本。
+在Studio中点击 **在线查看** 。更多信息请参阅
 :ref:`View Your Live Course`.
 
 
