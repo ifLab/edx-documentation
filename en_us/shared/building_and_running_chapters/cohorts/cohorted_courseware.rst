@@ -241,15 +241,12 @@ Courseware`.
 
 7. 点击 **保存** 。
    
-   You have now associated your content group with a cohort. Any course content
-   that you :ref:`designate as visible to that content group<Specify Components
-   in Courseware as Visible Only to Certain Content Groups>` is visible to
-   students in the associated cohort or cohorts.
+   现在内容小组已经和队列结合了，任何您 :ref:`designate as visible to that content group<Specify Components
+   in Courseware as Visible Only to Certain Content Groups>` 的课程内容已经对已结合的队列可见。
+   
+您可以重复步骤3到7将更多的队列结合到内容小组中。Y
 
-You can associate additional cohorts with the same or a different content group
-by repeating steps 3 to 7.
-
-For an example of using content groups to create cohort-specific courseware, see
+关于使用内容小组创建指定队列课件的示例请参考
 :ref:`Cohorted Courseware Example`.
 
 
