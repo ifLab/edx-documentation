@@ -108,16 +108,14 @@
 更多信息请参阅 :ref:`Creating Course Content Index`.
 
 ==================================
-Adjust Scores in the Entrance Exam
+调整入学考试分数
 ==================================
 
-If you find an error in the exam after students have taken it, and corrections
-to the exam are unavoidable, you have several options to rescore the exam for
-individual students. These options are available on the Instructor Dashboard.
+如果您在学生参加入学考试之后发现错误，且必须修改考试内容，您可以通过几个选项为学生重新评分。
+这些选项可以在教师面板中设置。
 
-On the Instructor Dashboard, click **Student Admin**, and then scroll to the
-**Entrance Exam Grade Adjustment** section. The following options are
-available.
+在教师面板中，点击 **学生管理** ，滚动至 **调整入学考试成绩** 一栏。
+以下选项可供设置。
 
 * **Reset Student Attempts**: Reset the value for one particular student's
   attempts back to zero so that the student can begin work over again. For more
