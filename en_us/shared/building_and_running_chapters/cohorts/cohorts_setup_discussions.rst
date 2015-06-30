@@ -98,20 +98,19 @@ Discussion Topics>` 时， 主题默认为统一属性，所有学生都能看�
    
 #. 点击 **保存** 。
    
-   The list of course-wide discussion topics is updated to show which topics are
-   divided by cohort, and which are unified.
+   全课堂讨论主题列表更新。
 
 .. image:: ../../../shared/building_and_running_chapters/Images/CohortDiscussionsCourseWide.png
   :alt: Two course-wide discussion topics in list, one cohorted and one unified
 
-For more information about managing discussions that are divided by cohort, see
+更多关于管理按队列分类的讨论主题请参考
 :ref:`Moderating Discussions for Cohorts`.
 
 
 .. _Content Specific Discussion Topics and Cohorts:
 
 **********************************************
-Content-Specific Discussion Topics and Cohorts
+指定内容讨论主题和队列
 **********************************************
 
 When you enable the cohort feature for a course, and :ref:`create content-specific
