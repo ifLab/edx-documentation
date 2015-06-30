@@ -153,20 +153,19 @@ Discussion Topics>` 时，指定内容讨论主题的默认设置是按队列分
  :alt: Content specific discussion topics controls with the "Always cohort
   content specific discussion topics" option selected
 
-For information about changing the cohort settings for your content-specific
-discussions to make all of them unified except a few, see :ref:`Specify Some
+更多关于更改队列设置，使大多数指定内容讨论为统一属性的信息请参考 :ref:`Specify Some
 ContentSpecific Discussion Topics as Cohorted`.
 
 
 .. _Specify Some ContentSpecific Discussion Topics as Cohorted:
 
 **************************************************************************
-Specify that Some Content-Specific Discussion Topics are Divided by Cohort
+设置部分指定内容讨论主题按队列分类
 **************************************************************************
 
-The default behavior for content-specific discussion topics is that they are
-divided by cohort when you first :ref:`add them<Create ContentSpecific
-Discussion Topics>` in your courseware.
+当您第一次 :ref:`add them<Create ContentSpecific
+Discussion Topics>` 时，指定内容讨论主题的默认设置为按队列分类。
+
 
 To make only a few of your content-specific discussion topics divided by
 cohort, you change the cohort settings for content-specific discussion topics
