@@ -189,16 +189,15 @@ Specifications` 和 :ref:`Video Formats`
       unavailable because it has a prerequisite
 
 
-To specify a prerequisite course, you must be a course author in both the
-current course and in the prerequisite course.
+要指定先修课程，您必须是当前课程以及先修课程的作者。
 
-#. In Studio, open your course.
-#. On the **Settings** menu, select **Schedule & Details**.
-#. On the **Schedule & Details** page, scroll to the **Requirements** section.
-#. Under **Prerequisite Course**, click the drop-down list to select a course.
-#. At the bottom of the page, select **Save Changes**.
+#. 在Studio中打开您的课程。
+#. 在 **设置菜单** 中选择 **时间表与详情** 。
+#. 在 **时间表与详情** 页面滚动至 **要求** 项。 
+#. 在 **先修课程** 下点击下拉列表选择一门课程。
+#. 在页面底部点击 **保存修改** 。
 
-.. note:: Currently, you can specify only one prerequisite course.
+.. note:: 目前您只能指定一门先修课程。
 
 
 .. _Require an Entrance Exam:
