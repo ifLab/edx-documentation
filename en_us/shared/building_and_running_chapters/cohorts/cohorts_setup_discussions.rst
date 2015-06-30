@@ -113,12 +113,11 @@ Discussion Topics>` 时， 主题默认为统一属性，所有学生都能看�
 指定内容讨论主题和队列
 **********************************************
 
-When you enable the cohort feature for a course, and :ref:`create content-specific
-discussion topics<Create ContentSpecific Discussion Topics>` by adding 
-discussion components to units in Studio, these content-specific
-discussion topics are by default divided by cohort. A student who is assigned
-to one cohort cannot read or add to the posts, responses, or comments
-contributed by the members of another cohort.
+当您开启了队列，并通过在Studio单元中添加讨论组件 :ref:`create content-specific
+discussion topics<Create ContentSpecific Discussion Topics>`  后，
+这些指定内容讨论主题默认按队列分类。
+学生只能看到本队列成员发布的帖子、回复以及评论。
+
 
 If you want all content-specific discussion topics in your course to be
 divided by cohort, you do not need to take any action. For more information,
