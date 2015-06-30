@@ -61,19 +61,16 @@ CourseWide Discussion Topics are Cohorted`.
 某些情况下，您可能决定按队列分类全课堂讨论主题，
 这样每个队列中的成员只能看到同队列中成员的回复和发帖。
 
-例如，除系统自带“一般说明”主题之外，您添加了三个新的全课堂讨论主题，一共为四个主题。
+例如，除系统自带“一般性说明”主题之外，您添加了三个新的全课堂讨论主题，一共为四个主题。
 
-* 一般说明
+* 一般性说明
 * 课程 Q&A
 * 声明
 * 头脑风暴
 
-The posts that you intend to make to the General and Course Q&A topics, and
-the subjects you expect students to explore there, are appropriate for a
-unified learner audience. However, you decide that it will be useful for the
-Announcements and Brainstorming topics to be divided by cohort. For
-information about specifying whether course-wide discussion topics are divided
-by cohort, see :ref:`Specify Whether CourseWide Discussion Topics are
+您在一般性说明和课程Q&A主题中，以及其他您希望学生探索的课题中发布的帖子适用于所有学生。
+但是您决定将声明和头脑风暴按队列分类。关于指定全课程讨论主题是否按队列分类的信息，
+请参考 :ref:`Specify Whether CourseWide Discussion Topics are
 Cohorted`.
 
 You also decide to apply a naming convention so that students will know the
