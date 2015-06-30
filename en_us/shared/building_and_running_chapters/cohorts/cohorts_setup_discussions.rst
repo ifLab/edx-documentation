@@ -169,13 +169,10 @@ Discussion Topics>` 时，指定内容讨论主题的默认设置为按队列分
 如果需要将少数指定内容讨论主题按队列分类，您可以更改指定内容讨论主题的队列设置，
 使其为统一属性，然后选择您想划分的主题。
 
-.. warning:: When you change the cohort setting from **Always Cohort Content-Specific
-   Discussion Topics** to **Cohort Selected Content-Specific Discussion Topics**, 
-   you are making all content-specific discussion topics in your course unified, unless
-   you explicitly change them to be divided by cohort before saving your changes. 
-   This means that any posts that were previously divided by cohort and restricted to 
-   viewing, responding, and commenting by members of the same cohort are now visible
-   to all learners in your course. 
+.. warning:: 当您将队列设置由 **总是按队列划分指定内容讨论主题** 更改为 **选择性划分指定内容讨论主题**时，
+   您将把所有指定内容讨论主题设定为统一属性，除非您明确将其更改为按队列划分。
+   这表示任何之前按队列划分的帖子、回复和评论现在对所有学生可见。
+
 
    If you make changes to cohort settings in a running course, be aware of the
    implications of your changes. For more details, see :ref:`Altering Cohort
