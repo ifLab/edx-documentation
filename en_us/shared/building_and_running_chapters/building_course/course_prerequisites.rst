@@ -77,15 +77,13 @@
 入学考试最佳实践
 ==================================
 
-We strongly recommend that you follow several guidelines to help you and your
-students have a positive experience with entrance exams.
+我们强烈建议您遵循以下指导步骤帮助您的学生在入学考试中有良好的体验。
 
-* Make sure that your beta testers include the entrance exam when they test
-  your other course content.
+* 确保您的贝塔测试员测试入学考试。
 
-* Make sure that you mention the entrance exam in the course description on
-  your course About page. Otherwise, students will not know about the entrance
-  exam before they enroll in your course and try to access course content.
+* 确保您在课程信息页面中说明此课程需要入学考试。
+  否则学生在注册您的课程并尝试访问课程内容之前不知道需要入学考试。
+
 
 * Add an anouncement at the top of the **Course Updates & News** page that
   contains information and instructions for students who need to take the exam.
