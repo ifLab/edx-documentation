@@ -147,7 +147,7 @@ CourseWide Discussion Topics` 。
 #. 找到显示开始的关键按键，默认值为零。
   
 #. 输入您想显示的开始日期。您能使用任何字符，附上双引号。若您想将字符格式化为日期，
-  （例如，格式化为 02/01/2014），其价值就被语法化，呈现给学生的是日期。
+  （例如，格式化为 02/01/2014），其值就被语法化，呈现给学生的是日期。
 
   .. image:: ../../../shared/building_and_running_chapters/Images/advertised_start.png
    :alt: Image of the advertised start date policy key with a value of "anytime, self-paced".
