@@ -203,7 +203,7 @@ Specifications` 和 :ref:`Video Formats`
 .. _Require an Entrance Exam:
 
 ===================================
-Require an Entrance Exam
+设置入学考试
 ===================================
 
 You can require your students to pass an entrance exam before they access your
