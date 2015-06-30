@@ -237,8 +237,11 @@ Specifications` 和 :ref:`Video Formats`
 * 确保您在课程信息页面中说明此课程需要入学考试。
   否则学生在注册您的课程并尝试访问课程内容之前不知道需要入学考试。
 
-* On your course About page or in a course e-mail, include a link to the
-  information about `entrance exams <http://doroob-student-documentation.readthedocs.org/en/latest/SFD_prerequisites.html#entrance-exam>`_ in the `edX Guide for Students <http://doroob-student- documentation.readthedocs.org/en/latest/index.html>`_.
+* 在您的课程信息页面或课程e-mail中，包含关于
+  在  `edX Guide for Students <http://doroob-student- documentation.readthedocs.org/en/latest/index.html>`_.
+  中
+  `entrance exams <http://doroob-student-documentation.readthedocs.org/en/latest/SFD_prerequisites.html#entrance-exam>`_ 
+  的信息
 
 
 在课程大纲里创建入学考试
@@ -248,17 +251,15 @@ Specifications` 和 :ref:`Video Formats`
 创建入学考试的步骤与创建其他内容相同。
 更多信息请参阅 :ref:`Creating Course Content Index`.
 
-Allow a Student to Skip the Entrance Exam
+允许学生不参加入学考试
 **************************************************
 
-You can allow a student to skip the entrance exam. To do this, you need the
-student's registered edX username or email address.
+您可以允许学生不参加入学考试。
+您需要学生的用户名和注册的邮箱地址。
 
-#. On the Instructor Dashboard, click **Student Admin**.
-#. In the **Entrance Exam Adjustment** section, enter the student's
-   information in the **Student's edX email address or username** field.
-#. Under **Select an action for the student's entrance exam**, select
-   **Let Student Skip Entrance Exam**.
+#. 在导师面板中点击 **学生管理** 。
+#. 在 **入学考试调整** 部分输入学生信息。 
+#. 在 **学生入学考试选项** 下选择 **允许学生跳过入学考试** 。
 
 
 Adjust a Student's Entrance Exam
