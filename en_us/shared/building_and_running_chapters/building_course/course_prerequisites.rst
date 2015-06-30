@@ -1,11 +1,10 @@
 .. _Set Course Prerequisites:
 
 #########################
-Set Course Prerequisites
+设定入学要求
 #########################
 
-You might want to make sure that your students have a specific set of skills
-and knowledge before they take your course. 
+也许您想要确保学生在上课前有指定的技能和知识基础。
 
 .. contents:: Section Contents:
  :local:
@@ -15,22 +14,19 @@ and knowledge before they take your course.
 .. _Specify Prerequisite Courses:
 
 ****************************
-Specify Prerequisite Courses
+指定先修课程
 ****************************
 
-You can require that your students pass a particular edX course before they
-enroll in your course. Students see information about course prerequisites on
-the course About page.
+您可以要求学生在注册您的课程之前先通过特定的edX课程。
+学生将在课程信息页面看到关于课程的入学要求。
 
 .. image:: ../../../shared/building_and_running_chapters/Images/PrereqAboutPage.png
   :width: 500
   :alt: A course About page with prerequisite course information circled
 
-If students have not completed the prerequisite course, they can enroll in your
-course and then see your course on the Student Dashboard. However, unlike with
-other courses, the Student Dashboard does not provide a link to the courseware.
-The Student Dashboard includes a link to the About page for the prerequisite
-course. Students can enroll in the prerequisite course from the About page.
+如果学生没有完成先修课程，他们就不能注册您的课程，也不能在学生面板中看到您的课程。
+但是与其他课程不同，学生面板不提供此课程课件链接。
+学生面板包括先修课程信息页面的链接。学生可以在信息页面注册先修课程。
 
 .. image:: ../../../shared/building_and_running_chapters/Images/Prereq_StudentDashboard.png
   :width: 500
