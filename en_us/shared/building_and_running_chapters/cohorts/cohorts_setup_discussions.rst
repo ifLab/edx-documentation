@@ -3,20 +3,17 @@
 
 
 ######################################################
-Setting up Discussions in Courses with Cohorts
+在有队列的课程中设置论坛
 ######################################################
 
-In courses that have cohorts enabled, discussion topics can be either divided by
-cohort, or unified and accessible to all students. Discussion topics that are
-divided by cohort are visible to all learners but the posts, responses, and
-comments within them are divided so that they are visible only to members of the
-same cohort. Posts, responses, and comments within unified discussion topics are
-visible to all learners in the course, regardless of cohort.
+在开启了队列的课程中，讨论主题可以按队列分类或统一对所有学生可见。
+按队列分类的讨论主题对所有学生可见，但是帖子、回复和评论仅对队列成员可见。
+统一讨论主题中的帖子、回复和评论对所有学生可见。
 
-When you first enable cohorts in your course, the initial behavior for 
+当您第一次在课程中开启队列时，
 :ref:`course-wide discussion topics<Coursewide Discussion Topics and Cohorts>` 
-is different from the behavior of :ref:`content-specific discussion topics
-<Content Specific Discussion Topics and Cohorts>`.
+的初始设定和 :ref:`content-specific discussion topics
+<Content Specific Discussion Topics and Cohorts>` 的设定不同。
 
 By default, course-wide discussion topics are unified because these discussions
 are generally used for posts that are of broad interest to all learners in the
