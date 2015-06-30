@@ -64,19 +64,17 @@
 
 安装以下步骤设置入学考试。
 
-#. 在Studio中打开您的课程。, open your course.
-#. 在 **设置** 菜单中选择 **日程表与细节** 。 On the **Settings** menu, select **Schedule & Details**.
-#. 在 **日程表与细节** 页面下滚到 **要求** 部分。 On the **Schedule & Details** page, scroll to the **Requirements** section.
-#. 选择 **要求学生访问课程资料之前通过入学考试** 。 Select the **Require students to pass an exam before accessing course
-   materials** check box.
-#. 在页面底端选择 **保存修改** 。At the bottom of the page, select **Save Changes**.
+#. 在Studio中打开您的课程。
+#. 在 **设置** 菜单中选择 **日程表与细节** 。 
+#. 在 **日程表与细节** 页面下滚到 **要求** 部分。 
+#. 选择 **要求学生访问课程资料之前通过入学考试** 。 
+#. 在页面底端选择 **保存修改** 。
 
-After you save your changes, Studio automatically creates an **Entrance Exam**
-section in your course outline. To add content to your entrance exam, go to the
-course outline.
+保存修改之后，Studio自动在您的课程大纲创建 **入学考试** 一节。
+去课程大纲添加入学考试内容。
 
 ==================================
-Best Practices for Entrance Exams
+入学考试最佳实践
 ==================================
 
 We strongly recommend that you follow several guidelines to help you and your
