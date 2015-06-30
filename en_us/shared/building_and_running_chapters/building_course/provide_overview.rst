@@ -391,15 +391,13 @@ CourseWide Discussion Topics` 。
    :alt: Image of a course on the student dashboard that has ended, but not
      been graded
 
-* When grades and certificates are finalized, students who have not earned a
-  certificate see their score and the score required to earn a certificate:
+* 评分和证书授予结束后，拿到证书的学生可以看到他们的分数和获得证书要求的分数：
   
   .. image:: ../../../shared/building_and_running_chapters/Images/dashboard-no-cert-course.png
    :alt: Image of a course on the student dashboard that has ended, but not
      been graded
 
-* Students whose final score is equal to or higher than the required score can
-  click **Download Certificate** to get their certificates as PDFs:
+* 期末成绩等于或高于要求分数的学生可以点击 **下载证书** 获得自己证书的PDF格式文件：
 
   .. image:: ../../../shared/building_and_running_chapters/Images/dashboard-completed-course.png
    :alt: Image of a course on the student dashboard that has ended, but not
