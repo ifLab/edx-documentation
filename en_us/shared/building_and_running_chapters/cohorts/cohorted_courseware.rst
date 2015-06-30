@@ -197,9 +197,8 @@ Groups`.
 
 4. 点击 **保存** 。
 
-The **Visibility Settings** icon for the component is now black, and the
-publishing details for the course section in the sidebar refresh to indicate
-that some content is visible only to particular groups.
+组件 **可见性设置** 的图标变成黑色，
+侧栏中的课程章节细节说明哪些内容已经设置为仅对特定小组可见。
 
 .. image:: ../../../shared/building_and_running_chapters/Images/Cohorts_VisibilitySomeGroup.png
    :alt: Visibility icon is black when visibility for a component is restricted
@@ -207,8 +206,7 @@ that some content is visible only to particular groups.
 .. image:: ../../../shared/building_and_running_chapters/Images/Cohorts_OnlyVisibleToParticularGroups.png   
    :alt: Course outline sidebar shows visibility icon and note indicating that some content in the unit is visible only to particular group.
 
-For details about previewing your course to ensure that students in a cohort
-correctly see the content intended for them, see :ref:`Preview Cohort Specific
+关于预览课程以确保队列中的学生能看到特定内容的细节，请参考 :ref:`Preview Cohort Specific
 Courseware`.
 
 .. note:: In addition to visibility settings for content groups, a student's
