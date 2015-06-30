@@ -45,18 +45,18 @@
      - 是。
    * - 学生注册信息
      - 否。
-   * - Course team privileges, including admins, discussion moderators, beta
-       testers
-     - 否。 Only the user who created the new course has access to it.
-   * - Manually created cohort groups
+   * - 课程团队特权，包括管理员、论坛版主、贝塔测试员
+       
+     - 否。 只有创建新课程的用户可以访问
+   * - 手动创建队列小组
      - 否。 
-   * - Student answers, progress, and grading data
+   * - 学生答案、进度和成绩数据
      - 否。
-   * - Certificates
+   * - 证书
      - 否。
-   * - Discussion posts, responses, comments, and other data
+   * - 论坛发帖、回复、评论和其他数据
      - 否。
-   * - Wiki contributions
+   * - 维基贡献
      - 否。
 
 After you re-run a course, modifications to the original course and the re-run
