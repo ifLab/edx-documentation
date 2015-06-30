@@ -126,11 +126,10 @@ Groups`.
  
 #. 在 **小组配置** 页面找到您想查看的内容小组。 
    
-   The content group's box displays whether the content group is used in this
-   course. If it is used, you see the number of units that it is used in, and
-   links to each unit.
+   内容小组框中显示小组是否正在使用。
+   如果正在使用，您将看到使用小组的单元编号以及单元链接。
 
-#. Click each link to go to that unit in the **Course Outline**, where you can
+#. 点击链接进入单元在课程大纲中的页面，您可以
    :ref:`specify whether that unit is visible to the content group<Specify
    Components in Courseware as Visible Only to Certain Content Groups>`.
 
