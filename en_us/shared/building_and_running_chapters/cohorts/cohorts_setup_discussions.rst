@@ -22,8 +22,7 @@
    您将更改学生的课程体验。学生可能看到之前看不到的帖子，或者看不到以前能看到的帖子。
    如果您更改任何已开始课程的设置，请注意改变可能造成的影响。更多细节请参阅 :ref:`Altering Cohort Configuration` 。
 
-For information about cohort settings for discussion topics, see the following
-topics.
+关于讨论主题的队列设置，请参考以下主题。
 
 * :ref:`Coursewide Discussion Topics and Cohorts`
 * :ref:`Specify Whether CourseWide Discussion Topics are Cohorted`
@@ -31,9 +30,8 @@ topics.
 * :ref:`Specify that All ContentSpecific Discussion Topics are Cohorted`
 * :ref:`Specify Some ContentSpecific Discussion Topics as Cohorted`
 
-For overview information about discussions in a course, see :ref:`Discussions`.
-For information about using cohorts in a course and managing discussions that
-are divided by cohort, see :ref:`Cohorts Overview` and :ref:`Moderating
+关于课程论坛的概览请参阅 :ref:`Discussions`.
+关于使用队列和管理按队列分类讨论的信息请参考 :ref:`Cohorts Overview` and :ref:`Moderating
 Discussions for Cohorts`.
 
 .. note:: Making discussion topics divided by cohort, described in this and
