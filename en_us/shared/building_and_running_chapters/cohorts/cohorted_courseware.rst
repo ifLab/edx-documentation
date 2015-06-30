@@ -142,14 +142,13 @@ Groups`.
 .. _Delete Content Groups:
 
 *********************
-Delete Content Groups
+删除内容小组
 *********************
 
-.. note:: You can delete a content group only if it is not in use in any course
-   unit. To delete a content group that is currently in use, you must first
-   remove it from any course unit visibility settings that use the content
-   group. For information about seeing which units use a content group, see
-   :ref:`View Usage of a Content Group`.
+.. note:: 您只能删除未被任何课程单元使用的内容小组。
+   如果需要删除正在使用的内容小组，您必须先将该小组从课程单元可见性设置中删除。
+   关于查看哪些单元正在使用内容小组想信息请参考
+   :ref:`View Usage of a Content Group` 。
 
 #. In Studio, select **Settings**, then select **Group Configurations**.
  
