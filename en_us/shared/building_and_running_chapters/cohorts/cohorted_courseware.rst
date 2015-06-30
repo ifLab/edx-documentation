@@ -198,7 +198,7 @@ Groups`.
 4. 点击 **保存** 。
 
 组件 **可见性设置** 的图标变成黑色，
-侧栏中的课程章节细节说明哪些内容已经设置为仅对特定小组可见。
+侧栏中的课程章节细节说明有些内容已经设置为仅对特定小组可见。
 
 .. image:: ../../../shared/building_and_running_chapters/Images/Cohorts_VisibilitySomeGroup.png
    :alt: Visibility icon is black when visibility for a component is restricted
@@ -209,10 +209,8 @@ Groups`.
 关于预览课程以确保队列中的学生能看到特定内容的细节，请参考 :ref:`Preview Cohort Specific
 Courseware`.
 
-.. note:: In addition to visibility settings for content groups, a student's
-   ability to see a course component also depends on whether it is hidden from
-   students, whether the unit is published, and the course's release date. For
-   details about previewing courseware in general, see :ref:`Preview Course
+.. note:: 除了对内容小组的可见性设置之外，学生能不能看到课程组件还取决于组件是否对学生隐藏、
+   单元是否已经发布以及课程发布日期。关于预览课件的细节请参考 :ref:`Preview Course
    Content`.
 
 .. _Associate Cohorts with Content Groups:
