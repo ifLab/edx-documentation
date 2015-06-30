@@ -33,16 +33,15 @@
   :alt: The Student Dashboard with an available course and a course that is
       unavailable because it has a prerequisite
 
-To specify a prerequisite course, you must be a course author in both the
-current course and in the prerequisite course.
+要指定先修课程，您必须是当前课程以及先修课程的作者。
 
-#. In Studio, open your course.
-#. On the **Settings** menu, select **Schedule & Details**.
-#. On the **Schedule & Details** page, scroll to the **Requirements** section.
-#. Under **Prerequisite Course**, click the drop-down list to select a course.
-#. At the bottom of the page, select **Save Changes**.
+#. 在Studio中打开您的课程。
+#. 在 **设置** 菜单中选择 **日程表和细节** 。 
+#. 在 **日程表和细节** 页面，选择 **要求** 一栏 。 
+#. 在 **先修课程** 的下拉列表中选择一门课程。 
+#. 在页面底部选择 **保存修改** 。
 
-.. note:: Currently, you can specify only one prerequisite course.
+.. note:: 目前您只能选定一门先修课程。
 
 
 .. _Require an Entrance Exam:
