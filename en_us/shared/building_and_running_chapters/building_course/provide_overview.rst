@@ -262,37 +262,30 @@ Specifications` 和 :ref:`Video Formats`
 #. 在 **学生入学考试选项** 下选择 **允许学生跳过入学考试** 。
 
 
-Adjust a Student's Entrance Exam
+调整学生的入学考试
 ********************************************
 
-If you find an error in the exam after students have taken it, and corrections
-to the exam are unavoidable, you have several options to rescore the exam for
-individual students. These options are available on the Instructor Dashboard.
+如果您在学生参加入学考试之后发现错误，且必须修改考试内容，您可以通过几个选项为学生重新评分。
+这些选项可以在教师面板中设置。
 
-.. note:: You can only make exam adjustments for one student at a time.
+.. note:: 每次只能调整一个学生的考试。
 
-On the Instructor Dashboard, click **Student Admin**, and then scroll to the
-**Entrance Exam Grade Adjustment** section. The following options are available.
+在教师面板中，点击 **学生管理** ，滚动至 **调整入学考试成绩** 一栏。
+以下选项可供设置。
 
-* **Reset Student Attempts**: Reset the number of attempts made for all problems
-  in one student's exam to zero so that the student can begin work over again.
-  For more information, see :ref:`reset_attempts`.
 
-* **Rescore Student Submission**: Rescore the responses that a student has
-  submitted. For more information, see :ref:`rescore`.
+* **重置学生尝试次数**: 为特定学生重置尝试次数为0，学生可以从头开始答题。
+  更多信息请参考 :ref:`reset_attempts`.
 
-* **Delete Student's Answers and Scores**: Delete all of the student's answers
-  and scores for the entire entrance exam so that the student can begin again.
-  This action is sometimes called deleting a student's history or "deleting
-  student state". For more information, see :ref:`Adjust_grades` and
-  :ref:`delete_state`.
+* **为学生提交答案重新评分**: 为学生提交的答案重新评分。
+  更多信息请参考 :ref:`rescore`.
 
-Another option on the Instructor Dashboard is **Show Background Task History
-for Student**. If you reset student attempts, rescore student submissions, or
-delete a student's answers and scores, the adjustment runs in the background
-while you perform other tasks. To see a record of all completed entrance exam
-adjustments, select **Show Student's Exam Adjustment History**.
+* **删除学生的问题状态**: 从考试数据库中删除学生的所有历史记录。
+  更多信息请参考 :ref:`delete_state` 和 :ref:`Adjust_grades` 
 
+导师面板中的另一个选项是 **查看学生后台测试历史**。
+如果您重置了学生的尝试次数，为学生提交的答案重新评分，或者删除学生的状态，
+操作将在后台运行。如果您想查看入学考试中进行的所有操作记录，选择**查看学生后台测试历史** 。
 
 
 .. _Set Important Dates for Your Course:
