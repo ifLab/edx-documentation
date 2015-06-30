@@ -145,12 +145,9 @@ Discussion Topics>` 时，指定内容讨论主题的默认设置是按队列分
 .. image:: ../../../shared/building_and_running_chapters/Images/CohortDiscussionsSpecifyLink.png
  :alt: The link in the UI to specify whether content specific discussion topics are divided by cohort
    
-In the **Content-Specific Discussion Topics** section, you see that the
-**Always cohort content-specific discussion topics** option is selected. 
+在 **指定内容讨论主题** 一节中，您可以看到 **总是按队列划分指定内容讨论主题** 已选定。
 
-All content-specific discussion topics in your course are divided by cohort,
-and you cannot change the cohort settings of individual content-specific
-discussion topics.
+所有的指定内容讨论主题都是按队列划分的，您不需要单独更改此项设置。
 
 .. image:: ../../../shared/building_and_running_chapters/Images/CohortDiscussionsAlwaysCohort.png
  :alt: Content specific discussion topics controls with the "Always cohort
