@@ -216,19 +216,18 @@ Courseware`.
 .. _Associate Cohorts with Content Groups:
 
 *************************************
-Associate Cohorts with Content Groups
+结合队列和内容小组
 *************************************
 
-After you create a content group, you can associate it with one or more cohorts
-with which you want to share the same special content in your course.
+创建了内容小组之后，您可以将其与您希望看到相同课程内容的队列相结合。
 
-.. note:: A content group can be associated with more than one cohort; a cohort
-   cannot be associated with more than one content group.
 
-To associate a cohort with a content group, follow these steps:
+.. note:: 一个内容小组可以和一个或多个队列相结合；一个队列只能和一个内容小组相结合。
 
-#. In the LMS, select **Instructor**, then select **Cohorts**. 
-   
+步骤如下：
+
+#. 在学习管理系统中，选择 **导师** ， **队列** 。  
+
 #. From the cohorts drop down list, select the cohort to which you want to
    associate your content group.
    
