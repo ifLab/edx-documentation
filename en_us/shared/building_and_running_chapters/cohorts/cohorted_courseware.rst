@@ -253,20 +253,16 @@ Courseware`.
 .. _Preview Cohort Specific Courseware:
 
 *************************************
-Preview Cohort-Specific Courseware
+预览指定队列课件
 *************************************
 
-After you designate components in your course as being visible only to certain
-content groups, you can preview your courseware to ensure that each group
-correctly sees the content intended for them.
+在您指定组件可见性之后，您可以预览课件以确保每个小组能看到您指定的内容。
 
-.. note:: In addition to visibility settings for content groups, a student's
-   ability to see a course component also depends on whether it is hidden from
-   students, whether the unit is published, and the course's release date. For
-   details about previewing courseware in general, see :ref:`Preview Course
+.. note::  除了对内容小组的可见性设置之外，学生能不能看到课程组件还取决于组件是否对学生隐藏、
+   单元是否已经发布以及课程发布日期。关于预览课件的细节请参考 :ref:`Preview Course
    Content`.
 
-You can view the course as a member of these groups:
+您可以以小组成员的角色查看课程：
 
 
 .. list-table::
