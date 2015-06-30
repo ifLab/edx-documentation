@@ -281,11 +281,9 @@ Courseware`.
       - 您将看到对所有学生可见的内容，以及指定对此内容小组可见的内容。
         
 
-#. In Studio, in the course outline, click **Preview**. You see your
-   course section in the **Courseware** section of the LMS.
+#. 在Studio中的课程大纲点击 **预览** ，您将看到在学习管理系统中显示的课程章节 **课件** 。
 
-#. In the navigation bar at the top of the page, select one of the options in
-   the **View this course as** drop down list, as described in the table above.
+#. 在页面顶端的导航栏中 **以何种角色查看次课程** 选择以上表格内的一个选项。
 
 .. image:: ../../../shared/building_and_running_chapters/Images/Cohorts_ViewCourseAs.png
    :alt: Visibility icon is black when visibility for a component is restricted
