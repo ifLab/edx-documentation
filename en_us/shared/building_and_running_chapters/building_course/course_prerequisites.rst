@@ -89,8 +89,7 @@
   当学生第一次尝试访问课程内容时，他们能看到 **课程更新与新闻** 页面。
   我们建议您在页面中包含以下信息。
 
-  * To begin the course entrance exam, students click the **Entrance Exam** tab
-    on the left side of the screen.
+  * 学生点击屏幕左侧 **入学考试** 标签开始考试。 
 
   * After students complete the entrance exam, they have to click the
     **Entrance Exam** tab again or refresh the page in their browser. When the
