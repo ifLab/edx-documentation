@@ -73,26 +73,22 @@ CourseWide Discussion Topics are Cohorted`.
 请参考 :ref:`Specify Whether CourseWide Discussion Topics are
 Cohorted`.
 
-You also decide to apply a naming convention so that students will know the
-audience for the discussion topics before they add any posts. For information
-about naming conventions, see :ref:`Apply Naming Conventions to Discussion
+您也可以使用命名对话，学生在发帖前可以了解该讨论主题的受众。
+更多关于命名对话的信息请参考 :ref:`Apply Naming Conventions to Discussion
 Topics`.
 
 
 .. _Specify Whether CourseWide Discussion Topics are Cohorted:
 
 ********************************************************************
-Specify Whether Course-Wide Discussion Topics are Divided by Cohort
+指定全课堂讨论主题是否按队列分类
 ********************************************************************
 
-When you :ref:`create course-wide discussion topics<Create CourseWide
-Discussion Topics>`, they are by default unified, and all learners in the
-course can see and respond to posts from all other learners. You can change
-course-wide discussion topics to be divided by cohort, so that only members of
-the same cohort can see and respond to each other's posts.
+当您 :ref:`create course-wide discussion topics<Create CourseWide
+Discussion Topics>` 时， 主题默认为统一属性，所有学生都能看见并回复其他学生的帖子。
+您可以更改全课堂讨论主题设置，将其按队列分类，这样学生只能看到相同队列中成员的回复和发帖。
 
-To change the cohort settings for course-wide discussion topics, follow these
-steps.
+按照以下步骤更改全课堂讨论主题的队列设置。
 
 #. In the LMS, select **Instructor**, then select **Cohorts**. 
 
