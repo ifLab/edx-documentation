@@ -48,30 +48,20 @@ Example`.
 不在这两个队列中的学生被自动分配到第三个队列中，即默认队列。
 更多关于在课程中启动队列和分派队列的信息请参考 :ref:`Enabling and Configuring Cohorts` 。
 
+除了两个学校相关的队列的学生将得到他们感兴趣的特殊内容以外，您希望其他所有的学生将到相同的课程体验。
 
-You intend all students to have substantially the same course experience, with
-the exception that only students in the two university-related cohorts will
-receive content that is specific to your university and therefore only of
-interest to them.
+在每个章节最后，您希望包含一个来自学校官方，包括校长和学院院长的视频信息。
+这些视频仅向您学校的学生和校友展示。在每章节的最后，您想测验一下本章节的知识。
+这些测验题仅对所有参加本课程的学生可见。
 
-At the end of every section, you intend to include a video message from various
-university officials, including the university president and the dean of your
-college. These videos will be shown only to students in the university and
-alumni cohorts. Also at the end of each section, you intend to include a quiz to
-test knowledge of the concepts taught in that section. The quiz will be shown to
-all students enrolled in the course.
+要达到这些要求，在Studio的 **小组设置** 页面中建立名为“学校特别内容”内容小组。
+在导师界面的 **队列** 栏中，将“校友”和“在校学生”队列合并到“学校特别内容”小组中。
 
-To achieve this, on the **Group Configurations** page in Studio you create one
-content group called "University-Specific Content". In the Instructor Dashboard,
-on the **Cohorts** tab, you associate both the "University Alumni" and the
-"Current University Students" cohorts with the "University-Specific Content"
-content group.
+在您的课程大纲页面，更改视频组件的可见性设置，
+使各章节末尾的视频仅对“学校特别内容”内容小组可见。
+您不需要改变小测试题的可见性，因为如果没有在组件可见性设置中特定内容小组，
+组件将对所有学生可见。
 
-Then, in your course outline, you change the visibility settings for the video
-component at the end of each section so that it is visible only to the
-"University-Specific Content" content group. You do not need to edit the
-visibility settings of the quiz component, because if no content group is
-specified in a component's visibility settings, it is visible to all students.
 
 As a final step, you preview the course in the LMS to ensure that students see
 the content that is intended for them. You confirm that when you view the course
