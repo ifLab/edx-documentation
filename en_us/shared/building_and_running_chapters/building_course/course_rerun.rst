@@ -59,12 +59,11 @@
    * - 维基贡献
      - 否。
 
-After you re-run a course, modifications to the original course and the re-run
-course are independent. Changes to either course are not propagated to the
-other course. Therefore, you should ensure that the original course content is
-as complete as possible before you re-run the course.
+重开课程之后，对原有课程的修改和对重开课程的修改是相互独立的。
+对其中一门课程的修改不会影响到另一门课程。
+所以，在重开课程之前，您应该确保原有课程内容尽量完善。
 
-For more information, see :ref:`Use Re-Run to Create a Course` and :ref:`Update the New Course`.
+更多信息请参阅 :ref:`Use Re-Run to Create a Course` and :ref:`Update the New Course`.
 
 .. _Use Re-Run to Create a Course:
 
