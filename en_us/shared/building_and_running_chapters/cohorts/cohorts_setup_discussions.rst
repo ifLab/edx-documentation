@@ -90,16 +90,13 @@ Discussion Topics>` 时， 主题默认为统一属性，所有学生都能看�
 
 按照以下步骤更改全课堂讨论主题的队列设置。
 
-#. 在学习管理系统中选择 **导师** ，选择 **队列** 。In the LMS, select **Instructor**, then select **Cohorts**. 
+#. 在学习管理系统中选择 **导师** ，选择 **队列** 。
 
-#. Click **Specify whether discussion topics are divided by cohort**. 
+#. 点击 **指定讨论主题是否按队列分类** 。
    
-#. In the **Course-Wide Discussion Topics** section, select the checkbox next to
-   each course-wide discussion topic that you want to divide by cohort. Clear
-   the checkbox next to each course-wide discussion topic that you want to make
-   unified.
+#. 在 **全课程讨论主题** 一节，勾选您想划分的主题。
    
-#. Click **Save**.
+#. 点击 **保存** 。
    
    The list of course-wide discussion topics is updated to show which topics are
    divided by cohort, and which are unified.
