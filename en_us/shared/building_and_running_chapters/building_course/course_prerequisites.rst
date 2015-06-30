@@ -123,11 +123,10 @@
 * **为学生提交答案重新评分**: 为学生提交的答案重新评分。
   更多信息请参考 :ref:`rescore`.
 
-* **Delete Student State for Problem**: Delete a student's entire history for
-  the exam from the database. For more information, see :ref:`delete_state`.
+* **删除学生的问题状态**: 从考试数据库中删除学生的所有历史记录。
+  更多信息请参考 :ref:`delete_state`.
 
-Another option on the Instructor Dashboard is **Show Background Task History
-for Student**. If you reset student attempts, rescore student submissions, or
-delete student state, the operation runs in the background. If you want to see
-a record of all the operations that have run for the entrance exam, select
-**Show Background Task History for Student**.
+导师面板中的另一个选项是 **查看学生后台测试历史**。
+如果您重置了学生的尝试次数，为学生提交的答案重新评分，或者删除学生的状态，
+操作将在后台运行。如果您想查看入学考试中进行的所有操作记录，选择**查看学生后台测试历史** 。
+
