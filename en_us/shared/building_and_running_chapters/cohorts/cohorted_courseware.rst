@@ -15,13 +15,13 @@
 只有这些队列中的成员能够看到您设定的内容。
 
 更多关于内容小组的内容请参考 :ref:`About Content Groups` 。 
-关于指定内容队列的示例请参考 :ref:`Cohorted Courseware
+关于特定内容队列的示例请参考 :ref:`Cohorted Courseware
 Example`.
 
 
-Complete these steps to create cohort-specific content in your course.
+完成以下步骤创建特定队列内容：
 
-In Studio:
+在Studio中：
 
 #. :ref:`Enable cohorts in your course<Enabling and Configuring Cohorts>`.
 #. :ref:`Create content groups<Creating Content Groups>`. 
@@ -29,7 +29,7 @@ In Studio:
    groups<Specify Components in Courseware as Visible Only to Certain Content
    Groups>`.
      
-In the LMS: 
+在学习管理系统中： 
 
 #. :ref:`Assign students to cohorts<Options for Assigning Students to Cohorts>`.  
 #. :ref:`Associate one or more cohorts with a content group<Associate Cohorts
@@ -40,15 +40,14 @@ In the LMS:
 .. _Cohorted Courseware Example:
 
 ***********************************
-Example: Cohort-Specific Courseware
+示例：特定队列课件
 ***********************************
 
-Suppose that you create two :ref:`cohorts<Cohorts Overview>` in your course:
-University Alumni and Current University Students. Students who are not in
-either of these cohorts are automatically placed into a third cohort, the
-default cohort, when they access the courseware or discussion tabs in the
-course. For more information about enabling cohorts in your course and assigning
-students to cohorts, see :ref:`Enabling and Configuring Cohorts`.
+假设您在课程中建立了两个 :ref:`cohorts<Cohorts Overview>` ，
+大学校友和大学在校生。当学生进入课件页面或论坛中时，
+不在这两个队列中的学生被自动分配到第三个队列中，即默认队列。
+更多关于在课程中启动队列和分派队列的信息请参考 :ref:`Enabling and Configuring Cohorts` 。
+
 
 You intend all students to have substantially the same course experience, with
 the exception that only students in the two university-related cohorts will
