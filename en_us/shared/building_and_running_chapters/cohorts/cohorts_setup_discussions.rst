@@ -42,17 +42,15 @@ Discussions for Cohorts`.
 .. _Coursewide Discussion Topics and Cohorts:
 
 ***********************************************
-Course-Wide Discussion Topics and Cohorts
+全课堂讨论主题和队列
 ***********************************************
 
-When you first :ref:`create a course-wide discussion topic<Create CourseWide
-Discussion Topics>`, it is unified, and all students in the course can post,
-read, respond, and comment in the topic without regard to their cohort
-assignments. 
+当您第一次 :ref:`create a course-wide discussion topic<Create CourseWide
+Discussion Topics>` 时，该主题是统一的，课程内的所有学生都可以发帖、
+阅览帖子、回复和评论。
 
-After you add a course-wide topic, you can configure it so that it is divided by
-cohort instead. For step-by-step instructions for specifying whether a course-
-wide discussion topic is unified or divided by cohort, see :ref:`Specify Whether
+在您添加了全课堂主题后，您可以使其按队列分类。
+设定全课堂讨论主题属性的相关内容请参考 :ref:`Specify Whether
 CourseWide Discussion Topics are Cohorted`.
 
 ====================================================================
