@@ -179,14 +179,11 @@ Groups`.
 关于结合队列和内容小组的细节请参考
 :ref:`Associate Cohorts with Content Groups` 。
 
-To specify components as visible only to particular content groups, follow these
-steps.
+遵循以下步骤指定组件对特定内容小组可见。
 
-#. In Studio, select **Content**, then select **Outline**. 
+#.在Studio中选择 **内容** 然后选择 **大纲** 。
    
-#. For each component that you want to make visible only to a particular
-   content group or groups, click the unit name, then click the **Visibility
-   Settings** icon.
+#. 在组件中点击单元名，点击 **可见性设置** 图标。
 
 .. image:: ../../../shared/building_and_running_chapters/Images/Cohorts_VisibilitySettingInUnit.png
   :alt: Screen capture of unit in course outline with visibility setting icon highlighted 
