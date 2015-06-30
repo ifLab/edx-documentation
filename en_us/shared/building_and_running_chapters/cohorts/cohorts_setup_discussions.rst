@@ -90,7 +90,7 @@ Discussion Topics>` 时， 主题默认为统一属性，所有学生都能看�
 
 按照以下步骤更改全课堂讨论主题的队列设置。
 
-#. In the LMS, select **Instructor**, then select **Cohorts**. 
+#. 在学习管理系统中选择 **导师** ，选择 **队列** 。In the LMS, select **Instructor**, then select **Cohorts**. 
 
 #. Click **Specify whether discussion topics are divided by cohort**. 
    
