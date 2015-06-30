@@ -117,15 +117,14 @@ Groups`.
 .. _View Usage of a Content Group:
 
 *************************************
-View Usage of a Content Group
+查看内容小组使用情况
 *************************************
 
-To view the units that are visible to a content group, follow these steps.
+遵循以下步骤查看使用内容小组的单元。
 
-#. In Studio, select **Settings**, then select **Group Configurations**.
+#. 在Studio中选择 **设置** ，然后选择 **小组配置** 。
  
-#. On the **Group Configurations** page, locate the content group for which you
-   want to view the usage.
+#. 在 **小组配置** 页面找到您想查看的内容小组。 
    
    The content group's box displays whether the content group is used in this
    course. If it is used, you see the number of units that it is used in, and
