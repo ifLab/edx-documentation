@@ -25,39 +25,39 @@
    * - 内容类型
      - 复制到新课程？
    * - 课程开始日期
-     - 不。设置为2030年1月1日零点（UTC） 
+     - 否。设置为2030年1月1日零点（UTC） 
    * - 所有其他课程日期
-     - 是的。您必须更新所有发布日期和截止日期。
+     - 是。您必须更新所有发布日期和截止日期。
    * - 课程结构（章节、小节、单元）和状态（公开、隐藏）
        
-     - Yes. 
-   * - Individual problems and other components
-     - Yes.
-   * - Files uploaded to the course, including videos and textbooks
-     - Yes.
-   * - Pages added to the course
-     - Yes, including all page content and the defined page order.
-   * - Course Updates 
-     - Yes.
-   * - Advanced Settings
-     - Yes.
-   * - Grading policy
-     - Yes.
-   * - Student enrollment data
-     - No.
+     - 是。
+   * - 独立问题和其他组件
+     - 是。
+   * - 已上传至课程的文件，包括视频和课本
+     - 是。
+   * - 添加的页面
+     - 是。 包括所有页面内容和已定义的页面顺序。
+   * - 课程更新
+     - 是。
+   * - 高级设置
+     - 是。
+   * - 评分标准
+     - 是。
+   * - 学生注册信息
+     - 否。
    * - Course team privileges, including admins, discussion moderators, beta
        testers
-     - No. Only the user who created the new course has access to it.
+     - 否。 Only the user who created the new course has access to it.
    * - Manually created cohort groups
-     - No. 
+     - 否。 
    * - Student answers, progress, and grading data
-     - No.
+     - 否。
    * - Certificates
-     - No.
+     - 否。
    * - Discussion posts, responses, comments, and other data
-     - No.
+     - 否。
    * - Wiki contributions
-     - No.
+     - 否。
 
 After you re-run a course, modifications to the original course and the re-run
 course are independent. Changes to either course are not propagated to the
