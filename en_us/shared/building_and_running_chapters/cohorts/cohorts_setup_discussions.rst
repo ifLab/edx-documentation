@@ -15,19 +15,12 @@
 的初始设定和 :ref:`content-specific discussion topics
 <Content Specific Discussion Topics and Cohorts>` 的设定不同。
 
-By default, course-wide discussion topics are unified because these discussions
-are generally used for posts that are of broad interest to all learners in the
-course. In contrast, content-specific discussion topics are by default divided
-by cohort. On the Instructor Dashboard, you can change discussion topics of
-either type to be divided or unified.
+默认状态下，全课堂讨论主题是统一的，因为这些讨论一般是为课程中的所有学生都感兴趣的内容设置的。
+相反，内容指定讨论主题是默认按队列分配的。在导师面板中，您可以更改讨论主题的类型。
 
-.. warning:: If you change the cohort settings of discussion topics in a live
-   course after learners have begun reading and contributing to discussion
-   posts, you are changing their course experience. Learners might see posts
-   that were previously not visible to them, or they might no longer see posts
-   that were previously available to all learners. If you make changes to
-   cohort settings in a running course, be aware of the implications of your
-   changes. For more details, see :ref:`Altering Cohort Configuration`.
+.. warning:: 如果您在学生开始阅览和贡献讨论帖时，更改在线课程中讨论主题的队列设置，
+   您将更改学生的课程体验。学生可能看到之前看不到的帖子，或者看不到以前能看到的帖子。
+   如果您更改任何已开始课程的设置，请注意改变可能造成的影响。更多细节请参阅 :ref:`Altering Cohort Configuration` 。
 
 For information about cohort settings for discussion topics, see the following
 topics.
