@@ -322,23 +322,20 @@ Specifications` 和 :ref:`Video Formats`
 更多信息请参阅 :ref:`Create
 CourseWide Discussion Topics` 。
 
-The following example shows the course start date and time on the course About
-page:
+下例显示了课程信息页面中的课程开始时间：
 
 .. image:: ../../../shared/building_and_running_chapters/Images/about-page-course-start.png
  :width: 600
  :alt: An image of the course About page, with the start date circled.
 
-In the dashboard, students see the start dates and times for each of their
-courses, as in the following examples.
+在面板中，学生将看到课程开始时间如下：
 
 .. image:: ../../../shared/building_and_running_chapters/Images/dashboard-course-to-start.png
  :width: 600
  :alt: An image of two courses in the student dashboard, with the start dates
      and times circled.
 
-.. note:: If you do not specify a start time for your course, students see
-   the default start time, 00:00 Coordinated Universal Time (UTC).
+.. note:: 如果您没有指定课程开始时间，学生将看到默认开始时间，UTC 00:00 。
 
 
 .. _Set the Advertised Start Date:
