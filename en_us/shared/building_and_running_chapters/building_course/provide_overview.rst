@@ -206,54 +206,47 @@ Specifications` 和 :ref:`Video Formats`
 设置入学考试
 ===================================
 
-You can require your students to pass an entrance exam before they access your
-course materials. If you include an entrance exam, students who enroll in your
-course see only the **Entrance Exam** tab until they pass the exam.
+您可以要求学生在访问您的课程材料之前通过入学考试。
+如果课程含有入学考试，注册该课程的学生只能看到 **课程更新与新闻** 页面和 **入学考试** 标签，
+直到他们通过入学考试。
 
 .. image:: ../../../shared/building_and_running_chapters/Images/EntEx_LandingPage.png
   :width: 500
   :alt: The Entrance Exam page with the first problem visible
 
-As students take the entrance exam, they can see their status at the top of
-the page. After students pass the exam, they can access all released materials
-in your course.
+学生通过入学考试以后，他们可以访问所有已发布的课程资料。
 
-To require an entrance exam, follow these steps.
+按照以下步骤设置入学考试。
 
-#. In Studio, open your course.
-#. On the **Settings** menu, select **Schedule & Details**.
-#. On the **Schedule & Details** page, scroll to the **Requirements** section.
-#. Select the **Require students to pass an exam before accessing course
-   materials** check box.
-#. At the bottom of the page, select **Save Changes**.
+#. 在Studio中打开您的课程。
+#. 在 **设置** 菜单中选择 **日程表与细节** 。 
+#. 在 **日程表与细节** 页面下滚到 **要求** 部分。 
+#. 选择 **要求学生访问课程资料之前通过入学考试** 。 
+#. 在页面底端选择 **保存修改** 。
 
-After you save your changes, Studio automatically creates an **Entrance Exam** 
-section in your course outline. To add content to your entrance exam, go to the 
-course outline. 
+保存修改之后，Studio自动在您的课程大纲创建 **入学考试** 一节。
+去课程大纲添加入学考试内容。
 
-Best Practices for Entrance Exams
+入学考试最佳实践
 ********************************************
 
-We strongly recommend that you follow several guidelines to help you and your
-students have a positive experience with entrance exams.
+我们强烈建议您遵循以下指导步骤帮助您的学生在入学考试中有良好的体验。
 
-* Make sure that your beta testers include the entrance exam when they test your
-  other course content.
+* 确保您的贝塔测试员测试入学考试。
 
-* Make sure that you mention the entrance exam in the course description on your
-  course About page. Otherwise, students will not know about the entrance exam
-  before they enroll in your course and try to access course content.
+* 确保您在课程信息页面中说明此课程需要入学考试。
+  否则学生在注册您的课程并尝试访问课程内容之前不知道需要入学考试。
 
 * On your course About page or in a course e-mail, include a link to the
   information about `entrance exams <http://doroob-student-documentation.readthedocs.org/en/latest/SFD_prerequisites.html#entrance-exam>`_ in the `edX Guide for Students <http://doroob-student- documentation.readthedocs.org/en/latest/index.html>`_.
 
 
-Create an Entrance Exam from the Course Outline
+在课程大纲里创建入学考试
 **************************************************
 
-You create your course entrance exam from the course outline in Studio. Creating
-entrance exam content is just like creating other course content. For more
-information, see :ref:`Creating Course Content Index`.
+您将在Studio的课程大纲中创建入学考试。
+创建入学考试的步骤与创建其他内容相同。
+更多信息请参阅 :ref:`Creating Course Content Index`.
 
 Allow a Student to Skip the Entrance Exam
 **************************************************
