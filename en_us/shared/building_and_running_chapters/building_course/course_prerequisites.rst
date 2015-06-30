@@ -117,12 +117,11 @@
 在教师面板中，点击 **学生管理** ，滚动至 **调整入学考试成绩** 一栏。
 以下选项可供设置。
 
-* **Reset Student Attempts**: Reset the value for one particular student's
-  attempts back to zero so that the student can begin work over again. For more
-  information, see :ref:`reset_attempts`.
+* **重置学生尝试次数**: 为特定学生重置尝试次数为0，学生可以从头开始答题。
+  更多信息请参考 :ref:`reset_attempts`.
 
-* **Rescore Student Submission**: Rescore the responses that a student has
-  submitted. For more information, see :ref:`rescore`.
+* **为学生提交答案重新评分**: 为学生提交的答案重新评分。
+  更多信息请参考 :ref:`rescore`.
 
 * **Delete Student State for Problem**: Delete a student's entire history for
   the exam from the database. For more information, see :ref:`delete_state`.
