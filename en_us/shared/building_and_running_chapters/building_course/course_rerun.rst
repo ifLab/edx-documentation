@@ -1,13 +1,12 @@
 .. _Rerun a Course:
 
 ###################
-Re-running a Course
+重开课程
 ###################
 
-Another way to create a course in Studio is to re-run an existing course. When
-you select the course re-run option, most, but not all, of the original course
-content is duplicated to the new course. The original course is not changed in
-any way.
+另一个在Studio中创建课程的方式是重开一门已有课程。
+当您选择课程重开选项，大多数原有的课程内容将复制生成新课程。
+原始的课程不会改变。
 
 * :ref:`Data Duplicated When You Re-Run a Course`
 * :ref:`Use Re-Run to Create a Course`
@@ -16,21 +15,21 @@ any way.
 .. _Data Duplicated When You Re-Run a Course:
 
 ********************************************
-Data Duplicated When You Re-Run a Course
+重开课程的数据复制
 ********************************************
 
 .. list-table::
    :widths: 45 45
    :header-rows: 1
 
-   * - Type of Content
-     - Duplicated to New Course?
-   * - Course start date
-     - No. Set to midnight on January 1, 2030 (UTC).
-   * - All other course dates
-     - Yes. You must update all release dates and due dates.
-   * - Course structure (sections, subsections, units) and state (published,
-       hidden)
+   * - 内容类型
+     - 复制到新课程？
+   * - 课程开始日期
+     - 不。设置为2030年1月1日零点（UTC） 
+   * - 所有其他课程日期
+     - 是的。您必须更新所有发布日期和截止日期。
+   * - 课程结构（章节、小节、单元）和状态（公开、隐藏）
+       
      - Yes. 
    * - Individual problems and other components
      - Yes.
