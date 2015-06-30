@@ -3,7 +3,7 @@
 
 
 ######################################################
-在有队列的课程中设置论坛
+在包含队列的课程中设置论坛
 ######################################################
 
 在开启了队列的课程中，讨论主题可以按队列分类或统一对所有学生可见。
@@ -34,13 +34,9 @@
 关于使用队列和管理按队列分类讨论的信息请参考 :ref:`Cohorts Overview` and :ref:`Moderating
 Discussions for Cohorts`.
 
-.. note:: Making discussion topics divided by cohort, described in this and
-   the following topics, only divides posts within the discussion topics by
-   cohort; the discussion topics are still visible to all learners in the
-   course. If you want to make specific content-specific discussion topics
-   visible only to certain cohorts, you can implement content groups and
-   change the visibility settings on the discussion components. For more
-   details, see :ref:`Cohorted Courseware Overview`.
+.. note:: 本章和以下主题中描述的按队列分类讨论主题，只能将讨论主题中的帖子进行分类，
+   讨论主题本身还是对所有学生可见。如果您想设置指定内容讨论主题尽对特定队列可见，
+   您可以使用内容小组并更改讨论组件的可见性设置。具体细节请参阅 :ref:`Cohorted Courseware Overview`.
 
 
 .. _Coursewide Discussion Topics and Cohorts:
