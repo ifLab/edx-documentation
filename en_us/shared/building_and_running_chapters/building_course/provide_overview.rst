@@ -361,8 +361,7 @@ CourseWide Discussion Topics` 。
 
 4. 在本页的末尾点击保存改动
 
-The start date shown on the dashboard is now the value of the **Course
-Advertised Start Date** policy key:
+面板中的开始日期是 **显示开始日期** 的值：
 
 .. image:: ../../../shared/building_and_running_chapters/Images/dashboard-course_adver_start.png
  :width: 600
@@ -384,12 +383,9 @@ Advertised Start Date** policy key:
 .. important::
  您若没有设置课程结束日期，学生将不能获得修课证书。
 
-After grades and certificates are finalized, students see the course end date
-on their personal **Current Courses** dashboards, as shown in the following
-examples.
+评分和授予证书结束之后，学生将在自己的 **当前课程** 面板中看到课程结束日期。
 
-* If grades and certificates are not yet finalized, students can see the course
-  end date and a message:
+* 如果评分和证书授予没有结束，学生可以看到结束日期和消息：
 
   .. image:: ../../../shared/building_and_running_chapters/Images/dashboard-wrapping-course.png
    :alt: Image of a course on the student dashboard that has ended, but not
