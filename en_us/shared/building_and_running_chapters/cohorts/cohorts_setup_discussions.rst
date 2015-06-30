@@ -166,11 +166,8 @@ ContentSpecific Discussion Topics as Cohorted`.
 当您第一次 :ref:`add them<Create ContentSpecific
 Discussion Topics>` 时，指定内容讨论主题的默认设置为按队列分类。
 
-
-To make only a few of your content-specific discussion topics divided by
-cohort, you change the cohort settings for content-specific discussion topics
-to make them all unified, and then explicitly select only the topics that you
-want to be divided by cohort.
+如果需要将少数指定内容讨论主题按队列分类，您可以更改指定内容讨论主题的队列设置，
+使其为统一属性，然后选择您想划分的主题。
 
 .. warning:: When you change the cohort setting from **Always Cohort Content-Specific
    Discussion Topics** to **Cohort Selected Content-Specific Discussion Topics**, 
@@ -188,9 +185,9 @@ want to be divided by cohort.
 To specify that only some content-specific discussion topics in your course are
 divided by cohort, follow these steps.
 
-#. In the LMS, select **Instructor**, then select **Cohorts**. 
+#. 在学习管理系统中选择 **导师** ，然后选择 **队列** 。
 
-#. Click **Specify whether discussion topics are divided by cohort**. 
+#. 点击 **指定讨论主题是否按队列分类** 。
 
 .. image:: ../../../shared/building_and_running_chapters/Images/CohortDiscussionsSpecifyLink.png
  :alt: The link in the UI to specify whether content specific discussion topics are divided by cohort
