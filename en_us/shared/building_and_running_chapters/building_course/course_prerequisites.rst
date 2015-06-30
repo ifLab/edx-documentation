@@ -85,11 +85,9 @@
   否则学生在注册您的课程并尝试访问课程内容之前不知道需要入学考试。
 
 
-* Add an anouncement at the top of the **Course Updates & News** page that
-  contains information and instructions for students who need to take the exam.
-  When students first try to access content in a course that has an entrance
-  exam, they see the **Course Updates & News** page. We suggest that you
-  include the following information.
+* 在 **课程更新与新闻** 置顶一项声明，声明中包括关于那些学生需要参加考试的信息和指导。
+  当学生第一次尝试访问课程内容时，他们能看到 **课程更新与新闻** 页面。
+  我们建议您在页面中包含以下信息。
 
   * To begin the course entrance exam, students click the **Entrance Exam** tab
     on the left side of the screen.
