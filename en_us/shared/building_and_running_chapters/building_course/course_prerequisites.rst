@@ -6,7 +6,7 @@
 
 也许您想要确保学生在上课前有指定的技能和知识基础。
 
-.. contents:: Section Contents:
+.. contents:: 内容包括：
  :local:
  :depth: 1
 
@@ -62,14 +62,14 @@
 
 学生通过入学考试以后，他们可以访问所有已发布的课程资料。
 
-To require an entrance exam, follow these steps.
+安装以下步骤设置入学考试。
 
-#. In Studio, open your course.
-#. On the **Settings** menu, select **Schedule & Details**.
-#. On the **Schedule & Details** page, scroll to the **Requirements** section.
-#. Select the **Require students to pass an exam before accessing course
+#. 在Studio中打开您的课程。, open your course.
+#. 在 **设置** 菜单中选择 **日程表与细节** 。 On the **Settings** menu, select **Schedule & Details**.
+#. 在 **日程表与细节** 页面下滚到 **要求** 部分。 On the **Schedule & Details** page, scroll to the **Requirements** section.
+#. 选择 **要求学生访问课程资料之前通过入学考试** 。 Select the **Require students to pass an exam before accessing course
    materials** check box.
-#. At the bottom of the page, select **Save Changes**.
+#. 在页面底端选择 **保存修改** 。At the bottom of the page, select **Save Changes**.
 
 After you save your changes, Studio automatically creates an **Entrance Exam**
 section in your course outline. To add content to your entrance exam, go to the
