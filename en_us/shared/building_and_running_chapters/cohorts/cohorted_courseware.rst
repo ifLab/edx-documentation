@@ -171,16 +171,13 @@ Groups`.
    如果您没有指定对内容小组可见，组件将对所有参与课程的学生开放，
    无论这些学生是否在队列中。
 
-您可以指定内容
-You can specify content as visible to content groups only at the component level
-in a unit. You cannot specify entire units, subsections, or sections for
-visibility to content groups.
+您只能在单元级别的组件中指定其内容对内容小组可见。您不能指定整个单元、
+子章节或章节对内容小组的可见性。
 
-In a separate task, you create cohorts and associate content groups with
-cohorts. Then, only the cohorts associated with content groups which you
-selected in a component's visibility settings can view the component. See
-:ref:`Associate Cohorts with Content Groups` for details about associating
-cohorts with content groups.
+在个别任务中，您创建队列并将其与内容小组结合起来。
+只有您在组件可见性设置中选择的内容小组成员能查看该组件。
+关于结合队列和内容小组的细节请参考
+:ref:`Associate Cohorts with Content Groups` 。
 
 To specify components as visible only to particular content groups, follow these
 steps.
