@@ -380,16 +380,14 @@ Advertised Start Date** policy key:
 .. _The Course End Date:
 
 =====================
-The Course End Date
+课程结束时间
 =====================
 
-The course end date is the date after which students can no longer earn credit
-toward certificates. Students who have earned certificates can view them after
-the course end date.
+学生修的学分达到获得修课证书要求，课程就该结束了。
+课程结束之后，获得修课证书的学生能够回顾课程。
 
 .. important::
- If you do not set a course end date, students will not be able to access
- earned certificates.
+ 您若没有设置课程结束日期，学生将不能获得修课证书。
 
 After grades and certificates are finalized, students see the course end date
 on their personal **Current Courses** dashboards, as shown in the following
