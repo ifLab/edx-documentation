@@ -150,15 +150,13 @@ Groups`.
    关于查看哪些单元正在使用内容小组想信息请参考
    :ref:`View Usage of a Content Group` 。
 
-#. In Studio, select **Settings**, then select **Group Configurations**.
+#. 在Studio中选择 **设置** ，然后选择 **小组配置** 。
  
-#. On the **Group Configurations** page, locate the content group that you want
-   to delete.  
+#. 在 **小组配置** 页面找到您想删除的内容小组。
    
-#. Move your cursor over the content group's box, then click the **Delete**
-   icon.
+#. 将光标移至小组框内，点击 **删除** 图标。
 
-#. In the confirmation message, click **Delete** again to confirm the deletion.
+#. 在确认信息中点击 **删除** 。
       
 
 .. _Specify Components in Courseware as Visible Only to Certain Content Groups:
