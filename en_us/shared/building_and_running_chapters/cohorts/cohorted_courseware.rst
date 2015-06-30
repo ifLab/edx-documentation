@@ -69,26 +69,20 @@ Example`.
 .. _About Content Groups:
 
 **************
-Content Groups
+内容小组
 **************
 
-Content groups are virtual groupings of students who will see a particular set
-of course content. You can use content groups to designate specific course
-content as visible to particular :ref:`cohorts<Cohorts Overview>` of students. 
+内容小组将学生分成可以看到特定内容的虚拟小组。
+您可以使用内容小组指定特别内容仅对特定 :ref:`cohorts<Cohorts Overview>` 中的学生可见。
 
-You create content groups in Studio, and in your course outline you use the
-**Visibility Settings** to designate whether a component is selectively visible
-only to one or more content groups. Any course components that do not have an
-explicitly restricted visibility setting remain visible to all students,
-regardless of their cohort.
+您将在Studio中建立内容小组，在课程大纲里使用 **可见性设置** 指定组件是否对一个或多个内容小组可见。
+任何没有设置可见性的课程组件将保持对所有学生可见。
 
-Content groups do not have an actual impact on the visibility of a course
-component until you associate them with one or more cohorts. If you have
-designated certain course content as visible to a content group, and in addition
-have associated that content group with one or more cohorts, then those cohorts
-will see the designated content.
+如果您没有将内容小组与队列相结合，内容小组并不影响课程组件的可见性。
+如果您指定确切的课程内容对一个内容小组可见，且已经将此小组与队列相结合，
+那么这些队列将看到指定内容。
 
-For an example of using content groups to create cohort-specific courseware, see
+关于使用内容小组创建特殊队列可见的示例请参考
 :ref:`Cohorted Courseware Example`.
 
 
