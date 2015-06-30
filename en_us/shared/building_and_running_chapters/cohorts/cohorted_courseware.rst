@@ -89,30 +89,29 @@ Example`.
 .. _Creating Content Groups:
 
 *********************
-Create Content Groups
+创建内容小组
 *********************
 
-To create a content group, follow these steps.
+遵循以下步骤创建内容小组。
 
-#. In Studio, select **Settings**, then select **Group Configurations**.
+#. 在Studio中选择 **设置** ，然后选择 **小组配置** 。 
  
-#. On the **Group Configurations** page, click **New content group**.
+#. 在 **小组配置** 页面，点击 **新建内容小组** 。
    
 .. image:: ../../../shared/building_and_running_chapters/Images/Cohorts_AddContentGroup.png
  :width: 600
  :alt: Button on Group Configurations page for adding first content group
 
-3. Enter a meaningful name for the content group, then click **Create**.
-   The page refreshes to show the name of your new content group.
-#. Repeat this step to create as many content groups as you want.
+3. 为内容小组起一个有意义的名字，然后点击 **创建** 。
+   页面刷新后将显示新小组的名字。
+#. 重复以上步骤创建更多内容小组。
 
-After you create a content group, you can work with your course outline to
-specify which components are visible to specific content groups. For details,
-see :ref:`Specify Components in Courseware as Visible Only to Certain Content
+创建内容小组以后，您可以在课程大纲中将特定内容设置为对特定内容小组可见。
+更多细节请参考 :ref:`Specify Components in Courseware as Visible Only to Certain Content
 Groups`.
 
-On the Instructor Dashboard, you associate each content group with one or more
-cohorts. For details, see :ref:`Associate Cohorts with Content Groups`.
+在导师面板中，您可以将内容小组和队列结合起来。
+更多细节请参考 :ref:`Associate Cohorts with Content Groups`.
 
 
 .. _View Usage of a Content Group:
