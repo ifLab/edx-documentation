@@ -62,15 +62,9 @@ Example`.
 您不需要改变小测试题的可见性，因为如果没有在组件可见性设置中特定内容小组，
 组件将对所有学生可见。
 
-
-As a final step, you preview the course in the LMS to ensure that students see
-the content that is intended for them. You confirm that when you view the course
-in the role of **Student** (in other words, any student not in a content group),
-you see a quiz at the end of each section, but do not see the university-related
-videos. When you view the course as a student in the "University-Specific
-Content" group, you see a university-related video as well as the quiz at the
-end of each section.
-
+最后一步，您在学习管理系统中预览课程，确保学生将看到您为他们设定的内容。
+您使用学生角色（此角色不属于任何内容组）确认在每章最后看到小测验，且看不到学校相关视频。
+当您使用“学校指定内容”小组中学生的角色时，您可以看到学校相关视频和课后小测验。
 
 .. _About Content Groups:
 
