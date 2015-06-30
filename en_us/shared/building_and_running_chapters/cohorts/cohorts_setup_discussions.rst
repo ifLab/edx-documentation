@@ -186,25 +186,22 @@ Discussion Topics>` 时，指定内容讨论主题的默认设置为按队列分
 .. image:: ../../../shared/building_and_running_chapters/Images/CohortDiscussionsSpecifyLink.png
  :alt: The link in the UI to specify whether content specific discussion topics are divided by cohort
    
-3. In the **Content-Specific Discussion Topics** section, if it is not already
-   selected, select **Cohort selected content-specific discussion topics**.
+3. 在 **指定内容讨论主题** 中，如果未被选中，选择 **选择性划分指定内容讨论主题**  。
    
    .. warning:: If you make changes to cohort settings in a running course, be
       aware of the implications of your changes. For more details, see
       :ref:`Altering Cohort Configuration`.
 
-   All content-specific discussion topics that you add in your course are
-   unified and visible to all learners. The list of content-specific
-   discussion topics becomes editable.
+   所有您添加的指定内容讨论主题对所有学生可见。
+   主题列表变得可编辑。
    
-#. Select the checkbox next to each content-specific discussion topic that you
-   want to divide by cohort.
+#. 选中您想划分的指定内容讨论主题。
 
    .. image:: ../../../shared/building_and_running_chapters/Images/CohortDiscussionsCohortSelected.png
      :alt: Content specific discussion topics controls with the "Cohort
       selected content specific discussion topics option selected
    
-#. Click **Save**.
+#. 点击 **保存** 。
    
    The changes to your content-specific discussions are saved. The content-specific
    discussion topics that you selected are saved as being divided by cohort. All other
