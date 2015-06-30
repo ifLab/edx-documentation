@@ -91,9 +91,8 @@
 
   * 学生点击屏幕左侧 **入学考试** 标签开始考试。 
 
-  * After students complete the entrance exam, they have to click the
-    **Entrance Exam** tab again or refresh the page in their browser. When the
-    page refreshes, students can see all currently available course content.
+  * 完成入学考试以后，学生必须再次点击 **入学考试** 标签刷新页面。
+    页面刷新以后，学生就可以看到所有课程内容了。
 
     .. image:: ../../../shared/building_and_running_chapters/Images/EntEx_CourseAccordionAfterPass.png
       :width: 500
@@ -101,12 +100,12 @@
           with all available course sections listed in the course accordion
 
 ================================================
-Create an Entrance Exam from the Course Outline
+在课程大纲里创建入学考试
 ================================================
 
-You create your course entrance exam from the course outline in Studio.
-Creating entrance exam content is just like creating other course content. For
-more information, see :ref:`Creating Course Content Index`.
+您将在Studio的课程大纲中创建入学考试。
+创建入学考试的步骤与创建其他内容相同。
+更多信息请参阅 :ref:`Creating Course Content Index`.
 
 ==================================
 Adjust Scores in the Entrance Exam
