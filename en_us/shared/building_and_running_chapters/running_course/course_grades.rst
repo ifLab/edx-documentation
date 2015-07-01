@@ -75,11 +75,8 @@
 
 如何生成成绩单：
 
-.. important:: Because the grade report file contains confidential, personally
-   identifiable data which might be subject to the Family Educational Rights and
-   Privacy Act (FERPA), be sure to follow your institution's data stewardship
-   policies when you open or save this file.
-
+.. important:: 由于成绩单文件中包含保密信息，个人认证数据可能受限于家庭教育权与隐私权（FERPA）,
+   请确保打开或保存此文件时遵循您所在机构的数据管理员政策。
 
 #. 查看课程现况
 
@@ -91,16 +88,13 @@
 
 4. 刷新浏览器页面，将滚动条拖至“正在处理的教师任务”区域查看评分进程
 
-   When the report is complete, a linked .csv filename becomes available above
-   the **Pending Instructor Tasks** section. Filenames are in the format
-   ``{course_id}_grade_report_{datetime}.csv``. The most recently generated
-   reports appear at the top of the list.
+   评分完成后，一个.csv名链接出现在 **正在处理的教师任务** 部分上方。
+   文件名为 ``{course_id}_grade_report_{datetime}.csv`` 格式。
+   最新生成的报告出现在列表的最上方。
 
-5. To open or save a grade report file, locate and click the link for the
-   grade report you requested. 
+5. 要打开或者保存成绩单文件，请找到并点击成绩单链接。
 
-   You can open .csv files in a spreadsheet application to sort, graph, and
-   compare data.
+   您可以将.csv文件在制表软件中打开，便于排序、生成图表和对比数据。
 
 .. note:: 为防止学生数据意外泄露，您只能通过本页面中的链接下载成绩单文件。
    本链接的有效期只有5分钟，所以不要将本页面中的信息复制到其他地方再次使用。
@@ -116,7 +110,7 @@
 
 成绩单是一个带有时间标记的CSV文件，其中包括：信息列，
 即定义学生身份的信息集合——ID，email，用户名，等等；
-任务列，即您课程中的所有评分项目
+任务列，即您课程中的所有评分项目。
 
 Scores in the grade report are presented by assignment. There is a column for
 every assignment that is included in your grading configuration: each
@@ -141,7 +135,7 @@ additional columns indicating the name of the cohort or experiment group that
 each learner belongs to.
 
 .. image:: ../../../shared/building_and_running_chapters/Images/Grade_Report.png
-  :alt: A course grade report, opened in Excel, showing the grades achieved by 
+  :alt: A course grade report, opened in Excel, showing the grades achieved by
         students on several homework assignments and the midterm
 
 CSV文件每行显示一名学生的成绩，纵列信息如下：
@@ -275,7 +269,7 @@ CSV文件每行显示一名学生的成绩，纵列信息如下：
 * For each problem (identified by assignment, subsection, and problem name), a
   column showing the number of points actually earned by each learner. If a
   learner has not viewed a problem, the value in this column is "N/A". If
-  a learner has not answered a problem, the value in this column is "0".  
+  a learner has not answered a problem, the value in this column is "0".
 
 * For each problem (identified by assignment, subsection, and problem name), a
   column showing the number of points that it is possible to earn for the
@@ -346,8 +340,8 @@ CSV文件每行显示一名学生的成绩，纵列信息如下：
    reflect any cohort or experiment group assignments.
 
    .. image:: ../../../shared/building_and_running_chapters/Images/Student_Progress.png
-    :alt: Progress page chart for a learner: includes a column graph with the 
-          score achieved for each assignment 
+    :alt: Progress page chart for a learner: includes a column graph with the
+          score achieved for each assignment
 
    想了解某个项目的信息，将光标移到该值，会显示一段简短的描述文字。
 
@@ -360,8 +354,8 @@ CSV文件每行显示一名学生的成绩，纵列信息如下：
    同时还会显示该学生回答问题的得分。
 
    .. image:: ../../../shared/building_and_running_chapters/Images/Student_Progress_list.png
-    :alt: Bottom portion of a Progress page for the same student with the 
-          score acheived for each problem in the first course subsection 
+    :alt: Bottom portion of a Progress page for the same student with the
+          score acheived for each problem in the first course subsection
 
 =============================================
 解读学生进度页面
@@ -372,7 +366,7 @@ CSV文件每行显示一名学生的成绩，纵列信息如下：
 在下面的成绩单中，学生当前得分为0.43
 
 .. image:: ../../../shared/building_and_running_chapters/Images/Grade_Report_example.png
- :alt: A course grade report with a single student's information indicated by 
+ :alt: A course grade report with a single student's information indicated by
        a rectangle
 
 * 该生前四次的作业得分均为满分，但是最近三次得分均为0分
@@ -386,8 +380,8 @@ CSV文件每行显示一名学生的成绩，纵列信息如下：
 在该生的“进度”页面中，您会发现，基本信息都差不多相同，但是最右侧的“总分”为43%
 
 .. image:: ../../../shared/building_and_running_chapters/Images/Student_Progress.png
- :alt: Progress page for a student also included on the grade report: includes 
-       a column graph with the grade acheived for each assignment 
+ :alt: Progress page for a student also included on the grade report: includes
+       a column graph with the grade acheived for each assignment
 
 进度图标的y轴显示的是两块成绩区域（0~60,60~100）本例中，
 及格分设置为60%，因此，课程结束后，成绩高于0.60的学生可以获得合格证书。
@@ -407,21 +401,21 @@ CSV文件每行显示一名学生的成绩，纵列信息如下：
 页面顶部显示的是该学生已经评分的项目及得分，下面是各小节的得分。
 进度可以显示为一张图标，里面包含所有任务的得分、当前总得分以及每部分的及格分。
 试看下例：
- 
+
 .. image:: ../../../shared/building_and_running_chapters/Images/StudentView_GradeCutoffs.png
  :alt: Image of a student's Course Progress page with the grade cutoffs legend
        highlighted
- 
+
 该生可在本页面中发现，edX101课程的及格分为34%，评分项目包括一个任务类型，
 其下总共包含11个任务。该生目前只成功完成了两项任务，因此当前得分为6%。
 将鼠标悬停在各个任务标签上，可以查看每项任务占总分的比重是多少。
- 
+
 再往下看，会看见该课程所有小节的列表，记录了该生在课程中回答问题的所有得分。试看下例：
- 
+
 .. image:: ../../../shared/building_and_running_chapters/Images/StudentView_Problems.png
    :width: 800
    :alt: Image of a student's Course Progress page with problems highlighted
- 
+
 注意，计分小节的得分称为“提问得分”，不计分小节的得分称为“实践得分”。
 
 .. _Adjust_grades:
@@ -467,7 +461,7 @@ CSV文件每行显示一名学生的成绩，纵列信息如下：
    问题相关信息即显示出来，包括“位置”。
 
    .. image:: ../../../shared/building_and_running_chapters/Images/Problem_URL.png
-    :alt: The Staff Debug view of a problem with the location identifier 
+    :alt: The Staff Debug view of a problem with the location identifier
           indicated
 
 4. 选择整个定位ID，右击→“复制”。
@@ -505,7 +499,7 @@ CSV文件每行显示一名学生的成绩，纵列信息如下：
 重评所有学生的答案
 ------------------------------------
 
-您首先需要知道问题的定位ID，详见 :ref:`find_URL`. 
+您首先需要知道问题的定位ID，详见 :ref:`find_URL`.
 重评学生的答案
 
 #. 查看课程现况
@@ -529,7 +523,7 @@ CSV文件每行显示一名学生的成绩，纵列信息如下：
 .. _reset_attempts:
 
 =====================================
-学生答题尝试次数归零 
+学生答题尝试次数归零
 =====================================
 
 创建问题时，您可以限制学生尝试回答问题的最大次数。
@@ -607,4 +601,3 @@ CSV文件每行显示一名学生的成绩，纵列信息如下：
 #. 单击“导师”→“学生管理”
 
 #. 在“评分调整”区域内同时输入学生email地址/用户名以及问题定位ID，单击“删除学生答题记录”
-   
