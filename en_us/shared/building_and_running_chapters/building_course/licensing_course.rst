@@ -1,14 +1,12 @@
 .. _Licensing a Course:
 
 ######################################################
-Licensing a Course
+授权课程
 ######################################################
 
-You can specify licensing options for your course content as well as for each
-video in your course.
+您可以为课程内容和视频文件指定授权方式。
 
-By specifying the license, you communicate to learners whether and how they can
-reuse your course content.
+通过指定许可，您可以与学生交流他们是否可以、如何转载使用您的课程内容。
 
 .. contents:: Section Contents
   :local:
@@ -17,139 +15,121 @@ reuse your course content.
 .. _License Options:
 
 *************************************
-License Options
+授权方式
 *************************************
 
-For your course content and for each video in your course, you can select one
-of the following license options.
+您可以为课程内容和每个视频文件选择以下授权方式。
 
-* All Rights Reserved
-* Creative Commons
+* 版权所有
+* CC协议
 
 .. _All Rights Reserved License:
 
 ====================================
-All Rights Reserved License
+版权所有授权
 ====================================
 
-The All Rights Reserved license indicates to learners that you own the
-copyright for course content or videos. Learners cannot reuse or republish
-course content or videos that have All Rights Reserved licenses.
+版权所有授权指您保留课程内容和视频的版权。学生不能转载或转发版权所有的课程内容和视频。
 
 .. _Creative Commons License:
 
 ====================================
-Creative Commons License
+CC协议授权
 ====================================
 
-The Creative Commons license indicates to learners that they can share or reuse
-course content or videos, depending on the license options that you select.
+CC协议指学生可以分享或转载课程内容和视频，取决于您选择的授权许可。
 
-When you specify a Creative Commons license for your course or a video, you
-specify one or more options.
+当您选择CC协议授权课程或视频时，您需要指定以下选项。
 
 .. list-table::
    :widths: 10 70
    :header-rows: 1
 
-   * - License Option
-     - Description
-   * - **Attribution**
-     - This option allows others to copy, distribute, display, and perform your
-       copyrighted work but only if they give credit to you in the way that you
-       request. This option is enabled for all Creative Commons licenses on edX
-       course content. You cannot clear this option.
-   * - **Noncommercial**
-     - This option allows others to distribute, display, and perform your work
-       -- and derivative works based upon it -- but for non-commercial purposes
-       only.
-   * - **No Derivatives**
-     - This option allows others to distribute, display, and perform only
-       verbatim copies of your work, not derivative works based upon it. You cannot use this option with the **Share Alike** option.
-   * - **Share Alike**
-     - This option allows others to distribute derivative works only under a
-       license identical to the license that governs your work. You cannot use this option with the **No Derivatives** option.
+   * - 授权项
+     - 描述
+   * - **归属**
+     - 此选项允许他人复制、分配、展示和演示您的作品，只要他们提供您要求的报酬。
+       此选项在edX所有课程内容CC协议授权中均为开启状态，您不能改变此选项。
+   * - **非商业性**
+     - 此选项允许他人复制、分配、展示和演示您的作品，以及在作品的基础上衍生新作品。
+       但是仅限于非商业用途。
+   * - **禁止派生**
+     - 此选项允许他人复制、分配、展示和演示您的原创作品，不能在作品的基础上衍生新作品。
+       此选项不能与 **相同方式共享** 同时勾选。
+   * - **相同方式共享**
+     - 此选项允许他人仅在与您作品的相同许可下派生新作品。
+       此选项不能与 **禁止派生** 同时勾选。
 
-For more information, see the `Creative Commons website`_.
+更多信息请参阅 `Creative Commons website`_.
 
 .. _Creative Commons website: http://creativecommons.org/licenses
 
 .. _Set Course Content Licensing:
 
 *************************************
-Set Course Content Licensing
+设置课程内容授权
 *************************************
 
-When you create a new course, the license is set to **All Rights Reserved**.
-You can change the license for your course in the **Schedule & Details** page
-in Studio.
+当您创建了新课程，授权设置为 **版权所有** 。您可以在 **日程表与详细** 页面更改课程授权设置。
 
-The license options that you select apply to all course content, including
-videos, unless you explicitly specify different licensing options for your
-videos. Learners see the license at the bottom of all pages in the courseware.
+您选择的授权选项应用于所有课程内容，包括视频，除非您为视频指定了不同的授权方式。
+学生将在所有课件页面底部看到授权声明。
 
-#. From the **Settings** menu, select **Schedule & Details**.
+#. 在 **设置** 菜单中，选择 **日程表与详细** 。
 
-#. Scroll to the bottom of the page to view the **Course Content License**
-   section.
+#. 滚动到页面底部，查看 **课程内容授权** 部分。
 
    .. image:: ../../../shared/building_and_running_chapters/Images/course_license.png
       :alt: The Course Content License section of the Schedule & Details page.
       :width: 600
 
-#. Select the license option for your course.
+#. 为您的课程选择授权方式。
 
-  * To grant learners to right to share and use course content, select
-    **Creative Commons**. The Creative Commons options are displayed.
-   
+  * 为学生授予课程内容的共享权和使用权，选择 **CC协议** 。
+    CC协议选项出现。
+
      .. image:: ../../../shared/building_and_running_chapters/Images/creative-commons-license-course.png
       :alt: The Creative Commons license options.
       :width: 600
 
-     Select the :ref:`Creative Commons license options <Creative Commons
-     License>` to apply.
+     点击 :ref:`Creative Commons license options <Creative Commons
+     License>` 。
 
-  * To reserve all course content rights, select **All Rights Reserved**.
+  * 保留所有课程内容的权利，选择 **版权所有** 。
 
-4. Select **Save** at the bottom of the page to save your changes.
+4. 点击页面底部的 **保存** 。
 
 .. _Set Video Licensing:
 
 *************************************
-Set Video Licensing
+设置视频授权
 *************************************
 
-If you intend for a specific video to have a different license than the course
-as a whole, you must set the license in the :ref:`Video Advanced Options`.
+如果您想为视频指定与所有课程不同的授权方式，您必须在 :ref:`Video Advanced Options`
+中进行设置。
 
-For example, you might license for your course under Creative Commons, but use
-a video from another party that is copyrighted. In this case, you can set the
-license for that particular video to **All Rights Reserved**.
+例如，您可以将课程授权设置为CC协议，但使用第三方拥有版权的视频。
+这种情况下，您可以将特定视频授权方式设置为 **版权所有** 。
 
-If a video is to have the same license as the course as a whole, you do not
-need to set the license for the video.
+如果视频与课程所有内容的授权方式相同，您不需要更改视频授权设置。
 
 .. _Learners View of Licenses:
 
 *************************************
-Learners' View of Licenses
+学生视角查看授权许可
 *************************************
 
-When they view content in the **Courseware** tab, learners see the license that
-you set for the course at the bottom of the page.
+当学生在 **课件** 栏中查看内容时，他们将在页面底部看到您设置的版权信息。
 
 .. image:: ../../../shared/building_and_running_chapters/Images/learner_course_license.png
   :alt: A course unit page with a pointer to the license.
   :width: 600
 
-If the video has a different license than the course as a whole, learners see
-the license at the bottom right of the video player.
+如果视频和课程其他部分的授权方式不同，学生将在视频播放器底部看到版权信息。
 
 .. image:: ../../../shared/building_and_running_chapters/Images/learner_video_license.png
  :alt: A video with a pointer to the license.
  :width: 600
 
-For the course and for videos, if you choose **All Rights Reserved**, learners
-see **All Rights Reserved**; if you choose **Creative Commons** and select any
-allowed combination of options, learners see **Some Rights Reserved** and can
-click the link to see details.
+如果您为课程或视频选择 **版权所有** ，学生将看到 **版权所有** ；
+如果您选择 **CC协议** 并选择了允许项，学生将看到 **保留部分权利** 并可以查看详细内容。
