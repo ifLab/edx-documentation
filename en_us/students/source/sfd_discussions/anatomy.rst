@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 .. _Anatomy of edX Course Discussions:
 
@@ -127,3 +128,6 @@ covered later in this topic. 查看更多信息请点击以下链接:
 
 
 
+=======
+.. include:: ../../../shared/students/sfd_discussions/anatomy.rst
+>>>>>>> orig

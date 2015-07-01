@@ -2,26 +2,24 @@
 
 
 #############################
-Working with HTML Components
+如何使用HTML组件
 #############################
 
 ***********************
-HTML Component Overview
+HTML组件概述
 ***********************
 
-HTML, or HyperText Markup Language, is the standard markup language used to
-create web pages. Web browsers present HTML code in a more readable format.
+HTML，即超文本标记语言，是构建网页的基本标记语言。
+网页浏览器的功能就是将HTML编码以更可读的格式呈现。
 
-When students see text and images in your course, they are seeing HTML code
-that is formatted and presented by their browsers. For more information about
-HTML, see `Wikipedia <http://en.wikipedia.org/wiki/HTML>`_.
+也就是说，当学生看见您在课堂上发布的文本或图片时，实际上看的是浏览器格式化后呈现的HTML编码。
+更多关于HTML的信息请参考维基百科。 `Wikipedia <http://en.wikipedia.org/wiki/HTML>`_.
 
-HTML components are the basic building blocks of your course content. You use
-HTML components to add and format text, links, images, and more. You can choose
-to create HTML components directly in HTML code, or using a visual editor that
-hides the HTML code details, as described below.
+HTML组件是您创建课程内容时的主要元素。
+您可使用HTML组件添加并格式化文本、链接、图像等等。
+您可以选择直接用HTML编码创建HTML组件，或者使用可视化编辑器，该工具会隐藏HTML编码的细节，这在后面的教程中会提到。
 
-For more information, see the following topics:
+更多信息请参考以下章节：
 
 * :ref:`Options for Editing HTML Components`
 * :ref:`The Visual Editor`
@@ -33,211 +31,178 @@ For more information, see the following topics:
 * :ref:`Import LaTeX Code`
 
 .. note:: 
- Review :ref:`Developing Your Course Index` and :ref:`Best Practices for HTML
- Markup` before you start working with HTML components.
+ 在开始创建HTML组件之前，请先回顾 :ref:`Developing Your Course Index` 和 :ref:`Best Practices for HTML
+ Markup` 中的内容。
 
-To add an instant hangout to an HTML component, see :ref:`Google Instant
-Hangout`.
+若想给HTML组件添加快速搜索框，参考 :ref:`Google Instant
+Hangout` 。
 
 
 .. _Options for Editing HTML Components:
 
 ********************************************
-Options for Editing HTML Components
+HTML组件编辑选项
 ********************************************
 
-You can work with HTML in two ways:
+您可以用以下两种方法操作HTML：
 
 * :ref:`The Visual Editor`
   
-  With the visual editor you can create, edit, and format content in a word
-  processing-like interface, without using HTML code directly. With the visual
-  editor, you can more easily format your content, and add links and images.
-  The visual editor provides access to HTML code so you can make small changes
-  to formatting, if required. However, the HTML view in the visual editor does
-  not provide the detailed control you can get with the raw HTML editor, and
-  does not support custom formatting or scripts.
+  您可使用可视化编辑器，通过一个类似文字处理的界面创建、编辑或格式化课程内容，而不需要直接使用HTML编码。
+  使用该编辑器，您可以更方便地格式化内容，或给内容添加链接和图像。
+  同时，该编辑器支持HTML编码，因此可以在格式化的过程中作出细小的改变。
+  不过，视觉化编辑器与原始HTML编辑器不同，前者中的HTML无法进行细节控制，同时也不支持自定义格式化或自定义脚本。
 
 * :ref:`The Raw HTML Editor`
 
-  With the raw HTML Editor, you work directly with HTML code. If you need to
-  use custom formatting or scripts in your content, you should use the raw HTML
-  editor.
+  在该编辑器中，您可直接使用HTML编码进行操作，同时可使用自定义格式化以及脚本模式。
 
 
-Set the Editor for an HTML Component
+为HTML组件设置编辑器
 ************************************
 
-You set the editor for an HTML component in the **Settings** tab:
+您可在 **设置** 标签下为HTML组件设定一个编辑器：
 
 .. image:: ../../../shared/building_and_running_chapters/Images/set_html_editor.png
  :alt: The Editor selection drop-down list in the HTML Component Settings tab
 
-Select **Visual** or **Raw**. When you change the editor, you must click
-**Save** and re-open the component to begin using the new editor.
+选择 **可视化编辑器** 或 **原始编辑器** 。当更改编辑器时，需单击 **保存** ，然后重新打开组件才能开始使用新的编辑器。
 
 .. warning:: 
- If you work with content in the raw HTML editor, then switch to the visual
- editor, you may lose custom HTML that you created. Therefore, it is
- recommended that you start by using the visual editor, then switch to the raw
- HTML editor when you need to create custom HTML.
+ 如果您原本在使用原始HTML编辑器，然后突然切换到可视化编辑器，那么您将丢失已经创建的自定义HTML内容。
+ 因此，如果您需要创建自定义HTML内容，建议您先使用可视化编辑器，然后再切换到原始编辑器。
 
 .. _The Visual Editor:
 
 *****************************************
-The Visual Editor
+可视化编辑器
 *****************************************
 
-The visual editor provides a "what you see is what you get" (WYSIWYG) interface
-that allows you to format text by clicking the formatting buttons at the top of
-the editor.
+可视化编辑器的处理界面有“所见即所得”的功能。您可单击编辑器顶部的格式编辑按钮以格式化文本。
 
 .. image:: ../../../shared/building_and_running_chapters/Images/HTMLEditor.png
  :alt: Image of the HTML component editor
 
 .. note:: 
-  The visual editor is not available for :ref:`course handouts <Adding Course Updates and Handouts>`.
+  此编辑器不能用于 :ref:`course handouts <Adding Course Updates and Handouts>`.
 
-The following image shows call-outs for the editing options and is followed by
-descriptions.
+下图显示编辑器中的选项内容以及各项描述。
 
 .. image:: ../../../shared/building_and_running_chapters/Images/HTML_VisualView_Toolbar.png
   :alt: Image of the HTML editor, with call-outs for formatting buttons
 
-#. Choose a formatting style for the selected paragraph, such as heading 1,
-   heading 2, or paragraph.
-#. Choose a font family for selected text, such as Arial, Courier New, or Times
-   New Roman.
-#. Format selected text in bold. The editor inserts ``<strong>`` tags around
-   the selected text.
-#. Format selected text in italics. The editor inserts ``<em>`` tags around the
-   selected text.
-#. Underline the selected text. The editor encloses the selected text in
-   the tag ``<span style="text-decoration: underline;">``.
-#. Apply a color to the selected text. The editor encloses the selected text in
-   the tag ``<span style="color: color-hex-code;">``.
-#. Format selected text as a code block. The editor inserts ``<code>`` tags
-   around the selected text, which is then displayed in a monospace font.
-#. Create a bulleted list. The editor inserts ``<ul>`` tags
-   around the selected text, and encloses each paragraph in ``<li>`` tags.
-#. Create a numbered list. The editor inserts ``<ol>`` tags
-   around the selected text, and encloses each paragraph in ``<li>`` tags.
-#. Decrease and increased the indentation of the selected paragraph.
-#. Format the selected paragraph as a blockquote. The editor inserts
-   ``<blockquote>`` tags around the selected text, which is then displayed as a
-   separate paragraph in a monospace font.
-#. Create a link from the selected text. See :ref:`Add a Link in an HTML
-   Component`.
-#. Delete the current link.
-#. Insert an image at the cursor. See :ref:`Add an Image to an HTML Component`.
-#. Work with HTML source code, described below.
+#. 为选中的段落选择格式风格，如标题1、标题2，等等；
+#. 为选中的文本设置字体，如Arial, Courier New, Times New Roman等；
+#. 加粗；
+#. 斜体；
+#. 下划线；
+#. 文字颜色
+#. 以编码形式格式化文本；
+#. 插入项目符号；
+#. 插入项目编号；
+#. 添加/删除缩进符；
+#. 将选中段落设置为引用格式；
+#. 为选中的文本添加链接，详见“在HTML组件中添加链接”的内容；
+#. 删除当前链接；
+#. 在光标位置插入图像，详见 :ref:`Add an Image to an HTML Component`.
+#. 使用HTML源代码，详见后文。
 
 
 .. _Work with HTML code:
 
 
-Work with HTML code in the Visual editor
+在可视化编辑器中使用HTML代码
 *****************************************
 
-To work with HTML source code for the content you create in the visual editor,
-click **HTML**  in the editor toolbar. The HTML source code editor opens:
+如需使用您在可视化编辑器中的课程源代码，在编辑器工具栏中单击 **HTML** ，会出现以下界面：
 
 .. image:: ../../../shared/building_and_running_chapters/Images/HTML_source_code.png
  :alt: Image of the HTML source code editor
 
-Edit the HTML code as needed. 
+编辑即可。
 
-You should not add custom styles or scripts in the HTML code view in the
-visual editor. Use the raw HTML editor instead.
+请不要给编辑器中的HTML视图添加自定义风格或脚本。如果真的需要，请切换到原始HTML编辑器中操作。
 
-Click **OK** to close the source code editor and apply your changes in the
-visual editor. The visual editor then attempts to ensure the underlying HTML
-code is valid; for example, if you do not close a paragraph tag, the editor
-will close it for you.
+单击 **确定** 关闭源代码编辑器，在可视化编辑器中应用更改后的内容。
+可视化编辑器会尽量确保隐藏的HTML代码是有效的，比如，如果您忘记输入段落标记中的右括号，编辑器会自动帮您输入。
 
 .. warning:: 
- Clicking **OK** in the source code editor does not save your changes to the
- HTML component.  You return to the component editor, where your changes are
- applied.  You must then also click **Save** to save your changes and close the
- component. If you click **Cancel**, the changes you made in the HTML source
- code are lost.
+ 在源代码编辑器中单击 **确定** 不会保存您对HTML组件所作的更改。
+ 您需要回到组件编辑器，然后在组件编辑器中应用更改后的内容，并且单击 **保存** 以保存更改，然后再关闭组件。
+ 如果单击 **取消** ，则对编辑器中HTML源代码所做的更改将丢失。
 
 .. _The Raw HTML Editor:
 
 *****************************
-The Raw HTML Editor
+原始HTML编辑器
 *****************************
 
-When you select the raw editor for the HTML component, you edit your content in
-a text editor:
+如果您选择原始编辑器作为HTML组件的编辑器时，您将在一个文本编辑器中编辑内容：
 
 .. image:: ../../../shared/building_and_running_chapters/Images/raw_html_editor.png
  :alt: The raw HTML editor
 
-You must enter valid HTML. The raw HTML editor does not validate your HTML code.
-Therefore you should thoroughly test the HTML content in your course.
+您输入的HTML语言必须是有效的。原始HTML编辑器不会自动调整HTML代码。因此在课程中您必须反复调试HTML的内容。
 
 
 .. _HTML Component Templates:
 
 *****************************
-HTML Component Templates
+HTML组件模板
 *****************************
 
-When you create a new HTML component, you select from a list of templates:
+当创建新的HTML组件时，您需要选择组件模板：
 
 .. image:: ../../../shared/building_and_running_chapters/Images/html_templates.png
  :alt: The list of HTML Component templates
 
-The raw HTML template is set to use the raw HTML editor. All other templates
-use the visual editor.
+“原始HTML”模板默认为使用原始HTML编辑器，其他模板使用可视化编辑器。
 
-For any HTML component, you can change the editor, regardless of the template
-used to create the component. See `Set the Editor for an HTML Component`_.
+您也可以自主更改所有模板的编辑器。详见 `Set the Editor for an HTML Component`_.
 
 
 
 .. _Create an HTML Component:
 
 *****************************
-Create an HTML Component
+创建HTML组件
 *****************************
 
-To create an HTML component:
+如何创建HTML组件：
 
-1. Under **Add New Component**, click **HTML**.
+1.  在 **添加新组件** 菜单下，单击 **html** 。
 
   .. image:: ../../../shared/building_and_running_chapters/Images/NewComponent_HTML.png
    :alt: Image of adding a new HTML component
 
-2. Select the template. 
+2. 选择模板
 
-   The rest of these instructions assume you selected
-   **Text**, which creates an empty component with the visual editor selected.
+   接下来的教程假设您选择的是 **文本** 模板。选择后，会在编辑器中创建一个空组件。
 
-   An empty component appears at the bottom of the unit.
+
+   如图，单元下方出现了一个空组件：
 
   .. image:: ../../../shared/building_and_running_chapters/Images/HTMLComponent_Edit.png
    :alt: Image of an empty HTML component
 
-3. In the component, click **Edit**.
+3. 在该组件中，单击 **编辑** 。
 
-   The HTML component opens in the visual editor.
+   可视化编辑器打开的HTML组件：
 
   .. image:: ../../../shared/building_and_running_chapters/Images/HTMLEditor_empty.png
    :alt: Image of the HTML component editor
 
-4. Enter and format your content. You can :ref:`Work with HTML code` if needed.
+4. 输入内容并设置好格式。如有需要，请参考 :ref:`Work with HTML code` 。
 
-5. Enter a display name (the name that you want students to see). To do this,
-   click **Settings** in the upper-right corner of the component editor, and
-   then enter text in the **Display Name** field.
+5. 输入HTML的展示名（即想让学生看见的名称）。
+   单击右上角的 **设置** 选项，在 **展示名** 字段输入内容。
+   
 
-   To return to the text editor, click **Editor** in the upper-right corner.
+   再单击右上角的 **编辑** 返回组件界面。
 
-6. Click **Save** to save the HTML component.
+6. 单击 **保存** 以储存HTML组件。
 
-When using the visual editor, you can also:
+您还可以使用可视化编辑器：
 
 * :ref:`Add a Link in an HTML Component`
 * :ref:`Add an Image to an HTML Component`
@@ -246,16 +211,15 @@ When using the visual editor, you can also:
 .. _Add a Link in an HTML Component:
 
 ***********************************
-Add a Link in an HTML Component
+在HTML组件中添加链接
 ***********************************
 
-When using the visual editor, to add a link to a website, course unit, or file
-in an HTML component, you work with the **Insert link** dialog box.
+如使用可视化编辑器在HTML组件中添加指向网站、课程单元或文件的链接，您需要打开 **插入链接** 对话框。
 
 .. image:: ../../../shared/building_and_running_chapters/Images/HTML_Insert-EditLink_DBox.png
  :alt: Image of the Insert link dialog box
 
-You can:
+您可以：
 
 * :ref:`Add a Link to a Website`
 * :ref:`Add a Link to a Course Unit`
@@ -263,255 +227,218 @@ You can:
 
 .. _Add a Link to a Website:
 
-Add a Link to a Website
+添加网页链接
 ***********************************
 
-To add a link to a website:
+如何添加网页链接：
 
-#. Select the text that you want to make into the link.
+#. 选中您想要添加链接的文本
 
-#. Click the link icon in the toolbar.
+#. 单击工具栏中的“链接”图标
 
-#. In the **Insert link** dialog box, enter the URL of the website that you
-   want in the **URL** field.
+#. 打开“插入链接”对话框，在“URL”字段后键入指向网页的URL。
 
    .. image:: ../../../shared/building_and_running_chapters/Images/HTML_Insert-EditLink_Website.png
     :alt: Image of the Insert link dialog box
 
-#. If you want the link to open in a new window, click the drop-down arrow next
-   to the **Target** field, and then select **New Window**. If not, you can
-   leave the default value.
+#. 如果想在新窗口中打开链接，单击“目标”字段后的下拉箭头，选择“新窗口”。如不需要，保留默认设置即可。
 
-#. Click **OK**.
+#. 单击“确定”。
 
-#. Save the HTML component.
+#. 保存HTML组件。.
 
-#. To test the link, click **View Live Version** or **Preview**. When the unit
-   opens in the LMS, click the linked text and verify that the correct URL
-   opens.
+#. 点击 **查看在线版本** 或 **预览** 测试链接。 
+   单元在LMS中打开以后，点击链接查看URL是否正确。
 
-   Note that if your link is to another HTML component in the course, the unit
-   of that destination component must be published for the link to work.
+
+   注意如果您的链接指向课程中的另一个HTML组件，所指向的单元必须为已发布状态，链接才有效。
+  
 
 
 .. _Add a Link to a Course Unit:
 
-Add a Link to a Course Unit
+添加课程单元链接
 ***********************************
 
-You can add a link to a course unit in an HTML component.
+您可在HTML组件中添加课程链接：
 
-#. Obtain the unit identifier of the unit you're linking to. To do this, open
-   the unit page in Studio, and copy the unit ID from the **Unit Identifier**
-   field under **Unit Location** in the right pane.
+#. 获取链接目标单元的单元标识符。在工作室中打开“单元”界面，在面板右侧打开“单元位置”，复制“单元标识符”字段后的单元ID。
    
    .. image:: ../../../shared/building_and_running_chapters/Images/UnitIdentifier.png
     :alt: Image of the unit page with the unit identifier circled
 
-#. Open the HTML component where you want to add the link.
+#. 打开您想要添加链接的HTML组件。
 
-#. Select the text that you want to make into the link.
+#. 选中想要添加链接的文本。
 
-#. Click the link icon in the toolbar.
+#. 单击工具栏中的“链接”图标。
 
-#. In the **Insert link** dialog box, enter the following in the **URL** field.
+#. 打开“插入链接”对话框，在“URL”字段后输入以下内容：
 
    ``/jump_to_id/<unit identifier>``
 
-   Make sure to replace <unit identifier> (including the brackets) with the
-   unit identifier that you copied in step 1, and make sure to include both
-   forward slashes (/).
+   以上代码中的<unit identifier>即第二步中复制的单元ID（包括角括号），注意，所有“/”字符都要保留。
 
    .. image:: ../../../shared/building_and_running_chapters/Images/HTML_Insert-EditLink_CourseUnit.png
     :alt: Image of the Insert link dialog box with a link to a unit identifier
 
   .. caution::
-    Ensure you use ``/jump_to_id/<unit identifier>`` as the URL value. Do not
-    use the URL of the unit that you see in the browser address bar.  If you do
-    not use ``/jump_to_id/<unit identifier>``, the link will be broken if you
-    export then import the course.
+    确保您的URL值为 ``/jump_to_id/<unit identifier>`` 格式。
+    不要使用浏览器地址栏中的地址。
+    如果您没有使用 ``/jump_to_id/<unit identifier>`` 格式，您在导入和导出操作时链接将会失效。
 
-6. If you want the link to open in a new window, click the drop-down arrow next
-   to the **Target** field, and then select **New Window**. If not, you can
-   leave the default value.
+6. 如果想在新窗口中打开链接，单击“目标”字段后的下拉箭头，选择“新窗口”。如不需要，保留默认设置即可。
 
-#. Click **Insert**.
+#. 单击“确定”。
 
-#. Save the HTML component and test the link.
+#. 保存HTML组件，调试链接。
 
 .. _Add a Link to a File:
 
 
-Add a Link to a File
+添加文件链接
 ***********************************
 
-You can add a link in an HTML component to any file that is uploaded for the
-course. For more information about uploading files, see :ref:`Add Files to a
+您可以添加任何已上传至课程中的文件链接。
+更多细节请参考 :ref:`Add Files to a
 Course`.
 
 .. tip:: 
- When adding links to files, open the HTML component and the **Files &
- Uploads** page in separate browser windows. You can then more quickly copy and
- paste file URLs.
+ 您在HTML组件中添加的链接可以指向任何已经上传的课程文件。
+ 更多关于上传文件的信息请参考“添加课程文件”一节的内容。
 
-#. On the **Files & Uploads** page, copy the **Studio** URL of the file.
+#. 在“文件与上传”界面，复制文件的“嵌入URL”。
 
   .. image:: ../../../shared/building_and_running_chapters/Images/HTML_Link_File.png
    :alt: Image of Files and Uploads page with the Studio URL field circled 
   
   .. note:: 
-   You must use the **Studio** URL to link to the file, not the **Web** URL.
+   链接到文件必须使用文件的“嵌入URL”，而非“外部URL”。
 
-2. In the HTML component where you want to add the link, select the text that
-   you want to make into the link.
+2. 选择想要添加链接的文本。
 
-#. Click the link icon in the toolbar.
+#. 单击工具栏中的“链接”图标。
 
-#. In the **Insert link** dialog box, enter the Studio URL for the file in the
-   **URL** field.
+#. 打开“插入链接”对话框，在“URL”字段后输入以下内容：
 
    ``/static/{FileName}.{type}``
 
-   Make sure to include both forward slashes (/).
+   记住，保留所有“/”字符。
 
    .. image:: ../../../shared/building_and_running_chapters/Images/HTML_Insert-EditLink_File.png
     :alt: Image of the Insert link dialog box with a link to a file
 
-#. If you want the link to open in a new window, click the drop-down arrow next
-   to the **Target** field, and then select **New Window**. If not, you can
-   leave the default value.
+#. 如果想在新窗口中打开链接，单击“目标”字段后的下拉箭头，选择“新窗口”。如不需要，保留默认设置即可。
 
-#. Click **Insert**.
+#. 单击“插入”。
 
-#. Save the HTML component and test the link.
+#. 保存HTML组件，调试链接。
 
 .. _Add an Image to an HTML Component:
 
 ***********************************
-Add an Image to an HTML Component
+在HTML组件中添加图像
 ***********************************
 
-When using the visual editor, you can add any image that you have uploaded for
-the course to an HTML component. For more information about uploading images,
-see :ref:`Add Files to a Course`.
+使用可视化编辑器时，您可以给HTML组件添加已经上传的课程图像。
+更多关于上传图像的信息请参见 :ref:`Add Files to a Course`.
 
-Review :ref:`Best Practices for Describing Images` before you add images to
-HTML components.
+在给HTML组件添加图像之前，请先回顾 :ref:`Best Practices for Describing Images` 一节的内容。
 
 .. note:: 
- Ensure that you obtain copyright permissions for images you use in
- your course, and that you cite sources appropriately.
+ 确保您拥有引用图片的使用权，并正确引用图片。
 
-To add an image, you'll need the URL of the image that you uploaded to the
-course. You'll then create a link to the image in the HTML component.
+要添加图像，首先需要您上传图像文件的URL，然后才能添加图像链接。
 
 .. tip:: 
- When adding images, open the HTML component and the **Files &
- Uploads** page in separate browser windows. You can then more quickly copy and
- paste image URLs.
+ 当您添加图片时，打开HTML组件和 **文件与上传** 页面。您可以更高效地操作。
 
-#. On the **Files & Uploads** page, copy the **Studio** URL of the image that
-   you want. For an example illustration, see :ref:`Add a Link to a File`.
+
+#. 在 **文件与上传** 页面，复制图片的URL。具体事例请参照  :ref:`Add a Link to a File`.
 
   .. note:: 
-   You must use the **Studio** URL to add the image, not the **Web** URL.
+   添加链接时只能使用文件的“嵌入URL”，而非“外部URL”。
 
-2. In the HTML component where you want to add the link, click the image icon
-   in the toolbar.
+2. 在HTML组件中点击需要添加链接的图片按钮。
 
-#. In the **Insert image** dialog box, enter the Studio URL for the file in the
-   **URL** field.
+#.  打开“插入链接”对话框，在“URL”字段后输入以下内容：
 
    ``/static/{FileName}.{type}``
 
-   Make sure to include both forward slashes (/).
+   记得保留所有“/”字符。
 
    .. image:: ../../../shared/building_and_running_chapters/Images/HTML_Insert-Edit_Image.png
     :alt: Image of the Insert image dialog box with a reference to a file
 
-4. Enter alternative text in the **Image description** field. This text becomes
-   the value of the ``alt`` attribute in HTML and is required for your course
-   to be fully accessible. See :ref:`Best Practices for Describing Images` for
-   more information.
+4. 在 **图片描述** 中填入内容。
+   此内容将是``alt``属性的值。必须输入此内容课程才有完全访问性。
+   更多信息请参考 :ref:`Best Practices for Describing Images` for
 
-#. As needed, customize the image dimensions. Keep **Constrain proportions**
-   checked to ensure the image keeps the same width and height proportions. 
+#. 您可以自定义图像尺寸。在“固定比例”项后挑勾，以确保图片的长宽比例为固定值。
 
-   With **Constrain proportions** selected, you only change one dimension. When
-   you tab out of the field, the other dimension changes to a value that
-   maintains the same image proportions.
+   选择 **固定比例** 之后，您只能改变长或宽中的一项。另一项将按相同比例改变。
 
-#. To change the spacing and border of the image, click the **Advanced** tab. 
+
+#. 如要改变图片间距和边界，单击“高级”选项卡
 
    .. image:: ../../../shared/building_and_running_chapters/Images/HTML_Insert-Edit_Image_Advanced.png
     :alt: Image of the Insert image dialog box Advanced tab
 
-#. Enter the **Vertical space**, **Horizontal space**, and **Border** as
-   needed. The values you enter are automatically added to the **Style** field.
+#. 键入“垂直间距”、“水平间距”及“边界”。您输入的数值会自动添加到“风格”字段中。
 
-#. Click **OK** to insert the image in the HTML component.
+#. 单击“确认”，完成图片在HTML组件中的插入。
 
-#. Save the HTML component and test the image.
+#. 保存HTML组件，调试图片链接。
 
 
 .. _Import LaTeX Code:
 
 ****************************************
-Import LaTeX Code into an HTML Component
+在HTML组件中输入拉泰勒编码
 ****************************************
 
-You can import LaTeX code into an HTML component. You might do this, for
-example, if you want to create "beautiful math" such as the following.
+您可在HTML组件中通过输入拉泰勒编码以创建“美观的数学公式”，如图：
 
 .. image:: ../../../shared/building_and_running_chapters/Images/HTML_LaTeX_LMS.png
  :alt: Image of math formulas created with LaTeX
 
 .. warning:: 
- The LaTeX processor that Studio uses to convert LaTeX code to XML is a third-
- party tool. We recommend that you use this feature with caution. If you do use
- it, make sure to work with your Program Manager.
+ EDX工作室使用拉泰勒编码处理器将拉泰勒编码转换成可扩展标示语言，该处理器是第三方工具，建议您在使用前务必小心谨慎。如果您确实真的需要使用，请与项目经理取得联系。
 
-This feature is not enabled by default. To enable it, you have to change the
-advanced settings in your course.
+本功能系统并不默认激活，要激活该功能，需更改课程的高级设置。
 
-To create an HTML component that contains LaTeX code:
+如何创建包含拉泰勒编码的HTML组件：
 
-#. Enable the policy key in your course.
+#. 激活课程的构建函式
 
-   #. In Studio, click **Settings**, and then click **Advanced Settings**.
-   #. In the field for the **Enable LaTeX Compiler** policy key, change
-      **false** to **true**.
-   #. At the bottom of the page, click **Save Changes**.
+   #. 在Studio中，单击“设置”>“高级设置”
+   #. 在 **Enable LaTeX Compiler** 值中 ，将勾选 **是** 。
+   #. 在页面底部，单击“保存更改”。
 
-#. In the unit where you want to create the component, click **html** under
-   **Add New Component**, and then click **E-text Written in LaTeX**. The new
-   component is added to the unit.
+#. 在您希望创建HTML组件的单元中，单击“添加新组件”菜单下的“html”，然后单击“E-text Written in LaTeX”，新组件就会添加到单元中。
 
-#. Click **Edit** to open the new component. The component editor opens.
+#. 单击“编辑”，打开新组件编辑器。
 
   .. image:: ../../../shared/building_and_running_chapters/Images/latex_component.png
    :alt: Image of the HTML component editor with the LaTeX compiler.
 
-4. In the component editor, click **Launch Latex Source Compiler**. The LaTeX
-   editor opens.
+4. 在编辑器中，单击“Launch Latex Source Complier.”打开拉泰勒编码编辑器。
 
    .. image:: ../../../shared/building_and_running_chapters/Images/HTML_LaTeXEditor.png
     :alt: Image of the HTML component editor with the LaTeX compiler
 
-#. Write LaTeX code as needed. You can also upload a LaTeX file into the editor
-   from your computer by clicking **Upload** in the bottom right corner.
+#. 写入需要的拉泰勒编码。您可点击右下角的“上传”按钮从电脑中上传拉泰勒编码文件。
 
-#. When you have written or uploaded the LaTeX code you need, click **Save &
-   Compile to edX XML** in the lower-left corner.
+#. 完成上一步骤后，单击左下角的“Save & Compile to edX XML”以保存。
 
-   The component editor closes. You can see the way your LaTeX content looks.
+
+   关闭编辑器。您现在可以看见您的拉泰勒编码内容。
 
    .. image:: ../../../shared/building_and_running_chapters/Images/HTML_LaTeX_CompEditor.png
     :alt: Image of the LaTeX component
 
-#. On the unit page, click **Preview** to verify that your content looks the
-   way you want it to in the LMS.
+#. 在单元界面中，单击“预览”确认内容是否与您将上传到LMS的内容形式一致。
 
-   If you see errors, go back to the unit page. Click **Edit** to open the
-   component again, and then click **Launch Latex Source Compiler** in the
-   lower-left corner of the component editor to edit the LaTeX code.
+
+   如果发现错误，回到单元界面，单击“编辑”再次打开组件，单击组件编辑器左下角的 **Launch Latex Source Complier** 以再次编辑拉泰勒编码。
+

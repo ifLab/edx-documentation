@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .. _Course Discussions:
 
 ####################
@@ -17,3 +18,6 @@ Discussions` .
 
 * :ref:`Provide Feedback`
 
+=======
+.. include:: ../../../shared/students/sfd_discussions/discussions.rst
+>>>>>>> orig

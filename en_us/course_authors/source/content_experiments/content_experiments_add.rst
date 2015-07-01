@@ -1,13 +1,12 @@
 .. _Add Content Experiments to Your Course:
 
 #########################################
-Add Content Experiments to Your Course
+为您的课程添加内容实验
 #########################################
 
-After you :ref:`enable content experiments <Enable Content Experiments>` and
+在您 :ref:`enable content experiments <Enable Content Experiments>` 以及
 :ref:`set up group configurations in Studio <Set up Group Configurations in edX
-Studio>`, you
-can add content experiments to your course. See:
+Studio>` 之后，您可以为您的课程添加内容实验，请参阅：
 
 * :ref:`Add a Content Experiment in Studio`
 * :ref:`Add a Content Experiment in OLX`
@@ -15,134 +14,116 @@ can add content experiments to your course. See:
 .. _Add a Content Experiment in Studio:
 
 ********************************************
-Add a Content Experiment in Studio
+在Studio添加内容实验
 ********************************************
 
-You can add a content experiment in a unit or container page. In Studio, you
-create and view content for all groups in the content experiment in a container
-page for the experiment, as shown in `Create Content for Groups in the Content
-Experiment`_.
+您可以在单元页面或容器页面中添加内容实验。
+在Studio中，您可以创建并查看某个容器页面中所有学习组的实验内容。
+请参阅  `Create Content for Groups in the Content
+Experiment`_ 。
 
-When a student views the unit with the content experiment, she has no
-indication there is a content experiment in the unit, and the content
-experiment display name is not shown. She sees only the content that you
-configure for the group she is assigned to. To the student, the unit with the
-content experiment is no different than any other unit.
+当学生查看带有内容实验的课程单元时，不会察觉到正在进行的内容实验。
+她看不见实验名称，只能看见您给他所在的实验小组分配的内容。
+对于学生而言，带有内容实验的课程单元与其他课程单元无异。
 
-To configure a content experiment in Studio, you:
+在Studio中配置内容实验，您需要：
 
 #. `Create the content experiment`_.
 #. `Create content for groups in the content experiment`_.
    
-After you configure a content experiment, you can change its group
-configuration. See `Change the Group Configuration for a Content Experiment`_.
+成功创建内容实验后，您可以更改分组模式。
+详情请参阅 `Change the Group Configuration for a Content Experiment`_ 。
 
 ===============================
-Create the Content Experiment
+创建内容实验
 ===============================
 
-#. In the unit page, under **Add New Component**, click **Advanced**.
+#. 您需要在单元页面中的 **添加新组件** 目录下点击 **高级** 。
 
-#. Select **Content Experiment**.
+#. 选择 **内容实验** 。
    
-   A new content experiment is added to the unit:
+   新的内容实验已经添加到此单元中：
 
    .. image:: ../../../shared/building_and_running_chapters/Images/content_experiment_block.png
     :width: 800
     :alt: The content experiment component in a unit page
 
-   You can work with the content experiment as you can any other component.
-   See :ref:`Developing Course Components` for more information.
+   对该模块的操作与其他课程模块无异。详情请参考 :ref:`Developing Course Components` 页面。
 
-#. Click either **Select a Group Configuration** or **Edit** to open the content
-   experiment component.
+#. 单击 **选择分组模式** 或 **编辑** 均可打开内容实验模块。
 
    .. image:: ../../../shared/building_and_running_chapters/Images/content_experiment_editor.png
     :alt: The content experiment editor
 
-#. Next to **Group Configuration**, select a group configuration.
+#. 在 **分组模式** 旁边的的下拉选项中，选择一个分组模式。
 
-#. In the **Display Name** field, enter the name that the component will use in Studio. The
-   display name is only used in Studio; students do not see this value.
+#. 在 **显示名** 字段下，键入本模块在Studio中显示的名称。该名称只在Studio中可见，对学生端不可见。
 
-#. Click **Save**.
+#. 单击 **保存** 。
 
-The content experiment is displayed as a component that contains other
-components. See :ref:`Components that Contain Other Components` for more
-information.
+内容实验显示为一个大模块，其中包含了许多其他小模块。更多信息请参见
+:ref:`Components that Contain Other Components` 章节中的内容。
 
-.. note::  You cannot duplicate a content experiment.
+.. note::  内容实验模块无法复制。
 
-You can now create content for the groups in the experiment.
+现在，您可以为实验小组添加实验内容了。
 
 =====================================================
-Create Content for Groups in the Content Experiment
+为实验小组添加实验内容
 =====================================================
    
-After you select a group configuration, in the content experiment component,
-click **View**.
+在内容实验模块中选择一个分组模式，单击 **查看** 。
 
-The content experiment page that opens automatically includes a container for
-each group that is defined in the group configuration you selected. For
-example, if you select a group configuration that defines Group A and Group B,
-you see the following page:
+自动弹出的内容实验页面包含了一个容器页面，该页面下又涵盖了您选择的分组模式以及该模式中的所有实验组。
+例如，您选择的分组模式包含A组和B组，则您会看见如下页面：
 
 .. image:: ../../../shared/building_and_running_chapters/Images/content_experiment_container.png
  :alt: The content experiment page with two groups
 
-You add content for both groups as needed, just as you would add content to any
-container page. See :ref:`Components that Contain Other Components` for more
-information.
+您可以给这两个小组选择添加实验内容，具体操作方法与其他容器页面相同。
+更多信息请参见 :ref:`Components that Contain Other Components` 章节中的内容。
 
-For example, you can add an HTML component and a video to Group A:
+例如，您可以给A组添加一个HTML模块或视频模块：
 
 .. image:: ../../../shared/building_and_running_chapters/Images/a_b_test_child_expanded.png
  :alt: Image of an expanded A/B test component
 
 .. note:: 
-  It is valid, and can be useful, to have no content for a group in the
-  experiment.  For example, if one group has a video and another group has no
-  content, you can analyze the effect of the video on student performance.
+  有时候，预留一个没有内容的空组对于实验来说非常有用。
+  比如，如果一个小组正在看视频，另一个小组没有内容，您就可以根据学生表现来分析视频的效果。
 
 
 ========================================================
-Change the Group Configuration for a Content Experiment
+为实现内容实验更改分组模式
 ========================================================
 
-You can change the group configuration for a content experiment. When you
-change the group configuration, you must add components to any new groups that you create. You
-can use the components from the previous groups, as well as create new
-components.
+您可以根据某个内容实验的需求更改分组模式。当分组模式更改后，您需要给新创建的小组添加模块或组件。
+您可以沿用原来的模块，也可以创建新模块。
 
 .. warning::
-  Changing the group configuration of a student-visible experiment will affect
-  the experiment data.
+  如果某个实验对学生可见，更改该实验的分组模式会影响实验数据。
 
-To change the group configuration:
+如何改变分组模式：
 
-#. Open the unit page of the unit that contains the content experiment.
+#. 打开该内容实验的单元页面。
 
-#. In the content experiment component, click **Edit**.
+#. 在内容实验模块中，单击 **编辑** 。
 
    .. image:: ../../../shared/building_and_running_chapters/Images/content_experiment_editor_group2.png
     :alt: The content experiment editor with a group configuration selected
 
-#. Select a different group configuration.
+#. 选择您需要的分组模式。
 
-#. Click **Save**.
+#. 单击 **保存** 。
 
-#. You must now add components to the new groups in the experiment. Click
-   **View** to open the content experiment.
+#. 现在您需要为新创建的实验组添加模块或组件。单击 **查看** 打开内容实验页面。
 
-   You see that groups for the new configuration are empty, and any components
-   that you had added to groups in the previous configuration are now moved to
-   a section called **Inactive Groups**.
+   您会发现，新创建的分组模式下空空如也，您在之前的分组模式中添加的模块和组件都被转移到了 **非活动组** 区域中。
 
    .. image:: ../../../shared/building_and_running_chapters/Images/inactive_groups.png
     :alt: Components in inactive groups
 
-#. Drag and drop components from the **Inactive Groups** section into the new
-   groups. You can also create new components in the new groups.
+#. 您可以将 **非活动组** 中的内容拖拽到新分组中，也可以在新分组中创建新的内容。
 
 .. import OLX-content experiment doc that's shared in OLX guide.
 

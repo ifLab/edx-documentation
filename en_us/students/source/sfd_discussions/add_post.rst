@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 .. _Add or Edit a Contribution:
 
@@ -184,3 +185,6 @@
 
  - 点击 **删除** 之后点击弹出的确认框中点击 **确认** 来完成删除。
 
+=======
+.. include:: ../../../shared/students/sfd_discussions/add_post.rst
+>>>>>>> orig

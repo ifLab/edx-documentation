@@ -1,34 +1,26 @@
 .. _Staff Debug Info:
 
 ############################
-Staff Debug Info
+员工调试信息
 ############################
 
-The edX system keeps track of students' progress through a course -- recording
-when the student watches videos, responds to problems, and so on. If you are
-a staff member on a course, some of that data is visible to you for debugging purposes. Under every problem is a **Staff Debug Info** button: clicking this button opens a popup with metadata about the problem.
+edX平台会在课程中跟踪学生的进展状态——记录学生何时观看了视频，何时回答了问题，等等。
+如果您是课程工作人员，可以查看部分这类信息以便调试系统、修复漏洞。
+每个问题的下方有一个 **员工调试信息** 按钮，单击后会弹出该问题的元数据信息。
 
-None of this information should be necessary for day-to-day usage of edX,
-but for the sake of clarity, some of these fields are documented here:
+这些信息在edX日常使用中并不经常用到，但是为了阐述清楚，现列举部分字段：
 
 ``is_released``
-  Indicates whether the problem is visible to students.
+  表示该问题是否对学生可见。
 ``location``
-  An internal unique identifier that corresponds to this problem. If you
-  are having trouble with a problem, and need assistance from the edX support
-  team, including this value will make it easier for them to track down the
-  issue you're having with the problem.
+  该问题唯一的永久标识符。如果您在回答问题的过程中需要edX支援团队的帮助，这个值能帮助他们追踪问题所在的位置。
 ``markdown``
-  The text of the problem, in Markdown format. This is often written using
-  Studio.
+  问题的内容。格式为Markdown。通常在Studio中可以编辑。
 ``display_name``
-  The name of the problem, as shown to the student.
+  问题的名称。对学生可见。
 ``max_attempts``
-  The maximum number of times that a student can attempt to answer the problem
-  correctly.
+  学生最多尝试了多少次以后才正确回答问题。
 ``attempts``
-  The number of times that the currently logged in student has attempted to
-  answer the problem correctly, so far. Every time this student attempts to answer
-  this question, this number will go up, until it reaches ``max_attempts``.
+  目前登陆的学生为回答问题已经尝试了多少次。学生每尝试一次，该值就随着增加，最终达到 ``max_attempts`` 的值。
 
 

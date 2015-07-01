@@ -1,210 +1,190 @@
 .. _Developing Course Components:
 
 ###################################
-Developing Course Components
+创建课程组件
 ###################################
 
-This chapter describes how you develop course components. See:
+本章主要描述如何创建课程组件：
 
-* `What is a Component?`_
+* `What is a Component`_
 * `Add a Component`_
 * `Edit a Component`_
 * `Duplicate a Component`_
 * `Delete a Component`_
 * `Components that Contain Other Components`_
 
-For more information about specific component types, see:
+要了解更多有关特殊组件类型的信息，请参考以下章节内容：
 
 * :ref:`Creating Course Content Index`
 * :ref:`Exercises and Tools Index`
 
+.. _What is a Component:
+
 ********************
-What is a Component?
+什么是组件
 ********************
 
-A component is the part of a unit that contains your actual course content. A
-unit can contain one or more components.
+课程组件是单元的组成部分，包括了您最具体的课程内容。一个单元可能包含一个或多个课程组件。
 
-A student can view the names of all components in a unit by moving the cursor
-over each unit in the learning sequence at the top of the page.
+学生能看见某个单元下所有元素的名称，只需将鼠标停留在课程进度条的某个单元上即可。
 
 .. image:: ../../../shared/building_and_running_chapters/Images/ComponentNames_CourseRibbon.png
  :alt: Image of the component list for a unit
 
-By default, Studio includes four types of components.
+系统默认的课程组件有以下四种：
 
-* **Discussion components** provide discussion spaces in the body of your
-  course. Students can explore ideas about a lesson with their peers in a
-  discussion space.
-* **HTML components** allow you to add text, images, and some types of learning
-  tools to your course. Content in HTML components is formatted as HTML.
-* **Problem components** enable you to add many different types of exercises
-  and problems to you course, from simple multiple choice problems to complex
-  circuit schematic exercises.
-* **Video components** contain the videos that you want to include in your
-  course.
+* **讨论组件** 该组件在为您的课程提供讨论空间，以便学生就某节课交换意见。
+* **HTML组件** 该组件是您能够给课程添加文本、图像以及其他不同类型的学习工具。该板块中的内容默认为HTML格式。
+* **问答组件** 该组件方便您布置各种练习题或进行课堂提问，从简单的单项选择，到复杂的电路原理图的练习均可。
+* **视频组件** 该组件包括您在课程中要播放的视频。
 
 .. _Add a Component:
 
 ********************
-Add a Component
+添加组件
 ********************
 
-To add a component to the unit, click the component type that you want under
-**Add New Component**.
+在 **添加新组件** 选项下单击您想添加的组件类型以添加组件。
 
 .. image:: ../../../shared/building_and_running_chapters/Images/AddNewComponent.png
   :alt: Image of adding a new component
 
-For more information, see the documentation for the specific component type
-that you want:
+更多信息请参考相应组件的软件文档：
 
 - :ref:`Working with Discussion Components`
 - :ref:`Working with HTML Components`
 - :ref:`Working with Problem Components`
 - :ref:`Working with Video Components`
   
-After you add a component, it is not visible to students until you
-:ref:`publish the unit<Publish a Unit>`.
+添加组件以后，您必须
+:ref:`publish the unit<Publish a Unit>` ，学生才能看到。
 
 .. _Edit a Component:
 
 ********************
-Edit a Component
+编辑组件
 ********************
 
-To edit a component, click **Edit**:
+点击 **编辑** 以编辑组件。
 
 .. image:: ../../../shared/building_and_running_chapters/Images/unit-edit.png
   :alt: Image of a unit with Edit icon circled
 
-Then follow instructions for the type of component you are editing.
+按照指导编辑组件。
 
-After you edit a component, the changes are not visible to students until you
-:ref:`publish the unit<Publish a Unit>`.
+编辑组件之后，您需要
+:ref:`publish the unit<Publish a Unit>` 让学生看到组件。
 
 =====================================
-Set the Display Name for a Component
+设置组件的显示名
 =====================================
 
-Each component has a display name that shows in the component header when you
-can edit the component. The display name also shows to students when they move
-the cursor over the unit icon in the learning sequence.
+所有组件都有显示名，当编辑组件时，显示名会出现在标题栏。
+当学生将鼠标指针停留在某个单元标记上时，也能看见组件的显示名。
 
-To set the display name for a component:
+如何设置组件的显示名：
 
-#. Edit the component.
-#. Click **Settings**.
-#. Edit the **Display Name** field.
+#. 编辑组件
+#. 单击 **设置**
+#. 在 **显示名** 一栏输入名称内容
 
   .. image:: ../../../shared/building_and_running_chapters/Images/display-name.png
    :alt: Image of the Display Name field for a component.
 
-4. Click **Save**.
+4. 单击 **保存**
 
-Different types of components have different fields in the Settings dialog box,
-but all have the **Display Name** field.
+不同的板块类型在“设置”对话框中的字段不同，但都有 **显示名** 字段。
 
 .. _Duplicate a Component:
 
 **********************
-Duplicate a Component
+复制组件
 **********************
 
-When you duplicate a component, a new copy of that component is added directly
-beneath the first component. You can then modify the duplicate. In many cases,
-duplicating a component and editing a copy is a faster way to create new
-content.
+当复制某个板块时，该组件的正下方会出现一个新拷贝，您可对它进行操作。
+通常而言，复制组件然后编辑拷贝能更快地创建新内容。
 
-To duplicate a component, click the Duplicate icon in the component header:
+单击组件标题栏中的“复制”图标：
 
 .. image:: ../../../shared/building_and_running_chapters/Images/unit-dup.png
   :alt: Image of a unit with Duplicate icon circled
 
-Then follow instructions for the type of component you are editing.
+按照提示编辑您的组件。
 
-After you duplicate a component, the new component is not visible to students
-until you :ref:`publish the unit<Publish a Unit>`.
+复制组件之后，您需要重新 :ref:`publish the unit<Publish a Unit>` ，学生才能看到新的组件。
 
-.. note::  You cannot duplicate a content experiment.
+.. note::  您不能复制内容实验。
 
 .. _Delete a Component:
 
 **********************
-Delete a Component
+删除组件
 **********************
 
 .. caution:: 
- Be sure you want to delete the component. You can not undo the deletion.
+ 删除组件前请再次确认是否真的需要删除。删除操作是不可逆的。
 
-To delete a component:
+遵循以下步骤删除组件：
 
-#. Click the Delete icon in the component header:
+#. 点击标题旁边的删除按钮：
 
 .. image:: ../../../shared/building_and_running_chapters/Images/unit-delete.png
   :alt: Image of a unit with Delete icon circled
 
-2. When you receive the confirmation prompt, click **Yes, delete this
-   component**.
+2. 当确认框弹出时，点击 **是的，删除这个组件** 。
 
-After you delete a component, the component remians visible to students until you :ref:`publish the unit<Publish a Unit>`.
+组件删除后，您需要重新 :ref:`publish the unit<Publish a Unit>` ，否则学生仍能看到已删除的组件。
 
 .. _Components that Contain Other Components:
 
 ******************************************
-Components that Contain Other Components
+组件嵌套
 ******************************************
 
-For specific use cases, you configure course content so that components contain
-other components.  For example, if you want to include conditional components
-or content experiments, you have to create components inside components. See
+在特定情况下，您可能会设置组件中嵌套另一个组件。
+例如，如果您希望组件中包含条件组件或内容实验，您必须在创建嵌套组件。
+详情请参考
 :ref:`Creating Content Experiments` for more information.
 
-The component that contains other components is referred to as the *parent*;
-the contained components are referred to as *children*.
+包含其他组件的组件称为 **父组件**；被包含的组件称为 **子组件** 。
 
-In the unit page, a parent component appears with the display name and a
-**View** link. For example:
+在单元页中，父组件显示组件名和 **查看** 链接，如下：
 
 .. image:: ../../../shared/building_and_running_chapters/Images/component_container.png
  :alt: Image of a unit page with a parent component
 
 
 ==================================================
-Edit a Parent Component
+编辑父组件
 ==================================================
 
-A parent component does not directly contain content. Content such as HTML,
-videos, or problems are in the child components.
+父组件不直接包含内容。HTML文件、视频和程序都包含在子组件中。
 
-A parent component has a display name. When the unit is private or in draft,
-click **Edit** in the parent component to change the display name.
+父组件显示组件名。当单元为草稿或属性为私有时，点击父组件中的 **编辑** 项更改组件名。
 
 .. note:: 
-  Parent components of a specific type, such as content experiments, have
-  additional attributes that you edit.
+  特殊类型的父组件，如内容实验，可以编辑附加属性。
+  
 
 
 ======================================
-View Child Components
+查看子组件
 ======================================
 
-When you click **View** in the parent component, the parent component page
-opens, showing all child components. In this example, Child Component A
-contains an HTML component and a video:
+当您在父组件中点击 **查看** 时，父组件页面开启，页面中显示所有的子组件。
+下图中子组件含有HTML组件和视频文件：
 
 .. image:: ../../../shared/building_and_running_chapters/Images/child-components-a.png
  :alt: Image of an expanded child component
 
-Click the arrow next to a child component name to collapse it and hide the
-component's contents:
+单击子组件名旁边的箭头可以收起组件内容：
 
 .. image:: ../../../shared/building_and_running_chapters/Images/child-components.png
  :alt: Image of a child component page
 
-Click the arrow again to expand the component.
+再次点击箭头可以展开内容：
 
-See:
+详情请参阅：
 
 * `Edit a Component`_
 * `Set the Display Name for a Component`_
@@ -212,21 +192,17 @@ See:
 * `Delete a Component`_
 
 ======================================
-Add a Child Component
+添加子组件
 ======================================
 
-If the containing unit is private or in draft, you can add a child component in
-its parent component.
+如果组件内含的单元为私有属性或草稿，您可以为此组件添加子组件。
 
-To add a child component, open and expand the parent component. Then click the
-component type that you want under **Add New Component** within the parent
-component.
+打开父组件页面，在 **添加新组件** 栏中选择您想添加的子组件类型。
 
 .. image:: ../../../shared/building_and_running_chapters/Images/AddNewComponent.png
   :alt: Image of adding a new component
 
-For more information, see the documentation for the specific component type
-that you want:
+更多信息请查阅：
 
 - :ref:`Working with Discussion Components`
 - :ref:`Working with HTML Components`
@@ -235,20 +211,17 @@ that you want:
 
 
 ======================================
-XML for Parent and Child Components
+组件中的XML文件
 ======================================
 
-You develop parent and child components in XML, then import the XML course into
-Studio to verify that the structure is as you intended. 
+如果您用XML创建组件，您可以将XML课程导入Studio中以确认其结构是否符合您的要求。
 
-For more information about working with your course's XML files, including
-information about terminology, see the `edX XML Tutorial <http://edx.readthedoc
-s.org/projects/devdata/en/latest/course_data_formats/course_xml.html>`_.
+更多关于使用XML文件的信息，包括关于术语的信息，请参阅 `edX XML Tutorial <http://edx.readthedoc
+s.org/projects/devdata/en/latest/course_data_formats/course_xml.html>`_ 。
 
-The following examples show the XML used to create the unit and components
-shown in Studio above.
+下图是Studio中用来创建单元和组件的XML。
 
-The XML for the unit is:
+单元的XML是：
 
 .. code-block:: xml
 
@@ -257,8 +230,7 @@ The XML for the unit is:
         <vertical url_name="131a499ddaa3474194c1aa2eced34455"/>
     </vertical>
 
-The ``<vertical url_name="131a499ddaa3474194c1aa2eced34455"/>`` element above
-references the parent component file that contains the child components:
+上例中的 ``<vertical url_name="131a499ddaa3474194c1aa2eced34455"/>`` 元素引用自父组件。
  
 .. code-block:: xml
 
@@ -267,8 +239,7 @@ references the parent component file that contains the child components:
         <vertical url_name="c5c8b27c2c5546e784432f3b2b6cf2ea"/>
     </vertical>
 
-The two verticals referenced by the parent component refer to the child
-components, which contain the actual content of your course:
+两个引用自父组件的vertical包含了您课程中的实际内容。
 
 .. code-block:: xml
 
@@ -284,48 +255,40 @@ components, which contain the actual content of your course:
         <problem url_name="b40ecbe4ed1b4280ae93e2a158edae6f"/>
     </vertical>
 
-Theoretically, there is no limit to the levels of component nesting you can use
-in your course.
-
+理论上，组件嵌套的层数是无限的。
 
 ======================================
-The Student View of Nested Components
+学生视角查看嵌套组件 
 ======================================
 
-For students, all parent and child components are displayed on the unit page.
-The following example shows the student view of the unit described above:
+在学生视角中，所有父组件和子组件都陈列在单元页面中。
+下图是学生视角中的单元界面：
 
 .. image:: ../../../shared/building_and_running_chapters/Images/nested_components_student_view.png
  :alt: Image of the student's view of nested components
 
 .. note:: 
- The visibility of nested components depends on the visibility of 
- the parent unit. The parent unit must be public for students to see nested
- components. For more information, see :ref:`Unit States and Visibility to Students`.
+ 嵌套组件的可见性取决于所在单元的可见性。父单元必须是对学生公开的属性，学生才能看到嵌套组件。
+ 更多信息请参阅： :ref:`Unit States and Visibility to Students` 。
 
 
 *******************************
-Reorganizing Child Components
+重组子组件
 *******************************
 
-You can reorganize child components through the same drag and drop process you
-use for other objects in your course outline. You hover over the element handle
-on the right side of the screen until the mouse pointer changes to a four-
-headed arrow. Then, click and drag the element to the location that you want.
+与课程大纲中其他部件一样，您可以通过拽操作重组子组件。
+将鼠标悬停在屏幕右边的元素上，直到光标变成四向箭头。
+然后点击并拖拽元素到您希望的位置。
 
-Furthermore, when you have multiple levels of nesting, you can drag a child
-component into a different parent component, if both parents are expanded. For
-example, you can select the video component that is in Child Component A and
-drag it into Child Component B. Select the video component, and as you drag it
-into Child Component B, release the mouse button when a dashed outline of the
-component you are moving appears in the new location:
+此外，当您对组件进行多级嵌套时，您可以将子组件拖拽到不同的父组件下。
+例如，您可以选择A子组件中的视频组件，然后将它拖进B子组件。
+选择视频组件，拖拽到B组件然后松开右键。组件就会出现在新的位置里。
 
 .. image:: ../../../shared/building_and_running_chapters/Images/drag_child_component.png
  :alt: Image of dragging a child component to a new location
 
-You can also drag a child component outside of a parent, so that the child
-moves to the same level as the parent.
+您也可以将子组件拖拽出父组件，该组件就和父组件处于同一层级了。
 
 .. note:: 
-  For content experiments, you cannot drag a child component outside of a test
-  group.
+  您不能将内容实验拖拽出测试组。
+

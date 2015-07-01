@@ -1,18 +1,14 @@
 .. _Enrollment:
 
 ##########################
-Enrollment
+招生
 ##########################
 
-Course authors and instructors can enroll students in a course, see how many
-people are enrolled, and, when necessary, unenroll students on the Instructor
-Dashboard.
+课程编写者和导师可以招收学生、查看课程参与人数以及，在必要的情况下，从教师控制面板中开除学生。
 
-Students can enroll themselves in a course during its defined enrollment
-period. For a ``www.edx.org`` course, enrollment is publicly available to
-anyone who registers an edX account. For other courses, such as those on
-``edge.edx.org``, enrollment is limited to students who know the course URL
-and students you explicitly enroll.
+在规定的招生时间内，学生可自行参与课程。 ``www.edx.org`` 的课程对所有已注册edX账户的学生公开招生。
+其他课程，比如在 ``edge.edx.org`` 网站中的课程，
+它们的招生只针对了解课程URL的学生或是其他指定范围的学生。
 
 * :ref:`registration_enrollment`
 
@@ -22,163 +18,135 @@ and students you explicitly enroll.
 
 * :ref:`unenroll_student`
 
-Data about course enrollment is also available from edX Insights. You access
-Insights from the Instructor Dashboard for your live course: after you click
-**Instructor**, click the link in the banner at the top of each page. For more
-information, see `Using edX Insights`_.
+关于课程招生的数据可在edX Insights 中查看。
+您可以在教师控制面板中查看当前课程的Insights：单击 **导师** ，
+然后单击页面标题栏中的链接即可。更多信息请参考 `Using edX Insights`_.
 
 .. _registration_enrollment:
 
 *********************************
-Registration and Enrollment
+注册及招生
 *********************************
 
-Before a student can enroll in a course, he or she must:
+学生在参与课程之前，需要：
 
-#. Register a user account, which includes supplying a valid email address, on
-   ``www.edx.org``, ``edge.edx.org``, or your implementation of the edX
-   platform. Each platform requires a separate user account.
+#. 注册用户帐户。需提供有效的电子邮件地址用于登录
+   ``www.edx.org``， ``edge.edx.org`` 或者安装edX平台客户端。
+   每个平台的用户帐户均不能相同。
 
-#. Activate the registered account by following the emailed instructions.
+#. 通过邮箱中的激活邮件来激活账户。
 
-As long as the course **Enrollment End Date** has not passed, students who
-have registered and activated user accounts can enroll themselves in
-``www.edx.org`` courses, or can enroll in other courses if they know the URL.
-For a more detailed description of this process from a student's point of
-view, see :ref:`Sample Student Login Guide`.
+只要课程招生日期没过，所有注册并激活账户的学生都可以参加
+``www.edx.org`` 中的课程，或者，如果知道课程的URL，也可以参与其他课程。
 
-Course authors and instructors, however, can enroll students in a course either
-before or after the students register their user accounts.
+但是，课程编写者及导师在课程中可以随时添加学生，无论该学生是否注册了用户帐户。
 
-To work on a course, all course staff members must also have registered and
-activated user accounts and be enrolled in the course.
+为方便管理工作，所有课程工作人员均必须注册、激活用户帐户，并参加课程。
 
 .. _enroll_student:
 
 *********************************
-Enroll Students in a Course
+在课程中添加学生
 *********************************
 
-You enroll students, and other course staff members, in your course by
-supplying their email addresses. After the **Enrollment End Date** for a
-course students can no longer enroll themselves; however, you can still
-explicitly enroll students.
+如果您希望在课程中添加学生或其他课程工作人员，只需提供他们的邮件地址即可。
+招生日期截止后，学生无法再继续参与课程，但是，您仍然可以主动添加指定的学生。
 
-When you enroll people in a course you have these options:
+以下是添加学生的几种模式选择：
 
-* **Auto Enroll**. When you choose this option, the people who you enroll do
-  not need to complete an explicit course enrollment step. Of the list of email
-  addresses that you supply, those that correspond to a registered user account
-  are immediately enrolled in the course, and your course displays on the
-  **Current Courses** dashboard for those users on log in. Email addresses on
-  the list that do not match a registered user account are enrolled as soon as
-  that account is registered and activated.
+* **自动添加** 选择此项后，您希望添加的人员无需循规蹈矩地完成课程添加步骤。
+  在您提供的邮件地址列表中，已注册了用户帐户的地址会立即加入课程，
+  您的课程会显示在登录用户的 **当前课程** 控制面板中。
+  列表中未注册账户的地址在注册、激活用户帐户后也会立即加入课程。
+  
 
-  If you do not select **Auto Enroll**, the people who you enroll must also actively locate your course and enroll themselves in it. These students see the course on their dashboards after they have done so.
+  如果您没有选择这个选项，您希望添加的用户必须定位您的课程并自己主动加入课程。 加入后，学生才能在控制面板中看见您的课程。
 
-* **Notify students by email**. When you choose this option, an email message is
-  automatically sent to each of the email addresses that you supply. The message
-  includes the name of the course and, for students who are not already
-  enrolled, a reminder to use that same email address to enroll.
+* **给学生发送通知邮件** 选择此项后，系统会自动向您提供的邮件地址发送一封通知邮件。
+  邮件中交代了课程名称，同时提醒尚未注册的学生用户尽快使用收到本消息的邮件地址注册用户帐户。
 
-  An example of the email message that a student received when this option was
-  selected during enrollment follows. In this example, the student already had a
-  registered and activated edx.org account, and both **Auto Enroll** and
-  **Notify students by email** were selected.
+
+  面是一封邮件示例。在本例中，该学生已注册、激活了edx.org账户，
+  且 **自动添加** 和 **给学生发送通知邮件** 选项均处于选中状态。
+
 
   .. image:: ../../../shared/building_and_running_chapters/Images/Course_Enrollment_Email.png
         :alt: Email message inviting a student to enroll in an edx.org course
 
-To enroll students or staff members:
+如何添加学生或工作人员：
 
-#. View the live version of your course.
+#. 查看课程现况
 
-#. Click **Instructor**, then click **Membership**. 
+#. 单击 **导师** , **成员** 
 
-#. In the **Batch Enrollment** section of the page, enter the username or email
-   address of the student, or enter multiple names or addresses separated by
-   commas or new lines.
+#. 在 **批量添加** 字段后，输入学生的用户名或邮件地址，
+   多个用户名或地址之间用逗号分隔，或另起一行。
 
-  You can copy and paste data from a CSV file of email addresses. However,
-  note that this feature is better suited to courses with smaller enrollments,
-  rather than courses with massive enrollments.
+  您可以从CSV文件中复制邮件地址粘贴至此处。
+  但此功能不太适合规模较大的课程。
 
-4. To streamline the course enrollment process, leave **Auto Enroll** selected.
+4. 为简化工作流程，请尽量选择 **自动添加** 选项。
 
-#. To send students an email message, leave **Notify students by email**
-   selected.
+#. 如果要发送通知邮件，请勾选 **给学生发通知邮件** 选项。
 
-#. Click **Enroll**.
+#. 单击 **添加** 。
 
 .. _view_enrollment_count:
 
 ***************************
-View an Enrollment Count
+查看课程参与人数
 ***************************
 
-After you create a course, you can access the total number of people who are
-enrolled in it. When you view an enrollment count, note that:
+创建课程后，您可以查看参加课程的总人数。查看数据时，请注意：
 
-* In addition to students, the enrollment count includes the course author,
-  course team members, instructors, and course staff. (To work with a
-  course in Studio or the LMS, you must be enrolled in that course.)
+* 除学生外，参与课程的总人数也包括课程作者、课程团队成员、
+  导师以及课程工作人员。（为了更有效地管理Studio或学习管理系统中的课程，
+  您最好亲自参与该课程）
 
-* Students can unenroll from courses, and course authors and instructors can
-  unenroll students when necessary.
+* 学生可主动退出课程，课程作者或导师也可在必要的时候开除学生。
 
-  **Note**: The enrollment count displays the number of currently enrolled
-  students and course team staff. It is not a historical count of everyone who
-  has ever enrolled in the course.
+  **注意**: 课程参与人数表示的是当前所有参与课程的学生及课程团队成员的总人数，
+  而非历史数据。
 
-The total number of current enrollees is shown as the sum of the number of
-people who selected each of the certification tracks (verified, audit, or
-honor) that are available for your course.
+课程参与人数是所有选择证书（认证证书、旁听证书以及荣誉证书）学生的总人数。
 
-To view the enrollment count for a course:
+如何查看课程参与人数：
 
-#. View the live version of your course.
+#. 查看课程现况
 
-#. Click **Instructor**, then click **Course Info** if necessary. 
+#. 单击 **导师** ， **课程信息**
 
-  The **Enrollment Information** section of the page that opens shows the
-  number of people who are currently enrolled in your course and in each of the
-  certification tracks.
+  在打开的页面中，“课程参与信息”字段后显示的是当前加入课程并得到认证的总人数。
+  
 
-You can also view or download a list of the people who are enrolled in the
-course. See :ref:`Student Data`.
+您也可以查看或下载课程参与人员列表，详见 :ref:`Student Data`.
 
 .. _unenroll_student:
 
 *********************************
-Unenroll Students from a Course
+开除学生
 *********************************
 
-You can remove students from a course by unenrolling them. To prevent students
-from re-enrolling, course enrollment must also be closed. You use Studio to
-set the **Enrollment End Date** for the course to a date in the past. See
-:ref:`Scheduling Your Course`.
+开除学生即意味着该学生被永久移除。为防止被开除的学生再次参与课程，
+应关闭课程招生功能，只需在Studio中将“招生截止日期”设置为一个过去的时间点即可。
+详见 :ref:`Scheduling Your Course`.
 
-**Note**: Unenrollment does not delete data for a student. An unenrolled
-student's state remains in the database and is reinstated if the student does
-re-enroll.
+**Note**: 开除学生不会删除学生数据。被开除的学生状态数据仍然保存在数据库中，
+如果学生重新参与课程，该状态数据会被重置。
 
-To unenroll students, you supply the email addresses of enrolled students. 
+如果您想开除某个学生，需提供该学生的邮箱地址：
 
-#. View the live version of your course.
+#. 查看课程现况
 
-#. Click **Membership**. 
+#. 单击 **成员** 
 
-#. In the **Batch Enrollment** section of the page, enter a username or an email
-   address, or multiple names or addresses separated by commas or new lines.
+#. 在 **批量添加** 字段后，键入用户名或邮箱，多个用户名和邮箱之间用逗号分隔或另起一行
 
-#. To send students an email message, leave **Notify students by email**
-   selected.
+#. 如果希望用邮件通知学生，请勾选 **给学生发送通知邮件**
 
-.. note:: The **Auto Enroll** option has no effect when you click **Unenroll**.
+.. note:: 单击 **开除** 后，**自动添加** 选项将失效。
 
-5. Click **Unenroll**. The course is no longer listed on the students'
-   **Current Courses** dashboards, and the students can no longer contribute to
-   discussions or the wiki or access the courseware.
-
+5. 单击 **开除** 。课程即不再显示在该学生的 **当前课程** 面板上，
+   该生将无法贡献讨论项目、维基百科，并失去课件的访问权限。
 
 .. _Using edX Insights: http://edx-insights.readthedocs.org/en/latest/

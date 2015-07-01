@@ -1,11 +1,10 @@
 .. _Developing Course Subsections:
 
 ###################################
-Developing Course Subsections
+构建课程小节
 ###################################
 
-To develop subsections in your course, you must first understand the
-following topics.
+构建课程小节之前您必须了解以下信息：
 
 * `What is a Subsection?`_
 * `Viewing Subsections in the Outline`_
@@ -13,7 +12,7 @@ following topics.
 * `Subsections and Visibility to Students`_
 * `Release Statuses of Subsections`_
   
-Subsection tasks:
+小节操作：
 
 * `Create a Subsection`_
 * `Change a Subsection Name`_
@@ -25,59 +24,52 @@ Subsection tasks:
 
 
 ****************************
-What Is a Subsection?
+什么是小节？
 ****************************
 
-Sections are divided into subsections, which in turn contain one or more units.
-A subsection may represent a topic in your course, or another organizing
-principle. Subsections are sometimes called "lessons" or "learning sequences".
+小节是章节的组成部分，一个小节通常包括一个或多个单元。小节通常代表课程的某个主题，或者其他组织形式。
+小节有时也被称为“课”或“学习顺序”。
 
 
 ***********************************
-Viewing Subsections in the Outline
+小节在课程大纲中的显示方式
 ***********************************
 
-The following example shows three subsections in a section, all collapsed, in
-the course outline.
+下图呈现了三个收起的小节在大纲中的显示方式：
 
 .. image:: ../../../shared/building_and_running_chapters/Images/subsections.png
  :alt: Three collapsed subsections in the outline
 
 
 *********************************
-The Student View of a Subsection
+小节在学生端的呈现样式
 *********************************
 
-Students see subsections in the Courseware tab, listed beneath the expanded
-section. In the following example, seven subsections are circled, and the first
-is open.
+学生可以在课件库中查看小节，如下图所示：
 
 .. image:: ../../../shared/building_and_running_chapters/Images/subsections_student.png
  :alt: The student view of the outline
 
 
 ************************************************
-Subsections and Visibility to Students
+小节与对学生可见性
 ************************************************
 
-Students cannot see any content in a subsection if the subsection's release
-date is unscheduled or has not passed.
+学生无法观看未设置发布日期及发布日期未到的小节内容。
 
-If a subsection's release date has passed, students can see content in the
-subsection if the following three conditions are met.
+学生如果想观看已过发布日期的课程内容，必须满足以下三个条件：
 
-* The release date of the parent section has passed.
-* The units have been published.
-* The units are not hidden from students.
+* 父章节的发布日期已到。
+* 单元发布完成。
+* 发布单元没有对学生隐藏。
 
 ************************************************
-Release Statuses of Subsections
+小节发布状态
 ************************************************
 
-As a course author, you control the release status of subsections.  For the
-content of a subsection to be visible to students, the subsection must be
-released. See the following topics for more information about the possible
-release statuses of subsections.
+课程制作者能控制小节的发布状态。
+只有当小节处于发布状态时，学生才能看见内容。
+点击以下链接查看更多信息：
 
 * `Scheduled with the Section`_
 * `Unscheduled`_
@@ -87,112 +79,85 @@ release statuses of subsections.
 * `Released`_
 
 ==========================
-Scheduled with the Section
+与章节同时发布
 ==========================
 
-When you create a subsection, it is set by default to release at the same time
-as the section it is in. Therefore, published content in the subsection is
-visible to students at the date and time the section is released.
+由于课程小节的发布日期默认与章节一致，因此一旦发布章节内容，学生就可以浏览小节中的内容。
 
-The following example shows how an subsection in the Scheduled with Section
-state displays in the outline, summarized with a green bar.
+下图展示了默认发布日期与所在章节发布日期相同的小节在课程大纲中的显示模式：
+
 
 .. image:: ../../../shared/building_and_running_chapters/Images/subsection-scheduled.png
  :alt: A subsection scheduled to release with the section
 
 
 ========================
-Unscheduled
+未设置发布日期
 ========================
 
-If the parent section is unscheduled, when you create a new subsection it
-will also be unscheduled.
+如果未设置父章节的发布日期，那么新建的小节也自动默认未设置发布日期。
 
-Regardless of the publishing status of units within the subsection, no content
-in an unscheduled subsection is visible to students.
+无论小节中的单元是否发布，学生都无法看见未发布的小节内容。
 
-The following example shows how an unscheduled subsection displays in the
-outline, summarized with a gray bar.
+下图展示了未设置发布日期的小节在大纲中的显示模式：
 
 .. image:: ../../../shared/building_and_running_chapters/Images/subsection-unscheduled.png
  :alt: An unscheduled subsection
 
-Content in the subsection is not visible to students until you set a release
-date and the date passes.
+除非您设置小节的发布日期，否则学生无法浏览该部分内容。
 
 
 ===================================
-Scheduled Later than the Section
+晚于章节发布
 ===================================
 
-You can set a subsection to release on a date after the section releases. 
+小节的发布日期可以晚于章节的发布日期。 
 
-Content in a subsection that is scheduled for release on a future date is not
-visible to students, even if some or all of the units in the subsection are
-published.
+无论小节中的单元是否发布，学生都只有在小节发布日期时才能看见该部分内容。
 
-The following example shows the way that a subsection that will release after
-its parent subsection displays in the course outline.
+下图中，小节的发布日期就晚于父章节的发布日期：
 
 .. image:: ../../../shared/building_and_running_chapters/Images/subsection-scheduled-different.png
  :alt: A subsection scheduled to release later than the section
 
-The scheduled date must pass for the subsection to be visible to students.
+只有在发布日期到了后，学生才能看见该小节的内容。
 
 ==================================
-Scheduled with Unpublished Changes
+计划发布的小节中含有未发布修改
 ==================================
 
-You can make changes to a published unit before its parent subsection
-is released. 
+在父小节发布日期到达之前，您可以对已发布的单元进行更改。
 
-In this situation, when the release date for the subsection passes, the last
-published version of units within the subsection are made visible to students.
-The changes in units are not visible to students until you publish them.
-
-The following example shows how a scheduled subsection with unpublished changes
-displays in the outline, summarized with a yellow bar.
+这样，一旦发布父小节，学生就能看见该小节中最新版本的单元内容。
+但是，如果您不重新发布更改后的单元，那么更改后的单元还是无法对学生显示。如下图所示：
 
 .. image:: ../../../shared/building_and_running_chapters/Images/section-scheduled-with-changes.png
  :alt: A scheduled subsection with unpublished changes
 
 
 ==================================
-Released with Unpublished Changes
+已发布的小节中含有未发布修改
 ==================================
 
-If you modify a unit within a released subsection, those modifications are not
-visible to students until you publish them.
-
-The following example shows how a released section that has unpublished changes
-displays in the outline, summarized with a yellow bar.
+如果您更改了已发布小节中的一个单元，您必须重新发布该单元，否则学生无法看见最新内容，如下图所示：
 
 .. image:: ../../../shared/building_and_running_chapters/Images/section-released-with-changes.png
  :alt: A released subsection with unpublished changes
 
 ===========================
-Released
+已发布
 ===========================
 
-A subsection that is released is visible to students; however, students see
-only units within the subsection that are published.
-
-The following example shows how a released subsection displays in the
-outline, summarized with a blue bar.
+学生可以浏览已发布小节中的内容，但并不是所有内容，只有小节中处于发布状态的单元才对学生可见，如下图所示：
 
 .. image:: ../../../shared/building_and_running_chapters/Images/subsection-released.png
  :alt: A released subsection
 
 ===========================
-Staff Only Content
+仅对教员可见内容
 ===========================
 
-A subsection can contain a unit that is hidden from students and available to
-staff only. That unit is not visible to students, even if the subsection has
-been released.
-
-The following example shows how an subsection that contains a unit that is
-hidden from students displays in the outline, summarized with a black bar.
+小节中可以包含只对教员可见的单元，即使发布该小节，学生也无法浏览只对教员开放的内容。如下图所示：
 
 .. image:: ../../../shared/building_and_running_chapters/Images/section-hidden-unit.png
  :alt: A section with a hidden unit 
@@ -200,165 +165,146 @@ hidden from students displays in the outline, summarized with a black bar.
 .. _Create a Subsection:
 
 ****************************
-Create a Subsection
+创建小节
 ****************************
 
-To create a new subsection:
+如何创建一个小节：
 
-#. In the outline, expand the section in which you want to create a new
-   subsection.
-#. Click **New Subsection** at the bottom of the expanded section. A new
-   subsection appears at the end of the section, with the subsection name
-   selected.
-#. Enter the name for the new subsection. A descriptive name can help learners
-   locate content in the courseware. It can also help you select content when
-   you analyze performance in edX Insights.
-#. :ref:`Add units<Create a Unit>` to the new subsection as needed.
+#. 在“课程大纲”页面，首先扩展您要新建小节的章节。
+#. 单击章节下方的“新建小节”，如此，一个没有内容的新小节就出现在章节下方。
+#. 输入小节名，该名称会出现在学生的课件库中。
+   一个描述确切的名称将帮助学生找到内容的所在位置，也将帮助您在edX Insights中分析绩效时查找内容。
+#. :ref:`Add units<Create a Unit>` 到创建好的章节里。
    
-It is recommended that you :ref:`test course content <Testing Your Course
-Content>` as you create new subsections.
+我们建议您在创建小节的过程中 :ref:`test course content <Testing Your Course
+Content>` 。
 
 ********************************
-Change a Subsection Name
+更改小节名称
 ********************************
 
-To change a subsection name, click the Edit icon next to the subsection name.
-The name field becomes editable. Enter the new name and tab or click out of the
-field to save the name.
+点击小节名称旁边的编辑按钮，输入新名称，点击“保存”。
 
 .. _Set a Subsection Release Date:
 
 ********************************
-Set a Subsection Release Date
+设置小节的发布日期
 ********************************
 
-To set the subsection release date:
+按照以下步骤设置小节发布日期：
 
-#. Click the Settings icon in the subsection box.
+#. 点击小节中的“设置”按钮。
    
    .. image:: ../../../shared/building_and_running_chapters/Images/subsections-settings-icon.png
     :alt: The subsection settings icon circled
 
-   The **Settings** dialog box opens.
+   打开 **设置** 对话框。
 
-#. Enter the release date and time for the section.
+#. 输入章节的发布日期和时间：
 
    .. image:: ../../../shared/building_and_running_chapters/Images/subsection-settings-release.png
     :alt: The subsection release date settings
 
-#. Click **Save**.
+#. 点击 **保存** 。
 
-For more information, see :ref:`Release Dates`.
+
+欲了解更多信息，请查看 :ref:`Release Dates`.
 
 .. _Set the Assignment Type and Due Date for a Subsection:
 
 ********************************************************
-Set the Assignment Type and Due Date for a Subsection
+设置任务类型和截止日期
 ********************************************************
 
-You set the assignment type for problems at the subsection level. 
+任务类型设置会作用到小节中所有的问题。
 
-When you set the assignment type for a subsection, all problems within the
-subsection are graded and weighted as a single type.  For example, if you
-designate the assignment type for a subsection as **Homework**, then all
-problem types in that subsection are graded as homework.
+一旦您为小节设置了任务类型，那么该小节中的所有问题都会被归纳为这种任务类型。
+例如，您将一小节中的任务类型设置成 **家庭作业** ，那么这个小节中的所有问题都被归纳为“家庭作业”。
 
-To set the assignment type and due date for a subsection:
+如何设置小节的任务类型及截止日期：
 
-#. Click the Settings icon in the subsection box.
+#. 点击小节中的“设置”按钮，即弹出设置对话框。
    
    .. image:: ../../../shared/building_and_running_chapters/Images/subsections-settings-icon.png
     :alt: The subsection settings icon circled
 
-   The Settings dialog box opens.
+   
 
-#. Select the assignment type for this subsection in the **Grade as** field.
+#. 选择任务类型：
    
    .. image:: ../../../shared/building_and_running_chapters/Images/subsection-settings-grading.png
     :alt: The subsection settings with the assignment type and due date circled
 
-#. Enter or select a due date and time for problems in this subsection.
-#. Click **Save**.
+#. 选择截止日期。
+#. 点击 **保存** 。
 
-For more information, see :ref:`Establish a Grading Policy`.
+详细信息请参见 :ref:`Establish a Grading Policy`.
 
 .. _Publish all Units in a Subsection:
 
 **********************************
-Publish all Units in a Subsection
+发布小节中的所有单元
 **********************************
 
-To publish all new and changed units in a subsection, click the publish icon in
-the box for the subsection.
+点击小节中的“发布”按钮，发布新建及修改的单元：
 
 .. image:: ../../../shared/building_and_running_chapters/Images/outline-publish-icon-subsection.png
  :alt: Publishing icon for a subsection
 
 .. note:: 
- The publish icon only appears when there is new or changed content within the
- subsection.
+ 只有对小节做出修改后，才会出现“发布”按钮。
 
-See :ref:`Unit Publishing Status` for information about statuses and visibility
-to students.
+有关单元发布状态及对学生可见性等相关信息，请查看 :ref:`Unit Publishing Status` 
 
 .. _Hide a Subsection from Students:
 
 ********************************
-Hide a Subsection from Students
+对学生隐藏小节
 ********************************
 
-You can hide all content in a subsection from students, regardless of the
-status of units within the section.
+无论小节中的单元发布状态如何，您都可以对学生隐藏所有内容。
 
-For more information, see :ref:`Content Hidden from Students`.
+更多信息请参阅 :ref:`Content Hidden from Students`.
 
-To hide a subsection from students:
+如何对学生隐藏小节内容
 
-#. Click the Settings icon in the subsection box.
+#. 点击“设置”按钮。
    
    .. image:: ../../../shared/building_and_running_chapters/Images/subsections-settings-icon.png
     :alt: The subsection settings icon circled
 
-   The **Settings** dialog box opens.
+   弹出 **设置** 对话框。
 
-#. Check **Hide from students**.
+#. 点击 **对学生隐藏** 按钮
 
    .. image:: ../../../shared/building_and_running_chapters/Images/subsection-settings-hidden.png
     :alt: The subsection hide from students setting
 
-#. Click **Save**.
+#.  点击 **保存** 。
 
-Now, no content in the subsection is visible to students.
+至此，所有内容都对学生隐藏了。
 
-To make the subsection visible to students, repeat these steps and clear the
-**Hide from students** check box.
+要对学生开放此小节，只需重复以上步骤，清除 **对学生隐藏** 复选框。
 
 .. warning::
- When you clear the **Hide from students** check box for a subsection, not all
- content in the subsection is necessarily made visible to students. If you
- explicitly set a unit to be hidden from students, it remains hidden from
- students. Unpublished units remain unpublished, and changes to published units
- remain unpublished.
+ 清除“对学生隐藏”复选框并不会将所有内容呈现给学生，特别是单独设置了对学生隐藏的单元，及尚未发布的内容。
 
 .. _Delete a Subsection:
 
 ********************************
-Delete a Subsection
+删除小节
 ********************************
 
-When you delete a subsection, you delete all units within the subsection.
+删除小节就是删除小节里包含的所有内容。
 
 .. warning::  
- You cannot restore course content after you delete it. To ensure you do not
- delete content you may need later, you can move any unused content to a
- section in your course that you set to never release.
+ 删除的课程内容无法恢复。您可以将暂时不用的课程内容存放在一个章节中，并将该章节设置成“永不发布”。
 
-To delete a subsection:
+如何删除小节：
 
-#. Click the delete icon in the subsection that you want to delete.
+#. 点击小节中的“删除”按钮：
 
   .. image:: ../../../shared/building_and_running_chapters/Images/subsection-delete.png
    :alt: The subsection with Delete icon circled
 
-2. When you receive the confirmation prompt, click **Yes, delete this
-   subsection**.
+2. 在弹出的确认对话框中选择“是”即可删除该小节。

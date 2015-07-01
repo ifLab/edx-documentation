@@ -1,517 +1,466 @@
 .. _Working with Video Components:
 
 #############################
-Working with Video Components
+创建影片组件
 #############################
 
-**********************
-Introduction to Videos
-**********************
+您能创建一个您的演讲影片，并且可以将其他组成部分，例如，讨论和遇到的问题，添加到课程中是学生积极学习。
+将视频添加到您的课程中有以下几个步骤。
 
-You can create videos of your lectures and add them to your course to
-supplement other components, such as discussions and problems, to promote
-active learning. Adding a video to your course has several steps.
+.. contents:: 步骤
+  :local:
+  :depth: 1
 
-#. :ref:`Create the Video`.
-#. :ref:`Create Transcript`.
-#. :ref:`Post the Video Online`.
-#. :ref:`Create a Video Component`.
+.. note:: 在将影片添加到您的课程之前，回顾 :ref:`Best Practices for Accessible Media` 。
 
-Also see:
+.. _Protecting Videos:
 
-* :ref:`Video TOC`
-* :ref:`Additional Transcripts`
-* :ref:`Steps for sjson files`
+************************
+视频保护
+************************ 
 
-.. note:: Review :ref:`Best Practices for Accessible Media` before adding 
- videos to your course.
-
-To help course teams protect video assets, the edX video player hides video
-URLs from students by default. This functionality is in effect for all video
-files, including YouTube videos and videos that you have posted in other
-locations. Students can still download videos if you select the **Video
-Download Allowed** option for your video components. For more information about
-posting non-YouTube videos online, see :ref:`Post the Video Online`. For more
-information about options that you can set when you create a video component,
-see :ref:`Video Advanced Options` under :ref:`Create a Video Component`.
+为了帮助教员团队保护视频资源，edX播放器默认隐藏视频URL。
+此默认设置应用于所有视频文件，包括YouTube视频和您发布在其他网站的视频。
+如果您选择了 **允许下载视频** 学生仍可以下载视频文件。
+更多关于在YouTube之外的网站发布视频的信息，请参考 :ref:`Post the Video Online` 。
+更多关于您可以设置的选项请参考  :ref:`Video Advanced Options`.
 
 .. _Create the Video:
 
 ************************
-Step 1. Create the Video
+步骤1. 创建影片
 ************************
 
-Your videos can contain whatever content you want to include in the course. The
-`Creating Videos`_ section of `edX101 Overview of Creating an edX Course`_ has
-some helpful pointers for creating good video content.
+您的影片能保存任何您想要保存的内容。`edX101 Overview of Creating an edX Course`_ 中的
+`Creating Videos`_ 部分能够帮助您如何创建影片内容。
 
 .. _Compression Specifications:
 
 ====================================
-Compression Specifications
+压缩详述
 ====================================
 
-When you create your video, edX recommends the following compression specs.
-(Note that these are recommended but not required.)
+创建影片时，edX建议参照以下压缩详述。
 
 .. list-table::
    :widths: 10 20 20
    :stub-columns: 1
 
-   * - Output
-     - **Publish to YouTube**
-     - **Publish downloadable file to AWS S3**
-   * - Codec
+   * - 输出
+     - **发布到You Tube**
+     - **AWS S3将下载好的文件发布到AWS S3上**
+   * - 编码解码器
      - H.264 .mp4
      - H.264 .mp4
-   * - Resolution & Frame Rate (see note)
-     - 1920x1080, progressive, 29.97 fps 
+   * - 分辨率和帧速率
+     - 1920x1080, progressive, 29.97 fps
      - 1280x720, progressive, 29.97 fps
-   * - Aspect
+   * - 版本
      - 1.0
      - 1.0
-   * - Bit Rate
-     - VBR, 2 pass 
-     - VBR, 2 pass  
-   * - Target VBR
+   * - 位速率
+     - VBR, 2 pass
+     - VBR, 2 pass
+   * - 目标可变速率
      - 5 mbps
      - 1 mbps
-   * - Max VBR
+   * - 最大可变速率
      - 7.5 mbps
      - 1.5 mbps
-   * - Audio
+   * - 声频
      - AAC 44.1 / 192 kbps
      - AAC 44.1 / 192 kbps
 
-.. note:: Typically you export at the same frame rate that was used when you 
- created the media file. For example, if you create the file in a country that
- uses the PAL system, you export at 25 fps instead of the NTSC standard of
- 29.97 fps.
+.. note:: 一般情况下，您导出文件的帧速率和创建时相同。
+  例如，如果您在一个使用PAL系统的国家创建文件，您导出的的文件将为25 fps而不是NTSC标准的 29.97 fps。
 
 .. _Video Formats:
 
 ==================
-Video Formats
+影片格式
 ==================
 
-The edX video player supports videos in .mp4, .webm, .mpeg, and .ogg format.
-However, to help make sure all standard browsers can play your video, we
-strongly recommend that you use the **.mp4 format**.
+edX视频播放器支持mp4, .webm, .mpeg, and .ogg格式。
+然而，为了确保所有标准浏览器均能播放您的影片， 我们强烈建议您使用 **.mp4 format** 格式。
 
 .. _Create Transcript:
 
 *********************************************
-Step 2. Create or Obtain a Video Transcript
+步骤2. 创建或保存影片副本
 *********************************************
 
-Transcripts are required for your videos. Transcripts are required for deaf or
-hard of hearing learners to understand audio content, and helpful for learners
-who speak other languages. You can allow students to download transcripts so
-that they can read them offline. You associate a transcript with a video when
-you create the video component.
+我们强烈建议您将影片与有限的副本相结合。
+对于那些母语是非英语、不能看见影片或这想要回顾影片内容的学生来说，副本对他们是十分有用的。
+您的影片播放的同时副本也会自动滚动播放。要是学生点击副本中的单词，影片会显示该词。
+您能让学生下载副本以便他们能在线阅读。在创建影片组件时，您能将影片和副本相结合。
 
-Timed transcripts in the SubRip Text (.srt) format are strongly recommended. A
-transcript in the .srt format appears next to its associated video and
-automatically scrolls as the video plays. A student can click a word in the
-transcript to jump to the point in the video where that word is spoken.
+自动播放影片的前提是您的副本必须是srt格式的文档。
+若想创建和保存srt格式的副本，您可以和提供字幕服务的公司合作。
+EdX可以和3Play Media公司合作。You Tube也能提供字幕服务。
 
-To create or obtain a transcript in .srt format, you can work with a company
-that provides captioning services. EdX works with `3Play Media
-<http://www.3playmedia.com>`_. `YouTube <http://www.youtube.com/>`_ also
-provides captioning services.
-
-When you upload an .srt file, a .txt file is created automatically. You can
-allow students to download these transcript files. If you allow your students
-to download transcripts, a **Download transcript** button appears under the
-video. Students can then select either **SubRip (.srt) file** or **Text (.txt)
-file** to download the .srt or .txt transcript.
+您上传srt文档时，文本文件会自动生成。学生可以下载srt文档或文本文档（txt）。
+若您允许学生下载副本，影片下方会出现下载副本按钮。
+学生能够自行选择SubRip文档（.srt文档）或文本文档（.txt）来下载.srt格式或文本文档（txt）格式的副本。
 
 .. image:: ../../../shared/building_and_running_chapters/Images/Video_DownTrans_srt-txt.png
    :width: 500
    :alt: Video status bar showing srt and txt transcript download options
 
-You can also provide transcripts in different formats, such as .pdf, and you
-can provide transcripts in different languages. For more information about
-these options, see :ref:`Additional Transcripts`.
+您也可以提供其他形式的副本，如 .pdf，您也可以使用其他语言。
+更多选择信息请参照 :ref:`Additional Transcripts`.
 
-.. note:: Historically, some courses used .sjson files for video transcripts. 
- Use of .sjson files is no longer recommended; however, if transcripts in your
- course use this format, see :ref:`Steps for sjson files`.
+.. note:: 以前有一些课程使用 .sjson文件作为视频副本。
+ 现在我们已经不再推荐这种方式。
+ 然而，如果您的副本是 .sjson格式，请参考 :ref:`Steps for sjson files` 。
 
 .. _Post the Video Online:
 
 *****************************
-Step 3. Post the Video Online
+步骤3 在网上发布影片
 *****************************
 
-All course videos should be posted to YouTube. By default, the edX video player
-accesses your YouTube videos.
+所有课程应在You Tube上发布。通过默认设置，edX影片播放器能够播放You Tube的影片。
 
-Because YouTube is not available in all locations, however, we recommend that
-you also post copies of your videos on a third-party site such as `Amazon S3
-<http://aws.amazon.com/s3/>`_. When a student views a video in your course, if
-YouTube is not available in that student's location or if the YouTube video
-does not play, the video on the backup site starts playing automatically. You
-can also allow the student to download the video from the backup site.
+然而，由于You Tube不是在任何地方下均有效的，所以我们建议您将影片也上传到至第三方网站，例如 `Amazon S3
+<http://aws.amazon.com/s3/>`_.
+当学生浏览您的课程时，要是You Tube不适用于学生所在地或You Tube无法播放，上传至备用网站的影片能自动播放。
+您也能让学生从备用网站上下载影片。
 
-After you post your video online, make sure you have the URL for the video. If
-you host copies of your video in more than one place, make sure you have the
-URL for each video location.
+在网上公布影片之后，确保您有影片的统一资源定位符（URL）。
+若您在多处复制了您的影片，确保您有每一个副本所在位置的统一资源定位符（URL）。 
 
 ==================
 YouTube
 ==================
 
-After you create your video, upload the video to `YouTube
+在创建影片后，将影片上传至 `YouTube
 <http://www.youtube.com/>`_.
 
-.. note:: YouTube only hosts videos of up to 15 minutes. If you create a
- 0.75-speed option, you must make sure that your 1.0-speed video segments are
- only 11.25 minutes long so that YouTube can host all speeds. YouTube offers
- paid accounts that relax this restriction.
+.. note:: You Tube只能上传最长15分钟的影片。
+  如果您选择0.75倍播放速度，您必须确定影片片段只有11.25分钟，如此一来才能确保影片全部上传至You Tube。
+  You Tube有提供付费机制可以解除这个限制。
 
 ==================
-Other Sites
+其他网站 
 ==================
 
-You can use any video backup site that you want. However, keep in mind that the
-site where you post the videos may have to handle a lot of traffic.
+您能使用任何备用网站。然而，切记您上传影片的网站可能需要面对网络繁忙的情况。
 
-.. note:: The URL for the video that you post on a third-party site must end 
- in .mp4, .webm, .mpeg, or .ogg. (To help make sure all standard browsers can
- play your video, we **strongly** recommend that you use .mp4 format.) EdX
- cannot support videos that you post on sites such as Vimeo.
+.. note:: 最终您上传至第三方网站的影片统一资源定位符（URL）必须是mp4, .webm, .mpeg, 或.ogg格式。
+（为了确保所有标准浏览器均能播放影片，我们强烈建议您用mp4,或webm.格式）EdX不支持类似Vimeo等网站上的视频。
 
-If you (or your beta testers or learners) encounter an error when you view a
-course video, it might be the result of one of these browser-related problems.
+如果您（或您的贝塔测试员或学生）在看课程视频时遇到错误，也许是浏览器的原因。
 
-* Verify that the browser is up to date. For example, some older versions of
-  the Mozilla Firefox browser did not play .mp4 video files, and some older
-  versions of the Firefox browser did not play .webm video files. This problem
-  does not occur in more recent versions of these browsers.
+* 请确保浏览器为最新版本。例如，一些旧版本的Mozilla Firefox浏览器无法播放 .mp4格式的视频。
+  这个问题不存在新版本中。
 
-  For more information, see `Media formats supported by the HTML audio and
+  更多信息请参考  `Media formats supported by the HTML audio and
   video elements`_.
 
-* Verify that file metadata, particularly the MIME type, is correctly set on
-  the host site. Internet Explorer 10 browsers do not play videos if the MIME
-  type is not set. For example, make sure that the HTTP header Content-Type
-  is set to video/mp4 for an .mp4 file, or to video/webm for a .webm file.
+* 确保文件元数据，尤其是MIME类型的元数据，在主站中正确设置。
+  IE 10浏览器无法播放未设置的MIME格式视频。
+  例如，确保.mp4文件的HTTP header中的Content-Type设置为video/mp4，
+  .webm文件的HTTP header中的Content-Type设置为video/webm 。
 
-  As an example of how you might set metadata on a video backup site, the
-  *Console User Guide* for the Amazon Simple Storage Service provides this
-  information about `editing object metadata`_.
+  亚马逊存储服务的 **控制台用户指南** 提供了关于如何在视频备选网站中设置元数据的信息 `editing object metadata`_.
 
 
 .. _Create a Video Component:
 
 ********************************
-Step 4. Create a Video Component
+步骤4 创建影片组件
 ********************************
 
-#. Under **Add New Component**, click **Video**.
+#. 在新增组件下，点击影片
 
-#. When the new video component appears, click **Edit**. The video editor opens
-   to the **Basic** tab.
+#. 当出现新的影片组件时，点击编辑。影片编辑者能看见原始码。
 
    .. image:: ../../../shared/building_and_running_chapters/Images/VideoComponentEditor.png
     :alt: Image of the video component editor
     :width: 500
 
-   You replace the default values with your own. 
-   
-3. In the **Component Display Name** field, enter an identifying name for this
-   video. This name appears as a heading above the video and as a tooltip in
-   the learning sequence at the top of the **Courseware** page.
+   您能自行替代默认值。
 
-#. In the **Default Video URL** field, enter the URL of the video. Example
-   URLs follow.
+3. 在显示组件名称栏位，填入您想让学生在鼠标划过页面时显示的提示文字。
+   这个文字将成为影片的标题文字。
+
+#. 在默认影片统一资源定位符（URL）栏位，输入影片的统一资源定位符（URL）。
+   例如，统一资源定位符（URL）可能类似于以下例子中的一种。
 
    ::
-   
+
       http://youtu.be/OEoXaMPEzfM
       http://www.youtube.com/watch?v=OEoXaMPEzfM
       https://s3.amazonaws.com/edx-course-videos/edx-edx101/EDXSPCPJSP13-G030300.mp4
       https://s3.amazonaws.com/edx-videos/edx101/video4.webm
 
-.. note:: To be sure that all students can access a video, you might want to 
-    create multiple versions that use different encodings or hosting services.
-    After you post different versions on the Internet, you add each URL below
-    the default video URL. **These URLs cannot be YouTube URLs**. To add a URL
-    for another version, click **Add URLs for additional versions**. The first
-    listed video that is compatible with the student's computer plays.
+.. note:: 为了确保所有学生均能播放影片，您能在互联网上公布影片的其他版本。
+    之后将这些影片的统一资源定位符（URL）添加至下方影片默认统一资源定位符（URL）。
+    这些统一资源定位符（URL）不能是You Tube网站的统一资源定位符（URL）。
+    想要将统一资源定位符（URL）添加至其他版本中，点击添加其他版本统一资源定位符（URL）。
+    与学生们电脑兼容的第一个列明影片将播放。
 
-5. Next to **Default Timed Transcript**, select an option. 
+5. 下一个步骤是默认限时副本，选择一个选项。
 
-   * If edX already has a transcript for this video, Studio automatically
-     finds the transcript and associates the transcript with the video. This
-     situation can occur when you reuse a video from an existing course.
+   * 若edX已存有您的影片，例如，若您正在播放现有课程中的影片，Studio会自动找到副本并将其与影片连接起来。
+
+     若您想修改副本，点击下载副本及编辑。您能改动影片并通过点击上传新副本完成上传。
+
+
+   * 若edX没有影片副本，而You Tube有的话，Studio会自动找到You Tube网站上的副本并询问您是否输入副本。
+     若要使用You Tube网站上的副本，点击输入You Tube副本。
+     （若您想修改You Tube副本，将其输入Studio，接着点击下载副本及编辑。）
+     这样，您能修改影片并通过点击上传新副本完成上传。
      
-     If you want to modify the transcript, click **Download Transcript for
-     Editing**. You can then make your changes and upload the new file by
-     clicking **Upload New Transcript**.
 
-   * If edX does not have a transcript for the video, but YouTube has a
-     transcript, Studio automatically finds the YouTube transcript and asks if
-     you want to import it. To use this YouTube transcript, click **Import
-     YouTube Transcript**. (If you want to modify the YouTube transcript,
-     import the YouTube transcript into Studio, and then click **Download
-     Transcript for Editing**. You can then make your changes and upload the
-     new file by clicking **Upload New Transcript**.)
+   * 若edX和You Tube都有您的副本，但是edX过期的话，您将收到询问您是否用You Tube副本替代edX副本的消息。
+     若同意，点击是，You Tube副本替代edX副本。
 
-   * If both edX and YouTube have a transcript for your video, but the edX
-     transcript is out of date, you receive a message asking if you want to
-     replace the edX transcript with the YouTube transcript. To use the YouTube
-     transcript, click **Yes, replace the edX transcript with the YouTube
-     transcript**.
 
-   * If neither edX nor YouTube has a transcript for your video, and your
-     transcript uses the .srt format, click **Upload New Transcript** to upload
-     the transcript file from your computer.
+   * 若edX和You Tube都没有您的副本，并且您的副本格式是.srt的话，点击上传新副本完成上传。
+   
 
-     .. note:: 
+     .. note::
 
-        * If your transcript uses the .sjson format, do not use this setting.
-          For more information, see :ref:`Steps for sjson files`.
+        * 若您的副本使用的是.sjson格式的话，勿用此项设置。
+          欲知更多信息，请见 :ref:`Steps for sjson files`.
 
-        * If you want to provide a transcript in a format such as .pdf,
-          do not use this setting to upload the transcript. For more
-          information, see :ref:`Additional Transcripts`.
+        * 若您希望提供副本的格式是.pdf的话，勿用此项设置上传副本。
+          欲知更多信息，请见 :ref:`Additional Transcripts`.
 
-6. Optionally, click **Advanced** to set more options for the video. For a
-   description of each option, see :ref:`Video Advanced Options`.
+6. 可自由选择点击高级，设置影片更多选项。
+   欲知每项选项详情，请看 :ref:`Video Advanced Options`.
 
-#. Click **Save.**
-  
+#. 点击保存
+
 .. _Video Advanced Options:
 
 ==================
-Advanced Options
+高级选项
 ==================
 
-The following options appear on the **Advanced** tab in the video component.
+影片组件的高级选项中会出现以下选项。
+
 
 .. list-table::
     :widths: 30 70
 
-    * - **Component Display Name**
-      - The name that you want your students to see. This is the same as the
-        **Display Name** field on the **Basic** tab.
-    * - **Default Timed Transcript**
-      -  The name of the transcript file that is used in the **Default Timed
-         Transcript** field on the **Basic** tab. This field is auto-populated.
-         You do not have to change this setting.
-    * - **Download Transcript Allowed**
-      - Specifies whether you want to allow students to download the timed
-        transcript. If you select **True**, a link to download the
-        file appears below the video.
+    * - **显示组件名**
+      - 您想让学生看见的名称，必须与原始码显示名是保持一致。
+        
+    * - **默认时限副本**
+      -  默认时限副本的原始码用的是副本文档的名称。
+         此区域是自动添加的。
+         您不需要改变这项设置。
+    * - **同意下载副本**
+      - 详细说明您是否同意让学生下载时限副本。
+        若您选择“是”，影片下方会显示下载文档的链接。
+        
 
-        By default, Studio creates a .txt transcript when you upload an .srt
-        transcript. Students can download the .srt or .txt versions of the
-        transcript when you set **Download Transcript Allowed** to **True**. If
-        you want to provide the transcript for download in a different format
-        as well, such as .pdf, upload a file to Studio by using the **Upload
-        Handout** field.
+        通过默认设置，在你上传.srt副本文档的同时会生成文本文档副本。
+        您甚至成同意下载副本，学生们就能下载.srt副本及文本文档副本。
+        同时，若您希望能下载不同格式的文本，
+        例如，.pdf，通过上传讲义，将其上传至Studio。
+        
+        
 
-    * - **Downloadable Transcript URL**
-      - The URL for a non-.srt version of the transcript file posted on the
-        **Files & Uploads** page or on the Internet. Students see a link to
-        download the non-.srt transcript below the video.
+    * - **可下载副本URL**
+      - 非.srt格式副本的统一资源定位符（URL）会发至文件和上传页面或公布在网上。
+        学生们能在影片下方看见下载非.srt格式副本的链接。
+        
 
-        When you add a transcript to this field, only the transcript that you
-        add is available for download. The .srt and .txt transcripts become
-        unavailable. If you want to provide a downloadable transcript in a
-        format other than .srt, we recommend that you upload a handout for
-        students by using the **Upload Handout** field. For more information,
-        see :ref:`Additional Transcripts`.
+        当您将副本添加至此区域时，只有您添加的附件能下载。
+        非.srt格式副本及文本文档副本无法下载。
+        若您提供的副本格式并非.srt，我们建议您通过上传讲义选项，上传学生讲义。
+        欲知更多信息，请见 :ref:`Additional Transcripts` 。
+        
+        
 
-    * - **Show Transcript**
-      - Specifies whether the transcript plays along with the video by default.
-    * - **Transcript Languages**
-      - The transcript files for any additional languages. For more
-        information, see :ref:`Transcripts in Additional Languages`.
-    * - **Upload Handout**
-      - Allows you to upload a handout to accompany this video. Your handout
-        can be in any format. Students can download the handout by clicking
-        **Download Handout** under the video.
-    * - **Video Available on Web Only**
-      - If you select **True**, students are only allowed to play this video
-        in a Web browser. If you select **False**, students can use any
-        compatible application to play the video, including Web browsers and
-        mobile apps.
-    * - **Video Download Allowed**
-      - Specifies whether students can download versions of this video in
-        different formats if they cannot use the edX video player or do not
-        have access to YouTube. If you select **True**, you must add
-        at least one non-YouTube URL in the **Video File URLs** field.
-    * - **Video File URLs**
-      - The URL or URLs where you posted non-YouTube versions of the video.
-        Every URL should end in .mp4, .webm, .mpeg, or .ogg and cannot be a
-        YouTube URL. Each student will be able to view the first listed video
-        that is compatible with the student's computer. To allow students to
-        download these videos, you must set **Video Download Allowed** to
-        **True**.
+    * - **EdX视频ID**
+      - 此选项只用于使用edX制作主视频文件的课程团队。
+        
 
-        To help make sure all standard browsers can play your video, we
-        **strongly** recommend that you use the .mp4 format.
+    * - **许可证书**
+      - 您可以选择为视频设置许可证书。
+        以满足您发布与课程许可证不同的视频许可证的需求。
+        
 
-    * - **Video ID**
-      - An optional field used only by course teams that are working with
-        edX to process and host video files.
-    * - **Video Start Time**
-      - The time you want the video to start if you do not want the entire
-        video to play. Use HH:MM:SS format. The maximum value is 23:59:59.
+        * 选择 **版权所有** 像学生表明您拥有视频的版权。 
+          
 
-        .. note:: Learners who download and play the video in the mobile 
-         app see the entire video file. Only videos that play in a browser
-         start playing at the specified start time.
+        * 选择 **CC协议** 授予他人分享视频的权利。
+          您必须选择申请CC协议证书。
+          
 
-    * - **Video Stop Time**
-      - The time you want the video to stop if you do not want the entire video
-        to play. Use HH:MM:SS format. The maximum value is 23:59:59.
+          您选择的证书选项控制了学生所看视频的版权公告。 
+          更多信息请参考 :ref:`Licensing
+          a Course`.
 
-        .. note:: Learners who download and play the video in the mobile 
-         app see the entire video file. Only videos that play in a browser
-         stop playing at the specified stop time.
+    * - **副本展示**
+      - 详细说明是否通过默认设置，将副本和影片一起上传。
+    * - **副本语言**
+      - 副本文件可以添加任何语言。
+        欲知更多信息，请见 :ref:`Transcripts in Additional Languages`.
+    * - **上传讲义**
+      - 允许讲义和影片一起上传。
+        您的讲义可以是任何格式的。
+        学生们可以在影片下方点击下载讲义完成下载。更多信息请见
+        :ref:`Additional Transcripts`.
+    * - **视频仅在网页播放**
+      - 如果您选择 **是** ，学生只能在浏览器中播放该视频。
+        如果您选择 **否** ，学生可以使用任何应用播放该视频。
+        包括网页浏览器和移动应用。
+        
+    * - **同意下载影片**
+      - 若学生们无法使用edX播放器或You Tube，
+        请详细说明他们能否下载此影片不同格式的版本。
+        若您选择“是”，必须在影片文件统一资源定位符（URL）区域
+        中添加至少一个非You Tube统一资源定位符（URL）。
+    * - **影片文档URL**
+      - 您发布过的非You-Tube版本的视频的URL。
+        最终，每个统一资源定位符（URL）必须是mpeg, .webm, .mp4, or .ogg格式，
+        而且不能是You Tube统一资源定位符（URL）。
+        每个学生均能浏览与其电脑兼容的第一个列明的影片。
+        您必须同意影片下载，学生才能下载影片。
+        
 
-    * - **YouTube IDs**
-      - If you have uploaded separate video files to YouTube for different
-        speeds of your video (YouTube ID for .75x speed, YouTube ID for 1.25x
-        speed, YouTube ID for 1.5x speed), enter the YouTube IDs for these
-        videos in these fields. These settings are optional, to support video
-        play on older browsers.
+        为使所有标准浏览器能播放您的影片，
+        我们强烈建议您使用.mp4 或 .webm格式。
+
+    * - **视频ID**
+      - 此选项仅用于使用edX制作主视频文件的课程团队。
+        
+    * - **影片开始时间**
+      - 若您不想播放所有视频，能设置影片开始时间。
+        将格式设置为 HH:MM:SS。最大值为23:59:59。
+
+        .. note:: 在移动应用上下载并播放该视频的学生可以看到完整的视频文件。
+         只有在浏览器中播放视频时有特定开始时间。
+         
+
+    * - **影片结束时间**
+      - 若您不想播放所有视频，能设置影片结束时间。
+        将格式设置为 HH:MM:SS。最大值为23:59:59。
+
+        .. note:: 在移动应用上下载并播放该视频的学生可以看到完整的视频文件。
+         只有在浏览器中播放视频时有特定结束时间。
+         
+
+    * - **YouTube ID**
+      - 若您将独立且不同播放速率的影片上传至You Tube，
+        在此区域输入这些影片的You Tube号。  
+        (拥有You Tube号的人能享受 .75x、1.25x及1.5x倍播放速度)
+        
+        
+
 
 .. _Video TOC:
 
 ***************************
-Video Table of Contents
+影片目录表
 ***************************
 
-You can add a table of contents for your video by adding an .srt transcript
-file that contains clickable links to different parts of the video. When your
-students view the video, they can click the **CC** button at the bottom of the
-video player to switch between the main transcript for the video and the table
-of contents.
+通过将可点击的.srt格式副本添加到影片的各部分，您能添加影片目录表。
+学生观看影片时，他们能点击影片播放器下方的CC按钮，实现影片主要副本和影片目录表切换。
 
-To add a table of contents, you work with a third-party service to create
-the .srt transcript file. Then, you use the **Transcript Languages** setting
-in the video component to associate the .srt file with the video.
+为添加目录表，您将与第三方网站合作，以创建.srt格式副本文档。
+之后，您将通过影片组件设置的副本语言将.srt格式副本与影片相结合。
 
 .. image:: ../../../shared/building_and_running_chapters/Images/VideoTOC.png
    :alt: Image of a video with a transcript that has links to different parts
     of the video
    :width: 500
 
-#. After you obtain the .srt transcript file that will function as the
-   table of contents, open the video component for the video.
+#. .srt格式副本文档的作用是充当目录表，在保存其后，打开您的影片组件。
 
-#. On the **Advanced** tab, scroll down to **Transcript Languages**, and then
-   click **Add**. 
+#. 在高级选项卡中，下拉至副本语言，点击添加。
 
-#. In the drop-down list that appears, select **Table of Contents**. 
+#. 下拉列表出现之后，选择目录
 
-   An **Upload** button appears.
+   随后，显示上传按钮。 
 
-#. Click **Upload**, browse to the .srt file for the transcript, and then click
-   **Open**.
+#. 点击上传，浏览.srt格式副本文档，点击打开。
 
-#. In the **Upload translation** dialog box, click **Upload**.
+#. 在上传翻译对话框栏位，点击上传。
 
 .. _Additional Transcripts:
 
 **********************
-Additional Transcripts
+附加副本
 **********************
 
-By default, a .txt file is created when you upload an .srt file, and students
-can download an .srt or .txt transcript when you set **Download Transcript
-Allowed** to **True**. The **Download Transcript** button appears below the
-video, and students see the .srt and .txt options when they move the cursor
-over the button.
+由于默认设置，您上传.srt格式文档的同时文本文档（txt）会生成。
+您设置同意下载副本之后，学生们能下载.srt格式或文本文档（txt）格式文档。
+影片下方出现下载副本按钮，鼠标划过此按钮时，学生们能看到.srt格式或文本文档（txt）格式选项。
 
 .. image:: ../../../shared/building_and_running_chapters/Images/Video_DownTrans_srt-txt.png
    :width: 500
    :alt: Video status bar showing srt and txt transcript download options
 
-If you want to provide a downloadable transcript in a format such as .pdf along
-with the .srt and .txt transcripts, we recommend that you use the **Upload
-Handout** field. When you do this, a **Download Handout** button appears to the
-right of the **Download Transcript** button, and students can download the
-.srt, .txt, or handout version of the transcript.
+若您想要上传.pdf、.srt、txt格式副本的话，我们建议您在上传讲义区域操作。
+您这样操作的话，上传讲义按钮会出现在下载副本按钮右方，学生们能下载 .srt, .txt格式或与讲义格式相同的副本。
 
 .. image:: ../../../shared/building_and_running_chapters/Images/Video_DownTrans_srt-handout.png
    :width: 500
    :alt: Video status bar showing srt, txt, and handout transcript download
     options
 
-To add a downloadable transcript, you use the **Upload Handout** field.
+利用上传讲义区域，添加下载副本：
 
-#. Create or obtain your transcript as a .pdf or in another format.
-#. In the video component, click the **Advanced** tab.
-#. Locate **Upload Handout**, and then click **Upload**.
-#. In the **Upload File** dialog box, click **Choose File**.
-#. In the dialog box, select the file on your computer, and then click
-   **Open**.
-#. In the **Upload File** dialog box, click **Upload**.
+#. 创建或保存您的副本，副本可以是.pdf或其他格式。
+#. 在影片组件栏位，点击高级选项。
+#. 找到上传讲义，点击上传。
+#. 在上传文档对话框栏位，点击选择文档。
+#. 在对话框栏位，选择您电脑中存储的文档，点击打开。
+#. 在上传文档对话框栏位，点击上传。
 
-Before Studio added the **Upload Handout** feature, some courses posted
-transcript files on the **Files & Uploads** page or on the Internet, and then
-added a link to those files in the video component. **We no longer recommend
-this method.**  When you use this method, the **Download Transcript** button
-appears, but only the transcript that you add is available for download. The
-.srt and .txt transcripts become unavailable.
+在Studio添加上传讲义特性之前，确保一部分课程已公布至文档和上传页面或公布在网上，
+接着将链接添加至影片组件文档中。 **我们不建议您这样做。**
+您使用这种方法时，会显示下载副本，但是您添加的副本只能下载。
+无法识别.srt 和文本文档（txt）格式的副本。
 
 .. image:: ../../../shared/building_and_running_chapters/Images/Video_DownTrans_other.png
    :width: 500
    :alt: Video status bar showing Download Transcript button without srt and
     txt options
 
-If you want to use this method, you can post your transcript online, and then
-add the URL to the transcript in the **Downloadable Transcript URL** field.
-However, bear in mind that students will not be able to download .srt or .txt
-transcripts.
+若您想使用此方法，将您的影片公布在网上，并将统一资源定位符（URL）添加至副本，
+该副本位于下载副本统一资源定位符（URL）区域内。
+但是，切记这样一来，学生将无法下载srt 和文本文档（txt）格式的副本。
 
 .. _Transcripts in Additional Languages:
 
 ====================================
-Transcripts in Additional Languages
+其他语言的副本 
 ====================================
 
-You can provide transcripts for your video in other languages. To do this,
-you work with a third-party service to obtain an .srt transcript file for
-each language, and then associate the .srt file with the video in Studio.
+您能上传其他语言的影片副本。
+想这样做的话，您需要与第三方服务商合作，以便保存每种语言的.srt格式的副本文档，
+之后将.srt格式文档与Studio中的影片相链接。 
 
-#. After you obtain the .srt files for additional languages, open the
-   video component for the video.
+#. 您在保存其他语言的.srt格式文档之后，打开影片组件。
 
-#. On the **Advanced** tab, scroll down to **Transcript Languages**, and then
-   click **Add**.
+#. 在高级选项栏位，下拉至副本语言，点击添加。
 
-#. In the drop-down list that appears, select the language for the transcript
-   that you want to add.
+#. 在显示的下拉菜单栏位，选择您想添加的副本语言。
 
-   An **Upload** button appears below the language.
+   语言下方显示上传按钮。
 
-#. Click **Upload**, browse to the .srt file for the language that you want,
-   and then click **Open**.
+#. 点击上传，浏览.srt格式文档语言，点击打开。
 
-#. In the **Upload translation** dialog box, click **Upload**.
+#. 在上传翻译对话框栏位，点击上传。
 
-#. Repeat steps 2 - 5 for any additional languages. 
+#. 添加任意附加语言，操作同步骤2至步骤5相同。
 
-.. note:: Make sure that all your transcript file names are unique to each 
- video and language. If you use the same transcript name in more than one video
- component, the same transcript will play for each video. To avoid this
- problem, you could name your foreign language transcript files according to
- the video's file name and the transcript language.
-
- For example, you have two videos, named video1.mp4 and video2.mp4. Each video
- has a Russian transcript and a Spanish transcript. You can name the
- transcripts for the first video video1_RU.srt and video1_ES.srt, and name the
- transcripts for the second video video2_RU.srt and video2_ES.srt.
-
-When your students view the video, they can click the **CC** button at the
-bottom of the video player to select a language.
+.. note:: 确保所有您的副本文档名与每个影片及语言的名称不同。
+ 您在至少一个影片组件中使用相   同的副本名称，每个影片播放的都是同一副本。
+ 为了避免这一问题发生，您可根据影片文档名和副本语言，命名您的外语副本名称。
+ 
+ 例如，您有两份影片，分别命名为影片1.mp4和影片2.mp4。
+ 两个影片均有俄语和西班牙语副本。您能将第一个影片命名为影片1RU.srt和影片1 ES.srt，
+ 将副本命名为影片2RU.srt和影片2 ES.srt。 
+ 
+学生浏览影片时，他们能点击影片下方的CC按钮，选择语言。
 
 .. image:: ../../../shared/building_and_running_chapters/Images/Video_LanguageTranscripts_LMS.png
    :alt: Video playing with language options visible
@@ -519,43 +468,39 @@ bottom of the video player to select a language.
 .. _Steps for sjson files:
 
 **********************
-Steps for .sjson Files
+操作.sjson文档的步骤
 **********************
 
-If your course uses .sjson files, you upload the .sjson file for the video
-to the **Files & Uploads** page, and then specify the name of the .sjson file
-in the video component.
+若您的课程使用的是.sjson文档，您需要将影片.sjson文档上传至文档和上传页面。
+明确说明.sjson文档在影片组件中的名称。
 
-.. note:: Only older courses that have used .sjson files in the past should use
- .sjson files. All new courses should use .srt files.
+.. note:: 只有过去使用过.sjson文档的课程才能使用.sjson文档。所有新课程应用.srt文档。
 
-#. Obtain the .sjson file from a media company such as 3Play.
-#. Change the name of the .sjson file to use the following format.
-   
+#. 选择媒体公司，例如3Play，并保存.sjson文档
+#. 修改.sjson文档名称以便使用以下格式：subs_FILENAME.srt.sjson。
+
    ``subs_{video filename}.srt.sjson``
-   
-   For example, if the name of your video is **Lecture1a**, the name of your
-   .sjson file must be **subs_Lecture1a.srt.sjson**.
-   
-#. Upload the .sjson file for your video to the **Files & Uploads** page.
-#. Create a new video component.
-#. On the **Basic** tab, enter the name that you want students to see in the
-   **Component Display Name** field.
-#. In the **Video URL** field, enter the URL of the video. For example, the URL
-   may resemble one of the following.
+
+   例如，若您的影片名称为第一讲a，
+   那么您.sjson文档名称必须是 **subs_Lecture1a.srt.sjson**.
+
+#. 将影片的.sjson文档上传至文档和上传页面。
+#. 创建影片新组件。
+#. 在原始码栏位，输入您想让学生在显示组件区域看见的名称。
+#. 在影片统一资源定位符（URL）区域，输入影片统一资源定位符（URL）。例如，您会看到类似以下的情况：
 
    ::
-   
+
       http://youtu.be/OEoXaMPEzfM
       http://www.youtube.com/watch?v=OEoXaMPEzfM
       https://s3.amazonaws.com/edx-course-videos/edx-edx101/EDXSPCPJSP13-G030300.mp4
 
-#. Click the **Advanced** tab.
-#. In the **Default Timed Transcript** field, enter the file name of your
-   video. Do not include `subs_` or `.sjson`. For the example in step 2, you
-   would only enter **Lecture1a**.
-#. Set the other options that you want.
-#. Click **Save**.
+#. 点击高级选项。
+#. 在默认时限副本区域，输入影片的名称。
+   不能包含 `subs_` 或 `.sjson`。
+   例如，操作步骤2时，您只能输入 **Lecture1a** 。
+#. 设置您选择的其他选项。
+#. 点击保存。
 
 .. _Creating Videos: https://courses.edx.org/courses/edX/edX101/2014/courseware/c2a1714627a945afaceabdfb651088cf/9dd6e5fdf64b49a89feac208ab544760/
 

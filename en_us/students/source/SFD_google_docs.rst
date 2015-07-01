@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .. _Google Drive:
 
 ####################################
@@ -53,3 +54,6 @@ Google 日历
 
 需要更多关于Google日历的信息, 请参考 `Google 日历
 <https://www.google.com/calendar>`_.
+=======
+.. include:: ../../shared/students/SFD_google_docs.rst
+>>>>>>> orig

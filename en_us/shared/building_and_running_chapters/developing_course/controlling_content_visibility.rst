@@ -1,64 +1,56 @@
 .. _Controlling Content Visibility:
 
 ###################################
-Controlling Content Visibility
+设置内容可见性
 ###################################
 
-As course staff, you must carefully control which content is visible to
-students and when.
+作为教员，您必须认真考虑何时将哪些课程内容对学生开放。
 
-You control content visibility through these features in Studio:
+课程内容的可见性取决于以下几点：
 
 * `Release Dates`_
 * `Unit Publishing Status`_
 * `Content Hidden from Students`_
 * `Content Groups`_
   
-These features work together to control content visibility for students.
+这些属性将共同控制内容对学生是否可见。
 
 .. _Release Dates:
 
 ***********************
-Release Dates
+发布日期
 ***********************
 
-You schedule release dates for sections and subsections. By default, a
-subsection inherits the release date of the section it is in, though you can
-change it to another date.
+您需要为章节和子章节设定发布日期。
+默认情况下，子章节与所在章节的发布日期相同，当然，您也可以改变此日期。
 
-By defining release dates, you can ensure that content is available to students
-as planned without requiring manual intervention at that future time.
+指定发布日期后，您可以确认内容是否按计划对学生开放，且未来不需要手动调整此设置。
 
-Published units are not visible to students until the scheduled release date.
-When the section and subsection have different release dates, published units
-are not visible until both dates have passed.
+在发布日期之前，公共单元对学生不可见。
+章节和子章节的发布日期不同时，公共单元将在其中较晚的日期之后可见。
 
-Prior to the release date, content is visible to course staff
-:ref:`previewing the course <Preview Course Content>` or :ref:`viewing the live
+发布日期之前，内容对教员可见。
+:ref:`previewing the course <Preview Course Content>` 或 :ref:`viewing the live
 course as staff<View Your Live Course>`.
 
-See:
+请参阅：
 
 * :ref:`Set a Section Release Date`
 * :ref:`Set a Subsection Release Date`
 
 ***********************
-Unit Publishing Status
+单元发布状态
 ***********************
 
-You publish units to make them visible to students. Students see the last
-published version of a unit if the section and subsection it is in are
-released.
+发布单元使其对学生可见。如果章节和子章节已经发布，学生将看到最新发布的版本。
 
-Students do not see units that have never been published, and they do not see
-unpublished changes to units or components within units.  Therefore, you can
-make changes to units in released subsections without disrupting the student
-experience.
+学生不会看到未发布的单元，他们也看不到单元中未发布的修改内容或组建。
+因此，您可以在不影响学生体验的情况下对已发布的章节进行修改。
 
-For more information, see :ref:`Unit Publishing Status`.
+更多内容请参阅 :ref:`Unit Publishing Status`.
 
-You can publish all changes in a section or subsection at once, or publish
-changes to individual units.  See:
+您可以一次性发布对某个章节或子章节的全部修改，或者只发布对独立单元的修改。
+请参考以下内容：
 
 * :ref:`Publish all Units in a Section`
 * :ref:`Publish all Units in a Subsection`
@@ -68,55 +60,44 @@ changes to individual units.  See:
 .. _Content Hidden from Students:
 
 *****************************
-Content Hidden from Students
+对学生隐藏内容
 *****************************
 
-You can hide content from students. Such content is never visible to students,
-regardless of the release and publishing status.
+您可以对学生隐藏内容。无论发布状态如何，这些内容将永远对学生不可见。
 
-You might hide a unit from students, for example, when that unit contains an
-answer to a problem in another unit of that subsection. After the problem's due
-date, you could make the unit with the answer visible.
+在某些情况下，您也许希望对学生隐藏单元。例如，某些单元中包含了此章节中其他单元问题的答案。
+在问题截至日期之前，您可以设置包含答案的单元不可见。
 
-You could also hide a unit from students if you wanted to use that unit to
-provide instructions or guidance meant only for course staff. Only course staff
-would see that unit in the course.
+如果您想将某些单元用于向课程教员提供指导或说明，您也可以对学生隐藏此单元。
+只有课程教员能看到这些单元。
 
-You can hide content at different levels:
+您可以隐藏不同等级的内容：
 
 * :ref:`Sections<Hide a Section from Students>`
 * :ref:`Subsections<Hide a Subsection from Students>`
 * :ref:`Units<Hide a Unit from Students>`
 
 .. note::
- When you make a previously hidden section or subsection visible to learners,
- some content in the section or subsection may remain hidden. If you have
- explicitly set a subsection or unit to be hidden from learners, this
- subsection or unit remains hidden even when you change the visibility of the
- parent section or subsection. Unpublished units remain unpublished, and
- changes to published units remain unpublished.
+ 当您将之前对学生隐藏的章节或子章节设置为对学生可见时，章节中的一些内容也许会保持隐藏状态。
+ 如果您特地将某一子章节或单元设置为对学生隐藏模式，当您更改父章节的可见性时，此子章节或单元将保留隐藏模式。
+ 未发布单元保持未发布状态，对已发布单元的修改也保持未发布状态。
 
 .. _Hiding Graded Content:
 
 =====================
-Hiding Graded Content
+隐藏评分内容
 =====================
 
-If you hide a section, subsection, or unit that contains graded problems,
-grading is not affected. The hidden problems are still counted when the edX
-platform calculates grades. If a problem was at time visible and learners
-submitted answers for it, they still receive the credit they earned if you
-later hide the problem.
+如果您隐藏了一个包含评分问题的章节、子章节或单元，评分将不受影响。
+edX平台计算成绩时将包含隐藏的问题。如果某个问题在学生提交答案时可见，那么即使将来您隐藏了该问题，学生仍然能获得该问题的分数。
 
 .. _Content Groups:
 
 **************
-Content Groups
+内容组
 **************
 
-If you have cohorts enabled in your course, you can use content groups to
-designate  particular components in your course as visible only to specific
-groups of learners.
+如果您的课程中含有群，您可以通过设置内容组实现将特定内容对特定小组的学生可见。
 
-For details, see :ref:`About Content Groups` and :ref:`Cohorted Courseware
-Overview`.
+详情请参阅 :ref:`About Content Groups` 和 :ref:`Cohorted Courseware
+Overview` 。

@@ -1,13 +1,13 @@
 .. _Setting up Your Course Index:
 
 ##########################
-Setting up Your Course
+建立您的课程
 ##########################
 
-Use the topics in this section to create and build your course.
+本章节说明如何创建您的课程。
 
-For information on how to develop your course content in the Studio Outline,
-see :ref:`Developing Your Course Index`.
+想了解关于如何在Studio Outline中添加您的课程内容，
+请参考 :ref:`Developing Your Course Index`.
 
 .. toctree::
    :maxdepth: 2
@@ -15,6 +15,7 @@ see :ref:`Developing Your Course Index`.
    creating_new_course
    scheduling_course
    setting_up_student_view
+   licensing_course
    course_files
    handouts_updates
    pages

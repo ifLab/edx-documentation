@@ -3,37 +3,26 @@
 
 
 ######################################################
-Setting up Discussions in Courses with Cohorts
+在包含队列的课程中设置论坛
 ######################################################
 
-In courses that have cohorts enabled, discussion topics can be either divided by
-cohort, or unified and accessible to all students. Discussion topics that are
-divided by cohort are visible to all learners but the posts, responses, and
-comments within them are divided so that they are visible only to members of the
-same cohort. Posts, responses, and comments within unified discussion topics are
-visible to all learners in the course, regardless of cohort.
+在开启了队列的课程中，讨论主题可以按队列分类或统一对所有学生可见。
+按队列分类的讨论主题对所有学生可见，但是帖子、回复和评论仅对队列成员可见。
+统一讨论主题中的帖子、回复和评论对所有学生可见。
 
-When you first enable cohorts in your course, the initial behavior for 
+当您第一次在课程中开启队列时，
 :ref:`course-wide discussion topics<Coursewide Discussion Topics and Cohorts>` 
-is different from the behavior of :ref:`content-specific discussion topics
-<Content Specific Discussion Topics and Cohorts>`.
+的初始设定和 :ref:`content-specific discussion topics
+<Content Specific Discussion Topics and Cohorts>` 的设定不同。
 
-By default, course-wide discussion topics are unified because these discussions
-are generally used for posts that are of broad interest to all learners in the
-course. In contrast, content-specific discussion topics are by default divided
-by cohort. On the Instructor Dashboard, you can change discussion topics of
-either type to be divided or unified.
+默认状态下，全课堂讨论主题是统一的，因为这些讨论一般是为课程中的所有学生都感兴趣的内容设置的。
+相反，内容指定讨论主题是默认按队列分配的。在导师面板中，您可以更改讨论主题的类型。
 
-.. warning:: If you change the cohort settings of discussion topics in a live
-   course after learners have begun reading and contributing to discussion
-   posts, you are changing their course experience. Learners might see posts
-   that were previously not visible to them, or they might no longer see posts
-   that were previously available to all learners. If you make changes to
-   cohort settings in a running course, be aware of the implications of your
-   changes. For more details, see :ref:`Altering Cohort Configuration`.
+.. warning:: 如果您在学生开始阅览和贡献讨论帖时，更改在线课程中讨论主题的队列设置，
+   您将更改学生的课程体验。学生可能看到之前看不到的帖子，或者看不到以前能看到的帖子。
+   如果您更改任何已开始课程的设置，请注意改变可能造成的影响。更多细节请参阅 :ref:`Altering Cohort Configuration` 。
 
-For information about cohort settings for discussion topics, see the following
-topics.
+关于讨论主题的队列设置，请参考以下主题。
 
 * :ref:`Coursewide Discussion Topics and Cohorts`
 * :ref:`Specify Whether CourseWide Discussion Topics are Cohorted`
@@ -41,122 +30,98 @@ topics.
 * :ref:`Specify that All ContentSpecific Discussion Topics are Cohorted`
 * :ref:`Specify Some ContentSpecific Discussion Topics as Cohorted`
 
-For overview information about discussions in a course, see :ref:`Discussions`.
-For information about using cohorts in a course and managing discussions that
-are divided by cohort, see :ref:`Cohorts Overview` and :ref:`Moderating
+关于课程论坛的概览请参阅 :ref:`Discussions`.
+关于使用队列和管理按队列分类讨论的信息请参考 :ref:`Cohorts Overview` and :ref:`Moderating
 Discussions for Cohorts`.
 
-.. note:: Making discussion topics divided by cohort, described in this and
-   the following topics, only divides posts within the discussion topics by
-   cohort; the discussion topics are still visible to all learners in the
-   course. If you want to make specific content-specific discussion topics
-   visible only to certain cohorts, you can implement content groups and
-   change the visibility settings on the discussion components. For more
-   details, see :ref:`Cohorted Courseware Overview`.
+.. note:: 本章和以下主题中描述的按队列分类讨论主题，只能将讨论主题中的帖子进行分类，
+   讨论主题本身还是对所有学生可见。如果您想设置指定内容讨论主题尽对特定队列可见，
+   您可以使用内容小组并更改讨论组件的可见性设置。具体细节请参阅 :ref:`Cohorted Courseware Overview`.
 
 
 .. _Coursewide Discussion Topics and Cohorts:
 
 ***********************************************
-Course-Wide Discussion Topics and Cohorts
+全课堂讨论主题和队列
 ***********************************************
 
-When you first :ref:`create a course-wide discussion topic<Create CourseWide
-Discussion Topics>`, it is unified, and all students in the course can post,
-read, respond, and comment in the topic without regard to their cohort
-assignments. 
+当您第一次 :ref:`create a course-wide discussion topic<Create CourseWide
+Discussion Topics>` 时，该主题是统一的，课程内的所有学生都可以发帖、
+阅览帖子、回复和评论。
 
-After you add a course-wide topic, you can configure it so that it is divided by
-cohort instead. For step-by-step instructions for specifying whether a course-
-wide discussion topic is unified or divided by cohort, see :ref:`Specify Whether
+在您添加了全课堂主题后，您可以使其按队列分类。
+设定全课堂讨论主题属性的相关内容请参考 :ref:`Specify Whether
 CourseWide Discussion Topics are Cohorted`.
 
 ====================================================================
-Example: Making Some Course-Wide Discussion Topics Divided by Cohort
+示例：按队列分类全课堂讨论主题
 ====================================================================
 
-Course-wide discussion topics are by default unified, so that all learners can
-participate. In some instances, however, you might decide that it makes sense to
-divide some course-wide discussion topics by cohort, so that members of each
-cohort only see and respond to posts made by learners in the same cohort.
+全课堂讨论主题是默认为统一属性，所以所有学生都能参与讨论。
+某些情况下，您可能决定按队列分类全课堂讨论主题，
+这样每个队列中的成员只能看到同队列中成员的回复和发帖。
 
-For example, in addition to the system-supplied General topic, you add three
-new course-wide discussion topics, for a total of four discussion topics.
+例如，除系统自带“一般性说明”主题之外，您添加了三个新的全课堂讨论主题，一共为四个主题。
 
-* General
-* Course Q&A
-* Announcements
-* Brainstorming
+* 一般性说明
+* 课程 Q&A
+* 声明
+* 头脑风暴
 
-The posts that you intend to make to the General and Course Q&A topics, and
-the subjects you expect students to explore there, are appropriate for a
-unified learner audience. However, you decide that it will be useful for the
-Announcements and Brainstorming topics to be divided by cohort. For
-information about specifying whether course-wide discussion topics are divided
-by cohort, see :ref:`Specify Whether CourseWide Discussion Topics are
+您在一般性说明和课程Q&A主题中，以及其他您希望学生探索的课题中发布的帖子适用于所有学生。
+但是您决定将声明和头脑风暴按队列分类。关于指定全课程讨论主题是否按队列分类的信息，
+请参考 :ref:`Specify Whether CourseWide Discussion Topics are
 Cohorted`.
 
-You also decide to apply a naming convention so that students will know the
-audience for the discussion topics before they add any posts. For information
-about naming conventions, see :ref:`Apply Naming Conventions to Discussion
+您也可以使用命名对话，学生在发帖前可以了解该讨论主题的受众。
+更多关于命名对话的信息请参考 :ref:`Apply Naming Conventions to Discussion
 Topics`.
 
 
 .. _Specify Whether CourseWide Discussion Topics are Cohorted:
 
 ********************************************************************
-Specify Whether Course-Wide Discussion Topics are Divided by Cohort
+指定全课堂讨论主题是否按队列分类
 ********************************************************************
 
-When you :ref:`create course-wide discussion topics<Create CourseWide
-Discussion Topics>`, they are by default unified, and all learners in the
-course can see and respond to posts from all other learners. You can change
-course-wide discussion topics to be divided by cohort, so that only members of
-the same cohort can see and respond to each other's posts.
+当您 :ref:`create course-wide discussion topics<Create CourseWide
+Discussion Topics>` 时， 主题默认为统一属性，所有学生都能看见并回复其他学生的帖子。
+您可以更改全课堂讨论主题设置，将其按队列分类，这样学生只能看到相同队列中成员的回复和发帖。
 
-To change the cohort settings for course-wide discussion topics, follow these
-steps.
+按照以下步骤更改全课堂讨论主题的队列设置。
 
-#. In the LMS, select **Instructor**, then select **Cohorts**. 
+#. 在学习管理系统中选择 **导师** ，选择 **队列** 。
 
-#. Click **Specify whether discussion topics are divided by cohort**. 
+#. 点击 **指定讨论主题是否按队列分类** 。
    
-#. In the **Course-Wide Discussion Topics** section, select the checkbox next to
-   each course-wide discussion topic that you want to divide by cohort. Clear
-   the checkbox next to each course-wide discussion topic that you want to make
-   unified.
+#. 在 **全课程讨论主题** 一节，勾选您想划分的主题。
    
-#. Click **Save**.
+#. 点击 **保存** 。
    
-   The list of course-wide discussion topics is updated to show which topics are
-   divided by cohort, and which are unified.
+   全课堂讨论主题列表更新。
 
 .. image:: ../../../shared/building_and_running_chapters/Images/CohortDiscussionsCourseWide.png
   :alt: Two course-wide discussion topics in list, one cohorted and one unified
 
-For more information about managing discussions that are divided by cohort, see
+更多关于管理按队列分类的讨论主题请参考
 :ref:`Moderating Discussions for Cohorts`.
 
 
 .. _Content Specific Discussion Topics and Cohorts:
 
 **********************************************
-Content-Specific Discussion Topics and Cohorts
+指定内容讨论主题和队列
 **********************************************
 
-When you enable the cohort feature for a course, and :ref:`create content-specific
-discussion topics<Create ContentSpecific Discussion Topics>` by adding 
-discussion components to units in Studio, these content-specific
-discussion topics are by default divided by cohort. A student who is assigned
-to one cohort cannot read or add to the posts, responses, or comments
-contributed by the members of another cohort.
+当您开启了队列，并通过在Studio单元中添加讨论组件 :ref:`create content-specific
+discussion topics<Create ContentSpecific Discussion Topics>`  后，
+这些指定内容讨论主题默认按队列分类。
+学生只能看到本队列成员发布的帖子、回复以及评论。
 
-If you want all content-specific discussion topics in your course to be
-divided by cohort, you do not need to take any action. For more information,
-see :ref:`Specify that All ContentSpecific Discussion Topics are Cohorted`.
+如果您想让所有指定内容讨论主题按队列分类，您不需要做任何操作。
+更多信息请参考 :ref:`Specify that All ContentSpecific Discussion Topics are Cohorted`.
 
-Alternatively, you can specify that you want most of the content-specific
-discussion topics in your course to be unified, and make :ref:`only a few
+您也可以选择指定大多数指定内容讨论主题为统一属性，然后设置 :ref:`only a few
 discussion topics divided by cohort<Specify Some ContentSpecific Discussion
 Topics as Cohorted>`.
 
@@ -164,102 +129,82 @@ Topics as Cohorted>`.
 .. _Specify that All ContentSpecific Discussion Topics are Cohorted:
 
 *****************************************************************
-Specify that All Content-Specific Discussion Topics are Cohorted
+设置所有指定内容讨论主题按队列分类
 *****************************************************************
 
-The default behavior for content-specific discussion topics is that they are
-divided by cohort when you first :ref:`add them<Create ContentSpecific
-Discussion Topics>` in your courseware. If you want all content-specific
-discussion topics in your course to be divided by cohort, you do not need to
-take any action.
+当您第一次 :ref:`add them<Create ContentSpecific
+Discussion Topics>` 时，指定内容讨论主题的默认设置是按队列分类的。
+如果您想让所有指定内容讨论主题按队列分类，您不需要进行任何操作。
 
-You can confirm this setting on the Instructor Dashboard **Cohorts** tab. 
+您可以在导师面板的 **队列** 标签中确认此设置。 
 
-#. In the LMS, select **Instructor**, then select **Cohorts**. 
+#. 在学习管理系统中选择 **导师** ，选择 **队列** 。
 
-#. Click **Specify whether discussion topics are divided by cohort**. 
+#. 点击 **指定讨论主题是否按队列分类** 。
 
 .. image:: ../../../shared/building_and_running_chapters/Images/CohortDiscussionsSpecifyLink.png
  :alt: The link in the UI to specify whether content specific discussion topics are divided by cohort
    
-In the **Content-Specific Discussion Topics** section, you see that the
-**Always cohort content-specific discussion topics** option is selected. 
+在 **指定内容讨论主题** 一节中，您可以看到 **总是按队列划分指定内容讨论主题** 已选定。
 
-All content-specific discussion topics in your course are divided by cohort,
-and you cannot change the cohort settings of individual content-specific
-discussion topics.
+所有的指定内容讨论主题都是按队列划分的，您不需要单独更改此项设置。
 
 .. image:: ../../../shared/building_and_running_chapters/Images/CohortDiscussionsAlwaysCohort.png
  :alt: Content specific discussion topics controls with the "Always cohort
   content specific discussion topics" option selected
 
-For information about changing the cohort settings for your content-specific
-discussions to make all of them unified except a few, see :ref:`Specify Some
+更多关于更改队列设置，使大多数指定内容讨论为统一属性的信息请参考 :ref:`Specify Some
 ContentSpecific Discussion Topics as Cohorted`.
 
 
 .. _Specify Some ContentSpecific Discussion Topics as Cohorted:
 
 **************************************************************************
-Specify that Some Content-Specific Discussion Topics are Divided by Cohort
+设置部分指定内容讨论主题按队列分类
 **************************************************************************
 
-The default behavior for content-specific discussion topics is that they are
-divided by cohort when you first :ref:`add them<Create ContentSpecific
-Discussion Topics>` in your courseware.
+当您第一次 :ref:`add them<Create ContentSpecific
+Discussion Topics>` 时，指定内容讨论主题的默认设置为按队列分类。
 
-To make only a few of your content-specific discussion topics divided by
-cohort, you change the cohort settings for content-specific discussion topics
-to make them all unified, and then explicitly select only the topics that you
-want to be divided by cohort.
+如果需要将少数指定内容讨论主题按队列分类，您可以更改指定内容讨论主题的队列设置，
+使其为统一属性，然后选择您想划分的主题。
 
-.. warning:: When you change the cohort setting from **Always Cohort Content-Specific
-   Discussion Topics** to **Cohort Selected Content-Specific Discussion Topics**, 
-   you are making all content-specific discussion topics in your course unified, unless
-   you explicitly change them to be divided by cohort before saving your changes. 
-   This means that any posts that were previously divided by cohort and restricted to 
-   viewing, responding, and commenting by members of the same cohort are now visible
-   to all learners in your course. 
+.. warning:: 当您将队列设置由 **总是按队列划分指定内容讨论主题** 更改为 **选择性划分指定内容讨论主题** 时，
+   您将把所有指定内容讨论主题设定为统一属性，除非您明确将其更改为按队列划分。
+   这表示任何之前按队列划分的帖子、回复和评论现在对所有学生可见。
 
-   If you make changes to cohort settings in a running course, be aware of the
-   implications of your changes. For more details, see :ref:`Altering Cohort
+   如果您在已开始的课程中更改队列设置，注意更改可能造成的影响。
+   更多细节请参阅 :ref:`Altering Cohort
    Configuration`.
 
+按照以下步骤指定仅部分指定内容讨论主题按队列分类。
 
-To specify that only some content-specific discussion topics in your course are
-divided by cohort, follow these steps.
+#. 在学习管理系统中选择 **导师** ，然后选择 **队列** 。
 
-#. In the LMS, select **Instructor**, then select **Cohorts**. 
-
-#. Click **Specify whether discussion topics are divided by cohort**. 
+#. 点击 **指定讨论主题是否按队列分类** 。
 
 .. image:: ../../../shared/building_and_running_chapters/Images/CohortDiscussionsSpecifyLink.png
  :alt: The link in the UI to specify whether content specific discussion topics are divided by cohort
    
-3. In the **Content-Specific Discussion Topics** section, if it is not already
-   selected, select **Cohort selected content-specific discussion topics**.
+3. 在 **指定内容讨论主题** 中，如果未被选中，选择 **选择性划分指定内容讨论主题**  。
    
-   .. warning:: If you make changes to cohort settings in a running course, be
-      aware of the implications of your changes. For more details, see
+   .. warning:: 如果您更改已开始课程的设置，请注意可能造成的影响。
+      细节请参阅
       :ref:`Altering Cohort Configuration`.
 
-   All content-specific discussion topics that you add in your course are
-   unified and visible to all learners. The list of content-specific
-   discussion topics becomes editable.
+   所有您添加的指定内容讨论主题对所有学生可见。
+   主题列表变得可编辑。
    
-#. Select the checkbox next to each content-specific discussion topic that you
-   want to divide by cohort.
+#. 选中您想划分的指定内容讨论主题。
 
    .. image:: ../../../shared/building_and_running_chapters/Images/CohortDiscussionsCohortSelected.png
      :alt: Content specific discussion topics controls with the "Cohort
       selected content specific discussion topics option selected
    
-#. Click **Save**.
+#. 点击 **保存** 。
    
-   The changes to your content-specific discussions are saved. The content-specific
-   discussion topics that you selected are saved as being divided by cohort. All other
-   content-specific discussion topics are unified.
+   您做出的修改已保存。
 
-For more information about managing discussions that are divided by cohort, see
+更多关于管理按队列分类讨论的信息请参阅
 :ref:`Moderating Discussions for Cohorts`.
 

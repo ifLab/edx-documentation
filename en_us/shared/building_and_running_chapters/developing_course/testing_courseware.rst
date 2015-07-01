@@ -1,210 +1,178 @@
 .. _Testing Your Course Content:
 
 ###########################
-Testing Your Course Content
+测试您的课程内容
 ###########################
 
-The way your course looks in Studio is not the way that students will see and
-experience it when it is live. 
+在Studio的在线课程中，学生和您看到的界面是不同的。
 
-It is recommended that you test your content continually as you build your
-course, so you can interact with your course from a student's point of view.
+我们建议您建好课程后持续进行测试，这样您就可以和用学生的视角体验课程。
 
-To test your content, you can:
+以下步骤测试您的内容：
 
 * `Preview Course Content`_
 * `View Your Live Course`_
 
-.. note:: If you use content groups in your course to designate content as
-  visible only to particular students, see :ref:`Preview Cohort Specific
+.. note:: 
+  如果您建立内容组将课程内容设置为部分学生可见，请参考 :ref:`Preview Cohort Specific
   Courseware`.
 
-For information about setting up a beta test for your course, see
+更多关于贝塔测试的内容请参考
 :ref:`Beta_Testing`.
 
 .. _Preview Course Content:
 
 *************************
-Preview Course Content
+预览课程内容
 *************************
 
-You can preview course content before a course is live or before you publish
-specific units, to test how content will appear to students when it is
-released.
+您可以在课程上线或发布特定单元之前预览课程内容，这样您就可以审查课程将如何呈现在学生面前。
  
-When you preview course content, you see the latest course content configured
-in Studio. You see content in units with the publishing status :ref:`Draft
-(Never Published)`, :ref:`Draft (Unpublished Changes)`, or :ref:`Visible to
-Staff Only`.
+当您预览课程内容时，您将在Studio看到最新的课程内容。
+您将看到单元的发布状态： :ref:`Draft
+(Never Published)`、 :ref:`Draft (Unpublished Changes)` 或 :ref:`Visible to
+Staff Only` 。
 
-If you use content groups and have designated components in a unit as visible
-only to particular groups, the visibility status indicates that some content in
-the unit is visible only to particular groups. For information about previewing
-course content if you use content groups to designate content as visible only to
-particular groups, see :ref:`Preview Cohort Specific Courseware`.
+如果您使用内容小组并指定单元中的组件仅对特定小组可见，可见性状态指某些单元中的内容仅对特定小组可见。
+更多关于预览仅对特定小组可见的课程内容，请参阅 :ref:`Preview Cohort Specific Courseware`.
 
-For example, you :ref:`publish a unit<Publish a Unit>` with a video and a
-discussion.
+例如，您可以 :ref:`publish a unit<Publish a Unit>` ，其中可以包含视频和讨论区。
 
 .. image:: ../../../shared/building_and_running_chapters/Images/test-unit-studio.png
  :alt: A unit in Studio with a video and discussion
 
-Students see the same content in the LMS.
+学生在学习管理系统中将看到相同内容。
 
 .. image:: ../../../shared/building_and_running_chapters/Images/test-unit-lms.png
  :alt: A unit in the LMS with a video and discussion
 
-You later decide to add a multiple choice problem to the unit, before the
-discussion. Before you publish this change, you can see how the question will
-look to students by previewing the unit in the LMS.
+如果您稍后决定在讨论之前往单元中添加多选题。
+在发布修改之前，您可以通过预览单元查看该问题将如何呈现在学生界面。
 
 .. image:: ../../../shared/building_and_running_chapters/Images/test-unit-studio-added-comp.png
  :alt: A unit in Studio with a video and multiple choice problem. (The
    discussion component below the multiple choice problem is not included in
    the screen capture).
 
-
-When you click **Preview** and select to view the course as a **Student**, you
-see the unit in the LMS with the multiple choice question. This preview shows
-how students will experience the unit after you :ref:`publish the
-change<Publish a Unit>`.
+点击 **预览** 然后选择以 **学生** 视角浏览课程。您将看到学习管理系统中的单元包含的多选题。
+预览中将呈现您在 :ref:`publish the
+change<Publish a Unit>` 之后学生所看到的界面。
 
 .. image:: ../../../shared/building_and_running_chapters/Images/test-unit-lms-added-comp.png
  :alt: A unit in the LMS with "View as Student" selected, showing a video and
   a multiple choice problem. (The discussion component below the multiple
   choice problem is not included in the screen capture).
 
+在线课程中，学生仍将看到原有的课程内容。只有您 :ref:`publish the change<Publish a Unit>` ，之后，学生才能看到多选题。
 
-In the live course, students continue to see the existing content, without the
-multiple choice question, until you :ref:`publish the change<Publish a Unit>`.
-
-.. note:: When the unit's state is :ref:`Published and Live`, the preview and
-   the live version of the courseware are exactly the same. Selecting either
-   of **View Live** or **Preview** gives you the same view.
-
+.. note:: 当单元处于 :ref:`Published and Live` 状态时，在预览模式和在线版本中的课件是完全一样的。 
+   选择 **在线查看** 或 **预览** 将呈现一样的内容。
 
  
 .. _View Your Live Course:
 
 ******************************************
-View Your Live Course
+查看在线课程
 ******************************************
 
-When you are working in Studio, you can test your course by viewing it in the
-LMS. In the LMS, you can see your course as a student sees it. You can see your
-course in `Staff View`_ or `Student View`_. If you are using content groups to
-designate specific content as visible only to particular content groups, you can
-see your course as a content group would see it.
+当您使用Studio时，您可以通过在学习管理系统中浏览课程进行测试。
+您可以使用 `Staff View`_ 和 `Student View`_ 浏览课程。
+如果您使用内容组将内容设置为特定小组可见，您也可以以小组成员视角查看内容。
 
-While you work in Studio, you can switch to your live course to see how your
-course appears to students in two ways.
+当您使用Studio时，您可以由以下两种方式切换至学生视角：
 
-* From the outline page, click **View Live**.
+* 在大纲页面中点击 **在线查看**
    
   .. image:: ../../../shared/building_and_running_chapters/Images/test-outline-view-live.png
    :alt: View live button on the outline
 
-* In a unit page, click **View Live Version**.
+* 在单元页面中点击 **查看在线版本**
    
   .. image:: ../../../shared/building_and_running_chapters/Images/test-unit-view-live.png
    :alt: View Live Version button on the unit page
 
 =================
-Staff View
+员工视角
 =================
 
-You see the course in the **Staff View**.
+您可以用 **员工视角** 查看内容。
 
 .. image:: ../../../shared/building_and_running_chapters/Images/Live_Course_Staff_View.png
  :alt: Image of the Courseware page in a live course with Staff View indicated
   at top right and a View Unit in Studio button
  
-In **Staff View**:
+在 **员工视角** 中：
 
-* You see all units that are :ref:`Published and Live`. For units that are
-  :ref:`Draft (Unpublished Changes)` or :ref:`Visible to Staff Only`, you
-  see the last published version of the unit. You see these units
-  regardless of the release dates of the containing section or subsection.
+* 您将看到所有已经 :ref:`Published and Live` 的单元。而状态为 :ref:`Draft (Unpublished Changes)` 
+  或 :ref:`Visible to Staff Only` 的单元，您将能看到最新发布的版本。
+  无论单元内含的章节和子章节何时发布，您都能查看这些单元。
 
-* You do not see units that are :ref:`Draft (Never Published)`. To
-  see these units, you must use Preview mode as described in :ref:`Preview
-  Course Content`.
 
-* You can access the Instructor Dashboard, which has features and reports that
-  help you :ref:`run your course<Running Your Course Index>`.
+* 您将看不到属性为 :ref:`Draft (Never Published)` 的单元。
+  您必须使用在 :ref:`Preview Course Content` 中描述的预览模式才能看到这些单元。
 
-When you view your course in **Staff View**, you can execute tests to make sure
-that your course works the way you intend. For example,  before the release
-date of a subsection, members of the course team can work through the problems
-to verify that the correct answer gets a green check for correct, and that any
-answer other than the correct one gets a red X for incorrect.
+
+* 您可以进入导师面板，该面板中的特性和报告将能帮助您  :ref:`run your course<Running Your Course Index>` 。
+
+
+当您使用 **员工视角** 查看课程时，您可以进行测试，以确保课程按照您的意愿进行。
+例如，在发布子章节之前，课程教员可以将所有问题完成一遍，以确保正确答案显示绿勾，其他答案显示红色的X。
 
 ============
-Student View
+学生视角
 ============
 
-When viewing your course in the LMS, you can use the **Student** view to see the
-course with all course content that is intended for all students.
+当您在学习管理系统中查看课程时，您可以使用 **学生** 视角来查看学生将看到的课程内容样式。
 
-.. note:: If you have enabled your course for cohorts and have designated some
-  content as visible only to certain content groups, you can select a content
-  group from the **View Course As** drop down list to see the content exactly
-  as a student in a cohort associated with that content group will see it. For
-  details, see :ref:`Preview Cohort Specific Courseware`.
+.. note:: 如果您建立了群并将您的课程设置为对特定内容小组可见，您可以在 **查看课程视角**
+  中的下拉列表里选择内容小组以查看小组成员浏览课程的形式。更多细节请参阅 :ref:`Preview Cohort Specific Courseware` 。
 
-To switch to the **Student** view, click **View this course as** and select
-**Student** from the drop down list.
+点击 **查看课程视角** 下拉列表，选择 **学生** 以切换至学生视角。
 
 .. image:: ../../../shared/building_and_running_chapters/Images/test-view-as-student.png
  :alt: Image of the View Course As drop down list with Staff, Student, and
   named content group options
 
-In **Student View**:
+在 **学生视角** 中：
 
-* You do not see sections or subsections that have not yet been released.
+* 您无法看到未发布的章节和子章节。
 
-* If the section and subsection are released, you see units that are
-  :ref:`Published and Live`. For units that are
-  :ref:`Draft (Unpublished Changes)`, you see the last published version of the
-  unit. 
+* 如果章节和子章节已发布，您可以看到 :ref:`Published and Live` 的章节。
+  您将能看到标记为 :ref:`Draft (Unpublished Changes)` 单元的最新发布版本。
 
-* You do not see units that are :ref:`Draft (Never Published)` or
-  :ref:`Visible to Staff Only`. To see these units, you must switch back to Instructor view or use Preview mode as described in :ref:`Preview Course Content`.
+* 您不能看到标记为 :ref:`Draft (Never Published)` 和 :ref:`Visible to Staff Only` 的单元。
+  要查看这些单元，您必须切换到导师视角 :ref:`Preview Course Content` 或中描述的预览模式。
 
-* You can access the Instructor Dashboard, which has features and reports that
-  help you run your course.
+* 您可以进入导师面板，该面板中的特性和报告将帮助您管理您的课程。
 
 
 *************************************
-Open Studio from Your Live Course
+在您的在线课程中打开Studio
 *************************************
 
-When you are viewing your course in the LMS as **Staff View**, you can open
-Studio directly.
+当您用 **员工视角** 在学习管理系统中查看课程时。您可以直接打开Studio。
+
    
-* In a unit page, click **View Unit in Studio**.
+* 在单元页面中点击 **在Studio中查看单元**
   
   .. image:: ../../../shared/building_and_running_chapters/Images/Live_Studio_from_LMS_Unit.png
    :alt: The View Unit in Studio button in an LMS unit
 
-  The unit page opens in Studio.
+  单元页面在Studio中开启。
  
-* In the Instructor Dashboard, click **View Course in Studio** to open the
-  course outline.
+* 在导师面板中，点击 **在Studio中查看课程** 打开课程大纲
  
   .. image:: ../../../shared/building_and_running_chapters/Images/Live_Course_Instructor_Dashboard.png
     :alt: Image of the Instructor Dashboard in a live course with a View Course
         in Studio button
 
-  For information about the tasks you can complete on the Instructor Dashboard,
-  see :ref:`Running Your Course Index`.
+  更多关于导师面板中的操作内容，请参阅 :ref:`Running Your Course Index` 。
  
-* In the **Course Progress** page, click **View Grading in Studio** to open the
-  Grading page.
+* 在 **课程进程** 页面中点击 **在Studio中查看评分** 打开评分页面。
  
   .. image:: ../../../shared/building_and_running_chapters/Images/Student_Progress.png
      :alt: Image of the Course Progress page for a student with a View  Grading
          in Studio button
 
-  For information about checking a student's progress, see
-  :ref:`Review_grades`.
+  更多关于查看学生学习情况的信息请参阅
+  :ref:`Review_grades` 。

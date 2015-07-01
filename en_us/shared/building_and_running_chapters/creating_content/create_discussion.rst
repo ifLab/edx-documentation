@@ -1,31 +1,26 @@
 .. _Working with Discussion Components:
 
 ###################################
-Working with Discussion Components
+创建讨论组件
 ###################################
 
 *******************
-Overview
+概况
 *******************
 
-You can add discussion components to a unit to pose questions related to the
-unit and give students a chance to respond and interact on a specific subject.
-Discussion topics that you create by adding discussion components in your
-courseware are known as content-specific discussion topics.
+您可在单元内添加讨论组件，提出有关本单元的问题，并且让学生回答和相互讨论。
+您在讨论组件中添加的讨论主题也称作内容特定讨论主题。
 
-We recommend that you add an HTML component before each discussion component
-to introduce the topic that you want learners to discuss. The discussion
-component itself does not contain any text and can be easy for learners to
-overlook.
+我们建议您在添加讨论组件之前，添加介绍讨论的课题的HTML组件。
+讨论组件本身不包含任何文本，而且很有可能被学生忽视。
 
-For more information about discussion components, see these topics.
+更多内容请浏览以下章节：
 
 * :ref:`Create a Discussion Component`
 * :ref:`Visibility of Discussion Topics`
 * :ref:`A Students View of the Discussion`
 
-
-For more information about discussions in general, see these topics.
+更多关于一般讨论的信息，请参阅：
 
 * :ref:`Discussions`
 * :ref:`Guidance for Discussion Moderators`
@@ -34,77 +29,64 @@ For more information about discussions in general, see these topics.
 .. _Create a Discussion Component:
 
 *****************************
-Create a Discussion Component 
+创建讨论组件 
 *****************************
 
 
-.. note:: We recommend that you add an HTML component before each discussion
-   component to introduce the topic that you want learners to discuss. The
-   discussion component itself does not contain any text and can be easy for
-   learners to overlook.
+.. note:: 我们建议您在添加讨论组件之前，添加介绍讨论的课题的HTML组件。
+   讨论组件本身不包含任何文本，而且很有可能被学生忽视。
 
-#. Under **Add New Component**, click **Discussion**.
+#. 点击添加新组件下方的讨论。
 
-#. In the discussion component that appears, click **Edit**.
+#. 显示讨论组件之后，点击编辑。
   
    .. image:: ../../../shared/building_and_running_chapters/Images/Disc_Create_Edit.png
     :alt: Image of the discussion component with the Edit button circled
 
-#. Follow the guidelines in the editor to fill in the **Category**, the
-   optional **Display Name**, and the **Subcategory** fields.
+#. 讨论组件编辑打开后，按照指示填写 **分类** 、 **显示名称** 及 **子分类** 区域。
    
    .. image:: ../../../shared/building_and_running_chapters/Images/DiscussionComponentEditor.png
     :alt: Image of the discussion component editor with a category of "Getting Graded" and a subcategory of "Answering More Than Once"
 
-   The value in the **Display Name** field identifies the discussion in the
-   course content. The values in the **Category** and **Subcategory** fields
-   appear in the list of discussion topics on the **Discussion** tab. 
+   **显示名称** 域中的值定义课程内容中的讨论。
+   **分类** 和 **子分类** 区域的值显示在讨论主题列的 **讨论** 栏中。
 
-   .. note:: Each **Category**/**Subcategory** pair for the discussion topics
-      in your course must be unique.
+   .. note:: 每个讨论主题中的 **分类**/**子分类** 对必须是唯一的。 
 
    .. image:: ../../../shared/building_and_running_chapters/Images/Discussion_category_subcategory.png
     :alt: A list of discussions with the "Answering More Than Once" topic indented under "Getting Graded"
   
-#. Click **Save**.
+#. 点击保存。
 
-.. warning:: You should always use these steps to create a discussion
-   component. Do not create discussion topics by using the **Duplicate**
-   button in Studio. Duplicated discussion components will result in
-   discussion topics containing the same conversations, even if users post in
-   different discussions.
+.. warning:: 您应使用这些步骤创建讨论组件。若您运用Studio中的复制键，那么讨论组件将保存相同的对话，
+   即使用户上传的是不同的讨论。
 
-.. note:: On the *Discussion** tab, you cannot see category and subcategory
-   names of discussion components that you created until after the course has
-   started and the unit is released. For more details about when discussion
-   topics are visible, see :ref:`Visibility of Discussion Topics`.
+.. note:: 在 **讨论** 栏中，课程开始且单元发布之后，您才能看到讨论组件的分类和子分类名。
+   更多细节请参考 :ref:`Visibility of Discussion Topics` 。
 
 
 .. _A Students View of the Discussion:
 
 **********************************
-A Student's View of the Discussion 
+学生视图下的讨论 
 **********************************
 
-For students, the display name for the discussion component appears in the
-learning sequence at the top of the page:
+
+ 学生页面下的讨论组件在页面顶部的课程区域中。
 
 .. image:: ../../../shared/building_and_running_chapters/Images/DiscussionComponent_LMS_Ribbon.png
  :alt: Image of a unit from a student's point of view with the component list
      showing a discussion component
 
-The discussion space appears under other components in the unit. It does not
-have a label in the body of the unit. Instead, students see "Show discussion"
-or "Hide discussion" on the left, and a blue **New Post** button on the right.
+讨论区域在单元下方。单元正文中没有标签。相反，学生们在左边能看见“显示讨论”或“隐藏讨论”，右边   
+是蓝色的发布新帖按钮。 
 
-In the following example, the discussion component follows video and HTML
-components:
+下图中讨论组件在视频和HTML组件下方：
 
 .. image:: ../../../shared/building_and_running_chapters/Images/DiscussionComponent_LMS.png
   :alt: Image of a video component followed by a discussion component
 
-In the **Discussion** tab at the top of the page, students can find the
-category and subcategory of the discussion in the left pane.
+在页面顶端的 **讨论** 栏中，学生可以看到位于左侧的分类和子分类。
 
 .. image:: ../../../shared/building_and_running_chapters/Images/Discussion_category_subcategory.png
  :alt: Image of the Discussion page from a student's point of view

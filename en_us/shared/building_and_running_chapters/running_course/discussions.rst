@@ -2,19 +2,16 @@
 
 
 ##################################
-Managing Course Discussions
+管理课程讨论项目
 ##################################
 
-Discussions, or discussion forums, foster interaction among your students and
-between students and course staff. You can set up different topics to guide
-these interactions when you create your course, and then run and moderate
-discussions throughout the course to encourage participation and develop course
-community.
+讨论项目，即论坛，旨在构建学生与工作人员，以及学生与学生之间的有效沟通和交流。
+创建课程时，您可设立各种讨论课题引导课程参与人员之间的互动，
+同时通过运营、管理讨论项目活动鼓励学生参与课程、建立课程社区。
 
-Discussions are also excellent sources of feedback and ideas for the future.
+讨论项目（下或称“论坛”）同时也是课程反馈及未来创意的重要来源。
 
-For information about running and moderating discussions, see the following
-sections.
+关于运营、协调讨论项目的内容，请参见以下章节：
 
 * :ref:`Overview_discussions`
 
@@ -30,447 +27,364 @@ sections.
 
 * :ref:`Close_discussions`
   
-For information about how using cohorts in your course affects how your course
-team might moderate course discussions, see :ref:`Moderating Discussions for
+想了解更多关于分队功能对论坛协调事宜的影响，请参考 :ref:`Moderating Discussions for
 Cohorts`.
 
-.. note:: The :ref:`Discussions for Students and Staff` section describes
-   features that are available to all discussion participants, and might be
-   useful to students who are new to online discussion forums. You can share
-   the section with your students by, for example, adding a "Never Used a
-   Discussion Forum Before?" post that includes the information you think will
-   be most useful to them.
-
+.. note:: :ref:`Discussions for Students and Staff` 部分描述的性能对所有论坛成员开放。
+   对论坛新人而言帮助也很大。
+   您可以和学生一起分享其中的内容。
+   方式有很多，比如，您可以发一条名为“第一次使用论坛？”的帖子，
+   在帖子中提供您认为对学生最有用的信息。
 
 .. _Overview_discussions:
 
 ********************************
-Overview
+概述
 ********************************
 
-Students and staff use course discussions to share ideas, exchange views,
-consider different viewpoints, and ask questions. In a discussion, there are
-three hierarchical levels of interaction.
+学生与员工可以通过论坛分享观点、交流看法、交换意见、解决问题。论坛中的互动分为三种。
 
-* A *post* is the first level of interaction. A post opens a new subject. Posts
-  can be made as questions, to solicit a concrete answer, or as discussions,
-  to start a conversation. When you add a post, you decide whether to add it
-  as a **Question** or as a **Discussion**.
+*  *帖子* 帖子通常用于展开新话题。帖子一般以问题的形式出现，
+  要么展开对话，要么引出一个值得关注的问题。您在发帖时，通常将其归类为“提问”或“讨论”。
 
-* A *response* is the second level of interaction. A response is a reply made
-  directly to a post to provide a solution or continue the conversation.
+*  *回复* 回复指的是关于某个帖子问题的直接回答，或某个对话的延续。
 
-* A *comment* is the third level of interaction. A comment is often a
-  clarification or side note made to a specific response, rather than to the
-  post as a whole.
+*  *评论* 评论指的是针对某条回复的补充说明或边注。
+  评论一般不针对整个帖子，只针对某条回复。
  
-The dialogue created by a post, its responses, and the comments on those
-responses is sometimes called a thread. Discussion threads are saved as part
-of the course history.
+由帖子、回复、评论组成的对话有时统称为“话题”。
 
-All course staff members and enrolled students can add posts, responses, and
-comments, and view all of the posts, responses, and comments made by other
-course participants. 
+所有员工及参与课程的学生均可发帖、回帖或发表评论，
+同时也可以查看其他课程参与者发布的帖子、回复及评语。
 
-Members of the course community, both staff and students, can be given
-permission to moderate or administer course discussions through a set of
-discussion administration roles. 
+课程社区的所有成员，包括员工和学生，均可以赋予论坛协调员或管理员等讨论项目管理职能。
+讨论话题可以保存，是课程历史的组成部分。
 
-.. note:: The course team that you set up in Studio (or the course staff and
-   instructors you add on the Instructor Dashboard) are not automatically
-   granted discussion administration privileges, which are required to view
-   all posts, for example in courses using cohorts.
+.. note:: “参与课堂讨论”一章描述了论坛的部分功能，这些功能对所有参加论坛的人都开放，
+   对论坛新人而言帮助也很大。
+   您可以和学生一起分享其中的内容。
+   方式有很多，比如，您可以发一条名为“第一次使用论坛？”的帖子，
+   在帖子中提供您认为对学生最有用的信息。
 
-   Discussion administration roles must be explicitly granted to members of
-   the course team for them to moderate or administer course discussions. The
-   course author, team members with Admin access (Studio), and Instructors
-   (Instructor Dashboard) can grant discussion administration roles. For
-   information about adding discussion privileges, see
-   :ref:`Assigning_discussion_roles`.
+   论坛管理员角色必须为您课程团队中的教员。
+   课程作者、有管理权限的团队成员以及导师可以授予管理员权限。
+   更多关于添加论坛特权的内容请参考 :ref:`Assigning_discussion_roles`.
 
 
 .. _Organizing_discussions:
 
 *************************************************
-Creating Discussion Topics for Your Course
+建立课堂讨论课题
 *************************************************
 
-Discussions in an edX course include both broad topics on course-wide areas of
-interest such as "Feedback", "Troubleshooting", or "Technical Help", and the
-content-specific topics that you add to course units as discussion components.
-You create both types of discussion topics in Studio.
+edX课程的论坛既可以添加您之前专门为某个课程单元设计好的讨论模块，
+也可以开展全课堂范围的讨论课题，比如“课程反馈帖”，“答疑帖”，“技术支持帖”等等。
+您可通过Studio添加各种不同类型的讨论课题。
 
-For more information about creating discussion topics, see :ref:`Create
-CourseWide Discussion Topics` and :ref:`Create ContentSpecific Discussion
-Topics`. For information about configuring discussion topics in courses that
-use cohorts, see :ref:`Set up Discussions in Cohorted Courses`.
+更多关于创建讨论主题的内容，请参考 :ref:`Create
+CourseWide Discussion Topics` 和 :ref:`Create ContentSpecific Discussion
+Topics` 。更多关于使用群配置讨论主题的内容请参考 :ref:`Set up Discussions in Cohorted Courses`.
 
 
 .. _Create CourseWide Discussion Topics:
 
 =====================================
-Create Course-Wide Discussion Topics
+创建全课堂讨论课题
 =====================================
 
-All courses include a page named **Discussion**. When you create a course, a
-course-wide discussion topic named "General" is already included by default.
+所有课程均包括一个名为“讨论”的页面。创建课程时，
+系统会在该页面中默认生成一个名为“General”的讨论课题。
 
-You can add additional course-wide discussion topics to guide how students
-share and find information during your course. Such course-wide topics might
-include Introduction and Announcements, Feedback, or Troubleshooting.
-Discussions in these topics can begin as soon as your course is available.
+课堂讨论课题，在课堂上引导学生分享、查找信息。
+这类课题可以包含“反馈”、“答疑”、“技术支持”等字样。
+这类课题的可访问时间与课程的可访问时间一致。
 
-.. note:: Make sure each discussion topic in your course has a unique name,
-   whether it is a course-wide topic or a content-specific discussion topic
-   that you add as a discussion component. If different discussion topics
-   share the same name, learners might be confused as to which discussion
-   topic they are participating in. For example, do not add a content-specific
-   discussion topic named "General", because a course-wide discussion topic
-   named "General" already exists in every course.
+.. note:: 确保您课程中的讨论主题有唯一的名称，
+   无论是全课堂讨论课题或是指定内容讨论课题。
+   如果不同的主题名称相同，学生会不知道自己在哪个主题中。
+   例如，不要添加名称为“General”的指定内容讨论课题，
+   因为全课程讨论问题中已经有叫“General”的问题了。
 
-To create a course-wide discussion topic, follow these steps.
 
-#. Open your course in Studio. 
+如何创建全课堂讨论课题：
 
-#. Select **Settings**, then **Advanced Settings**.
+#. 在Studio中打开课程 
 
-#. Scroll down to the **Discussion Topic Mapping** policy key. By default, its
-   value is:
+#. 单击“设置”→“高级设置”
+
+#. 将滚动滑块拖至“讨论课题映射”策略键。系统默认值应为：
 
  .. image:: ../../../shared/building_and_running_chapters/Images/Discussion_Add_initial.png
   :alt: Policy value of {"General": {"id": "i4x-edX-Open-edx_demo_course"}}
 
-4. Copy the three lines provided for the General topic and paste
-   them above the closing brace character (``}``):
+4. 复制“General”后的三行信息，粘贴到结尾的闭大括号前：
 
  .. image:: ../../../shared/building_and_running_chapters/Images/Discussion_Add_paste.png
   :alt: Policy value of {"General": {"id": "i4x-edX-Open-edx_demo_course"} 
         "General": {"id": "i4x-edX-Open-edx_demo_course"}}
 
-5. Replace the second "General" with the quoted name of your new topic.
+5. 将第二个“General”替换为新课题的名称，注意带上双引号
 
-#. Change the value for the second "id" to a unique identifier. For example,
-   append a reference to the name of the topic.
+#. 将第二个“id”值更改为另一个唯一的值。比如，可以为课题名附上一组独一无二的参数
 
-.. note:: In discussion topic IDs, you can use only alphanumeric characters
-   and these special characters: underscore, hyphen, and period.
+.. note:: 在讨论主题ID中，您只能使用字母和数字字符，以及以下特殊符号：下划线、连字符和句号。
 
-7. Add a comma after the first closing brace (``},``).
+7. 在第一个闭大括号后输入一个逗号
 
  .. image:: ../../../shared/building_and_running_chapters/Images/Discussion_Add_name.png
   :alt: Policy value of {"General": {"id": "i4x-edX-Open-edx_demo_course"}, 
         "Course Q&A": {"id": "i4x-edX-Open-edx_demo_course_faq"}}
 
-8. Click **Save Changes**. Studio resequences and reformats your entry. Scroll
-   back to the **Discussion Topic Mapping** field to verify that your entry was
-   saved as you expect. Entries that do not contain all of the required
-   punctuation characters revert to the previous value when you save, and no
-   warning is presented.
+8. 单击“保存更改”。Studio会重新给您输入的值排序并设定格式。
+   将滚动条拖回“讨论课题映射”字段，确认输入内容是否已保存。
+   如果您在输入时漏掉了标点符号，输入内容不会保存，且没有警告提示。
 
-When students click the **Discussion** page for your course, the drop-down
-Discussion list now includes the topic you added.
+
+操作成功后，当学生单击课程的“讨论”页面时，您的课程即出现在下拉列表中。
 
  .. image:: ../../../shared/building_and_running_chapters/Images/NewCategory_Discussion.png
   :alt: Image of a new topic named Course Q&A in the list of discussions
 
-.. note:: In courses that use cohorts, the course-wide discussion topics that
-   you add are unified. All posts can be read and responded to by every
-   learner, regardless of the cohort that they belong to. You can optionally
-   configure these topics to be divided by cohort. See :ref:`Coursewide
+.. note:: 在分队课堂中，全课堂讨论课题对所有人均可见。
+   所有小队中的学生均可访问课题中的帖子及回复。
+   您也可以手动将这类课题配置为分队讨论课题。
+   详见 :ref:`Coursewide
    Discussion Topics and Cohorts`.
 
 .. _Create ContentSpecific Discussion Topics:
 
 ============================================
-Create Content-Specific Discussion Topics
+创建内容指定讨论主题
 ============================================
 
-To create a content-specific discussion topic, you add a discussion component
-to a unit. Typically, you do this while you are designing and creating your
-course in Studio. Follow the instructions in :ref:`Working with Discussion
-Components`. The result is a discussion topic associated with a unit and its
-content. 
+您需要在单元中添加讨论组件。一般情况，您在Studio中创建课程的时候需要这么做。
+请遵循 :ref:`Working with Discussion Components` 中的指导内容。
+讨论主题将与所在单元相关联。
 
-.. warning:: Follow the recommended steps to add discussion components. Do not
-   create discussion topics by using the **Duplicate** button in Studio, and
-   do not reference the same discussion ID in more than one place in your
-   course. Duplicated discussion components will result in discussion topics
-   containing the same conversations, even if learners post in different
-   discussion topics.
 
-For more information about the visibility of content-specific discussion
-topics, see :ref:`Visibility of Discussion Topics`.
+.. warning:: 按照推荐步骤添加讨论组件。
+   不要使用Studio中的 **复制** 创建讨论主题。
+   不要在不同区域多次使用同一个论坛ID。
+   复制讨论组件将导致讨论主题包含同样的对话，即使学生是在不同的讨论主题下发布信息。
 
-.. note:: In courses with cohorts enabled, all content-specific discussion
-   topics are divided by cohort when you first add them. Student posts to divided
-   discussion topics can only be read and responded to by members of the same
-   cohort. You can change the configuration of content-specific discussion topics
-   to make them unified and available to all students in the course. See
-   :ref:`Content Specific Discussion Topics and Cohorts`.
+
+更多关于指定内容讨论主题信息请参考 :ref:`Visibility of Discussion Topics`.
+
+.. note:: 在包含群组的课程中，所有指定内容讨论主题在您第一次添加的时候就已经分组。
+   学生只能看到相同群组中成员的回应。您可以更改内容讨论主题设置，使其对课堂中所有学生可见。
+    更多信息请参考 :ref:`Content Specific Discussion Topics and Cohorts`.
 
 .. _Assigning_discussion_roles:
 
 *************************************************
-Assign Discussion Administration Roles 
+安排讨论项目管理职能
 *************************************************
 
-You can designate a team of people to help you run course discussions.
+您需要指定一个团队帮助您运营讨论项目。
 
-.. note:: The course team that you set up in Studio (or the course staff and
-   instructors you add on the Instructor Dashboard) are not automatically
-   granted discussion administration roles.
-
-
-   Discussion administration roles must be explicitly granted to members of
-   the course team for them to moderate or administer course discussions. The
-   course author, team members with Admin access (Studio), and Instructors
-   (Instructor Dashboard) can grant discussion administration roles.
+.. note:: 您在Studio中建立的课程团队（或您在教师控制面板中指定的课程工作人员及导师）
+   并不默认为论坛管理人员。
 
 
-Different options for working with discussions are available through
-the following roles.
+   论坛管理人员应由从课程团队中另外指定，其职责是协调、管理课堂讨论项目。
+   论坛管理人员可由课程作者、导师（教师控制面板中的）
+   或其他有管理权限的团队成员（Studio中的）担任。
 
-* *Discussion moderators* can edit and delete messages at any level, review
-  messages flagged for misuse, close and reopen posts, pin posts, and endorse
-  responses. Posts made by moderators are marked as "By: Staff" in the list of
-  posts. Responses and comments made by moderators have a colored "Staff"
-  identifier. This role is often given to course team members who already have
-  the Course Staff role.
+
+论坛管理人员的分类及职能简述如下：
+
+* *论坛协调员* 论坛协调员可以编辑、删除所有消息（包括帖子、回复、评论）；
+  可以审核带有“误用信息”标签的帖子；可以封杀、取消封杀帖子；
+  可以将帖子置顶；可以批准回复。在帖子列表中，论坛协调员发布的帖子带有“By:staff”字样，
+  协调员发表的回复和评论带有加色的“Staff”标识。
+  协调员通常从已担任“课程工作人员”的团队成员中选派。
 
 .. removed this clause from 1st sentence per JAAkana and MHoeber: , and, if the
 .. course is cohorted, see posts from all cohorts
 
-* *Discussion community TAs* have the same options for working with discussions
-  as moderators. Posts made by community TAs are marked as "By: Community TA"
-  in the list of posts on the **Discussion** page. Responses and comments made
-  by community TAs have a colored "Community TA" identifier. This role is often
-  given to students.
+* *论坛社区助教* 助教的职能和协调员相同。助教发布的帖子带有“By: Community TA”字样，
+  发布的评论和回复带有加色的“Community TA”标识。助教通常由学生担任。
 
 .. I put this comment in to make the formatting of this bulleted list consistent when output using the sphinx template
 
-* *Discussion admins* have the same options for working with discussions as
-  moderators, and their posts, responses, and comments have the same "Staff"
-  identifiers. This role can be reserved for assignment to course team members
-  who have the Instructor role only: the discussion admins can then both
-  moderate discussions and give other users these discussion management roles
-  whenever necessary.
+* *论坛管理员* 拥有以上两种职位的所有职能。
+  管理员发布的帖子、回复、评论带有相同的“Staff”标识。
+  管理员只能由已担任导师的团队成员出任，
+  因为管理员除了具有协调员和助教的只能外，还能在必要的时候赋予其他用户论坛管理职能。
 
-Before you can assign roles to your discussion team, you need their email
-addresses or usernames.
 
-* To get this information for a course team member, on the Instructor Dashboard
-  click **Membership** and then select **Course Staff** or **Instructor** from
-  the drop-down list.
+安排论坛管理人员时，您需要提供他们的邮箱地址或用户名。
 
-* To get this information for an enrolled student, on the Instructor Dashboard
-  click **Data Download**, then **Download profile information as a CSV**.
+* 如何查看课程团队成员的信息？在教师控制面板中，单击“成员”，
+  然后从下拉列表中选择“课程工作人员”/“导师”。
+
+* 如何查看学生信息？在教师控制面板中，单击“数据下载”
+  “以CSV格式下载学生资料”
 
 
 ====================================
-Assign Roles
+如何安排职位
 ====================================
 
-To assign a discussion administration role, you must be the course author or
-an Instructor (that is, you are identified in Studio as a team member with
-Admin access or in the LMS as an Instructor).
+首先，您必须是课程作者，或担任“导师”职位（即，您必须在Studio中有管理权限）。
 
-#. View the live version of the course.
+#. 查看课程现况
 
-#. Click **Instructor**, then click **Membership**.
+#. 单击“导师”→“成员”
 
-#. In the Administration List Management section, use the drop-down list to
-   select Discussion Admins, Discussion Moderators, or Discussion Community
-   TAs.
+#. 在“行政人员列表管理”字段的下拉列表中选择“论坛管理员”、“论坛协调员”或“论坛社区助教”
 
-#. Under the list of users who currently have that role, enter an email address
-   or username and click **Add** for the role type.
+#. 在用户列表中输入相应的邮箱地址或用户名，单击“添加”
 
 
 ==============
-Remove Roles
+删除角色
 ==============
 
-To remove role privileges from a user, you must be the course author or
-an Instructor (that is, you are identified in Studio as a team member with
-Admin access or in the LMS as an Instructor).
+要删除用户的特权，您必须是课程作者或导师（您在Studio中有管理员权限
+或在LMS中是导师）。
 
-#. View the live version of the course.
+#. 查看课程在线版本
 
-#. Click **Instructor**, then click **Membership**.
+#. 选择 **导师** ，点击 **成员**
 
-#. In the Administration List Management section, use the drop-down list to
-   select Discussion Admins, Discussion Moderators, or Discussion Community
-   TAs.
+#. 在管理列表中的管理部分，选择下拉列表中的论坛管理员，论坛版主或讨论社区助教。
 
-#. From the list of users who currently have that role, select the user you
-   want to remove, then click **Revoke access**.
+#. 在列表中选择您想删除的用户，点击 **删除权限** 
 
 
 .. _Visibility of Discussion Topics:
 
 **********************************
-Visibility of Discussion Topics
+讨论主题可见性
 **********************************
 
-The names that you specify as the category and subcategory names for
-discussion components are not visible on the **Discussion** tab until after
-the course has started and the unit is released.
+在课程开始且单元发布之前，
+您为讨论组件指定的种类和子类名称在 **论坛** 栏中不可见。
 
-However, "seed" posts that you create in content-specific discussion topics
-before a course starts or before the unit is released are immediately visible
-on the **Discussion** tab, even though the containing category or subcategory
-names are not visible. We recommend that you do not create posts in 
-content-specific discussion topics before a unit is released. For more
-information about release dates and the visibility of components, see
+然而，您创建在指定内容讨论主题中的基础帖在 **论坛** 栏中立即可见，
+尽管所包含的分类和子类名仍不可见。我们建议您在单元发布前不要在指定内容讨论主题中发帖。
+更多关于发布日期和组件可见性的信息请参阅
 :ref:`Controlling Content Visibility`.
 
-In contrast, :ref:`course-wide discussion topics<Create CourseWide Discussion
-Topics>` that you create on the **Advanced Settings** page in Studio,
-including the default "General" discussion topic, are immediately visible,
-regardless of whether the course has started. They are not associated with any
-particular section or subsection of the courseware, and are not subject to
-release dates.
+相反，您在Studio中的 **高级设置** 中创建的 :ref:`course-wide discussion topics<Create CourseWide Discussion
+Topics>` 包含默认"General"讨论主题，是立即可见的，无论课程是否已经开始。
+这些主题与任何特定的章节和小节无关，也不受限于发布日期。
 
 
 .. _Running_discussions:
 
 *********************
-Run a Discussion
+运营讨论项目
 *********************
 
-On an ongoing basis, the members of your discussion team run the course
-discussion by making contributions, endorsing responses, marking answers as
-correct, and guiding student messages into pertinent threads. Techniques that
-you can use throughout your course to make discussions successful follow.
+讨论项目管理团队可通过多种方式运营论坛，比如在帖子中作贡献、给回复点赞、
+认可某条回复等等，他们通过这些方法引导学生发布与话题相关的消息。
+下面的几个小技巧能帮助您有效管理讨论项目。
 
 ==========================================
-Use Conventions in Discussion Subjects
+编辑讨论帖主题时采用同一的命名规则
 ==========================================
 
-To identify certain types of messages and make them easier to find, you can
-define a set of standard tags to include in the subject of a post or in the
-body of a response or comment. Examples follow.
+为区分不同种类的消息，并使消息更方便查找，
+您可以指定一系列命名规则以区分不同种类的帖子主题以及回复、评论。如下例：
 
-* Use "[OFFICIAL]" at the start of announcements about changes to the course.
+* 通知变更事宜时可在帖子主题开头加上“[OFFICIAL]”字样
 
-* Provide information about corrected errors with a subject that begins
-  "[CORRECTIONS]" or "[ERRORS]".
+* 提供错误修复信息的帖子的主题可以用“ERRATA”开头
 
-* Ask students to use "[STAFF]" in the subject of each post that needs the
-  attention of a course staff member.
+* 告知学生，如果需要课程工作人员帮助时可以在帖子主题中加入“[STAFF]”字样
 
-Both your discussion team and your students can use tags like these to search
-the discussions more effectively.
+讨论项目管理团队和学生均可使用这类命名规则以便更有效地搜索信息。
 
-When a post is created its type must be selected: either "question" or
-"discussion". Members of the discussion team should be thoughtful when
-selecting the type for their posts, and encourage students to do the same. See
+创建新帖子时，必须选择帖子的类型，是“提问”还是“讨论”。
+讨论项目团队成员在选择发帖类型时应慎重，同时也应鼓励学生慎重发帖。详见
 :ref:`Find Question Posts and Discussion Posts`.
 
 .. future: changing the type of a post, maybe resequence or separate  conventions from post types
 
 ========================
-Seed Discussion Topics
+为讨论课题做铺垫
 ========================
 
-To help students learn how to get the most out of course discussions, and find
-the best discussion topic to use for their questions and conversations, you can
-seed discussion topics in course-wide discussion topics before the course starts. 
-Some examples follow.
+为帮助学生学会如何在课堂讨论中尽可能多地收获知识，
+教会学生如何根据自己的问题和讨论寻找最佳的讨论课题，
+您可以在课程开始之前发几篇帖子作为课堂讨论的“开胃菜”。示例如下：
 
-* In the General topic (which is included in every course by default), add an
-  [INTRO] post to initiate a thread for student and staff introductions.
+* 在“General”课题中，发布一条“[INTRO]”帖子，引导学生和员工做自我介绍。
 
-* For each course-wide discussion topic that you create, add an initial post
-  to describe the way you intend that discussion to be used. In addition to
-  providing guidance, these initial messages can act as models for learners to
-  follow when they create their own posts.
+* 您每发布一个讨论课题，第一条帖子应描述如何使用这个课题。
+  除了提供指导教程之外，这类“初始消息”还可作为今后学生创建帖子的范例。
 
-We strongly recommend that you do not create seed posts in content-specific
-discussion topics before the course starts or before the containing unit is
-released. The category and subcategory names for content-specific discussion
-topics are subject to the release visibility of their containing unit, and are
-not visible until the unit is released. For more details, see :ref:`Visibility
+我们强烈建议您不要在课程开始或单元发布前在特定内容讨论主题中创建基础贴。
+特定内容讨论主题的类名和子类名与所在单元的发布可见性相关联，在单元发布之前，
+这些主题是不可见的。更多细节请参考 :ref:`Visibility
 of Discussion Topics`.
 
 
 ======================================
-Minimize Thread Proliferation
+缩小话题范围
 ======================================
 
-To encourage longer, threaded discussions rather than many similar, separate
-posts, the discussion team can use these techniques. However, be aware that
-long threads (with more than 200 responses and comments) can be difficult to
-read, and can therefore result in an unsatisfactory experience in the
-discussion.
+为了鼓励学生多发布更长、更线性化的讨论话题，
+少发布大同小异、支离破碎的散帖，论坛管理团队可以试试下面提到的几个技巧。
+但是请注意，长篇讨论（通常指回复、评论数量超过200条的讨论）阅读起来有一定难度，
+有可能影响学生的课堂体验。
 
-* Pin a post. Pinning a post makes it appear at the top of the list of posts on
-  the **Discussion** page. As a result, it is more likely that students will
-  see and respond to pinned posts. You can write your own post and then pin it,
-  or pin a post by any author. Select the "More" icon and then **Pin**.
+
+* 帖子置顶。帖子置顶功能可以使某条帖子出现在“讨论”页面中，
+  帖子列表的第一条，从而使更多学生能够看见、回复该帖。
+  您可以置顶自己写的帖子，也可以置顶其他人的帖子。
+  选择“更多”图标，然后点“置顶”即可。
 
     .. image:: ../../../shared/building_and_running_chapters/Images/Pin_Discussion.png
      :alt: Image of the pin icon for discussion posts
 
-* Endorse a response. Endorsing a response indicates that it provides value to
-  the discussion. Click the "check mark" (or tick mark) icon for the response.
+* 给回复点赞。点赞意味着您认为该条回复提供了有价值的信息。
+  单击右侧的“√”图标即可。
 
     .. image:: ../../../shared/building_and_running_chapters/Images/Endorse_Discussion.png
      :alt: Image of the Endorse button for discussion posts
 
-* Mark a question as answered. You use the same procedure to mark a response as
-  the correct answer to a question as you do to endorse contributions to a
-  discussion: click the "check mark" (or tick mark) icon for correct answers.
+* 将某个问题标记为“已回答”。操作方法同“点赞”。
 
-* Close a post. You can respond to a redundant post by (optionally) pasting in
-  a link to the post that you prefer students to contribute to, and prevent
-  further interaction by closing the post. Select the "More" icon and then
-  **Close** to close it.
+* 关闭帖子。如果您认为某条帖子很多余，可以在该帖的回复中粘贴一条链接，
+  指向您希望学生做出贡献的帖子，然后关闭本条帖子。
+  帖子关闭后，无法继续互动。选择“更多”图标中的“关闭”选项即可。
 
-* Provide post/response/comment guidelines. You can post information from the
-  :ref:`overview<Overview_discussions>` in this chapter, or the :ref:`anatomy
-  of edX discussions<Anatomy of edX Course Discussions>` in the next chapter,
-  in a course-wide discussion topic (such as General) to provide guidance about
-  when to start a new thread by adding a post, responding to an existing post,
-  or commenting on a response.
+* 通过帖子/回复/评论提供指导信息。您可在全课堂讨论课题的帖子中发布本章第一节中提到的内容，
+  也可以设计下一章“edX论坛剖析”中的内容，提示学生何时开始话题，如何回复帖子，如何评论回复。
 
 .. _Moderating_discussions:
 
 ***********************
-Moderate Discussions
+协调论坛工作
 ***********************
 
-The members of a course discussion team monitor discussions and keep them
-productive. They can also collect information, such as areas of particular
-confusion or interest, and relay it to the course staff.
+讨论团队成员会随时跟踪监控讨论项目，促使论坛高效运转。
+他们也可以从论坛中收集信息，比如学生对哪些知识存在疑问，
+对哪部分课程比较感兴趣，等等，并将这些信息转告给课程工作人员。
 
-Developing and sustaining a positive discussion culture requires that
-sufficient moderator time is dedicated to reviewing and responding to
-discussions. Keeping up-to-date with a large MOOC forum requires a commitment
-of 5 or more hours per week, and involves reading threads, replying to and
-editing posts, and communicating with the rest of the discussion team and
-course staff.
+如果希望培养并维持积极的论坛文化，则需花更多管理时间用于审核、回复论坛内容。
+一个大型开放式在线课程的论坛维护时间每周应不少于5小时，
+维护工作包括阅读讨论话题、回复、编辑讨论帖，以及和其他讨论团队成员及课程工作人员积极交流。
 
-For information on setting up moderators for your course, see
+更多信息请参考
 :ref:`Assigning_discussion_roles`.
 
 ====================================================
-View Profile Information for Discussion Participants
+查看论坛参与者的个人信息
 ====================================================
 
-If you want to find out more about a specific discussion participant, you can
-view that learner's edX profile. Learners can have either a limited profile or a
-full profile.
+如果您想了解某个论坛参与者，您可以查看学生的edX信息。学生可以部分或全部开放信息。
 
-To view a learner's profile, follow these steps.
+以下步骤查看学生信息：
 
-#. On the **Discussion** page, select a username in a post,
-   response, or comment.
-#. On the **Active Threads** page for that learner, select the
-   learner's username.
+#. 在 **论坛** 页面选择帖子或回应或评论中的用户名。
 
-The following image shows a learner's username in a post, the learner's
-username on the **Active Threads** page, and the learner's profile page.
+#. 在 **活动记录** 页面点击学生的用户名。 
+
+下图呈现了帖子里、活动记录页面的用户名和学生个人页面。
 
 .. image:: ../../../shared/building_and_running_chapters/Images/SFD_Prof_from_Disc.png
   :width: 600
@@ -478,270 +392,222 @@ username on the **Active Threads** page, and the learner's profile page.
       that learner's active threads page in the course discussions, and an
       image of the learner's profile
 
-For more information, or to create your own profile, see `View, Create, or
+更多关于创建个人简介的内容请参考 `View, Create, or
 Edit an edX Profile <http://edx- guide-for-
 students.readthedocs.org/en/latest/sfd_your_information.html#sfd_pro
 file_page>`_.
 
 ========================================
-Provide Guidelines for Students
+为学生提供指导
 ========================================
 
-You can develop a set of best practices for discussion participation and make
-them available to students as a course handout file or on a defined page in
-your course. These guidelines can define your expectations and optionally
-introduce features of edX discussions.
+关于如何参与论坛活动，您可以选取几个最佳案例作为模范，
+然后以课程讲义文件的形式发放给学生，或在课程中单独开一个页面详述。
+您可以通过这些指南表达自己对学生的期望，也可以介绍edX论坛的功能。
 
-You can also share the :ref:`Discussions for Students and Staff` chapter with
-your students. It describes features that are available to all discussion
-participants, and may be useful to students who are new to online discussion
-forums.
+您也可以选择将 :ref:`Discussions for Students and Staff` 一章中的内容与学生共享。
+它描述了讨论参与者可以使用的所有功能，即使是论坛新手也可以从中受益良多。
 
 .. For a template that you can use to develop your own guidelines, see
 .. :ref:`Discussion Forum Guidelines`.
 
 ========================================
-Develop a Positive Discussion Culture
+培养积极的论坛文化
 ========================================
 
-Discussion monitors can cultivate qualities in their own discussion
-interactions to make their influence positive and their time productive.
+论坛管理者可以通过优化论坛互动行为，使论坛传播积极影响，最大化地利用讨论时间。
 
-* Encourage quality contributions: thank students whose posts have a positive
-  impact and who answer questions.
+* 鼓励学生做出高质量的贡献：应该感谢那些发布积极帖子的学生以及踊跃回答问题的学生。
 
-* Check links, images, and videos in addition to the text of each message. Edit
-  offensive or inappropriate posts quickly, and explain why.
+* 除文本之外，检查信息中的连接、图片和视频。 
+  快速删除攻击性或不合理的帖子，并解释原因。
 
-* Review posts with a large number of votes and recognize "star posters"
-  publicly and regularly.
+* 审阅点赞人数较多的帖子，定期、公开地评选“明星楼主”。
 
-* Stay on topic yourself: before responding to a post, be sure to read it
-  completely.
+* 紧扣主题：请先读完帖子，再发表回复。
 
-* Maintain a positive attitude. Acknowledge problems and errors without
-  assigning blame.
+* 保持积极的态度：发现问题和错误时，不应指责抱怨。
 
-* Provide timely responses. More time needs to be scheduled for answering
-  discussion questions when deadlines for homework, quizzes, and other
-  milestones approach.
+* 及时回复：作业、小测验等重要事件的截止日期将近时，应多花时间回答论坛中提出的问题。
 
-* Discourage redundancy: before responding to a post, search for similar posts.
-  Make your response to the most pertinent or active post and then copy its URL
-  and use it to respond to the redundant threads.
+* 尽量减少赘余的帖子：在回复帖子之前，应看看有没有其他内容类似的帖子。
+  回复最紧扣主题或最活跃的帖子，并复制其URL用来回复其他类似的话题。
 
-* Publicize issues raised in the discussions: add questions and their answers
-  to an FAQ topic, or announce them on the Course Info page.
+* 将论坛中的问题公开发布：将问题和答案分享到FAQ课题中，或在“课程信息”页面中公布。
 
-For a template that you can use to develop guidelines for your course
-moderators, see :ref:`Guidance for Discussion Moderators`.
+本节内容的模板详见 :ref:`Guidance for Discussion Moderators`.
 
 .. _Find Question Posts and Discussion Posts:
 
 ==========================================
-Find Questions and Discussions
+查找提问和讨论
 ==========================================
 
-When students create posts, they specify the type of post to indicate whether
-they are asking for concrete information (a question) or starting an open-ended
-conversation (a discussion). 
+学生创建新帖子时需指定帖子的类型，是寻找准确的信息（提问）？
+还是开始一场开放性的对话（讨论）？
 
-On the **Discussion** page, a question mark image identifies posts that ask
-questions, and a conversation bubble image identifies posts that start
-discussions. When an answer is provided and marked as correct for a question, a
-check or tick mark image replaces the question mark image. See :ref:`Answer
+在“讨论”页面中，提问帖通常带有“问号”标记，讨论帖带有“对话气泡”标记。
+当提问帖的问题得到解决，且答案被采纳，问号标记自动变成“√”标记。详见 :ref:`Answer
 Questions`.
 
-In addition to these visual cues, filters can help you find questions and
-discussions that need review. Above the list of posts on the **Discussion**
-page, the **Show all** filter is selected by default. You can also select:
+除了通过这些标记辨别之外，您还可以通过论坛的筛选功能查找之前的提问帖和讨论帖。
+在“讨论”页面上方，筛选条件默认为“所有帖子”。您也可以将其更改为：
 
-* **Unread**, to list only the discussions and questions that you have not yet
-  viewed.
+* **未读** ，指的是所有您没有阅读过的帖子，包括提问帖和讨论帖。
 
-* **Unanswered**, to list only questions that do not yet have any responses
-  marked as answers.
+* **未解决** 指的是仍然没有最佳答案的提问帖。
 
 ==================
-Edit Messages
+编辑消息
 ==================
 
-Discussion moderators, community TAs, and admins can edit the content of posts,
-responses, and comments. Messages that include spoilers or solutions, or that
-contain inappropriate or off-topic material, should be edited quickly to remove
-text, images, or links.
+三种论坛管理职能均有权编辑和更改帖子、回复和评论的内容
+。一旦发现泄露机密、泄露答案，或含有不良信息、偏离主题信息的内容，
+应及时删除其文本、图片和链接。
 
-#. Log in to the site and then select the course on your **Current Courses**
-   dashboard.
+#. 登录官网，在“当前课程”面板中选择相应课程
 
-#. Open the **Discussion** page and then open the post with the content that
-   requires editing. You can select a single topic from the drop-down list of
-   discussion topics, apply a filter, or search to locate the post.
+#. 打开“讨论”页面，打开需要编辑的帖子。
+   您可以从下拉列表中选择，也可以通过筛选功能及搜索功能快速定位帖子
 
-#. For the post or for the response or comment that you want to edit, click the
-   "More" icon and then **Edit**.
+#. 找到需要修改的内容后，单击右侧的“更多”图标，选择“编辑”
 
-#. Remove the problematic portion of the message, or replace it with standard
-   text such as "[REMOVED BY MODERATOR]".
+#. 直接删除有问题的部分，可以附上一行字：“该内容已被管理员删除”
 
-#. Communicate the reason for your change. For example, "Posting a solution
-   violates the honor code."
+#. 交代删除原因。例如，“含有违背道德准则的信息”
 
 ==================
-Delete Messages 
+删除消息 
 ==================
 
-Discussion moderators, community TAs, and discussion admins can delete the
-content of posts, responses, and comments. Posts that include spam or abusive
-language may need to be deleted, rather than edited.
+三种论坛管理职位均有权删除帖子、回复及评论的内容。
+含有垃圾信息以及不文明用语的帖子应直接删除。
 
-#. Log in to the site and then select the course on your **Current Courses**
-   dashboard.
 
-#. Open the **Discussion** page and then open the post with the content that
-   requires deletion. You can select a single topic from the drop-down list of
-   discussion topics, apply a filter, or search to locate the post.
+#. 登录官网，在“当前课程”面板中选择相应课程
 
-#. For the post or for the response or comment that you want to delete, click
-   the "More" icon and then **Delete**.
+#. 打开“讨论”页面，打开需要编辑的帖子。您可以从下拉列表中选择，
+   也可以通过筛选功能及搜索功能快速定位帖子
 
-#. Click **OK** to confirm the deletion.
+#. 找到需要删除的内容。单击右侧的“更多”图标，选择“删除”
+
+#. 单击“OK”
 
 .. how to communicate with the poster?
 
-.. important:: If a message is threatening or indicates serious harmful 
- intent, contact campus security at your institution. Report the incident
- before taking any other action.
+.. important:: 若发现帖子内容含有威胁性或强烈攻击性的内容，请联系所在学院的校园保卫处，
+  报告事件后再考虑采取进一步行动。
 
 ==================================
-Respond to Reports of Misuse
+批复不良信息报告
 ==================================
 
-Students have the option to report contributions that they find inappropriate.
-Moderators, community TAs, and admins can check for messages that have been
-flagged in this way and edit or delete them as needed.
+学生有权上报他们认为含有不良信息的内容。
+三种论坛管理职位均可查证这些内容，必要时可以编辑或删除该内容。
 
-#. View the live version of your course and click **Discussion** at the top of
-   the page.
+#. 查看课程现况，单击页面顶部的“讨论”面板
 
-#. In the list of posts on the left side of the page, use the filter drop-down
-   list (set to **Show all** by default) to select **Flagged**.
+#. 页面左侧显示的是帖子列表，使用筛选列表，选择“被标记的帖子”
 
-#. Review listed posts. A post is listed if it or any of its responses or
-   comments has been reported. The reported contribution includes a
-   **Reported** identifier.
+#. 重新查看帖子列表，此时列表中显示的是内容（包括评论、回复）被举报的帖子。
+   被举报的内容会带有“被举报”标识
 
-#. Edit or delete the post, response, or comment. Alternatively, remove the
-   flag: click the "More" icon and then **Unreport**.
+#. 重新审核帖子，编辑或删除相关内容，或者取消举报标记：
+   单击“更多”，选择“取消举报”。
 
 ===============
-Block Users
+冻结账户
 ===============
 
-For a student who continues to misuse the course discussions, you can unenroll
-the student from the course. See :ref:`unenroll_student`. If the enrollment
-period for the course is over, the student cannot re-enroll.
+如果发现有学生持续发布不良内容，您可以开除该学生。详见 :ref:`unenroll_student`. 
+如果课程招生时间已过，该生将无法重新参与课程。
 
 .. _Close_discussions:
 
 ******************************
-Close Discussions
+关闭论坛
 ******************************
 
-You can close the discussions for your course so that students cannot add
-messages. Course discussions can be closed temporarily, such as during an exam
-period, or permanently, such as when a course ends.
+您可以关闭课程论坛，关闭后，学生无法继续发布信息。
+论坛可以暂时关闭，譬如在考试的时候，也可以永久关闭，譬如在课程结课的时候。
 
-When you close the discussions for a course, all of the discussion topics in
-course units and all of the course-wide topics are affected.
+关闭论坛后，所有课程单元中的讨论课题以及全课堂讨论课题均会受到影响。
 
-* Existing discussion contributions remain available for review.
+* 已经发布的讨论、贡献内容仍然保留。
   
-* Students cannot add posts, respond to posts, or comment on responses.
-  However, students can continue to vote on existing threads, follow threads,
-  or report messages for misuse.
+* 论坛关闭后，学生无法发帖、回复、评论，
+  但是可以继续为已发布的帖子及收藏的帖子点赞，
+  也可以举报不良信息。
 
-* Course Staff, Instructors, Discussion Admins, Discussion Moderators,
-  and Discussion Community TAs are not affected when you close the discussions
-  for a course. Users with these roles can continue to add to discussions. 
+* 关闭论坛后，课程工作人员、导师、论坛管理员、论坛协调员、
+  论坛社区助教等职位的职能不受影响。这些职位可以继续发布讨论内容。
 
-.. note:: To make sure your students understand why they cannot add to 
-  discussions, you can add the dates that discussions are closed to the
-  **Course Info** page and post them to a General discussion.
+.. note:: 关闭论坛后，学生无法继续讨论。为使学生理解这种情况， 
+  您可在“课程信息”页面通知论坛关闭日期，并将该日期挂到“General”讨论课题下。
 
 =====================================
-Start-End Date Format Specification
+开始-停止日期格式规范
 =====================================
 
-To close course discussions, you supply a start date and time and an end date
-and time in Studio. You enter the values in this format:
+您需要在Studio中设置论坛开始关闭与停止关闭的时间。请按下面的格式输入对应值:
 
 ``["YYYY-MM-DDTHH:MM", "YYYY-MM-DDTHH:MM"]``
 
-where:
+其中：
 
-* The dates and times that you enter are in the Universal Coordinated (UTC)
-  time zone, not in your local time zone.
+* 您输入的日期与时间应为世界标准时间，而非您所在时区时间。
 
-* You enter an actual letter **T** between the numeric date and time values. 
+* 数字日期与小时之间用大写字母T分隔。
 
-* The first date and time indicate when you want course discussions to close.
+* 第一个时间是论坛开始关闭的时间。
 
-* The second date and time indicate when you want course discussions to reopen.
+* 第二个时间为论坛重新开放的时间。
 
-* If you do not want the discussions to reopen, enter a date that is far in the
-  future.
+* 如果您希望永久关闭论坛，输入一个远在天边的日期即可。
 
-* Quotation marks enclose each date-time value.
+* 不要忘记双引号。
 
-* A comma and a space separate the start date-time from the end date-time.
+* 开始与结束时间之间用逗号分隔。
 
-* Square brackets enclose the start-end value pair.
+* 不要忘记方括号。
 
-* You can supply more than one complete start and end value pair. A comma and a
-  space separate each pair.
+* 您可以输入多个开始-结束时间对，每对时间之间用逗号加一个空格分隔。
 
-For example, to close course discussions temporarily for a final exam period in
-July, and then permanently on 9 August 2014, you enter:
+例如，如果您希望在七月份的期末考试期间暂时关闭论坛，
+然后在2014年8月9日永久关闭论坛，输入如下两组数值：
 
 ``["2014-07-22T08:00", "2014-07-25T18:00"], ["2014-08-09T00:00", "2099-08-09T00:00"]``
 
-You enter these values between an additional pair of square brackets which are
-supplied for you in Studio.
+每对方括号仅表示一组时间对。
 
 ============================================
-Define When Discussions Are Closed
+设置论坛关闭时间
 ============================================
 
-To define when discussions are closed to new contributions and when they
-reopen:
+步骤：
 
-#. Open your course in Studio. 
+#. 在Studio中打开课程
 
-#. Select **Settings**, then **Advanced Settings**.
+#. 选择“设置”→“高级设置”
 
-#. Scroll down to the **Discussion Blackout Dates** policy key. 
+#. 将滚动条拖至“论坛关闭日期”策略键
 
-#. In the field for the value, place your cursor between the supplied square
-   brackets. Use the required date format specification to enter the start and
-   end dates for each time period during which you want discussions to be
-   closed.
+#. 在策略键后的区域内，将光标放在已有的两个方括号之间。
+   输入一个或多个开始-结束时间对，注意一定要采用之前提到的格式规范。
 
-   When you enter the dates and times from the example above, the value field
-   looks like this:
+   如果您输入上面例子中提到的日期，则出现下图：
 
    .. image:: ../../../shared/building_and_running_chapters/Images/Discussion_blackout_unformatted.png
      :alt: Policy value of [["2014-07-22T08:00", "2014-07-25T18:00"],
          ["2014-08-09T00:00", "2099-08-09T00:00"]]
 
-5. Click **Save Changes**.
+5. 单击“保存”
 
-   Studio reformats your entry to add line feeds and indentation, like this:
+   系统会将您输入的数据重组，加入换行符和缩进符，如图示：
 
    .. image:: ../../../shared/building_and_running_chapters/Images/Discussion_blackout_formatted.png
      :alt: Same policy value but with a line feed after each bracket and comma,
          and an indent before each date
 
-For examples of email messages that you can send to let students know when the
-course discussions are closed (or open), see :ref:`Example Messages to
+您需要发邮件提醒学生论坛关闭和开启的时间，详见 :ref:`Example Messages to
 Students`.

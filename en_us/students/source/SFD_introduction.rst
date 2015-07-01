@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .. _Introduction:
 
 #################
@@ -39,3 +40,6 @@
 
 `Time Zone Converter <http://www.timezoneconverter.com/cgi-bin/tzc.tzc>`_
 
+=======
+.. include:: ../../shared/students/SFD_introduction.rst
+>>>>>>> orig

@@ -1,14 +1,12 @@
 .. _Grades:
 
 ############################
-Student Grades and Grading
+学生成绩与成绩评定
 ############################
 
-You can review information about how grading is configured for your course, and
-access student grades, at any time after you create the course. You can also
-make adjustments to student grading for a problem, for a single student or all
-students. For information about the grading data that you can access and the
-changes you can make, see the following topics.
+创建课程后，您可以随时回顾您课程的评分设置，并以此评定学生成绩。
+您可以为单个学生评分、为所有学生评分，或针对某道问题评分。
+关于评分数据以及评分时可以做出的改动，请看下面的内容：
 
 * :ref:`Review_grades`
 
@@ -22,125 +20,97 @@ changes you can make, see the following topics.
 
 * :ref:`Adjust_grades`
 
-To review student answers to the problems in your course, you can check the
-answer submitted by a specified student for a selected problem, download
-course-wide answer data, or review a graph of all answer data for a selected
-problem. See :ref:`Review_Answers`.
+您可以审核某个学生对于某道问题提交的答案，下载全课程范围内的答题数据，
+或者查看某道问题所有的答题数据图表。详见 :ref:`Review_Answers`.
 
-For information about how you establish a grading policy and work with the
-Problem components in your course, see :ref:`Establish a Grading Policy` or
+关于如何制定评分政策，以及如何使用提问模块，请参考 :ref:`Establish a Grading Policy` 或
 :ref:`Working with Problem Components`.
 
 .. _Review_grades:
 
 ********************************************************
-Review How Grading Is Configured for Your Course
+查看课程的评分设置
 ********************************************************
 
-You can review the assignment types that are graded and their respective
-weights on the Instructor Dashboard.
+您可在教师面板中查看需要评分的任务类型，以及他们对应的比重。
 
-You establish a grading policy for your course when you create it in Studio.
-While the course is running, you can view an XML representation of the
-assignment types in your course and how they are weighted to determine
-learners' grades.
+在Studio中创建课程时，您可以为课程制定评分标准。
+课程运行时，您可以查看课程中各项任务类型在学习管理系统中的表现以及它们的比重，以此决定学生的评分。
 
 ..  DOC-290: research this statement before including anything like it: Below the list of graded assignment types and their weights, each *public* subsection and unit that contains an assignment is listed.
 
-#. View the live version of your course.
+#. 查看课程现况
 
-#. Click **Instructor**, then click **Data Download** > **Grading
-   Configuration**.
+#. 单击“导师”→“数据下载”→“评分设置”
 
-   A list of the assignment types in your course displays. In this example,
-   Homework is weighted as 0.3 (30%) of the grade.
+   页面显示的是您课程中的任务列表。本例中，“作业”项目在评分中的比重为0.3（50%）。
 
    .. image:: ../../../shared/building_and_running_chapters/Images/Grading_Configuration.png
      :alt: XML of course assignment types and weights for grading
 
-   In Studio, you define this information by selecting **Settings** >
-   **Grading**. For more information, see :ref:`Configure the Assignment
+   在Studio中，您可以通过“设置”→“评分”更改这些信息。更多信息请参考 :ref:`Configure the Assignment
    Types`.
 
    .. image:: ../../../shared/building_and_running_chapters/Images/Grading_Configuration_Studio.png
      :alt: Studio example of homework assignment type and grading weight
 
-.. important:: Any changes that you make to the course grading policy, to
-   graded subsections, or to graded components after the course begins will
-   affect learners' experiences in the course as well as analysis of its data.
-   EdX recommends that you announce any unavoidable changes learners by using,
-   for example, the **Course Info** page. You should also carefully track
-   these changes for researchers.
+.. important:: 课程开始后，任何针对课程评分政策、
+   需评分内容以及评分组件的改动会影响学生的课堂体验以及课程数据分析。
+   如果不得不作出更改，请在“课程信息”等页面告知学生，
+   并仔细咨询研发人员。
 
 .. _Access_grades:
 
 ***********************************************************
-Generate a Grade Report for Enrolled Learners (All Courses)
+为所有学生生成成绩（适用于所有课程）
 ***********************************************************
 
-For any course, you can generate grades and then download a file with the
-results for each enrolled learner. 
+您可以为学生生成成绩，并下载成绩文件。
 
-When you initiate calculations to grade student work, a process starts on the
-edX servers. The complexity of your grading configuration and the number of
-students enrolled in your course affect how long this process takes. You can
-download a report of the calculated grades in a comma-separated values (.csv)
-file when the grading process is complete.
+当您第使用运算功能计算学生成绩时，edX服务器会自动开始一个进程。
+课程的评分设置以及学生数量决定了该进程时间长短。
+评分进程完成后，您可以下载CSV格式的学生成绩单。
 
-For courses with fewer than 200 students enrolled, you also have the option to
-review student grades on the Instructor Dashboard. See :ref:`gradebook`.
+如果课程学生人数少于200人，您还可以在教师面板中选择复核学生成绩。详见 :ref:`gradebook`.
 
-To generate and download the grade report for the learners who are currently
-enrolled in your course, follow these steps.
+如何生成成绩单：
 
-.. important:: Because the grade report file contains confidential, personally
-   identifiable data which might be subject to the Family Educational Rights and
-   Privacy Act (FERPA), be sure to follow your institution's data stewardship
-   policies when you open or save this file.
+.. important:: 由于成绩单文件中包含保密信息，个人认证数据可能受限于家庭教育权与隐私权（FERPA）,
+   请确保打开或保存此文件时遵循您所在机构的数据管理员政策。
 
+#. 查看课程现况
 
-#. View the live version of your course.
+#. 单击“导师”→“数据下载”
 
-#. Click **Instructor**, then click **Data Download**.
+#. 单击“生成成绩单”
 
-#. To start the grading process, click **Generate Grade Report**.
+   此时会显示评分进度。这个过程可能要花几分钟时间，但是您可以切到其他页面，边干其他工作边等候。
 
-   A status message indicates that the grading process is in progress. This
-   process can take some time to complete, but you can navigate away from this
-   page and do other work while it runs.
+4. 刷新浏览器页面，将滚动条拖至“正在处理的教师任务”区域查看评分进程
 
-4. To check the progress of the grading process, reload the page in your
-   browser and scroll down to the **Pending Instructor Tasks** section. The
-   status of active tasks is shown in the table.
+   评分完成后，一个.csv名链接出现在 **正在处理的教师任务** 部分上方。
+   文件名为 ``{course_id}_grade_report_{datetime}.csv`` 格式。
+   最新生成的报告出现在列表的最上方。
 
-   When the report is complete, a linked .csv filename becomes available above
-   the **Pending Instructor Tasks** section. Filenames are in the format
-   ``{course_id}_grade_report_{datetime}.csv``. The most recently generated
-   reports appear at the top of the list.
+5. 要打开或者保存成绩单文件，请找到并点击成绩单链接。
 
-5. To open or save a grade report file, locate and click the link for the
-   grade report you requested. 
+   您可以将.csv文件在制表软件中打开，便于排序、生成图表和对比数据。
 
-   You can open .csv files in a spreadsheet application to sort, graph, and
-   compare data.
-
-.. note:: To prevent the accidental distribution of learner data, you can
-   download grade report files only by clicking the links on this page. Do not
-   copy these links for reuse elsewhere, as they expire within 5 minutes. The
-   links on this page also expire if the page is open for more than 5 minutes.
-   If necessary, refresh the page to generate new links.
+.. note:: 为防止学生数据意外泄露，您只能通过本页面中的链接下载成绩单文件。
+   本链接的有效期只有5分钟，所以不要将本页面中的信息复制到其他地方再次使用。
+   另外，如果页面打开时间超过5分钟，链接一样会失效，请刷新页面获取新链接。
 
 
 .. _Interpret the Grade Report:
 
 ==========================
-Interpret the Grade Report
+解读成绩单
 ==========================
 
 
-A grade report for your course is a time-stamped .csv file that identifies
-each enrolled learner by ID, email address, and username, and provides a
-snapshot of their cumulative course scores.
+成绩单是一个带有时间标记的CSV文件，其中包括：信息列，
+即定义学生身份的信息集合——ID，email，用户名，等等；
+任务列，即您课程中的所有评分项目。
 
 Scores in the grade report are presented by assignment. There is a column for
 every assignment that is included in your grading configuration: each
@@ -165,26 +135,21 @@ additional columns indicating the name of the cohort or experiment group that
 each learner belongs to.
 
 .. image:: ../../../shared/building_and_running_chapters/Images/Grade_Report.png
-  :alt: A course grade report, opened in Excel, showing the grades achieved by 
+  :alt: A course grade report, opened in Excel, showing the grades achieved by
         students on several homework assignments and the midterm
 
-The grade report .csv file contains one row of data for each learner, and
-columns that provide the following information.
+CSV文件每行显示一名学生的成绩，纵列信息如下：
 
-* Learner identifiers, including an internal **id**, **email** address, and
-  **username**.
+* 学生身份信息：包括永久ID、email地址和用户名。
 
-* The overall **grade**, with the total score a learner has currently attained
-  in the course. This value is expressed as a decimal: a learner with a grade
-  of 0.65 has earned 65% of the credit in the course, and a learner with a
-  grade of 1 has earned 100%.
+* 综合评分：即学生当前获得的总评分。该值表示为小数：
+  如果一个学生的评分为0.65，即表示他获得了本课程65%的学分，
+  如果为1，则表示满分。
 
-* Each **{assignment type} {number}** defined in your grading configuration,
-  with the score that the learner attained for that specific assignment. For
-  example, column HW 03 shows the scores for the third homework assignment.
+* 每个{assignment type} {number}表示学生的各项得分。
+  例如，HW03列显示的是该学生第三次作业的得分。
 
-* An **{assignment type} Avg** with each learner's current average score for
-  that assignment type: for example, HW Avg.
+* {assignment type} Avg表示该学生某项任务的平均分，比如HW Avg即作业平均分。
 
 * If :ref:`cohorts<Cohorts Overview>` are used in the course, a **Cohort Name**
   column indicates the name of the cohort that each learner belongs to, including
@@ -228,7 +193,7 @@ columns that provide the following information.
 .. _problem_report:
 
 *******************************************************************
-Generate a Problem Grade Report for Enrolled Students (All Courses)
+为所有学生生成成绩（适用于所有课程）
 *******************************************************************
 
 For any course, you can calculate grades for problems and generate a report
@@ -245,20 +210,15 @@ currently enrolled in your course, follow these steps.
    Educational Rights and Privacy Act (FERPA), be sure to follow your
    institution's data stewardship policies when you open or save this file.
 
-#. View the live version of your course.
+#. 查看课程现况
 
-#. Click **Instructor**, then click **Data Download**.
+#. 单击“导师”→“数据下载”
 
-#. To start the problem grading process, click **Generate Problem Grade
-   Report**.
+#. 单击“生成成绩单”
 
-   A status message indicates that the problem grading process is in progress.
-   This process can take some time to complete, but you can navigate away from
-   this page and do other work while it runs.
+   此时会显示评分进度。这个过程可能要花几分钟时间，但是您可以切到其他页面，边干其他工作边等候。
 
-4. To check the progress of the problem grading process, reload the page in your
-   browser and scroll down to the **Pending Instructor Tasks** section. The
-   status of active tasks is shown in the table.
+4. 刷新浏览器页面，将滚动条拖至“正在处理的教师任务”区域查看评分进程
 
    When the report is complete, a linked .csv filename becomes available above
    the **Pending Instructor Tasks** section. Filenames are in the format
@@ -271,17 +231,15 @@ currently enrolled in your course, follow these steps.
    You can open .csv files in a spreadsheet application to sort, graph, and
    compare data.
 
-.. note:: To prevent the accidental distribution of learner data, you can
-   download problem grade report files only by clicking the links on this
-   page. Do not copy these links for reuse elsewhere, as they expire within 5
-   minutes. The links on this page also expire if the page is open for more
-   than 5 minutes. If necessary, refresh the page to generate new links.
+.. note:: 为防止学生数据意外泄露，您只能通过本页面中的链接下载成绩单文件。
+   本链接的有效期只有5分钟，所以不要将本页面中的信息复制到其他地方再次使用。
+   另外，如果页面打开时间超过5分钟，链接一样会失效，请刷新页面获取新链接。
 
 
 .. _Interpret the Problem Grade Report:
 
 ====================================
-Interpret the Problem Grade Report
+解读成绩单
 ====================================
 
 A problem grade report for your course is a time-stamped .csv file that
@@ -301,21 +259,17 @@ learner, espressed as a decimal.
     each achieved on several quiz assignments. A column for a midterm is only
     partially visible.
 
-The .csv file contains one row of data for each learner, and columns that
-provide the following information.
+CSV文件每行显示一名学生的成绩，纵列信息如下：
 
-* Learner identifiers, including an internal **Student ID**, **Email** address, and
-  **Username**.
+* 学生身份信息：包括永久ID、email地址和用户名。
 
-* The **Final Grade**, with the total score that a learner has currently attained
-  in the course. This value is expressed as a decimal: a learner with a grade
-  of 0.65 has earned 65% of the credit in the course, and a learner with a
-  grade of 1 has earned 100%.
+* 综合评分：即学生当前获得的总评分。该值表示为小数：
+  如果一个学生的评分为0.65，即表示他获得了本课程65%的学分，如果为1，则表示满分。
 
 * For each problem (identified by assignment, subsection, and problem name), a
   column showing the number of points actually earned by each learner. If a
   learner has not viewed a problem, the value in this column is "N/A". If
-  a learner has not answered a problem, the value in this column is "0".  
+  a learner has not answered a problem, the value in this column is "0".
 
 * For each problem (identified by assignment, subsection, and problem name), a
   column showing the number of points that it is possible to earn for the
@@ -326,421 +280,324 @@ provide the following information.
 .. _gradebook:
 
 ********************************************************
-Review Grades for Enrolled Learners (Small Courses)
+学生成绩复核（小规模课程）
 ********************************************************
 
-For courses with enrollments of up to 200 learners, you can review a gradebook
-on the Instructor Dashboard. 
+课程人数不到200人时，您可以查看教师面板中的成绩簿进行成绩复核。
 
-#. View the live version of your course.
+#. 查看课程现况
 
-#. Click **Instructor**, then click **Student Admin**. For courses with fewer
-   than 200 students enrolled, this tab includes a **Student Gradebook**
-   section.
+#. 单击“导师”→“学生管理”。如果课程学生人数少于200人，该标签会包含一个“学生成绩簿”子标签
 
-#. Click **View Gradebook**. Grades are calculated and the gradebook displays.
+#. 单击“查看成绩簿”
 
    .. image:: ../../../shared/building_and_running_chapters/Images/Student_Gradebook.png
      :alt: Course gradebook with rows for students and columns for assignment
          types
 
-The gradebook includes the following features.
+成绩簿包含下列功能：
 
-* You can click the username in each row to review that learner's
-  **Course Progress** page. See :ref:`check_student_progress`.
+* 您可以单击每行的学生用户名，查看该学生的“课程进度”页面。详见 :ref:`check_student_progress`.
 
-* There is a column for each **{assignment type} {number}** defined in your
-  grading configuration, with the scores that the learner attained for that
-  specific assignment.
+* 每列{assignment type} {number}显示的是学生在该项目中的得分。
 
-  The gradebook does not have a scroll bar, but it can be dragged: to see columns
-  that are hidden at one side of the grade book, click the gradebook and then
-  drag left or right to reveal those columns.
+  成绩簿没有滚动条，但是可以拖动：如果您想查看被边框挡住的内容，单击成绩簿后向左向右拖动即可。
 
-* For assignment types that include more than one assignment, an **{assignment
-  type} Avg** column displays each learner's current average score for that
-  assignment type.
+* 如果某个任务类型下包含多个任务，则{assignment type} Avg一栏中会显示该任务的当前平均分。
 
-* The **Total** column presents the total score that each learner has currently
-  attained in the course. This value is expressed as a whole number: a learner
-  with a grade of 65 has earned 65% of the credit in the course, and a learner
-  with a grade of 100 has earned 100%.
+* “总分”一栏显示的是学生目前获得的课程总学分。该值表示为整数：
+  65分表示该学生获得了65%的课程学分，满分为100。
 
-* To filter the data that displays you can use the **Search students** option.
-  This option is case-sensitive and limits the rows shown in the gradebook to
-  usernames that match your entry.
+* 您可使用“查找学生”选项筛选成绩数据信息。该选项区分大小写，请注意不要输入错误的用户名。
 
 
 .. _check_student_progress:
 
 ****************************************
-Check the Progress of a Single Learner
+查看学生进度
 ****************************************
 
-To check a single learner's progress, you can locate the specific row on the
-grade report or review the learner's **Progress** page. The **Progress** page
-includes a chart that plots the score the learner has earned for every graded
-assignment and the total grade as of the current date. Below the chart, each
-assignment and the score attained are listed.
+您可以在成绩单中找到该学生所在行，或通过该学生的“进度”页面查看该生的课程进度。
+“进度”页面中有一张图表，显示了该生目前每个评分项目的得分以及总分。
 
-To review a learner's **Progress** page, you supply an email address or
-username. You can check the progress for learners who are either enrolled in,
-or who have unenrolled from, the course.
+您需要提供email地址或用户名，才能查看某个学生的“进度”页面。
+您可查看课程内的学生，也可查看被开除的学生。
 
-Learners can view a similar chart and assignment list (of their own progress
-only) when they are logged in to the course. See :ref:`A Students View`.
+学生登录课程时也可以看见类似的图表，但只能看见自己的进度。详见 :ref:`A Students View`.
 
-To view the **Progress** page for a learner, follow these steps.
+如何查看学生的“进度”页面
 
-#. View the live version of your course.
+#. 查看课程现况
 
-#. Click **Instructor**, then click **Student Admin**.
+#. 单击“导师”→“学生管理”
 
-#. In the Student-Specific Grade Inspection section, enter the student's email
-   address or username.
+#. 在“查看学生成绩”区域，输入该学生的email地址或用户名
 
-#. Click **Student Progress Page**.
+#. 单击“学生进度页面”。打开前文所说的图表。
 
-   The **Progress** page for the learner displays a chart with the grade for
-   each homework, lab, midterm, final, and any other assignment types in your
-   course, and the total grade earned for the course to date. The chart does not
+   “进度”页面中有一张图表，显示了该生目前每个评分项目的得分以及总分。
+   The chart does not
    reflect any cohort or experiment group assignments.
 
    .. image:: ../../../shared/building_and_running_chapters/Images/Student_Progress.png
-    :alt: Progress page chart for a learner: includes a column graph with the 
-          score achieved for each assignment 
+    :alt: Progress page chart for a learner: includes a column graph with the
+          score achieved for each assignment
 
-   To learn more about a particular assignment, move the cursor onto the value
-   in the chart. A brief description displays.
+   想了解某个项目的信息，将光标移到该值，会显示一段简短的描述文字。
 
    .. image:: ../../../shared/building_and_running_chapters/Images/Student_Progress_mouseover.png
     :alt: Progress page with a tooltip for the X that was graphed for the last
           homework assignment, which indicates that the lowest homework score
           is dropped
 
-   Below the chart, subsections are listed on the left and the units that
-   contain assignments are listed on the right. The learner's individual
-   problem scores display.
+   图表左下方列出的是课程小节，右下方列出的是包含任务的课程单元。
+   同时还会显示该学生回答问题的得分。
 
    .. image:: ../../../shared/building_and_running_chapters/Images/Student_Progress_list.png
-    :alt: Bottom portion of a Progress page for the same student with the 
-          score acheived for each problem in the first course subsection 
+    :alt: Bottom portion of a Progress page for the same student with the
+          score acheived for each problem in the first course subsection
 
 =============================================
-Interpret the Student Progress Page
+解读学生进度页面
 =============================================
 
-The chart of a learner's scores on the **Progress** page and the rows of data
-on the grade report present assignment scores in a similar order. However, the
-total, cumulative score earned for the course is placed in a different position
-on the **Progress** page.
+学生进度图标各项目的排列顺序与成绩单中的顺序一致。但是，课程总分的位置不同。
 
-In this example grade report, the indicated learner has a current grade of 0.43
-(43%).
+在下面的成绩单中，学生当前得分为0.43
 
 .. image:: ../../../shared/building_and_running_chapters/Images/Grade_Report_example.png
- :alt: A course grade report with a single student's information indicated by 
+ :alt: A course grade report with a single student's information indicated by
        a rectangle
 
-* On each of the first four homework assignments the learner scored 1 (100%),
-  but currently has a 0 (0%) on each of the remaining three assignments.
+* 该生前四次的作业得分均为满分，但是最近三次得分均为0分
 
-  Notice, however, that the learner's current average score for homework
-  assignments is listed as 0.666666667 (67%): in this course, the homework
-  assignment with the lowest score is dropped, so this average is over six
-  assignments rather than all seven.
+  不过请注意，学生作业的平均得分为0.666666667:
+  在本课程作业评分中，会去掉一个最低分，
+  因此平均分是基于六次作业成绩得出的，而不是七次。
 
-* The learner has a score of 0.75 (75%) on the midterm, and a score of 0 (0%)
-  on the final.
+* 该生其中考试成绩为0.75，期末考试成绩为0。
 
-On the learner's **Progress** page, you see the same information graphically
-represented; however, the student's "total" of 43% is on the far right.
+在该生的“进度”页面中，您会发现，基本信息都差不多相同，但是最右侧的“总分”为43%
 
 .. image:: ../../../shared/building_and_running_chapters/Images/Student_Progress.png
- :alt: Progress page for a student also included on the grade report: includes 
-       a column graph with the grade acheived for each assignment 
+ :alt: Progress page for a student also included on the grade report: includes
+       a column graph with the grade acheived for each assignment
 
-The chart on the **Progress** page includes y-axis labels for the grade ranges
-defined for the course. In this example, Pass is set to 60%, so at the end of
-the course, learners with a grade of 0.60 or higher can receive certificates.
+进度图标的y轴显示的是两块成绩区域（0~60,60~100）本例中，
+及格分设置为60%，因此，课程结束后，成绩高于0.60的学生可以获得合格证书。
 
-.. note:: Learner scores on the **Progress** page are a snapshot of the 
- current state of the problem score database. They can, at times, be out of
- sync with actual problem scores. For example, asynchronicities can occur if
- the weight of a live problem was changed during an assignment, and not all
- learners have resubmitted their answers for that problem.
+.. note:: “进度”页面显示的分数是该生提问数据库中得分的及时快照。
+ 因此，这个分数与实际的答题分数可能会不同步。举个例子，在某次课堂任务中，
+ 已经发布的题目比重发生了变动，但是有些学生并没有重新提交答案，
+ 这就可能导致数据的不同步。
 
 .. _A Students View:
 
 =============================================
-A Learner's View of Course Progress
+学生视角下的课程进度页面
 =============================================
 
-Learners can check their progress by clicking **Progress** in the course
-navigation bar. The learner's progress through the graded part of the course
-displays at the top of this page, above the subsection scores. Progress is
-visualized as a chart with entries for all the assignments, total percentage
-earned in the course so far, and percent needed for each grade cutoff. Here is
-an example of a learner's progress through edX101.
- 
+学生可以单击课程导航栏中的“进度”标签查看课程进度。
+页面顶部显示的是该学生已经评分的项目及得分，下面是各小节的得分。
+进度可以显示为一张图标，里面包含所有任务的得分、当前总得分以及每部分的及格分。
+试看下例：
+
 .. image:: ../../../shared/building_and_running_chapters/Images/StudentView_GradeCutoffs.png
  :alt: Image of a student's Course Progress page with the grade cutoffs legend
        highlighted
- 
-The learner can see from this page that edX101 was graded as a Pass/Fail
-course with a cutoff of 34% and that the grading rubric contained one
-assignment type, called Learning Sequence, consisting of 11 assignments total.
-Furthermore, this particular learner has only submitted correct responses to
-two assignments, and her current total percent grade in the course is 6%. By
-hovering over each progress bar, learners can get further statistics of how
-much each assignment was counted as.
- 
-Further down on the **Progress** page is a list of all the subsections in the
-course, with the scores recorded for the learner for all problems in the
-course. Here is the **Progress** page for the learner in the example above:
- 
+
+该生可在本页面中发现，edX101课程的及格分为34%，评分项目包括一个任务类型，
+其下总共包含11个任务。该生目前只成功完成了两项任务，因此当前得分为6%。
+将鼠标悬停在各个任务标签上，可以查看每项任务占总分的比重是多少。
+
+再往下看，会看见该课程所有小节的列表，记录了该生在课程中回答问题的所有得分。试看下例：
+
 .. image:: ../../../shared/building_and_running_chapters/Images/StudentView_Problems.png
    :width: 800
    :alt: Image of a student's Course Progress page with problems highlighted
- 
-Note that point scores from graded sections are called "Problem Scores",
-while point scores from ungraded sections are called "Practice Scores".
+
+注意，计分小节的得分称为“提问得分”，不计分小节的得分称为“实践得分”。
 
 .. _Adjust_grades:
 
 ***********************************
-Adjust Grades
+调整成绩
 ***********************************
 
-If you modify a problem or its settings after learners have attempted to answer
-it, learners' grades can be affected. For information about making changes to
-problems in Studio, see :ref:`Modifying a Released Problem`.
+学生回答完问题后，如果您更改问题，则会影响学生成绩。
+关于如何在Studio中更改问题，参考 :ref:`Modifying a Released Problem`.
 
-To recalculate the grades of affected learners when a correction or other
-change is unavoidable, you can make the following adjustments.
+如果不得不作出更改，则应该对受影响的学生重新计分：
 
-* Rescore the submitted answer to reevaluate student work on a problem. You
-  can rescore a problem for a single learner or for all of the students
-  enrolled in the course. See :ref:`rescore`.
+* 重新为提交的答案评分。您可以为单个学生或所有学生重新计分。详见 :ref:`rescore`.
 
-* Reset the number of times a learner has attempted to answer a problem to
-  zero so that he can try again. You can reset the number of attempts for a
-  single learner or for all learners enrolled in the course. See
+* 将学生尝试回答问题的次数归零，以便学生再次尝试。
+  您可以为单个学生或所有学生重新计算尝试次数。详见
   :ref:`reset_attempts`.
 
-* Delete a learners's database history, or "state", completely for a problem.
-  You can only delete learner state for one learner at a time. For example, you
-  realize that a problem needs to be rewritten after only a few of your
-  students have answered it. To resolve this situation, you rewrite the problem
-  and then delete learner state only for the affected students so that they can
-  try again. See :ref:`delete_state`.
+* 完全清除学生关于该问题的历史数据，或“历史状态”。您一次只能删除一名学生的数据。
+  比如，如果您发现只有少数学生需要删除数据，您可以重新编辑问题，
+  然后删除受影响学生的历史数据，以便学生再次尝试。详见 :ref:`delete_state`.
 
-To make adjustments to learner grades, you need the unique location identifier
-of the modified problem. See :ref:`find_URL`.
+您需要提供新问题的位置ID，才能调整学生成绩。详见 :ref:`find_URL`.
 
 .. _find_URL:
 
 ==================================================
-Find the Unique Location Identifier for a Problem
+查找某个问题的位置ID
 ==================================================
 
-When you create each of the problems for a course, edX assigns a unique
-location to it. To make grading adjustments for a problem, or to view data
-about it, you need to specify the problem location.
+创建课程问题时，edX系统会自动给问题分配一个独一无二的定位ID。
+您需要提供这个ID，才能调整学生的答题成绩，或查看问题相关数据。
 
-To find the unique location identifier for a problem:
+如何查找定位ID：
 
-#. View the live version of your course.
+#. 查看课程现况
 
-#. Click **Courseware** and navigate to the unit that contains the problem.
+#. 单击“课件”，导航至问题所在单元
 
-#. Display the problem and then click **Staff Debug Info**.
+#. 查看问题，单击“员工调试信息”
 
-   Information about the problem displays, including its **location**. 
+   问题相关信息即显示出来，包括“位置”。
 
    .. image:: ../../../shared/building_and_running_chapters/Images/Problem_URL.png
-    :alt: The Staff Debug view of a problem with the location identifier 
+    :alt: The Staff Debug view of a problem with the location identifier
           indicated
 
-4. To copy the location of the problem, select the entire location, right
-   click, and choose **Copy**.
+4. 选择整个定位ID，右击→“复制”。
 
-To close the Staff Debug viewer, click on the browser page outside of the
-viewer.
+随便点击查看窗口外的页面，即可关闭窗口。
 
 .. _rescore:
 
-===================================================
-Rescore Student Submissions for a Problem
-===================================================
+==========================================
+为学生答题重新计分
+==========================================
 
-Each problem that you define for your course includes a correct answer, and may
-also include a tolerance or acceptable alternatives. If you decide to make a
-change to these values, you can rescore any responses that were already
-submitted. For a specified problem, you can rescore the work submitted by a
-single student, or rescore the submissions made by every enrolled student.
+您在课程中提出的每个问题都应有一个标准答案，
+同时提供其他可行答案。如果您决定对这些内容作出更改，
+则需对之前提交的答案重新评分。此项操作可以针对单个学生，也可针对所有学生。
 
-.. note:: You can only rescore problems that have a correct answer entered in 
- edX Studio. This procedure cannot be used to rescore problems that are scored
- by an external grader.
+.. note:: 只有在Studio中输入正确答案的问题才能重新评分，
+通过其他外挂评分插件输入答案的问题则无法执行重评操作。
 
-Rescore a Submission for an Individual Student
+为单个学生提交的答案重新评分
 -----------------------------------------------
 
-To rescore a problem for a single student, you need that student's username or
-email address.
+首先，您需要知道该生的用户名或email地址
 
-#. View the live version of your course.
+#. 查看课程现况
 
-#. Click **Courseware** and navigate to the component that contains the problem
-   you want to rescore.
+#. 单击“课件”，导航至问题所在组件
 
-#. Display the problem, then click **Staff Debug Info**. The Staff Debug viewer
-   opens.
+#. 查看问题，单击“员工调试信息”。打开查看窗口
 
-#. In the **Username** field, enter the student's email address or username,
-   then click **Rescore Student Submission**. A message indicates a successful
-   adjustment.
+#. 在“用户名”字段中输入该生的用户名或email地址，单击“答案重评”。成功后，会弹出消息提示
 
-#. To close the Staff Debug viewer, click on the browser page outside of the
-   viewer.
+#.  随便点击查看窗口外的页面，即可关闭窗口
 
-Rescore Submissions for All Students
+重评所有学生的答案
 ------------------------------------
 
-To specify the problem you want to rescore, you need its location identifier.
-See :ref:`find_URL`. To rescore a problem:
+您首先需要知道问题的定位ID，详见 :ref:`find_URL`.
+重评学生的答案
 
-#. View the live version of your course.
+#. 查看课程现况
 
-#. Click **Instructor**, then click **Student Admin**. 
+#. 单击“导师”→“学生管理”
 
-#. In the **Course-Specific Grade Adjustment** section of the page, enter the
-   unique problem location, and then click **Rescore ALL students' problem
-   submissions**.
+#. 在“课程评分调整”区域内，输入问题的定位ID，单击“重评所有学生提交的答案”
 
-#. When you see a dialog box that notifies you that the rescore process is in
-   progress, click **OK**.
+#. 弹出的对话框提示您，重评工作正在进行，单击OK
 
-   This process can take some time to complete for all enrolled students. The
-   process runs in the background, so you can navigate away from this page and
-   do other work while it runs.
+   这一步可能要花几分钟时间，不过该进程可以后台运行，您可以边等待边干别的工作。
 
-6. To view the results of the rescore process, click either **Show Background
-   Task History for Student** or **Show Background Task History for Problem**.
+6. （原文序号错误）单击“查看后台学生历史任务”或“查看后台问题历史任务”查看重评进程。
 
-   A table displays the status of the rescore process for each student or problem.
+   此时会显示一个表格，阐明当前重评进程。
 
-.. note:: You can use a similar procedure to rescore the submission for a 
- problem by a single student. You work in the **Student-Specific Grade
- Adjustment** section of the page to enter both the student’s email address or
- username and the unique problem identifier, and then click **Rescore Student
- Submission**.
+.. note:: 本流程也可用于单个学生。
+   只需在“评分调整”区域内同时输入学生email地址/用户名以及问题定位ID，
+   单击“重评学生提交的答案”即可。
 
 .. _reset_attempts:
 
-===================================================
-Reset Student Attempts for a Problem
-===================================================
+=====================================
+学生答题尝试次数归零
+=====================================
 
-When you create a problem, you can limit the number of times that a student can
-try to answer that problem correctly. If unexpected issues occur for a problem,
-you can reset the value for one particular student's attempts back to zero so
-that the student can begin work over again. If the unexpected behavior affects
-all of the students in your course, you can reset the number of attempts for
-all students to zero.
+创建问题时，您可以限制学生尝试回答问题的最大次数。
+如果某道问题出现了意外情况，您可以将某个学生的尝试次数归零，
+以便该生重新开始尝试。如果所有学生都受到了影响，则应将所有学生的尝试次数归零。
 
-Reset Attempts for an Individual Student
+将单个学生的尝试次数归零
 ---------------------------------------------
 
-To reset the number of attempts for a single student, you need that student's
-username or email address.
+首先，您需要提供该生的用户名或email地址
 
-#. View the live version of your course.
+#. 查看课程现况
 
-#. Click **Courseware** and navigate to the component that contains the problem
-   you want to reset.
+#. 单击“课件”，然后导航至问题所在的组件
 
-#. Display the problem, then click **Staff Debug Info**. The Staff Debug viewer
-   opens.
+#. 查看问题，单击“员工调试信息”
 
-#. In the **Username** field, enter the student's email address or username,
-   then click **Reset Student Attempts**. A message indicates a successful
-   adjustment.
+#. 在“用户名”字段中，输入该生的email地址或用户名，单击“尝试次数归零”，此时会弹出一条消息，提示操作成功。
 
-#. To close the Staff Debug viewer, click on the browser page outside of the
-   viewer.
+#. 随便点击查看窗口外的页面，即可关闭窗口
 
-Reset Attempts for All Students
+将所有学生的尝试次数归零
 ------------------------------------
 
-To reset the number of attempts that all enrolled students have for a problem,
-you need the unique identifier of the problem. See :ref:`find_URL`. To reset
-attempts for all students:
+您首先需要知道问题的定位ID，详见 :ref:`find_URL` 。
 
-#. View the live version of your course.
+然后：
 
-#. Click **Instructor**, then click **Student Admin**. 
+#. 查看课程现况
 
-#. To reset the number of attempts for all enrolled students, you work in the
-   **Course-Specific Grade Adjustment** section of the page. Enter the unique
-   problem location, then click **Reset ALL students' attempts**.
+#. 单击“导师”→“学生管理”
 
-#. A dialog opens to indicate that the reset process is in progress. Click
-   **OK**.
+#. 在“学生成绩调整”区域，输入该问题的定位ID，单击“重置所有学生的尝试次数”
 
-   This process can take some time to complete. The process runs in the
-   background, so you can navigate away from this page and do other work while
-   it runs.
+#. 此时会打开一个对话框，提示操作正在进行中，单击OK。
 
-5. To view the results of the reset process, click either **Show Background
-   Task History for Student** or **Show Background Task History for Problem**.
 
-   A table displays the status of the reset process for each student or
-   problem.
+   这一步可能要花几分钟时间，不过该进程可以后台运行，您可以边等待边干别的工作。
 
-.. note:: You can use a similar procedure to reset problem attempts for a 
- single student. You work in the **Student-Specific Grade Adjustment** section
- of the page to enter both the student’s email address or username and the
- unique problem identifier, and then click **Reset Student Attempts**.
+5. 单击“查看后台学生历史任务”或“查看后台问题历史任务”查看进程。
+
+   此时会出现一个表格，显示当前重评进程。
+
+.. note:: 本流程也可用于单个学生。
+   只需在“评分调整”区域内同时输入学生email地址/用户名以及问题定位ID，
+   单击“重置学生尝试次数”即可。
 
 .. _delete_state:
 
-=============================================
-Delete Student State for a Problem
-=============================================
+==================================
+删除学生答题历史数据
+==================================
 
-To delete a student's entire history for a problem from the database, you need
-that student's username or email address. 
+首先，您需要知道该生的用户名或email地址，才能删除该生的所有答题数据。
 
-.. important:: Student state is deleted permanently by this process. This 
- action cannot be undone.
+.. important:: 经本流程操作而删除的学生数据将无法恢复。
 
-You can use either the Staff Debug viewer or the Instructor Dashboard to delete
-student state.
+您可使用员工调试信息查看窗口或教师面板删除学生数据。
 
-To use the Staff Debug viewer:
+员工调适信息查看窗口：
 
-#. View the live version of your course.
+#. 查看课程现况
 
-#. Click **Courseware** and navigate to the component that contains the
-   problem.
+#. 单击“课件”，然后导航至问题所在的组件
 
-#. Display the problem, then click **Staff Debug Info**. The Staff Debug viewer
-   opens.
+#. 查看问题，单击“员工调试信息”，打开查看窗口
 
-#. In the **Username** field, enter the student's email address or username,
-   then click **Delete Student State**. A message indicates a successful
-   adjustment.
+#. 在“用户名”字段中，输入该生的email地址或用户名，
+   单击“删除学生数据”，此时会弹出一条消息，提示操作成功
 
-#. To close the Staff Debug viewer, click on the browser page outside of the
-   viewer.
+#. 随便点击查看窗口外的页面，即可关闭窗口
 
-To use the Instructor Dashboard, you need the unique identifier of the problem.
-See :ref:`find_URL`.
+如果使用教师面板操作，则需提供问题的定位ID。详见 :ref:`find_URL`.
 
-#. Click **Instructor**, then click **Student Admin**. 
+#. 单击“导师”→“学生管理”
 
-#. In the **Student-Specific Grade Adjustment** section of the page, enter both
-   the student’s email address or username and the unique problem identifier,
-   and then click **Delete Student State for Problem**.
+#. 在“评分调整”区域内同时输入学生email地址/用户名以及问题定位ID，单击“删除学生答题记录”

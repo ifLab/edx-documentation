@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 .. _Keep Up with New Activity:
 
@@ -61,3 +62,6 @@ or Responses`.
 .. image:: /Images/Disc_RecUpdatesBox.png
   :width: 500
   :alt: Discussion home page with the Receive Updates check box circled
+=======
+.. include:: ../../../shared/students/sfd_discussions/keep_up.rst
+>>>>>>> orig

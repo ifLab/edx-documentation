@@ -1,50 +1,44 @@
 .. _Adding Textbooks:
 
 ###########################
-Adding Textbooks
+添加课本
 ###########################
 
-You can add PDF textbooks to your course.  
+您可在课程中添加PDF格式的课本。
 
 .. note:: 
- Do not use image files (for example, .png files) as textbooks for your course,
- as they are not accessible to screen readers. For more information, review
- :ref:`Best Practices for Accessible PDFs`.
+ 请勿使用图片格式的文件（如.PNG格式的文件）作为课本，
+ 因为图片文件无法被屏幕阅读器识别。更多信息请参考
+ :ref:`Best Practices for Accessible PDFs` 。
 
-Each textbook that you add is displayed to learners as a page, or tab, in the
-course navigation bar.
+所有课本都在导航栏中以标签形式展现给学生。
 
-EdX recommends that you upload a separate PDF for each chapter of your
-textbook.
-
-When learners open the textbook page in the course, they can navigate
-the textbook by chapter.
+我们建议您将课本的每一章都作为分开的PDF文件上传，学生打开课本标签时就能快速导航到每一章。
 
 .. image:: ../../../shared/building_and_running_chapters/Images/textbook_chapters.png
  :alt: Image of a textbook in a course.
  :width: 600
 
 *****************
-Add a Textbook
+如何添加课本
 *****************
 
-#. Prepare PDFs of your textbook on your computer.
+#. 在您的本地计算机中准备好PDF课本文件
 
-#. From the **Content** menu, select **Textbooks**.
+#. 在 **内容** 菜单下，选择 **课本** 。
 
-#. Select **New Textbook**. The following screen opens:
+#. 单击 **新课本** ，会出现下图中的内容：
 
    .. image:: ../../../shared/building_and_running_chapters/Images/textbook_new.png
     :alt: Image of the New Textbook page.
     :width: 600
 
-#. Enter the **Textbook Name**.
+#. 输入 **课本名** 。
 
-#. Enter the first **Chapter Name**.
+#. 输入第一章的 **章节名** 。
 
-#. To upload a PDF from your computer, select **Upload PDF**.  Follow the
-   prompts to upload your file.
+#. 单击 **上传PDF** 以从电脑中上传PDF文件。根据提示上传文件。  
 
-#. To add more chapters, select **Add a Chapter** and repeat steps 3 and 4.
+#. 单击 **添加章节** 以添加更多章节，重复步骤3和步骤4。
 
-#. Select **Save**.
+#. 单击 **保存** 。

@@ -1,50 +1,46 @@
 .. _Setting Details About Your Course:
 
 ######################################################
-Setting Details About Your Course
+设置课程细节
 ######################################################
 
-This topic describes how to set details about your course in Studio. The
-details you set affect the information learners see on their dashboards. For
-more information, see :ref:`SFD Dashboard Settings Profile`.
+此章讲述如何在Studio中设置您的课程细节。
+您所设置的细节内容将会影响学生面板中看到的信息。
+详情请参阅 :ref:`SFD Dashboard Settings Profile`。
 
-* `The Course About Page`_
-* `The Learner Dashboard`_
-* `Describe Your Course`_
-* `Add a Course Image`_
-* `Add a Course Video`_
-* `Set Course Effort Expectations`_
-* `A Template For Your Course Overview`_
+.. contents:: Section Contents
+  :local:
+  :depth: 1
 
-For information about setting important dates, see :ref:`Scheduling Your
+设置重要日期相关内容请参阅 :ref:`Scheduling Your
+Course`.
+
+设置课程证书相关内容请参阅 :ref:`Licensing a
 Course`.
 
 .. _The Course About Page:
 
 ***********************************
-The Course About Page
+课程总结页面
 ***********************************
 
-The following example shows the course About page. Learners can see the
-About page before they enroll in the course, and may decide to enroll
-based on the content of the page. 
+下图是总结页面的例子。学生可以在注册之前看到此页面，并且可能在浏览页面内容后决定注册。
 
 .. image:: ../../../shared/building_and_running_chapters/Images/about_page.png
  :alt: An image of the course About page.
  :width: 600
 
-You configure the contents of this page in Studio, as described in this topic.
+正如此章所讲述的，您通过Studio设置页面内容。
 
 .. _The Learner Dashboard:
 
 ***********************************
-The Learner Dashboard
+学生控制面板
 ***********************************
 
-If a learner enrolls in your course, the course is then listed on the **Current
-Courses** dashboard, with the course image. From the dashboard, a learner can
-open a course that has started. If the course has not started, the learner can
-see the start date, as explained in :ref:`Scheduling Your Course`.
+如果学生注册您的课程，之后课程和课程图片会在控制面板上显示。
+学生从控制面板上能点开开始的课程。
+正如 :ref:`Scheduling Your Course` 此章所讲述的，如果课程无法开始，学生能看看开始日期。
 
 .. image:: ../../../shared/building_and_running_chapters/Images/dashboard-course-start-and-end.png
  :width: 600
@@ -54,164 +50,140 @@ see the start date, as explained in :ref:`Scheduling Your Course`.
 .. _Describe Your Course:
 
 ************************
-Describe Your Course
+描述您的课程
 ************************
 
-Learners see the description of your course on the course About page.
+学生将在您的课程页面中看到您对课程的描述。
 
-For example, the course description is circled in the following course About
-page.
+例如，课程描述在以下课程总结页面以环形结构展开。
 
 .. image:: ../../../shared/building_and_running_chapters/Images/about-page-course-description.png
  :alt: Image of a course summary with the description circled.
  :width: 600
 
-.. note:: For courses on edX.org, you must communicate the course description
- to your edX Program Manager, to ensure the content is accurate on the course
- About page.
+.. note:: 您必须与您的edX项目经理就edX.org网页上的课程描述进行交流，以确保课程总结页面的内容是正确的。
 
-#. From the **Settings** menu, select **Schedule & Details**.
+#. 从设置栏中选择时间表和详情
 
-#. Scroll down to the **Introducing Your Course** section, then locate the
-   **Course Overview** field.
+#. 从上至下滚动介绍课程内容，然后找到课程概况位置
 
    .. image:: ../../../shared/building_and_running_chapters/Images/course_overview.png
     :alt: Image of the HTML course description.
     :width: 600
 
-#. Overwrite the content as needed for your course, following the directions in
-   the boilerplate text. Do not edit HTML tags. For a template that includes
-   placeholders, see :ref:`A Template For Course Overview`.
+#. 根据需要，依据模版文本重写课程内容。不要编辑超文本标记语言（HTML）的标签。
+   模版应当包括占位符，请阅览课程概况模版。 :ref:`A Template For Course Overview`
  
-#. Select **your course summary page** in the text beneath the field to test
-   how the description will appear to learners.
+#. 点击文本下方的课程总结页面，检测学生如何看到课程描述。
 
-#. When you make changes, a **Save Changes** button appears at the bottom right
-   of the page. Select **Save Changes** when you have completed the course
-   description.
+#. 当您修改内容时，**保存修改** 按钮将出现在页面下方。
+   完成课程描述后请点击 **保存修改** 按钮。
 
 .. _Add a Course Image:
 
 ************************
-Add a Course Image
+添加课程相关图片
 ************************
 
-The course image that you add in Studio appears on the dashboard. It should be
-a minimum of 378 pixels in width by 225 pixels in height, and in .jpg or .png
-format. Make sure the image that you upload maintains the aspect ratio of those
-dimensions so that the image appears correctly on the dashboard.
+您向Studio上传添加的相关课程图片会呈现在学生使用界面里。
+课程图片像素至少为660*240（宽*高），格式应为.JPG或.PHG。
+确保您上传的图片符合以上规格，以合适地显现在学生使用界面中。
+ 
+在以下样例中，上传至Studio的课程图片将会放在方框里呈现在学生使用界面上。
 
-In the following example, the course image that was added in Studio is circled
-in the dashboard.
 
 .. image:: ../../../shared/building_and_running_chapters/Images/dashboard-course-image.png
  :alt: Image of the course image in the dashboard.
  :width: 600
 
-#. From the **Settings** menu, select **Schedule & Details**.
+#. 在导览列上，点击设置，之后点击时程表与课程介绍。
 
-#. Scroll down to the **Course Image** section.
+#. 向下滚动鼠标至课程图片。
 
-#. To select an image from your computer, click **Upload Course Image**, then
-   follow the prompts to find and upload your image.
+#. 从本地电脑中选择一张课程图片：点击上传课程图片，然后根据提示找到本地电脑中的图片，点击上传所选图片。
 
-#. When you make changes, a **Save Changes** button appears at the bottom right
-   of the page. Select **Save Changes** when you have added the course image.
+#. 修改后点击页面底部的保存按钮，保存您所添加的课程图片。
 
-#. View your dashboard to test how the image will appear to learners.
+#.  浏览您的使用界面，并查看如何向学生显示该图片。
 
 .. note:: 
-  On edX.org, the course image you add in Studio is used on the learner
-  dashboard, but does not automatically appear on the course About page. Work
-  directly with your edX program manager to set up the About page assets and
-  course image for the course summary page.
+  您向Studio上传添加的图片并不会自动显示在网页edX.org的课程概要页面上。
+  您必须直接与edX的项目经理联系，让他在课程概要页面上予以设置。
 
 .. _Add a Course Video:
 
 *********************************
-Add a Course Video
+添加课程视频
 *********************************
 
-The course video appears on the course About page.
+学生可在课程概要页面上浏览添加的课程视频简介。
 
-In the following example, the course video is circled in the course About
-page:
+在以下样例中，上传的课程视频将会放在方框中呈现在课程概要页面上：
 
 .. image:: ../../../shared/building_and_running_chapters/Images/about-page-course-video.png
  :alt: Image of the course video in the course summary page.
  :width: 600
 
-The course video should excite and entice potential learners to enroll, and
-reveal some of the personality the instructors bring to the course.
+课程视频应达到刺激并吸引潜在学生注册上课的效果，且应展示该课程讲师的部分授课风格。
 
-The video should answer these key questions:
+视频应回答下列重要问题：
 
-* Who is teaching the course?
-* What university or college is the course affiliated with?
-* What topics and concepts are covered in your course?
-* Why should a learner enroll in your course?
+* 谁将讲授这门课程？
+* 这门课程隶属哪所大学或学院？
+* 这门课程涵盖哪些主题及知识概念？
+* 学生为什么要注册学习此门课程
 
-The video should deliver your message as concisely as possible and have a run
-time of less than 2 minutes.
+上传的视频简介应尽可能地简明传达您的信息，且时长至少为两分钟。
 
-Ensure your course introduction video follows the same :ref:`Compression
-Specifications` and :ref:`Video Formats` guidelines as course content videos.
+确保您的视频简介符合 :ref:`Compression
+Specifications` 和 :ref:`Video Formats` 要求。
 
-#. Upload the course video to YouTube. Make note of the code that appears
-   between **watch?v =** and **&feature** in the URL. This code appears in the
-   green box below.
+#.上传课程视频至YouTube视频网站。记录网址上 **watch?v =** 和 **&feature** 的中间部分。如下列样例绿框中出现的代码。
 
    .. image:: ../../../shared/building_and_running_chapters/Images/image127.png
     :alt: Image of a sample course video.
     
-#. From the **Settings** menu, select **Schedule & Details**.
+#. 在导览列上，点击设置之后，点击时程表与课程介绍
 
-#. Scroll down to the **Course Introduction Video** section.
+#. 向下滚动鼠标至课程视频简介区块。
 
-#. In the field below the video box, enter the YouTube video ID (the code you
-   copied in step 1). When you add the code, the video automatically loads in
-   the video box.
+#. 在视频框下方栏位，输入YouTube视频ID（即步骤一中复制的代码）。
+   在您添加代码后，视频将自动装载至视频框中。
 
-#. When you make changes, a **Save Changes** button appears at the bottom right
-   of the page. Select **Save Changes** when you have added the course video.
+#. 修改后请单击页面底部的保存按钮，添加课程视频后请点击保存按钮。
 
-#. View your course About page to test how the video will appear to learners.
+#. 浏览您的课程概要页面，查看如何向学生展示该视频。
 
 .. note:: 
-  On edX.org, you work directly with your Program Manager to set up the course
-  video in the summary page.
+  在edX.org页面上，直接与项目经理取得联系，让其在课程概要页面添加您的课程视频。
 
 .. _Set Course Effort Expectations:
 
 *******************************
-Set Course Effort Expectations
+课程设置所需时间
 *******************************
 
-The estimated effort the course requires appears in the course About page. 
+课程估计所需时间将显示在课程概要页面底部。
 
-You set the hours and minutes a week estimate in Studio.
+您将在Studio中设置每周所需的估计时长。
 
-#. From the **Settings** menu, select **Schedule & Details**.
+#. 点击设置之后，点击时程表与课程介绍。
 
-#. Scroll down to the **Requirements** section.
+#. 滑鼠标至课程需求。
 
-#. In the **Hours of Effort per Week** field, enter the number of hours you
-   expect learners to work on this course each week.
+#. 在一周课程所需时间一栏内，输入您期望学生每周学习此门课程的小时数。
 
-#. When you make changes, a **Save Changes** button appears at the bottom right
-   of the page. Select **Save Changes** when you have added the estimated
-   effort.
+#. 修改后请点击页面底部的保存按钮，添加估计时间时请保存所做修改
 
-#. View your course About page to test how the requirements will appear to
-   learners.
+#. 浏览您的课程概要页面，查看如何向学生展示该时间量。
 
 .. _A Template For Course Overview:
 
 ************************************************
- A Template For Your Course Overview
+ 课程概述模板
 ************************************************
 
-Replace the placeholders in the following template with your information.
+将下述模板中占位符部分替换为您的课程信息。
 
 .. code-block:: html
 
@@ -262,4 +234,3 @@ Replace the placeholders in the following template with your information.
       </article>
     </section>
   </section>
-

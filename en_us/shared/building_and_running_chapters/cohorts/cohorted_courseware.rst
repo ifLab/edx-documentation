@@ -2,28 +2,26 @@
 
 
 ###################################
-Creating Cohort-Specific Courseware
+创建特定队列课件
 ###################################
 
-If you have :ref:`cohorts enabled<Enabling and Configuring Cohorts>` in your
-course, you can create different course experiences for students in different
-cohorts. 
+如果您在课程中已经 :ref:`cohorts enabled<Enabling and Configuring Cohorts>` ，
+您可以为不同队列的学生提供不同的课程体验。
 
-You can design your course so that some students are given different content
-than others. You do this by creating :ref:`content groups<About Content Groups>`
-in Studio, and designating specific components in your course as visible only to
-one or more content groups. Then, if you associate one or more cohorts with a
-content group, only the students in cohorts associated with that content group
-can see course content that you have designated for it.
+您可以使一些学生得到的内容与其他学生不同。
+您可以在Studio中建立 :ref:`content groups<About Content Groups>` ，
+将特定组件设定为仅对一个或多个内容小组可见。
+如果您将一个或多个队列结合到同一个内容小组中，
+只有这些队列中的成员能够看到您设定的内容。
 
-For more details about content groups, see :ref:`About Content Groups`. For an
-example of cohort-specific course content, see :ref:`Cohorted Courseware
+更多关于内容小组的内容请参考 :ref:`About Content Groups` 。 
+关于特定内容队列的示例请参考 :ref:`Cohorted Courseware
 Example`.
 
 
-Complete these steps to create cohort-specific content in your course.
+完成以下步骤创建特定队列内容：
 
-In Studio:
+在Studio中：
 
 #. :ref:`Enable cohorts in your course<Enabling and Configuring Cohorts>`.
 #. :ref:`Create content groups<Creating Content Groups>`. 
@@ -31,7 +29,7 @@ In Studio:
    groups<Specify Components in Courseware as Visible Only to Certain Content
    Groups>`.
      
-In the LMS: 
+在学习管理系统中： 
 
 #. :ref:`Assign students to cohorts<Options for Assigning Students to Cohorts>`.  
 #. :ref:`Associate one or more cohorts with a content group<Associate Cohorts
@@ -42,204 +40,165 @@ In the LMS:
 .. _Cohorted Courseware Example:
 
 ***********************************
-Example: Cohort-Specific Courseware
+示例：特定队列课件
 ***********************************
 
-Suppose that you create two :ref:`cohorts<Cohorts Overview>` in your course:
-University Alumni and Current University Students. Students who are not in
-either of these cohorts are automatically placed into a third cohort, the
-default cohort, when they access the courseware or discussion tabs in the
-course. For more information about enabling cohorts in your course and assigning
-students to cohorts, see :ref:`Enabling and Configuring Cohorts`.
+假设您在课程中建立了两个 :ref:`cohorts<Cohorts Overview>` ，
+大学校友和大学在校生。当学生进入课件页面或论坛中时，
+不在这两个队列中的学生被自动分配到第三个队列中，即默认队列。
+更多关于在课程中启动队列和分派队列的信息请参考 :ref:`Enabling and Configuring Cohorts` 。
 
-You intend all students to have substantially the same course experience, with
-the exception that only students in the two university-related cohorts will
-receive content that is specific to your university and therefore only of
-interest to them.
+除了两个学校相关的队列的学生将得到他们感兴趣的特殊内容以外，您希望其他所有的学生将到相同的课程体验。
 
-At the end of every section, you intend to include a video message from various
-university officials, including the university president and the dean of your
-college. These videos will be shown only to students in the university and
-alumni cohorts. Also at the end of each section, you intend to include a quiz to
-test knowledge of the concepts taught in that section. The quiz will be shown to
-all students enrolled in the course.
+在每个章节最后，您希望包含一个来自学校官方，包括校长和学院院长的视频信息。
+这些视频仅向您学校的学生和校友展示。在每章节的最后，您想测验一下本章节的知识。
+这些测验题仅对所有参加本课程的学生可见。
 
-To achieve this, on the **Group Configurations** page in Studio you create one
-content group called "University-Specific Content". In the Instructor Dashboard,
-on the **Cohorts** tab, you associate both the "University Alumni" and the
-"Current University Students" cohorts with the "University-Specific Content"
-content group.
+要达到这些要求，在Studio的 **小组设置** 页面中建立名为“学校特别内容”内容小组。
+在导师界面的 **队列** 栏中，将“校友”和“在校学生”队列合并到“学校特别内容”小组中。
 
-Then, in your course outline, you change the visibility settings for the video
-component at the end of each section so that it is visible only to the
-"University-Specific Content" content group. You do not need to edit the
-visibility settings of the quiz component, because if no content group is
-specified in a component's visibility settings, it is visible to all students.
+在您的课程大纲页面，更改视频组件的可见性设置，
+使各章节末尾的视频仅对“学校特别内容”内容小组可见。
+您不需要改变小测试题的可见性，因为如果没有在组件可见性设置中特定内容小组，
+组件将对所有学生可见。
 
-As a final step, you preview the course in the LMS to ensure that students see
-the content that is intended for them. You confirm that when you view the course
-in the role of **Student** (in other words, any student not in a content group),
-you see a quiz at the end of each section, but do not see the university-related
-videos. When you view the course as a student in the "University-Specific
-Content" group, you see a university-related video as well as the quiz at the
-end of each section.
-
+最后一步，您在学习管理系统中预览课程，确保学生将看到您为他们设定的内容。
+您使用学生角色（此角色不属于任何内容组）确认在每章最后看到小测验，且看不到学校相关视频。
+当您使用“学校指定内容”小组中学生的角色时，您可以看到学校相关视频和课后小测验。
 
 .. _About Content Groups:
 
 **************
-Content Groups
+内容小组
 **************
 
-Content groups are virtual groupings of students who will see a particular set
-of course content. You can use content groups to designate specific course
-content as visible to particular :ref:`cohorts<Cohorts Overview>` of students. 
+内容小组将学生分成可以看到特定内容的虚拟小组。
+您可以使用内容小组指定特别内容仅对特定 :ref:`cohorts<Cohorts Overview>` 中的学生可见。
 
-You create content groups in Studio, and in your course outline you use the
-**Visibility Settings** to designate whether a component is selectively visible
-only to one or more content groups. Any course components that do not have an
-explicitly restricted visibility setting remain visible to all students,
-regardless of their cohort.
+您将在Studio中建立内容小组，在课程大纲里使用 **可见性设置** 指定组件是否对一个或多个内容小组可见。
+任何没有设置可见性的课程组件将保持对所有学生可见。
 
-Content groups do not have an actual impact on the visibility of a course
-component until you associate them with one or more cohorts. If you have
-designated certain course content as visible to a content group, and in addition
-have associated that content group with one or more cohorts, then those cohorts
-will see the designated content.
+如果您没有将内容小组与队列相结合，内容小组并不影响课程组件的可见性。
+如果您指定确切的课程内容对一个内容小组可见，且已经将此小组与队列相结合，
+那么这些队列将看到指定内容。
 
-For an example of using content groups to create cohort-specific courseware, see
+关于使用内容小组创建特殊队列可见的示例请参考
 :ref:`Cohorted Courseware Example`.
 
 
 .. _Creating Content Groups:
 
 *********************
-Create Content Groups
+创建内容小组
 *********************
 
-To create a content group, follow these steps.
+遵循以下步骤创建内容小组。
 
-#. In Studio, select **Settings**, then select **Group Configurations**.
+#. 在Studio中选择 **设置** ，然后选择 **小组配置** 。 
  
-#. On the **Group Configurations** page, click **New content group**.
+#. 在 **小组配置** 页面，点击 **新建内容小组** 。
    
 .. image:: ../../../shared/building_and_running_chapters/Images/Cohorts_AddContentGroup.png
  :width: 600
  :alt: Button on Group Configurations page for adding first content group
 
-3. Enter a meaningful name for the content group, then click **Create**.
-   The page refreshes to show the name of your new content group.
-#. Repeat this step to create as many content groups as you want.
+3. 为内容小组起一个有意义的名字，然后点击 **创建** 。
+   页面刷新后将显示新小组的名字。
+#. 重复以上步骤创建更多内容小组。
 
-After you create a content group, you can work with your course outline to
-specify which components are visible to specific content groups. For details,
-see :ref:`Specify Components in Courseware as Visible Only to Certain Content
+创建内容小组以后，您可以在课程大纲中将特定内容设置为对特定内容小组可见。
+更多细节请参考 :ref:`Specify Components in Courseware as Visible Only to Certain Content
 Groups`.
 
-On the Instructor Dashboard, you associate each content group with one or more
-cohorts. For details, see :ref:`Associate Cohorts with Content Groups`.
+在导师面板中，您可以将内容小组和队列结合起来。
+更多细节请参考 :ref:`Associate Cohorts with Content Groups`.
 
 
 .. _View Usage of a Content Group:
 
 *************************************
-View Usage of a Content Group
+查看内容小组使用情况
 *************************************
 
-To view the units that are visible to a content group, follow these steps.
+遵循以下步骤查看使用内容小组的单元。
 
-#. In Studio, select **Settings**, then select **Group Configurations**.
+#. 在Studio中选择 **设置** ，然后选择 **小组配置** 。
  
-#. On the **Group Configurations** page, locate the content group for which you
-   want to view the usage.
+#. 在 **小组配置** 页面找到您想查看的内容小组。 
    
-   The content group's box displays whether the content group is used in this
-   course. If it is used, you see the number of units that it is used in, and
-   links to each unit.
+   内容小组框中显示小组是否正在使用。
+   如果正在使用，您将看到使用小组的单元编号以及单元链接。
 
-#. Click each link to go to that unit in the **Course Outline**, where you can
+#. 点击链接进入单元在课程大纲中的页面，您可以
    :ref:`specify whether that unit is visible to the content group<Specify
    Components in Courseware as Visible Only to Certain Content Groups>`.
 
-For details about previewing your course to ensure that students in a cohort
-correctly see the content intended for them, see :ref:`Preview Cohort Specific
-Courseware`. For details about deleting content groups, see :ref:`Delete Content
+更多关于预览课程以确保队列中的学生能看到特定内容的细节请参阅 :ref:`Preview Cohort Specific
+Courseware`. 
+更多关于删除内容小组的细节请参阅 :ref:`Delete Content
 Groups`.
 
 
 .. _Delete Content Groups:
 
 *********************
-Delete Content Groups
+删除内容小组
 *********************
 
-.. note:: You can delete a content group only if it is not in use in any course
-   unit. To delete a content group that is currently in use, you must first
-   remove it from any course unit visibility settings that use the content
-   group. For information about seeing which units use a content group, see
-   :ref:`View Usage of a Content Group`.
+.. note:: 您只能删除未被任何课程单元使用的内容小组。
+   如果需要删除正在使用的内容小组，您必须先将该小组从课程单元可见性设置中删除。
+   关于查看哪些单元正在使用内容小组想信息请参考
+   :ref:`View Usage of a Content Group` 。
 
-#. In Studio, select **Settings**, then select **Group Configurations**.
+#. 在Studio中选择 **设置** ，然后选择 **小组配置** 。
  
-#. On the **Group Configurations** page, locate the content group that you want
-   to delete.  
+#. 在 **小组配置** 页面找到您想删除的内容小组。
    
-#. Move your cursor over the content group's box, then click the **Delete**
-   icon.
+#. 将光标移至小组框内，点击 **删除** 图标。
 
-#. In the confirmation message, click **Delete** again to confirm the deletion.
+#. 在确认信息中点击 **删除** 。
       
 
 .. _Specify Components in Courseware as Visible Only to Certain Content Groups:
 
 *****************************************************************************
-Specify Components in Courseware as Visible Only to Particular Content Groups
+将指定组件设置为仅对特定内容小组可见
 *****************************************************************************
 
-After you create at least one content group, you can edit your course in Studio
-and modify the visibility settings of components that you want to make visible
-only to particular content groups.
+创建了内容小组之后，您可以在Studio中编辑课程并修改组件的可见性设置。
 
-.. note:: You do not need to edit the visibility settings of components that are
-   intended for all students. Components that you do not explicitly indicate as
-   visible to a group are visible to all students enrolled in your course,
-   regardless of the cohort that they belong to.
+.. note:: 您不需要修改您希望对所有学生可见的组件设置。
+   如果您没有指定对内容小组可见，组件将对所有参与课程的学生开放，
+   无论这些学生是否在队列中。
 
-You can specify content as visible to content groups only at the component level
-in a unit. You cannot specify entire units, subsections, or sections for
-visibility to content groups.
+您只能在单元级别的组件中指定其内容对内容小组可见。您不能指定整个单元、
+子章节或章节对内容小组的可见性。
 
-In a separate task, you create cohorts and associate content groups with
-cohorts. Then, only the cohorts associated with content groups which you
-selected in a component's visibility settings can view the component. See
-:ref:`Associate Cohorts with Content Groups` for details about associating
-cohorts with content groups.
+在个别任务中，您创建队列并将其与内容小组结合起来。
+只有您在组件可见性设置中选择的内容小组成员能查看该组件。
+关于结合队列和内容小组的细节请参考
+:ref:`Associate Cohorts with Content Groups` 。
 
-To specify components as visible only to particular content groups, follow these
-steps.
+遵循以下步骤指定组件对特定内容小组可见。
 
-#. In Studio, select **Content**, then select **Outline**. 
+#.在Studio中选择 **内容** 然后选择 **大纲** 。
    
-#. For each component that you want to make visible only to a particular
-   content group or groups, click the unit name, then click the **Visibility
-   Settings** icon.
+#. 在组件中点击单元名，点击 **可见性设置** 图标。
 
 .. image:: ../../../shared/building_and_running_chapters/Images/Cohorts_VisibilitySettingInUnit.png
   :alt: Screen capture of unit in course outline with visibility setting icon highlighted 
 
-3. In the **Editing visibility** dialog, select **Specific Content Groups**,
-   then select the checkbox for each content group for which you want the current
-   component to be visible.
+3. 在 **编辑可见性** 对话框中选择 **指定内容小组** 。
+   然后勾选您想设置当前组件可见的内容小组。
 
 .. image:: ../../../shared/building_and_running_chapters/Images/Cohorts_EditVisibility.png
   :width: 400
   :alt: Screen capture of unit in course outline with visibility setting icon highlighted 
 
-4. Click **Save**.
+4. 点击 **保存** 。
 
-The **Visibility Settings** icon for the component is now black, and the
-publishing details for the course section in the sidebar refresh to indicate
-that some content is visible only to particular groups.
+组件 **可见性设置** 的图标变成黑色，
+侧栏中的课程章节细节说明有些内容已经设置为仅对特定小组可见。
 
 .. image:: ../../../shared/building_and_running_chapters/Images/Cohorts_VisibilitySomeGroup.png
    :alt: Visibility icon is black when visibility for a component is restricted
@@ -247,109 +206,93 @@ that some content is visible only to particular groups.
 .. image:: ../../../shared/building_and_running_chapters/Images/Cohorts_OnlyVisibleToParticularGroups.png   
    :alt: Course outline sidebar shows visibility icon and note indicating that some content in the unit is visible only to particular group.
 
-For details about previewing your course to ensure that students in a cohort
-correctly see the content intended for them, see :ref:`Preview Cohort Specific
+关于预览课程以确保队列中的学生能看到特定内容的细节，请参考 :ref:`Preview Cohort Specific
 Courseware`.
 
-.. note:: In addition to visibility settings for content groups, a student's
-   ability to see a course component also depends on whether it is hidden from
-   students, whether the unit is published, and the course's release date. For
-   details about previewing courseware in general, see :ref:`Preview Course
+.. note:: 除了对内容小组的可见性设置之外，学生能不能看到课程组件还取决于组件是否对学生隐藏、
+   单元是否已经发布以及课程发布日期。关于预览课件的细节请参考 :ref:`Preview Course
    Content`.
 
 .. _Associate Cohorts with Content Groups:
 
 *************************************
-Associate Cohorts with Content Groups
+结合队列和内容小组
 *************************************
 
-After you create a content group, you can associate it with one or more cohorts
-with which you want to share the same special content in your course.
+创建了内容小组之后，您可以将其与您希望看到相同课程内容的队列相结合。
 
-.. note:: A content group can be associated with more than one cohort; a cohort
-   cannot be associated with more than one content group.
 
-To associate a cohort with a content group, follow these steps:
+.. note:: 一个内容小组可以和一个或多个队列相结合；一个队列只能和一个内容小组相结合。
 
-#. In the LMS, select **Instructor**, then select **Cohorts**. 
+步骤如下：
+
+#. 在学习管理系统中，选择 **导师** ， **队列** 。  
+
+#. 在队列下拉列表中选择您想结合内容小组的队列。
    
-#. From the cohorts drop down list, select the cohort to which you want to
-   associate your content group.
-   
-#. Click the **Settings** tab for the selected cohort.
+#. 点击已选队列的 **设置** 标签 。
 
-#. Under **Associated Content Group**, choose the **Select a Content Group** option.
+#. 在 **结合内容小组** 下选择 **选择内容小组** 选项。
 
-#. From the content group drop down list, select the content group that you want
-   your cohort to be associated with.
+#. 在内容小组下拉列表中选择您想结合的小组。
 
 .. image:: ../../../shared/building_and_running_chapters/Images/Cohorts_AssociateWithContentGroup.png
    :alt: Select a content group to associate with the cohort
 
-7. Click **Save**.
+7. 点击 **保存** 。
    
-   You have now associated your content group with a cohort. Any course content
-   that you :ref:`designate as visible to that content group<Specify Components
-   in Courseware as Visible Only to Certain Content Groups>` is visible to
-   students in the associated cohort or cohorts.
+   现在内容小组已经和队列结合了，任何您 :ref:`designate as visible to that content group<Specify Components
+   in Courseware as Visible Only to Certain Content Groups>` 的课程内容已经对已结合的队列可见。
+   
+您可以重复步骤3到7将更多的队列结合到内容小组中。Y
 
-You can associate additional cohorts with the same or a different content group
-by repeating steps 3 to 7.
-
-For an example of using content groups to create cohort-specific courseware, see
+关于使用内容小组创建指定队列课件的示例请参考
 :ref:`Cohorted Courseware Example`.
 
 
 .. _Preview Cohort Specific Courseware:
 
 *************************************
-Preview Cohort-Specific Courseware
+预览指定队列课件
 *************************************
 
-After you designate components in your course as being visible only to certain
-content groups, you can preview your courseware to ensure that each group
-correctly sees the content intended for them.
+在您指定组件可见性之后，您可以预览课件以确保每个小组能看到您指定的内容。
 
-.. note:: In addition to visibility settings for content groups, a student's
-   ability to see a course component also depends on whether it is hidden from
-   students, whether the unit is published, and the course's release date. For
-   details about previewing courseware in general, see :ref:`Preview Course
+.. note::  除了对内容小组的可见性设置之外，学生能不能看到课程组件还取决于组件是否对学生隐藏、
+   单元是否已经发布以及课程发布日期。关于预览课件的细节请参考 :ref:`Preview Course
    Content`.
 
-You can view the course as a member of these groups:
+您可以以小组成员的角色查看课程：
 
 
 .. list-table::
     :widths: 15 30
     :header-rows: 1
 
-    * - Role
-      - When You "View As" This Role
-    * - Staff
-      - You see all content in the course, including content
-        that is hidden from students.
-    * - Student
-      - You see any content that is intended for all
-        students.
-    * - Student in <Content Group Name>            
-      - You see content that is intended for all students, as well
-        as any content specifically set to be visible to this content group.
+    * - 角色
+      - 当您使用此角色预览时
+    * - 教员
+      - 您将看到所有课程内容，包括对学生隐藏的内容。
+        
+    * - 学生
+      - 您将看到对所有学生可见的内容。
+        
+    * - <内容小组名> 中的学生           
+      - 您将看到对所有学生可见的内容，以及指定对此内容小组可见的内容。
+        
 
-#. In Studio, in the course outline, click **Preview**. You see your
-   course section in the **Courseware** section of the LMS.
+#. 在Studio中的课程大纲点击 **预览** ，您将看到在学习管理系统中显示的课程章节 **课件** 。
 
-#. In the navigation bar at the top of the page, select one of the options in
-   the **View this course as** drop down list, as described in the table above.
+#. 在页面顶端的导航栏中 **以何种角色查看次课程** 选择以上表格内的一个选项。
 
 .. image:: ../../../shared/building_and_running_chapters/Images/Cohorts_ViewCourseAs.png
    :alt: Visibility icon is black when visibility for a component is restricted
 
 
-The course view refreshes and the content is presented as a member of the
-selected content group would see it.
+此课程将以所选内容小组成员的视角呈现。
 
-After your course is live, you can also see the live version as a student would
-see it, by clicking **View Live** from Studio. For more information, see
+课程上线之后，您也可以以学生视角查看在线版本。
+在Studio中点击 **在线查看** 。更多信息请参阅
 :ref:`View Your Live Course`.
 
 

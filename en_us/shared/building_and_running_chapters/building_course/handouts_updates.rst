@@ -1,69 +1,65 @@
 .. _Adding Course Updates and Handouts:
 
 ######################################################
-Adding Course Updates and Handouts
+添加课程补充资料及讲义
 ######################################################
 
-You add course updates and identify handouts in Studio. Learners see the
-course updates and handouts on the **Course Info** page in your course.
+在Studio中，您可以添加课程的补充资料或讲义。
+在 **课程信息** 选项卡下，学生可查看补充资料或讲义。
 
 .. image:: ../../../shared/building_and_running_chapters/Images/course_info.png
  :alt: The Course Info page as it appears to students, with a "Course Updates
        & News" section containing a dated post and a "Course Handouts" frame
        with a list of links.
 
-.. contents:: Section Contents 
+.. contents:: 内容包括： 
    :local:
    :depth: 1
 
 .. _Add a Course Update:
 
 **********************
-Add a Course Update
+如何添加课程补充资料
 **********************
 
-You add updates to notify learners of upcoming exams or deadlines, changes in
-the course schedule, or to make other announcements. 
+您可添加课程的补充资料，通知学生考试、课程表变更或是其他突发情况。
 
-To add a course update, follow these steps.
+如何添加补充资料：
 
-#. From the **Content** menu, select **Updates**. 
-#. Select **New Update**.
-#. Enter your update in the HTML editor that opens.
+#. 在 **内容** 菜单中，选择 **更新** 。 
+#. 单击 **新资料** 。
+#. 在打开的HTML编辑器中输入内容。
 
-   * You must use HTML to format your update. The :ref:`visual editor<The
-     Visual Editor>` is not provided.
-   * If you change the supplied date, the new date appears above the update
-     on the **Course Info** page. However, the update is visible to all
-     enrolled learners as soon as you post it.
+   * 内容必须是HTML格式，不提供 :ref:`visual editor<The
+     Visual Editor>` 格式。
+   * 如果您更改了补充日期，新的日期会在 **课程信息** 中显示。
+     然而，一经上传，资料对所有已登记学生可见。
 
-4. Select **Post**. Your update appears on your course's **Course Info** page
-   immediately.
+4. 选择 **发布** ，您的补充资料将立即出现在 **课程信息** 页面。
+
 
 .. _Add Course Handouts:
 
 ***************************
-Identify a Course Handout
+添加讲义
 ***************************
 
-You can identify previously uploaded files as handouts for your course.
-Learners see a link on the **Course Info** page for each course handout.
+您可以使用先前上传的文件作为课程讲义。
+学生可以在 **课程信息** 页面看到所有课程讲义的链接。
 
-Before you identify a course handout, you :ref:`add the file<Add Files to a
-Course>` to your course and copy its Studio URL. You can open the Studio
-**Files & Uploads** page in another browser window to make this process
-easier.
+在添加课程讲义之前，您需要 :ref:`add the file<Add Files to a Course>` 到您的课程中并复制文件的Studio URL。
+为简化操作，您可以在另一个浏览器窗口中打开Studio中的 **文件与上传** 页面。
 
-To identify a course handout, follow these steps.
+如何添加课程讲义：
 
-#. From the **Content** menu, select **Updates**. 
-#. In the **Course Handouts** panel, select **Edit**.
-#. In the editor that opens, use HTML formatting to add a link to the
-   previously uploaded file. An example follows.
+#. 在 **内容** 菜单中，选择 **补充材料**
+#. 在 **课程讲义** 选项卡下，选择 **编辑**
+#. 在打开的编辑器中，用HTML格式添加之前上传的文件地址链接。
+   示例如下：
 
    .. code-block:: html
 
      <p><a href="/static/Syllabus_Fall2016.pdf" target="_blank">Syllabus</a></p>
      <p><a href="/static/Glossary_v3.pdf" target="_blank">Glossary</a></p>
 
-4. Select **Save**.
+4. 单击 **保存**

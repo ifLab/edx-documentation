@@ -1,7 +1,7 @@
 .. _Enabling and Configuring Cohorts:
 
 ############################################
-Enabling and Configuring the Cohorts Feature
+启用、配置分队模式
 ############################################
 
 If you want to use cohorts in your course, you select a strategy for assigning
@@ -13,16 +13,13 @@ Cohorts`.
    you should have a strategy in mind as you design your course, and only make
    changes to cohorts while the course is running if absolutely necessary.
 
-If you use cohorts in your course, you must also decide whether course-wide and
-content-specific discussion topics should be divided by cohort or unified for
-all students.
+同时您还需要决定是否将全课堂共享的大讨论改为小规模分队讨论。
 
-After you decide on a cohort strategy for your course, complete these
-configuration steps (as applicable).
+当您最终决定了分队策略后，请完成以下配置步骤：
 
 #. :ref:`Enable cohorts<Enable Cohorts>`.
 
-#. Determine the method you want to use to assign students to cohorts.
+#. 根据您最终的分队策略，您需要：
    
   * :ref:`Implement an automated assignment strategy<Implementing the Automated
     Assignment Strategy>`
@@ -34,8 +31,7 @@ configuration steps (as applicable).
   * :ref:`Use a combination of automated and manual assignment<Hybrid
     Assignment>`
 
-3. Optionally, identify the discussion topics that you want to be divided by
-   cohort.
+3. 将需要更改的大课题转变为分队课题，如不需要，可忽略此步。
    
   * Course-wide discussion topics are unified by default, but you can specify
     that they are :ref:`divided by cohort<Specify Whether CourseWide Discussion
@@ -49,19 +45,16 @@ configuration steps (as applicable).
     Some ContentSpecific Discussion Topics as Cohorted>` and make the remaining
     topics unified.
 
-You complete these procedures on the **Cohorts** tab on the Instructor Dashboard. 
+您需要在Studio和教师指示板上完成这些步骤。
 
-For an optimal student experience, you should make sure that configuration of
-the cohort feature is as complete as possible before the start date of your
-course. If you need to make changes to the way you have configured cohorts while
-your course is running, be aware of the implications of your changes. For more
-information, see :ref:`Altering Cohort Configuration`.
+为保证学生的最佳课堂体验，这些步骤应在课程开始日期前就设置妥当。
+课程开始后，若您仍需更改分队设置，请参考 :ref:`Altering Cohort Configuration`.
 
 
 .. _Implementing the Automated Assignment Strategy:
 
 ***************************************************
-Implementing an Automated Assignment Strategy
+启用分队功能
 ***************************************************
 
 To implement an automated assignment strategy of students to cohorts, you
@@ -84,7 +77,7 @@ assignment to cohorts, see :ref:`Hybrid Assignment`.
 .. _About Auto Cohorts:
 
 =================
-Automated Cohorts
+自动分队
 =================
 
 The first time a student first views any course content, including the course
@@ -102,7 +95,7 @@ and assigns the student to this default cohort.
 .. _Implementing the Manual Assignment Strategy:
 
 ***************************************************
-Implementing a Manual Assignment Strategy
+采用手动分组策略
 ***************************************************
 
 To implement a manual assignment strategy of students to cohorts, you
@@ -111,9 +104,9 @@ To implement a manual assignment strategy of students to cohorts, you
 method<Changing the Assignment Method of a Cohort>`. To add students to these
 cohorts, you manually assign students to the appropriate cohort.
 
-.. note:: Manual assignments should be as complete as possible before your
-   course starts. If student enrollment continues after your course starts, you
-   should continue to assign new students to cohorts. If you need to make
+.. note:: 手动分队过程应尽量在课程开始之前完成。
+   如果课程开始后继续有学生报名参加，您也应该将新加入的学生分到相应队列中。
+   If you need to make
    changes to the way you have configured cohorts while your course is running,
    see :ref:`Altering Cohort Configuration`.
 
@@ -155,9 +148,9 @@ After you enable the cohorts feature for your course, you can add cohorts.
 
 #. In the LMS, select **Instructor**, then select **Cohorts**.
 
-#. Click **Add Cohort**.
+#. 单击“添加队列”
 
-#. Enter a name for the cohort.
+#. 给队列起名字
 
 .. note:: Students can see the name of the cohort they are assigned to. The
    message "This post is visible only to {cohort name}" appears with each post
@@ -172,7 +165,7 @@ After you enable the cohorts feature for your course, you can add cohorts.
    cohort-specific courseware by associating cohorts with content groups, see
    :ref:`Cohorted Courseware Overview`.
 
-#. Click **Save**. 
+#. 单击“保存”
    
 Continue implementing your cohort strategy by creating additional cohorts as
 applicable, and specifying the assignment method for each cohort.
@@ -206,31 +199,23 @@ Assign Students to Cohorts Manually
  course starts. If student enrollment continues after your course starts, you
  should continue to assign new students to cohorts. 
 
-#. View the live version of your course. For example, in Studio click **View
-   Live**.
+#. 查看课程的当前状况。在Studio中单击“查看课程现况”
 
-#. Click **Instructor**, then click **Cohorts**. 
+#. 单击“导师”→“成员”
 
-#. Scroll to the **Cohort Management** section at the bottom.
+#. 将滚动条拖到底部的“队列管理”区域
 
-#. From the **Select a cohort** list, select the cohort to which you want to
-   manually assign students.
+#.  在下拉列表中选择一个队列
 
-#. On the **Manage Students** tab, under **Add students to this cohort** enter
-   the username or email address of a single student, or enter multiple
-   usernames or addresses separated by commas or new lines. You can copy data
-   from a .csv file of email addresses or usernames, and paste it into this
-   field.
+#. 在“添加学生”字段后，键入单个或多个学生的用户名或电子邮箱，
+   多个用户名和邮箱地址之间用逗号分隔，或另起一行。
+   您可以复制CSV文件中的电子邮件地址，粘贴到本字段后。
 
-#. Click **Add Students**. The students you added are assigned to the selected
-   manual cohort. A message appears to indicate the number of students who were
-   added to the cohort. Because students can belong to only one cohort, the
-   message also indicates the number of students whose assignment to another
-   cohort was changed as a result of your adding them to another cohort using
-   this procedure.
+#. 单击“添加学生”，即可将学生添加至制定手动分队队列。
+   此时会出现一条消息，提示本次加入小队的学生人数。
+   因为每个学生只能加入一个小队，该消息同时也提示了加入其他小队的学生人数。
 
-For a report that includes the cohort assignment for every enrolled student,
-review the student profile information for your course. See :ref:`View and
+如果您需要了解每个学生的分组状况，可以查看学生信息简报。详见 :ref:`View and
 download student data`.
 
 
@@ -401,41 +386,37 @@ consequences of these actions.
 .. _Changing Student Cohort Assignments:
 
 ***************************************************
-Change Student Cohort Assignments
+更改学生分队
 ***************************************************
 
-After your course starts and students begin to contribute to the course
-discussion, each post that they add is visible either to everyone or to the
-members of a single cohort. When you change the cohort that a student is
-assigned to, there are three results:
+当课程开始后，学生上传的内容要么对所有人可见，要么只对某一单独小组可见。
+当您更改某个学生的分队后，会出现如下三个现象：
 
-* The student continues to see the posts that are visible to everyone.
+* 该学生能继续看见对所有人可见的内容
 
-* The student sees the posts that are visible to his new cohort.
+* 该学生还能看见对新分组可见的内容
 
-* The student no longer sees the posts that are visible only to his original
-  cohort.
+* 仅对该学生之前所在分队可见的内容将对其不再可见
 
-The visibility of a post and its responses and comments does not change, even if
-the cohort assignment of its author changes. To a student, it can seem that
-posts have "disappeared".
+某项内容，以及关于该内容的回复、评论的可见性始终保持不变，
+哪怕该内容的作者的已经被分到别的队列，也是如此。
+所以，学生有时会看见内容突然“消失”，这是正常现象。
 
-To verify the cohort assignments for your students, download the  :ref:`student
-profile report<View and download student data>` for your course. If changes are
-needed, you can :ref:`assign students<Assign Students to Cohorts Manually>` to
-different cohorts manually on the **Cohorts** page of the Instructor Dashboard,
-or :ref:`upload cohort assignment changes<Assign Students to Cohort Groups by
-uploading CSV>` in a .csv file.
+为核实学生分队情况，请您下载您课程的学生简报。如果确实需要作出更改，您需要在教师指示板的“成员”页面中将学生手动分配到各个队列中。
+为核实学生分队情况，请您下载您课程的  :ref:`student
+profile report<View and download student data>` 。如果确实需要作出更改，
+您需要在教师指示板的“成员”页面中 :ref:`assign students<Assign Students to Cohorts Manually>`
+或者在.csv文件里 :ref:`upload cohort assignment changes<Assign Students to Cohort Groups by
+uploading CSV>` 
 
 
 .. _Renaming a Cohort:
 
 ***************
-Rename a Cohort
+重新命名队列
 ***************
 
-You can change the name of any cohort, including the system-created default
-cohort.
+您可以更改任何队列的名字。包括系统生成的默认队列。
 
 To rename a cohort, follow these steps.
 

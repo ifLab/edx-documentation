@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿.. _提供反馈:
 
 ###############################################
@@ -117,3 +118,6 @@
  :alt: A post and a response with the "Report" link circled
 
 .. Future: DOC-121 作为一个课程作者, 我需要一个讨论的指导作为给学生的参考。
+=======
+.. include:: ../../../shared/students/sfd_discussions/provide_feedback.rst
+>>>>>>> orig

@@ -4,7 +4,11 @@
    contain the root `toctree` directive.
 
 
+<<<<<<< HEAD
 edX学生使用手册
+=======
+edX Learner's Guide
+>>>>>>> orig
 ========================================
 
 .. toctree::
@@ -14,7 +18,9 @@ edX学生使用手册
    front_matter/index
    SFD_introduction
    sfd_dashboard_profile/index
+   SFD_licensing
    SFD_video_player
+   SFD_course_search
    SFD_google_docs
    SFD_certificates
    SFD_mobile

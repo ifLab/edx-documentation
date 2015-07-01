@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 .. _Explore Posts:
 
@@ -119,3 +120,6 @@ edX的讨论主题可以是 **课程范围** 的或者 **特定内容** 的。
 
 
 
+=======
+.. include:: ../../../shared/students/sfd_discussions/explore_posts.rst
+>>>>>>> orig

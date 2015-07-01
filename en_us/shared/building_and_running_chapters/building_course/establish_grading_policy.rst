@@ -1,10 +1,10 @@
 .. _Establish a Grading Policy:
 
 ##############################
-Establishing a Grading Policy  
+设定计分政策  
 ##############################
 
-Establishing a grading policy takes several steps. You must:
+设定计分政策需以下几步。您需要：
 
 #. :ref:`Set the Grade Range`
 #. :ref:`Set the Grace Period`
@@ -12,221 +12,181 @@ Establishing a grading policy takes several steps. You must:
 #. :ref:`Graded Subsections`
 #. :ref:`The Learner View of Grades`
 
-.. important:: Any changes to the course grading policy, to graded 
- subsections, or to graded components after a course begins will affect the
- student experience in the course and analysis of its data. 
+.. important:: 课程开始后，任何对课程计分政策、等级评定和评分组件的更改会影响学生的课程体验和学生的数据分析。
 
 .. _Set the Grade Range:
 
 *******************
-Set the Grade Range
+设定分数等级
 *******************
 
-You must set the grade range for the course.  For example, your course can be
-pass/fail, or can have letter grades A through F.
+每个课程必须设定分数等级。例如，及格/不及格，或者从字母A-F依次评分等级。
 
-To set the grade range, from the **Settings** menu, select **Grading**.
+设置分数等级：在导览列，点击 **设置** 之后，点击 **计分** 。
 
-The control for the grade range is at the top of the Grading page.
+计分页面顶部显示控制功能。
 
 .. image:: ../../../shared/building_and_running_chapters/Images/grade_range.png
   :alt: Image of the Grade Range control.
   :width: 600
 
-The above example shows that you have a pass/fail grade range, with a score of
-50 as the cutoff. This is the default setting for a new course.
+上图样例中系统预设值以50分为基准，采用通过/不通过。
 
-You can adjust the grade range as needed.
+您可通过分数级距控制功能来更改相应设置。
 
-* To add a grade in the range, select the **+** icon.
+* 点击图标 **+** 添加分数级距。
 
-  A new grade is added to the range between the existing grades. For example,
-  if you add a grade in the default setting, the grade range changes to **F**
-  (0 to 50), **B** (50 to 75), and **A** (75 to 100):
+  即在现有级距上添加新等级。
+  如下图范例，如果您在系统预设值基础上添加新等级，则级距更改
+  **F** (0 到 50), **B** (50 到 75), and **A** (75 到 100):
 
   .. image:: ../../../shared/building_and_running_chapters/Images/grade_range_b.png
     :alt: Image of an altered Grade Range control.
     :width: 600
 
-* To change the score range, move the cursor over the line dividing two grades
-  and then select and drag the line left or right.
+* 将鼠标移至两个级距分界线上，点击分界线并向左或向右拖拽。
 
-  You can see the range numbers of the two grades adjacent to the line change.
-  Unselect the line when it is where you want it.
+  移动过程中，可以看到分界线两侧的分数改变。移至想设定的分数值上松开鼠标即可。
   
-* To change the name of the grade, select the current name of the grade
-  and start typing the name of the new grade. For example,
-  if the original name of the grade is "Pass", you can select "Pass" and
-  then type "Excellent" to replace the name.
+* 更改分数级距名称：双击选定现有级距名称，随后开始编辑新名称。
+  例如，原有级距名称为 **通过** ，您可双击 **通过** ，随后键入 **优秀** ，便可替换旧名。
 
-  You cannot change **F** or **Fail**. 
+  但是，系统不允许更改F或不通过。
 
-* To remove a grade, move the cursor so that it is over the grade. 
+* 移除级距，将鼠标移至对应想移除的级距范围上，其上方将出现移除的连结，点击即可。 
 
-  A **remove** link appears above the grade. Select the link.
   
-  You cannot remove F or A.
+  F或A不可移除。
   
-After you make any changes to the grade range, you must select **Save Changes**
-at the bottom of the page.
+做出任何修改后，请务必点击页面底部保存修改。
 
 .. _Grade Ranges and Certificates:
 
 ==============================
-Grade Ranges and Certificates
+分数等级和证书
 ==============================
 
-If you plan for your course to offer certificates, note that a learner will
-qualify for a certificate by earning any grade over the F, or Fail, threshold.
-This is true regardless of how many grade levels you add in the grade range.
+如果您计划为课程提供证书，请注意成绩在F之上的学生将有资格获得证书，反之不能获得证书。
+此规则无视您设置的分数等级数量。
 
 .. _Set the Grace Period:
 
 *************************
-Set the Grace Period 
+设定宽限期 
 *************************
     
-You can set a grace period that extends homework due dates for your learners. 
+您可为学生设定一个作业延迟上交的宽限期。 
 
 .. note:: 
- The grace period applies to the whole course; you cannot set a grace period
- for individual assignments.
+ 您设定的宽限期适用于全课程；而非个别作业。
   
-In the Grading page, under **Grading Rules & Policies**, enter a value in the
-**Grace Period on Deadline** field. Enter the value in Hours:Minutes format.
+在计分页面上，本功能放置在 **计分规则与政策** 下，
+在 **宽限期限** 一栏内键入时间值，格式为X时：X分。
 
 .. _Configure the Assignment Types:
 
 ******************************
-Configure the Assignment Types
+设定评量类型
 ******************************
 
-You must create assignment types for your course and determine the weight of
-the total grade for each assignment type.
+您需针对课程设置不同类型的评量，并分配好每项评量占学生总成绩的比重。
 
-For example, you might have the following assignment types.
+例如，您可设置
 
-* 10 homework assignments, worth a total of 50% of the grade; 
-* A midterm exam, worth a total of 20% of the grade; 
-* A final exam, worth 30% of the grade. 
+* 课后作业10次，共占总分的50%；
+* 期中测试1次，占总分的20%；
+* 期末测试1次，占总分的30%。 
 
-By default, a new course has the following four assignment types. 
+针对一门新课程，系统默认预设四种评量类型：
 
-* Homework
-* Lab
-* Midterm Exam
-* Final Exam
+* 课后作业
+* 实验
+* 期中测试
+* 期末测试
 
-You can use these assignment types, modify or remove them, and create new
-assignment types.
+以上评量类型可直接使用，亦可修改、移除与新增。
 
-To create a new assignment type, in the bottom of the Grading page, select
-**New Assignment Type**, then configure the fields described below.
+增添新评量：在计分页面底部，点击 **增添新评量** ，然后填写其下述栏位。
 
 ==========================
-Assignment Type Fields
+评量类型相关栏位
 ==========================
 
-You configure the following fields for each assignment type.
+每个评量类型需填写下述栏位：
     
-* **Assignment Type Name:** 
+* **评量类型名称：** 
   
-  The general category of the assignment. This name will be visible to
-  learners.
+  这是评量的总类别，此名称对所有学生可见。
+  
  
   .. note:: 
-   All assignments of a particular type count the same toward the weight of
-   that category. As a result, a homework assignment that contains 10 problems
-   is worth the same percentage of a student's grade as a homework assignment
-   that contains 20 problems.
+   同一评量类别下的所有作业在该类别中比重均相等。
+   例如，包含10个问题的课后作业与包含20个问题的课后作业，最后都以相同权重计算。
   
-* **Abbreviation:** 
+* **简称：** 
   
-  This is the short name that appears next to an assignment on a learner's
-  **Progress** tab.  
+  进入学习进度标签，可于 **评量** 旁边看到名称缩写。
 
-* **Weight of Total Grade:** 
+* **占总分比重：** 
   
-  The assignments of this type together account for the percent value set in
-  **Weight of Total Grade**.
+  在 **占总分比重** 一栏中键入此评量类别下的所有作业所占比重和。
   
-  The total weight of all assignment types must equal 100.
+  所有评量类型所占比重之和应为100。
   
-  .. note:: Do not include the percent sign (%) in this field.
+  .. note:: 不要在此字段中键入百分比（%）符号。
   
-* **Total Number:** 
+* **作业总数：** 
   
-  The total number of subsections in your course that contain problems of this
-  assignment type.
+  总数为您为本课程计划设置此类别下的作业次数。
   
-* **Number of Droppable**
+* **不计入总分作业数：**
   
-  The number of assignments of this type that the grader will drop. The grader
-  will drop the lowest-scored assignments first.
+  这是此类别下不计入总分的作业总数。计分人首先会去除作业中的最低分。
 
 .. _Graded Subsections:
 
 **********************************************
-Graded Subsections
+在计分的小节设定评量类型
 **********************************************
 
-After you configure assignment types, as you are organizing your course, you
-set the assignment type for subsections that contain problems that are to be
-graded.
+设定好评量类型后，在组织课程设置时，您可在课程的小节，替需要计分的题目，设定评量类型。
 
-Each subsection that contains problems to be graded can include only one
-assignment type. 
+每个带有计分题目的小节只能包含一种评量类型。
 
 .. note:: 
- You can only set assignment types and due dates at the subsection level. You
- cannot set assignment types or due dates for entire sections or for individual
- units within subsections. Additionally, you can designate a subsection as one,
- and only one, of the assignment types you configured.
+ 只能以小节为单位设定评量类型和到期日。不可以章或小节内的单元为单位设定评量类型和到期日。
+ 另，您可以指定某个小节为其中一种评量类型。
   
-For more information, see :ref:`Developing Course Subsections`.
+更多内容请参阅 :ref:`Developing Course Subsections`.
 
-For instructions on designating a subsection as a graded assignment, see
-:ref:`Set the Assignment Type and Due Date for a Subsection`.
+设计等级分配评量指导请参阅 :ref:`Set the Assignment Type and Due Date for a Subsection` 。
 
-Within a graded subsection, you create problems of the type designated for that
-subsection. You cannot not mix problems of different assignment types in the
-same subsection.
+在小节中，可以新增评量的题目。但是，在同一小节中，不能够新增不同类型的评量。
 
-For example, if you want to create a homework assignment and a lab for a
-specific topic, create two subsections. Set one subsection as the Homework
-assignment type and the other as the Lab assignment type. Both subsections can
-contain other content as well as the actual homework or lab problems.
+例如，如需在特定主题下新增作业与实验必须设定两个小节，一个为作业，另一个为实验。
+因此，小节涵盖内容说明以及作业或实验题目。
 
 .. note:: 
- You can create problems in Studio without specifying that the subsection is an
- assignment type. However, such problems do not count toward a learner's grade.
+ 可在Studio中新增题目，而且不用设定某个小节为评量。但是，此类型的题目不会计入学生成绩。
 
-For more information about creating problems, see :ref:`Working with Problem
-Components`.
+取得设定新增题目说明请参阅 :ref:`Working with Problem Components`.
 
 .. _The Learner View of Grades:
 
 **************************
-The Learner View of Grades
+学生分数查询
 **************************
 
-After a grading policy is in place, learners can view both their problem scores
-and the percent completed and current grade in the **Progress** tab for the
-course.
+计分政策设定完成后，点选学习进度标签，学生可查看到自己的评量得分、百分比与目前成绩。
   
   .. image:: ../../../shared/building_and_running_chapters/Images/Progress_tab.png
     :alt: Image of the student Progress tab.
 
-Each item in the X axis of the chart is for a graded subsection. Graded
-problems in units are not broken out in the chart; the score from each problem
-in the subsection is added to that vertical bar.
+横坐标X上的条目为计分小节。分数单位格在此表中无具体显示。竖状条显示了每个题目得分。
 
-Graded subsections are grouped in the chart by assignment type rather than
-listed in chronological order. For example, all homework exercises are grouped
-together, followed by labs, then exams.
+根据评量类型，计分小节分组显示在图表中，未采用时间顺序平排列。
+例如，所有的课后练习排在一起，其后依次是实验、测试。
 
 .. note:: 
- The **x** for an assignment in the Progress tab indicates that the grade for
- that assignment is currently dropped. You configure how many assignments are
- dropped when you :ref:`configure assignment types <Configure the Assignment
- Types>`.
+ 学习进度标签上横坐标X显示的评量为当前舍弃后的评量得分。您可在 :ref:`configure assignment types <Configure the Assignment
+ Types>` 中设置可抛弃评量的数量。

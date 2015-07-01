@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .. _SFD_ORA:
 
 ###########################################
@@ -295,3 +296,6 @@ demox-1-demox-4116#.VBxWCLZ8GoV>`_ 。 为了使你能体验到最真实的edX�
 393048ac4afd8/1e5cd9f233a2453f83731ccbd863b731/>`_  和 `互评示例 <https://courses.edx.org/courses/edX/DemoX.1/2014/courseware/70a1e350
 5d83411bb72393048ac4afd8/1e5cd9f233a2453f83731ccbd863b731/2>`_ 。
 
+=======
+.. include:: ../../shared/students/SFD_ORA.rst
+>>>>>>> orig

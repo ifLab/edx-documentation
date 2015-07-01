@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .. _Video Player:
 
 #####################
@@ -40,3 +41,6 @@ edX播放器
 3364075f2845baa625bfecd5970410/2>`_ 以及 `edX DemoX course
 <https://www.edx.org/course/edx/edx-demox-1-demox-4116#.VF0M3_TF-2w>`_.
 
+=======
+.. include:: ../../shared/students/SFD_video_player.rst
+>>>>>>> orig

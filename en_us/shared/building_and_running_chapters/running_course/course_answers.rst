@@ -1,13 +1,10 @@
 .. _Review_Answers:
 
 ############################
-Answer Data
+回答问题数据
 ############################
 
-To review student answers to the problems in your course, you can review the
-answer submitted by a selected student for a specific problem, download a
-course-wide report of answer data, or review a histogram of student answers for
-a selected problem.
+您可以查阅某个学生对于某个问题提交的答案、下载课程范围内的答题数据报告，或查阅某个问题的答案立方图。
 
 * :ref:`Student_Answer_Submission`
 
@@ -15,275 +12,227 @@ a selected problem.
 
 * :ref:`score_histogram`
 
-Student answer distribution data, including both charts and reports, is also
-available from edX Insights. For more information, see `Using edX Insights`_.
+学生回答问题数据包括图表和报告，这些在edX Insights中同样可用。
+更多信息请参阅 `Using edX Insights`_.
 
 .. _Student_Answer_Submission:
 
 ************************************************************
-Check a Student's Answer Submission and Submission History
+查看某个学生的答案及答题历史记录
 ************************************************************
 
-For a single student and problem, you can review the exact response submitted,
-the number of attempts made, and the date and time of the submission. You
-identify the student by supplying a username.
+您可以查看某个学生关于某道题目提交的具体回答内容、回答正确需要尝试的次数，
+以及答案提交日期、时间。您可通过用户名锁定学生。
 
-To review a response submitted by a student:
+如何查看学生提交的内容：
 
-#. View the live version of your course.
+#. 查看课程现况
 
-#. Click **Courseware** and navigate to the unit that contains the problem
-   you want to review.
+#. 单击“课件”，导航至包含该问题的课程单元
 
-#. Display the problem and then click **Submission History** below the problem.
+#. 查看问题，单击问题下方的“提交历史记录”
 
-#. Enter the username for the student whose work you want to review, then click
-   **View History** at the end of the page.
+#. 输入您想查看学生的用户名，单击页面底部的“查看历史记录”，即出现该生回答问题的信息
 
-  Information about the response or responses provided by the student displays.
-
-To close the Submission History Viewer, click on the browser page outside of the
-viewer.
+随便单击查看窗口外的页面即可关闭窗口。
    
 .. _Student_Answer_Distribution:
 
 ****************************************
-Student Answer Distribution
+学生答题分布
 ****************************************
 
-For certain types of problems in your course, you can download a CSV file with
-data about the distribution of student answers. Student answer distribution data
-is included in the file for problems of these types:
+您可下载学生答题分布数据的CSV文件。文件中显示的答题类型包括以下几类：
 
-* Checkboxes (``<choiceresponse>``)
-* Dropdown (``<optionresponse>``)
-* Multiple choice (``<multiplechoiceresponse>``)
-* Numerical input (``<numericalresponse>``)
-* Text input (``<stringresponse>``)
-* Math expression input (``<formularesponse>``)
+* 多项选择 (``<choiceresponse>``)
+* 下拉列表选择 (``<optionresponse>``)
+* 单项选择 (``<multiplechoiceresponse>``)
+* 数字输入 (``<numericalresponse>``)
+* 文本输入 (``<stringresponse>``)
+* 数学表达式输入 (``<formularesponse>``)
 
-The file includes a row for each problem-answer combination selected by your
-students. For example, for a problem that has a total of five possible answers
-the file includes up to five rows, one for each answer selected by at least one
-student. For problems with **Randomization** enabled in Studio (sometimes
-called rerandomization), there is one row for each problem-variant-answer
-combination selected by your students. See :ref:`Problem Settings`.
+该文件中，有一行显示的是您学生选择的所有“问题-答案”配对。
+例如，一道问题出现了五种意见不同的答案，则文件中会显示五行，
+每一行至少代表一名学生的观点。如果您在Studio中设置了带有“随机选择”功能的问题，
+则会另外再开一行。详见 :ref:`Problem Settings`.
 
-The CSV file contains the following columns:
+CSV文件包含以下几列：
 
 .. list-table::
    :widths: 20 60
    :header-rows: 1
 
-   * - Column
-     - Description
-   * - ModuleID
-     - The internal identifier for the Problem component.
-   * - PartID
-     - For a Problem component that contains multiple problems, the internal
-       identifier for each individual problem. For a Problem component that
-       contains a single problem, the internal identifier of that problem.
-   * - Correct Answer
-     - 0 if this **AnswerValue** is incorrect, or 1 if this **AnswerValue** is
-       correct.
-   * - Count
-     - The number of times that students entered or selected this answer as
-       their most recent submission for the problem or problem variant. For
-       problems with the number of **Attempts** set to a value greater than 1,
-       this means that each student contributes a maximum of 1 to this count,
-       even if the same answer is provided in multiple attempts.
-   * - ValueID
-     - The internal identifier of the answer choice for checkboxes and multiple
-       choice problems. Blank for dropdown, numerical input, text input, and
-       math expression input problems.
-   * - AnswerValue
-     - The text label of the answer choice for checkboxes, dropdown, and
-       multiple choice problems. The value entered by the student for numerical
-       input, text input, and math expression input problems.
-   * - Variant
-     - For problems that use the **Randomization** setting in Studio, contains
-       the unique identifier for a variant of the problem. Blank for problems
-       that do not use the **Randomization** setting, or that use the **Never**
-       option for this setting.
-   * - Problem Display Name
-     - The **Display Name** defined for the problem.
-   * - Question
-     - The accessible label that appears above the answer choices or the
-       text entry field for the problem. In Studio's Simple Editor, this text is
-       surrounded by two pairs of angle brackets (>>Question<<). Blank for
-       questions that do not have an accessible label defined.
+   * - 列
+     - 描述
+   * - 模块ID
+     - 即提问模块的永久ID
+   * - 部分ID
+     - 如果提问模块包含多个问题，每个问题都有自己的永久ID。
+       如果提问模块只包含一个问题，则该值与模块ID相同。
+        
+   * - 正确回答
+     - **答案值** 不正确则为0，正确则为1
+       
+   * - 回答次数
+     - 即学生最近提交某个答案的次数。
+       假设本值为X，如果某个问题的 **尝试** 值大于1，
+       则每个学生回答该答案的最大次数应在1~X之间，
+       哪怕该答案已被尝试多次。
+       
+   * - 值ID
+     - 即单选、多选题中每个选项的永久ID。
+       其他提醒则本值为空。
+       
+   * - 答案值
+     - 即多选、下拉列表选择、单选题选项的文本标签，
+       以及数字输入、文本输入、表达式输入的值。
+       
+   * - 多样化
+     - 对于设置了“随机选择”的题目，每道题目的变体均有一个“变体”ID。
+       没有设置“随机选择”的题目则本值为空。即某道问题的显示名
+       
+       
+   * - 题目显示名
+     - 即选项或文本输入字段上方的问题可访问性标签。
+   * - 提问
+     - 在Studio的“简易编辑器”中，该文本通常用两对角括号表示（>>问题<<）。
+       没有设置访问性标签的问题则本值为空。
+       
+       
 
-Entries are sorted by the value in each column, starting with the ModuleID on
-the left and continuing through the columns to the right.
+输入的值按照分类从左到右排列。
 
 .. _Download_Answer_Distributions:
 
 ===================================================
-Download the Student Answer Distribution Report
+下载学生答题分布报告
 ===================================================
 
-An automated process runs periodically on the edX servers to update the CSV file
-of student answer data. A link to the most recently updated version of the CSV
-file is available on the Instructor Dashboard.
+edX服务器会定期自动更新学生答题数据的CSV文件。
+教师面板中可以查看最新版本的CSV文件链接。
 
-To download the most recent file of student answer data:
+如何下载最新的学生答题数据文件：
 
-#. View the live version of your course.
+#. 查看课程现况
 
-#. Click **Instructor**, then click **Data Download**.
+#. 单击“导师”→“数据下载”
 
-#. At the bottom of the page, click the ``{course_id}_answer_distribution.csv``
-   file name. You may have to scroll down to find this file.
+#. 将滚动条拖至页面底部，单击 ``{course_id}_answer_distribution.csv``
+   文件名
 
 ==========================================================================
-Frequently Asked Questions about the Student Answer Distribution Report
+关于学生答题分布报告的常见问题
 ==========================================================================
 
-Answers to questions about the student answer distribution report follow.   
+以下是一些关于学生答题分布报告的解答。
 
-**My course doesn't have a student answer distribution report. How can I
-generate it?**
+**我的课程没有学生答题分布报告，要怎么生成？**
 
-Student answer distribution reports are generated automatically, and refreshed
-several times each day. The ``{course_id}_answer_distribution.csv`` file
-displays after all of the ``{course_id}_grade_report_{date}.csv`` files. Be sure
-to scroll to the end of the list of available reports.
+学生答题分布报告是自动生成的，每隔几天会自动更新。 ``{course_id}_answer_distribution.csv`` 
+文件位于所有 ``{course_id}_grade_report_{date}.csv`` 文件后面。请一定将滚动条拖到最底部。
 
-**Why are some problems missing from this report? The ones that are missing do
-have the problem types listed under** :ref:`Review_Answers`.
+**为什么报告里漏掉了几道题目？漏掉的题目属于** :ref:`Review_Answers` **一节中列出来的题目类型。**
 
-This report includes only problems that at least one student has answered since
-early March 2014. For those problems, this report only includes activity that
-occurred after October 2013.
+本报告中的问题为2013年十月份至2014年三月份之前的问题，且至少要有一名学生回答。
 
-**Why don't I see an AnswerValue for some of my problems?**
+**为什么有些问题看不见“答案值”？**
 
-For checkboxes and multiple choice problems, the answer choices actually
-selected by a student after early March 2014 display as described in the
-previous answer. Answer choices selected by at least one student after October
-2013, but not selected since early March 2014, are included on the report but do
-not include an **AnswerValue**. The **ValueID** does display the internal
-identifiers, such as choice_1 and choice_2, for those answers.
+对于单选、多选题而言，只有2014年三月初之后选择的选项才有“答案值”。
+2013年十月至2014年3月初之间选择的选项也在报告中，但没有“答案值”。
+“值ID”显示的是这些选项的永久ID，比如“choice_1”、“choice_2”。
 
-**Why don't I see a Question for some of my problems?**
+**为什么我看不见有些题目的“Question”值？**
 
-The value in the **Question** column is the accessible label for the problem.
-For more information about how to set up labels for problems, see :ref:`Create
+“Question”列中的值为该题的可访问性标签。更多关于设置问题标签的信息可以参考 :ref:`Create
 Exercises`.
 
-Also, for problems that use the **Randomization** setting in Studio, if a
-particular answer has not been selected since early March 2014, the **Question**
-is blank for that answer.
+并且，对于设置了“随机选择”的题目，如果2014年三月初之前都没有人给出一个明确的答案，则该答案的“Question”值为空。
 
-**My students are saying that they answered a question, but it isn't showing up
-in the report. How can that be?**
+**我的学生说他们回答了一个问题，报告中确没有显示，这是怎么回事？**
 
-Only questions that have a **Maximum Attempts** setting of 1 or higher are
-included on the report.
+本报告只包含“最大尝试次数”超过1次的问题。
 
-**I made a correction to a problem after it was released. How can I tell which
-students tried to answer it before I made the change?**
+**题目发布后不久，我对题目做了更改。我怎样才能判断更改之前有哪些学生回答了我的问题？**
 
-Problem **Count** values reflect the entire problem history. If you change a
-problem after it is released, it may not be possible for you to determine which
-answers were given before and after you made the change.
+某道问题的“计数”值反映的是这道问题的历史操作记录。
+如果问题发布后您做出了更改，则无论更改前后，您的要求均不能满足。
 
-**Why is the same answer showing up in two different rows when I view the report
-in a spreadsheet?**
+**我在电子制表软件中查看报告时，为什么相同的答案显示在不同的两列中？**
 
-Some spreadsheet applications can alter the data in the CSV report for display
-purposes. For example, for different student answers of "0.5" and ".5" Excel
-correctly includes the two different lines from the CSV, but displays the
-**AnswerValue** on both of them as "0.5". If you notice answers that appear to
-be the same on separate lines with separate counts, you can review the actual,
-unaltered data by opening the CSV file in a text editor.
+有些制表软件为了显示方便，会自动转换CSV报告中的数据。
+比如，有些学生回答“0.5”，有些学生回答“ .5”，
+Excel表格会将这两个答案的“答案值”都显示为“0.5”。
+如果您再发现您所说的情况，可以在文本编辑器中查看原始的CSV文件。
 
-**Why are there strange characters in the report when I view it in a
-spreadsheet?**
+**为什么我在制表软件中查看报告时，会出现奇怪的字符？**
 
-The CSV file is UTF-8 encoded, but not all spreadsheet applications interpret
-and render UTF-8 encoded characters correctly. For example, a student answer
-distribution report with answer values in French displays differently in
-Microsoft Excel for Mac than in OpenOffice Calc.
+CSV文件使用的是UTF-8编码，但是有些制表软件无法准确识别UTF-8编码。
+比如说，某学生的法语答题报告在Microsoft Excel for Mac软件和OpenOffice Calc软件中显示的结果就不同。
 
-  Answer Values in Microsoft Excel for Mac:
+   Microsoft Excel for Mac 中的答案值:
 
    .. image:: ../../../shared/building_and_running_chapters/Images/student_answer_excel.png
      :alt: A spreadsheet that replaces accented French characters with underscores
 
-  Answer Values in OpenOffice Calc:
+   OpenOffice Calc 中的答案值:
 
    .. image:: ../../../shared/building_and_running_chapters/Images/student_answer_calc.png
      :alt: A spreadsheet that displays accented French characters correctly
 
-If you notice characters that do not display as expected in a spreadsheet, try a
-different spreadsheet application such as LibreOffice or Apache OpenOffice to
-open the CSV file.
+如果您再次发现类似问题，可以试着换一种制表软件，比如LibreOffice或者Apache OpenOffice。
 
 ==========================================================================
-Interpret the Student Answer Distribution Report
+解读学生答题分布报告
 ==========================================================================
 
-You can use the Student Answer Distribution report to review student responses
-to assignments, which can then help you evaluate the structure and completeness
-of your courseware and problem components.
+您可以使用答题分布报告了解学生对于作业内容的反馈，这能帮助您优化课程结构，完善课件及提问模块。
 
-As an example, you define a text input question in Studio to have a single
-correct answer, "Warfarin". When you produce the Student Answer Distribution
-report, you verify that this answer was in fact marked correct: there is a 1 in
-the **Correct Answer** column for this **AnswerValue**.
+比方说，您设计了一道文字输入题，正确答案只设置了一个，
+即“Warfarin”，当您生成答题分布报告后，您发现大部分学生都一字不差地答对了您的问题，
+因为“正确回答”列中显示了“1”。
 
 .. image:: ../../../shared/building_and_running_chapters/Images/SAD_Answer_Review.png
     :alt: In Excel, 5 rows show 5 answer values, 4 of which show comprehension of the question, but only 1 answer is marked as correct
 
-However, as you view the report you notice other student answers that you did
-not set up to be marked as correct in Studio, but that you might (or might not)
-also consider to be correct, such as "Warfarin or Coumadin". The **Correct
-Answer** column shows that the other answers were marked incorrect (0), but for
-future iterations of your course you may want to revise the question or update
-the problem to evaluate additional variations of the answer as correct.
+但是，您在查看报告时，您未设置的其他学生的答案将被标记为正确的。
+您也可以认为是正确（或不正确）的。在正确答案列中显示其他被标记为不正确的答案。
+但是为了课程未来循环，您也许想校订问题或者更新问题来评估正确答案的其他变形。
 
-Many spreadsheet applications offer data visualization options, such as charts
-or graphs. Charts can help make your students' common misconceptions  easier to
-identify.
+很多制表应用软件提供数据图像化选择，比如图表或图形。
+图表帮助您更容易地找出学生普遍误解的内容。
 
 .. image:: ../../../shared/building_and_running_chapters/Images/SAD_Column_Chart.png
     :alt: In Excel, AnswerValue and Count columns next to each other, values for 4 rows selected, and a column chart of the count for the 4 answers
 
-In this example, the Student Answer Distribution report is open in Microsoft
-Excel. To create a chart that shows how many of your students chose various
-answers to a multiple choice question, you move the **AnswerValue** and
-**Count** columns next to each other. After you click and drag to select the
-report cells that contain the data you want to chart, you click the Charts
-toolbar and then click the type of chart you want.
+在本例中，报告的打开方式为Microsoft Excel。
+您可以将“答案值”和“计数”两列值并在一起，选择您需要制作图表的单元格域，
+单击“图表”工具栏，选择您想要的图标类型，即可制作图表，显示不同答案与学生人数的数量关系。
 
-.. note:: Refer to the help for the spreadsheet application that you use for information on using these options. You may have to make changes to your spreadsheet, such as reordering columns. Save a copy of the file you originally downloaded as a backup before you begin. 
+.. note:: 使用图表功能时，请参考所使用软件的操作指南。
+  在不同的软件中，您可能需要微调表格，比如重排纵列，等等。
+  在开始调整之前，记得将原文件备份，以防意外。
 
-You can adjust your course content based on common student mistakes. While most
-students in this example selected the correct answer, the number of incorrect
-answer(s) can guide future changes to the courseware.
+您可以根据学生常犯的错误调整课程内容。本例中，您可以根据正确性为“0”的答案调整将来的课件。
 
 .. _score_histogram:
 
 **************************************************
-View a Histogram of Scores for a Single Problem
+查看某个问题的得分立方图
 **************************************************
 
-You can view a chart of the score distribution for a specified problem. 
+您可以查看某道问题的得分分布图表。
 
-.. note:: To view the score distribution for a problem, you need its unique identifier. You can display a histogram for problems that have the  ``/problem/`` prefix in the unique identifier. See :ref:`find_URL`.
+.. note:: 您需要知道问题的ID，才能查看得分分布。您可以将ID前缀带有/problem/的问题制成得分立方图。详见 :ref:`find_URL`.
 
-To display the distribution of scores for a problem:
+如何显示得分立方图：
 
-#. View the live version of your course.
+#. 查看课程现况
 
-#. Click **Instructor**, then click **Analytics**. 
+#. 单击“导师”→“分析”
 
-#. In the Score Distribution section, select a problem by using its unique
-   identifier.
+#. 在“得分分布”区域，使用问题ID选择一个问题
 
-   The **Analytics** page updates to display a histogram of scores for that
-   problem.
+   “分析”页面会自动显示该问题的得分分布立方图。
 
    .. image:: ../../../shared/building_and_running_chapters/Images/score_histogram.png
      :alt: Graph of the number of students who received different scores for a
@@ -292,36 +241,30 @@ To display the distribution of scores for a problem:
 ..  **Question**: (sent to Olga 31 Jan 14) this is a tough UI to use: how do they correlate the codes in this drop-down with actual constructed problems? the copy-and-paste UI on the Student Admin page actually works a little better imo. LMS-2522
 
 ===================================================
-Interpret a Score Histogram
+如何解读得分立方图
 ===================================================
 
-The histogram of scores for a selected problem provides the following
-information.
+得分立方图提供以下信息
 
    .. image:: ../../../shared/building_and_running_chapters/Images/score_histogram_callouts.png
      :alt: Histogram with indicators for the number of students scored value and
          the x-axis numbers that indicate plotted scores
 
-* The x-axis indicates the number of points that students can receive for the
-  problem, unweighted. Although decimal values are marked on the x-axis, each
-  score is a whole number. The whole number value at the left of a plotted bar
-  is the score that applies to it.
+* X轴显示的是学生回答该问题的未加权得分。
+  尽管X轴中含有小数点，但是所有得分都为整数。
+  每个着色块左侧的整数值即为该题得分。
 
-* The y-axis indicates the number of students who have answered and checked the
-  problem.
+* Y轴显示的是回答问题并提交答案的学生人数。
 
-* Above the graph, a number of **students scored** displays. This number
-  indicates the total number of database records that exist for the problem: it
-  includes not only students who have answered and checked the problem to
-  receive a score, but also students who have opened the problem but not yet
-  completed it.
+* 图表上方显示的是“得分学生”的人数。这个数值即该问题数据库记录中的数值：
+  这个数值即该问题数据库记录中的数值：它不仅包括回答问题、
+  得到评分的学生人数，也包括打开问题，但没有做题的学生人数。
 
-* An automated process runs approximately weekly on the edX servers to update
-  score histograms. This process runs less frequently than the process that
-  updates the student answer distribution report: at certain times during a
-  course the number of students shown in a score histogram can be quite
-  different than the **Count** for the same problem in a student answer
-  distribution report.
+
+* edX服务器大概每隔一周会更新一次得分立方图。
+  这项更新的频率要低于学生答题分布报告的频率，
+  所以，在某一特定时间内，
+  得分立方图中显示的学生数量与答题分布报告“计数”一栏显示的数量可能会有出入。
 
 
 .. _Using edX Insights: http://edx-insights.readthedocs.org/en/latest/

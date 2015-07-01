@@ -1,11 +1,10 @@
 .. _Developing Course Sections:
 
 ###################################
-Developing Course Sections
+创建课程章节
 ###################################
 
-To develop sections in your course, you must first understand the following
-topics.
+创建课程章节之前，您必须了解以下内容：
 
 * `What is a Section?`_
 * `Viewing Sections in the Outline`_
@@ -14,7 +13,7 @@ topics.
 * `Release Statuses of Sections`_
 
   
-Section tasks:
+创建章节时需完成的任务:
 
 * `Create a Section`_
 * `Change a Section Name`_
@@ -25,55 +24,49 @@ Section tasks:
 
 
 ****************************
-What Is a Section?
+什么是章节？
 ****************************
 
-A section is the topmost category in your course. A section can represent a
-time period in your course, a chapter, or another organizing principle. A
-section contains one or more subsections.
+章节应是课程目录中的第一级标题。
+一个章节可以表示一段时间，一章内容或其他组织形式。
+一个章节应包含一个或多个小节。
 
 ********************************
-Viewing Sections in the Outline
+在课程大纲中预览章节
 ********************************
 
-The following example shows four sections, all collapsed, in the course outline.
+下图显示了大纲中四个收起的章节：
 
 .. image:: ../../../shared/building_and_running_chapters/Images/sections-outline.png
  :alt: Four sections in the outline
 
 ******************************
-The Student View of a Section
+学生界面中的章节
 ******************************
 
-Students see sections in the **Courseware** tab. Students can expand one
-section at a time to see its contents. In the following example, three sections
-are circled, and the third one is expanded to show its subsections.
+学生可以在课件库中查看章节，并可以通过展开章节查看全部内容。
+如下图所示，方框中有三个章节，其中第三个章节展开了所有的小节内容：
 
 .. image:: ../../../shared/building_and_running_chapters/Images/sections_student.png
  :alt: The students view of the course with two sections circled
 
 ************************************************
-Sections and Visibility to Students
+章节对学生的可见性
 ************************************************
 
-Students cannot see any content in the section if the section's release date is
-unscheduled or has not passed.
+学生无法看见任何尚未发布或者已过发布期限的章节。
 
-If a section's release date has passed, students can see content in the section
-if:
+如果出现下列情况，学生仍然可以看见已过发布日期的内容：
 
-* The release date for the subsection that contains that content has passed.
-* The unit has been published.
-* The unit is not hidden from students.
+* 包含次容的章节已经过了发布日期。
+* 已经发布的目标单元。
+* 未对学生隐藏的单元。
 
 ************************************************
-Release Statuses of Sections
+章节的发布状态
 ************************************************
 
-As an course author, you control the release status of sections.  For the
-content of a section to be visible to students, the section must be released.
-See the following topics for more information about the possible release
-statuses of sections.
+课程制作者可以控制各个章节的发布状态。学生只能看见发布的章节，了解章节的发布状态，请参考以下信息：
 
 * `Unscheduled`_
 * `Scheduled`_
@@ -82,82 +75,66 @@ statuses of sections.
 * `Staff Only Content`_
 
 ========================
-Unscheduled
+尚未设置发布时间
 ========================
 
-If you do not change the :ref:`course start date<Set Start and End Dates>`
-default value, ``1/1/2030 00:00:00 UTC``, when you create a new section, its
-release date will appear as ``Unscheduled``. When the section release date is
-unscheduled, students cannot see any content in that section, regardless of
-the publishing status of that content.
+如果您在创建新章节时没有修改 :ref:`course start date<Set Start and End Dates>`
+默认开始时间 ``1/1/2030 00:00:00 UTC``，那么该章节的发布日期会显示为 ``Unscheduled`` 。
+处于这种状态下，学生无法看见该章节中的任何内容，不管该部分内容是否发布。
 
-If you have modified the course start date, when you create a new section, the
-default release date is the course start date.
+如果您在创建新章节时修改了课程开始时间，那么该日期就是课程开始的时间
 
-The following example shows how an unscheduled section displays in the
-outline, summarized with a gray bar.
+下图用灰条表明了尚未设置发布日期的章节在课程大纲中是如何显示的。
 
 .. image:: ../../../shared/building_and_running_chapters/Images/section-unscheduled.png
  :alt: An unscheduled section
 
-To make the content available to students, you must schedule the release date.
+为确保内容对学生可见，请您务必设置发布日期。
 
-==========
-Scheduled
-==========
+==============
+已设置发布时间
+==============
 
-A section that is scheduled for release on a future date will not be visible to
-students until after the release date. Regardless of the publishing status of
-content within the section, the entire section will not visible to students.
+无论章节中的内容是否发布，学生都只能看见处于发布日期中的章节。
 
-The following example shows how a section that is scheduled for release
-displays in the outline, summarized with a green bar.
+下图用绿条表明了设置了发布日期的章节在课程大纲中是如何显示的。
 
 .. image:: ../../../shared/building_and_running_chapters/Images/section-future.png
  :alt: An section scheduled to release in the future
 
-The scheduled date must pass for the section to be visible to students.
+章节只有在到达发布日期后才能对学生显示。
 
 ===========================
-Released
+已发布
 ===========================
 
-A section that is released is visible to students; however, students see only
-subsections within the section that are also released, and units that are
-published.
+学生可以看见已经发布的章节；但是，并不能看见章节中的所有内容，只有已经发布的小节或者单元才对学生显示。
 
-The following example shows how a released section displays in the outline,
-summarized with a blue bar.
+图中，蓝色线处列出了发布章节在大纲中是如何显示的。
 
 .. image:: ../../../shared/building_and_running_chapters/Images/section-released.png
  :alt: An unscheduled section
 
 ==================================
-Released with Unpublished Changes
+已发布的内容中含有未发布的修改
 ==================================
 
-If you change a unit in a released section but do not publish the changes,
-students see the last published version of the modified unit.
+如果您修改了发布章节中的一个单元，但是没有对修改进行重新发布，那么学生是无法看见最新版本的。
 
-The following example shows how a released section with unpublished changes 
-displays in the outline, with a yellow bar. The section is expanded to show
-the unit with unpublished changes.
+下图黄色区域列举了尚未发布的更改是如何在大纲中显示的：
 
 .. image:: ../../../shared/building_and_running_chapters/Images/section-unpublished-changes.png
  :alt: A section with unpublished changes
 
-You must publish the unit for students to see the updates.
+您必须重新发布更改信息才能对学生可见
 
 ===========================
-Staff Only Content
+仅对教员开放的内容
 ===========================
 
-A section can contain a unit that is hidden from students and available to
-staff only. That unit is not visible to students, regardless of the release
-date of the section or subsection.
+无论发布与否，学生无法看见仅对教员开放的单元。
 
-The following example shows how a section that contains a unit that is hidden
-from students displays in the outline, summarized with a black bar.
+下图黑色区域列举了仅对教员开放的单元是如何在大纲中显示的。
 
 .. image:: ../../../shared/building_and_running_chapters/Images/section-hidden-unit.png
  :alt: A section with a hidden unit 
@@ -166,152 +143,136 @@ from students displays in the outline, summarized with a black bar.
 .. _Create a Section:
 
 ****************************
-Create a Section
+创建章节
 ****************************
 
-If you do not change the :ref:`course start date<Set Start and End Dates>`
-default value, ``1/1/2030``, when you create a new section, its release date
-will be ``Unscheduled``. 
+如果您在创建新章节时没有修改 :ref:`course start date<Set Start and End Dates>`
+的默认开始时间 ``1/1/2030``，那么该章节的发布日期会显示为 ``Unscheduled`` 。
 
-If you have modified the course start date, when you create a new section, the
-default release date is the course start date.
+如果您在创建新章节时修改了课程开始时间，那么该日期默认为课程开始时间。
 
 .. caution:: 
- If the course start date is in the past, newly created sections are
- immediately visible to students.
+  如果将课程开始时间设置为过去的时间，那么课程建好后学生就可以访问了。
 
-To create a new section:
+如何创建章节：
 
-#. Click **New Section** at the top or bottom of the outline: 
+#. 在课程大纲的头部或者底部，单击 **新章节** 。 
    
    .. image:: ../../../shared/building_and_running_chapters/Images/outline-create-section.png
      :alt: The outline with the New Section buttons circled
 
-   A new section appears at the end of the course content, with the section
-   name selected.
-
-#. Enter the name for the new section. A descriptive name can help learners
-   locate content in the courseware. It can also help you select content when
-   you analyze performance in edX Insights.
-
-#. :ref:`Add subsections<Create a Subsection>` to the new section as needed.
+   新建章节会出现在课程内容的末端，并提示选择章节名称。
    
-It is recommended that you :ref:`test course content <Testing Your Course
-Content>` as you create new sections.
+
+#. 输入新章节的名称。描述性的名称能帮助学生在课件中找到内容，
+   也帮助您在edX Insights分析绩效时选择内容。
+
+
+#. 您也可以为新建章节 :ref:`Add subsections<Create a Subsection>` 
+   
+我们建议您在创建章节时 :ref:`test course content <Testing Your Course
+Content>` 。
 
 ********************************
-Change a Section Name
+更改章节名称
 ********************************
 
-To edit a section name, hover over the section name to show the Edit icon.
+将鼠标悬停在章节名称上直至出现“编辑”按钮：
 
 .. image:: ../../../shared/building_and_running_chapters/Images/section-edit-icon.png
   :alt: The Edit Section Name icon
 
-Click the Edit icon next to the section name. The name field becomes editable.
-Enter the new name and tab or click out of the field to save the name.
+点击“编辑”按钮，输入新的名称；
 
 .. _Set a Section Release Date:
 
 ********************************
-Set a Section Release Date
+设置章节的发布日期
 ********************************
 
-To set the section release date:
+按照以下步骤设置章节发布日期：
 
-#. Click the Settings icon in the section box.
+#. 点击章节中的“设置”按钮
    
    .. image:: ../../../shared/building_and_running_chapters/Images/section-settings-box.png
     :alt: The section settings icon circled
 
-   The **Settings** dialog box opens.
+   打开 **设置** 对话框
 
-#. Enter the release date and time for the section.
+#. 输入章节的发布日期和时间：
    
    .. image:: ../../../shared/building_and_running_chapters/Images/section-settings-release-date.png
     :alt: The section release date settings
 
-#. Click **Save**.
+#. 点击 **保存**
 
-For more information, see :ref:`Release Dates`.
+欲了解更多信息，请查看 :ref:`Release Dates`.
 
 .. _Publish all Units in a Section:
 
 ********************************
-Publish all Units in a Section
+发布章节中的所有单元
 ********************************
 
-To publish all new and changed units in a section, click the publish icon in
-the box for the section.
+点击章节中的“发布”按钮，发布新建及修改的单元：
 
 .. image:: ../../../shared/building_and_running_chapters/Images/outline-publish-icon-section.png
  :alt: Publishing icon for a section
 
 .. note:: 
- The publish icon only appears when there is new or changed content within the
- section.
+ 只有对章节做出修改后，才会出现“发布”按钮。
 
-See :ref:`Unit Publishing Status` for information about statuses and visibility
-to students.
+有关单元发布状态及对学生可见性等相关信息，请查看 :ref:`Unit Publishing Status` 。
 
 
 .. _Hide a Section from Students:
 
 ********************************
-Hide a Section from Students
+对学生隐藏章节
 ********************************
 
-You can hide all content in a section from students, regardless of the status
-of subsections and units within the section.
+无论章节中的小节、单元发布状态如何，您都可以对学生隐藏所有内容。
 
-For more information, see :ref:`Content Hidden from Students`.
+更多内容请参阅 :ref:`Content Hidden from Students`。
 
-To hide a section from students:
+如何对学生隐藏章节内容：
 
-#. Click the Settings icon in the section box.
+#. 点击“设置”按钮。
    
    .. image:: ../../../shared/building_and_running_chapters/Images/section-settings-box.png
     :alt: The section settings icon circled
 
-   The **Settings** dialog box opens.
+   弹出 **设置对** 话框。
 
-#. Check **Hide from students**.
+#. 点击 **对学生隐藏** 按钮。
 
    .. image:: ../../../shared/building_and_running_chapters/Images/section-settings-hide.png
     :alt: The section hide from students setting
 
-#. Click **Save**.
+#. 点击 **保存** 。
 
-Now, no content in the section is visible to students.
+至此，所有内容都对学生隐藏了。
 
-To make the section visible to students, repeat these steps and clear the
-**Hide from students** check box.
+要对学生开放此章节，只需重复以上步骤，清除 **对学生隐藏** 复选框。
 
 .. warning::
- When you clear the **Hide from students** check box for a section, not all
- content in the section is necessarily made visible to students. If you
- explicitly set a subsection or unit to be hidden from students, it remains
- hidden from students. Unpublished units remain unpublished, and changes to
- published units remain unpublished.
+清除 **对学生隐藏** 复选框并不会将所有内容呈现给学生，特别是单独设置了对学生隐藏的小节、单元，及尚未发布的内容。
 
 ********************************
-Delete a Section
+删除章节
 ********************************
 
-When you delete a section, you delete all subsections and units within the
-section.
+删除章节就是删除章节里包含的所有内容。
+
 
 .. warning::  
- You cannot restore course content after you delete it. To ensure you do not
- delete content you may need later, you can move any unused content to a
- section in your course that you set to never release.
+  删除的课程内容无法恢复。您可以将暂时不用的课程内容存放在一个章节中，并将该章节设置成“永不发布”。
 
-To delete a section:
+如何删除章节：
 
-#. Click the delete icon in the section that you want to delete.
+#. 点击章节中的“删除”按钮：
 
   .. image:: ../../../shared/building_and_running_chapters/Images/section-delete.png
    :alt: The section with Delete icon circled
 
-2. When you receive the confirmation prompt, click **Yes, delete this
-   section**.
+2. 在弹出的确认对话框中选择“是”即可删除该章节。

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿.. _SFD Mobile:
 
 ########################
@@ -242,3 +243,6 @@ edX的app有一个 **仅在Wi-Fi环境下下载** 设置，默认情况下使用
 .. _Google Play: https://play.google.com/store/apps/details?id=org.edx.mobile
 .. _App Store: https://itunes.apple.com/us/app/edx/id945480667?mt=8
 .. _edx.org: https://edx.org
+=======
+.. include:: ../../shared/students/SFD_mobile.rst
+>>>>>>> orig
