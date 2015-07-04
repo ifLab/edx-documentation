@@ -1,126 +1,117 @@
 .. _Using the Learner Engagement Report:
 
 *************************************
-Using the Learner Engagement Report
+使用学生互动报告
 *************************************
 
-With the learner engagement report, you can monitor what individual learners
-are doing in your course. The report contains a row for each enrolled learner,
-and has columns that quantify overall course activity and engagement with
-course problems, videos, discussions, and textbooks.
+通过学生互动报告，您可以查看每个学生在课程中的表现。
+报告中每个学生占一行，纵列中显示所有课程活动和与问题、视频、论坛和课本的交互情况。
 
-With this report, you can identify which learners are, and which are not,
-visiting course content. Further, you can identify the learners who are
-attempting problems, playing videos, participating in discussions, or viewing
-textbooks.
+通过此报告，您可以看出哪些学生在浏览课程内容。进一步，哪些学生尝试回答问题、
+播放视频、参与讨论或浏览课本。
 
-The server generates a new learner engagement report every day for the
-previous day's activity. On Mondays, an additional report is generated to
-summarize activity during the previous week (Monday through Sunday).
+服务器每天都生成当天的学生互动报告。每周一将生成一周总结报告（自周一至周日）。
 
 ===================================================
-Understanding the Learner Engagement Report
+理解学生互动报告
 ===================================================
 
-Reported Problem Types
+报告问题类型
 **********************
 
-To measure problem-related activity, the learner engagement report includes
-data for capa problems. That is, the report includes data for problems for
-which learners can select **Check**, including these problem types.
+为检测问题相关活动，学生互动报告包含capa问题数据。
+即报告包含学生可选择 **勾选** 的问题，包括以下问题类型。
 
- * Checkboxes
+ * 复选框
  * Custom JavaScript
- * Drag and Drop
- * Dropdown
- * Math expression input
- * Multiple choice
- * Numerical input
- * Text input
+ * 拖拽
+ * 下拉
+ * 数学方程式输入
+ * 多项选择
+ * 数字输入
+ * 文本输入
 
-The report does not include data for open response assessments or LTI
-components.
+报告不包含公开响应评估和LIT组件数据。
 
-For more information about the problem types that you can add to courses, see
-:ref:`Exercises and Tools Index`.
+更多关于问题类型的信息请参阅
+:ref:`Exercises and Tools Index` 。
 
-Report Columns
+报告列
 **************
 
-The learner engagement report .csv files contain the following columns.
+学生互动报告.csv文件包含以下内容。
 
 .. list-table::
    :widths: 20 60
    :header-rows: 1
 
-   * - Column
-     - Description
-   * - Date
-     - Included only in the daily report. The date of the reported activity.
-   * - End Date
-     - Included only in the weekly report. The last date of the report
-       period.
-   * - Course ID
-     - The identifier for the course run.
-   * - Username
-     - The unique username for an edX account. 
+   * - 列
+     - 描述
+   * - 日期
+     - 只在每日报告中。活动日期。
+   * - 结束日期
+     - 只在每周报告中。报告中的最后一天。
+
+   * - 课程 ID
+     - 课程运行的识别符。
+   * - 用户名
+     - edX账户的唯一用户名。
    * - Email
-     - The unique email address for an edX account.
-   * - Cohort
-     - Indicates the learner's assigned cohort. Blank if the learner is not
-       assigned to a cohort.
-   * - Was Active
-     - Included only in the daily report. 1 for learners who visited any page
-       (URL) in the course at least once during the reported day, 0 otherwise.
-   * - Days Active This Week
-     - Included only in the weekly report. Identifies the number of days
-       during the week that the learner visited any page (URL) in the course.
-   * - Unique Problems Attempted
-     - The number of unique problems for which the learner selected **Check**
-       to submit an answer. 
-   * - Total Problem Attempts
-     - The number of times the learner selected **Check** to submit answers,
-       regardless of the particular problem attempted.
-   * - Unique Problems Correct
-     - The number of unique problems for which the learner submitted a correct
-       answer.
-   * - Unique Videos Played
-     - The number of times the learner played a video. Each video that the
-       learner began to play is included in this count once.
-   * - Discussion Posts
-     - The number of new posts the learner contributed to the course
-       discussions.
-   * - Discussion Responses
-     - The number of responses the learner made to posts in the course
-       discussions.
-   * - Discussion Comments
-     - The number of comments the learner made on responses in the course
-       discussions.
-   * - Textbook Pages Viewed
-     - The number of pages in a .pdf textbook that the learner viewed. 
-   * - URL of Last Subsection Viewed
-     - The URL of the last subsection the learner visited.
+     - edX账户的唯一邮箱地址。
+   * - 队列
+     - 学生所在队列。如果学生不在任何队列中，此项为空。
+
+   * - 是否活跃Was Active
+     - 只在每日报告中。1指学生在报告日中至少有一次访问课程的任何页面。
+       反之为0.
+   * - 本周活跃天数
+     - 只在每周报告中。显示本周学生访问课程任何页面的天数。
+
+   * - 单个问题尝试
+     - 单个问题中学生点击 **确定** 提交答案的次数。
+
+   * - 问题尝试总数
+     - 学生点击 **确定** 提交答案的总次数。
+
+   * - 单个问题正确回答
+     - 单个问题中学生提交正确答案的次数。
+
+   * - 单个视频播放
+     - 学生播放单个视频的次数。
+       学生开始播放一个视频算一次。
+   * - 论坛发帖
+     - 学生在课程论坛发布的新帖数量。
+
+   * - 论坛回复
+     - 学生在课程论坛中的回复次数。
+
+   * - 论坛评论
+     - 学生在课程论坛中发布的评论数量。
+
+   * - 课本浏览页数
+     - 学生浏览过的.pdf格式课本的页数。
+   * - 最近访问的小节URL
+     - 学生最近一次访问的小节URL
 
 
 .. _Download the Learner Engagement Report:
 
 ===================================================
-Download the Learner Engagement Report
+下载学生交互报告
 ===================================================
 
-An automated process runs daily on the system server to update learner
-engagement data and create the daily or weekly .csv file for you to download.
-Links to the .csv files are available on the Instructor Dashboard.
+系统自动每天自动更新学生互动数据并创建日报告和周报告.csv文件以供下载。
+.csv文件的链接在导师面板中可用。
 
-To download a learner engagement report, follow these steps.
+遵循以下步骤下载学生交互报告。
 
-#. View the live version of your course.
+#. 查看课程的在线版本。
 
-#. Click **Instructor**, then click **Data Download**.
+#. 点击 **导师** ，然后点击 **数据下载** 。
 
-#. At the bottom of the page, click the
-   ``student_engagement_daily_{date}.csv`` or ``student_engagement_weekly_{end
-   date}.csv`` file name. You might have to scroll down to find a specific
-   file.
+#. 在页面底部点击
+   ``student_engagement_daily_{date}.csv`` 或 ``student_engagement_weekly_{end
+   date}.csv`` 文件名。您可以滚动鼠标找到特定的文件。
+
 
 .. Victor, should I add a section on what to do with it after you've downloaded it? or refer them to a similar existing section for the student answer distribution report?
