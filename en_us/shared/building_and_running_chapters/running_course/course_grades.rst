@@ -88,7 +88,7 @@
 
 4. 刷新浏览器页面，将滚动条拖至“正在处理的教师任务”区域查看评分进程
 
-   评分完成后，一个.csv名链接出现在 **正在处理的教师任务** 部分上方。
+   评分完成后，一个.csv文件链接出现在 **正在处理的教师任务** 部分上方。
    文件名为 ``{course_id}_grade_report_{datetime}.csv`` 格式。
    最新生成的报告出现在列表的最上方。
 
@@ -112,27 +112,19 @@
 即定义学生身份的信息集合——ID，email，用户名，等等；
 任务列，即您课程中的所有评分项目。
 
-Scores in the grade report are presented by assignment. There is a column for
-every assignment that is included in your grading configuration: each
-homework, lab, midterm, final, and any other assignment type you added to your
-course.
+成绩单中的分数是按任务类别显示的。其中一列显示您评分结构中的每项任务，
+包括每次作业、实验，期中考试，期末考试和其他您添加在课程中的任务类型。
 
-.. note:: The grade report does not include information about individual
-   problems within assignments, or include student answer distributions. For a
-   report that shows problem-level information, see :ref:`problem_report`.
+.. note:: 成绩单不包括任务中的每个独立问题信息，也不包括学生答案分布。
+   关于显示问题层级信息的报告，请参阅 :ref:`problem_report` 。
 
+报告显示每个学生的注册追踪。专业和验证踪迹学生的报告中还显示学生是否验证了ID。
+报告显示每个学生是否有资格获得证书（取决于他的成绩此时是否达到了要求），
+证书是否已经生成，以及证书类型。
 
-The report indicates the enrollment track for each learner. For professional
-and verified track learners it also shows whether they have verified their
-identity. The report shows whether each learner is eligible to receive a
-certificate (determined by whether he has earned a passing grade at the time
-the report was requested), whether a certificate has been generated, and the
-type of certificate earned.
-
-If your course includes :ref:`cohorts<Cohorts Overview>` or :ref:`content
-experiments<Overview of Content Experiments>`, the grade report includes
-additional columns indicating the name of the cohort or experiment group that
-each learner belongs to.
+如果您的课程包含 :ref:`cohorts<Cohorts Overview>` 或 :ref:`content
+experiments<Overview of Content Experiments>` ，
+成绩单中将包含附加列，显示每个学生属于哪个队列或内容小组。
 
 .. image:: ../../../shared/building_and_running_chapters/Images/Grade_Report.png
   :alt: A course grade report, opened in Excel, showing the grades achieved by
@@ -151,43 +143,29 @@ CSV文件每行显示一名学生的成绩，纵列信息如下：
 
 * {assignment type} Avg表示该学生某项任务的平均分，比如HW Avg即作业平均分。
 
-* If :ref:`cohorts<Cohorts Overview>` are used in the course, a **Cohort Name**
-  column indicates the name of the cohort that each learner belongs to, including
-  the default cohort. The column is empty for learners who are not yet assigned to
-  a cohort.
+* 如果课程中使用了 :ref:`cohorts<Cohorts Overview>` ，
+   **队列名** 列显示每个学生所在的队列，包括默认队列。
+  没有加入任何队列的学生，此项为空。
 
-* If :ref:`content experiments<Overview of Content Experiments>` are used in the
-  course, an **Experiment Group** column indicates the name of the experiment
-  group that each learner belongs to within a group configuration. The column
-  heading includes the name of the group configuration. The column is empty for
-  learners who are not assigned to an experiment group. If you have more than one
-  experiment group configuration in your course, you see one column for each group
-  configuration.
+* 如果课程中有 :ref:`content experiments<Overview of Content Experiments>` ，
+   **实验小组** 列显示每个学生所在的实验小组。此列的标题显示小组配置的名称。
+  如果学生没有加入实验小组，此项为空。如果您有多个实验小组配置，每个小组配置中都将含有此列。
 
-* The **Enrollment Track** column indicates whether each learner is enrolled in
-  the course in the honor code, verified, or professional education track.
+* **注册追踪** 一列显示每个学生是否已在课程的荣誉准则、认证或专业教育轨迹中注册。
 
-* The **Verification Status** column applies only to learners who are enrolled
-  in the verified or professional tracks. The value in this column indicates
-  whether the verified or professional education learner has verified her
-  identity to edX by using a webcam to submit her photo and an official ID.
+* **验证状态** 一列只对注册了身份验证或专业轨迹的学生开放。
+  此列中显示已验证或专业教育学生是否已经通过网络摄像头提交照片和官方身份证明验证了edX中的ID。
 
-* The **Certificate Eligible** column indicates whether a learner is eligible
-  for a certificate for your course. The value in this column is "Y" for
-  learners who attained a passing grade before this report was requested, and
-  for all whitelisted learners, regardless of grade attained. The value is "N"
-  for learners who did not attain a passing grade and for those who live in
-  embargoed countries.
+* **证书资格** 一列表明学生是否有获得课程证书的资格。
+  “Y”表示学生在报告生成之前已经获得了高于证书要求的成绩。
+  所有的白名单学生，无论成绩是否已经取得，此列都为“Y”。
+  “N”表示学生未获得证书要求的成绩，或者所处国家无法寄送证书。
 
-* For learners who are eligible to receive a certificate, the **Certificate
-  Delivered** column has a value of "Y" when the certificates for a course have
-  been generated. The value is "N" for learners who are not eligible to
-  receive a certificate.
+* 对于具备获得证书资格的学生，**证书发放** 列中的“Y”值表示证书已生效。
+  “N”值表示学生不具备获得证书的资格。
 
-* The **Certificate Type** column indicates the type of certificate that the
-  learner is eligible for, such as "honor" or "verified". If a learner is not
-  eligible for a certificate, or if the certificates for a course have not yet
-  been generated, the value in this column is "N/A".
+* **证书类型** 一列说明学生能够取得的证书类型，比如“荣誉证书”或“认证证书”。
+  如果学生没有资格获得证书，或者课程的证书未生成，此项将显示“N/A”。
 
 
 .. _problem_report:
@@ -196,19 +174,14 @@ CSV文件每行显示一名学生的成绩，纵列信息如下：
 为所有学生生成成绩（适用于所有课程）
 *******************************************************************
 
-For any course, you can calculate grades for problems and generate a report
-that can be downloaded. The problem grade report for a course shows the number
-points that each learner has earned for each problem and the number of
-possible points for every problem in the course and the . In addition, the
-report shows the final grade score for each learner.
+对于任何一门课程，您可以为问题计算成绩以及生成可供下载的成绩报告。
+课程的成绩单显示每个学生在每个问题的得分，以及每个问题的总分值。
+此外，报告还显示每个学生的最终成绩。
 
-To generate and download the problem grade report for the learners who are
-currently enrolled in your course, follow these steps.
+生成及下载学生的成绩单请遵循以下步骤。
 
-.. important:: Because the problem grade report file contains confidential,
-   personally identifiable data which might be subject to the Family
-   Educational Rights and Privacy Act (FERPA), be sure to follow your
-   institution's data stewardship policies when you open or save this file.
+.. important:: 由于成绩单文件中包含保密信息，个人认证数据可能受限于家庭教育权与隐私权（FERPA）,
+   请确保打开或保存此文件时遵循您所在机构的数据管理员政策。
 
 #. 查看课程现况
 
@@ -220,16 +193,15 @@ currently enrolled in your course, follow these steps.
 
 4. 刷新浏览器页面，将滚动条拖至“正在处理的教师任务”区域查看评分进程
 
-   When the report is complete, a linked .csv filename becomes available above
-   the **Pending Instructor Tasks** section. Filenames are in the format
-   ``{course_id}_problem_grade_report_{datetime}.csv``. The most recently
-   generated reports appear at the top of the list.
+   报告完成后，一个.csv文件链接出现在 **正在处理的教师任务** 部分上方。
+   文件名是
+   ``{course_id}_problem_grade_report_{datetime}.csv`` 格式的。
+    最近生成的成绩单在列表顶部。
 
-5. To open or save a problem grade report file, locate and click the link for
-   the problem grade report you requested.
+5. 要打开或保存成绩单文件，找到并点击您需要的成绩单链接。
 
-   You can open .csv files in a spreadsheet application to sort, graph, and
-   compare data.
+   您可以在制表软件中打开.csv文件，以便于排序、生成图表和对比数据。
+
 
 .. note:: 为防止学生数据意外泄露，您只能通过本页面中的链接下载成绩单文件。
    本链接的有效期只有5分钟，所以不要将本页面中的信息复制到其他地方再次使用。
@@ -242,16 +214,10 @@ currently enrolled in your course, follow these steps.
 解读成绩单
 ====================================
 
-A problem grade report for your course is a time-stamped .csv file that
-identifies each enrolled learner by ID, email address, and username, and
-provides a snapshot of earned scores compared with the possible scores for
-each problem.
+课程的成绩单是时间戳 .csv文件，文件中包含每个注册学生的ID、email地址、用户名和每个问题的得分/总分快照。
 
-The problem grade report includes two columns for every problem that is
-included in your grading configuration. For each homework, lab, midterm, or
-final exam problem, there is one column for earned points, and one column for
-possible points. In addition, the report shows the final grade score for each
-learner, espressed as a decimal.
+成绩单中每个问题有两列包含您的评分配置。每一次作业、实验、期中考试和期末考试都有一列显示得分，
+另一列显示总分。此外成绩单以小数形式显示每个学生的总成绩。
 
 .. image:: ../../../shared/building_and_running_chapters/Images/Problem_Grade_Report_Example.png
   :alt: An example problem grade report shown in Excel, showing the decimal
@@ -266,15 +232,11 @@ CSV文件每行显示一名学生的成绩，纵列信息如下：
 * 综合评分：即学生当前获得的总评分。该值表示为小数：
   如果一个学生的评分为0.65，即表示他获得了本课程65%的学分，如果为1，则表示满分。
 
-* For each problem (identified by assignment, subsection, and problem name), a
-  column showing the number of points actually earned by each learner. If a
-  learner has not viewed a problem, the value in this column is "N/A". If
-  a learner has not answered a problem, the value in this column is "0".
+* 对于每个问题（以任务、子章节和问题名标识），都有一列显示每个学生获得的分数。
+  如果学生没有访问过问题，此项显示“N/A”。如果学生没有回答问题，此项显示“0”。
 
-* For each problem (identified by assignment, subsection, and problem name), a
-  column showing the number of points that it is possible to earn for the
-  problem. If a learner has not viewed a problem, the value in this column
-  is "N/A".
+* 对于每个问题（以任务、子章节和问题名标识），都有一列显示问题的总分值。
+  如果学生没有访问过问题，此项显示“N/A”。
 
 
 .. _gradebook:

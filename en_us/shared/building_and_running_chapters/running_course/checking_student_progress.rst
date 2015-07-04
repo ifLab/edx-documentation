@@ -1,41 +1,34 @@
 .. _Checking Student Progress and Issuing Certificates:
 
 ###################################################
-Assign Final Grades and Issue Certificates
+总成绩计算与证书发放
 ###################################################
-.. This chapter will be renamed and expanded to include course wrap-up activities and best practices.
+.. 本章将重命名及扩展至包含课程收尾活动和最佳实践。
 
-As you prepare for the end of your course, you can send students a :ref:`course
-farewell<Course Farewell and Certificates>` email message.
+在您为课程结束做准备时，您可以给学生发一封 :ref:`course
+farewell<Course Farewell and Certificates>` 邮件。
 
-To assign a final grade to each student enrolled in a course, you generate
-grades after the **Course End Date** and **Time** have passed. See
-:ref:`Access_grades`.
- 
-The final grades of a student in the course and the grading configuration you
-set in Studio are used to determine whether the student has earned a Certificate
-of Mastery for the course.
+要计算学生的课程总分，在 **课程结束日期** 和 **时间** 过后，您可以生成总成绩。
+请参阅
+:ref:`Access_grades` 。
 
-The process of issuing certificates is completed at edX: work with your edX
-program manager to schedule a date to issue certificates and complete this
-process.
+学生的总成绩和您在Studio中的评分配置决定学生是否获得课程掌握证书。
+
+edX发放证书的过程比较复杂：请与您的项目经理商议发放证书的时间并完成此过程。
+
 
 ****************************************
-On-Demand Certificates
+请求式证书
 ****************************************
 
-If you have a self-paced course, you can allow your students to download their
-certificates as soon as they have completed enough of the course with a high
-enough grade to qualify for a certificate. For these courses, you work with
-edX to create a certificate template and enable on-demand certificates.
-Students can then request and download their certificates.
+如果您的课程是自主式的，您可以允许学生在以高于要求分数的成绩完成课程后自行下载证书。
+关于这些课程，您通过edX创建证书模板，并开启请求式证书。
+学生可以要求并下载他们的证书。
 
-.. note:: If your course offers on-demand certificates, we encourage you 
- to include this information on your course About page, on the **Course Info**
- page in the LMS, and in communication with your learners.
+.. note:: 如果您的课程提供自主式证书，我们推荐您在课程信息页面、
+  学习管理系统的 **课程信息** 页面包含此项信息，并于学生沟通。
 
-Learners can request a certificate at any time after they qualify. Learners
-may want to request a certificate right away, or they may wait until they have
-completed the course. For more information, see `On-Demand Certificates <http
+学生可以在达到资格后的任何时间请求证书。学生也许希望马上得到证书或者完成课程后再拿证书。
+更多信息请参阅 `On-Demand Certificates <http
 ://edx-guide-for- students.readthedocs.org/en/latest/SFD_certificates.html#on-
 demand-certificates>`_.
