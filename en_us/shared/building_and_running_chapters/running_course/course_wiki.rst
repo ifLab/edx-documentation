@@ -1,11 +1,11 @@
 .. _Course_Wiki:
 
 ########################
-Using the Course Wiki
+使用课程维基
 ########################
 
-Wikis provide a way for course staff and students to access, share, and
-collaboratively edit information both about, and for, your course. 
+维基提供了一个教员和学生共同访问、分享和合作编辑课程信息的方式。
+
 
 Every course has a wiki that you can set up in a way appropriate for your
 course. You can influence how students (and staff) use it by :ref:`seeding the
@@ -20,7 +20,7 @@ be:
 * Sharing editable course information, such as download and installation
   instructions for software required for the course
 * Providing shared access to student-created resources, perhaps as part of a
-  collaborative exercise. 
+  collaborative exercise.
 * Sharing errata for the course.
 * Collecting suggestions for future runs of the course.
 
@@ -58,7 +58,7 @@ Course staff can perform these tasks to manage the wiki:
 * :ref:`Delete a Wiki Article<Deleting a Wiki Article>`
 * :ref:`Purge a Wiki Article<Purging a Wiki Article>`
 * :ref:`Restore a Deleted Wiki Article<Restoring a Deleted Wiki Article>`
-  
+
 All users, including students, can perform the following tasks, depending on the permissions that you set for an article:
 
 * :ref:`Add a Wiki Article<Adding a Wiki Article>`
@@ -130,7 +130,7 @@ To modify the permissions for wiki articles, follow these steps.
 #. Navigate to the article whose permissions you are modifying, then click **Settings**.
 #. In the **Permissions** section of the **Settings** page, select or clear the checkboxes for read or write access for **Group** or **Other**.
 #. At the bottom of the page, click the **Save changes** button for the **Permissions** section.
-   
+
 Note that there are two different **Save changes** buttons, one near the top of
 the page for the **Notifications** section, and one at the bottom of the page
 for the **Permissions** section. If you are modifying permissions, make sure you
@@ -147,14 +147,14 @@ on the **Membership** page of the Instructor Dashboard:
 	* Beta testers (by default there are no beta testers until you add them)
 	* Instructors (by default, the course author is always in the instructor   group)
 	* Staff (these are course team members)
-  
+
 The permissions for the **Others** group apply to users who are not in the three
 course groups, including students.
 
 .. If permissions are unchanged from the default wiki, students can create articles at the course level (children of the edX-wide wiki). This is easy to do accidentally due to the prominence of the Add article button for the top level.
 
 .. _Seeding the Wiki:
-  
+
 ********************************
 Seeding the Wiki
 ********************************
@@ -169,7 +169,7 @@ articles for each section. In the child articles for each section, you could
 provide information specific to the units and components in that section, and a
 page for students to share their feedback and experiences.
 
-.. include:: ../../../shared/running_course/wiki_tasks.rst 
+.. include:: ../../../shared/running_course/wiki_tasks.rst
 
 .. _Locking a Wiki Article:
 
@@ -213,8 +213,8 @@ Follow these steps to delete an article:
 #. Optionally, also select the **Purge** checkbox. For details, see :ref:`Purging a Wiki Article`.
 #. Click **Delete article** to confirm the deletion.
 
-   
-.. _Purging a Wiki Article:   
+
+.. _Purging a Wiki Article:
 
 ========================
 Purging a Wiki Article
@@ -235,13 +235,7 @@ Restoring a Deleted Wiki Article
 =================================
 
 Articles that have been deleted but not purged can be restored. A link to the
-article remains visible at the level at which it was created. 
+article remains visible at the level at which it was created.
 
 To restore a deleted article, click the link to the article and click
 **Restore**.
-
-
-
-
-
-

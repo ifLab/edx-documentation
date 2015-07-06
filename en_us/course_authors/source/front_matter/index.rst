@@ -1,12 +1,12 @@
 .. _Front Matter:
 
 #############################
-For Your Information
+参考信息
 #############################
 
 .. toctree::
    :maxdepth: 2
-   
+
    read_me
    preface
    change_log

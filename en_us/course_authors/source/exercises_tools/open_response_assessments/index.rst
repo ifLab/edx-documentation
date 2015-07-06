@@ -1,7 +1,7 @@
 .. _Open Response Assessments:
 
 #########################
-Open Response Assessments
+开放性回答评估
 #########################
 
 .. toctree::

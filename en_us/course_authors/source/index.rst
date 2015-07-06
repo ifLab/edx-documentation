@@ -4,7 +4,7 @@
    contain the root `toctree` directive.
 
 
-Building and Running an edX Course
+创建并运营一门edX课程
 ========================================
 
 .. toctree::

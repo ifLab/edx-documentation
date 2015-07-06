@@ -1,12 +1,12 @@
 .. _Running Your Course Index:
 
 ##########################
-Running Your Course
+运营您的课程
 ##########################
 
 .. toctree::
    :maxdepth: 2
-   
+
    course_staffing
    course_enrollment
    discussions
