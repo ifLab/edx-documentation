@@ -1,22 +1,20 @@
 .. _Exercises and Tools Index:
 
 ############################
-Creating Exercises and Tools
+创建习题和工具
 ############################
 
-Use the chapters in this section to understand how to create exercises and
-tools in your course.
+通过阅读本章节了解如何在课程中创建习题和工具。
 
-For information on how to develop your course content in the Studio Outline
-page, see :ref:`Developing Your Course Index`.
+关于如何在Studio大纲页面开发您的课程内容，请参考 :ref:`Developing Your Course Index` 。
 
-For information on building specific course component types, see :ref:`Creating
+关于建立特定课程组件类型的信息请参考 :ref:`Creating
 Course Content Index`.
 
 
 .. toctree::
    :maxdepth: 2
-   
+
    create_exercises_and_tools
    annotation
    checkbox
