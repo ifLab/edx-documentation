@@ -1,55 +1,55 @@
 .. _Full Screen Image:
 
 ######################
-Full Screen Image Tool
+全屏图像工具
 ######################
 
-Some large images are difficult for students to view in the courseware.  The full screen image tool allows students to enlarge the image, so they can see all the detail in context.
+有一些较大的图片很难在课程中浏览。全屏图像工具让学生可以放大图片，这样他们就可以看到图片中的详细内容。
 
 ****************************************
-The Student View of a Full Screen Image
+全屏图像的学生视角
 ****************************************
 
-The student sees the full screen image in a unit page. When the student hovers the mouse pointer over the image, the **Fullscreen** button appears:
+学生在单元页面中看到全屏图像。当学生把光标移到图像上时，出现 **全屏** 按钮：
 
 .. image:: ../../../shared/building_and_running_chapters/Images/image-modal.png
  :alt: Image of the full screen image tool with the Full Screen button.
 
-When the student clicks **Fullscreen**, the image opens and expands in the full browser window.  The buttons **Close**, **Zoom In**, and **Zoom Out** appear:
+学生点击 **全屏** ，图像将拓展至整个浏览器窗口，出现 **关闭** ，**放大** 和 **缩小** 按钮：
 
 .. image:: ../../../shared/building_and_running_chapters/Images/image-modal-window.png
  :alt: Image of the Image Modal tool with the Full Screen button.
 
-The student can then zoom in on the image, and drag the image to view the desired part of it:
+学生可以放大图片，并拖拽以查看图片的不同部分：
 
 .. image:: ../../../shared/building_and_running_chapters/Images/image-modeal-zoomed.png
  :alt: Image of the Image Modal tool with the Full Screen button.
 
 ******************************
-Create a Full Screen Image
+创建全屏图像
 ******************************
 
-#. Upload your image file to the **Files & Uploads** page. For more information about how to do this, see :ref:`Add Files to a Course`.
+#. 将图片上传到 **文件与上传** 页面。更多关于如何操作的信息请参阅 :ref:`Add Files to a Course` 。
 
-#. Under **Add New Component**, click **html**, and then click **Full Screen Image**.
+#. 在 **添加新组件** 下点击 **html** 然后点击 **全屏图像** 。
 
-#. In the new component that appears, click **Edit**.
+#. 新组件出现时，点击 **编辑** 。
 
-#. In the component editor, replace the default title, remove the instructional paragraph, and add text as needed.
+#.在组件编辑器中，把默认标题替换掉，删掉指导段，并按需要添加文字。
 
-#. Switch to the **HTML** tab.
+#. 切换到 **HTML** 栏。
 
-#. Replace the following placeholders with your own content.
+#. 将以下占位符替换为您的内容。
 
-   * Replace the value of the <a> element's href attribute with the path to your image. Do not change the value of the class attribute. For example:
+   * 将<a>元素href属性的值设为您的图片路径。不要更改class属性的值。例如：
 
      **<a href="/static/Image1.jpg" class="modal-content">**
 
-   * Replace the value of the <img> element's src attribute with the path to your image. For example:
-     
+   * 将<img>元素的src属性值设为您的图片路径。例如：
+
      **<img alt="Full screen image" src="/static/Image1.jpg"/>**
 
-   * Ensure that the value of the href and src attributes are the same, and that you do not change the class attribute. Your sample code should look like the following:
+   * 确保href和src的属性值相同，且不要更改class属性。您的样本代码应该像下面这样：
 
    .. code-block:: xml
 
@@ -58,6 +58,7 @@ Create a Full Screen Image
      <img alt="Full screen image" src="/static/Image1.jpg"/>
      </a>
 
-   .. note:: You can use this same HTML code in any HTML component, not just those components you created as full screen images.
+   .. note:: 您可以在任何HTML组件中使用这样的HTML代码，不仅仅是创建全屏图像时。
 
-#. Click **Save** to save the HTML component.
+
+#. 点击 **保存** 。

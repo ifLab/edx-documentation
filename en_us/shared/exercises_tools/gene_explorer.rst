@@ -1,27 +1,29 @@
 .. _Gene Explorer:
 
 ##################
-Gene Explorer Tool
+Gene Explorer工具
 ##################
 
-The Gene Explorer (GeneX), from the biology department at `UMB <http://www.umb.edu/>`_, simulates the transcription, splicing, processing, and translation of a small hypothetical eukaryotic gene. GeneX allows students to make specific mutations in a gene sequence, and it then calculates and displays the effects of the mutations on the mRNA and protein. 
+ `UMB <http://www.umb.edu/>`_ 生物学院的Gene Explorer (GeneX)，
+模拟一个小型假定真核生物基因转录、剪接、处理，和翻译的过程。
+GeneX允许学生在基因序列中制作特定突变，并计算和显示突变在mRNA和蛋白质上的影响。
 
-Specifically, the Gene Explorer does the following:
+Gene Explorer有如下特别作用：
 
-#. Finds the promoter and terminator
-#. Reads the DNA sequence to produce the pre-mRNA
-#. Finds the splice sites
-#. Splices and tails the mRNA
-#. Finds the start codon
-#. Translates the mRNA
+#. 找到启动子和终止子
+#. 读DNA序列以产出pre-mRNA
+#. 找到剪接位点
+#. 剪接mRNA
+#. 找到起始密码子
+#. 翻译mRNA
 
 .. image:: ../../../shared/building_and_running_chapters/Images/GeneExplorer.png
   :alt: Image of the Gene Explorer
 
-For more information about the Gene Explorer, see `The Gene Explorer <http://intro.bio.umb.edu/GX/>`_.
+ 更多关于Gene Explorer的信息，请参阅 `The Gene Explorer <http://intro.bio.umb.edu/GX/>`_.
 
 ********************
-Gene Explorer Code
+Gene Explorer代码
 ********************
 
 .. code-block:: xml
@@ -41,9 +43,11 @@ Gene Explorer Code
   </customresponse>
   </problem>
 
-In this code:
+在此代码中：
 
-* **width** and **height** specify the dimensions of the application, in pixels.
-* **genex_dna_sequence** is the default DNA sequence that appears when the problem opens.
-* **dna_sequence** contains the application's state and the student's answer. This value must be the same as **genex_dna_sequence**. 
-* **genex_problem_number** specifies the number of the problem. This number is based on the five gene editor problems in the MITx 7.00x course--for example, if you want this problem to look like the second gene editor problem in the 7.00x course, you would set the **genex_problem_number** value to 2. The number must be 1, 2, 3, 4, or 5.
+* **width** 和 **height** 制定应用的像素范围。
+* **genex_dna_sequence** 是问题打开时的默认DNA序列。
+* **dna_sequence** 包含应用程序状态和学生答案。该值必须和 **genex_dna_sequence** 相同。
+* **genex_problem_number** 指定问题的编号。 这个编号基于MITx 7.00x 课程中的五个基因编辑器问题。
+比如，如果您希望这个问题看起来像7.00x课中的第二个基因编辑器问题，你可以将 **genex_problem_number** 的值设为2。
+编号必须是1、2、3、4或5。
