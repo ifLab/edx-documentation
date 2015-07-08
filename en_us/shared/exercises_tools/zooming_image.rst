@@ -1,65 +1,64 @@
 .. _Zooming Image:
 
 ##################
-Zooming Image Tool
+图像放大工具
 ##################
 
-You may want to present information to your students as an image. If your image is very large or very detailed, students may not be able to see all the information in the image. You can use the zooming image tool to enlarge areas of your image as the student moves the mouse over the image, as in the example below.
+您也许希望通过图像向学生表达信息。如果您的图像非常大或非常精细，学生也许无法在图像中看到所有信息。
+您可以使用图像放大工具，让学生用光标选中图像时可以放大图像区域，如下例。
 
 .. image:: ../../../shared/building_and_running_chapters/Images/Zooming_Image.png
   :alt: Example zooming image tool showing a chemistry exercise
 
 ***********************************
-Components of a Zooming Image Tool
+图像放大工具的组件
 ***********************************
 
-To create a zooming image tool, you need the following files.
+您需要以下文件来创建图像放大工具。
 
-* The image that you want students to see when they access the unit.
-* The image that appears in the magnified area when a student clicks the regular image. This image may be larger than the regular image.
-* The **jquery.loupeAndLightbox.js** JavaScript file. Every zooming image tool uses this JavaScript file, and you won't make any changes to it. `To download this file, right-click here <http://files.edx.org/jquery.loupeAndLightbox.js>`_, and then click **Save Link As** to save the file on your computer.
+* 您希望学生访问单元时看到的图片。
+* 当学生点击普通尺寸图片时出现在放大区域的图片。这个图片应该比普通尺寸图片大。
+* **jquery.loupeAndLightbox.js** JavaScript文件。每个图像放大工具都使用这个JavaScript文件。您不能更改此文件。 `To download this file, right-click here <http://files.edx.org/jquery.loupeAndLightbox.js>`_ ，然后点击 **保存链接为** 保存文件到您的计算机。
 
 ****************************
-Create a Zooming Image Tool
+创建图像放大工具
 ****************************
 
-#. Upload your regular-sized image file, your small image file, and the **jquery.loupeAndLightbox.js** file to the **Files & Uploads** page. For more information about how to do this, see :ref:`Add Files to a Course`.
+#. 上传您的普通尺寸图片文件，小尺寸图片文件和 **jquery.loupeAndLightbox.js** 文件到 **文件与上传页面**。关于如何操作请参阅 :ref:`Add Files to a Course` 。
 
-#. Under **Add New Component**, click **html**, and then click **Zooming Image**.
+#. 在 **添加新组建** 下，点击 **html** ，点击 **图像放大** 。
 
-#. In the new component that appears, click **Edit**.
+#. 在新组建中点击 **编辑** 。
 
-#. In the component editor, replace the default problem text with your own text.
+#. 在组建编辑器中，用您的文本替换掉默认问题文本。
 
-#. Switch to the **HTML** tab.
+#. 切换到 **HTML** 栏。
 
-#. Replace the following placeholders with your own content.
+#. 将以下占位符替换为您的内容。
 
-   - Replace the following file name and path with the name and path of the image that you want to appear magnified when the user hovers over the regular image.
+   - 将以下文件名和路径替换成您希望用户光标移到普通尺寸图片上时出现的，放大版本的图片的文件名和路径。
 
      **https://studio.edx.org/c4x/edX/DemoX/asset/pathways_detail_01.png**
 
-     For example, your file name and path may be **/static/Image1.jpg**.
+     例如，您的文件名和路径可能为 **/static/Image1.jpg**.
 
-   - Replace the following file name and path with the name and path of the image that you want to appear when the page opens.
-     
+   - 将以下文件名和路径替换成您希望在页面打开时出现的图片文件名和路径。
+
      **https://studio.edx.org/c4x/edX/DemoX/asset/pathways_overview_01.png**
 
-     For example, your file name and path may be **/static/Image2.jpg**.
+     例如，您的文件名和路径也许为 **/static/Image2.jpg**.
 
-   - Replace the following name and file path with the name and path of the JavaScript file for your course.
+   - 将以下文件名和路径替换成您的JavaScript文件名和路径。
 
      **https://studio.edx.org/c4x/edX/DemoX/asset/jquery.loupeAndLightbox.js**
 
-     Because you uploaded the **jquery.loupeAndLightbox.js** file to the **Files & Uploads** page, your file name and path is **/static/jquery.loupeAndLightbox.js**.
+     因为您已经将 **jquery.loupeAndLightbox.js** 文件上传到 **文件与上传** 页面，您的文件名和路径是 **/static/jquery.loupeAndLightbox.js** 。
 
-   - (Optional) If you want the magnified area to be larger or smaller, change the **width** and **height** values from 350 to larger or smaller numbers. For example, you can change both numbers to 450. Or, if you want a horizontal oval instead of a circle, you can change the **width** value to a number such as 500 and the **height** value to a number such as 150.
+   - （可选）如果您想让放大区域变大或变小，将 **width** 和 **height** 值更改为比350更大或更小的数字。例如，您可以将两个值都设为450。或者，如果您想要一个水平的椭圆形，您可以将 **width** 值设置为500，**height**值设置为150。
 
-   The HTML in your zooming image tool may resemble the following.
+   您图像放大工具的HTML可能看起来像这样。 
 
    .. image:: ../../../shared/building_and_running_chapters/Images/ZoomingImage_Modified.png
      :alt: Example HTML for a zooming image tool
 
-#. Click **Save** to save the HTML component.
-
-
+#. 点击 **保存** 。
