@@ -1,28 +1,30 @@
 .. _Circuit Schematic Builder:
 
 ##################################
-Circuit Schematic Builder Problem
+电路原理图搭建问题
 ##################################
 
-In circuit schematic builder problems, students can arrange circuit elements such as voltage sources, capacitors, resistors, and MOSFETs on an interactive grid. They then submit a DC, AC, or transient analysis of their circuit to the system for grading.
+在电路原理图搭建问题中，学生可以在一个互动网格中排列如电压电源、电容器、电阻和场效应管等电路元件。
+他们可以向系统提交电路的DC、AC或瞬态分析，以获得评分。
+
 
 .. image:: ../../../shared/building_and_running_chapters/Images/CircuitSchematicExample.png
  :alt: Image of a circuit schematic builder
 
 *********************************************
-Create a Circuit Schematic Builder Problem
+创建电路原理图搭建问题
 *********************************************
 
-#. In the unit where you want to create the problem, click **Problem**
-   under **Add New Component**, and then click the **Advanced** tab.
-#. Click **Circuit Schematic Builder**.
-#. In the component that appears, click **Edit**.
-#. In the component editor, replace the example code with your own code.
-#. Click **Save**.
+#. 在您想创建问题的单元中，点击 **添加新组件** 下的 **问题** 一项，
+   并点击 **高级** 项。
+#. 点击 **电路原理图搭建器** 。
+#. 在出现的组件中点击 **编辑** 。
+#. 在组件编辑器中，用您的代码替换示例代码。
+#. 点击 **保存** 。
 
-**Problem Code**
+**问题代码**
 
-To create the problem in the image above, paste the following code into the Advanced Editor.
+将以下代码粘贴至高级编辑器中，创建上图中的问题。
 
 .. code-block:: xml
 
