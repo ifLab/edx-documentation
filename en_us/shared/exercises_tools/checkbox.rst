@@ -1,63 +1,45 @@
 .. _Checkbox:
 
 ##################
-Checkbox Problem
+复选框问题
 ##################
 
-In checkbox problems, learners select one or more options from a list of
-possible answers. To answer the problem correctly, a learner must select all
-of the options that apply. Each checkbox problem must have at least one
-correct answer.
+在复选框问题中, 学习者从可能的答案列表中的选择一个或多个选项.为了正确回答问题,学习者必须选择所有正确的选项. 每个复选框问题必须有一个或多个正确选项.
 
 .. image:: ../../../shared/building_and_running_chapters/Images/CheckboxExample.png
  :alt: A checkbox problem with four options, 2 of which are required for the
      correct answer
 
-For the checkbox problems in your course, you can use edX Insights to review
-aggregated learner performance data and examine submitted answers. For more
-information, see `Using edX Insights`_.
+对于在你课程中的复选框问题,你可以使用edX Insights评估学习者成绩数据和检查提交过的答案. 更多相关信息,请查看： `Using edX Insights`_.
 
 ****************************
-Creating a Checkbox Problem
+创建一个复选框问题
 ****************************
 
-You can create checkbox problems in the Simple Editor or in the Advanced
-Editor. You can set up a problem in the Simple Editor, and then switch to the
-Advanced Editor to add more configuration options in XML. However, you cannot
-switch back to the Simple Editor from the Advanced Editor. Therefore, you
-might want to format the problem as completely as possible before you begin to
-use the Advanced Editor.
+你可以使用简单编辑器或高级编辑器创建复选框问题.你可以在简单编辑器中设置一个问题，然后切换到高级编辑器来添加更多的XML中的配置选项.然而,你不能从高级编辑器切换回简单编辑器。因此,你可能会想要尽可能完全地确定问题的格式在你开始使用先进的编辑器之前。
+
 
 .. _Use the Simple Editor to Create a Checkbox Problem:
 
 ======================================================
-Use the Simple Editor to Create a Checkbox Problem
+使用简单编译器创建复选框问题
 ======================================================
 
-To use the :ref:`Simple Editor<Simple Editor>` to create a checkbox problem,
-follow these steps.
+要使用 :ref:`简单编辑器<简单编辑器>` 创建一个复选框问题,
+有以下的步骤.
 
-#. In the unit where you want to create the problem, under **Add New
-   Component** select **Problem**.
-#. From the list of **Common Problem Types**, select **Checkboxes**. Studio
-   adds an example checkbox problem to the unit.
-#. Select **Edit**. The Simple Editor opens. 
-#. Replace the sample problem text with your own text.
-#. Determine the text that describes the question you want learners to answer,
-   and surround that text with two pairs of angle brackets (``>>question<<``).
-   This question text is the accessible label for the problem.
-#. Edit your text to place each answer option on a separate line.
-#. Select your set of answer options, and then select **Checkboxes** from the
-   toolbar. A pair of brackets appears next to each answer choice.
-#. To identify each correct answer, add an **x** between the brackets for that option.
-#. To provide an explanation, select the explanation text and then select 
-   **Explanation** from the toolbar. ``[explanation]`` appears before
-   and after the explanation text.
-#. Select **Settings** and provide an identifying **Display Name** for the
-   problem.
-#. Define additional settings for the problem. For more information, see
-   :ref:`Problem Settings`.
-#. Select **Save**.
+#. 在你想要创建问题的单元里, 在 **添加新组件** 下方选择 **问题**.
+#.  **常见问题类型**, 选择 **复选框**. 添加一个复选框问题到单元中.
+#. 选择 **编辑**. 简单编辑器就打开了. 
+#. 用你自己的问题文本替代样本问题文本.
+#. 确定你想让学生回答的问题的文本描述,用双肩括号括住 (``>>问题<<``).这个问题文本是这个问题的访问标签。
+#. 将每个答案选项放在单独的行中。
+#. 选择你设置的答案选项, 然后在工具烂选择**复选框**.在每个选项的旁边就出现了一对括号.
+#. 为了识别每个正确答案, 要在这个选项旁边的括号中间添加一个**x**.
+#. 要提供一个说明, 选择说明文本然后从工具栏中选择**说明**. ``[说明]`` 出现在说明文本的前面和后面。
+#. 选择 **设置**并为这个问题提供一个识别 **显示名称**.
+#. 为这个问题定义额外的设置. 更多相关信息,请查看： :ref:`Problem Settings`.
+#. 选择 **保存**.
 
 For the example problem illustrated above, the following text displays in the
 problem component.
