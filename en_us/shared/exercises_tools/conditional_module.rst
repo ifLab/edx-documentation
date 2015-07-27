@@ -1,59 +1,57 @@
 .. _Conditional Module:
 
 ####################
-Conditional Module
+条件模板
 ####################
 
 ********************
-Format description
+格式描述
 ********************
 
-The main tag of conditional module input is ``conditional``.
+条件模板的主要标签是 ``conditional``.
 
-.. code-block:: xml
+.. code-block:: xmltags can contain a correct answer.
 
     <conditional> ... </conditional>
 
-``conditional`` can include any number of any xmodule tags (``html``,
-``video``, ``poll``, etc.) or ``show`` tags.
+``conditional`` 可以包含任何模块标签(``html``,
+``video``, ``poll``, etc.) 或者 ``show`` 标签.
 
 ================
-conditional tag
+条件式标签
 ================
 
-The main container for a single instance of a conditional module. The
-following attributes can be specified for this tag.
+是条件模块的一个主要实例.下面的是这种标签的属性.
 
 .. code-block:: xml
 
-    sources - location id of required modules, separated by ';'
-    [message | ""] - message for case, where one or more are not passed. Here you can use variable {link}, which generate link to required module.
+    输入源 - 必要的模块位置, 用';'隔开
+    [message | ""] - 在提示一个或多个不通过的情况下.你可以使用变量 {link},生成所需的模块链接.
 
     [submitted] - map to `is_submitted` module method.
-    (pressing RESET button makes this function to return False.)
+    (按下RESET按钮使这个函数返回False.)
 
-    [correct] - map to `is_correct` module method
-    [attempted] - map to `is_attempted` module method
-    [poll_answer] - map to `poll_answer` module attribute
-    [voted] - map to `voted` module attribute
-
+    [correct] - 地图到`is_correct`模块方法
+    [attempted] - 地图到`is_attempted` 模块方法
+    [poll_answer] - 地图到`poll_answer` 模块属性
+    [voted] - 地图到 `voted`模块属性
 ========
-show tag
+显示标签
 ========
 
-Symlink to some set of xmodules. The following attributes can be specified for
-this tag.
+一些到设置模块的符号链接.下面的是这种标签的属性.
+
 
 .. code-block:: xml
 
-    sources - location id of modules, separated by ';'
+    输入源 - 模板的位置,用';'隔开
 
 *********
-Example
+示例
 *********
 
 ========================================
-Examples of conditional depends on poll
+取决于投票的条件句的示例
 ========================================
 
 .. code-block:: xml
@@ -66,7 +64,7 @@ Examples of conditional depends on poll
     </conditional>
 
 ========================================================
-Examples of conditional depends on poll (use <show> tag)
+取决于投票的条件句的示例(使用 <显示> 标签)
 ========================================================
 
 .. code-block:: xml
@@ -79,7 +77,7 @@ Examples of conditional depends on poll (use <show> tag)
     </conditional>
 
 ================================================
-Examples of conditional depends on problem
+取决于问题的条件句的示例
 ================================================
 
 .. code-block:: xml
