@@ -1,39 +1,26 @@
 .. _Create Exercises:
 
 ############################
-Creating Exercises and Tools
+创建练习和工具
 ############################
 
 ************************************
-Introduction to Exercises and Tools
+练习和工具的说明
 ************************************
 
-Studio allows you to create a wide variety of exercises and tools for your
-course. Many of these exercises and tools have templates in Studio to help you
-create exercises. In addition, individual course teams frequently create
-exercises that don't have templates in Studio. 
+Studio允许你为你的课程创建多种多样的练习和工具.其中有很多的练习和工具在Studio有模板帮助你创建练习. 另外, 个别的课程团队经常创建在Studio没有的练习. 
 
-.. note:: The level of support that edX provides for each tool varies.
-   Exercises and tools that are not fully supported by edX are flagged with an
-   indicator of either provisional or no support.
+.. note::edX提供给每个不同工具的支持程度是不同的.不完全由edX提供支持的练习和工具会被用临时或不支持的指标标记.
 
-   Exercises and tools with provisional support might lack the robustness of
-   functionality that courses you build using edX require. Exercises and tools
-   with no support are not maintained by edX, and might be deprecated in the
-   future.
+   暂时性支持的练习和工具可能会缺少你使用edX建立课程功能的稳定性。不被edX支持的练习和工具不被edX保持，将来可能会被弃用。
 
-Depending on the exercise or tool, you use an HTML, problem, or advanced
-component. The page for each individual exercise or tool contains an example
-of each exercise or tool, together with all the files, code, and step-by-step
-instructions that you need to create the exercise or tool.
 
-.. note:: When you create problems, you must include labels for accessibility.
-   Accessible labels generally include the text of the main question in your
-   problem. Instructions for adding labels appear in the page for each
-   individual problem.
+   根据练习和工具, 你使用 HTML, 问题,或者高级组件. 每个人的练习或工具页面都包含一个练习或工具的例子，连同所有文件，代码，和一步步的说明。
+
+.. note:: 当你创建问题时你必须包含可访问的标签。可访问的标签通常包含你的主要问题文本。标签的说明会出现在每个人问题的页面中。
 
 ****************************
-General Exercises and Tools
+一般的练习和工具
 ****************************
 
 .. list-table::
@@ -41,152 +28,117 @@ General Exercises and Tools
 
    * - .. image:: ../../../shared/building_and_running_chapters/Images/AnnotationExample.png
           :width: 100
-          :alt: Example annotation problem
-     - :ref:`Annotation`
-     - Annotation problems ask students to respond to questions about a
-       specific block of text. The question appears above the text when the
-       student hovers the mouse over the highlighted text so that students can
-       think about the question as they read.
-     - Provisional support  
+          :alt: 注释问题示例
+     - :ref:`注释`
+     - 注释问题让学生回答一个特殊的文本区域.这个问题出现在文本上方当学生将光标移动到高亮文本时，这能让学生思考在阅读时能这个问题。
+     - 暂时支持
    * - .. image:: ../../../shared/building_and_running_chapters/Images/PollExample.png
           :width: 100
-          :alt: Example poll
-     - :ref:`Conditional Module`
-     -  You can create a conditional module to control versions of content that
-        groups of students see. For example, students who answer "Yes" to a
-        poll question then see a different block of text from the students who
-        answer "No" to that question.
-     - Provisional support   
+          :alt: 调查示例
+     - :ref:`条件模块`
+     -  你可以创建一个条件模板去控制学生可以看到的内容版本.比如，对于一个调查问题回答Yes的学生然后从对这个问题回答No学生看到一块不同的文本.
+     - 暂时支持  
    * - .. image:: ../../../shared/building_and_running_chapters/Images/JavaScriptInputExample.png
           :width: 100
           :alt: Example JavaScript problem
-     - :ref:`Custom JavaScript`
-     - Custom JavaScript display and grading problems (also called *custom
-       JavaScript problems* or *JS Input problems*) allow you to create a
-       custom problem or tool that uses JavaScript and then add the problem or
-       tool directly into Studio.
-     - Full support   
+     - :ref:`自定义JavaScript`
+     - 自定义JavaScript显示和分级问题(也叫*自定义JavaScript问题* or *JS输入问题*)允许你创建一个
+       自定义问题或工具使用JavaScript然后吧这个问题或工具直接添加到Studio.
+     - 完全支持   
    * - .. image:: ../../../shared/building_and_running_chapters/Images/external-grader-correct.png
           :width: 100
           :alt: Example external grader
      - :ref:`External Grader`
-     - An external grader is a service that receives student responses to a
-       problem, processes those responses, and returns feedback and a problem
-       grade to the edX platform. You build and deploy an external grader
-       separately from the edX platform. An external grader is particularly
-       useful for software programming courses where students are asked to
-       submit complex code.
-     - Provisional support  
+     - external grader是一个接受并处理学生对一个问题的回答的服务,然后把这些问题回馈返回到edX平台上.你可以从edX平台上单独创建并配置一个external grader.external           grader对于处理软件编程课程中学生提交的复杂的代码非常有用.
+     - 暂时支持 
    * - .. image:: ../../../shared/building_and_running_chapters/Images/google-calendar.png   
           :width: 100
-          :alt: Google Calendar
-     - :ref:`Google Calendar Tool`
-     - You can embed a Google calendar in your course so that students see the
-       calendar in the courseware. You can use a Google calendar to share quiz
-       dates, office hours, or other schedules of interest to students.
-     - Full support  
+          :alt:谷歌日历
+     - :ref:`谷歌日历工具`
+     - 你可以在你的课程中嵌入谷歌日历以便学生能在你的课件中看到这个日历.你可以使用谷歌日历分享测试日期, 办公时间或其他学生感兴趣的日程.
+     - 完全支持  
    * - .. image:: ../../../shared/building_and_running_chapters/Images/google-spreadsheet.png   
           :width: 100
-          :alt: Google Drive Files Tool
-     - :ref:`Google Drive Files Tool`
-     - You can embed a Google Drive file, such as a document, spreadsheet, or
-       image, in your course so that students see the file in the courseware.
-     - Full support  
+          :alt: 谷歌云文件工具
+     - :ref:`谷歌云文件工具`
+     - 你可以在你的课程中嵌入一个谷歌云文件,比如文档, 电子表格或图像以便你的学生能在你的课件中看到这个文件.
+     - 完全支持  
    * - .. image:: ../../../shared/building_and_running_chapters/Images/GoogleHangout_WithPeople.png   
           :width: 100
-          :alt: Google Hangout
-     - :ref:`Google Instant Hangout`
-     - You can add the ability for students to participate in instant hangouts
-       directly from your course. With instant hangouts, students can interact
-       through live video and voice, share screens and watch videos together,
-       and collaborate on documents.
-     - Provisional support  
+          :alt: 谷歌环聊
+     - :ref:`谷歌即时环聊`
+     - 你可以添加这个工具为了学习你课程的学生参加即时环聊.使用即时环聊学生通过视频和声音可以相互交流,分享屏幕、一起观看和视频协作完成文档。
+     - 暂时支持  
    * - .. image:: ../../../shared/building_and_running_chapters/Images/IFrame_1.png
           :width: 100
-          :alt: Example IFrame tool
+          :alt: IFrame工具示例示例
      - :ref:`IFrame`
-     - IFrames allow you to integrate ungraded exercises and tools from any
-       Internet site into an HTML component in your course.
-     - Provisional support  
+     - IFrame允许你从任何网站和工具不分级别的整合练习和工具到你的课程的一个HTML组件。
+     - 暂时支持  
    * - .. image:: ../../../shared/building_and_running_chapters/Images/LTIExample.png
           :width: 100
-          :alt: Example LTI component
-     - :ref:`LTI Component`
-     - LTI components allow you to add an external learning application or non-PDF textbook to Studio.
-     - Full support
+          :alt: LTI组件示例
+     - :ref:`LTI组件`
+     - LTI组件允许你添加一个外置的应用程序或者非PDF文本到Studio中.
+     - 完全支持
    * - .. image:: ../../../shared/building_and_running_chapters/Images/PA_QandRField.png
           :width: 100
-          :alt: Example open response assessment
-     - :ref:`Open Response Assessments 2`
-     - In open response assessments, students receive feedback on written
-       responses of varying lengths as well as image files that the students
-       upload. Open response assessments include self assessment and peer
-       assessment.
-     - Full support  
+          :alt: 开放回答评估示例
+     - :ref:`开放回答评估2`
+     - 在开放回答评估中,学生在回答上传不同长度的回答和图像文件会收到不同的回馈.
+     - 完全支持  
    * - .. image:: ../../../shared/building_and_running_chapters/Images/PollExample.png
           :width: 100
-          :alt: Example poll
-     - :ref:`Poll`
-     - You can run polls in your course so that your students can share
-       opinions on different questions.
-     - Provisional support  
+          :alt: 调查示例
+     - :ref:`调查`
+     - 你可以在你的课程中发起调查以便你的学生能够分享不同的观点.
+     - 暂时支持  
    * - .. image:: ../../../shared/building_and_running_chapters/Images/ProblemWithAdaptiveHintExample.png
           :width: 100
-          :alt: Example problem with adaptive hint
-     - :ref:`Problem with Adaptive Hint`
-     - A problem with an adaptive hint evaluates a student's response, then
-       gives the student feedback or a hint based on that response so that the
-       student is more likely to answer correctly on the next attempt. These
-       problems can be text input or multiple choice problems.
-     - Provisional support  
+          :alt: 自动适配的提示问题示例
+     - :ref:`自动适配的提示问题`
+     - 一个带有自动适配的提示评估一个学生的回答，然后给学生回馈或基于回答的提示以便这个学生下次一回答更有可能正确回答.这些问题可以是文本输入或多选问题A .
+     - 暂时支持  
    * - .. image:: ../../../shared/building_and_running_chapters/Images/ProblemWrittenInLaTeX.png
           :width: 100
-          :alt: Example problem written in LaTeX
-     - :ref:`Problem Written in LaTeX`
-     - If you have an problem that is already written in LaTeX, you can use
-       this problem type to easily convert your code into XML.
-     - No support
+          :alt: 用LaTeX写的问题示例
+     - :ref:`用LaTeX写的的问题`
+     - 如果你有一个已经写入了LaTeX的问题,你可以用这个问题很容易键入转换成XML.
+     - 不支持
 
 .. Removed student notes row for now-- cannot conditionalize in tables. Currently student notes page is included in open edx, not in edx.
 
    * - .. image:: ../../../shared/building_and_running_chapters/Images/TextInputExample.png
           :width: 100
-          :alt: Example text input problem
-     - :ref:`Text Input`
-     - In text input problems, students enter text into a response field. The
-       response can include numbers, letters, and special characters such as
-       punctuation marks.
-     - Full support  
+          :alt: 文本输入问题示例
+     - :ref:`文本输入问题`
+     - 在文本输入问题中, 学生输入文本到回答区域.这个回答可以包括数字，字母和特殊字符比如标点符号.
+     - 完全支持  
    
    * - .. image:: ../../../shared/building_and_running_chapters/Images/WordCloudExample.png
           :width: 100
-          :alt: Example word cloud
+          :alt: word cloud示例
      - :ref:`Word Cloud`
-     - Word clouds arrange text that students enter - for example, in response
-       to a question - into a colorful graphic that students can see.
-     - Provisional support  
+     - Word clouds整理学生输入的文本 - 比如,在回答一个问题 - 变成学生能看见的色彩鲜艳的图形.
+     - 暂时支持  
    * - .. image:: ../../../shared/building_and_running_chapters/Images/CustomPythonExample.png  
           :width: 100
-          :alt: Example write-your-own-grader problem
+          :alt: Example write-your-own-grader问题
      - :ref:`Write Your Own Grader`
-     - In custom Python-evaluated input (also called "write-your-own-grader")
-       problems, the grader uses a Python script that you create and embed in
+     - 在自定义的Python-evaluated输入(也叫"write-your-own-grader")
+       问题,这个grader使用一个你创建的Python脚本嵌入到这个问题中去评估学生的回复或提供提示embed in
        the problem to evaluates a student's response or provide hints. These
        problems can be any type.
-     - Provisional support  
+     - 暂时支持  
    * - .. image:: ../../../shared/building_and_running_chapters/Images/RecommenderXBlockExample.png
           :width: 100
           :alt: Example RecommenderXBlock
      - :ref:`RecommenderXBlock`
-     - RecommenderXBlock can hold a list of resources for misconception
-       remediation, additional reading, and so on. This tool allows
-       instructors and students to work together and maintain the list of
-       resources. For example, instructors and students can suggest new
-       resources, vote for useful ones, or flag abuse and spam.
-     - Provisional support  
+     - RecommenderXBlock可以保留错误修正的列表, 补充说明等等.这个工具允许教师和学生一起维护资源列表.比如,教师和学生可以建立新的资源，为有用的东西投票，或者标记没用的资源和垃圾邮件。
+     - 暂时支持  
 
 ********************************
-Image-Based Exercises and Tools
+图像-基于练习与工具
 ********************************
 
 .. list-table::
@@ -194,38 +146,31 @@ Image-Based Exercises and Tools
 
    * - .. image:: ../../../shared/building_and_running_chapters/Images/DragAndDropProblem.png
           :width: 100
-          :alt: Example drag and drop problem
-     - :ref:`Drag and Drop`
-     - In drag and drop problems, students respond to a question by dragging
-       text or objects to a specific location on an image.
-     - Provisional support  
+          :alt: 拖放问题示例
+     - :ref:`drag and drop`
+     - 在拖放问题中,学生通过拖动文本或对象到一个图像的指定位置回答.
+     - 暂时支持  
    * - .. image:: ../../../shared/building_and_running_chapters/Images/image-modal.png
           :width: 100
-          :alt: Example full screen image tool
-     - :ref:`Full Screen Image`
-     - The Full Screen Image tool allows a student to enlarge an image in the
-       whole browser window. This is useful when the image contains a large
-       amount of detail and text that is easier to view in context when
-       enlarged.
-     - Full support  
+          :alt: 图像全屏工具示例
+     - :ref:`全屏图像`
+     - 全屏图像工具允许学生放大图像到在整个浏览器中.当这个图像包含大量且详细的文本这是非常有用的，这能让学生看的时候更容易联系上下文.
+     - 完全支持  
    * - .. image:: ../../../shared/building_and_running_chapters/Images/ImageMappedInputExample.png
           :width: 100
-          :alt: Example image mapped input problem
-     - :ref:`Image Mapped Input`
-     - In an image mapped input problem, students click inside a defined area
-       in an image. You define this area by including coordinates in the body
-       of the problem.
-     - Provisional support  
+          :alt: 图像映射输入问题示例
+     - :ref:`图像映射输入`
+     - 在一个图像映射输入中,学生点击在一个图像中限定的地方点击.
+     - 暂时支持  
    * - .. image:: ../../../shared/building_and_running_chapters/Images/Zooming_Image.png
           :width: 100
-          :alt: Example zooming image tool
-     - :ref:`Zooming Image`
-     - Zooming images allow you to enlarge sections of an image so that
-       students can see the section in detail.
-     - Full support  
+          :alt: 图像放大工具示例
+     - :ref:`图像放大`
+     - 图像放大工具允许你方法部分图像以便学生能看的更清晰.
+     - 完全支持  
 
 ************************************
-Multiple Choice Exercises and Tools
+多项选择练习和工具
 ************************************
 
 .. list-table::
@@ -233,43 +178,31 @@ Multiple Choice Exercises and Tools
 
    * - .. image:: ../../../shared/building_and_running_chapters/Images/CheckboxExample.png
           :width: 100
-          :alt: Example checkbox problem
-     - :ref:`Checkbox`
-     - In checkbox problems, the student selects one or more options from a
-       list of possible answers. The student must select all the options that
-       apply to answer the problem correctly.
-     - Full support
+          :alt: 复选框问题示例
+     - :ref:`复选框`
+     - 在复选框问题中,学生选择从可能的是答案的列表中选择一个或多个选项. 学生必须选择所有正确的选项.
+     - 完全支持
    * - .. image:: ../../../shared/building_and_running_chapters/Images/DropdownExample.png
           :width: 100
-          :alt: Example dropdown problem
-     - :ref:`Dropdown`
-     - Dropdown problems allow the student to choose from a collection of
-       answer options, presented as a dropdown list. Unlike multiple choice
-       problems, whose answers are always visible directly below the question,
-       dropdown problems don't show answer choices until the student clicks the
-       dropdown arrow.
-     - Full support  
+          :alt: 下拉问题示例
+     - :ref:`下拉`
+     - 下拉问题允许学生从一批答案选项中选择,给出一个下拉列表.和答案总是直接明显的在问题下面的多项选择不同的是,下拉问题不显示选项除非学生点击下拉箭头.
+     - 完全支持  
    * - .. image:: ../../../shared/building_and_running_chapters/Images/MultipleChoiceExample.png
           :width: 100
-          :alt: Example multiple choice problem
-     - :ref:`Multiple Choice`
-     - In multiple choice problems, students select one option from a list of
-       answer options. Unlike with dropdown problems, whose answer choices
-       don't appear until the student clicks the drop-down arrow, answer
-       choices for multiple choice problems are always visible directly below
-       the question.
-     - Full support  
+          :alt: 多选问题示例
+     - :ref:`多项选择`
+     - 在多项问题中，学生从答案列表中选择一个选项.和答案不直接出现在学生视野中的下拉问题不同的是,多选问题的选项总是直观的出现在问题的下面.
+     - 完全支持  
    * - .. image:: ../../../shared/building_and_running_chapters/Images/MultipleChoice_NumericalInput.png
           :width: 100
-          :alt: Example multiple choice and numerical input problem
-     - :ref:`Multiple Choice and Numerical Input`
-     - You can create a problem that combines a multiple choice and numerical
-       input problems. Students not only select a response from options that
-       you provide, but also provide more specific information, if necessary.
-     - Provisional support  
+          :alt: 多项选择和数值输入问题示例
+     - :ref:`多项选择和数值输入问题`
+     - 你可以创建一个多选问题和数值输入问提的问题. 学生不仅仅要选择你提供的答案选项，必要的话，还要提供一个更特殊的答案.
+     - 暂时支持  
 
 ********************************
-STEM Exercises and Tools
+STEM练习或工具
 ********************************
 
 .. list-table::
@@ -277,79 +210,55 @@ STEM Exercises and Tools
 
    * - .. image:: ../../../shared/building_and_running_chapters/Images/ChemicalEquationExample.png
           :width: 100
-          :alt: Example chemical equation problem
-     - :ref:`Chemical Equation`
-     - Chemical equation problems allow the student to enter text that
-       represents a chemical equation into a text box. The grader evaluates the
-       student's response by using a Python script that you create and embed in
-       the problem.
-     - Full support  
+          :alt: 化学方程式问题示例
+     - :ref:`化学方程式`
+     - 化学方程式问题允许学生输入代表化学房产式的文本到文本框中.grader会用你创建的Python脚本评估学生的回答.
+     - 完全支持  
    * - .. image:: ../../../shared/building_and_running_chapters/Images/CircuitSchematicExample_short.png
           :width: 100
-          :alt: Example circuit schematic builder problem
-     - :ref:`Circuit Schematic Builder`
-     - In circuit schematic builder problems, students can arrange circuit
-       elements such as voltage sources, capacitors, resistors, and MOSFETs on
-       an interactive grid. They then submit a DC, AC, or transient analysis of
-       their circuit to the system for grading.
-     - Provisional support  
+          :alt: 电路图生成器问题示例
+     - :ref:`电路图生成器`
+     - 在电路图生成器问题中,学生可以整理电路原件比如电压、电源、电容、电阻和场效电晶体在一个交互式网络上.他们然后提交一个直流电、交流电或者他们电路的瞬时分析给系统评分.
+     - 暂时支持  
    * - .. image:: ../../../shared/building_and_running_chapters/Images/GeneExplorer.png
           :width: 100
-          :alt: Example gene explorer problem
-     - :ref:`Gene Explorer`
-     - The Gene Explorer (GeneX) simulates the transcription, splicing,
-       processing, and translation of a small hypothetical eukaryotic gene.
-       GeneX allows students to make specific mutations in a gene sequence, and
-       it then calculates and displays the effects of the mutations on the mRNA
-       and protein.
-     - Provisional support  
+          :alt: 基因探索问题示例
+     - :ref:`基因探索`
+     - 基因探索(GeneX)模仿了一个小型真核生物的基因转录, 拼接,加工和翻译.GeneX允许学生做一个基因序列的突变,然后在mRNA和蛋白质上计算并展示突变结果.
+     - 暂时支持  
    * - .. image:: ../../../shared/building_and_running_chapters/Images/MathExpressionInputExample.png
           :width: 100
-          :alt: Example math expression input problem
-     - :ref:`Math Expression Input`
-     - The more complex of Studio's two types of math problems. In math
-       expression input problems, students enter mathematical expressions to
-       answer a question. These problems can include unknown variables and more
-       complex symbolic expressions. You can specify a correct answer either
-       explicitly or by using a Python script.
-     - Full support  
+          :alt:数学表达式输入问题
+     - :ref:`数学表达式输入问题`
+     - 更复杂的Studio的两种类型的数学问题.在数学表达式输入问题里,学生输入数学表达式去回答一个问题.这些问题可以包含未知的变量和更复杂的符号.你可以指定一个明确的答案或者使用Python脚本.
+     - 完全支持  
    * - .. image:: ../../../shared/building_and_running_chapters/Images/Molecule_Editor.png
           :width: 100
-          :alt: Example molecule editor problem
-     - :ref:`Molecule Editor`
-     - The molecule editor allows students to draw molecules that follow the
-       rules for covalent bond formation and formal charge, even if the
-       molecules are chemically impossible, are unstable, or do not exist in
-       living systems.
-     - No support  
+          :alt: 分子编辑器问题示例
+     - :ref:`分子编辑器`
+     - 分子编辑器允许学生依据共价键的形成和形式电荷规则画分子，即使分子在化学上是不可能的,不稳定的或在生物系统中不存在的.
+     -不支持  
    * - .. image:: ../../../shared/building_and_running_chapters/Images/MoleculeViewer.png
           :width: 100
-          :alt: Example molecule viewer tool
-     - :ref:`Molecule Viewer`
-     - The molecule viewer allows you to create three-dimensional representations of molecules for students to view.
+          :alt: 分子查看器工具示例
+     - :ref:`分子查看器`
+     - 分子查看器允许你创建一个三维的分子模型让学生观察.
      - No support
    * - .. image:: ../../../shared/building_and_running_chapters/Images/image292.png
           :width: 100
-          :alt: Example numerical input problem
-     - :ref:`Numerical Input`
-     - The simpler of Studio's two types of math problems. In numerical input
-       problems, students enter numbers or specific and relatively simple
-       mathematical expressions to answer a question. These problems only allow
-       integers and a few select constants. You can specify a margin of error,
-       and you can specify a correct answer either explicitly or by using a
-       Python script.
-     - Full support  
+          :alt: 数值输入问题示例
+     - :ref:`数值输入`
+     - Studio的两种数学问题中教简单的问题.在数字输入问题中,学生输入数字或者或者特殊或简单的数学表达式去回答一个问题.这些问题仅仅允许数字或一些选择 变量. 你可以指定一个错误的范围,你也可以指定一个明确的或用Python脚本的正确答案。
+     - 完全支持  
    * - .. image:: ../../../shared/building_and_running_chapters/Images/Periodic_Table.png
           :width: 100
-          :alt: Example periodic table problem
-     - :ref:`Periodic Table`
-     - An interactive periodic table of the elements shows detailed information
-       about each element as the student moves the mouse over the element.
-     - No support
+          :alt: 元素周期表问题示例
+     - :ref:`元素周期表`
+     - 一个交互式的元素周期表显示了关于每种元素的详细信息当学生把鼠标移动到这个元素上时.
+     - 不支持
    * - .. image:: ../../../shared/building_and_running_chapters/Images/ProteinBuilder.png
           :width: 100
-          :alt: Example protein builder problem
-     - :ref:`Protein Builder`
-     - The Protex protein builder asks students to create specified protein
-       shapes by stringing together amino acids.
-     - No support
+          :alt: 蛋白质构建器问题示例
+     - :ref:`蛋白质构建器
+     - 蛋白质构建器会请求学生通过结合氨基酸来形状创建一个特殊的蛋白质形状.
+     - 不支持
