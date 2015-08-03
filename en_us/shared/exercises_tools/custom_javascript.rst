@@ -1,82 +1,60 @@
 .. _Custom JavaScript:
 
 ###########################
-Custom JavaScript Problem
+自定义JavaScript问题
 ###########################
 
-Custom JavaScript display and grading problems (also called *custom JavaScript problems*
-or *JS Input problems*) allow you to create a custom problem or tool that uses JavaScript
-and then add the problem or tool directly into Studio. When you create a JS Input problem,
-Studio embeds the problem in an inline frame (IFrame) so that your students can interact with
-it in the LMS. You can grade your students’ work using JavaScript and some basic Python, and
-the grading is integrated into the edX grading system.
+自定义JavaScript显示和评分问题(也叫*自定义JavaScript问题* or *JS输入问题*)允许你创建一个自定义问题或工具使用JavaScript然后把这个问题或工具直接添加到Studio.当你创建一个JS输入问题时,
+Studio会把这个问题嵌入内联框架(IFrame)以便你的学生可以在LMS里用它进行互动.你可以使用JavaScript和一些基础的Python对你学生的工作进行评分,并且这个分数会整合到edX评分系统中去.
 
-The JS Input problem that you create must use HTML, JavaScript, and cascading style sheets
-(CSS). You can use any application creation tool, such as the Google Web Toolkit (GWT), to
-create your JS Input problem.
+你必须使用HTML，JavaScript和CSS创建JS输入问题.你可以使用任何应用app创作工具,比如Google Web Toolkit (GWT),去创建你的JS输入问题.
 
 .. image:: ../../../shared/building_and_running_chapters/Images/JavaScriptInputExample.png
  :alt: Image of a JavaScript Input problem
 
 .. caution:: 
-  You cannot use a custom JavaScript problem in a component that contains more
-  than one problem. Each custom JavaScript problem must be in its own
-  component. See :ref:`Multiple Problems in One Component` for more
-  information.
+  你不能在一个包含一个以上问题的组件上使用自定义JavaScript问题.每个自定义JavaScript问题必须在它自己的组件上. 点击 :ref:`Multiple Problems in One Component` 查看更多相关信息.
 
 ************************************************************
-Create a Custom JavaScript Display and Grading Problem
+创建一个自定义JavaScript展示和评分问题
 ************************************************************
 
-#. Create your JavaScript application, and then upload all files associated with
-   that application to the **Files & Uploads** page.
-#. In the unit where you want to create the problem, click **Problem**
-   under **Add New Component**, and then click the **Advanced** tab.
-#. Click **Custom JavaScript Display and Grading**.
-#. In the component that appears, click **Edit**.
-#. In the component editor, modify the example code according to your problem.
+#. 创建你的JavaScript应用，然后上传所有的文件并和那个应用关联到**文件与上传**页面.
+#. 当你想要创建这个问题的时候,点击**问题** 在**添加新组件**下方,然后点击**高级**标签.
+#. 点击**自定义JavaScript展示和评分**.
+#. 在出现的组件里，点击**编辑**.
+#. 在这个组件编辑器里，根据你的问题修改示例代码。
 
-   - All problems have more than one element. Most problems conform to the same-origin
-     policy (SOP), meaning that all elements have the same protocol, host, and port.
-     For example, **http**://**store.company.com**:**81**/subdirectory_1/JSInputElement.html and
-     **http**://**store.company.com**:**81**/subdirectory_2/JSInputElement.js have the same protocol
-     (http), host (store.company.com), and port (81).
+   - 所有的问题都有不止一个元素，大多数问题符合同源策略(SOP),意味着所有的元素都有同样的协议，主机和端口.比如, **http**://**store.company.com**:**81**/subdirectory_1/JSInputElement.html和**http**://**store.company.com**:**81**/subdirectory_2/JSInputElement.js有相同的协议(http), 主机(store.company.com), 和端口(81).
 
-     If any elements of your problem use a different protocol, host, or port, you need to
-     bypass the SOP. For example, **https**://**info.company.com**/JSInputElement2.html
-     uses a different protocol, host, and port. To bypass the SOP, change
-     **sop="false"** in line 8 of the example code to **sop="true"**. For more information, see the same-origin policy
-     page on the `Mozilla Developer Network <https://developer.mozilla.org/en-US/docs/Web/JavaScript/Same_origin_policy_for_JavaScript>`_
-     or on `Wikipedia <http://en.wikipedia.org/wiki/Same_origin_policy>`_.
-#. If you want your problem to have a **Save** button, click the **Settings** tab, and then set
-   **Maximum Attempts** to a number larger than zero.
-#. Click **Save**.
+     如果你的问题的任何元素使用一个不同的的协议，主机或端口，你需要绕开SOP.比如，**https**://**info.company.com**/JSInputElement2.html使用一个不同的协议，主机和端口。要绕开SOP，在示例代码的第8行把**sop="false"**改成**sop="true"**. 更多信息,请在`Mozilla Developer Network <https://developer.mozilla.org/en-US/docs/Web/JavaScript/Same_origin_policy_for_JavaScript>`_ 或者在 `Wikipedia <http://en.wikipedia.org/wiki/Same_origin_policy>`_看同源策略页面.
+#. 如果你想要你的问题有 **保存** 按钮, 点击**设置** 标签, 然后把**最大尝试次数** 设置成一个比0大的整数.
+#. 点击**保存**.
 
 ================================
-Re-create the Example Problem
+重新创建示例问题
 ================================
 
-To re-create the example problem above, you'll need the following files.
+要重新创建上面所说的示例问题,你将需要以下的文件.
 
    - webGLDemo.html
    - webGLDemo.js
    - webGLDemo.css
    - three.min.js
 
-To download these files in a .zip archive, go to http://files.edx.org/JSInput.zip.
+在http://files.edx.org/JSInput.zip可以下载这些文件的.zip压缩文档.
 
-.. note:: If you need to bypass the SOP, you'll also need the **jschannel.js** file, and your webGLDemo.html file will be slightly different. To download all these files in a .zip archive, go to http://files.edx.org/JSInput_BypassSOP.zip.
+.. note:: 如果你需要绕开SOP,你也需要**jschannel.js**文件,并且你的webGLDemo.html文件会有一些不同.在http://files.edx.org/JSInput_BypassSOP.zip可以下载所有文件.zip文件.
 
-#. Download and unpackage the files in either the JSInput.zip file or the JSInput_BypassSOP.zip file.
-#. On the **Files & Uploads** page, upload all the files from the .zip file.
-#. Create a new custom JavaScript display and grading problem component.
-#. On the **Settings** tab, set **Maximum Attempts** to a number larger than
-   zero.
-#. In the problem component editor, replace the example code with the code below.
-#. Click **Save.**
+#. 下载并打开JSInput.zip或JSInput_BypassSOP.zip file.
+#. 在**文件&上传**页面, 上传zip压缩文档里面的所有文件.
+#. 创建一个新的自定义JavaScript展示和评分问题组件.
+#. 在**设置**标签, 设置**最大尝试次数**为一个大于0的整数.
+#.  在这个组件编辑器里，根据你的问题修改示例代码。用你的代码代替示例代码
+#. 点击**保存**
 
 ================================
-JavaScript Input Problem Code
+JavaScript输入问题代码
 ================================
 
 .. code-block:: xml
@@ -116,38 +94,38 @@ JavaScript Input Problem Code
     </problem>
 
 
-.. note::    When you create this problem, keep the following in mind.
+.. note::    当你创建这个问题时，请记住以下几点。
 
- - The webGLDemo.js file defines the three JavaScript functions (**WebGLDemo.getGrade**, **WebGLDemo.getState**, and **WebGLDemo.setState**).
+ - webGLDemo.js文件定义了三个JavaScript功能(**WebGLDemo.getGrade**, **WebGLDemo.getState**, 和**WebGLDemo.setState**).
 
- - The JavaScript input problem code uses **WebGLDemo.getGrade**, **WebGLDemo.getState**, and **WebGLDemo.setState** to grade, save, or restore a problem. These functions must be global in scope.
+ - JavaScript输入问题代码使用**WebGLDemo.getGrade**, **WebGLDemo.getState**, 和**WebGLDemo.setState**去评分,保存,或恢复一个问题.这些函数必须在全球范围内.
 
- - **WebGLDemo.getState** and **WebGLDemo.setState** are optional. You only have to define these functions if you want to conserve the state of the problem.
+ - **WebGLDemo.getState** 和 **WebGLDemo.setState**时可选择的. 你只需要定义这些函数如果你想保存这个问题的状态。
 
- - **Width** and **height** represent the dimensions of the IFrame that holds the application.
+ - **Width** 和 **height** 代表保存在应用程序的IFrame大小。
 
- - When the problem opens, the cone and the cube are both blue, or "unselected." When you click either shape once, the shape becomes yellow, or "selected." To unselect the shape, click it again. Continue clicking the shape to select and unselect it.
+ - 当这个问题打开时, 圆锥体和立方体都是蓝色的, 或"未选择." 当你点击二者之一, 这个模型会变成黄色, 或"已选择." 要取消选择这个模型,再点一下它.继续点击这个模型会继续选择它.
 
- - The response is graded as correct if the cone is selected (yellow) when the user clicks **Check**.
+ - 当用户点击**确定**时如果这个圆锥体被选择(黄色)这个答案会被视作正确答案.
 
- - Clicking **Check** or **Save** registers the problem's current state.
+ - 点击**确定**或**保存**保存当前问题的状态.
 
 
 .. _JS Input Problem XML:
 
 ******************************
-JavaScript Input Problem XML 
+JavaScript XML输入问题
 ******************************
 
-JSInput allows problem authors to turn stand-alone HTML files into problems that can be integrated into the edX platform. Since its aim is flexibility, it can be seen as the input and client-side equivalent of **CustomResponse**.
+JSInput允许问题的作者把独立HTML文件转成可以整合到edX平台的问题. 由于其目的是灵活的,它可以被看作是输入和客户端相当**CustomResponse**.
 
-A JSInput exercise creates an IFrame in a static HTML page, and passes the return value of author-specified functions to the enclosing response type (generally **CustomResponse**). JSInput can also store and retrieve state.
+JSInput练习在一个静态的HTML页面里创建一个IFrame,并把author-specified函数的返回值传递给封闭回答类型(通常是 **CustomResponse**). JSInput也可以保存和回复状态.
 
 ========
-Template
+模板
 ========
 
-The following is the basic format of a JSInput problem:
+下面是JSInput问题的基本格式:
 
 .. code-block:: xml
 
@@ -164,10 +142,10 @@ The following is the basic format of a JSInput problem:
         </customresponse>
  </problem>
 
-The accepted attributes are:
+公认的属性:
 
 ==============  ==============  =========  ==========
-Attribute Name   Value Type     Required   Default
+属性名               类型        是否必要    默认
 ==============  ==============  =========  ==========
 html_file        URL string     Yes        None
 gradefn          Function name  Yes        `gradefn`
@@ -178,47 +156,46 @@ width            Integer        No         `400`
 ==============  ==============  =========  ==========
 
 ========================
-Required Attributes
+必要属性
 ========================
 
-* **html_file**
+is called with* **html_file**
 
-  The **html_file** attribute specifies the HTML file that the IFrame will point to. The HTML file
-  must be located in the content directory.
+  **html_file**属性指定IFrame将指向的HTML文件.HTML文件必须是位于目录的内容。
 
-  The IFrame is created using the sandbox attribute. Although pop-ups, scripts, and pointer locks are allowed, the IFrame cannot access its parent's attributes.
+  IFrame是使用沙箱属性创建的. 虽然弹出窗口，脚本，允许指针锁定, IFrame不能使用父类属性。
 
-  The HTML file must contain a **gradefn** function that the JSInput file can access. To determine whether the **gradefn** function is accessible, in the console, make sure that **gradefn** returns the right thing. When JSInput uses the **gradefn** function, `gradefn` is called with `gradefn`.call(`obj`), where **obj** is the object-part of **gradefn**. For example, if **gradefn** is **myprog.myfn**, JSInput calls **myprog.myfun.call(myprog)**. (This is to ensure "`this`" continues to refer to what `gradefn` expects.)
+  HTML文件必须包含一个JSInput可以使用的**gradefn**函数. 要确定**gradefn**函数是否可使用,在控制台,确保**gradefn**返回值正确.当JSInput使用**gradefn**函数时, `gradefn`调用`gradefn`.call(`obj`), 在**obj** 是 **gradefn**的部分对象的地方. 比如,如果**gradefn** 是**myprog.myfn**, 则JSInput调用**myprog.myfun.call(myprog)**. (这是确保"`this`"继续指向`gradefn` 期望的.)
 
-  Aside from that, more or less anything goes. Note that currently there is no support for inheriting CSS or JavaScript from the parent (aside from the Chrome-only **seamless** attribute, which is set to True by default).
+ 除此之外,或多或少都行. 请注意,目前不支持继承父类的CSS或JavaScript(除了Chrome-只有**seamless** 属性默认设置为真).
 
 * **gradefn**
 
-  The **gradefn** attribute specifies the name of the function that will be called when a user clicks **Check**, and that returns the student's answer. Unless both the **get_statefn** and **set_statefn** attributes are also used, this answer is passed as a string to the enclosing response type. In the **customresponse** example above, this means **cfn** will be passed this answer as ``ans``.
+  The **gradefn**属性指定这个函数的名称，当用户点击**确定**时,这个函数会被调用。并且返回学生的答案.除非**get_statefn**和**set_statefn**属性都被使用了,这个答案作为字符串传递到封闭的回答类型. 在上面的**customresponse**例子里, 这意味着 **cfn** 将可以通过``ans``这个答案.
 
-  If the **gradefn** function throws an exception when a student attempts to submit a problem, the submission is aborted, and the student receives a generic alert. The alert can be customised by making the exception name ``Waitfor Exception``; in that case, the alert message will be the exception message.
+  当学生尝试提交问题时如果**gradefn**函数抛出异常, 这个提交就无效,这个学生会收到一个通用的提示.这个提示可以通过制作异常的名称``Waitfor Exception``;在这种情况下, 意识信息将是异常信息.
 
-  .. important:: To make sure the student's latest answer is passed correctly, make sure that the **gradefn** function is not asynchronous. Additionally, make sure that the function returns promptly. Currently the student has no indication that her answer is being calculated or produced.
+  .. important:: 为了确保学生的最后答案能顺利提交，确保**gradefn**函数不是异步的. 此外, 确保函数返回迅速.学生目前没有迹象表明,她的答案是计算出的。
 
 ========================
-Optional Attributes
+可选择的属性
 ========================
 
 * **set_statefn**
 
-  Sometimes a problem author will want information about a student's previous answers ("state") to be saved and reloaded. If the attribute **set_statefn** is used, the function given as its value will be passed the state as a string argument whenever there is a state, and the student returns to a problem. The function has the responsibility to then use this state approriately.
+  有时一些问题的作者将想要关于学生以前的答案的信息("状态")保存和加载.如果使用**set_statefn**函数, 函数给出它的值将会通过状态作为一个字符串参数, 学生回到一个问题上.这个函数有责任适当的使用这个状态。 The function has the responsibility to then use this state approriately.
 
-  The state that is passed is:
+  通过的状态:
 
-  * The previous output of **gradefn** (i.e., the previous answer) if **get_statefn** is not defined.
-  * The previous output of **get_statefn** (see below) otherwise.
+  * 先前的输出**gradefn** (i.e., 先前的答案) 如果 **get_statefn** 没定义.
+  * 先前的输出 **get_statefn** 否则(看下面) .
 
-  It is the responsibility of the iframe to do proper verification of the argument that it receives via **set_statefn**.
+  iframe负责通过**set_statefn**做适当的验证参数。
+
 
 * **get_statefn**
 
-  Sometimes the state and the answer are quite different. For instance, a problem that involves using a javascript program that allows the student to alter a molecule may grade based on the molecule's hydrophobicity, but from the hydrophobicity it might be incapable of restoring the state. In that case, a
-  *separate* state may be stored and loaded by **set_statefn**. Note that if **get_statefn** is defined, the answer (i.e., what is passed to the enclosing response type) will be a json string with the following format:
+  有时状态和答案有很大的不同.比如,一个问题使用javascript程序可能允许学生基于分子的疏水性改变一个分子,但是从疏水性就不能保存这个状态.在这种情况下,*separate*状态可能通过**set_statefn**存和加载.注意如果定义了**get_statefn**,这个答案(i.e., what is passed to the enclosing response type) 将是下面格式的json代码:
 
   .. code-block:: xml
 
@@ -228,12 +205,12 @@ Optional Attributes
       }
 
 
-  The enclosing response type must then parse this as json.
+  这个封闭的答案类型必须解析这个json.
 
-* **height** and **width**
+* **height** 和 **width**
 
-  The **height** and **width** attributes are straightforward: they specify the height and width of the IFrame. Both are limited by the enclosing DOM elements, so for instance there is an implicit max-width of around 900. 
+  **height** 和 **width**属性是很简单的: 它们指定IFrame的高度和宽度。它们都被封闭的DOM元素限制,所以有个隐含的最大宽度大约900像素
 
-  In the future, JSInput may attempt to make these dimensions match the HTML file's dimensions (up to the aforementioned limits), but currently it defaults to `500` and `400` for **height** and **width**, respectively.
+  将来, JSInput也许会尝试使这些大小匹配HTML文件的尺寸(克服上述的限制),但是现在它默认是高`500`像素，宽`400`像素.
 
 
