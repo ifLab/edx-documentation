@@ -159,7 +159,6 @@ width            Integer        No         `400`
 必要属性
 ========================
 
-is called with* **html_file**
 
   **html_file**属性指定IFrame将指向的HTML文件.HTML文件必须是位于目录的内容。
 
