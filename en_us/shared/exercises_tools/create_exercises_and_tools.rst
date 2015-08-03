@@ -42,7 +42,7 @@ Studio允许你为你的课程创建多种多样的练习和工具.其中有很�
           :width: 100
           :alt: Example JavaScript problem
      - :ref:`自定义JavaScript`
-     - 自定义JavaScript显示和分级问题(也叫*自定义JavaScript问题* or *JS输入问题*)允许你创建一个
+     - 自定义JavaScript显示和评分问题(也叫*自定义JavaScript问题* or *JS输入问题*)允许你创建一个
        自定义问题或工具使用JavaScript然后吧这个问题或工具直接添加到Studio.
      - 完全支持   
    * - .. image:: ../../../shared/building_and_running_chapters/Images/external-grader-correct.png
