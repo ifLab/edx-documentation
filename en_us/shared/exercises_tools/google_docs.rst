@@ -72,7 +72,7 @@
 在e你的课程中启用谷歌云文件
 ========================================
 
-You can enable Google Drive files in the course by using either Studio or OLX.
+要在课件中添加一个谷歌云文件,你需要创建一个在Studio中创建一个高级组件或者在OLX中创建一个谷歌日历XBlock.
 
 .. _通过edX Studio启用谷歌云文件:
 
