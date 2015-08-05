@@ -1,95 +1,91 @@
 .. _Google Drive Files Tool:
 
 ########################
-Google Drive Files Tool
+谷歌云文件工具
 ########################
 
-This chapter describes how to embed Google Drive files, such as documents,
-spreadsheets, and images, in your course. For more information, see any of the
-following topics.
+这章讲如何在你的课程中嵌入谷歌云文件，比如文档，幻灯片，和图片。更多信息，请往下看：
+
 
 * `Overview`_
-* `Embedding a Google Drive File in Your Course`_
+* `在你的课程中嵌入谷歌云文件`_
 
-  * `Enable Google Drive Files in Your Course`_
+  * `在e你的课程中启用谷歌云文件`_
 
-    * `Enable Google Drive Files in edX Studio`_
-    * `Enable Google Drive Files in OLX`_
+    * `通过edX Studio启用谷歌云文件`_
+    * `通过OLX启用谷歌云文件`_
 
-  * `Obtain the Google Drive File Embed Code`_
-  * `Add a Google Drive File to Your Course`_
+  * `获取谷歌云文件的嵌入代码`_
+  * `在你的课程中添加谷歌云文件`_
 
-    * `Add a Google Drive File Component in edX Studio`_
-    * `Add a Google Drive File XBlock in OLX`_
+    * `通过edX Studio添加谷歌云文件`_
+    * `通过OLX添加谷歌云文件XBblok`_
 
-* `Editing Google Drive Files`_
+* `编辑谷歌云文件`_
 
-You can also use :ref:`Google calendars<Google Calendar Tool>` in courseware.
-For more information, see :ref:`Google Calendar Tool`.
+你也可以使用:ref:`谷歌日历<谷歌日历工具>`在你的课件中.更多相关信息，请看:ref:`Google Calendar Tool`.
 
-.. note:: Google services are not available in some regions and countries. If 
- Google services are not available in a learner's area, the learner might see
- an “image unavailable” message in the place of the Google Drive file or
- calendar. We strongly suggest that you provide alternative resources
- for learners in these areas.
+
+.. note:: 谷歌的服务在一些国家和地区不可用。如果谷歌的服务在学习者所在的区域内不可用，这个学习者可能会在谷歌云文件或日历所在的地方看到“image unavailable”的提示.我们强烈建议在这些地方为学习者提供可替代的资源.
+
 
 *********
-Overview 
+概述 
 *********
 
-You can embed a Google Drive file in your course so that students see the file in
-the courseware. For example, you can share a Google spreadsheet with students.
+你可以在你的课程中嵌入谷歌云文件以便你的学生在你的课件中可以看到这个文件.比如，你可以共享一个谷歌幻灯片给你的学生。
+
 
 .. image:: ../../../shared/building_and_running_chapters/Images/google-spreadsheet.png
   :width: 600
   :alt: A Google spreadsheet in courseware
 
-You can embed the following types of Google Drive files.
+你可以嵌入以下几种类型的谷歌云文件:
 
-* Google Docs (text documents)
-* Google Drawings (images)
-* Google Forms (forms or surveys)
-* Google Slides (presentations)
-* Google Sheets (spreadsheets)
+
+* Google Docs (文本文档)
+* Google Drawings (图像)
+* Google Forms (表格和调查)
+* Google Slides (演示文稿)
+* Google Sheets (电子表格)
   
 ********************************************
-Embedding a Google Drive File in Your Course
+在你的课程中嵌入谷歌云文件
 ********************************************
 
-Embedding a Google Drive file in your course has three steps:
+在你的课程中嵌入谷歌云文件 has three steps:
 
-#. :ref:`Enable Google Drive files in your course<Enable Google Drive Files in
-   Your Course>` by using :ref:`Studio<Enable Google Drive Files in edX Studio>`
-   or :ref:`OLX<Enable Google Drive Files in OLX>`.
+#. :ref:`在e你的课程中启用谷歌云文件<Enable Google Drive Files in
+   Your Course>` by using :ref:`Studio<通过edX Studio启用谷歌云文件>`
+   or :ref:`OLX<在edX Studio中启用谷歌云文件>`.
 
-#. `Obtain the Google Drive File Embed Code`_.
+#. `获取谷歌云文件的嵌入代码`_.
 
 #. :ref:`Add the Google Drive file to your course<Add a Google Drive File to Your
    Course>` by using :ref:`Studio<Add a Google Drive File Component in edX
-   Studio>` or :ref:`OLX<Add a Google Drive File XBlock in OLX>`.
+   Studio>` or :ref:`OLX<通过OLX添加谷歌云文件XBblok>`.
 
 
-.. _Enable Google Drive Files in Your Course:
+.. _在e你的课程中启用谷歌云文件:
 
 ========================================
-Enable Google Drive Files in Your Course
+在e你的课程中启用谷歌云文件
 ========================================
 
 You can enable Google Drive files in the course by using either Studio or OLX.
 
-.. _Enable Google Drive Files in edX Studio:
+.. _通过edX Studio启用谷歌云文件:
 
-Enable Google Drive Files in edX Studio
+通过edX Studio启用谷歌云文件
 ***************************************
 
-To enable Google Drive files in your course:
+To 在e你的课程中启用谷歌云文件:
 
-#. From the **Settings** menu, select **Advanced Settings**.
+#. 从**Settings* 菜单, 选择**Advanced Settings**.
 
-#. In the **Advanced Module List** field, place your cursor between the braces,
-   and then type ``"google-document"``. If you see other values in this field,
-   add a comma after the closing quotation mark for the last value, and then
-   type ``"google-document"``. For example:
+#. 在**Advanced Module List**区域,将你的光标放入,然后输入``"google-document"``.如果你在这个区域内看到了其他值,在最后的值后面添加一个逗号，然后在填入``"google-document"``. 例如:
+
+
    
    .. image:: ../../../shared/building_and_running_chapters/Images/google-advanced-setting.png
     :alt: Advanced modules setting for Google documents
@@ -97,18 +93,19 @@ To enable Google Drive files in your course:
 #. At the bottom of the page, select **Save Changes**.
 
 
-.. _Enable Google Drive Files in OLX:
+.. _在edX Studio中启用谷歌云文件:
 
-Enable Google Drive Files in OLX
+在edX Studio中启用谷歌云文件
 ********************************
 
-To enable Google Drive files in your course, you edit the XML file that
-defines the course structure. You locate the ``course`` element's 
-``advanced-modules`` attribute, and add the string ``google-document`` 
-to it.
+要在你的课程中启用谷歌云文件, 你先编辑定义你的课程结构的XML文件. 你找到 ``课程`` 元素的 ``高级模板`` 属性, 然后添加字符 ``google-document``到里面.
 
-For example, the following XML code enables Google Drive files in a course. It
-also enables Google calendars.
+
+
+
+比如, 下面的XML代码就是在你的课程里面嵌入谷歌云文件.也可以通过它嵌入其他的谷歌日历.
+
+
 
 .. code-block:: xml
 
@@ -118,103 +115,102 @@ also enables Google calendars.
       ...
   </course>
 
-For more information, see `The Courseware Structure`_.
+更多相关信息,请查看 `The Courseware Structure`_.
 
-.. _Obtain the Google Drive File Embed Code:
+.. _获取谷歌云文件的嵌入代码:
 
 =======================================================
-Publish the Google Drive File and Obtain the Embed Code
+使你的谷歌云文件公开并获得它的ID
 =======================================================
 
-Before you can add a Google Drive file to your course, you must publish the
-file to the web and obain the embed code for the file.
+在你添加你的谷歌云文件到你的课程中之前，你必须使你的谷歌云文件公开并且获得它的ID.
 
 .. important:: 
- The task described in this section relies on the use of third-party software.
- Because the software is subject to change by its owner, the steps provided
- here are intended as guidelines and not as an exact procedure.
+这一节中描述的任务依赖第三方软件的使用。由于软件版本的改变,这里提供的步骤的目的是引导,而不是一个确切的过程。
 
-#. Open the Google Drive file.
-#. From the **File** menu, select **Publish to the web**.
+
+
+#. 打开谷歌云文件.
+#. 通过**ile**菜单, 选择**Publish to the web**.
+
    
    .. image:: ../../../shared/building_and_running_chapters/Images/google-publish-to-web.png
     :alt: The Google Drive file Publish to the web dialog box
 
-#. Click **Publish**, then select **OK** to confirm the action.
-#. Click the **Embed** tab.
+#. 点击**Publish**, 然后选择**OK**确认这一步.
+#. 点击**Embed** 标签.
       
    .. image:: ../../../shared/building_and_running_chapters/Images/google-embed.png
     :alt: The Google Drive file Publish to web Embed tab
 
-#. Copy the complete string in the **Embed** field, including the ``<iframe>``
-   tags.
+#. 复制完整的字符到**Embed**区域里, 包含``<iframe>``标签.
 
    .. note::  
-    Google images do not have an ``<iframe>`` tag. To embed an image, you copy
-    the complete ``img`` tag.
+    谷歌图像没有``<iframe>``标签.要嵌入一个图像,你需要完整复制``img``标签.
 
-   You use that string to configure the Google Drive file component.
+   您使用这个字符串来配置谷歌云文件组件.
 
-.. _Add a Google Drive File to Your Course:
+
+.. _在你的课程中添加谷歌云文件:
 
 ========================================
-Add a Google Drive File to Your Course
+在你的课程中添加谷歌云文件
 ========================================
+
+要在课件中添加一个谷歌云文件,你需要创建一个在Studio中创建一个高级组件或者在OLX中创建一个谷歌日历XBlock.
 
 To add a Google Drive file in the courseware, you create an advanced
 component in Studio or create a Google Document Xblock in OLX.
 
-.. _Add a Google Drive File Component in edX Studio:
+.. _通过edX Studio添加谷歌云文件:
 
-Add a Google Drive File Component in edX Studio
+通过edX Studio添加谷歌云文件
 ******************************************************
 
-Ensure you :ref:`enable Google Drive files<Enable Google Drive Files in edX
-Studio>` before you add the component.
+在你添加谷歌这个组件之前请确保:ref:`在你的课程中能够添加谷歌云文件<通过edX Studio能添加谷歌云文件>`.
 
-To add a Google Drive file component:
 
-#. On the Course Outline page, open the unit where you want to add the Google
-   Drive component.
+要添加谷歌云文件组件:
 
-#. Under **Add New Component** click **Advanced**, and then select **Google
+
+
+#. 在**Course Outline**页面, 打开你想要添加谷歌日历组件的单元.
+
+#. 在**Add New Component**下面，点击**Advanced**,然后选择**Google
    Document**.
    
-   The new component is added to the unit, with the default Google presentation
-   embedded.
+   这个新组件就是把默认的谷歌云文件嵌入到单元里.
+
 
    .. image:: ../../../shared/building_and_running_chapters/Images/google-document-studio.png
     :alt: The Google Drive file component in a unit page
 
-#. In the new component, select **Edit**.
+#. 在这个新组件里面，点击**Edit**.
    
    .. image:: ../../../shared/building_and_running_chapters/Images/google-document-edit-studio.png
     :alt: The Google Drive file editor
 
-#. In the **Display Name** field, type the name for the component.
+#. 在**Display Name**区域里,输入这个组件的名字.
 
 #. In the **Embed Code** field, paste the embed code you copied in the 
-   `Obtain the Google Drive File Embed Code`_ task.
+   `获取谷歌云文件的嵌入代码`_ task.
 
-#. Click **Save**.
+#. 点击**Save**.
 
-You can then :ref:`Preview Course Content` to see how the unit with the Google
-drive file will appear to students.
+你可以点击:ref:`课程内容预览` 看看学生看到的单元里的谷歌云文件是怎么的.
 
-.. _Add a Google Drive File XBlock in OLX:
 
-Add a Google Drive File XBlock in OLX
+
+.. _通过OLX添加谷歌云文件XBblok:
+
+通过OLX添加谷歌云文件XBblok
 *******************************************
 
-To add a Google Drive file XBlock in OLX, you create the 
-``google-document`` element. You can embed the ``google-document`` 
-element in the ``vertical`` element, or you can create the 
-``google-document`` element as a stand-alone file that you reference 
-in the vertical.
+要通过OLX添加谷歌日历XBlock，并创建``google-document``元素.你可以在``vertical`` 中嵌入这个元素, 或者你也可以在它自己的文件的垂直引用中嵌入这个元素.更多相关信息请查看`The Courseware Structure`_.
 
-For more information, see `The Courseware Structure`_.
 
-For example:
+
+示例:
 
 .. code-block:: xml
 
@@ -224,21 +220,19 @@ For example:
     ?key=0AuZ_5O2JZpH5dGVUVDNGUE05aTFNcEl2Z0ZuTUNmWUE&amp;output=html&amp;widge
     t=true&quot;&gt;&lt;/iframe&gt;" display_name="Google Document"/>
 
-The value of the ``embed_code`` attribute is the embed code you copied in the
-`Obtain the Google Drive File Embed Code`_ task.
+``embed_code``的值是你在
+`获取谷歌云文件的嵌入代码`_ 复制的ID.
 
 .. note:: 
-  The edX Learning Management System sets the height and width values for
-  Google Drive files. If you add these attributes, the LMS overrides your
-  changes.
+  edX学习管理系统可以设置谷歌云文件高和宽. 如果你添加了这些属性,LMS会重载你的改变.
+
 
 **************************
-Editing Google Drive Files
+编辑谷歌云文件
 **************************
 
-When you edit and save a Google Drive file that is embedded in your course,
-students see the updates immediately. You make changes to files with the
-Google user interface. You do not need to edit the Google Document component.
+当你对你嵌入在你的课程中的谷歌云文件作出改变时,学生可以马上看到这些改变。在你更改云文件与谷歌的用户界面后，你不需要在编辑谷歌云文件组件。
+
 
 
 .. _The Courseware Structure: http://edx.readthedocs.org/projects/edx-open-learning-xml/en/latest/organizing-course/course-xml-file.html
