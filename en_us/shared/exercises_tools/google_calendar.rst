@@ -1,87 +1,105 @@
 .. _Google Calendar Tool:
 
 #####################
-谷歌日历工具
+Google Calendar Tool
 #####################
 
-这章介绍了如何嵌入在你的课程中嵌入谷歌日历.需要更多信息,请看以下话题.
+This chapter describes how to embed Google calendars in your course. For more
+information, see any of the following topics.
 
 * `Overview`_
 
-* `在你的课程中嵌入谷歌日历`_
+* `Embedding a Google Calendar in Your Course`_
 
-  * `在你的课程中嵌入谷歌日历`_
+  * `Enable Google Calendars in the Course`_
 
-    * `通过edX Studio嵌入谷歌日历`_
-    * `通过OLX嵌入谷歌日历`_
+    * `Enable Google Calendars in edX Studio`_
+    * `Enable Google Calendars in OLX`_
 
-  * `使你的谷歌日历公开并获得它的ID`_
-  * `在课件中添加谷歌日历`_
+  * `Make the Google Calendar Public and Obtain Its ID`_
+  * `Add a Google Calendar in the Courseware`_
 
-    * `通过edX Studio添加谷歌日历组件`_
-    * `通过OLX添加谷歌日历XBlock`_
+    * `Add a Google Calendar Component in edX Studio`_
+    * `Add a Google Calendar XBlock in OLX`_
 
-* `编辑谷歌日历`_
+* `Editing Google Calendars`_
 
-在你的课程中你也可以使用谷歌云文件，比如文档，幻灯片和图像.了解更多信息，请点击:ref:`Google Drive Files
+You can also use Google Drive files, such as documents, spreadsheets, and
+images, in your course. For more information, see :ref:`Google Drive Files
 Tool`.
 
-.. note:: 谷歌的服务在一些国家和地区不可用。如果谷歌的服务在学习者所在的区域内不可用，这个学习者可能会在谷歌云文件或日历所在的地方看到“image unavailable”的提示.我们强烈建议在这些地方为学习者提供可替代的资源.
+.. note:: Google services are not available in some regions and countries. If 
+ Google services are not available in a learner's area, the learner might see
+ an “image unavailable” message in the place of the Google Drive file or
+ calendar. We strongly suggest that you provide alternative resources
+ for learners in these areas.
 
 *********
-概述 
+Overview 
 *********
 
-你可以在你的课程中嵌入谷歌日历以便你的学生在你的课件中可以看到这个日历.你可以使用谷歌日历分享考试日期，办公时间，或者其他学生感兴趣的日程安排.比如
+You can embed a Google calendar in your course so that students see the calendar
+in the courseware. You can use a  Google calendar to share quiz dates, office
+hours, or other schedules of interest to students. For example:
 
 .. image:: ../../../shared/building_and_running_chapters/Images/google-calendar.png
   :alt: A Google calendar in courseware
 
 *******************************************
-在你的课程中嵌入谷歌日历
+Embedding a Google Calendar in Your Course
 *******************************************
 
-在你的课程中嵌入谷歌日历有以下三步.
+Embedding a Google calendar in your course has three steps.
 
-#. 通过使用 :ref:`Studio<在你的课程中嵌入谷歌日历>`或:ref:`OLX<在OLX中嵌入谷歌日历>`:ref:`在你的课程中嵌入谷歌日历<在你的课程中嵌入谷歌日历>` .
+#. :ref:`Enable Google calendars in your course<Enable Google Calendars in the
+   Course>` by using :ref:`Studio<Enable Google Calendars in edX Studio>` or
+   :ref:`OLX<Enable Google Calendars in OLX>`.
 
-#. :ref:`使你的谷歌日历共有并获得它的ID<使你的谷歌日历共有并获得它的ID>`.
+#. :ref:`Make the Google calendar public and obtain its ID<Make the Google
+   Calendar Public and Obtain Its ID>`.
 
-#. 通过使用:ref:`Studio<在edX Studio中添加谷歌日历组件>`或者:ref:`OLX<在OLX中添加谷歌日历XBlock>`:ref:`添加谷歌日历到你的课程中<添加谷歌日历到你的课程中>` .
+#. :ref:`Add the Google calendar to your course<Add a Google Calendar in the
+   Courseware>` by using :ref:`Studio<Add a Google Calendar Component in edX
+   Studio>` or :ref:`OLX<Add a Google Calendar XBlock in OLX>`.
 
 
-.. _在你的课程中嵌入谷歌日历:
+.. _Enable Google Calendars in the Course:
 
 ======================================
-在你的课程中嵌入谷歌日历
+Enable Google Calendars in the Course
 ======================================
 
-你可以通过使用Studio或OLX在你的课程中嵌入谷歌日.
+You can enable Google Calendars in the course by using either Studio or OLX.
 
-.. _通过edX Studio嵌入谷歌日历:
+.. _Enable Google Calendars in edX Studio:
 
-通过edX Studio嵌入谷歌日历
+Enable Google Calendars in edX Studio
 **********************************************
 
-要在你的课程中嵌入谷歌日历嵌入:
+To enable Google Calendars in your course:
 
-#. 点击**设置**菜单, 选择**高级设置**.
-#. 在**高级模块列表**栏,在括号中间放入光标, 填上``"google-calendar"``.如果你在这个区域内看到了其他值,在最后的值后面添加一个逗号，然后在填入``"google-calendar"``. 例如:
+#. From the **Settings** menu, select **Advanced Settings**.
+#. In the **Advanced Module List** field, place your cursor between the braces,
+   and then type ``"google-calendar"``. If you see other values in this field,
+   add a comma after the closing quotation mark for the last value, and then
+   type ``"google-calendar"``. For example:
    
    .. image:: ../../../shared/building_and_running_chapters/Images/google-advanced-setting.png
     :alt: Advanced modules setting for Google Calendars
 
-#. 在页面底部, 选组 **保存更改**.
+#. At the bottom of the page, select **Save Changes**.
 
-.. _通过OLX嵌入谷歌日历:
+.. _Enable Google Calendars in OLX:
 
-
-通过OLX嵌入谷歌日历
+Enable Google Calendars in OLX
 **********************************************
 
-要在你的课程中嵌入谷歌日历, 你要编辑定义课程结构的XML文件. 你找到 ``课程`` 元素的 ``高级模板`` 属性, 然后添加字符 ``google-calendar``到里面.
+To enable Google Calendars in your course, you edit the XML file that defines
+the course structure. You locate the ``course`` element's ``advanced-modules``
+attribute, and add the string ``google-calendar`` to it.
 
-比如, 下面的XML代码就是在你的课程里面嵌入谷歌日历.也可以通过它嵌入其他的谷歌文件.
+For example, the following XML code enables Google Calendars in a course. It
+also enables Google Drive files.
 
 .. code-block:: xml
 
@@ -91,123 +109,134 @@ Tool`.
       ...
   </course>
 
-更多相关信息,请查看 `The Courseware Structure`_.
+For more information, see `The Courseware Structure`_.
 
-.. _使你的谷歌日历公开并获得它的ID:
-
+.. _Make the Google Calendar Public and Obtain Its ID:
 
 ===================================================
-使你的谷歌日历公开并获得它的ID
+Make the Google Calendar Public and Obtain Its ID
 ===================================================
 
-在你添加你的谷歌日历到你的课程中之前，你必须使你的谷歌日历公开并且获得它的ID.
-
+Before you can add a Google calendar to your course, you must make the calendar
+public and obtain its ID.
 
 .. important:: 
- 这一节中描述的任务依赖第三方软件的使用。由于软件版本的改变,这里提供的步骤的目的是引导,而不是一个确切的过程。
+ The tasks described in this section rely on the use of third-party software.
+ Because the software is subject to change by its owner, the steps provided
+ here are intended as guidelines and not as an exact procedure.
 
-
-
-使你的谷歌日历公开
+Make the Google Calendar Public
 **********************************************
 
 
-#. 打开谷歌日历.
-#. 通过*Settings**菜单, 选择**Settings**.
-#. 选择**Calendars**标签.
+#. Open the Google calendar.
+#. From the **Settings** menu, select **Settings**.
+#. Select the **Calendars** tab.
    
-   你可能有了多个日历在日历选项卡上.找到您想要在你的课件中共享的日历。
+   You might have multiple calendars on the **Calendars** tab. Find the
+   calendar that you want to share in your courseware.
 
-#. 在这个即将要被共享的日历的那行,找到**Sharing**那列,选择**Edit Settings**.
-#. 点击**Share this Calendar**标签, 然后选择**Make this calendar public**.
+#. In the row for the calendar to share, in the **Sharing** column, select
+   **Edit Settings**.
+#. Click the **Share this Calendar** tab, and then select **Make this calendar
+   public**.
    
   .. image:: ../../../shared/building_and_running_chapters/Images/google-calendar-settings.png
    :alt: Google calendar settings
 
-7. 选择**Save**.
+7. Select **Save**.
    
-   **Calendar Settings**页面就关闭了, 然后你回到**Calendars**标签. 继续:ref:`o获得这个谷歌日历的ID<获得这个谷歌日历的ID>`.
+   The **Calendar Settings** page closes, and you return to the **Calendars**
+   tab. You continue by :ref:`obtaining the Google calendar's ID<Obtain the
+   Google Calendar ID>`.
 
-.. _获取谷歌日历ID:
+.. _Obtain the Google Calendar ID:
 
-获取谷歌日历ID
+Obtain the Google Calendar ID
 **********************************************
 
-#. 在**Calendars** 标签上,点击日历的日期.
-#. 选择**Calendar Details** 标签.
-#. 在**Calendar Address** 标签旁边, 你会看到右边有三个有颜色的按钮**XML**, **ICAL**,和**HTML**.在括号里面,你可以看到日历的ID。
-
+#. On the **Calendars** tab, click the name of the calendar.
+#. Select the **Calendar Details** tab.
+#. Next to the **Calendar Address** label, look to the right of the three
+   colored **XML**, **ICAL**, and **HTML** buttons. In parentheses, you can see
+   the calendar ID.
 
    .. image:: ../../../shared/building_and_running_chapters/Images/google-calendar-address.png
      :width: 600
      :alt: Image of Calendar Address label with the calendar ID to the right
 
-   日历ID是以下的格式.
+   The calendar ID resembles the following text.
 
    ``abcdefghijklmnop1234567890@group.calendar.google.com``
 
-   选择并复制你的ID.你可以使用这个ID去在你的课程中配置谷歌日历.
+   Select and copy the calendar ID. You use this value to configure the Google
+   calendar component in your course.
 
-
-.. _在课件中添加谷歌日历:
+.. _Add a Google Calendar in the Courseware:
 
 ========================================
-在课件中添加谷歌日历
+Add a Google Calendar in the Courseware
 ========================================
 
-要在课件中添加一个谷歌日历,你需要创建一个在Studio中创建一个高级组件或者在OLX中创建一个谷歌日历XBlock.
+To add a Google calendar in the courseware, you create aan advanced component
+in Studio or create a Google calendar XBlock in OLX.
 
+.. _Add a Google Calendar Component in edX Studio:
 
-.. _通过edX Studio添加谷歌日历组件:
-
-通过edX Studio添加谷歌日历组件
+Add a Google Calendar Component in edX Studio
 **********************************************
 
-在你添加这个组件历之前请确保:ref:`在你的课程中能够添加谷歌日历<在edX Studio能添加谷歌日历>`.
+Make sure that you :ref:`enable Google Calendars in your course<Enable Google
+Calendars in edX Studio>` before you add the Google Calendar component.
 
-要添加谷歌日历组件:
+To add a Google calendar component:
 
-#. 在**Course Outline**页面, 打开你想要添加谷歌日历组件的单元.
+#. On the **Course Outline** page, open the unit where you want to add the
+   Google calendar component.
 
-#. 在**Add New Component**下面，点击**Advanced**,然后选择**Google
+#. Under **Add New Component** click **Advanced**, and then select **Google
    Calendar**.
    
-   这个新组件就是把默认的谷歌日历嵌入到单元里.
+   The new component is added to the unit, with the default edX Google calendar
+   embedded.
 
    .. image:: ../../../shared/building_and_running_chapters/Images/google-calendar-studio.png
     :width: 600
     :alt: The Google calendar component in a unit page
 
-#. 在这个新组件里点击**Edit**.
+#. In the new component, select **Edit**.
    
    .. image:: ../../../shared/building_and_running_chapters/Images/google-calendar-edit.png
     :width: 600
     :alt: The Google calendar editor
 
-#. 在**Display Name**区域, 写入这个组件的名字.
+#. In the **Display Name** field, type the name for the component.
 
-#. 在**Public Calendar ID**区域,把日历ID复制粘贴到里面去.
+#. In the **Public Calendar ID** field, paste the calendar ID you copied in the
    `Obtain the Google Calendar ID`_ task.
 
-#. 在**Default View** 区域区域, 选择**Month**, **Week**, 或**Agenda**.
+#. For the **Default View** field, select **Month**, **Week**, or **Agenda**.
    
-   这是你学生看到的最初的视图。每个学生都可以改变成他 自己的视图.
+   This is the initial view that your students have of the calendar. Each
+   student can change his or her view.
+
+#. Select **Save**.
+
+You can then :ref:`Preview Course Content` to see how the unit with the Google
+calendar will appear to students.
 
 
-#. 选择 **Save**.
+.. _Add a Google Calendar XBlock in OLX:
 
-你可以点击:ref:`课程内容预览` 看看学生看到的单元里的谷歌日历是怎么的.
-
-
-
-.. _通过OLX添加谷歌日历XBlock:
-
-通过OLX添加谷歌日历XBlock
+Add a Google Calendar XBlock in OLX
 **********************************************
 
-要在OLX添加谷歌日历XBlock，并创建``google-calendar``元素.你可以在``vertical`` 中嵌入这个元素, 或者你也可以在它自己的文件的垂直引用中嵌入这个元素.更多相关信息请查看`The Courseware Structure`_.
+To add a Google calendar XBlock in OLX, create the ``google-calendar`` element.
+You can embed this element in the ``vertical`` element, or you can embed this
+element in its own file that is referenced within the vertical. For more
+information, see `The Courseware Structure`_.
 
-示例:
+For example:
 
 .. code-block:: xml
 
@@ -215,16 +244,21 @@ Tool`.
     calendar_id="abcdefghijklmnop1234567890@group.calendar.google.com" 
     default_view="1" display_name="Class Schedule"/>
 
-``calendar_id`的值是你在`获取谷歌日历ID`_中复制的ID.
+The value of the ``calendar_id`` attribute is the calendar ID that you copied
+in the `Obtain the Google Calendar ID`_ task.
 
 .. note:: 
-  edX学习管理系统可以设置谷歌日历高和宽. 如果你添加了这些属性,LMS会重载你的改变.
+  The edX Learning Management System sets the height and width values for
+  Google Calendars. If you add these attributes, the LMS overrides your
+  changes.
 
 **************************
-编辑谷歌日历
+Editing Google Calendars
 **************************
 
-当你对你嵌入在你的课程中的谷歌日历作出改变时,学生可以马上看到这些改变。在你更改日历与谷歌的用户界面后，你不需要在编辑谷歌日历组件。
+When you make changes to a Google calendar that is embedded in your course,
+students see the updates immediately. You make changes to calendars with the
+Google user interface. You do not need to edit the Google Calendar component.
 
 
 .. _The Courseware Structure: http://edx.readthedocs.org/projects/edx-open-learning-xml/en/latest/organizing-course/course-xml-file.html
