@@ -1,69 +1,48 @@
 .. _Text Input:
 
 ########################
-Text Input Problem
+文本输入问题
 ########################
 
-In text input problems, learners enter text into a response field. The
-response can include numbers, letters, and special characters such as
-punctuation marks. Because the text that the learner enters must match the
-instructor's specified answer exactly, including spelling and punctuation, we
-recommend that you specify more than one correct answer for text input
-problems to allow for differences in capitalization and typographical errors.
+在文本输入问题中，学习者要输入文本到回答指定区域内.这个回答可以是数字，字母，和特殊字符(比如标点符号). 因为学习者输入的文本必须和教师给的答案精确匹配,包括大小写和标点符号,所以我们建议你指定不止一个正确答案允许大小写不同和排版排版.
+
 
 .. image:: ../../../shared/building_and_running_chapters/Images/TextInputExample.png
  :alt: Image of a text input problem
 
-For the text input problems in your course, you can use edX Insights to review
-aggregated learner performance data and examine submitted answers. For more
-information, see `Using edX Insights`_.
+对于在你课程中的文本输入问题,你可以使用edX Insights查看学习者的学习数据并且检查学习者提交的答案.更多信息，请查看`Using edX Insights`_.
 
 ******************************
-Creating a Text Input Problem
+创建一个文本输入问题
 ******************************
 
-You can create text input problems in the Simple Editor or in the Advanced
-Editor. You can set up a problem in the Simple Editor, and then switch to the
-Advanced Editor to add more configuration options in XML. However, you cannot
-switch back to the Simple Editor from the Advanced Editor. Therefore, you
-might want to format the problem as completely as possible before you begin to
-use the Advanced Editor.
+你可以通过简单编辑器和高级编辑器创建一个文本输入问题. 可以在简单编辑器中设置一个问题，然后切换到高级编辑器来添加更多的XML中的配置选项.
+但是,你不能从高级编辑器切换回简单编辑器。因此,你可能会想要尽可能完全地确定问题的格式在你开始使用先进的编辑器之前。
+
 
 .. _Use the Simple Editor to Create a Text Input Problem:
 
 ========================================================================
-Use the Simple Editor to Create a Text Input Problem
+使用简单编辑器创建复选框问题
 ========================================================================
 
-To use the :ref:`Simple Editor<Simple Editor>` to create a text input problem,
-follow these steps.
+要使用 :ref:`简单编辑器<简单编辑器>` 创建一个文本输入问题,有以下的步骤.
 
-#. In the unit where you want to create the problem, under **Add New
-   Component** select **Problem**.
-#. From the list of **Common Problem Types**, select **Text Input**. Studio
-   adds an example text input problem to the unit.
-#. Select **Edit**. The Simple Editor opens.
-#. Replace the sample problem text with your own text.
-#. Determine the text that describes the question you want learners to answer,
-   and surround that text with two pairs of angle brackets (``>>question<<``).
-   This question text is the accessible label for the problem.
-#. Select the text of the problem's answer, and then select **Text Input** from 
-   the toolbar. An equals signe (=) appears next to the answer.
+#. 在你想要创建问题的单元里, 在 **添加新组件** 下方选择 **问题**.
+#.  **常见问题类型**, 选择 **文本输入**. 添加一个文本输入问题到单元中.
+#. 选择 **编辑**. 简单编辑器就打开了. 
+#. 用你自己的问题文本替代样本问题文本.
+#. 确定你想让学生回答的问题的文本描述,用双肩括号括住 (``>>问题<<``).这个问题文本是这个问题的访问标记。
+#. 选择你设置的答案文本, 然后在工具栏选择**文本输入**.在每个选项的旁边就出现了一个(=)号.
+   
+    你可以设置不止一个正确答案.更多信息，请查看:ref:`文本框问题中的多个答案`.
 
-   You can identfy more than one correct answer. For more information, see
-   :ref:`Multiple Responses in Text Input Problems`.
+#. 要提供一解释, 选解释文本然后从工具栏中选择*解释**. ``解释`` 出现解释文本的前面和后面。
+#. 选择 **设置**并为这个问题提供一个识别 **显示名称**.
+#. 为这个问题定义额外的设置. 更多相关信息,请查看： :ref:`问题设置`.
+#. 选择 **保存**.
 
-7. To provide an explanation, select the explanation text and then select 
-   **Explanation** from the toolbar. ``[explanation]`` appears before
-   and after the explanation text.
-#. Select **Settings** and provide an identifying **Display Name** for the
-   problem.
-#. Define additional settings for the problem. For more information, see
-   :ref:`Problem Settings`.
-#. Select **Save**.
-
-For the example problem illustrated above, the following text displays in the
-problem component.
+以下文本对于上面的详细解释。
 
 
 ::
@@ -81,17 +60,16 @@ problem component.
 
 
 ========================================================================
-Use the Advanced Editor to Edit a Text Input Problem 
+使用高级编辑器创建文本输入问题
 ========================================================================
 
-To use the Advanced Editor to edit a text input problem, follow these steps.
+使用高级编辑器编辑一个文本输入问题,有以下的步骤.
 
-#. Follow the steps for creating the problem in the :ref:`Simple Editor<Use
-   the Simple Editor to Create a Text Input Problem>`. 
-#. Select **Advanced Editor**, and then edit the XML to add the tags and
-   attributes you want. An example follows.
+#. 先使用简单编辑器创建一个问题 :ref:`简单编辑器<使用简单编辑器创建复选框问题>`.
+#. 选择 **高级编辑器**, 然后编辑XML添加你想要的标记和属性.下面是一个示例.
 
-**Problem Code**:
+
+**问题代码**:
 
 .. code-block:: xml
 
@@ -130,22 +108,20 @@ To use the Advanced Editor to edit a text input problem, follow these steps.
 .. _Multiple Responses in Text Input Problems:
 
 ******************************************
-Multiple Responses in Text Input Problems
+文本输入问题里的多个答案
 ******************************************
 
-You can specify more than one correct response for text input problems. For
-example, instead of requiring learners to enter "Dr. Martin Luther King,
-Junior" exactly, you can also allow answers of "Martin Luther King," "Doctor
-Martin Luther King," and other variations. To do this, you can use the Simple
-Editor or the Advanced Editor.
+你可以指定不止一个正确答案对于一个文本输入问题.比如不是要求学习者输入准确的输入"Dr. Martin Luther King,
+Junior"你也可以允许学习者输入"Martin Luther King","Doctor Martin Luther King"或者其他答案。要做到这个，你可以使用过简单编辑器也可以使用高级编辑器。 
+
 
 ==============
-Simple Editor
+简单编辑器
 ==============
 
-To specify additional correct responses in the Simple Editor, include``or= ``
-before each additional correct response.
+要在简单编辑器指定其他的正确答案，需要在其他每个的正确答案前都加上 "or="。
 
+示例：
 ::
 
     >>What African-American led the United States civil rights movement during the 1960s?<<
@@ -155,13 +131,12 @@ before each additional correct response.
     or= Martin Luther King
 
 =====================
-Advanced Editor
+高级编辑器
 =====================
 
-To specify additional correct responses in the Advanced Editor, add an
-``<additional_answer>`` for each correct response inside the opening and
-closing ``<stringresponse>`` tags.
+要在高级编辑器中指定其他的正确答案,添加一个``<additional_answer>``在每个正确答案打开和关闭``<stringresponse>``标签里面.
 
+示例:
 .. code-block:: xml
 
   <problem>
@@ -178,18 +153,15 @@ closing ``<stringresponse>`` tags.
   </problem>
 
 ******************************************
-Case Sensitivity and Text Input Problems
+文本输入问题大小写敏感
 ******************************************
 
-By default, text input problems do not require a case sensitive response. You
-can change this and require a case sensitive answer.
+一般来说,文本输入问题默认大小写不敏感。你可以改变这些并且要求回答区分大小写.
 
-To make a text input response case sensitive, you must use :ref:`Advanced
-Editor`.
 
-In the Advanced Editor, you see that the ``type`` attribute of the
-``stringresponse`` element equals ``ci``, for "case insensitive". An example
-follows.
+要使文本输入问题大小写敏感你必须使用:ref:`高级编辑器`.
+
+在高级编辑器中，对于大小写敏感答案，你可以看到在``stringresponse``元素里的``type``=``ci``,下面是一个示例：
 
 ::
 
@@ -207,20 +179,16 @@ attribute to ``cs``.
     </stringresponse>
 
 *************************************************
-Response Field Length of Text Input Problems
+文本输入问题的回答区长度限制
 *************************************************
 
-By default, the response field for text input problems is 20 characters long.
+一般来说，文本输入问题的默认的长度限制是20个字符.你应该先预览一下这个单元确保答案的限制长度大于正确答案的长度，并且为可能错误的答案提供额外的回答空间。
 
-You should preview the unit to ensure that the length of the response input
-field accommodates the correct answer, and provides extra space for possible
-incorrect answers.
 
-If the default response field length is not sufficient, you can change it
-using :ref:`Advanced Editor`.
+如果默认的限制长度不够，你可以使用高级编辑器:ref:`Advanced Editor`改变它.
 
-In the Advanced Editor, in the XML block for the answer, you see that the
-``size`` attribute of the ``textline`` element equals ``20``.
+
+在高级编辑器里,编辑这个答案的XML block,你可以看到``textline`` element``size``属性值为``20``.
 
 ::
 
@@ -228,8 +196,7 @@ In the Advanced Editor, in the XML block for the answer, you see that the
       <textline size="20"/>
     </stringresponse>
 
-To change the response field length, change the value of the ``size``
-attribute.
+你可以通过改变``size``属性的值改变这个回答区域的长度.
 
 ::
 
@@ -238,32 +205,24 @@ attribute.
     </stringresponse>
 
 ********************************************************
-Hints and Regular Expressions in Text Input Problems
+文本输入问题中的提示和正则表达式
 ********************************************************
 
-You can provide hints that appear when learners enter common incorrect answers
-in text input problems. You can also set a text input problem to allow a
-regular expression as an answer. To do this, you modify the problem's XML in
-the Advanced Editor.
+在文本输入问题中当学习者输入常见的错误答案时你可以提供提示。你也可以设置允许一个常见表达式作为一个文本输入问题的正确答案.你可以在高级编辑器通过修改这个问题的XML做到这些.
 
-The regular expression that the learner enters must contain the part of the
-answer that the instructor specifies. For example, if an instructor has
-specified  ``<answer="example answer" type="regexp">``, correct answers
-include ``example answered``, ``two example answers``, or even ``==example
-answer==``, but not ``examples`` or ``example anser``.
+学习者输入的这个规则的表达式必须包含教师指定的正确答案的一部分.例如,如果教师指定``<answer="example answer" type="regexp">``, 正确答案包含 ``example answered``, ``two example answers``, 或者甚至 ``==example
+answer==``,但是不能是 ``examples`` 或 ``example anser``.
 
-You can add ``regexp`` to the value of the ``type`` attribute, for example:
-``type="ci regexp"`` or ``type="regexp"`` or ``type="regexp cs"``. In this
-case, any answers or hints are treated as regular expressions.
+你可以添加 ``regexp`` 到 ``type`` 属性的值,比如:``type="ci regexp"`` or ``type="regexp"`` or ``type="regexp cs"``. 由于这个，任何答案或者提示都被当做是一个规则的表达式.
 
 .. _Text Input Problem XML:
 
 ***********************
-Text Input Problem XML
+文本输入问题XML
 ***********************
 
 ==============
-Template
+模板
 ==============
 
 .. code-block:: xml
@@ -298,165 +257,143 @@ Template
   </problem>
 
 =======
-Tags
+标签
 =======
 
-* ``<stringresponse>``: Indicates that the problem is a text input problem. 
-* ``<textline>``: Child of ``<stringresponse>``. Creates a response field in
-  the LMS where the learner enters a response.
-* ``<additional_answer>`` (optional): Specifies an additional correct answer
-  for the problem. A problem can contain an unlimited number of additional
-  answers.
-* ``<hintgroup>`` (optional): Indicates that the instructor has provided hints
-  for certain common incorrect answers.
-* ``<stringhint />`` (optional): Child of ``<hintgroup>``. Specifies the text
-  of the incorrect answer to provide the hint for. Contains answer, type,
-  name.
-* ``<hintpart>``: Contains the name from ``<stringhint>``. Associates the
-  incorrect answer with the hint text for that incorrect answer.
-* ``<startouttext />``: Indicates the beginning of the text of the hint.
-* ``<endouttext />``: Indicates the end of the text of the hint.
+* ``<stringresponse>``: 表明这个问题是个文本输入问题. 
+* ``<textline>``:  ``<stringresponse>`的子标签`. 在LMS里创建一个供学习者输入答案的回答区.
+* ``<additional_answer>`` (可选): 对于一个问题指定一个额外的答案.一个文科可以有多个答案.
+* ``<hintgroup>`` (可选): 表明这个教师对某些普遍的错误答案提供了提示。
+* ``<stringhint />`` (可选): ``<hintgroup>``的子标签. 指定这个错误答案提供的提示文本. 包含答案，类型，名字.
+* ``<hintpart>``: 包含名字来自于 ``<stringhint>``. 把错误答案和这个错误的提示练习在一起.
+* ``<startouttext />``: 表明这个提示文本的开始.
+* ``<endouttext />``: 表明这个提示文本的结尾.
 
-**Tag:** ``<stringresponse>``
+**标签:** ``<stringresponse>``
 
-Indicates that the problem is a text input problem.
+表明这个问题是一个文本输入问题.
 
-  Attributes
+  属性
 
   .. list-table::
      :widths: 20 80
 
-     * - Attribute
-       - Description
-     * - answer (required)
-       - Specifies the correct answer. To designate the answer as a regular
-         expression, add "regexp" to the **type** attribute. If you do not add
-         "regexp" to the **type** attribute, the learner's answer must match
-         the value in this attribute exactly.
-     * - type (optional)
-       - Can specify whether the problem is case sensitive and allows regular
-         expressions. If the ``<stringresponse>`` tag includes ``type="ci"``,
-         the problem is not case sensitive. If the tag includes ``type="cs"``,
-         the problem is case sensitive. If the tag includes ``type="regexp"``,
-         the problem allows regular expressions. A **type** attribute in a
-         ``<stringresponse>`` tag can also combine these values. For example,
-         ``<stringresponse type="regexp cs">`` specifies that the prolem
-         allows regular expressions and is case sensitive.
+     * - 属性
+       - 描述
+     * - 答案 (必选)
+       - 指定正确答案.要指定这个打啊是一个规则的表达式,需要添加"regexp" 到 **type** 属性里.如果您没有添加"regexp" 到 **type** 属性里，学习者的答案必须雨这个属性精确匹配.
+     * - 类型 (可选)
+       - 可以指定这个问题答案是否是大小写敏感并且允许规则的语法.如果``<stringresponse>``标签不包含``type="ci"``,
+         这个问题答案就不是大小写敏感的.不如包含``type="cs"``,这个问题就是大小写敏感的.如果这个标签包含``type="regexp"``,这个问题就允许规则的表达式.A**type**属性在一个 ``<stringresponse>``标签里也可以结合这些值.比如,
+         ``<stringresponse type="regexp cs">`` 指定这个问题允许规则的表达式并且大小写敏感.
 
-  Children
+  子标签
 
-  * ``<textline />`` (required)
-  * ``<additional_answer>`` (optional)
-  * ``<hintgroup>`` (optional)
+  * ``<textline />`` (必选)
+  * ``<additional_answer>`` (可选)
+  * ``<hintgroup>`` (可选)
     
-**Tag:** ``<textline />``
+**标签:** ``<textline />``
  
-Creates a response field in the LMS where the learner enters a response.
+在LMS里创建一个供学习者输入答案的回答区.
 
-  Attributes
+  属性
 
   .. list-table::
      :widths: 20 80
 
-     * - Attribute
-       - Description
-     * - label (required)
-       - Contains the text of the problem.
-     * - size (optional)
-       - Specifies the size, in characters, of the response field in the LMS.
-     * - hidden (optional)
-       - If set to "true", learners cannot see the response field.
-     * - correct_answer (optional)
-       - Lists the correct answer to the problem.
+     * - 属性
+       - 描述
+     * - 标签 (必选)
+       - 包含这个问题的文本.
+     * - 大小 (可选)
+       - 指定在LMS里回答区域的大小.
+     * - 隐藏 (可选)
+       - 如果设置成"true", 学习者则不能看到回答区域.
+     * - 正确答案 (可选)
+       - 列出这个答案的正确答案.
 
-  Children
+  子标签
   
-  (none)
+  (无)
 
-**Tag:** ``<additional_answer>``
+**标签:** ``<additional_answer>``
 
-Specifies an additional correct answer for the problem. A problem can contain
-an unlimited number of additional answers.
+指定一个这个问题的正确答案.一个问题可以包含不限数量个的答案.
 
-  Attributes
+  属性
 
-  (none)
+  (无)
 
-  Children
+  子标签
 
-  (none)
+  (无)
 
-**Tag:** ``<hintgroup>``
+**标签:** ``<hintgroup>``
 
-Indicates that the instructor has provided hints for certain common incorrect
-answers.
+表明这个教师对某些普遍的错误答案提供了提示。
 
-  Attributes
+  属性
 
-  (none)
+  (无)
 
-  Children
+  子标签
   
-  * ``<stringhint>`` (required)
+  * ``<stringhint>`` (必选)
 
-**Tag:** ``<stringhint>``
+**标签:** ``<stringhint>``
 
-Specifies a common incorrect answer to the problem.
+对于一个问题指定一个普遍的错误答案.
 
-  Attributes
-
-  .. list-table::
-     :widths: 20 80
-
-     * - Attribute
-       - Description
-     * - answer (required)
-       - The text of the incorrect answer.
-     * - name (required)
-       - The name of the hint that you want to provide.
-     * - type
-       - Specifies whether the text of the specified incorrect answer is case
-         sensitive. Can be set to "cs" (case sensitive) or "ci" (case
-         insensitive).
-
-  Children
-
-  * ``<hintpart>`` (required)
-
-**Tag:** ``<hintpart>``
-
-Associates a common incorrect answer with the hint for that incorrect answer.
-
-  Attributes
+  属性
 
   .. list-table::
      :widths: 20 80
 
-     * - Attribute
-       - Description
+     * - 属性
+       - 描述
+     * - 答案 (必选)
+       - 错误答案的文本.
+     * - 名字 (必选)
+       - 你想要提供提示的名字.
+     * - 类型
+       - 指定这个特殊的错误的是否是大小写敏感的.可以设置成"cs" (大小写敏感) or "ci" (非大小写敏感).
+
+  子标签
+
+  * ``<hintpart>`` (必选)
+
+**标签:** ``<hintpart>``
+
+错误答案和这个错误的提示练习在一起.
+
+
+  属性
+
+  .. list-table::
+     :widths: 20 80
+
+     * - 属性
+       - 描述
      * - on
-       - The name of the hint. This must be the same as the ``name`` attribute
-         of the ``<stringhint>`` tag. (The ``<stringhint>`` tag provides the
-         name of the hint and the incorrect answer to associate with the hint.
-         The ``<hintpart>`` tag contains the name of the hint and the text of
-         the hint.)
+       - 提示的名字.必须和``<stringhint>`` 标签中的``name``属性相同. (``<stringhint>`` 标签提供提示的名字用来错误答案联系在一起.``<hintpart>`` 标签包含提示的名字和提示的文本.)
 
-  Children
+  子标签
 
-  * ``<startouttext />`` (required)
-  * ``<endouttext />`` (required)
+  * ``<startouttext />`` (必选)
+  * ``<endouttext />`` (必选)
 
-**Tags:** ``<startouttext />`` and ``<endouttext>``
+**标签:** ``<startouttext />`` 和 ``<endouttext>``
 
-Surround the text of the hint.
+在提示的两侧.
 
-  Attributes
+  属性
   
-  (none)
+  (无)
 
-  Children
+  子标签
   
-  (none)
+  (无)
 
 
 
