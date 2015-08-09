@@ -1,112 +1,78 @@
 .. _Numerical Input:
 
 ########################
-Numerical Input Problem
+数值输入问题
 ########################
 
-In numerical input problems, learners enter numbers or specific and relatively
-simple mathematical expressions to answer a question. The text that the
-learners enter is converted to a symbolic expression that appears below the
-response field.
+在数值输入问题中，学习者输入数字或特殊但相对简单的属性表达式去回答一个问题.这个学习者输入的文本会转化成符号表达式出现在回答区域的下方.
 
 .. image:: ../../../shared/building_and_running_chapters/Images/image292.png
  :alt: A problem with 3 questions, the learner gave 2 correct and 1
      incorrect answer
 
-Responses for numerical input problems can include integers, fractions, and
-constants such as pi and *g*. Responses can also include text representing
-common functions, such as square root (sqrt) and log base 2 (log2), as well as
-trigonometric functions and their inverses, such as sine (sin) and arcsine
-(arcsin). For these functions, learners enter text that is converted into
-mathematical symbols. The following example shows a response entered by a
-learner and the numerical expression that results.
+数值输入问题的答案可以包含整数,分数和常数(比如π被g).回答也可以包含表示函数的文本，比如平方根(sqrt)和2的自然对数(log2),以及三角函数和他们的反函数,学习者可以输入文本转换为数学符号.下面的例子就是一个学习者输入的回答和数值表达式的结果.
+
 
 .. image:: ../../../shared/building_and_running_chapters/Images/Math5.png
  :alt: A learner typed n*x^(n-1) to enter the symbolic expression n times x to
      the n minus 1 power
 
-For more information about how learners enter expressions, see `Math Response
-Formatting for Students`_.
+更多关于学习者输入表达式的信息请查看`Math Response Formatting for Students`_.
 
-You can specify a margin of error, or tolerance, for the answers to these
-problems so that learners' responses do not have to be exact. You can 
-specify a correct answer explicitly or use a Python script.
+你可以指定一个正确的边缘或范围,对于 这些问题的答案,以便学习者的答案不必要十分确切。你也可以明确指定一个正确答案或者使用Python脚本。
 
-For the numerical input problems in your course, you can use edX Insights to
-review aggregated learner performance data and examine submitted answers. For
-more information, see `Using edX Insights`_.
+
+对于更多在你课程中的数值输入问题，你可以使用edX Insights查看学习者输入的数据和考试提交的答案的统计。更多相关信息，请查看`Using edX Insights`_.
 
 ***********************************
-Creating a Numerical Input Problem 
+创建一个数值输入问题
 ***********************************
 
-You can create numerical problems in the Simple Editor or in the Advanced
-Editor. 
+你一个在简单编辑器或高级编辑器中创建一个数值输入问题.
 
-* If the text of your problem does not include any italics, bold formatting,
-  or special characters, you can create the problem in the Simple Editor. 
-* If the text of your problem contains special formatting or characters, or if
-  your problem contains a Python script, you use the Advanced Editor.
 
-For example, the following problems require the Advanced Editor. 
+* 如果你的问题文本不包含任何斜体、粗体格,或是特殊的字符。你则可以在简单编辑器中创建这个问题。
+* 如果你的问题包含特殊字体和字符，或者你的问题包含Python脚本，你可以使用高级编辑器。
+
+
+比如以下的问题就需要使用高级编辑器.
 
 .. image:: ../../../shared/building_and_running_chapters/Images/NumericalInput_Complex.png
  :alt: A problem that requires a square root as the answer
 
-For more information about including a Python script in your problem, see
-:ref:`Write Your Own Grader`.
+对于更多关于在你问题中使用Python脚本的信息，请查看:ref:`Write Your Own Grader`.
 
 .. _Use the Simple Editor to Create a Numerical Input Problem:
 
 ========================================================================
-Use the Simple Editor to Create a Numerical Input Problem
+使用简单编辑器创建一个数值输入问题
 ========================================================================
 
-To the :ref:`Simple Editor<Simple Editor>` to create a numerical input
-problem, follow these steps.
+要使用:ref:`简单编辑器<简单编辑器>`创建一个数值输入问,有以下的步骤.
 
-#. In the unit where you want to create the problem, under **Add New
-   Component** select **Problem**.
-#. From the list of **Common Problem Types**, select **Numerical Input**.
-   Studio adds an example dropdown problem to the unit.
-#. Select **Edit**. The Simple Editor opens.
-#. Replace the sample problem text with your own text.
-#. Determine the text that describes the question you want learners to answer,
-   and surround that text with two pairs of angle brackets (``>>question<<``).
-   This question text is the accessible label for the problem.
-   question text is the accessible label for the problem.
-#. To identify the problem's answer, select the answer text and then select
+#. 在你想要创建问题的单元,在*添加新组件**下方，选择**问题**.
+#. 从**普通问题组件**中,选择**数值输入问题**.
+#. 选择**编辑**.简单编辑器就打开了.
+#. 用你自己的文本替代示例问题文本.
+#. 确定你想要学生回答的问题的描述文本,并且用两对尖角括号围住你的问题(``>>问题<<``).这个问题文本就是这个问题的链接。
+#. 要指定这个问题的答案,选择答案文本然后选择
    **Numerical Input** from the toolbar. An equals sign appears
    next to the answer.
-#. Optionally, specify a margin of error, or tolerance. You can specify a
-   percentage, number, or range.
+#. 可选择的,指定一个正确答案的边缘,或者误差范围.你可以指定一个百分率，数值或者范围。
 
-   * To specify a percentage on either side of the correct answer, after the
-     answer add **+-{number}%**. For example, to include a 2% tolerance, add
-     **+-2%**.
 
-   * To specify a number on either side of the correct answer, after the
-     answer add **+-{number}**. For example, to include a tolerance of 5, add
-     **+-5**.
+   * 要指定正确的答案的容错百分比，可以在答案后面添加**+-{数字}%**. 比如,要包含2%的容错范围,添加**+-2%**.
+http://oimagea2.ydstatic.com/image?url=http://www.filtersfast.com/ProdImages/150578bracket.jpg&product=PICDICT_EDIT
+   * 要指定正确答案的误差范围,在答案后面添加**+-{数字}**.比如,要包括5的容错值,添加**+-5**.
 
-   * To specify a range, you provide the starting and ending values separated
-     by a comma and then surround the range with brackets [] or parentheses ().
-     A bracket includes the number next to it in the range, and a parenthesis
-     excludes the number from the range. For example, if you specify **[5,
-     8)**, correct answers can be 5, 6, and 7, but not 8. Likewise, if you
-     specify **(5, 8]**, correct answers can be 6, 7, and 8, but not 5.
+   * 要指定一个范围,你需要提供开始和结束的值并且用逗号分隔开然后用中括号[]或者小括号住这个范围.一个括号括住这个数字在这个范围旁边，另一个括号不括住这个数字.比如，你指定**[5,8)**,正确答案可以是5, 6,和7,但是不包括8. 如果你指定**(5, 8]**,正确答案可以使6, 7,和8,但是不能是5.
 
-#. To provide an explanation, select the explanation text and then select 
-   **Explanation** from the toolbar. ``[explanation]`` appears before
-   and after the explanation text.
-#. Select **Settings** and provide an identifying **Display Name** for the
-   problem.
-#. Define additional settings for the problem. For more information, see
-   :ref:`Problem Settings`.
-#. Select **Save**.
+#. 要提供一个解释,选择解释文本然后从工具栏选择**解释**. ``[explanation]``就出现在解释文本的前面和后面.
+#. 选择**设置**并且提供一个这个问题的**展示名字**.
+#. 为这个问题定义其他的设置.更多信息,请看:ref:`问题设置`.
+#. 选择**保存**.
 
-For the first example problem illustrated above, the text in the problem
-component appears as follows.
+对于第一个示例问题,下面是一个问题组件实现的示例.
 
 ::
 
@@ -119,18 +85,16 @@ component appears as follows.
    [explanation]
 
 ========================================================================
-Use the Advanced Editor to Create a Numerical Input Problem 
+使用高级编辑器创建一个数值输入问题 
 ========================================================================
 
-For a more complex problem, such as the one that follows, you use the Advanced
-Editor.
+对于一个更复杂的问题,比如下面描述的一个，你可以使用高级编辑器.
 
-#. Follow the steps for creating the problem in the :ref:`Simple Editor<Use
-   the Simple Editor to Create a Numerical Input Problem>`. 
-#. Select **Advanced Editor**, and then edit the XML to add the tags and
-   attributes you want. An example follows.
 
-**Problem Code**:
+#. 遵循在:ref:`简单编辑器<使用简单编辑器创建一个数值输入问题>`的步骤. 
+#. 选择**高级编辑器**, 然后编辑XML文件添加你想要的标签和属性。下面是一个示.
+
+**问题代码**:
 
 .. code-block:: xml
 
@@ -181,17 +145,17 @@ Editor.
 .. _Numerical Input Problem XML:
 
 ****************************
-Numerical Input Problem XML
+XML数值输入问题
 ****************************
 
 =========
-Templates
+模板
 =========
 
-The following templates represent problems with and without a decimal or
-percentage tolerance.
+下面的模板代表问题没有或者有百分率的容错率.
 
-Problem with No Tolerance
+
+没有容错率的问题
 ***************************
 
 .. code-block:: xml
@@ -211,7 +175,7 @@ Problem with No Tolerance
   </solution>
   </problem>
 
-Problem with a Decimal Tolerance
+带有小数容错率的问题
 ************************************
 
 .. code-block:: xml
@@ -232,7 +196,7 @@ Problem with a Decimal Tolerance
   </solution>
   </problem>
 
-Problem with a Percentage Tolerance
+带有百分比容错率的问题
 ************************************
 
 .. code-block:: xml
@@ -253,7 +217,7 @@ Problem with a Percentage Tolerance
   </solution>
   </problem>
 
-Answer Created Using a Script
+用Script创建的问题
 ************************************
 
 .. code-block:: xml
@@ -280,121 +244,103 @@ Answer Created Using a Script
   </problem>
 
 ====
-Tags
+标签
 ====
 
-* ``<numericalresponse>`` (required): Specifies that the problem is a
-  numerical input problem.
-* ``<formulaequationinput />`` (required): Provides a response field where the
-  learner enters a response.
-* ``<responseparam>`` (optional): Specifies a tolerance, or margin of error,
-  for an answer.
-* ``<script>`` (optional)
+* ``<numericalresponse>`` (必选):指定这个问题是一个数值输入问题.
+* ``<formulaequationinput />`` (必选): 提供一个回答区域供学生输入答案.
+* ``<responseparam>`` (可选): 对于答案指定一个容错率，或者错误的边缘.
+* ``<script>`` (可选)
 
-.. note:: Some older problems use the ``<textline math="1" />`` tag instead 
- of the ``<formulaequationinput />`` tag. However, the ``<textline math="1"
- />`` tag has been deprecated. All new problems should use the
- ``<formulaequationinput />`` tag.
+.. note:: 一些老的问题使用 ``<textline math="1" />``标签而不是``<formulaequationinput />``标签.然而,``<textline math="1"
+ />``标签已经被弃用了所有的新问题都是使用``<formulaequationinput />``标签.
 
-**Tag:** ``<numericalresponse>``
+**标签:** ``<numericalresponse>``
 
-Specifies that the problem is a numerical input problem. The
-``<numericalresponse>`` tag is similar to the ``<formularesponse>`` tag, but
-the ``<numericalresponse>`` tag does not allow unspecified variables.
+指定这个问题是一个数值输入问题.``<numericalresponse>``标签和``<formularesponse>``类似,但是``<numericalresponse>``标签不允许使用未定义的变量.
 
-  Attributes
+  属性
 
   .. list-table::
      :widths: 20 80
      :header-rows: 1
 
-     * - Attribute
-       - Description
-     * - answer (required)
-       - The correct answer to the problem, given as a mathematical
-         expression.
+     * - 属性
+       - 描述
+     * - 答案 (必选)
+       - 这个问题的正确答案,使用一个数学表达式给出.
 
-  .. note:: If you include a variable name preceded with a dollar sign 
-   ($) in the problem, you can include a script in the problem that computes
-   the expression in terms of that variable.
+  .. note:: 如果在一个问题中在美元符号前包含了一个变量名($),你可以在问题中包含一个脚本计算该变量的表达式。
 
-  The grader evaluates the answer that you provide and the learner's response
-  in the same way. The grader also automatically simplifies any numeric
-  expressions that you or a learner provides. Answers can include simple
-  expressions such as "0.3" and "42", or more complex expressions such as
-  "1/3" and "sin(pi/5)".
 
-  Children
+  评分器用同一种方式评估你提供的答案和学生回答的.评分器也自动简化任何你或者你学生提供的数字表达式或者.答案可是包含简单的表达式比如"0.3"和"42",或者更多复杂的表达式比如"1/3"和"sin(pi/5)".
+
+  子标签
   
   * ``<responseparam>``
   * ``<formulaequationinput>``
 
-**Tag:** ``<formulaequationinput>``
+**标签:** ``<formulaequationinput>``
 
-Creates a response field in the LMS where learners enter a response.
-
-  Attributes
+在LMS里创建一个回答区域。
+  属性
 
   .. list-table::
      :widths: 20 80
      :header-rows: 1
 
-     * - Attribute
-       - Description     
-     * - label (required)
-       - Specifies the name of the response field.
-     * - size (optional)
-       - Defines the width, in characters, of the response field in the LMS.
+     * - 属性
+       - 描述     
+     * - label (必选)
+       - 指定这个回答区域的名字。
+     * - size (可选)
+       - 定义LMS里回答区域的答案字符大小.
   
-  Children
+  子标签
 
-  (none)
+  (无)
 
-**Tag:** ``<responseparam>``
+**标签:** ``<responseparam>``
 
-Specifies a tolerance, or margin of error, for an answer.
+指定一个一个答案容错率，或者错误的范围。
 
-  Attributes
+  属性
 
   .. list-table::
      :widths: 20 80
      :header-rows: 1
 
-     * - Attribute
-       - Description
-     * - type (optional)
-       - "tolerance": Defines a tolerance for a number.
-     * - default (optional)
-       - A number or a percentage specifying a numerical or percent tolerance.
+     * - 属性
+       - 描述
+     * - 类型 (可选)
+       - "tolerance": 对于一个答案定义一个容错率.
+     * - 其他 (可选)
+       - 指定一个小数或者百分比的容错.
 
-  Children
+  子标签
   
-  (none)
+  (无)
 
-**Tag:** ``<script>``
+**标签:** ``<script>``
 
-Specifies a script that the grader uses to evaluate a learner's response. A
-problem behaves as if all of the code in all of the script tags were in a
-single script tag. Specifically, any variables that are used in multiple
-``<script>`` tags share a namespace and can be overridden.
+指定一个脚本对学生的回答进行评分.一个问行为好像所有的代码在所有脚本用单独的脚本标签. 特别的, 所有的用在多脚本的变量标签共享一个命名空间并且可以被重载.
 
-As with all Python, indentation matters, even though the code is embedded in
-XML.
+和Python一样, 要注意缩进问题, 即使代码是被嵌在XML文件中的.
 
-  Attributes
+  属性
 
   .. list-table::
      :widths: 20 80
      :header-rows: 1
 
-     * - Attribute
-       - Description
-     * - type (required)
+     * - 属性
+       - 描述
+     * - type (必选)
        - Must be set to "loncapa/python".
 
-  Children
+  子标签
   
-  (none)
+  (无)
 
 .. _Math Response Formatting for Students: http://edx-guide-for-students.readthedocs.org/en/latest/SFD_mathformatting.html
 
