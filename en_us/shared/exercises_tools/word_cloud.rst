@@ -1,67 +1,49 @@
 .. _Word Cloud:
 
 ##################
-Word Cloud Tool
+文字云工具
 ##################
 
 
-In a word cloud tool, students enter words into a field in response
-to a question or prompt. The words all the students have entered then
-appear instantly as a colorful graphic, with the most popular responses
-appearing largest. The graphic becomes larger as more students answer.
-Students can both see the way their peers have answered and contribute
-their thoughts to the group.
+在文字云工具中,学生输入文字到一个回答区域中回答一个问题或提示.所有学生输入的文字就会立马以图像形式出现.当有更多的学生回答问题时这个图像也会变大。学生可以看到他们的同辈回答并且可以分享他们的对团队的想法。
 
 
-For example, the following word cloud was created from students'
-responses to a question in a HarvardX course.
+
+比如,下面的文字云是基于学生对一门哈佛大学课程的一个问题的回答创建的。
+
 
 .. image:: ../../../shared/building_and_running_chapters/Images/WordCloudExample.png
   :alt: Image of a word cloud problem
 
 ****************************
-Create a Word Cloud Tool
+创建一个文字云工具
 ****************************
 
-To create a word cloud tool:
+要创建一个文字云工具:
 
-#. Add the Word Cloud advanced component. 
+#. 添加文字云高级组件 
 
-    #. On the **Settings** menu, click **Advanced Settings**.
+    #. 在**设置**菜单中,点击**高级设置**.
 
-    #. In the field for the **Advanced Module List** policy key, place your
-       cursor between the brackets.
+    #. 在**高级模板列表**公钥区域,将光标放置在括号中.
 
-    #. Enter the following value. Make sure to include the quotation marks.
+    #. 输入下面的值. 确保包含双引号.``"word_cloud"``
 
-       ``"word_cloud"``
+    4. 在这个页面的按钮中,选中**保存更改**.在这个页面的顶,你可以看到一个通知你的改变保存了。
 
-    4. At the bottom of the page, click **Save Changes**.
 
-       The page refreshes automatically. At the top of the page, you see a
-       notification that your changes have been saved.
+    5. 返回你想要添加这个专业问题的单元。这个可能的组件列表就包含高级组件了。
 
-    5. Return to the unit where you want to add the specialized problem. The
-       list of possible components now contains an Advanced component.
 
-#. In the unit where you want to create the problem, click **Advanced**
-   under **Add New Component**.
-#. In the list of problem types, click **Word Cloud**.
-#. In the component that appears, click **Edit**.
-#. In the component editor, specify the settings that you want. You can
-   leave the default value for everything except **Display Name**.
+#. 在想要创建问题的单元，在**添加新组件下面**点击**高级**.
+#. 在这个问题列表中, 点击 **文字云**.
+#. 这个组件就出现了,点击**编辑**.
+#. 在这个组件编辑器里,指定你想要的设置.你可以**展示名称**其他都选择默认设置.
 
-   -  **Display Name**: This name appears as a heading above the problem and
-      as a tooltip in the learning sequence at the top of the **Courseware**
-      page.
-   -  **Inputs**: The number of text boxes into which students can enter
-      words, phrases, or sentences.
-   -  **Maximum Words**: The maximum number of words that the word cloud
-      displays. If students enter 300 different words but the maximum is
-      set to 250, only the 250 most commonly entered words appear in the
-      word cloud.
-   -  **Show Percents**: The number of times that students have entered
-      a given word as a percentage of all words entered appears near
-      that word.
+   -  **展示名称**: 这个名字会作为标题出现在问题的上方并且作为**课件**页面顶部的学习队列中的一个工具.
+   -  **输入**: 文本框的数量,学生可以输入单词,短语或句子。
+   -  **最大字数**: 文字云可以展示的最大字数。如果学生输入300个不同的字但是最大的字数设置为250，只有250个字会展示在文字云中.
+   -  **展示百分比**: 学生输入的一个给出的词被输入的次数占所有词输入次数的百分比。
 
-#. Click **Save**.
+
+#. 点击**保存**.
