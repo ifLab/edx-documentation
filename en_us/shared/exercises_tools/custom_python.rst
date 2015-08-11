@@ -1,70 +1,59 @@
 .. _Write Your Own Grader:
 
 ##############################
-Write-Your-Own-Grader Problem
+自定义评分器问题
 ##############################
 
-This chapter provides information about writing your own grader directly in a
-problem component. See the following sections for more information.
+这章介绍你如何直接在一个问题组价中写出你自己的评分器。 请看以下的段落获取更多信息.
 
-* `Overview`_
-* `Create a Custom Python-Evaluated Input Problem Studio`_
-* `Script Tag Format`_
-* `Answer Tag Format`_
-* `Providing Partial Credit for Custom Python-Evaluated Input Problems`_
-* `Create a Randomized Custom Python-Evaluated Input Problem`_
+* `概述`_
+* `通过Studio创建一个Python评估输入问题`_
+* `脚本标签格式`_
+* `回答标签格式`_
+* `对自定义Python评估输入问题提供局部信任`_
+* `创建一个随机的Python评估输入问题`_
 
 **********
-Overview
+概述
 **********
 
-In custom Python-evaluated input (also called "write-your-own-grader"
-problems), the grader uses a Python script that you create and embed in the
-problem to evaluate a learner's response or provide hints. These problems can
-be any type. Numerical input and text input problems are the most common
-write-your-own-grader problems.
+在自定义Python评估问题(也叫自定义评分器问题)中,这个评分器使用你创建并嵌入在问题中的对学生的回答进行评分或者提供提示.这些问题可以是任何类型的. 数值输入问题和文本输入问题是最常见的自定义评分器问题。
 
 .. image:: ../../../shared/building_and_running_chapters/Images/CustomPythonExample.png
  :alt: Image of a write your own grader problem
 
-You can create a Python-evaluated input problem in :ref:`answer tag format
-<Answer Tag Format>` or :ref:`script tag format <Script Tag Format>`.
+你可以用:ref:`回答标签格式<回答标签格式>` 或者 :ref:`脚本标签格式 <脚本标签格式>`创建一个Python评估输入问题.
 
-Custom Python-evaluated input problems can include the following:
+自定义Python评估输入问题可以包含以下:
 
-* :ref:`Chemical Equation`
-* :ref:`Custom JavaScript`
-* :ref:`Gene Explorer`
-* :ref:`Molecule Editor`
-* :ref:`Protein Builder`
+* :ref:`化学方程式`
+* :ref:`自定义JavaScript`
+* :ref:`基因浏览器`
+* :ref:`分子编辑器`
+* :ref:`蛋白质构建`
 
 *****************************************************
-Create a Custom Python-Evaluated Input Problem Studio
+通过Studio创建一个Python评估输入问题
 *****************************************************
 
-#. In the unit where you want to create the problem, click **Problem** under
-   **Add New Component**, and then click the **Advanced** tab.
+#. 在你想要创建问题的单元,在**添加新组件**下方点击**问题**, and then click the **Advanced** tab.
 
-#. Click **Custom Python-Evaluated Input**.
+#. 点击**自定义Python评估问题**.
 
-#. In the component that appears, click **Edit**.
+#. 当这个组件出现时,点击**编辑**.
 
-#. In the component editor, edit the problem in :ref:`answer tag format <Answer
-   Tag Format>` or :ref:`script tag format <Script Tag Format>`.
+#. 在组件编辑器中,用 :ref:`回答标签格式 <Answer
+   Tag Format>` 或者 :ref:`脚本标签格式 <脚本标签格式>`编辑标签格式.
 
-#. Click **Save**.
+#. 点击 **保存**.
 
-.. _Script Tag Format:
+.. _脚本标签格式:
 
 **************************
-Script Tag Format
+脚本标签格式
 **************************
 
-The script tag format encloses a Python script that contains a "check function"
-in a ``<script>`` tag, and adds the ``cfn`` attribute of the
-``<customresponse>`` tag to reference that function. In the following example,
-``<customresponse>`` tags reference the ``test_add_to_ten`` and ``test_add``
-functions that are in the ``<script>`` tag.
+脚本标签格式依赖Python脚本中在``<script>``标签中包含的"验证函数",并且添加``<customresponse>``标签的``cfn``属性来引用该函数。在下面的例子中,``<customresponse>``标签引用了``<script>``中的``test_add_to_ten``和``test_add``函数.
 
 .. code-block:: xml
 
@@ -109,60 +98,45 @@ functions that are in the ``<script>`` tag.
 
   </problem>
 
-**Important**: Python honors indentation. Within the ``<script>`` tag, the
-``def check_func(expect, ans):`` line must have no indentation.
+**Important**: Python缩进严格. 在 ``<script>`` 标签内,``def check_func(expect, ans):`` 行必须没有缩进.
 
-The following table explains the important attributes and values in the
-preceding example.
+下面的表格解释了在之前的例子中重要的属性和值.
+
 
 .. list-table::
    :widths: 20 80
 
    * - ``<script type="loncapa/python">``
-     - Indicates that the problem contains a Python script.
+     - 指定这个问题包含一个Python脚本.
    * - ``<customresponse cfn="test_add_to_ten">``
-     - Indicates that the function ``test_add_to_ten`` is called when the
-       student checks the answers for this problem.
+     - 指定当学生对这个问题校验答案时，``test_add_to_ten``函数被调用.
    * - ``<customresponse cfn="test_add" expect="20">``
-     - Indicates that the function ``test_add`` is called when the student
-       checks the answers for this problem and that the expected answer is
-       ``20``.
+     - 指定当学生对这个问题校验答案是时``test_add``函数被调用并且答案是``20``.
    * - <textline size="10" correct_answer="3"/>
-     - This tag includes the ``size``, ``correct_answer``, and ``label``
-       attributes. The ``correct_answer`` attribute is optional.
+     - 这个标签包含``size``, ``correct_answer``, 和 ``label``属性. ``correct_answer``属性是可选的.
 
-The **check** function accepts two arguments:
+**check**函数接受以下的参数:
 
-* ``expect`` is the value of the ``expect`` attribute of ``<customresponse>``.
-  If ``expect`` is not provided as an argument, the function must have another
-  way to determine if the answer is correct.
+* ``expect``是``<customresponse>``标签的``expect`` 属性的值.如果``expect``不作为一个属性被提供,这个函数必须有另一个方式判断答案是佛偶正确.
 
 * ``answer`` is either:
 
-    * The value of the answer the student provided, if the problem only has one
-      response field.
+    * 一个由学生提供的答案的值,如果问题仅仅只有一个回答区域。
+
     
-    * An ordered list of answers the student provided, if the problem has
-      multiple response fields.
+    * 一个由有序的学生提供的列表,如果这个问题有多个回答区域.
 
-The **check** function can return any of the following to indicate whether the
-student's answer is correct:
+**check**函数可以返回任何以下的值来表明学生的答案是否正确:
 
-* ``True``: Indicates that the student answered correctly for all response
-  fields.
 
-* ``False``: Indicates that the student answered incorrectly. All response
-  fields are marked as incorrect.
+* ``True``: 表明学生的答案完全正确.
 
-* A dictionary of the form: ``{ 'ok': True, 'msg': 'Message' }`` If the
-  dictionary's value for ``ok`` is set to ``True``, all response fields are
-  marked correct. If it is set to ``False``, all response fields are marked
-  incorrect. The ``msg`` is displayed below all response fields, and it may
-  contain XHTML markup. For information about providing partial credit for
-  learners' answers, see `Providing Partial Credit for Custom Python-Evaluated
+* ``False``: 表明学生的答案不正确.所有的回答区域都错.
+
+* 字典形式 ``{ 'ok': True, 'msg': 'Message' }`` 如果字典里``ok``变成了`True``所有的答案就都正确了。``msg``展示在所有的回答区域下方,并且可能包含XHTMK标记。更多关于对学习者答案提供局部认证的信息，请查看`Providing Partial Credit for Custom Python-Evaluated
   Input Problems`_.
 
-* A dictionary of the form 
+* 字典形式 
 
   .. code-block:: xml     
     
@@ -172,11 +146,11 @@ student's answer is correct:
             { 'ok': False, 'msg': 'Feedback for input 2'},
             ... ] }
 
-The last form is useful for responses that contain multiple response fields. It
-allows you to provide feedback for each response field individually, as well as
-a message that applies to the entire response.
 
-The following example shows another checking function.
+对于答案包含回答区域的回答最后一个表格是十分有用的.它允许你对每个回答区域单独提供回馈，也允许提供一个适用于整个回答的信息。
+
+
+下面的示例展示了另外一个校验函数.
 
 .. code-block:: python
 
@@ -190,22 +164,19 @@ The following example shows another checking function.
                         { 'ok': check2, 'msg': 'Feedback 2'},
                         { 'ok': check3, 'msg': 'Feedback 3'} ] }
 
-The function checks that the user entered ``1`` for the first input, ``2`` for
-the  second input, and ``3`` for the third input. It provides feedback messages
-for each individual input, as well as a message displayed below the entire
-problem.
+这个函数校验学习者输入``1``到第一个输入框中, ``2``输入到第二个输入框中,  ``3`` 到第三个输入框中.它对于每个输入都提供了一个回馈信息,并且每条信息展示在这个问题的下方.
 
 ========================================================================
-Create a Custom Python-Evaluated Input Problem in Script Tag Format
+用脚本标签格式创建一个Python评估输入问题
 ========================================================================
 
-To create a custom Python-evaluated input problem using a ``<script>`` tag:
+要使用``<script>``标签创建一个Python评估问题:
 
-#. In the component editor, modify the example as needed.
+#. 在组件编辑器里,根据需求修改示例.
 
-#. Click **Save**.
+#. 点击**保存**.
 
-**Problem Code**:
+**问题代码**:
 
 .. code-block:: xml
 
@@ -254,10 +225,9 @@ To create a custom Python-evaluated input problem using a ``<script>`` tag:
   </solution>
   </problem>
 
-**Templates**
+**模板**
 
-The following template includes answers that appear when the student clicks
-**Show Answer**.
+当学生点击**显示答案**以下的包含答案的模板就出现.
 
 .. code-block:: xml
 
@@ -284,9 +254,7 @@ The following template includes answers that appear when the student clicks
       </solution>
   </problem>
 
-The following template does not return answers when the student clicks **Show
-Answer**. If your problem doesn't include answers for the student to see, make
-sure to set **Show Answer** to **Never** in the problem component.
+当学生点击**显示答案**时，以下的模板不会返回答案.如果你不想让你的学生可以看到你的问题的答案,请确保你在问题组件中吧**显示答案**设置成了**Never**.
 
 .. code-block:: xml
 
@@ -313,15 +281,13 @@ sure to set **Show Answer** to **Never** in the problem component.
       </solution>
   </problem>
 
-.. _Answer Tag Format:
+.. _回答标签格式:
 
 **************************
-Answer Tag Format
+回答标签格式
 **************************
 
-The answer tag format encloses the Python script in an ``<answer>`` tag,
-instead of using a Python function with a ``<script>`` tag, as in the following
-example.
+回答标签格式植入Python脚本在``<answer>``标签中,而不是在``<script>``标签使用Python函数, 下面是一个示例.
 
 .. code-block:: xml
 
@@ -336,39 +302,29 @@ example.
   </answer>
 
 .. important:: 
-  Python honors indentation. Within the ``<answer>`` tag, you must begin your
-  script with no indentation.
+  Python缩进严格.在``<answer>``标签里,你的代码钱必须没有缩进.
 
-The Python script interacts with these variables in the global context:
+Python脚本与这些全局变量交互:
 
-* ``answers``: An ordered list of answers the student provided. For example, if
-  the student answered ``6``, ``answers[0]`` would equal ``6``.
+* ``answers``: 学生提供的答案的一个有序列表.比如,如果学生答案是``6``,那么 ``answers[0]``就等于``6``.
 
-* ``expect``: The value of the ``expect`` attribute of ``<customresponse>`` (if
-  provided).
+* ``expect``: ``<customresponse>``标签的``expect``属性的值(如果提供了的话).
 
-* ``correct``: An ordered list of strings indicating whether the student
-  answered the question correctly.  Valid values are ``"correct"``,
-  ``"incorrect"``, and ``"unknown"``.  You can set these values in the script.
+* ``correct``: 表明学生的答案是否正确的一个有序字符列表.  Valid values are ``"correct"``,
+  ``"incorrect"``, 和``"unknown"``.  又可以在脚本中设置这些值.
 
-* ``messages``: An ordered list of messages that appear under each response
-  field in the problem. You can use this to provide hints to users. For
-  example, if you include ``messages[0] = "The capital of California is
-  Sacramento"``, that message appears under the first response field in the
-  problem.
+* ``messages``: 一个有序列表出现在问题的每个回答框区域的下方的提示.你可以使用这个对学习者提供提示.比如,如果你设置``messages[0] = "The capital of California is Sacramento"``,这个信息就会出现在问题的第一个回答框的下面.
 
-* ``overall_message``: A message that appears below the entire problem. You
-  can use this to provide a hint that applies to the entire problem rather than
-  a particular response field.
+* ``overall_message``: 出现在问题下面的信息。你可以使用对个对问题进行提示，而不是在独立的回答框下面.
+
 
 ========================================================================
-Create a Custom Python-Evaluated Input Problem in Answer Tag Format
+用回答标签格式创建一个自定义Python-评估问题
 ========================================================================
 
-#. In the component editor, modify the example as to use  the``<answer>`` tag
-   instead of ``<script>``. You can copy the sample code below.
+#. 在组件编辑器中,使用``<answer>``标签修改示例而不是使用``<script>``.你可以复制下面的代码.
 
-#. Click **Save**.
+#. 点击 **保存**.
 
 
 .. code-block:: xml
@@ -392,25 +348,23 @@ Create a Custom Python-Evaluated Input Problem in Answer Tag Format
     </problem>
 
 .. important:: 
-  Python honors indentation. Within the ``<answer>`` tag, you must begin your
-  script with no indentation.
+**Important**: Python缩进严格. 在 ``<answer>`` 标签内,``def check_func(expect, ans):`` 行必须没有缩进.
 
-.. _Providing Partial Credit for Custom Python-Evaluated Input Problems:
+
+.. _对自定义Python评估输入问题提供局部信任:
 
 ********************************************************************
-Providing Partial Credit for Custom Python-Evaluated Input Problems
+对自定义Python评估输入问题提供局部信任
 ********************************************************************
 
-You can configure a custom Python-evaluated input problem that gives
-partial credit for learners' answers.
+你可以配置一个自定义Python-评估输入问题并对学生的答案添加局部信任.
 
-The following example demonstrates a sample problem that allows partial
-credit. The learner's score equals the answer divided by 100.
+下面的例子示范了一个允许局部信任的简单问题.学习者的分数等于答案处于100.
 
 .. image:: ../../../shared/building_and_running_chapters/Images/partial-credit-python-problem.png
  :alt: Image of a write your own grader problem that provides partial credit
 
-The following code demonstrates the configuration of this problem.
+下面的代码示范了这个问题的配置.
 
 .. code-block:: xml
 
@@ -440,48 +394,40 @@ The following code demonstrates the configuration of this problem.
   </customresponse>
   </problem>
 
-In this example:
+在这个示例中:
 
-* The ``points`` attribute of the ``<customresponse>`` tag specifies that the
-  question is worth 100 points.
+*  ``<customresponse>``标签中的 ``points``属性指定了这个问题有100分.
 
-* The function ``give_partial_credit`` checks that the answer is between 0 and
-  100, and if so divides the learner's answer by 100 to determine the grade.
+*  ``give_partial_credit``函数校验这个答案在0和100之间, 如果是这样将学习者的答案除于100去决定分数。
 
-* The ``input_list`` that is returned specifies that:
+*  ``input_list``返回的指定值有:
   
-  * The answer is acceptable and can receive partial or full credit, with the
-    item ``'ok': True``.
+  * 答案是可以接受的,可以获得部分或全部分数, ``'ok': True``.
 
-  * The learner receives the message ``Your grade is`` followed by the percent
-    grade, with the item ``'msg': 'Your grade is ' + str(ans) + '%'``.
+  * 学生受到信息 ``Your grade is`` 后面是百分比成, ``'msg': 'Your grade is ' + str(ans) + '%'``.
 
-  * The grade assigned is the learner's answer divided by 100, with the item
-    ``'grade_decimal':grade``.
+  * 学习者的成绩是学习者的答案除于100, ``'grade_decimal':grade``.
 
-You can enhance and apply this example for your own problems in which you need
-to assign learners partial credit.
+你可以增加这个示例并且引用到你需要分配给学习者部分信任的问题中。
 
-.. _Create a Randomized Custom Python-Evaluated Input Problem:
+
+.. _创建一个随机的Python评估输入问题:
 
 *****************************************************************
-Create a Randomized Custom Python-Evaluated Input Problem
+创建一个随机的Python评估输入问题
 *****************************************************************
 
-You can create a custom Python-evaluated input problem that randomizes
-variables in the Python code. 
+您可以用Python代码创建一个自动以随机的Python评估输入问题
+
 
 .. note:: 
-  In the problem settings, you must set the **Randomization** value to
-  something other than **Never** to have Python variables randomized. See
-  :ref:`Randomization` for more information.
+  在问题设置中,你必须设置 **随机**值(除了**Never** )去取得随机变量.更多相关信息，请看:ref:`Randomization` for more information.
 
-The following example demonstrates using randomization with a Python-evaluated
-input problem.
+下面的例子示范了在Pyton评估输入问题中使用随机数.
 
 .. note::
- This example uses the method ``random.randint`` to generate random numbers.
- You can use any standard Python library for this purpose.
+ 这个示例使用了``random.randint``产生随机数.你可以使用任何标准的Python库达到这个目的。
+
 
 .. code-block:: xml
 
