@@ -1,86 +1,67 @@
 .. _Randomized Content Blocks:
 
 #########################
-Randomized Content Blocks
+随机内容块
 #########################
 
-If your course has :ref:`content libraries<Content Libraries>` enabled and you
-have access to a library whose content you want to use, you can reference that
-library to create randomized assignments for students.
+如果你的课程中有 :ref:`内容库<Content Libraries>` 能够使用并且你你能进入一个内容库并使用其中的内容，你就能引用那个库来创建一个随机分配给学生。
 
-To create a randomized assignment, you add one or more randomized content blocks
-to a course unit. For each randomized content block, specify a library from
-which to draw the content, and indicate the number and optionally the type of
-problem to randomly give each student. 
+要创建一个随机分配，你需增加一个或多个随机内容块到课程单元中。对于每个随机内容块指定一个将从其中获取内容的库，并指明将随机分配给每个学生的问题的数量和类型。
 
-The libraries that you create or have access to are listed on the **Libraries**
-tab on the Studio Home page. For details about content libraries, see
-:ref:`Content Libraries`.
+你创建或能访问的内容库被列位于Studio首页的**Libraries**
+标签上。内容库的更多详情请参照:ref:`内容库`.
 
-For details about using content library components in a course, see these
-topics:
+在课程中使用内容库组件的更多详情请参照这些主题：
 
-* :ref:`Use Components from Libraries in a Course`
-* :ref:`Add a Randomized Content Block to Your Course`
-* :ref:`View the Matching Components in a Randomized Content Block`
-* :ref:`Edit Components in Randomized Content Blocks`
-* :ref:`Get the Latest Version of Library Content`
+* :ref:`在课程中使用来自库的组件`
+* :ref:`添加随机内容块到你的课程`
+* :ref:`在随机内容块中查看匹配组件`
+* :ref:`在随机内容块中编辑组件`
+* :ref:`获取库内容的最新版本`
 
 
 .. _Use Components from Libraries in a Course:
 
 *****************************************
-Use Components from Libraries in a Course
+在课程中使用来自库的组件
 *****************************************
 
-To create randomized assignments that make use of components from content
-libraries, you must have at least **User** level access to the libraries that
-you want to use. If you do not have access to a library, members of your course
-team who have **Admin** access to that library can grant you access.
+创建使用来自内容库的组件的随机分配，你至少要对你所使用的库有 **用户**层的访问权。如果你不能访问库，你的课程团队中有对该库 **管理员**的成员可以授予你访问权。
 
-The libraries that you create or have access to are listed on the **Libraries**
-tab on the Studio Home page. For details about content libraries, see
-:ref:`Content Libraries`.
+你创建或能访问的内容库被列位于Studio首页的**Libraries**
+标签上。内容库的更多详情请参照:ref:`内容库`.
 
-Using components from content libraries in your course involves two steps.
+在你的课程中使用来自内容库的组件包括两个步骤。
 
-#. :ref:`Enable Content Libraries`
-#. :ref:`Add a Randomized Content Block to Your Course`
+#. :ref:`激活内容库`
+#. :ref:`添加一个随机内容块到你的课程`
    
-.. note:: After adding a randomized content block to your course, be aware that
-   if components in the source library change, you must manually update the
-   components in the course outline if you want to keep the components
-   synchronized with the version in the library.
+.. note:: 在添加一个随机内容块到你的课程后，注意如果在源库中的组件变更了，如果你想让组件保持与库的同步的话你必须联网手动更新在课程中的组件。
 
-For details about working with randomized content blocks in your course, see
-these topics.
+关于在你的课程中如何管理随机内容块，请参照以下主题。
 
-* :ref:`View the Matching Components in a Randomized Content Block`
-* :ref:`Edit Components in Randomized Content Blocks`
-* :ref:`Get the Latest Version of Library Content`
+* :ref:`在随机内容块中查看匹配组件`
+* :ref:`在随机内容块中编辑组件`
+* :ref:`获取库内容的最新版本`
 
 
 .. _Enable Content Libraries:
 
 ========================
-Enable Content Libraries
+激活内容库
 ========================
 
-You must enable content libraries before you can use randomized components from
-:ref:`content libraries<Content Libraries>` in your courses.
+能够使用从在你的课程中的 :ref:`内容库<Content Libraries>`获得的随机组件之前，你必须激活库。
 
-#. In Studio, open the course in which you want to provide library content.
+#. 在Studio中，打开你想在其中提供库内容的课程
 
-#. Select **Settings**, then **Advanced Settings**.
+#. 选择 **设置**然后 **高级设置**
 
-#. In the **Advanced Module List** field, place your cursor between the
-   supplied pair of square brackets.
+#. 在 **高级模块列表** 域，把鼠标放在方括号中
 
-#. Type ``"library_content"``. 
-
-#. Click **Save Changes**. 
+#. 点击 **保存修改**.
    
-   Studio reformats the policy key you just entered to indent it on a new line.
+   Studio重排你刚输入的规则键，在新一行中缩进它。
 
   .. image:: ../../../shared/building_and_running_chapters/Images/ContentLibraries_AdvancedSetting.png
      :alt: Advanced Module policy key "library_content"
@@ -89,195 +70,132 @@ You must enable content libraries before you can use randomized components from
 .. _Add a Randomized Content Block to Your Course:
 
 =============================================
-Add a Randomized Content Block to Your Course   
+添加随机内容块到你的课程中
 =============================================
 
-After you :ref:`enable content libraries<Enable Content Libraries>` you can add
-library content to your courses using the Randomized Content Block advanced
-component.
+在你:ref:`激活内容库<Enable Content Libraries>` 后，你可以用随机内容块的高级组件添加库内容到你的课程中。
 
-#. In Studio, open the course in which you want to add randomized problems from
-   a content library.
+#. 在Studio中，打开你想从内容库中添加随机问题的课程。
 
-#. Click **Content** then click **Outline**.
+#. 点击**内容** 再点击**大纲**
 
-#. In the unit where you want to add a set of randomized problems, click **Add
-   New Component** 
+#. 在你想添加一组随机问题的单元，点击 **添加新的组件**
 
-#. Click **Advanced**, then click **Randomized Content Block**.
+#. 点击**高级**再点击**随机内容块**
 
-   The randomized content block is added to your unit.
+   随机内容块就添加到你的单元中了
 
-#. Click the **Edit** icon.
+#. 点击**编辑** 图标
    
-#. In the randomized content block settings, specify the details of the content
-   you want to add in this block.
+#. 在随机内容块设置中，指定你想添加到块中的内容的细节部分
 
-  - For **Count**, enter the number of problems to display to each student.
+  - 对于**计数**输入你要显示给每位学生的问题数
 
-  - For **Display Name**, enter the name that you want students to see for this
-    block.
+  - 对于**显示名称**输入你想让学生从这个块中看到的名称。
 
-  - For **Library**, select the library from which you want to draw problems.
+  - 对于**库**选择你想从其中获取问题的库
 
-  - For **Problem Type**, from the drop down list select a specific type of
-    problem to be drawn from the library. Select **Any Type** if you do not want
-    to specify a particular type of problem.
+  - 对于**问题类型**从下拉列表中选择你想从库中获取问题的类型。选择**任意类型** ，如果你不想指定特定的问题类型。
 
     .. image:: ../../../shared/building_and_running_chapters/Images/ContentLibraries_RCBSelectProblemType.png
      :alt: Problem type dropdown list in randomized content block settings    
 
-  - For **Scored**, from the drop down list select **True** or **False** to
-    indicate whether the assignment should be graded. 
+  - 对于**记分**从下拉列表中选择**True**或**False**来表明分配是否会被评分。
 
-.. note:: Grading is subject to the setting of this unit's subsection or
-   section. If the subsection or section is not graded, selecting **True** here has
-   no impact. Selecting **False** means that this assignment is not graded even if
-   the subsection or section is graded.
+.. note:: 评分取决于该单元的章节或小章节。如果小章节或章节不被评分，选择**True**也不会有影响。选择**False**意味着即使小章节或章节被评分，这次分配也不会被评分。
 
-7. Click **Save** when you have finished specifying the details of your
-   randomized content block.
+7. 点击**保存**当你结束指定随机内容块的细节时。
 
-To view the list of components in the source library that match your filter
-settings, see :ref:`View the Matching Components in a Randomized Content Block`.
+查看匹配你的过滤器设置的源库的组件列表，请参照:ref:`查看在随机内容块中的匹配组件`
 
-To view the entire contents of the library in Studio, see :ref:`View the
-Contents of a Library`.
+查看Studio中库的所有内容，请参照:ref:`查看库内容`
    
 
 .. _View the Matching Components in a Randomized Content Block:
 
 ***********************************************************
-View the Matching Components in a Randomized Content Block
+在随机内容块中查看匹配组件
 ***********************************************************
 
-In a unit that uses a randomized content block, you can view the list of all
-components that match the filters specified in that block.
+在使用随机内容块的单元中，你可以查看匹配在块中指定的过滤器的所有组件的列表。
 
-For example, if you have specified in the randomized content block that you want
-to provide each student with 3 multiple choice problems, you see all the
-multiple choice problems that exist in the referenced library. In other words,
-you see every problem in the library that could potentially be provided to a
-student.
+例如，如果你想指定一个提供给每位学生带3个选项的问题的随机内容块，你会看到存在引用库里的所有选择题。换名话说，你可以看到库里的能提供给学生的每道题。
 
-#. In Studio, navigate to the unit containing the randomized content block that
-   references your library.
-#. In the randomized content block, click the **View** icon.
+#. 在Studio中，导航到包含引用了你的库的随机内容块的单元
+#. 在随机内容块中，点击**查看**图标
    
 
    .. image:: ../../../shared/building_and_running_chapters/Images/ContentLibraries_ViewMatching.png
       :alt: The View button for a randomized content block
 
-   You see all components that match the specifications in the randomized
-   content block. The text at the top of the list of components indicates how
-   many of these components are randomly selected and provided to each student.
+   在随机内容块中你会看到能匹配规则的所有组件。在组件列表顶部的文本表明了有多少随机选择并提供给学生的组件
 
-To view the contents of a library in Studio, see :ref:`View the Contents of a
-Library`.
+在Studio中查看库内容请参照:ref:`查看库内容`
 
-To view the randomized content as a student would see it, see :ref:`View the
-Randomized Content as a Student`.
+查看学生能看到的随机内容，请参照:ref:`作为学生查看随机内容`
 
 
 .. _View the Randomized Content as a Student:
 
 ****************************************
-View the Randomized Content as a Student
+作为学生查看随机内容
 ****************************************
 
-To view the number and type of components from a randomized content block as a
-student would see them, follow the steps described in the :ref:`Preview a Unit`
-topic.
+查看作为学生能看到的来自随机内容块的组件的数量和类型，跟随在:ref:`单元预览`主题描述的步骤
 
-To view the list of matching components in the library, see :ref:`View the
-Matching Components in a Randomized Content Block`.
+查看在库中的匹配组件的列表，请参照:ref:`查看在随机内容块中的匹配组件`
 
-To view the entire contents of the library in Studio, see :ref:`View the
-Contents of a Library`.
+在Studio中查看库的所有内容，请参照:ref:`查看库内容`
 
 
 .. _Edit Components in Randomized Content Blocks:
 
 ******************************************************
-Editing Components in Randomized Content Blocks
+编辑在随机内容块中的组件
 ******************************************************
 
-In Studio, in the course unit that uses a randomized content block, you can edit
-each component within the randomized content block in the same way as you do for
-any other component in your course.
+在Studio中，在使用随机内容块的课程单元中，你可以在随机内容块中采用在你的课程中的对其他任意组件使用的方法来编辑组件。
 
-.. note:: Be aware that if you make changes on a component's **Editor** tab, if
-   you update the randomized content block with the latest version of components
-   from a library, these changes are overwritten. Only changes to a component's
-   **Settings** tab are retained when you update the component. For details
-   about getting the latest versions of library content in a randomized content
-   block, see :ref:`Get the Latest Version of Library Content`.
+.. note:: 注意如果你更改组件的**编辑**图标，如果你用来自库中的组件的最新版本来更新随机内容块，这些更改会被覆盖。仅对组件的**设置**图标的更改在更新后会被保持。:ref:关于如何在随机内容块中获得库内容的最新版本，请参照`获得库内容最新版本`
 
 
-The settings of a component that is supplied in a randomized content block are
-initially inherited from the component in the content library that it is drawn
-from. In the randomized content block, you can modify component settings so that
-they are different from the "source" component in the library.
+在随机内容块里提供的组件设置最初继承自内容库的组件。在随机内容块中，你可以修改设置使得它们与库中的源组件不同。
 
-You can also reset a component's settings to the library default. If a
-component's settings have been changed from the default settings in the library,
-a **Clear** icon is shown next to the setting field.
+你也可以将组件设置重置。如果组件的设置被修改过，紧接着设置域就会有**清除** 图标显示。
 
  .. image:: ../../../shared/building_and_running_chapters/Images/ContentLibraries_ResetComponentField.png
     :alt: Clear button in the course component field reverts value to library value.
 
-Click the **Clear** icon to restore the library default setting for that field.
+点击**清除**来恢复默认设置。
 
 .. _Get the Latest Version of Library Content:
 
 *********************************************
-Getting the Latest Version of Library Content
+获取库内容的最新版本
 *********************************************
 
-If you modify the contents of a library that is referenced by randomized content
-blocks in one or more courses, those courses do not automatically use the
-updated content. You can bring the randomized content blocks up to date with the
-version in the library.
+如果你库的内容，而该库又被一个或多个课程中的随机内容块引用，这些课程不会自动采用更新的内容。你可以把库里的随机内容块更新到最近版本。
 
-.. warning:: Be careful when you modify problems after they have been released!
-   Changes that you make to published problems can affect the student experience
-   in the course, as well as analysis of course data.
+.. warning:: 在发布后若你想更新问题时要小心。你对已发布的问题做修改会影响该课程中学生的体验，以及课程数据的分析。
 
-.. note:: Be aware that although you can retain changes to the settings of
-   components in a randomized content block, changes to the **Editor** tab in
-   components are overwritten if you update the component to the latest library
-   version. If you do not want to bring components in the randomized content
-   block up to date with the latest version in the library, you do not need to
-   take any action.
+.. note:: 注意，即使你能够保持在随机内容块中的组件的设置，在组件中对 **编辑**标签的更改还是会被覆盖，如果你将组件更新到最新的版本的话。如果你不将随机内容块中的组件更新到库中的最新版本，你就什么也不用做。
 
-* If the components in the randomized content block have not been edited in the
-  course outline, when you next open the randomized content block in the course
-  outline, you see a message indicating that the component is out of date in
-  comparison with the library.
+* 如果随机内容块中的组件没有在课程大纲中被编辑，当你下一次在课程大纲中打开随机内容块时，你会看到一条消息，提示在与库中的组件作对比时，你的组件已过期。
 
   .. image:: ../../../shared/building_and_running_chapters/Images/ContentLibraries_ComponentUpdateNow.png
      :alt: Error message shown when the source library has changed, with the
       Update Now link circled.
 
-  To update your randomized content block components to the latest versions in the content library, click **Update now**.
+  更新你的随机内容块组件到内容库中的最新版本请点击**立即更新**
 
-  The randomized content block is brought up to date with the latest contents of
-  the library that it references.
+  随机内容块更新到它引用的库中的最新内容。
 
-* If you edited only the settings of components in the randomized content block
-  in your course so that they are different from the original version in the
-  library, you do not lose your changes if you click **Update now**. In this case,
-  the changes that were made in the randomized content block in the course outline
-  are kept, but a **Clear** button becomes available next to the changed field in
-  the component. However, any changes you made to the **Editor** tab of components
-  in a randomized content block will be lost if you click **Update now** to get
-  the latest library version.
+* 如果你编辑的只是课程中的随机内容块的组件的设置，使得它们与库中原始版本不相同，点击**立即更新**不会失去更改。. 这种情况下在大纲中的随机内容块中的更改会被保留，但是在组件中的修改域旁边会有一个**清除**按钮变得可用。然而，对随机内容块中的组件的 **编辑**标签的任何更改会丢失，如果你点击**立即更新**获取最新版本的库。
 
   .. image:: ../../../shared/building_and_running_chapters/Images/ContentLibraries_ResetComponentField.png
      :alt: Clear icon in the course component field reverts value to library value.
 
   
-  To clear any edits made in the course outline and bring your edited components
-  up to date with the version in the library, click **Clear**.
+  为了清除任何对课程大纲所做的编辑并把你做过编辑的组件更新到库中的版本，请点击 **清除**
 
-  The value in that component field is reset to the current value in the library.
+  组件域的值被重置成库中的现有值。
