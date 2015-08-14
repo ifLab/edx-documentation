@@ -87,7 +87,7 @@
  :alt: Image of the instant hangout control on a page.
  :width: 600
 
-要加入一个群聊，学习者选择 **加入群聊** .
+要加入一个群聊，学习者选择 **加入群聊**。
 
 如果没有登陆，学习者会被提示登陆谷歌：
 
@@ -140,7 +140,7 @@
 
 #. 在第一行，添加你上传的JavaScipt文件到一个<script>标签中，确保你使用了完全打开和关闭的标签。
    
-   例如，如果你的JavaScript文件是以 **instanthangouts-0.1.0.js**命名的，你可以按下面的方式输入::
+   例如，如果你的JavaScript文件是以 **instanthangouts-0.1.0.js** 命名的，你可以按下面的方式输入::
   
     <script src='/static/instanthangouts-0.1.0.js'></script>
 
