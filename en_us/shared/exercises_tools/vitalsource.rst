@@ -1,140 +1,128 @@
 .. _VitalSource:
 
 #########################
-VitalSource E-Reader Tool
+VitalSource 电子阅读器
 #########################
 
-The VitalSource Bookshelf e-reader tool provides your students with easy access to electronic books. In addition to reading text, students can quickly browse and search content (including figures and notes), use multiple highlighters, create and manage notes, and copy notes into external documents.
+VitalSource 书架电子阅读器使你的学生能够轻松访问电子书。除了阅读文档，学生能快速浏览和查找内容（包括图片和笔记），使用多种荧光笔，创建和管理笔记以及复制笔记到外部文档。
 
 .. image:: ../../../shared/building_and_running_chapters/Images/VitalSource.png
    :width: 500
    :alt: VitalSource e-book with highlighted note
 
-For more information about Vital Source and its features, visit the `VitalSource Bookshelf support site <https://support.vitalsource.com>`_.
+想要了解更多关于Vital Source和它的特性，请访问 `VitalSource 书架支持 <https://support.vitalsource.com>`_.
 
-.. note:: Before you add a VitalSource Bookshelf e-reader to your course, you must work with Vital Source to make sure the content you need already exists in the Vital Source inventory. If the content is not yet available, Vital Source works with the publisher of the e-book to create an e-book that meets the VitalSource Bookshelf specifications. **This process can take up to four months.** The following steps assume that the e-book you want is already part of the Vital Source inventory.
+.. note:: 在你添加VitalSource书架电子阅读器到你的课程之前，你必须确保你所需的内容已经存在于Vital Source目录中了。如果内容还不可用，Vital Source与电子书出版商合作来创建电子书以符合VitalSource书架的规格。 **这个过程要花上4个月的时间** 接下来的步骤已假设你想要的电子书已经存在Vital Source目录中。
 
 **************************
-Add a VitalSource E-Reader
+添加VitalSource电子阅读器
 **************************
 
-Adding a VitalSource Bookshelf e-reader has several steps:
+添加VitalSource书架电子阅读器有以下几个步骤：
 
-#. :ref:`Obtain specific information<VS Obtain VS Info>` about your e-book from Vital Source.
+#. :ref:`获取指定信息<VS Obtain VS Info>` 关于你的来自Vital Source的电子书
 
-#. :ref:`Modify the course's advanced settings<VS Modify Advanced Settings>` to allow you to create a Vital Source Learning Tools Interoperability (LTI) component.
+#. :ref:`修改课程高级设置<VS Modify Advanced Settings>` 使你能够创建一个Vital Source学习工具互操作(LTI)组件
 
-#. :ref:`Add the VitalSource Bookshelf e-reader<VS Add VS EReader>` to a unit.
+#. :ref:`添加VitalSource书架电子阅读器<VS Add VS EReader>` 到一个单元中
 
 .. _VS Obtain VS Info:
 
 ===========================================
-Step 1. Obtain Information from VitalSource
+步骤一，从VitalSource获取信息
 ===========================================
 
-To create a VitalSource Bookshelf e-reader, you need the following information from Vital Source:
+要创建一个VitalSource书架电子阅读器，你需要以下来自Vital Source的信息：
 
-- The **LTI Passports** policy key. This policy key enables you to create an
-  LTI component for the VitalSource Bookshelf e-reader. For more information
-  about the **LTI Passports** policy key, see :ref:`LTI Information` in
-  :ref:`LTI Component`.
+-  **LTI 通行证** 》政策密钥，这个密钥使你能为VitalSource书架电子阅读器创建一个LTI组件，更多关于 **LTI 通行证** 政策密钥的信息请参照 :ref:`LTI 信息` 在在 :ref:`LTI 组件`中。
 
-- The Vital Souce Book ID (VBID) for your e-book. This is a specific code that Vital Source creates for the book when Vital Source adds the e-book to its inventory.
+- 你的电子书的重要来源书号（VBID），是Vital Source在添加电子书到它的目录时创建的一个特别码。
 
-To obtain this information, your course team selects a member point person
-(MPP) to work with Vital Source. Vital Source delivers the **LTI Passports**
-policy key and VBID to the MPP.
+要获取这个信息，你的课程团队选择一个成员点成员（MPP）来与Vital Source交互。Vital Source提供了 **LTI 通行证**
+政策密钥和VBID给MPP。
 
 
 .. _VS Modify Advanced Settings:
 
 =============================================
-Step 1. Modify the Course's Advanced Settings
+步骤二，修改课程高级设置
 =============================================
 
-In this step, you'll modify the course's advanced settings to allow you to
-create an LTI component and add the **LTI Passports** policy key for Vital
-Source.
+在这一步骤中，你将要修改课程的高级设置以允许你创建一个LTI组件并添加 **LTI 通行证** 政策密钥。
 
-#. In Studio, click the **Settings** menu, and then click **Advanced Settings**.
+#. 在Studio中，点击 **设置** 菜单，然后点击 **高级设置**
 
-#. In the field for the  **Advanced Module List** policy key, place your cursor
-   between the brackets.
+#. 在  **高级模块列表** 政策密钥域中，把你的光标放置在括号中
 
-#. Enter ``“lti”``. Make sure to include the quotation marks, but not the
-   period.
+#. 输入 ``“lti”``确保包含引号，但没有句号。
 
    .. image:: ../../../shared/building_and_running_chapters/Images/LTIPolicyKey.png
     :alt: Image of the Advanced Module List key in the Advanced Settings page, with the LTI value added
 
-  .. note:: If the value field already contains text, place your cursor directly after the closing quotation mark for the final item, and then enter a comma followed by ``“lti”`` (make sure that you include the quotation marks). For example, the value for **Advanced Module List** may resemble the following:
+  .. note:: 如果值域里已经包含文本，直接把光标放在结尾引号后，然后输入一个逗号，后跟 ``“lti”`` （确保你包含了引号） **高级模块列表** 可能类似：
 
    ``["value_1","lti"]``
 
-4. Scroll down to the **LTI Passports** policy key.
+4. 向下滚动到 **LTI 通行证** 政策密钥.
 
-#. In the policy value field, place your cursor between the brackets, and then
-   enter the value for the **LTI Passports** policy key that you obtained from
-   Vital Source. Make sure to surround the value with quotation marks.
+#. 在政策值域，把光标放在括号中，然后输入你从Vital Source获取的 **LTI 通行证** 政策密钥的值，确保输入的值用引号标记。
 
-   For example, the value in this field may resemble the following:
+   例如，在这个域中的值与下面类似：
 
    ``"id_21441:b289378-ctools.school.edu:23746387264"``
 
-6. At the bottom of the page, click **Save Changes**.
+6. 在页面的底部，点击 **保存更改**
 
-The page refreshes automatically. At the top of the page, you see a notification that your changes have been saved.
+页面会自动刷新。在页面的顶部，你将看到通知，显示你的更改已经被保存。
 
 .. _VS Add VS EReader:
 
 ==============================================================
-Step 3. Add the VitalSource Bookshelf E-Reader to a Unit
+步骤三，添加VitalSource书架电子阅读器到单元
 ==============================================================
 
-To add the VitalSource Bookshelf e-reader to a unit, you'll create an LTI component, and then configure several settings in the component.
+要添加VitalSource书架电子阅读器到单元，你将创建一个LTI组件，然后在组件中配置几项设置。
 
-#. In the unit where you want to create the problem, click **Advanced** under **Add New Component**, and then click **LTI**.
+#. 在你想在其中创建问题的单元里，点击 **高级**， 在 **添加新的组件**下 然后点击 **LTI**
 
-#. In the component that appears, click **Edit**.
+#. 在出现的组件中，点击 **编辑**
 
-#. In the **Display Name** field, type the name of your e-book. This name
-   appears as a heading above the problem and as a tooltip in the learning
-   sequence at the top of the **Courseware** page.
+#. 在 **显示名称** 的域中，输入你的电子书的名称，这个名字将在问题上面作为标题出现，并在 **课程件** 页面顶部的学习序列中的作为提示文本
 
-#. Next to **Custom Parameters**, click **Add**.
+#. 在 **习惯参数** 后点击 **添加**
 
-#. In the field that appears, enter the following (where ``VitalSourceCode`` is the VBID for the e-book):
+#. 在出现的域中，输入下列内容（其中 ``VitalSourceCode`` 是电子书的VBID）：
 
    ``vbid=VitalSourceCode``
 
-   If you want to experiment with an e-book in your course, but you don't yet have a VBID for your e-book, you can enter ``vbid=L-999-70103`` to create a link to *Pride and Prejudice*.
+   如果你想在课程中用电子书作实验，但你还不想给电子书一个VBID时，你可以输入 ``vbid=L-999-70103`` 来创建一个链接到 *傲慢与偏见*
 
-#. If you want your e-book to open to a specific page, click **Add** next to **Custom Parameters** again, and then add the following (where ``35`` is the page of the e-book):
+#. 如果你想电子书打开到特定的一页，再次点击 在**习惯参数** 后面的 **添加** 然后添加下列内容（其中 ``35`` 是电子书中的页码：
 
    ``book_location=page/35``
 
-#. In the **Launch URL** field, enter the following (make sure to use ``https`` instead of ``http``):
+#. 在 **启动URL** 域中，输入下列内容（其中用 ``https`` 替代 ``http`` ）：
 
   ``https://bc.vitalsource.com/books/book``
 
-8. In the **LTI ID** field, enter the following:
+8. 在 **LTI ID** 域，输入下列内容：
 
   ``vital_source``
 
-9. Click **Save**.
+9. 点击 **保存**
 
 **************************
-Information for Students
+给学生的信息
 **************************
 
-Each institution's Vital Source account manager will train the MPP on the VitalSource Bookshelf e-reader and provide supporting documentation as part of the onboarding process. However, to improve the learner experience, we recommend that you provide the following explanation of the e-reader to your students:
+第个机构的Vital Source账号管理员将训练MPP如何使用VitalSource书架电子阅读器，并作为过程的的一部分提供支持文档。然而，为了改善学习者的体验，我们建议你把下列的解释提供给你的学生：
 
-  Digital textbooks in the VitalSource Bookshelf e-reader offer simple, user-friendly navigation and instant, intuitive access to content. You'll most often use several VitalSource Bookshelf e-reader features during the course:
+  VitalSource书架电子书中的数字课本提供了简单的、用户友好的导航，以及即时的、直观的内容访问。在课程中你将尽可能多地利用以下VitalSource书架电子阅读器特性：
 
-  * Browse content, figures, and notes and filter search results.
-  * Use multiple highlighters.
-  * Create and manage notes.
-  * Copy and paste notes into external documents.
+  * 浏览内容，图片，笔记和过滤器搜索结果
+  * 运用多种荧光笔
+  * 创建和管理笔记
+  * 复制和粘贴笔记到外部文档
 
-  For more information about how to use these features, visit the `VitalSource Bookshelf support site <https://support.vitalsource.com>`_.
+  关于如何使用这些特性的更多信息，请访问 `VitalSource 书架网址 <https://support.vitalsource.com>`_.
 
