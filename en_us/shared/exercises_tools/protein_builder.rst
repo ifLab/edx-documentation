@@ -1,10 +1,12 @@
 .. _Protein Builder:
+.. _Protein Builder:
 
 ############################
-Protex Protein Builder Tool
+Protex蛋白质构建工具
 ############################
 
-The Protex protein builder asks students to create specified protein shapes by stringing together amino acids. In the example below, the goal protein shape is a simple line. 
+Protex蛋白质构建工具让学生通过把氨基酸串联起来创建一个特殊的蛋白质形状。如下图所示,目标蛋白质的形状是一个简单的线。
+
 
 
 .. image:: ../../../shared/building_and_running_chapters/Images/ProteinBuilder.png
@@ -13,20 +15,20 @@ The Protex protein builder asks students to create specified protein shapes by s
 .. _Create the Protein Builder:
 
 ********************************
-Create the Protein Builder Tool
+创建一个蛋白质构建工具
 ********************************
 
-To create the protein builder:
+要创建一个蛋白质构建工具:
 
-#. Under **Add New Component**, click **Problem**, and then click **Blank Advanced Problem**.
-#. In the component that appears, click **Edit**.
-#. In the component editor, paste the Problem component code from below.
-#. Make any changes that you want, and then click **Save**.
+#. 在**添加新组件**下方, 点击**问题*, 然后点击**空白的高级问题**.
+#. 在出现的组件中, 点击**编辑**.
+#. 在组件编辑器中,复制下面的问题组件代码.
+#. 按你所需修改代码,然后点击 **Save**.
 
 .. _Protein Builder Code:
 
 *************************
-Protein Builder Tool Code
+蛋白质构建问题代码
 *************************
 
 .. code-block:: xml
@@ -63,10 +65,11 @@ Protein Builder Tool Code
     </solution>
   </problem>
 
-In this code:
+在这些代码中:
  
-* **width** and **height** specify the dimensions of the application, in pixels.
-* **target_shape** lists the amino acids that, combined in the order specified, create the shape you've asked students to create. The list can only include the following letters, which correspond to the one-letter code for each amino acid. (This list appears in the upper-left corner of the protein builder.)
+* **width** 和 **height** 指定这个应用的像素大小.
+* **target_shape** 列出氨基酸,按指定的顺序结合。创建你叫你学生创建的形状。这个列表只能包含以下的字母每个字母和相应的氨基酸一一对应，(这个列表出现在蛋白质构建器的左上角)。
+
 
   .. list-table::
      :widths: 15 15 15 15
