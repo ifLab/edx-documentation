@@ -1,87 +1,61 @@
 .. _RecommenderXBlock:
 
 ##################
-Recommender
+推荐系统
 ##################
 
 
-The Recommender provides students with a list of online resources on
-related to the course content. These resources are jointly
-managed by the instructors and the students. 
+推荐系统提供给学生与课程内容相关的在线资源的列表，这些资源是指导员和学生联合管理的。
 
-The most common use is for remediation of errors and misconceptions, followed
-by providing additional, more advanced resources.
+最常用的是纠正错误和误解，然后提供额外的或高级的资源。
 
-For example, if a student is working through a physics problem, the Recommender
-may show links to concepts used in the problem on Wikipedia, PhET, and
-OpenStax, as well as in the course itself. The Recommender can help fill
-complex knowledge gaps, as well as help to move students in
-the right direction. 
+例如，如果一个学生在解物理问题，推荐系统可能会显示出在问题或课程中相关概念的到Wiki百科，PhET和OpenStax上的链接。推荐系统能帮助填补复杂知识的空白，帮助学生往正确的方向上前进。
 
 
-* Students and instructors can:
+* 学生和指导员可以：
 
-   * Add new resources.
-   * Edit existing resources and work jointly to improve the quality of
-     resources (e.g., give an informative resource summary).
-   * Manage quality by voting for high quality resources or flagging
-     resources as spam or abuse.
+   * 添加新资源
+   * 编辑已有的资源并联合起来提升资源的质量（比如，给出有益的资源总结）
+   * 通过给高质量的资源投票或将资源标记为垃圾或滥用来管理资源的质量
 
-Instructors can endorse useful resources or remove irrelevant entries.
+指导员可能认可有用的资源或删除不相关的条目
 
-If you use the Recommender, you should inform students through course
-content or :ref:`course updates <Adding Course Updates and Handouts>` about the
-tool.
+如果你使用推荐系统，你应该通过课程内容或关于工具的 :ref:`课程更新 <Adding Course Updates and Handouts>` 来通知学生
 
-Following is an example of a Recommender in a course. The upper part of
-the figure illustrates a question in problem set where the Recommender is
-attached. The middle of the figure shows a list of resources and several
-gadgets for users to work on the resources. The bottom portion shows additional
-information about a given resource on mouse-over event.
+接下来是课程中推荐系统的一个例子。图片的上面部分举例说明了绑定了推荐系统的问题集中的问题，中间部分展示了资源的列表和给用户在资源上使用的小玩意，底部展示了给定资源的额外信息，当鼠标悬浮其上时。
 
 .. image:: ../../../shared/building_and_running_chapters/Images/RecommenderXBlockExample.png
   :alt: An overview of the RecommenderXBlock
 
 
 ********************************
-Add a Recommender
+添加推荐系统
 ********************************
 
-To add a Recommender to a course:
+添加推荐系统到课程：
 
-#. Add the Recommender advanced component. 
+#. 添加推荐系统高级组件
 
-    #. On the **Settings** menu, click **Advanced Settings**.
+    #. 在 **设置** 菜单上，点击 **高级设置**
 
-    #. Make sure that **recommender** is in the field for the
-    **Advanced Module List** policy key. For example, if you have no
-    other advanced module, this field should be:
+    #. 确保 **推荐系统** 是在 **高级模块列表** 政策关键的域中的。比如，如果你没有其他的高级模块，这个域应该是：
 
        ``["recommender"]``
 
-    #. At the bottom of the page, click **Save Changes**.
+    #. 在页面的底部，点击 **保存修改**
 
-       The page refreshes automatically. At the top of the page, you
-       should see a notification that your changes have been saved.
+       页面会自动刷新。在页面的顶部，你会看到提示你修改已保存的提示
 
-    #. Go to the unit in the course outline where you want to add the
-       RecommenderXBlock.
+    #. 去到你想在其中添加RecommenderXBlock的课程大纲中的单元。
 
-#. Under **Add New Component**, select **Advanced**.
-#. Select **recommender**.
-#. Optionally, in the component that appears, select **Edit**. Then, in the
-   component editor, specify settings as needed.
+#. 在 **添加新的组件** ，选择 **高级**
+#.  选择 **推荐系统**
+#. 在出现的组件中，可选择地选择 **编辑** ，然后在组件编辑器中，根据需要进行设置。
 
-   * Whether to take users on an introduction tour when they see the tool the
-     first time. If selected, the first time (and only the first time) a user
-     sees the RecommenderXBlock, there will be a short guided tutorial.
-   * Whether to disable the user interface functions which are under
-     development. Because these are untested and under development, please
-     leave these disabled unless otherwise advised by edX staff.
-   * How many resources do you want to show in each page of the resource list.
-   * How many page icons do you want to show in the pagination control (that
-     is, the page range)? The icons for pages from (current page - page range)
-     to (current page + page range) will be shown.
+   * 当用户第一次看到工具时，是否要让他们浏览介绍。如果选择了，用户在第一次，并且只在第一次看到RecommenderXBlock时，会有一个简短的引导教程
+   * 是否禁用开发中的用户接口功能。因为这些功能未经测试，并且还在开发中，请禁用它们，除非edX工作人员建议使用。
+   * 在资源列表页面中你想展示多少资源。
+   * 在页码控制中你想展示多少页面图标（也就是页面范围）？从（当前页面 - 页面范围）到（当前页面 + 页面范围）的页面会被显示。
 
-#. Click **Save**.
-#. Optionally, open the unit in the LMS and suggest some resources.
+#. 点击 **保存**
+#. 可选地，打开LMS中的单元并建议一些资源。
