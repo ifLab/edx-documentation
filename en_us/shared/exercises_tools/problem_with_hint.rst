@@ -1,29 +1,25 @@
  .. _Problem with Adaptive Hint:
 
 ################################
-Problem with Adaptive Hint
+带适应性提示的问题
 ################################
 
-A problem with an adaptive hint evaluates a student's response, then gives the
-student feedback or a hint based on that response so that the student is more
-likely to answer correctly on the next attempt. These problems can be text
-input problems or multiple choice problems.
+一个带适应性提示的问题评估学生的回答，然后给学生以反馈或基于回答的提示，以便学生能在下一次尝试时更有可能做出正确回答。这些问题可以是文本输入问题或多选问题。
 
 .. image:: ../../../shared/building_and_running_chapters/Images/ProblemWithAdaptiveHintExample.png
  :alt: Image of a problem with an adaptive hint
 
 ******************************************
-Create a Problem with an Adaptive Hint
+创建一个带适应性提示的问题
 ******************************************
 
-To create the above problem:
+创建一个上面的问题：
 
-#. In the unit where you want to create the problem, click **Problem**
-   under **Add New Component**, and then click the **Advanced** tab.
-#. Click **Problem with Adaptive Hint**.
-#. In the component that appears, click **Edit**.
-#. In the component editor, replace the example code with the code below.
-#. Click **Save**.
+#. 在你想在其中创建问题的单元中，点击位于 **添加新的组件** 下方的 **问题** ，然后点击 **高级** 标签
+#. 点击 **带适应性提示的问题**
+#. 在出现的组件中，点击 **编辑**
+#. 在组件编辑中，用下列代码替换示例代码
+#. 点击 **保存**
 
 .. code-block:: xml
 
@@ -67,11 +63,11 @@ To create the above problem:
 .. _Problem with Adaptive Hint XML:
 
 *********************************
-Problem with Adaptive Hint XML
+带适应性提示XML的问题
 *********************************
 
 ========
-Template
+模板
 ========
 
 .. code-block:: xml
@@ -109,64 +105,61 @@ Template
 	  </text>
 	</problem>
 
-.. note:: If the hints that you supply include characters, the letters must be lowercase.
+.. note:: 如果你提供的提示包含字符，字符必需是小写的
 
 ========
-Tags
+标签
 ========
 
-* ``<text>``: Surrounds the script and text in the problem.
-* ``<customresponse>``: Indicates that this problem has a custom response.
-* ``<textline>``: Creates a response field in the LMS where the student enters a response.
-* ``<hintgroup>``: Specifies that the problem contains at least one hint.
+* ``<text>``: 在问题中包围脚本和文本
+* ``<customresponse>``: 表示这个问题有一个客户回答
+* ``<textline>``: 在LMS中创建一个回答域，学生在其中输入回答
+* ``<hintgroup>``: 指定问题至少包含一个提示
 
-**Tag:** ``<customresponse>``
+**标签：** ``<customresponse>``
 
-  Attributes
+  属性
 
-  (none)
+  （空）
 
-  Children
+  子标签
 
      * ``<textline>``
      * ``<hintgroup>``
 
-**Tag:** ``<textline>``
+**标签：** ``<textline>``
 
-  Attributes
+  属性
 
   .. list-table::
      :widths: 20 80
      :header-rows: 1
 
-     * - Attribute
-       - Description
-     * - label (required)
-       - Contains the text of the problem.
-     * - size (optional)
-       - Specifies the size, in characters, of the response field in the LMS.
-     * - hidden (optional)
-       - If set to "true", students cannot see the response field.
-     * - correct_answer (optional)
-       - The answer to the problem. To supply a correct_answer value that
-         includes letters, all letters **must be lowercase**. (Students'
-         responses to the problem are not case sensitive. They can contain both
-         uppercase and lowercase letters.)
+     * - 属性
+       - 描述
+     * - 标注（必需）
+       - 包含问题的文本
+     * - 大小（可选）
+       - 指定LMS中回答域的大小，以字符为单位
+     * - 隐藏（可选）
+       - 如果设为 "true"，学生就不能看到回答域
+     * - 答案（可选）
+       - 问题的答案。提供包含字母的答案，所有字母 **必需为小写**。（学生的回答是大小写不敏感的，他们可以含有大写和小写字母。）
 
-  Children
+  子标签
   
-  (none)
+  （空）
 
-**Tag:** ``<hintgroup>``
+**标签：** ``<hintgroup>``
 
-  Attributes
+  属性
 
   .. list-table::
      :widths: 20 80
      :header-rows: 1
 
-     * - Attribute
-       - Description
+     * - 属性
+       - 描述
      * - hintfn
-       - Must be set to **hint_fn** (that is, the tag must appear as ``<hintgroup hintfn="hint_fn"/>``).
+       - 必需设置为 **hint_fn** 也就是，标签必需是这样的 ``<hintgroup hintfn="hint_fn"/>``).
        
