@@ -287,7 +287,7 @@
  
   (x@) The iPod
 
-Use the Advanced Editor to Shuffle Answers
+使用高级编辑器打乱答案
 *********************************************
 
 你可以通过在:ref:`高级编辑器` 中编辑XML来配置问题以打乱答案。
