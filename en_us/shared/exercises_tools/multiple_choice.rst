@@ -1,70 +1,48 @@
 .. _Multiple Choice:
 
 ########################
-Multiple Choice Problem
+多项选择问题
 ########################
 
-In multiple choice problems, learners select one option from a list of answer
-options. Unlike :ref:`dropdown<Dropdown>` problems, whose answer choices
-do not appear until the learner clicks the dropdown arrow, answer choices for
-multiple choice problems are always visible directly below the question.
+在多项选择问题中，学习者从一列选项中选择一个选项。不像 :ref:`下拉<Dropdown>` 问题，其答案的选择直到学习者点击下拉箭头才显示出来，多项选择问题的选项一直是直接在问题的下部可见。
 
 .. image:: ../../../shared/building_and_running_chapters/Images/MultipleChoiceExample.png
  :alt: Image of a multiple choice problem
 
-For the multiple choice problems in your course, you can use edX Insights to
-review aggregated learner performance data and examine the submitted answers.
-For more information, see `Using edX Insights`_.
+对于多项选择问题，在你的课程中，你可以有 edX Insight 来检查聚合的学习者的表现和测试提交的答案。更多信息请参照 `Using edX Insights`_.
 
-Multiple choice problems can also have several advanced options, such as
-presenting a random set of choices to each learner. For more information about
-these options, see :ref:`Multiple Choice Advanced Options`.
+多项选择问题同样可以有多个高级选项，比如呈现选择的随机信息给学习者。更多关于这些选项的信息，请参照 :ref:`多项选择高级选项`.
 
 ****************************************
-Creating a Multiple Choice Problem
+创建一个多项选择问题
 ****************************************
 
-You can create multiple choice problems in the Simple Editor or in the
-Advanced Editor. You can set up a problem in the Simple Editor, and then
-switch to the Advanced Editor to add more configuration options in XML.
-However, you cannot switch back to the Simple Editor from the Advanced Editor.
-Therefore, you might want to format the problem as completely as possible
-before you begin to use the Advanced Editor.
-
+你可以创建多项选择问在简单编辑器或高级编辑器中。你可以在简单编辑器中提出一个问题，然后切换到高级编辑器中用XML添加更多的配置选项。然而，你不能从高级编辑器切换回简单编辑器。所以在你切换到高级编辑器之前，你要尽可能完全地设计好问题。
 .. _Use the Simple Editor to Create a Multiple Choice Problem:
 
 ================================================================
-Use the Simple Editor to Create a Multiple Choice Problem
+用简单 编辑器创建一个多项选择问题
 ================================================================
 
-To use the :ref:`Simple Editor<Simple Editor>` to create a checkbox problem,
-follow these steps.
+利用 :ref:`简单编辑器<Simple Editor>` 创建一个检查框问题，请遵循以下步骤
 
-#. In the unit where you want to create the problem, under **Add New
-   Component** select **Problem**.
-#. From the list of **Common Problem Types**, select **Multiple Choice**.
-   Studio adds an example multiple choice problem to the unit.
-#. Select **Edit**. The Simple Editor opens. 
-#. Replace the sample problem text with your own text.
-#. Determine the text that describes the question you want learners to answer,
-   and surround that text with two pairs of angle brackets (``>>question<<``).
-   This question text is the accessible label for the problem.
-#. Edit your text to place each answer option on a separate line.
-#. Select your set of answer options, and then select **Multiple Choice** from
-   the toolbar. A pair of parentheses appears next to each answer choice.
-#. To identify the correct answer, add an **x** between the parentheses for
-   that option.
-#. To provide an explanation, select the explanation text and then select 
-   **Explanation** from the toolbar. ``[explanation]`` appears before
-   and after the explanation text.
-#. Select **Settings** and provide an identifying **Display Name** for the
-   problem.
-#. Define additional settings for the problem. For more information, see
+#. 在你想创建问题的单元中，在 **添加新的组件** 下面选择 **问题**.
+#. 从 **普通问题类型** 列表中，选择 **多项选择**.
+   Studio 会添加一个示例多项选择问题到单元中
+#. 选择 **编辑**. 简单编辑器打开
+#. 用你的文本替换示例问题的文本
+#. 确定描述你想让学习者回答的问题的文本 (``>>问题<<``).
+   这个问题文本是问题的访问标签。
+#. 编辑你的文本来把每个回答的选项放置在分隔的行
+#. 选择你的回答选项集，然后从工具栏中选择 **多项选择** 在每个选项旁会出现一对圆括号
+#. 为了确定正确答案，在选项的圆括号中添加 **x**
+#. 为了提供一个解释，选择解释文本然后从工具栏中选择 **解释**  ``[explanation]`` 会出现在解释文本的前面和后面
+#.  选择**设置** 并为问题提供一个为了识别用的 **显示名称** 
+#. 为问题定义额外的设置。更多信息请参照
    :ref:`Problem Settings`.
-#. Select **Save**.
+#.  选择 **保存**.
 
-For the example problem illustrated above, the following text displays in the
-problem component.
+上面展示了示例问题，接下来的文本显示在问题组件中。
 
 ::
 
@@ -92,16 +70,13 @@ problem component.
 
 
 ========================================================================
-Use the Advanced Editor to Edit a Multiple Choice Problem 
+用高级编辑器编辑一个多项选择问题
 ========================================================================
 
-To use the :ref:`Advanced Editor<Advanced Editor>` to edit a multiple choice
-problem, follow these steps.
+为了有 :ref:`高级编辑器<Advanced Editor>` 来编辑一个多项选择问题，遵循下列步骤
 
-#. Follow the steps for creating the problem in the :ref:`Simple Editor<Use
-   the Simple Editor to Create a Multiple Choice Problem>`.
-#. Select **Advanced Editor**, and then edit the XML to add the tags and
-   attributes you want. An example follows.
+#. 遵循在 :ref:`简单编辑器<用简单编辑器创建一个多项选择问题>`中创建问题的步骤.
+#. 选择 **高级编辑器**, 然后编辑XML来添加标签和你想要的属性，接下来是一个示例
 
 .. code-block:: xml
 
@@ -141,11 +116,11 @@ problem, follow these steps.
 .. _Multiple Choice Problem XML:
 
 ******************************
-Multiple Choice Problem XML 
+多项选择问题XML
 ******************************
 
 ================
-Template
+模板
 ================
 
 .. code-block:: xml
@@ -170,124 +145,111 @@ Template
   </problem>
 
 ================
-Tags
+标签
 ================
 
-* ``<multiplechoiceresponse>`` (required): Indicates that the problem is a
-  multiple choice problem.
-* ``<choicegroup>`` (required): Indicates the beginning of the list of
-  options.
-* ``<choice>`` (required): Lists an answer option.
+* ``<multiplechoiceresponse>`` (必需): 表明问题是一个多项选择问题
+* ``<choicegroup>`` (必需): 表明选择列表的开始
+* ``<choice>`` (必需): 列出回答的选项
 
-**Tag:** ``<multiplechoiceresponse>``
+**标签:** ``<multiplechoiceresponse>``
 
-Indicates that the problem is a multiple choice problem.
+表明问题是一个多项选择问题
 
-  Attributes
+  属性
 
-  (none)
+  (空)
 
-  Children
+  子标签
 
   * ``<choicegroup>``
-  * All standard HTML tags (can be used to format text).
+  * 所有的标准HTML标签 (可以用来规定文本的格式).
 
-**Tag:** ``<choicegroup>``
+**标签:** ``<choicegroup>``
 
-Indicates the beginning of the list of options.
+表明选项列表的开始
 
-  Attributes
+  属性
 
   .. list-table::
      :widths: 20 80
      :header-rows: 1
 
      * - Attribute
-       - Description
-     * - label (required)
-       - Specifies the name of the response field.
-     * - type (required)
-       - Must be set to "MultipleChoice".
+       - 描述
+     * - label (必需)
+       - 指定回答域的名称
+     * - type (必需)
+       - 必需设置为 "MultipleChoice".
 
-  Children
+  子标签
 
   * ``<choice>`` 
 
-**Tag:** ``<choice>``
+**标签:** ``<choice>``
 
-Lists an answer option. 
+列出一个回答选项
 
-  Attributes
+  属性
 
   .. list-table::
      :widths: 20 80
      :header-rows: 1
 
      * - Attribute
-       - Description
-     * - correct (at least one required)
-       - Indicates a correct or incorrect answer. When the attribute is set to
-         "true", the choice is a correct answer. When the attribute is set to
-         "false", the choice is an incorrect answer. You can specify more than 
-         one correct answer, but learners can select only once choice to submit
-         as their answer.
+       - 描述
+     * - correct (至少需要一项)
+       - 表明是一个正确或不正确的答案。当这个属性被设置为
+         "true" 时, 这个选项就是一个正确的回答。当设置为
+         "false" 时, 这个选项就是不正确的回答。你可以指定不止一个正确答案，但是学习者只能选择一个选项然后提交
      * - name
-       - A unique name that the back end uses to refer to the choice.
+       - 一个后端用来指涉选项的名称
 
-  Children
+  子标签
   
-  (none)
+  (空)
 
 .. _Multiple Choice Advanced Options:
 
 *********************************************
-Advanced Options for Multiple Choice Problems
+多项选择问题的高级选项
 *********************************************
 
-Multiple choice problems have several advanced options. You can change the
-order of answers in the problem, include explanations that appear when a
-learner selects a specific incorrect answer, or present a random set of
-choices to each learner. For more information, see the following topics.
+多项选择问题有多个高级选项。你可以更改在问题中答案的顺序，包括当学习者选择一个特定的不正确的答案时出现的解释，或显现给每个学习者一个选项的随机集合。更多信息，请参照接下来的主题。
 
-* :ref:`Shuffle Answers in a Multiple Choice Problem`
-* :ref:`Targeted Feedback in a Multiple Choice Problem`
-* :ref:`Answer Pools in a Multiple Choice Problem`
+* :ref:`打乱多项选择问题中的答案顺序`
+* :ref:`多项选择问题中的定向反馈`
+* :ref:`多项选择问题中的答案池`
 
 .. _Shuffle Answers in a Multiple Choice Problem:
 
 =============================================
-Shuffle Answers in a Multiple Choice Problem
+打乱多项选择问题中的答案顺序
 =============================================
 
-Optionally, you can configure a multiple choice problem so that it shuffles
-the order of possible answers.
+可选择地，你可以配置一个多项选择问题，以便打乱可能的答案的顺序
 
-For example, one view of the problem could be:
+例如，问题的一次观察可以是这样的：
 
 .. image:: ../../../shared/building_and_running_chapters/Images/multiple-choice-shuffle-1.png
  :alt: Image of a multiple choice problem
 
-And another view of the same problem, for another learner or for the same
-learner of a subsequent view of the unit, could be:
+同一个问题的另一次观察，对于另一个学习者或同一个学习者的第二次观察，可以是这样的：
 
 .. image:: ../../../shared/building_and_running_chapters/Images/multiple-choice-shuffle-2.png
  :alt: Image of a multiple choice problem with shuffled answers
 
-You can also have some answers shuffled, but not others. For example, you
-might want to have the answer "All of the Above" always appear at the end of
-the list, but shuffle other answers.
+你也可以把一些回答打乱，而不打乱别的答案。例如，你可能想 "以上所有" 的答案总是出现在列表的最后但是把其他的答案打乱
 
-You can configure the problem to shuffle answers using the Simple Editor or
-Advanced Editor.
+你可以用简单编辑器或高级编辑器配置问题来打乱答案
 
 
-Use the Simple Editor to Shuffle Answers
+使用简单编辑器打乱答案
 *********************************************
 
-You can configure the problem to shuffle answers in :ref:`Simple Editor`.
+你可以在 :ref:`简单编辑器`中配置问题来打乱答案.
 
-For example, the following text defines a multiple choice problem before
-shuffling is enabled. The ``(x)`` indicates the correct answer.
+例如，接下来宣言一个多项选择问题，还没有打乱功能。 ``(x)`` 表明正确答案
 
 ::
 
@@ -297,8 +259,7 @@ shuffling is enabled. The ``(x)`` indicates the correct answer.
      (x) The iPod
      ( ) The vegetable peeler
 
-To add shuffling to this problem, add ``!`` between the parentheses of the
-first answer.
+添加打乱功能到问题中，则在第一个选项的圆括号中添加 ``!``.
 
 ::
 
@@ -308,8 +269,7 @@ first answer.
      (x) The iPod
      ( ) The vegetable peeler
 
-To fix an answer's location in a shuffled list, add ``@`` between the
-parentheses of that answer.
+为了在一个打乱的列表中固定答案的位置，在答案的圆括号中添加 ``@`` .
 
 ::
 
@@ -320,8 +280,7 @@ parentheses of that answer.
      ( ) The vegetable peeler
      (@) All of the above
 
-You can combine symbols within the parentheses as necessary. For example, to
-show the correct answer in a fixed location, you can use both ``x`` and ``@``.
+如果必要，你可以在圆括号中将它们结合使用。例如，为了在固定正确答案的位置，你可以同时作用 ``x`` 和``@``.
 
 ::
  
@@ -330,11 +289,9 @@ show the correct answer in a fixed location, you can use both ``x`` and ``@``.
 Use the Advanced Editor to Shuffle Answers
 *********************************************
 
-You can configure the problem to shuffle answers by editing XML in the
-:ref:`Advanced Editor`.
+你可以通过在:ref:`高级编辑器` 中编辑XML来配置问题以打乱答案。
 
-For example, the following XML defines a multiple choice problem before
-shuffling is enabled.
+例如，接下来定义了一个多项选择问题，还没有打乱功能。
 
 .. code-block:: xml
 
@@ -353,8 +310,8 @@ shuffling is enabled.
  </problem>
 
 
-To add shuffling to this problem, add ``shuffle="true"`` to the
-``<choicegroup>`` element.
+为添加打乱到问题中，添加 ``shuffle="true"`` 到
+``<choicegroup>`` 元素中.
 
 .. code-block:: xml
 
@@ -372,8 +329,8 @@ To add shuffling to this problem, add ``shuffle="true"`` to the
   </fieldset>
  </problem>
 
-To fix an answer's location in the list, add ``fixed="true"`` to the
-``choice`` element for the answer.
+为了在列表中固定答案的位置，添加 ``fixed="true"`` 到答案的
+``choice`` 元素中.
 
 .. code-block:: xml
 
@@ -395,37 +352,29 @@ To fix an answer's location in the list, add ``fixed="true"`` to the
 .. _Targeted Feedback in a Multiple Choice Problem:
 
 ===============================================
-Targeted Feedback in a Multiple Choice Problem
+多项选择问题中的定向反馈
 ===============================================
 
-You can configure a multiple choice problem so that explanations for incorrect
-answers are automatically shown to learners. You can use these explanations to
-guide learners towards the right answer. Therefore, targeted feedback is most
-useful for multiple choice problems for which learners are allowed multiple
-attempts.
+你可以配置一个多项选择问题以便对不正确答案的解释能自动显现给学习者。你可以用这些解释来引导学习者选择正确的答案。所以，定向反馈对于多项选择问题很有用，当其对学习者有多种用途时。.
 
 
-Use the Advanced Editor to Configure Targeted Feedback
+使用高级编辑器配置定义反馈
 ********************************************************
 
-You configure the problem to provide targeted feedback by editing XML in the
-:ref:`Advanced Editor`.
+你通过编辑在:ref:`高级编辑器` 中的XML来配置问题以提供定义反馈.
 
-Follow these XML guidelines.
+遵循以下的XML指南
 
-* Add a ``targeted-feedback`` attribute to the ``<multiplechoiceresponse>``
-  element, with no value: ``<multiplechoiceresponse targeted-feedback="">``.
-* Add a ``<targetedfeedbackset>`` element before the ``<solution>`` element.
-* Within ``<targetedfeedbackset>``, add one or more ``<targetedfeedback>``
-  elements.
-* Within each ``<targetedfeedback>`` element, enter your explanation for the
-  incorrect answer in HTML as markup described below.
-* Connect the ``<targetedfeedback>`` element with a specific incorrect answer
-  by using the same ``explanation-id`` attribute value for each.
-* Use the ``<solution>`` element for the correct answer, with the same
-  ``explanation-id`` attribute value as the correct ``<choice>`` element.
+* 添加一个 ``targeted-feedback`` 属性到 ``<multiplechoiceresponse>``
+  元素中，而值为空: ``<multiplechoiceresponse targeted-feedback="">``.
+* 添加一个 ``<targetedfeedbackset>`` 元素，于 ``<solution>`` 元素之前.
+* 在``<targetedfeedbackset>`` 中, 添加一个或多个 ``<targetedfeedback>`` 元素.
+* 在每个 ``<targetedfeedback>`` 元素中，输入你的不正确答案的解释，用以下描述的HTML作标记.
+* 连接 ``<targetedfeedback>`` 元素到一个特定的不正确答案，通过对使用同样的 ``explanation-id`` 属性值.
+* 为正确答案使用 ``<solution>`` 元素，用相同的
+  ``explanation-id`` 属性值作为正确的  ``<choice>`` 元素.
 
-For example, the XML for the multiple choice problem follows.
+例如，多项选择问题的XML如下.
 
 .. code-block:: xml
 
@@ -443,7 +392,7 @@ For example, the XML for the multiple choice problem follows.
    </multiplechoiceresponse>
    ...
  
-This is followed by XML that defines the targeted feedback.
+跟着的是如下定义定向反馈的XML
 
 .. code-block:: xml
 
@@ -480,48 +429,33 @@ This is followed by XML that defines the targeted feedback.
 .. _Answer Pools in a Multiple Choice Problem:
 
 =============================================
-Answer Pools in a Multiple Choice Problem
+多项选择问题的答案池
 =============================================
 
-You can configure a multiple choice problem so that a random subset of choices
-are shown to each learner. For example, you can add 10 possible choices to the
-problem, and each learner views a set of five choices.
+你可以配置一个多项选择问题以便展示给每个学习者的是选项的随机子集。例如，你可以添加10个可能的选项到问题，每个学习者看到其中的5个选项。
 
-The answer pool must have at least one correct answer. It can have more than one
-correct answer. In each set of choices shown to a learner, one correct answer is
-included. For example, you can configure two correct answers in the set of
-choices. One of the two correct answers is included in each set that a learner
-views.
+答案池必须有至少一个正确答案，也可以有不止一个正确答案。在每个给学习者的选项集中，包含一个正确答案。例如，你可以在选项集中配置两个正确答案，两个中的一个正确答案被包含在学习者能看到的选项集中。
 
-Use the Advanced Editor to Configure Answer Pools
+使用高级编辑器配置答案池
 **************************************************
 
-You configure the problem to provide answer pools by editing XML in the 
-:ref:`Advanced Editor`.
+你通过在:ref:`高级编辑器` 中编辑XML来配置问题以提供答案池.
 
-Follow these XML guidelines:
+遵循以下XML指南:
 
-* In the ``<choicegroup>`` element, add the ``answer-pool`` attribute, with
-  the numerical value indicating the number of possible answers in the set.
-  For example, ``<choicegroup answer-pool="4">``.
+* 在 ``<choicegroup>`` 元素中，添加 ``answer-pool`` 属性，用数值指定在集合中可能的答案个数。例如 ``<choicegroup answer-pool="4">``.
 
-* For each correct answer, to the ``<choice>`` element, add an ``explanation-
-  id`` attribute and value that maps to a solution. For example, ``<choice
+* 对于每个正确答案，给 ``<choice>`` 元素添加一个 ``explanation-
+  id`` 映射到解决方案的属性和值, ``<choice
   correct="true" explanation-id="iPod">The iPod</choice>``.
 
-* For each ``<solution>`` element, add an ``explanation-id`` attribute and
-  value that maps back to a correct answer. For example, ``<solution
+* 对于每个 ``<solution>`` 元素，添加一个 ``explanation-id`` 映射回一个正确答案的属性和值,例如 ``<solution
   explanation-id="iPod">``.
 
-.. note:: If the choices include only one correct answer, you do not have to 
- use the ``explanation-id`` in either the ``choice`` or ``<solution>``
- element. You do still use the ``<solutionset>`` element to wrap the
- ``<solution>`` element.
+.. note:: 如果选项仅包含一个正确答案，你不必使用 ``explanation-id`` ，在 ``choice`` 或 ``<solution>``
+ 元素中。但你还是要使用 ``<solutionset>`` 元素来包裹`<solution>`` 元素.
 
-For example, for the following multiple choice problem, a learner will see
-four choices. In each set, one of the choices will be one of the two correct
-choices. The explanation shown for the correct answer is the one with the same
-explanation ID.
+例如，对于接下来的多项选择问题，一个学习者将看到四个选项。在每个集合中，选项中的一个会是两个正确答案中的一个。正确答案显示的解释是与之有相同expanation ID的那个解释.
 
 .. code-block:: xml
 
