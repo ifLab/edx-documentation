@@ -1,81 +1,80 @@
 .. _IFrame:
 
 ##################
-IFrame Tool
+IFrame工具
 ##################
 
-An IFrame allows you to integrate ungraded exercises and tools from any Internet site into the body of your course. The IFrame appears inside an HTML component, and the exercise or tool appears inside the IFrame. IFrames can include your own tools or third-party tools. 
+一个IFrame可以使你将其他任何网站中的工具或者不评分的练习整合进你的课程中。 IFrame是一个HTML组件，练习和工具则嵌入在IFrame中。 IFrame可以嵌入您自己的工具或第三方工具。
 
 .. image:: ../../../shared/building_and_running_chapters/Images/IFrame_1.png
   :alt: IFrame tool showing a Euler line exercise
   :width: 500
 
-IFrames are well-suited for tools that demonstrate a concept but that won't be graded or store student data. If you want to add a graded tool or exercise, add the tool as a :ref:`custom JavaScript problem<Custom JavaScript>` or an :ref:`LTI component<LTI Component>`. 
+IFrame非常适合那些展示一个概念但不会用来评分或者存储学生数据的工具。 如果你需要添加可以评分的工具或者练习时，请以 :ref:`custom JavaScript problem<Custom JavaScript>` 或者 :ref:`LTI component<LTI Component>` 这两种方式添加工具。
 
-For more information about IFrames, see the `IFrame specification <http://www.w3.org/wiki/HTML/Elements/iframe>`_.
+点击 `IFrame specification <http://www.w3.org/wiki/HTML/Elements/iframe>`_ 了解更多关于IFrame的信息。
 
 ****************************
-Create an IFrame Tool
+创建一个IFrame工具
 ****************************
 
-To add an exercise or tool in an IFrame, you'll create an IFrame HTML component and add the URL of the page that contains the exercise or tool to the component. You can also add text and images both before and after the IFrame.
+要添加练习或者工具到一个IFrame中，你需要首先创建一个IFrame HTML组件，并添加包含练习或工具页面的URL到该组件中。 你也可以在IFrame的前面和后面添加文字和图片。
 
-.. note:: The URL of the page that contains the exercise or tool must start with ``https`` instead of ``http``. If the URL starts with ``http``, you have to work with the owner of that page to find out if an ``https`` version is available. Some websites do not allow their content to be embedded in IFrames.
+.. note:: 包含练习或者工具页面的URL必须以 ``https`` 开头，而不是 ``http``。 如果URL 是以 ``http`` 开头，那么你必须和该页面的所有者合作，来找出是否有一个 ``https`` 版本的页面。 有些网站不允许他们的内容被嵌入的IFrames。
 
-#. Under **Add New Component**, click **html**, and then click **IFrame**.
+#. 在 **添加新的组件** 下， 点击 **html**， 再点击 **IFrame** 。
 
-#. In the new component that appears, click **Edit**.
+#. 点击出现的新组件中的 **编辑** 。
 
-#. In the toolbar in the component editor, click **HTML**.
+#. 点击工具栏组件编辑器中的 **HTML** 。
 
-#. In the HTML source code editor, locate the following HTML (line 7). This HTML includes the ``<iframe>`` element:
+#. 在HTML源代码编辑器中找到下面的HTML。 这段HTML包括了 ``<iframe>`` 元素:
 
    .. code-block:: html
 
       <p><iframe src="https://studio.edx.org/c4x/edX/DemoX/asset/eulerLineDemo.html" width="402" height="402" marginwidth="0" marginheight="0" frameborder="0" scrolling="no">You need an iFrame capable browser to view this.</iframe></p>
 
-5. Replace the default URL in the **src** attribute (**https://studio.edx.org/c4x/edX/DemoX/asset/eulerLineDemo.html**) with the URL of the page that contains the exercise or tool. **This URL must start with https**. Make sure you don't delete the quotation marks that surround the URL.
+5. 用包含练习或者工具页面的URL替换 **src** 属性中默认的URL值 (**https://studio.edx.org/c4x/edX/DemoX/asset/eulerLineDemo.html**) 。 **这个URL必须以https开头**。 请确保没有删除包围网址引号。
 
-#. Change the attributes in the IFrame element to specify any other settings that you want. For more information about these settings, see :ref:`IFrame Settings`. You can also change the text between the opening and closing ``<iframe>`` tags. A student only sees this text if the student uses a browser that does not support IFrames.
+#. 更改IFrame元素的属性值来完成你要进行的其他设置。 有关这些设置的详细信息，请参阅 :ref:`IFrame Settings` 。 你还可以更改 ``<iframe>`` 起始和结束标记间的文本。 学生只会在他的浏览器不支持IFrame时才会看到这段文字。
 
-7. Click **OK** to close the HTML source code editor and return to the Visual editor.
+7. 点击 **确定** 关闭HTML源代码编辑器并返回到可视化编辑器。
 
-#. In the Visual editor, replace the default text with your own text.
+#. 用自己的文本替换可视化编辑器中的默认文本。
 
-#. Click **Save**.
+#. 点击 **保存**。
 
 .. _IFrame Settings:
 
 ======================
-IFrame Settings
+IFrame设置
 ======================
 
-To specify settings for your IFrame, you'll add, remove, or change the attributes inside the opening ``<iframe>`` tag. The ``<iframe>`` tag **must** contain a **src** attribute that specifies the URL of the web page you want. Other attributes are optional. 
+ 要更改你IFrame的设置，你需要添加，删除或者修改 ``<iframe>`` 起始标记中的属性。 ``<iframe>`` 标记 **必须** 有 **src** 属性指定你想要的网页的URL。 其它属性都是可选的。 
 
-You can add these attributes in any order you want.
+你可以按任何你想要的顺序添加这些属性。
 
 .. list-table::
    :widths: 20 80
    :header-rows: 1
  
-   * - Attribute
-     - Description
-   * - **src** (required)
-     - Specifies the URL of the page that contains the exercise or tool.
-   * - **width** and **height** (optional)
-     - Specify the width and height of the IFrame, in pixels or as a percentage. To specify the value in pixels, enter numerals. To specify a percentage, enter numerals followed by a percent sign.
+   * - 属性
+     - 描述
+   * - **src** (必须)
+     - 指定包含练习和工具的页面。
+   * - **width** and **height** (可选)
+     - 以像素或以百分比为单位，指定该IFrame的宽度和高度。 要以像素为单位指定的值，输入数字。要指定百分比，请输入数字后跟一个百分号。
 
-       If you don't specify the width and height, the IFrame uses the dimensions that the linked page has set. These dimensions vary by website. If you change the width and height of the IFrame, the content from the linked page may be resized, or only part of the content may appear.
+       如果不指定宽度和高度，该IFrame使用该链接的页面设置的尺寸。 这些尺寸会随网站发生变化。 如果更改的IFrame的宽度和高度，则该链接的页面的内容可能被调整大小，或仅有内容的一部分可以被显示。
 
-   * - **marginwidth** and **marginheight** (optional)
-     - Specify the size of the space between the edges of the IFrame and your exercise or tool, in pixels.
-   * - **frameborder** (optional)
-     - Specifies whether a border appears around your IFrame. If the value is 0, no border appears. If the value is any positive number, a border appears.
-   * - **scrolling** (optional)
-     - Specifies whether a scrollbar appears to help users see all of the IFrame's content if your IFrame is smaller than the exercise or tool it contains. For example, if the content in your IFrame is very tall, you can set the IFrame's height to a smaller number and add a vertical scroll bar for users, as in the first image below.
+   * - **marginwidth** and **marginheight** (可选)
+     - 指定IFrame的边缘到你的练习或者工具之间空间的大小，以像素为单位。
+   * - **frameborder** (可选)
+     - 指定是否显示IFrame周围的边框中。如果值是0，则无边框。如果该值是任意正数，会出现一个边框。
+   * - **scrolling** (可选)
+     - 如果IFrame的大小小于嵌入它的练习或者工具，就可以指定滚动条是否出现，帮助用户看到所有的IFrame的内容。 例如，如果你IFrame中的内容是非常高的，你可以设置IFrame的高度为一个较小的数字，并为用户添加一个垂直滚动条，如下面的第一张图像。
 
-For example, compare how the different settings in each of the ``<iframe>`` elements below affect the IFrame. 
-
+下面的例子对比了 ``<iframe>`` 中每个元素的不同对IFrame带来的影响和变化。
 .. code-block:: html
 
       <p><iframe src="https://studio.edx.org/c4x/edX/DemoX/asset/eulerLineDemo.html" width="442" height="200" marginwidth="20" marginheight="20" frameborder="1" scrolling="yes">You need an iFrame capable browser to view this.</iframe></p>
@@ -92,4 +91,4 @@ For example, compare how the different settings in each of the ``<iframe>`` elem
    :alt: 
    :width: 500
 
-For more information about IFrame attributes, see the `IFrame specification <http://www.w3.org/wiki/HTML/Elements/iframe>`_.
+有关IFrame的属性的详细信息，请参阅 `IFrame specification <http://www.w3.org/wiki/HTML/Elements/iframe>`_.
