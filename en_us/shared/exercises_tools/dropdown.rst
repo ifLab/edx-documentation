@@ -1,70 +1,47 @@
 .. _Dropdown:
 
 #####################
-Dropdown Problem
+下拉问题
 #####################
 
-Dropdown problems allow learners to choose from a collection of answer options
-that are presented in a dropdown list. Unlike :ref:`multiple choice<Multiple
-Choice>` problems, which have answers that are always visible directly below
-the question, dropdown problems do not show answer choices until the learner
-clicks the dropdown arrow.
+下拉问题让学生从下拉列表中显示的答案里选择一个答案。 不同于 :ref:`多项选择问题<Multiple
+Choice>` 选择项是一直可见的， 下拉问题需要学习者点击下拉箭头才会显示选项。
 
 .. image:: ../../../shared/building_and_running_chapters/Images/DropdownExample.png
  :alt: A problem component with 3 dropdown problems, 2 marked correct and 1
      incorrect
 
-For the dropdown problems in your course, you can use edX Insights to review
-aggregated learner performance data and examine submitted answers. For
-more information, see `Using edX Insights`_.
+你可以使用edXInsights来查看汇总的学生学习能力数据以及评判已经提交的答案。 欲了解更多信息，请参阅 `Using edX Insights`_.
 
 ********************************
-Creating a Dropdown Problem
+创建一个下拉问题
 ********************************
 
-You can create dropdown problems in the Simple Editor or in the Advanced
-Editor. You can set up a problem in the Simple Editor, and then switch to the
-Advanced Editor to add more configuration options in XML. However, you cannot
-switch back to the Simple Editor from the Advanced Editor. Therefore, you
-might want to format the problem as completely as possible before you begin to
-use the Advanced Editor.
+你可以在简单编辑器或者高级编辑器中创建下拉问题。 您可以在简单的编辑器创建题目，然后切换到高级编辑器用XML添加更多的配置选项。 但是你不能从高级编辑器切换回简单编辑器。 因此你要尽可能在开始使用高级编辑器之前完成对问题的排版工作。
  
 .. _Use the Simple Editor to Create a Dropdown Problem:
 
 ========================================================================
-Use the Simple Editor to Create a Dropdown Problem
+使用简单编辑器来创建下拉问题
 ========================================================================
 
-To use the :ref:`Simple Editor<Simple Editor>` to create a dropdown problem,
-follow these steps.
+使用 :ref:`简单编辑器<Simple Editor>` 来创建下拉问题，遵循以下步骤：
 
-#. In the unit where you want to create the problem, under **Add New
-   Component** select **Problem**.
-#. From the list of **Common Problem Types**, select **Dropdown**. Studio
-   adds an example dropdown problem to the unit.
-#. Select **Edit**. The Simple Editor opens.
-#. Replace the sample problem text with your own text.
-#. Determine the text that describes the question you want learners to answer,
-   and surround that text with two pairs of angle brackets (``>>question<<``).
-   This question text is the accessible label for the problem.
-#. Edit your text to place all of the possible answers on the same line,
-   separated by commas.
-#. Select all of the answer options, and then select **Dropdown** from 
-   the toolbar. A double set of brackets ([[ ]]) appears to surround
-   the answer options.
-#. To identify the problem's answer, locate that answer inside the brackets
-   and surround the correct answer with parentheses.
-#. To provide an explanation, select the explanation text and then select 
-   **Explanation** from the toolbar. ``[explanation]`` appears before
-   and after the explanation text.
-#. Select **Settings** and provide an identifying **Display Name** for the
-   problem.
-#. Define additional settings for the problem. For more information, see
+#. 在你想创建问题的单元处，选择 **添加新的组建** 中的 **问题** 选项。
+#. 在 **常用问题种类** 列表中选择 **下拉** 。 编辑器会添加一个示例下拉问题到该单位中。
+#. 选择 **编辑** 。 简单编辑器打开。
+#. 用自己的文本替换示例中的文本。
+#. 写一段文本来描述你想让学生回答的问题，用两对尖括号将这段文本扩住 (``>>问题的具体内容<<``)。 这段文字就是这个问题的标签。
+#. 将所有可能的答案都写在同一行，用逗号分割。
+#. 选择所有答案选项， 然后在工具栏中选择选择 **下拉** 。 两组方括号 ([[ ]]) 会出现在答案选项的两边。
+#. 在正确答案的两边用圆括号将其标记出来。
+#. 选择解释文本然后选择工具栏中的 **说明** 来为该问题提供解释说明。 ``[解释说明的文本]`` 标记会出现在解释文本的起始位置和结束位置。 
+#. 选择 **设置** 然后为该问题提供一个用来识别的 **显示名称** 。
+#. 定义的问题的其他设置。 欲了解更多信息，请参阅
    :ref:`Problem Settings`.
-#. Select **Save**.
+#. 选择 **保存** 。
 
-For the example problem illustrated above, the following text displays in the
-problem component.
+下面的文本是上面的示例问题在问题组件中所显示的内容。
 
 ::
 
@@ -78,17 +55,16 @@ problem component.
     [[(Nominal), Discrete, Continuous]]
 
 ========================================================================
-Use the Advanced Editor to Edit a Dropdown Problem 
+使用高级编辑器来创建下拉问题
 ========================================================================
 
-To use the Advanced Editor to edit a dropdown problem, follow these steps.
+用高级编辑器来创建下拉问题需要以下步骤。
 
-#. Follow the steps for creating the problem in the :ref:`Simple Editor<Use
-   the Simple Editor to Create a Dropdown Problem>`. 
-#. Select **Advanced Editor**, and then edit the XML to add the tags and
-   attributes you want. An example follows.
+#. 按照 :ref:`简单编辑器<Use
+   the Simple Editor to Create a Dropdown Problem>`. 中的步骤来创建题目。
+#. 选择 **高级编辑器**，然后编辑XML来添加你想要的标记和属性。 下面是一个例子。
 
-**Problem Code**:
+**题目的代码**:
 
 .. code-block:: xml
 
@@ -114,11 +90,11 @@ To use the Advanced Editor to edit a dropdown problem, follow these steps.
 .. _Dropdown Problem XML:
 
 ************************
-Dropdown Problem XML
+下拉问题的XML代码
 ************************
 
 ========
-Template
+模板
 ========
 
 .. code-block:: xml
@@ -155,48 +131,45 @@ Template
   </problem>
 
 ========
-Tags
+标记
 ========
 
-* ``<optionresponse>`` (required): Indicates that the problem is a dropdown problem.
-* ``<optioninput>`` (required): Lists the answer options.
+* ``<optionresponse>`` (必须的): 表示这个问题是一个下拉问题。
+* ``<optioninput>`` (必须的): 列出答案选项。
 
-**Tag:** ``<optionresponse>``
+**标记:** ``<optionresponse>``
 
-Indicates that the problem is a dropdown problem.
+表示这个问题是一个下拉问题。
 
-  Attributes
+  属性
 
-  (none)
+  (无)
 
-  Children
+  子标记
 
   ``<optioninput>``  
 
-**Tag:** ``<optioninput>``
+**标记:** ``<optioninput>``
 
-Lists the answer options.
+列出答案选项。
 
-  Attributes
+  属性
 
   .. list-table::
      :widths: 20 80
 
-     * - Attribute
-       - Description
-     * - options (required)
-       - Lists the answer options. The list of all answer options is
-         surrounded by parentheses. Individual answer options are surrounded
-         by single quotation marks (') and separated by commas (,).
-     * - correct (required)
-       - Indicates whether an answer is correct. Possible values are "true"
-         and "false". Only one **correct** attribute can be set to "true".
-     * - label (required)
-       - Specifies the name of the response field.
+     * - 属性
+       - 描述
+     * - 选项 (必须的)
+       - 列出答案选项。 答案选项列表被圆括号括住，各个答案被单引号 (') 括住，并用逗号分隔各个答案 (,)。
+     * - 正确性 (必须的)
+       - 标示一个答案是否正确。 可以是"正确"或者"错误"。 只有一个 **正确性** 属性可以被设置成正确。
+     * - 标签 (必须的)
+       - 指定回复区的名字。
   
-  Children
+  子标记
 
-  (none)
+  (无)
 
 
 
