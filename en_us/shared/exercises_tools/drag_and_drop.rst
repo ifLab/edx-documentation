@@ -1,55 +1,37 @@
 .. _Drag and Drop:
 
 ##########################
-Drag and Drop Problem
+拖放问题
 ##########################
 
-In drag and drop problems, students respond to a question by dragging text or
-objects to a specific location on an image.
+在拖放的问题中，学生通过拖动文本或对象到图像的特定位置上来对问题作出回答。
 
 .. image:: ../../../shared/building_and_running_chapters/Images/DragAndDropProblem.png
  :alt: Image of a drag and drop problem
 
 *********************************
-Create a Drag and Drop Problem
+创建一个拖放问题
 *********************************
 
-To create a simple drag and drop problem in which students drag labels onto an
-image, you'll upload the image that you want students to drag labels onto, and
-then create a Problem component.
+要创建一个简单的拖放问题，让学生拖动标签到图像，你需要上传一个图片来让学生在其上拖动标签，之后再创建问题组件。
 
-#. On the **Files & Uploads** page, upload your image file. For more
-   information about uploading files, see :ref:`Add Files to a Course`.
-#. In the unit where you want to create the problem, click **Problem** under
-   **Add New Component**, and then click the **Advanced** tab.
-#. Click **Drag and Drop**.
-#. In the component that appears, click **Edit**.
-#. In the component editor, replace the example text with the text of your
-   problem.
-#. In the ``<drag_and_drop_input>`` tag, replace
-   **https://studio.edx.org/c4x/edX/DemoX/asset/L9_buckets.png** with the URL
-   of your image file on the **Files & Uploads** page (for example,
-   **/static/Image.png**).
-#. For at least one ``<draggable>`` tag, replace the text of the **label**
-   attribute with the text of the label you want students to drag. For example,
-   if you want students to drag the word "Iceland" onto your image, the new tag
-   would resemble the following:
+#. 在 **文件和上传** 页面, 上传你的图片文件。 有关上传文件的详细信息，请参阅 :ref:`Add Files to a Course` 。
+#. 在您要创建问题的单元，点击 **添加新的组件** 中的 **问题** , 然后再点击 **高级** 选项卡。
+#. 点击 **拖放** 。
+#. 点击出现组件中的 **编辑** 。
+#. 用你自己的文本替换组件编辑器中的样例文本。
+#. 用你上传到 **文件和上传** 页面图片的URL来替换``<drag_and_drop_input>`` 标记中的 **https://studio.edx.org/c4x/edX/DemoX/asset/L9_buckets.png** (例如： **/static/Image.png**)。
+#. 对至少一个 ``<draggable>`` 标记，用你希望学生拖动标签中的文字内容来替换 **label** 属性的中的文本。 例如，如果你想让学生单词“Iceland”拖放到您图像上，则新的标签将类似于以下内容：
    
    ``<draggable id="1" label="Iceland"/>``
 
-8. Repeat the previous step for all the labels that you want to use. Make sure
-   that the **id** attribute is different for each ``<draggable>`` tag.
-#. Determine the coordinates and radius of the correct area on the image.
-#. Under ``correct_answer = {``, add an entry for each label, using the
-   following format. These values are in pixels:
+8. 重复上一步直到你设置完了所有需要的标签。 确保每一个``<draggable>`` 标记的 **id** 属性的值都是不同的。
+#. 确定图像上的正确区域的坐标和半径。
+#. 在 ``correct_answer = {``中, 以下面的格式为每个标签添加条目。 这些值以像素为单位：
 
     ``'id':    [[x coordinate, y coordinate], radius]``
 
-    For example, if your image is 600 pixels wide and 400 pixels high, and you
-    want your students to drag the Iceland label to an area in the upper-left
-    part of the image and drag a Sweden label near the lower-right part of your
-    image, the code would resemble the following (where 2 is the ID for the
-    Sweden label):
+    例如,如果你的图片是600像素宽，400像素高， 你希望你的学生到冰岛的标签拖动到一个区域在图像的左上部分，拖动一个瑞典标签靠近图像的右下角部分，该代码将类似于以下 (其中2是瑞典标签的ID):
 
     .. code-block:: xml
 
@@ -57,35 +39,30 @@ then create a Problem component.
                 '1':    [[50, 50], 75]
                 '2':    [[550, 350], 75]}
 
-    .. note:: Make sure the code contains the closing curly brace (**}**). 
-#. Click **Save**.
+    .. note:: 确保代码包含右大括号 (**}**) 。 
+#. 点击 **保存** 。
 
 ==========================================
-Sample Drag and Drop Problem Code
+简单拖放问题的代码
 ==========================================
 
-To create the drag and drop problem that appears in the image above, you'll
-download two files from edX, upload these files to to the **Files & Uploads**
-page, and then add the code for the problem to a Problem component.
+要创建出现上面图片中的拖放问题，你需要从edX上下载两个文件，并将这些文件上传到 **文件和上传** 的页面中, 然后添加这个问题的代码到一个问题组件中去。
 
-#. Download the following files from edX:
+#. 从 edX 上下载这些文件:
 
   * Allopurinol.gif
   * AllopurinolAnswer.gif
 
-  To download both these files in a .zip archive, click
-  http://files.edx.org/DragAndDropProblemFiles.zip.
+  点击 http://files.edx.org/DragAndDropProblemFiles.zip 下载包含这两个文件的压缩包。
 
-2. Upload the Allopurinol.gif and AllopurinolAnswer.gif files to the **Files &
-   Uploads** page.
-#. In the unit where you want to create the problem, click **Problem** under
-   **Add New Component**, and then click the **Advanced** tab.
-#. Click **Drag and Drop**.
-#. In the component that appears, click **Edit**.
-#. In the component editor, replace the example code with the following code.
-#. Click **Save**.
+2. 上传 Allopurinol.gif 和 AllopurinolAnswer.gif 这两个文件到 **文件和上传** 页面。
+#. 在你想要添加问题的位置，点击 **添加新的组件** 中的 **问题**  然后再点击 **高级** 选项卡 。
+#. 点击 **拖放** 。
+#. 点击出现组件中的 **编辑** 。
+#. 在组件编辑器中用下面的代码替换示例代码。
+#. 点击 **保存** 。
 
-**Problem Code**:
+**问题的代码**:
 
 .. code-block:: xml
 
@@ -124,7 +101,7 @@ page, and then add the code for the problem to a Problem component.
 .. _Drag and Drop Problem XML:
 
 *********************************
-Drag and Drop Problem XML
+拖放问题的XML
 *********************************
 
 .. code-block:: xml
@@ -199,128 +176,109 @@ Drag and Drop Problem XML
 
 
 ========
-Tags
+标记
 ========
 
-* ``<customresponse>``: Indicates that the problem is a custom response
-  problem.
-* ``<drag_and_drop_input>``: Indicates the custom response problem is a drag
-  and drop problem.
-* ``<draggable>``: Specifies a single object that a student will drag onto the
-  base image.
-* ``<target>``: Specifies the location on the base image where a draggable must
-  be dropped.
+* ``<customresponse>``: 表示该问题是一个自定义回答问题。
 
-**Tag:** ``<drag_and_drop_input>``
+* ``<drag_and_drop_input>``: 表示自定义回答问题是一个拖放问题。
 
-  Attributes
+* ``<draggable>``: 指定学生将拖到基础图像中的一个对象。
+
+* ``<target>``: 指定拖拽元素在基本图片上所要放置的位置。
+
+**标记:** ``<drag_and_drop_input>``
+
+  属性
 
   .. list-table::
      :widths: 20 80
      :header-rows: 1
 
-     * - Attribute
-       - Description
-     * - img (required)
-       - Relative path to an image that will be the base image. All draggables
-         can be dragged onto it.
+     * - 属性
+       - 说明
+     * - img (必要的)
+       - 将成为基本图像的图片的相对路径。 所有的拖拽元素可以拖动到它。
      * - target_outline 
-       - Specifies whether an outline (gray dashed line) should be drawn around
-         targets (if they are specified). It can be either 'true' or 'false'.
-         If not specified, the targets do not have outlines.
+       - 指定 目标周围 (如果指定了它们) 是否画出轮廓线 (灰色虚线)。 它的值可以是'true' 或者 'false'。
+         如果没有指定则目标没有轮廓线。
      * - one_per_target 
-       - Specify whether to allow more than one draggable to be placed onto a
-         single target. It can be either 'true' or 'false'. If not specified,
-         the default value is 'true'.
-     * - no_labels (required)
-       - The default is false. In default behavior, if label is not set, label is
-         obtained from id. If no_labels is true, labels are not automatically
-         populated from id, and one cannot set labels and obtain only icons.
+       - 指定是否允许多余于一个拖拽元素被放置在同一个目标中。 的值可以是'true' 或者 'false'。
+         如果没有指定，默认值是 'true'.
+     * - no_labels (必要的)
+       - 默认值是 false 。 默认行为中，如果标签没有设置，标签从ID获得。 如果 no_labels 设置为 true ，那么标签不会自动由ID生成，一个不能设置标签，将获得唯一的图标。
 
-  Children
+  子标记
 
      * ``<draggable>``
      * ``<target>``
 
-**Tag:** ``<draggable>``
+**标记:** ``<draggable>``
 
-Specifies a single draggable object in a drag and drop problem.
+指定拖放问题中的一个拖拽元素。
 
-A draggable is what the user must drag out of the slider and drop onto the base
-image. After a drag operation, if the center of the draggable is located
-outside the rectangular dimensions of the image, it will be returned to the
-slider.
+拖拽元素是用户必须拖出滑块并拖放到基本图像上。 完成拖动操作后，如果拖拽元素的中心位于图像矩形区域之外，它将被退回滑块中去。
 
-For the grader to work, each draggable must have a unique ID.
+为了便于评分，每个拖拽元素都要有唯一的ID。
 
-  Attributes
+  属性
 
   .. list-table::
      :widths: 20 80
      :header-rows: 1
 
-     * - Attribute
-       - Description
-     * - id (required)
-       - Unique identifier of the draggable object.
-     * - label (optional)
-       - Text label that the user sees.
-     * - icon (optional)
-       - For draggables that are images, the relative path to the image file.
+     * - 属性
+       - 说明
+     * - id (必须的)
+       - 拖拽元素唯一的标识。
+     * - label (可选的)
+       - 用户可以看到的文本标签。
+     * - icon (可选的)
+       - 当拖拽元素是图片时，图片文件的相对路径。
      * - can_reuse
-       - The default is false. If true, the same draggable can be used
-         multiple times.
+       - 默认情况下为false。 如果设置为true，则同一个拖拽元素可以使用多次。
 
-  Children
+  子标记
   
-  (none)
+  (无)
 
-**Tag:** ``<target>``
+**标记:** ``<target>``
 
-Specifies the location on the base image where a student must drop a draggable
-item. By design, if the center of a draggable lies within the target (i.e. in
-the rectangle defined by [[x, y], [x + w, y + h]],  it is within the target.
-Otherwise, it is outside.
+指定基本图片上学生必须放置拖拽元素的位置。 按照设计如果拖拽元素的中心在目标区域之内，即在由 [[x, y], [x + w, y + h]] 所指定的矩形区域内，则该元素在目标区域内。
+否则就在目标区域之外。
 
-If you specify at least one target, and a student drops a draggable item on a
-location that is outside a target, the draggable item returns to the slider.
+如果你至少指定了一个目标，当学生将拖拽元素拖放到目标之外时，拖拽元素会被退回到滑块中。
 
-If you don't specify a target, a student can drop a draggable item anywhere on
-the base image.
+如果你没有指定目标区域，学生可以把拖拽元素放到基本图片上的任何位置。
 
-  Attributes
+  属性
 
   .. list-table::
      :widths: 20 80
      :header-rows: 1
 
-     * - Attribute
-       - Description
-     * - id (required)
-       - Unique identifier of the target object.
+     * - 属性
+       - 说明
+     * - id (必须的)
+       - 拖拽元素唯一的标识。
      * - x
-       - X-coordinate on the base image where the top left corner of the target
-         will be positioned.
+       - 目标区域的左上角将定位在基本图像上的X坐标。
      * - y
-       - Y-coordinate on the base image where the top left corner of the target
-         will be positioned.
+       - 目标区域的左上角将定位在基本图像上的Y坐标。
      * - w
-       - Width of the target, in pixels.
+       - 目标区域的宽度，以像素为单位。
      * - h
-       - Height of the target, in pixels.
+       - 目标区域的高度，以像素为单位。
 
-  Children
+  子标记
 
-  (none)
+  (无)
 
 **********************
-Targets on Draggables
+拖拽元素目标
 **********************
 
-Sometimes it is not enough to have targets only on the base image, and all of
-the draggables on these targets. If a complex problem exists where a draggable
-must become itself a target (or many targets), then the following extended
-syntax can be used.
+有时只把基本图片作为目标是不够的，所有的拖拽元素也可以成为目标。 在一个复杂问题中，其中一个拖拽元素本身必须成为一个目标（或者多个目标），则可以使用下面的扩展语法。
 
 ::
 
@@ -333,56 +291,41 @@ syntax can be used.
     </draggable>
     ...
 
-The attribute list in the tags above (``draggable`` and ``target``) is the same
-as for normal ``draggable`` and ``target`` tags. The only difference is when
-you will be specifying inner target position coordinates. Use the ``x`` and
-``y`` attributes to set the offset of the inner target from the upper-left
-corner of the parent draggable (that contains the inner target).
+上面标记中的 (``draggable`` and ``target``) 属性和正常的 ``draggable`` and ``target`` 标记是一样的。 唯一的区别是你指定内部目标位置坐标的方法。 用 ``x`` 和
+``y`` 属性来设定内部目标到父元素左上角的偏移量 (包含内部目标)。
 
 =====================================
-Limitations of targets on draggables
+拖拽元素目标的限制
 =====================================
 
-* Currently there is a limitation to the level of nesting of targets.
+* 目前有目标嵌套层数的限制。
 
-  Even though you can pile up a large number of draggables on targets that
-  themselves are on draggables, the Drag and Drop problem will be graded only
-  if there is a maximum of two levels of targets. The first level are the
-  `base` targets. They are attached to the base image. The second level are the
-  targets defined on draggables.
+  即使你可以在拖拽元素上堆放大量的拖拽元素目标， 拖放问题也只能最多识别两层嵌套的目标。 第一层是 `基础` 目标。 他们在基础图片上。 第二层是定义在拖拽元素上的目标。
 
-* Another limitation is that the target bounds are not checked against other
-  targets.
+* 另一个限制是，在目标范围不针对其他目标检查。
 
-  You must make sure that there is no overlapping of targets. You should also
-  ensure that targets on draggables are smaller than the actual parent
-  draggable. Technically this is not necessary, but from the usability
-  perspective it is desirable.
+  你必须确保有目标没有重叠。 你也应该确保拖拽元素目标比它的父拖动元素大小要小。 技术上，这是没有必要的，但是从可用性的角度看，它是有必要的。
 
-* You can have targets on draggables only in the case when there are base
-  targets defined (base targets are attached to the base image).
+* 只有定义了基本目标，你猜可以定义拖拽元素目标 ( 基础目标在基础图片上) 。
 
-  If you do not have base targets, then you can only have a single level of
-  nesting (draggables on the base image). In this case the client side will be
-  reporting (x,y) positions of each draggable on the base image.
+  如果你没有基础的目标，那么你只能有嵌套一个级别 (基础图片上的拖拽元素)。 在这种情况下，客户端将报告每个拖拽元素在基本图像上位置的坐标（X，Y）。
 
 **********************
-Correct answer format
+正确答案格式
 **********************
 
-For specifying answers for targets on draggables, see `Answer format for
+为目标的拖拽元素指定答案，请参阅 `Answer format for
 targets on draggables`_.
 
-There are two correct answer formats: short and long.
+有两种正确答案的格式：详细形式和简短形式。
 
-In short form, the correct answer is mapping of ``draggable_id`` to
-``target_id``::
+简短形式的正确答案是 ``draggable_id`` 到 ``target_id``的映射::
 
     correct_answer = {'grass':     [[300, 200], 200], 'ant': [[500, 0], 200]}
     correct_answer = {'name4': 't1', '7': 't2'}
 
-In long form, the correct answer is list of dicts. Every dict has 3 keys:
-``draggables``, ``targets`` and ``rule``. For example::
+详细形式的答案是一个字典列表。 每个字典有三个要素：
+``拖拽元素``, ``目标`` and ``规则`` 。 例如::
 
     correct_answer = [
     {
@@ -396,13 +339,12 @@ In long form, the correct answer is list of dicts. Every dict has 3 keys:
       'rule': 'anyof'
     }]
 
-"Draggables" is the list of draggable IDs. "Target" is the list of target IDs
-that draggables must be dragged to.
+"拖拽元素" 是拖拽元素ID的列表。 "目标" 是ID列表中的拖拽元素所要被放置的位置。
 
-.. Caution::
-  Draggables in dicts inside the ``correct_answer`` list must not intersect.
+.. 注意::
+   ``正确答案`` 列表中的拖拽元素不能相同。
 
-Wrong (for draggable id 7)::
+错误 (因为拖拽元素的id 7重复了)::
 
     correct_answer = [
     {
@@ -416,11 +358,9 @@ Wrong (for draggable id 7)::
       'rule': 'anyof'
     }]
 
-The values for ``rule`` follow. 
+ ``规则`` 值如下。
 
-* ``exact``: Targets for draggable IDs in ``user_answer`` are the same as
-  targets from the correct answer. For example, for draggables 7 and 8, the
-  user must drag 7 to target1 and 8 to target2 if the ``correct_answer`` is::
+* ``准确``:  ``用户答案`` 的拖拽元素对应的目标，必须和正确答案的相同。 例如，如果 ``正确答案`` 设置如下，那么对于拖拽元素7和8，用户必须将拖拽元素7拖到目标1，将拖拽元素8拖到目标2::
 
     correct_answer = [
       {
@@ -430,9 +370,7 @@ The values for ``rule`` follow.
     }]
 
 
-* ``unordered_equal``: Allows draggables be dragged to targets unordered. For
-  students to drag 7 to target1 or target2 and 8 to target2 or target1 and 7
-  and 8 must be in different targets, then correct answer must be::
+* ``无序``: 允许拖拽元素不按顺序被拖放到目标中。 如果学生要把拖拽元素7和8分别放到目标1,2中，且7,8必须放在不同的目标中，那么正确答案为::
 
     correct_answer = [
     {
@@ -442,9 +380,7 @@ The values for ``rule`` follow.
     }]
 
 
-* ``anyof``: Allows draggables to be dragged to any target. For students to
-  drag 7 and 8 to target1 or target2, any of these are correct with the `anyof`
-  rule::
+* ``任意``: 允许拖拽元素被放置任意目标处。 在 `任意` 规则下，学生把拖拽元素7和8拖到目标1或2中的任意一个均正确::
 
     correct_answer = [
     {
@@ -453,11 +389,7 @@ The values for ``rule`` follow.
       'rule': 'anyof'
     }]
 
-If ``can_reuse`` is true, then you have draggables a,b,c and 10 targets. These
-will allow you to drag 4 ``a`` draggables to [``target1``,  ``target4``,
-``target7``, ``target10``]; you do not need to write ``a`` four times. Also
-this will allow you to drag the ``b`` draggable to target2 or target5 for
-target5 and target2.::
+如果 ``可重用`` 为true， 你有拖拽元素a,b,c和10个目标。 这时你可以将4个拖拽元素 ``a`` 放置到 [``目标1``,  ``目标4``, ``目标7``, ``目标10``]； 而不用重复地写四个 ``a`` 。 这也允许你将拖拽元素 ``b``拖动到目标2和目标5，或者目标5和目标2::
 
     correct_answer = [
         {
@@ -476,8 +408,7 @@ target5 and target2.::
           'rule': 'unordered_equal'
         }]
 
-Sometimes you want to allow students to drag only two ``b`` draggables. In this
-case you should use the ``anyof+number`` or ``unordered_equal+number`` rule::
+有时你只想让学生移动两个 ``b`` 拖拽元素。 在这种情况下你要使用 ``任意和数字`` 或者 ``无序和数字`` 规则::
 
     correct_answer = [
         {
@@ -496,27 +427,19 @@ case you should use the ``anyof+number`` or ``unordered_equal+number`` rule::
           'rule': 'unordered_equal'
         }]
 
-When there are no multiple draggables per targets (one_per_target=``true``),
-for the same number of draggables, ``anyof`` is equal to ``unordered_equal``.
+当每个目标没有多重拖拽元素 (one_per_target=``true``)，
+对相同的拖拽元素数， ``任意`` 和 ``无序`` 是等价的。
 
-If ``can_reuse=true``, then you must use only the long form of the correct
-answer.
+如果 ``can_reuse=true``,你必须使用详细形式的正确答案。
 
 =======================================
-Answer format for targets on draggables
+拖拽元素目标的答案格式
 =======================================
 
-As with the cases described above, an answer must provide precise positioning
-for each draggable (on which targets it must reside). In the case when a
-draggable must be placed on a target that itself is on a draggable, then the
-answer must contain the chain of target-draggable-target.
+在上述的情况下， 答案必须提供每个拖拽元素的精确定位。 (对必须驻留的目标)。 当拖拽元素需要被拖放到本身也是拖放元素的目标上时，答案必须包括 目标-拖拽元素-目标 链。
 
-For example, suppose we have three draggables - ``up``, ``s``, and ``p``.
-Draggables ``s`` and ``p`` have targets on themselves. More specifically,
-``p`` has three targets - ``1``, ``2``, and ``3``. The first requirement is
-that ``s`` and ``p`` are positioned on specific targets on the base image. The
-second requirement is that draggable ``up`` is positioned on specific targets
-of draggable ``p``. Below is an excerpt from a problem::
+例如，假设我们有三个拖拽元素 - ``up``, ``s``, 和 ``p``。
+拖拽元素 ``s`` 和 ``p`` 还是目标。 更具体的， ``p`` 有三个目标 - ``1``, ``2``, 和 ``3``。 第一个要求是 ``s`` 和 ``p`` 被正确放置在基础图片上的指定位置。 第二个要求是拖拽元素 ``up`` 被放在指定的目标 ``p`` 上。  下面是一个问题的节选::
 
     <draggable id="up" icon="/static/images/images_list/lcao-mo/up.png" can_reuse="true" />
 
@@ -551,48 +474,41 @@ of draggable ``p``. Below is an excerpt from a problem::
         }
     ]
 
-Note that you must specify rules for all draggables, even if a draggable gets
-included in more than one chain.
+注意！你必须为每一个拖拽元素指定规则，即使有拖拽元素包含在多个链中。
 
 *************
-Grading logic
+评分逻辑
 *************
 
-#. The student's answer and the correct answer are parsed to the same format.
+#. 学生的答案和正确答案有着几乎相同的格式。
    ::
 
     group_id: group_draggables, group_targets, group_rule
 
-  ``group_id`` is ordinal number, for every dict in correct answer incremental
-  ``group_id`` is assigned: 0, 1, 2, ...
+  ``group_id`` 是序数，用来记录每个正确答案中字典的增量。
+  ``group_id`` 是被分配: 0, 1, 2, ...
 
-  Draggables from the user answer are added to the same group_id where
-  identical draggables from the correct answer are, for example::
+  用户答案中的拖拽元素被添加到和正确答案中的拖拽元素具有相同group_id的组中，例如::
 
-    If correct_draggables[group_0] = [t1, t2] then
-    user_draggables[group_0] are all draggables t1 and t2 from the user answer:
+    如果正确答案拖拽元素组[group_0] = [t1, t2] 那么用户拖拽元素组[group_0]就是用户答案中所有的拖拽元素 t1 和 t2 :
     [t1] or [t1, t2] or [t1, t2, t2] etc..
 
-2. For every group from the user answer, for that group's draggables, if
-   ``number`` is in the group rule, set() is applied. If ``number`` is not in
-   rule, set is not applied::
+2. 对于每个用户答案组中的拖拽元素， 如果 ``数字`` 在组的规则中， 那么set()会被应用。 如果 ``数字`` 不在规则中，则不会被应用::
 
     set() : [t1, t2, t3, t3] -> [t1, t2, ,t3]
 
-  For every group, at this step, draggables lists are equal.
+  对于每一个组，在这个步，拖拽元素列表是相等的。
 
-3. For every group, lists of targets are compared using the rule for that
-   group.
+3. 对于每一个组，目标列表是使用该组的规则进行比较。
 
 ==========================
-Set and ``+number`` cases
+``set()`` 和 ``数字`` 事件
 ==========================
 
-``set()`` and ``+number`` are needed only for the case of reusable draggables.
-For other cases there are no equal draggables in list, so set() does nothing.
+``set()`` and ``+number`` 仅用于有可重复使用的拖拽元素的情况。
+其他情况下，有在列表中没有相等的拖拽元素，所以 set() 什么效果都没有。
 
-* The ``set()`` operation allows you to create a rule for the case of "any
-  number of the same draggable can be dragged to targets"::
+*  ``set()`` 操作允许你创造一个规则来规定 "任何数量相同的拖拽元素可以拖动到目标"::
 
     {
       'draggables': ['draggable_1'],
@@ -600,9 +516,7 @@ For other cases there are no equal draggables in list, so set() does nothing.
       'rule': 'anyof'
     }
 
-* The ``number`` rule is used for the case of reusable draggables, when you
-  want to fix number of draggable to drag. In this example only two instances
-  of draggables_1 are allowed to be dragged::
+* ``数字`` 规则被用于有可重复使用的拖拽元素的情况中，来修复修复拖动的拖动元素数量。 在本实施例只有两个实例draggables_1的允许被拖动::
 
     {
       'draggables': ['draggable_1', 'draggable_1'],
@@ -611,9 +525,7 @@ For other cases there are no equal draggables in list, so set() does nothing.
     }
 
 
-* Note, that in using rule ``exact``, one does not need ``number``, because you
-  cannot recognize from the user interface which reusable draggable is on which
-  target. For example::
+* 注意！ 在使用 ``准确``规则的情况下，是不需要 ``数字``规则的。 因为你不能从用户界面识别可重复使用的拖拽元素是哪个目标的。 例如::
 
     {
       'draggables': ['draggable_1', 'draggable_1', 'draggable_2'],
@@ -622,12 +534,9 @@ For other cases there are no equal draggables in list, so set() does nothing.
     }
 
 
-    Correct handling of this example is to create different rules for
-    draggable_1 and draggable_2.
+    本实例的正确处理是分别对 draggable_1 和 draggable_2 创建不同的规则。
 
-* For ``unordered_equal`` (or ``exact``) you don't need ``number`` if you have
-  only the same draggable in the group, as the target length will provide
-  the constraint for the number of draggables::
+* 对于 ``无序`` (或者 ``准确``) 你不需要 ``数字``。 如果你只有相同的拖拽元素在组中，目标长度将提供对拖拽元素数量的约束::
 
     {
       'draggables': ['draggable_1'],
@@ -635,10 +544,9 @@ For other cases there are no equal draggables in list, so set() does nothing.
       'rule': 'unordered_equal'
     }
 
-  This means that only ``draggable_1`` can be dragged.
+  这意味着仅有 ``draggable_1`` 可以被拖拽。
 
-* But if you have more than one different reusable draggable in the list, you
-  may use the ``number`` rule::
+* 但是，如果你有多个不同的可重复使用的拖拽元素在列表中，你可以使用``number``规则::
 
     {
       'draggables': ['draggable_1', 'draggable_1', 'draggable_2'],
@@ -646,5 +554,4 @@ For other cases there are no equal draggables in list, so set() does nothing.
       'rule': 'unordered_equal+number'
     }
 
-If you do not use ``number``, the draggables list will be set to
-[``draggable_1``, ``draggable_2``].
+如果你没有使用 ``数字``， 那么拖拽元素列表会被设置成[``draggable_1``, ``draggable_2``]。
