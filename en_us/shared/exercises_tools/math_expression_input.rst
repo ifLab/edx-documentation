@@ -1,63 +1,44 @@
 .. _Math Expression Input:
 
 ####################################
-Math Expression Input Problems
+数学表达式输入问题
 ####################################
 
-In math expression input problems, learners enter text that represents a
-mathematical expression. The text is converted to a symbolic expression that
-appears below the response field. Unlike numerical input problems, which only
-allow integers and a few select constants, math expression input problems can
-include unknown variables and more complicated symbolic expressions.
+在数学表达式输入问题中,学习者输入代表数学表达式的文本.这个文本会在输入框下方被转化成符号表达式。和数值输入问题不同的是,数值输入问题仅仅能输入整数和一些常量，数学表达式输入问题可以包含未知的变量和更多更完整的符号表达式。
 
 .. image:: ../../../shared/building_and_running_chapters/Images/MathExpressionInputExample.png
  :alt: A problem requesting the symbolic expression and numerical evaluation
      of N(x) for a sleeved cylinder
 
-For more information about how learners enter expressions, see `Math Response
-Formatting for Students`_.
+更多关于如何输入表达式的信息, 请查看 `Math Response Formatting for Students`_.
 
-For the math expression input problems in your course, you can use edX
-Insights to review aggregated learner performance data and examine
-submitted answers. For more information, see `Using edX Insights`_.
+对于你课程中的数学表达式输入问题,你可以使用edX Insights查看学习者提交的答案统计也能查看学习者提交过的答案.更多信息,请查看 `Using edX Insights`_.
 
-For math expression input problems, the grader uses numerical sampling to
-determine whether the learner's response matches the instructor-provided math
-expression, to a specified numerical tolerance. The instructor must specify
-the allowed variables in the expression as well as the range of values for
-each variable.
+对于属性表达式输入问题, 评分器使用数值抽样去判定学习者的答案是否与答案相匹配,要制定一个数值容忍度。教师必须指定在表达式中允许使用变量和变量的范围。
 
-When you create a math expression input problem in Studio, you use `MathJax
-<http://www.mathjax.org>`_ to change your plain text into "beautiful math."
-For more information about how to use MathJax in Studio, see :ref:`MathJax in
+
+当你要在Studio中创建一个数学表达式输入问题,你要使用`MathJax <http://www.mathjax.org>`_ 改变你的你的文本到 "beautiful math."中，更多关于如何在Studio中使用MathJax的信息,请查看:ref:`MathJax in
 Studio`.
 
-.. note:: Math expression input problems currently cannot include negative 
- numbers raised to fractional powers, such as (-1)^(1/2). Math expression
- input problems can include complex numbers raised to fractional powers, or
- positive non-complex numbers raised to fractional powers.
+.. note:: 数学表达式输入问题现在不能使用负数的分数幂,比如(-1)^(1/2). 数学表达式输入问题可以包含复杂的数字上升到分数幂,或者积极的不复杂的分数幂。
+
 
 ************************************************
-Create a Math Expression Input Problem
+创建一个数学表达式输入问题
 ************************************************
 
-To create a math expression input problem, follow these steps.
+要创建一个数学表达式输入问题，有以下的步骤.
 
-#. In the unit where you want to create the problem, under **Add New
-   Component** select **Problem**.
-#. Select **Advanced**.
-#. Select **Math Expression Input**. Studio adds an example math expression
-   input problem to the unit.
-#. Select **Edit**. The Advanced Editor opens. 
-#. Replace the sample problem XML with your own marked up text. To
-   practice, you can use the example problem that follows.
-#. Select **Settings** and provide an identifying **Display Name** for the
-   problem.
-#. Define additional settings for the problem. For more information, see
-   :ref:`Problem Settings`.
-#. Select **Save**.
+#. 在你想要创建问题的单元里, 在 **添加新组件下方** 选择 **问题**.
+#. 选择 **高级**.
+#. 选择 **数学表达式输入**. Studio会有一个示例属性表达式输入问题在这个单元里.
+#. 选择 **编辑**. 高级编辑器就打开了. 
+#. 用你自己的文本替换示例问题XML.你可以使用以下的示例问题练习.
+#. 选择 **设置** 并指定一个**展示名称**对于这个问题.
+#. 定义其他的设置对于这个问题. 想要更多信息, 清查看:ref:`问题设置`.
+#. 选择 **保存**.
 
-**Example Problem Code**
+**示例问题代码**
 
 .. code-block:: xml
 
@@ -94,11 +75,11 @@ To create a math expression input problem, follow these steps.
 .. _Math Expression Input Problem XML:
 
 **********************************
-Math Expression Input Problem XML
+数学表达式输入问题XML
 **********************************
 
 ============
-Templates
+模板
 ============
 
 .. code-block:: xml
@@ -133,7 +114,7 @@ Templates
   </problem>
 
 ====
-Tags
+标签
 ====
 
 * ``<formularesponse>``
@@ -141,98 +122,77 @@ Tags
 * ``<responseparam>``
 * ``<script>``
 
-**Tag:** ``<formularesponse>``
+**标签:** ``<formularesponse>``
 
-Specifies that the problem is a math expression input problem. The
-``<formularesponse>`` tag is similar to ``<numericalresponse>``, but
-``<formularesponse>`` allows unknown variables.
+指定这个问题是一个数学表达式输入问题.``<formularesponse>``标签和``<numericalresponse>``标签相似,但是``<formularesponse>`` 允许使用未知的变量.
 
-  Attributes
+  数学
 
-  ``type``: Can be "cs" for case sensitive, which is the default, or "ci" for case
-  insensitive, so that capitalization does not matter in variable names.
+  ``type``: "cs"指定大小写敏感 ,这是默认的, 或者 "ci"指定大小写不敏感,以便不区分大小写变量名字。
 
-  ``answer``: The correct answer to the problem, given as a mathematical
-  expression. If you precede a variable name in the problem with a dollar sign
-  ($), you can include a script in the problem that computes the expression in
-  terms of that variable.
+  ``answer``: 这个问题的正确答案, 以数学表达式的形式给出.如果你在变量名字前带有美元符号($),你可以使用一个脚本在问题中按照变量计算表达式.
 
-  ``samples``: Specifies important information about the problem in the
-  following lists.
+  ``samples``: 指定下面的列表中关于这个问题的重要信息.
 
-    * ``variables``: A set of variables that learners can enter.
-    * ``lower_bounds``: For every defined variable, a lower bound on the
-      numerical tests to use for that variable.
-    * ``upper_bounds``: For every defined variable, an upper bound on the
-      numerical tests to use for that variable.
-    * ``num_samples``: The number of times to test the expression.
+    * ``variables`` 学习者可以输入的一组变量.
+    * ``lower_bounds``: 对于每个定义的变量, 一个下限限制变量的数值使用。
+    * ``upper_bounds``: 对于每个定义的变量, 一个上限限制变量的数值使用。
+    * ``num_samples``: 测试表达式的次数。 The number of times to test the expression.
 
-    Commas separate items inside each of the four individual lists. The at
-    sign (@), colon (:), and pound sign (#) characters separate the lists. An
-    example of the format follows.
+    符号分隔有四个条目列表。就是(@), (:),(#) 符号分隔列表.下面是一个例子.
 
     ``"variables@lower_bounds:upper_bounds#num_samples"``
 
-    For example, a ``<formularesponse>`` tag that includes the ``samples``
+    比如, 一个 ``<formularesponse>`` 标签包含``samples``
     attribute might look like either of the following.
 
     ``<formularesponse samples="x,n@1,2:3,4#10">``
 
     ``<formularesponse samples="R_1,R_2,R_3@1,2,3:3,4,5#10">``
 
-  Children
+  子标签
 
   ``<formulaequationinput />``
 
-**Tag:** ``<formulaequationinput />``
+**标签:** ``<formulaequationinput />``
 
-Creates a response field where a learner enters an answer to the problem in
-plain text, as well as a second field below the response field where the
-learner sees a typeset version of the plain text. The parser that renders the
-learner's plain text into typeset math is the same parser that evaluates the
-learner's response for grading.
+创建一个供学生输入答案的回答框,回答框下面的第二个框里面学习者可以看到输入的输入文本的版本设置.解析器渲染学习者输入的文本转化成数学表达事.
 
-  Attributes
+属性
 
   .. list-table::
      :widths: 20 80
 
-     * - Attribute
-       - Description
-     * - label (required)
-       - Specifies the name of the response field.
-     * - size (optional)
-       - Specifies the width, in characters, of the response field where
-         learners enter answers.
+     * - 属性
+       - 描述
+     * - 标签 (必选)
+       - 指定这个回答框名字.
+     * - 大小 (可选)
+       - 制定回答框内学习者输入字体的大小.
 
-  Children
+  子标签
   
-  (none)
+  (无)
 
-**Tag:** ``<responseparam>``
+**标签:** ``<responseparam>``
 
-Used to define an upper bound on the variance of the numerical methods used to
-approximate a test for equality.
+用来指定变量的数值上限用来测试近似的等式。
 
-  Attributes
+  属性
 
   .. list-table::
      :widths: 20 80
 
-     * - Attribute
-       - Description
-     * - default (required)
-       - A number or a percentage specifying how close the learner and grader
-         expressions must be. If you do not include a tolerance, the
-         expression is vulnerable to rounding errors during sampling. The
-         result of such unavoidable errors is that the grader can mark some
-         learner input as incorrect, even if it is algebraically equivalent.
+     * - 属性
+       - 描述
+     * - 默认 (必选)
+       - 一个数值或者百分数指定关闭学习者的答案和表达式多接近.如果你不想包含容忍率,这个表达式在抽样中可能会有舍去误差.这个不可避免的错误结果有，评分器可以标记输入的错误, 即使他是代数相等的.
      * - type
-       - "tolerance", which defines a tolerance for a number.
+       - "tolerance", 对于一个数字定义一个容忍率.
 
-  Children
+  子标签
   
-  (none)
+  (无)
 
 .. _Math Response Formatting for Students: http://edx-guide-for-students.readthedocs.org/en/latest/SFD_mathformatting.html
 
