@@ -1,12 +1,12 @@
 .. _Molecule Editor:
 
 #######################
-Molecule Editor Tool
+分子编辑器
 #######################
 
-Students can use the molecule editor to learn how to create molecules. The molecule editor allows students to draw molecules that follow the rules for covalent bond formation and formal charge, even if the molecules are chemically impossible, are unstable, or do not exist in living systems. The molecule editor warns students if they try to submit a structure that is chemically impossible.
+学生可以通过分子编辑器来学习如何创造分子。 分子编辑器允许学生画遵循共价键的形成和形式电荷规则的分子，即使这些分子在化学上是不可能的存在的，不稳定的，或者不存在于自然界之中。 如果学生试图提交一个不可能的化学结构，分子编辑器便会发出警告。
 
-The molecule editor incorporates two tools: the JSME molecule editor created by Peter Erl and Bruno Bienfait, and JSmol, a JavaScript-based molecular viewer from Jmol. (You don't need to download either of these tools--Studio uses them automatically.) For more information about the JSME molecule editor, see `JSME Molecule Editor <http://peter-ertl.com/jsme/index.html>`_. For more information about JSmol, see `JSmol <http://sourceforge.net/projects/jsmol/>`_.
+分子编辑器集成了两个工具:由Peter Erl和Bruno Bienfait开发的JSME分子编辑器, 以及由Jmol开发的基于JavaScript的分子浏览器JSmol。 (你不需要下载这两个工具，编辑器自动使用这两个程序) 获得更多JSME分子编辑器的信息， 请点击 `JSME Molecule Editor <http://peter-ertl.com/jsme/index.html>`_.  获得更多关于JSmol分子浏览器的信息，请点击`JSmol <http://sourceforge.net/projects/jsmol/>`_.
 
 .. image:: ../../../shared/building_and_running_chapters/Images/Molecule_Editor.png
   :alt: Image of the molecule editor
@@ -14,45 +14,45 @@ The molecule editor incorporates two tools: the JSME molecule editor created by 
 .. _Create the Molecule Editor:
 
 ******************************
-Create the Molecule Editor
+创建分子编辑器
 ******************************
 
-To create a molecule editor, you need the following files:
+你需要下面的文件来创建一个分子编辑器：
 
 * MoleculeAnswer.png
 * MoleculeEditor_HTML.png
 * dopamine.mol
 
-To download all of these files in a .zip archive, go to http://files.edx.org/MoleculeEditorFiles.zip.
+要下载包含所有这些文件的.zip文件，请前往 http://files.edx.org/MoleculeEditorFiles.zip.
 
-.. note:: The molecule that appears when the tool starts is a dopamine molecule. To use a different molecule, download the .mol file for that molecule from the `list of molecules <http://www.biotopics.co.uk/jsmol/molecules/>`_ on the `BioTopics <http://www.biotopics.co.uk/>`_ website. Then, upload the .mol file to the **Files & Uploads** page for your course in Studio, and change "dopamine.mol" in the example code to the name of your .mol file.
+.. note:: 该工具启动时出现的分子是多巴胺分子。 如果想要使用不同的分子, 只需从 `BioTopics <http://www.biotopics.co.uk/>`_  网站的 `list of molecules <http://www.biotopics.co.uk/jsmol/molecules/>`_ 上下载你需要分子对应的.mol文件，然后， 上传 .mol 文件到你课程中的 **文件和上传** 页面，再修改示例代码中的 "dopamine.mol" 为你所要的分子的 .mol 文件名即可。
 
-To create the molecule editor that appears in the image above, you need an HTML component followed by a Problem component.
+要创建上面显示的图像中的分子编辑器，你需要一个HTML组件以及一个问题的组件。
 
-#. Upload all of the files listed above to the **Files & Uploads** page in your course.
-#. Create the HTML component.
+#. 上传所有在你课程的 **文件和上传** 页面上方列出的文件。
+#. 创建HTML组件。
 
-  #. In the unit where you want to create the problem, click **HTML** under **Add New Component**, and then click **HTML**.
-  #. In the component that appears, click **Edit**.
-  #. In the component editor, paste the HTML component code from below.
-  #. Make any changes that you want, and then click **Save**.
+  #. 在你要创建问题的创建问题的位置，点击 **添加新组件** 下面的 **HTML** ， 然后再点击  **HTML**.
+  #. 点击出现组件中的 **编辑**.
+  #. 在组件编辑器中，粘贴下面的HTML组件代码。
+  #. 做出你想要的任何更改，然后单击 **保存**.
 
-3. Create the Problem component.
+3. 创建问题组件。
 
-  #. Under the HTML component, click **Problem** under **Add New Component**, and then click **Blank Advanced Problem**.
-  #. In the component that appears, click **Edit**.
-  #. In the component editor, paste the Problem component code from below.
-  #. Click **Save**.
+  #. 点击HTML组件下方的 **添加新的组件** 中的 **问题** 再点击 **高级空白问题** 。
+  #. 点击出现组件中的 **编辑** 。
+  #. 在组件编辑器中，粘贴下面的问题组件代码。
+  #. 点击 **保存**。
 
 .. _EMC Problem Code:
 
 ========================
-Molecule Editor Code
+分子编辑器代码
 ========================
 
-To create the molecule editor, you need an HTML component and a Problem component.
+你需要一个HTML组件和一个问题组件来创建分子编辑器。
 
-HTML Component Code
+HTML组件代码
 ***************************
 
 .. code-block:: xml
@@ -101,7 +101,7 @@ HTML Component Code
 
 
 
-Problem Component Code
+问题组件代码
 ***************************
 
 .. code-block:: xml
@@ -124,7 +124,7 @@ Problem Component Code
     </solution>
   </problem>
 
-**Problem 2**
+**问题 2**
 
 ::
 
@@ -142,7 +142,7 @@ Problem Component Code
     </customresponse>
   </problem>
 
-**Problem 3**
+**问题 3**
 
 ::
 
