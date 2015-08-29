@@ -5,58 +5,59 @@
 投票工具
 ##########
 
-You can run polls in your course so that your students can share opinions on different questions.
+你可以在你的课程中使用投票问题以便你的学生可以在不同的问题上分享观点.
 
 .. image:: ../../../shared/building_and_running_chapters/Images/PollExample.png
 
-.. note:: Creating a poll requires you to export your course, edit some of your course's XML files in a text editor, and then re-import your course. We recommend that you create a backup copy of your course before you create the poll. We also recommend that you only edit the files that will contain polls in the text editor if you're very familiar with editing XML. 
+.. note:: 创建一个投票需要你先导出你的课程，在文本编辑器中编辑课程的XML文件的一些内容，然后重新导入你的课程。我们建议你给你的课程创建一个备份在你创建投票的时候。我们也建议你在文本编辑器中仅编辑这个包含投票的XML文件. 
 
 **************
-Terminology
+ 术语
 **************
 
-Sections, subsections, units, and components have different names in the **Course Outline** view and in the list of files that you'll see after you export your course and open the .xml files for editing. The following table lists the names of these elements in the **Course Outline** view and in a list of files.
+章, 节, 单元, 和组件有不同的名字在**课程大纲**视图,你将在文件列表中看到当你导出你的课程并且打开.xml文件编辑它的时候。
+
 
 .. list-table::
    :widths: 15 15
    :header-rows: 0
 
-   * - Course Outline View
-     - File List
-   * - Section
-     - Chapter
-   * - Subsection
-     - Sequential
-   * - Unit
-     - Vertical
-   * - Component
-     - Discussion, HTML, problem, or video
+   * - 课程大纲视图
+     - 文件列表
+   * - 章节
+     - 章
+   * - 段
+     - 连续的
+   * - 单元
+     - 垂直的
+   * - 组件
+     - 讨论, HTML, 问题, 或者视频
 
-For example, when you want to find a specific section in your course, you'll look in the **Chapter** folder when you open the list of files that your course contains. To find a unit, you'll look in the **Vertical** folder.
+比如，当你想要发现一个特殊的章节在你的单元里时, 你可以 **章** 文件夹里查找。 当你打开这个你课程包含的文件列表时.要发现一个单元,你可以在**垂直** 文件夹里查找.
 
 .. _Create a Poll:
 
 **************
-Create a Poll
+创建一个投票
 **************
 
-#. In the unit where you want to create the poll, create components that contain all the content that you want *except* for the poll. Make a note of the 32-digit unit ID that appears in the **Unit Identifier** field under **Unit Location**.
+#. 在你想要创建投票的单元里面, 创建包含你需要所有的内容除了投票的组件。记下单元位置下方单元标识符区域出现的32位ID.
 
-#. Export your course. For information about how to do this, see :ref:`Exporting and Importing a Course`. Save the .tar.gz file that contains your course in a memorable location so that you can find it easily.
+#. 导出你的课程. 要更多如何这样做的信息，请查看:ref:`导入导出课程`. 保存包含你的课程的后缀为.tar.gz文件在在本地以便你很容易可以找到他.
 
-#. Locate the .tar.gz file that contains your course, and then unpack the .tar.gz file so that you can see its contents in a list of folders and files.
+#. 打开包含你课程的.tar.gz文件, 然后解压以便你能看到它包含的文件夹和文件内容。
 
-   - To do this on a Windows computer, you'll need to download a third-party program. For more information, see `How to Unpack a tar File in Windows <http://www.haskell.org/haskellwiki/How_to_unpack_a_tar_file_in_Windows>`_, `How to Extract a Gz File <http://www.wikihow.com/Extract-a-Gz-File>`_, `The gzip Home Page <http://www.gzip.org/>`_, or the `Windows <http://www.ofzenandcomputing.com/how-to-open-tar-gz-files/#windows>`_ section of the `How to Open .tar.gz Files <http://www.ofzenandcomputing.com/how-to-open-tar-gz-files/>`_ page.
+   - 要在一台Windows电脑上做到这些,你需要先下载第三方软件。要了解更多信息, 请查看 `如何在Windows电脑上解压压缩文件 <http://www.haskell.org/haskellwiki/How_to_unpack_a_tar_file_in_Windows>`_, `如何释放一个Gz文件 <http://www.wikihow.com/Extract-a-Gz-File>`_, `gzip主页 <http://www.gzip.org/>`_, 或者 `Windows <http://www.ofzenandcomputing.com/how-to-open-tar-gz-files/#windows>`_ section of the `How to Open .tar.gz Files <http://www.ofzenandcomputing.com/how-to-open-tar-gz-files/>`_ page.
 
-   - For information about how to do this on a Mac, see the `Mac OS X <http://www.ofzenandcomputing.com/how-to-open-tar-gz-files/#mac-os-x>`_ section of the `How to Open .tar.gz Files <http://www.ofzenandcomputing.com/how-to-open-tar-gz-files/>`_ page.
+   - 了解要在一台Mac上做到这些的信息, 查看 `Mac OS X <http://www.ofzenandcomputing.com/how-to-open-tar-gz-files/#mac-os-x>`_ section of the `How to Open .tar.gz Files <http://www.ofzenandcomputing.com/how-to-open-tar-gz-files/>`_ page.
 
-#. In the list of folders and files, open the **Vertical** folder. 
+#. 在文件夹列表中, 打开**Vertical** 文件夹. 
 
-   .. note:: If your unit is not published, open the **Drafts** folder, and then open the **Vertical** folder in the **Drafts** folder.
+   .. note:: 如果你的单元没有发布, 打开 **Drafts** 文件夹, 然后打开**Vertical** 文件夹在 **Drafts** 文件夹下面.
 
-#. In the **Vertical** folder, locate the .xml file that has the same name as the unit ID that you noted in step 1, and then open the file in a text editor such as Sublime 2. For example, if the unit ID is e461de7fe2b84ebeabe1a97683360d31, you'll open the e461de7fe2b84ebeabe1a97683360d31.xml file.
+#. 在 **Vertical** 文件夹里, 找到 .xml 文件你在步骤1标记的的单元ID，然后用文本编辑器打开这个文件比如Sublime 2. 比如，单元ID是e461de7fe2b84ebeabe1a97683360d31, 你就打开e461de7fe2b84ebeabe1a97683360d31.xml 文件.
 
-   The file contains a list of all the components in the unit, together with the URL names of the components. For example, the following file contains an HTML component followed by a Discussion component.
+   这个文件包含这个单元所有的组件列表,和组件的 URL名字. 比如, 下面的文件包含HTML组件随后是讨论组件.
 
    .. code-block:: xml
      
@@ -65,7 +66,7 @@ Create a Poll
         <discussion url_name="8320c3d511484f3b96bdedfd4a44ac8b"/>
        </vertical>
 
-#. Add the following poll code in the location where you want the poll. Change the text of the prompt to the text that you want.
+#. 添加以下的投票代码位于你想要添加投票的地方. 把示例文本改变成你想要的文本.
 
    .. code-block:: xml
       
@@ -75,7 +76,7 @@ Create a Poll
       <answer id="no">No</answer>
     </poll_question>
 
-   In the example above, if you wanted your poll to appear between the HTML component and the Discussion component in the unit, your code would resemble the following.
+   在上面的示例中, 如果你想要你的投票出现在你课程的HTML组件和讨论组件之间, 你的代码就和以下的类似.
 
    .. code-block:: xml
 
@@ -89,63 +90,61 @@ Create a Poll
       <discussion url_name="8320c3d511484f3b96bdedfd4a44ac8b"/>
      </vertical>
 
-#. After you add the poll code, save and close the .xml file.
+#. 在你添加投票代码之后，保存并关闭这个.xml文件.
 
-#. Re-package your course as a .tar.gz file.
+#. 重新把你的课程压缩成一个.tar.gz文件.
 
-   * For information about how to do this on a Mac, see `How to Create a Tar GZip File from the Command Line <http://osxdaily.com/2012/04/05/create-tar-gzip/>`_.
+   * 要了解更多关于如何在Mac上做到这些的信息, 请查看 `如何通过命令行创建一个GZip问题 <http://osxdaily.com/2012/04/05/create-tar-gzip/>`_.
 
-   * For information about how to do this on a Windows computer, see `How to Make a .tar.gz on Windows <http://stackoverflow.com/questions/12774707/how-to-make-a-tar-gz-on-windows>`_.
+   * 要了解更多关于如何在Windows电脑上做到这些的信息, 请查看`如何在Window上制作.tar.gz文件 <http://stackoverflow.com/questions/12774707/how-to-make-a-tar-gz-on-windows>`_.
 
-#. In Studio, re-import your course. You can now review the poll question and answers that you added in Studio.
+#. 在Studio中, 重新到诶你的课程. 你现在课时预览这个投票问题和答案了.
 
 .. note::
 
-  * Although polls render correctly in Studio, you cannot edit them in Studio. You will need to follow the export/import process outlined above to make any edits to your polls.
+  * 虽然投票能在Studio中正确的显示出来，但是你也不能再Studio中编辑他们。你将需要准信以上的 导出/导入 步骤才能编辑你的投票。
+
   
-  * A .csv file that contains student responses to the problem is not currently available for polls. However, you can obtain the aggregate data directly in the problem.  
+  * 一个 .csv 文件包含学生对这个问题的回答是当前不可达到的对于这个投票. 然而,你可以在这个问题获得直接获得统计数据。
 
 *********************
-Format description
+格式描述
 *********************
 
-The main tag of Poll module input is:
+对于投票模板输入的主要标签有:
 
 .. code-block:: xml
 
     <poll_question> ... </poll_question>
 
-``poll_question`` can include any number of the following tags:
-any xml and ``answer`` tag. All inner xml, except for ``answer`` tags, we call "question".
+``poll_question`` 可以包含以下任何的标签:任何xml和任何``answer``标签. 都有的内部xml, 除了``answer``标签, 我们表座"question".
 
 ==================
-poll_question tag
+投票问题标签
 ==================
 
-Xmodule for creating poll functionality - voting system. The following attributes can
-be specified for this tag::
+创建投票功能的Xmodule - 投票制度.下面的属性可以用来指定这个书签::
 
-    name - Name of xmodule.
-    [display_name| AUTOGENERATE] - Display name of xmodule. When this attribute is not defined - display name autogenerate with some hash.
-    [reset | False] - Can reset/revote many time (value = True/False)
+    name - xmodule的名字.
+    [display_name| AUTOGENERATE] - xmodule的展示名字. 当这个属性没被定义时 - 展示名字自动生成散列.
+    [reset | False] - 可以 重置/重新投票 多次(value = True/False)
 
 ============
-answer tag
+答案投票
 ============
 
-Define one of the possible answer for poll module. The following attributes can
-be specified for this tag::
+定义一个可能的答案对于投票模块。下面的属性可以指定对于这个投票::
 
-    id - unique identifier (using to identify the different answers)
+    id - 唯一识别符(用来辨别不同的答案)
 
-Inner text - Display text for answer choice.
+Inner text - 答案选项的展示文本.
 
 ***********
-Example
+示例
 ***********
 
 ==================
-Example of poll
+投票示例
 ==================
 
 .. code-block:: xml
@@ -159,7 +158,7 @@ Example of poll
     </poll_question>
 
 ================================================
-Example of poll with unable reset functionality
+不带重置功能的投票示例
 ================================================
 
 .. code-block:: xml
