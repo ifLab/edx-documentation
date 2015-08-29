@@ -2,7 +2,7 @@
 .. _Poll:
 
 ##########
-Poll Tool
+投票工具
 ##########
 
 You can run polls in your course so that your students can share opinions on different questions.
