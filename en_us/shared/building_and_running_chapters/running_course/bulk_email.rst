@@ -1,132 +1,98 @@
 .. _Bulk Email:
 
 ##############################
-Bulk Email 
+大宗邮件
 ##############################
 
-For courses on edx.org, you can send bulk email messages to course participants
-directly from the Instructor Dashboard. Messages can use HTML styling, and can
-include links to videos, social media pages for the course, and other material.
-All course contributors who are assigned the course staff or instructor role
-can use bulk emails to communicate with course participants before, during, and
-after the course run. 
+对于在 edx.org 上的课程，你可以直接从教导员面板发送大宗邮消息给课程的参与者。消息可以采用HTML格式，可以包含到视频课程的社交媒体页面和其他资料的链接。所有课程的贡献者，那些被指派了课程职员和教导员的角色的人，在课程运行前，运行时和运行后都可以用大宗邮件来与课程的参考者进行通信。
+这章内容包括以下主题.
 
-This chapter contains the following topics.
-
-* `Message Addressing`_
-* `Send Email Messages to Course Participants`_
-* `Use Keywords in Messages`_
-* `Message Workflow States`_
-* `Review Sent Messages`_
-* `Email Task History Report`_
-* `Example Messages to Students`_
+* `消息寻址`_
+* `发送Email消息到课程参与者`_
+* `在消息中使用关键字`_
+* `消息工作流程的状态`_
+* `回顾发送消息`_
+* `Email任务历史报告`_
+* `给学生的示例消息`_
 
 
 *************************
-Message Addressing
+消息寻址
 *************************
 
-When you send an email message from the Instructor Dashboard, you choose its
-recipients by selecting one of these predefined groups:
+当你从教导员面板发送Email消息时，你通过选择以下预先定义的组来选择接收者：
 
-* **Myself**, to test out a message before sending it to a larger group.
-* **Staff and Instructors**, to contact other members of the administrative
-  team.
-* **All (students, staff and instructors)**, to communicate with currently
-  enrolled students and the administrative team. 
+* **自己**, 在把消息发送给一个大组之前进行测试.
+* **职员和教导员**, 与其他管理团队中的成员进行交流.
+* **所有 (学生，职员和教导员)**, 与当前登记的学习和管理团队进行通信.
 
-  Email messages are sent to all enrolled students with these exceptions:
+  Email消息改善给所有登记的学习，除了以下例外：
 
-  * Students who have not replied to the account activation email message
-    that is sent when they registered on edx.org. 
-  * Students who have opted out of receiving email messages through the **Email
-    Settings** link, which is present for each course on the **Current
-    Courses** dashboard.
+  * 在 edx.org 上注册时没有对账号激活邮件消息进行激活的学生.
+  * 通过 **邮件设置** 链接决定退出接收Emial消息的学生。这个设置在 **现有课程** 面板上对每门课程都可用。
 
-Before you use the bulk email feature, consider that messages **cannot be
-canceled** after they are sent. If you plan to send a message to all course
-participants, be sure to review each draft carefully, and send the message to
-yourself first for thorough testing.
+在你使用大宗邮件特性之前，要明白消息在它们被发送后 **不能撤消**.如果你计划把消息发送到所有的课程参与者，确保对每一个草稿都复查过，然后再通过把消息发送给自己来进行测试。
 
 .. _Send_Bulk_Email:
 
 **************************************************
-Send Email Messages to Course Participants
+发送邮件消息到课程参与者
 **************************************************
 
-To send an email message to course participants:
+要发送Email消息到课程参与者:
 
-#. View the live version of your course.
+#. 查看你的课程的在线版本.
 
-#. Click **Instructor** then click **Email**.
+#. 点击 **教导员** 然后点击 **电子邮件**.
 
-#. Select who you want to send the message to from the **Send to** drop-down
-   list. You can select:
+#. 从 **发送到** 下拉列表中选择你想把消息发送到的人:
 
-  * **Myself**
-  * **Staff and Instructors**
-  * **All (students, staff and instructors)**
+  * **自己**
+  * **职员和教导员**
+  * **所有 (学生，职员和教导员)**
 
-4. Enter a **Subject** for the message. A subject is required.
+4. 给消息输入 **主题** 一个主题是必需的.
 
-#. Enter the text for the message. Message text is required. 
+#. 输入消息的文本，消息文本是必需的.
 
-   To include an image in your message, use the **Files & Uploads** page in
-   Studio to add the file to your course, then click the **Insert/edit image**
-   icon. For more information, see :ref:`Add Files to a Course`.
+   要在你的消息中包含一个图片，使用Studio中的 **文件&上传** 页面来添加文件到你的课程，然后点击 **插入或编辑图片** 图标. 更多信息请参照 :ref:`添加文件到课程`.
 
-   Messages can use HTML styling, including text formatting and links. The
-   email message editor offers the same formatting options as the HTML
-   component editor in Studio. For more information, see :ref:`Working with
-   HTML Components`.
+   消息可以使用HTML格式，包括文本格式和链接。Email消息编辑器提供了Studio中的HTML组件编辑器相同的格式选择    更多信息请参照 :ref:`使用HTML组件`.
 
-   You can use keywords in messages, to have values that are specific to each
-   recipient substituted in the content when messages are sent. For more
-   information, see `Use Keywords in Messages`_ .
+   你可以在消息中作用关键字，使得在发送的消息内容中对每个接收者特定的值进行替换 `在消息中使用关键字`_ .
 
-#. Click **Send Email**. You can perform other tasks on the Instructor
-   Dashboard or navigate to other pages while you wait for your message to be
-   sent.
+#. 点击 **发送日子邮件**. 在发送消息等待时，你可以在教导员面板上完成其他的任务，或者导航到其他页面.
 
-After you send a message, a bulk email task is queued for processing.
-Multiple courses use the same queue to complete these tasks, so it can take
-some time for your message to be sent to all of its recipients. If your course
-is a MOOC, consider limiting the number of messages that you send to all
-course participants to no more than one per week.
+在你发送消息后，一个大宗邮件任务就排队等待处理。多个课程使用同一个队列来完成这些任务，所以要花点时间才能把你的消息发送到它的所有接收者。如果你的课程是一个MOOC，要注意你发送到所有课程参与者的消息数的限制是一个星期不超过一个消息。
 
 .. _Use Keywords in Messages:
 
 ****************************
-Use Keywords in Messages
+在消息中使用关键字
 ****************************
 
-You can include keywords in your messages. A keyword is a variable: when you
-send the message, a value that is specific to the each recipient is substituted
-for the keyword. For example, when you use the ``%%USER_FULLNAME%%`` keyword,
-each message contains the name of the recipient.
+你可以在消息中包含关键字。一个关键字是可用的：当你发送消息时，每个接收者特有的值会被关键字取代。例如，
+ 当你使用 ``%%USER_FULLNAME%%`` 关键字时，每个消息包含接收者的名字。.
 
 .. note:: 
-  Do not use keywords in the Subject line of a message. The keyword in the
-  subject will not be assigned a value, and the recipient will see the keyword
-  text.
+  不要在消息的主题行中使用关键字。在主题中的关键字不会被赋值，所以接收者会看到关键字的文本.
 
 ===================
-Supported Keywords
+支持的关键字
 ===================
 
-You can use the following keywords in your messages.
+你可以在消息中使用以下的关键字
 
-* ``%%USER_ID%%`` - the anonymous user ID of the message recipient
-* ``%%USER_FULLNAME%%`` - the full name of the message recipient
-* ``%%COURSE_DISPLAY_NAME%%`` - the display name of the course
-* ``%%COURSE_END_DATE%%`` - the end date of the course
+* ``%%USER_ID%%`` - 消息接收者的匿名用户ID
+* ``%%USER_FULLNAME%%`` - 消息接收者的全名
+* ``%%COURSE_DISPLAY_NAME%%`` - 课程的显示名称
+* ``%%COURSE_END_DATE%%`` - 课程的结束日期
 
 ===================
 Keyword Formatting
 ===================
 
-You format keywords as: ``%%Keyword%%``.  You can include keywords in any HTML
-tags in an email message. For example:
+你格式化关键字，如: ``%%Keyword%%``.  你可以在一封电子邮件消息中的任何HTML标签中包含关键字，例如:
 
 ::
 
@@ -139,104 +105,81 @@ tags in an email message. For example:
 .. _Email_queuing:
 
 ****************************
-Message Workflow States
+消息工作流程状态
 ****************************
 
-When you click **Send Email** for a message, the server begins to process a
-bulk email task. The server assigns a series of different workflow states to
-the task.
+当你点击 **发送Email** 来发送一个消息时，服务器就可以处理一个大宗电子邮件任务。服务器指派一系列的不同的工作流程状态到任务.
   
 .. image:: ../../../shared/building_and_running_chapters/Images/Bulk_email_states.png
        :alt: Flowchart of the possible states of a bulk email task 
 
-The workflow states for a bulk email task are:
+对于一个大宗邮件任务的工作流程状态是:
 
-* Queuing: The bulk email task is created and being queued for background
-  processing.
-* Pending: The task is queued and is waiting to run.
-* Started: Background processing is in progress to create emailing subtasks.
-* Progress: The emailing subtasks are in progress. 
-* Success: All emailing subtasks are complete. Note that the bulk email task
-  can be in this state even if some or all of its emailing subtasks failed.
-* Failure: An error occurred and task processing did not complete successfully.
+* 排队: 大宗电子邮件任务被创建并排队等候后台处理.
+* 挂起: 任务在排队并等待运行.
+* 已开始: 后台处理正在进行创建电子邮件子任务.
+* 处理: 电子邮件子任务正在处理.
+* 成功: 所有的电子邮件子任务完成，注意即使所有或部分电子邮件子任务失败了，大宗邮件任务也会到达这个状态.
+* 失败: 发生了错误，任务处理没有成功完成.
 
-While the bulk email task is in progress, you can find out how far it has
-gotten in the workflow by checking the **Pending Instructor Tasks** section on
-the **Email** page.
+当大宗电子邮件任务在处理中时，你可以找出在工作流程中还有多久，通过查找 **挂起教导员任务** 部分于 **电子邮件** 页面.
 
 .. image:: ../../../shared/building_and_running_chapters/Images/Bulk_email_pending.png
        :alt: Information about an email message, including who submitted it 
              and when, in tabular format
 
-When the bulk email task is complete, you can find its final state by checking
-the Email Task History report. See :ref:`Email Task History Report`.
+当大宗电子邮件任务完成后时，你可以找到它的最终状态，通过查看Email任务历史报告 :ref:`Email任务历史报告`.
 
 .. _Review Sent Messages:
 
 ********************************
-Review Sent Messages
+回顾已发送消息
 ********************************
 
-You can review a list of all of the messages that have been sent for the
-course. For any listed message, you can review the subject, the username of the
-person who sent it, the date and time sent, its selected recipients, and the
-message text.
+你可以回顾一个所有已发送消息的列表。对于列出的任意一个消息，你可以检查主题，邮件发送人的用户名，发送时间，它的被选择的接收者和消息内容.
 
-#. View the live version of your course.
+#. 查看你的课程的在线版本.
 
-#. Click **Instructor** then click **Email**. 
+#. 点击 **教导员** 然后点击 **电子邮件**.
 
-#. In the **Email Task History** section of the page, click **Sent Email
-   History**. The list of sent messages displays.
+#. 在页面的 **Email任务历史** 部分，发送Email历史**. 已发送消息列表显示.
 
    .. image:: ../../../shared/building_and_running_chapters/Images/Bulk_email_list.png
     :alt: A tabular list of sent messages, with columns for subject, sent by,  
           time sent, and number sent
 
-4. To review additional information for a message, click its subject. The
-   message opens in a dialog box.
+4. 查看消息的附加信息，点击它的主题。消息会在一个对话框中打开。
  
    .. image:: ../../../shared/building_and_running_chapters/Images/Bulk_email_sent.png
     :alt: A dialog box with the subject, sent by, date and time sent, sent to, 
           and message for an email message, and an option to Copy Email 
           to Editor
 
-5. Optionally, use the message as the basis for a new message: click **Copy
-   Email to Editor**. The dialog box closes and you can edit the text, links,
-   and formatting that were duplicated into the **Subject** and **Message**
-   fields.
+5. 随意地，使用消息作为新消息的基础，点击 **复制Email到编辑器**. 对话框关闭，并且你可以编辑复制到 **主题** 和 **消息** 域的内容，链接和格式.
 
-   When you create a message by copying a previously-sent message, be sure to
-   review and test it thoroughly before you send it to all course participants.
+   当你通过复制之前已发送的消息来创建一个新消息时，确保要复查然后对它进行全面的测试再发送给所有的课程参与者.
 
 .. _Email Task History Report:
 
 ********************************
-Email Task History Report
+电子邮件任务历史报告
 ********************************
 
-The Email Task History report can help you keep track of who sent messages,
-when, and to how many people. For each message sent, the report includes the
-username of the requester, the date and time it was submitted, the duration and
-state of the entire task, the task status, and the task progress.
+电子邮件任务历史报告能帮助你追踪是谁，在何时发送消息给了多少人。对于每一个已发送的消息，报告会包含请求者的用户名，提交的日期和时间，整个任务的持续时间和状态，还有任务的进展。
 
-You can use this history to investigate questions relating to bulk email
-messages that have been sent, such as:
+你可以使用历史来调查与已发送的大宗电子邮件消息相关的问题，比如:
 
-* How frequently students are sent course-related email messages.
-* Whether a message was sent successfully.
-* The change in the number of people who were sent course-related messages over
-  time.
+* 学生被发送课程相关的电子邮件消息的频次.
+* 一个消息是否被成功发送.
+* 随时间被发送课程相关的消息的人数的变化.
 
-To produce the Email Task History report:
+生成电子邮件任务历史报告:
 
-#. View the live version of your course.
+#. 查看你的课程在线版本.
 
-#. Click **Instructor** then click **Email**. 
+#.  点击 **教导员** 然后点击 **电子邮件**.
 
-#. In the **Email Task History** section of the page, click **Show Email Task
-   History**. A report like the following example displays on the Instructor
-   Dashboard.
+#. 在页面的 **电子邮件任务历史** 部分，点击 **显示电子邮件历史**. 一个像以下例子的报告会显示在教导员面板上.
 
 .. image:: ../../../shared/building_and_running_chapters/Images/Bulk_email_history.png
        :width: 800
@@ -245,487 +188,330 @@ To produce the Email Task History report:
         task progress.
 
 ===========================
-Review Email Task History
+检查电子邮件任务历史
 ===========================
 
-For tasks with a **State** of Success, the **Task Progress** column shows an
-informational message. These messages can have a format such as "Message
-successfully emailed for 13457 recipients (skipping 29) (out of 13486)". To
-interpret this message, note that:
+在有成功的 **状态** 的任务里 **任务进展** 列会显示一个提示消息 "消息成功邮件给了13457位接收者 (跳过 29) (自 13486)". 要解释这个信息，注意:
 
-* The first number ("recipients") indicates the number of messages sent to the
-  selected recipients.
+* 第一个数字 ("接收者") 表明发送给被选择的接收者的消息数.
 
-* The second number ("skipping") indicates the number of enrolled and activated
-  users who were not sent the message. This count is of students who have opted
-  not to receive course email messages.
+* 第二个数字 ("跳过") 表明登记并激活的但没有被发送消息的用户数。这个数记录的是选择不接收课程电子邮件的学生的数目.
 
-* The final number ("out of") indicates the number of users in the set of
-  recipients you selected who were enrolled in the course (and had activated
-  their user accounts) when you sent the email message. 
+* 最后的数字 ("自") 表明了当你发送电子邮件消息时，你选择的在课程中登记并激活了用户账号的用户的数目.
 
-  Note that the **Total number of enrollees** shown on the **Course Info** page
-  includes all currently enrolled students, regardless of account activation
-  status, and as a result can be different than this number.
+  注意 **所有登记者的数目** ，在 **课程信息** 页面显示的，包含所有的当前登记的学生，不管恪的激活状态，结果导致其与这个数目不同.
 
-If the "recipients" and "out of" numbers are the same, the message reads
-"Message successfully emailed for 13457 recipients" instead.
+如果 "接收者" 和 "自" 数目是一样的，消息会变成"消息成功邮件给了13457位接收者" .
 
-Other **Task Progress** messages for tasks with a **State** of Success indicate
-that some or all of the emailing subtasks did not successfully send email:
+其他带成功 **状态** 的任务的 **任务进展** 消息表明部分或全部的邮件子任务没有成功发送电子邮件:
 
-* "Message emailed for {number succeeded} of {number attempted} recipients" 
-* "Message failed to be emailed for any of {number attempted} recipients"
-* "Unable to find any recipients to be emailed"
+* "消息发送给 {number succeeded} 自 {number attempted} 接收者"
+* "给 {number attempted} 接收者的消息发送失败"
+* "无法找到要发送邮件的接收者"
   
-No **Task Progress** messages display for tasks that have a **State** of
-Failure.
+没有 **任务进展** 消息显示给有失败 **状态** 的任务.
 
 .. _Example Messages to Students:
 
 *********************************
-Example Messages to Students
+给学生的消息示例
 *********************************
 
-You can use these example messages, prepared for delivery before typical course
-milestones, as models for your own course communications.
+你可以使用这些示例消息，在典型的课程里程碑之前的发送准备，作为你自己的课程通信的模型.
 
-* `Prelaunch Reminder`_
-* `Launch Day Welcome`_
-* `Verified Registration Reminder`_
-* `Weekly Highlights`_
-* `Midcourse Encouragement`_
-* `Midcourse Events`_
-* `Technical Issue`_
-* `Course Farewell and Certificates`_
-* `New Course Run Announcement`_
+* `起动前提醒`_
+* `起动日的问候`_
+* `验证注册提醒`_
+* `每周重点`_
+* `中间课程的鼓励`_
+* `中间课程事件`_
+* `技术问题`_
+* `课程告别和证书`_
+* `新课程运行公告`_
 
-These messages are styled as email messages, but you could also post this
-information in a course discussion topic or on the **Course Info** page. To use
-:ref:`keywords <Use Keywords in Messages>`, you must send email messages;
-keywords are not supported in discussion topics or the **Course Info** page.
+这些消息被设计成Email消息格式，但是你也可以在课程讨论主题或在 **课程信息** 页面中邮件这些信息。要使用 :ref:`关键字 <在消息中使用关键字>`, 你必须发送Email消息;
+关键字在讨论主题或 **课程信息** 页面中不支持.
 
 .. important:: 
- Revise these message templates carefully to include facts for 
- your own course, meet the needs of your students, and reflect your own
- objectives and personality. Search for the "{" and "}" characters to locate
- prompts and replace them with course-specific values.
+ 仔细检查这些消息模板，以包含你的课程的事实，满足学生的需求，反映出你的目标和品格。搜索 "{" 和 "}" 字符来定位提示和用课程特定的值来替换它们.
 
- Some of these messages also contain :ref:`keywords <Use Keywords in
- Messages>`. Values specific to your course and the recipients will be
- substituted for the keywords when you send the messages. Ensure you are using
- keywords appropriately for your course and objectives.
+ 这些消息中的一部分也包含 :ref:`关键字 <在消息中使用关键字>`. 在你发送消息时，特定于你的课程和接收者的值会被关键字替换，确保在你的课程中正确地使用关键字以达到你的目标.
 
 .. _Prelaunch Reminder: 
 
 ====================
-Pre-launch Reminder
+起动前提醒
 ====================
 
-Pre-launch reminders raise awareness of the course start date, publicize the
-course, and generate excitement. In addition to the course start date and time,
-the example that follows also lets students know that:
+起动前提醒产生课程开始日期的提醒，分开课程，产生刺激。除了课程开始日期和时间外，下面的例子也让学生获知:
 
-* UTC is used in edX courses. Alternatively, you could include information
-  about your course or the edX platform that will contribute to your students'
-  success.
+* UTC被用在edX课程中，你可以包含有关你的课程或者edX平台的信息以助你的学生完成课程.
 
-* The course has a companion social media site. Alternatively, you might
-  include information about planned meetups or other community-building
-  opportunities.
+* 课程有一个相伴的社交媒体的网址，你可以包含有关已计划的聚会或者其他社区建设机会.
 
-You may want to send out more than one message before the course launches: use
-this template as a starting point for crafting the different messages you want
-to deliver. Replace values enclosed by {braces} with information that applies
-to your course. In addition, check that you are using :ref:`keywords <Use
-Keywords in Messages>` appropriately.
+你可能会想在课程起动之前发送多个消息：请使用这个模板作为起始点来制作你想发送的不同的消息。把应用到你的课程里的信息替换被 {braces} 括起来的值。另外，检查你是否适当使用了 :ref:`关键字 <在消息中使用关键字>`.
 
 :: 
 
-  Subject: {course number} Starts Soon!
+  主题: {course number} 马上开始!
 
-  Hello %%USER_FULLNAME%%,
+  %%USER_FULLNAME%%你好,
 
-  We are excited that you are joining us for {course number}
-  %%COURSE_DISPLAY_NAME%%, offered by {organization name} through edX. Class
-  begins on {day}, {date} at {time} UTC (which is {time} {local time zone}).
-  Note that edX courses use Coordinated Universal Time (UTC) for due dates and
-  release times.
+  我们很高兴你加入我们的 {course number}
+  %%COURSE_DISPLAY_NAME%%, 由 {organization name} 通过 edX 提供. 课程将开始于 {day}, {date}  {time} UTC (即 {time} {local time zone}).
+  注意edX课程使用的是世界调整时间（UTC），用于截止日期和发布日期.
 
-  In case you haven't already found it, {course number} has its own official
-  Facebook page {add link}. You can find videos and photos posted there before
-  the course even begins.
+  如果你还没有找到它, {course number} 有它自己的官方Facebook页面 {add link}. 在课程开始之前你可以上面找到已发布的视频和图片.
 
-  If this is your first edX course, consider enrolling in the edX Demo course
-  {add link}. This course gives you an opportunity to explore the edX platform
-  and learn how to answer problems and track your progress, before {course
-  number} begins.
+  如果这是你的第一个edX课程，不妨注册edX示例课程{add link}. 这个课程给你一个探索edX平台的机会，并学会如何回答问题和跟踪你的进展，在 {course
+  number} 开始之前.
 
-  Your {course number} course staff
+  你的 {course number} 课程老师
 
 .. _Launch Day Welcome:
 
 ===================
-Launch Day Welcome
+起动日问候
 ===================
 
-On your course start date, you can send an email message that both welcomes
-students and gives them specific actions to accomplish. This example directs
-students to two of the course pages to encourage exploration and discovery, and
-personally introduces the course team leader. Search for the values enclosed by
-{braces} in this template and replace them with information for your course.
+在你的课程开始的日期，你可以发送一个包含问候和给学生要完成的特定任务的电子邮件消息。这个示例将学生导向课程页面中的两个页面，以鼓励其探索和发现，并亲自介绍课程团队的领队。在这个模板中搜索被{braces}包围的值并用在你课程中的信息替换它们.
 
 :: 
 
-  Subject: {course number} Starts Today!
+  主题: {course number} 今天开始!
 
-  Hello everyone!
+  大家好!
 
-  At this time, edX course {course number} is available from your Dashboard
-  {add link}, and the staff would like to officially welcome you to the course!
-  You'll find materials for the first week on the Courseware page,
-  including both video lectures and problem sets.
+  此时, edX 课程 {course number} 从你的面板上就可访问了{add link}, 并且教员们将正式欢迎你加入课程!你将在课程页面找到第一个星期的学习资料，包括视频演讲和问题集.
 
-  Please take some time to go to the Course Info page to read the handouts
-  and get familiar with course policies and philosophy.
+  请花点时间浏览课程信息页面，阅读上面的资料并熟悉课程政策和哲学.
 
-  I will be your course lead and I hope you will all have a great time learning
-  {subject}! It may be challenging, it may be frustrating, but it will be
-  rewarding and you will learn a ton.
+  我将成为你的课程领导者，并且我希望你将快乐地学习{subject}! 它可能会带一点挑战性，也会让你感到沮丧，但这一切都将是值得的，并且你将获益匪浅.
 
-  On behalf of the staff, welcome, good luck, and have fun!
+  谨代表所有的教职员式，欢迎你，并祝你好运，学得开心!
 
-  {name} and the {course number} staff
+  {name} 及 {course number} 的所有教员
 
 .. _Verified Registration Reminder:
 
 ==============================================
-Reminder to Register for Verified Certificate
+提醒注册认证证书
 ==============================================
 
-After your course has launched, you can send an email to remind students that
-the last day to register for a verified certificate is approaching. You can use
-this template as a starting point for your own message; search for the values
-enclosed by {braces} and replace them with information for your course. In
-addition, check that you are using :ref:`keywords <Use Keywords in Messages>`
-appropriately.
+在你的课程起动后，你可以给学生发送邮件来提醒学生注册认证证书的最后日期将临近。你可以用下面的模板作为你自己的消息的开始；搜索被{braces}括起来的值并用你课程中的信息替换它另外，检查你是否适当地使用 :ref:`关键字<在消息中使用关键字>`.
 
 ::
 
-  Subject: Earn an edX verified certificate for {course name}!
+  主题: 获得 {course name}的一个edX认证证书!
 
-  Dear %%USER_FULLNAME%%, 
+  亲爱的%%USER_FULLNAME%%,
 
-  Interested in using an edX certificate to bolster a college application or to
-  advance your career? With an edX verified certificate, you can demonstrate to
-  colleges, employers, and colleagues that you successfully completed a
-  challenging edX course, while helping to support the edX mission.
+  对使用一个edX证书来支持大学申请或来提升你的职业生涯感兴趣吗？拥有一个edX认证证书，你可以向大学，雇主和同事证明你已成功完成了一个具有挑战性的edX课程，同时也帮助支持完成edX的使命.
 
-  We would like to remind you that {date} is the last day to register for a
-  verified certificate in %%COURSE_DISPLAY_NAME%%. Registering for a
-  certificate is easy! Just go to this course on your edX dashboard and click
-  "Challenge Yourself".
+  你们将提醒你 {date} 是在 %%COURSE_DISPLAY_NAME%%上注册认证证书的最后日期. 注册一个证书很简单! 只要到你的edX面板的课程里并点击"挑战自我".
 
-  Good luck!
+  祝你好运!
 
-  {name} and the {course number} staff
+  {name} 及 {course number} 的所有教员
 
 .. _Weekly Highlights:
 
 ==================
-Weekly Highlights
+每周重点
 ==================
 
-Sending a weekly email to students can be a great way to keep them engaged and
-provide encouragement. At the end of each week you might send students an email
-that summarizes the content covered, and reminds students about upcoming
-assessments or milestones in the course. Optionally, to encourage participation
-in the discussion forums, you might also highlight particularly interesting or
-important discussions, and provide links to the discussion topics.
+每周发一封电子邮件给学生是一种很好的让学生坚持参与课程和提供鼓励的方法。在每个星期末你可以发送给学生一封电子邮件来总结这周学习的内容，提醒学生要做的作业以及课程中的里程碑.可选择地，鼓励学生参与到讨论论坛中，你可以重点提示特别有趣的点或重要的讨论，提供到讨论主题的链接.
 
-You can use this template as a starting point for designing your own message,
-omitting the discussion highlights if they are not appropriate for your course
-(the example discussion highlights are from a course about urban solutions to
-the global water crisis). Search for the values enclosed by {braces} and
-replace them with information for your course. In addition, check that you are
-using :ref:`keywords <Use Keywords in Messages>` appropriately.
+你可以用以下的模板作为开始设计你自己的消息，可以省略其中的讨论重点，如果它们不适合你的课程的话（示例讨论重点是从一门关于全球水危机的城市解决方案的课程来的）。搜索被{braces}包围的值并用你课程中的信息替换它另外，检查你是否适当使用 :ref:`关键字<在消息中使用关键字>` .
 
 ::
 
-  Subject: {Course Name} Week 1 Highlights
+  主题: {Course Name} 第一周重点
 
-  We hope you all had a great week! Below, we have provided links to some
-  exciting discussions that have been going on, and a Q&A video with
-  {Professor} that recaps some of the questions that have come up this week.
+  我们希望大家有愉快的一周！下面，我们提供一些链接到令人激动的已开始的讨论和一个Q&A视频，其中{Professor}教授概括了一些这周提出的问题.
 
-  We'd also like to remind you to take this week's quiz by {date} at {time} UTC.
-  The next module will be available on {Time and Date}.
+  我们也希望提醒你进行每周测验，在 {date}  {time} UTC之前.下个模块会在 {Time and Date}可用.
 
   {Link to Video}
 
-  Here are a few highlights from the discussion forum this week. Please join us
-  online and keep the conversation going!
+  这里是在这个星期从讨论论坛里的一些重点，请在线加入我们并保持对话!
 
-  * There has been quite a debate over whether urban stream restoration is
-    possible and what types of restoration are desirable. How can we improve
-    restoration practice and its outcomes? {Link to the Discussion}
+  * 一直有一个争论到底城市溪流储藏是否可能，何种类型的储藏是想要的。我们如何提高储藏实施方法和它的输出? {Link to the Discussion}
 
-  * Please continue to share your stories of urban stream restoration - there
-    are many great examples here of what is possible! {Link to the Discussion}
+  * 请继续分享你的城市溪流储藏的故事——这里有很多很好的关于什么是可能的示例! {Link to the Discussion}
 
-  See you next week, 
-  {name} and the {course number} staff
+  下周见,
+  {name} 及 {course number} 的所有教员
 
 
 .. _Midcourse Encouragement:
 
 ========================
-Mid-Course Encouragement
+中间课程的鼓励
 ========================
 
-While your course is running, you can send messages to promote community,
-remind students of upcoming due dates, and address any recurring issues.
+当你的课程处在运行中，你可以发送消息来促进交流，提醒学生要到期的日期，提及任何再生的问题。.
 
-This example gives students guidance on how to keep up with the course schedule
-and encourages contributions to the discussions. You may want to send out more
-than one message while the course is running. You can use this template as a
-starting point for your own messages; search for the values enclosed by
-{braces} and replace them with information for your course. In
-addition, check that you are using :ref:`keywords <Use Keywords in Messages>`
-appropriately.
+这个例引导学生如何跟上课程的安排并鼓励贡献讨论.在课程运行期间你可能想发送多个消息，你可以使用下面的模板作为你自己消息的开始；搜索被{braces}括起来的值并用你课程中的信息替换它.另外，检查你是否适当使用:ref:`关键字<在消息中使用关键字>`.
 
 :: 
 
-  Subject: {course name} Announcements
+  主题: {course name} 通告
 
-  Dear students,
+  亲爱的学生们,
 
-  We hope that you are learning a lot in {course number}! Remember that problem
-  set {number} is due on {date} at {time} UTC. You can always check the
-  schedule {add link} on the Course Info page to plan ahead.
+  我们希望你在 {course number}中真正学到东西! 请记住问题集 {number} 于{date} {time} UTC到期. 你可以检查课程安排 {add link} 于课程信息页面的头部课程规划中.
 
-  The contributions to the course discussions have been amazing. You'll also
-  see on the Course Info page that we have made several of you community
-  TAs to thank you for your thoughtful contributions. Keep those conversations
-  going!
+  课程讨论的贡献至今为止令人吃惊!你也可以在课程信息页面看到我们已经做几个社团IA以感谢你的独具思考的贡献.请保持这些交流.
 
-  We have a few additional announcements.
+  我们有一些额外的通告.
 
-  * Week {number} on {subject} is now available on the Courseware page.
+  * 第{number}周 关于{subject} 现在在课程件页面可以访问了.
 
-  * Problem set {number} is also available. It is due on {date} at {time} UTC. 
+  * 问题集{number} 也可访问，它于 {date} {time} UTC到期.
 
-  * Remember that the due dates for problem sets and exams are in UTC (the GMT
-    time zone). See the current UTC time here {add link}. Please convert the
-    times given to your own time zone!
+  * 请记住对于问题集和测验的截止日期是世界调整时间(即格林威治标准时间). 这里可以查看现在的世界调整时间{add link}. 请把时间转换到你的时区!
 
-  Wishing you continued success in the course,
+  祝愿你在课程中继续取得成功,
 
-  {name} and the {course number} staff
+  {name}及{course number}的所有教员
 
 .. _Midcourse Events:
 
 ========================
-Mid-Course Event
+中间课程事件
 ========================
 
-Before an exam or other significant course event, messages can provide
-practical information about the exam, communicate expectations regarding
-conduct, and also encourage students to continue working toward course
-completion. This example lets students know:
+在测试或其他意义重大的课程事件之前，消息可以提供关于测试的有用信息，传达行为的期望并鼓励学生继续完成课程，这个示例让学生们知道:
 
-* How long they have to complete the exam, and when they can see answers to
-  questions.
+* 你们必须在多久之内完成测试，以及何时他们能看到问题的答案.
 
-* How to communicate any errors or other issues found during the exam to the
-  course staff.
+* 如何把任何错误和其他在测试中发现的问题反馈给课程的教员.
 
-* Whether the course discussions will be open or closed during the exam. (In
-  the example that follows, the discussions will remain **open**.)
+* 课程讨论是否会在测试期间保持开放或关闭. (在接下来的示例中，讨论会保持 **开放**.)
 
-* What constitutes an honor code violation.
+* 哪些会导致荣誉编号的取消.
 
-* What technical limitations, if any, are imposed by external tools such as
-  graders.
+* 如果有，由外部工具带来的技术限制是什么，比如说打分机.
 
-Be sure to search for the values enclosed by {braces} and replace them with
-information for your course. In addition, check that you are using
-:ref:`keywords <Use Keywords in Messages>` appropriately.
+确保搜索由{braces}括起来的值并用你课程中的信息替换它.另外，检查是否适当使用:ref:`关键字<在消息中使用关键字>`.
 
 :: 
 
-  Subject: {course number} Exam Info
+  主题: {course number} 测试信息
 
-  Hello %%USER_FULLNAME%%,
+  %%USER_FULLNAME%%你好,
 
-  Great job working through week {number}! As you know, the {course number}
-  exam is next week. If you missed a problem set, you can still earn a
-  certificate. Each problem set is worth only {number}% of the overall grade,
-  but this exam is worth {number}%.
+  通过第{number}周的学习做得不错! 如你所知，{course number}测试就在下个星期.如果你错过了问题集，你仍可以获得证书.每个问题集只占总分的{number}%但这个测试占{number}%.
 
-  Please read this important information about the exam before you begin taking
-  it.
+  请在你进行测试之前阅读这个关于测试的重要信息.
 
-  * The exam starts on {date} at {time} UTC and must be finished by {date} at
-    {time} UTC. Plan your schedule accordingly.
+  * 测试开始于{date} {time} UTC ua于{date} {time} UTC结束. 请你据此进行安排.
 
-  * Be sure that you know what time the UTC deadline is in your time zone. See
-    the current UTC time {add link}. No extensions will be given.
+  * 确保清楚UTC截止日期在你的时区是什么时间.请查看当前UTC时间 {add link}. 将不会给予任何延迟.
 
-  * The exam is not timed. You can start, stop, and come back to it until the
-    deadline.
+  * 测试不会计时，你可以在截止日期之前任何时间开始，停止和回到测试.
 
-  * Each exam question allows only one answer submission. If you accidentally
-    click "Check", that problem cannot be reset for you.
+  * 每个测试问题只允许一个回答的提交，如果你不小心点击了 "检查", 问题将不会被重置.
 
-  * The exam covers everything (video lectures, reading, and problem sets) from
-    weeks {number}-{number}. If you missed any of these materials, you will
-    want to review them before you take the exam.
+  * 测试覆盖了从星期 {number}-{number}的任何内容（视频演讲，阅读和问题集）.如果你错过了任何的这些材料，你需要在你进行测试之前复习它们.
 
-  * You can use the textbook and the Internet to clarify your knowledge of exam
-    topics, as long as you are not deliberately looking up answers to exam
-    questions.
+  * 你可以使用课本和互联网来弄清关于测试题目的知识，只要你不是刻意地寻找测试问题的答案.
 
-  * Course discussions will remain open during the exam, but anyone who posts
-    an answer to an exam question will be violating the honor code and risk
-    being removed from the class, forfeiting the certificate.
+  * 课程讨论会在测试期间保持开放，但任何将测试问题答案放上去的人会被取消荣誉编号并有可能被请出课程，没收证书.
 
-  * If you need to alert the staff to an issue with the exam while the exam is
-    open, add a post to the General discussion topic and include [EXAM] in
-    the subject line.
+  * 如果你需要在测试进行时就测试中的问题警告教员时，在通用讨论主题中添加一个告示，在主题行包含 [EXAM].
 
-  * Check the Course Info page periodically. It is the fastest way the
-    staff has to communicate any delays, corrections, or changes.
+  * 周期地检查课程信息页面，它是教员与延迟，校正和更改最快的联系方式.
 
-  Good luck!
+  祝你好运!
 
-  {name} and the {course number} staff
+  {name} 及 {course number} 的所有教员
 
 .. _Technical Issue:
 
 ========================
-Technical Issue
+技术问题
 ========================
 
-In the event of an unanticipated system failure, a message can both alert
-students to the problem and reassure them that the issue is either resolved or
-being addressed. The message can also provide information about any changes
-made to the course as a result.
+在未预料的系统故障事件中，一个消息可以警告学生这个问题，并使他们安心问题要么被解决或将被解决.消息可以提供课程的任何改变的信息作为结果.
 
-Technical issues can arise during a course for many different reasons, so this
-example is likely to need revision to apply to an issue that you encounter.
-Keep in mind that to reassure the students who are affected by the problem, the
-message should have a positive tone, and calmly and briefly identify the
-problem, the status of its solution, and any after effects.
+技术问题会在课程中因为各种原因而产生，所以下面的例子可以需要修正才能应用到你所遇到的问题上.注意确保使被这个问题影响到的学生消除疑虑，消息应该是积极的口吻，并冷静和简明地确认问题，以及解决方案的状态和其他后续的影响.
 
 ::
 
-  Dear students,
+  亲爱的学生们,
 
-  We've encountered a technical problem with {video, assignment, etc. name}.
-  {We are working to resolve it now. / This issue has been fixed.}
+  我们遇到了 {视频，作业等}技术上的问题.
+  {我们此刻正在解决它. / 这个问题已经得到解决.}
 
-  As a result of this issue, we have {extended the deadline for / rescored}
-  this assignment so that it will not affect your grade.
+  作为个这问题的结果，我们已经 {延长了截止日期 / 重新记录成绩}
+  对于这次的作业所以它不影响到你的打分.
 
-  Thanks for your patience, and we look forward to continuing the course with
-  you.
+  谢谢你的耐心，我们期待你继续这门课程的学习.
 
-  {name} and the {course number} staff
+  {name}及{course number}的所有教员
 
 .. _Course Farewell and Certificates:
 
 =================================
-Course Farewell and Certificates
+课程告别和证书
 =================================
 
-In the last few days before your course ends, a message can direct students to
-a course survey, answer questions about certificates, and provide information
-about future access to course materials. Be sure to replace values enclosed by
-{braces} with information for your course.
+在你的课程结束的最后几天里，一个消息可以引导学生到该课程的问卷调查，回答关于证书的问题和提供未来访问课程资料的信息.确保用你的信息替换被{大括号}括起来的值.
 
 :: 
 
-  Subject: {course number} Final Remarks
+  主题: {course number}最后评价
 
-  Dear %%USER_FULLNAME%%,
+  亲爱的%%USER_FULLNAME%%,
 
-  Thank you for making %%COURSE_DISPLAY_NAME%% so much fun these last few
-  months! We had a great time getting to know you through the course
-  discussions. We appreciate the effort that you put into this course, and we
-  hope that you enjoyed learning {subject} through edX. With or without a
-  certificate, you should be proud of your accomplishments.
+  谢谢你在在这最近的几个月里使得%%COURSE_DISPLAY_NAME%%如此有趣!我们也很高兴在通过课程的讨论逐渐认识你，我们感激你对这门课程的投入，并且我们希望你通过edX能享受学习{主题}的乐趣.无论有没有证书，你者应该为自己完成这门课程而感到骄傲.
 
-  * Please take a few minutes to answer the exit survey, now available under
-    Courseware. We will use your responses to improve the course in the future.
+  * 请花几分钟时间来回答最后离去的调查，现在在课程件中可以访问到.我们会利用你的反馈来在以后改进课程.
 
-  * If you qualify for a certificate (overall score {number}% or higher), the
-    edX dashboard will include a link to your certificate in the near future.
-    While you may see the link in a few days, it can take up to two weeks edX
-    to generate all of the course certificates.
+  * 如果你合格能拿到证书 (总得分{number}% 或更高),在不久之后edX面板将包含一个链接链接到在你的证书.当你几天后看到这个链接的时候，edX生成所有的课程证书可能会花费到2周的时候.
 
-  * As an enrolled student, you will have access to the lecture videos even
-    after the course ends. The problem sets and exams will be removed from the
-    course when it is archived.
+  * 作为一个已注册的学生，即使在课程结束后你也还能访问视频，但问题集和测试将会从课程归档后移除.
 
-  * The {course number} discussions close on {date} at {time} UTC. You will not
-    be able to add to the discussions after that time, but you will be able to
-    continue viewing all of the conversations that took place during the
-    course.
+  * {course number}的讨论区在{date} {time} UTC关闭. 你将不能在此后参与讨论，但是你能够继续查看所有的课程期间的对话.
 
-  We hope that you share what you learned in {course number} with your
-  colleagues, friends, and family.
+  我们希望你与你的同事，朋友和家人分享在{course number}学到的东西.
 
-  Good luck on the final exam and beyond!
+  祝在最后测试和以后都好运!
 
-  {name} and the {course number} staff
+  {name}及{course number}的所有教员
 
 .. _New Course Run Announcement:
 
 =================================
-New Course Run Announcement
+新课程运行的公告
 =================================
 
-When you prepare a course for a new run, you can use the bulk email feature in
-its previous run (or runs) to inform an engaged and knowledgeable audience:
-your former students. Announcing a new run to students of an earlier run gives
-you the opportunity to highlight key aspects of the course, such as the quality
-and variety of its discussions, or the global interest and relevance of the
-subject, as demonstrated by past enrollment. You can also reveal new features
-or content that have been added to the new course run. By emphasizing the
-value of the course, you get people thinking and talking about their
-experiences, build excitement, and encourage re-enrollment.
+当你准备好一个课程再次运行时，你可以使用在课程之前的运行中的大宗电子邮件特性通知一个参与的并在行的听众：你之前的学生.
+宣布一个针对以前运行的学生新的运行给你强调课程关键方面的机会，比如说讨论区的质量和种类，或者全球兴趣和主题的关联，这些被过去的登记所证明。
+你也可以显示已经添加到新的课程运行的新的特性和内容.通过强调课程的价值，你可以让人们思考并谈论它们的经历，建立兴奋点和鼓励再次登记.
 
-This message template offers students who did not complete the course, or who
-did not previously choose the verified certificate track, the opportunity to do
-so. It also invites students to share the course with colleagues and and
-friends. 
+这个消息模板提供没有完成课程的学生或者之前没有选择认证证书的学生一个完成或获得证书的机会.同样也邀请学生与同事和朋友分享这门课程.
 
-When preparing a message from this template, search for values enclosed by
-{braces} and replace them with information that applies to your course.
+当从这个模板准备一个消息时，搜索被{大括号}括起来的值并用你课程中的信息替换它们.
 
 ::
 
-  Subject: Announcing a new run of {course name}
+  主题: 宣布一个{course name}的新的运行
 
-  Hello {course number} learners,
+  {course number}的学习者们你好,
 
-  The next run of {course number} {course name} begins on {date}! We are glad
-  to share this news with you, the students who made the earlier run{s} of
-  {course number} so successful.
+  {course number} {course name}的下一次运行在{date}开始! 我们很高兴与你，在{course number}之前的运行里获得成功的学生，分享这次新的运行.
 
-  {Success story from the previous run.} 
+  {Success story from the previous run.}
 
   {New content or features for the upcoming run.}
 
-  Perhaps you want to share the {course name} experience with a friend or
-  colleague, earn an ID-verified certificate of achievement, or work through
-  course content that you weren't able to complete before. When {course number}
-  is offered in {time frame}, we welcome you to join the community of learners
-  again.
+  也许你想与朋友或同事分享{course name}的绝对经历，赚取一个带编号的认证证书，或通过一门你之前无法完成的课程的课程内容.当{course number}在{time frame}被提供时, 我们欢迎你再次加入到学习者的社团中.
 
-  To learn more and to enroll, visit the {course name} page {add link}.
+  要了解更多并登记，请访问{course name}页面{add link}.
 
-  We hope to see you in the course,
+  我们希望在课程中见到你,
 
-  The {course number} Staff
+  {course number}的所有教员
