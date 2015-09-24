@@ -57,7 +57,7 @@
 #. 点击 **新建库**. 
 #. 输入你的新的库的必要信息，点击 **创建**.
 
-   .. note:: 仔细输入新库的信息，在这域输入的信息会成为你的库的URL的一部分，所以在 **库名称**, **组织**, 和 **库编号** 这些域中的字符总数必须少于或等于65.
+   .. note:: 仔细输入新库的信息，在这域输入的信息会成为你的库的URL的一部分，所以在 **库名称**, **组织** 和 **库编号** 这些域中的字符总数必须少于或等于65.
 
    .. image:: ../../../shared/building_and_running_chapters/Images/ContentLibrary_NewCL.png
       :alt: Image of the library creation page
