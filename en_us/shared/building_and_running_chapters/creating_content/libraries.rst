@@ -1,472 +1,354 @@
 .. _Content Libraries:
 
 ##############################
-Working with Content Libraries 
+内容库
 ##############################
 
 .. _Content Libraries Overview:
 
 **************************
-Content Libraries Overview
+内容库概览
 **************************
 
-In Studio, if you have course creation privileges, you can create a library to
-build a pool of components for use in randomized assignments in your courses.
-You can add HTML components, problems, and video components to a library. Peer
-assessment and discussion components are not supported in libraries.
+在 Studio 中，如果你有创建课程的特权，你可以新建一个库来创建一系列的组件，用在你的课程中的随机作业分配上。
+你可以添加 HTML 组件，问题和视频组件到一个库中；终端评估和讨论组件在库中不支持。
 
-.. note:: Content libraries are available only for courses that have course
-   identifiers in this format: ``{key type}:{org}+{course}+{run}``. For example,
-   ``course-v1:edX+DemoX+Demo_2015``. Your course identifier appears in the
-   browser address bar as the final part of the URL when you open your course in
-   Studio. For more details, see :ref:`Create a New Course`.
+.. note:: 内容库只有在具有这种格式的课程标识符的课程中才可用: ``{key type}:{org}+{course}+{run}``. 例如，``course-v1:edX+DemoX+Demo_2015``. 你的课程标识符出现在浏览器地址栏中作为URL的最后部分，当你在Studio中打开课程中。更多细节，请参照 :ref:`创建新课程`.
 
-After creating a library and adding components to it, if you have :ref:`enabled
-content libraries<Enable Content Libraries>` in your course, you can use these
-library components in randomized assignments in your course. You do this by
-adding a randomized content block to a course unit and specifying the name of
-the library from which the randomized content is to drawn. You also specify the
-number and type of problems that each student is assigned.
+在新建一个库并添加组件之后，如果你在你的课程中有 :ref:`启动内容库<Enable Content Libraries>` ，你就可以使用在课程随机作业分配中这些库组件，
+你通过添加一个随机内容块到课程单元中并指定库名称来达到这个目的，随机内容将从这个库中获取。你也可以指定分配给每个学生的问题数目和类型。
 
-Libraries have separate users and levels of access from courses. Initially, only
-the person who created the library has access. She can add other users to the
-library. For details, see :ref:`Give Other Users Access to Your Library`. The
-libraries that you create or have access to are listed on the **Libraries** tab
-on the Studio Home page.
+库有独立的用户和从课程中访问的访问等级。最初，只有创建它的人可以访问库，他可以添加其他用户到库中。更多细节，请参照 :ref:`给予其他用户对你的库的访问权`. 你创建或访问的库列在Studio主页的 **库** 标签上.
 
-See the following sections for details about creating and managing content
-libraries.
+请看以下关于创建和管理内容库的细节部分.
 
-* :ref:`Enable Content Libraries`
-* :ref:`Create a New Library`
-* :ref:`Add Components to a Library`
-* :ref:`View the Contents of a Library`
-* :ref:`Edit Components in a Library`
-* :ref:`Give Other Users Access to Your Library`
-* :ref:`Import a Library`
-* :ref:`Export a Library`
+* :ref:`启动内容库`
+* :ref:`创建一个新的库`
+* :ref:`添加组件到库`
+* :ref:`查看库的内容`
+* :ref:`编辑库中的组件`
+* :ref:`给予其他用户到你的库的访问权`
+* :ref:`导入库`
+* :ref:`导出库`
 
-See the following sections for details about using content library components in
-a course.
+请看以下关于在课程中使用内容库组件的细节部分.
 
-* :ref:`Use Components from Libraries in a Course`
-* :ref:`Add a Randomized Content Block to Your Course`
-* :ref:`View the Matching Components in a Randomized Content Block`
-* :ref:`Edit Components in Randomized Content Blocks`
-* :ref:`Get the Latest Version of Library Content`
+* :ref:`在课程中使用库中的组件`
+* :ref:`添加一个随机内容块到你的课程`
+* :ref:`查看在随机内容块中的匹配组件`
+* :ref:`编辑在随机内容块中的组件`
+* :ref:`获取库内容的最新版本`
 
 
 .. _Create a New Library:
 
 ********************
-Create a New Library
+创建一个新的库
 ********************
 
-Use :ref:`content libraries<Content Libraries>` to build a pool of components
-that can be used in randomized assignments in your courses. You can create
-libraries if you have course creation privileges.
+使用 :ref:`内容库<Content Libraries>` 创建一系列组件，用在你的课程的随机作业分配中。如果你有课程创建特权，你可以创建库.
 
-For information about adding other users to a library after you create it, see
-:ref:`Give Other Users Access to Your Library`.
+关于在你创建一个库后添加其他用户到库的信息，请参照:ref:`给予其他用户到你的库的访问权`.
 
-To create a new library, follow these steps.
+创建一个新的库，请遵循以下步骤.
 
-#. Log in to Studio. 
+#. 登陆到Studio. 
    
-#. Click **New Library**. 
-#. Enter the required information for your new library, then click **Create**.
+#. 点击 **新建库**. 
+#. 输入你的新的库的必要信息，点击 **创建**.
 
-   .. note:: Enter new library information carefully. The values in these
-      fields become part of the URL for your library, therefore the total number
-      of characters in the **Library Name**, **Organization**, and **Library
-      Code** fields must be 65 or fewer.
+   .. note:: 仔细输入新库的信息，在这域输入的信息会成为你的库的URL的一部分，所以在 **库名称**, **组织** 和 **库编号** 这些域中的字符总数必须少于或等于65.
 
    .. image:: ../../../shared/building_and_running_chapters/Images/ContentLibrary_NewCL.png
       :alt: Image of the library creation page
 
 
-  * For **Library Name**, enter the public display name for your library. Choose
-    a meaningful name that will help you and other course team members to
-    identify the library. For example, "Level 200 Math Problems". When you add a
-    randomized content block to a course unit, you use the library name to
-    specify this library as a source for the randomized assignment.
+  * 对于 **库名称**, 输入你的库的公开展示名称，选择一个有意义的名称会帮助你和其他的课程团队成员识别库. 例如, "Level 200 Math Problems". 当你添加一个随机内容块到课程单元中时，你使用库名称来指定这个库作为随机作业分配的来源.
 
-  * For **Organization**, enter the identifier for your university. For
-    example, enter HarvardX or MITx. Do not include spaces or special
-    characters.
+  * 对于 **组织**, 输入你的大学的标识符。例如，输入 HarvardX 或 MITx，注意不要包含空格或特殊字符。
 
-  * For **Library Code**, enter an identifier for your library that is unique
-    within your organization. This code becomes part of the URL for your
-    library, so do not include spaces or special characters in the code.
+  * 对于 **库编号**, 为你的库输入一个在你的组织里唯一的标识符，这个编号会成为你的库的URL的一部分，所以不要包含空格或特殊字符。
 
 
-4. Click **Create**.
+4. 点击 **创建**.
 
-You see the new library, to which you can now add components. For details about
-adding components to a library, see :ref:`Add Components to a Library`.
+你可以看到新的库了，现在你可以添加组件到其中。关于添加组件到库中的详细信息请参照 :ref:`添加组件到库`.
 
 
 .. _Edit a Library:
 
 **************
-Edit a Library
+编辑库
 **************
 
-After you create a library, the only change you can make to the initial library
-information is to the name. However, at any time, you can make changes to the
-components in your library, including adding or deleting components or editing
-the settings of components. For details about editing the contents of a library,
-see :ref:`Edit Components in a Library` and :ref:`Add Components to a Library`.
+在你创建一个库后，你能对初始库信息做的改变只有它的名称。但是，无论何时，你可以在对你的库中的组件做改变，包括添加或删除组件，编辑组件的设置。关于编辑库中内容的详细信息，请参照 :ref:`编辑库中的组件` 和 :ref:`添加组件到库`.
 
 
-To change the name of a library, follow these steps.
+要改变库名称，请遵循以下步骤.
 
-#. Log in to Studio.
-#. Click **Libraries**, then click the library whose name you want to edit.
+#. 登陆到 Studio.
+#. 点击 **库**, 然后点击你想编辑名称的库.
    
-#. Click the **Edit** icon next to the library name.
+#. 点击在库名称旁边的 **编辑** 图标.
    
-   The library name field becomes editable.
+   库名称域就变成可编辑的了.
    
   .. image:: ../../../shared/building_and_running_chapters/Images/ContentLibrary_EditName.png
      :alt: The Edit icon to the right of the Library Name
 
-4.  In the library name field, make edits or enter a new library name.
-#. Click anywhere outside the library name field to save your changes.
+4.  在库名称域，进行编辑或输入一个新的库名称.
+#. 点击库名称域以外的任何区域来保存你的更改.
 
 
-For details about giving other users access to the library, see :ref:`Give Other
-Users Access to Your Library`.
+关于给予其他用户到库的访问权的详细信息请参照 :ref:`给予其他用户到你的库的访问权`.
 
 
 .. _Add Components to a Library:
 
 ****************************
-Add Components to a Library
+添加组件到库
 ****************************
 
-To add new :ref:`components<Developing Course Components>` to your library,
-follow these steps.
+要添加新的 :ref:`组件<Developing Course Components>` 到你的库中，请遵循以下步骤.
 
-#. Log in to Studio.
-#. Click **Libraries**, then click the library that you want to add components to.
+#. 登陆到 Studio.
+#. 点击 **库**, 然后点击你想添加组件到其中的库.
 
-#. Click **Add Component**, then click the component type that you want to add
-   under **Add New Component**.
+#. 点击 **添加组件**, 然后点击你想添加的组件的类型，在 **添加新的组件** 下面.
 
-For more information about the types of components you can add to a library, see
-these topics.
+关于你可以添加到库中的组件的类型的详细信息，请参照以下.
 
-* :ref:`Working with HTML Components`
-* :ref:`Working with Problem Components`
-* :ref:`Working with Video Components`
+* :ref:`管理HTML组件`
+* :ref:`管理问题组件`
+* :ref:`管理视频组件`
 
-After you add a component to a library, you can edit its settings. These
-settings are retained when the component is selected from the library and used
-in a course.
+在你添加一个组件到库后，你可以编辑它的设置，这些设置在组件从库中被选择时和在课程中被使用时保持不变.
 
-When a component from the library is used in a randomized content block, you can
-further edit the component as it exists in the unit, without affecting the
-original version in the library. For details, refer to :ref:`Edit Components in
-a Library` and :ref:`Get the Latest Version of Library Content`.
+当来自库中的组件用在随机内容块时，你可以进一步编辑组件，只要它存在单元中，而并不影响库中的原始版本。详细信息，请参照 :ref:`编辑库中的组件` 和 :ref:`获取库内容的最新版本`.
 
 
 .. _View the Contents of a Library:
 
 ******************************
-View the Contents of a Library
+查看库中的内容
 ******************************
 
-To view the entire contents of a library in Studio, follow these steps.
+要查看Studio中的库中的全部内容，请遵循以下步骤.
 
-#. Log in to Studio.
-#. Click **Libraries**, then click the library whose components you want to
-   view.
-#. Optionally, click **Hide Previews** at the top right of the library page to
-   collapse the component previews and see only the list of component display
-   names. To return to the full preview of components in the library, click
-   **Show Previews**.
+#. 登陆到 Studio.
+#. 点击 **库**, 然后点击你想查看其组件的库.
+#. 可选择地，点击位于库页面右上位置的 **隐藏预览** 以收起组件预览，并只查看组件展示名称的列表。要回到库中的组件的完整预览，请点击 **显示预览**.
 
-The components in the library display in the order in which they were added,
-with the most recently added at the bottom. If your library has more than 10
-components, additional components are shown on other pages.
+库中的组件按它们被添加的顺序显示，最近添加的显示在底部。如果你的库含有不止10个组件，额外的组件会在另一个页面显示.
 
-The range of the components shown on the current page, and the total number of
-components, are shown at the top of the page.
+在当前页面中显示的组件的范围和组件的总数，显示在页面的顶部.
 
-You can navigate through the pages in these ways:
+你可以通过这些就去在页面之间导航:
 
-* Use the **<** and **>** buttons at the top and bottom of the list to navigate
-  to the previous and next pages.
+* 使用在列表的顶部和底部的 **<** 和 **>** 按钮导航到前一页面和后一页面.
 
-* At the bottom of the page, you can edit the first number in the page range.
-  Click the number to place your cursor in the field, then enter the page number
-  you want to jump to.
+* 在页面询问，你可以编辑页面范围内的弟一个数字。点击数字来把你的光标放在域中，然后输入你想跳往的页面的编号.
 
   .. image:: ../../../shared/building_and_running_chapters/Images/file_pagination.png
      :alt: Image showing a pair of page numbers with the first number circled
 
-To view the list of matching components in the library, see :ref:`View the Matching Components in a Randomized Content Block`.
+要查看库中匹配的组件的列表，请参照 :ref:`查看随机内容块中的匹配组件`.
 
-To view the randomized content as a student would see it, see :ref:`View the
-Randomized Content as a Student`.
+要查看作为一个学生将会看到的随机内容，请参照 :ref:`作为学生查看随机内容`.
 
 
 .. _Edit Components in a Library:
 
 ****************************
-Edit Components in a Library
+编辑库中的组件
 ****************************
 
-After you have added components to a library, you can edit, duplicate, or delete
-them.
+在你添加组件到库后，你可以编辑，复制或删除它们.
 
-For step-by-step instructions for editing, duplicating, or deleting components,
-refer to the following topics.
+对于逐步的关于编辑复制或删除的说明，请对照以下的主题.
 
-* :ref:`Edit a Component`
-* :ref:`Duplicate a Component`
-* :ref:`Delete a Component`
+* :ref:`编辑组件`
+* :ref:`复制组件`
+* :ref:`删除组件`
 
-.. note:: If you modify components in your library that are in use in a course,
-   these updates in the "source" library are not reflected in the course unless
-   you manually update the randomized content block in the course unit. For
-   details about updating library components used in your course to match the
-   latest version in the library, see :ref:`Get the Latest Version of Library
-   Content`.
+.. note:: 如果你在库中在课程中使用的的组件时，这些在 "源" 的更新不会影响到课程中，除非你的课程单元的随机内容块中进行手动更新。关于更新在你课程中使用的库组件以匹配库中的最新版本的详细信息，请参照 :ref:`获取库组件的最新版本`.
 
 
 .. _Delete a Library:
 
 *****************
-Delete a Library
+删除库
 *****************
 
-You cannot delete a library. Instead, you can discontinue use of an unwanted
-library. To do so, first make sure that none of its components are in use in any
-courses, then delete all components in the library. You can also :ref:`edit the
-name of the library<Edit a Library>` to make it clear to other course staff that
-the library should not be used as a source of randomized assignment content in
-courses.
+你不能删除库，而是可以停止使用一个不想使用的库。要做到这点，首先确保没有它的组件在你的课程中被使用，然后删除库中的所有组件。你也可以 :ref:`编辑库名称<Edit a Library>` 来向其他课程教员澄清这个库不应该在课程中被用作随机作业内容的来源.
 
-For details about deleting components in a library, see :ref:`Edit Components in
-a Library`.
+关于删除库中组件的详细信息，请参照 :ref:`编辑库中的组件`.
 
 
 .. _Give Other Users Access to Your Library:
 
 ***************************************
-Give Other Users Access to Your Library
+给予其他用户对你的库的访问权
 ***************************************
 
-When you create a library, you are automatically assigned an Admin role in that
-library.
+当你创建一个库时，你自动被赋予库的管理员的角色.
 
-You can give other Studio users access to your library. Depending on the level
-of access  that you give them in the library, additional library users can view
-and use library content in courses, edit library content, or add and manage
-other library users. All users to whom you give library access must be
-registered with Studio and have an active account.
+你可以给予其他Studio的用户以对你的库的访问权。取决于你给予他们在库中的访问权限，其他的库使用者可以在课程查看和使用库内容，编辑库内容或添加和管理其他库用户。你给予访问权的所有用户必须在Studio中注册并有一个活跃的账户。
 
-These are the levels of access for libraries:
+对库有以下几个层次的访问:
 
-* **User** -- Users can view library content and can use library components in
-  their courses, but they cannot edit the contents of a library.
+* **用户** -- 用户可以查看库内容并可以在他们的课程中使用库组件，但他们不能编辑库中的内容.
 
-* **Staff** -- Staff can use library components in their courses. In addition,
-  as content co-authors, they have full editing privileges in a library.
+* **教员** -- 教员可以在他们的课程中使用库组件，另外，作为内容的合作者，他们有在库中完全的编辑特权.
 
-* **Admin** -- Admins have full editing privileges for a library. In addition,
-  they can add and remove other team members from library access. There must be at
-  least one user with Admin privileges in a library.
+* **管理员** -- 管理员拥有库的完全编辑特权另外，他们可以添加和移除其他团队成员的库访问权。在一个库中必须至少有一个用户拥有管理员特权.
 
-.. note:: The levels of access for libraries are hierarchical. You can add new
-   library members only with the **User** level of access, after which you can
-   give them the **Staff** level of access. You can give the **Admin** level of
-   access only to people who already have the **Staff** level of access.
+.. note:: 对库的访问层次是有等级的。你可以添加新的仅具有 **用户** 访问等级的库成员，在这之后你可以给予他们 **教员** 的访问等级。你可以把 **管理员** 的访问等级给予那些已经拥有 **教员** 访问等级的人.
 
 
 =========================
-Add a User to the Library
+添加用户到库
 =========================
 
-To grant a user initial **User** access to a library, follow these steps.
+要授予用户对库的初始的 **用户** 等级访问，请遵循以下步骤.
 
-.. note:: Only library users with the **Admin** level of access can add users to
-   the library.
+.. note:: 只有拥有 **管理员** 访问等级的库用户才能添加用户到库中.
 
-#. Ensure that the new library member has an active Studio account.   
-#. On the Studio home page, click the **Libraries** tab and locate the library
-   to which you are adding this user.
-#. From the **Settings** menu select **User Access**.
-#. On the **User Access** page, click **Add a New User**.
-#. Enter the new user's email address, then click **ADD USER**.
+#. 确保新的库成员拥有活跃的Studio账号.   
+#. 在Studio主页，点击 **库** 标签并定位到你要对其添加这个用户的库.
+#. 从 **设置** 菜单选择 **用户访问**.
+#. 在 **用户访问** 页面，点击 **添加新用户**.
+#. 输入新用户的电子邮箱，然后点击 **添加用户**.
    
-   The new user is added to the list of library members with the **User** level
-   of access.
+   用户被添加到拥有 **用户** 访问等级的库成员的列表中.
 
 
 ==============================
-Remove a User from the Library
+从库中移除用户
 ==============================
 
-You can remove users from the library at any time, regardless of the level of
-access that they have.
+你可以在任何时候从库中移除用户，不管他们拥有什么样的访问等级.
 
-To remove a user from the library, follow these steps.
+要从库中移除用户，请遵循以下步骤.
 
-#. In Studio, click the **Libraries** tab and locate your library. 
-#. From the **Settings** menu select **User Access**. 
+#. 在Studio中，点击 **库** 标签并定位到你的库. 
+#. 从 **设置** 菜单选择 **用户访问**. 
    
-#. On the **User Access** page, locate the user that you want to remove.
-#. Hover over the user's box and click the trash can icon.
+#. 在 **用户访问** 页面，定位到你想移除的用户.
+#. 在用户框上方悬停然后点击垃圾箱图标.
     
-  You are prompted to confirm the deletion.
+  你会被提示确认删除.
 
-5. Click **Delete**. 
+5. 点击 **删除**. 
 
-  The user is removed from the library. 
+  用户于是被从库中移除. 
 
 
 =========================
-Add Staff or Admin Access
+添加教员或管理员访问
 =========================
 
-The levels of access for libraries are hierarchical. You can add new library
-members only with the **User** level of access, after which you can give them
-the **Staff** level of access. You can give the **Admin** level of access only
-to people who already have the **Staff** level of access.
+库的访问层次是等级化的。你可以添加仅具有 **用户** 访问等级的新的库成员，然后你可以给予他们 **教员** 的访问等级。你只可以把 **管理员** 访问等级给予已经拥有 **教员** 访问等级的人.
 
-To give a library member a higher level of access to the library, follow these
-steps.
+要给予一个库成员对库的更高的访问等级，请遵循以下步骤.
 
 
-#. In Studio, click the **Libraries** tab and locate your library. 
-#. From the **Settings** menu select **User Access**. 
+#. 在Studio中，点击 **库** 标签并定位到你的库. 
+#. 从 **设置** 菜单选择 **用户访问**. 
    
-#. On the **User Access** page, locate the user to whom you are giving
-   additional privileges. 
+#. 在 **用户访问** 页面中，定位你想给予额外特权的用户. 
 
-  - If he currently has **User** access, click **Add Staff Access**.  
-  - If he currently has **Staff** access, click **Add Admin Access**.
+  - 如果他当前已经拥有 **用户** 层次的访问权，点击 **添加教员访问**.  
+  - 如果他当前已经拥有 **教员** 层次的访问权，点击 **添加管理员访问**.
 
-  The user's display listing is updated to indicate the new level of access. In
-  addition, their listing now includes a button to remove their current level of
-  access and move them back to their previous level of access. For details about
-  reducing a user's level of access to a library, see :ref:`Remove Staff or
-  Admin Access`.
+  用户的显示列表会被更新以表明获得新的访问等级。另外，
+  他们的列表包含一个移除他们现在访问等级的和把他们移动到之前的访问等级的按钮。关于降低用户对库的访问权的详细信息，请参照 :ref:`移除教员或管理员`.
 
 
 .. _Remove Staff or Admin Access:
 
 ============================
-Remove Staff or Admin Access
+移除教员或管理员
 ============================
 
-After you have granted users **Staff** or **Admin** access, you (or other
-**Admin** library users) can reduce their levels of access.
+在你授予用户 **教员** 或 **管理员** 访问等级时，你 (或者其他的 **管理员** 库用户) 可以降低他们的访问等级.
 
-To remove **Staff** or **Admin** access from a library user, follow these steps.
+要往往库用户中移除 **教员** 或者 **管理员** 访问，请遵循以下步骤.
 
-#. In Studio, click the **Libraries** tab and locate your library. 
-#. From the **Settings** menu select **User Access**. 
+#. 在Studio中，点击 **库** 标签并定位到你的库.
+#. 从 **设置** 菜单选择 **用户访问**. 
    
-#. On the **User Access** page, locate the user whose access level you are
-   changing. 
+#. 在 **用户访问** 页面，定位到你想更改访问等级的用户. 
 
-  - If she currently has **Staff** access, click **Remove Staff Access**. 
-  - If she currently has **Admin** access, click **Remove Admin Access**.
+  - 如果她当前已经拥有 **教员** 层次的访问权，点击 **移除教员访问**. 
+  - 如果她当前已经拥有 **管理员** 层次的访问权，点击 **移除管理员访问**.
 
-   The user's display listing is updated to indicate their new role. 
+   用户显示列表会被更新以表明他们的新角色. 
 
-.. note:: There must always be at least one Admin for a library. If there is
-   only one user with the Admin role, you cannot remove him or her from the
-   Admin role unless you first assign another user to the Admin role.
+.. note:: 在一个库中至少要有一名管理员，如果只有一个用户具有管理员角色，你不能从管理员角色中移除他或她，除非你先赋予另一个用户以管理员角色.
 
 
 .. _Exporting and Importing a Library:
 
 *********************************
-Exporting and Importing a Library
+导出和导入库
 *********************************
 
-You can :ref:`export<Export a Library>` and :ref:`import<Import a Library>` a
-content library in Studio.
+你可以在Studio中 :ref:`导出<Export a Library>` 和 :ref:`导入<Import a Library>` 一个内容库.
 
 .. _Export a Library:
 
 ================
-Export a Library
+导出库
 ================
 
-There are several reasons why you might want to export your library.
+有多个理由你会想导出你的库.
 
-* To save your work in progress
-* To edit the XML in your library directly
-* To create a backup copy of your library
-* To share with another course team member
+* 保存你的工作进度
+* 在你的库中直接编辑 XML
+* 创建一个你的库的备份拷贝
+* 与另一个课程团队成员共享
 
-When you export your library, Studio creates a **.tar.gz** file (that is, a .tar
-file compressed using GNU Zip). This export file contains the problems in the
-library, including any customizations you made in the library to problem
-settings. The export does not include library settings such as user access
-permissions.
+当你导出你的库时，Studio 会创建一个 **.tar.gz** 文件 (即一个 .tar用 GNU Zip 压缩的文件). 这个导出文件包含库中的问题，包含任何你在库中对问题设置的定制。导出并不包含库的设置，比如用户访问许可.
 
-To export a library, follow these steps.
+要导出一个库，请遵循以下步骤.
 
-#. In Studio, select the **Libraries** tab.
-#. Locate the library that you want to export.
-#. From the **Tools** menu, select **Export**.
-#. Click **Export Library Content** and specify where you want the file to be saved.
+#. 在 Studio 中, 选择 **库** 标签.
+#. 定位到你想导出的库.
+#. 从 **工具** 菜单选择 **导出**.
+#. 点击 **导出库内容** 并指定你想保存文件的位置.
 
-When the export process finishes, you can access the .tar.gz file on your
-computer.
+当导出过程结束时，你可以在你的电脑上访问 .tar.gz 文件.
 
 
 .. _Import a Library:
 
 ================
-Import a Library
+导入库
 ================
 
-You might want to import a library if you developed or updated library content
-outside of Studio, or if you want to overwrite a problematic or outdated version
-of the library.
+你可能想导入库如果你已经在 Studio 外开发或者更新库内容，或者如果你想重写不确定的或者过期的库版本.
 
-.. warning:: When you import a library, the imported library completely replaces
-   the existing library and its contents. You cannot undo a library import.
-   Before you proceed, we recommend that you export the current library, so that
-   you have a backup copy of it.
+.. warning:: 当你导入库时，被导入的库会完全替代当前存在的库以及它的内容，你不能撤消库导入。在你前进之前，我们推荐你导出当前的库，这样你就有一个它的备份拷贝了.
 
-The library file that you import must be a .tar.gz file (that is, a .tar file
-compressed using GNU Zip). This .tar.gz file must contain a library.xml file.
+你导入的库文件必须是一个 .tar.gz 文件 (即, 一个用 GNU Zip 压缩的 .tar 文件). 这个 .tar.gz 文件必须包含一个 library.xml 文件.
 
-To import a library, follow these steps.
+要导入一个库，请遵循以下步骤.
 
-#. In Studio, select the **Libraries** tab. 
+#. 在 Studio 中, 选择 **库** 标签. 
    
-#. Locate the library to which you want to import the new library content.
+#. 定位到你想导入一个新的库内容到其中的库.
     
-#. From the **Tools** menu, select **Import**.
+#. 从 **工具** 菜单选择 **导入**.
    
-#. Click **Choose a File to Import** and select the .tar.gz file that you want
-   to import.
+#. 点击 **选择一个文件导入** 并选择你想导入的 .tar.gz 文件.
 
-#. Click **Replace my library with the selected file**.
+#. 点击 **用选择的文件替换我的库**.
    
-.. warning:: The import process has five stages. During the first two stages
-   (Uploading and Unpacking), do not navigate away from the **Library Import** page.
-   Doing so causes the import process to end. You can leave the page only after
-   the Unpacking stage completes. We recommend that you do not make important
-   changes to the library until all stages of the import process have finished.
+.. warning:: 导入过程有5个阶段。在前两个阶段（上传和解压缩） 不要从 **库导入** 页面导航到其他地方，这样做会导致导入过程终止。你只可以在解压缩阶段后才能离开页面。我们建议在所有导入阶段结束前不要对库做重要的更改.
 
-6. When the import process finishes, click **View Updated Library** to view the
-   imported library.
+6. 当导入过程结束时，点击 **查看更新后的库** 来查看导入的库.
 
-.. note:: If your imported library includes changes to components that are in
-   use in a course, the course does not reflect these library updates until you
-   manually update the randomized content block in the course unit. For details
-   about updating library components used in your course to match the latest
-   version in the content library, see :ref:`Get the Latest Version of Library
-   Content`.
+.. note:: 如果你导入的库包含对在课程中使用的组件的更改，课程不会反映出这些库的更新，直到你在课程单元中手动更新随机内容块。
+   关于更新在你的课程中使用的库组件以匹配内容库中的最新版本的详细信息，请参照 :ref:`获取库内容的最新版本`.
    
