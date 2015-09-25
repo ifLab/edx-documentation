@@ -7,7 +7,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>5.5. Working with Content Libraries &mdash; Building and Running an edX Course  documentation</title>
+  <title>5.5. 内容库 &mdash; Building and Running an edX Course  documentation</title>
   
 
   
@@ -117,7 +117,7 @@
 <li class="toctree-l2"><a class="reference internal" href="create_video.html">5.2. 创建影片组件</a></li>
 <li class="toctree-l2"><a class="reference internal" href="create_discussion.html">5.3. 创建讨论组件</a></li>
 <li class="toctree-l2"><a class="reference internal" href="create_problem.html">5.4. 创建问题组件</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="">5.5. Working with Content Libraries</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="">5.5. 内容库</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../exercises_tools/index.html">6. 创建习题和工具</a><ul>
@@ -248,408 +248,297 @@
         <div class="rst-content">
           <ul class="wy-breadcrumbs">
   <li><a href="../index.html">Table of Contents</a> &raquo;</li>
-  <li><a href="">5.5. Working with Content Libraries</a></li>
+  <li><a href="">5.5. 内容库</a></li>
   
 </ul>
 <hr/>
 
           
-  <div class="section" id="working-with-content-libraries">
-<span id="content-libraries"></span><h1>5.5. Working with Content Libraries<a class="headerlink" href="#working-with-content-libraries" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="content-libraries">
+<span id="id1"></span><h1>5.5. 内容库<a class="headerlink" href="#content-libraries" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="content-libraries-overview">
-<span id="id1"></span><h2>5.5.1. Content Libraries Overview<a class="headerlink" href="#content-libraries-overview" title="Permalink to this headline">¶</a></h2>
-<p>In Studio, if you have course creation privileges, you can create a library to
-build a pool of components for use in randomized assignments in your courses.
-You can add HTML components, problems, and video components to a library. Peer
-assessment and discussion components are not supported in libraries.</p>
+<span id="id2"></span><h2>5.5.1. 内容库概览<a class="headerlink" href="#content-libraries-overview" title="Permalink to this headline">¶</a></h2>
+<p>在 Studio 中，如果你有创建课程的特权，你可以新建一个库来创建一系列的组件，用在你的课程中的随机作业分配上。
+你可以添加 HTML 组件，问题和视频组件到一个库中；终端评估和讨论组件在库中不支持。</p>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
-<p class="last">Content libraries are available only for courses that have course
-identifiers in this format: <code class="docutils literal"><span class="pre">{key</span> <span class="pre">type}:{org}+{course}+{run}</span></code>. For example,
-<code class="docutils literal"><span class="pre">course-v1:edX+DemoX+Demo_2015</span></code>. Your course identifier appears in the
-browser address bar as the final part of the URL when you open your course in
-Studio. For more details, see <a class="reference internal" href="../building_course/creating_new_course.html#create-a-new-course"><span>新建课程</span></a>.</p>
+<p class="last">内容库只有在具有这种格式的课程标识符的课程中才可用: <code class="docutils literal"><span class="pre">{key</span> <span class="pre">type}:{org}+{course}+{run}</span></code>. 例如，<code class="docutils literal"><span class="pre">course-v1:edX+DemoX+Demo_2015</span></code>. 你的课程标识符出现在浏览器地址栏中作为URL的最后部分，当你在Studio中打开课程中。更多细节，请参照 <span class="xref std std-ref">创建新课程</span>.</p>
 </div>
-<p>After creating a library and adding components to it, if you have <a class="reference internal" href="../exercises_tools/randomized_content_blocks.html#enable-content-libraries"><span>enabled
-content libraries</span></a> in your course, you can use these
-library components in randomized assignments in your course. You do this by
-adding a randomized content block to a course unit and specifying the name of
-the library from which the randomized content is to drawn. You also specify the
-number and type of problems that each student is assigned.</p>
-<p>Libraries have separate users and levels of access from courses. Initially, only
-the person who created the library has access. She can add other users to the
-library. For details, see <a class="reference internal" href="#give-other-users-access-to-your-library"><span>Give Other Users Access to Your Library</span></a>. The
-libraries that you create or have access to are listed on the <strong>Libraries</strong> tab
-on the Studio Home page.</p>
-<p>See the following sections for details about creating and managing content
-libraries.</p>
+<p>在新建一个库并添加组件之后，如果你在你的课程中有 <a class="reference internal" href="../exercises_tools/randomized_content_blocks.html#enable-content-libraries"><span>启动内容库</span></a> ，你就可以使用在课程随机作业分配中这些库组件，
+你通过添加一个随机内容块到课程单元中并指定库名称来达到这个目的，随机内容将从这个库中获取。你也可以指定分配给每个学生的问题数目和类型。</p>
+<p>库有独立的用户和从课程中访问的访问等级。最初，只有创建它的人可以访问库，他可以添加其他用户到库中。更多细节，请参照 <span class="xref std std-ref">给予其他用户对你的库的访问权</span>. 你创建或访问的库列在Studio主页的 <strong>库</strong> 标签上.</p>
+<p>请看以下关于创建和管理内容库的细节部分.</p>
 <ul class="simple">
-<li><a class="reference internal" href="../exercises_tools/randomized_content_blocks.html#enable-content-libraries"><span>激活内容库</span></a></li>
-<li><a class="reference internal" href="#create-a-new-library"><span>Create a New Library</span></a></li>
-<li><a class="reference internal" href="#add-components-to-a-library"><span>Add Components to a Library</span></a></li>
-<li><a class="reference internal" href="#view-the-contents-of-a-library"><span>View the Contents of a Library</span></a></li>
-<li><a class="reference internal" href="#edit-components-in-a-library"><span>Edit Components in a Library</span></a></li>
-<li><a class="reference internal" href="#give-other-users-access-to-your-library"><span>Give Other Users Access to Your Library</span></a></li>
-<li><a class="reference internal" href="#import-a-library"><span>Import a Library</span></a></li>
-<li><a class="reference internal" href="#export-a-library"><span>Export a Library</span></a></li>
+<li><span class="xref std std-ref">启动内容库</span></li>
+<li><span class="xref std std-ref">创建一个新的库</span></li>
+<li><span class="xref std std-ref">添加组件到库</span></li>
+<li><span class="xref std std-ref">查看库的内容</span></li>
+<li><span class="xref std std-ref">编辑库中的组件</span></li>
+<li><span class="xref std std-ref">给予其他用户到你的库的访问权</span></li>
+<li><span class="xref std std-ref">导入库</span></li>
+<li><span class="xref std std-ref">导出库</span></li>
 </ul>
-<p>See the following sections for details about using content library components in
-a course.</p>
+<p>请看以下关于在课程中使用内容库组件的细节部分.</p>
 <ul class="simple">
-<li><a class="reference internal" href="../exercises_tools/randomized_content_blocks.html#use-components-from-libraries-in-a-course"><span>在课程中使用来自库的组件</span></a></li>
-<li><a class="reference internal" href="../exercises_tools/randomized_content_blocks.html#add-a-randomized-content-block-to-your-course"><span>添加随机内容块到你的课程中</span></a></li>
-<li><a class="reference internal" href="../exercises_tools/randomized_content_blocks.html#view-the-matching-components-in-a-randomized-content-block"><span>在随机内容块中查看匹配组件</span></a></li>
-<li><a class="reference internal" href="../exercises_tools/randomized_content_blocks.html#edit-components-in-randomized-content-blocks"><span>编辑在随机内容块中的组件</span></a></li>
-<li><a class="reference internal" href="../exercises_tools/randomized_content_blocks.html#get-the-latest-version-of-library-content"><span>获取库内容的最新版本</span></a></li>
+<li><span class="xref std std-ref">在课程中使用库中的组件</span></li>
+<li><span class="xref std std-ref">添加一个随机内容块到你的课程</span></li>
+<li><span class="xref std std-ref">查看在随机内容块中的匹配组件</span></li>
+<li><span class="xref std std-ref">编辑在随机内容块中的组件</span></li>
+<li><span class="xref std std-ref">获取库内容的最新版本</span></li>
 </ul>
 </div>
 <div class="section" id="create-a-new-library">
-<span id="id2"></span><h2>5.5.2. Create a New Library<a class="headerlink" href="#create-a-new-library" title="Permalink to this headline">¶</a></h2>
-<p>Use <a class="reference internal" href="#content-libraries"><span>content libraries</span></a> to build a pool of components
-that can be used in randomized assignments in your courses. You can create
-libraries if you have course creation privileges.</p>
-<p>For information about adding other users to a library after you create it, see
-<a class="reference internal" href="#give-other-users-access-to-your-library"><span>Give Other Users Access to Your Library</span></a>.</p>
-<p>To create a new library, follow these steps.</p>
+<span id="id3"></span><h2>5.5.2. 创建一个新的库<a class="headerlink" href="#create-a-new-library" title="Permalink to this headline">¶</a></h2>
+<p>使用 <a class="reference internal" href="#content-libraries"><span>内容库</span></a> 创建一系列组件，用在你的课程的随机作业分配中。如果你有课程创建特权，你可以创建库.</p>
+<p>关于在你创建一个库后添加其他用户到库的信息，请参照:ref:<cite>给予其他用户到你的库的访问权</cite>.</p>
+<p>创建一个新的库，请遵循以下步骤.</p>
 <ol class="arabic">
-<li><p class="first">Log in to Studio.</p>
+<li><p class="first">登陆到Studio.</p>
 </li>
-<li><p class="first">Click <strong>New Library</strong>.</p>
+<li><p class="first">点击 <strong>新建库</strong>.</p>
 </li>
-<li><p class="first">Enter the required information for your new library, then click <strong>Create</strong>.</p>
+<li><p class="first">输入你的新的库的必要信息，点击 <strong>创建</strong>.</p>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
-<p class="last">Enter new library information carefully. The values in these
-fields become part of the URL for your library, therefore the total number
-of characters in the <strong>Library Name</strong>, <strong>Organization</strong>, and <strong>Library
-Code</strong> fields must be 65 or fewer.</p>
+<p class="last">仔细输入新库的信息，在这域输入的信息会成为你的库的URL的一部分，所以在 <strong>库名称</strong>, <strong>组织</strong> 和 <strong>库编号</strong> 这些域中的字符总数必须少于或等于65.</p>
 </div>
 <img alt="Image of the library creation page" src="../_images/ContentLibrary_NewCL.png" />
 </li>
 </ol>
 <blockquote>
 <div><ul class="simple">
-<li>For <strong>Library Name</strong>, enter the public display name for your library. Choose
-a meaningful name that will help you and other course team members to
-identify the library. For example, &#8220;Level 200 Math Problems&#8221;. When you add a
-randomized content block to a course unit, you use the library name to
-specify this library as a source for the randomized assignment.</li>
-<li>For <strong>Organization</strong>, enter the identifier for your university. For
-example, enter HarvardX or MITx. Do not include spaces or special
-characters.</li>
-<li>For <strong>Library Code</strong>, enter an identifier for your library that is unique
-within your organization. This code becomes part of the URL for your
-library, so do not include spaces or special characters in the code.</li>
+<li>对于 <strong>库名称</strong>, 输入你的库的公开展示名称，选择一个有意义的名称会帮助你和其他的课程团队成员识别库. 例如, &#8220;Level 200 Math Problems&#8221;. 当你添加一个随机内容块到课程单元中时，你使用库名称来指定这个库作为随机作业分配的来源.</li>
+<li>对于 <strong>组织</strong>, 输入你的大学的标识符。例如，输入 HarvardX 或 MITx，注意不要包含空格或特殊字符。</li>
+<li>对于 <strong>库编号</strong>, 为你的库输入一个在你的组织里唯一的标识符，这个编号会成为你的库的URL的一部分，所以不要包含空格或特殊字符。</li>
 </ul>
 </div></blockquote>
 <ol class="arabic simple" start="4">
-<li>Click <strong>Create</strong>.</li>
+<li>点击 <strong>创建</strong>.</li>
 </ol>
-<p>You see the new library, to which you can now add components. For details about
-adding components to a library, see <a class="reference internal" href="#add-components-to-a-library"><span>Add Components to a Library</span></a>.</p>
+<p>你可以看到新的库了，现在你可以添加组件到其中。关于添加组件到库中的详细信息请参照 <span class="xref std std-ref">添加组件到库</span>.</p>
 </div>
 <div class="section" id="edit-a-library">
-<span id="id3"></span><h2>5.5.3. Edit a Library<a class="headerlink" href="#edit-a-library" title="Permalink to this headline">¶</a></h2>
-<p>After you create a library, the only change you can make to the initial library
-information is to the name. However, at any time, you can make changes to the
-components in your library, including adding or deleting components or editing
-the settings of components. For details about editing the contents of a library,
-see <a class="reference internal" href="#edit-components-in-a-library"><span>Edit Components in a Library</span></a> and <a class="reference internal" href="#add-components-to-a-library"><span>Add Components to a Library</span></a>.</p>
-<p>To change the name of a library, follow these steps.</p>
+<span id="id4"></span><h2>5.5.3. 编辑库<a class="headerlink" href="#edit-a-library" title="Permalink to this headline">¶</a></h2>
+<p>在你创建一个库后，你能对初始库信息做的改变只有它的名称。但是，无论何时，你可以在对你的库中的组件做改变，包括添加或删除组件，编辑组件的设置。关于编辑库中内容的详细信息，请参照 <span class="xref std std-ref">编辑库中的组件</span> 和 <span class="xref std std-ref">添加组件到库</span>.</p>
+<p>要改变库名称，请遵循以下步骤.</p>
 <ol class="arabic">
-<li><p class="first">Log in to Studio.</p>
+<li><p class="first">登陆到 Studio.</p>
 </li>
-<li><p class="first">Click <strong>Libraries</strong>, then click the library whose name you want to edit.</p>
+<li><p class="first">点击 <strong>库</strong>, 然后点击你想编辑名称的库.</p>
 </li>
-<li><p class="first">Click the <strong>Edit</strong> icon next to the library name.</p>
-<p>The library name field becomes editable.</p>
+<li><p class="first">点击在库名称旁边的 <strong>编辑</strong> 图标.</p>
+<p>库名称域就变成可编辑的了.</p>
 </li>
 </ol>
 <blockquote>
 <div><img alt="The Edit icon to the right of the Library Name" src="../_images/ContentLibrary_EditName.png" />
 </div></blockquote>
 <ol class="arabic simple" start="4">
-<li>In the library name field, make edits or enter a new library name.</li>
-<li>Click anywhere outside the library name field to save your changes.</li>
+<li>在库名称域，进行编辑或输入一个新的库名称.</li>
+<li>点击库名称域以外的任何区域来保存你的更改.</li>
 </ol>
-<p>For details about giving other users access to the library, see <a class="reference internal" href="#give-other-users-access-to-your-library"><span>Give Other Users Access to Your Library</span></a>.</p>
+<p>关于给予其他用户到库的访问权的详细信息请参照 <span class="xref std std-ref">给予其他用户到你的库的访问权</span>.</p>
 </div>
 <div class="section" id="add-components-to-a-library">
-<span id="id4"></span><h2>5.5.4. Add Components to a Library<a class="headerlink" href="#add-components-to-a-library" title="Permalink to this headline">¶</a></h2>
-<p>To add new <a class="reference internal" href="../developing_course/course_components.html#developing-course-components"><span>components</span></a> to your library,
-follow these steps.</p>
+<span id="id5"></span><h2>5.5.4. 添加组件到库<a class="headerlink" href="#add-components-to-a-library" title="Permalink to this headline">¶</a></h2>
+<p>要添加新的 <a class="reference internal" href="../developing_course/course_components.html#developing-course-components"><span>组件</span></a> 到你的库中，请遵循以下步骤.</p>
 <ol class="arabic simple">
-<li>Log in to Studio.</li>
-<li>Click <strong>Libraries</strong>, then click the library that you want to add components to.</li>
-<li>Click <strong>Add Component</strong>, then click the component type that you want to add
-under <strong>Add New Component</strong>.</li>
+<li>登陆到 Studio.</li>
+<li>点击 <strong>库</strong>, 然后点击你想添加组件到其中的库.</li>
+<li>点击 <strong>添加组件</strong>, 然后点击你想添加的组件的类型，在 <strong>添加新的组件</strong> 下面.</li>
 </ol>
-<p>For more information about the types of components you can add to a library, see
-these topics.</p>
+<p>关于你可以添加到库中的组件的类型的详细信息，请参照以下.</p>
 <ul class="simple">
-<li><a class="reference internal" href="create_html_component.html#working-with-html-components"><span>如何使用HTML组件</span></a></li>
-<li><a class="reference internal" href="create_problem.html#working-with-problem-components"><span>创建问题组件</span></a></li>
-<li><a class="reference internal" href="create_video.html#working-with-video-components"><span>创建影片组件</span></a></li>
+<li><span class="xref std std-ref">管理HTML组件</span></li>
+<li><span class="xref std std-ref">管理问题组件</span></li>
+<li><span class="xref std std-ref">管理视频组件</span></li>
 </ul>
-<p>After you add a component to a library, you can edit its settings. These
-settings are retained when the component is selected from the library and used
-in a course.</p>
-<p>When a component from the library is used in a randomized content block, you can
-further edit the component as it exists in the unit, without affecting the
-original version in the library. For details, refer to <a class="reference internal" href="#edit-components-in-a-library"><span>Edit Components in a Library</span></a> and <a class="reference internal" href="../exercises_tools/randomized_content_blocks.html#get-the-latest-version-of-library-content"><span>获取库内容的最新版本</span></a>.</p>
+<p>在你添加一个组件到库后，你可以编辑它的设置，这些设置在组件从库中被选择时和在课程中被使用时保持不变.</p>
+<p>当来自库中的组件用在随机内容块时，你可以进一步编辑组件，只要它存在单元中，而并不影响库中的原始版本。详细信息，请参照 <span class="xref std std-ref">编辑库中的组件</span> 和 <span class="xref std std-ref">获取库内容的最新版本</span>.</p>
 </div>
 <div class="section" id="view-the-contents-of-a-library">
-<span id="id5"></span><h2>5.5.5. View the Contents of a Library<a class="headerlink" href="#view-the-contents-of-a-library" title="Permalink to this headline">¶</a></h2>
-<p>To view the entire contents of a library in Studio, follow these steps.</p>
+<span id="id6"></span><h2>5.5.5. 查看库中的内容<a class="headerlink" href="#view-the-contents-of-a-library" title="Permalink to this headline">¶</a></h2>
+<p>要查看Studio中的库中的全部内容，请遵循以下步骤.</p>
 <ol class="arabic simple">
-<li>Log in to Studio.</li>
-<li>Click <strong>Libraries</strong>, then click the library whose components you want to
-view.</li>
-<li>Optionally, click <strong>Hide Previews</strong> at the top right of the library page to
-collapse the component previews and see only the list of component display
-names. To return to the full preview of components in the library, click
-<strong>Show Previews</strong>.</li>
+<li>登陆到 Studio.</li>
+<li>点击 <strong>库</strong>, 然后点击你想查看其组件的库.</li>
+<li>可选择地，点击位于库页面右上位置的 <strong>隐藏预览</strong> 以收起组件预览，并只查看组件展示名称的列表。要回到库中的组件的完整预览，请点击 <strong>显示预览</strong>.</li>
 </ol>
-<p>The components in the library display in the order in which they were added,
-with the most recently added at the bottom. If your library has more than 10
-components, additional components are shown on other pages.</p>
-<p>The range of the components shown on the current page, and the total number of
-components, are shown at the top of the page.</p>
-<p>You can navigate through the pages in these ways:</p>
+<p>库中的组件按它们被添加的顺序显示，最近添加的显示在底部。如果你的库含有不止10个组件，额外的组件会在另一个页面显示.</p>
+<p>在当前页面中显示的组件的范围和组件的总数，显示在页面的顶部.</p>
+<p>你可以通过这些就去在页面之间导航:</p>
 <ul>
-<li><p class="first">Use the <strong>&lt;</strong> and <strong>&gt;</strong> buttons at the top and bottom of the list to navigate
-to the previous and next pages.</p>
+<li><p class="first">使用在列表的顶部和底部的 <strong>&lt;</strong> 和 <strong>&gt;</strong> 按钮导航到前一页面和后一页面.</p>
 </li>
-<li><p class="first">At the bottom of the page, you can edit the first number in the page range.
-Click the number to place your cursor in the field, then enter the page number
-you want to jump to.</p>
+<li><p class="first">在页面询问，你可以编辑页面范围内的弟一个数字。点击数字来把你的光标放在域中，然后输入你想跳往的页面的编号.</p>
 <img alt="Image showing a pair of page numbers with the first number circled" src="../_images/file_pagination1.png" />
 </li>
 </ul>
-<p>To view the list of matching components in the library, see <a class="reference internal" href="../exercises_tools/randomized_content_blocks.html#view-the-matching-components-in-a-randomized-content-block"><span>在随机内容块中查看匹配组件</span></a>.</p>
-<p>To view the randomized content as a student would see it, see <a class="reference internal" href="../exercises_tools/randomized_content_blocks.html#view-the-randomized-content-as-a-student"><span>作为学生查看随机内容</span></a>.</p>
+<p>要查看库中匹配的组件的列表，请参照 <span class="xref std std-ref">查看随机内容块中的匹配组件</span>.</p>
+<p>要查看作为一个学生将会看到的随机内容，请参照 <span class="xref std std-ref">作为学生查看随机内容</span>.</p>
 </div>
 <div class="section" id="edit-components-in-a-library">
-<span id="id6"></span><h2>5.5.6. Edit Components in a Library<a class="headerlink" href="#edit-components-in-a-library" title="Permalink to this headline">¶</a></h2>
-<p>After you have added components to a library, you can edit, duplicate, or delete
-them.</p>
-<p>For step-by-step instructions for editing, duplicating, or deleting components,
-refer to the following topics.</p>
+<span id="id7"></span><h2>5.5.6. 编辑库中的组件<a class="headerlink" href="#edit-components-in-a-library" title="Permalink to this headline">¶</a></h2>
+<p>在你添加组件到库后，你可以编辑，复制或删除它们.</p>
+<p>对于逐步的关于编辑复制或删除的说明，请对照以下的主题.</p>
 <ul class="simple">
-<li><a class="reference internal" href="../developing_course/course_components.html#edit-a-component"><span>编辑组件</span></a></li>
-<li><a class="reference internal" href="../developing_course/course_components.html#duplicate-a-component"><span>复制组件</span></a></li>
-<li><a class="reference internal" href="../developing_course/course_components.html#delete-a-component"><span>删除组件</span></a></li>
+<li><span class="xref std std-ref">编辑组件</span></li>
+<li><span class="xref std std-ref">复制组件</span></li>
+<li><span class="xref std std-ref">删除组件</span></li>
 </ul>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
-<p class="last">If you modify components in your library that are in use in a course,
-these updates in the &#8220;source&#8221; library are not reflected in the course unless
-you manually update the randomized content block in the course unit. For
-details about updating library components used in your course to match the
-latest version in the library, see <a class="reference internal" href="../exercises_tools/randomized_content_blocks.html#get-the-latest-version-of-library-content"><span>获取库内容的最新版本</span></a>.</p>
+<p class="last">如果你在库中在课程中使用的的组件时，这些在 &#8220;源&#8221; 的更新不会影响到课程中，除非你的课程单元的随机内容块中进行手动更新。关于更新在你课程中使用的库组件以匹配库中的最新版本的详细信息，请参照 <span class="xref std std-ref">获取库组件的最新版本</span>.</p>
 </div>
 </div>
 <div class="section" id="delete-a-library">
-<span id="id7"></span><h2>5.5.7. Delete a Library<a class="headerlink" href="#delete-a-library" title="Permalink to this headline">¶</a></h2>
-<p>You cannot delete a library. Instead, you can discontinue use of an unwanted
-library. To do so, first make sure that none of its components are in use in any
-courses, then delete all components in the library. You can also <a class="reference internal" href="#edit-a-library"><span>edit the
-name of the library</span></a> to make it clear to other course staff that
-the library should not be used as a source of randomized assignment content in
-courses.</p>
-<p>For details about deleting components in a library, see <a class="reference internal" href="#edit-components-in-a-library"><span>Edit Components in a Library</span></a>.</p>
+<span id="id8"></span><h2>5.5.7. 删除库<a class="headerlink" href="#delete-a-library" title="Permalink to this headline">¶</a></h2>
+<p>你不能删除库，而是可以停止使用一个不想使用的库。要做到这点，首先确保没有它的组件在你的课程中被使用，然后删除库中的所有组件。你也可以 <a class="reference internal" href="#edit-a-library"><span>编辑库名称</span></a> 来向其他课程教员澄清这个库不应该在课程中被用作随机作业内容的来源.</p>
+<p>关于删除库中组件的详细信息，请参照 <span class="xref std std-ref">编辑库中的组件</span>.</p>
 </div>
 <div class="section" id="give-other-users-access-to-your-library">
-<span id="id8"></span><h2>5.5.8. Give Other Users Access to Your Library<a class="headerlink" href="#give-other-users-access-to-your-library" title="Permalink to this headline">¶</a></h2>
-<p>When you create a library, you are automatically assigned an Admin role in that
-library.</p>
-<p>You can give other Studio users access to your library. Depending on the level
-of access  that you give them in the library, additional library users can view
-and use library content in courses, edit library content, or add and manage
-other library users. All users to whom you give library access must be
-registered with Studio and have an active account.</p>
-<p>These are the levels of access for libraries:</p>
+<span id="id9"></span><h2>5.5.8. 给予其他用户对你的库的访问权<a class="headerlink" href="#give-other-users-access-to-your-library" title="Permalink to this headline">¶</a></h2>
+<p>当你创建一个库时，你自动被赋予库的管理员的角色.</p>
+<p>你可以给予其他Studio的用户以对你的库的访问权。取决于你给予他们在库中的访问权限，其他的库使用者可以在课程查看和使用库内容，编辑库内容或添加和管理其他库用户。你给予访问权的所有用户必须在Studio中注册并有一个活跃的账户。</p>
+<p>对库有以下几个层次的访问:</p>
 <ul class="simple">
-<li><strong>User</strong> &#8211; Users can view library content and can use library components in
-their courses, but they cannot edit the contents of a library.</li>
-<li><strong>Staff</strong> &#8211; Staff can use library components in their courses. In addition,
-as content co-authors, they have full editing privileges in a library.</li>
-<li><strong>Admin</strong> &#8211; Admins have full editing privileges for a library. In addition,
-they can add and remove other team members from library access. There must be at
-least one user with Admin privileges in a library.</li>
+<li><strong>用户</strong> &#8211; 用户可以查看库内容并可以在他们的课程中使用库组件，但他们不能编辑库中的内容.</li>
+<li><strong>教员</strong> &#8211; 教员可以在他们的课程中使用库组件，另外，作为内容的合作者，他们有在库中完全的编辑特权.</li>
+<li><strong>管理员</strong> &#8211; 管理员拥有库的完全编辑特权另外，他们可以添加和移除其他团队成员的库访问权。在一个库中必须至少有一个用户拥有管理员特权.</li>
 </ul>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
-<p class="last">The levels of access for libraries are hierarchical. You can add new
-library members only with the <strong>User</strong> level of access, after which you can
-give them the <strong>Staff</strong> level of access. You can give the <strong>Admin</strong> level of
-access only to people who already have the <strong>Staff</strong> level of access.</p>
+<p class="last">对库的访问层次是有等级的。你可以添加新的仅具有 <strong>用户</strong> 访问等级的库成员，在这之后你可以给予他们 <strong>教员</strong> 的访问等级。你可以把 <strong>管理员</strong> 的访问等级给予那些已经拥有 <strong>教员</strong> 访问等级的人.</p>
 </div>
-<div class="section" id="add-a-user-to-the-library">
-<h3>5.5.8.1. Add a User to the Library<a class="headerlink" href="#add-a-user-to-the-library" title="Permalink to this headline">¶</a></h3>
-<p>To grant a user initial <strong>User</strong> access to a library, follow these steps.</p>
+<div class="section" id="id10">
+<h3>5.5.8.1. 添加用户到库<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h3>
+<p>要授予用户对库的初始的 <strong>用户</strong> 等级访问，请遵循以下步骤.</p>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
-<p class="last">Only library users with the <strong>Admin</strong> level of access can add users to
-the library.</p>
+<p class="last">只有拥有 <strong>管理员</strong> 访问等级的库用户才能添加用户到库中.</p>
 </div>
 <ol class="arabic">
-<li><p class="first">Ensure that the new library member has an active Studio account.</p>
+<li><p class="first">确保新的库成员拥有活跃的Studio账号.</p>
 </li>
-<li><p class="first">On the Studio home page, click the <strong>Libraries</strong> tab and locate the library
-to which you are adding this user.</p>
+<li><p class="first">在Studio主页，点击 <strong>库</strong> 标签并定位到你要对其添加这个用户的库.</p>
 </li>
-<li><p class="first">From the <strong>Settings</strong> menu select <strong>User Access</strong>.</p>
+<li><p class="first">从 <strong>设置</strong> 菜单选择 <strong>用户访问</strong>.</p>
 </li>
-<li><p class="first">On the <strong>User Access</strong> page, click <strong>Add a New User</strong>.</p>
+<li><p class="first">在 <strong>用户访问</strong> 页面，点击 <strong>添加新用户</strong>.</p>
 </li>
-<li><p class="first">Enter the new user&#8217;s email address, then click <strong>ADD USER</strong>.</p>
-<p>The new user is added to the list of library members with the <strong>User</strong> level
-of access.</p>
+<li><p class="first">输入新用户的电子邮箱，然后点击 <strong>添加用户</strong>.</p>
+<p>用户被添加到拥有 <strong>用户</strong> 访问等级的库成员的列表中.</p>
 </li>
 </ol>
 </div>
-<div class="section" id="remove-a-user-from-the-library">
-<h3>5.5.8.2. Remove a User from the Library<a class="headerlink" href="#remove-a-user-from-the-library" title="Permalink to this headline">¶</a></h3>
-<p>You can remove users from the library at any time, regardless of the level of
-access that they have.</p>
-<p>To remove a user from the library, follow these steps.</p>
+<div class="section" id="id11">
+<h3>5.5.8.2. 从库中移除用户<a class="headerlink" href="#id11" title="Permalink to this headline">¶</a></h3>
+<p>你可以在任何时候从库中移除用户，不管他们拥有什么样的访问等级.</p>
+<p>要从库中移除用户，请遵循以下步骤.</p>
 <ol class="arabic simple">
-<li>In Studio, click the <strong>Libraries</strong> tab and locate your library.</li>
-<li>From the <strong>Settings</strong> menu select <strong>User Access</strong>.</li>
-<li>On the <strong>User Access</strong> page, locate the user that you want to remove.</li>
-<li>Hover over the user&#8217;s box and click the trash can icon.</li>
+<li>在Studio中，点击 <strong>库</strong> 标签并定位到你的库.</li>
+<li>从 <strong>设置</strong> 菜单选择 <strong>用户访问</strong>.</li>
+<li>在 <strong>用户访问</strong> 页面，定位到你想移除的用户.</li>
+<li>在用户框上方悬停然后点击垃圾箱图标.</li>
 </ol>
 <blockquote>
-<div>You are prompted to confirm the deletion.</div></blockquote>
+<div>你会被提示确认删除.</div></blockquote>
 <ol class="arabic simple" start="5">
-<li>Click <strong>Delete</strong>.</li>
+<li>点击 <strong>删除</strong>.</li>
 </ol>
 <blockquote>
-<div>The user is removed from the library.</div></blockquote>
+<div>用户于是被从库中移除.</div></blockquote>
 </div>
-<div class="section" id="add-staff-or-admin-access">
-<h3>5.5.8.3. Add Staff or Admin Access<a class="headerlink" href="#add-staff-or-admin-access" title="Permalink to this headline">¶</a></h3>
-<p>The levels of access for libraries are hierarchical. You can add new library
-members only with the <strong>User</strong> level of access, after which you can give them
-the <strong>Staff</strong> level of access. You can give the <strong>Admin</strong> level of access only
-to people who already have the <strong>Staff</strong> level of access.</p>
-<p>To give a library member a higher level of access to the library, follow these
-steps.</p>
+<div class="section" id="id12">
+<h3>5.5.8.3. 添加教员或管理员访问<a class="headerlink" href="#id12" title="Permalink to this headline">¶</a></h3>
+<p>库的访问层次是等级化的。你可以添加仅具有 <strong>用户</strong> 访问等级的新的库成员，然后你可以给予他们 <strong>教员</strong> 的访问等级。你只可以把 <strong>管理员</strong> 访问等级给予已经拥有 <strong>教员</strong> 访问等级的人.</p>
+<p>要给予一个库成员对库的更高的访问等级，请遵循以下步骤.</p>
 <ol class="arabic simple">
-<li>In Studio, click the <strong>Libraries</strong> tab and locate your library.</li>
-<li>From the <strong>Settings</strong> menu select <strong>User Access</strong>.</li>
-<li>On the <strong>User Access</strong> page, locate the user to whom you are giving
-additional privileges.</li>
+<li>在Studio中，点击 <strong>库</strong> 标签并定位到你的库.</li>
+<li>从 <strong>设置</strong> 菜单选择 <strong>用户访问</strong>.</li>
+<li>在 <strong>用户访问</strong> 页面中，定位你想给予额外特权的用户.</li>
 </ol>
 <blockquote>
 <div><ul class="simple">
-<li>If he currently has <strong>User</strong> access, click <strong>Add Staff Access</strong>.</li>
-<li>If he currently has <strong>Staff</strong> access, click <strong>Add Admin Access</strong>.</li>
+<li>如果他当前已经拥有 <strong>用户</strong> 层次的访问权，点击 <strong>添加教员访问</strong>.</li>
+<li>如果他当前已经拥有 <strong>教员</strong> 层次的访问权，点击 <strong>添加管理员访问</strong>.</li>
 </ul>
-<p>The user&#8217;s display listing is updated to indicate the new level of access. In
-addition, their listing now includes a button to remove their current level of
-access and move them back to their previous level of access. For details about
-reducing a user&#8217;s level of access to a library, see <a class="reference internal" href="#remove-staff-or-admin-access"><span>Remove Staff or Admin Access</span></a>.</p>
+<p>用户的显示列表会被更新以表明获得新的访问等级。另外，
+他们的列表包含一个移除他们现在访问等级的和把他们移动到之前的访问等级的按钮。关于降低用户对库的访问权的详细信息，请参照 <span class="xref std std-ref">移除教员或管理员</span>.</p>
 </div></blockquote>
 </div>
 <div class="section" id="remove-staff-or-admin-access">
-<span id="id9"></span><h3>5.5.8.4. Remove Staff or Admin Access<a class="headerlink" href="#remove-staff-or-admin-access" title="Permalink to this headline">¶</a></h3>
-<p>After you have granted users <strong>Staff</strong> or <strong>Admin</strong> access, you (or other
-<strong>Admin</strong> library users) can reduce their levels of access.</p>
-<p>To remove <strong>Staff</strong> or <strong>Admin</strong> access from a library user, follow these steps.</p>
+<span id="id13"></span><h3>5.5.8.4. 移除教员或管理员<a class="headerlink" href="#remove-staff-or-admin-access" title="Permalink to this headline">¶</a></h3>
+<p>在你授予用户 <strong>教员</strong> 或 <strong>管理员</strong> 访问等级时，你 (或者其他的 <strong>管理员</strong> 库用户) 可以降低他们的访问等级.</p>
+<p>要往往库用户中移除 <strong>教员</strong> 或者 <strong>管理员</strong> 访问，请遵循以下步骤.</p>
 <ol class="arabic simple">
-<li>In Studio, click the <strong>Libraries</strong> tab and locate your library.</li>
-<li>From the <strong>Settings</strong> menu select <strong>User Access</strong>.</li>
-<li>On the <strong>User Access</strong> page, locate the user whose access level you are
-changing.</li>
+<li>在Studio中，点击 <strong>库</strong> 标签并定位到你的库.</li>
+<li>从 <strong>设置</strong> 菜单选择 <strong>用户访问</strong>.</li>
+<li>在 <strong>用户访问</strong> 页面，定位到你想更改访问等级的用户.</li>
 </ol>
 <blockquote>
 <div><ul class="simple">
-<li>If she currently has <strong>Staff</strong> access, click <strong>Remove Staff Access</strong>.</li>
-<li>If she currently has <strong>Admin</strong> access, click <strong>Remove Admin Access</strong>.</li>
+<li>如果她当前已经拥有 <strong>教员</strong> 层次的访问权，点击 <strong>移除教员访问</strong>.</li>
+<li>如果她当前已经拥有 <strong>管理员</strong> 层次的访问权，点击 <strong>移除管理员访问</strong>.</li>
 </ul>
 <blockquote>
-<div>The user&#8217;s display listing is updated to indicate their new role.</div></blockquote>
+<div>用户显示列表会被更新以表明他们的新角色.</div></blockquote>
 </div></blockquote>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
-<p class="last">There must always be at least one Admin for a library. If there is
-only one user with the Admin role, you cannot remove him or her from the
-Admin role unless you first assign another user to the Admin role.</p>
+<p class="last">在一个库中至少要有一名管理员，如果只有一个用户具有管理员角色，你不能从管理员角色中移除他或她，除非你先赋予另一个用户以管理员角色.</p>
 </div>
 </div>
 </div>
 <div class="section" id="exporting-and-importing-a-library">
-<span id="id10"></span><h2>5.5.9. Exporting and Importing a Library<a class="headerlink" href="#exporting-and-importing-a-library" title="Permalink to this headline">¶</a></h2>
-<p>You can <a class="reference internal" href="#export-a-library"><span>export</span></a> and <a class="reference internal" href="#import-a-library"><span>import</span></a> a
-content library in Studio.</p>
+<span id="id14"></span><h2>5.5.9. 导出和导入库<a class="headerlink" href="#exporting-and-importing-a-library" title="Permalink to this headline">¶</a></h2>
+<p>你可以在Studio中 <a class="reference internal" href="#export-a-library"><span>导出</span></a> 和 <a class="reference internal" href="#import-a-library"><span>导入</span></a> 一个内容库.</p>
 <div class="section" id="export-a-library">
-<span id="id11"></span><h3>5.5.9.1. Export a Library<a class="headerlink" href="#export-a-library" title="Permalink to this headline">¶</a></h3>
-<p>There are several reasons why you might want to export your library.</p>
+<span id="id15"></span><h3>5.5.9.1. 导出库<a class="headerlink" href="#export-a-library" title="Permalink to this headline">¶</a></h3>
+<p>有多个理由你会想导出你的库.</p>
 <ul class="simple">
-<li>To save your work in progress</li>
-<li>To edit the XML in your library directly</li>
-<li>To create a backup copy of your library</li>
-<li>To share with another course team member</li>
+<li>保存你的工作进度</li>
+<li>在你的库中直接编辑 XML</li>
+<li>创建一个你的库的备份拷贝</li>
+<li>与另一个课程团队成员共享</li>
 </ul>
-<p>When you export your library, Studio creates a <strong>.tar.gz</strong> file (that is, a .tar
-file compressed using GNU Zip). This export file contains the problems in the
-library, including any customizations you made in the library to problem
-settings. The export does not include library settings such as user access
-permissions.</p>
-<p>To export a library, follow these steps.</p>
+<p>当你导出你的库时，Studio 会创建一个 <strong>.tar.gz</strong> 文件 (即一个 .tar用 GNU Zip 压缩的文件). 这个导出文件包含库中的问题，包含任何你在库中对问题设置的定制。导出并不包含库的设置，比如用户访问许可.</p>
+<p>要导出一个库，请遵循以下步骤.</p>
 <ol class="arabic simple">
-<li>In Studio, select the <strong>Libraries</strong> tab.</li>
-<li>Locate the library that you want to export.</li>
-<li>From the <strong>Tools</strong> menu, select <strong>Export</strong>.</li>
-<li>Click <strong>Export Library Content</strong> and specify where you want the file to be saved.</li>
+<li>在 Studio 中, 选择 <strong>库</strong> 标签.</li>
+<li>定位到你想导出的库.</li>
+<li>从 <strong>工具</strong> 菜单选择 <strong>导出</strong>.</li>
+<li>点击 <strong>导出库内容</strong> 并指定你想保存文件的位置.</li>
 </ol>
-<p>When the export process finishes, you can access the .tar.gz file on your
-computer.</p>
+<p>当导出过程结束时，你可以在你的电脑上访问 .tar.gz 文件.</p>
 </div>
 <div class="section" id="import-a-library">
-<span id="id12"></span><h3>5.5.9.2. Import a Library<a class="headerlink" href="#import-a-library" title="Permalink to this headline">¶</a></h3>
-<p>You might want to import a library if you developed or updated library content
-outside of Studio, or if you want to overwrite a problematic or outdated version
-of the library.</p>
+<span id="id16"></span><h3>5.5.9.2. 导入库<a class="headerlink" href="#import-a-library" title="Permalink to this headline">¶</a></h3>
+<p>你可能想导入库如果你已经在 Studio 外开发或者更新库内容，或者如果你想重写不确定的或者过期的库版本.</p>
 <div class="admonition warning">
 <p class="first admonition-title">Warning</p>
-<p class="last">When you import a library, the imported library completely replaces
-the existing library and its contents. You cannot undo a library import.
-Before you proceed, we recommend that you export the current library, so that
-you have a backup copy of it.</p>
+<p class="last">当你导入库时，被导入的库会完全替代当前存在的库以及它的内容，你不能撤消库导入。在你前进之前，我们推荐你导出当前的库，这样你就有一个它的备份拷贝了.</p>
 </div>
-<p>The library file that you import must be a .tar.gz file (that is, a .tar file
-compressed using GNU Zip). This .tar.gz file must contain a library.xml file.</p>
-<p>To import a library, follow these steps.</p>
+<p>你导入的库文件必须是一个 .tar.gz 文件 (即, 一个用 GNU Zip 压缩的 .tar 文件). 这个 .tar.gz 文件必须包含一个 library.xml 文件.</p>
+<p>要导入一个库，请遵循以下步骤.</p>
 <ol class="arabic simple">
-<li>In Studio, select the <strong>Libraries</strong> tab.</li>
-<li>Locate the library to which you want to import the new library content.</li>
-<li>From the <strong>Tools</strong> menu, select <strong>Import</strong>.</li>
-<li>Click <strong>Choose a File to Import</strong> and select the .tar.gz file that you want
-to import.</li>
-<li>Click <strong>Replace my library with the selected file</strong>.</li>
+<li>在 Studio 中, 选择 <strong>库</strong> 标签.</li>
+<li>定位到你想导入一个新的库内容到其中的库.</li>
+<li>从 <strong>工具</strong> 菜单选择 <strong>导入</strong>.</li>
+<li>点击 <strong>选择一个文件导入</strong> 并选择你想导入的 .tar.gz 文件.</li>
+<li>点击 <strong>用选择的文件替换我的库</strong>.</li>
 </ol>
 <div class="admonition warning">
 <p class="first admonition-title">Warning</p>
-<p class="last">The import process has five stages. During the first two stages
-(Uploading and Unpacking), do not navigate away from the <strong>Library Import</strong> page.
-Doing so causes the import process to end. You can leave the page only after
-the Unpacking stage completes. We recommend that you do not make important
-changes to the library until all stages of the import process have finished.</p>
+<p class="last">导入过程有5个阶段。在前两个阶段（上传和解压缩） 不要从 <strong>库导入</strong> 页面导航到其他地方，这样做会导致导入过程终止。你只可以在解压缩阶段后才能离开页面。我们建议在所有导入阶段结束前不要对库做重要的更改.</p>
 </div>
 <ol class="arabic simple" start="6">
-<li>When the import process finishes, click <strong>View Updated Library</strong> to view the
-imported library.</li>
+<li>当导入过程结束时，点击 <strong>查看更新后的库</strong> 来查看导入的库.</li>
 </ol>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
-<p class="last">If your imported library includes changes to components that are in
-use in a course, the course does not reflect these library updates until you
-manually update the randomized content block in the course unit. For details
-about updating library components used in your course to match the latest
-version in the content library, see <a class="reference internal" href="../exercises_tools/randomized_content_blocks.html#get-the-latest-version-of-library-content"><span>获取库内容的最新版本</span></a>.</p>
+<p class="last">如果你导入的库包含对在课程中使用的组件的更改，课程不会反映出这些库的更新，直到你在课程单元中手动更新随机内容块。
+关于更新在你的课程中使用的库组件以匹配内容库中的最新版本的详细信息，请参照 <span class="xref std std-ref">获取库内容的最新版本</span>.</p>
 </div>
 </div>
 </div>
