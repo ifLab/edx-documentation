@@ -19,4 +19,5 @@
 .. image:: ../../../shared/building_and_running_chapters/Images/a-b-test-lms-group-2.pn。一般来说，你不应该在课程内容中使用使用，者会使得学生
  :alt: Image of a unit page with Group 1 selected
 
+
 .. note::    在本章的示例课程内容使用内容实验术语使得功能明确。通常，你不在课程内容中使用术语，这会使得学生意思到这个实验。
