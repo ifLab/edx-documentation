@@ -7,7 +7,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>7.1. Overview of Content Experiments &mdash; Building and Running an edX Course  documentation</title>
+  <title>7.1. 内容实验概述 &mdash; Building and Running an edX Course  documentation</title>
   
 
   
@@ -117,7 +117,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../creating_content/create_video.html">5.2. 创建影片组件</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../creating_content/create_discussion.html">5.3. 创建讨论组件</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../creating_content/create_problem.html">5.4. 创建问题组件</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../creating_content/libraries.html">5.5. Working with Content Libraries</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../creating_content/libraries.html">5.5. 内容库</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../exercises_tools/index.html">6. 创建习题和工具</a><ul>
@@ -161,10 +161,10 @@
 </ul>
 </li>
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">7. 创建内容实验</a><ul class="current">
-<li class="toctree-l2 current"><a class="current reference internal" href="">7.1. Overview of Content Experiments</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="">7.1. 内容实验概述</a></li>
 <li class="toctree-l2"><a class="reference internal" href="content_experiments_configure.html">7.2. 配置带有内容实验的课程</a></li>
 <li class="toctree-l2"><a class="reference internal" href="content_experiments_add.html">7.3. 为您的课程添加内容实验</a></li>
-<li class="toctree-l2"><a class="reference internal" href="content_experiments_view.html">7.4. Test Content Experiments</a></li>
+<li class="toctree-l2"><a class="reference internal" href="content_experiments_view.html">7.4. 测试内容实验</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../cohorts/index.html">8. 建立学生队列</a><ul>
@@ -248,47 +248,32 @@
         <div class="rst-content">
           <ul class="wy-breadcrumbs">
   <li><a href="../index.html">Table of Contents</a> &raquo;</li>
-  <li><a href="">7.1. Overview of Content Experiments</a></li>
+  <li><a href="">7.1. 内容实验概述</a></li>
   
 </ul>
 <hr/>
 
           
-  <div class="section" id="overview-of-content-experiments">
-<span id="id1"></span><h1>7.1. Overview of Content Experiments<a class="headerlink" href="#overview-of-content-experiments" title="Permalink to this headline">¶</a></h1>
-<p>You use content experiments to show different course content to different groups
-of students. Also known as &#8220;A/B tests&#8221; or &#8220;split tests&#8221;, content experiments
-enable you to research and compare the performance of students in different
-groups to gain insight into the relative effectiveness of your course content.</p>
-<p>Information on analyzing events from content experiments is included in the
-<a class="reference external" href="http://edx.readthedocs.org/projects/devdata/en/latest/internal_data_formats/tracking_logs.html#a-b-testing-events">edX Researcher Guide</a>.</p>
-<p>For more information, see:</p>
+  <div class="section" id="id1">
+<span id="id2"></span><h1>7.1. 内容实验概述<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+<p>你可以使用内容实验展示不同的课程内容不同的学生小组. 也被称为“A/B测试”或&#8221;对比测试&#8221;,内容实验允许你研究和比较不同组的学生的表现来了解你的课程内容的相对有效性。</p>
+<p>关于内容实验的分析信息都在`edX Researcher Guide`_中.</p>
+<p>更多信息, 请看:</p>
 <ul class="simple">
 <li><a class="reference internal" href="content_experiments_configure.html#configure-your-course-for-content-experiments"><span>配置带有内容实验的课程</span></a></li>
 <li><a class="reference internal" href="content_experiments_add.html#add-content-experiments-to-your-course"><span>为您的课程添加内容实验</span></a></li>
-<li><a class="reference internal" href="content_experiments_view.html#test-content-experiments"><span>Test Content Experiments</span></a></li>
+<li><span class="xref std std-ref">Test Content Experiments</span></li>
 </ul>
 <div class="section" id="courses-with-multiple-content-experiments">
-<span id="id2"></span><h2>7.1.1. Courses with Multiple Content Experiments<a class="headerlink" href="#courses-with-multiple-content-experiments" title="Permalink to this headline">¶</a></h2>
-<p>You can run multiple content experiments in your course. You can set up each
-experiment to use the same groups of students, or you can set up each
-experiment to be independent and use a different grouping.</p>
+<span id="id3"></span><h2>7.1.1. 带有多个内容实验的课程<a class="headerlink" href="#courses-with-multiple-content-experiments" title="Permalink to this headline">¶</a></h2>
+<p>你可以在你的课程中创建创建多个内容实验. 你可以设置每个内容实验都使用相同的学生小组，你也可以为每个实验设置不同的小组.</p>
 <div class="admonition important">
 <p class="first admonition-title">Important</p>
-<p class="last">If your course has multiple experiments, it is critical that you decide
-in advance if the experiments share the same groups of students or if each
-experiment has its own unique grouping. If two experiments share the same
-grouping, then any student that is in Group A for the first experiment will
-also be in Group A for the second one. If you want the experiments to be
-independent, then the experiments must use different groupings so that
-students are randomly assigned for each experiment.</p>
+<p class="last">如果你的课程有多个内容实验,你提前决定是否实验都使用相同的学生小组或者每个实验设置不同的小组是十分关键的。如果两个实验使用同一个小组,那么任何在A组第一个实验的学生也将在A组第二个实验。如果你想要实验更加自主, 那么这个就必须使用不同的小组了以便学生随机分配到每个实验中.</p>
 </div>
-<p>To determine the available groupings of students, you set up group
-configurations <a class="reference internal" href="content_experiments_configure.html#set-up-group-configurations-in-edx-studio"><span>using Studio</span></a>
-or <a class="reference internal" href="content_experiments_configure.html#set-up-group-configuration-for-olx-courses"><span>using XML</span></a>.</p>
-<p>You then select which group configuration to use when you add a content
-experiment <a class="reference internal" href="content_experiments_add.html#add-a-content-experiment-in-studio"><span>using Studio</span></a> or
-<a class="reference internal" href="content_experiments_add.html#add-a-content-experiment-in-olx"><span>using XML</span></a>.</p>
+<p>要决定学生可用的分组, 你需要设置小组配置:ref:<cite>使用Studio &lt;在edX Studio设置学生团队配置&gt;`或者:ref:`使用XML &lt;对OLX课程设置小组配置&gt;</cite>.</p>
+<p>你然后可以选择团队设置使用何时添加文本实验、<span class="xref std std-ref">使用Studio</span> or
+<span class="xref std std-ref">使用XML</span>.</p>
 </div>
 </div>
 
