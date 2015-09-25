@@ -1,0 +1,795 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>5.4. 创建问题组件 &mdash; Building and Running an edX Course  documentation</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="../_static/css/favicon.ico"/>
+  
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  
+  
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:'../',
+        VERSION:'',
+        COLLAPSE_INDEX:false,
+        FILE_SUFFIX:'.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+
+    
+
+  
+
+  
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+
+  
+    <link rel="top" title="Building and Running an edX Course  documentation" href="../index.html"/>
+        <link rel="up" title="5. 创建课程内容" href="index.html"/>
+        <link rel="next" title="5.5. Working with Content Libraries" href="libraries.html"/>
+        <link rel="prev" title="5.3. 创建讨论组件" href="create_discussion.html"/> 
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-nav-search">
+        <a href="../index.html" class="icon icon-home"> Building and Running an edX Course</a>
+        <form class="wy-form" action="../search.html" method="get">
+  <input type="text" name="q" placeholder="Search document" />
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix">
+        
+        
+            <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../front_matter/index.html">1. 参考信息</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../front_matter/read_me.html">1.1. Read Me</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../front_matter/preface.html">1.2. 序言</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../front_matter/change_log.html">1.3. Change Log</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../front_matter/browsers.html">1.4. edX浏览器支持</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/index.html">2. 开始使用edX</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../getting_started/accounts.html">2.1. 开始使用edX</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../getting_started/dashboard_acctsettings_profile.html">2.2. 搜索你的仪表板、设置和配置文件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../getting_started/get_started.html">2.3. 开始了解Studio</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../getting_started/accessibility.html">2.4. 创建无障碍课程指南</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../building_course/index.html">3. 建立您的课程</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/creating_new_course.html">3.1. 新建课程</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/scheduling_course.html">3.2. 设置开始和结束日期</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/setting_up_student_view.html">3.3. 设置课程细节</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/licensing_course.html">3.4. 授权课程</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/course_files.html">3.5. 给课程添加文件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/handouts_updates.html">3.6. 添加课程补充资料及讲义</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/pages.html">3.7. 为课程添加页面</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/textbooks.html">3.8. 添加课本</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/establish_grading_policy.html">3.9. 设定计分政策</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/course_rerun.html">3.10. 重开课程</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/export_import_course.html">3.11. 输出和导入课程</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../developing_course/index.html">4. 开发您的课程</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/workflow.html">4.1. 开始创建课程内容</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/course_outline.html">4.2. 创建课程大纲</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/course_sections.html">4.3. 创建课程章节</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/course_subsections.html">4.4. 构建课程小节</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/course_units.html">4.5. 构建课程单元</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/course_components.html">4.6. 创建课程组件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/controlling_content_visibility.html">4.7. 设置内容可见性</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/testing_courseware.html">4.8. 测试您的课程内容</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">5. 创建课程内容</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="create_html_component.html">5.1. 如何使用HTML组件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="create_video.html">5.2. 创建影片组件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="create_discussion.html">5.3. 创建讨论组件</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="">5.4. 创建问题组件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="libraries.html">5.5. Working with Content Libraries</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../exercises_tools/index.html">6. 创建习题和工具</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/create_exercises_and_tools.html">6.1. 创建练习和工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/annotation.html">6.2. 注释问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/checkbox.html">6.3. 复选框问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/chemical_equation.html">6.4. 化学方程式问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/circuit_schematic_builder.html">6.5. 电路原理图搭建问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/conditional_module.html">6.6. 条件模板</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/custom_javascript.html">6.7. 自定义JavaScript问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/drag_and_drop.html">6.8. 拖放问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/dropdown.html">6.9. 下拉问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/external_graders.html">6.10. 图像映射输入问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/full_screen_image.html">6.11. 全屏图像工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/gene_explorer.html">6.12. Gene Explorer工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/google_calendar.html">6.13. 谷歌日历工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/google_docs.html">6.14. 谷歌云文件工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/google_hangouts.html">6.15. 谷歌即时群聊工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/iframe.html">6.16. IFrame工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/image_mapped_input.html">6.17. 图像映射输入问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/lti_component.html">6.18. LTI 组件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/math_expression_input.html">6.19. 数学表达式输入问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/molecule_editor.html">6.20. 分子编辑器</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/molecule_viewer.html">6.21. 分子浏览器</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/multiple_choice.html">6.22. 多项选择问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/mult_choice_num_input.html">6.23. 多项选择和数字输入题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/numerical_input.html">6.24. 数值输入问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/open_response_assessments/index.html">6.25. 开放性回答评估</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/periodic_table.html">6.26. 元素周期表工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/poll.html">6.27. 投票工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/problem_with_hint.html">6.28. 带适应性提示的问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/problem_in_latex.html">6.29. LaTeX问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/protein_builder.html">6.30. Protex蛋白质构建工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/randomized_content_blocks.html">6.31. 随机内容块</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/recommenderXBlock.html">6.32. 推荐系统</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/text_input.html">6.33. 文本输入问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/word_cloud.html">6.34. 文字云工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/custom_python.html">6.35. 自定义评分器问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/zooming_image.html">6.36. 图像放大工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/mathjax.html">6.37. Studio中MathJax的简要介绍</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../content_experiments/index.html">7. 创建内容实验</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../content_experiments/content_experiments_overview.html">7.1. Overview of Content Experiments</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../content_experiments/content_experiments_configure.html">7.2. 配置带有内容实验的课程</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../content_experiments/content_experiments_add.html">7.3. 为您的课程添加内容实验</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../content_experiments/content_experiments_view.html">7.4. Test Content Experiments</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../cohorts/index.html">8. 建立学生队列</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../cohorts/cohorts_overview.html">8.1. 使用队列功能建立课程群</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cohorts/cohort_config.html">8.2. 启用、配置分队模式</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cohorts/cohorted_courseware.html">8.3. 创建特定队列课件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cohorts/cohorts_setup_discussions.html">8.4. 在包含队列的课程中设置论坛</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cohorts/cohorts_manage_discussions.html">8.5. 管理有学生队列的论坛</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../releasing_course/index.html">9. 发布您的课程</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../releasing_course/beta_testing.html">9.1. 贝塔测试</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../releasing_course/course_launching.html">9.2. 课程发布事宜</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../releasing_course/staff_debug_info.html">9.3. 员工调试信息</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../running_course/index.html">10. 运营您的课程</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/course_staffing.html">10.1. 安置职工</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/course_enrollment.html">10.2. 招生</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/discussions.html">10.3. 管理课程讨论项目</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/discussions_students.html">10.4. 参与课程讨论</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/discussion_guidance_moderators.html">10.5. 论坛协调员指南</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/bulk_email.html">10.6. Bulk Email</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/course_wiki.html">10.7. 使用课程维基</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/course_data.html">10.8. 课程数据</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/course_student.html">10.9. 学生数据</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/course_answers.html">10.10. 回答问题数据</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/course_grades.html">10.11. 学生成绩与成绩评定</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/checking_student_progress.html">10.12. 总成绩计算与证书发放</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../students/index.html">11. 学生相关信息</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../students/login_guide.html">11.1. 学生登录指南示例</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../students/math_students.html">11.2. 学生数学题回答格式化</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../students/ora_students.html">11.3. 学生开放回答评估</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../glossary.html">12. Glossary</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#a">12.1. A</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#c">12.2. C</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#d">12.3. D</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#e">12.4. E</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#f">12.5. F</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#g">12.6. G</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#h">12.7. H</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#i">12.8. I</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#k">12.9. K</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#l">12.10. L</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#m">12.11. M</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#n">12.12. N</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#o">12.13. O</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#p">12.14. P</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#q">12.15. Q</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#r">12.16. R</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#s">12.17. S</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#t">12.18. T</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#u">12.19. U</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#v">12.20. V</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#w">12.21. W</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#xyz">12.22. XYZ</a></li>
+</ul>
+</li>
+</ul>
+
+        
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top">
+        <i data-toggle="wy-nav-top" class="icon icon-reorder"></i>
+        <a href="/">Building and Running an edX Course</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <ul class="wy-breadcrumbs">
+  <li><a href="../index.html">Table of Contents</a> &raquo;</li>
+  <li><a href="">5.4. 创建问题组件</a></li>
+  
+</ul>
+<hr/>
+
+          
+  <div class="section" id="working-with-problem-components">
+<span id="id1"></span><h1>5.4. 创建问题组件<a class="headerlink" href="#working-with-problem-components" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="id2">
+<h2>5.4.1. 问题组件概况<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<p>问题组件允许您在您课程内容中添加互动式及自动评分的练习。
+您可以在Studio下创建不同类型的问题。</p>
+<p>通过默认设置，所有问题都会得分，但是不会计算学生的总分。
+若您想让这些问题计算学生的总分，修改保存问题的小节的作业类型。</p>
+<p>本章讲述的是问题组件的基础知识，即：您与学生所见的视图，每个问题组件的选项。欲知单个问题类型，请见 <a class="reference internal" href="../exercises_tools/create_exercises_and_tools.html#create-exercises"><span>创建练习和工具</span></a>.</p>
+<p>欲知更多信息，请浏览以下主题：</p>
+<ul class="simple">
+<li><a class="reference internal" href="#problem-student-view"><span>学生视图下的问题</span></a></li>
+<li><a class="reference internal" href="#problem-studio-view"><span>Studio中的问题视图</span></a></li>
+<li><a class="reference internal" href="#problem-settings"><span>问题设置</span></a></li>
+<li><a class="reference internal" href="#modifying-a-released-problem"><span>修改已发布的问题</span></a></li>
+<li><a class="reference internal" href="#additional-work-with-problems"><span>创建问题的其他情况</span></a></li>
+<li><a class="reference internal" href="#multiple-problems-in-one-component"><span>一个组件内的多个问题</span></a></li>
+<li><a class="reference internal" href="#problem-randomization"><span>问题随机化</span></a></li>
+</ul>
+</div>
+<div class="section" id="problem-student-view">
+<span id="id3"></span><h2>5.4.2. 学生视图下的问题<a class="headerlink" href="#problem-student-view" title="Permalink to this headline">¶</a></h2>
+<p>凡是出现在edX平台的所有问题均包含以下功能。</p>
+<img alt="Image of a problem from a student's point of view, with callouts for elements of the problem" src="../_images/AnatomyOfExercise1.png" />
+<ol class="arabic">
+<li><p class="first"><strong>问题文本</strong> 问题文本允许使用任何标准HTML格式。</p>
+</li>
+<li><p class="first"><strong>学生答案填写区域</strong> 学生在此区域输入答案。回答区域的样式随着问题类型而变化。</p>
+</li>
+<li><p class="first"><strong>提交答案</strong> 对于一些问题类型，Studio使用MathJax提交完美的数学公式。</p>
+</li>
+<li><p class="first"><strong>检查按钮</strong> T学生点击检查，查询上交的答案是否争取。若答案正确的话，则出现绿色的打勾符号。</p>
+</li>
+<li><p class="first"><strong>保存按钮</strong> 学生点击保存，保存的是正确的答案，而非提交。因此，学生可回头修改问题的答案。</p>
+</li>
+<li><p class="first"><strong>显示答案按钮</strong> 此按钮是可选择的。学生点击显示答案时，学生能看到正确答案（见上方第2点）和解题说明(见下方第10点）。教师可设置是否开放此功能。</p>
+</li>
+<li><p class="first"><strong>提交答案次数</strong> 教师可设定提交次数限定或不设定提交次数。
+默认情况下，整个课程中所有问题的 <strong>最多尝试次数</strong> 是空值，这表示提交答案次数是无限的。
+如果课程的 <strong>最多尝试次数</strong> 设定为一个特定的值，课程中的每个问题的尝试次数均为这个值，不能设为无限。</p>
+<img alt="Image of a problem from a student's point of view, with callouts for attempts and showing the answer" src="../_images/AnatomyOfExercise2.png" />
+</li>
+<li><p class="first"><strong>反馈</strong> 学生点击检查按钮后，所有问题都会显示绿色复选标记或红X。</p>
+<img alt="Image of feedback checkmark and x from a student's point of view" src="../_images/AnatomyofaProblem_Feedback.png" />
+</li>
+<li><p class="first"><strong>正确答案</strong> 大多数问题都需要教师指定一个唯一的正确答案。</p>
+</li>
+<li><p class="first"><strong>解析</strong> 教师可以添加一些解析。当学生点击 <strong>显示答案</strong> 按钮时，会显示相关解析。</p>
+</li>
+<li><p class="first"><strong>重置按钮</strong> 此按钮可以清除学生输入的内容，使问题保持原样。
+如果学生已经提交了答案，点击 <strong>重置按钮</strong> 清除已经提交的内容。
+如果问题包含随机变量且随机化设置为 <strong>重置</strong> ，问题中的值将改变。
+如果超过了最多尝试次数，重置按钮将不可见。
+not yet been submitted, and try again to answer the question. If the student</p>
+</li>
+<li><p class="first"><strong>隐藏答案按钮</strong></p>
+<img alt="A graded assignment shown in the left pane of the LMS for a course" src="../_images/AnatomyOfExercise3.png" />
+</li>
+<li><p class="first"><strong>分级</strong> 教师可以决定一组问题是否进行分级。如果一组问题要进行分级的话，课程作业栏就会出现一个钟表图标。</p>
+<img alt="../_images/clock_icon.png" src="../_images/clock_icon.png" />
+</li>
+<li><p class="first"><strong>到期日</strong> 问题是有期限的。过期的问题就不会有检查按钮了，也不能在进行回答或提供回馈了。</p>
+</li>
+</ol>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">问题可以打开或者关闭。关闭的问题没有检查按钮。
+学生仍然可以看见问题，答案和解析，但是不能查看他们自己做的答案，不能提交答案，也不能更改早期的分数。</p>
+</div>
+<p>还有一些题没有立即可见的属性，您可以在Studio中设置这些属性。</p>
+<ul class="simple">
+<li><strong>随机化</strong> 对于有些问题，教师可以决定是否采用随机生成的方式，这样每个学生的问题都会不同。</li>
+<li><strong>问题权重</strong> 在一组特定的问题中，不同问题权重也不同。</li>
+<li><strong>标签</strong> 为提高有困难的同学的可访问性，每一个问题都需要有一个描述性标签。
+这个标签通常包含部分或全部的问题文本。大部分的模板会留出标签的位置。您可以在每个题型或者工具类型的文件中找到示例标签。</li>
+</ul>
+</div>
+<div class="section" id="studio">
+<span id="problem-studio-view"></span><h2>5.4.3. Studio中的问题视图<a class="headerlink" href="#studio" title="Permalink to this headline">¶</a></h2>
+<p>所有的问题都以XML写成。但是，Studio有两个编辑问题的界面：简易编辑器和进阶编辑器。</p>
+<ul class="simple">
+<li>简易编辑器可以让您进行可视化编辑，不必使用XML。</li>
+<li>进阶编辑器将问题转换为edX的XML标准,您可以直接编辑XML。</li>
+</ul>
+<p>通过点击简易编辑器界面右上角的进阶编辑器按钮，您可以随时从简易编辑器切换到进阶编辑器。
+但是您不能从进阶编辑器切换到简易编辑器。</p>
+<div class="section" id="simple-editor">
+<span id="id4"></span><h3>5.4.3.1. 简易编辑器<a class="headerlink" href="#simple-editor" title="Permalink to this headline">¶</a></h3>
+<p>当您选择下列问题类型时，简易编辑器将开启并显示一个问题示例。</p>
+<ul class="simple">
+<li><a class="reference internal" href="../exercises_tools/checkbox.html#checkbox"><span>复选框问题</span></a>: 在复选框问题中，学生在列表答案中，选出一项或多项。</li>
+<li><a class="reference internal" href="../exercises_tools/dropdown.html#dropdown"><span>下拉问题</span></a>: 在下拉问题中，学生从下拉列表中选择一个答案。</li>
+<li><a class="reference internal" href="../exercises_tools/multiple_choice.html#multiple-choice"><span>多项选择问题</span></a>: 多项选择题要求学生直接从问题下的多个选项中选出一个答案</li>
+<li><a class="reference internal" href="../exercises_tools/numerical_input.html#numerical-input"><span>数值输入问题</span></a>: 数值输入题要求答案只能为整数，分数，普通常量和运算符。</li>
+<li><a class="reference internal" href="../exercises_tools/text_input.html#text-input"><span>文本输入问题</span></a>: 在文本输入题中，学生要输入简短文本来回答问题。</li>
+</ul>
+<p>下图显示的是简易编辑器中的多项选择题。</p>
+<img alt="The simple editor with numbered callouts for options and an example multiple choice problem to demonstrate the formatting." src="../_images/MultipleChoice_SimpleEditor.png" />
+<p>简单编辑器含有一个工具栏，可将您的问题文本格式化。当您选中文本，点击格式化按钮之后，简单编辑器就可自动将您的文本格式化。</p>
+<p>工具栏按钮如下：</p>
+<ol class="arabic">
+<li><p class="first">创建1级标题</p>
+</li>
+<li><p class="first">创建多个选项。</p>
+</li>
+<li><p class="first">创建复选框选项。</p>
+</li>
+<li><p class="first">创建文本输入选项。</p>
+</li>
+<li><p class="first">创建数值输入选项。</p>
+</li>
+<li><p class="first">创建下拉选项。</p>
+</li>
+<li><p class="first">创建解析，当学生点击显示答案时，就会显示相关解析。</p>
+</li>
+<li><p class="first">在进阶编辑器中打开问题。</p>
+</li>
+<li><p class="first">打开格式提示清单。</p>
+</li>
+<li><p class="first">通过可用标签来识别问题。工具栏选项不可用，但当您使用两对尖角括号指向文本时，
+前台将此文本显示为问题的可用标签。</p>
+<p>此外，edX Insights使用可用标签来确定每个项目中的问题。
+更多信息请参考 <a class="reference external" href="http://edx.readthedocs.org/projects/edx-insights/en/latest/">Using edX Insights</a>.</p>
+</li>
+</ol>
+</div>
+<div class="section" id="advanced-editor">
+<span id="id5"></span><h3>5.4.3.2. 进阶编辑器<a class="headerlink" href="#advanced-editor" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><strong>进阶编辑器</strong> 要用XML打开问题。问题模板包括拖拽，下拉和数学表达式，这些都可在进阶编辑器中直接打开。</div></blockquote>
+<p>下图显示的是进阶编辑器中打开的多项选择题。</p>
+<img alt="Image of a problem in the advanced editor" src="../_images/MultipleChoice_AdvancedEditor.png" />
+<p>以下问题模板可在进阶编辑器中打开。</p>
+<ul class="simple">
+<li><a class="reference internal" href="../exercises_tools/circuit_schematic_builder.html#circuit-schematic-builder"><span>电路原理图搭建问题</span></a> 在电路原理问题中,学生可以在一个交互式网格中创建和修改电路，并提交计算机生成的电路分析来进行分级</li>
+<li><a class="reference internal" href="../exercises_tools/custom_javascript.html#custom-javascript"><span>自定义JavaScript问题</span></a> 自定义JavaScript显示和分级问题,您可以通过IFrame将之前用HTML制作的题型并入到Studio中。</li>
+<li><a class="reference internal" href="../exercises_tools/drag_and_drop.html#drag-and-drop"><span>拖放问题</span></a> 拖放问题要求学生能够拖动文本或者将文本放到一张图像的指定位置。</li>
+<li><a class="reference internal" href="../exercises_tools/image_mapped_input.html#image-mapped-input"><span>图像映射输入问题</span></a> 图像映射输入问题要求学生能够点击一张图像上的指定位置。</li>
+<li><a class="reference internal" href="../exercises_tools/math_expression_input.html#math-expression-input"><span>数学表达式输入问题</span></a> 数学表达式输入问题还要求学生能够输入数学表达式的文本，如e=m*c^2。</li>
+<li><a class="reference internal" href="../exercises_tools/problem_with_hint.html#problem-with-adaptive-hint"><span>带适应性提示的问题</span></a> 这些问题会根据学生的答案给予学生一些回馈或提示。</li>
+<li><a class="reference internal" href="../exercises_tools/problem_in_latex.html#problem-written-in-latex"><span>LaTeX问题</span></a> 这类题型能够将您用LaTeX写好的问题转换为edX格式。注意这种题型仍然在试用中，未来可能不再支持这种题型。</li>
+<li><a class="reference internal" href="../exercises_tools/custom_python.html#write-your-own-grader"><span>自定义评分器问题</span></a> 自定义Python-评估输入（也被称作“自编分级”题型)能够通过您自己创建的嵌入式Python脚本来评估学生的答案。</li>
+</ul>
+</div>
+</div>
+<div class="section" id="problem-settings">
+<span id="id6"></span><h2>5.4.4. 问题设置<a class="headerlink" href="#problem-settings" title="Permalink to this headline">¶</a></h2>
+<p>除了问题的文本,您使用问题组件创建的问题包括以下设置。这些设置在组件编辑器中的设置选项卡中。</p>
+<ul class="simple">
+<li><a href="#id23"><span class="problematic" id="id24">`Display Name`_</span></a></li>
+<li><a href="#id25"><span class="problematic" id="id26">`Maximum Attempts`_</span></a></li>
+<li><a class="reference internal" href="#problem-weight">Problem Weight</a></li>
+<li><a class="reference internal" href="#randomization">Randomization</a></li>
+<li><a class="reference internal" href="#show-answer">Show Answer</a></li>
+<li><a class="reference internal" href="#show-reset-button">Show Reset Button</a></li>
+<li><a class="reference internal" href="#timer-between-attempts">Timer Between Attempts</a></li>
+</ul>
+<img alt="Image of the Settings tab in a Problem component" src="../_images/ProbComponent_Attributes.png" />
+<div class="section" id="id7">
+<h3>5.4.4.1. 显示名称<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h3>
+<p>此设置显示您问题的名称。问题名称将以问题标题的形式显示在LMS和页面上方的条状区域。</p>
+<img alt="Image of the problem in a unit page from a student's point of view" src="../_images/ProbComponent_LMS_DisplayName.png" />
+<p>此外，edX Insights 使用显示名称确定每个问题。
+唯一且描述准确的显示名将帮助您快速而准确地找到需要分析的问题。
+更多信息请参阅  <a class="reference external" href="http://edx.readthedocs.org/projects/edx-insights/en/latest/">Using edX Insights</a>.</p>
+</div>
+<div class="section" id="id8">
+<h3>5.4.4.2. 最多答题次数<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h3>
+<p>此设置规定学生最多可尝试回答问题次数。系统默认学生的回答次数不受限制。
+如果课程范围内的最多答题次数设置为一个特定值，每个问题的默认值也为此特定值，不能将独立问题的值设为无限。</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">将问题最多回答次数设置为1或者更多，问题才能出现在学生答题统计报告中，您可以在上课时下载该报告。</p>
+</div>
+</div>
+<div class="section" id="problem-weight">
+<span id="id9"></span><h3>5.4.4.3. 问题权重<a class="headerlink" href="#problem-weight" title="Permalink to this headline">¶</a></h3>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Studio可以保存所有问题的分数，但是只有这些分数属于某个小节，
+并且这个小节被设定成计分后，才会对学生的期末成绩造成影响。</p>
+</div>
+<p>这项设定可以规定问题的最大分值。问题的分值标在在问题题目后面。</p>
+<img alt="Image of a problem from a student's point of view, with the possible points circled" src="../_images/ProblemWeight_DD.png" />
+<p>系统默认，问题组件中的每一个应字段或者“答题框”都值1分。
+每一个问题组件都包含多个应字段。
+例如，上述问题组件包含一个下拉问题，这个下拉问题包含三个独立问题需要学生来回答，因此它有三个应字段。</p>
+<p>下面的问题组件包含一道文本输入题，就只有一个应字段。</p>
+<img alt="Image of a text input problem from a student's point of view" src="../_images/ProblemWeight_TI.png" />
+<div class="section" id="id10">
+<h4>5.4.4.3.1. 计算分数<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h4>
+<p>学生回答问题得分由以下公式计算得出：</p>
+<p><strong>分数=问题权重×（正确答案/输入总和）</strong></p>
+<ul class="simple">
+<li><strong>分数</strong> 指的是学生回答问题所得的分数。</li>
+<li><strong>问题权重</strong> 指的是回答这个问题所能获得的最高分数。</li>
+<li><strong>正确答案</strong> 指的是所有回答中正确答案的数量。</li>
+<li><strong>输入总和</strong> 指的是所有这个题组本身所拥有的问题数量总和。</li>
+</ul>
+<p><strong>范例</strong></p>
+<p>接下来是一些计算分数的例子。</p>
+<p><em>范例1</em></p>
+<p>一个问题的权重属性是空的。这个问题含两个应字段。因为有两个应字段，所以最大分值为2.0分。</p>
+<p>如果一个应字段中是正确答案，一个应字段是不正确答案，那么这个学生只能得到2分中的1.0分。</p>
+<p><em>范例2</em></p>
+<p>一个问题的权重属性为12，有三个字段。</p>
+<p>如果一个学生的答案包含2个正确答案和1个错误答案，那么他的分数就是12分中的8分。</p>
+<p><em>范例3</em></p>
+<p>一个问题的权重属性为2，有四个应字段。</p>
+<p>如果一个学生的答案包含1个正确答案和3个错误答案，那么他的分数就是2分中的0.5分。</p>
+</div>
+</div>
+<div class="section" id="randomization">
+<span id="id11"></span><h3>5.4.4.4. 随机化<a class="headerlink" href="#randomization" title="Permalink to this headline">¶</a></h3>
+<p>随机化设定可以决定是否要在每次学生看到问题的时候，将其中指定的内容随机化呈现。
+例如，每当一个学生提交了一个问题的答案时，后面的问题要随机改变。</p>
+<img alt="The same problem shown twice, with color highlighting on values that can change" src="../_images/Rerandomize.png" />
+<p>如果您想将问题的指定内容进行变更或者随机化呈现，您需要做到以下两点：</p>
+<ul class="simple">
+<li>确保您的问题包含一个Python脚本，能够将您想要的内容进行随机化处理。</li>
+<li>问题组件内部的随机化处理。</li>
+</ul>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">此随机化设置不同于问题随机化处理。随机化设置是在一个问题内部进行随机处理。
+而问题随机化是指将不同问题或者同一问题的不同版本分配给不同的学生。更多信息,请参见
+<a class="reference internal" href="#problem-randomization"><span>问题随机化</span></a> 。</p>
+</div>
+<p>置随机化，选择随机化设置选项。此设置含四个选项。</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="33%" />
+<col width="67%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><strong>总是</strong></td>
+<td>学生每次点击检查按钮之后，
+总会看到一个问题的不同版本。</td>
+</tr>
+<tr class="row-even"><td><strong>重置</strong></td>
+<td>学生每次点击重置按钮之后，
+总会看到一个问题的不同版本。</td>
+</tr>
+<tr class="row-odd"><td><strong>从不</strong></td>
+<td>所有学生都会看到问题的同一版本。
+此为系统默认。</td>
+</tr>
+<tr class="row-even"><td><strong>每个学生</strong></td>
+<td>学生个人每次查看，
+都会看到相同版本的问题，
+但此版本不同于其他学生查看的版本。</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">The edX Platform has a 20-seed limit for randomization.</p>
+</div>
+</div>
+<div class="section" id="show-answer">
+<span id="id12"></span><h3>5.4.4.5. 显示答案<a class="headerlink" href="#show-answer" title="Permalink to this headline">¶</a></h3>
+<p>此设置决定何时将答案显示给学生看。此设置含多个选项。</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="33%" />
+<col width="67%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><strong>总是</strong></td>
+<td>学生点击显示答案按钮时，显示答案。</td>
+</tr>
+<tr class="row-even"><td><strong>已回答</strong></td>
+<td>在学生回答问题之后显示答案。
+如果问题重置，答案在学生再次回答之
+前不可见。（学生回答问题之后，问题
+为已尝试和已回答状态。
+问题重置之后，问题将是尝试而未解答
+状态。）</td>
+</tr>
+<tr class="row-odd"><td><strong>已尝试</strong></td>
+<td>在学生尝试回答问题之后显示答案。
+如果问题重置，答案将持续显示。
+（当学生回答问题之后，问题为已尝试
+已回答状态。问题重置之后，问题将是
+尝试而未解答状态。）</td>
+</tr>
+<tr class="row-even"><td><strong>关闭</strong></td>
+<td>学生用完所有的回答问题限制次数或者
+问题过期时，显示答案。</td>
+</tr>
+<tr class="row-odd"><td><strong>完成</strong></td>
+<td>学生正确回答问题之后，学生用完限制
+回答的次数，或者问题过期，显示答案。</td>
+</tr>
+<tr class="row-even"><td><strong>正确或过期</strong></td>
+<td>学生正确回答问题之后，或者问题过期
+显示答案。</td>
+</tr>
+<tr class="row-odd"><td><strong>过期</strong></td>
+<td>问题过期时，显示答案。</td>
+</tr>
+<tr class="row-even"><td><strong>永不</strong></td>
+<td>永不显示答案。在这种情况下，显示答案
+按钮不会出现在Studio或者LMS的问题
+旁边。</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="show-reset-button">
+<span id="id13"></span><h3>5.4.4.6. 显示重置按钮<a class="headerlink" href="#show-reset-button" title="Permalink to this headline">¶</a></h3>
+<p>此设置决定 <strong>重置</strong> 按钮是否在问题中可见。
+学生可以通过点击 <strong>重置</strong> 清除任何未提交的内容，并再次尝试回答问题。
+如果学生已经提交了答案，点击 <strong>重置</strong> 将清空提交内容。
+如果问题中包含随机数和设为 <strong>重置</strong> 属性的随机生成器，随机数值将改变。
+如果最多尝试次数已超过，<strong>重置</strong> 按钮将不可见。</p>
+<p>此问题层级的设置将覆盖课程层级的 <strong>在问题中显示重置按钮</strong> 属性。</p>
+</div>
+<div class="section" id="timer-between-attempts">
+<span id="id14"></span><h3>5.4.4.7. 尝试时间间隔<a class="headerlink" href="#timer-between-attempts" title="Permalink to this headline">¶</a></h3>
+<p>此设定为学生在多次提交之间需要等待的秒数。
+如果值为0，学生在回答错误以后可以立即再次回答问题。</p>
+<p>添加等待时间可以防止学生猜测答案。</p>
+<p>如果学生在等待时间内再次尝试回答问题，她将看到以下信息：</p>
+<img alt="Problem with message that learner must wait before attempting again" src="../_images/problem_attempt_timer.png" />
+</div>
+</div>
+<div class="section" id="modifying-a-released-problem">
+<span id="id15"></span><h2>5.4.5. 修改已发布的问题<a class="headerlink" href="#modifying-a-released-problem" title="Permalink to this headline">¶</a></h2>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">当您已经发布问题之后，要做修改请务必格外小心！</p>
+</div>
+<p>当学生回答一个问题并提交后，Studio就会保存学生的答案，保存学生得到的分数以及这个问题的最高分。
+当学生重新提交答案时，Studio会对这些内容进行更新。
+然而，如果教师对问题或者其属性进行变更，Studio无法将学生之前回答的情况进行自动更新。</p>
+<p>例如，当您已经发布一个问题，并将答案设置为3。
+一些学生提交答案之后，您才发现答案不是3，而是2。
+您更改答案后，对于提交了正确答案2的学生，Studio无法更改他们的分数，因此他们的得分是错的。</p>
+<p>再举一个例子，您可能将一个问题的2个应字段改为3个应字段。
+那么之前提交答案的学生得出的分数可能是0,1或者2分。
+同一问题，修改之后提交答案的同学的分数则可能为0,1,2或者3分。</p>
+<p>但是，如果您修改了问题的权重属性，刷新进程页面后，现有的分数也会更新。.</p>
+<div class="section" id="id16">
+<h3>5.4.5.1. 工作区<a class="headerlink" href="#id16" title="Permalink to this headline">¶</a></h3>
+<p>如果您不得不修改一个已经发布的问题，而且会影响分数，有两种方法来解决。
+注意，这两种方法都需要您的学生重新回答问题并提交答案。</p>
+<ul class="simple">
+<li>在问题组件中，增加回答问题尝试次数，然后让学生重新答题。</li>
+<li>删除Studio中的整个问题组件，根据内容和设定，重新创建一个问题组件。
+然后让所有学生回答新的问题。</li>
+</ul>
+<p>更多关于如何回顾和调整学生成绩的内容请参阅
+<a class="reference internal" href="../running_course/course_grades.html#grades"><span>学生成绩与成绩评定</span></a>.</p>
+</div>
+</div>
+<div class="section" id="additional-work-with-problems">
+<span id="id17"></span><h2>5.4.6. 创建问题的其他情况<a class="headerlink" href="#additional-work-with-problems" title="Permalink to this headline">¶</a></h2>
+<p>当您创建问题时，可能会有多个选项。
+您可以在一个问题组件内设置多个问题，或者您可以将一个问题设置成不同学生做不同版本。</p>
+<div class="section" id="multiple-problems-in-one-component">
+<span id="id18"></span><h3>5.4.6.1. 一个组件内的多个问题<a class="headerlink" href="#multiple-problems-in-one-component" title="Permalink to this headline">¶</a></h3>
+<p>您可能会创建一个问题，问题答案不只一种。
+例如，您想创建一个数值输入的问题，然后创建这个数值输入问题的多个选项。
+或者，您想让学生一次查看多个问题的答案。
+设置这样的问题，您可以在一个组件内设置多个问题。这些问题可以是不同题型的。</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">您不能在含有多个问题的组件中使用 <a class="reference internal" href="../exercises_tools/custom_javascript.html#custom-javascript"><span>自定义JavaScript问题</span></a>
+每个custom JavaScript问题必须在一个单独的组件中。</p>
+</div>
+<p>为了在一个组件内建立多个问题，可以新建一个空的进阶问题组件，然后在组件编辑器中为每个问题添加XML。
+您只需将XML添加到问题和答案中即可。您不必为其它内容添加代码，比如检查按钮。</p>
+<p>检查按钮，显示答案按钮，及重置按钮还有您为问题组件选择的设置，适用于组件内的所有问题中。
+因此，如果您将尝试答题次数设置为3，那么学生则有三次机会来回答组件内的整套题，而不是组件内每道题都可以回答3次。
+如果学生点击检查，那么LMS就会马上计算本组件内所有问题的得分。
+如果学生点击显示答案，那么组件内所有问题的答案都会显示出来。</p>
+</div>
+<div class="section" id="problem-randomization">
+<span id="id19"></span><h3>5.4.6.2. 问题随机化<a class="headerlink" href="#problem-randomization" title="Permalink to this headline">¶</a></h3>
+<p>您可能想给不同学生出不同的题，或者同一问题使用不同版本。
+您可以用Studio为每个问题或同一问题的每个版本创建一个问题组件，然后对课程进行编辑，以使得学生查看问题时可以随机变化。</p>
+<p>请注意在Studio中，问题随机化与随机化设置是不同的。
+随机化设置是指一个问题内部的随机变化。
+问题随机化是让不同学生能查看不同问题或者同一问题的不同版本。</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">设置不同版本问题随机变化需要您将您的课程进行输出，
+在文本编辑器中编辑您课程中的XML文件，然后再将您的课程导入到Studio中。
+我们建议您操作之前，将您的课程进行备份。如果您对XML编辑不是很熟悉，我们建议您用文本编辑器编辑您的课程。</p>
+</div>
+<div class="section" id="id20">
+<h4>5.4.6.2.1. 术语<a class="headerlink" href="#id20" title="Permalink to this headline">¶</a></h4>
+<p>段，节，单元和组件在课程预览视图中与课程导出后文件列表中的名称不同，打开XML文件进行编辑的时候，这些名称也不同。</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td>课程预览视图</td>
+<td>文件列表</td>
+</tr>
+<tr class="row-even"><td>段</td>
+<td>章</td>
+</tr>
+<tr class="row-odd"><td>节</td>
+<td>横向</td>
+</tr>
+<tr class="row-even"><td>单元</td>
+<td>纵向</td>
+</tr>
+<tr class="row-odd"><td>组件</td>
+<td>讨论, HTML, 问题, 或视频</td>
+</tr>
+</tbody>
+</table>
+<p>例如，如果您想在您的课程里面找一个特定部分，您打开课程的文件列表，在章节文件夹中查找。要找某一章节，您就查找纵向文件夹。</p>
+</div>
+<div class="section" id="create-randomized-problems">
+<span id="id21"></span><h4>5.4.6.2.2. 设置随机化问题<a class="headerlink" href="#create-randomized-problems" title="Permalink to this headline">¶</a></h4>
+<ol class="arabic">
+<li><p class="first">在需要设置随机化问题的单元中，为每一个问题或者每一个问题版本创建一个单独的问题组件。
+例如，您想要做4个问题版本，您就要创建4个单独的问题组件。
+记录一个出现在单元位置的单元识别符字段的32位的单元ID。</p>
+</li>
+<li><p class="first">导出您的课程。相关信息，请查看
+<a class="reference internal" href="../building_course/export_import_course.html#exporting-and-importing-a-course"><span>输出和导入课程</span></a>。
+保存包含您您课程的记忆位置的.tar.gz文件，这样您就能很容易的找到它。</p>
+</li>
+<li><p class="first">在文件和文件夹列表中，打开纵向文件夹。</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">如果您这一单元还未发布，打开草稿文件夹，然后打开草稿中的纵向文件夹。</p>
+</div>
+</li>
+<li><p class="first">在纵向文件夹中，找到与您在第一步中标记的单元ID名称相同的.xml文件，
+在文本编辑器中打开该文件，比如Sublime 2。
+举个例子，如果这个单元ID是e461de7fe2b84ebeabe1a97683360d31，那么您就
+打开e461de7fe2b84ebeabe1a97683360d31.xml这个文件。</p>
+<p>这个文件包含了在这个单元所有的组件，以及这些组件在URL中的名称。
+例如，以下文件包含4个问题组件。</p>
+<div class="highlight-xml"><div class="highlight"><pre><span class="nt">&lt;vertical</span> <span class="na">display_name=</span><span class="s">&quot;Test Unit&quot;</span><span class="nt">&gt;</span>
+   <span class="nt">&lt;problem</span> <span class="na">url_name=</span><span class="s">&quot;d9d0ceb3ffc74eacb29501183e26ad6e&quot;</span><span class="nt">/&gt;</span>
+   <span class="nt">&lt;problem</span> <span class="na">url_name=</span><span class="s">&quot;ea66d875f4bf4a9898d8e6d2cc9f3d6f&quot;</span><span class="nt">/&gt;</span>
+   <span class="nt">&lt;problem</span> <span class="na">url_name=</span><span class="s">&quot;2616cd6324704f85bc315ec46521485d&quot;</span><span class="nt">/&gt;</span>
+   <span class="nt">&lt;problem</span> <span class="na">url_name=</span><span class="s">&quot;88987707294d4ff0ba3b86921438d0c0&quot;</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;/vertical&gt;</span>
+</pre></div>
+</div>
+</li>
+<li><p class="first">为您要进行随机化处理的问题组件添加&lt;随机化&gt; &lt;/随机化&gt;标签。</p>
+<div class="highlight-xml"><div class="highlight"><pre><span class="nt">&lt;vertical</span> <span class="na">display_name=</span><span class="s">&quot;Test Unit&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;randomize&gt;</span>
+     <span class="nt">&lt;problem</span> <span class="na">url_name=</span><span class="s">&quot;d9d0ceb3ffc74eacb29501183e26ad6e&quot;</span><span class="nt">/&gt;</span>
+     <span class="nt">&lt;problem</span> <span class="na">url_name=</span><span class="s">&quot;ea66d875f4bf4a9898d8e6d2cc9f3d6f&quot;</span><span class="nt">/&gt;</span>
+     <span class="nt">&lt;problem</span> <span class="na">url_name=</span><span class="s">&quot;2616cd6324704f85bc315ec46521485d&quot;</span><span class="nt">/&gt;</span>
+     <span class="nt">&lt;problem</span> <span class="na">url_name=</span><span class="s">&quot;88987707294d4ff0ba3b86921438d0c0&quot;</span><span class="nt">/&gt;</span>
+  <span class="nt">&lt;/randomize&gt;</span>
+<span class="nt">&lt;/vertical&gt;</span>
+</pre></div>
+</div>
+</li>
+<li><p class="first">添加&lt;随机化&gt; &lt;/随机化&gt;标签标签之后，保存并关闭.xml文件。</p>
+</li>
+<li><p class="first">重新将您的课程压缩为a .tar.gz文件。</p>
+<p>了解关于如何在Mac系统中操作的相关信息，请查看 &lt;<a class="reference external" href="http://osxdaily.com/2012/04/05/create-tar-gzip/">http://osxdaily.com/2012/04/05/create-tar-gzip/</a>&gt;`_.</p>
+<p>了解关于如何在windows系统操作的相关信息，
+请查看 &lt;<a class="reference external" href="http://stackoverflow.com/questions/12774707/how-to-make-a-tar-gz-on-windows">http://stackoverflow.com/questions/12774707/how-to-make-a-tar-gz-on-windows</a>&gt;`_.</p>
+</li>
+<li><p class="first">在Studio中，再次导入您的课程。</p>
+</li>
+</ol>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<ul class="last simple">
+<li>一旦您完成了随机化处理，您就只能在Studio中看到一个问题或者一个问题版本。
+您可以在Studio中，直接编辑单个问题，但是若要编辑其他问题，则须将课程进行导出，
+然后在文本编辑器中编辑您的课程。无论教师还是课程团队都要这样操作。</li>
+<li>学生答案生成的.csv文件包含了试题库中学生答的所有问题的答案。</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="section" id="adding-tooltips-to-a-problem">
+<span id="id22"></span><h3>5.4.6.3. 为问题添加提示框<a class="headerlink" href="#adding-tooltips-to-a-problem" title="Permalink to this headline">¶</a></h3>
+<p>您可以为问题添加内置提示框，这样当学生将光标移到提示框图标上，可以看到您为帮助他们理解问题所写的文字内容。</p>
+<p>例如，在以下问题中，学生将光标移动到提示框图标上，可以看到缩略词“ROI”的定义：</p>
+<img alt="An example of a tooltip from a learner's point of view." src="../_images/tooltip.png" />
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">对于使用屏幕阅读器的学生，当阅读器聚焦在提示框图标上时，提示框将展开并显示提示文字。</p>
+</div>
+<p>要添加提示框，您需要将您想让提示显示的文字内容装在 <code class="docutils literal"><span class="pre">clarification</span></code> 元件里。
+例如，以下问题包含两个提示框：</p>
+<div class="highlight-xml"><div class="highlight"><pre><span class="nt">&lt;problem&gt;</span>
+    <span class="nt">&lt;text&gt;</span>
+        <span class="nt">&lt;p&gt;</span>Given the data in Table 7 <span class="nt">&lt;clarification&gt;</span>Table 7: &quot;Example PV
+          Installation Costs&quot;, Page 171 of Roberts textbook<span class="nt">&lt;/clarification&gt;</span>,
+          compute the ROI <span class="nt">&lt;clarification&gt;&lt;strong&gt;</span>ROI<span class="nt">&lt;/strong&gt;</span>: Return on
+          Investment<span class="nt">&lt;/clarification&gt;</span> over 20 years.
+        <span class="nt">&lt;/p&gt;</span>
+     . . .
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+
+
+          <footer>
+  
+    <div class="rst-footer-buttons">
+      
+        <a href="libraries.html" class="btn btn-neutral float-right" title="5.5. Working with Content Libraries"/>Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="create_discussion.html" class="btn btn-neutral" title="5.3. 创建讨论组件"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <p>
+      &copy; Copyright 2015, edX.
+  </p>
+
+ 
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+</body>
+</html>

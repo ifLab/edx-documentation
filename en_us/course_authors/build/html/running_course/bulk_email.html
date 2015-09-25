@@ -1,0 +1,908 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>10.6. Bulk Email &mdash; Building and Running an edX Course  documentation</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="../_static/css/favicon.ico"/>
+  
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  
+  
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:'../',
+        VERSION:'',
+        COLLAPSE_INDEX:false,
+        FILE_SUFFIX:'.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+
+    
+
+  
+
+  
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+
+  
+    <link rel="top" title="Building and Running an edX Course  documentation" href="../index.html"/>
+        <link rel="up" title="10. 运营您的课程" href="index.html"/>
+        <link rel="next" title="10.7. 使用课程维基" href="course_wiki.html"/>
+        <link rel="prev" title="10.5. 论坛协调员指南" href="discussion_guidance_moderators.html"/> 
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-nav-search">
+        <a href="../index.html" class="icon icon-home"> Building and Running an edX Course</a>
+        <form class="wy-form" action="../search.html" method="get">
+  <input type="text" name="q" placeholder="Search document" />
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix">
+        
+        
+            <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../front_matter/index.html">1. 参考信息</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../front_matter/read_me.html">1.1. Read Me</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../front_matter/preface.html">1.2. 序言</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../front_matter/change_log.html">1.3. Change Log</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../front_matter/browsers.html">1.4. edX浏览器支持</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/index.html">2. 开始使用edX</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../getting_started/accounts.html">2.1. 开始使用edX</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../getting_started/dashboard_acctsettings_profile.html">2.2. 搜索你的仪表板、设置和配置文件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../getting_started/get_started.html">2.3. 开始了解Studio</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../getting_started/accessibility.html">2.4. 创建无障碍课程指南</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../building_course/index.html">3. 建立您的课程</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/creating_new_course.html">3.1. 新建课程</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/scheduling_course.html">3.2. 设置开始和结束日期</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/setting_up_student_view.html">3.3. 设置课程细节</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/licensing_course.html">3.4. 授权课程</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/course_files.html">3.5. 给课程添加文件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/handouts_updates.html">3.6. 添加课程补充资料及讲义</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/pages.html">3.7. 为课程添加页面</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/textbooks.html">3.8. 添加课本</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/establish_grading_policy.html">3.9. 设定计分政策</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/course_rerun.html">3.10. 重开课程</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/export_import_course.html">3.11. 输出和导入课程</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../developing_course/index.html">4. 开发您的课程</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/workflow.html">4.1. 开始创建课程内容</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/course_outline.html">4.2. 创建课程大纲</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/course_sections.html">4.3. 创建课程章节</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/course_subsections.html">4.4. 构建课程小节</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/course_units.html">4.5. 构建课程单元</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/course_components.html">4.6. 创建课程组件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/controlling_content_visibility.html">4.7. 设置内容可见性</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/testing_courseware.html">4.8. 测试您的课程内容</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../creating_content/index.html">5. 创建课程内容</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../creating_content/create_html_component.html">5.1. 如何使用HTML组件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../creating_content/create_video.html">5.2. 创建影片组件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../creating_content/create_discussion.html">5.3. 创建讨论组件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../creating_content/create_problem.html">5.4. 创建问题组件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../creating_content/libraries.html">5.5. Working with Content Libraries</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../exercises_tools/index.html">6. 创建习题和工具</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/create_exercises_and_tools.html">6.1. 创建练习和工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/annotation.html">6.2. 注释问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/checkbox.html">6.3. 复选框问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/chemical_equation.html">6.4. 化学方程式问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/circuit_schematic_builder.html">6.5. 电路原理图搭建问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/conditional_module.html">6.6. 条件模板</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/custom_javascript.html">6.7. 自定义JavaScript问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/drag_and_drop.html">6.8. 拖放问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/dropdown.html">6.9. 下拉问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/external_graders.html">6.10. 图像映射输入问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/full_screen_image.html">6.11. 全屏图像工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/gene_explorer.html">6.12. Gene Explorer工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/google_calendar.html">6.13. 谷歌日历工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/google_docs.html">6.14. 谷歌云文件工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/google_hangouts.html">6.15. 谷歌即时群聊工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/iframe.html">6.16. IFrame工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/image_mapped_input.html">6.17. 图像映射输入问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/lti_component.html">6.18. LTI 组件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/math_expression_input.html">6.19. 数学表达式输入问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/molecule_editor.html">6.20. 分子编辑器</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/molecule_viewer.html">6.21. 分子浏览器</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/multiple_choice.html">6.22. 多项选择问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/mult_choice_num_input.html">6.23. 多项选择和数字输入题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/numerical_input.html">6.24. 数值输入问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/open_response_assessments/index.html">6.25. 开放性回答评估</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/periodic_table.html">6.26. 元素周期表工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/poll.html">6.27. 投票工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/problem_with_hint.html">6.28. 带适应性提示的问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/problem_in_latex.html">6.29. LaTeX问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/protein_builder.html">6.30. Protex蛋白质构建工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/randomized_content_blocks.html">6.31. 随机内容块</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/recommenderXBlock.html">6.32. 推荐系统</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/text_input.html">6.33. 文本输入问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/word_cloud.html">6.34. 文字云工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/custom_python.html">6.35. 自定义评分器问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/zooming_image.html">6.36. 图像放大工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/mathjax.html">6.37. Studio中MathJax的简要介绍</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../content_experiments/index.html">7. 创建内容实验</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../content_experiments/content_experiments_overview.html">7.1. Overview of Content Experiments</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../content_experiments/content_experiments_configure.html">7.2. 配置带有内容实验的课程</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../content_experiments/content_experiments_add.html">7.3. 为您的课程添加内容实验</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../content_experiments/content_experiments_view.html">7.4. Test Content Experiments</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../cohorts/index.html">8. 建立学生队列</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../cohorts/cohorts_overview.html">8.1. 使用队列功能建立课程群</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cohorts/cohort_config.html">8.2. 启用、配置分队模式</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cohorts/cohorted_courseware.html">8.3. 创建特定队列课件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cohorts/cohorts_setup_discussions.html">8.4. 在包含队列的课程中设置论坛</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cohorts/cohorts_manage_discussions.html">8.5. 管理有学生队列的论坛</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../releasing_course/index.html">9. 发布您的课程</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../releasing_course/beta_testing.html">9.1. 贝塔测试</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../releasing_course/course_launching.html">9.2. 课程发布事宜</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../releasing_course/staff_debug_info.html">9.3. 员工调试信息</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">10. 运营您的课程</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="course_staffing.html">10.1. 安置职工</a></li>
+<li class="toctree-l2"><a class="reference internal" href="course_enrollment.html">10.2. 招生</a></li>
+<li class="toctree-l2"><a class="reference internal" href="discussions.html">10.3. 管理课程讨论项目</a></li>
+<li class="toctree-l2"><a class="reference internal" href="discussions_students.html">10.4. 参与课程讨论</a></li>
+<li class="toctree-l2"><a class="reference internal" href="discussion_guidance_moderators.html">10.5. 论坛协调员指南</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="">10.6. Bulk Email</a></li>
+<li class="toctree-l2"><a class="reference internal" href="course_wiki.html">10.7. 使用课程维基</a></li>
+<li class="toctree-l2"><a class="reference internal" href="course_data.html">10.8. 课程数据</a></li>
+<li class="toctree-l2"><a class="reference internal" href="course_student.html">10.9. 学生数据</a></li>
+<li class="toctree-l2"><a class="reference internal" href="course_answers.html">10.10. 回答问题数据</a></li>
+<li class="toctree-l2"><a class="reference internal" href="course_grades.html">10.11. 学生成绩与成绩评定</a></li>
+<li class="toctree-l2"><a class="reference internal" href="checking_student_progress.html">10.12. 总成绩计算与证书发放</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../students/index.html">11. 学生相关信息</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../students/login_guide.html">11.1. 学生登录指南示例</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../students/math_students.html">11.2. 学生数学题回答格式化</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../students/ora_students.html">11.3. 学生开放回答评估</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../glossary.html">12. Glossary</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#a">12.1. A</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#c">12.2. C</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#d">12.3. D</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#e">12.4. E</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#f">12.5. F</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#g">12.6. G</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#h">12.7. H</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#i">12.8. I</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#k">12.9. K</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#l">12.10. L</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#m">12.11. M</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#n">12.12. N</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#o">12.13. O</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#p">12.14. P</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#q">12.15. Q</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#r">12.16. R</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#s">12.17. S</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#t">12.18. T</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#u">12.19. U</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#v">12.20. V</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#w">12.21. W</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#xyz">12.22. XYZ</a></li>
+</ul>
+</li>
+</ul>
+
+        
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top">
+        <i data-toggle="wy-nav-top" class="icon icon-reorder"></i>
+        <a href="/">Building and Running an edX Course</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <ul class="wy-breadcrumbs">
+  <li><a href="../index.html">Table of Contents</a> &raquo;</li>
+  <li><a href="">10.6. Bulk Email</a></li>
+  
+</ul>
+<hr/>
+
+          
+  <div class="section" id="bulk-email">
+<span id="id1"></span><h1>10.6. Bulk Email<a class="headerlink" href="#bulk-email" title="Permalink to this headline">¶</a></h1>
+<p>For courses on edx.org, you can send bulk email messages to course participants
+directly from the Instructor Dashboard. Messages can use HTML styling, and can
+include links to videos, social media pages for the course, and other material.
+All course contributors who are assigned the course staff or instructor role
+can use bulk emails to communicate with course participants before, during, and
+after the course run.</p>
+<p>This chapter contains the following topics.</p>
+<ul class="simple">
+<li><a class="reference internal" href="#message-addressing">Message Addressing</a></li>
+<li><a class="reference internal" href="#send-email-messages-to-course-participants">Send Email Messages to Course Participants</a></li>
+<li><a class="reference internal" href="#use-keywords-in-messages">Use Keywords in Messages</a></li>
+<li><a class="reference internal" href="#message-workflow-states">Message Workflow States</a></li>
+<li><a class="reference internal" href="#review-sent-messages">Review Sent Messages</a></li>
+<li><a class="reference internal" href="#email-task-history-report">Email Task History Report</a></li>
+<li><a class="reference internal" href="#example-messages-to-students">Example Messages to Students</a></li>
+</ul>
+<div class="section" id="message-addressing">
+<h2>10.6.1. Message Addressing<a class="headerlink" href="#message-addressing" title="Permalink to this headline">¶</a></h2>
+<p>When you send an email message from the Instructor Dashboard, you choose its
+recipients by selecting one of these predefined groups:</p>
+<ul>
+<li><p class="first"><strong>Myself</strong>, to test out a message before sending it to a larger group.</p>
+</li>
+<li><p class="first"><strong>Staff and Instructors</strong>, to contact other members of the administrative
+team.</p>
+</li>
+<li><p class="first"><strong>All (students, staff and instructors)</strong>, to communicate with currently
+enrolled students and the administrative team.</p>
+<p>Email messages are sent to all enrolled students with these exceptions:</p>
+<ul class="simple">
+<li>Students who have not replied to the account activation email message
+that is sent when they registered on edx.org.</li>
+<li>Students who have opted out of receiving email messages through the <strong>Email
+Settings</strong> link, which is present for each course on the <strong>Current
+Courses</strong> dashboard.</li>
+</ul>
+</li>
+</ul>
+<p>Before you use the bulk email feature, consider that messages <strong>cannot be
+canceled</strong> after they are sent. If you plan to send a message to all course
+participants, be sure to review each draft carefully, and send the message to
+yourself first for thorough testing.</p>
+</div>
+<div class="section" id="send-email-messages-to-course-participants">
+<span id="send-bulk-email"></span><h2>10.6.2. Send Email Messages to Course Participants<a class="headerlink" href="#send-email-messages-to-course-participants" title="Permalink to this headline">¶</a></h2>
+<p>To send an email message to course participants:</p>
+<ol class="arabic simple">
+<li>View the live version of your course.</li>
+<li>Click <strong>Instructor</strong> then click <strong>Email</strong>.</li>
+<li>Select who you want to send the message to from the <strong>Send to</strong> drop-down
+list. You can select:</li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li><strong>Myself</strong></li>
+<li><strong>Staff and Instructors</strong></li>
+<li><strong>All (students, staff and instructors)</strong></li>
+</ul>
+</div></blockquote>
+<ol class="arabic" start="4">
+<li><p class="first">Enter a <strong>Subject</strong> for the message. A subject is required.</p>
+</li>
+<li><p class="first">Enter the text for the message. Message text is required.</p>
+<p>To include an image in your message, use the <strong>Files &amp; Uploads</strong> page in
+Studio to add the file to your course, then click the <strong>Insert/edit image</strong>
+icon. For more information, see <a class="reference internal" href="../building_course/course_files.html#add-files-to-a-course"><span>给课程添加文件</span></a>.</p>
+<p>Messages can use HTML styling, including text formatting and links. The
+email message editor offers the same formatting options as the HTML
+component editor in Studio. For more information, see <a class="reference internal" href="../creating_content/create_html_component.html#working-with-html-components"><span>如何使用HTML组件</span></a>.</p>
+<p>You can use keywords in messages, to have values that are specific to each
+recipient substituted in the content when messages are sent. For more
+information, see <a class="reference internal" href="#use-keywords-in-messages">Use Keywords in Messages</a> .</p>
+</li>
+<li><p class="first">Click <strong>Send Email</strong>. You can perform other tasks on the Instructor
+Dashboard or navigate to other pages while you wait for your message to be
+sent.</p>
+</li>
+</ol>
+<p>After you send a message, a bulk email task is queued for processing.
+Multiple courses use the same queue to complete these tasks, so it can take
+some time for your message to be sent to all of its recipients. If your course
+is a MOOC, consider limiting the number of messages that you send to all
+course participants to no more than one per week.</p>
+</div>
+<div class="section" id="use-keywords-in-messages">
+<span id="id2"></span><h2>10.6.3. Use Keywords in Messages<a class="headerlink" href="#use-keywords-in-messages" title="Permalink to this headline">¶</a></h2>
+<p>You can include keywords in your messages. A keyword is a variable: when you
+send the message, a value that is specific to the each recipient is substituted
+for the keyword. For example, when you use the <code class="docutils literal"><span class="pre">%%USER_FULLNAME%%</span></code> keyword,
+each message contains the name of the recipient.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Do not use keywords in the Subject line of a message. The keyword in the
+subject will not be assigned a value, and the recipient will see the keyword
+text.</p>
+</div>
+<div class="section" id="supported-keywords">
+<h3>10.6.3.1. Supported Keywords<a class="headerlink" href="#supported-keywords" title="Permalink to this headline">¶</a></h3>
+<p>You can use the following keywords in your messages.</p>
+<ul class="simple">
+<li><code class="docutils literal"><span class="pre">%%USER_ID%%</span></code> - the anonymous user ID of the message recipient</li>
+<li><code class="docutils literal"><span class="pre">%%USER_FULLNAME%%</span></code> - the full name of the message recipient</li>
+<li><code class="docutils literal"><span class="pre">%%COURSE_DISPLAY_NAME%%</span></code> - the display name of the course</li>
+<li><code class="docutils literal"><span class="pre">%%COURSE_END_DATE%%</span></code> - the end date of the course</li>
+</ul>
+</div>
+<div class="section" id="keyword-formatting">
+<h3>10.6.3.2. Keyword Formatting<a class="headerlink" href="#keyword-formatting" title="Permalink to this headline">¶</a></h3>
+<p>You format keywords as: <code class="docutils literal"><span class="pre">%%Keyword%%</span></code>.  You can include keywords in any HTML
+tags in an email message. For example:</p>
+<div class="highlight-python"><div class="highlight"><pre>&lt;h2&gt;%%COURSE_DISPLAY_NAME%% Updates&lt;/h2&gt;
+
+&lt;p&gt;Dear %%USER_FULLNAME%%, this is a reminder that the last day of the course
+   is &lt;b&gt;%%COURSE_END_DATE%%&lt;/b&gt;&lt;/p&gt;
+. . .
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="message-workflow-states">
+<span id="email-queuing"></span><h2>10.6.4. Message Workflow States<a class="headerlink" href="#message-workflow-states" title="Permalink to this headline">¶</a></h2>
+<p>When you click <strong>Send Email</strong> for a message, the server begins to process a
+bulk email task. The server assigns a series of different workflow states to
+the task.</p>
+<img alt="Flowchart of the possible states of a bulk email task" src="../_images/Bulk_email_states.png" />
+<p>The workflow states for a bulk email task are:</p>
+<ul class="simple">
+<li>Queuing: The bulk email task is created and being queued for background
+processing.</li>
+<li>Pending: The task is queued and is waiting to run.</li>
+<li>Started: Background processing is in progress to create emailing subtasks.</li>
+<li>Progress: The emailing subtasks are in progress.</li>
+<li>Success: All emailing subtasks are complete. Note that the bulk email task
+can be in this state even if some or all of its emailing subtasks failed.</li>
+<li>Failure: An error occurred and task processing did not complete successfully.</li>
+</ul>
+<p>While the bulk email task is in progress, you can find out how far it has
+gotten in the workflow by checking the <strong>Pending Instructor Tasks</strong> section on
+the <strong>Email</strong> page.</p>
+<img alt="Information about an email message, including who submitted it and when, in tabular format" src="../_images/Bulk_email_pending.png" />
+<p>When the bulk email task is complete, you can find its final state by checking
+the Email Task History report. See <a class="reference internal" href="#email-task-history-report"><span>Email Task History Report</span></a>.</p>
+</div>
+<div class="section" id="review-sent-messages">
+<span id="id3"></span><h2>10.6.5. Review Sent Messages<a class="headerlink" href="#review-sent-messages" title="Permalink to this headline">¶</a></h2>
+<p>You can review a list of all of the messages that have been sent for the
+course. For any listed message, you can review the subject, the username of the
+person who sent it, the date and time sent, its selected recipients, and the
+message text.</p>
+<ol class="arabic">
+<li><p class="first">View the live version of your course.</p>
+</li>
+<li><p class="first">Click <strong>Instructor</strong> then click <strong>Email</strong>.</p>
+</li>
+<li><p class="first">In the <strong>Email Task History</strong> section of the page, click <strong>Sent Email
+History</strong>. The list of sent messages displays.</p>
+<img alt="A tabular list of sent messages, with columns for subject, sent by, time sent, and number sent" src="../_images/Bulk_email_list.png" />
+</li>
+</ol>
+<ol class="arabic" start="4">
+<li><p class="first">To review additional information for a message, click its subject. The
+message opens in a dialog box.</p>
+<img alt="A dialog box with the subject, sent by, date and time sent, sent to, and message for an email message, and an option to Copy Email to Editor" src="../_images/Bulk_email_sent.png" />
+</li>
+<li><p class="first">Optionally, use the message as the basis for a new message: click <strong>Copy
+Email to Editor</strong>. The dialog box closes and you can edit the text, links,
+and formatting that were duplicated into the <strong>Subject</strong> and <strong>Message</strong>
+fields.</p>
+<p>When you create a message by copying a previously-sent message, be sure to
+review and test it thoroughly before you send it to all course participants.</p>
+</li>
+</ol>
+</div>
+<div class="section" id="email-task-history-report">
+<span id="id4"></span><h2>10.6.6. Email Task History Report<a class="headerlink" href="#email-task-history-report" title="Permalink to this headline">¶</a></h2>
+<p>The Email Task History report can help you keep track of who sent messages,
+when, and to how many people. For each message sent, the report includes the
+username of the requester, the date and time it was submitted, the duration and
+state of the entire task, the task status, and the task progress.</p>
+<p>You can use this history to investigate questions relating to bulk email
+messages that have been sent, such as:</p>
+<ul class="simple">
+<li>How frequently students are sent course-related email messages.</li>
+<li>Whether a message was sent successfully.</li>
+<li>The change in the number of people who were sent course-related messages over
+time.</li>
+</ul>
+<p>To produce the Email Task History report:</p>
+<ol class="arabic simple">
+<li>View the live version of your course.</li>
+<li>Click <strong>Instructor</strong> then click <strong>Email</strong>.</li>
+<li>In the <strong>Email Task History</strong> section of the page, click <strong>Show Email Task
+History</strong>. A report like the following example displays on the Instructor
+Dashboard.</li>
+</ol>
+<a class="reference internal image-reference" href="../_images/Bulk_email_history.png"><img alt="A tabular report with a row for each message sent and columns for requester, date and time submitted, duration, state, task status, and task progress." src="../_images/Bulk_email_history.png" style="width: 800px;" /></a>
+<div class="section" id="review-email-task-history">
+<h3>10.6.6.1. Review Email Task History<a class="headerlink" href="#review-email-task-history" title="Permalink to this headline">¶</a></h3>
+<p>For tasks with a <strong>State</strong> of Success, the <strong>Task Progress</strong> column shows an
+informational message. These messages can have a format such as &#8220;Message
+successfully emailed for 13457 recipients (skipping 29) (out of 13486)&#8221;. To
+interpret this message, note that:</p>
+<ul>
+<li><p class="first">The first number (&#8220;recipients&#8221;) indicates the number of messages sent to the
+selected recipients.</p>
+</li>
+<li><p class="first">The second number (&#8220;skipping&#8221;) indicates the number of enrolled and activated
+users who were not sent the message. This count is of students who have opted
+not to receive course email messages.</p>
+</li>
+<li><p class="first">The final number (&#8220;out of&#8221;) indicates the number of users in the set of
+recipients you selected who were enrolled in the course (and had activated
+their user accounts) when you sent the email message.</p>
+<p>Note that the <strong>Total number of enrollees</strong> shown on the <strong>Course Info</strong> page
+includes all currently enrolled students, regardless of account activation
+status, and as a result can be different than this number.</p>
+</li>
+</ul>
+<p>If the &#8220;recipients&#8221; and &#8220;out of&#8221; numbers are the same, the message reads
+&#8220;Message successfully emailed for 13457 recipients&#8221; instead.</p>
+<p>Other <strong>Task Progress</strong> messages for tasks with a <strong>State</strong> of Success indicate
+that some or all of the emailing subtasks did not successfully send email:</p>
+<ul class="simple">
+<li>&#8220;Message emailed for {number succeeded} of {number attempted} recipients&#8221;</li>
+<li>&#8220;Message failed to be emailed for any of {number attempted} recipients&#8221;</li>
+<li>&#8220;Unable to find any recipients to be emailed&#8221;</li>
+</ul>
+<p>No <strong>Task Progress</strong> messages display for tasks that have a <strong>State</strong> of
+Failure.</p>
+</div>
+</div>
+<div class="section" id="example-messages-to-students">
+<span id="id5"></span><h2>10.6.7. Example Messages to Students<a class="headerlink" href="#example-messages-to-students" title="Permalink to this headline">¶</a></h2>
+<p>You can use these example messages, prepared for delivery before typical course
+milestones, as models for your own course communications.</p>
+<ul class="simple">
+<li><a class="reference internal" href="#prelaunch-reminder">Prelaunch Reminder</a></li>
+<li><a class="reference internal" href="#launch-day-welcome">Launch Day Welcome</a></li>
+<li><a class="reference internal" href="#verified-registration-reminder">Verified Registration Reminder</a></li>
+<li><a class="reference internal" href="#weekly-highlights">Weekly Highlights</a></li>
+<li><a class="reference internal" href="#midcourse-encouragement">Midcourse Encouragement</a></li>
+<li><a class="reference internal" href="#midcourse-events">Midcourse Events</a></li>
+<li><a class="reference internal" href="#technical-issue">Technical Issue</a></li>
+<li><a class="reference internal" href="#course-farewell-and-certificates">Course Farewell and Certificates</a></li>
+<li><a class="reference internal" href="#new-course-run-announcement">New Course Run Announcement</a></li>
+</ul>
+<p>These messages are styled as email messages, but you could also post this
+information in a course discussion topic or on the <strong>Course Info</strong> page. To use
+<a class="reference internal" href="#use-keywords-in-messages"><span>keywords</span></a>, you must send email messages;
+keywords are not supported in discussion topics or the <strong>Course Info</strong> page.</p>
+<div class="admonition important">
+<p class="first admonition-title">Important</p>
+<p>Revise these message templates carefully to include facts for
+your own course, meet the needs of your students, and reflect your own
+objectives and personality. Search for the &#8220;{&#8221; and &#8220;}&#8221; characters to locate
+prompts and replace them with course-specific values.</p>
+<p class="last">Some of these messages also contain <a class="reference internal" href="#use-keywords-in-messages"><span>keywords</span></a>. Values specific to your course and the recipients will be
+substituted for the keywords when you send the messages. Ensure you are using
+keywords appropriately for your course and objectives.</p>
+</div>
+<div class="section" id="pre-launch-reminder">
+<span id="prelaunch-reminder"></span><h3>10.6.7.1. Pre-launch Reminder<a class="headerlink" href="#pre-launch-reminder" title="Permalink to this headline">¶</a></h3>
+<p>Pre-launch reminders raise awareness of the course start date, publicize the
+course, and generate excitement. In addition to the course start date and time,
+the example that follows also lets students know that:</p>
+<ul class="simple">
+<li>UTC is used in edX courses. Alternatively, you could include information
+about your course or the edX platform that will contribute to your students&#8217;
+success.</li>
+<li>The course has a companion social media site. Alternatively, you might
+include information about planned meetups or other community-building
+opportunities.</li>
+</ul>
+<p>You may want to send out more than one message before the course launches: use
+this template as a starting point for crafting the different messages you want
+to deliver. Replace values enclosed by {braces} with information that applies
+to your course. In addition, check that you are using <a class="reference internal" href="#use-keywords-in-messages"><span>keywords</span></a> appropriately.</p>
+<div class="highlight-python"><div class="highlight"><pre>Subject: {course number} Starts Soon!
+
+Hello %%USER_FULLNAME%%,
+
+We are excited that you are joining us for {course number}
+%%COURSE_DISPLAY_NAME%%, offered by {organization name} through edX. Class
+begins on {day}, {date} at {time} UTC (which is {time} {local time zone}).
+Note that edX courses use Coordinated Universal Time (UTC) for due dates and
+release times.
+
+In case you haven&#39;t already found it, {course number} has its own official
+Facebook page {add link}. You can find videos and photos posted there before
+the course even begins.
+
+If this is your first edX course, consider enrolling in the edX Demo course
+{add link}. This course gives you an opportunity to explore the edX platform
+and learn how to answer problems and track your progress, before {course
+number} begins.
+
+Your {course number} course staff
+</pre></div>
+</div>
+</div>
+<div class="section" id="launch-day-welcome">
+<span id="id6"></span><h3>10.6.7.2. Launch Day Welcome<a class="headerlink" href="#launch-day-welcome" title="Permalink to this headline">¶</a></h3>
+<p>On your course start date, you can send an email message that both welcomes
+students and gives them specific actions to accomplish. This example directs
+students to two of the course pages to encourage exploration and discovery, and
+personally introduces the course team leader. Search for the values enclosed by
+{braces} in this template and replace them with information for your course.</p>
+<div class="highlight-python"><div class="highlight"><pre>Subject: {course number} Starts Today!
+
+Hello everyone!
+
+At this time, edX course {course number} is available from your Dashboard
+{add link}, and the staff would like to officially welcome you to the course!
+You&#39;ll find materials for the first week on the Courseware page,
+including both video lectures and problem sets.
+
+Please take some time to go to the Course Info page to read the handouts
+and get familiar with course policies and philosophy.
+
+I will be your course lead and I hope you will all have a great time learning
+{subject}! It may be challenging, it may be frustrating, but it will be
+rewarding and you will learn a ton.
+
+On behalf of the staff, welcome, good luck, and have fun!
+
+{name} and the {course number} staff
+</pre></div>
+</div>
+</div>
+<div class="section" id="reminder-to-register-for-verified-certificate">
+<span id="verified-registration-reminder"></span><h3>10.6.7.3. Reminder to Register for Verified Certificate<a class="headerlink" href="#reminder-to-register-for-verified-certificate" title="Permalink to this headline">¶</a></h3>
+<p>After your course has launched, you can send an email to remind students that
+the last day to register for a verified certificate is approaching. You can use
+this template as a starting point for your own message; search for the values
+enclosed by {braces} and replace them with information for your course. In
+addition, check that you are using <a class="reference internal" href="#use-keywords-in-messages"><span>keywords</span></a>
+appropriately.</p>
+<div class="highlight-python"><div class="highlight"><pre>Subject: Earn an edX verified certificate for {course name}!
+
+Dear %%USER_FULLNAME%%,
+
+Interested in using an edX certificate to bolster a college application or to
+advance your career? With an edX verified certificate, you can demonstrate to
+colleges, employers, and colleagues that you successfully completed a
+challenging edX course, while helping to support the edX mission.
+
+We would like to remind you that {date} is the last day to register for a
+verified certificate in %%COURSE_DISPLAY_NAME%%. Registering for a
+certificate is easy! Just go to this course on your edX dashboard and click
+&quot;Challenge Yourself&quot;.
+
+Good luck!
+
+{name} and the {course number} staff
+</pre></div>
+</div>
+</div>
+<div class="section" id="weekly-highlights">
+<span id="id7"></span><h3>10.6.7.4. Weekly Highlights<a class="headerlink" href="#weekly-highlights" title="Permalink to this headline">¶</a></h3>
+<p>Sending a weekly email to students can be a great way to keep them engaged and
+provide encouragement. At the end of each week you might send students an email
+that summarizes the content covered, and reminds students about upcoming
+assessments or milestones in the course. Optionally, to encourage participation
+in the discussion forums, you might also highlight particularly interesting or
+important discussions, and provide links to the discussion topics.</p>
+<p>You can use this template as a starting point for designing your own message,
+omitting the discussion highlights if they are not appropriate for your course
+(the example discussion highlights are from a course about urban solutions to
+the global water crisis). Search for the values enclosed by {braces} and
+replace them with information for your course. In addition, check that you are
+using <a class="reference internal" href="#use-keywords-in-messages"><span>keywords</span></a> appropriately.</p>
+<div class="highlight-python"><div class="highlight"><pre>Subject: {Course Name} Week 1 Highlights
+
+We hope you all had a great week! Below, we have provided links to some
+exciting discussions that have been going on, and a Q&amp;A video with
+{Professor} that recaps some of the questions that have come up this week.
+
+We&#39;d also like to remind you to take this week&#39;s quiz by {date} at {time} UTC.
+The next module will be available on {Time and Date}.
+
+{Link to Video}
+
+Here are a few highlights from the discussion forum this week. Please join us
+online and keep the conversation going!
+
+* There has been quite a debate over whether urban stream restoration is
+  possible and what types of restoration are desirable. How can we improve
+  restoration practice and its outcomes? {Link to the Discussion}
+
+* Please continue to share your stories of urban stream restoration - there
+  are many great examples here of what is possible! {Link to the Discussion}
+
+See you next week,
+{name} and the {course number} staff
+</pre></div>
+</div>
+</div>
+<div class="section" id="mid-course-encouragement">
+<span id="midcourse-encouragement"></span><h3>10.6.7.5. Mid-Course Encouragement<a class="headerlink" href="#mid-course-encouragement" title="Permalink to this headline">¶</a></h3>
+<p>While your course is running, you can send messages to promote community,
+remind students of upcoming due dates, and address any recurring issues.</p>
+<p>This example gives students guidance on how to keep up with the course schedule
+and encourages contributions to the discussions. You may want to send out more
+than one message while the course is running. You can use this template as a
+starting point for your own messages; search for the values enclosed by
+{braces} and replace them with information for your course. In
+addition, check that you are using <a class="reference internal" href="#use-keywords-in-messages"><span>keywords</span></a>
+appropriately.</p>
+<div class="highlight-python"><div class="highlight"><pre>Subject: {course name} Announcements
+
+Dear students,
+
+We hope that you are learning a lot in {course number}! Remember that problem
+set {number} is due on {date} at {time} UTC. You can always check the
+schedule {add link} on the Course Info page to plan ahead.
+
+The contributions to the course discussions have been amazing. You&#39;ll also
+see on the Course Info page that we have made several of you community
+TAs to thank you for your thoughtful contributions. Keep those conversations
+going!
+
+We have a few additional announcements.
+
+* Week {number} on {subject} is now available on the Courseware page.
+
+* Problem set {number} is also available. It is due on {date} at {time} UTC.
+
+* Remember that the due dates for problem sets and exams are in UTC (the GMT
+  time zone). See the current UTC time here {add link}. Please convert the
+  times given to your own time zone!
+
+Wishing you continued success in the course,
+
+{name} and the {course number} staff
+</pre></div>
+</div>
+</div>
+<div class="section" id="mid-course-event">
+<span id="midcourse-events"></span><h3>10.6.7.6. Mid-Course Event<a class="headerlink" href="#mid-course-event" title="Permalink to this headline">¶</a></h3>
+<p>Before an exam or other significant course event, messages can provide
+practical information about the exam, communicate expectations regarding
+conduct, and also encourage students to continue working toward course
+completion. This example lets students know:</p>
+<ul class="simple">
+<li>How long they have to complete the exam, and when they can see answers to
+questions.</li>
+<li>How to communicate any errors or other issues found during the exam to the
+course staff.</li>
+<li>Whether the course discussions will be open or closed during the exam. (In
+the example that follows, the discussions will remain <strong>open</strong>.)</li>
+<li>What constitutes an honor code violation.</li>
+<li>What technical limitations, if any, are imposed by external tools such as
+graders.</li>
+</ul>
+<p>Be sure to search for the values enclosed by {braces} and replace them with
+information for your course. In addition, check that you are using
+<a class="reference internal" href="#use-keywords-in-messages"><span>keywords</span></a> appropriately.</p>
+<div class="highlight-python"><div class="highlight"><pre>Subject: {course number} Exam Info
+
+Hello %%USER_FULLNAME%%,
+
+Great job working through week {number}! As you know, the {course number}
+exam is next week. If you missed a problem set, you can still earn a
+certificate. Each problem set is worth only {number}% of the overall grade,
+but this exam is worth {number}%.
+
+Please read this important information about the exam before you begin taking
+it.
+
+* The exam starts on {date} at {time} UTC and must be finished by {date} at
+  {time} UTC. Plan your schedule accordingly.
+
+* Be sure that you know what time the UTC deadline is in your time zone. See
+  the current UTC time {add link}. No extensions will be given.
+
+* The exam is not timed. You can start, stop, and come back to it until the
+  deadline.
+
+* Each exam question allows only one answer submission. If you accidentally
+  click &quot;Check&quot;, that problem cannot be reset for you.
+
+* The exam covers everything (video lectures, reading, and problem sets) from
+  weeks {number}-{number}. If you missed any of these materials, you will
+  want to review them before you take the exam.
+
+* You can use the textbook and the Internet to clarify your knowledge of exam
+  topics, as long as you are not deliberately looking up answers to exam
+  questions.
+
+* Course discussions will remain open during the exam, but anyone who posts
+  an answer to an exam question will be violating the honor code and risk
+  being removed from the class, forfeiting the certificate.
+
+* If you need to alert the staff to an issue with the exam while the exam is
+  open, add a post to the General discussion topic and include [EXAM] in
+  the subject line.
+
+* Check the Course Info page periodically. It is the fastest way the
+  staff has to communicate any delays, corrections, or changes.
+
+Good luck!
+
+{name} and the {course number} staff
+</pre></div>
+</div>
+</div>
+<div class="section" id="technical-issue">
+<span id="id8"></span><h3>10.6.7.7. Technical Issue<a class="headerlink" href="#technical-issue" title="Permalink to this headline">¶</a></h3>
+<p>In the event of an unanticipated system failure, a message can both alert
+students to the problem and reassure them that the issue is either resolved or
+being addressed. The message can also provide information about any changes
+made to the course as a result.</p>
+<p>Technical issues can arise during a course for many different reasons, so this
+example is likely to need revision to apply to an issue that you encounter.
+Keep in mind that to reassure the students who are affected by the problem, the
+message should have a positive tone, and calmly and briefly identify the
+problem, the status of its solution, and any after effects.</p>
+<div class="highlight-python"><div class="highlight"><pre>Dear students,
+
+We&#39;ve encountered a technical problem with {video, assignment, etc. name}.
+{We are working to resolve it now. / This issue has been fixed.}
+
+As a result of this issue, we have {extended the deadline for / rescored}
+this assignment so that it will not affect your grade.
+
+Thanks for your patience, and we look forward to continuing the course with
+you.
+
+{name} and the {course number} staff
+</pre></div>
+</div>
+</div>
+<div class="section" id="course-farewell-and-certificates">
+<span id="id9"></span><h3>10.6.7.8. Course Farewell and Certificates<a class="headerlink" href="#course-farewell-and-certificates" title="Permalink to this headline">¶</a></h3>
+<p>In the last few days before your course ends, a message can direct students to
+a course survey, answer questions about certificates, and provide information
+about future access to course materials. Be sure to replace values enclosed by
+{braces} with information for your course.</p>
+<div class="highlight-python"><div class="highlight"><pre>Subject: {course number} Final Remarks
+
+Dear %%USER_FULLNAME%%,
+
+Thank you for making %%COURSE_DISPLAY_NAME%% so much fun these last few
+months! We had a great time getting to know you through the course
+discussions. We appreciate the effort that you put into this course, and we
+hope that you enjoyed learning {subject} through edX. With or without a
+certificate, you should be proud of your accomplishments.
+
+* Please take a few minutes to answer the exit survey, now available under
+  Courseware. We will use your responses to improve the course in the future.
+
+* If you qualify for a certificate (overall score {number}% or higher), the
+  edX dashboard will include a link to your certificate in the near future.
+  While you may see the link in a few days, it can take up to two weeks edX
+  to generate all of the course certificates.
+
+* As an enrolled student, you will have access to the lecture videos even
+  after the course ends. The problem sets and exams will be removed from the
+  course when it is archived.
+
+* The {course number} discussions close on {date} at {time} UTC. You will not
+  be able to add to the discussions after that time, but you will be able to
+  continue viewing all of the conversations that took place during the
+  course.
+
+We hope that you share what you learned in {course number} with your
+colleagues, friends, and family.
+
+Good luck on the final exam and beyond!
+
+{name} and the {course number} staff
+</pre></div>
+</div>
+</div>
+<div class="section" id="new-course-run-announcement">
+<span id="id10"></span><h3>10.6.7.9. New Course Run Announcement<a class="headerlink" href="#new-course-run-announcement" title="Permalink to this headline">¶</a></h3>
+<p>When you prepare a course for a new run, you can use the bulk email feature in
+its previous run (or runs) to inform an engaged and knowledgeable audience:
+your former students. Announcing a new run to students of an earlier run gives
+you the opportunity to highlight key aspects of the course, such as the quality
+and variety of its discussions, or the global interest and relevance of the
+subject, as demonstrated by past enrollment. You can also reveal new features
+or content that have been added to the new course run. By emphasizing the
+value of the course, you get people thinking and talking about their
+experiences, build excitement, and encourage re-enrollment.</p>
+<p>This message template offers students who did not complete the course, or who
+did not previously choose the verified certificate track, the opportunity to do
+so. It also invites students to share the course with colleagues and and
+friends.</p>
+<p>When preparing a message from this template, search for values enclosed by
+{braces} and replace them with information that applies to your course.</p>
+<div class="highlight-python"><div class="highlight"><pre>Subject: Announcing a new run of {course name}
+
+Hello {course number} learners,
+
+The next run of {course number} {course name} begins on {date}! We are glad
+to share this news with you, the students who made the earlier run{s} of
+{course number} so successful.
+
+{Success story from the previous run.}
+
+{New content or features for the upcoming run.}
+
+Perhaps you want to share the {course name} experience with a friend or
+colleague, earn an ID-verified certificate of achievement, or work through
+course content that you weren&#39;t able to complete before. When {course number}
+is offered in {time frame}, we welcome you to join the community of learners
+again.
+
+To learn more and to enroll, visit the {course name} page {add link}.
+
+We hope to see you in the course,
+
+The {course number} Staff
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+
+
+          <footer>
+  
+    <div class="rst-footer-buttons">
+      
+        <a href="course_wiki.html" class="btn btn-neutral float-right" title="10.7. 使用课程维基"/>Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="discussion_guidance_moderators.html" class="btn btn-neutral" title="10.5. 论坛协调员指南"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <p>
+      &copy; Copyright 2015, edX.
+  </p>
+
+ 
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+</body>
+</html>

@@ -1,0 +1,488 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>10.10. 回答问题数据 &mdash; Building and Running an edX Course  documentation</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="../_static/css/favicon.ico"/>
+  
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  
+  
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:'../',
+        VERSION:'',
+        COLLAPSE_INDEX:false,
+        FILE_SUFFIX:'.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+
+    
+
+  
+
+  
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+
+  
+    <link rel="top" title="Building and Running an edX Course  documentation" href="../index.html"/>
+        <link rel="up" title="10. 运营您的课程" href="index.html"/>
+        <link rel="next" title="10.11. 学生成绩与成绩评定" href="course_grades.html"/>
+        <link rel="prev" title="10.9. 学生数据" href="course_student.html"/> 
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-nav-search">
+        <a href="../index.html" class="icon icon-home"> Building and Running an edX Course</a>
+        <form class="wy-form" action="../search.html" method="get">
+  <input type="text" name="q" placeholder="Search document" />
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix">
+        
+        
+            <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../front_matter/index.html">1. 参考信息</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../front_matter/read_me.html">1.1. Read Me</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../front_matter/preface.html">1.2. 序言</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../front_matter/change_log.html">1.3. Change Log</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../front_matter/browsers.html">1.4. edX浏览器支持</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/index.html">2. 开始使用edX</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../getting_started/accounts.html">2.1. 开始使用edX</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../getting_started/dashboard_acctsettings_profile.html">2.2. 搜索你的仪表板、设置和配置文件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../getting_started/get_started.html">2.3. 开始了解Studio</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../getting_started/accessibility.html">2.4. 创建无障碍课程指南</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../building_course/index.html">3. 建立您的课程</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/creating_new_course.html">3.1. 新建课程</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/scheduling_course.html">3.2. 设置开始和结束日期</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/setting_up_student_view.html">3.3. 设置课程细节</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/licensing_course.html">3.4. 授权课程</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/course_files.html">3.5. 给课程添加文件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/handouts_updates.html">3.6. 添加课程补充资料及讲义</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/pages.html">3.7. 为课程添加页面</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/textbooks.html">3.8. 添加课本</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/establish_grading_policy.html">3.9. 设定计分政策</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/course_rerun.html">3.10. 重开课程</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/export_import_course.html">3.11. 输出和导入课程</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../developing_course/index.html">4. 开发您的课程</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/workflow.html">4.1. 开始创建课程内容</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/course_outline.html">4.2. 创建课程大纲</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/course_sections.html">4.3. 创建课程章节</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/course_subsections.html">4.4. 构建课程小节</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/course_units.html">4.5. 构建课程单元</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/course_components.html">4.6. 创建课程组件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/controlling_content_visibility.html">4.7. 设置内容可见性</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/testing_courseware.html">4.8. 测试您的课程内容</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../creating_content/index.html">5. 创建课程内容</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../creating_content/create_html_component.html">5.1. 如何使用HTML组件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../creating_content/create_video.html">5.2. 创建影片组件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../creating_content/create_discussion.html">5.3. 创建讨论组件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../creating_content/create_problem.html">5.4. 创建问题组件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../creating_content/libraries.html">5.5. Working with Content Libraries</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../exercises_tools/index.html">6. 创建习题和工具</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/create_exercises_and_tools.html">6.1. 创建练习和工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/annotation.html">6.2. 注释问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/checkbox.html">6.3. 复选框问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/chemical_equation.html">6.4. 化学方程式问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/circuit_schematic_builder.html">6.5. 电路原理图搭建问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/conditional_module.html">6.6. 条件模板</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/custom_javascript.html">6.7. 自定义JavaScript问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/drag_and_drop.html">6.8. 拖放问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/dropdown.html">6.9. 下拉问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/external_graders.html">6.10. 图像映射输入问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/full_screen_image.html">6.11. 全屏图像工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/gene_explorer.html">6.12. Gene Explorer工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/google_calendar.html">6.13. 谷歌日历工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/google_docs.html">6.14. 谷歌云文件工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/google_hangouts.html">6.15. 谷歌即时群聊工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/iframe.html">6.16. IFrame工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/image_mapped_input.html">6.17. 图像映射输入问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/lti_component.html">6.18. LTI 组件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/math_expression_input.html">6.19. 数学表达式输入问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/molecule_editor.html">6.20. 分子编辑器</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/molecule_viewer.html">6.21. 分子浏览器</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/multiple_choice.html">6.22. 多项选择问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/mult_choice_num_input.html">6.23. 多项选择和数字输入题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/numerical_input.html">6.24. 数值输入问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/open_response_assessments/index.html">6.25. 开放性回答评估</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/periodic_table.html">6.26. 元素周期表工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/poll.html">6.27. 投票工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/problem_with_hint.html">6.28. 带适应性提示的问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/problem_in_latex.html">6.29. LaTeX问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/protein_builder.html">6.30. Protex蛋白质构建工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/randomized_content_blocks.html">6.31. 随机内容块</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/recommenderXBlock.html">6.32. 推荐系统</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/text_input.html">6.33. 文本输入问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/word_cloud.html">6.34. 文字云工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/custom_python.html">6.35. 自定义评分器问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/zooming_image.html">6.36. 图像放大工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/mathjax.html">6.37. Studio中MathJax的简要介绍</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../content_experiments/index.html">7. 创建内容实验</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../content_experiments/content_experiments_overview.html">7.1. Overview of Content Experiments</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../content_experiments/content_experiments_configure.html">7.2. 配置带有内容实验的课程</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../content_experiments/content_experiments_add.html">7.3. 为您的课程添加内容实验</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../content_experiments/content_experiments_view.html">7.4. Test Content Experiments</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../cohorts/index.html">8. 建立学生队列</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../cohorts/cohorts_overview.html">8.1. 使用队列功能建立课程群</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cohorts/cohort_config.html">8.2. 启用、配置分队模式</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cohorts/cohorted_courseware.html">8.3. 创建特定队列课件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cohorts/cohorts_setup_discussions.html">8.4. 在包含队列的课程中设置论坛</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cohorts/cohorts_manage_discussions.html">8.5. 管理有学生队列的论坛</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../releasing_course/index.html">9. 发布您的课程</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../releasing_course/beta_testing.html">9.1. 贝塔测试</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../releasing_course/course_launching.html">9.2. 课程发布事宜</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../releasing_course/staff_debug_info.html">9.3. 员工调试信息</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">10. 运营您的课程</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="course_staffing.html">10.1. 安置职工</a></li>
+<li class="toctree-l2"><a class="reference internal" href="course_enrollment.html">10.2. 招生</a></li>
+<li class="toctree-l2"><a class="reference internal" href="discussions.html">10.3. 管理课程讨论项目</a></li>
+<li class="toctree-l2"><a class="reference internal" href="discussions_students.html">10.4. 参与课程讨论</a></li>
+<li class="toctree-l2"><a class="reference internal" href="discussion_guidance_moderators.html">10.5. 论坛协调员指南</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bulk_email.html">10.6. Bulk Email</a></li>
+<li class="toctree-l2"><a class="reference internal" href="course_wiki.html">10.7. 使用课程维基</a></li>
+<li class="toctree-l2"><a class="reference internal" href="course_data.html">10.8. 课程数据</a></li>
+<li class="toctree-l2"><a class="reference internal" href="course_student.html">10.9. 学生数据</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="">10.10. 回答问题数据</a></li>
+<li class="toctree-l2"><a class="reference internal" href="course_grades.html">10.11. 学生成绩与成绩评定</a></li>
+<li class="toctree-l2"><a class="reference internal" href="checking_student_progress.html">10.12. 总成绩计算与证书发放</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../students/index.html">11. 学生相关信息</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../students/login_guide.html">11.1. 学生登录指南示例</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../students/math_students.html">11.2. 学生数学题回答格式化</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../students/ora_students.html">11.3. 学生开放回答评估</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../glossary.html">12. Glossary</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#a">12.1. A</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#c">12.2. C</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#d">12.3. D</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#e">12.4. E</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#f">12.5. F</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#g">12.6. G</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#h">12.7. H</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#i">12.8. I</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#k">12.9. K</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#l">12.10. L</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#m">12.11. M</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#n">12.12. N</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#o">12.13. O</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#p">12.14. P</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#q">12.15. Q</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#r">12.16. R</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#s">12.17. S</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#t">12.18. T</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#u">12.19. U</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#v">12.20. V</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#w">12.21. W</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#xyz">12.22. XYZ</a></li>
+</ul>
+</li>
+</ul>
+
+        
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top">
+        <i data-toggle="wy-nav-top" class="icon icon-reorder"></i>
+        <a href="/">Building and Running an edX Course</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <ul class="wy-breadcrumbs">
+  <li><a href="../index.html">Table of Contents</a> &raquo;</li>
+  <li><a href="">10.10. 回答问题数据</a></li>
+  
+</ul>
+<hr/>
+
+          
+  <div class="section" id="review-answers">
+<span id="id1"></span><h1>10.10. 回答问题数据<a class="headerlink" href="#review-answers" title="Permalink to this headline">¶</a></h1>
+<p>您可以查阅某个学生对于某个问题提交的答案、下载课程范围内的答题数据报告，或查阅某个问题的答案立方图。</p>
+<ul class="simple">
+<li><a class="reference internal" href="#student-answer-submission"><span>查看某个学生的答案及答题历史记录</span></a></li>
+<li><a class="reference internal" href="#student-answer-distribution"><span>学生答题分布</span></a></li>
+<li><a class="reference internal" href="#score-histogram"><span>查看某个问题的得分立方图</span></a></li>
+</ul>
+<p>学生回答问题数据包括图表和报告，这些在edX Insights中同样可用。
+更多信息请参阅 <a class="reference external" href="http://edx-insights.readthedocs.org/en/latest/">Using edX Insights</a>.</p>
+<div class="section" id="student-answer-submission">
+<span id="id2"></span><h2>10.10.1. 查看某个学生的答案及答题历史记录<a class="headerlink" href="#student-answer-submission" title="Permalink to this headline">¶</a></h2>
+<p>您可以查看某个学生关于某道题目提交的具体回答内容、回答正确需要尝试的次数，
+以及答案提交日期、时间。您可通过用户名锁定学生。</p>
+<p>如何查看学生提交的内容：</p>
+<ol class="arabic simple">
+<li>查看课程现况</li>
+<li>单击“课件”，导航至包含该问题的课程单元</li>
+<li>查看问题，单击问题下方的“提交历史记录”</li>
+<li>输入您想查看学生的用户名，单击页面底部的“查看历史记录”，即出现该生回答问题的信息</li>
+</ol>
+<p>随便单击查看窗口外的页面即可关闭窗口。</p>
+</div>
+<div class="section" id="student-answer-distribution">
+<span id="id3"></span><h2>10.10.2. 学生答题分布<a class="headerlink" href="#student-answer-distribution" title="Permalink to this headline">¶</a></h2>
+<p>您可下载学生答题分布数据的CSV文件。文件中显示的答题类型包括以下几类：</p>
+<ul class="simple">
+<li>多项选择 (<code class="docutils literal"><span class="pre">&lt;choiceresponse&gt;</span></code>)</li>
+<li>下拉列表选择 (<code class="docutils literal"><span class="pre">&lt;optionresponse&gt;</span></code>)</li>
+<li>单项选择 (<code class="docutils literal"><span class="pre">&lt;multiplechoiceresponse&gt;</span></code>)</li>
+<li>数字输入 (<code class="docutils literal"><span class="pre">&lt;numericalresponse&gt;</span></code>)</li>
+<li>文本输入 (<code class="docutils literal"><span class="pre">&lt;stringresponse&gt;</span></code>)</li>
+<li>数学表达式输入 (<code class="docutils literal"><span class="pre">&lt;formularesponse&gt;</span></code>)</li>
+</ul>
+<p>该文件中，有一行显示的是您学生选择的所有“问题-答案”配对。
+例如，一道问题出现了五种意见不同的答案，则文件中会显示五行，
+每一行至少代表一名学生的观点。如果您在Studio中设置了带有“随机选择”功能的问题，
+则会另外再开一行。详见 <a class="reference internal" href="../creating_content/create_problem.html#problem-settings"><span>问题设置</span></a>.</p>
+<p>CSV文件包含以下几列：</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="25%" />
+<col width="75%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">列</th>
+<th class="head">描述</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>模块ID</td>
+<td>即提问模块的永久ID</td>
+</tr>
+<tr class="row-odd"><td>部分ID</td>
+<td>如果提问模块包含多个问题，每个问题都有自己的永久ID。
+如果提问模块只包含一个问题，则该值与模块ID相同。</td>
+</tr>
+<tr class="row-even"><td>正确回答</td>
+<td><strong>答案值</strong> 不正确则为0，正确则为1</td>
+</tr>
+<tr class="row-odd"><td>回答次数</td>
+<td>即学生最近提交某个答案的次数。
+假设本值为X，如果某个问题的 <strong>尝试</strong> 值大于1，
+则每个学生回答该答案的最大次数应在1~X之间，
+哪怕该答案已被尝试多次。</td>
+</tr>
+<tr class="row-even"><td>值ID</td>
+<td>即单选、多选题中每个选项的永久ID。
+其他提醒则本值为空。</td>
+</tr>
+<tr class="row-odd"><td>答案值</td>
+<td>即多选、下拉列表选择、单选题选项的文本标签，
+以及数字输入、文本输入、表达式输入的值。</td>
+</tr>
+<tr class="row-even"><td>多样化</td>
+<td>对于设置了“随机选择”的题目，每道题目的变体均有一个“变体”ID。
+没有设置“随机选择”的题目则本值为空。即某道问题的显示名</td>
+</tr>
+<tr class="row-odd"><td>题目显示名</td>
+<td>即选项或文本输入字段上方的问题可访问性标签。</td>
+</tr>
+<tr class="row-even"><td>提问</td>
+<td>在Studio的“简易编辑器”中，该文本通常用两对角括号表示（&gt;&gt;问题&lt;&lt;）。
+没有设置访问性标签的问题则本值为空。</td>
+</tr>
+</tbody>
+</table>
+<p>输入的值按照分类从左到右排列。</p>
+<div class="section" id="download-answer-distributions">
+<span id="id4"></span><h3>10.10.2.1. 下载学生答题分布报告<a class="headerlink" href="#download-answer-distributions" title="Permalink to this headline">¶</a></h3>
+<p>edX服务器会定期自动更新学生答题数据的CSV文件。
+教师面板中可以查看最新版本的CSV文件链接。</p>
+<p>如何下载最新的学生答题数据文件：</p>
+<ol class="arabic simple">
+<li>查看课程现况</li>
+<li>单击“导师”→“数据下载”</li>
+<li>将滚动条拖至页面底部，单击 <code class="docutils literal"><span class="pre">{course_id}_answer_distribution.csv</span></code>
+文件名</li>
+</ol>
+</div>
+<div class="section" id="id5">
+<h3>10.10.2.2. 关于学生答题分布报告的常见问题<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h3>
+<p>以下是一些关于学生答题分布报告的解答。</p>
+<p><strong>我的课程没有学生答题分布报告，要怎么生成？</strong></p>
+<p>学生答题分布报告是自动生成的，每隔几天会自动更新。 <code class="docutils literal"><span class="pre">{course_id}_answer_distribution.csv</span></code>
+文件位于所有 <code class="docutils literal"><span class="pre">{course_id}_grade_report_{date}.csv</span></code> 文件后面。请一定将滚动条拖到最底部。</p>
+<p><strong>为什么报告里漏掉了几道题目？漏掉的题目属于</strong> <a class="reference internal" href="#review-answers"><span>回答问题数据</span></a> <strong>一节中列出来的题目类型。</strong></p>
+<p>本报告中的问题为2013年十月份至2014年三月份之前的问题，且至少要有一名学生回答。</p>
+<p><strong>为什么有些问题看不见“答案值”？</strong></p>
+<p>对于单选、多选题而言，只有2014年三月初之后选择的选项才有“答案值”。
+2013年十月至2014年3月初之间选择的选项也在报告中，但没有“答案值”。
+“值ID”显示的是这些选项的永久ID，比如“choice_1”、“choice_2”。</p>
+<p><strong>为什么我看不见有些题目的“Question”值？</strong></p>
+<p>“Question”列中的值为该题的可访问性标签。更多关于设置问题标签的信息可以参考 <a class="reference internal" href="../exercises_tools/create_exercises_and_tools.html#create-exercises"><span>创建练习和工具</span></a>.</p>
+<p>并且，对于设置了“随机选择”的题目，如果2014年三月初之前都没有人给出一个明确的答案，则该答案的“Question”值为空。</p>
+<p><strong>我的学生说他们回答了一个问题，报告中确没有显示，这是怎么回事？</strong></p>
+<p>本报告只包含“最大尝试次数”超过1次的问题。</p>
+<p><strong>题目发布后不久，我对题目做了更改。我怎样才能判断更改之前有哪些学生回答了我的问题？</strong></p>
+<p>某道问题的“计数”值反映的是这道问题的历史操作记录。
+如果问题发布后您做出了更改，则无论更改前后，您的要求均不能满足。</p>
+<p><strong>我在电子制表软件中查看报告时，为什么相同的答案显示在不同的两列中？</strong></p>
+<p>有些制表软件为了显示方便，会自动转换CSV报告中的数据。
+比如，有些学生回答“0.5”，有些学生回答“ .5”，
+Excel表格会将这两个答案的“答案值”都显示为“0.5”。
+如果您再发现您所说的情况，可以在文本编辑器中查看原始的CSV文件。</p>
+<p><strong>为什么我在制表软件中查看报告时，会出现奇怪的字符？</strong></p>
+<p>CSV文件使用的是UTF-8编码，但是有些制表软件无法准确识别UTF-8编码。
+比如说，某学生的法语答题报告在Microsoft Excel for Mac软件和OpenOffice Calc软件中显示的结果就不同。</p>
+<blockquote>
+<div><p>Microsoft Excel for Mac 中的答案值:</p>
+<img alt="A spreadsheet that replaces accented French characters with underscores" src="../_images/student_answer_excel.png" />
+<p>OpenOffice Calc 中的答案值:</p>
+<img alt="A spreadsheet that displays accented French characters correctly" src="../_images/student_answer_calc.png" />
+</div></blockquote>
+<p>如果您再次发现类似问题，可以试着换一种制表软件，比如LibreOffice或者Apache OpenOffice。</p>
+</div>
+<div class="section" id="id6">
+<h3>10.10.2.3. 解读学生答题分布报告<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h3>
+<p>您可以使用答题分布报告了解学生对于作业内容的反馈，这能帮助您优化课程结构，完善课件及提问模块。</p>
+<p>比方说，您设计了一道文字输入题，正确答案只设置了一个，
+即“Warfarin”，当您生成答题分布报告后，您发现大部分学生都一字不差地答对了您的问题，
+因为“正确回答”列中显示了“1”。</p>
+<img alt="In Excel, 5 rows show 5 answer values, 4 of which show comprehension of the question, but only 1 answer is marked as correct" src="../_images/SAD_Answer_Review.png" />
+<p>但是，您在查看报告时，您未设置的其他学生的答案将被标记为正确的。
+您也可以认为是正确（或不正确）的。在正确答案列中显示其他被标记为不正确的答案。
+但是为了课程未来循环，您也许想校订问题或者更新问题来评估正确答案的其他变形。</p>
+<p>很多制表应用软件提供数据图像化选择，比如图表或图形。
+图表帮助您更容易地找出学生普遍误解的内容。</p>
+<img alt="In Excel, AnswerValue and Count columns next to each other, values for 4 rows selected, and a column chart of the count for the 4 answers" src="../_images/SAD_Column_Chart.png" />
+<p>在本例中，报告的打开方式为Microsoft Excel。
+您可以将“答案值”和“计数”两列值并在一起，选择您需要制作图表的单元格域，
+单击“图表”工具栏，选择您想要的图标类型，即可制作图表，显示不同答案与学生人数的数量关系。</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">使用图表功能时，请参考所使用软件的操作指南。
+在不同的软件中，您可能需要微调表格，比如重排纵列，等等。
+在开始调整之前，记得将原文件备份，以防意外。</p>
+</div>
+<p>您可以根据学生常犯的错误调整课程内容。本例中，您可以根据正确性为“0”的答案调整将来的课件。</p>
+</div>
+</div>
+<div class="section" id="score-histogram">
+<span id="id7"></span><h2>10.10.3. 查看某个问题的得分立方图<a class="headerlink" href="#score-histogram" title="Permalink to this headline">¶</a></h2>
+<p>您可以查看某道问题的得分分布图表。</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">您需要知道问题的ID，才能查看得分分布。您可以将ID前缀带有/problem/的问题制成得分立方图。详见 <a class="reference internal" href="course_grades.html#find-url"><span>查找某个问题的位置ID</span></a>.</p>
+</div>
+<p>如何显示得分立方图：</p>
+<ol class="arabic">
+<li><p class="first">查看课程现况</p>
+</li>
+<li><p class="first">单击“导师”→“分析”</p>
+</li>
+<li><p class="first">在“得分分布”区域，使用问题ID选择一个问题</p>
+<p>“分析”页面会自动显示该问题的得分分布立方图。</p>
+<img alt="Graph of the number of students who received different scores for a selected problem" src="../_images/score_histogram.png" />
+</li>
+</ol>
+<div class="section" id="id8">
+<h3>10.10.3.1. 如何解读得分立方图<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h3>
+<p>得分立方图提供以下信息</p>
+<blockquote>
+<div><img alt="Histogram with indicators for the number of students scored value and the x-axis numbers that indicate plotted scores" src="../_images/score_histogram_callouts.png" />
+</div></blockquote>
+<ul class="simple">
+<li>X轴显示的是学生回答该问题的未加权得分。
+尽管X轴中含有小数点，但是所有得分都为整数。
+每个着色块左侧的整数值即为该题得分。</li>
+<li>Y轴显示的是回答问题并提交答案的学生人数。</li>
+<li>图表上方显示的是“得分学生”的人数。这个数值即该问题数据库记录中的数值：
+这个数值即该问题数据库记录中的数值：它不仅包括回答问题、
+得到评分的学生人数，也包括打开问题，但没有做题的学生人数。</li>
+<li>edX服务器大概每隔一周会更新一次得分立方图。
+这项更新的频率要低于学生答题分布报告的频率，
+所以，在某一特定时间内，
+得分立方图中显示的学生数量与答题分布报告“计数”一栏显示的数量可能会有出入。</li>
+</ul>
+</div>
+</div>
+</div>
+
+
+          <footer>
+  
+    <div class="rst-footer-buttons">
+      
+        <a href="course_grades.html" class="btn btn-neutral float-right" title="10.11. 学生成绩与成绩评定"/>Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="course_student.html" class="btn btn-neutral" title="10.9. 学生数据"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <p>
+      &copy; Copyright 2015, edX.
+  </p>
+
+ 
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+</body>
+</html>

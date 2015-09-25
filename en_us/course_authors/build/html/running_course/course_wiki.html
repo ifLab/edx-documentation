@@ -1,0 +1,551 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>10.7. 使用课程维基 &mdash; Building and Running an edX Course  documentation</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="../_static/css/favicon.ico"/>
+  
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  
+  
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:'../',
+        VERSION:'',
+        COLLAPSE_INDEX:false,
+        FILE_SUFFIX:'.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+
+    
+
+  
+
+  
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+
+  
+    <link rel="top" title="Building and Running an edX Course  documentation" href="../index.html"/>
+        <link rel="up" title="10. 运营您的课程" href="index.html"/>
+        <link rel="next" title="10.8. 课程数据" href="course_data.html"/>
+        <link rel="prev" title="10.6. Bulk Email" href="bulk_email.html"/> 
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-nav-search">
+        <a href="../index.html" class="icon icon-home"> Building and Running an edX Course</a>
+        <form class="wy-form" action="../search.html" method="get">
+  <input type="text" name="q" placeholder="Search document" />
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix">
+        
+        
+            <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../front_matter/index.html">1. 参考信息</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../front_matter/read_me.html">1.1. Read Me</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../front_matter/preface.html">1.2. 序言</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../front_matter/change_log.html">1.3. Change Log</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../front_matter/browsers.html">1.4. edX浏览器支持</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/index.html">2. 开始使用edX</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../getting_started/accounts.html">2.1. 开始使用edX</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../getting_started/dashboard_acctsettings_profile.html">2.2. 搜索你的仪表板、设置和配置文件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../getting_started/get_started.html">2.3. 开始了解Studio</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../getting_started/accessibility.html">2.4. 创建无障碍课程指南</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../building_course/index.html">3. 建立您的课程</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/creating_new_course.html">3.1. 新建课程</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/scheduling_course.html">3.2. 设置开始和结束日期</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/setting_up_student_view.html">3.3. 设置课程细节</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/licensing_course.html">3.4. 授权课程</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/course_files.html">3.5. 给课程添加文件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/handouts_updates.html">3.6. 添加课程补充资料及讲义</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/pages.html">3.7. 为课程添加页面</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/textbooks.html">3.8. 添加课本</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/establish_grading_policy.html">3.9. 设定计分政策</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/course_rerun.html">3.10. 重开课程</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/export_import_course.html">3.11. 输出和导入课程</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../developing_course/index.html">4. 开发您的课程</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/workflow.html">4.1. 开始创建课程内容</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/course_outline.html">4.2. 创建课程大纲</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/course_sections.html">4.3. 创建课程章节</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/course_subsections.html">4.4. 构建课程小节</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/course_units.html">4.5. 构建课程单元</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/course_components.html">4.6. 创建课程组件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/controlling_content_visibility.html">4.7. 设置内容可见性</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/testing_courseware.html">4.8. 测试您的课程内容</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../creating_content/index.html">5. 创建课程内容</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../creating_content/create_html_component.html">5.1. 如何使用HTML组件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../creating_content/create_video.html">5.2. 创建影片组件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../creating_content/create_discussion.html">5.3. 创建讨论组件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../creating_content/create_problem.html">5.4. 创建问题组件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../creating_content/libraries.html">5.5. Working with Content Libraries</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../exercises_tools/index.html">6. 创建习题和工具</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/create_exercises_and_tools.html">6.1. 创建练习和工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/annotation.html">6.2. 注释问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/checkbox.html">6.3. 复选框问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/chemical_equation.html">6.4. 化学方程式问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/circuit_schematic_builder.html">6.5. 电路原理图搭建问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/conditional_module.html">6.6. 条件模板</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/custom_javascript.html">6.7. 自定义JavaScript问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/drag_and_drop.html">6.8. 拖放问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/dropdown.html">6.9. 下拉问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/external_graders.html">6.10. 图像映射输入问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/full_screen_image.html">6.11. 全屏图像工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/gene_explorer.html">6.12. Gene Explorer工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/google_calendar.html">6.13. 谷歌日历工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/google_docs.html">6.14. 谷歌云文件工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/google_hangouts.html">6.15. 谷歌即时群聊工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/iframe.html">6.16. IFrame工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/image_mapped_input.html">6.17. 图像映射输入问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/lti_component.html">6.18. LTI 组件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/math_expression_input.html">6.19. 数学表达式输入问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/molecule_editor.html">6.20. 分子编辑器</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/molecule_viewer.html">6.21. 分子浏览器</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/multiple_choice.html">6.22. 多项选择问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/mult_choice_num_input.html">6.23. 多项选择和数字输入题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/numerical_input.html">6.24. 数值输入问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/open_response_assessments/index.html">6.25. 开放性回答评估</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/periodic_table.html">6.26. 元素周期表工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/poll.html">6.27. 投票工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/problem_with_hint.html">6.28. 带适应性提示的问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/problem_in_latex.html">6.29. LaTeX问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/protein_builder.html">6.30. Protex蛋白质构建工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/randomized_content_blocks.html">6.31. 随机内容块</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/recommenderXBlock.html">6.32. 推荐系统</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/text_input.html">6.33. 文本输入问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/word_cloud.html">6.34. 文字云工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/custom_python.html">6.35. 自定义评分器问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/zooming_image.html">6.36. 图像放大工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/mathjax.html">6.37. Studio中MathJax的简要介绍</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../content_experiments/index.html">7. 创建内容实验</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../content_experiments/content_experiments_overview.html">7.1. Overview of Content Experiments</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../content_experiments/content_experiments_configure.html">7.2. 配置带有内容实验的课程</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../content_experiments/content_experiments_add.html">7.3. 为您的课程添加内容实验</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../content_experiments/content_experiments_view.html">7.4. Test Content Experiments</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../cohorts/index.html">8. 建立学生队列</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../cohorts/cohorts_overview.html">8.1. 使用队列功能建立课程群</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cohorts/cohort_config.html">8.2. 启用、配置分队模式</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cohorts/cohorted_courseware.html">8.3. 创建特定队列课件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cohorts/cohorts_setup_discussions.html">8.4. 在包含队列的课程中设置论坛</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cohorts/cohorts_manage_discussions.html">8.5. 管理有学生队列的论坛</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../releasing_course/index.html">9. 发布您的课程</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../releasing_course/beta_testing.html">9.1. 贝塔测试</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../releasing_course/course_launching.html">9.2. 课程发布事宜</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../releasing_course/staff_debug_info.html">9.3. 员工调试信息</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">10. 运营您的课程</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="course_staffing.html">10.1. 安置职工</a></li>
+<li class="toctree-l2"><a class="reference internal" href="course_enrollment.html">10.2. 招生</a></li>
+<li class="toctree-l2"><a class="reference internal" href="discussions.html">10.3. 管理课程讨论项目</a></li>
+<li class="toctree-l2"><a class="reference internal" href="discussions_students.html">10.4. 参与课程讨论</a></li>
+<li class="toctree-l2"><a class="reference internal" href="discussion_guidance_moderators.html">10.5. 论坛协调员指南</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bulk_email.html">10.6. Bulk Email</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="">10.7. 使用课程维基</a></li>
+<li class="toctree-l2"><a class="reference internal" href="course_data.html">10.8. 课程数据</a></li>
+<li class="toctree-l2"><a class="reference internal" href="course_student.html">10.9. 学生数据</a></li>
+<li class="toctree-l2"><a class="reference internal" href="course_answers.html">10.10. 回答问题数据</a></li>
+<li class="toctree-l2"><a class="reference internal" href="course_grades.html">10.11. 学生成绩与成绩评定</a></li>
+<li class="toctree-l2"><a class="reference internal" href="checking_student_progress.html">10.12. 总成绩计算与证书发放</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../students/index.html">11. 学生相关信息</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../students/login_guide.html">11.1. 学生登录指南示例</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../students/math_students.html">11.2. 学生数学题回答格式化</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../students/ora_students.html">11.3. 学生开放回答评估</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../glossary.html">12. Glossary</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#a">12.1. A</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#c">12.2. C</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#d">12.3. D</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#e">12.4. E</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#f">12.5. F</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#g">12.6. G</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#h">12.7. H</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#i">12.8. I</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#k">12.9. K</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#l">12.10. L</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#m">12.11. M</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#n">12.12. N</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#o">12.13. O</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#p">12.14. P</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#q">12.15. Q</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#r">12.16. R</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#s">12.17. S</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#t">12.18. T</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#u">12.19. U</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#v">12.20. V</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#w">12.21. W</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#xyz">12.22. XYZ</a></li>
+</ul>
+</li>
+</ul>
+
+        
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top">
+        <i data-toggle="wy-nav-top" class="icon icon-reorder"></i>
+        <a href="/">Building and Running an edX Course</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <ul class="wy-breadcrumbs">
+  <li><a href="../index.html">Table of Contents</a> &raquo;</li>
+  <li><a href="">10.7. 使用课程维基</a></li>
+  
+</ul>
+<hr/>
+
+          
+  <div class="section" id="course-wiki">
+<span id="id1"></span><h1>10.7. 使用课程维基<a class="headerlink" href="#course-wiki" title="Permalink to this headline">¶</a></h1>
+<p>维基提供了一个教员和学生共同访问、分享和合作编辑课程信息的方式。</p>
+<p>Every course has a wiki that you can set up in a way appropriate for your
+course. You can influence how students (and staff) use it by <a class="reference internal" href="#seeding-the-wiki"><span>seeding the
+wiki</span></a> with specific content, by explaining how you want it to
+be used at the beginning of the course, and by providing clear instructions and
+guidelines for its use.</p>
+<p>Common uses for the course wiki might
+be:</p>
+<ul class="simple">
+<li>Sharing answers to course FAQs and collecting new FAQs.</li>
+<li>Sharing editable course information, such as download and installation
+instructions for software required for the course</li>
+<li>Providing shared access to student-created resources, perhaps as part of a
+collaborative exercise.</li>
+<li>Sharing errata for the course.</li>
+<li>Collecting suggestions for future runs of the course.</li>
+</ul>
+<p>As students and staff create and edit wiki articles, they contribute to a
+repository of information about your course that can be immediately useful to
+other students, or useful for you and your course team as you develop other
+courses or future runs of the same course.</p>
+<p>The wiki for each course is a &#8220;child&#8221; wiki of the edX-wide wiki. From within any
+course wiki, clicking the top level <strong>Wiki</strong> link in the breadcrumb trail at the
+top of the page takes you to the edX-wide wiki.</p>
+<div class="section" id="managing-the-course-wiki">
+<span id="wikis-overview"></span><h2>10.7.1. Managing the Course Wiki<a class="headerlink" href="#managing-the-course-wiki" title="Permalink to this headline">¶</a></h2>
+<p>Keep these points in mind as you design the wiki for your course:</p>
+<ul class="simple">
+<li>Be clear about the purpose for the wiki or for different parts of the wiki. For example, are some parts of the wiki only for disseminating information? If that is the case, then make sure that only your course team has write access for those articles.</li>
+<li>Decide whether some parts of the wiki are intended for student collaboration or student input. Make sure that students are able to create and edit wiki articles in those sections, and use text to clearly indicate to students that these pages can be edited.</li>
+<li>Think about the different tasks that will be performed by people in different roles. Typically you want your course team to have some privileges that students do not have. For example, course staff can delete wiki articles, but students cannot.</li>
+</ul>
+<p>Course staff can perform these tasks to manage the wiki:</p>
+<ul class="simple">
+<li><a class="reference internal" href="#showing-or-hiding-the-wiki"><span>Show or Hide the Wiki</span></a></li>
+<li><a class="reference internal" href="#controlling-wiki-access"><span>Control Wiki Access</span></a></li>
+<li><a class="reference internal" href="#seeding-the-wiki"><span>Seed the Wiki</span></a></li>
+<li><a class="reference internal" href="#locking-a-wiki-article"><span>Lock a Wiki Article</span></a></li>
+<li><a class="reference internal" href="#deleting-a-wiki-article"><span>Delete a Wiki Article</span></a></li>
+<li><a class="reference internal" href="#purging-a-wiki-article"><span>Purge a Wiki Article</span></a></li>
+<li><a class="reference internal" href="#restoring-a-deleted-wiki-article"><span>Restore a Deleted Wiki Article</span></a></li>
+</ul>
+<p>All users, including students, can perform the following tasks, depending on the permissions that you set for an article:</p>
+<ul class="simple">
+<li><a class="reference internal" href="#adding-a-wiki-article"><span>Add a Wiki Article</span></a></li>
+<li><a class="reference internal" href="#editing-a-wiki-article"><span>Edit a Wiki Article</span></a></li>
+<li><a class="reference internal" href="#managing-versions-of-a-wiki-article"><span>Manage Versions of a Wiki Article</span></a></li>
+<li><a class="reference internal" href="#searching-for-wiki-articles"><span>Search for Wiki Articles</span></a></li>
+</ul>
+</div>
+<div class="section" id="showing-or-hiding-the-wiki">
+<span id="id2"></span><h2>10.7.2. Showing or Hiding the Wiki<a class="headerlink" href="#showing-or-hiding-the-wiki" title="Permalink to this headline">¶</a></h2>
+<p>When you create a course, a wiki is included by default, and a <strong>Wiki</strong> tab is
+visible at the top of the course page. If you do not want to use the course
+wiki, you can hide the <strong>Wiki</strong> tab at the top of the course.</p>
+<p>Follow these steps to show or hide the wiki in the course tabs.</p>
+<ol class="arabic simple">
+<li>Open your course in Studio.</li>
+<li>Select <strong>Content</strong>, then <strong>Pages</strong>.</li>
+<li>Click the eye icon in the <strong>Wiki</strong> row. The <strong>Wiki</strong> tab is hidden when the eye
+icon has a slash through it. You can show the <strong>Wiki</strong> tab again by clicking the eye icon.</li>
+</ol>
+<p>When you hide the wiki in your course, any existing articles remain in the edX-
+wide wiki, but the <strong>Wiki</strong> tab is removed from your course pages.</p>
+</div>
+<div class="section" id="controlling-access-to-the-wiki">
+<span id="controlling-wiki-access"></span><h2>10.7.3. Controlling Access to the Wiki<a class="headerlink" href="#controlling-access-to-the-wiki" title="Permalink to this headline">¶</a></h2>
+<p>You can control access to the wiki in various ways: by changing access to the
+wiki as a whole, by changing the read/write permissions settings of articles
+within the wiki, or by locking articles.</p>
+<p>To change access to the course wiki:</p>
+<ol class="arabic simple">
+<li>Open your course in Studio.</li>
+<li>Select <strong>Settings</strong>, then <strong>Advanced Settings</strong>.</li>
+<li>Scroll down to the <strong>Allow Public Access to Wiki</strong> field. This Boolean setting is set to False by default, meaning that only course team members and enrolled students can see the course wiki. If you change the value of this field to True, then any registered edX user can access the course wiki, even if they are not enrolled in your course. However, public users would have to explicitly navigate to your wiki via the edX-wide wiki structure, or a link that has been provided to them.</li>
+</ol>
+<p>To modify viewing or editing permissions for specific groups of users by
+article, see <a class="reference internal" href="#setting-permissions-for-wiki-articles"><span>Setting Permissions for Wiki Articles</span></a>.</p>
+<p>To lock an article and prevent further editing, see <a class="reference internal" href="#locking-a-wiki-article"><span>Locking a Wiki Article</span></a>.</p>
+</div>
+<div class="section" id="setting-permissions-for-wiki-articles">
+<span id="id3"></span><h2>10.7.4. Setting Permissions for Wiki Articles<a class="headerlink" href="#setting-permissions-for-wiki-articles" title="Permalink to this headline">¶</a></h2>
+<p>To prevent certain groups of users from being able to add or edit articles, you
+need to modify the read/write permissions for articles. For example, as a course
+instructor, you likely want to prevent students from creating wiki articles at
+the top level, so you should remove write access to course-level wiki articles
+for most users. (Top-level wiki articles are children of the edX-wide wiki, and
+cannot be found within the course wiki).</p>
+<p>To modify the permissions for wiki articles, follow these steps.</p>
+<ol class="arabic simple">
+<li>View the live version of your course.</li>
+<li>Click <strong>Wiki</strong>.</li>
+<li>Navigate to the article whose permissions you are modifying, then click <strong>Settings</strong>.</li>
+<li>In the <strong>Permissions</strong> section of the <strong>Settings</strong> page, select or clear the checkboxes for read or write access for <strong>Group</strong> or <strong>Other</strong>.</li>
+<li>At the bottom of the page, click the <strong>Save changes</strong> button for the <strong>Permissions</strong> section.</li>
+</ol>
+<p>Note that there are two different <strong>Save changes</strong> buttons, one near the top of
+the page for the <strong>Notifications</strong> section, and one at the bottom of the page
+for the <strong>Permissions</strong> section. If you are modifying permissions, make sure you
+click the <strong>Save changes</strong> button at the bottom of the page for your changes to
+be saved.</p>
+<div class="section" id="groups-used-in-wiki-permissions">
+<h3>10.7.4.1. Groups Used in Wiki Permissions<a class="headerlink" href="#groups-used-in-wiki-permissions" title="Permalink to this headline">¶</a></h3>
+<p>There are three groups for each course, managed by adding users to these groups
+on the <strong>Membership</strong> page of the Instructor Dashboard:</p>
+<blockquote>
+<div><ul class="simple">
+<li>Beta testers (by default there are no beta testers until you add them)</li>
+<li>Instructors (by default, the course author is always in the instructor   group)</li>
+<li>Staff (these are course team members)</li>
+</ul>
+</div></blockquote>
+<p>The permissions for the <strong>Others</strong> group apply to users who are not in the three
+course groups, including students.</p>
+</div>
+</div>
+<div class="section" id="seeding-the-wiki">
+<span id="id4"></span><h2>10.7.5. Seeding the Wiki<a class="headerlink" href="#seeding-the-wiki" title="Permalink to this headline">¶</a></h2>
+<p>To ensure that students get the most out of your course wiki, design the wiki
+space before the course starts by seeding the course wiki with articles that
+give it the desired structure.</p>
+<p>For example, you could create wiki articles to mirror the course outline. At the
+top level, you could provide a course outline, FAQs, and links to the main
+articles for each section. In the child articles for each section, you could
+provide information specific to the units and components in that section, and a
+page for students to share their feedback and experiences.</p>
+</div>
+<div class="section" id="wiki">
+<span id="adding-a-wiki-article"></span><span id="course-wiki-shared-tasks"></span><h2>10.7.6. 添加一篇Wiki文章<a class="headerlink" href="#wiki" title="Permalink to this headline">¶</a></h2>
+<p>当你添加一篇Wiki文章的时候，你要清楚自己的当前查看等级，确保你添加的新文章在正确的课程Wiki上。
+请点击 <strong>查看所有子文章</strong> 链接，点击Wiki页面顶部的链接来提高浏览的即时性。</p>
+<div class="section" id="id5">
+<h3>10.7.6.1. 添加即时的文章<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h3>
+<p>请跟随下列步骤来添加一个即时的Wiki文章。如果你没有添加文章的权限，那么点击 <strong>添加文章</strong> 按钮，将会弹出一条 <strong>权限被拒绝</strong> 的提示。</p>
+<ol class="arabic simple">
+<li>在你的课程中点击 <strong>Wiki</strong> 。</li>
+<li>选择你希望添加新文章的等级。</li>
+<li>点击在顶部右侧的 <strong>添加文章</strong> 按钮。</li>
+<li>在新文章页面，为文章添加一个标题和一些可选的关键字来创建一个别名，以及更具体的文章标识符。</li>
+<li>添加文章的内容，你可以输入文本并使用Markdown进行格式化，想要获得Markdown的语法支持，可以点击 <strong>内容</strong> 页面右上角的cheat sheet按钮。</li>
+<li>当你完成Wiki文章内容的输入后，点击 <strong>创建文章</strong> 。</li>
+</ol>
+</div>
+<div class="section" id="id6">
+<h3>10.7.6.2. 添加当前文章的子文章<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h3>
+<p>跟随下列步骤来完成一篇当前文章下子文章的创建，如果你没有添加文章的权限，那么点击 <strong>添加文章</strong> 按钮，将会弹出一条 <strong>权限被拒绝</strong> 的提示。</p>
+<ol class="arabic simple">
+<li>在你的课程中点击 <strong>Wiki</strong> 。</li>
+<li>选择你希望添加新的子文章的等级。</li>
+<li>点击 <strong>查看所有子文章</strong> 。</li>
+<li>点击Wiki标题下部的 <strong>添加文章</strong> 按钮。</li>
+<li>在新文章页面，为文章添加一个标题和一些可选的关键字来创建一个别名，以及更具体的文章标识符。</li>
+<li>添加文章的内容，你可以输入文本并使用Markdown进行格式化，想要获得Markdown的语法支持，可以点击 <strong>内容</strong> 页面右上角的cheat sheet按钮。</li>
+<li>当你完成Wiki文章内容的输入后，点击 <strong>创建文章</strong> 。</li>
+</ol>
+</div>
+</div>
+<div class="section" id="editing-a-wiki-article">
+<span id="id7"></span><h2>10.7.7. 编辑一篇Wiki文章<a class="headerlink" href="#editing-a-wiki-article" title="Permalink to this headline">¶</a></h2>
+<p>`
+如果你有编辑一篇文章的权限，你可以在当前文章内容右侧看到 <strong>编辑</strong> 按钮。</p>
+<p>跟随下面的步骤来修改一篇Wiki文章。</p>
+<ol class="arabic simple">
+<li>在你的课程中点击 <strong>Wiki</strong> 。</li>
+<li>选择你希望编辑的文章。</li>
+<li>点击 <strong>编辑</strong> 。</li>
+<li>修改文章，想要获得Markdown的语法支持，可以点击 <strong>内容</strong> 页面右上角的cheat sheet按钮。</li>
+<li>在 <strong>内容</strong> 栏底部左侧的 <strong>总结</strong> 栏内，输入简短的改动描述。这些描述将会在 <strong>变更</strong> 列表内显示，并且帮助其他Wiki用户了解你对本文章进行了怎样的修改。</li>
+<li>当你完成了编辑后，点击 <strong>保存变更</strong> 。</li>
+</ol>
+</div>
+<div class="section" id="searching-for-wiki-articles">
+<span id="id8"></span><h2>10.7.8. Wiki文章搜索<a class="headerlink" href="#searching-for-wiki-articles" title="Permalink to this headline">¶</a></h2>
+<p>只有在各层次文章含有多篇文章的情况下 <strong>过滤</strong> 栏才可以使用。</p>
+<p>在 <strong>过滤</strong> 栏内输入一段文字来显示所有标题包含此段文字的所有文章。</p>
+</div>
+<div class="section" id="managing-versions-of-a-wiki-article">
+<span id="id9"></span><h2>10.7.9. 管理Wiki文章版本<a class="headerlink" href="#managing-versions-of-a-wiki-article" title="Permalink to this headline">¶</a></h2>
+<p>Wiki包含了所有文章的变更历史，你可以查看每篇文章的历史版本，或者回滚到以前版本的文章，或者将文章的当前版本与选定的早期版本进行归并。</p>
+<div class="section" id="id10">
+<h3>10.7.9.1. 查看Wiki文章的历史版本<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic simple">
+<li>在你的课程中点击 <strong>Wiki</strong> 。</li>
+<li>选中你希望查看历史版本的Wiki文章。</li>
+<li>点击 <strong>变更</strong> ，之前保存的版本和当前版本的文章将被按照时间顺序列出。</li>
+</ol>
+</div>
+<div class="section" id="id11">
+<h3>10.7.9.2. 浏览一篇历史Wiki文章<a class="headerlink" href="#id11" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic simple">
+<li>在Wiki的 <strong>变更</strong> 页面，选择你想查看的文章修订。</li>
+<li>点击 <strong>浏览本次修订</strong> 来查看经过本次修订的文章版本。</li>
+</ol>
+</div>
+<div class="section" id="id12">
+<h3>10.7.9.3. 分条查看历史版本变更<a class="headerlink" href="#id12" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic simple">
+<li>在Wiki的 <strong>变更</strong> 页面，选择要查看的文章的修订。</li>
+<li>点击变更日期，时间，和作者信息来分条查看当次变更的变化记录，修改中被删除的部分会用红色标记，添加的部分会用绿色标记。</li>
+</ol>
+</div>
+<div class="section" id="id13">
+<h3>10.7.9.4. 用以前版本替换当前版本<a class="headerlink" href="#id13" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic simple">
+<li>在Wiki的 <strong>变更</strong> 页面，选择你想要回滚的历史修改版本。</li>
+<li>点击 <strong>切换到所选版本</strong> 来用选中版本替换当前版本。</li>
+</ol>
+</div>
+<div class="section" id="id14">
+<h3>10.7.9.5. 整合当前版本与历史版本<a class="headerlink" href="#id14" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic simple">
+<li>在Wiki的 <strong>变更</strong> 页面，选择你想要归并的历史修改版本。</li>
+<li>点击 <strong>归并所选版本</strong> 来把所选版本归并到当前版本上来。</li>
+</ol>
+</div>
+</div>
+<div class="section" id="locking-a-wiki-article">
+<span id="id15"></span><h2>10.7.10. Locking a Wiki Article<a class="headerlink" href="#locking-a-wiki-article" title="Permalink to this headline">¶</a></h2>
+<p>Locking a wiki article prevents further changes from being made to it. Follow
+these steps to lock a wiki article either after you create it, or after you make
+specific edits.</p>
+<ol class="arabic simple">
+<li>View the live version of your course.</li>
+<li>Click <strong>Wiki</strong>.</li>
+<li>Navigate to the article you want to lock, then click <strong>Settings</strong>.</li>
+<li>In the <strong>Permissions</strong> section of the <strong>Settings</strong> page, select the <strong>Lock article</strong> checkbox.</li>
+<li>At the bottom of the page, click the <strong>Save changes</strong> button for the <strong>Permissions</strong> section.</li>
+</ol>
+</div>
+<div class="section" id="deleting-a-wiki-article">
+<span id="id16"></span><h2>10.7.11. Deleting a Wiki Article<a class="headerlink" href="#deleting-a-wiki-article" title="Permalink to this headline">¶</a></h2>
+<p>Only course team members can delete articles. In addition, you can only delete
+an article if you have permissions to edit that article. If you have the
+required permissions, you see a <strong>Delete article</strong> button at the bottom of the
+<strong>Edit</strong> page.</p>
+<p>Follow these steps to delete an article:</p>
+<ol class="arabic simple">
+<li>View the live version of your course.</li>
+<li>Click <strong>Wiki</strong>.</li>
+<li>Navigate to the article you want to delete, then click <strong>Edit</strong>.</li>
+<li>Click <strong>Delete article</strong>.</li>
+<li>On the deletion confirmation page, select <strong>Yes, I am sure</strong>.</li>
+<li>Optionally, also select the <strong>Purge</strong> checkbox. For details, see <a class="reference internal" href="#purging-a-wiki-article"><span>Purging a Wiki Article</span></a>.</li>
+<li>Click <strong>Delete article</strong> to confirm the deletion.</li>
+</ol>
+<div class="section" id="purging-a-wiki-article">
+<span id="id17"></span><h3>10.7.11.1. Purging a Wiki Article<a class="headerlink" href="#purging-a-wiki-article" title="Permalink to this headline">¶</a></h3>
+<p>When you delete and purge an article, it is completely removed from the wiki,
+with no option to undo the deletion. Select this option only if you are sure you
+will not want to restore the content.</p>
+<p>To purge an article as you delete it, select the <strong>Purge</strong> checkbox on the
+deletion confirmation page.</p>
+</div>
+<div class="section" id="restoring-a-deleted-wiki-article">
+<span id="id18"></span><h3>10.7.11.2. Restoring a Deleted Wiki Article<a class="headerlink" href="#restoring-a-deleted-wiki-article" title="Permalink to this headline">¶</a></h3>
+<p>Articles that have been deleted but not purged can be restored. A link to the
+article remains visible at the level at which it was created.</p>
+<p>To restore a deleted article, click the link to the article and click
+<strong>Restore</strong>.</p>
+</div>
+</div>
+</div>
+
+
+          <footer>
+  
+    <div class="rst-footer-buttons">
+      
+        <a href="course_data.html" class="btn btn-neutral float-right" title="10.8. 课程数据"/>Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="bulk_email.html" class="btn btn-neutral" title="10.6. Bulk Email"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <p>
+      &copy; Copyright 2015, edX.
+  </p>
+
+ 
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+</body>
+</html>

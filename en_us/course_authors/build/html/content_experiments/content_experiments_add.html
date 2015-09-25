@@ -1,0 +1,456 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>7.3. 为您的课程添加内容实验 &mdash; Building and Running an edX Course  documentation</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="../_static/css/favicon.ico"/>
+  
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  
+  
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:'../',
+        VERSION:'',
+        COLLAPSE_INDEX:false,
+        FILE_SUFFIX:'.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+
+    
+
+  
+
+  
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+
+  
+    <link rel="top" title="Building and Running an edX Course  documentation" href="../index.html"/>
+        <link rel="up" title="7. 创建内容实验" href="index.html"/>
+        <link rel="next" title="7.4. Test Content Experiments" href="content_experiments_view.html"/>
+        <link rel="prev" title="7.2. 配置带有内容实验的课程" href="content_experiments_configure.html"/> 
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-nav-search">
+        <a href="../index.html" class="icon icon-home"> Building and Running an edX Course</a>
+        <form class="wy-form" action="../search.html" method="get">
+  <input type="text" name="q" placeholder="Search document" />
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix">
+        
+        
+            <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../front_matter/index.html">1. 参考信息</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../front_matter/read_me.html">1.1. Read Me</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../front_matter/preface.html">1.2. 序言</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../front_matter/change_log.html">1.3. Change Log</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../front_matter/browsers.html">1.4. edX浏览器支持</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/index.html">2. 开始使用edX</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../getting_started/accounts.html">2.1. 开始使用edX</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../getting_started/dashboard_acctsettings_profile.html">2.2. 搜索你的仪表板、设置和配置文件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../getting_started/get_started.html">2.3. 开始了解Studio</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../getting_started/accessibility.html">2.4. 创建无障碍课程指南</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../building_course/index.html">3. 建立您的课程</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/creating_new_course.html">3.1. 新建课程</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/scheduling_course.html">3.2. 设置开始和结束日期</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/setting_up_student_view.html">3.3. 设置课程细节</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/licensing_course.html">3.4. 授权课程</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/course_files.html">3.5. 给课程添加文件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/handouts_updates.html">3.6. 添加课程补充资料及讲义</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/pages.html">3.7. 为课程添加页面</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/textbooks.html">3.8. 添加课本</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/establish_grading_policy.html">3.9. 设定计分政策</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/course_rerun.html">3.10. 重开课程</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/export_import_course.html">3.11. 输出和导入课程</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../developing_course/index.html">4. 开发您的课程</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/workflow.html">4.1. 开始创建课程内容</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/course_outline.html">4.2. 创建课程大纲</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/course_sections.html">4.3. 创建课程章节</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/course_subsections.html">4.4. 构建课程小节</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/course_units.html">4.5. 构建课程单元</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/course_components.html">4.6. 创建课程组件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/controlling_content_visibility.html">4.7. 设置内容可见性</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/testing_courseware.html">4.8. 测试您的课程内容</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../creating_content/index.html">5. 创建课程内容</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../creating_content/create_html_component.html">5.1. 如何使用HTML组件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../creating_content/create_video.html">5.2. 创建影片组件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../creating_content/create_discussion.html">5.3. 创建讨论组件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../creating_content/create_problem.html">5.4. 创建问题组件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../creating_content/libraries.html">5.5. Working with Content Libraries</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../exercises_tools/index.html">6. 创建习题和工具</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/create_exercises_and_tools.html">6.1. 创建练习和工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/annotation.html">6.2. 注释问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/checkbox.html">6.3. 复选框问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/chemical_equation.html">6.4. 化学方程式问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/circuit_schematic_builder.html">6.5. 电路原理图搭建问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/conditional_module.html">6.6. 条件模板</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/custom_javascript.html">6.7. 自定义JavaScript问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/drag_and_drop.html">6.8. 拖放问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/dropdown.html">6.9. 下拉问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/external_graders.html">6.10. 图像映射输入问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/full_screen_image.html">6.11. 全屏图像工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/gene_explorer.html">6.12. Gene Explorer工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/google_calendar.html">6.13. 谷歌日历工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/google_docs.html">6.14. 谷歌云文件工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/google_hangouts.html">6.15. 谷歌即时群聊工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/iframe.html">6.16. IFrame工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/image_mapped_input.html">6.17. 图像映射输入问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/lti_component.html">6.18. LTI 组件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/math_expression_input.html">6.19. 数学表达式输入问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/molecule_editor.html">6.20. 分子编辑器</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/molecule_viewer.html">6.21. 分子浏览器</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/multiple_choice.html">6.22. 多项选择问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/mult_choice_num_input.html">6.23. 多项选择和数字输入题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/numerical_input.html">6.24. 数值输入问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/open_response_assessments/index.html">6.25. 开放性回答评估</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/periodic_table.html">6.26. 元素周期表工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/poll.html">6.27. 投票工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/problem_with_hint.html">6.28. 带适应性提示的问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/problem_in_latex.html">6.29. LaTeX问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/protein_builder.html">6.30. Protex蛋白质构建工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/randomized_content_blocks.html">6.31. 随机内容块</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/recommenderXBlock.html">6.32. 推荐系统</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/text_input.html">6.33. 文本输入问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/word_cloud.html">6.34. 文字云工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/custom_python.html">6.35. 自定义评分器问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/zooming_image.html">6.36. 图像放大工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/mathjax.html">6.37. Studio中MathJax的简要介绍</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">7. 创建内容实验</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="content_experiments_overview.html">7.1. Overview of Content Experiments</a></li>
+<li class="toctree-l2"><a class="reference internal" href="content_experiments_configure.html">7.2. 配置带有内容实验的课程</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="">7.3. 为您的课程添加内容实验</a></li>
+<li class="toctree-l2"><a class="reference internal" href="content_experiments_view.html">7.4. Test Content Experiments</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../cohorts/index.html">8. 建立学生队列</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../cohorts/cohorts_overview.html">8.1. 使用队列功能建立课程群</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cohorts/cohort_config.html">8.2. 启用、配置分队模式</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cohorts/cohorted_courseware.html">8.3. 创建特定队列课件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cohorts/cohorts_setup_discussions.html">8.4. 在包含队列的课程中设置论坛</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cohorts/cohorts_manage_discussions.html">8.5. 管理有学生队列的论坛</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../releasing_course/index.html">9. 发布您的课程</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../releasing_course/beta_testing.html">9.1. 贝塔测试</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../releasing_course/course_launching.html">9.2. 课程发布事宜</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../releasing_course/staff_debug_info.html">9.3. 员工调试信息</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../running_course/index.html">10. 运营您的课程</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/course_staffing.html">10.1. 安置职工</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/course_enrollment.html">10.2. 招生</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/discussions.html">10.3. 管理课程讨论项目</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/discussions_students.html">10.4. 参与课程讨论</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/discussion_guidance_moderators.html">10.5. 论坛协调员指南</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/bulk_email.html">10.6. Bulk Email</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/course_wiki.html">10.7. 使用课程维基</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/course_data.html">10.8. 课程数据</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/course_student.html">10.9. 学生数据</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/course_answers.html">10.10. 回答问题数据</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/course_grades.html">10.11. 学生成绩与成绩评定</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/checking_student_progress.html">10.12. 总成绩计算与证书发放</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../students/index.html">11. 学生相关信息</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../students/login_guide.html">11.1. 学生登录指南示例</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../students/math_students.html">11.2. 学生数学题回答格式化</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../students/ora_students.html">11.3. 学生开放回答评估</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../glossary.html">12. Glossary</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#a">12.1. A</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#c">12.2. C</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#d">12.3. D</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#e">12.4. E</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#f">12.5. F</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#g">12.6. G</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#h">12.7. H</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#i">12.8. I</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#k">12.9. K</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#l">12.10. L</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#m">12.11. M</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#n">12.12. N</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#o">12.13. O</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#p">12.14. P</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#q">12.15. Q</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#r">12.16. R</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#s">12.17. S</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#t">12.18. T</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#u">12.19. U</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#v">12.20. V</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#w">12.21. W</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#xyz">12.22. XYZ</a></li>
+</ul>
+</li>
+</ul>
+
+        
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top">
+        <i data-toggle="wy-nav-top" class="icon icon-reorder"></i>
+        <a href="/">Building and Running an edX Course</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <ul class="wy-breadcrumbs">
+  <li><a href="../index.html">Table of Contents</a> &raquo;</li>
+  <li><a href="">7.3. 为您的课程添加内容实验</a></li>
+  
+</ul>
+<hr/>
+
+          
+  <div class="section" id="add-content-experiments-to-your-course">
+<span id="id1"></span><h1>7.3. 为您的课程添加内容实验<a class="headerlink" href="#add-content-experiments-to-your-course" title="Permalink to this headline">¶</a></h1>
+<p>在您 <a class="reference internal" href="content_experiments_configure.html#enable-content-experiments"><span>enable content experiments</span></a> 以及
+<a class="reference internal" href="content_experiments_configure.html#set-up-group-configurations-in-edx-studio"><span>set up group configurations in Studio</span></a> 之后，您可以为您的课程添加内容实验，请参阅：</p>
+<ul class="simple">
+<li><a class="reference internal" href="#add-a-content-experiment-in-studio"><span>在Studio添加内容实验</span></a></li>
+<li><a class="reference internal" href="#add-a-content-experiment-in-olx"><span>Add a Content Experiment in OLX</span></a></li>
+</ul>
+<div class="section" id="studio">
+<span id="add-a-content-experiment-in-studio"></span><h2>7.3.1. 在Studio添加内容实验<a class="headerlink" href="#studio" title="Permalink to this headline">¶</a></h2>
+<p>您可以在单元页面或容器页面中添加内容实验。
+在Studio中，您可以创建并查看某个容器页面中所有学习组的实验内容。
+请参阅  <a href="#id7"><span class="problematic" id="id8">`Create Content for Groups in the Content
+Experiment`_</span></a> 。</p>
+<p>当学生查看带有内容实验的课程单元时，不会察觉到正在进行的内容实验。
+她看不见实验名称，只能看见您给他所在的实验小组分配的内容。
+对于学生而言，带有内容实验的课程单元与其他课程单元无异。</p>
+<p>在Studio中配置内容实验，您需要：</p>
+<ol class="arabic simple">
+<li><a href="#id9"><span class="problematic" id="id10">`Create the content experiment`_</span></a>.</li>
+<li><a href="#id11"><span class="problematic" id="id12">`Create content for groups in the content experiment`_</span></a>.</li>
+</ol>
+<p>成功创建内容实验后，您可以更改分组模式。
+详情请参阅 <a href="#id13"><span class="problematic" id="id14">`Change the Group Configuration for a Content Experiment`_</span></a> 。</p>
+<div class="section" id="id2">
+<h3>7.3.1.1. 创建内容实验<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic">
+<li><p class="first">您需要在单元页面中的 <strong>添加新组件</strong> 目录下点击 <strong>高级</strong> 。</p>
+</li>
+<li><p class="first">选择 <strong>内容实验</strong> 。</p>
+<p>新的内容实验已经添加到此单元中：</p>
+<a class="reference internal image-reference" href="../_images/content_experiment_block.png"><img alt="The content experiment component in a unit page" src="../_images/content_experiment_block.png" style="width: 800px;" /></a>
+<p>对该模块的操作与其他课程模块无异。详情请参考 <a class="reference internal" href="../developing_course/course_components.html#developing-course-components"><span>创建课程组件</span></a> 页面。</p>
+</li>
+<li><p class="first">单击 <strong>选择分组模式</strong> 或 <strong>编辑</strong> 均可打开内容实验模块。</p>
+<img alt="The content experiment editor" src="../_images/content_experiment_editor.png" />
+</li>
+<li><p class="first">在 <strong>分组模式</strong> 旁边的的下拉选项中，选择一个分组模式。</p>
+</li>
+<li><p class="first">在 <strong>显示名</strong> 字段下，键入本模块在Studio中显示的名称。该名称只在Studio中可见，对学生端不可见。</p>
+</li>
+<li><p class="first">单击 <strong>保存</strong> 。</p>
+</li>
+</ol>
+<p>内容实验显示为一个大模块，其中包含了许多其他小模块。更多信息请参见
+<a class="reference internal" href="../developing_course/course_components.html#components-that-contain-other-components"><span>组件嵌套</span></a> 章节中的内容。</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">内容实验模块无法复制。</p>
+</div>
+<p>现在，您可以为实验小组添加实验内容了。</p>
+</div>
+<div class="section" id="id3">
+<h3>7.3.1.2. 为实验小组添加实验内容<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h3>
+<p>在内容实验模块中选择一个分组模式，单击 <strong>查看</strong> 。</p>
+<p>自动弹出的内容实验页面包含了一个容器页面，该页面下又涵盖了您选择的分组模式以及该模式中的所有实验组。
+例如，您选择的分组模式包含A组和B组，则您会看见如下页面：</p>
+<img alt="The content experiment page with two groups" src="../_images/content_experiment_container.png" />
+<p>您可以给这两个小组选择添加实验内容，具体操作方法与其他容器页面相同。
+更多信息请参见 <a class="reference internal" href="../developing_course/course_components.html#components-that-contain-other-components"><span>组件嵌套</span></a> 章节中的内容。</p>
+<p>例如，您可以给A组添加一个HTML模块或视频模块：</p>
+<img alt="Image of an expanded A/B test component" src="../_images/a_b_test_child_expanded.png" />
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">有时候，预留一个没有内容的空组对于实验来说非常有用。
+比如，如果一个小组正在看视频，另一个小组没有内容，您就可以根据学生表现来分析视频的效果。</p>
+</div>
+</div>
+<div class="section" id="id4">
+<h3>7.3.1.3. 为实现内容实验更改分组模式<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h3>
+<p>您可以根据某个内容实验的需求更改分组模式。当分组模式更改后，您需要给新创建的小组添加模块或组件。
+您可以沿用原来的模块，也可以创建新模块。</p>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">如果某个实验对学生可见，更改该实验的分组模式会影响实验数据。</p>
+</div>
+<p>如何改变分组模式：</p>
+<ol class="arabic">
+<li><p class="first">打开该内容实验的单元页面。</p>
+</li>
+<li><p class="first">在内容实验模块中，单击 <strong>编辑</strong> 。</p>
+<img alt="The content experiment editor with a group configuration selected" src="../_images/content_experiment_editor_group2.png" />
+</li>
+<li><p class="first">选择您需要的分组模式。</p>
+</li>
+<li><p class="first">单击 <strong>保存</strong> 。</p>
+</li>
+<li><p class="first">现在您需要为新创建的实验组添加模块或组件。单击 <strong>查看</strong> 打开内容实验页面。</p>
+<p>您会发现，新创建的分组模式下空空如也，您在之前的分组模式中添加的模块和组件都被转移到了 <strong>非活动组</strong> 区域中。</p>
+<img alt="Components in inactive groups" src="../_images/inactive_groups.png" />
+</li>
+<li><p class="first">您可以将 <strong>非活动组</strong> 中的内容拖拽到新分组中，也可以在新分组中创建新的内容。</p>
+</li>
+</ol>
+</div>
+</div>
+<div class="section" id="add-a-content-experiment-in-olx">
+<span id="id5"></span><h2>7.3.2. Add a Content Experiment in OLX<a class="headerlink" href="#add-a-content-experiment-in-olx" title="Permalink to this headline">¶</a></h2>
+<p>You work with multiple XML files to configure a content experiment. This
+section steps through the files involved in a content experiment that shows
+different content to two different groups of students.</p>
+<div class="section" id="define-the-content-experiment-in-the-sequential-file">
+<h3>7.3.2.1. Define the Content Experiment in the Sequential File<a class="headerlink" href="#define-the-content-experiment-in-the-sequential-file" title="Permalink to this headline">¶</a></h3>
+<p>You reference a content experiment in the file for the subsection, or
+sequential, in the <code class="docutils literal"><span class="pre">sequential</span></code> directory. For example:</p>
+<div class="highlight-xml"><div class="highlight"><pre>...
+<span class="nt">&lt;vertical</span> <span class="na">url_name=</span><span class="s">&quot;name for the unit that contains the A/B test&quot;</span> <span class="na">display_name=</span><span class="s">&quot;A/B Test Unit&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;split_test</span> <span class="na">url_name=</span><span class="s">&quot;name of A/B test file in the split_test folder&quot;</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;/vertical&gt;</span>
+.....
+</pre></div>
+</div>
+<p>The <code class="docutils literal"><span class="pre">&lt;split_test&gt;</span></code> element&#8217;s <code class="docutils literal"><span class="pre">url_name</span></code> value references the name of the
+content experiment file in the <code class="docutils literal"><span class="pre">split_test</span></code> directory.</p>
+<div class="admonition caution">
+<p class="first admonition-title">Caution</p>
+<p class="last">You can only define a content experiment in a unit, or vertical, in which different collections of components are associated with different experiment groups.  You cannot define a content experiment at a subsection (sequential) or section (chapter) level and have different units or subsections associated with different groups.</p>
+</div>
+</div>
+<div class="section" id="define-the-experiment-content-in-the-split-test-file">
+<span id="id6"></span><h3>7.3.2.2. Define the Experiment Content in the Split Test File<a class="headerlink" href="#define-the-experiment-content-in-the-split-test-file" title="Permalink to this headline">¶</a></h3>
+<p>After you define the content experiment in the sequential file, you define the
+course content you want to test in the file in the <code class="docutils literal"><span class="pre">split_test</span></code> directory.
+This is the file referenced in the <code class="docutils literal"><span class="pre">&lt;split_test&gt;</span></code> element in the sequential
+file, as shown above.</p>
+<p>In the content experiment file, you add elements for the experiment content.
+For this example, you add two <code class="docutils literal"><span class="pre">&lt;vertical&gt;</span></code> elements to compare the two
+different sets of content.</p>
+<div class="highlight-xml"><div class="highlight"><pre><span class="nt">&lt;split_test</span> <span class="na">url_name=</span><span class="s">&quot;AB_Test.xml&quot;</span> <span class="na">display_name=</span><span class="s">&quot;A/B Test&quot;</span> <span class="na">user_partition_id=</span><span class="s">&quot;0&quot;</span>
+            <span class="na">group_id_to_child=</span><span class="s">&#39;{&quot;0&quot;: &quot;i4x://path-to-course/vertical/group_a&quot;,</span>
+<span class="s">                                &quot;1&quot;: &quot;i4x://path-to-course/vertical/group_b&quot;}&#39;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;vertical</span> <span class="na">url_name=</span><span class="s">&quot;group_a&quot;</span> <span class="na">display_name=</span><span class="s">&quot;Group A&quot;</span><span class="nt">&gt;</span>
+       <span class="nt">&lt;html&gt;</span>Welcome to group A.<span class="nt">&lt;/html&gt;</span>
+       <span class="nt">&lt;video</span> <span class="na">url_name=</span><span class="s">&quot;group_a_video&quot;</span><span class="nt">/&gt;</span>
+    <span class="nt">&lt;/vertical&gt;</span>
+    <span class="nt">&lt;vertical</span> <span class="na">url_name=</span><span class="s">&quot;group_b&quot;</span> <span class="na">display_name=</span><span class="s">&quot;Group B&quot;</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;html&gt;</span>Welcome to group B.<span class="nt">&lt;/html&gt;</span>
+        <span class="nt">&lt;problem</span> <span class="na">display_name=</span><span class="s">&quot;Checkboxes&quot;</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;p&gt;</span>A checkboxes problem presents checkbox buttons for student input.
+               Students can select more than one option presented.<span class="nt">&lt;/p&gt;</span>
+            <span class="nt">&lt;choiceresponse&gt;</span>
+                <span class="nt">&lt;checkboxgroup</span> <span class="na">direction=</span><span class="s">&quot;vertical&quot;</span> <span class="na">label=</span><span class="s">&quot;Select the answer that matches&quot;</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;choice</span> <span class="na">correct=</span><span class="s">&quot;true&quot;</span><span class="nt">&gt;</span>correct<span class="nt">&lt;/choice&gt;</span>
+                    <span class="nt">&lt;choice</span> <span class="na">correct=</span><span class="s">&quot;false&quot;</span><span class="nt">&gt;</span>incorrect<span class="nt">&lt;/choice&gt;</span>
+                    <span class="nt">&lt;choice</span> <span class="na">correct=</span><span class="s">&quot;true&quot;</span><span class="nt">&gt;</span>correct<span class="nt">&lt;/choice&gt;</span>
+                <span class="nt">&lt;/checkboxgroup&gt;</span>
+            <span class="nt">&lt;/choiceresponse&gt;</span>
+        <span class="nt">&lt;/problem&gt;</span>
+    <span class="nt">&lt;/vertical&gt;</span>
+<span class="nt">&lt;/split_test&gt;</span>
+</pre></div>
+</div>
+<p>In this example:</p>
+<ul>
+<li><p class="first">The <code class="docutils literal"><span class="pre">user_partition_id</span></code> value references the ID of the experiment defined
+in the <code class="docutils literal"><span class="pre">policy.json</span></code> file.</p>
+</li>
+<li><p class="first">The <code class="docutils literal"><span class="pre">group_id_to_child</span></code> value references the IDs of the groups defined in
+the <code class="docutils literal"><span class="pre">policy.json</span></code> file and maps the group IDs to specific content.</p>
+<p>For example,  the value for group <code class="docutils literal"><span class="pre">0</span></code>, <code class="docutils literal"><span class="pre">i4x://path-to-</span>
+<span class="pre">course/vertical/group_a</span></code>, maps to the <code class="docutils literal"><span class="pre">&lt;vertical&gt;</span></code> element with the
+<code class="docutils literal"><span class="pre">url_name</span></code> equal to <code class="docutils literal"><span class="pre">group_a</span></code>.  Therefore, students in group 0 see the
+content in that vertical.</p>
+</li>
+</ul>
+<p>For information about the <code class="docutils literal"><span class="pre">policy.json</span></code> file, see <a class="reference internal" href="content_experiments_configure.html#set-up-group-configuration-for-olx-courses"><span>Set Up Group Configuration for OLX Courses</span></a>.</p>
+</div>
+</div>
+</div>
+
+
+          <footer>
+  
+    <div class="rst-footer-buttons">
+      
+        <a href="content_experiments_view.html" class="btn btn-neutral float-right" title="7.4. Test Content Experiments"/>Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="content_experiments_configure.html" class="btn btn-neutral" title="7.2. 配置带有内容实验的课程"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <p>
+      &copy; Copyright 2015, edX.
+  </p>
+
+ 
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+</body>
+</html>

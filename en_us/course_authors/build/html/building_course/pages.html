@@ -1,0 +1,553 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>3.7. 为课程添加页面 &mdash; Building and Running an edX Course  documentation</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="../_static/css/favicon.ico"/>
+  
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  
+  
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:'../',
+        VERSION:'',
+        COLLAPSE_INDEX:false,
+        FILE_SUFFIX:'.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+
+    
+
+  
+
+  
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+
+  
+    <link rel="top" title="Building and Running an edX Course  documentation" href="../index.html"/>
+        <link rel="up" title="3. 建立您的课程" href="index.html"/>
+        <link rel="next" title="3.8. 添加课本" href="textbooks.html"/>
+        <link rel="prev" title="3.6. 添加课程补充资料及讲义" href="handouts_updates.html"/> 
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-nav-search">
+        <a href="../index.html" class="icon icon-home"> Building and Running an edX Course</a>
+        <form class="wy-form" action="../search.html" method="get">
+  <input type="text" name="q" placeholder="Search document" />
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix">
+        
+        
+            <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../front_matter/index.html">1. 参考信息</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../front_matter/read_me.html">1.1. Read Me</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../front_matter/preface.html">1.2. 序言</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../front_matter/change_log.html">1.3. Change Log</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../front_matter/browsers.html">1.4. edX浏览器支持</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/index.html">2. 开始使用edX</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../getting_started/accounts.html">2.1. 开始使用edX</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../getting_started/dashboard_acctsettings_profile.html">2.2. 搜索你的仪表板、设置和配置文件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../getting_started/get_started.html">2.3. 开始了解Studio</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../getting_started/accessibility.html">2.4. 创建无障碍课程指南</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">3. 建立您的课程</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="creating_new_course.html">3.1. 新建课程</a></li>
+<li class="toctree-l2"><a class="reference internal" href="scheduling_course.html">3.2. 设置开始和结束日期</a></li>
+<li class="toctree-l2"><a class="reference internal" href="setting_up_student_view.html">3.3. 设置课程细节</a></li>
+<li class="toctree-l2"><a class="reference internal" href="licensing_course.html">3.4. 授权课程</a></li>
+<li class="toctree-l2"><a class="reference internal" href="course_files.html">3.5. 给课程添加文件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="handouts_updates.html">3.6. 添加课程补充资料及讲义</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="">3.7. 为课程添加页面</a></li>
+<li class="toctree-l2"><a class="reference internal" href="textbooks.html">3.8. 添加课本</a></li>
+<li class="toctree-l2"><a class="reference internal" href="establish_grading_policy.html">3.9. 设定计分政策</a></li>
+<li class="toctree-l2"><a class="reference internal" href="course_rerun.html">3.10. 重开课程</a></li>
+<li class="toctree-l2"><a class="reference internal" href="export_import_course.html">3.11. 输出和导入课程</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../developing_course/index.html">4. 开发您的课程</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/workflow.html">4.1. 开始创建课程内容</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/course_outline.html">4.2. 创建课程大纲</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/course_sections.html">4.3. 创建课程章节</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/course_subsections.html">4.4. 构建课程小节</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/course_units.html">4.5. 构建课程单元</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/course_components.html">4.6. 创建课程组件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/controlling_content_visibility.html">4.7. 设置内容可见性</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/testing_courseware.html">4.8. 测试您的课程内容</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../creating_content/index.html">5. 创建课程内容</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../creating_content/create_html_component.html">5.1. 如何使用HTML组件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../creating_content/create_video.html">5.2. 创建影片组件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../creating_content/create_discussion.html">5.3. 创建讨论组件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../creating_content/create_problem.html">5.4. 创建问题组件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../creating_content/libraries.html">5.5. Working with Content Libraries</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../exercises_tools/index.html">6. 创建习题和工具</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/create_exercises_and_tools.html">6.1. 创建练习和工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/annotation.html">6.2. 注释问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/checkbox.html">6.3. 复选框问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/chemical_equation.html">6.4. 化学方程式问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/circuit_schematic_builder.html">6.5. 电路原理图搭建问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/conditional_module.html">6.6. 条件模板</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/custom_javascript.html">6.7. 自定义JavaScript问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/drag_and_drop.html">6.8. 拖放问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/dropdown.html">6.9. 下拉问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/external_graders.html">6.10. 图像映射输入问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/full_screen_image.html">6.11. 全屏图像工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/gene_explorer.html">6.12. Gene Explorer工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/google_calendar.html">6.13. 谷歌日历工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/google_docs.html">6.14. 谷歌云文件工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/google_hangouts.html">6.15. 谷歌即时群聊工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/iframe.html">6.16. IFrame工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/image_mapped_input.html">6.17. 图像映射输入问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/lti_component.html">6.18. LTI 组件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/math_expression_input.html">6.19. 数学表达式输入问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/molecule_editor.html">6.20. 分子编辑器</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/molecule_viewer.html">6.21. 分子浏览器</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/multiple_choice.html">6.22. 多项选择问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/mult_choice_num_input.html">6.23. 多项选择和数字输入题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/numerical_input.html">6.24. 数值输入问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/open_response_assessments/index.html">6.25. 开放性回答评估</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/periodic_table.html">6.26. 元素周期表工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/poll.html">6.27. 投票工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/problem_with_hint.html">6.28. 带适应性提示的问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/problem_in_latex.html">6.29. LaTeX问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/protein_builder.html">6.30. Protex蛋白质构建工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/randomized_content_blocks.html">6.31. 随机内容块</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/recommenderXBlock.html">6.32. 推荐系统</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/text_input.html">6.33. 文本输入问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/word_cloud.html">6.34. 文字云工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/custom_python.html">6.35. 自定义评分器问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/zooming_image.html">6.36. 图像放大工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/mathjax.html">6.37. Studio中MathJax的简要介绍</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../content_experiments/index.html">7. 创建内容实验</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../content_experiments/content_experiments_overview.html">7.1. Overview of Content Experiments</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../content_experiments/content_experiments_configure.html">7.2. 配置带有内容实验的课程</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../content_experiments/content_experiments_add.html">7.3. 为您的课程添加内容实验</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../content_experiments/content_experiments_view.html">7.4. Test Content Experiments</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../cohorts/index.html">8. 建立学生队列</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../cohorts/cohorts_overview.html">8.1. 使用队列功能建立课程群</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cohorts/cohort_config.html">8.2. 启用、配置分队模式</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cohorts/cohorted_courseware.html">8.3. 创建特定队列课件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cohorts/cohorts_setup_discussions.html">8.4. 在包含队列的课程中设置论坛</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cohorts/cohorts_manage_discussions.html">8.5. 管理有学生队列的论坛</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../releasing_course/index.html">9. 发布您的课程</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../releasing_course/beta_testing.html">9.1. 贝塔测试</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../releasing_course/course_launching.html">9.2. 课程发布事宜</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../releasing_course/staff_debug_info.html">9.3. 员工调试信息</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../running_course/index.html">10. 运营您的课程</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/course_staffing.html">10.1. 安置职工</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/course_enrollment.html">10.2. 招生</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/discussions.html">10.3. 管理课程讨论项目</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/discussions_students.html">10.4. 参与课程讨论</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/discussion_guidance_moderators.html">10.5. 论坛协调员指南</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/bulk_email.html">10.6. Bulk Email</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/course_wiki.html">10.7. 使用课程维基</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/course_data.html">10.8. 课程数据</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/course_student.html">10.9. 学生数据</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/course_answers.html">10.10. 回答问题数据</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/course_grades.html">10.11. 学生成绩与成绩评定</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/checking_student_progress.html">10.12. 总成绩计算与证书发放</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../students/index.html">11. 学生相关信息</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../students/login_guide.html">11.1. 学生登录指南示例</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../students/math_students.html">11.2. 学生数学题回答格式化</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../students/ora_students.html">11.3. 学生开放回答评估</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../glossary.html">12. Glossary</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#a">12.1. A</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#c">12.2. C</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#d">12.3. D</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#e">12.4. E</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#f">12.5. F</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#g">12.6. G</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#h">12.7. H</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#i">12.8. I</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#k">12.9. K</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#l">12.10. L</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#m">12.11. M</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#n">12.12. N</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#o">12.13. O</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#p">12.14. P</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#q">12.15. Q</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#r">12.16. R</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#s">12.17. S</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#t">12.18. T</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#u">12.19. U</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#v">12.20. V</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#w">12.21. W</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#xyz">12.22. XYZ</a></li>
+</ul>
+</li>
+</ul>
+
+        
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top">
+        <i data-toggle="wy-nav-top" class="icon icon-reorder"></i>
+        <a href="/">Building and Running an edX Course</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <ul class="wy-breadcrumbs">
+  <li><a href="../index.html">Table of Contents</a> &raquo;</li>
+  <li><a href="">3.7. 为课程添加页面</a></li>
+  
+</ul>
+<hr/>
+
+          
+  <div class="section" id="adding-pages-to-a-course">
+<span id="id1"></span><h1>3.7. 为课程添加页面<a class="headerlink" href="#adding-pages-to-a-course" title="Permalink to this headline">¶</a></h1>
+<p>本章节描述如何为您的课程添加页面和标签。</p>
+<ul class="simple">
+<li><a class="reference internal" href="#default-pages"><span>默认页面</span></a></li>
+<li><a class="reference internal" href="#add-page"><span>添加页面</span></a></li>
+<li><a class="reference internal" href="#show-or-hide-the-course-wiki-page"><span>隐藏和显示“维基百科”页面</span></a></li>
+<li><a class="reference internal" href="#reorder-pages"><span>排序页面</span></a></li>
+<li><a class="reference internal" href="#delete-a-page"><span>删除页面</span></a></li>
+<li><a class="reference internal" href="#code-for-dynamic-html-schedule"><span>动态HTML日程代码</span></a></li>
+</ul>
+<div class="section" id="default-pages">
+<span id="id2"></span><h2>3.7.1. 默认页面<a class="headerlink" href="#default-pages" title="Permalink to this headline">¶</a></h2>
+<p>默认情况，您的课程包含以下页面。</p>
+<ul class="simple">
+<li>课件</li>
+<li>课程信息</li>
+<li>讨论</li>
+<li>Wiki</li>
+<li>进程</li>
+</ul>
+<p>您可以更改 <strong>讨论</strong>， <strong>Wiki</strong>， <strong>进程</strong> 页面的排列顺序。
+您可以隐藏 <strong>Wiki</strong> 页面。</p>
+</div>
+<div class="section" id="add-page">
+<span id="id3"></span><h2>3.7.2. 添加页面<a class="headerlink" href="#add-page" title="Permalink to this headline">¶</a></h2>
+<p>您可以在您的课程中添加新页面。所有页面将在课程的导航栏中对所有学生显示。</p>
+<p>如下导航栏中包含默认页面、课程表、补充材料和导师的博客页面。</p>
+<a class="reference internal image-reference" href="../_images/page_bar_lms.png"><img alt="Image of the navigation bar in the LMS." src="../_images/page_bar_lms.png" style="width: 600px;" /></a>
+<p>您可以为评分标准、课程讲义或其他用途创建页面。
+示例如下。</p>
+<ul class="simple">
+<li>动态HTML日程使用 <a class="reference internal" href="#code-for-dynamic-html-schedule"><span>动态HTML日程代码</span></a> 模板。</li>
+<li>即使搜索框，详见 <a class="reference internal" href="../exercises_tools/google_hangouts.html#google-instant-hangout"><span>谷歌即时群聊工具</span></a> 。</li>
+</ul>
+<ol class="arabic">
+<li><p class="first">在Studio中的 <strong>内容</strong> 菜单点击 <strong>页面</strong> 。一个标题为 <strong>页面</strong> 的页面开启。
+该页面包含课程导航栏中显示的所有页面列表。</p>
+<a class="reference internal image-reference" href="../_images/pages_page.png"><img alt="Image of the Pages page." src="../_images/pages_page.png" style="width: 600px;" /></a>
+</li>
+<li><p class="first">点击 <strong>添加一个新页面</strong>。一个标题为空的新页面添加到列表中。</p>
+<a class="reference internal image-reference" href="../_images/pages_empty.png"><img alt="Image of the Pages page with a new Empty page." src="../_images/pages_empty.png" style="width: 600px;" /></a>
+</li>
+<li><p class="first">在新页面行中，选择 <strong>编辑</strong> 。HTML 编辑器开启。</p>
+<a class="reference internal image-reference" href="../_images/pages_editor.png"><img alt="Image of the page editor." src="../_images/pages_editor.png" style="width: 600px;" /></a>
+</li>
+<li><p class="first">在您的页面中输入内容</p>
+<p>使用编辑器的详细操作，请参考 <a class="reference internal" href="../creating_content/create_html_component.html#options-for-editing-html-components"><span>HTML组件编辑选项</span></a>.</p>
+</li>
+<li><p class="first">单击 <strong>设置</strong> 编辑 <strong>可见名称</strong> 。可见名称是该课程中学生可见页面的名称。</p>
+</li>
+<li><p class="first">单击 <strong>保存</strong></p>
+</li>
+</ol>
+<p>如果课程已经开始，新页面将立即对学生开放。</p>
+</div>
+<div class="section" id="show-or-hide-the-course-wiki-page">
+<span id="id4"></span><h2>3.7.3. 隐藏和显示“维基百科”页面<a class="headerlink" href="#show-or-hide-the-course-wiki-page" title="Permalink to this headline">¶</a></h2>
+<p>系统默认的设置中，您的课程会包含一个“维基百科”页面。
+学生及课程工作人员可使用该页面发表内容评论。</p>
+<p>如果不想在课堂上使用该页面，可将该页面隐藏。</p>
+<blockquote>
+<div><strong>维基</strong> 一栏中，边上的眼睛图标表示该页面在课程中可见。</div></blockquote>
+<p>单击眼睛图标，图标会发生变化，意味着该页面不可见。</p>
+<img alt="Image of the Pages page with the Wiki made visible" src="../_images/pages_wiki_off.png" />
+<p>再次点击，又会恢复原状。</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">隐藏“维基”页面后，页面中的内容仍然会保留。
+例如，某个学生给某个“维基百科”主题添加了书签，隐藏页面后，仍然可以用书签导航至该主题。
+所有之前发表的内容在该页面隐藏后均保留，只要知道URL，所有使用EDX的学员均可访问该内容。</p>
+</div>
+</div>
+<div class="section" id="reorder-pages">
+<span id="id5"></span><h2>3.7.4. 排序页面<a class="headerlink" href="#reorder-pages" title="Permalink to this headline">¶</a></h2>
+<p>想要排序页面，拖拽页面标签至相应位置即可。</p>
+<p>要移动某个页面，将鼠标悬停在页面标签右边的句柄上直至鼠标指针变成四方向箭头，
+然后单击、拖拽页面到目标位置。</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">您无法对 <strong>课件</strong> 和 <strong>课程信息</strong> 页面进行排序。</p>
+</div>
+</div>
+<div class="section" id="delete-a-page">
+<span id="id6"></span><h2>3.7.5. 删除页面<a class="headerlink" href="#delete-a-page" title="Permalink to this headline">¶</a></h2>
+<p>单击页面标签行的垃圾桶图标以删除某个添加的页面，删除之前会有警告提示。</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">您无法删除 <strong>课件</strong>、 <strong>课程信息</strong>、 <strong>讨论</strong> 和
+<strong>进程</strong> 页面。您可以隐藏 <strong>Wiki</strong> 页面。</p>
+</div>
+</div>
+<div class="section" id="html">
+<span id="code-for-dynamic-html-schedule"></span><h2>3.7.6. 动态HTML日程代码<a class="headerlink" href="#html" title="Permalink to this headline">¶</a></h2>
+<p>您可使用以下代码为您的课程添加动态HTML代码：</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">将以下代码粘贴到 <a class="reference internal" href="../creating_content/create_html_component.html#work-with-html-code"><span>the visual editor</span></a> 或者 <a class="reference internal" href="../creating_content/create_html_component.html#the-raw-html-editor"><span>raw HTML editor</span></a> 页面。
+请勿直接将代码粘贴到视图编辑器中。</p>
+</div>
+<div class="highlight-html"><div class="highlight"><pre>    <span class="nt">&lt;div</span> <span class="na">class=</span> <span class="s">&quot;syllabus&quot;</span><span class="nt">&gt;</span>
+
+    <span class="nt">&lt;table</span> <span class="na">style=</span><span class="s">&quot;width: 100%&quot;</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;col</span> <span class="na">width=</span><span class="s">&quot;10%&quot;</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;col</span> <span class="na">width=</span><span class="s">&quot;15%&quot;</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;col</span> <span class="na">width=</span><span class="s">&quot;10%&quot;</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;col</span> <span class="na">width=</span><span class="s">&quot;30%&quot;</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;col</span> <span class="na">width=</span><span class="s">&quot;10%&quot;</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;col</span> <span class="na">width=</span><span class="s">&quot;15%&quot;</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;col</span> <span class="na">width=</span><span class="s">&quot;10%&quot;</span><span class="nt">&gt;</span>
+
+    <span class="c">&lt;!-- Headings --&gt;</span>
+             <span class="nt">&lt;thead&gt;</span>
+                    <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">&quot;day&quot;</span><span class="nt">&gt;</span> Wk of <span class="nt">&lt;/td&gt;</span>
+                    <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">&quot;topic&quot;</span><span class="nt">&gt;</span> Topic <span class="nt">&lt;/td&gt;</span>
+                    <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">&quot;reading&quot;</span><span class="nt">&gt;</span> Read <span class="nt">&lt;/td&gt;</span>
+                    <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">&quot;video&quot;</span><span class="nt">&gt;</span> Lecture Sequence <span class="nt">&lt;/td&gt;</span>
+                    <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">&quot;slides&quot;</span><span class="nt">&gt;</span> Slides <span class="nt">&lt;/td&gt;</span>
+                    <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">&quot;assignment&quot;</span><span class="nt">&gt;</span> HW/Q <span class="nt">&lt;/td&gt;</span>
+                    <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">&quot;due&quot;</span><span class="nt">&gt;</span> Due <span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;/thead&gt;</span>
+
+    <span class="c">&lt;!-- Week 1 Row 1 --&gt;</span>
+             <span class="nt">&lt;tr</span> <span class="na">class=</span><span class="s">&quot;first&quot;</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">&quot;day&quot;</span><span class="nt">&gt;</span>10/22<span class="nt">&lt;/td&gt;</span>
+                    <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">&quot;topic&quot;</span><span class="nt">&gt;</span>Topic 1<span class="nt">&lt;/td&gt;</span>
+                    <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">&quot;reading&quot;</span><span class="nt">&gt;</span>Ch. 1<span class="nt">&lt;/td&gt;</span>
+                    <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">&quot;video&quot;</span><span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span><span class="nt">&gt;</span>L1: Title<span class="nt">&lt;/a&gt;&lt;/td&gt;</span>
+                    <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">&quot;slides&quot;</span><span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span><span class="nt">&gt;</span>L1<span class="nt">&lt;/a&gt;&lt;/td&gt;</span>
+                    <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">&quot;assignment&quot;</span><span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span><span class="nt">&gt;</span>HW 1<span class="nt">&lt;/a&gt;&lt;/td&gt;</span>
+                    <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">&quot;due&quot;</span><span class="nt">&gt;</span>11/04<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;/tr&gt;</span>
+
+    <span class="c">&lt;!-- Week 1 Row 2 --&gt;</span>
+            <span class="nt">&lt;tr&gt;</span>
+                    <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">&quot;day&quot;</span><span class="nt">&gt;</span> <span class="nt">&lt;/td&gt;</span>
+                    <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">&quot;topic&quot;</span><span class="nt">&gt;&lt;/td&gt;</span>
+                    <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">&quot;reading&quot;</span><span class="nt">&gt;&lt;/td&gt;</span>
+                    <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">&quot;video&quot;</span><span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span><span class="nt">&gt;</span>L2: Title<span class="nt">&lt;/a&gt;&lt;/td&gt;</span>
+                    <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">&quot;slides&quot;</span><span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span><span class="nt">&gt;</span>L2<span class="nt">&lt;/a&gt;&lt;/td&gt;</span>
+                    <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">&quot;assignment&quot;</span><span class="nt">&gt;</span>     <span class="nt">&lt;/td&gt;</span>
+                     <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">&quot;due&quot;</span><span class="nt">&gt;</span>      <span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;/tr&gt;</span>
+
+             <span class="nt">&lt;tr&gt;</span> <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">&quot;week_separator&quot;</span> <span class="na">colspan=</span><span class="s">7</span><span class="nt">&gt;</span> <span class="nt">&lt;hr/&gt;</span> <span class="nt">&lt;/td&gt;</span> <span class="nt">&lt;/tr&gt;</span>
+
+    <span class="c">&lt;!-- Week 2 Row 1 --&gt;</span>
+             <span class="nt">&lt;tr&gt;</span>
+                    <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">&quot;day&quot;</span><span class="nt">&gt;</span>10/29<span class="nt">&lt;/td&gt;</span>
+                    <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">&quot;topic&quot;</span><span class="nt">&gt;</span>Topic 2<span class="nt">&lt;/td&gt;</span>
+                    <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">&quot;reading&quot;</span><span class="nt">&gt;</span>Ch. 2<span class="nt">&lt;/td&gt;</span>
+                    <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">&quot;video&quot;</span><span class="nt">&gt;</span> <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span><span class="nt">&gt;</span>L3: Title<span class="nt">&lt;a&gt;&lt;/td&gt;</span>
+                     <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">&quot;slides&quot;</span><span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span><span class="nt">&gt;</span>L3<span class="nt">&lt;/a&gt;&lt;/td&gt;</span>
+                    <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">&quot;assignment&quot;</span><span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span><span class="nt">&gt;</span>Quiz 1<span class="nt">&lt;/a&gt;&lt;/td&gt;</span>
+                    <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">&quot;due&quot;</span><span class="nt">&gt;</span>11/11<span class="nt">&lt;/td&gt;</span>
+             <span class="nt">&lt;/tr&gt;</span>
+
+    <span class="c">&lt;!-- Week 2 Row 2 --&gt;</span>
+            <span class="nt">&lt;tr&gt;</span>
+                    <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">&quot;day&quot;</span><span class="nt">&gt;&lt;/td&gt;</span>
+                    <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">&quot;topic&quot;</span><span class="nt">&gt;&lt;/td&gt;</span>
+                    <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">&quot;reading&quot;</span><span class="nt">&gt;&lt;/td&gt;</span>
+                    <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">&quot;video&quot;</span><span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span><span class="nt">&gt;</span>L4: Title<span class="nt">&lt;/a&gt;&lt;/td&gt;</span>
+                    <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">&quot;slides&quot;</span><span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span><span class="nt">&gt;</span>L4<span class="nt">&lt;/a&gt;</span> <span class="nt">&lt;/td&gt;</span>
+                    <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">&quot;assignment&quot;</span><span class="nt">&gt;&lt;/td&gt;</span>
+                    <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">&quot;due&quot;</span><span class="nt">&gt;&lt;/td&gt;</span>
+            <span class="nt">&lt;/tr&gt;</span>
+            <span class="nt">&lt;tr&gt;</span> <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">&quot;week_separator&quot;</span> <span class="na">colspan=</span><span class="s">7</span><span class="nt">&gt;</span> <span class="nt">&lt;hr/&gt;</span> <span class="nt">&lt;/td&gt;</span> <span class="nt">&lt;/tr&gt;</span>
+
+    <span class="c">&lt;!-- Week 3 Row 1 --&gt;</span>
+            <span class="nt">&lt;tr&gt;</span>
+                    <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">&quot;day&quot;</span><span class="nt">&gt;</span>11/05<span class="nt">&lt;/td&gt;</span>
+                    <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">&quot;topic&quot;</span><span class="nt">&gt;</span>Topic 3<span class="nt">&lt;/td&gt;</span>
+                    <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">&quot;reading&quot;</span><span class="nt">&gt;</span>Ch. 3<span class="nt">&lt;/td&gt;</span>
+                    <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">&quot;video&quot;</span><span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span><span class="nt">&gt;</span>L5: Title<span class="nt">&lt;/a&gt;&lt;/td&gt;</span>
+                    <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">&quot;slides&quot;</span><span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span><span class="nt">&gt;</span>L5 <span class="nt">&lt;/a&gt;&lt;/td&gt;</span>
+                    <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">&quot;assignment&quot;</span><span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span><span class="nt">&gt;</span>HW 2<span class="nt">&lt;/a&gt;&lt;/td&gt;</span>
+                    <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">&quot;due&quot;</span><span class="nt">&gt;</span>11/18 <span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;/tr&gt;</span>
+
+    <span class="c">&lt;!-- Week 3 Row 2 --&gt;</span>
+            <span class="nt">&lt;tr&gt;</span>
+                    <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">&quot;day&quot;</span><span class="nt">&gt;</span> <span class="nt">&lt;/td&gt;</span>
+                    <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">&quot;topic&quot;</span><span class="nt">&gt;</span> <span class="nt">&lt;/td&gt;</span>
+                    <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">&quot;reading&quot;</span><span class="nt">&gt;&lt;/td&gt;</span>
+                    <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">&quot;video&quot;</span><span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span><span class="nt">&gt;</span>L6: Title<span class="nt">&lt;/a&gt;&lt;/td&gt;</span>
+                    <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">&quot;slides&quot;</span><span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span><span class="nt">&gt;</span>L6 <span class="nt">&lt;/a&gt;&lt;/td&gt;</span>
+                    <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">&quot;video&quot;</span><span class="nt">&gt;&lt;/td&gt;</span>
+                    <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">&quot;assignment&quot;</span><span class="nt">&gt;&lt;/td&gt;</span>
+                    <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">&quot;due&quot;</span><span class="nt">&gt;&lt;/td&gt;</span>
+            <span class="nt">&lt;/tr&gt;</span>
+            <span class="nt">&lt;tr&gt;</span> <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">&quot;week_separator&quot;</span> <span class="na">colspan=</span><span class="s">7</span><span class="nt">&gt;</span> <span class="nt">&lt;hr/&gt;</span> <span class="nt">&lt;/td&gt;</span> <span class="nt">&lt;/tr&gt;</span>
+
+    <span class="c">&lt;!-- Week 4 Row 1 --&gt;</span>
+            <span class="nt">&lt;tr&gt;</span>
+                    <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">&quot;day&quot;</span><span class="nt">&gt;</span>11/12<span class="nt">&lt;/td&gt;</span>
+                    <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">&quot;topic&quot;</span><span class="nt">&gt;</span>Topic 4<span class="nt">&lt;/td&gt;</span>
+                    <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">&quot;reading&quot;</span><span class="nt">&gt;</span>Ch. 4<span class="nt">&lt;/td&gt;</span>
+                    <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">&quot;video&quot;</span><span class="nt">&gt;</span><span class="c">&lt;!--&lt;a href=&quot;#&quot;&gt;L7: Title&lt;/a&gt;--&gt;</span> L7: Title<span class="nt">&lt;/td&gt;</span>
+                    <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">&quot;slides&quot;</span><span class="nt">&gt;</span><span class="c">&lt;!--&lt;a href=&quot;#&quot;&gt;L7&lt;/a&gt;--&gt;</span>L7<span class="nt">&lt;/td&gt;</span>
+                    <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">&quot;assignment&quot;</span><span class="nt">&gt;</span><span class="c">&lt;!--&lt;a href=&quot;#&quot;&gt;Quiz 2&lt;/a&gt;--&gt;</span>Quiz 2<span class="nt">&lt;/td&gt;</span>
+                    <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">&quot;due&quot;</span><span class="nt">&gt;</span> 11/25 <span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;/tr&gt;</span>
+
+    <span class="c">&lt;!-- Week 4 Row 2 --&gt;</span>
+            <span class="nt">&lt;tr&gt;</span>
+                    <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">&quot;day&quot;</span><span class="nt">&gt;&lt;/td&gt;</span>
+                    <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">&quot;topic&quot;</span><span class="nt">&gt;&lt;/td&gt;</span>
+                    <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">&quot;reading&quot;</span><span class="nt">&gt;&lt;/td&gt;</span>
+                    <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">&quot;video&quot;</span><span class="nt">&gt;</span><span class="c">&lt;!--&lt;a href=&quot;#&quot;&gt;L8: Title&lt;/a&gt;--&gt;</span>L8: Title<span class="nt">&lt;/td&gt;</span>
+                    <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">&quot;slides&quot;</span><span class="nt">&gt;</span><span class="c">&lt;!--&lt;a href=&quot;#&quot;&gt;L8&lt;/a&gt;--&gt;</span>L8<span class="nt">&lt;/td&gt;</span>
+                    <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">&quot;assignment&quot;</span><span class="nt">&gt;&lt;/td&gt;</span>
+                    <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">&quot;due&quot;</span><span class="nt">&gt;&lt;/td&gt;</span>
+            <span class="nt">&lt;/tr&gt;</span>
+            <span class="nt">&lt;tr&gt;</span> <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">&quot;week_separator&quot;</span> <span class="na">colspan=</span><span class="s">7</span><span class="nt">&gt;</span> <span class="nt">&lt;hr/&gt;</span> <span class="nt">&lt;/td&gt;</span> <span class="nt">&lt;/tr&gt;</span>
+
+    <span class="c">&lt;!-- Week 5 Row 1 --&gt;</span>
+            <span class="nt">&lt;tr&gt;</span>
+                    <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">&quot;day&quot;</span><span class="nt">&gt;</span>11/19<span class="nt">&lt;/td&gt;</span>
+                    <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">&quot;topic&quot;</span><span class="nt">&gt;</span>Topic 5<span class="nt">&lt;/td&gt;</span>
+                    <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">&quot;reading&quot;</span><span class="nt">&gt;</span>Ch. 5<span class="nt">&lt;/td&gt;</span>
+                    <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">&quot;video&quot;</span><span class="nt">&gt;</span><span class="c">&lt;!--&lt;a href=&quot;#&quot;&gt;L9: Title&lt;/a&gt;--&gt;</span>L9: Title<span class="nt">&lt;/td&gt;</span>
+                    <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">&quot;slides&quot;</span><span class="nt">&gt;</span><span class="c">&lt;!--&lt;a href=&quot;#&quot;&gt;L9&lt;/a&gt;--&gt;</span>L9<span class="nt">&lt;/td&gt;</span>
+<span class="nt">&lt;                   td</span> <span class="na">class=</span><span class="s">&quot;assignment&quot;</span><span class="nt">&gt;</span><span class="c">&lt;!--&lt;a href=&quot;#&quot;&gt;HW 3&lt;/a&gt;--&gt;</span>HW 3<span class="nt">&lt;/td&gt;</span>
+                    <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">&quot;due&quot;</span><span class="nt">&gt;</span> 12/02 <span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;/tr&gt;</span>
+
+    <span class="c">&lt;!-- Week 5 Row 2 --&gt;</span>
+            <span class="nt">&lt;tr&gt;</span>
+                    <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">&quot;day&quot;</span><span class="nt">&gt;&lt;/td&gt;</span>
+                    <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">&quot;topic&quot;</span><span class="nt">&gt;&lt;/td&gt;</span>
+                    <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">&quot;reading&quot;</span><span class="nt">&gt;&lt;/td&gt;</span>
+                    <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">&quot;video&quot;</span><span class="nt">&gt;</span><span class="c">&lt;!--&lt;a href=&quot;#&quot;&gt;L10: Title&lt;/a&gt;--&gt;</span>L10: Title<span class="nt">&lt;/td&gt;</span>
+                    <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">&quot;slides&quot;</span><span class="nt">&gt;</span><span class="c">&lt;!--&lt;a href=&quot;#&quot;&gt;L10&lt;/a&gt;--&gt;</span>L10 <span class="nt">&lt;/td&gt;</span>
+                    <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">&quot;assignment&quot;</span><span class="nt">&gt;&lt;/td&gt;</span>
+                    <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">&quot;due&quot;</span><span class="nt">&gt;&lt;/td&gt;</span>
+            <span class="nt">&lt;/tr&gt;</span>
+            <span class="nt">&lt;tr&gt;</span> <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">&quot;week_separator&quot;</span> <span class="na">colspan=</span><span class="s">7</span><span class="nt">&gt;</span> <span class="nt">&lt;hr/&gt;</span> <span class="nt">&lt;/td&gt;</span> <span class="nt">&lt;/tr&gt;</span>
+
+    <span class="c">&lt;!-- Week 6 Row 1 --&gt;</span>
+            <span class="nt">&lt;tr&gt;</span>
+                    <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">&quot;day&quot;</span><span class="nt">&gt;</span>11/26<span class="nt">&lt;/td&gt;</span>
+                    <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">&quot;topic&quot;</span><span class="nt">&gt;</span>Topic 6<span class="nt">&lt;/td&gt;</span>
+                    <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">&quot;reading&quot;</span><span class="nt">&gt;</span>Ch. 6<span class="nt">&lt;/td&gt;</span>
+                    <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">&quot;video&quot;</span><span class="nt">&gt;</span><span class="c">&lt;!--&lt;a href=&quot;#&quot;&gt;&lt;L11: Title&lt;/a&gt;--&gt;</span>L11: Title <span class="nt">&lt;/td&gt;</span>
+                    <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">&quot;slides&quot;</span><span class="nt">&gt;</span><span class="c">&lt;!--&lt;a href=&quot;#&quot;&gt;L11&lt;/a&gt;--&gt;</span>L11<span class="nt">&lt;/td&gt;</span>
+                    <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">&quot;assignment&quot;</span><span class="nt">&gt;</span><span class="c">&lt;!--&lt;a href=&quot;#&quot;&gt;HW 4&lt;/a&gt;--&gt;</span>HW 4<span class="nt">&lt;/td&gt;</span>
+                    <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">&quot;due&quot;</span><span class="nt">&gt;</span>12/09<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;/tr&gt;</span>
+
+    <span class="c">&lt;!-- Week 6 Row 2 --&gt;</span>
+            <span class="nt">&lt;tr&gt;</span>
+                    <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">&quot;day&quot;</span><span class="nt">&gt;</span> <span class="nt">&lt;/td&gt;</span>
+                    <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">&quot;topic&quot;</span><span class="nt">&gt;</span> <span class="nt">&lt;/td&gt;</span>
+                    <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">&quot;reading&quot;</span><span class="nt">&gt;&lt;/td&gt;</span>
+                    <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">&quot;video&quot;</span><span class="nt">&gt;</span><span class="c">&lt;!--&lt;a href=&quot;#&quot;&gt;L12: Title&lt;/a&gt;--&gt;</span>L12: Title<span class="nt">&lt;/td&gt;</span>
+                    <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">&quot;slides&quot;</span><span class="nt">&gt;</span><span class="c">&lt;!--&lt;a href=&quot;#&quot;&gt;L12&lt;/a&gt;--&gt;</span>L12<span class="nt">&lt;/td&gt;</span>
+                    <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">&quot;assignment&quot;</span><span class="nt">&gt;&lt;/td&gt;</span>
+                    <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">&quot;due&quot;</span><span class="nt">&gt;</span>      <span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;/tr&gt;</span>
+    <span class="nt">&lt;/table&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+</pre></div>
+</div>
+</div>
+</div>
+
+
+          <footer>
+  
+    <div class="rst-footer-buttons">
+      
+        <a href="textbooks.html" class="btn btn-neutral float-right" title="3.8. 添加课本"/>Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="handouts_updates.html" class="btn btn-neutral" title="3.6. 添加课程补充资料及讲义"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <p>
+      &copy; Copyright 2015, edX.
+  </p>
+
+ 
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+</body>
+</html>

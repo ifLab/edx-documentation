@@ -1,0 +1,857 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>6.8. 拖放问题 &mdash; Building and Running an edX Course  documentation</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="../_static/css/favicon.ico"/>
+  
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  
+  
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:'../',
+        VERSION:'',
+        COLLAPSE_INDEX:false,
+        FILE_SUFFIX:'.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+
+    
+
+  
+
+  
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+
+  
+    <link rel="top" title="Building and Running an edX Course  documentation" href="../index.html"/>
+        <link rel="up" title="6. 创建习题和工具" href="index.html"/>
+        <link rel="next" title="6.9. 下拉问题" href="dropdown.html"/>
+        <link rel="prev" title="6.7. 自定义JavaScript问题" href="custom_javascript.html"/> 
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-nav-search">
+        <a href="../index.html" class="icon icon-home"> Building and Running an edX Course</a>
+        <form class="wy-form" action="../search.html" method="get">
+  <input type="text" name="q" placeholder="Search document" />
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix">
+        
+        
+            <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../front_matter/index.html">1. 参考信息</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../front_matter/read_me.html">1.1. Read Me</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../front_matter/preface.html">1.2. 序言</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../front_matter/change_log.html">1.3. Change Log</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../front_matter/browsers.html">1.4. edX浏览器支持</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/index.html">2. 开始使用edX</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../getting_started/accounts.html">2.1. 开始使用edX</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../getting_started/dashboard_acctsettings_profile.html">2.2. 搜索你的仪表板、设置和配置文件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../getting_started/get_started.html">2.3. 开始了解Studio</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../getting_started/accessibility.html">2.4. 创建无障碍课程指南</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../building_course/index.html">3. 建立您的课程</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/creating_new_course.html">3.1. 新建课程</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/scheduling_course.html">3.2. 设置开始和结束日期</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/setting_up_student_view.html">3.3. 设置课程细节</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/licensing_course.html">3.4. 授权课程</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/course_files.html">3.5. 给课程添加文件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/handouts_updates.html">3.6. 添加课程补充资料及讲义</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/pages.html">3.7. 为课程添加页面</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/textbooks.html">3.8. 添加课本</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/establish_grading_policy.html">3.9. 设定计分政策</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/course_rerun.html">3.10. 重开课程</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/export_import_course.html">3.11. 输出和导入课程</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../developing_course/index.html">4. 开发您的课程</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/workflow.html">4.1. 开始创建课程内容</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/course_outline.html">4.2. 创建课程大纲</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/course_sections.html">4.3. 创建课程章节</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/course_subsections.html">4.4. 构建课程小节</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/course_units.html">4.5. 构建课程单元</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/course_components.html">4.6. 创建课程组件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/controlling_content_visibility.html">4.7. 设置内容可见性</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/testing_courseware.html">4.8. 测试您的课程内容</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../creating_content/index.html">5. 创建课程内容</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../creating_content/create_html_component.html">5.1. 如何使用HTML组件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../creating_content/create_video.html">5.2. 创建影片组件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../creating_content/create_discussion.html">5.3. 创建讨论组件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../creating_content/create_problem.html">5.4. 创建问题组件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../creating_content/libraries.html">5.5. Working with Content Libraries</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">6. 创建习题和工具</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="create_exercises_and_tools.html">6.1. 创建练习和工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="annotation.html">6.2. 注释问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="checkbox.html">6.3. 复选框问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="chemical_equation.html">6.4. 化学方程式问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="circuit_schematic_builder.html">6.5. 电路原理图搭建问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="conditional_module.html">6.6. 条件模板</a></li>
+<li class="toctree-l2"><a class="reference internal" href="custom_javascript.html">6.7. 自定义JavaScript问题</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="">6.8. 拖放问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dropdown.html">6.9. 下拉问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="external_graders.html">6.10. 图像映射输入问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="full_screen_image.html">6.11. 全屏图像工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gene_explorer.html">6.12. Gene Explorer工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="google_calendar.html">6.13. 谷歌日历工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="google_docs.html">6.14. 谷歌云文件工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="google_hangouts.html">6.15. 谷歌即时群聊工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="iframe.html">6.16. IFrame工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="image_mapped_input.html">6.17. 图像映射输入问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lti_component.html">6.18. LTI 组件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="math_expression_input.html">6.19. 数学表达式输入问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="molecule_editor.html">6.20. 分子编辑器</a></li>
+<li class="toctree-l2"><a class="reference internal" href="molecule_viewer.html">6.21. 分子浏览器</a></li>
+<li class="toctree-l2"><a class="reference internal" href="multiple_choice.html">6.22. 多项选择问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="mult_choice_num_input.html">6.23. 多项选择和数字输入题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="numerical_input.html">6.24. 数值输入问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="open_response_assessments/index.html">6.25. 开放性回答评估</a></li>
+<li class="toctree-l2"><a class="reference internal" href="periodic_table.html">6.26. 元素周期表工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="poll.html">6.27. 投票工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="problem_with_hint.html">6.28. 带适应性提示的问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="problem_in_latex.html">6.29. LaTeX问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="protein_builder.html">6.30. Protex蛋白质构建工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="randomized_content_blocks.html">6.31. 随机内容块</a></li>
+<li class="toctree-l2"><a class="reference internal" href="recommenderXBlock.html">6.32. 推荐系统</a></li>
+<li class="toctree-l2"><a class="reference internal" href="text_input.html">6.33. 文本输入问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="word_cloud.html">6.34. 文字云工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="custom_python.html">6.35. 自定义评分器问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="zooming_image.html">6.36. 图像放大工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="mathjax.html">6.37. Studio中MathJax的简要介绍</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../content_experiments/index.html">7. 创建内容实验</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../content_experiments/content_experiments_overview.html">7.1. Overview of Content Experiments</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../content_experiments/content_experiments_configure.html">7.2. 配置带有内容实验的课程</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../content_experiments/content_experiments_add.html">7.3. 为您的课程添加内容实验</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../content_experiments/content_experiments_view.html">7.4. Test Content Experiments</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../cohorts/index.html">8. 建立学生队列</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../cohorts/cohorts_overview.html">8.1. 使用队列功能建立课程群</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cohorts/cohort_config.html">8.2. 启用、配置分队模式</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cohorts/cohorted_courseware.html">8.3. 创建特定队列课件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cohorts/cohorts_setup_discussions.html">8.4. 在包含队列的课程中设置论坛</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cohorts/cohorts_manage_discussions.html">8.5. 管理有学生队列的论坛</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../releasing_course/index.html">9. 发布您的课程</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../releasing_course/beta_testing.html">9.1. 贝塔测试</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../releasing_course/course_launching.html">9.2. 课程发布事宜</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../releasing_course/staff_debug_info.html">9.3. 员工调试信息</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../running_course/index.html">10. 运营您的课程</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/course_staffing.html">10.1. 安置职工</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/course_enrollment.html">10.2. 招生</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/discussions.html">10.3. 管理课程讨论项目</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/discussions_students.html">10.4. 参与课程讨论</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/discussion_guidance_moderators.html">10.5. 论坛协调员指南</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/bulk_email.html">10.6. Bulk Email</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/course_wiki.html">10.7. 使用课程维基</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/course_data.html">10.8. 课程数据</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/course_student.html">10.9. 学生数据</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/course_answers.html">10.10. 回答问题数据</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/course_grades.html">10.11. 学生成绩与成绩评定</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/checking_student_progress.html">10.12. 总成绩计算与证书发放</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../students/index.html">11. 学生相关信息</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../students/login_guide.html">11.1. 学生登录指南示例</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../students/math_students.html">11.2. 学生数学题回答格式化</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../students/ora_students.html">11.3. 学生开放回答评估</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../glossary.html">12. Glossary</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#a">12.1. A</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#c">12.2. C</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#d">12.3. D</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#e">12.4. E</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#f">12.5. F</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#g">12.6. G</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#h">12.7. H</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#i">12.8. I</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#k">12.9. K</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#l">12.10. L</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#m">12.11. M</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#n">12.12. N</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#o">12.13. O</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#p">12.14. P</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#q">12.15. Q</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#r">12.16. R</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#s">12.17. S</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#t">12.18. T</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#u">12.19. U</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#v">12.20. V</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#w">12.21. W</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#xyz">12.22. XYZ</a></li>
+</ul>
+</li>
+</ul>
+
+        
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top">
+        <i data-toggle="wy-nav-top" class="icon icon-reorder"></i>
+        <a href="/">Building and Running an edX Course</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <ul class="wy-breadcrumbs">
+  <li><a href="../index.html">Table of Contents</a> &raquo;</li>
+  <li><a href="">6.8. 拖放问题</a></li>
+  
+</ul>
+<hr/>
+
+          
+  <div class="section" id="drag-and-drop">
+<span id="id1"></span><h1>6.8. 拖放问题<a class="headerlink" href="#drag-and-drop" title="Permalink to this headline">¶</a></h1>
+<p>在拖放的问题中，学生通过拖动文本或对象到图像的特定位置上来对问题作出回答。</p>
+<img alt="Image of a drag and drop problem" src="../_images/DragAndDropProblem.png" />
+<div class="section" id="id2">
+<h2>6.8.1. 创建一个拖放问题<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<p>要创建一个简单的拖放问题，让学生拖动标签到图像，你需要上传一个图片来让学生在其上拖动标签，之后再创建问题组件。</p>
+<ol class="arabic">
+<li><p class="first">在 <strong>文件和上传</strong> 页面, 上传你的图片文件。 有关上传文件的详细信息，请参阅 <a class="reference internal" href="../building_course/course_files.html#add-files-to-a-course"><span>给课程添加文件</span></a> 。</p>
+</li>
+<li><p class="first">在您要创建问题的单元，点击 <strong>添加新的组件</strong> 中的 <strong>问题</strong> , 然后再点击 <strong>高级</strong> 选项卡。</p>
+</li>
+<li><p class="first">点击 <strong>拖放</strong> 。</p>
+</li>
+<li><p class="first">点击出现组件中的 <strong>编辑</strong> 。</p>
+</li>
+<li><p class="first">用你自己的文本替换组件编辑器中的样例文本。</p>
+</li>
+<li><p class="first">用你上传到 <strong>文件和上传</strong> 页面图片的URL来替换``&lt;drag_and_drop_input&gt;`` 标记中的 <strong>https://studio.edx.org/c4x/edX/DemoX/asset/L9_buckets.png</strong> (例如： <strong>/static/Image.png</strong>)。</p>
+</li>
+<li><p class="first">对至少一个 <code class="docutils literal"><span class="pre">&lt;draggable&gt;</span></code> 标记，用你希望学生拖动标签中的文字内容来替换 <strong>label</strong> 属性的中的文本。 例如，如果你想让学生单词“Iceland”拖放到您图像上，则新的标签将类似于以下内容：</p>
+<p><code class="docutils literal"><span class="pre">&lt;draggable</span> <span class="pre">id=&quot;1&quot;</span> <span class="pre">label=&quot;Iceland&quot;/&gt;</span></code></p>
+</li>
+</ol>
+<ol class="arabic" start="8">
+<li><p class="first">重复上一步直到你设置完了所有需要的标签。 确保每一个``&lt;draggable&gt;`` 标记的 <strong>id</strong> 属性的值都是不同的。</p>
+</li>
+<li><p class="first">确定图像上的正确区域的坐标和半径。</p>
+</li>
+<li><p class="first">在 <a href="#id3"><span class="problematic" id="id4">``</span></a>correct_answer = {<a href="#id5"><span class="problematic" id="id6">``</span></a>中, 以下面的格式为每个标签添加条目。 这些值以像素为单位：</p>
+<blockquote>
+<div><p><code class="docutils literal"><span class="pre">'id':</span>&nbsp;&nbsp;&nbsp; <span class="pre">[[x</span> <span class="pre">coordinate,</span> <span class="pre">y</span> <span class="pre">coordinate],</span> <span class="pre">radius]</span></code></p>
+<p>例如,如果你的图片是600像素宽，400像素高， 你希望你的学生到冰岛的标签拖动到一个区域在图像的左上部分，拖动一个瑞典标签靠近图像的右下角部分，该代码将类似于以下 (其中2是瑞典标签的ID):</p>
+<div class="highlight-xml"><div class="highlight"><pre>correct-answer = {
+        &#39;1&#39;:    [[50, 50], 75]
+        &#39;2&#39;:    [[550, 350], 75]}
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">确保代码包含右大括号 (<strong>}</strong>) 。</p>
+</div>
+</div></blockquote>
+</li>
+<li><p class="first">点击 <strong>保存</strong> 。</p>
+</li>
+</ol>
+<div class="section" id="id7">
+<h3>6.8.1.1. 简单拖放问题的代码<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h3>
+<p>要创建出现上面图片中的拖放问题，你需要从edX上下载两个文件，并将这些文件上传到 <strong>文件和上传</strong> 的页面中, 然后添加这个问题的代码到一个问题组件中去。</p>
+<ol class="arabic simple">
+<li>从 edX 上下载这些文件:</li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li>Allopurinol.gif</li>
+<li>AllopurinolAnswer.gif</li>
+</ul>
+<p>点击 <a class="reference external" href="http://files.edx.org/DragAndDropProblemFiles.zip">http://files.edx.org/DragAndDropProblemFiles.zip</a> 下载包含这两个文件的压缩包。</p>
+</div></blockquote>
+<ol class="arabic simple" start="2">
+<li>上传 Allopurinol.gif 和 AllopurinolAnswer.gif 这两个文件到 <strong>文件和上传</strong> 页面。</li>
+<li>在你想要添加问题的位置，点击 <strong>添加新的组件</strong> 中的 <strong>问题</strong>  然后再点击 <strong>高级</strong> 选项卡 。</li>
+<li>点击 <strong>拖放</strong> 。</li>
+<li>点击出现组件中的 <strong>编辑</strong> 。</li>
+<li>在组件编辑器中用下面的代码替换示例代码。</li>
+<li>点击 <strong>保存</strong> 。</li>
+</ol>
+<p><strong>问题的代码</strong>:</p>
+<div class="highlight-xml"><div class="highlight"><pre><span class="nt">&lt;problem&gt;</span>
+  <span class="nt">&lt;p&gt;</span> Allopurinol is a drug used to treat and prevent gout, a very painful form of arthritis. Once only a “rich man’s disease”, gout has become more and more common in recent decades – affecting about 3 million people in the United States alone. Deposits of needle-like crystals of uric acid in connective tissue or joint spaces cause the symptoms of swelling, stiffness and intense pain. Individuals with gout overproduce uric acid because they cannot eliminate it efficiently. Allopurinol treats and prevents gout by stopping the overproduction of uric acid through inhibition of an enzyme required for the synthesis of uric acid. <span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;p&gt;</span> You are shown one of many possible molecules. On the structure of allopurinol below, identify the functional groups that are present by dragging the functional group name listed onto the appropriate target boxes on the structure. If you want to change an answer, you have to drag off the name as well. You may need to scroll through the names of functional groups to see all options. <span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;customresponse&gt;</span>
+    <span class="nt">&lt;drag_and_drop_input</span> <span class="na">no_labels=</span><span class="s">&quot;true&quot;</span> <span class="na">one_per_target=</span><span class="s">&quot;true&quot;</span> <span class="na">target_outline=</span><span class="s">&quot;true&quot;</span> <span class="na">img=</span><span class="s">&quot;/static/Allopurinol.gif&quot;</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;draggable</span> <span class="na">can_reuse=</span><span class="s">&quot;true&quot;</span> <span class="na">label=</span><span class="s">&quot;methyl&quot;</span> <span class="na">id=</span><span class="s">&quot;1&quot;</span><span class="nt">/&gt;</span>
+      <span class="nt">&lt;draggable</span> <span class="na">can_reuse=</span><span class="s">&quot;true&quot;</span> <span class="na">label=</span><span class="s">&quot;hydroxyl&quot;</span> <span class="na">id=</span><span class="s">&quot;2&quot;</span><span class="nt">/&gt;</span>
+      <span class="nt">&lt;draggable</span> <span class="na">can_reuse=</span><span class="s">&quot;true&quot;</span> <span class="na">label=</span><span class="s">&quot;amino&quot;</span> <span class="na">id=</span><span class="s">&quot;3&quot;</span><span class="nt">/&gt;</span>
+      <span class="nt">&lt;draggable</span> <span class="na">can_reuse=</span><span class="s">&quot;true&quot;</span> <span class="na">label=</span><span class="s">&quot;carboxyl&quot;</span> <span class="na">id=</span><span class="s">&quot;4&quot;</span><span class="nt">/&gt;</span>
+      <span class="nt">&lt;draggable</span> <span class="na">can_reuse=</span><span class="s">&quot;true&quot;</span> <span class="na">label=</span><span class="s">&quot;aldehyde&quot;</span> <span class="na">id=</span><span class="s">&quot;5&quot;</span><span class="nt">/&gt;</span>
+      <span class="nt">&lt;draggable</span> <span class="na">can_reuse=</span><span class="s">&quot;true&quot;</span> <span class="na">label=</span><span class="s">&quot;phosphate&quot;</span> <span class="na">id=</span><span class="s">&quot;6&quot;</span><span class="nt">/&gt;</span>
+      <span class="nt">&lt;draggable</span> <span class="na">can_reuse=</span><span class="s">&quot;true&quot;</span> <span class="na">label=</span><span class="s">&quot;sulfhydryl&quot;</span> <span class="na">id=</span><span class="s">&quot;7&quot;</span><span class="nt">/&gt;</span>
+      <span class="nt">&lt;draggable</span> <span class="na">can_reuse=</span><span class="s">&quot;true&quot;</span> <span class="na">label=</span><span class="s">&quot;phenyl&quot;</span> <span class="na">id=</span><span class="s">&quot;8&quot;</span><span class="nt">/&gt;</span>
+      <span class="nt">&lt;draggable</span> <span class="na">can_reuse=</span><span class="s">&quot;true&quot;</span> <span class="na">label=</span><span class="s">&quot;none&quot;</span> <span class="na">id=</span><span class="s">&quot;none&quot;</span><span class="nt">/&gt;</span>
+      <span class="nt">&lt;target</span> <span class="na">id=</span><span class="s">&quot;0&quot;</span> <span class="na">h=</span><span class="s">&quot;53&quot;</span> <span class="na">w=</span><span class="s">&quot;66&quot;</span> <span class="na">y=</span><span class="s">&quot;55.100006103515625&quot;</span> <span class="na">x=</span><span class="s">&quot;131.5&quot;</span><span class="nt">/&gt;</span>
+      <span class="nt">&lt;target</span> <span class="na">id=</span><span class="s">&quot;1&quot;</span> <span class="na">h=</span><span class="s">&quot;113&quot;</span> <span class="na">w=</span><span class="s">&quot;55&quot;</span> <span class="na">y=</span><span class="s">&quot;140.10000610351562&quot;</span> <span class="na">x=</span><span class="s">&quot;181.5&quot;</span><span class="nt">/&gt;</span>
+    <span class="nt">&lt;/drag_and_drop_input&gt;</span>
+    <span class="nt">&lt;answer</span> <span class="na">type=</span><span class="s">&quot;loncapa/python&quot;</span><span class="nt">&gt;</span>
+correct_answer = [ {&#39;draggables&#39;: [&#39;2&#39;], &#39;targets&#39;: [&#39;0&#39; ], &#39;rule&#39;:&#39;unordered_equal&#39; },
+{&#39;draggables&#39;: [&#39;none&#39;], &#39;targets&#39;: [&#39;1&#39; ], &#39;rule&#39;:&#39;unordered_equal&#39; }]
+if draganddrop.grade(submission[0], correct_answer):
+    correct = [&#39;correct&#39;]
+else:
+    correct = [&#39;incorrect&#39;]
+    <span class="nt">&lt;/answer&gt;</span>
+  <span class="nt">&lt;/customresponse&gt;</span>
+  <span class="nt">&lt;solution&gt;</span>
+    <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">&quot;/static/AllopurinolAnswer.gif&quot;</span><span class="nt">/&gt;</span>
+  <span class="nt">&lt;/solution&gt;</span>
+<span class="nt">&lt;/problem&gt;</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="xml">
+<span id="drag-and-drop-problem-xml"></span><h2>6.8.2. 拖放问题的XML<a class="headerlink" href="#xml" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-xml"><div class="highlight"><pre><span class="nt">&lt;problem&gt;</span>
+    Here&#39;s an example of a &quot;Drag and Drop&quot; question set. Click and drag each word in the scrollbar below, up to the numbered bucket which matches the number of letters in the word.
+    <span class="nt">&lt;customresponse&gt;</span>
+        <span class="nt">&lt;drag_and_drop_input</span> <span class="na">img=</span><span class="s">&quot;https://studio.edx.org/c4x/edX/DemoX/asset/L9_buckets.png&quot;</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;draggable</span> <span class="na">id=</span><span class="s">&quot;1&quot;</span> <span class="na">label=</span><span class="s">&quot;a&quot;</span><span class="nt">/&gt;</span>
+            <span class="nt">&lt;draggable</span> <span class="na">id=</span><span class="s">&quot;2&quot;</span> <span class="na">label=</span><span class="s">&quot;cat&quot;</span><span class="nt">/&gt;</span>
+            <span class="nt">&lt;draggable</span> <span class="na">id=</span><span class="s">&quot;3&quot;</span> <span class="na">label=</span><span class="s">&quot;there&quot;</span><span class="nt">/&gt;</span>
+            <span class="nt">&lt;draggable</span> <span class="na">id=</span><span class="s">&quot;4&quot;</span> <span class="na">label=</span><span class="s">&quot;pear&quot;</span><span class="nt">/&gt;</span>
+            <span class="nt">&lt;draggable</span> <span class="na">id=</span><span class="s">&quot;5&quot;</span> <span class="na">label=</span><span class="s">&quot;kitty&quot;</span><span class="nt">/&gt;</span>
+            <span class="nt">&lt;draggable</span> <span class="na">id=</span><span class="s">&quot;6&quot;</span> <span class="na">label=</span><span class="s">&quot;in&quot;</span><span class="nt">/&gt;</span>
+            <span class="nt">&lt;draggable</span> <span class="na">id=</span><span class="s">&quot;7&quot;</span> <span class="na">label=</span><span class="s">&quot;them&quot;</span><span class="nt">/&gt;</span>
+            <span class="nt">&lt;draggable</span> <span class="na">id=</span><span class="s">&quot;8&quot;</span> <span class="na">label=</span><span class="s">&quot;za&quot;</span><span class="nt">/&gt;</span>
+            <span class="nt">&lt;draggable</span> <span class="na">id=</span><span class="s">&quot;9&quot;</span> <span class="na">label=</span><span class="s">&quot;dog&quot;</span><span class="nt">/&gt;</span>
+            <span class="nt">&lt;draggable</span> <span class="na">id=</span><span class="s">&quot;10&quot;</span> <span class="na">label=</span><span class="s">&quot;slate&quot;</span><span class="nt">/&gt;</span>
+            <span class="nt">&lt;draggable</span> <span class="na">id=</span><span class="s">&quot;11&quot;</span> <span class="na">label=</span><span class="s">&quot;few&quot;</span><span class="nt">/&gt;</span>
+        <span class="nt">&lt;/drag_and_drop_input&gt;</span>
+        <span class="nt">&lt;answer</span> <span class="na">type=</span><span class="s">&quot;loncapa/python&quot;</span><span class="nt">&gt;</span>
+           correct_answer = {
+               &#39;1&#39;:      [[70, 150], 121],
+               &#39;6&#39;:      [[190, 150], 121],
+               &#39;8&#39;:      [[190, 150], 121],
+               &#39;2&#39;:      [[310, 150], 121],
+               &#39;9&#39;:      [[310, 150], 121],
+               &#39;11&#39;:     [[310, 150], 121],
+               &#39;4&#39;:      [[420, 150], 121],
+               &#39;7&#39;:      [[420, 150], 121],
+               &#39;3&#39;:      [[550, 150], 121],
+               &#39;5&#39;:      [[550, 150], 121],
+               &#39;10&#39;:     [[550, 150], 121]}
+               if draganddrop.grade(submission[0], correct_answer):
+                   correct = [&#39;correct&#39;]
+               else:
+                   correct = [&#39;incorrect&#39;]
+        <span class="nt">&lt;/answer&gt;</span>
+    <span class="nt">&lt;/customresponse&gt;</span>
+    <span class="nt">&lt;customresponse&gt;</span>
+        <span class="nt">&lt;text&gt;</span>
+            <span class="nt">&lt;h2&gt;</span>Drag and Drop with Outline<span class="nt">&lt;/h2&gt;</span>
+            <span class="nt">&lt;p&gt;</span>Please label hydrogen  atoms connected with left carbon atom.<span class="nt">&lt;/p&gt;</span>
+        <span class="nt">&lt;/text&gt;</span>
+        <span class="nt">&lt;drag_and_drop_input</span> <span class="na">img=</span><span class="s">&quot;https://studio.edx.org/c4x/edX/DemoX/asset/ethglycol.jpg&quot;</span> <span class="na">target_outline=</span><span class="s">&quot;true&quot;</span> <span class="na">one_per_target=</span><span class="s">&quot;true&quot;</span> <span class="na">no_labels=</span><span class="s">&quot;true&quot;</span> <span class="na">label_bg_color=</span><span class="s">&quot;rgb(222, 139, 238)&quot;</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;draggable</span> <span class="na">id=</span><span class="s">&quot;1&quot;</span> <span class="na">label=</span><span class="s">&quot;Hydrogen&quot;</span> <span class="nt">/&gt;</span>
+            <span class="nt">&lt;draggable</span> <span class="na">id=</span><span class="s">&quot;2&quot;</span> <span class="na">label=</span><span class="s">&quot;Hydrogen&quot;</span> <span class="nt">/&gt;</span>
+            <span class="nt">&lt;target</span> <span class="na">id=</span><span class="s">&quot;t1_o&quot;</span> <span class="na">x=</span><span class="s">&quot;10&quot;</span> <span class="na">y=</span><span class="s">&quot;67&quot;</span> <span class="na">w=</span><span class="s">&quot;100&quot;</span> <span class="na">h=</span><span class="s">&quot;100&quot;</span><span class="nt">/&gt;</span>
+            <span class="nt">&lt;target</span> <span class="na">id=</span><span class="s">&quot;t2&quot;</span> <span class="na">x=</span><span class="s">&quot;133&quot;</span> <span class="na">y=</span><span class="s">&quot;3&quot;</span> <span class="na">w=</span><span class="s">&quot;70&quot;</span> <span class="na">h=</span><span class="s">&quot;70&quot;</span><span class="nt">/&gt;</span>
+            <span class="nt">&lt;target</span> <span class="na">id=</span><span class="s">&quot;t3&quot;</span> <span class="na">x=</span><span class="s">&quot;2&quot;</span> <span class="na">y=</span><span class="s">&quot;384&quot;</span> <span class="na">w=</span><span class="s">&quot;70&quot;</span> <span class="na">h=</span><span class="s">&quot;70&quot;</span><span class="nt">/&gt;</span>
+            <span class="nt">&lt;target</span> <span class="na">id=</span><span class="s">&quot;t4&quot;</span> <span class="na">x=</span><span class="s">&quot;95&quot;</span> <span class="na">y=</span><span class="s">&quot;386&quot;</span> <span class="na">w=</span><span class="s">&quot;70&quot;</span> <span class="na">h=</span><span class="s">&quot;70&quot;</span><span class="nt">/&gt;</span>
+            <span class="nt">&lt;target</span> <span class="na">id=</span><span class="s">&quot;t5_c&quot;</span> <span class="na">x=</span><span class="s">&quot;94&quot;</span> <span class="na">y=</span><span class="s">&quot;293&quot;</span> <span class="na">w=</span><span class="s">&quot;91&quot;</span> <span class="na">h=</span><span class="s">&quot;91&quot;</span><span class="nt">/&gt;</span>
+            <span class="nt">&lt;target</span> <span class="na">id=</span><span class="s">&quot;t6_c&quot;</span> <span class="na">x=</span><span class="s">&quot;328&quot;</span> <span class="na">y=</span><span class="s">&quot;294&quot;</span> <span class="na">w=</span><span class="s">&quot;91&quot;</span> <span class="na">h=</span><span class="s">&quot;91&quot;</span><span class="nt">/&gt;</span>
+            <span class="nt">&lt;target</span> <span class="na">id=</span><span class="s">&quot;t7&quot;</span> <span class="na">x=</span><span class="s">&quot;393&quot;</span> <span class="na">y=</span><span class="s">&quot;463&quot;</span> <span class="na">w=</span><span class="s">&quot;70&quot;</span> <span class="na">h=</span><span class="s">&quot;70&quot;</span><span class="nt">/&gt;</span>
+            <span class="nt">&lt;target</span> <span class="na">id=</span><span class="s">&quot;t8&quot;</span> <span class="na">x=</span><span class="s">&quot;344&quot;</span> <span class="na">y=</span><span class="s">&quot;214&quot;</span> <span class="na">w=</span><span class="s">&quot;70&quot;</span> <span class="na">h=</span><span class="s">&quot;70&quot;</span><span class="nt">/&gt;</span>
+            <span class="nt">&lt;target</span> <span class="na">id=</span><span class="s">&quot;t9_o&quot;</span> <span class="na">x=</span><span class="s">&quot;445&quot;</span> <span class="na">y=</span><span class="s">&quot;162&quot;</span> <span class="na">w=</span><span class="s">&quot;100&quot;</span> <span class="na">h=</span><span class="s">&quot;100&quot;</span><span class="nt">/&gt;</span>
+            <span class="nt">&lt;target</span> <span class="na">id=</span><span class="s">&quot;t10&quot;</span> <span class="na">x=</span><span class="s">&quot;591&quot;</span> <span class="na">y=</span><span class="s">&quot;132&quot;</span> <span class="na">w=</span><span class="s">&quot;70&quot;</span> <span class="na">h=</span><span class="s">&quot;70&quot;</span><span class="nt">/&gt;</span>
+        <span class="nt">&lt;/drag_and_drop_input&gt;</span>
+        <span class="nt">&lt;answer</span> <span class="na">type=</span><span class="s">&quot;loncapa/python&quot;</span><span class="nt">&gt;</span>
+            correct_answer = [{
+                &#39;draggables&#39;: [&#39;1&#39;, &#39;2&#39;],
+                &#39;targets&#39;: [&#39;t2&#39;, &#39;t3&#39;, &#39;t4&#39; ],
+                &#39;rule&#39;:&#39;anyof&#39;
+            }]
+            if draganddrop.grade(submission[0], correct_answer):
+                correct = [&#39;correct&#39;]
+            else:
+                correct = [&#39;incorrect&#39;]
+        <span class="nt">&lt;/answer&gt;</span>
+    <span class="nt">&lt;/customresponse&gt;</span>
+<span class="nt">&lt;/problem&gt;</span>
+</pre></div>
+</div>
+<div class="section" id="id8">
+<h3>6.8.2.1. 标记<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><code class="docutils literal"><span class="pre">&lt;customresponse&gt;</span></code>: 表示该问题是一个自定义回答问题。</li>
+<li><code class="docutils literal"><span class="pre">&lt;drag_and_drop_input&gt;</span></code>: 表示自定义回答问题是一个拖放问题。</li>
+<li><code class="docutils literal"><span class="pre">&lt;draggable&gt;</span></code>: 指定学生将拖到基础图像中的一个对象。</li>
+<li><code class="docutils literal"><span class="pre">&lt;target&gt;</span></code>: 指定拖拽元素在基本图片上所要放置的位置。</li>
+</ul>
+<p><strong>标记:</strong> <code class="docutils literal"><span class="pre">&lt;drag_and_drop_input&gt;</span></code></p>
+<blockquote>
+<div><p>属性</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="20%" />
+<col width="80%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">属性</th>
+<th class="head">说明</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>img (必要的)</td>
+<td>将成为基本图像的图片的相对路径。 所有的拖拽元素可以拖动到它。</td>
+</tr>
+<tr class="row-odd"><td>target_outline</td>
+<td>指定 目标周围 (如果指定了它们) 是否画出轮廓线 (灰色虚线)。 它的值可以是&#8217;true&#8217; 或者 &#8216;false&#8217;。
+如果没有指定则目标没有轮廓线。</td>
+</tr>
+<tr class="row-even"><td>one_per_target</td>
+<td>指定是否允许多余于一个拖拽元素被放置在同一个目标中。 的值可以是&#8217;true&#8217; 或者 &#8216;false&#8217;。
+如果没有指定，默认值是 &#8216;true&#8217;.</td>
+</tr>
+<tr class="row-odd"><td>no_labels (必要的)</td>
+<td>默认值是 false 。 默认行为中，如果标签没有设置，标签从ID获得。 如果 no_labels 设置为 true ，那么标签不会自动由ID生成，一个不能设置标签，将获得唯一的图标。</td>
+</tr>
+</tbody>
+</table>
+<p>子标记</p>
+<blockquote>
+<div><ul class="simple">
+<li><code class="docutils literal"><span class="pre">&lt;draggable&gt;</span></code></li>
+<li><code class="docutils literal"><span class="pre">&lt;target&gt;</span></code></li>
+</ul>
+</div></blockquote>
+</div></blockquote>
+<p><strong>标记:</strong> <code class="docutils literal"><span class="pre">&lt;draggable&gt;</span></code></p>
+<p>指定拖放问题中的一个拖拽元素。</p>
+<p>拖拽元素是用户必须拖出滑块并拖放到基本图像上。 完成拖动操作后，如果拖拽元素的中心位于图像矩形区域之外，它将被退回滑块中去。</p>
+<p>为了便于评分，每个拖拽元素都要有唯一的ID。</p>
+<blockquote>
+<div><p>属性</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="20%" />
+<col width="80%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">属性</th>
+<th class="head">说明</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>id (必须的)</td>
+<td>拖拽元素唯一的标识。</td>
+</tr>
+<tr class="row-odd"><td>label (可选的)</td>
+<td>用户可以看到的文本标签。</td>
+</tr>
+<tr class="row-even"><td>icon (可选的)</td>
+<td>当拖拽元素是图片时，图片文件的相对路径。</td>
+</tr>
+<tr class="row-odd"><td>can_reuse</td>
+<td>默认情况下为false。 如果设置为true，则同一个拖拽元素可以使用多次。</td>
+</tr>
+</tbody>
+</table>
+<p>子标记</p>
+<p>(无)</p>
+</div></blockquote>
+<p><strong>标记:</strong> <code class="docutils literal"><span class="pre">&lt;target&gt;</span></code></p>
+<p>指定基本图片上学生必须放置拖拽元素的位置。 按照设计如果拖拽元素的中心在目标区域之内，即在由 [[x, y], [x + w, y + h]] 所指定的矩形区域内，则该元素在目标区域内。
+否则就在目标区域之外。</p>
+<p>如果你至少指定了一个目标，当学生将拖拽元素拖放到目标之外时，拖拽元素会被退回到滑块中。</p>
+<p>如果你没有指定目标区域，学生可以把拖拽元素放到基本图片上的任何位置。</p>
+<blockquote>
+<div><p>属性</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="20%" />
+<col width="80%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">属性</th>
+<th class="head">说明</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>id (必须的)</td>
+<td>拖拽元素唯一的标识。</td>
+</tr>
+<tr class="row-odd"><td>x</td>
+<td>目标区域的左上角将定位在基本图像上的X坐标。</td>
+</tr>
+<tr class="row-even"><td>y</td>
+<td>目标区域的左上角将定位在基本图像上的Y坐标。</td>
+</tr>
+<tr class="row-odd"><td>w</td>
+<td>目标区域的宽度，以像素为单位。</td>
+</tr>
+<tr class="row-even"><td>h</td>
+<td>目标区域的高度，以像素为单位。</td>
+</tr>
+</tbody>
+</table>
+<p>子标记</p>
+<p>(无)</p>
+</div></blockquote>
+</div>
+</div>
+<div class="section" id="id9">
+<h2>6.8.3. 拖拽元素目标<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h2>
+<p>有时只把基本图片作为目标是不够的，所有的拖拽元素也可以成为目标。 在一个复杂问题中，其中一个拖拽元素本身必须成为一个目标（或者多个目标），则可以使用下面的扩展语法。</p>
+<div class="highlight-python"><div class="highlight"><pre>...
+&lt;draggable {attribute list}&gt;
+    &lt;target {attribute list} /&gt;
+    &lt;target {attribute list} /&gt;
+    &lt;target {attribute list} /&gt;
+    ...
+&lt;/draggable&gt;
+...
+</pre></div>
+</div>
+<p>上面标记中的 (<code class="docutils literal"><span class="pre">draggable</span></code> and <code class="docutils literal"><span class="pre">target</span></code>) 属性和正常的 <code class="docutils literal"><span class="pre">draggable</span></code> and <code class="docutils literal"><span class="pre">target</span></code> 标记是一样的。 唯一的区别是你指定内部目标位置坐标的方法。 用 <code class="docutils literal"><span class="pre">x</span></code> 和
+<code class="docutils literal"><span class="pre">y</span></code> 属性来设定内部目标到父元素左上角的偏移量 (包含内部目标)。</p>
+<div class="section" id="id10">
+<h3>6.8.3.1. 拖拽元素目标的限制<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h3>
+<ul>
+<li><p class="first">目前有目标嵌套层数的限制。</p>
+<p>即使你可以在拖拽元素上堆放大量的拖拽元素目标， 拖放问题也只能最多识别两层嵌套的目标。 第一层是 <cite>基础</cite> 目标。 他们在基础图片上。 第二层是定义在拖拽元素上的目标。</p>
+</li>
+<li><p class="first">另一个限制是，在目标范围不针对其他目标检查。</p>
+<p>你必须确保有目标没有重叠。 你也应该确保拖拽元素目标比它的父拖动元素大小要小。 技术上，这是没有必要的，但是从可用性的角度看，它是有必要的。</p>
+</li>
+<li><p class="first">只有定义了基本目标，你猜可以定义拖拽元素目标 ( 基础目标在基础图片上) 。</p>
+<p>如果你没有基础的目标，那么你只能有嵌套一个级别 (基础图片上的拖拽元素)。 在这种情况下，客户端将报告每个拖拽元素在基本图像上位置的坐标（X，Y）。</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="id11">
+<h2>6.8.4. 正确答案格式<a class="headerlink" href="#id11" title="Permalink to this headline">¶</a></h2>
+<p>为目标的拖拽元素指定答案，请参阅 <a href="#id22"><span class="problematic" id="id23">`Answer format for
+targets on draggables`_</span></a>.</p>
+<p>有两种正确答案的格式：详细形式和简短形式。</p>
+<p>简短形式的正确答案是 <code class="docutils literal"><span class="pre">draggable_id</span></code> 到 <a href="#id12"><span class="problematic" id="id13">``</span></a>target_id``的映射:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">correct_answer</span> <span class="o">=</span> <span class="p">{</span><span class="s">&#39;grass&#39;</span><span class="p">:</span>     <span class="p">[[</span><span class="mi">300</span><span class="p">,</span> <span class="mi">200</span><span class="p">],</span> <span class="mi">200</span><span class="p">],</span> <span class="s">&#39;ant&#39;</span><span class="p">:</span> <span class="p">[[</span><span class="mi">500</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> <span class="mi">200</span><span class="p">]}</span>
+<span class="n">correct_answer</span> <span class="o">=</span> <span class="p">{</span><span class="s">&#39;name4&#39;</span><span class="p">:</span> <span class="s">&#39;t1&#39;</span><span class="p">,</span> <span class="s">&#39;7&#39;</span><span class="p">:</span> <span class="s">&#39;t2&#39;</span><span class="p">}</span>
+</pre></div>
+</div>
+<p>详细形式的答案是一个字典列表。 每个字典有三个要素：
+<code class="docutils literal"><span class="pre">拖拽元素</span></code>, <code class="docutils literal"><span class="pre">目标</span></code> and <code class="docutils literal"><span class="pre">规则</span></code> 。 例如:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">correct_answer</span> <span class="o">=</span> <span class="p">[</span>
+<span class="p">{</span>
+  <span class="s">&#39;draggables&#39;</span><span class="p">:</span>   <span class="p">[</span><span class="s">&#39;7&#39;</span><span class="p">,</span> <span class="s">&#39;8&#39;</span><span class="p">],</span>
+  <span class="s">&#39;targets&#39;</span><span class="p">:</span>  <span class="p">[</span><span class="s">&#39;t5_c&#39;</span><span class="p">,</span> <span class="s">&#39;t6_c&#39;</span><span class="p">],</span>
+  <span class="s">&#39;rule&#39;</span><span class="p">:</span> <span class="s">&#39;anyof&#39;</span>
+<span class="p">},</span>
+<span class="p">{</span>
+  <span class="s">&#39;draggables&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s">&#39;1&#39;</span><span class="p">,</span> <span class="s">&#39;2&#39;</span><span class="p">],</span>
+  <span class="s">&#39;targets&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s">&#39;t2_h&#39;</span><span class="p">,</span> <span class="s">&#39;t3_h&#39;</span><span class="p">,</span> <span class="s">&#39;t4_h&#39;</span><span class="p">,</span> <span class="s">&#39;t7_h&#39;</span><span class="p">,</span> <span class="s">&#39;t8_h&#39;</span><span class="p">,</span> <span class="s">&#39;t10_h&#39;</span><span class="p">],</span>
+  <span class="s">&#39;rule&#39;</span><span class="p">:</span> <span class="s">&#39;anyof&#39;</span>
+<span class="p">}]</span>
+</pre></div>
+</div>
+<p>&#8220;拖拽元素&#8221; 是拖拽元素ID的列表。 &#8220;目标&#8221; 是ID列表中的拖拽元素所要被放置的位置。</p>
+<p>错误 (因为拖拽元素的id 7重复了):</p>
+<div class="highlight-python"><div class="highlight"><pre>   correct_answer = [
+   {
+     &#39;draggables&#39;:   [&#39;7&#39;, &#39;8&#39;],
+     &#39;targets&#39;:  [&#39;t5_c&#39;, &#39;t6_c&#39;],
+     &#39;rule&#39;: &#39;anyof&#39;
+   },
+   {
+     &#39;draggables&#39;: [&#39;7&#39;, &#39;2&#39;],
+     &#39;targets&#39;: [&#39;t2_h&#39;, &#39;t3_h&#39;, &#39;t4_h&#39;, &#39;t7_h&#39;, &#39;t8_h&#39;, &#39;t10_h&#39;],
+     &#39;rule&#39;: &#39;anyof&#39;
+   }]
+
+``规则`` 值如下。
+</pre></div>
+</div>
+<ul>
+<li><p class="first"><code class="docutils literal"><span class="pre">准确</span></code>:  <code class="docutils literal"><span class="pre">用户答案</span></code> 的拖拽元素对应的目标，必须和正确答案的相同。 例如，如果 <code class="docutils literal"><span class="pre">正确答案</span></code> 设置如下，那么对于拖拽元素7和8，用户必须将拖拽元素7拖到目标1，将拖拽元素8拖到目标2:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">correct_answer</span> <span class="o">=</span> <span class="p">[</span>
+  <span class="p">{</span>
+  <span class="s">&#39;draggables&#39;</span><span class="p">:</span>   <span class="p">[</span><span class="s">&#39;7&#39;</span><span class="p">,</span> <span class="s">&#39;8&#39;</span><span class="p">],</span>
+  <span class="s">&#39;targets&#39;</span><span class="p">:</span>  <span class="p">[</span><span class="s">&#39;tartget1&#39;</span><span class="p">,</span> <span class="s">&#39;target2&#39;</span><span class="p">],</span>
+  <span class="s">&#39;rule&#39;</span><span class="p">:</span> <span class="s">&#39;exact&#39;</span>
+<span class="p">}]</span>
+</pre></div>
+</div>
+</li>
+<li><p class="first"><code class="docutils literal"><span class="pre">无序</span></code>: 允许拖拽元素不按顺序被拖放到目标中。 如果学生要把拖拽元素7和8分别放到目标1,2中，且7,8必须放在不同的目标中，那么正确答案为:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">correct_answer</span> <span class="o">=</span> <span class="p">[</span>
+<span class="p">{</span>
+  <span class="s">&#39;draggables&#39;</span><span class="p">:</span>   <span class="p">[</span><span class="s">&#39;7&#39;</span><span class="p">,</span> <span class="s">&#39;8&#39;</span><span class="p">],</span>
+  <span class="s">&#39;targets&#39;</span><span class="p">:</span>  <span class="p">[</span><span class="s">&#39;tartget1&#39;</span><span class="p">,</span> <span class="s">&#39;target2&#39;</span><span class="p">],</span>
+  <span class="s">&#39;rule&#39;</span><span class="p">:</span> <span class="s">&#39;unordered_equal&#39;</span>
+<span class="p">}]</span>
+</pre></div>
+</div>
+</li>
+<li><p class="first"><code class="docutils literal"><span class="pre">任意</span></code>: 允许拖拽元素被放置任意目标处。 在 <cite>任意</cite> 规则下，学生把拖拽元素7和8拖到目标1或2中的任意一个均正确:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">correct_answer</span> <span class="o">=</span> <span class="p">[</span>
+<span class="p">{</span>
+  <span class="s">&#39;draggables&#39;</span><span class="p">:</span>   <span class="p">[</span><span class="s">&#39;7&#39;</span><span class="p">,</span> <span class="s">&#39;8&#39;</span><span class="p">],</span>
+  <span class="s">&#39;targets&#39;</span><span class="p">:</span>  <span class="p">[</span><span class="s">&#39;tartget1&#39;</span><span class="p">,</span> <span class="s">&#39;target2&#39;</span><span class="p">],</span>
+  <span class="s">&#39;rule&#39;</span><span class="p">:</span> <span class="s">&#39;anyof&#39;</span>
+<span class="p">}]</span>
+</pre></div>
+</div>
+</li>
+</ul>
+<p>如果 <code class="docutils literal"><span class="pre">可重用</span></code> 为true， 你有拖拽元素a,b,c和10个目标。 这时你可以将4个拖拽元素 <code class="docutils literal"><span class="pre">a</span></code> 放置到 [<code class="docutils literal"><span class="pre">目标1</span></code>,  <code class="docutils literal"><span class="pre">目标4</span></code>, <code class="docutils literal"><span class="pre">目标7</span></code>, <code class="docutils literal"><span class="pre">目标10</span></code>]； 而不用重复地写四个 <code class="docutils literal"><span class="pre">a</span></code> 。 这也允许你将拖拽元素 <a href="#id14"><span class="problematic" id="id15">``</span></a>b``拖动到目标2和目标5，或者目标5和目标2:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">correct_answer</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="p">{</span>
+      <span class="s">&#39;draggables&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s">&#39;a&#39;</span><span class="p">],</span>
+      <span class="s">&#39;targets&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s">&#39;target1&#39;</span><span class="p">,</span>  <span class="s">&#39;target4&#39;</span><span class="p">,</span> <span class="s">&#39;target7&#39;</span><span class="p">,</span> <span class="s">&#39;target10&#39;</span><span class="p">],</span>
+      <span class="s">&#39;rule&#39;</span><span class="p">:</span> <span class="s">&#39;unordered_equal&#39;</span>
+    <span class="p">},</span>
+    <span class="p">{</span>
+      <span class="s">&#39;draggables&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s">&#39;b&#39;</span><span class="p">],</span>
+      <span class="s">&#39;targets&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s">&#39;target2&#39;</span><span class="p">,</span> <span class="s">&#39;target5&#39;</span><span class="p">,</span> <span class="s">&#39;target8&#39;</span><span class="p">],</span>
+      <span class="s">&#39;rule&#39;</span><span class="p">:</span> <span class="s">&#39;anyof&#39;</span>
+    <span class="p">},</span>
+    <span class="p">{</span>
+      <span class="s">&#39;draggables&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s">&#39;c&#39;</span><span class="p">],</span>
+      <span class="s">&#39;targets&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s">&#39;target3&#39;</span><span class="p">,</span> <span class="s">&#39;target6&#39;</span><span class="p">,</span> <span class="s">&#39;target9&#39;</span><span class="p">],</span>
+      <span class="s">&#39;rule&#39;</span><span class="p">:</span> <span class="s">&#39;unordered_equal&#39;</span>
+    <span class="p">}]</span>
+</pre></div>
+</div>
+<p>有时你只想让学生移动两个 <code class="docutils literal"><span class="pre">b</span></code> 拖拽元素。 在这种情况下你要使用 <code class="docutils literal"><span class="pre">任意和数字</span></code> 或者 <code class="docutils literal"><span class="pre">无序和数字</span></code> 规则:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">correct_answer</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="p">{</span>
+      <span class="s">&#39;draggables&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s">&#39;a&#39;</span><span class="p">,</span> <span class="s">&#39;a&#39;</span><span class="p">,</span> <span class="s">&#39;a&#39;</span><span class="p">],</span>
+      <span class="s">&#39;targets&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s">&#39;target1&#39;</span><span class="p">,</span>  <span class="s">&#39;target4&#39;</span><span class="p">,</span> <span class="s">&#39;target7&#39;</span><span class="p">],</span>
+      <span class="s">&#39;rule&#39;</span><span class="p">:</span> <span class="s">&#39;unordered_equal+number&#39;</span>
+    <span class="p">},</span>
+    <span class="p">{</span>
+      <span class="s">&#39;draggables&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s">&#39;b&#39;</span><span class="p">,</span> <span class="s">&#39;b&#39;</span><span class="p">],</span>
+      <span class="s">&#39;targets&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s">&#39;target2&#39;</span><span class="p">,</span> <span class="s">&#39;target5&#39;</span><span class="p">,</span> <span class="s">&#39;target8&#39;</span><span class="p">],</span>
+      <span class="s">&#39;rule&#39;</span><span class="p">:</span> <span class="s">&#39;anyof+number&#39;</span>
+    <span class="p">},</span>
+    <span class="p">{</span>
+      <span class="s">&#39;draggables&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s">&#39;c&#39;</span><span class="p">],</span>
+      <span class="s">&#39;targets&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s">&#39;target3&#39;</span><span class="p">,</span> <span class="s">&#39;target6&#39;</span><span class="p">,</span> <span class="s">&#39;target9&#39;</span><span class="p">],</span>
+      <span class="s">&#39;rule&#39;</span><span class="p">:</span> <span class="s">&#39;unordered_equal&#39;</span>
+    <span class="p">}]</span>
+</pre></div>
+</div>
+<p>当每个目标没有多重拖拽元素 (one_per_target=``true``)，
+对相同的拖拽元素数， <code class="docutils literal"><span class="pre">任意</span></code> 和 <code class="docutils literal"><span class="pre">无序</span></code> 是等价的。</p>
+<p>如果 <code class="docutils literal"><span class="pre">can_reuse=true</span></code>,你必须使用详细形式的正确答案。</p>
+<div class="section" id="id16">
+<h3>6.8.4.1. 拖拽元素目标的答案格式<a class="headerlink" href="#id16" title="Permalink to this headline">¶</a></h3>
+<p>在上述的情况下， 答案必须提供每个拖拽元素的精确定位。 (对必须驻留的目标)。 当拖拽元素需要被拖放到本身也是拖放元素的目标上时，答案必须包括 目标-拖拽元素-目标 链。</p>
+<p>例如，假设我们有三个拖拽元素 - <code class="docutils literal"><span class="pre">up</span></code>, <code class="docutils literal"><span class="pre">s</span></code>, 和 <code class="docutils literal"><span class="pre">p</span></code>。
+拖拽元素 <code class="docutils literal"><span class="pre">s</span></code> 和 <code class="docutils literal"><span class="pre">p</span></code> 还是目标。 更具体的， <code class="docutils literal"><span class="pre">p</span></code> 有三个目标 - <code class="docutils literal"><span class="pre">1</span></code>, <code class="docutils literal"><span class="pre">2</span></code>, 和 <code class="docutils literal"><span class="pre">3</span></code>。 第一个要求是 <code class="docutils literal"><span class="pre">s</span></code> 和 <code class="docutils literal"><span class="pre">p</span></code> 被正确放置在基础图片上的指定位置。 第二个要求是拖拽元素 <code class="docutils literal"><span class="pre">up</span></code> 被放在指定的目标 <code class="docutils literal"><span class="pre">p</span></code> 上。  下面是一个问题的节选:</p>
+<div class="highlight-python"><div class="highlight"><pre>&lt;draggable id=&quot;up&quot; icon=&quot;/static/images/images_list/lcao-mo/up.png&quot; can_reuse=&quot;true&quot; /&gt;
+
+&lt;draggable id=&quot;s&quot; icon=&quot;/static/images/images_list/lcao-mo/orbital_single.png&quot; label=&quot;s orbital&quot; can_reuse=&quot;true&quot; &gt;
+    &lt;target id=&quot;1&quot; x=&quot;0&quot; y=&quot;0&quot; w=&quot;32&quot; h=&quot;32&quot;/&gt;
+&lt;/draggable&gt;
+
+&lt;draggable id=&quot;p&quot; icon=&quot;/static/images/images_list/lcao-mo/orbital_triple.png&quot; can_reuse=&quot;true&quot; label=&quot;p orbital&quot; &gt;
+  &lt;target id=&quot;1&quot; x=&quot;0&quot; y=&quot;0&quot; w=&quot;32&quot; h=&quot;32&quot;/&gt;
+  &lt;target id=&quot;2&quot; x=&quot;34&quot; y=&quot;0&quot; w=&quot;32&quot; h=&quot;32&quot;/&gt;
+  &lt;target id=&quot;3&quot; x=&quot;68&quot; y=&quot;0&quot; w=&quot;32&quot; h=&quot;32&quot;/&gt;
+&lt;/draggable&gt;
+
+...
+
+correct_answer = [
+    {
+      &#39;draggables&#39;: [&#39;p&#39;],
+      &#39;targets&#39;: [&#39;p-left-target&#39;, &#39;p-right-target&#39;],
+      &#39;rule&#39;: &#39;unordered_equal&#39;
+    },
+    {
+      &#39;draggables&#39;: [&#39;s&#39;],
+      &#39;targets&#39;: [&#39;s-left-target&#39;, &#39;s-right-target&#39;],
+      &#39;rule&#39;: &#39;unordered_equal&#39;
+    },
+    {
+      &#39;draggables&#39;: [&#39;up&#39;],
+      &#39;targets&#39;: [&#39;p-left-target[p][1]&#39;, &#39;p-left-target[p][2]&#39;, &#39;p-right-
+         target[p][2]&#39;, &#39;p-right-target[p][3]&#39;,],
+      &#39;rule&#39;: &#39;unordered_equal&#39;
+    }
+]
+</pre></div>
+</div>
+<p>注意！你必须为每一个拖拽元素指定规则，即使有拖拽元素包含在多个链中。</p>
+</div>
+</div>
+<div class="section" id="id17">
+<h2>6.8.5. 评分逻辑<a class="headerlink" href="#id17" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic">
+<li><p class="first">学生的答案和正确答案有着几乎相同的格式。</p>
+<div class="highlight-python"><div class="highlight"><pre>group_id: group_draggables, group_targets, group_rule
+</pre></div>
+</div>
+</li>
+</ol>
+<blockquote>
+<div><p><code class="docutils literal"><span class="pre">group_id</span></code> 是序数，用来记录每个正确答案中字典的增量。
+<code class="docutils literal"><span class="pre">group_id</span></code> 是被分配: 0, 1, 2, ...</p>
+<p>用户答案中的拖拽元素被添加到和正确答案中的拖拽元素具有相同group_id的组中，例如:</p>
+<div class="highlight-python"><div class="highlight"><pre>如果正确答案拖拽元素组[group_0] = [t1, t2] 那么用户拖拽元素组[group_0]就是用户答案中所有的拖拽元素 t1 和 t2 :
+[t1] or [t1, t2] or [t1, t2, t2] etc..
+</pre></div>
+</div>
+</div></blockquote>
+<ol class="arabic" start="2">
+<li><p class="first">对于每个用户答案组中的拖拽元素， 如果 <code class="docutils literal"><span class="pre">数字</span></code> 在组的规则中， 那么set()会被应用。 如果 <code class="docutils literal"><span class="pre">数字</span></code> 不在规则中，则不会被应用:</p>
+<div class="highlight-python"><div class="highlight"><pre>set() : [t1, t2, t3, t3] -&gt; [t1, t2, ,t3]
+</pre></div>
+</div>
+</li>
+</ol>
+<blockquote>
+<div>对于每一个组，在这个步，拖拽元素列表是相等的。</div></blockquote>
+<ol class="arabic simple" start="3">
+<li>对于每一个组，目标列表是使用该组的规则进行比较。</li>
+</ol>
+<div class="section" id="set">
+<h3>6.8.5.1. <code class="docutils literal"><span class="pre">set()</span></code> 和 <code class="docutils literal"><span class="pre">数字</span></code> 事件<a class="headerlink" href="#set" title="Permalink to this headline">¶</a></h3>
+<p><code class="docutils literal"><span class="pre">set()</span></code> and <code class="docutils literal"><span class="pre">+number</span></code> 仅用于有可重复使用的拖拽元素的情况。
+其他情况下，有在列表中没有相等的拖拽元素，所以 set() 什么效果都没有。</p>
+<ul>
+<li><p class="first"><code class="docutils literal"><span class="pre">set()</span></code> 操作允许你创造一个规则来规定 &#8220;任何数量相同的拖拽元素可以拖动到目标&#8221;:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="p">{</span>
+  <span class="s">&#39;draggables&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s">&#39;draggable_1&#39;</span><span class="p">],</span>
+  <span class="s">&#39;targets&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s">&#39;target3&#39;</span><span class="p">,</span> <span class="s">&#39;target6&#39;</span><span class="p">,</span> <span class="s">&#39;target9&#39;</span><span class="p">],</span>
+  <span class="s">&#39;rule&#39;</span><span class="p">:</span> <span class="s">&#39;anyof&#39;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</li>
+<li><p class="first"><code class="docutils literal"><span class="pre">数字</span></code> 规则被用于有可重复使用的拖拽元素的情况中，来修复修复拖动的拖动元素数量。 在本实施例只有两个实例draggables_1的允许被拖动:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="p">{</span>
+  <span class="s">&#39;draggables&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s">&#39;draggable_1&#39;</span><span class="p">,</span> <span class="s">&#39;draggable_1&#39;</span><span class="p">],</span>
+  <span class="s">&#39;targets&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s">&#39;target3&#39;</span><span class="p">,</span> <span class="s">&#39;target6&#39;</span><span class="p">,</span> <span class="s">&#39;target9&#39;</span><span class="p">],</span>
+  <span class="s">&#39;rule&#39;</span><span class="p">:</span> <span class="s">&#39;anyof+number&#39;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</li>
+<li><p class="first">注意！ 在使用 <a href="#id18"><span class="problematic" id="id19">``</span></a>准确``规则的情况下，是不需要 <a href="#id20"><span class="problematic" id="id21">``</span></a>数字``规则的。 因为你不能从用户界面识别可重复使用的拖拽元素是哪个目标的。 例如:</p>
+<div class="highlight-python"><div class="highlight"><pre>{
+  &#39;draggables&#39;: [&#39;draggable_1&#39;, &#39;draggable_1&#39;, &#39;draggable_2&#39;],
+  &#39;targets&#39;: [&#39;target3&#39;, &#39;target6&#39;, &#39;target9&#39;],
+  &#39;rule&#39;: &#39;exact&#39;
+}
+
+
+本实例的正确处理是分别对 draggable_1 和 draggable_2 创建不同的规则。
+</pre></div>
+</div>
+</li>
+<li><p class="first">对于 <code class="docutils literal"><span class="pre">无序</span></code> (或者 <code class="docutils literal"><span class="pre">准确</span></code>) 你不需要 <code class="docutils literal"><span class="pre">数字</span></code>。 如果你只有相同的拖拽元素在组中，目标长度将提供对拖拽元素数量的约束:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="p">{</span>
+  <span class="s">&#39;draggables&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s">&#39;draggable_1&#39;</span><span class="p">],</span>
+  <span class="s">&#39;targets&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s">&#39;target3&#39;</span><span class="p">,</span> <span class="s">&#39;target6&#39;</span><span class="p">,</span> <span class="s">&#39;target9&#39;</span><span class="p">],</span>
+  <span class="s">&#39;rule&#39;</span><span class="p">:</span> <span class="s">&#39;unordered_equal&#39;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>这意味着仅有 <code class="docutils literal"><span class="pre">draggable_1</span></code> 可以被拖拽。</p>
+</li>
+<li><p class="first">但是，如果你有多个不同的可重复使用的拖拽元素在列表中，你可以使用``number``规则:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="p">{</span>
+  <span class="s">&#39;draggables&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s">&#39;draggable_1&#39;</span><span class="p">,</span> <span class="s">&#39;draggable_1&#39;</span><span class="p">,</span> <span class="s">&#39;draggable_2&#39;</span><span class="p">],</span>
+  <span class="s">&#39;targets&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s">&#39;target3&#39;</span><span class="p">,</span> <span class="s">&#39;target6&#39;</span><span class="p">,</span> <span class="s">&#39;target9&#39;</span><span class="p">],</span>
+  <span class="s">&#39;rule&#39;</span><span class="p">:</span> <span class="s">&#39;unordered_equal+number&#39;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</li>
+</ul>
+<p>如果你没有使用 <code class="docutils literal"><span class="pre">数字</span></code>， 那么拖拽元素列表会被设置成[<code class="docutils literal"><span class="pre">draggable_1</span></code>, <code class="docutils literal"><span class="pre">draggable_2</span></code>]。</p>
+</div>
+</div>
+</div>
+
+
+          <footer>
+  
+    <div class="rst-footer-buttons">
+      
+        <a href="dropdown.html" class="btn btn-neutral float-right" title="6.9. 下拉问题"/>Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="custom_javascript.html" class="btn btn-neutral" title="6.7. 自定义JavaScript问题"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <p>
+      &copy; Copyright 2015, edX.
+  </p>
+
+ 
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+</body>
+</html>

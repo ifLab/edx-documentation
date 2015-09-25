@@ -1,0 +1,404 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>6.15. 谷歌即时群聊工具 &mdash; Building and Running an edX Course  documentation</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="../_static/css/favicon.ico"/>
+  
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  
+  
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:'../',
+        VERSION:'',
+        COLLAPSE_INDEX:false,
+        FILE_SUFFIX:'.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+
+    
+
+  
+
+  
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+
+  
+    <link rel="top" title="Building and Running an edX Course  documentation" href="../index.html"/>
+        <link rel="up" title="6. 创建习题和工具" href="index.html"/>
+        <link rel="next" title="6.16. IFrame工具" href="iframe.html"/>
+        <link rel="prev" title="6.14. 谷歌云文件工具" href="google_docs.html"/> 
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-nav-search">
+        <a href="../index.html" class="icon icon-home"> Building and Running an edX Course</a>
+        <form class="wy-form" action="../search.html" method="get">
+  <input type="text" name="q" placeholder="Search document" />
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix">
+        
+        
+            <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../front_matter/index.html">1. 参考信息</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../front_matter/read_me.html">1.1. Read Me</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../front_matter/preface.html">1.2. 序言</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../front_matter/change_log.html">1.3. Change Log</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../front_matter/browsers.html">1.4. edX浏览器支持</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/index.html">2. 开始使用edX</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../getting_started/accounts.html">2.1. 开始使用edX</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../getting_started/dashboard_acctsettings_profile.html">2.2. 搜索你的仪表板、设置和配置文件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../getting_started/get_started.html">2.3. 开始了解Studio</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../getting_started/accessibility.html">2.4. 创建无障碍课程指南</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../building_course/index.html">3. 建立您的课程</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/creating_new_course.html">3.1. 新建课程</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/scheduling_course.html">3.2. 设置开始和结束日期</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/setting_up_student_view.html">3.3. 设置课程细节</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/licensing_course.html">3.4. 授权课程</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/course_files.html">3.5. 给课程添加文件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/handouts_updates.html">3.6. 添加课程补充资料及讲义</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/pages.html">3.7. 为课程添加页面</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/textbooks.html">3.8. 添加课本</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/establish_grading_policy.html">3.9. 设定计分政策</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/course_rerun.html">3.10. 重开课程</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/export_import_course.html">3.11. 输出和导入课程</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../developing_course/index.html">4. 开发您的课程</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/workflow.html">4.1. 开始创建课程内容</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/course_outline.html">4.2. 创建课程大纲</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/course_sections.html">4.3. 创建课程章节</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/course_subsections.html">4.4. 构建课程小节</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/course_units.html">4.5. 构建课程单元</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/course_components.html">4.6. 创建课程组件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/controlling_content_visibility.html">4.7. 设置内容可见性</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/testing_courseware.html">4.8. 测试您的课程内容</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../creating_content/index.html">5. 创建课程内容</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../creating_content/create_html_component.html">5.1. 如何使用HTML组件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../creating_content/create_video.html">5.2. 创建影片组件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../creating_content/create_discussion.html">5.3. 创建讨论组件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../creating_content/create_problem.html">5.4. 创建问题组件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../creating_content/libraries.html">5.5. Working with Content Libraries</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">6. 创建习题和工具</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="create_exercises_and_tools.html">6.1. 创建练习和工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="annotation.html">6.2. 注释问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="checkbox.html">6.3. 复选框问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="chemical_equation.html">6.4. 化学方程式问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="circuit_schematic_builder.html">6.5. 电路原理图搭建问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="conditional_module.html">6.6. 条件模板</a></li>
+<li class="toctree-l2"><a class="reference internal" href="custom_javascript.html">6.7. 自定义JavaScript问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="drag_and_drop.html">6.8. 拖放问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dropdown.html">6.9. 下拉问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="external_graders.html">6.10. 图像映射输入问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="full_screen_image.html">6.11. 全屏图像工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gene_explorer.html">6.12. Gene Explorer工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="google_calendar.html">6.13. 谷歌日历工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="google_docs.html">6.14. 谷歌云文件工具</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="">6.15. 谷歌即时群聊工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="iframe.html">6.16. IFrame工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="image_mapped_input.html">6.17. 图像映射输入问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lti_component.html">6.18. LTI 组件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="math_expression_input.html">6.19. 数学表达式输入问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="molecule_editor.html">6.20. 分子编辑器</a></li>
+<li class="toctree-l2"><a class="reference internal" href="molecule_viewer.html">6.21. 分子浏览器</a></li>
+<li class="toctree-l2"><a class="reference internal" href="multiple_choice.html">6.22. 多项选择问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="mult_choice_num_input.html">6.23. 多项选择和数字输入题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="numerical_input.html">6.24. 数值输入问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="open_response_assessments/index.html">6.25. 开放性回答评估</a></li>
+<li class="toctree-l2"><a class="reference internal" href="periodic_table.html">6.26. 元素周期表工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="poll.html">6.27. 投票工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="problem_with_hint.html">6.28. 带适应性提示的问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="problem_in_latex.html">6.29. LaTeX问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="protein_builder.html">6.30. Protex蛋白质构建工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="randomized_content_blocks.html">6.31. 随机内容块</a></li>
+<li class="toctree-l2"><a class="reference internal" href="recommenderXBlock.html">6.32. 推荐系统</a></li>
+<li class="toctree-l2"><a class="reference internal" href="text_input.html">6.33. 文本输入问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="word_cloud.html">6.34. 文字云工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="custom_python.html">6.35. 自定义评分器问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="zooming_image.html">6.36. 图像放大工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="mathjax.html">6.37. Studio中MathJax的简要介绍</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../content_experiments/index.html">7. 创建内容实验</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../content_experiments/content_experiments_overview.html">7.1. Overview of Content Experiments</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../content_experiments/content_experiments_configure.html">7.2. 配置带有内容实验的课程</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../content_experiments/content_experiments_add.html">7.3. 为您的课程添加内容实验</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../content_experiments/content_experiments_view.html">7.4. Test Content Experiments</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../cohorts/index.html">8. 建立学生队列</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../cohorts/cohorts_overview.html">8.1. 使用队列功能建立课程群</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cohorts/cohort_config.html">8.2. 启用、配置分队模式</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cohorts/cohorted_courseware.html">8.3. 创建特定队列课件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cohorts/cohorts_setup_discussions.html">8.4. 在包含队列的课程中设置论坛</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cohorts/cohorts_manage_discussions.html">8.5. 管理有学生队列的论坛</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../releasing_course/index.html">9. 发布您的课程</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../releasing_course/beta_testing.html">9.1. 贝塔测试</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../releasing_course/course_launching.html">9.2. 课程发布事宜</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../releasing_course/staff_debug_info.html">9.3. 员工调试信息</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../running_course/index.html">10. 运营您的课程</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/course_staffing.html">10.1. 安置职工</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/course_enrollment.html">10.2. 招生</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/discussions.html">10.3. 管理课程讨论项目</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/discussions_students.html">10.4. 参与课程讨论</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/discussion_guidance_moderators.html">10.5. 论坛协调员指南</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/bulk_email.html">10.6. Bulk Email</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/course_wiki.html">10.7. 使用课程维基</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/course_data.html">10.8. 课程数据</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/course_student.html">10.9. 学生数据</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/course_answers.html">10.10. 回答问题数据</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/course_grades.html">10.11. 学生成绩与成绩评定</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/checking_student_progress.html">10.12. 总成绩计算与证书发放</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../students/index.html">11. 学生相关信息</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../students/login_guide.html">11.1. 学生登录指南示例</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../students/math_students.html">11.2. 学生数学题回答格式化</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../students/ora_students.html">11.3. 学生开放回答评估</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../glossary.html">12. Glossary</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#a">12.1. A</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#c">12.2. C</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#d">12.3. D</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#e">12.4. E</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#f">12.5. F</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#g">12.6. G</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#h">12.7. H</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#i">12.8. I</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#k">12.9. K</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#l">12.10. L</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#m">12.11. M</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#n">12.12. N</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#o">12.13. O</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#p">12.14. P</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#q">12.15. Q</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#r">12.16. R</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#s">12.17. S</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#t">12.18. T</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#u">12.19. U</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#v">12.20. V</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#w">12.21. W</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#xyz">12.22. XYZ</a></li>
+</ul>
+</li>
+</ul>
+
+        
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top">
+        <i data-toggle="wy-nav-top" class="icon icon-reorder"></i>
+        <a href="/">Building and Running an edX Course</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <ul class="wy-breadcrumbs">
+  <li><a href="../index.html">Table of Contents</a> &raquo;</li>
+  <li><a href="">6.15. 谷歌即时群聊工具</a></li>
+  
+</ul>
+<hr/>
+
+          
+  <div class="section" id="google-instant-hangout">
+<span id="id1"></span><h1>6.15. 谷歌即时群聊工具<a class="headerlink" href="#google-instant-hangout" title="Permalink to this headline">¶</a></h1>
+<p>该主题描述在你的课程中如何使用即时群聊，请参照：</p>
+<ul class="simple">
+<li><span class="xref std std-ref">群聊概观</span></li>
+<li><span class="xref std std-ref">列入你的域名到谷歌群聊白名单</span></li>
+<li><span class="xref std std-ref">课程群聊</span></li>
+<li><span class="xref std std-ref">学习者的经验</span></li>
+<li><span class="xref std std-ref">限制</span></li>
+<li><span class="xref std std-ref">创建即时群聊</span></li>
+</ul>
+<div class="section" id="hangouts-overview">
+<span id="id2"></span><h2>6.15.1. 概观<a class="headerlink" href="#hangouts-overview" title="Permalink to this headline">¶</a></h2>
+<p>你可以直接从你的课程中添加学习者参与到即时群聊里的能力。</p>
+<p>在即时群聊里，学习者可以：</p>
+<ul class="simple">
+<li>通过视频和音频直播进行互动；</li>
+<li>分享屏幕一起看视频；</li>
+<li>就文档进行合作。</li>
+</ul>
+<p>即时群聊特性的详细列表，请参照 <a class="reference external" href="http://www.google.com/+/learnmore/hangouts/">Google Hangouts page</a>.</p>
+</div>
+<div class="section" id="whitelisting-your-domain-for-google-hangouts">
+<span id="id3"></span><h2>6.15.2. 列入你的域名到谷歌群聊白名单<a class="headerlink" href="#whitelisting-your-domain-for-google-hangouts" title="Permalink to this headline">¶</a></h2>
+<p>如果你在运行一个Open edX网站，你应该确保你的域名在谷歌白名单里且作为一个到谷歌群聊的引用。</p>
+</div>
+<div class="section" id="instant-hangouts-in-your-course">
+<span id="id4"></span><h2>6.15.3. 课程群聊<a class="headerlink" href="#instant-hangouts-in-your-course" title="Permalink to this headline">¶</a></h2>
+<p>你可以在课程中添加一个或更多即时群聊。比如，你可以在下列地方添加一个即时群聊：</p>
+<ul>
+<li><p class="first">在页面中给学习者提供一个完整课程的群聊，请参照
+<span class="xref std std-ref">添加页到课程</span> 以获得更多信息。</p>
+</li>
+<li><dl class="first docutils">
+<dt>在一个HTML组件中，提供一个让学习者在特定课程单元上合作的群聊，请参照</dt>
+<dd><p class="first last"><span class="xref std std-ref">与HTML协作</span> 以获得更多关于创建HTML组件的信息。</p>
+</dd>
+</dl>
+</li>
+</ul>
+<p>一个即时群聊是特定于打开它的页面的。例如，从一个课程单元加入到一个群聊里的学习者彼此互动，而从另一个课程单元来的学习者加入到一个不同的群聊里互动。</p>
+</div>
+<div class="section" id="the-learner-experience">
+<span id="id5"></span><h2>6.15.4. 学习者的体验<a class="headerlink" href="#the-learner-experience" title="Permalink to this headline">¶</a></h2>
+<p>当你增加一个即时群聊到你的课程中，会在页面上出现一个群聊管理。下面的例子展示了在一个课程中的管理。管理显示学习者可以开始一个群聊并成为第一个参与者。</p>
+<a class="reference internal image-reference" href="../_images/hangout_unit.png"><img alt="Image of the instant hangout control on a unit." src="../_images/hangout_unit.png" style="width: 600px;" /></a>
+<dl class="docutils">
+<dt>开始一个群聊，学习者选择 <strong>开始群聊</strong> 。（在第一个学习者选择</dt>
+<dd><strong>开始群聊</strong> 后，其他的学习者可以看到 <strong>加入群聊</strong> 按钮。）</dd>
+<dt>接下来的下例子展示当一个群聊已经被创建后页面的管理。管理有一个</dt>
+<dd><strong>加入群聊</strong> 的按钮，并显示另一个学习者已经在群聊里了。</dd>
+</dl>
+<a class="reference internal image-reference" href="../_images/hangout_static_page.png"><img alt="Image of the instant hangout control on a page." src="../_images/hangout_static_page.png" style="width: 600px;" /></a>
+<p>要加入一个群聊，学习者选择 <strong>加入群聊</strong> .</p>
+<p>如果没有登陆，学习者会被提示登陆谷歌：</p>
+<a class="reference internal image-reference" href="../_images/google_login.png"><img alt="Image of the Google login page." src="../_images/google_login.png" style="width: 400px;" /></a>
+<p>没有谷歌账号的学习者可以从登陆页面创建一个账号。</p>
+<p>在学习者登陆谷歌后，群聊会另打开一个浏览器窗口：</p>
+<a class="reference internal image-reference" href="../_images/GoogleHangout_WithPeople.png"><img alt="Image of the instant hangout." src="../_images/GoogleHangout_WithPeople.png" style="width: 600px;" /></a>
+</div>
+<div class="section" id="limitations">
+<span id="id6"></span><h2>6.15.5. 限制<a class="headerlink" href="#limitations" title="Permalink to this headline">¶</a></h2>
+<p>目前一个即时群聊只允许10个学习者加入，你应该在课程材料中注明。</p>
+<p>在课程中，学习者从不同的页面开始的群聊会被独立计数，所以你会有10位来自一个单元的学习者在一个群聊中，10位来自不同的单元的学习者在一个群聊中。</p>
+</div>
+<div class="section" id="create-the-instant-hangout">
+<span id="id7"></span><h2>6.15.6. 创建即时群聊<a class="headerlink" href="#create-the-instant-hangout" title="Permalink to this headline">¶</a></h2>
+<p>在课程中创建一个即时群聊：</p>
+<ol class="arabic">
+<li><p class="first">获取 <a class="reference external" href="https://raw.github.com/google/instant-hangouts/master/instanthangouts-0.1.0.js">instant hangout JavaScript file from GitHub</a>.</p>
+</li>
+<li><p class="first">把这个文件中的文本复制到你的电脑上的文本编辑器，然后保存为JavaScript文件（也就是，在你保存文本时，把后缀.txt改成.js）。</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">确保复制的是原GitHub文件，因为它不含格式。不要复制带格式的文件。任何格式都会导致JavaScript不能正常工作。</p>
+</div>
+</li>
+<li><p class="first">指向你的课程中 <strong>文件及更新</strong> 页面的JavaScript文件，
+请参照 <span class="xref std std-ref">添加文件到课程中</span> 获得更多详细信息。</p>
+</li>
+<li><p class="first">在页面或HTML组件中，打开HTML编辑器。</p>
+</li>
+<li><p class="first">在第一行，添加你上传的JavaScipt文件到一个&lt;script&gt;标签中，确保你使用了完全打开和关闭的标签。</p>
+<p>例如，如果你的JavaScript文件是以 <strong>instanthangouts-0.1.0.js</strong> 命名的，你可以按下面的方式输入:</p>
+<div class="highlight-python"><div class="highlight"><pre>&lt;script src=&#39;/static/instanthangouts-0.1.0.js&#39;&gt;&lt;/script&gt;
+</pre></div>
+</div>
+</li>
+<li><p class="first">在&lt;script&gt; 标签后面，添加:</p>
+<div class="highlight-python"><div class="highlight"><pre>&lt;div class=&#39;instanthangouts&#39;/&gt;
+</pre></div>
+</div>
+</li>
+<li><p class="first">添加任何你要添加的文本和标签。</p>
+<p>例如，完整的HTML可以是这样的:</p>
+<div class="highlight-python"><div class="highlight"><pre>&lt;p&gt;Join an instant hangout by selecting the button below. You can use the
+hangout to have live video discussions with other learners.&lt;/p&gt;
+&lt;script
+src=&#39;/static/instanthangouts-0.1.0.js&#39;&gt;&lt;/script&gt;
+&lt;div class=&#39;instanthangouts&#39;/&gt;
+</pre></div>
+</div>
+</li>
+<li><p class="first">在课程中测试即时群聊</p>
+</li>
+</ol>
+<div class="section" id="javascript">
+<h3>6.15.6.1. 更新JavaScript文件<a class="headerlink" href="#javascript" title="Permalink to this headline">¶</a></h3>
+<p>谷歌会周期性更新即时群聊的JavaScript文件，要接收更新通知，去到 <a class="reference external" href="https://github.com/google/instant-hangouts/">instant hangouts repository page</a>，然后在页面右上方选择 <strong>查看</strong></p>
+<p>在你的课程中为了使用更新的JavaScript文件，我们建议你从仓库复制JavaScript到与你上传到课程中的同名文件中。当你上传新文件时，旧的文件会被新的文件替换掉。</p>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">如果在你上传文件的文件名中包含了版本号，在你每次更新JavaScript文件时，你必须编辑任何包含了即时群聊管理的HTML组件或页面。</p>
+</div>
+</div>
+</div>
+</div>
+
+
+          <footer>
+  
+    <div class="rst-footer-buttons">
+      
+        <a href="iframe.html" class="btn btn-neutral float-right" title="6.16. IFrame工具"/>Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="google_docs.html" class="btn btn-neutral" title="6.14. 谷歌云文件工具"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <p>
+      &copy; Copyright 2015, edX.
+  </p>
+
+ 
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+</body>
+</html>

@@ -1,0 +1,687 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>5.5. Working with Content Libraries &mdash; Building and Running an edX Course  documentation</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="../_static/css/favicon.ico"/>
+  
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  
+  
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:'../',
+        VERSION:'',
+        COLLAPSE_INDEX:false,
+        FILE_SUFFIX:'.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+
+    
+
+  
+
+  
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+
+  
+    <link rel="top" title="Building and Running an edX Course  documentation" href="../index.html"/>
+        <link rel="up" title="5. 创建课程内容" href="index.html"/>
+        <link rel="next" title="6. 创建习题和工具" href="../exercises_tools/index.html"/>
+        <link rel="prev" title="5.4. 创建问题组件" href="create_problem.html"/> 
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-nav-search">
+        <a href="../index.html" class="icon icon-home"> Building and Running an edX Course</a>
+        <form class="wy-form" action="../search.html" method="get">
+  <input type="text" name="q" placeholder="Search document" />
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix">
+        
+        
+            <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../front_matter/index.html">1. 参考信息</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../front_matter/read_me.html">1.1. Read Me</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../front_matter/preface.html">1.2. 序言</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../front_matter/change_log.html">1.3. Change Log</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../front_matter/browsers.html">1.4. edX浏览器支持</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/index.html">2. 开始使用edX</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../getting_started/accounts.html">2.1. 开始使用edX</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../getting_started/dashboard_acctsettings_profile.html">2.2. 搜索你的仪表板、设置和配置文件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../getting_started/get_started.html">2.3. 开始了解Studio</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../getting_started/accessibility.html">2.4. 创建无障碍课程指南</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../building_course/index.html">3. 建立您的课程</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/creating_new_course.html">3.1. 新建课程</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/scheduling_course.html">3.2. 设置开始和结束日期</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/setting_up_student_view.html">3.3. 设置课程细节</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/licensing_course.html">3.4. 授权课程</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/course_files.html">3.5. 给课程添加文件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/handouts_updates.html">3.6. 添加课程补充资料及讲义</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/pages.html">3.7. 为课程添加页面</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/textbooks.html">3.8. 添加课本</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/establish_grading_policy.html">3.9. 设定计分政策</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/course_rerun.html">3.10. 重开课程</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/export_import_course.html">3.11. 输出和导入课程</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../developing_course/index.html">4. 开发您的课程</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/workflow.html">4.1. 开始创建课程内容</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/course_outline.html">4.2. 创建课程大纲</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/course_sections.html">4.3. 创建课程章节</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/course_subsections.html">4.4. 构建课程小节</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/course_units.html">4.5. 构建课程单元</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/course_components.html">4.6. 创建课程组件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/controlling_content_visibility.html">4.7. 设置内容可见性</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/testing_courseware.html">4.8. 测试您的课程内容</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">5. 创建课程内容</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="create_html_component.html">5.1. 如何使用HTML组件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="create_video.html">5.2. 创建影片组件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="create_discussion.html">5.3. 创建讨论组件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="create_problem.html">5.4. 创建问题组件</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="">5.5. Working with Content Libraries</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../exercises_tools/index.html">6. 创建习题和工具</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/create_exercises_and_tools.html">6.1. 创建练习和工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/annotation.html">6.2. 注释问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/checkbox.html">6.3. 复选框问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/chemical_equation.html">6.4. 化学方程式问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/circuit_schematic_builder.html">6.5. 电路原理图搭建问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/conditional_module.html">6.6. 条件模板</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/custom_javascript.html">6.7. 自定义JavaScript问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/drag_and_drop.html">6.8. 拖放问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/dropdown.html">6.9. 下拉问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/external_graders.html">6.10. 图像映射输入问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/full_screen_image.html">6.11. 全屏图像工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/gene_explorer.html">6.12. Gene Explorer工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/google_calendar.html">6.13. 谷歌日历工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/google_docs.html">6.14. 谷歌云文件工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/google_hangouts.html">6.15. 谷歌即时群聊工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/iframe.html">6.16. IFrame工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/image_mapped_input.html">6.17. 图像映射输入问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/lti_component.html">6.18. LTI 组件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/math_expression_input.html">6.19. 数学表达式输入问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/molecule_editor.html">6.20. 分子编辑器</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/molecule_viewer.html">6.21. 分子浏览器</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/multiple_choice.html">6.22. 多项选择问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/mult_choice_num_input.html">6.23. 多项选择和数字输入题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/numerical_input.html">6.24. 数值输入问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/open_response_assessments/index.html">6.25. 开放性回答评估</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/periodic_table.html">6.26. 元素周期表工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/poll.html">6.27. 投票工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/problem_with_hint.html">6.28. 带适应性提示的问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/problem_in_latex.html">6.29. LaTeX问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/protein_builder.html">6.30. Protex蛋白质构建工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/randomized_content_blocks.html">6.31. 随机内容块</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/recommenderXBlock.html">6.32. 推荐系统</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/text_input.html">6.33. 文本输入问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/word_cloud.html">6.34. 文字云工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/custom_python.html">6.35. 自定义评分器问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/zooming_image.html">6.36. 图像放大工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/mathjax.html">6.37. Studio中MathJax的简要介绍</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../content_experiments/index.html">7. 创建内容实验</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../content_experiments/content_experiments_overview.html">7.1. Overview of Content Experiments</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../content_experiments/content_experiments_configure.html">7.2. 配置带有内容实验的课程</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../content_experiments/content_experiments_add.html">7.3. 为您的课程添加内容实验</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../content_experiments/content_experiments_view.html">7.4. Test Content Experiments</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../cohorts/index.html">8. 建立学生队列</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../cohorts/cohorts_overview.html">8.1. 使用队列功能建立课程群</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cohorts/cohort_config.html">8.2. 启用、配置分队模式</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cohorts/cohorted_courseware.html">8.3. 创建特定队列课件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cohorts/cohorts_setup_discussions.html">8.4. 在包含队列的课程中设置论坛</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cohorts/cohorts_manage_discussions.html">8.5. 管理有学生队列的论坛</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../releasing_course/index.html">9. 发布您的课程</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../releasing_course/beta_testing.html">9.1. 贝塔测试</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../releasing_course/course_launching.html">9.2. 课程发布事宜</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../releasing_course/staff_debug_info.html">9.3. 员工调试信息</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../running_course/index.html">10. 运营您的课程</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/course_staffing.html">10.1. 安置职工</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/course_enrollment.html">10.2. 招生</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/discussions.html">10.3. 管理课程讨论项目</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/discussions_students.html">10.4. 参与课程讨论</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/discussion_guidance_moderators.html">10.5. 论坛协调员指南</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/bulk_email.html">10.6. Bulk Email</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/course_wiki.html">10.7. 使用课程维基</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/course_data.html">10.8. 课程数据</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/course_student.html">10.9. 学生数据</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/course_answers.html">10.10. 回答问题数据</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/course_grades.html">10.11. 学生成绩与成绩评定</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/checking_student_progress.html">10.12. 总成绩计算与证书发放</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../students/index.html">11. 学生相关信息</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../students/login_guide.html">11.1. 学生登录指南示例</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../students/math_students.html">11.2. 学生数学题回答格式化</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../students/ora_students.html">11.3. 学生开放回答评估</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../glossary.html">12. Glossary</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#a">12.1. A</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#c">12.2. C</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#d">12.3. D</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#e">12.4. E</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#f">12.5. F</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#g">12.6. G</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#h">12.7. H</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#i">12.8. I</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#k">12.9. K</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#l">12.10. L</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#m">12.11. M</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#n">12.12. N</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#o">12.13. O</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#p">12.14. P</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#q">12.15. Q</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#r">12.16. R</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#s">12.17. S</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#t">12.18. T</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#u">12.19. U</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#v">12.20. V</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#w">12.21. W</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#xyz">12.22. XYZ</a></li>
+</ul>
+</li>
+</ul>
+
+        
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top">
+        <i data-toggle="wy-nav-top" class="icon icon-reorder"></i>
+        <a href="/">Building and Running an edX Course</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <ul class="wy-breadcrumbs">
+  <li><a href="../index.html">Table of Contents</a> &raquo;</li>
+  <li><a href="">5.5. Working with Content Libraries</a></li>
+  
+</ul>
+<hr/>
+
+          
+  <div class="section" id="working-with-content-libraries">
+<span id="content-libraries"></span><h1>5.5. Working with Content Libraries<a class="headerlink" href="#working-with-content-libraries" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="content-libraries-overview">
+<span id="id1"></span><h2>5.5.1. Content Libraries Overview<a class="headerlink" href="#content-libraries-overview" title="Permalink to this headline">¶</a></h2>
+<p>In Studio, if you have course creation privileges, you can create a library to
+build a pool of components for use in randomized assignments in your courses.
+You can add HTML components, problems, and video components to a library. Peer
+assessment and discussion components are not supported in libraries.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Content libraries are available only for courses that have course
+identifiers in this format: <code class="docutils literal"><span class="pre">{key</span> <span class="pre">type}:{org}+{course}+{run}</span></code>. For example,
+<code class="docutils literal"><span class="pre">course-v1:edX+DemoX+Demo_2015</span></code>. Your course identifier appears in the
+browser address bar as the final part of the URL when you open your course in
+Studio. For more details, see <a class="reference internal" href="../building_course/creating_new_course.html#create-a-new-course"><span>新建课程</span></a>.</p>
+</div>
+<p>After creating a library and adding components to it, if you have <a class="reference internal" href="../exercises_tools/randomized_content_blocks.html#enable-content-libraries"><span>enabled
+content libraries</span></a> in your course, you can use these
+library components in randomized assignments in your course. You do this by
+adding a randomized content block to a course unit and specifying the name of
+the library from which the randomized content is to drawn. You also specify the
+number and type of problems that each student is assigned.</p>
+<p>Libraries have separate users and levels of access from courses. Initially, only
+the person who created the library has access. She can add other users to the
+library. For details, see <a class="reference internal" href="#give-other-users-access-to-your-library"><span>Give Other Users Access to Your Library</span></a>. The
+libraries that you create or have access to are listed on the <strong>Libraries</strong> tab
+on the Studio Home page.</p>
+<p>See the following sections for details about creating and managing content
+libraries.</p>
+<ul class="simple">
+<li><a class="reference internal" href="../exercises_tools/randomized_content_blocks.html#enable-content-libraries"><span>激活内容库</span></a></li>
+<li><a class="reference internal" href="#create-a-new-library"><span>Create a New Library</span></a></li>
+<li><a class="reference internal" href="#add-components-to-a-library"><span>Add Components to a Library</span></a></li>
+<li><a class="reference internal" href="#view-the-contents-of-a-library"><span>View the Contents of a Library</span></a></li>
+<li><a class="reference internal" href="#edit-components-in-a-library"><span>Edit Components in a Library</span></a></li>
+<li><a class="reference internal" href="#give-other-users-access-to-your-library"><span>Give Other Users Access to Your Library</span></a></li>
+<li><a class="reference internal" href="#import-a-library"><span>Import a Library</span></a></li>
+<li><a class="reference internal" href="#export-a-library"><span>Export a Library</span></a></li>
+</ul>
+<p>See the following sections for details about using content library components in
+a course.</p>
+<ul class="simple">
+<li><a class="reference internal" href="../exercises_tools/randomized_content_blocks.html#use-components-from-libraries-in-a-course"><span>在课程中使用来自库的组件</span></a></li>
+<li><a class="reference internal" href="../exercises_tools/randomized_content_blocks.html#add-a-randomized-content-block-to-your-course"><span>添加随机内容块到你的课程中</span></a></li>
+<li><a class="reference internal" href="../exercises_tools/randomized_content_blocks.html#view-the-matching-components-in-a-randomized-content-block"><span>在随机内容块中查看匹配组件</span></a></li>
+<li><a class="reference internal" href="../exercises_tools/randomized_content_blocks.html#edit-components-in-randomized-content-blocks"><span>编辑在随机内容块中的组件</span></a></li>
+<li><a class="reference internal" href="../exercises_tools/randomized_content_blocks.html#get-the-latest-version-of-library-content"><span>获取库内容的最新版本</span></a></li>
+</ul>
+</div>
+<div class="section" id="create-a-new-library">
+<span id="id2"></span><h2>5.5.2. Create a New Library<a class="headerlink" href="#create-a-new-library" title="Permalink to this headline">¶</a></h2>
+<p>Use <a class="reference internal" href="#content-libraries"><span>content libraries</span></a> to build a pool of components
+that can be used in randomized assignments in your courses. You can create
+libraries if you have course creation privileges.</p>
+<p>For information about adding other users to a library after you create it, see
+<a class="reference internal" href="#give-other-users-access-to-your-library"><span>Give Other Users Access to Your Library</span></a>.</p>
+<p>To create a new library, follow these steps.</p>
+<ol class="arabic">
+<li><p class="first">Log in to Studio.</p>
+</li>
+<li><p class="first">Click <strong>New Library</strong>.</p>
+</li>
+<li><p class="first">Enter the required information for your new library, then click <strong>Create</strong>.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Enter new library information carefully. The values in these
+fields become part of the URL for your library, therefore the total number
+of characters in the <strong>Library Name</strong>, <strong>Organization</strong>, and <strong>Library
+Code</strong> fields must be 65 or fewer.</p>
+</div>
+<img alt="Image of the library creation page" src="../_images/ContentLibrary_NewCL.png" />
+</li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li>For <strong>Library Name</strong>, enter the public display name for your library. Choose
+a meaningful name that will help you and other course team members to
+identify the library. For example, &#8220;Level 200 Math Problems&#8221;. When you add a
+randomized content block to a course unit, you use the library name to
+specify this library as a source for the randomized assignment.</li>
+<li>For <strong>Organization</strong>, enter the identifier for your university. For
+example, enter HarvardX or MITx. Do not include spaces or special
+characters.</li>
+<li>For <strong>Library Code</strong>, enter an identifier for your library that is unique
+within your organization. This code becomes part of the URL for your
+library, so do not include spaces or special characters in the code.</li>
+</ul>
+</div></blockquote>
+<ol class="arabic simple" start="4">
+<li>Click <strong>Create</strong>.</li>
+</ol>
+<p>You see the new library, to which you can now add components. For details about
+adding components to a library, see <a class="reference internal" href="#add-components-to-a-library"><span>Add Components to a Library</span></a>.</p>
+</div>
+<div class="section" id="edit-a-library">
+<span id="id3"></span><h2>5.5.3. Edit a Library<a class="headerlink" href="#edit-a-library" title="Permalink to this headline">¶</a></h2>
+<p>After you create a library, the only change you can make to the initial library
+information is to the name. However, at any time, you can make changes to the
+components in your library, including adding or deleting components or editing
+the settings of components. For details about editing the contents of a library,
+see <a class="reference internal" href="#edit-components-in-a-library"><span>Edit Components in a Library</span></a> and <a class="reference internal" href="#add-components-to-a-library"><span>Add Components to a Library</span></a>.</p>
+<p>To change the name of a library, follow these steps.</p>
+<ol class="arabic">
+<li><p class="first">Log in to Studio.</p>
+</li>
+<li><p class="first">Click <strong>Libraries</strong>, then click the library whose name you want to edit.</p>
+</li>
+<li><p class="first">Click the <strong>Edit</strong> icon next to the library name.</p>
+<p>The library name field becomes editable.</p>
+</li>
+</ol>
+<blockquote>
+<div><img alt="The Edit icon to the right of the Library Name" src="../_images/ContentLibrary_EditName.png" />
+</div></blockquote>
+<ol class="arabic simple" start="4">
+<li>In the library name field, make edits or enter a new library name.</li>
+<li>Click anywhere outside the library name field to save your changes.</li>
+</ol>
+<p>For details about giving other users access to the library, see <a class="reference internal" href="#give-other-users-access-to-your-library"><span>Give Other Users Access to Your Library</span></a>.</p>
+</div>
+<div class="section" id="add-components-to-a-library">
+<span id="id4"></span><h2>5.5.4. Add Components to a Library<a class="headerlink" href="#add-components-to-a-library" title="Permalink to this headline">¶</a></h2>
+<p>To add new <a class="reference internal" href="../developing_course/course_components.html#developing-course-components"><span>components</span></a> to your library,
+follow these steps.</p>
+<ol class="arabic simple">
+<li>Log in to Studio.</li>
+<li>Click <strong>Libraries</strong>, then click the library that you want to add components to.</li>
+<li>Click <strong>Add Component</strong>, then click the component type that you want to add
+under <strong>Add New Component</strong>.</li>
+</ol>
+<p>For more information about the types of components you can add to a library, see
+these topics.</p>
+<ul class="simple">
+<li><a class="reference internal" href="create_html_component.html#working-with-html-components"><span>如何使用HTML组件</span></a></li>
+<li><a class="reference internal" href="create_problem.html#working-with-problem-components"><span>创建问题组件</span></a></li>
+<li><a class="reference internal" href="create_video.html#working-with-video-components"><span>创建影片组件</span></a></li>
+</ul>
+<p>After you add a component to a library, you can edit its settings. These
+settings are retained when the component is selected from the library and used
+in a course.</p>
+<p>When a component from the library is used in a randomized content block, you can
+further edit the component as it exists in the unit, without affecting the
+original version in the library. For details, refer to <a class="reference internal" href="#edit-components-in-a-library"><span>Edit Components in a Library</span></a> and <a class="reference internal" href="../exercises_tools/randomized_content_blocks.html#get-the-latest-version-of-library-content"><span>获取库内容的最新版本</span></a>.</p>
+</div>
+<div class="section" id="view-the-contents-of-a-library">
+<span id="id5"></span><h2>5.5.5. View the Contents of a Library<a class="headerlink" href="#view-the-contents-of-a-library" title="Permalink to this headline">¶</a></h2>
+<p>To view the entire contents of a library in Studio, follow these steps.</p>
+<ol class="arabic simple">
+<li>Log in to Studio.</li>
+<li>Click <strong>Libraries</strong>, then click the library whose components you want to
+view.</li>
+<li>Optionally, click <strong>Hide Previews</strong> at the top right of the library page to
+collapse the component previews and see only the list of component display
+names. To return to the full preview of components in the library, click
+<strong>Show Previews</strong>.</li>
+</ol>
+<p>The components in the library display in the order in which they were added,
+with the most recently added at the bottom. If your library has more than 10
+components, additional components are shown on other pages.</p>
+<p>The range of the components shown on the current page, and the total number of
+components, are shown at the top of the page.</p>
+<p>You can navigate through the pages in these ways:</p>
+<ul>
+<li><p class="first">Use the <strong>&lt;</strong> and <strong>&gt;</strong> buttons at the top and bottom of the list to navigate
+to the previous and next pages.</p>
+</li>
+<li><p class="first">At the bottom of the page, you can edit the first number in the page range.
+Click the number to place your cursor in the field, then enter the page number
+you want to jump to.</p>
+<img alt="Image showing a pair of page numbers with the first number circled" src="../_images/file_pagination1.png" />
+</li>
+</ul>
+<p>To view the list of matching components in the library, see <a class="reference internal" href="../exercises_tools/randomized_content_blocks.html#view-the-matching-components-in-a-randomized-content-block"><span>在随机内容块中查看匹配组件</span></a>.</p>
+<p>To view the randomized content as a student would see it, see <a class="reference internal" href="../exercises_tools/randomized_content_blocks.html#view-the-randomized-content-as-a-student"><span>作为学生查看随机内容</span></a>.</p>
+</div>
+<div class="section" id="edit-components-in-a-library">
+<span id="id6"></span><h2>5.5.6. Edit Components in a Library<a class="headerlink" href="#edit-components-in-a-library" title="Permalink to this headline">¶</a></h2>
+<p>After you have added components to a library, you can edit, duplicate, or delete
+them.</p>
+<p>For step-by-step instructions for editing, duplicating, or deleting components,
+refer to the following topics.</p>
+<ul class="simple">
+<li><a class="reference internal" href="../developing_course/course_components.html#edit-a-component"><span>编辑组件</span></a></li>
+<li><a class="reference internal" href="../developing_course/course_components.html#duplicate-a-component"><span>复制组件</span></a></li>
+<li><a class="reference internal" href="../developing_course/course_components.html#delete-a-component"><span>删除组件</span></a></li>
+</ul>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">If you modify components in your library that are in use in a course,
+these updates in the &#8220;source&#8221; library are not reflected in the course unless
+you manually update the randomized content block in the course unit. For
+details about updating library components used in your course to match the
+latest version in the library, see <a class="reference internal" href="../exercises_tools/randomized_content_blocks.html#get-the-latest-version-of-library-content"><span>获取库内容的最新版本</span></a>.</p>
+</div>
+</div>
+<div class="section" id="delete-a-library">
+<span id="id7"></span><h2>5.5.7. Delete a Library<a class="headerlink" href="#delete-a-library" title="Permalink to this headline">¶</a></h2>
+<p>You cannot delete a library. Instead, you can discontinue use of an unwanted
+library. To do so, first make sure that none of its components are in use in any
+courses, then delete all components in the library. You can also <a class="reference internal" href="#edit-a-library"><span>edit the
+name of the library</span></a> to make it clear to other course staff that
+the library should not be used as a source of randomized assignment content in
+courses.</p>
+<p>For details about deleting components in a library, see <a class="reference internal" href="#edit-components-in-a-library"><span>Edit Components in a Library</span></a>.</p>
+</div>
+<div class="section" id="give-other-users-access-to-your-library">
+<span id="id8"></span><h2>5.5.8. Give Other Users Access to Your Library<a class="headerlink" href="#give-other-users-access-to-your-library" title="Permalink to this headline">¶</a></h2>
+<p>When you create a library, you are automatically assigned an Admin role in that
+library.</p>
+<p>You can give other Studio users access to your library. Depending on the level
+of access  that you give them in the library, additional library users can view
+and use library content in courses, edit library content, or add and manage
+other library users. All users to whom you give library access must be
+registered with Studio and have an active account.</p>
+<p>These are the levels of access for libraries:</p>
+<ul class="simple">
+<li><strong>User</strong> &#8211; Users can view library content and can use library components in
+their courses, but they cannot edit the contents of a library.</li>
+<li><strong>Staff</strong> &#8211; Staff can use library components in their courses. In addition,
+as content co-authors, they have full editing privileges in a library.</li>
+<li><strong>Admin</strong> &#8211; Admins have full editing privileges for a library. In addition,
+they can add and remove other team members from library access. There must be at
+least one user with Admin privileges in a library.</li>
+</ul>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">The levels of access for libraries are hierarchical. You can add new
+library members only with the <strong>User</strong> level of access, after which you can
+give them the <strong>Staff</strong> level of access. You can give the <strong>Admin</strong> level of
+access only to people who already have the <strong>Staff</strong> level of access.</p>
+</div>
+<div class="section" id="add-a-user-to-the-library">
+<h3>5.5.8.1. Add a User to the Library<a class="headerlink" href="#add-a-user-to-the-library" title="Permalink to this headline">¶</a></h3>
+<p>To grant a user initial <strong>User</strong> access to a library, follow these steps.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Only library users with the <strong>Admin</strong> level of access can add users to
+the library.</p>
+</div>
+<ol class="arabic">
+<li><p class="first">Ensure that the new library member has an active Studio account.</p>
+</li>
+<li><p class="first">On the Studio home page, click the <strong>Libraries</strong> tab and locate the library
+to which you are adding this user.</p>
+</li>
+<li><p class="first">From the <strong>Settings</strong> menu select <strong>User Access</strong>.</p>
+</li>
+<li><p class="first">On the <strong>User Access</strong> page, click <strong>Add a New User</strong>.</p>
+</li>
+<li><p class="first">Enter the new user&#8217;s email address, then click <strong>ADD USER</strong>.</p>
+<p>The new user is added to the list of library members with the <strong>User</strong> level
+of access.</p>
+</li>
+</ol>
+</div>
+<div class="section" id="remove-a-user-from-the-library">
+<h3>5.5.8.2. Remove a User from the Library<a class="headerlink" href="#remove-a-user-from-the-library" title="Permalink to this headline">¶</a></h3>
+<p>You can remove users from the library at any time, regardless of the level of
+access that they have.</p>
+<p>To remove a user from the library, follow these steps.</p>
+<ol class="arabic simple">
+<li>In Studio, click the <strong>Libraries</strong> tab and locate your library.</li>
+<li>From the <strong>Settings</strong> menu select <strong>User Access</strong>.</li>
+<li>On the <strong>User Access</strong> page, locate the user that you want to remove.</li>
+<li>Hover over the user&#8217;s box and click the trash can icon.</li>
+</ol>
+<blockquote>
+<div>You are prompted to confirm the deletion.</div></blockquote>
+<ol class="arabic simple" start="5">
+<li>Click <strong>Delete</strong>.</li>
+</ol>
+<blockquote>
+<div>The user is removed from the library.</div></blockquote>
+</div>
+<div class="section" id="add-staff-or-admin-access">
+<h3>5.5.8.3. Add Staff or Admin Access<a class="headerlink" href="#add-staff-or-admin-access" title="Permalink to this headline">¶</a></h3>
+<p>The levels of access for libraries are hierarchical. You can add new library
+members only with the <strong>User</strong> level of access, after which you can give them
+the <strong>Staff</strong> level of access. You can give the <strong>Admin</strong> level of access only
+to people who already have the <strong>Staff</strong> level of access.</p>
+<p>To give a library member a higher level of access to the library, follow these
+steps.</p>
+<ol class="arabic simple">
+<li>In Studio, click the <strong>Libraries</strong> tab and locate your library.</li>
+<li>From the <strong>Settings</strong> menu select <strong>User Access</strong>.</li>
+<li>On the <strong>User Access</strong> page, locate the user to whom you are giving
+additional privileges.</li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li>If he currently has <strong>User</strong> access, click <strong>Add Staff Access</strong>.</li>
+<li>If he currently has <strong>Staff</strong> access, click <strong>Add Admin Access</strong>.</li>
+</ul>
+<p>The user&#8217;s display listing is updated to indicate the new level of access. In
+addition, their listing now includes a button to remove their current level of
+access and move them back to their previous level of access. For details about
+reducing a user&#8217;s level of access to a library, see <a class="reference internal" href="#remove-staff-or-admin-access"><span>Remove Staff or Admin Access</span></a>.</p>
+</div></blockquote>
+</div>
+<div class="section" id="remove-staff-or-admin-access">
+<span id="id9"></span><h3>5.5.8.4. Remove Staff or Admin Access<a class="headerlink" href="#remove-staff-or-admin-access" title="Permalink to this headline">¶</a></h3>
+<p>After you have granted users <strong>Staff</strong> or <strong>Admin</strong> access, you (or other
+<strong>Admin</strong> library users) can reduce their levels of access.</p>
+<p>To remove <strong>Staff</strong> or <strong>Admin</strong> access from a library user, follow these steps.</p>
+<ol class="arabic simple">
+<li>In Studio, click the <strong>Libraries</strong> tab and locate your library.</li>
+<li>From the <strong>Settings</strong> menu select <strong>User Access</strong>.</li>
+<li>On the <strong>User Access</strong> page, locate the user whose access level you are
+changing.</li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li>If she currently has <strong>Staff</strong> access, click <strong>Remove Staff Access</strong>.</li>
+<li>If she currently has <strong>Admin</strong> access, click <strong>Remove Admin Access</strong>.</li>
+</ul>
+<blockquote>
+<div>The user&#8217;s display listing is updated to indicate their new role.</div></blockquote>
+</div></blockquote>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">There must always be at least one Admin for a library. If there is
+only one user with the Admin role, you cannot remove him or her from the
+Admin role unless you first assign another user to the Admin role.</p>
+</div>
+</div>
+</div>
+<div class="section" id="exporting-and-importing-a-library">
+<span id="id10"></span><h2>5.5.9. Exporting and Importing a Library<a class="headerlink" href="#exporting-and-importing-a-library" title="Permalink to this headline">¶</a></h2>
+<p>You can <a class="reference internal" href="#export-a-library"><span>export</span></a> and <a class="reference internal" href="#import-a-library"><span>import</span></a> a
+content library in Studio.</p>
+<div class="section" id="export-a-library">
+<span id="id11"></span><h3>5.5.9.1. Export a Library<a class="headerlink" href="#export-a-library" title="Permalink to this headline">¶</a></h3>
+<p>There are several reasons why you might want to export your library.</p>
+<ul class="simple">
+<li>To save your work in progress</li>
+<li>To edit the XML in your library directly</li>
+<li>To create a backup copy of your library</li>
+<li>To share with another course team member</li>
+</ul>
+<p>When you export your library, Studio creates a <strong>.tar.gz</strong> file (that is, a .tar
+file compressed using GNU Zip). This export file contains the problems in the
+library, including any customizations you made in the library to problem
+settings. The export does not include library settings such as user access
+permissions.</p>
+<p>To export a library, follow these steps.</p>
+<ol class="arabic simple">
+<li>In Studio, select the <strong>Libraries</strong> tab.</li>
+<li>Locate the library that you want to export.</li>
+<li>From the <strong>Tools</strong> menu, select <strong>Export</strong>.</li>
+<li>Click <strong>Export Library Content</strong> and specify where you want the file to be saved.</li>
+</ol>
+<p>When the export process finishes, you can access the .tar.gz file on your
+computer.</p>
+</div>
+<div class="section" id="import-a-library">
+<span id="id12"></span><h3>5.5.9.2. Import a Library<a class="headerlink" href="#import-a-library" title="Permalink to this headline">¶</a></h3>
+<p>You might want to import a library if you developed or updated library content
+outside of Studio, or if you want to overwrite a problematic or outdated version
+of the library.</p>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">When you import a library, the imported library completely replaces
+the existing library and its contents. You cannot undo a library import.
+Before you proceed, we recommend that you export the current library, so that
+you have a backup copy of it.</p>
+</div>
+<p>The library file that you import must be a .tar.gz file (that is, a .tar file
+compressed using GNU Zip). This .tar.gz file must contain a library.xml file.</p>
+<p>To import a library, follow these steps.</p>
+<ol class="arabic simple">
+<li>In Studio, select the <strong>Libraries</strong> tab.</li>
+<li>Locate the library to which you want to import the new library content.</li>
+<li>From the <strong>Tools</strong> menu, select <strong>Import</strong>.</li>
+<li>Click <strong>Choose a File to Import</strong> and select the .tar.gz file that you want
+to import.</li>
+<li>Click <strong>Replace my library with the selected file</strong>.</li>
+</ol>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">The import process has five stages. During the first two stages
+(Uploading and Unpacking), do not navigate away from the <strong>Library Import</strong> page.
+Doing so causes the import process to end. You can leave the page only after
+the Unpacking stage completes. We recommend that you do not make important
+changes to the library until all stages of the import process have finished.</p>
+</div>
+<ol class="arabic simple" start="6">
+<li>When the import process finishes, click <strong>View Updated Library</strong> to view the
+imported library.</li>
+</ol>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">If your imported library includes changes to components that are in
+use in a course, the course does not reflect these library updates until you
+manually update the randomized content block in the course unit. For details
+about updating library components used in your course to match the latest
+version in the content library, see <a class="reference internal" href="../exercises_tools/randomized_content_blocks.html#get-the-latest-version-of-library-content"><span>获取库内容的最新版本</span></a>.</p>
+</div>
+</div>
+</div>
+</div>
+
+
+          <footer>
+  
+    <div class="rst-footer-buttons">
+      
+        <a href="../exercises_tools/index.html" class="btn btn-neutral float-right" title="6. 创建习题和工具"/>Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="create_problem.html" class="btn btn-neutral" title="5.4. 创建问题组件"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <p>
+      &copy; Copyright 2015, edX.
+  </p>
+
+ 
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+</body>
+</html>

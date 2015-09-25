@@ -1,0 +1,429 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>3.9. 设定计分政策 &mdash; Building and Running an edX Course  documentation</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="../_static/css/favicon.ico"/>
+  
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  
+  
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:'../',
+        VERSION:'',
+        COLLAPSE_INDEX:false,
+        FILE_SUFFIX:'.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+
+    
+
+  
+
+  
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+
+  
+    <link rel="top" title="Building and Running an edX Course  documentation" href="../index.html"/>
+        <link rel="up" title="3. 建立您的课程" href="index.html"/>
+        <link rel="next" title="3.10. 重开课程" href="course_rerun.html"/>
+        <link rel="prev" title="3.8. 添加课本" href="textbooks.html"/> 
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-nav-search">
+        <a href="../index.html" class="icon icon-home"> Building and Running an edX Course</a>
+        <form class="wy-form" action="../search.html" method="get">
+  <input type="text" name="q" placeholder="Search document" />
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix">
+        
+        
+            <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../front_matter/index.html">1. 参考信息</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../front_matter/read_me.html">1.1. Read Me</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../front_matter/preface.html">1.2. 序言</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../front_matter/change_log.html">1.3. Change Log</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../front_matter/browsers.html">1.4. edX浏览器支持</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/index.html">2. 开始使用edX</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../getting_started/accounts.html">2.1. 开始使用edX</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../getting_started/dashboard_acctsettings_profile.html">2.2. 搜索你的仪表板、设置和配置文件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../getting_started/get_started.html">2.3. 开始了解Studio</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../getting_started/accessibility.html">2.4. 创建无障碍课程指南</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">3. 建立您的课程</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="creating_new_course.html">3.1. 新建课程</a></li>
+<li class="toctree-l2"><a class="reference internal" href="scheduling_course.html">3.2. 设置开始和结束日期</a></li>
+<li class="toctree-l2"><a class="reference internal" href="setting_up_student_view.html">3.3. 设置课程细节</a></li>
+<li class="toctree-l2"><a class="reference internal" href="licensing_course.html">3.4. 授权课程</a></li>
+<li class="toctree-l2"><a class="reference internal" href="course_files.html">3.5. 给课程添加文件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="handouts_updates.html">3.6. 添加课程补充资料及讲义</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pages.html">3.7. 为课程添加页面</a></li>
+<li class="toctree-l2"><a class="reference internal" href="textbooks.html">3.8. 添加课本</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="">3.9. 设定计分政策</a></li>
+<li class="toctree-l2"><a class="reference internal" href="course_rerun.html">3.10. 重开课程</a></li>
+<li class="toctree-l2"><a class="reference internal" href="export_import_course.html">3.11. 输出和导入课程</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../developing_course/index.html">4. 开发您的课程</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/workflow.html">4.1. 开始创建课程内容</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/course_outline.html">4.2. 创建课程大纲</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/course_sections.html">4.3. 创建课程章节</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/course_subsections.html">4.4. 构建课程小节</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/course_units.html">4.5. 构建课程单元</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/course_components.html">4.6. 创建课程组件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/controlling_content_visibility.html">4.7. 设置内容可见性</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/testing_courseware.html">4.8. 测试您的课程内容</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../creating_content/index.html">5. 创建课程内容</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../creating_content/create_html_component.html">5.1. 如何使用HTML组件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../creating_content/create_video.html">5.2. 创建影片组件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../creating_content/create_discussion.html">5.3. 创建讨论组件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../creating_content/create_problem.html">5.4. 创建问题组件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../creating_content/libraries.html">5.5. Working with Content Libraries</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../exercises_tools/index.html">6. 创建习题和工具</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/create_exercises_and_tools.html">6.1. 创建练习和工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/annotation.html">6.2. 注释问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/checkbox.html">6.3. 复选框问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/chemical_equation.html">6.4. 化学方程式问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/circuit_schematic_builder.html">6.5. 电路原理图搭建问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/conditional_module.html">6.6. 条件模板</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/custom_javascript.html">6.7. 自定义JavaScript问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/drag_and_drop.html">6.8. 拖放问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/dropdown.html">6.9. 下拉问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/external_graders.html">6.10. 图像映射输入问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/full_screen_image.html">6.11. 全屏图像工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/gene_explorer.html">6.12. Gene Explorer工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/google_calendar.html">6.13. 谷歌日历工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/google_docs.html">6.14. 谷歌云文件工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/google_hangouts.html">6.15. 谷歌即时群聊工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/iframe.html">6.16. IFrame工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/image_mapped_input.html">6.17. 图像映射输入问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/lti_component.html">6.18. LTI 组件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/math_expression_input.html">6.19. 数学表达式输入问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/molecule_editor.html">6.20. 分子编辑器</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/molecule_viewer.html">6.21. 分子浏览器</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/multiple_choice.html">6.22. 多项选择问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/mult_choice_num_input.html">6.23. 多项选择和数字输入题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/numerical_input.html">6.24. 数值输入问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/open_response_assessments/index.html">6.25. 开放性回答评估</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/periodic_table.html">6.26. 元素周期表工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/poll.html">6.27. 投票工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/problem_with_hint.html">6.28. 带适应性提示的问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/problem_in_latex.html">6.29. LaTeX问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/protein_builder.html">6.30. Protex蛋白质构建工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/randomized_content_blocks.html">6.31. 随机内容块</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/recommenderXBlock.html">6.32. 推荐系统</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/text_input.html">6.33. 文本输入问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/word_cloud.html">6.34. 文字云工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/custom_python.html">6.35. 自定义评分器问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/zooming_image.html">6.36. 图像放大工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/mathjax.html">6.37. Studio中MathJax的简要介绍</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../content_experiments/index.html">7. 创建内容实验</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../content_experiments/content_experiments_overview.html">7.1. Overview of Content Experiments</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../content_experiments/content_experiments_configure.html">7.2. 配置带有内容实验的课程</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../content_experiments/content_experiments_add.html">7.3. 为您的课程添加内容实验</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../content_experiments/content_experiments_view.html">7.4. Test Content Experiments</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../cohorts/index.html">8. 建立学生队列</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../cohorts/cohorts_overview.html">8.1. 使用队列功能建立课程群</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cohorts/cohort_config.html">8.2. 启用、配置分队模式</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cohorts/cohorted_courseware.html">8.3. 创建特定队列课件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cohorts/cohorts_setup_discussions.html">8.4. 在包含队列的课程中设置论坛</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cohorts/cohorts_manage_discussions.html">8.5. 管理有学生队列的论坛</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../releasing_course/index.html">9. 发布您的课程</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../releasing_course/beta_testing.html">9.1. 贝塔测试</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../releasing_course/course_launching.html">9.2. 课程发布事宜</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../releasing_course/staff_debug_info.html">9.3. 员工调试信息</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../running_course/index.html">10. 运营您的课程</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/course_staffing.html">10.1. 安置职工</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/course_enrollment.html">10.2. 招生</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/discussions.html">10.3. 管理课程讨论项目</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/discussions_students.html">10.4. 参与课程讨论</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/discussion_guidance_moderators.html">10.5. 论坛协调员指南</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/bulk_email.html">10.6. Bulk Email</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/course_wiki.html">10.7. 使用课程维基</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/course_data.html">10.8. 课程数据</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/course_student.html">10.9. 学生数据</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/course_answers.html">10.10. 回答问题数据</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/course_grades.html">10.11. 学生成绩与成绩评定</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/checking_student_progress.html">10.12. 总成绩计算与证书发放</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../students/index.html">11. 学生相关信息</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../students/login_guide.html">11.1. 学生登录指南示例</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../students/math_students.html">11.2. 学生数学题回答格式化</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../students/ora_students.html">11.3. 学生开放回答评估</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../glossary.html">12. Glossary</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#a">12.1. A</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#c">12.2. C</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#d">12.3. D</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#e">12.4. E</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#f">12.5. F</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#g">12.6. G</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#h">12.7. H</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#i">12.8. I</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#k">12.9. K</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#l">12.10. L</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#m">12.11. M</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#n">12.12. N</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#o">12.13. O</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#p">12.14. P</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#q">12.15. Q</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#r">12.16. R</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#s">12.17. S</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#t">12.18. T</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#u">12.19. U</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#v">12.20. V</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#w">12.21. W</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#xyz">12.22. XYZ</a></li>
+</ul>
+</li>
+</ul>
+
+        
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top">
+        <i data-toggle="wy-nav-top" class="icon icon-reorder"></i>
+        <a href="/">Building and Running an edX Course</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <ul class="wy-breadcrumbs">
+  <li><a href="../index.html">Table of Contents</a> &raquo;</li>
+  <li><a href="">3.9. 设定计分政策</a></li>
+  
+</ul>
+<hr/>
+
+          
+  <div class="section" id="establish-a-grading-policy">
+<span id="id1"></span><h1>3.9. 设定计分政策<a class="headerlink" href="#establish-a-grading-policy" title="Permalink to this headline">¶</a></h1>
+<p>设定计分政策需以下几步。您需要：</p>
+<ol class="arabic simple">
+<li><a class="reference internal" href="#set-the-grade-range"><span>设定分数等级</span></a></li>
+<li><a class="reference internal" href="#set-the-grace-period"><span>设定宽限期</span></a></li>
+<li><a class="reference internal" href="#configure-the-assignment-types"><span>设定评量类型</span></a></li>
+<li><a class="reference internal" href="#graded-subsections"><span>在计分的小节设定评量类型</span></a></li>
+<li><a class="reference internal" href="#the-learner-view-of-grades"><span>学生分数查询</span></a></li>
+</ol>
+<div class="admonition important">
+<p class="first admonition-title">Important</p>
+<p class="last">课程开始后，任何对课程计分政策、等级评定和评分组件的更改会影响学生的课程体验和学生的数据分析。</p>
+</div>
+<div class="section" id="set-the-grade-range">
+<span id="id2"></span><h2>3.9.1. 设定分数等级<a class="headerlink" href="#set-the-grade-range" title="Permalink to this headline">¶</a></h2>
+<p>每个课程必须设定分数等级。例如，及格/不及格，或者从字母A-F依次评分等级。</p>
+<p>设置分数等级：在导览列，点击 <strong>设置</strong> 之后，点击 <strong>计分</strong> 。</p>
+<p>计分页面顶部显示控制功能。</p>
+<a class="reference internal image-reference" href="../_images/grade_range.png"><img alt="Image of the Grade Range control." src="../_images/grade_range.png" style="width: 600px;" /></a>
+<p>上图样例中系统预设值以50分为基准，采用通过/不通过。</p>
+<p>您可通过分数级距控制功能来更改相应设置。</p>
+<ul>
+<li><p class="first">点击图标 <strong>+</strong> 添加分数级距。</p>
+<p>即在现有级距上添加新等级。
+如下图范例，如果您在系统预设值基础上添加新等级，则级距更改
+<strong>F</strong> (0 到 50), <strong>B</strong> (50 到 75), and <strong>A</strong> (75 到 100):</p>
+<a class="reference internal image-reference" href="../_images/grade_range_b.png"><img alt="Image of an altered Grade Range control." src="../_images/grade_range_b.png" style="width: 600px;" /></a>
+</li>
+<li><p class="first">将鼠标移至两个级距分界线上，点击分界线并向左或向右拖拽。</p>
+<p>移动过程中，可以看到分界线两侧的分数改变。移至想设定的分数值上松开鼠标即可。</p>
+</li>
+<li><p class="first">更改分数级距名称：双击选定现有级距名称，随后开始编辑新名称。
+例如，原有级距名称为 <strong>通过</strong> ，您可双击 <strong>通过</strong> ，随后键入 <strong>优秀</strong> ，便可替换旧名。</p>
+<p>但是，系统不允许更改F或不通过。</p>
+</li>
+<li><p class="first">移除级距，将鼠标移至对应想移除的级距范围上，其上方将出现移除的连结，点击即可。</p>
+<p>F或A不可移除。</p>
+</li>
+</ul>
+<p>做出任何修改后，请务必点击页面底部保存修改。</p>
+<div class="section" id="grade-ranges-and-certificates">
+<span id="id3"></span><h3>3.9.1.1. 分数等级和证书<a class="headerlink" href="#grade-ranges-and-certificates" title="Permalink to this headline">¶</a></h3>
+<p>如果您计划为课程提供证书，请注意成绩在F之上的学生将有资格获得证书，反之不能获得证书。
+此规则无视您设置的分数等级数量。</p>
+</div>
+</div>
+<div class="section" id="set-the-grace-period">
+<span id="id4"></span><h2>3.9.2. 设定宽限期<a class="headerlink" href="#set-the-grace-period" title="Permalink to this headline">¶</a></h2>
+<p>您可为学生设定一个作业延迟上交的宽限期。</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">您设定的宽限期适用于全课程；而非个别作业。</p>
+</div>
+<p>在计分页面上，本功能放置在 <strong>计分规则与政策</strong> 下，
+在 <strong>宽限期限</strong> 一栏内键入时间值，格式为X时：X分。</p>
+</div>
+<div class="section" id="configure-the-assignment-types">
+<span id="id5"></span><h2>3.9.3. 设定评量类型<a class="headerlink" href="#configure-the-assignment-types" title="Permalink to this headline">¶</a></h2>
+<p>您需针对课程设置不同类型的评量，并分配好每项评量占学生总成绩的比重。</p>
+<p>例如，您可设置</p>
+<ul class="simple">
+<li>课后作业10次，共占总分的50%；</li>
+<li>期中测试1次，占总分的20%；</li>
+<li>期末测试1次，占总分的30%。</li>
+</ul>
+<p>针对一门新课程，系统默认预设四种评量类型：</p>
+<ul class="simple">
+<li>课后作业</li>
+<li>实验</li>
+<li>期中测试</li>
+<li>期末测试</li>
+</ul>
+<p>以上评量类型可直接使用，亦可修改、移除与新增。</p>
+<p>增添新评量：在计分页面底部，点击 <strong>增添新评量</strong> ，然后填写其下述栏位。</p>
+<div class="section" id="id6">
+<h3>3.9.3.1. 评量类型相关栏位<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h3>
+<p>每个评量类型需填写下述栏位：</p>
+<ul>
+<li><p class="first"><strong>评量类型名称：</strong></p>
+<p>这是评量的总类别，此名称对所有学生可见。</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">同一评量类别下的所有作业在该类别中比重均相等。
+例如，包含10个问题的课后作业与包含20个问题的课后作业，最后都以相同权重计算。</p>
+</div>
+</li>
+<li><p class="first"><strong>简称：</strong></p>
+<p>进入学习进度标签，可于 <strong>评量</strong> 旁边看到名称缩写。</p>
+</li>
+<li><p class="first"><strong>占总分比重：</strong></p>
+<p>在 <strong>占总分比重</strong> 一栏中键入此评量类别下的所有作业所占比重和。</p>
+<p>所有评量类型所占比重之和应为100。</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">不要在此字段中键入百分比（%）符号。</p>
+</div>
+</li>
+<li><p class="first"><strong>作业总数：</strong></p>
+<p>总数为您为本课程计划设置此类别下的作业次数。</p>
+</li>
+<li><p class="first"><strong>不计入总分作业数：</strong></p>
+<p>这是此类别下不计入总分的作业总数。计分人首先会去除作业中的最低分。</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="graded-subsections">
+<span id="id7"></span><h2>3.9.4. 在计分的小节设定评量类型<a class="headerlink" href="#graded-subsections" title="Permalink to this headline">¶</a></h2>
+<p>设定好评量类型后，在组织课程设置时，您可在课程的小节，替需要计分的题目，设定评量类型。</p>
+<p>每个带有计分题目的小节只能包含一种评量类型。</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">只能以小节为单位设定评量类型和到期日。不可以章或小节内的单元为单位设定评量类型和到期日。
+另，您可以指定某个小节为其中一种评量类型。</p>
+</div>
+<p>更多内容请参阅 <a class="reference internal" href="../developing_course/course_subsections.html#developing-course-subsections"><span>构建课程小节</span></a>.</p>
+<p>设计等级分配评量指导请参阅 <a class="reference internal" href="../developing_course/course_subsections.html#set-the-assignment-type-and-due-date-for-a-subsection"><span>设置任务类型和截止日期</span></a> 。</p>
+<p>在小节中，可以新增评量的题目。但是，在同一小节中，不能够新增不同类型的评量。</p>
+<p>例如，如需在特定主题下新增作业与实验必须设定两个小节，一个为作业，另一个为实验。
+因此，小节涵盖内容说明以及作业或实验题目。</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">可在Studio中新增题目，而且不用设定某个小节为评量。但是，此类型的题目不会计入学生成绩。</p>
+</div>
+<p>取得设定新增题目说明请参阅 <a class="reference internal" href="../creating_content/create_problem.html#working-with-problem-components"><span>创建问题组件</span></a>.</p>
+</div>
+<div class="section" id="the-learner-view-of-grades">
+<span id="id8"></span><h2>3.9.5. 学生分数查询<a class="headerlink" href="#the-learner-view-of-grades" title="Permalink to this headline">¶</a></h2>
+<p>计分政策设定完成后，点选学习进度标签，学生可查看到自己的评量得分、百分比与目前成绩。</p>
+<blockquote>
+<div><img alt="Image of the student Progress tab." src="../_images/Progress_tab.png" />
+</div></blockquote>
+<p>横坐标X上的条目为计分小节。分数单位格在此表中无具体显示。竖状条显示了每个题目得分。</p>
+<p>根据评量类型，计分小节分组显示在图表中，未采用时间顺序平排列。
+例如，所有的课后练习排在一起，其后依次是实验、测试。</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">学习进度标签上横坐标X显示的评量为当前舍弃后的评量得分。您可在 <a class="reference internal" href="#configure-the-assignment-types"><span>configure assignment types</span></a> 中设置可抛弃评量的数量。</p>
+</div>
+</div>
+</div>
+
+
+          <footer>
+  
+    <div class="rst-footer-buttons">
+      
+        <a href="course_rerun.html" class="btn btn-neutral float-right" title="3.10. 重开课程"/>Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="textbooks.html" class="btn btn-neutral" title="3.8. 添加课本"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <p>
+      &copy; Copyright 2015, edX.
+  </p>
+
+ 
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+</body>
+</html>

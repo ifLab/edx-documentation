@@ -1,0 +1,745 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>5.2. 创建影片组件 &mdash; Building and Running an edX Course  documentation</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="../_static/css/favicon.ico"/>
+  
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  
+  
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:'../',
+        VERSION:'',
+        COLLAPSE_INDEX:false,
+        FILE_SUFFIX:'.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+
+    
+
+  
+
+  
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+
+  
+    <link rel="top" title="Building and Running an edX Course  documentation" href="../index.html"/>
+        <link rel="up" title="5. 创建课程内容" href="index.html"/>
+        <link rel="next" title="5.3. 创建讨论组件" href="create_discussion.html"/>
+        <link rel="prev" title="5.1. 如何使用HTML组件" href="create_html_component.html"/> 
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-nav-search">
+        <a href="../index.html" class="icon icon-home"> Building and Running an edX Course</a>
+        <form class="wy-form" action="../search.html" method="get">
+  <input type="text" name="q" placeholder="Search document" />
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix">
+        
+        
+            <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../front_matter/index.html">1. 参考信息</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../front_matter/read_me.html">1.1. Read Me</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../front_matter/preface.html">1.2. 序言</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../front_matter/change_log.html">1.3. Change Log</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../front_matter/browsers.html">1.4. edX浏览器支持</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/index.html">2. 开始使用edX</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../getting_started/accounts.html">2.1. 开始使用edX</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../getting_started/dashboard_acctsettings_profile.html">2.2. 搜索你的仪表板、设置和配置文件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../getting_started/get_started.html">2.3. 开始了解Studio</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../getting_started/accessibility.html">2.4. 创建无障碍课程指南</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../building_course/index.html">3. 建立您的课程</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/creating_new_course.html">3.1. 新建课程</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/scheduling_course.html">3.2. 设置开始和结束日期</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/setting_up_student_view.html">3.3. 设置课程细节</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/licensing_course.html">3.4. 授权课程</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/course_files.html">3.5. 给课程添加文件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/handouts_updates.html">3.6. 添加课程补充资料及讲义</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/pages.html">3.7. 为课程添加页面</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/textbooks.html">3.8. 添加课本</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/establish_grading_policy.html">3.9. 设定计分政策</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/course_rerun.html">3.10. 重开课程</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/export_import_course.html">3.11. 输出和导入课程</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../developing_course/index.html">4. 开发您的课程</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/workflow.html">4.1. 开始创建课程内容</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/course_outline.html">4.2. 创建课程大纲</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/course_sections.html">4.3. 创建课程章节</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/course_subsections.html">4.4. 构建课程小节</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/course_units.html">4.5. 构建课程单元</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/course_components.html">4.6. 创建课程组件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/controlling_content_visibility.html">4.7. 设置内容可见性</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/testing_courseware.html">4.8. 测试您的课程内容</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">5. 创建课程内容</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="create_html_component.html">5.1. 如何使用HTML组件</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="">5.2. 创建影片组件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="create_discussion.html">5.3. 创建讨论组件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="create_problem.html">5.4. 创建问题组件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="libraries.html">5.5. Working with Content Libraries</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../exercises_tools/index.html">6. 创建习题和工具</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/create_exercises_and_tools.html">6.1. 创建练习和工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/annotation.html">6.2. 注释问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/checkbox.html">6.3. 复选框问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/chemical_equation.html">6.4. 化学方程式问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/circuit_schematic_builder.html">6.5. 电路原理图搭建问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/conditional_module.html">6.6. 条件模板</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/custom_javascript.html">6.7. 自定义JavaScript问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/drag_and_drop.html">6.8. 拖放问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/dropdown.html">6.9. 下拉问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/external_graders.html">6.10. 图像映射输入问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/full_screen_image.html">6.11. 全屏图像工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/gene_explorer.html">6.12. Gene Explorer工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/google_calendar.html">6.13. 谷歌日历工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/google_docs.html">6.14. 谷歌云文件工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/google_hangouts.html">6.15. 谷歌即时群聊工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/iframe.html">6.16. IFrame工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/image_mapped_input.html">6.17. 图像映射输入问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/lti_component.html">6.18. LTI 组件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/math_expression_input.html">6.19. 数学表达式输入问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/molecule_editor.html">6.20. 分子编辑器</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/molecule_viewer.html">6.21. 分子浏览器</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/multiple_choice.html">6.22. 多项选择问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/mult_choice_num_input.html">6.23. 多项选择和数字输入题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/numerical_input.html">6.24. 数值输入问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/open_response_assessments/index.html">6.25. 开放性回答评估</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/periodic_table.html">6.26. 元素周期表工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/poll.html">6.27. 投票工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/problem_with_hint.html">6.28. 带适应性提示的问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/problem_in_latex.html">6.29. LaTeX问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/protein_builder.html">6.30. Protex蛋白质构建工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/randomized_content_blocks.html">6.31. 随机内容块</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/recommenderXBlock.html">6.32. 推荐系统</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/text_input.html">6.33. 文本输入问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/word_cloud.html">6.34. 文字云工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/custom_python.html">6.35. 自定义评分器问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/zooming_image.html">6.36. 图像放大工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/mathjax.html">6.37. Studio中MathJax的简要介绍</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../content_experiments/index.html">7. 创建内容实验</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../content_experiments/content_experiments_overview.html">7.1. Overview of Content Experiments</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../content_experiments/content_experiments_configure.html">7.2. 配置带有内容实验的课程</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../content_experiments/content_experiments_add.html">7.3. 为您的课程添加内容实验</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../content_experiments/content_experiments_view.html">7.4. Test Content Experiments</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../cohorts/index.html">8. 建立学生队列</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../cohorts/cohorts_overview.html">8.1. 使用队列功能建立课程群</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cohorts/cohort_config.html">8.2. 启用、配置分队模式</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cohorts/cohorted_courseware.html">8.3. 创建特定队列课件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cohorts/cohorts_setup_discussions.html">8.4. 在包含队列的课程中设置论坛</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cohorts/cohorts_manage_discussions.html">8.5. 管理有学生队列的论坛</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../releasing_course/index.html">9. 发布您的课程</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../releasing_course/beta_testing.html">9.1. 贝塔测试</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../releasing_course/course_launching.html">9.2. 课程发布事宜</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../releasing_course/staff_debug_info.html">9.3. 员工调试信息</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../running_course/index.html">10. 运营您的课程</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/course_staffing.html">10.1. 安置职工</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/course_enrollment.html">10.2. 招生</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/discussions.html">10.3. 管理课程讨论项目</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/discussions_students.html">10.4. 参与课程讨论</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/discussion_guidance_moderators.html">10.5. 论坛协调员指南</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/bulk_email.html">10.6. Bulk Email</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/course_wiki.html">10.7. 使用课程维基</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/course_data.html">10.8. 课程数据</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/course_student.html">10.9. 学生数据</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/course_answers.html">10.10. 回答问题数据</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/course_grades.html">10.11. 学生成绩与成绩评定</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/checking_student_progress.html">10.12. 总成绩计算与证书发放</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../students/index.html">11. 学生相关信息</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../students/login_guide.html">11.1. 学生登录指南示例</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../students/math_students.html">11.2. 学生数学题回答格式化</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../students/ora_students.html">11.3. 学生开放回答评估</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../glossary.html">12. Glossary</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#a">12.1. A</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#c">12.2. C</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#d">12.3. D</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#e">12.4. E</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#f">12.5. F</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#g">12.6. G</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#h">12.7. H</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#i">12.8. I</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#k">12.9. K</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#l">12.10. L</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#m">12.11. M</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#n">12.12. N</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#o">12.13. O</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#p">12.14. P</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#q">12.15. Q</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#r">12.16. R</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#s">12.17. S</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#t">12.18. T</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#u">12.19. U</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#v">12.20. V</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#w">12.21. W</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#xyz">12.22. XYZ</a></li>
+</ul>
+</li>
+</ul>
+
+        
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top">
+        <i data-toggle="wy-nav-top" class="icon icon-reorder"></i>
+        <a href="/">Building and Running an edX Course</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <ul class="wy-breadcrumbs">
+  <li><a href="../index.html">Table of Contents</a> &raquo;</li>
+  <li><a href="">5.2. 创建影片组件</a></li>
+  
+</ul>
+<hr/>
+
+          
+  <div class="section" id="working-with-video-components">
+<span id="id1"></span><h1>5.2. 创建影片组件<a class="headerlink" href="#working-with-video-components" title="Permalink to this headline">¶</a></h1>
+<p>您能创建一个您的演讲影片，并且可以将其他组成部分，例如，讨论和遇到的问题，添加到课程中是学生积极学习。
+将视频添加到您的课程中有以下几个步骤。</p>
+<div class="contents local topic" id="id2">
+<p class="topic-title first">步骤</p>
+<ul class="simple">
+<li><a class="reference internal" href="#protecting-videos" id="id16">视频保护</a></li>
+<li><a class="reference internal" href="#create-the-video" id="id17">步骤1. 创建影片</a></li>
+<li><a class="reference internal" href="#create-transcript" id="id18">步骤2. 创建或保存影片副本</a></li>
+<li><a class="reference internal" href="#post-the-video-online" id="id19">步骤3 在网上发布影片</a></li>
+<li><a class="reference internal" href="#create-a-video-component" id="id20">步骤4 创建影片组件</a></li>
+<li><a class="reference internal" href="#video-toc" id="id21">影片目录表</a></li>
+<li><a class="reference internal" href="#additional-transcripts" id="id22">附加副本</a></li>
+<li><a class="reference internal" href="#sjson" id="id23">操作.sjson文档的步骤</a></li>
+</ul>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">在将影片添加到您的课程之前，回顾 <a class="reference internal" href="../getting_started/accessibility.html#best-practices-for-accessible-media"><span>最佳媒体使用方案</span></a> 。</p>
+</div>
+<div class="section" id="protecting-videos">
+<span id="id3"></span><h2><a class="toc-backref" href="#id16">5.2.1. 视频保护</a><a class="headerlink" href="#protecting-videos" title="Permalink to this headline">¶</a></h2>
+<p>为了帮助教员团队保护视频资源，edX播放器默认隐藏视频URL。
+此默认设置应用于所有视频文件，包括YouTube视频和您发布在其他网站的视频。
+如果您选择了 <strong>允许下载视频</strong> 学生仍可以下载视频文件。
+更多关于在YouTube之外的网站发布视频的信息，请参考 <a class="reference internal" href="#post-the-video-online"><span>步骤3 在网上发布影片</span></a> 。
+更多关于您可以设置的选项请参考  <a class="reference internal" href="#video-advanced-options"><span>高级选项</span></a>.</p>
+</div>
+<div class="section" id="create-the-video">
+<span id="id4"></span><h2><a class="toc-backref" href="#id17">5.2.2. 步骤1. 创建影片</a><a class="headerlink" href="#create-the-video" title="Permalink to this headline">¶</a></h2>
+<p>您的影片能保存任何您想要保存的内容。<a class="reference external" href="https://www.edx.org/node/5496#.VH8p51fF_FA">edX101 Overview of Creating an edX Course</a> 中的
+<a class="reference external" href="https://courses.edx.org/courses/edX/edX101/2014/courseware/c2a1714627a945afaceabdfb651088cf/9dd6e5fdf64b49a89feac208ab544760/">Creating Videos</a> 部分能够帮助您如何创建影片内容。</p>
+<div class="section" id="compression-specifications">
+<span id="id5"></span><h3>5.2.2.1. 压缩详述<a class="headerlink" href="#compression-specifications" title="Permalink to this headline">¶</a></h3>
+<p>创建影片时，edX建议参照以下压缩详述。</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="20%" />
+<col width="40%" />
+<col width="40%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><th class="stub">输出</th>
+<td><strong>发布到You Tube</strong></td>
+<td><strong>AWS S3将下载好的文件发布到AWS S3上</strong></td>
+</tr>
+<tr class="row-even"><th class="stub">编码解码器</th>
+<td>H.264 .mp4</td>
+<td>H.264 .mp4</td>
+</tr>
+<tr class="row-odd"><th class="stub">分辨率和帧速率</th>
+<td>1920x1080, progressive, 29.97 fps</td>
+<td>1280x720, progressive, 29.97 fps</td>
+</tr>
+<tr class="row-even"><th class="stub">版本</th>
+<td>1.0</td>
+<td>1.0</td>
+</tr>
+<tr class="row-odd"><th class="stub">位速率</th>
+<td>VBR, 2 pass</td>
+<td>VBR, 2 pass</td>
+</tr>
+<tr class="row-even"><th class="stub">目标可变速率</th>
+<td>5 mbps</td>
+<td>1 mbps</td>
+</tr>
+<tr class="row-odd"><th class="stub">最大可变速率</th>
+<td>7.5 mbps</td>
+<td>1.5 mbps</td>
+</tr>
+<tr class="row-even"><th class="stub">声频</th>
+<td>AAC 44.1 / 192 kbps</td>
+<td>AAC 44.1 / 192 kbps</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">一般情况下，您导出文件的帧速率和创建时相同。
+例如，如果您在一个使用PAL系统的国家创建文件，您导出的的文件将为25 fps而不是NTSC标准的 29.97 fps。</p>
+</div>
+</div>
+<div class="section" id="video-formats">
+<span id="id6"></span><h3>5.2.2.2. 影片格式<a class="headerlink" href="#video-formats" title="Permalink to this headline">¶</a></h3>
+<p>edX视频播放器支持mp4, .webm, .mpeg, and .ogg格式。
+然而，为了确保所有标准浏览器均能播放您的影片， 我们强烈建议您使用 <strong>.mp4 format</strong> 格式。</p>
+</div>
+</div>
+<div class="section" id="create-transcript">
+<span id="id7"></span><h2><a class="toc-backref" href="#id18">5.2.3. 步骤2. 创建或保存影片副本</a><a class="headerlink" href="#create-transcript" title="Permalink to this headline">¶</a></h2>
+<p>我们强烈建议您将影片与有限的副本相结合。
+对于那些母语是非英语、不能看见影片或这想要回顾影片内容的学生来说，副本对他们是十分有用的。
+您的影片播放的同时副本也会自动滚动播放。要是学生点击副本中的单词，影片会显示该词。
+您能让学生下载副本以便他们能在线阅读。在创建影片组件时，您能将影片和副本相结合。</p>
+<p>自动播放影片的前提是您的副本必须是srt格式的文档。
+若想创建和保存srt格式的副本，您可以和提供字幕服务的公司合作。
+EdX可以和3Play Media公司合作。You Tube也能提供字幕服务。</p>
+<p>您上传srt文档时，文本文件会自动生成。学生可以下载srt文档或文本文档（txt）。
+若您允许学生下载副本，影片下方会出现下载副本按钮。
+学生能够自行选择SubRip文档（.srt文档）或文本文档（.txt）来下载.srt格式或文本文档（txt）格式的副本。</p>
+<a class="reference internal image-reference" href="../_images/Video_DownTrans_srt-txt.png"><img alt="Video status bar showing srt and txt transcript download options" src="../_images/Video_DownTrans_srt-txt.png" style="width: 500px;" /></a>
+<p>您也可以提供其他形式的副本，如 .pdf，您也可以使用其他语言。
+更多选择信息请参照 <a class="reference internal" href="#additional-transcripts"><span>附加副本</span></a>.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">以前有一些课程使用 .sjson文件作为视频副本。
+现在我们已经不再推荐这种方式。
+然而，如果您的副本是 .sjson格式，请参考 <a class="reference internal" href="#steps-for-sjson-files"><span>操作.sjson文档的步骤</span></a> 。</p>
+</div>
+</div>
+<div class="section" id="post-the-video-online">
+<span id="id8"></span><h2><a class="toc-backref" href="#id19">5.2.4. 步骤3 在网上发布影片</a><a class="headerlink" href="#post-the-video-online" title="Permalink to this headline">¶</a></h2>
+<p>所有课程应在You Tube上发布。通过默认设置，edX影片播放器能够播放You Tube的影片。</p>
+<p>然而，由于You Tube不是在任何地方下均有效的，所以我们建议您将影片也上传到至第三方网站，例如 <a class="reference external" href="http://aws.amazon.com/s3/">Amazon S3</a>.
+当学生浏览您的课程时，要是You Tube不适用于学生所在地或You Tube无法播放，上传至备用网站的影片能自动播放。
+您也能让学生从备用网站上下载影片。</p>
+<p>在网上公布影片之后，确保您有影片的统一资源定位符（URL）。
+若您在多处复制了您的影片，确保您有每一个副本所在位置的统一资源定位符（URL）。</p>
+<div class="section" id="youtube">
+<h3>5.2.4.1. YouTube<a class="headerlink" href="#youtube" title="Permalink to this headline">¶</a></h3>
+<p>在创建影片后，将影片上传至 <a class="reference external" href="http://www.youtube.com/">YouTube</a>.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">You Tube只能上传最长15分钟的影片。
+如果您选择0.75倍播放速度，您必须确定影片片段只有11.25分钟，如此一来才能确保影片全部上传至You Tube。
+You Tube有提供付费机制可以解除这个限制。</p>
+</div>
+</div>
+<div class="section" id="id10">
+<h3>5.2.4.2. 其他网站<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h3>
+<p>您能使用任何备用网站。然而，切记您上传影片的网站可能需要面对网络繁忙的情况。</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">最终您上传至第三方网站的影片统一资源定位符（URL）必须是mp4, .webm, .mpeg, 或.ogg格式。</p>
+</div>
+<p>（为了确保所有标准浏览器均能播放影片，我们强烈建议您用mp4,或webm.格式）EdX不支持类似Vimeo等网站上的视频。</p>
+<p>如果您（或您的贝塔测试员或学生）在看课程视频时遇到错误，也许是浏览器的原因。</p>
+<ul>
+<li><p class="first">请确保浏览器为最新版本。例如，一些旧版本的Mozilla Firefox浏览器无法播放 .mp4格式的视频。
+这个问题不存在新版本中。</p>
+<p>更多信息请参考  <a class="reference external" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Supported_media_formats#MP4_H.264_(AAC_or_MP3)">Media formats supported by the HTML audio and
+video elements</a>.</p>
+</li>
+<li><p class="first">确保文件元数据，尤其是MIME类型的元数据，在主站中正确设置。
+IE 10浏览器无法播放未设置的MIME格式视频。
+例如，确保.mp4文件的HTTP header中的Content-Type设置为video/mp4，
+.webm文件的HTTP header中的Content-Type设置为video/webm 。</p>
+<p>亚马逊存储服务的 <strong>控制台用户指南</strong> 提供了关于如何在视频备选网站中设置元数据的信息 <a class="reference external" href="http://docs.aws.amazon.com/AmazonS3/latest/UG/EditingtheMetadataofanObject.html">editing object metadata</a>.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="create-a-video-component">
+<span id="id11"></span><h2><a class="toc-backref" href="#id20">5.2.5. 步骤4 创建影片组件</a><a class="headerlink" href="#create-a-video-component" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic">
+<li><p class="first">在新增组件下，点击影片</p>
+</li>
+<li><p class="first">当出现新的影片组件时，点击编辑。影片编辑者能看见原始码。</p>
+<a class="reference internal image-reference" href="../_images/VideoComponentEditor.png"><img alt="Image of the video component editor" src="../_images/VideoComponentEditor.png" style="width: 500px;" /></a>
+<p>您能自行替代默认值。</p>
+</li>
+</ol>
+<ol class="arabic" start="3">
+<li><p class="first">在显示组件名称栏位，填入您想让学生在鼠标划过页面时显示的提示文字。
+这个文字将成为影片的标题文字。</p>
+</li>
+<li><p class="first">在默认影片统一资源定位符（URL）栏位，输入影片的统一资源定位符（URL）。
+例如，统一资源定位符（URL）可能类似于以下例子中的一种。</p>
+<div class="highlight-python"><div class="highlight"><pre>http://youtu.be/OEoXaMPEzfM
+http://www.youtube.com/watch?v=OEoXaMPEzfM
+https://s3.amazonaws.com/edx-course-videos/edx-edx101/EDXSPCPJSP13-G030300.mp4
+https://s3.amazonaws.com/edx-videos/edx101/video4.webm
+</pre></div>
+</div>
+</li>
+</ol>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">为了确保所有学生均能播放影片，您能在互联网上公布影片的其他版本。
+之后将这些影片的统一资源定位符（URL）添加至下方影片默认统一资源定位符（URL）。
+这些统一资源定位符（URL）不能是You Tube网站的统一资源定位符（URL）。
+想要将统一资源定位符（URL）添加至其他版本中，点击添加其他版本统一资源定位符（URL）。
+与学生们电脑兼容的第一个列明影片将播放。</p>
+</div>
+<ol class="arabic" start="5">
+<li><p class="first">下一个步骤是默认限时副本，选择一个选项。</p>
+<ul>
+<li><p class="first">若edX已存有您的影片，例如，若您正在播放现有课程中的影片，Studio会自动找到副本并将其与影片连接起来。</p>
+<p>若您想修改副本，点击下载副本及编辑。您能改动影片并通过点击上传新副本完成上传。</p>
+</li>
+<li><p class="first">若edX没有影片副本，而You Tube有的话，Studio会自动找到You Tube网站上的副本并询问您是否输入副本。
+若要使用You Tube网站上的副本，点击输入You Tube副本。
+（若您想修改You Tube副本，将其输入Studio，接着点击下载副本及编辑。）
+这样，您能修改影片并通过点击上传新副本完成上传。</p>
+</li>
+<li><p class="first">若edX和You Tube都有您的副本，但是edX过期的话，您将收到询问您是否用You Tube副本替代edX副本的消息。
+若同意，点击是，You Tube副本替代edX副本。</p>
+</li>
+<li><p class="first">若edX和You Tube都没有您的副本，并且您的副本格式是.srt的话，点击上传新副本完成上传。</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<ul class="last simple">
+<li>若您的副本使用的是.sjson格式的话，勿用此项设置。
+欲知更多信息，请见 <a class="reference internal" href="#steps-for-sjson-files"><span>操作.sjson文档的步骤</span></a>.</li>
+<li>若您希望提供副本的格式是.pdf的话，勿用此项设置上传副本。
+欲知更多信息，请见 <a class="reference internal" href="#additional-transcripts"><span>附加副本</span></a>.</li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li><p class="first">可自由选择点击高级，设置影片更多选项。
+欲知每项选项详情，请看 <a class="reference internal" href="#video-advanced-options"><span>高级选项</span></a>.</p>
+</li>
+<li><p class="first">点击保存</p>
+</li>
+</ol>
+<div class="section" id="video-advanced-options">
+<span id="id12"></span><h3>5.2.5.1. 高级选项<a class="headerlink" href="#video-advanced-options" title="Permalink to this headline">¶</a></h3>
+<p>影片组件的高级选项中会出现以下选项。</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="30%" />
+<col width="70%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><strong>显示组件名</strong></td>
+<td>您想让学生看见的名称，必须与原始码显示名是保持一致。</td>
+</tr>
+<tr class="row-even"><td><strong>默认时限副本</strong></td>
+<td>默认时限副本的原始码用的是副本文档的名称。
+此区域是自动添加的。
+您不需要改变这项设置。</td>
+</tr>
+<tr class="row-odd"><td><strong>同意下载副本</strong></td>
+<td><p class="first">详细说明您是否同意让学生下载时限副本。
+若您选择“是”，影片下方会显示下载文档的链接。</p>
+<p class="last">通过默认设置，在你上传.srt副本文档的同时会生成文本文档副本。
+您甚至成同意下载副本，学生们就能下载.srt副本及文本文档副本。
+同时，若您希望能下载不同格式的文本，
+例如，.pdf，通过上传讲义，将其上传至Studio。</p>
+</td>
+</tr>
+<tr class="row-even"><td><strong>可下载副本URL</strong></td>
+<td><p class="first">非.srt格式副本的统一资源定位符（URL）会发至文件和上传页面或公布在网上。
+学生们能在影片下方看见下载非.srt格式副本的链接。</p>
+<p class="last">当您将副本添加至此区域时，只有您添加的附件能下载。
+非.srt格式副本及文本文档副本无法下载。
+若您提供的副本格式并非.srt，我们建议您通过上传讲义选项，上传学生讲义。
+欲知更多信息，请见 <a class="reference internal" href="#additional-transcripts"><span>附加副本</span></a> 。</p>
+</td>
+</tr>
+<tr class="row-odd"><td><strong>EdX视频ID</strong></td>
+<td>此选项只用于使用edX制作主视频文件的课程团队。</td>
+</tr>
+<tr class="row-even"><td><strong>许可证书</strong></td>
+<td><p class="first">您可以选择为视频设置许可证书。
+以满足您发布与课程许可证不同的视频许可证的需求。</p>
+<ul class="last">
+<li><p class="first">选择 <strong>版权所有</strong> 像学生表明您拥有视频的版权。</p>
+</li>
+<li><p class="first">选择 <strong>CC协议</strong> 授予他人分享视频的权利。
+您必须选择申请CC协议证书。</p>
+<p>您选择的证书选项控制了学生所看视频的版权公告。
+更多信息请参考 <a class="reference internal" href="../building_course/licensing_course.html#licensing-a-course"><span>授权课程</span></a>.</p>
+</li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><strong>副本展示</strong></td>
+<td>详细说明是否通过默认设置，将副本和影片一起上传。</td>
+</tr>
+<tr class="row-even"><td><strong>副本语言</strong></td>
+<td>副本文件可以添加任何语言。
+欲知更多信息，请见 <a class="reference internal" href="#transcripts-in-additional-languages"><span>其他语言的副本</span></a>.</td>
+</tr>
+<tr class="row-odd"><td><strong>上传讲义</strong></td>
+<td>允许讲义和影片一起上传。
+您的讲义可以是任何格式的。
+学生们可以在影片下方点击下载讲义完成下载。更多信息请见
+<a class="reference internal" href="#additional-transcripts"><span>附加副本</span></a>.</td>
+</tr>
+<tr class="row-even"><td><strong>视频仅在网页播放</strong></td>
+<td>如果您选择 <strong>是</strong> ，学生只能在浏览器中播放该视频。
+如果您选择 <strong>否</strong> ，学生可以使用任何应用播放该视频。
+包括网页浏览器和移动应用。</td>
+</tr>
+<tr class="row-odd"><td><strong>同意下载影片</strong></td>
+<td>若学生们无法使用edX播放器或You Tube，
+请详细说明他们能否下载此影片不同格式的版本。
+若您选择“是”，必须在影片文件统一资源定位符（URL）区域
+中添加至少一个非You Tube统一资源定位符（URL）。</td>
+</tr>
+<tr class="row-even"><td><strong>影片文档URL</strong></td>
+<td><p class="first">您发布过的非You-Tube版本的视频的URL。
+最终，每个统一资源定位符（URL）必须是mpeg, .webm, .mp4, or .ogg格式，
+而且不能是You Tube统一资源定位符（URL）。
+每个学生均能浏览与其电脑兼容的第一个列明的影片。
+您必须同意影片下载，学生才能下载影片。</p>
+<p class="last">为使所有标准浏览器能播放您的影片，
+我们强烈建议您使用.mp4 或 .webm格式。</p>
+</td>
+</tr>
+<tr class="row-odd"><td><strong>视频ID</strong></td>
+<td>此选项仅用于使用edX制作主视频文件的课程团队。</td>
+</tr>
+<tr class="row-even"><td><strong>影片开始时间</strong></td>
+<td><p class="first">若您不想播放所有视频，能设置影片开始时间。
+将格式设置为 HH:MM:SS。最大值为23:59:59。</p>
+<div class="last admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">在移动应用上下载并播放该视频的学生可以看到完整的视频文件。
+只有在浏览器中播放视频时有特定开始时间。</p>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><strong>影片结束时间</strong></td>
+<td><p class="first">若您不想播放所有视频，能设置影片结束时间。
+将格式设置为 HH:MM:SS。最大值为23:59:59。</p>
+<div class="last admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">在移动应用上下载并播放该视频的学生可以看到完整的视频文件。
+只有在浏览器中播放视频时有特定结束时间。</p>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><strong>YouTube ID</strong></td>
+<td>若您将独立且不同播放速率的影片上传至You Tube，
+在此区域输入这些影片的You Tube号。
+(拥有You Tube号的人能享受 .75x、1.25x及1.5x倍播放速度)</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="section" id="video-toc">
+<span id="id13"></span><h2><a class="toc-backref" href="#id21">5.2.6. 影片目录表</a><a class="headerlink" href="#video-toc" title="Permalink to this headline">¶</a></h2>
+<p>通过将可点击的.srt格式副本添加到影片的各部分，您能添加影片目录表。
+学生观看影片时，他们能点击影片播放器下方的CC按钮，实现影片主要副本和影片目录表切换。</p>
+<p>为添加目录表，您将与第三方网站合作，以创建.srt格式副本文档。
+之后，您将通过影片组件设置的副本语言将.srt格式副本与影片相结合。</p>
+<a class="reference internal image-reference" href="../_images/VideoTOC.png"><img alt="Image of a video with a transcript that has links to different parts of the video" src="../_images/VideoTOC.png" style="width: 500px;" /></a>
+<ol class="arabic">
+<li><p class="first">.srt格式副本文档的作用是充当目录表，在保存其后，打开您的影片组件。</p>
+</li>
+<li><p class="first">在高级选项卡中，下拉至副本语言，点击添加。</p>
+</li>
+<li><p class="first">下拉列表出现之后，选择目录</p>
+<p>随后，显示上传按钮。</p>
+</li>
+<li><p class="first">点击上传，浏览.srt格式副本文档，点击打开。</p>
+</li>
+<li><p class="first">在上传翻译对话框栏位，点击上传。</p>
+</li>
+</ol>
+</div>
+<div class="section" id="additional-transcripts">
+<span id="id14"></span><h2><a class="toc-backref" href="#id22">5.2.7. 附加副本</a><a class="headerlink" href="#additional-transcripts" title="Permalink to this headline">¶</a></h2>
+<p>由于默认设置，您上传.srt格式文档的同时文本文档（txt）会生成。
+您设置同意下载副本之后，学生们能下载.srt格式或文本文档（txt）格式文档。
+影片下方出现下载副本按钮，鼠标划过此按钮时，学生们能看到.srt格式或文本文档（txt）格式选项。</p>
+<a class="reference internal image-reference" href="../_images/Video_DownTrans_srt-txt.png"><img alt="Video status bar showing srt and txt transcript download options" src="../_images/Video_DownTrans_srt-txt.png" style="width: 500px;" /></a>
+<p>若您想要上传.pdf、.srt、txt格式副本的话，我们建议您在上传讲义区域操作。
+您这样操作的话，上传讲义按钮会出现在下载副本按钮右方，学生们能下载 .srt, .txt格式或与讲义格式相同的副本。</p>
+<a class="reference internal image-reference" href="../_images/Video_DownTrans_srt-handout.png"><img alt="Video status bar showing srt, txt, and handout transcript download options" src="../_images/Video_DownTrans_srt-handout.png" style="width: 500px;" /></a>
+<p>利用上传讲义区域，添加下载副本：</p>
+<ol class="arabic simple">
+<li>创建或保存您的副本，副本可以是.pdf或其他格式。</li>
+<li>在影片组件栏位，点击高级选项。</li>
+<li>找到上传讲义，点击上传。</li>
+<li>在上传文档对话框栏位，点击选择文档。</li>
+<li>在对话框栏位，选择您电脑中存储的文档，点击打开。</li>
+<li>在上传文档对话框栏位，点击上传。</li>
+</ol>
+<p>在Studio添加上传讲义特性之前，确保一部分课程已公布至文档和上传页面或公布在网上，
+接着将链接添加至影片组件文档中。 <strong>我们不建议您这样做。</strong>
+您使用这种方法时，会显示下载副本，但是您添加的副本只能下载。
+无法识别.srt 和文本文档（txt）格式的副本。</p>
+<a class="reference internal image-reference" href="../_images/Video_DownTrans_other.png"><img alt="Video status bar showing Download Transcript button without srt and txt options" src="../_images/Video_DownTrans_other.png" style="width: 500px;" /></a>
+<p>若您想使用此方法，将您的影片公布在网上，并将统一资源定位符（URL）添加至副本，
+该副本位于下载副本统一资源定位符（URL）区域内。
+但是，切记这样一来，学生将无法下载srt 和文本文档（txt）格式的副本。</p>
+<div class="section" id="transcripts-in-additional-languages">
+<span id="id15"></span><h3>5.2.7.1. 其他语言的副本<a class="headerlink" href="#transcripts-in-additional-languages" title="Permalink to this headline">¶</a></h3>
+<p>您能上传其他语言的影片副本。
+想这样做的话，您需要与第三方服务商合作，以便保存每种语言的.srt格式的副本文档，
+之后将.srt格式文档与Studio中的影片相链接。</p>
+<ol class="arabic">
+<li><p class="first">您在保存其他语言的.srt格式文档之后，打开影片组件。</p>
+</li>
+<li><p class="first">在高级选项栏位，下拉至副本语言，点击添加。</p>
+</li>
+<li><p class="first">在显示的下拉菜单栏位，选择您想添加的副本语言。</p>
+<p>语言下方显示上传按钮。</p>
+</li>
+<li><p class="first">点击上传，浏览.srt格式文档语言，点击打开。</p>
+</li>
+<li><p class="first">在上传翻译对话框栏位，点击上传。</p>
+</li>
+<li><p class="first">添加任意附加语言，操作同步骤2至步骤5相同。</p>
+</li>
+</ol>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p>确保所有您的副本文档名与每个影片及语言的名称不同。
+您在至少一个影片组件中使用相   同的副本名称，每个影片播放的都是同一副本。
+为了避免这一问题发生，您可根据影片文档名和副本语言，命名您的外语副本名称。</p>
+<p class="last">例如，您有两份影片，分别命名为影片1.mp4和影片2.mp4。
+两个影片均有俄语和西班牙语副本。您能将第一个影片命名为影片1RU.srt和影片1 ES.srt，
+将副本命名为影片2RU.srt和影片2 ES.srt。</p>
+</div>
+<p>学生浏览影片时，他们能点击影片下方的CC按钮，选择语言。</p>
+<img alt="Video playing with language options visible" src="../_images/Video_LanguageTranscripts_LMS.png" />
+</div>
+</div>
+<div class="section" id="sjson">
+<span id="steps-for-sjson-files"></span><h2><a class="toc-backref" href="#id23">5.2.8. 操作.sjson文档的步骤</a><a class="headerlink" href="#sjson" title="Permalink to this headline">¶</a></h2>
+<p>若您的课程使用的是.sjson文档，您需要将影片.sjson文档上传至文档和上传页面。
+明确说明.sjson文档在影片组件中的名称。</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">只有过去使用过.sjson文档的课程才能使用.sjson文档。所有新课程应用.srt文档。</p>
+</div>
+<ol class="arabic">
+<li><p class="first">选择媒体公司，例如3Play，并保存.sjson文档</p>
+</li>
+<li><p class="first">修改.sjson文档名称以便使用以下格式：subs_FILENAME.srt.sjson。</p>
+<p><code class="docutils literal"><span class="pre">subs_{video</span> <span class="pre">filename}.srt.sjson</span></code></p>
+<p>例如，若您的影片名称为第一讲a，
+那么您.sjson文档名称必须是 <strong>subs_Lecture1a.srt.sjson</strong>.</p>
+</li>
+<li><p class="first">将影片的.sjson文档上传至文档和上传页面。</p>
+</li>
+<li><p class="first">创建影片新组件。</p>
+</li>
+<li><p class="first">在原始码栏位，输入您想让学生在显示组件区域看见的名称。</p>
+</li>
+<li><p class="first">在影片统一资源定位符（URL）区域，输入影片统一资源定位符（URL）。例如，您会看到类似以下的情况：</p>
+<div class="highlight-python"><div class="highlight"><pre>http://youtu.be/OEoXaMPEzfM
+http://www.youtube.com/watch?v=OEoXaMPEzfM
+https://s3.amazonaws.com/edx-course-videos/edx-edx101/EDXSPCPJSP13-G030300.mp4
+</pre></div>
+</div>
+</li>
+<li><p class="first">点击高级选项。</p>
+</li>
+<li><p class="first">在默认时限副本区域，输入影片的名称。
+不能包含 <cite>subs_</cite> 或 <cite>.sjson</cite>。
+例如，操作步骤2时，您只能输入 <strong>Lecture1a</strong> 。</p>
+</li>
+<li><p class="first">设置您选择的其他选项。</p>
+</li>
+<li><p class="first">点击保存。</p>
+</li>
+</ol>
+</div>
+</div>
+
+
+          <footer>
+  
+    <div class="rst-footer-buttons">
+      
+        <a href="create_discussion.html" class="btn btn-neutral float-right" title="5.3. 创建讨论组件"/>Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="create_html_component.html" class="btn btn-neutral" title="5.1. 如何使用HTML组件"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <p>
+      &copy; Copyright 2015, edX.
+  </p>
+
+ 
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+</body>
+</html>

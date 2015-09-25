@@ -1,0 +1,606 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>1.2. 序言 &mdash; Building and Running an edX Course  documentation</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="../_static/css/favicon.ico"/>
+  
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  
+  
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:'../',
+        VERSION:'',
+        COLLAPSE_INDEX:false,
+        FILE_SUFFIX:'.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+
+    
+
+  
+
+  
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+
+  
+    <link rel="top" title="Building and Running an edX Course  documentation" href="../index.html"/>
+        <link rel="up" title="1. 参考信息" href="index.html"/>
+        <link rel="next" title="1.3. Change Log" href="change_log.html"/>
+        <link rel="prev" title="1.1. Read Me" href="read_me.html"/> 
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-nav-search">
+        <a href="../index.html" class="icon icon-home"> Building and Running an edX Course</a>
+        <form class="wy-form" action="../search.html" method="get">
+  <input type="text" name="q" placeholder="Search document" />
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix">
+        
+        
+            <ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">1. 参考信息</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="read_me.html">1.1. Read Me</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="">1.2. 序言</a></li>
+<li class="toctree-l2"><a class="reference internal" href="change_log.html">1.3. Change Log</a></li>
+<li class="toctree-l2"><a class="reference internal" href="browsers.html">1.4. edX浏览器支持</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/index.html">2. 开始使用edX</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../getting_started/accounts.html">2.1. 开始使用edX</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../getting_started/dashboard_acctsettings_profile.html">2.2. 搜索你的仪表板、设置和配置文件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../getting_started/get_started.html">2.3. 开始了解Studio</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../getting_started/accessibility.html">2.4. 创建无障碍课程指南</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../building_course/index.html">3. 建立您的课程</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/creating_new_course.html">3.1. 新建课程</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/scheduling_course.html">3.2. 设置开始和结束日期</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/setting_up_student_view.html">3.3. 设置课程细节</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/licensing_course.html">3.4. 授权课程</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/course_files.html">3.5. 给课程添加文件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/handouts_updates.html">3.6. 添加课程补充资料及讲义</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/pages.html">3.7. 为课程添加页面</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/textbooks.html">3.8. 添加课本</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/establish_grading_policy.html">3.9. 设定计分政策</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/course_rerun.html">3.10. 重开课程</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/export_import_course.html">3.11. 输出和导入课程</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../developing_course/index.html">4. 开发您的课程</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/workflow.html">4.1. 开始创建课程内容</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/course_outline.html">4.2. 创建课程大纲</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/course_sections.html">4.3. 创建课程章节</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/course_subsections.html">4.4. 构建课程小节</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/course_units.html">4.5. 构建课程单元</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/course_components.html">4.6. 创建课程组件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/controlling_content_visibility.html">4.7. 设置内容可见性</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/testing_courseware.html">4.8. 测试您的课程内容</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../creating_content/index.html">5. 创建课程内容</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../creating_content/create_html_component.html">5.1. 如何使用HTML组件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../creating_content/create_video.html">5.2. 创建影片组件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../creating_content/create_discussion.html">5.3. 创建讨论组件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../creating_content/create_problem.html">5.4. 创建问题组件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../creating_content/libraries.html">5.5. Working with Content Libraries</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../exercises_tools/index.html">6. 创建习题和工具</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/create_exercises_and_tools.html">6.1. 创建练习和工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/annotation.html">6.2. 注释问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/checkbox.html">6.3. 复选框问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/chemical_equation.html">6.4. 化学方程式问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/circuit_schematic_builder.html">6.5. 电路原理图搭建问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/conditional_module.html">6.6. 条件模板</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/custom_javascript.html">6.7. 自定义JavaScript问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/drag_and_drop.html">6.8. 拖放问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/dropdown.html">6.9. 下拉问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/external_graders.html">6.10. 图像映射输入问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/full_screen_image.html">6.11. 全屏图像工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/gene_explorer.html">6.12. Gene Explorer工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/google_calendar.html">6.13. 谷歌日历工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/google_docs.html">6.14. 谷歌云文件工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/google_hangouts.html">6.15. 谷歌即时群聊工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/iframe.html">6.16. IFrame工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/image_mapped_input.html">6.17. 图像映射输入问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/lti_component.html">6.18. LTI 组件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/math_expression_input.html">6.19. 数学表达式输入问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/molecule_editor.html">6.20. 分子编辑器</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/molecule_viewer.html">6.21. 分子浏览器</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/multiple_choice.html">6.22. 多项选择问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/mult_choice_num_input.html">6.23. 多项选择和数字输入题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/numerical_input.html">6.24. 数值输入问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/open_response_assessments/index.html">6.25. 开放性回答评估</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/periodic_table.html">6.26. 元素周期表工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/poll.html">6.27. 投票工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/problem_with_hint.html">6.28. 带适应性提示的问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/problem_in_latex.html">6.29. LaTeX问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/protein_builder.html">6.30. Protex蛋白质构建工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/randomized_content_blocks.html">6.31. 随机内容块</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/recommenderXBlock.html">6.32. 推荐系统</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/text_input.html">6.33. 文本输入问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/word_cloud.html">6.34. 文字云工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/custom_python.html">6.35. 自定义评分器问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/zooming_image.html">6.36. 图像放大工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/mathjax.html">6.37. Studio中MathJax的简要介绍</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../content_experiments/index.html">7. 创建内容实验</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../content_experiments/content_experiments_overview.html">7.1. Overview of Content Experiments</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../content_experiments/content_experiments_configure.html">7.2. 配置带有内容实验的课程</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../content_experiments/content_experiments_add.html">7.3. 为您的课程添加内容实验</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../content_experiments/content_experiments_view.html">7.4. Test Content Experiments</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../cohorts/index.html">8. 建立学生队列</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../cohorts/cohorts_overview.html">8.1. 使用队列功能建立课程群</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cohorts/cohort_config.html">8.2. 启用、配置分队模式</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cohorts/cohorted_courseware.html">8.3. 创建特定队列课件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cohorts/cohorts_setup_discussions.html">8.4. 在包含队列的课程中设置论坛</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cohorts/cohorts_manage_discussions.html">8.5. 管理有学生队列的论坛</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../releasing_course/index.html">9. 发布您的课程</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../releasing_course/beta_testing.html">9.1. 贝塔测试</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../releasing_course/course_launching.html">9.2. 课程发布事宜</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../releasing_course/staff_debug_info.html">9.3. 员工调试信息</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../running_course/index.html">10. 运营您的课程</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/course_staffing.html">10.1. 安置职工</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/course_enrollment.html">10.2. 招生</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/discussions.html">10.3. 管理课程讨论项目</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/discussions_students.html">10.4. 参与课程讨论</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/discussion_guidance_moderators.html">10.5. 论坛协调员指南</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/bulk_email.html">10.6. Bulk Email</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/course_wiki.html">10.7. 使用课程维基</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/course_data.html">10.8. 课程数据</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/course_student.html">10.9. 学生数据</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/course_answers.html">10.10. 回答问题数据</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/course_grades.html">10.11. 学生成绩与成绩评定</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/checking_student_progress.html">10.12. 总成绩计算与证书发放</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../students/index.html">11. 学生相关信息</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../students/login_guide.html">11.1. 学生登录指南示例</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../students/math_students.html">11.2. 学生数学题回答格式化</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../students/ora_students.html">11.3. 学生开放回答评估</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../glossary.html">12. Glossary</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#a">12.1. A</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#c">12.2. C</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#d">12.3. D</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#e">12.4. E</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#f">12.5. F</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#g">12.6. G</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#h">12.7. H</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#i">12.8. I</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#k">12.9. K</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#l">12.10. L</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#m">12.11. M</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#n">12.12. N</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#o">12.13. O</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#p">12.14. P</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#q">12.15. Q</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#r">12.16. R</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#s">12.17. S</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#t">12.18. T</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#u">12.19. U</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#v">12.20. V</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#w">12.21. W</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#xyz">12.22. XYZ</a></li>
+</ul>
+</li>
+</ul>
+
+        
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top">
+        <i data-toggle="wy-nav-top" class="icon icon-reorder"></i>
+        <a href="/">Building and Running an edX Course</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <ul class="wy-breadcrumbs">
+  <li><a href="../index.html">Table of Contents</a> &raquo;</li>
+  <li><a href="">1.2. 序言</a></li>
+  
+</ul>
+<hr/>
+
+          
+  <div class="section" id="preface">
+<span id="id1"></span><h1>1.2. 序言<a class="headerlink" href="#preface" title="Permalink to this headline">¶</a></h1>
+<p>Course teams, researchers, developers, students: the edX community includes
+groups with a range of reasons for using the platform and objectives to
+accomplish. To help members of each group learn about what edX offers, reach
+goals, and solve problems, edX provides a variety of information resources.</p>
+<p>To help you find what you need, browse the edX offerings in these categories:</p>
+<ul class="simple">
+<li><a class="reference internal" href="#the-edx-partner-portal">The edX Partner Portal</a></li>
+<li><a class="reference internal" href="#the-open-edx-portal">The Open edX Portal</a></li>
+<li><a class="reference internal" href="#release-announcements-through-the-open-edx-portal">Release Announcements through the Open edX Portal</a></li>
+<li><a class="reference internal" href="#resources-for-course-teams">Resources for Course Teams</a></li>
+<li><a class="reference internal" href="#resources-for-researchers">Resources for Researchers</a></li>
+<li><a class="reference internal" href="#resources-for-developers">Resources for Developers</a></li>
+<li><a class="reference internal" href="#resources-for-open-edx">Resources for Open edX</a></li>
+<li><a class="reference internal" href="#resources-for-students">Resources for Students</a></li>
+</ul>
+<p>All members of the edX community are encouraged to make use of any of the
+resources described in this preface. We welcome your feedback on these edX
+information resources. Contact the edX documentation team at <a class="reference external" href="mailto:docs&#37;&#52;&#48;edx&#46;org">docs<span>&#64;</span>edx<span>&#46;</span>org</a>.</p>
+<div class="section" id="the-edx-partner-portal">
+<span id="id2"></span><h2>1.2.1. The edX Partner Portal<a class="headerlink" href="#the-edx-partner-portal" title="Permalink to this headline">¶</a></h2>
+<p>The <a class="reference external" href="https://partners.edx.org">edX Partner Portal</a> is the destination for partners to learn, connect,
+and collaborate with one another. Partners can explore rich resources and share
+success stories and best practices while staying up-to-date with important news
+and updates.</p>
+<p>To use the edX Partner Portal, you must register and request verification as an
+edX partner. If you are an edX partner and have not used the edX Partner
+Portal, follow these steps.</p>
+<ol class="arabic simple">
+<li>Visit <a class="reference external" href="https://partners.edx.org">partners.edx.org</a>, and select <strong>Create New Account</strong>.</li>
+<li>Select <strong>Request Partner Access</strong>, then fill in your personal details.</li>
+<li>Select <strong>Create New Account</strong>. You will receive a confirmation email with
+your account access within 24 hours.</li>
+</ol>
+</div>
+<div class="section" id="the-open-edx-portal">
+<span id="id3"></span><h2>1.2.2. The Open edX Portal<a class="headerlink" href="#the-open-edx-portal" title="Permalink to this headline">¶</a></h2>
+<p>The <a class="reference external" href="https://open.edx.org">Open edX Portal</a> is the destination for all edX users to learn about the
+edX roadmap, as well as hosting, extending the edX platform, and contributing
+to Open edX. In addition, the Open edX Portal provides product announcements,
+the Open edX blog, and other rich community resources.</p>
+<p>All users can view content on the Open edX Portal without creating an account
+and logging in.</p>
+<p>To comment on blog posts or the edX roadmap, you must create an account and log
+in. If you do not have an account, follow these steps.</p>
+<ol class="arabic simple">
+<li>Visit <a class="reference external" href="https://open.edx.org/user/register">open.edx.org/user/register</a>.</li>
+<li>Fill in your personal details.</li>
+<li>Select <strong>Create New Account</strong>. You are then logged in to the <a class="reference external" href="https://open.edx.org">Open edX
+Portal</a>.</li>
+</ol>
+</div>
+<div class="section" id="release-announcements-through-the-open-edx-portal">
+<h2>1.2.3. Release Announcements through the Open edX Portal<a class="headerlink" href="#release-announcements-through-the-open-edx-portal" title="Permalink to this headline">¶</a></h2>
+<p>To receive and share product and release announcements by email, subscribe to
+announcements on the <a class="reference external" href="https://open.edx.org">Open edX Portal</a>.</p>
+<ol class="arabic simple">
+<li>Create an account on the <a class="reference external" href="https://open.edx.org">Open edX Portal</a> as described above.</li>
+<li>Go to <a class="reference external" href="https://open.edx.org/announcements">https://open.edx.org/announcements</a>.</li>
+<li>Under <strong>Announcement Type</strong> in the <strong>Subscriptions</strong> block, select the type
+of announcements that you want to receive through email.</li>
+<li>Click <strong>Save</strong>.</li>
+</ol>
+<p>You will now receive email messages when new announcements of the types you
+selected are posted.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">EdX partners can complete the same steps on the <strong>Announcements</strong> page in the
+<a class="reference external" href="https://partners.edx.org">edX Partner Portal</a>.</p>
+</div>
+</div>
+<div class="section" id="system-status">
+<h2>1.2.4. System Status<a class="headerlink" href="#system-status" title="Permalink to this headline">¶</a></h2>
+<p>For system-related notifications from the edX operations team, including
+outages and the status of error reports. On <a class="reference external" href="http://twitter.com/edXstatus">Twitter</a>, you can follow
+&#64;edxstatus.</p>
+<p>Current system status and the uptime percentages for edX servers, along with
+the Twitter feed, are published on the <a class="reference external" href="http://status.edx.org/">edX Status</a> web page.</p>
+</div>
+<div class="section" id="resources-for-course-teams">
+<span id="id4"></span><h2>1.2.5. Resources for Course Teams<a class="headerlink" href="#resources-for-course-teams" title="Permalink to this headline">¶</a></h2>
+<p>Course teams include faculty, instructional designers, course staff, discussion
+moderators, and others who contribute to the creation and delivery of courses
+on edx.org or edX Edge.</p>
+<div class="section" id="edx101-overview-of-creating-a-course">
+<h3>1.2.5.1. edX101: Overview of Creating a Course<a class="headerlink" href="#edx101-overview-of-creating-a-course" title="Permalink to this headline">¶</a></h3>
+<p>The <a class="reference external" href="https://www.edx.org/course/overview-creating-edx-course-edx-edx101#.VIIJbWTF_yM">edX101</a> course was built in Studio and is available for enrollment on
+edx.org. This course takes one to two hours to complete, and is designed to
+provide a high-level overview of the course creation and delivery process. It
+also highlights the extensive capabilities of the edX platform.</p>
+</div>
+<div class="section" id="documentation">
+<h3>1.2.5.2. Documentation<a class="headerlink" href="#documentation" title="Permalink to this headline">¶</a></h3>
+<p>Documentation for course teams is available on the docs.edx.org web page.</p>
+<ul>
+<li><p class="first"><a class="reference external" href="http://edx.readthedocs.org/projects/edx-partner-course-staff/en/latest/">Building and Running an edX Course</a> is a comprehensive guide with concepts
+and procedures to help you build a course in edX Studio, and then use the
+Learning Management System (LMS) to run a course.</p>
+<p>When you are working in edX Studio, you can access relevant sections of this
+guide by clicking <strong>Help</strong> on any page.</p>
+</li>
+<li><p class="first"><a class="reference external" href="http://edx-insights.readthedocs.org/en/latest/">Using edX Insights</a> describes the metrics, visualizations, and downloadable
+.csv files that course teams can use to gain information about student
+background and activity.</p>
+</li>
+<li><p class="first"><a class="reference external" href="http://edx.readthedocs.org/projects/edx-release-notes/en/latest/">edX Course Staff Release Notes</a> summarize the changes in each new version
+of the edX Studio and LMS software.</p>
+</li>
+<li><p class="first"><a class="reference external" href="http://edx.readthedocs.org/projects/edx-open-response-assessments/en/latest/">Creating a Peer Assessment</a> describes features for students to provide
+peer- and self- evaluations of responses to a question. Note that this new
+feature is in limited release.</p>
+</li>
+<li><p class="first"><a class="reference external" href="http://edx-open-learning-xml.readthedocs.org/en/latest/index.html">edX Open Learning XML Guide</a> provides guidelines for building edX courses
+with Open Learning XML (OLX). Note that this guide is currently an alpha
+version.</p>
+</li>
+</ul>
+<p>These guides open in your web browser. The left side of each page includes a
+<strong>Search docs</strong> field and links to that guide&#8217;s contents. To open or save a PDF
+version, click <strong>v: latest</strong> at the lower right of the page, then click <strong>PDF</strong>.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">If you use the Safari browser, be aware that it does not support the
+search feature for the <a class="reference external" href="http://docs.edx.org">edX documentation</a>. This is a known limitation.</p>
+</div>
+</div>
+<div class="section" id="email">
+<h3>1.2.5.3. Email<a class="headerlink" href="#email" title="Permalink to this headline">¶</a></h3>
+<p>To receive and share information by email, course team members can:</p>
+<ul class="simple">
+<li>Sign up to receive monthly <a class="reference external" href="http://edx.us5.list-manage.com/subscribe?u=1822a33c054dc20e223ca40e2&amp;id=aba723f1aa">newsletters</a>.</li>
+<li>Sign up to receive <a class="reference external" href="http://edx.us5.list-manage2.com/subscribe?u=1822a33c054dc20e223ca40e2&amp;id=83e46bd293">release</a> notes for every release.</li>
+<li>Join the <a class="reference external" href="http://groups.google.com/forum/#!forum/openedx-studio">openedx-studio</a> Google group to ask questions and participate in
+discussions with peers at other edX partner organizations and edX staffers.</li>
+</ul>
+</div>
+<div class="section" id="wikis-and-web-sites">
+<h3>1.2.5.4. Wikis and Web Sites<a class="headerlink" href="#wikis-and-web-sites" title="Permalink to this headline">¶</a></h3>
+<p>The edX product team maintains the <a class="reference external" href="https://edx-wiki.atlassian.net/wiki/display/OPENPROD/Open+edX+Product+Home">Open edX Product</a> wiki, which includes the
+<a class="reference external" href="https://edx-wiki.atlassian.net/wiki/display/OPENPROD/Open+edX+Public+Product+Roadmap">Open edX Public Product Roadmap</a>.</p>
+<p>The <a class="reference external" href="http://help.edge.edx.org/home">edX Author Support</a> site hosts discussions that are monitored by edX
+staffers.</p>
+</div>
+</div>
+<div class="section" id="resources-for-researchers">
+<span id="id5"></span><h2>1.2.6. Resources for Researchers<a class="headerlink" href="#resources-for-researchers" title="Permalink to this headline">¶</a></h2>
+<p>Data for the courses on edx.org and edX Edge is available to the &#8220;data czars&#8221;
+at our partner institutions, and then used by database experts, statisticians,
+educational investigators, and others for educational research.</p>
+<div class="section" id="id6">
+<h3>1.2.6.1. Documentation<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h3>
+<p>The <a class="reference external" href="http://edx.readthedocs.org/projects/devdata/en/latest/">edX Research Guide</a> is available on the docs.edx.org web page.</p>
+<p>This guide opens in your web browser, with a <strong>Search docs</strong> field and links to
+that guide&#8217;s contents on the left side of each page. To open or save a PDF
+version, click <strong>v: latest</strong> at the lower right of the page, and then click
+<strong>PDF</strong>.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">If you use the Safari browser, be aware that it does not support the
+search feature for the <a class="reference external" href="http://docs.edx.org">edX documentation</a>. This is a known limitation.</p>
+</div>
+</div>
+<div class="section" id="id7">
+<h3>1.2.6.2. Email<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h3>
+<p>To receive and share information by email, researchers can join the
+<a class="reference external" href="http://groups.google.com/forum/#!forum/openedx-analytics">openedx-analytics</a> Google group to ask questions and participate in
+discussions with peers at other edX partner organizations and edX staffers.</p>
+</div>
+<div class="section" id="wikis">
+<h3>1.2.6.3. Wikis<a class="headerlink" href="#wikis" title="Permalink to this headline">¶</a></h3>
+<p>The edX Analytics team maintains the <a class="reference external" href="http://edx-wiki.atlassian.net/wiki/display/OA/Open+edX+Analytics+Home">Open edX Analytics</a> wiki, which includes
+links to periodic release notes, the Open edX Public Product Roadmap, and other
+resources for researchers.</p>
+<p>The <a class="reference external" href="https://github.com/edx/edx-tools/wiki">edx-tools</a> wiki lists publicly shared tools for working with the edX
+platform, including scripts for data analysis and reporting.</p>
+</div>
+</div>
+<div class="section" id="resources-for-developers">
+<span id="id8"></span><h2>1.2.7. Resources for Developers<a class="headerlink" href="#resources-for-developers" title="Permalink to this headline">¶</a></h2>
+<p>Software engineers, system administrators, and translators work on extending
+and localizing the code for the edX platform.</p>
+<div class="section" id="id9">
+<h3>1.2.7.1. Documentation<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h3>
+<p>Documentation for developers is available on the docs.edx.org web page.</p>
+<ul class="simple">
+<li>The <a class="reference external" href="http://edx.readthedocs.org/projects/edx-developer-guide/en/latest/">edX Platform Developer&#8217;s Guide</a> collects information directly from edX
+platform python docstrings. The topics in this guide include guidelines for
+contributing to Open edX, options for extending the Open edX platform, using
+the edX public sandboxes, instrumenting analytics, and testing.</li>
+<li><a class="reference external" href="http://edx.readthedocs.org/projects/edx-installing-configuring-and-running/en/latest/">Installing, Configuring, and Running the edX Platform</a> provides procedures
+for getting an edX developer stack (Devstack) and production stack
+(Fullstack) operational.</li>
+<li><a class="reference external" href="http://edx.readthedocs.org/projects/xblock/en/latest/">XBlock</a>: Open edX courseware components provides preliminary documentation
+on the XBlock component architecture for building courses.</li>
+<li><a class="reference external" href="http://edx-open-learning-xml.readthedocs.org/en/latest/index.html">edX Open Learning XML Guide</a> provides guidelines for building edX courses
+with Open Learning XML (OLX). Note that this guide is currently an alpha
+version.</li>
+<li><a class="reference external" href="http://edx.readthedocs.org/projects/edx-data-analytics-api/en/latest/index.html">edX Data Analytics API</a> provides tools for building applications to view
+and analyze student activity in your course.</li>
+<li><a class="reference external" href="http://edx.readthedocs.org/projects/edx-enrollment-api/en/latest/">edX Enrollment API</a> provides tools for building applications to view user
+and course enrollment information, and to enroll users in courses.</li>
+<li><a class="reference external" href="http://edx.readthedocs.org/projects/edx-platform-api/en/latest/">edX Platform API</a> provides tools for building applications to view course
+information and videos.</li>
+</ul>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">If you use the Safari browser, be aware that it does not support the
+search feature for the <a class="reference external" href="http://docs.edx.org">edX documentation</a>. This is a known limitation.</p>
+</div>
+</div>
+<div class="section" id="github">
+<h3>1.2.7.2. GitHub<a class="headerlink" href="#github" title="Permalink to this headline">¶</a></h3>
+<p>These are the main edX repositories on GitHub.</p>
+<ul class="simple">
+<li>The <a class="reference external" href="https://github.com/edx/edx-platform">edx/edx-platform</a> repo contains the code for the edX platform.</li>
+<li>The <a class="reference external" href="https://github.com/edx/edx-analytics-dashboard">edx/edx-analytics-dashboard</a> repo contains the code for edX Insights.</li>
+<li>The <a class="reference external" href="http://github.com/edx/configuration/wiki">edx/configuration</a> repo contains scripts to set up and operate the edX
+platform.</li>
+</ul>
+<p>Additional repositories are used for other projects. Our contributor agreement,
+contributor guidelines and coding conventions, and other resources are
+available in these repositories.</p>
+</div>
+<div class="section" id="email-and-irc">
+<h3>1.2.7.3. Email and IRC<a class="headerlink" href="#email-and-irc" title="Permalink to this headline">¶</a></h3>
+<p>To receive and share information by email, developers can join these Google
+groups to ask questions and participate in discussions with peers and edX
+staffers.</p>
+<ul class="simple">
+<li>For conversations about the code in Open edX, join <a class="reference external" href="http://groups.google.com/forum/#!forum/edx-code">edx-code</a>.</li>
+<li>For conversations about running Open edX, join <a class="reference external" href="http://groups.google.com/forum/#!forum/openedx-ops">openedx-ops</a>.</li>
+<li>For conversations about globalization and translation,
+join <a class="reference external" href="http://groups.google.com/forum/#!forum/openedx-translation">openedx-translation</a>.</li>
+</ul>
+<p>Additional Google groups are occasionally formed for individual projects.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Please do not report security issues in public. If you have a concern,
+please email <a class="reference external" href="mailto:security&#37;&#52;&#48;edx&#46;org">security<span>&#64;</span>edx<span>&#46;</span>org</a>.</p>
+</div>
+<p>EdX engineers often monitor the Freenode #edx-code IRC channel.</p>
+</div>
+<div class="section" id="id10">
+<h3>1.2.7.4. Wikis and Web Sites<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h3>
+<p>The code.edx.org web <a class="reference external" href="http://code.edx.org/">site</a> is an entry point for new contributors.</p>
+<p>The edX Engineering team maintains the <a class="reference external" href="http://edx-wiki.atlassian.net/wiki/display/OS/Open+Source+Home">Open Source Home</a> wiki, which provides
+insights into the plans, projects, and questions that the edX Open Source team
+is working on with the community.</p>
+<p>The pull request <a class="reference external" href="http://dash.openedx.org/age.html">dashboard</a>  is a visualization of the count and age of the
+pull requests (PRs) assigned to teams at edX. Click the bars in this chart to
+get more information about the PRs.</p>
+<p>The <a class="reference external" href="https://github.com/edx/edx-tools/wiki">edx-tools</a> wiki lists publicly shared tools for working with the edX
+platform, including scripts and helper utilities.</p>
+</div>
+</div>
+<div class="section" id="resources-for-open-edx">
+<span id="id11"></span><h2>1.2.8. Resources for Open edX<a class="headerlink" href="#resources-for-open-edx" title="Permalink to this headline">¶</a></h2>
+<p>Hosting providers, platform exenders, core contributors, and course staff all
+use Open edX. Starting with the Birch release of Open edX, the following
+release-specific documentation is available on docs.edx.org.</p>
+<ul>
+<li><p class="first"><a class="reference external" href="http://edx.readthedocs.org/projects/open-edx-release-notes/en/latest/">Open edX Release Notes</a> provides information on changes in Open edX
+releases.</p>
+</li>
+<li><p class="first"><a class="reference external" href="http://edx.readthedocs.org/projects/edx-installing-configuring-and-running/en/latest/">Installing, Configuring, and Running the edX Platform</a> provides procedures
+for getting Devstack and Fullstack installed and operational.</p>
+</li>
+<li><p class="first"><a class="reference external" href="http://edx.readthedocs.org/projects/open-edx-building-and-running-a-course/en/named-release-birch/">Building and Running an Open edX Course</a> is a comprehensive guide with
+concepts and procedures to help you build a course in Studio, and then
+use the Learning Management System (LMS) to run a course.</p>
+<p>When you are working in Studio, you can access relevant sections of this
+guide by clicking <strong>Help</strong> on any page.</p>
+</li>
+</ul>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">If you use the Safari browser, be aware that it does not support the
+search feature for the <a class="reference external" href="http://docs.edx.org">edX documentation</a>. This is a known limitation.</p>
+</div>
+</div>
+<div class="section" id="resources-for-students">
+<span id="id12"></span><h2>1.2.9. Resources for Students<a class="headerlink" href="#resources-for-students" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id13">
+<h3>1.2.9.1. Documentation<a class="headerlink" href="#id13" title="Permalink to this headline">¶</a></h3>
+<p>The <a class="reference external" href="http://edx-guide-for-students.readthedocs.org/en/latest/">edX Guide for Students</a> is available on the docs.edx.org web page.
+Because students are currently only guided to this resource through the
+courseware, we encourage course staff to provide links to students as needed
+in course updates or discussions.</p>
+</div>
+<div class="section" id="in-a-course">
+<h3>1.2.9.2. In a Course<a class="headerlink" href="#in-a-course" title="Permalink to this headline">¶</a></h3>
+<p>All edX courses have a discussion forum where you can ask questions and
+interact with other students and with the course team: click <strong>Discussion</strong>.
+Many courses also offer a wiki for additional resources and materials: click
+<strong>Wiki</strong>.</p>
+<p>Other resources might also be available, such as a course-specific Facebook
+page or Twitter feed, or opportunities for Google Hangouts. Be sure to check
+the <strong>Course Info</strong> page for your course as well as the <strong>Discussion</strong> and
+<strong>Wiki</strong> pages.</p>
+<p>From time to time, the course team might send email messages to all students.
+While you can opt out of these messages, doing so means that you can miss
+important or time-sensitive information. To change your preferences for course
+email, click <strong>edX</strong> or <strong>edX edge</strong> at the top of any page. On your dashboard
+of current courses, locate the course and then click <strong>Email Settings</strong>.</p>
+</div>
+<div class="section" id="from-edx">
+<h3>1.2.9.3. From edX<a class="headerlink" href="#from-edx" title="Permalink to this headline">¶</a></h3>
+<p>To help you get started with the edX learning experience, edX offers a course
+(of course!). You can find the edX <a class="reference external" href="http://www.edx.org/course/edx/edx-edxdemo101-edx-demo-1038">Demo</a> course on the edX web site. EdX also
+maintains a list of <a class="reference external" href="http://www.edx.org/student-faq">frequently asked questions</a>  and answers.</p>
+<p>If you still have questions or suggestions, you can get help from the edX
+support team: click <strong>Contact</strong> at the bottom of any edX web page or send an
+email message to <a class="reference external" href="mailto:info&#37;&#52;&#48;edx&#46;org">info<span>&#64;</span>edx<span>&#46;</span>org</a>.</p>
+<p>For opportunities to meet others who are interested in edX courses, check the
+edX Global Community <a class="reference external" href="http://www.meetup.com/edX-Global-Community/">meetup</a> group.</p>
+</div>
+</div>
+</div>
+
+
+          <footer>
+  
+    <div class="rst-footer-buttons">
+      
+        <a href="change_log.html" class="btn btn-neutral float-right" title="1.3. Change Log"/>Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="read_me.html" class="btn btn-neutral" title="1.1. Read Me"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <p>
+      &copy; Copyright 2015, edX.
+  </p>
+
+ 
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+</body>
+</html>

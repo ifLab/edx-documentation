@@ -1,0 +1,550 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>9.1. 贝塔测试 &mdash; Building and Running an edX Course  documentation</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="../_static/css/favicon.ico"/>
+  
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  
+  
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:'../',
+        VERSION:'',
+        COLLAPSE_INDEX:false,
+        FILE_SUFFIX:'.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+
+    
+
+  
+
+  
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+
+  
+    <link rel="top" title="Building and Running an edX Course  documentation" href="../index.html"/>
+        <link rel="up" title="9. 发布您的课程" href="index.html"/>
+        <link rel="next" title="9.2. 课程发布事宜" href="course_launching.html"/>
+        <link rel="prev" title="9. 发布您的课程" href="index.html"/> 
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-nav-search">
+        <a href="../index.html" class="icon icon-home"> Building and Running an edX Course</a>
+        <form class="wy-form" action="../search.html" method="get">
+  <input type="text" name="q" placeholder="Search document" />
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix">
+        
+        
+            <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../front_matter/index.html">1. 参考信息</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../front_matter/read_me.html">1.1. Read Me</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../front_matter/preface.html">1.2. 序言</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../front_matter/change_log.html">1.3. Change Log</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../front_matter/browsers.html">1.4. edX浏览器支持</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/index.html">2. 开始使用edX</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../getting_started/accounts.html">2.1. 开始使用edX</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../getting_started/dashboard_acctsettings_profile.html">2.2. 搜索你的仪表板、设置和配置文件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../getting_started/get_started.html">2.3. 开始了解Studio</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../getting_started/accessibility.html">2.4. 创建无障碍课程指南</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../building_course/index.html">3. 建立您的课程</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/creating_new_course.html">3.1. 新建课程</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/scheduling_course.html">3.2. 设置开始和结束日期</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/setting_up_student_view.html">3.3. 设置课程细节</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/licensing_course.html">3.4. 授权课程</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/course_files.html">3.5. 给课程添加文件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/handouts_updates.html">3.6. 添加课程补充资料及讲义</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/pages.html">3.7. 为课程添加页面</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/textbooks.html">3.8. 添加课本</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/establish_grading_policy.html">3.9. 设定计分政策</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/course_rerun.html">3.10. 重开课程</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/export_import_course.html">3.11. 输出和导入课程</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../developing_course/index.html">4. 开发您的课程</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/workflow.html">4.1. 开始创建课程内容</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/course_outline.html">4.2. 创建课程大纲</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/course_sections.html">4.3. 创建课程章节</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/course_subsections.html">4.4. 构建课程小节</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/course_units.html">4.5. 构建课程单元</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/course_components.html">4.6. 创建课程组件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/controlling_content_visibility.html">4.7. 设置内容可见性</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/testing_courseware.html">4.8. 测试您的课程内容</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../creating_content/index.html">5. 创建课程内容</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../creating_content/create_html_component.html">5.1. 如何使用HTML组件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../creating_content/create_video.html">5.2. 创建影片组件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../creating_content/create_discussion.html">5.3. 创建讨论组件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../creating_content/create_problem.html">5.4. 创建问题组件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../creating_content/libraries.html">5.5. Working with Content Libraries</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../exercises_tools/index.html">6. 创建习题和工具</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/create_exercises_and_tools.html">6.1. 创建练习和工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/annotation.html">6.2. 注释问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/checkbox.html">6.3. 复选框问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/chemical_equation.html">6.4. 化学方程式问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/circuit_schematic_builder.html">6.5. 电路原理图搭建问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/conditional_module.html">6.6. 条件模板</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/custom_javascript.html">6.7. 自定义JavaScript问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/drag_and_drop.html">6.8. 拖放问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/dropdown.html">6.9. 下拉问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/external_graders.html">6.10. 图像映射输入问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/full_screen_image.html">6.11. 全屏图像工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/gene_explorer.html">6.12. Gene Explorer工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/google_calendar.html">6.13. 谷歌日历工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/google_docs.html">6.14. 谷歌云文件工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/google_hangouts.html">6.15. 谷歌即时群聊工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/iframe.html">6.16. IFrame工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/image_mapped_input.html">6.17. 图像映射输入问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/lti_component.html">6.18. LTI 组件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/math_expression_input.html">6.19. 数学表达式输入问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/molecule_editor.html">6.20. 分子编辑器</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/molecule_viewer.html">6.21. 分子浏览器</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/multiple_choice.html">6.22. 多项选择问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/mult_choice_num_input.html">6.23. 多项选择和数字输入题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/numerical_input.html">6.24. 数值输入问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/open_response_assessments/index.html">6.25. 开放性回答评估</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/periodic_table.html">6.26. 元素周期表工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/poll.html">6.27. 投票工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/problem_with_hint.html">6.28. 带适应性提示的问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/problem_in_latex.html">6.29. LaTeX问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/protein_builder.html">6.30. Protex蛋白质构建工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/randomized_content_blocks.html">6.31. 随机内容块</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/recommenderXBlock.html">6.32. 推荐系统</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/text_input.html">6.33. 文本输入问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/word_cloud.html">6.34. 文字云工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/custom_python.html">6.35. 自定义评分器问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/zooming_image.html">6.36. 图像放大工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/mathjax.html">6.37. Studio中MathJax的简要介绍</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../content_experiments/index.html">7. 创建内容实验</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../content_experiments/content_experiments_overview.html">7.1. Overview of Content Experiments</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../content_experiments/content_experiments_configure.html">7.2. 配置带有内容实验的课程</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../content_experiments/content_experiments_add.html">7.3. 为您的课程添加内容实验</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../content_experiments/content_experiments_view.html">7.4. Test Content Experiments</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../cohorts/index.html">8. 建立学生队列</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../cohorts/cohorts_overview.html">8.1. 使用队列功能建立课程群</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cohorts/cohort_config.html">8.2. 启用、配置分队模式</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cohorts/cohorted_courseware.html">8.3. 创建特定队列课件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cohorts/cohorts_setup_discussions.html">8.4. 在包含队列的课程中设置论坛</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cohorts/cohorts_manage_discussions.html">8.5. 管理有学生队列的论坛</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">9. 发布您的课程</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="">9.1. 贝塔测试</a></li>
+<li class="toctree-l2"><a class="reference internal" href="course_launching.html">9.2. 课程发布事宜</a></li>
+<li class="toctree-l2"><a class="reference internal" href="staff_debug_info.html">9.3. 员工调试信息</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../running_course/index.html">10. 运营您的课程</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/course_staffing.html">10.1. 安置职工</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/course_enrollment.html">10.2. 招生</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/discussions.html">10.3. 管理课程讨论项目</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/discussions_students.html">10.4. 参与课程讨论</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/discussion_guidance_moderators.html">10.5. 论坛协调员指南</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/bulk_email.html">10.6. Bulk Email</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/course_wiki.html">10.7. 使用课程维基</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/course_data.html">10.8. 课程数据</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/course_student.html">10.9. 学生数据</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/course_answers.html">10.10. 回答问题数据</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/course_grades.html">10.11. 学生成绩与成绩评定</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/checking_student_progress.html">10.12. 总成绩计算与证书发放</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../students/index.html">11. 学生相关信息</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../students/login_guide.html">11.1. 学生登录指南示例</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../students/math_students.html">11.2. 学生数学题回答格式化</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../students/ora_students.html">11.3. 学生开放回答评估</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../glossary.html">12. Glossary</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#a">12.1. A</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#c">12.2. C</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#d">12.3. D</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#e">12.4. E</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#f">12.5. F</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#g">12.6. G</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#h">12.7. H</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#i">12.8. I</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#k">12.9. K</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#l">12.10. L</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#m">12.11. M</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#n">12.12. N</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#o">12.13. O</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#p">12.14. P</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#q">12.15. Q</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#r">12.16. R</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#s">12.17. S</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#t">12.18. T</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#u">12.19. U</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#v">12.20. V</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#w">12.21. W</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#xyz">12.22. XYZ</a></li>
+</ul>
+</li>
+</ul>
+
+        
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top">
+        <i data-toggle="wy-nav-top" class="icon icon-reorder"></i>
+        <a href="/">Building and Running an edX Course</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <ul class="wy-breadcrumbs">
+  <li><a href="../index.html">Table of Contents</a> &raquo;</li>
+  <li><a href="">9.1. 贝塔测试</a></li>
+  
+</ul>
+<hr/>
+
+          
+  <div class="section" id="beta-testing">
+<span id="id1"></span><h1>9.1. 贝塔测试<a class="headerlink" href="#beta-testing" title="Permalink to this headline">¶</a></h1>
+<p>在Studio中设计课程时，课程团队可选择 <strong>查看课程现况</strong> 选项对课程设计流程进行评估，
+或者对课程进行测试，查错补缺，并模拟学生的课堂体验。为收集宏观课堂体验信息，
+您可以对课程进行贝塔测试（译注：一种验收测试）。</p>
+<ul class="simple">
+<li><a class="reference internal" href="#beta-process"><span>贝塔测试流程</span></a></li>
+<li><a class="reference internal" href="#qualities-testers"><span>贝塔测试角色</span></a></li>
+<li><a class="reference internal" href="#what-test"><span>测试内容</span></a></li>
+<li><a class="reference internal" href="#how-testers-see-course"><span>测试员如何查看课程内容</span></a></li>
+<li><a class="reference internal" href="#add-testers"><span>添加测试员</span></a></li>
+<li><a class="reference internal" href="#add-testers-bulk"><span>添加多个测试员</span></a></li>
+<li><a class="reference internal" href="#issue-reporting-during-course"><span>课程中的问题报告</span></a></li>
+</ul>
+<div class="section" id="beta-process">
+<span id="id2"></span><h2>9.1.1. 贝塔测试流程<a class="headerlink" href="#beta-process" title="Permalink to this headline">¶</a></h2>
+<p>贝塔测试中，为提升课程质量，您需要收集关于课堂体验的信息。
+贝塔测试的各个阶段，以及各个阶段中您需要考虑的问题，陈列如下：</p>
+<ol class="arabic simple">
+<li><strong>制定计划</strong> ：测试目的是什么？测试日程是怎样的？</li>
+<li><strong>征募测试员</strong>：本次测试需要多少名测试员？您对每个测试员的期望工作时间是多长？
+您何时需要测试员提交反馈报告？</li>
+<li><strong>开放课程</strong>：您的课程是一次性全部对测试员开放，还是分阶段、分时段向测试员开放？
+不同的开放模式对测试日程将造成何种影响？</li>
+<li><strong>收集反馈信息</strong>：您希望测试员以何种形式提交反馈？由谁来检查反馈情况，多久检查一次？</li>
+<li><strong>评估反馈结果</strong>：如何评估反馈结果？最终由谁决定结论？在何时作出结论？</li>
+<li><strong>作出结论</strong> ：如何证实测试员所做的工作？如何与他们一起分享工作成果？</li>
+</ol>
+<p>以上这些问题都没有确定的答案，只是作为贝塔测试在课程准备过程中的铺垫。</p>
+</div>
+<div class="section" id="qualities-testers">
+<span id="id3"></span><h2>9.1.2. 贝塔测试角色<a class="headerlink" href="#qualities-testers" title="Permalink to this headline">¶</a></h2>
+<p>贝塔测试员有提前进入课程的权限。
+贝塔测试员不是授课团队的成员，他们不知道课程是如何进行的。
+他们通过本地计算机和网络浏览视频、点击链接以及完成问题。
+他们以学生的角度发现和提出错误。</p>
+<p>然而，贝塔测试员和课程中的其他学生不同。
+他们比注册学生拥有更多的时间来学习和完成课程材料。
+课程讨论区在课程开始日期前不可用，所以贝塔测试员不能参加社区讨论。
+与学生不同，贝塔测试员完成课程后无法获得资格证书。</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">如果您的贝塔测试员希望获得资格证书，她必须用不同的用户名和邮箱地址重新注册一个账号。
+她可以使用没有特权的账号注册此课程，然后将学习过程重复一遍，完成对学生开放的所有学习任务和考试。</p>
+</div>
+<div class="section" id="id4">
+<h3>9.1.2.1. 优秀测试员应具备的资质<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h3>
+<p>贝塔测试的价值很大程度上来自于它的临时性。
+测试员接受测试时不按套路出牌，测试环境也并非事先规定好的。
+然而，招募测试员时，您需要注意招募对象是否具有以下的特征或技能：</p>
+<ul class="simple">
+<li>求知欲</li>
+<li>重视细节，善于发现问题及异象</li>
+<li>善于沟通，善于向课程工作人员汇报问题</li>
+</ul>
+<p>同时，测试员应具备课程内容相关的知识水平：</p>
+<ul class="simple">
+<li>能够辨别课程材料是否缺失，是否有问题，所以，至少要有一名充分了解课程的测试员。</li>
+<li>辨别材料是否有模糊之处，所以，至少也要有一名对课程不甚了解的测试员。</li>
+</ul>
+<p>根据不同测试目标，您需要招募各种各样的测试员。
+有些擅长使用辅助技术，有些精通各种本地语言，有些具备不同程度的计算机软件技术，等等。</p>
+</div>
+<div class="section" id="id5">
+<h3>9.1.2.2. 让课程工作人员充当测试员<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h3>
+<p>课程员工能提供重要的课程反馈信息。
+但是，他们对于课程的成功而言是典型的利益相关者，同时对课程可谓了若指掌。
+因此，比起普通学生，他们课程似乎“知道的太多了”，与课程的互动空间也较小。
+他们对于课程的反馈要么显得不耐烦，要么又过分热情。</p>
+<p>如果您真的想让工作人员充当测试员，那么必须让他们再另外申请一个用于测试的邮箱地址。
+因为工作人员的账号比普通测试员的账号拥有更多权限，所以必须使用另一个账号注册、激活、报名。
+工作人员作为测试员时，必须使用这个专用账号登陆，才能拥有和学生一模一样的课程体验。</p>
+</div>
+</div>
+<div class="section" id="what-test">
+<span id="id6"></span><h2>9.1.3. 测试内容<a class="headerlink" href="#what-test" title="Permalink to this headline">¶</a></h2>
+<p>测试员应测试课程中的所有内容，包括：</p>
+<ul class="simple">
+<li>点击所有链接</li>
+<li>观看所有视频</li>
+<li>下载视频文本及其他文件</li>
+<li>完成所有问题</li>
+</ul>
+<p>贝塔测试员可以使用台式电脑进入edX网站或使用智能手机上的edX应用来完成测试。
+工作期间，贝塔测试员为授课团队记录学习过程中出现的问题。</p>
+</div>
+<div class="section" id="how-testers-see-course">
+<span id="id7"></span><h2>9.1.4. 测试员如何查看课程内容<a class="headerlink" href="#how-testers-see-course" title="Permalink to this headline">¶</a></h2>
+<p>贝塔测试时，您需要：</p>
+<ul class="simple">
+<li>在发布课程小节内容及子内容之前，规定几个测试日期。</li>
+<li>确定测试员身份。</li>
+</ul>
+<p>指定测试员后，他们能在学生之前查看课程内容。查看课件时机如下：</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="78%" />
+<col width="11%" />
+<col width="11%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">&nbsp;</th>
+<th class="head">是</th>
+<th class="head">否</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>课程录取开始前</td>
+<td>X</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-odd"><td>课程开始前</td>
+<td>X</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-even"><td>课程小结内容发布前</td>
+<td>X</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-odd"><td>课程小节子内容发布前</td>
+<td>X</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-even"><td>课程单元发布前</td>
+<td>&nbsp;</td>
+<td>X</td>
+</tr>
+<tr class="row-odd"><td>课程草案替换课程单元前</td>
+<td>&nbsp;</td>
+<td>X</td>
+</tr>
+</tbody>
+</table>
+<p>测试开始后，课程团队可继续在Studio中添加内容。
+准备测试新内容时，请确保 <a class="reference internal" href="../developing_course/course_units.html#publish-a-unit"><span>publish the
+unit</span></a>.</p>
+<div class="admonition important">
+<p class="first admonition-title">Important</p>
+<p class="last">When you set up the beta test and define when it starts, verify
+that the first section, subsection, and unit in your course are available to
+be tested. If that first unit is not available, an error occurs when testers
+attempt to access any other content in the course.</p>
+</div>
+<div class="section" id="id8">
+<h3>9.1.4.1. 指定测试开始时间<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h3>
+<p>在发布每节课之前，您将通过Studio指定一个时间来进行贝塔测试。</p>
+<ol class="arabic simple">
+<li>在Studio的设置菜单里选择 <strong>高级设置</strong> 。</li>
+<li>在 <strong>为贝塔测试用户指定时间</strong> 一栏中输入贝塔测试日期，此日期应在每章节发布之前的几天。</li>
+<li>点击 <strong>保存修改</strong> 。</li>
+</ol>
+</div>
+<div class="section" id="id9">
+<h3>9.1.4.2. 例：<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h3>
+<p>下面的例子中，“测试员提前日期”值为20，表格展示的是测试员对课程各项内容的访问日期及权限。</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="47%" />
+<col width="53%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">课程录取日期 = 8月31日</th>
+<th class="head">测试时间：8月31日，录取人员为课程工作人员则更早</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>课程开始日期 = 9月15日</td>
+<td>8月26日</td>
+</tr>
+<tr class="row-odd"><td>第一节发布日期 = 9月15日</td>
+<td>8月26日</td>
+</tr>
+<tr class="row-even"><td>第二节发布日期 = 9月22日</td>
+<td>9月2日</td>
+</tr>
+<tr class="row-odd"><td>第一小节发布日期 = 9月22日</td>
+<td>9月2日</td>
+</tr>
+<tr class="row-even"><td>第二小节发布日期 = 9月24日</td>
+<td>9月4日</td>
+</tr>
+<tr class="row-odd"><td>第一单元第二小节 可见性 = 公开</td>
+<td>9月4日</td>
+</tr>
+<tr class="row-even"><td>第二单元第二小节 可见性 = 公开;
+草案进行中</td>
+<td>公开部分：9月4日
+草案部分：无访问权限</td>
+</tr>
+<tr class="row-odd"><td>第三单元第二小节 可见性 = 私有</td>
+<td>无访问权限</td>
+</tr>
+</tbody>
+</table>
+<p>在本例中，测试员在8月26日测试开始后只能看见第一节的内容，但是无法看见第二节。
+您可以就课程权限开放日期做一个日程表，以供测试员合理安排时间。
+课件中不会提示测试员后续内容的发布时间。</p>
+</div>
+</div>
+<div class="section" id="add-testers">
+<span id="id10"></span><h2>9.1.5. 添加测试员<a class="headerlink" href="#add-testers" title="Permalink to this headline">¶</a></h2>
+<p>添加测试员之前：</p>
+<ul class="simple">
+<li>您需要每个测试员的邮箱地址或用户名。</li>
+<li>每个测试员需要为邮箱地址或用户名注册、激活一个用户帐户。</li>
+</ul>
+<p>添加测试员时，请注意：</p>
+<ul class="simple">
+<li>如果测试开始日期在 <strong>课程录取开始日期</strong> 之前，测试员无法自主报名您的课程，但您可以主动将测试员添加进上课名单中。</li>
+<li>测试开始后，如果添加的测试员同时也参加了课程，他们可以在 <strong>当前课程</strong> 控制面板中查看课程现状。</li>
+<li>如果您在测试开始前添加测试员，或测试员不参与课程，他们就无法在控制面板中查看课程。
+您可以主动将测试员纳入上课名单，同时您可以发邮件通知他们测试开始时间。</li>
+</ul>
+<div class="section" id="add-testers-bulk">
+<span id="id11"></span><h3>9.1.5.1. 添加多个测试员<a class="headerlink" href="#add-testers-bulk" title="Permalink to this headline">¶</a></h3>
+<p>您可以使用“批量添加”选项一次性添加多名测试员。
+您可以使用这项功能将测试员纳入课程名单（录取日期前后均可），同时向他们发送一封提醒邮件，告诉他们您已经将他们纳入课程。</p>
+<p>步骤：</p>
+<ol class="arabic simple">
+<li>查看课程当前状态</li>
+<li>单击 <strong>导师</strong> ，再单击 <strong>成员</strong> 。</li>
+<li>在 <strong>批量添加测试员</strong> 区域中键入一个或多个测试员的邮箱地址或用户名，用逗号或回车键分隔。
+您也可以复制CSV文件中的邮件地址，粘贴到此处。</li>
+<li>为将测试员纳入课程，您需选中 <strong>自动纳入</strong> 选项。如果测试日期早于课程录取日期，测试员无法自主加入课程。</li>
+<li>如果想要发电子邮件提醒测试员，请选中 <strong>通过电子邮件提醒用户</strong> 选项。
+下面的例子是一封电邮，收件人是一名尚未加入课程（或者是被自动加入课程）的测试员：</li>
+</ol>
+<img alt="&quot;课程工作人员邀请您加入{URL} 中 {course name} 课程的贝塔测试 访问 {link} 加入课程，开始上课。&quot;" src="../_images/Beta_tester_email.png" />
+<ol class="arabic simple" start="6">
+<li>单击 <strong>添加贝塔测试员</strong></li>
+</ol>
+<p>如果您想取消一个或多个测试员的测试资格，在 <strong>批量添加测试员</strong> 字段后键入他们的邮件地址，单击 <strong>移除贝塔测试员</strong> 。</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">单击 <strong>移除贝塔测试员</strong> 后，<strong>自动纳入</strong> 选项失效。指定用户的测试员资格失效，课程报名、录取不受影响。</p>
+</div>
+</div>
+<div class="section" id="id12">
+<h3>9.1.5.2. 添加单个测试员<a class="headerlink" href="#id12" title="Permalink to this headline">¶</a></h3>
+<p>步骤：</p>
+<ol class="arabic">
+<li><p class="first">查看课程现况</p>
+</li>
+<li><p class="first">单击 <strong>导师</strong> 然后单击 <strong>成员</strong> 。</p>
+</li>
+<li><p class="first">在 <strong>管理名单</strong> 字段后的下拉列表中，选测 <strong>贝塔测试员</strong> 。</p>
+</li>
+<li><p class="first">在测试员用户名列表中，键入想要添加的测试员的邮箱地址或用户名，单击 <strong>添加贝塔测试员</strong> 。</p>
+<p>如果测试开始于录取日期之前，您也可以通过此功能将测试员纳入课程。详见 <a class="reference internal" href="../running_course/course_enrollment.html#enrollment"><span>招生</span></a>.</p>
+</li>
+</ol>
+<p>如果您想移除某个测试员，在测试员名单中找到他的邮箱地址，单击右侧的 <strong>取消权限</strong> 。</p>
+</div>
+</div>
+<div class="section" id="issue-reporting-during-course">
+<span id="id13"></span><h2>9.1.6. 课程中的问题报告<a class="headerlink" href="#issue-reporting-during-course" title="Permalink to this headline">¶</a></h2>
+<p>尽管课程团队和测试员团队作出了极大努力，但是在课程运行过程中仍然会出现各种问题、疑问或争议。</p>
+<ul class="simple">
+<li>学生通常会通过在讨论中的提问来反映问题。所以，您的讨论项目管理团队应注意含有提问的帖子。</li>
+<li>为使学生了解报告问题的最佳方法，您可在 <strong>课程信息</strong> 页面或讨论中发帖提供相关信息。</li>
+</ul>
+</div>
+</div>
+
+
+          <footer>
+  
+    <div class="rst-footer-buttons">
+      
+        <a href="course_launching.html" class="btn btn-neutral float-right" title="9.2. 课程发布事宜"/>Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="index.html" class="btn btn-neutral" title="9. 发布您的课程"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <p>
+      &copy; Copyright 2015, edX.
+  </p>
+
+ 
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+</body>
+</html>

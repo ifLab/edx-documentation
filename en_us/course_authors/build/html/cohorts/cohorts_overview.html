@@ -1,0 +1,421 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>8.1. 使用队列功能建立课程群 &mdash; Building and Running an edX Course  documentation</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="../_static/css/favicon.ico"/>
+  
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  
+  
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:'../',
+        VERSION:'',
+        COLLAPSE_INDEX:false,
+        FILE_SUFFIX:'.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+
+    
+
+  
+
+  
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+
+  
+    <link rel="top" title="Building and Running an edX Course  documentation" href="../index.html"/>
+        <link rel="up" title="8. 建立学生队列" href="index.html"/>
+        <link rel="next" title="8.2. 启用、配置分队模式" href="cohort_config.html"/>
+        <link rel="prev" title="8. 建立学生队列" href="index.html"/> 
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-nav-search">
+        <a href="../index.html" class="icon icon-home"> Building and Running an edX Course</a>
+        <form class="wy-form" action="../search.html" method="get">
+  <input type="text" name="q" placeholder="Search document" />
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix">
+        
+        
+            <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../front_matter/index.html">1. 参考信息</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../front_matter/read_me.html">1.1. Read Me</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../front_matter/preface.html">1.2. 序言</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../front_matter/change_log.html">1.3. Change Log</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../front_matter/browsers.html">1.4. edX浏览器支持</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/index.html">2. 开始使用edX</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../getting_started/accounts.html">2.1. 开始使用edX</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../getting_started/dashboard_acctsettings_profile.html">2.2. 搜索你的仪表板、设置和配置文件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../getting_started/get_started.html">2.3. 开始了解Studio</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../getting_started/accessibility.html">2.4. 创建无障碍课程指南</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../building_course/index.html">3. 建立您的课程</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/creating_new_course.html">3.1. 新建课程</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/scheduling_course.html">3.2. 设置开始和结束日期</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/setting_up_student_view.html">3.3. 设置课程细节</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/licensing_course.html">3.4. 授权课程</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/course_files.html">3.5. 给课程添加文件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/handouts_updates.html">3.6. 添加课程补充资料及讲义</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/pages.html">3.7. 为课程添加页面</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/textbooks.html">3.8. 添加课本</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/establish_grading_policy.html">3.9. 设定计分政策</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/course_rerun.html">3.10. 重开课程</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/export_import_course.html">3.11. 输出和导入课程</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../developing_course/index.html">4. 开发您的课程</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/workflow.html">4.1. 开始创建课程内容</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/course_outline.html">4.2. 创建课程大纲</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/course_sections.html">4.3. 创建课程章节</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/course_subsections.html">4.4. 构建课程小节</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/course_units.html">4.5. 构建课程单元</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/course_components.html">4.6. 创建课程组件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/controlling_content_visibility.html">4.7. 设置内容可见性</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/testing_courseware.html">4.8. 测试您的课程内容</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../creating_content/index.html">5. 创建课程内容</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../creating_content/create_html_component.html">5.1. 如何使用HTML组件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../creating_content/create_video.html">5.2. 创建影片组件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../creating_content/create_discussion.html">5.3. 创建讨论组件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../creating_content/create_problem.html">5.4. 创建问题组件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../creating_content/libraries.html">5.5. Working with Content Libraries</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../exercises_tools/index.html">6. 创建习题和工具</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/create_exercises_and_tools.html">6.1. 创建练习和工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/annotation.html">6.2. 注释问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/checkbox.html">6.3. 复选框问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/chemical_equation.html">6.4. 化学方程式问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/circuit_schematic_builder.html">6.5. 电路原理图搭建问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/conditional_module.html">6.6. 条件模板</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/custom_javascript.html">6.7. 自定义JavaScript问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/drag_and_drop.html">6.8. 拖放问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/dropdown.html">6.9. 下拉问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/external_graders.html">6.10. 图像映射输入问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/full_screen_image.html">6.11. 全屏图像工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/gene_explorer.html">6.12. Gene Explorer工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/google_calendar.html">6.13. 谷歌日历工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/google_docs.html">6.14. 谷歌云文件工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/google_hangouts.html">6.15. 谷歌即时群聊工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/iframe.html">6.16. IFrame工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/image_mapped_input.html">6.17. 图像映射输入问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/lti_component.html">6.18. LTI 组件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/math_expression_input.html">6.19. 数学表达式输入问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/molecule_editor.html">6.20. 分子编辑器</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/molecule_viewer.html">6.21. 分子浏览器</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/multiple_choice.html">6.22. 多项选择问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/mult_choice_num_input.html">6.23. 多项选择和数字输入题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/numerical_input.html">6.24. 数值输入问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/open_response_assessments/index.html">6.25. 开放性回答评估</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/periodic_table.html">6.26. 元素周期表工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/poll.html">6.27. 投票工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/problem_with_hint.html">6.28. 带适应性提示的问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/problem_in_latex.html">6.29. LaTeX问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/protein_builder.html">6.30. Protex蛋白质构建工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/randomized_content_blocks.html">6.31. 随机内容块</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/recommenderXBlock.html">6.32. 推荐系统</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/text_input.html">6.33. 文本输入问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/word_cloud.html">6.34. 文字云工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/custom_python.html">6.35. 自定义评分器问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/zooming_image.html">6.36. 图像放大工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/mathjax.html">6.37. Studio中MathJax的简要介绍</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../content_experiments/index.html">7. 创建内容实验</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../content_experiments/content_experiments_overview.html">7.1. Overview of Content Experiments</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../content_experiments/content_experiments_configure.html">7.2. 配置带有内容实验的课程</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../content_experiments/content_experiments_add.html">7.3. 为您的课程添加内容实验</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../content_experiments/content_experiments_view.html">7.4. Test Content Experiments</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">8. 建立学生队列</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="">8.1. 使用队列功能建立课程群</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cohort_config.html">8.2. 启用、配置分队模式</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cohorted_courseware.html">8.3. 创建特定队列课件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cohorts_setup_discussions.html">8.4. 在包含队列的课程中设置论坛</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cohorts_manage_discussions.html">8.5. 管理有学生队列的论坛</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../releasing_course/index.html">9. 发布您的课程</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../releasing_course/beta_testing.html">9.1. 贝塔测试</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../releasing_course/course_launching.html">9.2. 课程发布事宜</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../releasing_course/staff_debug_info.html">9.3. 员工调试信息</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../running_course/index.html">10. 运营您的课程</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/course_staffing.html">10.1. 安置职工</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/course_enrollment.html">10.2. 招生</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/discussions.html">10.3. 管理课程讨论项目</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/discussions_students.html">10.4. 参与课程讨论</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/discussion_guidance_moderators.html">10.5. 论坛协调员指南</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/bulk_email.html">10.6. Bulk Email</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/course_wiki.html">10.7. 使用课程维基</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/course_data.html">10.8. 课程数据</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/course_student.html">10.9. 学生数据</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/course_answers.html">10.10. 回答问题数据</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/course_grades.html">10.11. 学生成绩与成绩评定</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/checking_student_progress.html">10.12. 总成绩计算与证书发放</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../students/index.html">11. 学生相关信息</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../students/login_guide.html">11.1. 学生登录指南示例</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../students/math_students.html">11.2. 学生数学题回答格式化</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../students/ora_students.html">11.3. 学生开放回答评估</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../glossary.html">12. Glossary</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#a">12.1. A</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#c">12.2. C</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#d">12.3. D</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#e">12.4. E</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#f">12.5. F</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#g">12.6. G</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#h">12.7. H</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#i">12.8. I</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#k">12.9. K</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#l">12.10. L</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#m">12.11. M</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#n">12.12. N</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#o">12.13. O</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#p">12.14. P</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#q">12.15. Q</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#r">12.16. R</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#s">12.17. S</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#t">12.18. T</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#u">12.19. U</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#v">12.20. V</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#w">12.21. W</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#xyz">12.22. XYZ</a></li>
+</ul>
+</li>
+</ul>
+
+        
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top">
+        <i data-toggle="wy-nav-top" class="icon icon-reorder"></i>
+        <a href="/">Building and Running an edX Course</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <ul class="wy-breadcrumbs">
+  <li><a href="../index.html">Table of Contents</a> &raquo;</li>
+  <li><a href="">8.1. 使用队列功能建立课程群</a></li>
+  
+</ul>
+<hr/>
+
+          
+  <div class="section" id="cohorts-overview">
+<span id="id1"></span><h1>8.1. 使用队列功能建立课程群<a class="headerlink" href="#cohorts-overview" title="Permalink to this headline">¶</a></h1>
+<p>如果您想在课程中建立更小的社区，或者为不同学生群体设计不同的课程体验，
+您可以在课程中 <a class="reference internal" href="cohort_config.html#enabling-and-configuring-cohorts"><span>set up
+cohorts</span></a> 。
+队列功能可以在课堂内创建小型课程群体。同一队列的学生能够私下交流分享关于讨论课题的看法和经验。
+队列讨论能培养学生的集体观念，为学生提供度身打造的课程体验，并鼓励学生参与更深层次的课程活动。</p>
+<p>当您成功启用队列模式后，您需要通过定义一系列队列组来创建学生群体，
+并选择学生分队策略。请见 <a class="reference internal" href="#options-for-assigning-students-to-cohorts"><span>assigning students to
+cohorts</span></a>.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<ul class="simple">
+<li>每个学生都必须分配到队列中。这样每个学生都能阅读所有讨论课题，并就课题贡献自己的力量。</li>
+<li>每个学生只能分配到一个队列中。</li>
+</ul>
+<p class="last">为保证持续的课堂体验，课程开始后，不应变更学生的分队模式。</p>
+</div>
+<p>更多信息请看以下两节的内容：</p>
+<ul class="simple">
+<li><a class="reference internal" href="cohort_config.html#enabling-and-configuring-cohorts"><span>启用、配置分队模式</span></a></li>
+<li><a class="reference internal" href="cohorts_setup_discussions.html#set-up-discussions-in-cohorted-courses"><span>Setting Up Discussions in Courses with Cohorts</span></a></li>
+<li><a class="reference internal" href="cohorts_manage_discussions.html#moderating-discussions-for-cohorts"><span>管理有学生队列的论坛</span></a></li>
+</ul>
+<p>关于“课题讨论”的更多信息请参考 <a class="reference internal" href="../running_course/discussions.html#discussions"><span>管理课程讨论项目</span></a>.</p>
+<div class="section" id="options-for-assigning-students-to-cohorts">
+<span id="id2"></span><h2>8.1.1. 课题讨论选项<a class="headerlink" href="#options-for-assigning-students-to-cohorts" title="Permalink to this headline">¶</a></h2>
+<p>学生可以自动或手动加入队列，这取决于您在课程中创建的队列类型。
+只有您将学生加入手动队列，队列中才会有成员。
+自动队列随机加入没有分组（包括课程论坛页面或指定内容讨论主题）的学生。
+如果学生进入课程内容时，您没有创建任何自动队列，系统会自动生成一个默认自动队列。
+所有的学生都会被加入到队列中。</p>
+<p>选择您在创建课程队列时的基本政策。
+自动分配政策指您的课程中学生将被自动随机分配到队列中。
+手动分配政策指您将创建队列并将学生手动加入到队列中。
+您也可以使用混合分配方法，结合自动和手动队列。
+一般情况下，您想让队列拥有的特性决定了您应该使用何种分配方式。</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">您可以将学生手动加入到任何队列中。包括自动队列和手动队列。</p>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">尽管您可以随时改变分派方法，您在创建课程时仍应该在脑中有一套分配标准。
+课程开始以后，尽量仅在非常必须的情况下改变分配政策。注意在课程开始以后，
+更改分配政策造成的影响。更多信息请参考
+<a class="reference internal" href="cohort_config.html#altering-cohort-configuration"><span>Altering Cohort Configuration in a Running Course</span></a> 。
+一般情况，为了向学生提供连贯的学习体验，请不要在课程开始后更改队列设置。</p>
+</div>
+<p>更多关于分配政策的信息请看下列主题。</p>
+<ul class="simple">
+<li><a class="reference internal" href="#all-automated-assignment"><span>自动分队：让大规模的讨论更易管理</span></a></li>
+<li><a class="reference internal" href="#all-manual-assignment"><span>手动分组：“人以群分”</span></a></li>
+<li><a class="reference internal" href="#hybrid-assignment"><span>混合分队：在课堂内创立小规模课程群体</span></a></li>
+<li><a class="reference internal" href="#default-cohort-group"><span>系统默认分队：确保所有学生都有组可分</span></a></li>
+</ul>
+<div class="section" id="all-automated-assignment">
+<span id="id3"></span><h3>8.1.1.1. 自动分队：让大规模的讨论更易管理<a class="headerlink" href="#all-automated-assignment" title="Permalink to this headline">¶</a></h3>
+<p>在一些规模较大的课程中，关于某个讨论课题的帖子数量可谓堆积成山，
+令人望而却步。对这类课程而言，将课程参与者分为几个小队可以有效管理发帖、
+回帖以及评论数量，同时更有助于培养群体意识。</p>
+<p>采用这种分队策略，您需要启用分队功能，并创建一组“自动”分队。
+创建成功后，当一个学生第一次查看“课程讨论”页面，或其他特殊讨论课题时，
+将被自动随机分配到某个小组中。所有被分到同一小组的学生组成一个队列。</p>
+<p>这几条操作指南基于本平台对大规模在线开放课程团队的管理经验，
+能够帮助您在课程中正确决定自动分队队列的数量。</p>
+<ul class="simple">
+<li>每个队列的规模不应太小，否则将很难调动学生的积极性，也很难从多方面角度收集意见；
+同时也不应太大，否则容易使团队一盘散沙，丧失集体意识。
+随机分组下的队列规模应在200至500人之间为宜。</li>
+<li>每10000名学生中，能从头到尾保持讨论积极性的约为200至400人左右。</li>
+<li>将预计的课程参与人数除以10000。</li>
+<li>得到的结果即为自动分队队列的数量。</li>
+</ul>
+<p>比如，一项课程开始两天前，报名学生人数为80000人。
+课程团队启用分队功能，创建了8个自动分队队列。
+当学生访问讨论页面并查看讨论模块时，会被随机分配到一个队列中。
+在分队讨论课题中，学生只能阅读、回复同一小队成员发布的内容。</p>
+<p>更多信息请参考 <a class="reference internal" href="cohort_config.html#implementing-the-automated-assignment-strategy"><span>启用分队功能</span></a>.</p>
+</div>
+<div class="section" id="all-manual-assignment">
+<span id="id4"></span><h3>8.1.1.2. 手动分组：“人以群分”<a class="headerlink" href="#all-manual-assignment" title="Permalink to this headline">¶</a></h3>
+<p>在SPOC（小型私人在线课程）以及其他中小规模的课堂中，
+教师可以根据学生的已知共性创建队列。比如，您的学生可能来自不同的公司，
+可能拥有不同教育背景，参加了不同的团体等等。将学生按照不同共性分组，
+学生能够私下讨论自己感兴趣的话题，从而寻找符合特定团体利益的资源和创意。</p>
+<p>在使用这种分组策略之前，您需要事先了解您的学生在现实生活中属于哪一类群体。
+您可以启用分队模式，并将默认设置修改为“手动”（manual）分组，
+然后您可以将学生一一分配到这些手动分队队列中。
+无论课程开始前后，所有加入课程的学生都必须至少被分配到一个队列中。</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">保证每个学生都有组可分，您可以在手动分队队列之外再创建一个单独的自动分队队列。
+这部分内容会在下一节中提到。如果您没时间创建队列，系统会自动创建一个默认分队以保证所有学生都有组可分。</p>
+</div>
+<p>更多信息请参考 <a class="reference internal" href="cohort_config.html#implementing-the-manual-assignment-strategy"><span>采用手动分组策略</span></a>.</p>
+</div>
+<div class="section" id="hybrid-assignment">
+<span id="id5"></span><h3>8.1.1.3. 混合分队：在课堂内创立小规模课程群体<a class="headerlink" href="#hybrid-assignment" title="Permalink to this headline">¶</a></h3>
+<p>对于某些课程而言，手动分队策略不太可行，自动分队策略又没法体现学生群体的共性。
+还有些课程，参与人数太多，手动分队效率太低，但是又存在部分学生，
+他们有非常典型的共性特征。对于这几类课程而言，您可以采用手动、自动两种分队模式混合的分队策略。</p>
+<p>比方说，有一个校友团体集体报名了某项课程。
+该团体希望能在课堂上有私下交流互动的空间，所以作为老师，
+您可以对这个团体单独采用手动分队策略，而对于其他学生而言则不必如此，
+只需给他们创建几个自动分队队列就可以了。</p>
+<p>采取混合分队策略前，您首先需要了解，您的学生群体中，
+哪部分学生是有强烈共性的？同时也要清楚，剩下的学生是不是也需要根据相似性分组，
+还是仅仅把他们分到一组里就可以了？</p>
+<p>启用分队模式后，您需要为每个共性群体创建一个手动分队队列，
+然后根据共性将学生一一分配到相应的队列中。
+同时，您需要为其他学生创建几个自动分队队列，或者也可以使用系统自动默认生成的队列。
+当学生查看“讨论”页面，或在课堂上查看讨论课题时，
+那些没有被分配到手动分队队列中的学生会自动分配到自动分队队列或默认队列中。
+（为保证最佳效果，在采用本策略时，您最好在课程开始、学生查看讨论课题之前将手动分队队列设置完毕）</p>
+<p>更多信息请参考 <a class="reference internal" href="cohort_config.html#implementing-the-automated-assignment-strategy"><span>启用分队功能</span></a> 和 <a class="reference internal" href="cohort_config.html#implementing-the-manual-assignment-strategy"><span>采用手动分组策略</span></a>.</p>
+</div>
+<div class="section" id="default-cohort-group">
+<span id="id6"></span><h3>8.1.1.4. 系统默认分队：确保所有学生都有组可分<a class="headerlink" href="#default-cohort-group" title="Permalink to this headline">¶</a></h3>
+<p>启用分队模式后，每个学生应至少分到一个队列中。为保证所有学生都有组可分。</p>
+<p>如果您没有创建自动分队队列，系统会自动创建一个默认队列作为保底措施。
+当学生访问“讨论”页面，或查看讨论课题时，手动分队队列以外的学生会自动分配到自动分队队列或默认队列中。</p>
+<p>分配到默认队列的学生会在查看讨论帖时看见一个名为“默认小组”的队列。
+如果您希望学生看到不同于默认队列的队列名称，您可以更改名称。
+更多细节请参考
+<a class="reference internal" href="cohort_config.html#renaming-a-cohort"><span>重新命名队列</span></a>.</p>
+<img alt="A discussion topic post with &quot;This post is visible to Default Group&quot; above the title" src="../_images/post_visible_default.png" />
+<p>您可以通过课程的 <a class="reference internal" href="../running_course/course_student.html#view-and-download-student-data"><span>student profile information report</span></a> 查看究竟有多少学生被分配到了默认队列，以便您帮助他们重新分组。
+但是请注意，在分队讨论课题下，学生只能看见当前小队中的内容，
+也就是说，如果一个学生被重新分组，他看见的内容会暂时“消失”。
+所以，为保证学生能有流畅的课堂体验，更改分组应该尽早完成。</p>
+</div>
+</div>
+</div>
+
+
+          <footer>
+  
+    <div class="rst-footer-buttons">
+      
+        <a href="cohort_config.html" class="btn btn-neutral float-right" title="8.2. 启用、配置分队模式"/>Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="index.html" class="btn btn-neutral" title="8. 建立学生队列"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <p>
+      &copy; Copyright 2015, edX.
+  </p>
+
+ 
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+</body>
+</html>

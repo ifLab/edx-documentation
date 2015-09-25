@@ -1,0 +1,494 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>4.4. 构建课程小节 &mdash; Building and Running an edX Course  documentation</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="../_static/css/favicon.ico"/>
+  
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  
+  
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:'../',
+        VERSION:'',
+        COLLAPSE_INDEX:false,
+        FILE_SUFFIX:'.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+
+    
+
+  
+
+  
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+
+  
+    <link rel="top" title="Building and Running an edX Course  documentation" href="../index.html"/>
+        <link rel="up" title="4. 开发您的课程" href="index.html"/>
+        <link rel="next" title="4.5. 构建课程单元" href="course_units.html"/>
+        <link rel="prev" title="4.3. 创建课程章节" href="course_sections.html"/> 
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-nav-search">
+        <a href="../index.html" class="icon icon-home"> Building and Running an edX Course</a>
+        <form class="wy-form" action="../search.html" method="get">
+  <input type="text" name="q" placeholder="Search document" />
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix">
+        
+        
+            <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../front_matter/index.html">1. 参考信息</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../front_matter/read_me.html">1.1. Read Me</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../front_matter/preface.html">1.2. 序言</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../front_matter/change_log.html">1.3. Change Log</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../front_matter/browsers.html">1.4. edX浏览器支持</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/index.html">2. 开始使用edX</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../getting_started/accounts.html">2.1. 开始使用edX</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../getting_started/dashboard_acctsettings_profile.html">2.2. 搜索你的仪表板、设置和配置文件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../getting_started/get_started.html">2.3. 开始了解Studio</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../getting_started/accessibility.html">2.4. 创建无障碍课程指南</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../building_course/index.html">3. 建立您的课程</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/creating_new_course.html">3.1. 新建课程</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/scheduling_course.html">3.2. 设置开始和结束日期</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/setting_up_student_view.html">3.3. 设置课程细节</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/licensing_course.html">3.4. 授权课程</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/course_files.html">3.5. 给课程添加文件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/handouts_updates.html">3.6. 添加课程补充资料及讲义</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/pages.html">3.7. 为课程添加页面</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/textbooks.html">3.8. 添加课本</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/establish_grading_policy.html">3.9. 设定计分政策</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/course_rerun.html">3.10. 重开课程</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/export_import_course.html">3.11. 输出和导入课程</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">4. 开发您的课程</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="workflow.html">4.1. 开始创建课程内容</a></li>
+<li class="toctree-l2"><a class="reference internal" href="course_outline.html">4.2. 创建课程大纲</a></li>
+<li class="toctree-l2"><a class="reference internal" href="course_sections.html">4.3. 创建课程章节</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="">4.4. 构建课程小节</a></li>
+<li class="toctree-l2"><a class="reference internal" href="course_units.html">4.5. 构建课程单元</a></li>
+<li class="toctree-l2"><a class="reference internal" href="course_components.html">4.6. 创建课程组件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="controlling_content_visibility.html">4.7. 设置内容可见性</a></li>
+<li class="toctree-l2"><a class="reference internal" href="testing_courseware.html">4.8. 测试您的课程内容</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../creating_content/index.html">5. 创建课程内容</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../creating_content/create_html_component.html">5.1. 如何使用HTML组件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../creating_content/create_video.html">5.2. 创建影片组件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../creating_content/create_discussion.html">5.3. 创建讨论组件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../creating_content/create_problem.html">5.4. 创建问题组件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../creating_content/libraries.html">5.5. Working with Content Libraries</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../exercises_tools/index.html">6. 创建习题和工具</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/create_exercises_and_tools.html">6.1. 创建练习和工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/annotation.html">6.2. 注释问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/checkbox.html">6.3. 复选框问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/chemical_equation.html">6.4. 化学方程式问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/circuit_schematic_builder.html">6.5. 电路原理图搭建问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/conditional_module.html">6.6. 条件模板</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/custom_javascript.html">6.7. 自定义JavaScript问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/drag_and_drop.html">6.8. 拖放问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/dropdown.html">6.9. 下拉问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/external_graders.html">6.10. 图像映射输入问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/full_screen_image.html">6.11. 全屏图像工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/gene_explorer.html">6.12. Gene Explorer工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/google_calendar.html">6.13. 谷歌日历工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/google_docs.html">6.14. 谷歌云文件工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/google_hangouts.html">6.15. 谷歌即时群聊工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/iframe.html">6.16. IFrame工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/image_mapped_input.html">6.17. 图像映射输入问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/lti_component.html">6.18. LTI 组件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/math_expression_input.html">6.19. 数学表达式输入问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/molecule_editor.html">6.20. 分子编辑器</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/molecule_viewer.html">6.21. 分子浏览器</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/multiple_choice.html">6.22. 多项选择问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/mult_choice_num_input.html">6.23. 多项选择和数字输入题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/numerical_input.html">6.24. 数值输入问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/open_response_assessments/index.html">6.25. 开放性回答评估</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/periodic_table.html">6.26. 元素周期表工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/poll.html">6.27. 投票工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/problem_with_hint.html">6.28. 带适应性提示的问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/problem_in_latex.html">6.29. LaTeX问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/protein_builder.html">6.30. Protex蛋白质构建工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/randomized_content_blocks.html">6.31. 随机内容块</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/recommenderXBlock.html">6.32. 推荐系统</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/text_input.html">6.33. 文本输入问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/word_cloud.html">6.34. 文字云工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/custom_python.html">6.35. 自定义评分器问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/zooming_image.html">6.36. 图像放大工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/mathjax.html">6.37. Studio中MathJax的简要介绍</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../content_experiments/index.html">7. 创建内容实验</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../content_experiments/content_experiments_overview.html">7.1. Overview of Content Experiments</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../content_experiments/content_experiments_configure.html">7.2. 配置带有内容实验的课程</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../content_experiments/content_experiments_add.html">7.3. 为您的课程添加内容实验</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../content_experiments/content_experiments_view.html">7.4. Test Content Experiments</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../cohorts/index.html">8. 建立学生队列</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../cohorts/cohorts_overview.html">8.1. 使用队列功能建立课程群</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cohorts/cohort_config.html">8.2. 启用、配置分队模式</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cohorts/cohorted_courseware.html">8.3. 创建特定队列课件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cohorts/cohorts_setup_discussions.html">8.4. 在包含队列的课程中设置论坛</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cohorts/cohorts_manage_discussions.html">8.5. 管理有学生队列的论坛</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../releasing_course/index.html">9. 发布您的课程</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../releasing_course/beta_testing.html">9.1. 贝塔测试</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../releasing_course/course_launching.html">9.2. 课程发布事宜</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../releasing_course/staff_debug_info.html">9.3. 员工调试信息</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../running_course/index.html">10. 运营您的课程</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/course_staffing.html">10.1. 安置职工</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/course_enrollment.html">10.2. 招生</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/discussions.html">10.3. 管理课程讨论项目</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/discussions_students.html">10.4. 参与课程讨论</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/discussion_guidance_moderators.html">10.5. 论坛协调员指南</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/bulk_email.html">10.6. Bulk Email</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/course_wiki.html">10.7. 使用课程维基</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/course_data.html">10.8. 课程数据</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/course_student.html">10.9. 学生数据</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/course_answers.html">10.10. 回答问题数据</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/course_grades.html">10.11. 学生成绩与成绩评定</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/checking_student_progress.html">10.12. 总成绩计算与证书发放</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../students/index.html">11. 学生相关信息</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../students/login_guide.html">11.1. 学生登录指南示例</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../students/math_students.html">11.2. 学生数学题回答格式化</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../students/ora_students.html">11.3. 学生开放回答评估</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../glossary.html">12. Glossary</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#a">12.1. A</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#c">12.2. C</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#d">12.3. D</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#e">12.4. E</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#f">12.5. F</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#g">12.6. G</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#h">12.7. H</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#i">12.8. I</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#k">12.9. K</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#l">12.10. L</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#m">12.11. M</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#n">12.12. N</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#o">12.13. O</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#p">12.14. P</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#q">12.15. Q</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#r">12.16. R</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#s">12.17. S</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#t">12.18. T</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#u">12.19. U</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#v">12.20. V</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#w">12.21. W</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#xyz">12.22. XYZ</a></li>
+</ul>
+</li>
+</ul>
+
+        
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top">
+        <i data-toggle="wy-nav-top" class="icon icon-reorder"></i>
+        <a href="/">Building and Running an edX Course</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <ul class="wy-breadcrumbs">
+  <li><a href="../index.html">Table of Contents</a> &raquo;</li>
+  <li><a href="">4.4. 构建课程小节</a></li>
+  
+</ul>
+<hr/>
+
+          
+  <div class="section" id="developing-course-subsections">
+<span id="id1"></span><h1>4.4. 构建课程小节<a class="headerlink" href="#developing-course-subsections" title="Permalink to this headline">¶</a></h1>
+<p>构建课程小节之前您必须了解以下信息：</p>
+<ul class="simple">
+<li><a href="#id21"><span class="problematic" id="id22">`What is a Subsection?`_</span></a></li>
+<li><a href="#id23"><span class="problematic" id="id24">`Viewing Subsections in the Outline`_</span></a></li>
+<li><a href="#id25"><span class="problematic" id="id26">`The Student View of a Subsection`_</span></a></li>
+<li><a href="#id27"><span class="problematic" id="id28">`Subsections and Visibility to Students`_</span></a></li>
+<li><a href="#id29"><span class="problematic" id="id30">`Release Statuses of Subsections`_</span></a></li>
+</ul>
+<p>小节操作：</p>
+<ul class="simple">
+<li><a class="reference internal" href="#create-a-subsection">Create a Subsection</a></li>
+<li><a href="#id31"><span class="problematic" id="id32">`Change a Subsection Name`_</span></a></li>
+<li><a class="reference internal" href="#set-a-subsection-release-date">Set a Subsection Release Date</a></li>
+<li><a class="reference internal" href="#set-the-assignment-type-and-due-date-for-a-subsection">Set the Assignment Type and Due Date for a Subsection</a></li>
+<li><a class="reference internal" href="#publish-all-units-in-a-subsection">Publish all Units in a Subsection</a></li>
+<li><a class="reference internal" href="#hide-a-subsection-from-students">Hide a Subsection from Students</a></li>
+<li><a class="reference internal" href="#delete-a-subsection">Delete a Subsection</a></li>
+</ul>
+<div class="section" id="id2">
+<h2>4.4.1. 什么是小节？<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<p>小节是章节的组成部分，一个小节通常包括一个或多个单元。小节通常代表课程的某个主题，或者其他组织形式。
+小节有时也被称为“课”或“学习顺序”。</p>
+</div>
+<div class="section" id="id3">
+<h2>4.4.2. 小节在课程大纲中的显示方式<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
+<p>下图呈现了三个收起的小节在大纲中的显示方式：</p>
+<img alt="Three collapsed subsections in the outline" src="../_images/subsections.png" />
+</div>
+<div class="section" id="id4">
+<h2>4.4.3. 小节在学生端的呈现样式<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
+<p>学生可以在课件库中查看小节，如下图所示：</p>
+<img alt="The student view of the outline" src="../_images/subsections_student.png" />
+</div>
+<div class="section" id="id5">
+<h2>4.4.4. 小节与对学生可见性<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
+<p>学生无法观看未设置发布日期及发布日期未到的小节内容。</p>
+<p>学生如果想观看已过发布日期的课程内容，必须满足以下三个条件：</p>
+<ul class="simple">
+<li>父章节的发布日期已到。</li>
+<li>单元发布完成。</li>
+<li>发布单元没有对学生隐藏。</li>
+</ul>
+</div>
+<div class="section" id="id6">
+<h2>4.4.5. 小节发布状态<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h2>
+<p>课程制作者能控制小节的发布状态。
+只有当小节处于发布状态时，学生才能看见内容。
+点击以下链接查看更多信息：</p>
+<ul class="simple">
+<li><a href="#id33"><span class="problematic" id="id34">`Scheduled with the Section`_</span></a></li>
+<li><a href="#id35"><span class="problematic" id="id36">`Unscheduled`_</span></a></li>
+<li><a href="#id37"><span class="problematic" id="id38">`Scheduled Later than the Section`_</span></a></li>
+<li><a href="#id39"><span class="problematic" id="id40">`Scheduled with Unpublished Changes`_</span></a></li>
+<li><a href="#id41"><span class="problematic" id="id42">`Released with Unpublished Changes`_</span></a></li>
+<li><a href="#id43"><span class="problematic" id="id44">`Released`_</span></a></li>
+</ul>
+<div class="section" id="id7">
+<h3>4.4.5.1. 与章节同时发布<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h3>
+<p>由于课程小节的发布日期默认与章节一致，因此一旦发布章节内容，学生就可以浏览小节中的内容。</p>
+<p>下图展示了默认发布日期与所在章节发布日期相同的小节在课程大纲中的显示模式：</p>
+<img alt="A subsection scheduled to release with the section" src="../_images/subsection-scheduled.png" />
+</div>
+<div class="section" id="id8">
+<h3>4.4.5.2. 未设置发布日期<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h3>
+<p>如果未设置父章节的发布日期，那么新建的小节也自动默认未设置发布日期。</p>
+<p>无论小节中的单元是否发布，学生都无法看见未发布的小节内容。</p>
+<p>下图展示了未设置发布日期的小节在大纲中的显示模式：</p>
+<img alt="An unscheduled subsection" src="../_images/subsection-unscheduled.png" />
+<p>除非您设置小节的发布日期，否则学生无法浏览该部分内容。</p>
+</div>
+<div class="section" id="id9">
+<h3>4.4.5.3. 晚于章节发布<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h3>
+<p>小节的发布日期可以晚于章节的发布日期。</p>
+<p>无论小节中的单元是否发布，学生都只有在小节发布日期时才能看见该部分内容。</p>
+<p>下图中，小节的发布日期就晚于父章节的发布日期：</p>
+<img alt="A subsection scheduled to release later than the section" src="../_images/subsection-scheduled-different.png" />
+<p>只有在发布日期到了后，学生才能看见该小节的内容。</p>
+</div>
+<div class="section" id="id10">
+<h3>4.4.5.4. 计划发布的小节中含有未发布修改<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h3>
+<p>在父小节发布日期到达之前，您可以对已发布的单元进行更改。</p>
+<p>这样，一旦发布父小节，学生就能看见该小节中最新版本的单元内容。
+但是，如果您不重新发布更改后的单元，那么更改后的单元还是无法对学生显示。如下图所示：</p>
+<img alt="A scheduled subsection with unpublished changes" src="../_images/section-scheduled-with-changes.png" />
+</div>
+<div class="section" id="id11">
+<h3>4.4.5.5. 已发布的小节中含有未发布修改<a class="headerlink" href="#id11" title="Permalink to this headline">¶</a></h3>
+<p>如果您更改了已发布小节中的一个单元，您必须重新发布该单元，否则学生无法看见最新内容，如下图所示：</p>
+<img alt="A released subsection with unpublished changes" src="../_images/section-released-with-changes.png" />
+</div>
+<div class="section" id="id12">
+<h3>4.4.5.6. 已发布<a class="headerlink" href="#id12" title="Permalink to this headline">¶</a></h3>
+<p>学生可以浏览已发布小节中的内容，但并不是所有内容，只有小节中处于发布状态的单元才对学生可见，如下图所示：</p>
+<img alt="A released subsection" src="../_images/subsection-released.png" />
+</div>
+<div class="section" id="id13">
+<h3>4.4.5.7. 仅对教员可见内容<a class="headerlink" href="#id13" title="Permalink to this headline">¶</a></h3>
+<p>小节中可以包含只对教员可见的单元，即使发布该小节，学生也无法浏览只对教员开放的内容。如下图所示：</p>
+<img alt="A section with a hidden unit" src="../_images/section-hidden-unit.png" />
+</div>
+</div>
+<div class="section" id="create-a-subsection">
+<span id="id14"></span><h2>4.4.6. 创建小节<a class="headerlink" href="#create-a-subsection" title="Permalink to this headline">¶</a></h2>
+<p>如何创建一个小节：</p>
+<ol class="arabic simple">
+<li>在“课程大纲”页面，首先扩展您要新建小节的章节。</li>
+<li>单击章节下方的“新建小节”，如此，一个没有内容的新小节就出现在章节下方。</li>
+<li>输入小节名，该名称会出现在学生的课件库中。
+一个描述确切的名称将帮助学生找到内容的所在位置，也将帮助您在edX Insights中分析绩效时查找内容。</li>
+<li><a class="reference internal" href="course_units.html#create-a-unit"><span>Add units</span></a> 到创建好的章节里。</li>
+</ol>
+<p>我们建议您在创建小节的过程中 <a class="reference internal" href="testing_courseware.html#testing-your-course-content"><span>test course content</span></a> 。</p>
+</div>
+<div class="section" id="id15">
+<h2>4.4.7. 更改小节名称<a class="headerlink" href="#id15" title="Permalink to this headline">¶</a></h2>
+<p>点击小节名称旁边的编辑按钮，输入新名称，点击“保存”。</p>
+</div>
+<div class="section" id="set-a-subsection-release-date">
+<span id="id16"></span><h2>4.4.8. 设置小节的发布日期<a class="headerlink" href="#set-a-subsection-release-date" title="Permalink to this headline">¶</a></h2>
+<p>按照以下步骤设置小节发布日期：</p>
+<ol class="arabic">
+<li><p class="first">点击小节中的“设置”按钮。</p>
+<img alt="The subsection settings icon circled" src="../_images/subsections-settings-icon.png" />
+<p>打开 <strong>设置</strong> 对话框。</p>
+</li>
+<li><p class="first">输入章节的发布日期和时间：</p>
+<img alt="The subsection release date settings" src="../_images/subsection-settings-release.png" />
+</li>
+<li><p class="first">点击 <strong>保存</strong> 。</p>
+</li>
+</ol>
+<p>欲了解更多信息，请查看 <a class="reference internal" href="controlling_content_visibility.html#release-dates"><span>发布日期</span></a>.</p>
+</div>
+<div class="section" id="set-the-assignment-type-and-due-date-for-a-subsection">
+<span id="id17"></span><h2>4.4.9. 设置任务类型和截止日期<a class="headerlink" href="#set-the-assignment-type-and-due-date-for-a-subsection" title="Permalink to this headline">¶</a></h2>
+<p>任务类型设置会作用到小节中所有的问题。</p>
+<p>一旦您为小节设置了任务类型，那么该小节中的所有问题都会被归纳为这种任务类型。
+例如，您将一小节中的任务类型设置成 <strong>家庭作业</strong> ，那么这个小节中的所有问题都被归纳为“家庭作业”。</p>
+<p>如何设置小节的任务类型及截止日期：</p>
+<ol class="arabic">
+<li><p class="first">点击小节中的“设置”按钮，即弹出设置对话框。</p>
+<img alt="The subsection settings icon circled" src="../_images/subsections-settings-icon.png" />
+</li>
+<li><p class="first">选择任务类型：</p>
+<img alt="The subsection settings with the assignment type and due date circled" src="../_images/subsection-settings-grading.png" />
+</li>
+<li><p class="first">选择截止日期。</p>
+</li>
+<li><p class="first">点击 <strong>保存</strong> 。</p>
+</li>
+</ol>
+<p>详细信息请参见 <a class="reference internal" href="../building_course/establish_grading_policy.html#establish-a-grading-policy"><span>设定计分政策</span></a>.</p>
+</div>
+<div class="section" id="publish-all-units-in-a-subsection">
+<span id="id18"></span><h2>4.4.10. 发布小节中的所有单元<a class="headerlink" href="#publish-all-units-in-a-subsection" title="Permalink to this headline">¶</a></h2>
+<p>点击小节中的“发布”按钮，发布新建及修改的单元：</p>
+<img alt="Publishing icon for a subsection" src="../_images/outline-publish-icon-subsection.png" />
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">只有对小节做出修改后，才会出现“发布”按钮。</p>
+</div>
+<p>有关单元发布状态及对学生可见性等相关信息，请查看 <a class="reference internal" href="course_units.html#unit-publishing-status"><span>单元的发布状态</span></a></p>
+</div>
+<div class="section" id="hide-a-subsection-from-students">
+<span id="id19"></span><h2>4.4.11. 对学生隐藏小节<a class="headerlink" href="#hide-a-subsection-from-students" title="Permalink to this headline">¶</a></h2>
+<p>无论小节中的单元发布状态如何，您都可以对学生隐藏所有内容。</p>
+<p>更多信息请参阅 <a class="reference internal" href="controlling_content_visibility.html#content-hidden-from-students"><span>对学生隐藏内容</span></a>.</p>
+<p>如何对学生隐藏小节内容</p>
+<ol class="arabic">
+<li><p class="first">点击“设置”按钮。</p>
+<img alt="The subsection settings icon circled" src="../_images/subsections-settings-icon.png" />
+<p>弹出 <strong>设置</strong> 对话框。</p>
+</li>
+<li><p class="first">点击 <strong>对学生隐藏</strong> 按钮</p>
+<img alt="The subsection hide from students setting" src="../_images/subsection-settings-hidden.png" />
+</li>
+<li><p class="first">点击 <strong>保存</strong> 。</p>
+</li>
+</ol>
+<p>至此，所有内容都对学生隐藏了。</p>
+<p>要对学生开放此小节，只需重复以上步骤，清除 <strong>对学生隐藏</strong> 复选框。</p>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">清除“对学生隐藏”复选框并不会将所有内容呈现给学生，特别是单独设置了对学生隐藏的单元，及尚未发布的内容。</p>
+</div>
+</div>
+<div class="section" id="delete-a-subsection">
+<span id="id20"></span><h2>4.4.12. 删除小节<a class="headerlink" href="#delete-a-subsection" title="Permalink to this headline">¶</a></h2>
+<p>删除小节就是删除小节里包含的所有内容。</p>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">删除的课程内容无法恢复。您可以将暂时不用的课程内容存放在一个章节中，并将该章节设置成“永不发布”。</p>
+</div>
+<p>如何删除小节：</p>
+<ol class="arabic simple">
+<li>点击小节中的“删除”按钮：</li>
+</ol>
+<blockquote>
+<div><img alt="The subsection with Delete icon circled" src="../_images/subsection-delete.png" />
+</div></blockquote>
+<ol class="arabic simple" start="2">
+<li>在弹出的确认对话框中选择“是”即可删除该小节。</li>
+</ol>
+</div>
+</div>
+
+
+          <footer>
+  
+    <div class="rst-footer-buttons">
+      
+        <a href="course_units.html" class="btn btn-neutral float-right" title="4.5. 构建课程单元"/>Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="course_sections.html" class="btn btn-neutral" title="4.3. 创建课程章节"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <p>
+      &copy; Copyright 2015, edX.
+  </p>
+
+ 
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+</body>
+</html>

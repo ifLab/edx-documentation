@@ -1,0 +1,465 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>2.2. 搜索你的仪表板、设置和配置文件 &mdash; Building and Running an edX Course  documentation</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="../_static/css/favicon.ico"/>
+  
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  
+  
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:'../',
+        VERSION:'',
+        COLLAPSE_INDEX:false,
+        FILE_SUFFIX:'.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+
+    
+
+  
+
+  
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+
+  
+    <link rel="top" title="Building and Running an edX Course  documentation" href="../index.html"/>
+        <link rel="up" title="2. 开始使用edX" href="index.html"/>
+        <link rel="next" title="2.3. 开始了解Studio" href="get_started.html"/>
+        <link rel="prev" title="2.1. 开始使用edX" href="accounts.html"/> 
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-nav-search">
+        <a href="../index.html" class="icon icon-home"> Building and Running an edX Course</a>
+        <form class="wy-form" action="../search.html" method="get">
+  <input type="text" name="q" placeholder="Search document" />
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix">
+        
+        
+            <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../front_matter/index.html">1. 参考信息</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../front_matter/read_me.html">1.1. Read Me</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../front_matter/preface.html">1.2. 序言</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../front_matter/change_log.html">1.3. Change Log</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../front_matter/browsers.html">1.4. edX浏览器支持</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">2. 开始使用edX</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="accounts.html">2.1. 开始使用edX</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="">2.2. 搜索你的仪表板、设置和配置文件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="get_started.html">2.3. 开始了解Studio</a></li>
+<li class="toctree-l2"><a class="reference internal" href="accessibility.html">2.4. 创建无障碍课程指南</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../building_course/index.html">3. 建立您的课程</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/creating_new_course.html">3.1. 新建课程</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/scheduling_course.html">3.2. 设置开始和结束日期</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/setting_up_student_view.html">3.3. 设置课程细节</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/licensing_course.html">3.4. 授权课程</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/course_files.html">3.5. 给课程添加文件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/handouts_updates.html">3.6. 添加课程补充资料及讲义</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/pages.html">3.7. 为课程添加页面</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/textbooks.html">3.8. 添加课本</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/establish_grading_policy.html">3.9. 设定计分政策</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/course_rerun.html">3.10. 重开课程</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/export_import_course.html">3.11. 输出和导入课程</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../developing_course/index.html">4. 开发您的课程</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/workflow.html">4.1. 开始创建课程内容</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/course_outline.html">4.2. 创建课程大纲</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/course_sections.html">4.3. 创建课程章节</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/course_subsections.html">4.4. 构建课程小节</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/course_units.html">4.5. 构建课程单元</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/course_components.html">4.6. 创建课程组件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/controlling_content_visibility.html">4.7. 设置内容可见性</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/testing_courseware.html">4.8. 测试您的课程内容</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../creating_content/index.html">5. 创建课程内容</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../creating_content/create_html_component.html">5.1. 如何使用HTML组件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../creating_content/create_video.html">5.2. 创建影片组件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../creating_content/create_discussion.html">5.3. 创建讨论组件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../creating_content/create_problem.html">5.4. 创建问题组件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../creating_content/libraries.html">5.5. Working with Content Libraries</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../exercises_tools/index.html">6. 创建习题和工具</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/create_exercises_and_tools.html">6.1. 创建练习和工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/annotation.html">6.2. 注释问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/checkbox.html">6.3. 复选框问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/chemical_equation.html">6.4. 化学方程式问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/circuit_schematic_builder.html">6.5. 电路原理图搭建问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/conditional_module.html">6.6. 条件模板</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/custom_javascript.html">6.7. 自定义JavaScript问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/drag_and_drop.html">6.8. 拖放问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/dropdown.html">6.9. 下拉问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/external_graders.html">6.10. 图像映射输入问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/full_screen_image.html">6.11. 全屏图像工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/gene_explorer.html">6.12. Gene Explorer工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/google_calendar.html">6.13. 谷歌日历工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/google_docs.html">6.14. 谷歌云文件工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/google_hangouts.html">6.15. 谷歌即时群聊工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/iframe.html">6.16. IFrame工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/image_mapped_input.html">6.17. 图像映射输入问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/lti_component.html">6.18. LTI 组件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/math_expression_input.html">6.19. 数学表达式输入问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/molecule_editor.html">6.20. 分子编辑器</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/molecule_viewer.html">6.21. 分子浏览器</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/multiple_choice.html">6.22. 多项选择问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/mult_choice_num_input.html">6.23. 多项选择和数字输入题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/numerical_input.html">6.24. 数值输入问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/open_response_assessments/index.html">6.25. 开放性回答评估</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/periodic_table.html">6.26. 元素周期表工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/poll.html">6.27. 投票工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/problem_with_hint.html">6.28. 带适应性提示的问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/problem_in_latex.html">6.29. LaTeX问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/protein_builder.html">6.30. Protex蛋白质构建工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/randomized_content_blocks.html">6.31. 随机内容块</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/recommenderXBlock.html">6.32. 推荐系统</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/text_input.html">6.33. 文本输入问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/word_cloud.html">6.34. 文字云工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/custom_python.html">6.35. 自定义评分器问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/zooming_image.html">6.36. 图像放大工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/mathjax.html">6.37. Studio中MathJax的简要介绍</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../content_experiments/index.html">7. 创建内容实验</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../content_experiments/content_experiments_overview.html">7.1. Overview of Content Experiments</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../content_experiments/content_experiments_configure.html">7.2. 配置带有内容实验的课程</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../content_experiments/content_experiments_add.html">7.3. 为您的课程添加内容实验</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../content_experiments/content_experiments_view.html">7.4. Test Content Experiments</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../cohorts/index.html">8. 建立学生队列</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../cohorts/cohorts_overview.html">8.1. 使用队列功能建立课程群</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cohorts/cohort_config.html">8.2. 启用、配置分队模式</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cohorts/cohorted_courseware.html">8.3. 创建特定队列课件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cohorts/cohorts_setup_discussions.html">8.4. 在包含队列的课程中设置论坛</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cohorts/cohorts_manage_discussions.html">8.5. 管理有学生队列的论坛</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../releasing_course/index.html">9. 发布您的课程</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../releasing_course/beta_testing.html">9.1. 贝塔测试</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../releasing_course/course_launching.html">9.2. 课程发布事宜</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../releasing_course/staff_debug_info.html">9.3. 员工调试信息</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../running_course/index.html">10. 运营您的课程</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/course_staffing.html">10.1. 安置职工</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/course_enrollment.html">10.2. 招生</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/discussions.html">10.3. 管理课程讨论项目</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/discussions_students.html">10.4. 参与课程讨论</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/discussion_guidance_moderators.html">10.5. 论坛协调员指南</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/bulk_email.html">10.6. Bulk Email</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/course_wiki.html">10.7. 使用课程维基</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/course_data.html">10.8. 课程数据</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/course_student.html">10.9. 学生数据</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/course_answers.html">10.10. 回答问题数据</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/course_grades.html">10.11. 学生成绩与成绩评定</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/checking_student_progress.html">10.12. 总成绩计算与证书发放</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../students/index.html">11. 学生相关信息</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../students/login_guide.html">11.1. 学生登录指南示例</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../students/math_students.html">11.2. 学生数学题回答格式化</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../students/ora_students.html">11.3. 学生开放回答评估</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../glossary.html">12. Glossary</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#a">12.1. A</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#c">12.2. C</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#d">12.3. D</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#e">12.4. E</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#f">12.5. F</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#g">12.6. G</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#h">12.7. H</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#i">12.8. I</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#k">12.9. K</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#l">12.10. L</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#m">12.11. M</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#n">12.12. N</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#o">12.13. O</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#p">12.14. P</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#q">12.15. Q</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#r">12.16. R</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#s">12.17. S</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#t">12.18. T</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#u">12.19. U</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#v">12.20. V</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#w">12.21. W</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary.html#xyz">12.22. XYZ</a></li>
+</ul>
+</li>
+</ul>
+
+        
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top">
+        <i data-toggle="wy-nav-top" class="icon icon-reorder"></i>
+        <a href="/">Building and Running an edX Course</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <ul class="wy-breadcrumbs">
+  <li><a href="../index.html">Table of Contents</a> &raquo;</li>
+  <li><a href="">2.2. 搜索你的仪表板、设置和配置文件</a></li>
+  
+</ul>
+<hr/>
+
+          
+  <div class="section" id="sfd-dashboard-settings-profile">
+<span id="id1"></span><h1>2.2. 搜索你的仪表板、设置和配置文件<a class="headerlink" href="#sfd-dashboard-settings-profile" title="Permalink to this headline">¶</a></h1>
+<p>您创建一个edX账号后，您可以查看您当前的课程列表，更改您的帐户设置，或创建一个配置文件。
+您可以从任何edX页面获取您的账户或个人资料信息，无论你是在一门课程中或浏览课程目录中。</p>
+<ul class="simple">
+<li>Your <a class="reference internal" href="#sfd-learner-dashboard"><span>dashboard</span></a> 允许您访问课程信息，如开始和结束日期，电子邮件设置和证书。</li>
+</ul>
+<p>选择任何edX页面的右上角您的用户名，您可以在任何时间访问您的仪表盘。
+* The <a class="reference internal" href="#sfd-account-settings"><span>Account Settings</span></a> 该页面允许您更改设置，比如您的电子邮件地址、教育程度以及国家或地区，并且您可以将您的edX账户链接到Facebook或谷歌账户。
+若您想在任何时间查看您的账户设置，在任何edX页面的右上角选择您的用户名，然后选择 <strong>账户设置</strong> 。
+* On your <a class="reference internal" href="#sfd-profile-page"><span>profile page</span></a>  您可以创建一个配置文件，包括图像和传记资料。若要访问您的个人资料在任何时候，请在任何edX页面的右上角选中您的用户名，然后选择 <strong>我的个人资料</strong> 。</p>
+<div class="section" id="sfd-learner-dashboard">
+<span id="id2"></span><h2>2.2.1. 搜索学习者的仪表板<a class="headerlink" href="#sfd-learner-dashboard" title="Permalink to this headline">¶</a></h2>
+<p>当您创建一个edX账户或者登陆您的edX的课程，您会自动跳转到您的仪表板。
+你也可以在任何时候在任何edX页面的右上角选中您的用户名来访问您的仪表板。</p>
+<a class="reference internal image-reference" href="../_images/SFD_Dashboard.png"><img alt="The learner dashboard with two current courses and two archived courses listed" src="../_images/SFD_Dashboard.png" style="width: 500px;" /></a>
+<p>您的仪表板包括关于您的课程的重要信息。您可以在您的仪表板上进行一系列操作。</p>
+<ul>
+<li><p class="first">访问您当前和已归档的课程。</p>
+<p>为了访问您当前或已归档的课程，请选择 <strong>查看课程</strong> or <strong>查看已归档课程</strong>。需要注意的是存档的课程只可以提供有限的访问内容。</p>
+</li>
+<li><p class="first">查看课程已开始还是已结束。</p>
+<p>课程的开始日期和截止日期显示在课程的名称下方。</p>
+<ul class="simple">
+<li>如果一个课程还没有开始，您可以看到课程开始日期。</li>
+<li>如果一个课程已开始但是还没有结束，您可以看到课程的结束日期。</li>
+<li>如果一个课程已经结束，您可以看到结束日期。</li>
+</ul>
+</li>
+<li><p class="first">更改您课程的电子邮件设置。</p>
+<ol class="arabic simple">
+<li>选择课程选项图标，然后选择 <strong>课程电子邮件</strong> 。</li>
+<li>选中或清除 <strong>接收电子邮件</strong> 复选框，然后选择 <strong>保存设置</strong> 。</li>
+</ol>
+</li>
+<li><p class="first">取消注册的课程。</p>
+<p>要取消注册，选择该课程的选项图标，选择 <strong>取消注册</strong> ，然后选择 <strong>取消注册</strong> 的确认对话框。</p>
+</li>
+<li><p class="first">查看您已完成的课程的成绩。</p>
+<p>您最终的成绩显示在该课程的名称下方。</p>
+</li>
+<li><p class="first">下载证书。</p>
+<p>若您需要下载证书，请选择 <strong>下载您的证书（PDF）</strong> 或 <strong>下载你的ID身份认证（PDF）</strong> 。然后，您可以打印PDF证书。</p>
+</li>
+</ul>
+</div>
+<div class="section" id="sfd-account-settings">
+<span id="id3"></span><h2>2.2.2. 探索帐户设置页面<a class="headerlink" href="#sfd-account-settings" title="Permalink to this headline">¶</a></h2>
+<p>当您在edX创建一个账户，一些基本信息需要您提供，包括您的电子邮件地址和姓名。
+当您创建您的edX账户时，您可以提供额外的可选的信息，比如您当前的受教育程度。
+课程的相关工作人员可以访问这些信息，以了解更多有关注册他们课程的学习者的资料。
+这些信息也有助于帮助edX提高我们的课程的质量和数量。</p>
+<div class="section" id="sfd-basic-information">
+<span id="id4"></span><h3>2.2.2.1. 查看或更改基本帐户信息<a class="headerlink" href="#sfd-basic-information" title="Permalink to this headline">¶</a></h3>
+<p>基本账户信息包括以下信息。这些信息是每个edX帐户所必须的。</p>
+<ul class="simple">
+<li><strong>用户名</strong> : 一个用来在edx.org上识别您的名称。注意，您不可以更改您的edX用户名。</li>
+<li><strong>全名</strong> : 在您edX证书上的名称。其他的学习者无法看到您的全名。</li>
+<li><strong>电子邮件地址</strong> : 该电子邮件用来登陆edX。并且该邮箱可以会收到来自edX和您的课程的信息。</li>
+<li><strong>密码</strong> : 您登陆edx.org的密码。选择 <strong>重设密码</strong> 以重新设置您的密码。然后edX将发送电子邮件到您的电子邮件地址。您可以选择邮件中的连接地址来完成重新设置您的密码。</li>
+<li><strong>语言</strong> : 在您访问edX站点时所使用的语言。目前edX站点所使用的语言有限。</li>
+<li><strong>国家和地区</strong> : 您居住的国家或地区。</li>
+</ul>
+<p>请参考以下步骤以查看或者更改这些信息。</p>
+<ol class="arabic simple">
+<li>在任何edX页面上，选择页面右上角您的账户名旁边的箭头，并且选择 <strong>账户设置</strong> 。</li>
+<li>在 <strong>帐户设置页面</strong> ，找到 <strong>基本帐户信息（必需）</strong> 部分，然后进行更改。</li>
+</ol>
+<p>edX会自动保存您的更改。</p>
+</div>
+<div class="section" id="sfd-additional-info">
+<span id="id5"></span><h3>2.2.2.2. 制定附加信息<a class="headerlink" href="#sfd-additional-info" title="Permalink to this headline">¶</a></h3>
+<p>其他帐户信息是可选的，包括以下信息。</p>
+<ul class="simple">
+<li><strong>已受教育</strong> : 您已受的教育的最高水平。</li>
+<li><strong>性别</strong> : 您的性别。</li>
+<li><strong>出生年份</strong> : 您的出生年份。</li>
+<li><strong>首选语言</strong> : 您交流所首选的语言。</li>
+</ul>
+<p>要查看或更改此信息，请按照下列步骤操作。</p>
+<ol class="arabic simple">
+<li>在任何edX页面的右上角选择您的用户名，然后选择 <strong>账户设置</strong> 。</li>
+<li>在 <strong>账户设置</strong> 页面，找到 <strong>附加信息（可选）</strong> 部分，然后进行更改。</li>
+</ol>
+<p>edX会自动保存您的更改。</p>
+</div>
+<div class="section" id="id6">
+<h3>2.2.2.3. 链接或取消链接到社交媒体帐户<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h3>
+<p>您可以将您的帐户EDX链接到你的Facebook或谷歌帐户。如果您已链接您的帐户，您可以使用Facebook或谷歌账户自动登录。</p>
+<p>链接您的账户请参考以下步骤。</p>
+<ol class="arabic">
+<li><p class="first">在任何edX页面的右上角选择您的用户名，然后选择 <strong>账户设置</strong> 。</p>
+</li>
+<li><p class="first">在 <strong>链接帐户</strong> 部分，选择 <strong>链接</strong> 到Facebook或者谷歌。</p>
+<p>如果你想将你的edX账户取消与Facebook或谷歌帐户的链接，在 <strong>链接帐户</strong> 部分，选择 <strong>取消链接</strong> 到Facebook或者谷歌。</p>
+</li>
+</ol>
+</div>
+</div>
+<div class="section" id="sfd-profile-page">
+<span id="id7"></span><h2>2.2.3. 探索个人主页<a class="headerlink" href="#sfd-profile-page" title="Permalink to this headline">¶</a></h2>
+<p>您的edX个人资料可以让在edX讨论区分享您的个人资料。您的edX个人资料可以包含您在edX站点的识别头像，以及您的位置和其他个人履历。课程团队和课程学习者可以在您的课程中查看您的个人资料。</p>
+<p>您可以分享有限的或者全部个人资料。</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">十三岁以下的学习者只能分享有限的资料。</p>
+</div>
+<p>有限的资料可以只包含您的用户名以及头像。</p>
+<a class="reference internal image-reference" href="../_images/SFD_Prof_Limited.png"><img alt="A learner's limited profile showing only username and image" src="../_images/SFD_Prof_Limited.png" style="width: 400px;" /></a>
+<p>全部个人信息可以包含个人履历。</p>
+<a class="reference internal image-reference" href="../_images/SFD_Prof_Full.png"><img alt="A learner's full profile with location, language, and short biographical paragraph" src="../_images/SFD_Prof_Full.png" style="width: 500px;" /></a>
+<div class="section" id="id8">
+<h3>2.2.3.1. 创建或者编辑有限的个人资料<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h3>
+<p>有限的资料仅包括你的用户名和头像（可选）。</p>
+<p>创建或编辑有限资料，请参考以下步骤的操作。</p>
+<ol class="arabic">
+<li><p class="first">在任何edX页面的右上角选择您的用户名，然后选择 <strong>我的资料</strong> 。</p>
+</li>
+<li><p class="first">在您的个人资料页面，在页面的左上角找到 <strong>edX学习者可以看到我的信息</strong> ，然后选择 <strong>限制个人信息</strong> 。</p>
+</li>
+<li><p class="first">（可选）添加一个头像与您的edX用户名关联。
+您的头像必须是一个.gif、.jpg或者.png格式的文件。大小在0.1KB到100MB之间。如果您不添加头像，则头像栏会显示您的个人资料图片。</p>
+<ol class="arabic simple">
+<li>将光标移动到头像栏，然后选择 <strong>上传图片</strong> 。</li>
+<li>在弹出的对话框中，选择您想要的图像文件，然后单击 <strong>打开</strong> 。</li>
+</ol>
+<p>更改或删除您的个人资料图片，请将光标移到头像，然后选择 <strong>更改图片</strong> 或 <strong>删除</strong> 。当您删除您的头像的时候，头像栏会显示您的个人资料图片。</p>
+</li>
+</ol>
+<p>edX会自动保存您的更改。</p>
+</div>
+<div class="section" id="id9">
+<h3>2.2.3.2. 创建或编辑完整的个人资料<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h3>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">您必须在您分享您的全部个人资料之前在账户设置页面制定您的出生年份。如果您的年龄没有超过13周岁，您只能分享有限的个人资料。</p>
+</div>
+<p>完整的个人资料可以包含以下信息。您的用户名、国家或地区是必须要求的。</p>
+<ul class="simple">
+<li>您的用户名。</li>
+<li>您选择的头像作为edX站点上的身份标识。</li>
+<li>您的国家或地区。</li>
+<li>您的首选语言。</li>
+<li>一段自己的简介，可以包含您的兴趣、志向或者其他您想要分享的信息。要求3000个字母以内。</li>
+</ul>
+<p>参考以下步骤，创建或者编辑您的个人信息。</p>
+<ol class="arabic">
+<li><p class="first">在任何edX页面的右上角选择您的用户名，然后选择 <strong>我的资料</strong> 。</p>
+</li>
+<li><p class="first">在您的个人资料页面，在页面的左上角找到 <strong>edX学习者可以看到我的信息</strong> ，然后选择 <strong>完整个人信息</strong> 。</p>
+</li>
+<li><p class="first">在您的个人信息页面，将光标移动到要添加或者修改的信息。</p>
+<p>如果您还没有添加任何信息，会有高亮和虚线框提示。</p>
+<a class="reference internal image-reference" href="../_images/SFD_Prof_Add_Info.png"><img alt="A profile page with the &quot;Add language&quot; field highlighted and surrounded by a dashed line" src="../_images/SFD_Prof_Add_Info.png" style="width: 300px;" /></a>
+<p>如果该字段已经有信息，则会有高亮显示，并且会有铅笔图标出现在其右上角。</p>
+<a class="reference internal image-reference" href="../_images/SFD_Prof_Edit_Info.png"><img alt="A profile page with the &quot;About Me&quot; field highlighted" src="../_images/SFD_Prof_Edit_Info.png" style="width: 500px;" /></a>
+</li>
+<li><p class="first">将您的光标移动到信息框内，然后您可以输入文本或者从列表中选择不同的选项。</p>
+</li>
+</ol>
+<p>edX会自动保存您的更改。</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">如果您将您的个人资料类型从 <strong>全部个人资料</strong> 更改为 <strong>有限个人资料</strong> ，您的地址，语言，简介在您的个人资料页面上都不可见。但是，这些信息会被保存。若想让这些信息可见，请选择 <strong>全部个人资料</strong> 。</p>
+</div>
+</div>
+<div class="section" id="id10">
+<h3>2.2.3.3. 查看其他学习者的个人资料<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h3>
+<p>您可以通过课程讨论来浏览其他学习者的个人资料。</p>
+<ol class="arabic simple">
+<li>在 <strong>讨论</strong> 页面，在链接、回复或者评论处选择用户名。</li>
+<li>当 <strong>活跃的主题</strong> 页面打开时，在页面的左上角选择学习者的用户名。</li>
+</ol>
+<p>下图显示了学习者的用户名，在链接处、在 <strong>活跃的主题</strong> 页面、在学习者的个人信息页面。</p>
+<a class="reference internal image-reference" href="../_images/SFD_Prof_from_Disc.png"><img alt="Image of a discussion with a learner's username circled, an image of that learner's active threads page in the course discussions, and an image of the learner's profile" src="../_images/SFD_Prof_from_Disc.png" style="width: 600px;" /></a>
+</div>
+</div>
+</div>
+
+
+          <footer>
+  
+    <div class="rst-footer-buttons">
+      
+        <a href="get_started.html" class="btn btn-neutral float-right" title="2.3. 开始了解Studio"/>Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="accounts.html" class="btn btn-neutral" title="2.1. 开始使用edX"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <p>
+      &copy; Copyright 2015, edX.
+  </p>
+
+ 
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+</body>
+</html>
