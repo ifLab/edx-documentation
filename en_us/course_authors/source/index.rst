@@ -4,7 +4,7 @@
    contain the root `toctree` directive.
 
 
-创建并运营一门edX课程
+创建并运营一门edX课程-edustack.org
 ========================================
 
 .. toctree::
