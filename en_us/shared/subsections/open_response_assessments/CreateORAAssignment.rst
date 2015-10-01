@@ -1,286 +1,204 @@
 .. _PA Create an ORA Assignment:
 
 #############################################
-Create an Open Response Assessment Assignment
+创建一个开放题回答评估
 #############################################
 
 
-Creating an open response assessment is a multi-step process:
+创建一个开放题回答评估有如下步骤:
 
 
-* :ref:`PA Create Component`
-* :ref:`PA Add Prompt`
-* :ref:`PA Add Rubric`
-* :ref:`PA Specify Name and Dates`
-* :ref:`PA Select Assignment Steps`
-* :ref:`PA Specify Step Settings`
-* :ref:`PA Show Top Responses`
-* :ref:`PA Test Assignment`
+* :ref:`创建组件`
+* :ref:`添加提示`
+* :ref:`添加标准`
+* :ref:`指定名称和日期`
+* :ref:`挑选评估步骤`
+* :ref:`指定步骤设置`
+* :ref:`显示最高分回答`
+* :ref:`测试评估`
 
-Each of these steps is covered in detail below.
+这些步骤的详细介绍如下.
 
-For more information about the components of an open response assessment, see
-:ref:`Open Response Assessments 2`. For information about viewing metrics and
-student responses for released open response assessments, see :ref:`Accessing
-ORA Assignment Information`.
+想要了解更多关于开放题回答评估组件的信息，请查看
+:ref:`开放题回答评估 2`. 要了解更多关于浏览标准和学生关于回答开放题回答评估的信息，请查看, see :ref:`访问ORA评估信息`.
 
 
-.. _PA Create Component:
+.. _创建组件:
 
 ******************************
-Step 1. Create the Component
+步骤 1. 创建组件
 ******************************
 
-To create the component for your open response assessment, complete these steps.
+要创建一个你的开放题回答评估组价,有如下步骤。
 
-#. In Studio, open the unit where you want to create the open response
-   assessment.   
-#. Under **Add New Component**, click **Problem**, click the **Advanced** tab,
-   and then click **Peer Assessment**.
-#. In the Problem component that appears, click **Edit**.
+#. 在Studio中, 打开你要创建开放题回答评估的单元.   
+#. 在 **添加新组件下方**, 点击 **问题**, 点击 **高级** 标签, 然后点击 **同伴评估**.
+#. 在这个问题组件出现的地方, 点击 **编辑**.
 
 
-.. _PA Add Prompt:
+.. _添加提示:
 
 ******************************
-Step 2. Add Prompts
+步骤 2. 添加提示
 ******************************
 
-To add prompts, or questions, complete these steps.
+要添加提示或者问题，有以下的步骤:
 
-#. In the open response assessment component editor, select the **Prompt** tab.
-#. Add the text of your question in the text field. Replace any default text if
-   necessary.
-#. Select **Add a Prompt** to add another prompt in the problem.
+#. 在开放题回答评估编辑器中选择**提示**标签.
+#. 添加你的问题文本到文本区域。用你的文本替代默认的文本。
+#. 选择 **添加一个提示** 带另一个提示中.
 
 
 ========================================
-Add Formatting or Images to a Prompt
+添加格式或者提现到一个提示中
 ========================================
 
-Currently, you cannot add text formatting or images inside the Peer Assessment
-component. To include formatting or images within the text of a prompt, you
-can add an HTML component that contains your text above the Peer Assessment
-component, and leave the text field in the **Prompt** tab blank. The
-instructions for the peer assessment still appear above the **Your Response**
-field.
+现在，你不能添加文本格式或者图像到同伴评估组件中。要设置格式或者图像到提示文本中，你可以添加一个HTML组件包含你的文本到你的开放题回答评估中, 保持**提示标签** 空白. 这个同伴评估的说明依然会出现在**你的回答**区域.
 
 .. image:: ../../../../shared/building_and_running_chapters/Images/PA_HTMLComponent.png
       :alt: A peer assessment that has an image in an HTML component
       :width: 500
 
-.. _PA Allow Images:
-
-============================================
-Allow Students to Submit Images (optional)
-============================================
+.. _:
 
 
-To allow students to submit an image with a response, complete these steps.
-
-#. In the open response assessment component editor, click the **Settings** tab.
-#. For **Allow Image Responses**, select **True**.
-
-.. note:: 
- 
-   * The image file must be a .jpg or .png file, and it must be smaller than 5
-     MB in size. 
-   * Currently, course teams cannot see any of the images that
-     students submit. Images are not visible in the body of the assignment in
-     the courseware, and they are not included in the course data package.
-   * You can allow students to upload an image, but you cannot require it.
-   * Students can only submit one image with each response.     
-   * All responses must contain text. Students cannot submit a response that
-     contains only an image.
-
-.. _PA Add Rubric:
+.. _添加标准:
 
 ******************************
-Step 3. Add the Rubric
+步骤 3. 添加标准
 ******************************
 
-In this step, you add your rubric and provide your students with feedback
-options. You add one rubric for each problem, regardless of the number of
-prompts in the problem.
+在这步，你可以添加你的标准并且提供给你的学生反馈选项。你也可以给每个问题都添加标准，不管问题中提示的个数。
+对于下面的每步，用你自己的文本代替默认的文本.
 
-For each step below, replace any default text with your own text.
+.. note:: 所有的开放题评估包含都一个反馈区域在标准下方以便学生可以提供同伴全部回答反馈。你也可以允许或者要求学生提供对于个性标准的回馈。更多相关信息,请查看:ref:`Feedback Options`.
 
-.. note:: All open response assessments include a feedback field below the
-   rubric so that students can provide written feedback on a peer's overall
-   response. You can also allow or require students to provide feedback for
-   individual criteria. See step 2.4 below for instructions. For more
-   information, see :ref:`Feedback Options`.
+要添加一个标准，有以下的步骤.
 
-To add the rubric, complete these steps.
+#. 在开放题回答评估中，店家**标准** 标签.
+#. 在第一个 **标准** 章节, 输入你的第一个标准的名字.
+#. 在第一个 **选项** 章节, 输入第一个选项的名字, 解释, 和分值.
+#. 在下一个**选项** 章节,输入下一个选项的名字, 解释, 和分值.
+#. 对于每个选项重复第四步. 如果你要添加更多选项, 点击 **添加选项**.
+#. 在 **这个标准的反馈**旁边, 在下拉菜单中选择一个值.
 
-#. In the open response assessment component editor, click the **Rubric** tab.
-#. In the first **Criterion** section, enter the name and prompt text of your first criterion.
-#. In the first **Option** section, enter the name, explanation, and point value for the first option.
-#. In the next **Option** section, enter the name, explanation, and point value for the next option.
-#. Repeat step 4 for each option. If you need to add more options, click **Add Option**.
-#. Next to **Feedback for This Criterion**, select a value in the drop-down list.
+   * 如果你不想要你的学生提供反馈，选择 **None**.
+   * 如果你要求学生必须提供反馈, 选择 **Required**.
+   * 如果你要求学生可选择提供反馈, 选择 **Optional**.
 
-   * If you do not want students to provide feedback for this individual criterion, select **None**.
-   * If you want to require students to provide feedback, select **Required**.
-   * If you want to allow students to provide feedback, but not require it, select **Optional**.
-
-7. Follow the instructions in steps 2-6 to add your remaining criteria. If you need to add more criteria, click **Add Criterion** at the end of the list of criteria.
-#. Include instructions for students to provide overall written feedback on their peers' responses. You can leave the default text in the **Feedback Instructions** field or replace it with your own text.
-
-.. _PA Criteria Comment Field Only:
-
-==========================================================
-Provide Only Comment Fields for Individual Criteria
-==========================================================
-
-When you add a comment field to a criterion, the comment field appears below the
-options for the criterion. You can also provide a comment field, but no options.
-
-In the following image, the first criterion has a comment field but no options. The second includes options, but does not have a comment field.
-
-.. image:: ../../../../shared/building_and_running_chapters/Images/PA_0_Option_Criteria.png
-
-To provide a comment field without options, complete these steps.
-
-#. In the criterion, click **Remove** to remove, or delete, all the options.
-#. Next to **Feedback for This Criterion**, select **Required** in the drop-down list.
-
-.. _PA Specify Name and Dates:
+.. _指定名称和日期:
 
 ************************************************************
-Step 4. Specify the Assignment Name and Response Dates
+步骤 4. 指定名称和日期评估的名称和日期
 ************************************************************
 
-To specify a name for the assignment as well as start and due dates for all
-student responses, complete these steps.
+要指定一个评估的名称和学生回答的开始与结束的日期，有以下的步骤：
 
-#. In the component editor, click the **Settings** tab.
-#. Next to **Display Name**, type the name you want to give the assignment.
-#. Next to **Response Start Date** and **Response Start Time**, enter the date and time when you want students to be able to begin submitting responses. Note that all times are in Universal Coordinated Time (UTC).
-#. Next to **Response Due Date** and **Response Due Time**, enter the date and time by which all student responses must be submitted. Note that all times are in Universal Coordinated Time (UTC).
+#. 在组件编辑器中, 点击**设置** 标签.
+#. 在 **展示名称**旁边, 键入你想要给这个评估的名字.
+#. 选择 **回答开始日期** 和 **回答开始时间**, 输入你想要学生开始提交回答的日期. 注意所有的时间都是世界时间(UTC).
+#. 选择 **回答结束日期** 和 **回答结束时间**, 输入你想要学生结束提交回答的日期. 注意所有的时间都是世界时间(UTC).
 
-.. note:: We recommend that you set the response due date and time at least two days before the peer assessment due date and time. If the response due time and peer assessment due time are close together, and a student submits a response just before responses are due, other students may not have time to perform peer assessments before peer assessments are due.
 
-.. _PA Select Assignment Steps:
+.. note:: 我们建议你设置结束日期最少在开始日期两天后. 如果回答结束日期和同伴评估同时关闭，学生提交的回答仅仅在关闭之前，其他的学生可能没时间进行同伴评估在同伴评估之前。
+
+.. _挑选评估步骤:
 
 ****************************************
-Step 5. Select Assignment Steps
+步骤 5. 挑选评估步骤
 ****************************************
 
-Open response assessment assignments can include student training, peer assessment, and self assessment steps. You can include a peer assessment step before a self assessment step and vice versa. 
+开放题回答评估可以包含学生练习，同伴评估和自我评估。你可以设置包含一个同伴评估步在自我评估之前，反之亦然。
 
-If you include a student training step, you **must** include a peer assessment step. You can also include a self assessment step. The student training step must come before both the peer assessment and the self assessment step.
+如果你设置了包含一个学生练习步骤, 你也 **必须** 包含一个同伴评估步骤。你也可以包含自我评估步骤。学生练习步骤必须在同伴评估和自我评估步骤之前。
 
-To add steps to the assignment:
+要添加步骤到评估:
 
-#. In the component editor, click the **Settings** tab.
-#. Scroll down past the **Allow Image Responses** field.
-#. Locate the following headings:
+#. 在组件编辑器中，点击**设置** 标签.
+#. 向下滚动到 **允许图片回答** 区域.
+#. 找到下面的标题:
 
-   * **Step: Student Training**
-   * **Step: Peer Assessment**
-   * **Step: Self Assessment**
+   * **步骤: 学生练习**
+   * **步骤: 同伴评估**
+   * **步骤: 自我评估**
 
-   Select the check boxes for the steps that you want the assignment to include. 
+  在复选框中选择你想要这个评估包含的步骤. 
 
-#. (optional) If you want to change the order of the steps, drag the steps into the order that you want. If you include a student training step, make sure it is the first step in the assignment.
-
-.. _PA Specify Step Settings:
+.. _指定步骤设置:
 
 ******************************
-Step 6. Specify Step Settings
+步骤 6. 指定步骤设置
 ******************************
 
-After you select the steps that you want, you can specify settings for those
-steps.
+在你选择你想要的步骤之后，你可以指定这些设置.
 
-.. note:: If you make changes to a step, but then you clear the check box for that step, the step will no longer be part of the assignment and your changes will not be saved. 
-
-.. _PA Student Training Step:
+.. _学生练习步骤:
 
 ========================
-Student Training
+学生练习
 ========================
 
-For the student training step, you enter one or more responses that you have
-created, then select an option for each criterion in your rubric.
+对于学生练习步骤, 你可以输入一个或者多个你创建的回答, 然后对于每个你制定的标准选择一个选项.
 
-.. note:: You must enter your complete rubric on the **Rubric** tab before you
-   can select options for the student training responses. If you later change one
-   of your criteria or any of its options, you must also update the student
-   training step.
+.. note:: 你必须输入你的完整的标准在**标准** 标签上在你选择为学生选择练习回答之前.如果你之后改变一个你的标准，你必须同时升级学生练习步骤.
 
-To add and score student training responses:
+要添加给学生练习评估评分步骤:
 
-#. Under **Step: Student Training**, locate the first **Scored Response** section.
-#. In the **Response** field, enter the text of your example response.
-#. Under **Response Score**, select the option that you want for each criterion.
+#. 在 **步骤: 学生练习**下面, 选择第一个 **回答评分** 节.
+#. 在**回答** 区域里面, 输入你的示例文本.
+#. 在**回答评分**下方, 选择你想要的给每个标准添加的选项.
 
-For more information, see :ref:`PA Student Training Assessments`.
+更多相关信息, 请查看 :ref:`学生练习步骤`.
 
 ============================
-Peer Assessment
+同伴评估
 ============================
 
-For the peer assessment step, you specify the number of responses that each
-student must grade, the number of students who must grade each response, and
-start and due dates. All fields are required.
+对于同伴评估步骤, 你要指定每个学生必须给回答评分的个数,这个学生必须给回答评分的个数,在开始时间和结束时间内，所有的区域都是必要的.
 
-To specify peer assessment settings:
+要指定同伴评估设置:
 
-#. Locate the **Step: Peer Assessment** heading.
-#. Next to **Must Grade**, enter the number of responses that each student must grade.
-#. Next to **Graded By**, enter the number of students that must grade each response.
-#. Next to **Start Date** and **Start Time**, enter the date and time when students can begin assessing their peers' responses. All times are in Universal Coordinated Time (UTC).
-#. Next to **Due Date** and **Due Time**, enter the date and time by which all peer assessments must be complete. All times are in UTC.
+#. 位于 **步骤: 同伴评估** 标题.
+#. 在**必须评分**旁边, 输入学生必须评分的个数.
+#. 在**评分**区域, 输入每个回答学生必须评分的个数.
+#. 在 **开始日期** 和 **开始时间**旁边, 输入日期和时间。所有的时间都是世界时间(UTC).
+#. 在 **结束日期** 和 **结束时间**, 输入日期和时间. 所有的时间都是世界时间(UTC).
 
 ============================
-Self Assessment
+自我评估
 ============================
 
-For the self assessment step, you specify when the step starts and ends.
+对于自我评估步骤, 你可以指定何时开始和结束.
 
-#. Locate the **Step: Self Assessment** heading.
+#. 位于在 **步骤: 自我评估** 标题.
    
-#. Next to **Start Date** and **Start Time**, enter the date and time when
-   students can begin assessing their peers' responses. All times are in
-   Universal Coordinated Time (UTC).
+#. 在**开始日期** 和 **开始时间**, 输入日期和时间. 所有的时间都是世界时间(UTC).
    
-#. Next to **Due Date** and **Due Time**, enter the date and time by which all peer assessments must be complete. All times are in UTC.
+#. 在 **结束日期** 和 **结束时间**, 输入日期和时间. 所有的时间都是世界时间(UTC).
 
-.. _PA Show Top Responses:
+.. _显示最高分回答:
 
 ******************************
-Step 7. Show Top Responses
+步骤 7. 展示最高分评估
 ******************************
 
-To allow students to see the top-scoring responses for the assignment, you
-specify a number on the **Settings** tab.
+要允许学生看到最高分评估，你可以指定一个数字在**设置** 标签.
 
-#. In the component editor, click the **Settings** tab.
+#. 在组件编辑器里，点击 **设置** 标签.
    
-#. In the **Top Responses** field, specify the number of responses that you want
-   to appear in the **Top Responses** section below the student's final score.
-   If you do not want this section to appear, set the number to 0. The maximum
-   number is 100.
+#. 在**最高分回答**区域, 指定一个你想要出现在**最高分回答**在学生的最终得分下方。如果你不想要这个节出现，设置为0.最高分是100.
 
-.. note:: Because each response can be up to 300 pixels in height, we recommend
-   that you set the number of top responses to 20 or lower, to prevent the page
-   from becoming too long.
+.. note:: 由于每个回答可以有300像素高，我们建议你设置最高分回答低于20，不然页面就会太长了。
 
-For more information, see :ref:`PA Top Responses`.
+更多相关信息, 请查看:ref:`最高分回答`.
 
 
-.. _PA Test Assignment:
+.. _测试评估:
 
 ******************************
-Step 8. Test the Assignment
+步骤 8. 测试评估回答
 ******************************
 
-To test your assignment, set up the assignment in your course, set the section
-or subsection date in the future, and ask a group of beta users to submit
-responses and grade each other. The beta testers can then let you know if they
-found the question and the rubric easy to understand or if they had any problems
-with the assignment.
+要测试你的评估，开始你课程中的评估，设置未来的章或节日期，测试版测试者可以让你知道是否出现问题。
 
-For more information about beta testing, see :ref:`Beta_Testing`.
+更多关于测试版测试信息, 请查看 :ref:`测试版_测试`.

@@ -7,7 +7,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>6.25.2. Create an Open Response Assessment Assignment &mdash; Building and Running an edX Course  documentation</title>
+  <title>6.25.1. 创建一个开放题回答评估 &mdash; Building and Running an edX Course  documentation</title>
   
 
   
@@ -47,8 +47,8 @@
   
     <link rel="top" title="Building and Running an edX Course  documentation" href="../../index.html"/>
         <link rel="up" title="6.25. 开放性回答评估" href="index.html"/>
-        <link rel="next" title="6.25.3. Accessing Assignment and Student Metrics" href="Access_ORA_Info.html"/>
-        <link rel="prev" title="6.25.1. Open Response Assessments" href="OpenResponseAssessments.html"/> 
+        <link rel="next" title="6.25.2. Accessing Assignment and Student Metrics" href="Access_ORA_Info.html"/>
+        <link rel="prev" title="&lt;no title&gt;" href="OpenResponseAssessments.html"/> 
 
   <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
 
@@ -248,244 +248,163 @@
         <div class="rst-content">
           <ul class="wy-breadcrumbs">
   <li><a href="../../index.html">Table of Contents</a> &raquo;</li>
-  <li><a href="">6.25.2. Create an Open Response Assessment Assignment</a></li>
+  <li><a href="">6.25.1. 创建一个开放题回答评估</a></li>
   
 </ul>
 <hr/>
 
           
-  <div class="section" id="create-an-open-response-assessment-assignment">
-<span id="pa-create-an-ora-assignment"></span><h1>6.25.2. Create an Open Response Assessment Assignment<a class="headerlink" href="#create-an-open-response-assessment-assignment" title="Permalink to this headline">¶</a></h1>
-<p>Creating an open response assessment is a multi-step process:</p>
+  <div class="section" id="pa-create-an-ora-assignment">
+<span id="id1"></span><h1>6.25.1. 创建一个开放题回答评估<a class="headerlink" href="#pa-create-an-ora-assignment" title="Permalink to this headline">¶</a></h1>
+<p>创建一个开放题回答评估有如下步骤:</p>
 <ul class="simple">
-<li><a class="reference internal" href="#pa-create-component"><span>Step 1. Create the Component</span></a></li>
-<li><a class="reference internal" href="#pa-add-prompt"><span>Step 2. Add Prompts</span></a></li>
-<li><a class="reference internal" href="#pa-add-rubric"><span>Step 3. Add the Rubric</span></a></li>
-<li><a class="reference internal" href="#pa-specify-name-and-dates"><span>Step 4. Specify the Assignment Name and Response Dates</span></a></li>
-<li><a class="reference internal" href="#pa-select-assignment-steps"><span>Step 5. Select Assignment Steps</span></a></li>
-<li><a class="reference internal" href="#pa-specify-step-settings"><span>Step 6. Specify Step Settings</span></a></li>
-<li><a class="reference internal" href="#pa-show-top-responses"><span>Step 7. Show Top Responses</span></a></li>
-<li><a class="reference internal" href="#pa-test-assignment"><span>Step 8. Test the Assignment</span></a></li>
+<li><a class="reference internal" href="#id2"><span>步骤 1. 创建组件</span></a></li>
+<li><a class="reference internal" href="#id4"><span>步骤 2. 添加提示</span></a></li>
+<li><a class="reference internal" href="#id7"><span>步骤 3. 添加标准</span></a></li>
+<li><a class="reference internal" href="#id11"><span>步骤 4. 指定名称和日期评估的名称和日期</span></a></li>
+<li><a class="reference internal" href="#id15"><span>步骤 5. 挑选评估步骤</span></a></li>
+<li><a class="reference internal" href="#id17"><span>步骤 6. 指定步骤设置</span></a></li>
+<li><a class="reference internal" href="#id25"><span>步骤 7. 展示最高分评估</span></a></li>
+<li><a class="reference internal" href="#id27"><span>步骤 8. 测试评估回答</span></a></li>
 </ul>
-<p>Each of these steps is covered in detail below.</p>
-<p>For more information about the components of an open response assessment, see
-<a class="reference internal" href="OpenResponseAssessments.html#open-response-assessments-2"><span>Open Response Assessments</span></a>. For information about viewing metrics and
-student responses for released open response assessments, see <a class="reference internal" href="Access_ORA_Info.html#accessing-ora-assignment-information"><span>Accessing Assignment and Student Metrics</span></a>.</p>
-<div class="section" id="step-1-create-the-component">
-<span id="pa-create-component"></span><h2>6.25.2.1. Step 1. Create the Component<a class="headerlink" href="#step-1-create-the-component" title="Permalink to this headline">¶</a></h2>
-<p>To create the component for your open response assessment, complete these steps.</p>
+<p>这些步骤的详细介绍如下.</p>
+<p>想要了解更多关于开放题回答评估组件的信息，请查看
+<span class="xref std std-ref">开放题回答评估 2</span>. 要了解更多关于浏览标准和学生关于回答开放题回答评估的信息，请查看, see <span class="xref std std-ref">访问ORA评估信息</span>.</p>
+<div class="section" id="id2">
+<span id="id3"></span><h2>6.25.1.1. 步骤 1. 创建组件<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<p>要创建一个你的开放题回答评估组价,有如下步骤。</p>
 <ol class="arabic simple">
-<li>In Studio, open the unit where you want to create the open response
-assessment.</li>
-<li>Under <strong>Add New Component</strong>, click <strong>Problem</strong>, click the <strong>Advanced</strong> tab,
-and then click <strong>Peer Assessment</strong>.</li>
-<li>In the Problem component that appears, click <strong>Edit</strong>.</li>
+<li>在Studio中, 打开你要创建开放题回答评估的单元.</li>
+<li>在 <strong>添加新组件下方</strong>, 点击 <strong>问题</strong>, 点击 <strong>高级</strong> 标签, 然后点击 <strong>同伴评估</strong>.</li>
+<li>在这个问题组件出现的地方, 点击 <strong>编辑</strong>.</li>
 </ol>
 </div>
-<div class="section" id="step-2-add-prompts">
-<span id="pa-add-prompt"></span><h2>6.25.2.2. Step 2. Add Prompts<a class="headerlink" href="#step-2-add-prompts" title="Permalink to this headline">¶</a></h2>
-<p>To add prompts, or questions, complete these steps.</p>
+<div class="section" id="id4">
+<span id="id5"></span><h2>6.25.1.2. 步骤 2. 添加提示<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
+<p>要添加提示或者问题，有以下的步骤:</p>
 <ol class="arabic simple">
-<li>In the open response assessment component editor, select the <strong>Prompt</strong> tab.</li>
-<li>Add the text of your question in the text field. Replace any default text if
-necessary.</li>
-<li>Select <strong>Add a Prompt</strong> to add another prompt in the problem.</li>
+<li>在开放题回答评估编辑器中选择**提示**标签.</li>
+<li>添加你的问题文本到文本区域。用你的文本替代默认的文本。</li>
+<li>选择 <strong>添加一个提示</strong> 带另一个提示中.</li>
 </ol>
-<div class="section" id="add-formatting-or-images-to-a-prompt">
-<h3>6.25.2.2.1. Add Formatting or Images to a Prompt<a class="headerlink" href="#add-formatting-or-images-to-a-prompt" title="Permalink to this headline">¶</a></h3>
-<p>Currently, you cannot add text formatting or images inside the Peer Assessment
-component. To include formatting or images within the text of a prompt, you
-can add an HTML component that contains your text above the Peer Assessment
-component, and leave the text field in the <strong>Prompt</strong> tab blank. The
-instructions for the peer assessment still appear above the <strong>Your Response</strong>
-field.</p>
+<div class="section" id="id6">
+<h3>6.25.1.2.1. 添加格式或者提现到一个提示中<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h3>
+<p>现在，你不能添加文本格式或者图像到同伴评估组件中。要设置格式或者图像到提示文本中，你可以添加一个HTML组件包含你的文本到你的开放题回答评估中, 保持**提示标签** 空白. 这个同伴评估的说明依然会出现在**你的回答**区域.</p>
 <a class="reference internal image-reference" href="../../_images/PA_HTMLComponent.png"><img alt="A peer assessment that has an image in an HTML component" src="../../_images/PA_HTMLComponent.png" style="width: 500px;" /></a>
 </div>
-<div class="section" id="allow-students-to-submit-images-optional">
-<span id="pa-allow-images"></span><h3>6.25.2.2.2. Allow Students to Submit Images (optional)<a class="headerlink" href="#allow-students-to-submit-images-optional" title="Permalink to this headline">¶</a></h3>
-<p>To allow students to submit an image with a response, complete these steps.</p>
-<ol class="arabic simple">
-<li>In the open response assessment component editor, click the <strong>Settings</strong> tab.</li>
-<li>For <strong>Allow Image Responses</strong>, select <strong>True</strong>.</li>
-</ol>
+</div>
+<div class="section" id="id7">
+<span id="id8"></span><h2>6.25.1.3. 步骤 3. 添加标准<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h2>
+<p>在这步，你可以添加你的标准并且提供给你的学生反馈选项。你也可以给每个问题都添加标准，不管问题中提示的个数。
+对于下面的每步，用你自己的文本代替默认的文本.</p>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
-<ul class="last simple">
-<li>The image file must be a .jpg or .png file, and it must be smaller than 5
-MB in size.</li>
-<li>Currently, course teams cannot see any of the images that
-students submit. Images are not visible in the body of the assignment in
-the courseware, and they are not included in the course data package.</li>
-<li>You can allow students to upload an image, but you cannot require it.</li>
-<li>Students can only submit one image with each response.</li>
-<li>All responses must contain text. Students cannot submit a response that
-contains only an image.</li>
-</ul>
+<p class="last">所有的开放题评估包含都一个反馈区域在标准下方以便学生可以提供同伴全部回答反馈。你也可以允许或者要求学生提供对于个性标准的回馈。更多相关信息,请查看:ref:<cite>Feedback Options</cite>.</p>
 </div>
-</div>
-</div>
-<div class="section" id="step-3-add-the-rubric">
-<span id="pa-add-rubric"></span><h2>6.25.2.3. Step 3. Add the Rubric<a class="headerlink" href="#step-3-add-the-rubric" title="Permalink to this headline">¶</a></h2>
-<p>In this step, you add your rubric and provide your students with feedback
-options. You add one rubric for each problem, regardless of the number of
-prompts in the problem.</p>
-<p>For each step below, replace any default text with your own text.</p>
-<div class="admonition note">
-<p class="first admonition-title">Note</p>
-<p class="last">All open response assessments include a feedback field below the
-rubric so that students can provide written feedback on a peer&#8217;s overall
-response. You can also allow or require students to provide feedback for
-individual criteria. See step 2.4 below for instructions. For more
-information, see <a class="reference internal" href="OpenResponseAssessments.html#feedback-options"><span>Feedback Options</span></a>.</p>
-</div>
-<p>To add the rubric, complete these steps.</p>
+<p>要添加一个标准，有以下的步骤.</p>
 <ol class="arabic simple">
-<li>In the open response assessment component editor, click the <strong>Rubric</strong> tab.</li>
-<li>In the first <strong>Criterion</strong> section, enter the name and prompt text of your first criterion.</li>
-<li>In the first <strong>Option</strong> section, enter the name, explanation, and point value for the first option.</li>
-<li>In the next <strong>Option</strong> section, enter the name, explanation, and point value for the next option.</li>
-<li>Repeat step 4 for each option. If you need to add more options, click <strong>Add Option</strong>.</li>
-<li>Next to <strong>Feedback for This Criterion</strong>, select a value in the drop-down list.<ul>
-<li>If you do not want students to provide feedback for this individual criterion, select <strong>None</strong>.</li>
-<li>If you want to require students to provide feedback, select <strong>Required</strong>.</li>
-<li>If you want to allow students to provide feedback, but not require it, select <strong>Optional</strong>.</li>
+<li>在开放题回答评估中，店家**标准** 标签.</li>
+<li>在第一个 <strong>标准</strong> 章节, 输入你的第一个标准的名字.</li>
+<li>在第一个 <strong>选项</strong> 章节, 输入第一个选项的名字, 解释, 和分值.</li>
+<li>在下一个**选项** 章节,输入下一个选项的名字, 解释, 和分值.</li>
+<li>对于每个选项重复第四步. 如果你要添加更多选项, 点击 <strong>添加选项</strong>.</li>
+<li>在 <a href="#id9"><span class="problematic" id="id10">**</span></a>这个标准的反馈**旁边, 在下拉菜单中选择一个值.<ul>
+<li>如果你不想要你的学生提供反馈，选择 <strong>None</strong>.</li>
+<li>如果你要求学生必须提供反馈, 选择 <strong>Required</strong>.</li>
+<li>如果你要求学生可选择提供反馈, 选择 <strong>Optional</strong>.</li>
 </ul>
 </li>
 </ol>
-<ol class="arabic simple" start="7">
-<li>Follow the instructions in steps 2-6 to add your remaining criteria. If you need to add more criteria, click <strong>Add Criterion</strong> at the end of the list of criteria.</li>
-<li>Include instructions for students to provide overall written feedback on their peers&#8217; responses. You can leave the default text in the <strong>Feedback Instructions</strong> field or replace it with your own text.</li>
-</ol>
-<div class="section" id="provide-only-comment-fields-for-individual-criteria">
-<span id="pa-criteria-comment-field-only"></span><h3>6.25.2.3.1. Provide Only Comment Fields for Individual Criteria<a class="headerlink" href="#provide-only-comment-fields-for-individual-criteria" title="Permalink to this headline">¶</a></h3>
-<p>When you add a comment field to a criterion, the comment field appears below the
-options for the criterion. You can also provide a comment field, but no options.</p>
-<p>In the following image, the first criterion has a comment field but no options. The second includes options, but does not have a comment field.</p>
-<img alt="../../_images/PA_0_Option_Criteria.png" src="../../_images/PA_0_Option_Criteria.png" />
-<p>To provide a comment field without options, complete these steps.</p>
-<ol class="arabic simple">
-<li>In the criterion, click <strong>Remove</strong> to remove, or delete, all the options.</li>
-<li>Next to <strong>Feedback for This Criterion</strong>, select <strong>Required</strong> in the drop-down list.</li>
-</ol>
 </div>
-</div>
-<div class="section" id="step-4-specify-the-assignment-name-and-response-dates">
-<span id="pa-specify-name-and-dates"></span><h2>6.25.2.4. Step 4. Specify the Assignment Name and Response Dates<a class="headerlink" href="#step-4-specify-the-assignment-name-and-response-dates" title="Permalink to this headline">¶</a></h2>
-<p>To specify a name for the assignment as well as start and due dates for all
-student responses, complete these steps.</p>
+<div class="section" id="id11">
+<span id="id12"></span><h2>6.25.1.4. 步骤 4. 指定名称和日期评估的名称和日期<a class="headerlink" href="#id11" title="Permalink to this headline">¶</a></h2>
+<p>要指定一个评估的名称和学生回答的开始与结束的日期，有以下的步骤：</p>
 <ol class="arabic simple">
-<li>In the component editor, click the <strong>Settings</strong> tab.</li>
-<li>Next to <strong>Display Name</strong>, type the name you want to give the assignment.</li>
-<li>Next to <strong>Response Start Date</strong> and <strong>Response Start Time</strong>, enter the date and time when you want students to be able to begin submitting responses. Note that all times are in Universal Coordinated Time (UTC).</li>
-<li>Next to <strong>Response Due Date</strong> and <strong>Response Due Time</strong>, enter the date and time by which all student responses must be submitted. Note that all times are in Universal Coordinated Time (UTC).</li>
+<li>在组件编辑器中, 点击**设置** 标签.</li>
+<li>在 <a href="#id13"><span class="problematic" id="id14">**</span></a>展示名称**旁边, 键入你想要给这个评估的名字.</li>
+<li>选择 <strong>回答开始日期</strong> 和 <strong>回答开始时间</strong>, 输入你想要学生开始提交回答的日期. 注意所有的时间都是世界时间(UTC).</li>
+<li>选择 <strong>回答结束日期</strong> 和 <strong>回答结束时间</strong>, 输入你想要学生结束提交回答的日期. 注意所有的时间都是世界时间(UTC).</li>
 </ol>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
-<p class="last">We recommend that you set the response due date and time at least two days before the peer assessment due date and time. If the response due time and peer assessment due time are close together, and a student submits a response just before responses are due, other students may not have time to perform peer assessments before peer assessments are due.</p>
+<p class="last">我们建议你设置结束日期最少在开始日期两天后. 如果回答结束日期和同伴评估同时关闭，学生提交的回答仅仅在关闭之前，其他的学生可能没时间进行同伴评估在同伴评估之前。</p>
 </div>
 </div>
-<div class="section" id="step-5-select-assignment-steps">
-<span id="pa-select-assignment-steps"></span><h2>6.25.2.5. Step 5. Select Assignment Steps<a class="headerlink" href="#step-5-select-assignment-steps" title="Permalink to this headline">¶</a></h2>
-<p>Open response assessment assignments can include student training, peer assessment, and self assessment steps. You can include a peer assessment step before a self assessment step and vice versa.</p>
-<p>If you include a student training step, you <strong>must</strong> include a peer assessment step. You can also include a self assessment step. The student training step must come before both the peer assessment and the self assessment step.</p>
-<p>To add steps to the assignment:</p>
-<ol class="arabic">
-<li><p class="first">In the component editor, click the <strong>Settings</strong> tab.</p>
-</li>
-<li><p class="first">Scroll down past the <strong>Allow Image Responses</strong> field.</p>
-</li>
-<li><p class="first">Locate the following headings:</p>
-<ul class="simple">
-<li><strong>Step: Student Training</strong></li>
-<li><strong>Step: Peer Assessment</strong></li>
-<li><strong>Step: Self Assessment</strong></li>
+<div class="section" id="id15">
+<span id="id16"></span><h2>6.25.1.5. 步骤 5. 挑选评估步骤<a class="headerlink" href="#id15" title="Permalink to this headline">¶</a></h2>
+<p>开放题回答评估可以包含学生练习，同伴评估和自我评估。你可以设置包含一个同伴评估步在自我评估之前，反之亦然。</p>
+<p>如果你设置了包含一个学生练习步骤, 你也 <strong>必须</strong> 包含一个同伴评估步骤。你也可以包含自我评估步骤。学生练习步骤必须在同伴评估和自我评估步骤之前。</p>
+<p>要添加步骤到评估:</p>
+<ol class="arabic simple">
+<li>在组件编辑器中，点击**设置** 标签.</li>
+<li>向下滚动到 <strong>允许图片回答</strong> 区域.</li>
+<li>找到下面的标题:<ul>
+<li><strong>步骤: 学生练习</strong></li>
+<li><strong>步骤: 同伴评估</strong></li>
+<li><strong>步骤: 自我评估</strong></li>
 </ul>
-<p>Select the check boxes for the steps that you want the assignment to include.</p>
-</li>
-<li><p class="first">(optional) If you want to change the order of the steps, drag the steps into the order that you want. If you include a student training step, make sure it is the first step in the assignment.</p>
 </li>
 </ol>
+<blockquote>
+<div>在复选框中选择你想要这个评估包含的步骤.</div></blockquote>
 </div>
-<div class="section" id="step-6-specify-step-settings">
-<span id="pa-specify-step-settings"></span><h2>6.25.2.6. Step 6. Specify Step Settings<a class="headerlink" href="#step-6-specify-step-settings" title="Permalink to this headline">¶</a></h2>
-<p>After you select the steps that you want, you can specify settings for those
-steps.</p>
+<div class="section" id="id17">
+<span id="id18"></span><h2>6.25.1.6. 步骤 6. 指定步骤设置<a class="headerlink" href="#id17" title="Permalink to this headline">¶</a></h2>
+<p>在你选择你想要的步骤之后，你可以指定这些设置.</p>
+<div class="section" id="id19">
+<span id="id20"></span><h3>6.25.1.6.1. 学生练习<a class="headerlink" href="#id19" title="Permalink to this headline">¶</a></h3>
+<p>对于学生练习步骤, 你可以输入一个或者多个你创建的回答, 然后对于每个你制定的标准选择一个选项.</p>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
-<p class="last">If you make changes to a step, but then you clear the check box for that step, the step will no longer be part of the assignment and your changes will not be saved.</p>
+<p class="last">你必须输入你的完整的标准在**标准** 标签上在你选择为学生选择练习回答之前.如果你之后改变一个你的标准，你必须同时升级学生练习步骤.</p>
 </div>
-<div class="section" id="student-training">
-<span id="pa-student-training-step"></span><h3>6.25.2.6.1. Student Training<a class="headerlink" href="#student-training" title="Permalink to this headline">¶</a></h3>
-<p>For the student training step, you enter one or more responses that you have
-created, then select an option for each criterion in your rubric.</p>
-<div class="admonition note">
-<p class="first admonition-title">Note</p>
-<p class="last">You must enter your complete rubric on the <strong>Rubric</strong> tab before you
-can select options for the student training responses. If you later change one
-of your criteria or any of its options, you must also update the student
-training step.</p>
-</div>
-<p>To add and score student training responses:</p>
+<p>要添加给学生练习评估评分步骤:</p>
 <ol class="arabic simple">
-<li>Under <strong>Step: Student Training</strong>, locate the first <strong>Scored Response</strong> section.</li>
-<li>In the <strong>Response</strong> field, enter the text of your example response.</li>
-<li>Under <strong>Response Score</strong>, select the option that you want for each criterion.</li>
+<li>在 <strong>步骤: 学生练习**下面, 选择第一个 **回答评分</strong> 节.</li>
+<li>在**回答** 区域里面, 输入你的示例文本.</li>
+<li>在**回答评分**下方, 选择你想要的给每个标准添加的选项.</li>
 </ol>
-<p>For more information, see <a class="reference internal" href="OpenResponseAssessments.html#pa-student-training-assessments"><span>Student Training Step</span></a>.</p>
+<p>更多相关信息, 请查看 <a class="reference internal" href="#id19"><span>学生练习</span></a>.</p>
 </div>
-<div class="section" id="peer-assessment">
-<h3>6.25.2.6.2. Peer Assessment<a class="headerlink" href="#peer-assessment" title="Permalink to this headline">¶</a></h3>
-<p>For the peer assessment step, you specify the number of responses that each
-student must grade, the number of students who must grade each response, and
-start and due dates. All fields are required.</p>
-<p>To specify peer assessment settings:</p>
+<div class="section" id="id21">
+<h3>6.25.1.6.2. 同伴评估<a class="headerlink" href="#id21" title="Permalink to this headline">¶</a></h3>
+<p>对于同伴评估步骤, 你要指定每个学生必须给回答评分的个数,这个学生必须给回答评分的个数,在开始时间和结束时间内，所有的区域都是必要的.</p>
+<p>要指定同伴评估设置:</p>
 <ol class="arabic simple">
-<li>Locate the <strong>Step: Peer Assessment</strong> heading.</li>
-<li>Next to <strong>Must Grade</strong>, enter the number of responses that each student must grade.</li>
-<li>Next to <strong>Graded By</strong>, enter the number of students that must grade each response.</li>
-<li>Next to <strong>Start Date</strong> and <strong>Start Time</strong>, enter the date and time when students can begin assessing their peers&#8217; responses. All times are in Universal Coordinated Time (UTC).</li>
-<li>Next to <strong>Due Date</strong> and <strong>Due Time</strong>, enter the date and time by which all peer assessments must be complete. All times are in UTC.</li>
+<li>位于 <strong>步骤: 同伴评估</strong> 标题.</li>
+<li>在**必须评分**旁边, 输入学生必须评分的个数.</li>
+<li>在**评分**区域, 输入每个回答学生必须评分的个数.</li>
+<li>在 <strong>开始日期</strong> 和 <a href="#id22"><span class="problematic" id="id23">**</span></a>开始时间**旁边, 输入日期和时间。所有的时间都是世界时间(UTC).</li>
+<li>在 <strong>结束日期</strong> 和 <strong>结束时间</strong>, 输入日期和时间. 所有的时间都是世界时间(UTC).</li>
 </ol>
 </div>
-<div class="section" id="self-assessment">
-<h3>6.25.2.6.3. Self Assessment<a class="headerlink" href="#self-assessment" title="Permalink to this headline">¶</a></h3>
-<p>For the self assessment step, you specify when the step starts and ends.</p>
+<div class="section" id="id24">
+<h3>6.25.1.6.3. 自我评估<a class="headerlink" href="#id24" title="Permalink to this headline">¶</a></h3>
+<p>对于自我评估步骤, 你可以指定何时开始和结束.</p>
 <ol class="arabic simple">
-<li>Locate the <strong>Step: Self Assessment</strong> heading.</li>
-<li>Next to <strong>Start Date</strong> and <strong>Start Time</strong>, enter the date and time when
-students can begin assessing their peers&#8217; responses. All times are in
-Universal Coordinated Time (UTC).</li>
-<li>Next to <strong>Due Date</strong> and <strong>Due Time</strong>, enter the date and time by which all peer assessments must be complete. All times are in UTC.</li>
+<li>位于在 <strong>步骤: 自我评估</strong> 标题.</li>
+<li>在**开始日期** 和 <strong>开始时间</strong>, 输入日期和时间. 所有的时间都是世界时间(UTC).</li>
+<li>在 <strong>结束日期</strong> 和 <strong>结束时间</strong>, 输入日期和时间. 所有的时间都是世界时间(UTC).</li>
 </ol>
 </div>
 </div>
-<div class="section" id="step-7-show-top-responses">
-<span id="pa-show-top-responses"></span><h2>6.25.2.7. Step 7. Show Top Responses<a class="headerlink" href="#step-7-show-top-responses" title="Permalink to this headline">¶</a></h2>
-<p>To allow students to see the top-scoring responses for the assignment, you
-specify a number on the <strong>Settings</strong> tab.</p>
+<div class="section" id="id25">
+<span id="id26"></span><h2>6.25.1.7. 步骤 7. 展示最高分评估<a class="headerlink" href="#id25" title="Permalink to this headline">¶</a></h2>
+<p>要允许学生看到最高分评估，你可以指定一个数字在**设置** 标签.</p>
 <ol class="arabic simple">
-<li>In the component editor, click the <strong>Settings</strong> tab.</li>
-<li>In the <strong>Top Responses</strong> field, specify the number of responses that you want
-to appear in the <strong>Top Responses</strong> section below the student&#8217;s final score.
-If you do not want this section to appear, set the number to 0. The maximum
-number is 100.</li>
+<li>在组件编辑器里，点击 <strong>设置</strong> 标签.</li>
+<li>在**最高分回答**区域, 指定一个你想要出现在**最高分回答**在学生的最终得分下方。如果你不想要这个节出现，设置为0.最高分是100.</li>
 </ol>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
-<p class="last">Because each response can be up to 300 pixels in height, we recommend
-that you set the number of top responses to 20 or lower, to prevent the page
-from becoming too long.</p>
+<p class="last">由于每个回答可以有300像素高，我们建议你设置最高分回答低于20，不然页面就会太长了。</p>
 </div>
-<p>For more information, see <a class="reference internal" href="OpenResponseAssessments.html#pa-top-responses"><span>Top Responses</span></a>.</p>
+<p>更多相关信息, 请查看:ref:<cite>最高分回答</cite>.</p>
 </div>
-<div class="section" id="step-8-test-the-assignment">
-<span id="pa-test-assignment"></span><h2>6.25.2.8. Step 8. Test the Assignment<a class="headerlink" href="#step-8-test-the-assignment" title="Permalink to this headline">¶</a></h2>
-<p>To test your assignment, set up the assignment in your course, set the section
-or subsection date in the future, and ask a group of beta users to submit
-responses and grade each other. The beta testers can then let you know if they
-found the question and the rubric easy to understand or if they had any problems
-with the assignment.</p>
-<p>For more information about beta testing, see <a class="reference internal" href="../../releasing_course/beta_testing.html#beta-testing"><span>贝塔测试</span></a>.</p>
+<div class="section" id="id27">
+<span id="id28"></span><h2>6.25.1.8. 步骤 8. 测试评估回答<a class="headerlink" href="#id27" title="Permalink to this headline">¶</a></h2>
+<p>要测试你的评估，开始你课程中的评估，设置未来的章或节日期，测试版测试者可以让你知道是否出现问题。</p>
+<p>更多关于测试版测试信息, 请查看 <span class="xref std std-ref">测试版_测试</span>.</p>
 </div>
 </div>
 
@@ -494,10 +413,10 @@ with the assignment.</p>
   
     <div class="rst-footer-buttons">
       
-        <a href="Access_ORA_Info.html" class="btn btn-neutral float-right" title="6.25.3. Accessing Assignment and Student Metrics"/>Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="Access_ORA_Info.html" class="btn btn-neutral float-right" title="6.25.2. Accessing Assignment and Student Metrics"/>Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href="OpenResponseAssessments.html" class="btn btn-neutral" title="6.25.1. Open Response Assessments"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="OpenResponseAssessments.html" class="btn btn-neutral" title="&lt;no title&gt;"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   

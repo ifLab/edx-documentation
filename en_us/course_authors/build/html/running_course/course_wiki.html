@@ -254,141 +254,107 @@
 <hr/>
 
           
-  <div class="section" id="course-wiki">
-<span id="id1"></span><h1>10.7. 使用课程维基<a class="headerlink" href="#course-wiki" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="id1">
+<span id="id2"></span><h1>10.7. 使用课程维基<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
 <p>维基提供了一个教员和学生共同访问、分享和合作编辑课程信息的方式。</p>
-<p>Every course has a wiki that you can set up in a way appropriate for your
-course. You can influence how students (and staff) use it by <a class="reference internal" href="#seeding-the-wiki"><span>seeding the
-wiki</span></a> with specific content, by explaining how you want it to
-be used at the beginning of the course, and by providing clear instructions and
-guidelines for its use.</p>
-<p>Common uses for the course wiki might
-be:</p>
+<p>每个课程都有一个维基，你可以用一种适当的方式给你的课程建立一个维基。你可以影响学生（教员）如何使用它，通过用指定内容 <a class="reference internal" href="#seeding-the-wiki"><span>播种维基</span></a> 解释你想让它在课程的开始阶段如何被使用，并为它的使用提供清晰的指导和指南.</p>
+<p>一般课程维基的使用可以是:</p>
 <ul class="simple">
-<li>Sharing answers to course FAQs and collecting new FAQs.</li>
-<li>Sharing editable course information, such as download and installation
-instructions for software required for the course</li>
-<li>Providing shared access to student-created resources, perhaps as part of a
-collaborative exercise.</li>
-<li>Sharing errata for the course.</li>
-<li>Collecting suggestions for future runs of the course.</li>
+<li>分享答案到课程 FAQ 和收集新的 FAQ.</li>
+<li>分享可编辑课程信息，比如课程所需软件的下载和安装指导</li>
+<li>提供到学生创建的资源的共享访问，可能作为合作练习的一部分.</li>
+<li>分享课程勘误表.</li>
+<li>收集课程未来运行的建议.</li>
 </ul>
-<p>As students and staff create and edit wiki articles, they contribute to a
-repository of information about your course that can be immediately useful to
-other students, or useful for you and your course team as you develop other
-courses or future runs of the same course.</p>
-<p>The wiki for each course is a &#8220;child&#8221; wiki of the edX-wide wiki. From within any
-course wiki, clicking the top level <strong>Wiki</strong> link in the breadcrumb trail at the
-top of the page takes you to the edX-wide wiki.</p>
-<div class="section" id="managing-the-course-wiki">
-<span id="wikis-overview"></span><h2>10.7.1. Managing the Course Wiki<a class="headerlink" href="#managing-the-course-wiki" title="Permalink to this headline">¶</a></h2>
-<p>Keep these points in mind as you design the wiki for your course:</p>
+<p>作为学生和教员创建和编辑维基文章，他们贡献到关于你的课程的信息库中，其可以马上被另外的学生使用，或对你和你的课程团队开发其他课程或同一课程未来运行有用.</p>
+<p>每个课程维基是 edX 维基的一个 &#8220;子&#8221; 维基。从任何课程维基中，点击页面顶部的浏览路径记录中顶部的 <strong>维基</strong> 链接会把你带到 edX 维基.</p>
+<div class="section" id="wikis-overview">
+<span id="id3"></span><h2>10.7.1. 管理课程维基<a class="headerlink" href="#wikis-overview" title="Permalink to this headline">¶</a></h2>
+<p>当你为你的课程设计维基时，请注意以下几点:</p>
 <ul class="simple">
-<li>Be clear about the purpose for the wiki or for different parts of the wiki. For example, are some parts of the wiki only for disseminating information? If that is the case, then make sure that only your course team has write access for those articles.</li>
-<li>Decide whether some parts of the wiki are intended for student collaboration or student input. Make sure that students are able to create and edit wiki articles in those sections, and use text to clearly indicate to students that these pages can be edited.</li>
-<li>Think about the different tasks that will be performed by people in different roles. Typically you want your course team to have some privileges that students do not have. For example, course staff can delete wiki articles, but students cannot.</li>
+<li>清楚维基或维基的不同部分的目的。比如，是否只有部分维基是用来散布信息的？如果是这种情况，你就得确保只有你的课程团队有这些文章的写访问.</li>
+<li>决定是否部分维基是用于学生合作或学生输入的。确保学生在那些部分能够创建和编辑维基文章，并且使用文字来明确地向学生说明这些页面是可编辑的.</li>
+<li>考虑不同角色的人会执行的不同任务。典型地，你希望你的课程团队有一些学生所没有的特权，比如，课程教员可以删除维基文章，但是学生不能.</li>
 </ul>
-<p>Course staff can perform these tasks to manage the wiki:</p>
+<p>课程教员可以执行以下任务来管理维基:</p>
 <ul class="simple">
-<li><a class="reference internal" href="#showing-or-hiding-the-wiki"><span>Show or Hide the Wiki</span></a></li>
-<li><a class="reference internal" href="#controlling-wiki-access"><span>Control Wiki Access</span></a></li>
-<li><a class="reference internal" href="#seeding-the-wiki"><span>Seed the Wiki</span></a></li>
-<li><a class="reference internal" href="#locking-a-wiki-article"><span>Lock a Wiki Article</span></a></li>
-<li><a class="reference internal" href="#deleting-a-wiki-article"><span>Delete a Wiki Article</span></a></li>
-<li><a class="reference internal" href="#purging-a-wiki-article"><span>Purge a Wiki Article</span></a></li>
-<li><a class="reference internal" href="#restoring-a-deleted-wiki-article"><span>Restore a Deleted Wiki Article</span></a></li>
+<li><a class="reference internal" href="#showing-or-hiding-the-wiki"><span>显示或隐藏维基</span></a></li>
+<li><a class="reference internal" href="#controlling-wiki-access"><span>控制维基访问</span></a></li>
+<li><a class="reference internal" href="#seeding-the-wiki"><span>播种维基</span></a></li>
+<li><a class="reference internal" href="#locking-a-wiki-article"><span>锁住维基文章</span></a></li>
+<li><a class="reference internal" href="#deleting-a-wiki-article"><span>删除维基文章</span></a></li>
+<li><a class="reference internal" href="#purging-a-wiki-article"><span>清除维基文章</span></a></li>
+<li><a class="reference internal" href="#restoring-a-deleted-wiki-article"><span>恢复已删除维基文章</span></a></li>
 </ul>
-<p>All users, including students, can perform the following tasks, depending on the permissions that you set for an article:</p>
+<p>所有用户，包括学生，根据你为文章设置的许可，可以执行以下任务:</p>
 <ul class="simple">
-<li><a class="reference internal" href="#adding-a-wiki-article"><span>Add a Wiki Article</span></a></li>
-<li><a class="reference internal" href="#editing-a-wiki-article"><span>Edit a Wiki Article</span></a></li>
-<li><a class="reference internal" href="#managing-versions-of-a-wiki-article"><span>Manage Versions of a Wiki Article</span></a></li>
-<li><a class="reference internal" href="#searching-for-wiki-articles"><span>Search for Wiki Articles</span></a></li>
+<li><a class="reference internal" href="#adding-a-wiki-article"><span>添加维基文章</span></a></li>
+<li><a class="reference internal" href="#editing-a-wiki-article"><span>编辑维基文章</span></a></li>
+<li><a class="reference internal" href="#managing-versions-of-a-wiki-article"><span>管理维基文章的版本</span></a></li>
+<li><a class="reference internal" href="#searching-for-wiki-articles"><span>搜索维基文章</span></a></li>
 </ul>
 </div>
 <div class="section" id="showing-or-hiding-the-wiki">
-<span id="id2"></span><h2>10.7.2. Showing or Hiding the Wiki<a class="headerlink" href="#showing-or-hiding-the-wiki" title="Permalink to this headline">¶</a></h2>
-<p>When you create a course, a wiki is included by default, and a <strong>Wiki</strong> tab is
-visible at the top of the course page. If you do not want to use the course
-wiki, you can hide the <strong>Wiki</strong> tab at the top of the course.</p>
-<p>Follow these steps to show or hide the wiki in the course tabs.</p>
+<span id="id4"></span><h2>10.7.2. 显示或隐藏维基<a class="headerlink" href="#showing-or-hiding-the-wiki" title="Permalink to this headline">¶</a></h2>
+<p>当你创建一个课程时，会自动包含一个维基，并在课程页面的顶部有一个 <strong>维基</strong> 标签可见。如果你不想使用课程维基，你可以隐藏这个在课程页面顶部的 <strong>维基</strong> 标签.</p>
+<p>要显示或隐藏课程标签中的维基标签请遵循以下步骤.</p>
 <ol class="arabic simple">
-<li>Open your course in Studio.</li>
-<li>Select <strong>Content</strong>, then <strong>Pages</strong>.</li>
-<li>Click the eye icon in the <strong>Wiki</strong> row. The <strong>Wiki</strong> tab is hidden when the eye
-icon has a slash through it. You can show the <strong>Wiki</strong> tab again by clicking the eye icon.</li>
+<li>在 Studio 中打开你的课程.</li>
+<li>选择 <strong>内容</strong>, 然后选择 <strong>页面</strong>.</li>
+<li>点击在 <strong>维基</strong> 行的眼睛图标。 <strong>维基</strong> 标签在眼睛图标有一个斜杠时会被隐藏。你可以通过点击眼睛图标来再次显示 <strong>维基</strong> 图标.</li>
 </ol>
-<p>When you hide the wiki in your course, any existing articles remain in the edX-
-wide wiki, but the <strong>Wiki</strong> tab is removed from your course pages.</p>
+<p>当你在课程中隐藏维基时，任何已存在的文章会保留在 edX 维基中，但是 <strong>维基</strong> 图标会被从你的课程页面移除.</p>
 </div>
-<div class="section" id="controlling-access-to-the-wiki">
-<span id="controlling-wiki-access"></span><h2>10.7.3. Controlling Access to the Wiki<a class="headerlink" href="#controlling-access-to-the-wiki" title="Permalink to this headline">¶</a></h2>
-<p>You can control access to the wiki in various ways: by changing access to the
-wiki as a whole, by changing the read/write permissions settings of articles
-within the wiki, or by locking articles.</p>
-<p>To change access to the course wiki:</p>
+<div class="section" id="controlling-wiki-access">
+<span id="id5"></span><h2>10.7.3. 控制维基访问<a class="headerlink" href="#controlling-wiki-access" title="Permalink to this headline">¶</a></h2>
+<p>你可以以不同的方式来控制到维基的访问：通过整体改变到维基的访问，通过改变维基中文章的读/写许可设置，或通过锁住文章.</p>
+<p>要改变课程维基的访问:</p>
 <ol class="arabic simple">
-<li>Open your course in Studio.</li>
-<li>Select <strong>Settings</strong>, then <strong>Advanced Settings</strong>.</li>
-<li>Scroll down to the <strong>Allow Public Access to Wiki</strong> field. This Boolean setting is set to False by default, meaning that only course team members and enrolled students can see the course wiki. If you change the value of this field to True, then any registered edX user can access the course wiki, even if they are not enrolled in your course. However, public users would have to explicitly navigate to your wiki via the edX-wide wiki structure, or a link that has been provided to them.</li>
+<li>在 Studio 中打开你的课程.</li>
+<li>选择 <strong>设置</strong>, 然后选择 <strong>高级设置</strong>.</li>
+<li>向下滚动到 <strong>允许到维基的公共访问</strong> 域。这个布尔设置默认是 False，意味着只有课程团队成员和已登记的学生才能看到课程维基。如果你把这个域的值改变成 True，那么任何只要注册了 edX 的学生都能访问这个课程维基，即使他们没有登记到你的课程中。然而，公共用户可能必须通过 edX 维基的组织明确地导航到你的维基，或者被提供一条链接.</li>
 </ol>
-<p>To modify viewing or editing permissions for specific groups of users by
-article, see <a class="reference internal" href="#setting-permissions-for-wiki-articles"><span>Setting Permissions for Wiki Articles</span></a>.</p>
-<p>To lock an article and prevent further editing, see <a class="reference internal" href="#locking-a-wiki-article"><span>Locking a Wiki Article</span></a>.</p>
+<p>要通过文章来更改指定用户组的查看或编辑许可，请参照 <span class="xref std std-ref">设置维基文章的许可</span>.</p>
+<p>要锁住一篇文章并防止进一步的编辑，请参照 <span class="xref std std-ref">锁住维基文章</span>.</p>
 </div>
 <div class="section" id="setting-permissions-for-wiki-articles">
-<span id="id3"></span><h2>10.7.4. Setting Permissions for Wiki Articles<a class="headerlink" href="#setting-permissions-for-wiki-articles" title="Permalink to this headline">¶</a></h2>
-<p>To prevent certain groups of users from being able to add or edit articles, you
-need to modify the read/write permissions for articles. For example, as a course
-instructor, you likely want to prevent students from creating wiki articles at
-the top level, so you should remove write access to course-level wiki articles
-for most users. (Top-level wiki articles are children of the edX-wide wiki, and
-cannot be found within the course wiki).</p>
-<p>To modify the permissions for wiki articles, follow these steps.</p>
+<span id="id6"></span><h2>10.7.4. 设置维基文章的许可<a class="headerlink" href="#setting-permissions-for-wiki-articles" title="Permalink to this headline">¶</a></h2>
+<p>要阻止某些用户组添加或编辑文章，你需要更改文章的读/写许可。比如，作为一个课程指导员，你可能希望阻止学生创建顶层级维基文章，所以你应该移除大多数用户对课程级维基文章的写访问（顶层级维基文章是 edX 维基的子文章，并且不能在课程维基中被找到）.</p>
+<p>要更改维基文章的许可，请遵循以下步骤.</p>
 <ol class="arabic simple">
-<li>View the live version of your course.</li>
-<li>Click <strong>Wiki</strong>.</li>
-<li>Navigate to the article whose permissions you are modifying, then click <strong>Settings</strong>.</li>
-<li>In the <strong>Permissions</strong> section of the <strong>Settings</strong> page, select or clear the checkboxes for read or write access for <strong>Group</strong> or <strong>Other</strong>.</li>
-<li>At the bottom of the page, click the <strong>Save changes</strong> button for the <strong>Permissions</strong> section.</li>
+<li>查看你的课程的在线版本.</li>
+<li>点击 <strong>维基</strong>.</li>
+<li>导航到你要更改许可的文章，然后点击 <strong>设置</strong>.</li>
+<li>在 <strong>设置</strong> 页面的 <strong>许可</strong> 部分，选择或清除 <strong>组</strong> 或 <strong>其他</strong> 用户的读或写访问的检查框.</li>
+<li>在页面底部，点击 <strong>保存更改</strong> 按钮，在 <strong>许可</strong> 部分.</li>
 </ol>
-<p>Note that there are two different <strong>Save changes</strong> buttons, one near the top of
-the page for the <strong>Notifications</strong> section, and one at the bottom of the page
-for the <strong>Permissions</strong> section. If you are modifying permissions, make sure you
-click the <strong>Save changes</strong> button at the bottom of the page for your changes to
-be saved.</p>
-<div class="section" id="groups-used-in-wiki-permissions">
-<h3>10.7.4.1. Groups Used in Wiki Permissions<a class="headerlink" href="#groups-used-in-wiki-permissions" title="Permalink to this headline">¶</a></h3>
-<p>There are three groups for each course, managed by adding users to these groups
-on the <strong>Membership</strong> page of the Instructor Dashboard:</p>
+<p>注意有两个不同的 <strong>保存更改</strong> 按钮，一个在页面顶部附近，是属于 <strong>通知</strong> 部分的，一个在页面底部，是属于 <strong>许可</strong> 部分的。如果你在更改许可，确保你点击在页面底部的 <strong>保存更改</strong> 按钮以保存你的更改.</p>
+<div class="section" id="id7">
+<h3>10.7.4.1. 在维基许可中使用的组<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h3>
+<p>每个课程有三个组，通过在指导员面板的 <strong>成员</strong> 页面添加用户到这些组来进行组管理:</p>
 <blockquote>
+<div><blockquote>
 <div><ul class="simple">
-<li>Beta testers (by default there are no beta testers until you add them)</li>
-<li>Instructors (by default, the course author is always in the instructor   group)</li>
-<li>Staff (these are course team members)</li>
+<li>Beta 测试者 (默认没有 Beta 测试者，除非你添加它们)</li>
+<li>指导员 (默认情况下，课程作者始终在指导员组里)</li>
+<li>教员 (这些是课程团队成员)</li>
 </ul>
 </div></blockquote>
-<p>The permissions for the <strong>Others</strong> group apply to users who are not in the three
-course groups, including students.</p>
+<p><strong>其他</strong> 组的许可被应用到那些没有在包含在这三个课程组中的用户，包括学生.</p>
+</div></blockquote>
 </div>
 </div>
 <div class="section" id="seeding-the-wiki">
-<span id="id4"></span><h2>10.7.5. Seeding the Wiki<a class="headerlink" href="#seeding-the-wiki" title="Permalink to this headline">¶</a></h2>
-<p>To ensure that students get the most out of your course wiki, design the wiki
-space before the course starts by seeding the course wiki with articles that
-give it the desired structure.</p>
-<p>For example, you could create wiki articles to mirror the course outline. At the
-top level, you could provide a course outline, FAQs, and links to the main
-articles for each section. In the child articles for each section, you could
-provide information specific to the units and components in that section, and a
-page for students to share their feedback and experiences.</p>
+<span id="id8"></span><h2>10.7.5. 播种维基<a class="headerlink" href="#seeding-the-wiki" title="Permalink to this headline">¶</a></h2>
+<p>要确保学生充分利用你的课程维基，通过用能使维基生成所希望的结构的文章来播种课程维基，在课程开始之前设计好维基空间.</p>
+<p>比如，你可以创建维基文章来反映出课程大纲。在顶层，你可以提供一个课程大纲，FAQ 以及到每部分主要文章的链接。在每部分的子文章中，你可以提供特定于单元和那部分组件的信息，以及一个学生可以分享他们的反馈和经历的页面.</p>
 </div>
 <div class="section" id="wiki">
 <span id="adding-a-wiki-article"></span><span id="course-wiki-shared-tasks"></span><h2>10.7.6. 添加一篇Wiki文章<a class="headerlink" href="#wiki" title="Permalink to this headline">¶</a></h2>
 <p>当你添加一篇Wiki文章的时候，你要清楚自己的当前查看等级，确保你添加的新文章在正确的课程Wiki上。
 请点击 <strong>查看所有子文章</strong> 链接，点击Wiki页面顶部的链接来提高浏览的即时性。</p>
-<div class="section" id="id5">
-<h3>10.7.6.1. 添加即时的文章<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id9">
+<h3>10.7.6.1. 添加即时的文章<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h3>
 <p>请跟随下列步骤来添加一个即时的Wiki文章。如果你没有添加文章的权限，那么点击 <strong>添加文章</strong> 按钮，将会弹出一条 <strong>权限被拒绝</strong> 的提示。</p>
 <ol class="arabic simple">
 <li>在你的课程中点击 <strong>Wiki</strong> 。</li>
@@ -399,8 +365,8 @@ page for students to share their feedback and experiences.</p>
 <li>当你完成Wiki文章内容的输入后，点击 <strong>创建文章</strong> 。</li>
 </ol>
 </div>
-<div class="section" id="id6">
-<h3>10.7.6.2. 添加当前文章的子文章<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id10">
+<h3>10.7.6.2. 添加当前文章的子文章<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h3>
 <p>跟随下列步骤来完成一篇当前文章下子文章的创建，如果你没有添加文章的权限，那么点击 <strong>添加文章</strong> 按钮，将会弹出一条 <strong>权限被拒绝</strong> 的提示。</p>
 <ol class="arabic simple">
 <li>在你的课程中点击 <strong>Wiki</strong> 。</li>
@@ -414,7 +380,7 @@ page for students to share their feedback and experiences.</p>
 </div>
 </div>
 <div class="section" id="editing-a-wiki-article">
-<span id="id7"></span><h2>10.7.7. 编辑一篇Wiki文章<a class="headerlink" href="#editing-a-wiki-article" title="Permalink to this headline">¶</a></h2>
+<span id="id11"></span><h2>10.7.7. 编辑一篇Wiki文章<a class="headerlink" href="#editing-a-wiki-article" title="Permalink to this headline">¶</a></h2>
 <p>`
 如果你有编辑一篇文章的权限，你可以在当前文章内容右侧看到 <strong>编辑</strong> 按钮。</p>
 <p>跟随下面的步骤来修改一篇Wiki文章。</p>
@@ -428,44 +394,44 @@ page for students to share their feedback and experiences.</p>
 </ol>
 </div>
 <div class="section" id="searching-for-wiki-articles">
-<span id="id8"></span><h2>10.7.8. Wiki文章搜索<a class="headerlink" href="#searching-for-wiki-articles" title="Permalink to this headline">¶</a></h2>
+<span id="id12"></span><h2>10.7.8. Wiki文章搜索<a class="headerlink" href="#searching-for-wiki-articles" title="Permalink to this headline">¶</a></h2>
 <p>只有在各层次文章含有多篇文章的情况下 <strong>过滤</strong> 栏才可以使用。</p>
 <p>在 <strong>过滤</strong> 栏内输入一段文字来显示所有标题包含此段文字的所有文章。</p>
 </div>
 <div class="section" id="managing-versions-of-a-wiki-article">
-<span id="id9"></span><h2>10.7.9. 管理Wiki文章版本<a class="headerlink" href="#managing-versions-of-a-wiki-article" title="Permalink to this headline">¶</a></h2>
+<span id="id13"></span><h2>10.7.9. 管理Wiki文章版本<a class="headerlink" href="#managing-versions-of-a-wiki-article" title="Permalink to this headline">¶</a></h2>
 <p>Wiki包含了所有文章的变更历史，你可以查看每篇文章的历史版本，或者回滚到以前版本的文章，或者将文章的当前版本与选定的早期版本进行归并。</p>
-<div class="section" id="id10">
-<h3>10.7.9.1. 查看Wiki文章的历史版本<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id14">
+<h3>10.7.9.1. 查看Wiki文章的历史版本<a class="headerlink" href="#id14" title="Permalink to this headline">¶</a></h3>
 <ol class="arabic simple">
 <li>在你的课程中点击 <strong>Wiki</strong> 。</li>
 <li>选中你希望查看历史版本的Wiki文章。</li>
 <li>点击 <strong>变更</strong> ，之前保存的版本和当前版本的文章将被按照时间顺序列出。</li>
 </ol>
 </div>
-<div class="section" id="id11">
-<h3>10.7.9.2. 浏览一篇历史Wiki文章<a class="headerlink" href="#id11" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id15">
+<h3>10.7.9.2. 浏览一篇历史Wiki文章<a class="headerlink" href="#id15" title="Permalink to this headline">¶</a></h3>
 <ol class="arabic simple">
 <li>在Wiki的 <strong>变更</strong> 页面，选择你想查看的文章修订。</li>
 <li>点击 <strong>浏览本次修订</strong> 来查看经过本次修订的文章版本。</li>
 </ol>
 </div>
-<div class="section" id="id12">
-<h3>10.7.9.3. 分条查看历史版本变更<a class="headerlink" href="#id12" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id16">
+<h3>10.7.9.3. 分条查看历史版本变更<a class="headerlink" href="#id16" title="Permalink to this headline">¶</a></h3>
 <ol class="arabic simple">
 <li>在Wiki的 <strong>变更</strong> 页面，选择要查看的文章的修订。</li>
 <li>点击变更日期，时间，和作者信息来分条查看当次变更的变化记录，修改中被删除的部分会用红色标记，添加的部分会用绿色标记。</li>
 </ol>
 </div>
-<div class="section" id="id13">
-<h3>10.7.9.4. 用以前版本替换当前版本<a class="headerlink" href="#id13" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id17">
+<h3>10.7.9.4. 用以前版本替换当前版本<a class="headerlink" href="#id17" title="Permalink to this headline">¶</a></h3>
 <ol class="arabic simple">
 <li>在Wiki的 <strong>变更</strong> 页面，选择你想要回滚的历史修改版本。</li>
 <li>点击 <strong>切换到所选版本</strong> 来用选中版本替换当前版本。</li>
 </ol>
 </div>
-<div class="section" id="id14">
-<h3>10.7.9.5. 整合当前版本与历史版本<a class="headerlink" href="#id14" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id18">
+<h3>10.7.9.5. 整合当前版本与历史版本<a class="headerlink" href="#id18" title="Permalink to this headline">¶</a></h3>
 <ol class="arabic simple">
 <li>在Wiki的 <strong>变更</strong> 页面，选择你想要归并的历史修改版本。</li>
 <li>点击 <strong>归并所选版本</strong> 来把所选版本归并到当前版本上来。</li>
@@ -473,48 +439,38 @@ page for students to share their feedback and experiences.</p>
 </div>
 </div>
 <div class="section" id="locking-a-wiki-article">
-<span id="id15"></span><h2>10.7.10. Locking a Wiki Article<a class="headerlink" href="#locking-a-wiki-article" title="Permalink to this headline">¶</a></h2>
-<p>Locking a wiki article prevents further changes from being made to it. Follow
-these steps to lock a wiki article either after you create it, or after you make
-specific edits.</p>
+<span id="id19"></span><h2>10.7.10. 锁住维基文章<a class="headerlink" href="#locking-a-wiki-article" title="Permalink to this headline">¶</a></h2>
+<p>锁住维基文章可以阻止对其的进一步修改。请遵循以下步骤来锁住维基文章，在你创建它之后或在你作出特定编辑之后.</p>
 <ol class="arabic simple">
-<li>View the live version of your course.</li>
-<li>Click <strong>Wiki</strong>.</li>
-<li>Navigate to the article you want to lock, then click <strong>Settings</strong>.</li>
-<li>In the <strong>Permissions</strong> section of the <strong>Settings</strong> page, select the <strong>Lock article</strong> checkbox.</li>
-<li>At the bottom of the page, click the <strong>Save changes</strong> button for the <strong>Permissions</strong> section.</li>
+<li>查看你的课程的在线版本.</li>
+<li>点击 <strong>维基</strong>.</li>
+<li>导航到你希望锁住的文章，然后点击 <strong>设置</strong>.</li>
+<li>在 <strong>设置</strong> 页面的 <strong>许可</strong> 部分，选择 <strong>锁住文章</strong> 检查框.</li>
+<li>在页面底部，点击 <strong>许可</strong> 部分的 <strong>保存更改</strong> 按钮.</li>
 </ol>
 </div>
 <div class="section" id="deleting-a-wiki-article">
-<span id="id16"></span><h2>10.7.11. Deleting a Wiki Article<a class="headerlink" href="#deleting-a-wiki-article" title="Permalink to this headline">¶</a></h2>
-<p>Only course team members can delete articles. In addition, you can only delete
-an article if you have permissions to edit that article. If you have the
-required permissions, you see a <strong>Delete article</strong> button at the bottom of the
-<strong>Edit</strong> page.</p>
-<p>Follow these steps to delete an article:</p>
+<span id="id20"></span><h2>10.7.11. 删除维基文章<a class="headerlink" href="#deleting-a-wiki-article" title="Permalink to this headline">¶</a></h2>
+<p>只有课程团队成员才能删除文章，另外，你有文章的编辑许可的话，你只能删除文章。如果你有所需的许可，你可以在 <strong>编辑</strong> 页面的底部看到一个 <strong>删除文章</strong> 按钮.</p>
+<p>请遵循以下步骤来删除文章:</p>
 <ol class="arabic simple">
-<li>View the live version of your course.</li>
-<li>Click <strong>Wiki</strong>.</li>
-<li>Navigate to the article you want to delete, then click <strong>Edit</strong>.</li>
-<li>Click <strong>Delete article</strong>.</li>
-<li>On the deletion confirmation page, select <strong>Yes, I am sure</strong>.</li>
-<li>Optionally, also select the <strong>Purge</strong> checkbox. For details, see <a class="reference internal" href="#purging-a-wiki-article"><span>Purging a Wiki Article</span></a>.</li>
-<li>Click <strong>Delete article</strong> to confirm the deletion.</li>
+<li>查看你的课程的在线版本.</li>
+<li>点击 <strong>维基</strong>.</li>
+<li>导航到你想删除的文章，然后点击 <strong>编辑</strong>.</li>
+<li>点击 <strong>删除文章</strong>.</li>
+<li>在删除确认页面，点击 <strong>确定</strong>.</li>
+<li>可选地，也可选择 <strong>清除</strong> 检查框，详细信息请参照 <span class="xref std std-ref">清除维基文章</span>.</li>
+<li>点击 <strong>删除文章</strong> 以确认删除.</li>
 </ol>
 <div class="section" id="purging-a-wiki-article">
-<span id="id17"></span><h3>10.7.11.1. Purging a Wiki Article<a class="headerlink" href="#purging-a-wiki-article" title="Permalink to this headline">¶</a></h3>
-<p>When you delete and purge an article, it is completely removed from the wiki,
-with no option to undo the deletion. Select this option only if you are sure you
-will not want to restore the content.</p>
-<p>To purge an article as you delete it, select the <strong>Purge</strong> checkbox on the
-deletion confirmation page.</p>
+<span id="id21"></span><h3>10.7.11.1. 清除维基文章<a class="headerlink" href="#purging-a-wiki-article" title="Permalink to this headline">¶</a></h3>
+<p>当你删除和清除一篇文章时，它会被从维基中彻底移除，没有撤消删除的机会。只有在你确定你不会再恢复内容时才选择这个选项.</p>
+<p>要在你删除时清除文章，请选择在删除确认页面的 <strong>清除</strong> 检查框.</p>
 </div>
 <div class="section" id="restoring-a-deleted-wiki-article">
-<span id="id18"></span><h3>10.7.11.2. Restoring a Deleted Wiki Article<a class="headerlink" href="#restoring-a-deleted-wiki-article" title="Permalink to this headline">¶</a></h3>
-<p>Articles that have been deleted but not purged can be restored. A link to the
-article remains visible at the level at which it was created.</p>
-<p>To restore a deleted article, click the link to the article and click
-<strong>Restore</strong>.</p>
+<span id="id22"></span><h3>10.7.11.2. 恢复已删除的维基文章<a class="headerlink" href="#restoring-a-deleted-wiki-article" title="Permalink to this headline">¶</a></h3>
+<p>已被删除但未被清除的文章可以被恢复。在创建文章的地方保留有一个到文章的链接.</p>
+<p>要想恢复已删除的文章，点击到文章的链接并点击 <strong>恢复</strong>.</p>
 </div>
 </div>
 </div>

@@ -1,4 +1,4 @@
-.. _Course_Wiki:
+.. _课程维基:
 
 ########################
 使用课程维基
@@ -7,235 +7,188 @@
 维基提供了一个教员和学生共同访问、分享和合作编辑课程信息的方式。
 
 
-Every course has a wiki that you can set up in a way appropriate for your
-course. You can influence how students (and staff) use it by :ref:`seeding the
-wiki<Seeding the Wiki>` with specific content, by explaining how you want it to
-be used at the beginning of the course, and by providing clear instructions and
-guidelines for its use.
+每个课程都有一个维基，你可以用一种适当的方式给你的课程建立一个维基。你可以影响学生（教员）如何使用它，通过用指定内容 :ref:`播种维基<Seeding the Wiki>` 解释你想让它在课程的开始阶段如何被使用，并为它的使用提供清晰的指导和指南.
 
-Common uses for the course wiki might
-be:
+一般课程维基的使用可以是:
 
-* Sharing answers to course FAQs and collecting new FAQs.
-* Sharing editable course information, such as download and installation
-  instructions for software required for the course
-* Providing shared access to student-created resources, perhaps as part of a
-  collaborative exercise.
-* Sharing errata for the course.
-* Collecting suggestions for future runs of the course.
+* 分享答案到课程 FAQ 和收集新的 FAQ.
+* 分享可编辑课程信息，比如课程所需软件的下载和安装指导
+* 提供到学生创建的资源的共享访问，可能作为合作练习的一部分.
+* 分享课程勘误表.
+* 收集课程未来运行的建议.
 
-As students and staff create and edit wiki articles, they contribute to a
-repository of information about your course that can be immediately useful to
-other students, or useful for you and your course team as you develop other
-courses or future runs of the same course.
+作为学生和教员创建和编辑维基文章，他们贡献到关于你的课程的信息库中，其可以马上被另外的学生使用，或对你和你的课程团队开发其他课程或同一课程未来运行有用.
 
-The wiki for each course is a "child" wiki of the edX-wide wiki. From within any
-course wiki, clicking the top level **Wiki** link in the breadcrumb trail at the
-top of the page takes you to the edX-wide wiki.
+每个课程维基是 edX 维基的一个 "子" 维基。从任何课程维基中，点击页面顶部的浏览路径记录中顶部的 **维基** 链接会把你带到 edX 维基.
 
 .. Some courses have linked wikis, which can be useful for course re-runs or for course series. You link a wiki with another course's wiki by...?
 
 .. _Wikis Overview:
 
 ********************************
-Managing the Course Wiki
+管理课程维基
 ********************************
 
-Keep these points in mind as you design the wiki for your course:
+当你为你的课程设计维基时，请注意以下几点:
 
-* Be clear about the purpose for the wiki or for different parts of the wiki. For example, are some parts of the wiki only for disseminating information? If that is the case, then make sure that only your course team has write access for those articles.
+* 清楚维基或维基的不同部分的目的。比如，是否只有部分维基是用来散布信息的？如果是这种情况，你就得确保只有你的课程团队有这些文章的写访问.
 
-* Decide whether some parts of the wiki are intended for student collaboration or student input. Make sure that students are able to create and edit wiki articles in those sections, and use text to clearly indicate to students that these pages can be edited.
+* 决定是否部分维基是用于学生合作或学生输入的。确保学生在那些部分能够创建和编辑维基文章，并且使用文字来明确地向学生说明这些页面是可编辑的.
 
-* Think about the different tasks that will be performed by people in different roles. Typically you want your course team to have some privileges that students do not have. For example, course staff can delete wiki articles, but students cannot.
+* 考虑不同角色的人会执行的不同任务。典型地，你希望你的课程团队有一些学生所没有的特权，比如，课程教员可以删除维基文章，但是学生不能.
 
-Course staff can perform these tasks to manage the wiki:
+课程教员可以执行以下任务来管理维基:
 
-* :ref:`Show or Hide the Wiki<Showing or Hiding the Wiki>`
-* :ref:`Control Wiki Access<Controlling Wiki Access>`
-* :ref:`Seed the Wiki<Seeding the Wiki>`
-* :ref:`Lock a Wiki Article<Locking a Wiki Article>`
-* :ref:`Delete a Wiki Article<Deleting a Wiki Article>`
-* :ref:`Purge a Wiki Article<Purging a Wiki Article>`
-* :ref:`Restore a Deleted Wiki Article<Restoring a Deleted Wiki Article>`
+* :ref:`显示或隐藏维基<Showing or Hiding the Wiki>`
+* :ref:`控制维基访问<Controlling Wiki Access>`
+* :ref:`播种维基<Seeding the Wiki>`
+* :ref:`锁住维基文章<Locking a Wiki Article>`
+* :ref:`删除维基文章<Deleting a Wiki Article>`
+* :ref:`清除维基文章<Purging a Wiki Article>`
+* :ref:`恢复已删除维基文章<Restoring a Deleted Wiki Article>`
 
-All users, including students, can perform the following tasks, depending on the permissions that you set for an article:
+所有用户，包括学生，根据你为文章设置的许可，可以执行以下任务:
 
-* :ref:`Add a Wiki Article<Adding a Wiki Article>`
-* :ref:`Edit a Wiki Article<Editing a Wiki Article>`
-* :ref:`Manage Versions of a Wiki Article<Managing Versions of a Wiki Article>`
-* :ref:`Search for Wiki Articles<Searching for Wiki Articles>`
+* :ref:`添加维基文章<Adding a Wiki Article>`
+* :ref:`编辑维基文章<Editing a Wiki Article>`
+* :ref:`管理维基文章的版本<Managing Versions of a Wiki Article>`
+* :ref:`搜索维基文章<Searching for Wiki Articles>`
 
 .. _Showing or Hiding the Wiki:
 
 ********************************
-Showing or Hiding the Wiki
+显示或隐藏维基
 ********************************
 
-When you create a course, a wiki is included by default, and a **Wiki** tab is
-visible at the top of the course page. If you do not want to use the course
-wiki, you can hide the **Wiki** tab at the top of the course.
+当你创建一个课程时，会自动包含一个维基，并在课程页面的顶部有一个 **维基** 标签可见。如果你不想使用课程维基，你可以隐藏这个在课程页面顶部的 **维基** 标签.
 
-Follow these steps to show or hide the wiki in the course tabs.
+要显示或隐藏课程标签中的维基标签请遵循以下步骤.
 
-#. Open your course in Studio.
-#. Select **Content**, then **Pages**.
-#. Click the eye icon in the **Wiki** row. The **Wiki** tab is hidden when the eye
-   icon has a slash through it. You can show the **Wiki** tab again by clicking the eye icon.
+#. 在 Studio 中打开你的课程.
+#. 选择 **内容**, 然后选择 **页面**.
+#. 点击在 **维基** 行的眼睛图标。 **维基** 标签在眼睛图标有一个斜杠时会被隐藏。你可以通过点击眼睛图标来再次显示 **维基** 图标.
 
-When you hide the wiki in your course, any existing articles remain in the edX-
-wide wiki, but the **Wiki** tab is removed from your course pages.
+当你在课程中隐藏维基时，任何已存在的文章会保留在 edX 维基中，但是 **维基** 图标会被从你的课程页面移除.
 
 .. In XML authoring, remove the `{"type": "wiki"}` entry in your `/policies/TERM/policy.json` file.
 
 .. _Controlling Wiki Access:
 
 ********************************
-Controlling Access to the Wiki
+控制维基访问
 ********************************
 
-You can control access to the wiki in various ways: by changing access to the
-wiki as a whole, by changing the read/write permissions settings of articles
-within the wiki, or by locking articles.
+你可以以不同的方式来控制到维基的访问：通过整体改变到维基的访问，通过改变维基中文章的读/写许可设置，或通过锁住文章.
 
-To change access to the course wiki:
+要改变课程维基的访问:
 
-#. Open your course in Studio.
-#. Select **Settings**, then **Advanced Settings**.
-#. Scroll down to the **Allow Public Access to Wiki** field. This Boolean setting is set to False by default, meaning that only course team members and enrolled students can see the course wiki. If you change the value of this field to True, then any registered edX user can access the course wiki, even if they are not enrolled in your course. However, public users would have to explicitly navigate to your wiki via the edX-wide wiki structure, or a link that has been provided to them.
+#. 在 Studio 中打开你的课程.
+#. 选择 **设置**, 然后选择 **高级设置**.
+#. 向下滚动到 **允许到维基的公共访问** 域。这个布尔设置默认是 False，意味着只有课程团队成员和已登记的学生才能看到课程维基。如果你把这个域的值改变成 True，那么任何只要注册了 edX 的学生都能访问这个课程维基，即使他们没有登记到你的课程中。然而，公共用户可能必须通过 edX 维基的组织明确地导航到你的维基，或者被提供一条链接.
 
-To modify viewing or editing permissions for specific groups of users by
-article, see :ref:`Setting Permissions for Wiki Articles`.
+要通过文章来更改指定用户组的查看或编辑许可，请参照 :ref:`设置维基文章的许可`.
 
-To lock an article and prevent further editing, see :ref:`Locking
-a Wiki Article`.
+要锁住一篇文章并防止进一步的编辑，请参照 :ref:`锁住维基文章`.
 
 .. _Setting Permissions for Wiki Articles:
 
 ***************************************
-Setting Permissions for Wiki Articles
+设置维基文章的许可
 ***************************************
 
-To prevent certain groups of users from being able to add or edit articles, you
-need to modify the read/write permissions for articles. For example, as a course
-instructor, you likely want to prevent students from creating wiki articles at
-the top level, so you should remove write access to course-level wiki articles
-for most users. (Top-level wiki articles are children of the edX-wide wiki, and
-cannot be found within the course wiki).
+要阻止某些用户组添加或编辑文章，你需要更改文章的读/写许可。比如，作为一个课程指导员，你可能希望阻止学生创建顶层级维基文章，所以你应该移除大多数用户对课程级维基文章的写访问（顶层级维基文章是 edX 维基的子文章，并且不能在课程维基中被找到）.
 
-To modify the permissions for wiki articles, follow these steps.
+要更改维基文章的许可，请遵循以下步骤.
 
-#. View the live version of your course.
-#. Click **Wiki**.
-#. Navigate to the article whose permissions you are modifying, then click **Settings**.
-#. In the **Permissions** section of the **Settings** page, select or clear the checkboxes for read or write access for **Group** or **Other**.
-#. At the bottom of the page, click the **Save changes** button for the **Permissions** section.
+#. 查看你的课程的在线版本.
+#. 点击 **维基**.
+#. 导航到你要更改许可的文章，然后点击 **设置**.
+#. 在 **设置** 页面的 **许可** 部分，选择或清除 **组** 或 **其他** 用户的读或写访问的检查框.
+#. 在页面底部，点击 **保存更改** 按钮，在 **许可** 部分.
 
-Note that there are two different **Save changes** buttons, one near the top of
-the page for the **Notifications** section, and one at the bottom of the page
-for the **Permissions** section. If you are modifying permissions, make sure you
-click the **Save changes** button at the bottom of the page for your changes to
-be saved.
+注意有两个不同的 **保存更改** 按钮，一个在页面顶部附近，是属于 **通知** 部分的，一个在页面底部，是属于 **许可** 部分的。如果你在更改许可，确保你点击在页面底部的 **保存更改** 按钮以保存你的更改.
 
 ===============================
-Groups Used in Wiki Permissions
+在维基许可中使用的组
 ===============================
 
-There are three groups for each course, managed by adding users to these groups
-on the **Membership** page of the Instructor Dashboard:
+每个课程有三个组，通过在指导员面板的 **成员** 页面添加用户到这些组来进行组管理:
 
-	* Beta testers (by default there are no beta testers until you add them)
-	* Instructors (by default, the course author is always in the instructor   group)
-	* Staff (these are course team members)
+	* Beta 测试者 (默认没有 Beta 测试者，除非你添加它们)
+	* 指导员 (默认情况下，课程作者始终在指导员组里)
+	* 教员 (这些是课程团队成员)
 
-The permissions for the **Others** group apply to users who are not in the three
-course groups, including students.
+ **其他** 组的许可被应用到那些没有在包含在这三个课程组中的用户，包括学生.
 
 .. If permissions are unchanged from the default wiki, students can create articles at the course level (children of the edX-wide wiki). This is easy to do accidentally due to the prominence of the Add article button for the top level.
 
 .. _Seeding the Wiki:
 
 ********************************
-Seeding the Wiki
+播种维基
 ********************************
 
-To ensure that students get the most out of your course wiki, design the wiki
-space before the course starts by seeding the course wiki with articles that
-give it the desired structure.
+要确保学生充分利用你的课程维基，通过用能使维基生成所希望的结构的文章来播种课程维基，在课程开始之前设计好维基空间.
 
-For example, you could create wiki articles to mirror the course outline. At the
-top level, you could provide a course outline, FAQs, and links to the main
-articles for each section. In the child articles for each section, you could
-provide information specific to the units and components in that section, and a
-page for students to share their feedback and experiences.
+比如，你可以创建维基文章来反映出课程大纲。在顶层，你可以提供一个课程大纲，FAQ 以及到每部分主要文章的链接。在每部分的子文章中，你可以提供特定于单元和那部分组件的信息，以及一个学生可以分享他们的反馈和经历的页面.
 
 .. include:: ../../../shared/running_course/wiki_tasks.rst
 
 .. _Locking a Wiki Article:
 
 ********************************
-Locking a Wiki Article
+锁住维基文章
 ********************************
 
-Locking a wiki article prevents further changes from being made to it. Follow
-these steps to lock a wiki article either after you create it, or after you make
-specific edits.
+锁住维基文章可以阻止对其的进一步修改。请遵循以下步骤来锁住维基文章，在你创建它之后或在你作出特定编辑之后.
 
 .. If you only lock an article without modifying the read/write permissions,
 .. other users can still create wiki articles at the top level. They also appear
 .. still to have an Edit button at the top level, but they get Permission Denied
 .. when they click Edit.
 
-#. View the live version of your course.
-#. Click **Wiki**.
-#. Navigate to the article you want to lock, then click **Settings**.
-#. In the **Permissions** section of the **Settings** page, select the **Lock article** checkbox.
-#. At the bottom of the page, click the **Save changes** button for the **Permissions** section.
+#. 查看你的课程的在线版本.
+#. 点击 **维基**.
+#. 导航到你希望锁住的文章，然后点击 **设置**.
+#. 在 **设置** 页面的 **许可** 部分，选择 **锁住文章** 检查框.
+#. 在页面底部，点击 **许可** 部分的 **保存更改** 按钮.
 
 .. _Deleting a Wiki Article:
 
 ********************************
-Deleting a Wiki Article
+删除维基文章
 ********************************
 
-Only course team members can delete articles. In addition, you can only delete
-an article if you have permissions to edit that article. If you have the
-required permissions, you see a **Delete article** button at the bottom of the
-**Edit** page.
+只有课程团队成员才能删除文章，另外，你有文章的编辑许可的话，你只能删除文章。如果你有所需的许可，你可以在 **编辑** 页面的底部看到一个 **删除文章** 按钮.
 
-Follow these steps to delete an article:
+请遵循以下步骤来删除文章:
 
-#. View the live version of your course.
-#. Click **Wiki**.
-#. Navigate to the article you want to delete, then click **Edit**.
-#. Click **Delete article**.
-#. On the deletion confirmation page, select **Yes, I am sure**.
-#. Optionally, also select the **Purge** checkbox. For details, see :ref:`Purging a Wiki Article`.
-#. Click **Delete article** to confirm the deletion.
+#. 查看你的课程的在线版本.
+#. 点击 **维基**.
+#. 导航到你想删除的文章，然后点击 **编辑**.
+#. 点击 **删除文章**.
+#. 在删除确认页面，点击 **确定**.
+#. 可选地，也可选择 **清除** 检查框，详细信息请参照 :ref:`清除维基文章`.
+#. 点击 **删除文章** 以确认删除.
 
 
 .. _Purging a Wiki Article:
 
 ========================
-Purging a Wiki Article
+清除维基文章
 ========================
 
-When you delete and purge an article, it is completely removed from the wiki,
-with no option to undo the deletion. Select this option only if you are sure you
-will not want to restore the content.
+当你删除和清除一篇文章时，它会被从维基中彻底移除，没有撤消删除的机会。只有在你确定你不会再恢复内容时才选择这个选项.
 
-To purge an article as you delete it, select the **Purge** checkbox on the
-deletion confirmation page.
+要在你删除时清除文章，请选择在删除确认页面的 **清除** 检查框.
 
 
 .. _Restoring a Deleted Wiki Article:
 
 =================================
-Restoring a Deleted Wiki Article
+恢复已删除的维基文章
 =================================
 
-Articles that have been deleted but not purged can be restored. A link to the
-article remains visible at the level at which it was created.
+已被删除但未被清除的文章可以被恢复。在创建文章的地方保留有一个到文章的链接.
 
-To restore a deleted article, click the link to the article and click
-**Restore**.
+要想恢复已删除的文章，点击到文章的链接并点击 **恢复**.

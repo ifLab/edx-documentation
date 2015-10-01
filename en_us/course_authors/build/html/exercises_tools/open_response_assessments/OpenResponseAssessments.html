@@ -7,7 +7,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>6.25.1. Open Response Assessments &mdash; Building and Running an edX Course  documentation</title>
+  <title>&lt;no title&gt; &mdash; Building and Running an edX Course  documentation</title>
   
 
   
@@ -47,7 +47,7 @@
   
     <link rel="top" title="Building and Running an edX Course  documentation" href="../../index.html"/>
         <link rel="up" title="6.25. 开放性回答评估" href="index.html"/>
-        <link rel="next" title="6.25.2. Create an Open Response Assessment Assignment" href="CreateORAAssignment.html"/>
+        <link rel="next" title="6.25.1. 创建一个开放题回答评估" href="CreateORAAssignment.html"/>
         <link rel="prev" title="6.25. 开放性回答评估" href="index.html"/> 
 
   <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
@@ -72,7 +72,7 @@
       <div class="wy-menu wy-menu-vertical" data-spy="affix">
         
         
-            <ul class="current">
+            <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../front_matter/index.html">1. 参考信息</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../../front_matter/read_me.html">1.1. Read Me</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../front_matter/preface.html">1.2. 序言</a></li>
@@ -120,7 +120,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../../creating_content/libraries.html">5.5. 内容库</a></li>
 </ul>
 </li>
-<li class="toctree-l1 current"><a class="reference internal" href="../index.html">6. 创建习题和工具</a><ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../index.html">6. 创建习题和工具</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../create_exercises_and_tools.html">6.1. 创建练习和工具</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../annotation.html">6.2. 注释问题</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../checkbox.html">6.3. 复选框问题</a></li>
@@ -145,7 +145,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../multiple_choice.html">6.22. 多项选择问题</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../mult_choice_num_input.html">6.23. 多项选择和数字输入题</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../numerical_input.html">6.24. 数值输入问题</a></li>
-<li class="toctree-l2 current"><a class="reference internal" href="index.html">6.25. 开放性回答评估</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html">6.25. 开放性回答评估</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../periodic_table.html">6.26. 元素周期表工具</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../poll.html">6.27. 投票工具</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../problem_with_hint.html">6.28. 带适应性提示的问题</a></li>
@@ -248,405 +248,19 @@
         <div class="rst-content">
           <ul class="wy-breadcrumbs">
   <li><a href="../../index.html">Table of Contents</a> &raquo;</li>
-  <li><a href="">6.25.1. Open Response Assessments</a></li>
+  <li><a href="">&lt;no title&gt;</a></li>
   
 </ul>
 <hr/>
 
           
-  <div class="section" id="open-response-assessments">
-<span id="open-response-assessments-2"></span><h1>6.25.1. Open Response Assessments<a class="headerlink" href="#open-response-assessments" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="introduction-to-open-response-assessments">
-<h2>6.25.1.1. Introduction to Open Response Assessments<a class="headerlink" href="#introduction-to-open-response-assessments" title="Permalink to this headline">¶</a></h2>
-<p>Open response assessments allow instructors to assign questions that might not
-have definite answers, such as text responses or short essays. Students submit
-responses to questions, then each student and the student&#8217;s peers compare the
-responses to a rubric that you create. You can also allow students to upload an
-image to accompany a text response.</p>
-<p>Open response assessments include peer assessments and self assessments. In peer
-assessments, students compare their peers&#8217; responses to a rubric that you
-create. In self assessments, students compare their own responses to the rubric.</p>
-<p>In open response assessments, students usually only see their own responses and
-any peer responses they assess. You can also allow students to see the top-
-scoring responses that their peers have submitted. For more information, see
-<a class="reference internal" href="#pa-top-responses"><span>Top Responses</span></a>.</p>
-<div class="admonition note">
-<p class="first admonition-title">Note</p>
-<p class="last">Open response assessments that are visible to all students do not
-respect cohorts. In other words, it is possible for students in one cohort to
-be asked to grade responses for students in another cohort. If you want to
-make an open response assessment divided by cohort, you must create that
-assessment in a course component that is defined as cohort-specific. For more
-information about cohorts and creating cohort-specific courseware, see
-<a class="reference internal" href="../../cohorts/cohorts_overview.html#cohorts-overview"><span>使用队列功能建立课程群</span></a> and <a class="reference internal" href="../../cohorts/cohorted_courseware.html#cohorted-courseware-overview"><span>创建特定队列课件</span></a>.</p>
-</div>
-<p>For more information about creating open response assessments, including step-
-by-step instructions, see the following sections.</p>
-<ul class="simple">
-<li><a class="reference internal" href="#pa-elements"><span>Elements of an Open Response Assessment</span></a></li>
-<li><a class="reference internal" href="#pa-scoring"><span>Peer Assessment Scoring</span></a></li>
-<li><a class="reference internal" href="CreateORAAssignment.html#pa-create-an-ora-assignment"><span>Create an Open Response Assessment Assignment</span></a></li>
-<li><a class="reference internal" href="Access_ORA_Info.html#accessing-ora-assignment-information"><span>Accessing Assignment and Student Metrics</span></a></li>
-</ul>
-<p>For information about viewing metrics and student responses for released open
-response assessments, see <a class="reference internal" href="Access_ORA_Info.html#accessing-ora-assignment-information"><span>Accessing Assignment and Student Metrics</span></a>.</p>
-<p>For information about the student experience with open response assessments, see
-<a class="reference external" href="http://edx-guide-for-students.readthedocs.org/en/latest/SFD_ORA.html">Open Response Assessments</a> in the <a class="reference external" href="http://edx-guide-for-students.readthedocs.org/en/latest/index.html">edX Guide for
-Students</a>.</p>
-<div class="section" id="elements-of-an-open-response-assessment">
-<span id="pa-elements"></span><h3>6.25.1.1.1. Elements of an Open Response Assessment<a class="headerlink" href="#elements-of-an-open-response-assessment" title="Permalink to this headline">¶</a></h3>
-<p>When you create an open response assessment assignment, you include several
-elements:</p>
-<ul class="simple">
-<li>One or more prompts, or questions.</li>
-<li>The rubric. One rubric is used to grade all the prompts in the
-assessment.</li>
-<li>One or more assessment steps. Assignments can include a student training step,
-a peer assessment step, and a self assessment step.</li>
-</ul>
-<div class="admonition note">
-<p class="first admonition-title">Note</p>
-<p class="last">If you include a student training step, you must also include a peer
-assessment step. The student training step must come first, before the peer
-and self assessment steps.</p>
-</div>
-<p>For step-by-step instructions for creating an open response assessment, see
-<a class="reference internal" href="CreateORAAssignment.html#pa-create-an-ora-assignment"><span>Create an Open Response Assessment Assignment</span></a>.</p>
-</div>
-</div>
-<div class="section" id="prompts">
-<h2>6.25.1.2. Prompts<a class="headerlink" href="#prompts" title="Permalink to this headline">¶</a></h2>
-<p>Each <strong>prompt</strong>, or question, that you want your students to answer, appears
-near the top of the page, followed by a field where the student enters a
-response. You can require your students to enter text as a response, or you can
-allow your students to both enter text and upload an image.</p>
-<div class="admonition note">
-<p class="first admonition-title">Note</p>
-<p class="last">If students upload an image, the image file must be a .jpg or .png file, and it must be smaller than 5 MB in size.</p>
-</div>
-<a class="reference internal image-reference" href="../../_images/PA_QandRField1.png"><img alt="Single ORA question and its corresponding blank response field" src="../../_images/PA_QandRField1.png" style="width: 500px;" /></a>
-<p>When you write each question, you can include helpful information for your
-students, such as what they can expect after they submit responses, or the
-approximate number of words or sentences that their response should have.</p>
-<div class="admonition note">
-<p class="first admonition-title">Note</p>
-<p class="last">Each student is limited to a total word count of 10,000 for all
-responses in an ORA assignment.</p>
-</div>
-<p>For more information, see <a class="reference internal" href="CreateORAAssignment.html#pa-add-prompt"><span>Step 2. Add Prompts</span></a>.</p>
-<div class="section" id="asking-students-to-upload-images">
-<h3>6.25.1.2.1. Asking Students to Upload Images<a class="headerlink" href="#asking-students-to-upload-images" title="Permalink to this headline">¶</a></h3>
-<p>In open response assessments, you can ask your students to upload an image as
-part of their response. If you do this, however, keep the following points in
-mind.</p>
-<ul class="simple">
-<li>Currently, you cannot require your students to upload an image. You can only
-allow it.</li>
-<li>All responses must include some text. Students cannot submit a response that
-contains only an image.</li>
-<li>Students can submit only one image with each response.</li>
-</ul>
-<div class="admonition note">
-<p class="first admonition-title">Note</p>
-<p class="last">Currently, course teams cannot see any of the images that students
-submit. Images are not visible in the body of the assignment in the
-courseware, and they are not included in the course data package.</p>
-</div>
-</div>
-</div>
-<div class="section" id="rubric">
-<span id="pa-rubric"></span><h2>6.25.1.3. Rubric<a class="headerlink" href="#rubric" title="Permalink to this headline">¶</a></h2>
-<p>Your assignment must include a <strong>rubric</strong> that you design. The same rubric is
-used for peer and self assessments, and the rubric appears when students begin
-grading. Students compare their peers&#8217; responses to the rubric.</p>
-<p>Rubrics consist of <em>criteria</em> and <em>options</em>.</p>
-<ul>
-<li><p class="first">Each criterion has a <em>name</em>, a <em>prompt</em>, and one or more <em>options</em>.</p>
-<blockquote>
-<div><ul>
-<li><p class="first">The name is a very short summary of the criterion, such as &#8220;Ideas&#8221; or
-&#8220;Content&#8221;. Criterion names generally have just one word. Because the system
-uses criterion names for identification, <strong>the name for each criterion must
-be unique.</strong> Criterion names do not appear in the rubric that students see
-when they are completing peer assessments, but they do appear on the page
-that shows the student&#8217;s final grade.</p>
-<img alt="A final score page with call-outs for the criterion names" src="../../_images/PA_CriterionName.png" />
-</li>
-<li><p class="first">The prompt is a description of the criterion.</p>
-</li>
-<li><p class="first">Options describe how well the response satisfies the criterion.</p>
-</li>
-</ul>
-</div></blockquote>
-</li>
-<li><p class="first">Each option has a <em>name</em>, an <em>explanation</em>, and a <em>point value</em>.</p>
-<img alt="Image of a rubric in the LMS with call-outs for the criterion prompt and option names, explanations, and points" src="../../_images/PA_Rubric_LMS.png" />
-</li>
-</ul>
-<p>Different criteria in the same assignment can have different numbers of options.
-For example, in the image above, the first criterion has three options and the
-second criterion has four options.</p>
-<div class="admonition note">
-<p class="first admonition-title">Note</p>
-<p class="last">You can also include criteria that do not have options, but that do include a field where students can enter feedback. For more information, see <a class="reference internal" href="CreateORAAssignment.html#pa-criteria-comment-field-only"><span>Provide Only Comment Fields for Individual Criteria</span></a>.</p>
-</div>
-<p>You can see both criterion and option names when you access assignment
-information for an individual student. For more information, see <a class="reference internal" href="Access_ORA_Info.html#accessing-ora-assignment-information"><span>Accessing Assignment and Student Metrics</span></a>.</p>
-<a class="reference internal image-reference" href="../../_images/PA_Crit_Option_Names.png"><img alt="Student-specific assignment information with call-outs for criterion and option names" src="../../_images/PA_Crit_Option_Names.png" style="width: 600px;" /></a>
-<p>When you create your rubric, decide how many points each option will receive,
-and make sure that the explanation for each option is as specific as possible.
-For example, one criterion and set of options may resemble the following.</p>
-<p><strong>Criterion</strong></p>
-<p>Name: Origins</p>
-<p>Prompt: Does this response explain the origins of the Hundred Years&#8217; War? (5
-points possible)</p>
-<p><strong>Options</strong></p>
-<table border="1" class="docutils">
-<colgroup>
-<col width="10%" />
-<col width="26%" />
-<col width="64%" />
-</colgroup>
-<thead valign="bottom">
-<tr class="row-odd"><th class="head stub">Points</th>
-<th class="head">Name</th>
-<th class="head">Explanation</th>
-</tr>
-</thead>
-<tbody valign="top">
-<tr class="row-even"><th class="stub">0</th>
-<td>Not at all</td>
-<td>This response does not address the origins of the Hundred Years&#8217; War.</td>
-</tr>
-<tr class="row-odd"><th class="stub">1</th>
-<td>Dynastic disagreement</td>
-<td>This response alludes to a dynastic disagreement between England and France, but doesn&#8217;t reference Edward III of England and Philip VI of France.</td>
-</tr>
-<tr class="row-even"><th class="stub">3</th>
-<td>Edward and Philip</td>
-<td>This response mentions the dynastic disagreement between Edward III and Philip VI, but doesn&#8217;t address the role of Salic law.</td>
-</tr>
-<tr class="row-odd"><th class="stub">5</th>
-<td>Salic law</td>
-<td>This response explains the way that Salic law contributed to the dynastic disagreement between Edward III and Philip VI, leading to the Hundred Years&#8217; War.</td>
-</tr>
-</tbody>
-</table>
-<p>For more information about writing effective rubrics, see Heidi Goodrich
-Andrade&#8217;s <a class="reference external" href="http://learnweb.harvard.edu/alps/thinking/docs/rubricar.htm">Understanding Rubrics</a>.</p>
-<p>For more information, see <a class="reference internal" href="CreateORAAssignment.html#pa-add-rubric"><span>Step 3. Add the Rubric</span></a>.</p>
-</div>
-<div class="section" id="assessment-steps">
-<h2>6.25.1.4. Assessment Steps<a class="headerlink" href="#assessment-steps" title="Permalink to this headline">¶</a></h2>
-<p>In your assignment, you&#8217;ll also specify the <strong>assessment steps</strong>. You can set
-the assignment to include a student training step, a peer assessment step, and a
-self assessment step.</p>
-<p>You can see the type and order of the assessments when you look at the
-assignment. In the following example, after students submit a response, they
-complete a student training step (&#8220;Learn to Assess Responses&#8221;), complete peer
-assessments on other students&#8217; responses (&#8220;Assess Peers&#8221;), and then complete
-self assessments (&#8220;Assess Your Response&#8221;).</p>
-<a class="reference internal image-reference" href="../../_images/PA_AsmtWithResponse.png"><img alt="Image of peer assessment with assessment steps and status labeled" src="../../_images/PA_AsmtWithResponse.png" style="width: 600px;" /></a>
-<div class="admonition note">
-<p class="first admonition-title">Note</p>
-<p class="last">If you include a student training step, you must also include a peer assessment step. The student training step must come before peer and self assessment steps.</p>
-</div>
-<div class="section" id="student-training-step">
-<span id="pa-student-training-assessments"></span><h3>6.25.1.4.1. Student Training Step<a class="headerlink" href="#student-training-step" title="Permalink to this headline">¶</a></h3>
-<p>When you create a peer assessment assignment, you can include one or more
-student training assessments to help students learn to perform their own
-assessments. A student training assessment contains one or more sample responses
-that you write, together with the scores that you would give the sample
-responses. Students review these responses and try to score them the way that
-you scored them.</p>
-<div class="admonition note">
-<p class="first admonition-title">Note</p>
-<p class="last">If you include a student training step, you must also include a peer
-assessment step. The student training step must come before peer and self
-assessment steps.</p>
-</div>
-<p>In a student training assessment, the <strong>Learn to Assess Responses</strong> step opens
-immediately after a student submits a response. The student sees one of the
-sample responses that you created, along with the rubric. The scores that you
-gave the response do not appear. The student also sees the number of sample
-responses that he or she will assess.</p>
-<a class="reference internal image-reference" href="../../_images/PA_TrainingAssessment.png"><img alt="Sample training response, unscored" src="../../_images/PA_TrainingAssessment.png" style="width: 500px;" /></a>
-<p>The student selects an option for each of the assignment&#8217;s criteria, and then
-clicks <strong>Compare your selections with the instructor&#8217;s selections</strong>. If all of
-the student&#8217;s selections match the instructor&#8217;s selections, the next sample
-response opens automatically.</p>
-<p>If any of the student&#8217;s selections differs from the instructor&#8217;s selections, the
-student sees the response again, and the following message appears above the
-response:</p>
-<div class="highlight-xml"><div class="highlight"><pre>Learning to Assess Responses
-Your assessment differs from the instructor&#39;s assessment of this response. Review the
-response and consider why the instructor may have assessed it differently. Then, try
-the assessment again.
-</pre></div>
-</div>
-<p>For each of the criteria, the student sees one of the following two messages,
-depending on whether the student&#8217;s selections matched those of the instructor:</p>
-<div class="highlight-xml"><div class="highlight"><pre>Selected Options Differ
-The option you selected is not the option that the instructor selected.
-</pre></div>
-</div>
-<div class="highlight-xml"><div class="highlight"><pre>Selected Options Agree
-The option you selected is the option that the instructor selected.
-</pre></div>
-</div>
-<p>For example, the following student chose one correct option and one incorrect
-option.</p>
-<a class="reference internal image-reference" href="../../_images/PA_TrainingAssessment_Scored.png"><img alt="Sample training response, scored" src="../../_images/PA_TrainingAssessment_Scored.png" style="width: 500px;" /></a>
-<p>The student continues to try scoring the sample response until the student&#8217;s
-scoring for all criteria matches the instructor&#8217;s scoring.</p>
-<p>For more information, see <a class="reference internal" href="CreateORAAssignment.html#pa-student-training-step"><span>Student Training</span></a>.</p>
-</div>
-<div class="section" id="peer-assessment-step">
-<h3>6.25.1.4.2. Peer Assessment Step<a class="headerlink" href="#peer-assessment-step" title="Permalink to this headline">¶</a></h3>
-<p>In the peer assessment step, students review other students&#8217; responses. For each
-response, they select an option for each criterion in your rubric based on the
-response. Students can also provide text feedback, or comments, on each
-response.</p>
-</div>
-</div>
-<div class="section" id="number-of-responses-and-assessments">
-<h2>6.25.1.5. Number of Responses and Assessments<a class="headerlink" href="#number-of-responses-and-assessments" title="Permalink to this headline">¶</a></h2>
-<p>When you specify a peer assessment step, you specify the <strong>number of responses</strong>
-that each student has to assess and the <strong>number of peer assessments</strong> that each
-response has to receive.</p>
-<div class="admonition note">
-<p class="first admonition-title">Note</p>
-<p class="last">Because some students might submit a response without completing any
-peer assessments, some responses might not receive the required number of
-assessments. To increase the chance that all responses receive a sufficient
-number of assessments, you must set the number of responses that students
-must assess to be higher than the number of assessments that each response
-must undergo. For example, if you require each response to receive three
-assessments, you could require each student to assess five responses.</p>
-</div>
-<p>If all responses have received assessments, but some students have not completed
-the required number of peer assessments, those students can assess responses
-that other students have already assessed. The student who submitted the
-response sees the additional peer assessments when he sees his score. However,
-the additional peer assessments do not count toward the score that the response
-receives.</p>
-</div>
-<div class="section" id="feedback-options">
-<span id="id2"></span><h2>6.25.1.6. Feedback Options<a class="headerlink" href="#feedback-options" title="Permalink to this headline">¶</a></h2>
-<p>By default, students see a single comment field below the entire rubric. You can
-also add a comment field to an individual criterion or to several individual
-criteria. This comment field can contain up to 300 characters.</p>
-<p>The comment field appears below the options for the criterion. In the following
-image, both criteria have a comment field. There is also a field for overall
-comments on the response.</p>
-<a class="reference internal image-reference" href="../../_images/PA_CriterionAndOverallComments.png"><img alt="Rubric with comment fields under each criterion and under overall response" src="../../_images/PA_CriterionAndOverallComments.png" style="width: 600px;" /></a>
-<p>For more information, see <a class="reference internal" href="CreateORAAssignment.html#pa-add-rubric"><span>Step 3. Add the Rubric</span></a> and <a class="reference internal" href="CreateORAAssignment.html#pa-criteria-comment-field-only"><span>Provide Only Comment Fields for Individual Criteria</span></a>.</p>
-</div>
-<div class="section" id="peer-assessment-scoring">
-<span id="pa-scoring"></span><h2>6.25.1.7. Peer Assessment Scoring<a class="headerlink" href="#peer-assessment-scoring" title="Permalink to this headline">¶</a></h2>
-<p>Peer assessments are scored by criteria. An individual criterion&#8217;s score is the
-median of the scores that each peer assessor gave that criterion. For example,
-if the Ideas criterion in a peer assessment receives a 10 from one student, a 7
-from a second student, and an 8 from a third student, the Ideas criterion&#8217;s
-score is 8.</p>
-<p>A student&#8217;s final score for a peer assessment is the sum of the median scores for each individual criterion.</p>
-<p>For example, a response may receive the following scores from peer assessors:</p>
-<table border="1" class="docutils">
-<colgroup>
-<col width="38%" />
-<col width="15%" />
-<col width="15%" />
-<col width="15%" />
-<col width="15%" />
-</colgroup>
-<thead valign="bottom">
-<tr class="row-odd"><th class="head stub">Criterion Name</th>
-<th class="head">Peer 1</th>
-<th class="head">Peer 2</th>
-<th class="head">Peer 3</th>
-<th class="head">Median</th>
-</tr>
-</thead>
-<tbody valign="top">
-<tr class="row-even"><th class="stub">Ideas (out of 10)</th>
-<td>10</td>
-<td>7</td>
-<td>8</td>
-<td><strong>8</strong></td>
-</tr>
-<tr class="row-odd"><th class="stub">Content (out of 10)</th>
-<td>7</td>
-<td>9</td>
-<td>8</td>
-<td><strong>8</strong></td>
-</tr>
-<tr class="row-even"><th class="stub">Grammar (out of 5)</th>
-<td>4</td>
-<td>4</td>
-<td>5</td>
-<td><strong>4</strong></td>
-</tr>
-</tbody>
-</table>
-<p>To calculate the final score, add the median scores for each criterion:</p>
-<blockquote>
-<div><strong>Ideas median (8/10) + Content median (8/10) + Grammar median (4/5) = final
-score (20/25)</strong></div></blockquote>
-<div class="admonition note">
-<p class="first admonition-title">Note</p>
-<p class="last">Remember that final scores are calculated by criteria, not by
-individual assessor. Therefore, the score for the response is not the median
-of the scores that each individual peer assessor gave the response.</p>
-</div>
-<p>For information on grades for student submissions that you have cancelled and
-removed from peer assessment, refer to <a class="reference internal" href="Access_ORA_Info.html#remove-a-student-response-from-peer-grading"><span>Remove a Student Response from Peer Grading</span></a>.</p>
-</div>
-<div class="section" id="assessing-additional-responses">
-<h2>6.25.1.8. Assessing Additional Responses<a class="headerlink" href="#assessing-additional-responses" title="Permalink to this headline">¶</a></h2>
-<p>Students can assess more than the required number of responses. After a student
-completes the peer assessment step, the step &#8220;collapses&#8221; so that just the
-<strong>Assess Peers</strong> heading is visible.</p>
-<a class="reference internal image-reference" href="../../_images/PA_PAHeadingCollapsed.png"><img alt="The peer assessment step with just the heading visible" src="../../_images/PA_PAHeadingCollapsed.png" style="width: 500px;" /></a>
-<p>If the student clicks the <strong>Assess Peers</strong> heading, the step expands. The student can then click <strong>Continue Assessing Peers</strong>.</p>
-<a class="reference internal image-reference" href="../../_images/PA_ContinueGrading.png"><img alt="The peer assessment step expanded so that &quot;Continue Assessing Peers&quot; is visible" src="../../_images/PA_ContinueGrading.png" style="width: 500px;" /></a>
-<div class="section" id="self-assessment-step">
-<h3>6.25.1.8.1. Self Assessment Step<a class="headerlink" href="#self-assessment-step" title="Permalink to this headline">¶</a></h3>
-<p>In self assessments, the student sees his response followed by your rubric. As
-with peer assessments, the student compares the rubric to his response and
-selects an option for each of the criteria.</p>
-<p>If you include both peer and self assessments, we recommend that you include the
-peer assessment before the self assessment.</p>
-</div>
-</div>
-<div class="section" id="top-responses">
-<span id="pa-top-responses"></span><h2>6.25.1.9. Top Responses<a class="headerlink" href="#top-responses" title="Permalink to this headline">¶</a></h2>
-<p>You can include a <strong>Top Responses</strong> section that shows the top-scoring responses
-that students have submitted for the assignment, along with the scores for those
-responses. The <strong>Top Responses</strong> section appears below the student&#8217;s score
-information after the student finishes every step in the assignment.</p>
-<a class="reference internal image-reference" href="../../_images/PA_TopResponses.png"><img alt="Section that shows the text and scores of the top three responses for the assignment" src="../../_images/PA_TopResponses.png" style="width: 500px;" /></a>
-<p>You can allow the <strong>Top Responses</strong> section to show between 1 and 100 responses.
-Keep in mind, however, that each response might be up to 300 pixels in height in
-the list. (For longer responses, students can scroll to see the entire
-response.) We recommend that you specify 20 or fewer responses to prevent the
-page from becoming too long.</p>
-<div class="admonition note">
-<p class="first admonition-title">Note</p>
-<p>It may take up to an hour for a high-scoring response to appear in the
-<strong>Top Responses</strong> list.</p>
-<p class="last">If a high-scoring response is <a class="reference internal" href="Access_ORA_Info.html#remove-a-student-response-from-peer-grading"><span>removed from peer assessment</span></a> it is also removed from the <strong>Top
-Responses</strong> list.</p>
-</div>
-<p>For more information, see <a class="reference internal" href="CreateORAAssignment.html#pa-show-top-responses"><span>Step 7. Show Top Responses</span></a>.</p>
-</div>
-</div>
-
+  
 
           <footer>
   
     <div class="rst-footer-buttons">
       
-        <a href="CreateORAAssignment.html" class="btn btn-neutral float-right" title="6.25.2. Create an Open Response Assessment Assignment"/>Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="CreateORAAssignment.html" class="btn btn-neutral float-right" title="6.25.1. 创建一个开放题回答评估"/>Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
         <a href="index.html" class="btn btn-neutral" title="6.25. 开放性回答评估"><span class="icon icon-circle-arrow-left"></span> Previous</a>
