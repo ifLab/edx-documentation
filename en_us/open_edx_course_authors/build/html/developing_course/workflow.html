@@ -1,0 +1,324 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>4.1. 开始创建课程内容 &mdash; Building and Running an Open edX Course  documentation</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="../_static/css/favicon.ico"/>
+  
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  
+  
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:'../',
+        VERSION:'',
+        COLLAPSE_INDEX:false,
+        FILE_SUFFIX:'.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+
+    
+
+  
+
+  
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+
+  
+    <link rel="top" title="Building and Running an Open edX Course  documentation" href="../index.html"/>
+        <link rel="up" title="4. Developing Your Course" href="index.html"/>
+        <link rel="next" title="4.2. 创建课程大纲" href="course_outline.html"/>
+        <link rel="prev" title="4. Developing Your Course" href="index.html"/> 
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-nav-search">
+        <a href="../index.html" class="icon icon-home"> Building and Running an Open edX Course</a>
+        <form class="wy-form" action="../search.html" method="get">
+  <input type="text" name="q" placeholder="Search document" />
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix">
+        
+        
+            <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../front_matter/index.html">1. For Your Information</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../front_matter/read_me.html">1.1. Read Me</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../front_matter/preface.html">1.2. 序言</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../front_matter/change_log.html">1.3. Change Log</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../front_matter/browsers.html">1.4. edX浏览器支持</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/index.html">2. Getting Started</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../getting_started/dashboard_acctsettings_profile.html">2.1. 搜索你的仪表板、设置和配置文件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../getting_started/get_started.html">2.2. Getting Started with Studio</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../getting_started/accessibility.html">2.3. 创建无障碍课程指南</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../building_course/index.html">3. Setting up Your Course</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/creating_new_course.html">3.1. 新建课程</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/scheduling_course.html">3.2. 设置开始和结束日期</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/setting_up_student_view.html">3.3. 设置课程细节</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/course_prerequisites.html">3.4. 设定入学要求</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/licensing_course.html">3.5. 授权课程</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/course_files.html">3.6. 给课程添加文件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/handouts_updates.html">3.7. 添加课程补充资料及讲义</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/pages.html">3.8. 为课程添加页面</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/textbooks.html">3.9. 添加课本</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/establish_grading_policy.html">3.10. 设定计分政策</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/course_rerun.html">3.11. 重开课程</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/export_import_course.html">3.12. 输出和导入课程</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">4. Developing Your Course</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="">4.1. 开始创建课程内容</a></li>
+<li class="toctree-l2"><a class="reference internal" href="course_outline.html">4.2. 创建课程大纲</a></li>
+<li class="toctree-l2"><a class="reference internal" href="course_sections.html">4.3. 创建课程章节</a></li>
+<li class="toctree-l2"><a class="reference internal" href="course_subsections.html">4.4. 构建课程小节</a></li>
+<li class="toctree-l2"><a class="reference internal" href="course_units.html">4.5. 构建课程单元</a></li>
+<li class="toctree-l2"><a class="reference internal" href="course_components.html">4.6. 创建课程组件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="controlling_content_visibility.html">4.7. 设置内容可见性</a></li>
+<li class="toctree-l2"><a class="reference internal" href="testing_courseware.html">4.8. 测试您的课程内容</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../creating_content/index.html">5. Creating Course Content</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../creating_content/create_html_component.html">5.1. 如何使用HTML组件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../creating_content/create_video.html">5.2. 创建影片组件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../creating_content/create_discussion.html">5.3. 创建讨论组件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../creating_content/create_problem.html">5.4. 创建问题组件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../creating_content/libraries.html">5.5. 内容库</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../exercises_tools/index.html">6. Creating Exercises and Tools</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/create_exercises_and_tools.html">6.1. 创建练习和工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/annotation.html">6.2. 注释问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/checkbox.html">6.3. 复选框问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/chemical_equation.html">6.4. 化学方程式问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/circuit_schematic_builder.html">6.5. 电路原理图搭建问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/conditional_module.html">6.6. 条件模板</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/custom_javascript.html">6.7. 自定义JavaScript问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/drag_and_drop.html">6.8. 拖放问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/dropdown.html">6.9. 下拉问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/external_graders.html">6.10. 图像映射输入问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/full_screen_image.html">6.11. 全屏图像工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/gene_explorer.html">6.12. Gene Explorer工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/google_calendar.html">6.13. 谷歌日历工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/google_docs.html">6.14. 谷歌云文件工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/google_hangouts.html">6.15. 谷歌即时群聊工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/iframe.html">6.16. IFrame工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/image_mapped_input.html">6.17. 图像映射输入问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/lti_component.html">6.18. LTI 组件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/math_expression_input.html">6.19. 数学表达式输入问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/molecule_editor.html">6.20. 分子编辑器</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/molecule_viewer.html">6.21. 分子浏览器</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/multiple_choice.html">6.22. 多项选择问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/mult_choice_num_input.html">6.23. 多项选择和数字输入题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/numerical_input.html">6.24. 数值输入问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/open_response_assessments/index.html">6.25. Open Response Assessments</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/periodic_table.html">6.26. 元素周期表工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/poll.html">6.27. 投票工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/problem_with_hint.html">6.28. 带适应性提示的问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/problem_in_latex.html">6.29. LaTeX问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/protein_builder.html">6.30. Protex蛋白质构建工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/randomized_content_blocks.html">6.31. 随机内容块</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/recommenderXBlock.html">6.32. 推荐系统</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/student_notes.html">6.33. 学生笔记工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/text_input.html">6.34. 文本输入问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/word_cloud.html">6.35. 文字云工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/custom_python.html">6.36. 自定义评分器问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/zooming_image.html">6.37. 图像放大工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/mathjax.html">6.38. Studio中MathJax的简要介绍</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../content_experiments/index.html">7. Creating Content Experiments</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../content_experiments/content_experiments_overview.html">7.1. 内容实验概述</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../content_experiments/content_experiments_configure.html">7.2. Configure Your Course for Content Experiments</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../content_experiments/content_experiments_add.html">7.3. Add Content Experiments to Your Course</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../content_experiments/content_experiments_view.html">7.4. 测试内容实验</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../cohorts/index.html">8. Including Student Cohorts</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../cohorts/cohorts_overview.html">8.1. 使用队列功能建立课程群</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cohorts/cohort_config.html">8.2. 启用、配置分队模式</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cohorts/cohorted_courseware.html">8.3. 创建特定队列课件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cohorts/cohorts_setup_discussions.html">8.4. 在包含队列的课程中设置论坛</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cohorts/cohorts_manage_discussions.html">8.5. 管理有学生队列的论坛</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../releasing_course/index.html">9. Releasing Your Course</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../releasing_course/beta_testing.html">9.1. 贝塔测试</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../releasing_course/course_launching.html">9.2. 课程发布事宜</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../releasing_course/staff_debug_info.html">9.3. 员工调试信息</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../running_course/index.html">10. Running Your Course</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/course_staffing.html">10.1. 安置职工</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/course_enrollment.html">10.2. 招生</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/discussions.html">10.3. 管理课程讨论项目</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/discussions_students.html">10.4. 参与课程讨论</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/discussion_guidance_moderators.html">10.5. 论坛协调员指南</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/bulk_email.html">10.6. 大宗邮件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/course_wiki.html">10.7. 使用课程维基</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/course_data.html">10.8. 课程数据</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/course_student.html">10.9. 学生数据</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/course_answers.html">10.10. 回答问题数据</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/course_grades.html">10.11. 学生成绩与成绩评定</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/checking_student_progress.html">10.12. 总成绩计算与证书发放</a></li>
+</ul>
+</li>
+</ul>
+
+        
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top">
+        <i data-toggle="wy-nav-top" class="icon icon-reorder"></i>
+        <a href="/">Building and Running an Open edX Course</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <ul class="wy-breadcrumbs">
+  <li><a href="../index.html">Table of Contents</a> &raquo;</li>
+  <li><a href="">4.1. 开始创建课程内容</a></li>
+  
+</ul>
+<hr/>
+
+          
+  <div class="section" id="getting-started-with-course-content-development">
+<span id="id1"></span><h1>4.1. 开始创建课程内容<a class="headerlink" href="#getting-started-with-course-content-development" title="Permalink to this headline">¶</a></h1>
+<p>当您完成 <a class="reference internal" href="../building_course/index.html#setting-up-your-course-index"><span>setting up your course</span></a> 之后，
+您可以开始创建课程内容。</p>
+<p>本章简述建立课程内容过程中涉及的操作步骤，详情请点击以下链接：</p>
+<ul class="simple">
+<li><a class="reference internal" href="#understanding-course-building-blocks">Understanding Course Building Blocks</a></li>
+<li><a class="reference internal" href="#creating-new-course-content">Creating New Course Content</a></li>
+<li><a class="reference internal" href="#making-course-content-visible-to-students">Making Course Content Visible to Students</a></li>
+<li><a class="reference internal" href="#revising-content">Revising Content</a></li>
+</ul>
+<div class="section" id="understanding-course-building-blocks">
+<span id="id2"></span><h2>4.1.1. 了解组成课程内容的要素<a class="headerlink" href="#understanding-course-building-blocks" title="Permalink to this headline">¶</a></h2>
+<p>在创建课程内容之前，您应该了解组成edX课程内容的要素。</p>
+<ul class="simple">
+<li><a class="reference internal" href="course_outline.html#developing-your-course-outline"><span>The course outline</span></a> 是课程内容的容器，包括一个或多个章节。</li>
+<li><a class="reference internal" href="course_sections.html#developing-course-sections"><span>Course sections</span></a> 是构成课程内容的重要组成部分，包括一个或多个小节。</li>
+<li><a class="reference internal" href="course_subsections.html#developing-course-subsections"><span>Course subsections</span></a> 是章节的组成部分，通常小节是按照主题或者其他规则划分的。一个小节中包括一个或者多个单元。</li>
+<li>小节中的课程就是 <a class="reference internal" href="course_units.html#developing-course-units"><span>Course units</span></a> ，单元是由一个或者多个组件组成的。</li>
+<li><a class="reference internal" href="course_components.html#developing-course-components"><span>Course components</span></a> 是单元中的内容，也是课程内容的组成部分。</li>
+</ul>
+</div>
+<div class="section" id="creating-new-course-content">
+<span id="id3"></span><h2>4.1.2. 创建新课程内容<a class="headerlink" href="#creating-new-course-content" title="Permalink to this headline">¶</a></h2>
+<p>一旦您了解了edX课程的组成方式，您就可以开始组织您的课程内容，并将内容导入Studio。</p>
+<p>在:ref:<cite>course outline&lt;Developing Your Course Outline&gt;</cite> 中创建 <a class="reference internal" href="course_sections.html#create-a-section"><span>sections</span></a> 、<a class="reference internal" href="course_subsections.html#create-a-subsection"><span>subsections</span></a> 和 <a class="reference internal" href="course_units.html#create-a-unit"><span>units</span></a> 。</p>
+<p>您也可以通过:ref:<cite>set the assignment type and due date&lt;Set the Assignment Type and Due Date
+for a Subsection&gt;</cite> 检测每一小节的学习效果。</p>
+<p>在单元页面 <a class="reference internal" href="course_components.html#add-a-component"><span>create components</span></a> 。</p>
+<p>另外，您也可以通过设置课程发布时间及发布单元来 <a class="reference internal" href="controlling_content_visibility.html#controlling-content-visibility"><span>control content visibility</span></a> 。</p>
+<p>下图总结了创建课程内容的流程：</p>
+<img alt="Diagram of the content creation process" src="../_images/workflow-create-content.png" />
+<p>我们建议您在创建的过程中 <a class="reference internal" href="testing_courseware.html#testing-your-course-content"><span>test course content</span></a> 。</p>
+</div>
+<div class="section" id="making-course-content-visible-to-students">
+<span id="id4"></span><h2>4.1.3. 确保课程内容对学生可见<a class="headerlink" href="#making-course-content-visible-to-students" title="Permalink to this headline">¶</a></h2>
+<p>在创建课程内容的同时，您还应该考虑何时将课程内容对学生开放。
+课程内容的可见性取决于以下几点：</p>
+<ul class="simple">
+<li><a class="reference internal" href="../building_course/scheduling_course.html#set-start-and-end-dates"><span>course start date</span></a></li>
+<li><a class="reference internal" href="course_sections.html#set-a-section-release-date"><span>section</span></a> 、 <a class="reference internal" href="course_subsections.html#set-a-subsection-release-date"><span>subsection</span></a> 的发布日期</li>
+<li>单元的 <a class="reference internal" href="course_units.html#hide-a-unit-from-students"><span>publishing status</span></a></li>
+<li><a class="reference internal" href="course_units.html#hide-a-unit-from-students"><span>Hide content from students</span></a> 设置</li>
+<li><a class="reference internal" href="controlling_content_visibility.html#content-groups"><span>内容组</span></a></li>
+</ul>
+<p>详细信息请见 <a class="reference internal" href="controlling_content_visibility.html#controlling-content-visibility"><span>设置内容可见性</span></a>.</p>
+</div>
+<div class="section" id="making-course-content-searchable">
+<span id="id5"></span><h2>4.1.4. 确保课程内容可搜索<a class="headerlink" href="#making-course-content-searchable" title="Permalink to this headline">¶</a></h2>
+<p>学生可以在 <a class="reference internal" href="../creating_content/create_html_component.html#working-with-html-components"><span>HTML components</span></a> 和视频脚本中通过 <strong>课件</strong> 栏左上角的 <strong>搜索</strong> 框搜索课程文本。</p>
+<p>Studio必须为内容建立索引，学生才能搜索您的课程。当您 <a class="reference internal" href="course_units.html#publish-a-unit"><span>publish</span></a> 时，Studio自动给所有新课程内容建立索引。</p>
+<p>如果有必要，您随时可以手动重新建立索引。
+一般情况下，您仅在学生看到不希望得到的搜索结果时重建课程内容索引。
+在 <strong>课程大纲</strong> 页面的右上角选择 <strong>为内容重建索引</strong> 。重建过程只需要不到30秒。</p>
+</div>
+<div class="section" id="revising-content">
+<span id="id6"></span><h2>4.1.5. 校正课程内容<a class="headerlink" href="#revising-content" title="Permalink to this headline">¶</a></h2>
+<p>您可以在任何时候校正课程内容。</p>
+<ul class="simple">
+<li>如果章节、小节处于发布状态，那么您在调整 <a class="reference internal" href="course_outline.html#reorganize-the-course-outline"><span>reorganize sections, subsections, and units</span></a> 时，学生可以立刻看见。</li>
+<li>在单元中 <a class="reference internal" href="course_units.html#edit-a-unit"><span>edit a unit</span></a> 或 <a class="reference internal" href="course_components.html#add-a-component"><span>components</span></a> 后，您必须重新 <a class="reference internal" href="course_units.html#publish-a-unit"><span>publish</span></a> ，这样学生才能看见新的内容。</li>
+</ul>
+<p>下图总结了校正课程内容及控制内容可见性的流程</p>
+<img alt="Diagram of the content creation process" src="../_images/workflow-revise-content.png" />
+<p>我们建议您在校正内容的同时 <a class="reference internal" href="testing_courseware.html#testing-your-course-content"><span>test course content</span></a> 。</p>
+</div>
+</div>
+
+
+          <footer>
+  
+    <div class="rst-footer-buttons">
+      
+        <a href="course_outline.html" class="btn btn-neutral float-right" title="4.2. 创建课程大纲"/>Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="index.html" class="btn btn-neutral" title="4. Developing Your Course"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <p>
+      &copy; Copyright 2015, edX.
+  </p>
+
+ 
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+</body>
+</html>

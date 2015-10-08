@@ -1,0 +1,525 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>10.4. 参与课程讨论 &mdash; Building and Running an Open edX Course  documentation</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="../_static/css/favicon.ico"/>
+  
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  
+  
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:'../',
+        VERSION:'',
+        COLLAPSE_INDEX:false,
+        FILE_SUFFIX:'.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+
+    
+
+  
+
+  
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+
+  
+    <link rel="top" title="Building and Running an Open edX Course  documentation" href="../index.html"/>
+        <link rel="up" title="10. Running Your Course" href="index.html"/>
+        <link rel="next" title="10.5. 论坛协调员指南" href="discussion_guidance_moderators.html"/>
+        <link rel="prev" title="10.3. 管理课程讨论项目" href="discussions.html"/> 
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-nav-search">
+        <a href="../index.html" class="icon icon-home"> Building and Running an Open edX Course</a>
+        <form class="wy-form" action="../search.html" method="get">
+  <input type="text" name="q" placeholder="Search document" />
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix">
+        
+        
+            <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../front_matter/index.html">1. For Your Information</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../front_matter/read_me.html">1.1. Read Me</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../front_matter/preface.html">1.2. 序言</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../front_matter/change_log.html">1.3. Change Log</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../front_matter/browsers.html">1.4. edX浏览器支持</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/index.html">2. Getting Started</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../getting_started/dashboard_acctsettings_profile.html">2.1. 搜索你的仪表板、设置和配置文件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../getting_started/get_started.html">2.2. Getting Started with Studio</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../getting_started/accessibility.html">2.3. 创建无障碍课程指南</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../building_course/index.html">3. Setting up Your Course</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/creating_new_course.html">3.1. 新建课程</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/scheduling_course.html">3.2. 设置开始和结束日期</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/setting_up_student_view.html">3.3. 设置课程细节</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/course_prerequisites.html">3.4. 设定入学要求</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/licensing_course.html">3.5. 授权课程</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/course_files.html">3.6. 给课程添加文件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/handouts_updates.html">3.7. 添加课程补充资料及讲义</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/pages.html">3.8. 为课程添加页面</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/textbooks.html">3.9. 添加课本</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/establish_grading_policy.html">3.10. 设定计分政策</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/course_rerun.html">3.11. 重开课程</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/export_import_course.html">3.12. 输出和导入课程</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../developing_course/index.html">4. Developing Your Course</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/workflow.html">4.1. 开始创建课程内容</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/course_outline.html">4.2. 创建课程大纲</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/course_sections.html">4.3. 创建课程章节</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/course_subsections.html">4.4. 构建课程小节</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/course_units.html">4.5. 构建课程单元</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/course_components.html">4.6. 创建课程组件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/controlling_content_visibility.html">4.7. 设置内容可见性</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/testing_courseware.html">4.8. 测试您的课程内容</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../creating_content/index.html">5. Creating Course Content</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../creating_content/create_html_component.html">5.1. 如何使用HTML组件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../creating_content/create_video.html">5.2. 创建影片组件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../creating_content/create_discussion.html">5.3. 创建讨论组件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../creating_content/create_problem.html">5.4. 创建问题组件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../creating_content/libraries.html">5.5. 内容库</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../exercises_tools/index.html">6. Creating Exercises and Tools</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/create_exercises_and_tools.html">6.1. 创建练习和工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/annotation.html">6.2. 注释问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/checkbox.html">6.3. 复选框问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/chemical_equation.html">6.4. 化学方程式问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/circuit_schematic_builder.html">6.5. 电路原理图搭建问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/conditional_module.html">6.6. 条件模板</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/custom_javascript.html">6.7. 自定义JavaScript问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/drag_and_drop.html">6.8. 拖放问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/dropdown.html">6.9. 下拉问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/external_graders.html">6.10. 图像映射输入问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/full_screen_image.html">6.11. 全屏图像工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/gene_explorer.html">6.12. Gene Explorer工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/google_calendar.html">6.13. 谷歌日历工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/google_docs.html">6.14. 谷歌云文件工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/google_hangouts.html">6.15. 谷歌即时群聊工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/iframe.html">6.16. IFrame工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/image_mapped_input.html">6.17. 图像映射输入问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/lti_component.html">6.18. LTI 组件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/math_expression_input.html">6.19. 数学表达式输入问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/molecule_editor.html">6.20. 分子编辑器</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/molecule_viewer.html">6.21. 分子浏览器</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/multiple_choice.html">6.22. 多项选择问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/mult_choice_num_input.html">6.23. 多项选择和数字输入题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/numerical_input.html">6.24. 数值输入问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/open_response_assessments/index.html">6.25. Open Response Assessments</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/periodic_table.html">6.26. 元素周期表工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/poll.html">6.27. 投票工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/problem_with_hint.html">6.28. 带适应性提示的问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/problem_in_latex.html">6.29. LaTeX问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/protein_builder.html">6.30. Protex蛋白质构建工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/randomized_content_blocks.html">6.31. 随机内容块</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/recommenderXBlock.html">6.32. 推荐系统</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/student_notes.html">6.33. 学生笔记工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/text_input.html">6.34. 文本输入问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/word_cloud.html">6.35. 文字云工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/custom_python.html">6.36. 自定义评分器问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/zooming_image.html">6.37. 图像放大工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/mathjax.html">6.38. Studio中MathJax的简要介绍</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../content_experiments/index.html">7. Creating Content Experiments</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../content_experiments/content_experiments_overview.html">7.1. 内容实验概述</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../content_experiments/content_experiments_configure.html">7.2. Configure Your Course for Content Experiments</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../content_experiments/content_experiments_add.html">7.3. Add Content Experiments to Your Course</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../content_experiments/content_experiments_view.html">7.4. 测试内容实验</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../cohorts/index.html">8. Including Student Cohorts</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../cohorts/cohorts_overview.html">8.1. 使用队列功能建立课程群</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cohorts/cohort_config.html">8.2. 启用、配置分队模式</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cohorts/cohorted_courseware.html">8.3. 创建特定队列课件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cohorts/cohorts_setup_discussions.html">8.4. 在包含队列的课程中设置论坛</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cohorts/cohorts_manage_discussions.html">8.5. 管理有学生队列的论坛</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../releasing_course/index.html">9. Releasing Your Course</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../releasing_course/beta_testing.html">9.1. 贝塔测试</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../releasing_course/course_launching.html">9.2. 课程发布事宜</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../releasing_course/staff_debug_info.html">9.3. 员工调试信息</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">10. Running Your Course</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="course_staffing.html">10.1. 安置职工</a></li>
+<li class="toctree-l2"><a class="reference internal" href="course_enrollment.html">10.2. 招生</a></li>
+<li class="toctree-l2"><a class="reference internal" href="discussions.html">10.3. 管理课程讨论项目</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="">10.4. 参与课程讨论</a></li>
+<li class="toctree-l2"><a class="reference internal" href="discussion_guidance_moderators.html">10.5. 论坛协调员指南</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bulk_email.html">10.6. 大宗邮件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="course_wiki.html">10.7. 使用课程维基</a></li>
+<li class="toctree-l2"><a class="reference internal" href="course_data.html">10.8. 课程数据</a></li>
+<li class="toctree-l2"><a class="reference internal" href="course_student.html">10.9. 学生数据</a></li>
+<li class="toctree-l2"><a class="reference internal" href="course_answers.html">10.10. 回答问题数据</a></li>
+<li class="toctree-l2"><a class="reference internal" href="course_grades.html">10.11. 学生成绩与成绩评定</a></li>
+<li class="toctree-l2"><a class="reference internal" href="checking_student_progress.html">10.12. 总成绩计算与证书发放</a></li>
+</ul>
+</li>
+</ul>
+
+        
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top">
+        <i data-toggle="wy-nav-top" class="icon icon-reorder"></i>
+        <a href="/">Building and Running an Open edX Course</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <ul class="wy-breadcrumbs">
+  <li><a href="../index.html">Table of Contents</a> &raquo;</li>
+  <li><a href="">10.4. 参与课程讨论</a></li>
+  
+</ul>
+<hr/>
+
+          
+  <div class="section" id="discussions-for-students-and-staff">
+<span id="id1"></span><h1>10.4. 参与课程讨论<a class="headerlink" href="#discussions-for-students-and-staff" title="Permalink to this headline">¶</a></h1>
+<p>课堂讨论是您有更多机会与其他学生交流、向课程团队提问，以及参与课程社区。
+如果您是第一次参加在线论坛，可以参考 <a class="reference internal" href="#anatomy-of-edx-course-discussions"><span>&#8220;anatomy&#8221;</span></a></p>
+<p>本章还描述了edX论坛的功能，这些功能能使您的讨论效率最大化。这些功能包括：</p>
+<ul class="simple">
+<li><a class="reference internal" href="#find-posts"><span>查找帖子</span></a></li>
+<li><a class="reference internal" href="#add-a-post"><span>发帖、评论、回复</span></a></li>
+<li><a class="reference internal" href="#keep-up-with-new-activity"><span>掌握帖子动态</span></a></li>
+<li><a class="reference internal" href="#react-to-contributions"><span>提供贡献反馈信息</span></a></li>
+</ul>
+<div class="section" id="edx">
+<span id="anatomy-of-edx-course-discussions"></span><h2>10.4.1. edX课程论坛剖析<a class="headerlink" href="#edx" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id2">
+<h3>10.4.1.1. 帖子、回复与评论<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python"><div class="highlight"><pre>帖子：“请各位做个自我介绍吧！”
+  - 回复：“我叫Lee，现在在堪培拉，是一名中学数学老师。”
+
+  - 回复：“大家好，我叫苏梅，来自中国香港。”
+    - 评论：“嗨苏梅，我也在香港上课。组个队不？”
+
+    - 评论：“同求组队！希望组队能帮我解决作业问题= =。”
+
+  - 回复：“哈喽，我在约翰内斯堡，我在上高考培训班。”
+</pre></div>
+</div>
+<p>本例涵盖了您在讨论中的不同贡献方式。“帖子”即话题，“回复”即对帖子内容的回复，
+“评论”则是观众针对某条回复的看法。在发布帖子、发表回复、评论之前，
+先想想哪种形式更适合您想表达的内容。这可以让课堂讨论更加井然有序。</p>
+</div>
+<div class="section" id="id3">
+<h3>10.4.1.2. 讨论课题<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h3>
+<p>大多数edX课程都会为学生提供机会讨论视频课程、阅读任务、课后问题及其他课程内容。
+这种针对某个特定内容而设的讨论称为“课题”。特殊讨论课题通常出现在相应内容的下方。</p>
+<img alt="A discussion topic that appears below a video in the course, identified by a &quot;Show Discussion&quot; link" src="../_images/Discussion_content_specific.png" />
+<p>edX课程通常包含几个全课堂讨论课题，譬如“常见问题解答”、“疑难解答”等等。
+您可在课程的 <strong>讨论</strong> 页面访问这些课题：单击 所有 <strong>讨论</strong> 下拉箭头即可。</p>
+<img alt="Discussion topics are listed on the Discussion page when you click the drop-down list at the left side of the page" src="../_images/Discussion_course_wide.png" />
+<p>访问 <strong>讨论</strong> 页面时，您可以阅读这些课题，并在其下发表内容。</p>
+<ul class="simple">
+<li>全课堂讨论课题只有一个标题，其下不包含其他次级讨论内容。</li>
+<li>特殊讨论课题下通常会包含其他次级分类讨论。</li>
+</ul>
+<p>注意，您不仅可以在 <strong>讨论</strong> 页面访问特殊讨论课题，也可以在浏览 <strong>课件</strong> 页面的课程内容时访问特殊讨论课题。
+但是全课堂讨论课题只能从 <strong>讨论</strong> 页面访问。</p>
+<p>请先浏览课题列表，然后选择最合适的课题发帖，这样能使其他兴趣相投的人更容易找到、阅读、回复您的帖子。</p>
+</div>
+<div class="section" id="id4">
+<h3>10.4.1.3. 讨论帖的类型<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h3>
+<p>当您针对某个课题贡献帖子时，帖子通常分为“提问帖”和“讨论帖”。</p>
+<ul class="simple">
+<li><strong>提问帖</strong> ，用于提问，课程工作人员和讨论社区均可解答。</li>
+<li><strong>讨论帖</strong> ，常用于展开对话、分享思路、交流反馈，及邀请其他成员参与讨论社区。</li>
+</ul>
+<p>发帖时，您需要决定帖子的类型。</p>
+<p>您访问“讨论”页面时，带有问号标记的帖子为提问帖，带有对话气泡标记的为讨论帖。</p>
+<img alt="The list of posts with images identifying questions and discussions" src="../_images/Post_types_in_list.png" />
+<p>如果您不知道自己的帖子到底属于哪种类型，可以想想，
+您是想得到具体的信息（提问帖），还是只是想开展一次开放式的对话（讨论帖）？
+如果您需要得到教员的回答，请确保您发布的是提问帖，这样教员才能合适地解答。</p>
+</div>
+</div>
+<div class="section" id="find-posts">
+<span id="id5"></span><h2>10.4.2. 查找帖子<a class="headerlink" href="#find-posts" title="Permalink to this headline">¶</a></h2>
+<p>您可以在发帖前试着找找其他人有没有提过和你类似的问题，或者发起您感兴趣的会话，
+如果有，不妨在其他类似的帖子下方发表内容，而不必新开一条帖子，如此，
+可以使大家的讨论效率最大化。
+您可以搜索特定内容，也可以专门浏览含有您感兴趣内容的讨论课题。</p>
+<div class="section" id="id6">
+<h3>10.4.2.1. 搜索讨论内容<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h3>
+<p>您可以单击“讨论”页面，在帖子列表上方的“搜索所有帖子”字段中输入关键词、关键句子，
+甚至某个单词的一部分，从而搜索整个列表，查找您需要的内容。按回车键，搜索结果为：</p>
+<ul class="simple">
+<li>含有与您输入的信息相同或部分相同内容的帖子、评论或回复。
+页面中显示的是所有含有匹配信息的内容列表。</li>
+<li>如果找不到明确的匹配，则显示包含类似信息的内容。
+页面中显示“无法匹配{您输入的内容}，以下是包含类似信息的内容”。</li>
+<li>如果成功找到您想要的信息，内容上方会出现“查看该作者的其他帖子”选项。
+单击作者的用户名，即可阅读该作者的其他内容。</li>
+</ul>
+</div>
+<div class="section" id="id7">
+<h3>10.4.2.2. 查看某一课题中的所有历史帖子<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h3>
+<p>单击“讨论”，从下拉列表中选择关于某项课程内容或某类问题的课题。
+列表即只会显示您选择的那类帖子。</p>
+<img alt="The list of posts with callouts to identify the top filter to select one topic and the filter below it to select by state" src="../_images/Discussion_filters.png" />
+</div>
+<div class="section" id="id8">
+<h3>10.4.2.3. 仅查看“未读”或“未解决”的帖子<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h3>
+<p>为控制“讨论”页面中帖子的数量，您可以通过页面上方的筛选功能选择某一类型的帖子，
+默认筛选条件为“所有帖子”。</p>
+<ul class="simple">
+<li>选择“未读”，即可查看您尚未浏览的所有讨论帖及提问帖。</li>
+<li>选择“未解决”，即可查看所有没有满意答案的提问题。</li>
+</ul>
+</div>
+</div>
+<div class="section" id="add-a-post">
+<span id="id9"></span><h2>10.4.3. 发帖、评论、回复<a class="headerlink" href="#add-a-post" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id10">
+<h3>10.4.3.1. 发帖<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h3>
+<p>为保证其他学生及课程团队能够找到、回复您的帖子，请选择正确的帖子类型：“提问”还是“讨论”？</p>
+<div class="section" id="id11">
+<h4>10.4.3.1.1. 在特殊讨论课题中发帖<a class="headerlink" href="#id11" title="Permalink to this headline">¶</a></h4>
+<ol class="arabic">
+<li><p class="first">单击“课件”</p>
+</li>
+<li><p class="first">打开您想要发帖的课题</p>
+</li>
+<li><p class="first">单击“查看讨论”查看其他人发布的内容</p>
+<p>您可以快速浏览已经发布的帖子。通常，帖子只会显示标题和开头几句话。
+如果您想查看帖子的完整内容以及其下的评论和回复，单击“展开讨论”。</p>
+</li>
+</ol>
+<ol class="arabic simple" start="4">
+<li>如果您想发帖，单击“新帖子”</li>
+</ol>
+<img alt="Adding a post about specific course content" src="../_images/Discussion_content_specific_post.png" />
+<ol class="arabic simple" start="5">
+<li>选择帖子类型：单击“提问”或“讨论”</li>
+<li>在“标题”字段中输入一段简短的描述性文字。标题是帖子的一部分，
+其他人在浏览“讨论”页面或查看特殊讨论课题时将首先看见您的标题</li>
+<li>输入帖子的完整内容。您可以单击内容字段上方的按钮选择文本格式、添加链接、图片等等</li>
+</ol>
+</div>
+<div class="section" id="id12">
+<h4>10.4.3.1.2. 在全课堂讨论课题中发帖<a class="headerlink" href="#id12" title="Permalink to this headline">¶</a></h4>
+<p>您可根据以下流程在全课堂讨论课题中发帖。</p>
+<ol class="arabic simple">
+<li>单击“讨论”页面</li>
+<li>单击“新帖子”</li>
+<li>选择帖子类型：单击“提问”或“讨论”</li>
+<li>选择最合适的课题发帖</li>
+</ol>
+<blockquote>
+<div><img alt="Selecting the topic for a new post on the Discussion page" src="../_images/Discussion_course_wide_post.png" />
+</div></blockquote>
+<ol class="arabic simple" start="5">
+<li>在“标题”字段中输入一段简短的描述性文字。
+标题是帖子的一部分，其他人在浏览“讨论”页面或查看特殊讨论课题时将首先看见您的标题</li>
+<li>输入帖子的完整内容。您可以单击内容字段上方的按钮选择文本格式、
+添加链接、图片等等</li>
+</ol>
+</div>
+</div>
+<div class="section" id="id13">
+<h3>10.4.3.2. 发表回复、评论<a class="headerlink" href="#id13" title="Permalink to this headline">¶</a></h3>
+<p>在讨论中，您可以通过回复功能回复某条原创帖，或通过评论功能展开某条回复内容。</p>
+<p>发表回复、评论时也可以使用添加链接等功能，具体操作与发帖时的操作相同。</p>
+<div class="section" id="id14">
+<h4>10.4.3.2.1. 在特殊讨论课题中发表回复和评论<a class="headerlink" href="#id14" title="Permalink to this headline">¶</a></h4>
+<ol class="arabic simple">
+<li>单击“课件”</li>
+<li>打开您想要发帖的课题</li>
+<li>单击“查看讨论”</li>
+<li>浏览您想要发表看法的帖子</li>
+<li>单击“展开讨论”</li>
+</ol>
+<blockquote>
+<div><img alt="The **Expand discussion** link under a post" src="../_images/Discussion_expand.png" />
+</div></blockquote>
+<ol class="arabic simple" start="6">
+<li>发表回复和评论</li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li>单击“添加回复”对某条帖子内容发表回复。回复完成后，单击“提交回复”。</li>
+<li>单击某条回复下的“添加评论”字段。评论完毕后，单击“提交评论”。</li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="id15">
+<h4>10.4.3.2.2. 在全课堂讨论课题下发表回复及评论<a class="headerlink" href="#id15" title="Permalink to this headline">¶</a></h4>
+<p>您可根据以下流程在全课堂讨论课题中发帖。</p>
+<ol class="arabic simple">
+<li>单击“讨论”页面</li>
+<li>找到您想要的帖子。先浏览帖子中的回复和评论再决定是否发表看法</li>
+<li>发表回复和评论</li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li>单击“添加回复”对某条帖子内容发表回复。回复完成后，单击“提交回复”。</li>
+</ul>
+<blockquote>
+<div><img alt="The **Add A Response** button located between a post and its responses" src="../_images/Discussion_add_response.png" />
+</div></blockquote>
+<ul class="simple">
+<li>单击某条回复下的“添加评论”字段。评论完毕后，单击“提交评论”。</li>
+</ul>
+</div></blockquote>
+</div>
+</div>
+</div>
+<div class="section" id="keep-up-with-new-activity">
+<span id="id16"></span><h2>10.4.4. 掌握帖子动态<a class="headerlink" href="#keep-up-with-new-activity" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id17">
+<h3>10.4.4.1. 浏览新帖及更新帖<a class="headerlink" href="#id17" title="Permalink to this headline">¶</a></h3>
+<p>“讨论”页面的帖子列表提供了一系列的标识提示，
+帮助您快速找到新帖子以及含有未读评论、回复的帖子，
+并将它们与已经完全阅读过的帖子区分开。</p>
+<ul class="simple">
+<li>完全未读的帖子带有蓝色气泡标记。</li>
+<li>已经阅读过内容，但是有些评论和回复尚未阅读的帖子，带有白色气泡标记。</li>
+<li>已经完全阅读过的对话带有灰色气泡标记及灰色背景颜色。</li>
+</ul>
+<blockquote>
+<div><img alt="The list of posts with posts showing differently colored backgrounds and callout images" src="../_images/Discussion_colorcoding.png" />
+</div></blockquote>
+<p>气泡标记中显示的是该会话中贡献的总数量（包括帖子、回复、评论）。
+将鼠标移到气泡标记上，即可查看未阅读的贡献数量。</p>
+<img alt="A post with 4 contributions total and a popup that shows only two are unread" src="../_images/Discussion_mouseover.png" />
+<p>只有通过“按活跃时间排序”和“按活跃度排序”分类出来的帖子才会显示不同颜色的气泡标记。
+如果您将帖子排序方法改为“按点赞数量排序”，则气泡标记出显示的是某条帖子的点赞人数。
+请参阅 <a class="reference internal" href="#vote-for-posts-or-responses"><span>给帖子或回复点赞</span></a>.</p>
+</div>
+<div class="section" id="id18">
+<h3>10.4.4.2. 接收每日摘要<a class="headerlink" href="#id18" title="Permalink to this headline">¶</a></h3>
+<p>您可以选择订阅每日摘要邮件，它会为您梳理正在关注的帖子的最近动态。
+单击“讨论”→“接收每日更新”即可。</p>
+</div>
+</div>
+<div class="section" id="react-to-contributions">
+<span id="id19"></span><h2>10.4.5. 提供贡献反馈信息<a class="headerlink" href="#react-to-contributions" title="Permalink to this headline">¶</a></h2>
+<p>您在阅读其他学生或课程员工发表于讨论课题下的内容时，
+可以通过反馈功能表达自己的想法，而无需另写一条评论或回复。您可以：</p>
+<ul class="simple">
+<li><a class="reference internal" href="#vote-for-posts-or-responses"><span>Vote for posts and responses</span></a> 即，积极反馈。</li>
+<li><a class="reference internal" href="#follow-posts"><span>Follow posts</span></a> 收藏帖子后，可以在日后方便地查看该帖的内容。</li>
+<li><a class="reference internal" href="#answer-questions"><span>Answer questions, and mark your questions as answered</span></a>.</li>
+<li><a class="reference internal" href="#report-discussion-misuse"><span>Report a contribution</span></a> 向课程工作人员举报违规内容。</li>
+</ul>
+<p>您可以使用贡献内容右上角的图标选择相应的功能。您可将鼠标放在某个图标上，图标处会出现对应的功能标签。</p>
+<img alt="The icons at top right of a post, shown before the cursor is placed over each one and with the Vote, Follow, and More labels" src="../_images/Discussion_options_mouseover.png" />
+<p>单击“更多”图标，查看更多操作选项。</p>
+<img alt="The More icon expanded to show a menu with one option and a menu with three options" src="../_images/Discussion_More_menu.png" />
+<div class="section" id="vote-for-posts-or-responses">
+<span id="id20"></span><h3>10.4.5.1. 给帖子或回复点赞<a class="headerlink" href="#vote-for-posts-or-responses" title="Permalink to this headline">¶</a></h3>
+<p>如果您喜欢某条帖子或者其下的回复，可以为它点赞：
+查看帖子或回复，单击右上角的“点赞”图标即可。</p>
+<img alt="A post with the Vote icon circled" src="../_images/Discussion_vote.png" />
+<p>您可以将帖子按照点赞数量排序：单击排序选项列表，选择“按点赞数量排序”。</p>
+<img alt="The list of posts with the &quot;by most votes&quot; sorting option and the number of votes for the post circled" src="../_images/Discussion_sortvotes.png" />
+<p>每条帖子获得的点赞数量会出现在帖子列表中。（给回复点的赞不算在内）</p>
+</div>
+<div class="section" id="follow-posts">
+<span id="id21"></span><h3>10.4.5.2. 收藏帖子<a class="headerlink" href="#follow-posts" title="Permalink to this headline">¶</a></h3>
+<p>如果您看见一条非常感兴趣的帖子，觉得日后可能还会再看，
+您可以收藏该帖：查看帖子，单击“收藏”标签即可。</p>
+<img alt="A post with the Follow icon circled" src="../_images/Discussion_follow.png" />
+<p>帖子列表中，您收藏的帖子下方会显示“已收藏”。</p>
+<p>如果您只想查看收藏的帖子，只需单击下拉列表中的“我收藏的帖子”即可。如图：</p>
+<img alt="The list of posts with the &quot;Posts I'm Following&quot; filter selected. Every post in the list shows the following indicator." src="../_images/Discussion_filterfollowing.png" />
+</div>
+<div class="section" id="answer-questions">
+<span id="id22"></span><h3>10.4.5.3. 回答问题/采纳答案<a class="headerlink" href="#answer-questions" title="Permalink to this headline">¶</a></h3>
+<p>所有参与课程的人均可回答问题。发表一条回复，附上您的回答即可。</p>
+<p>发帖人和课程工作人员可以判定回复是否正确：单击回复右上角的“采纳答案”图标即可。</p>
+<img alt="A question and a response, with the Mark as Answer icon circled" src="../_images/Discussion_answer_question.png" />
+<p>如果有答案被采纳，“讨论”页面中，帖子标题前的“？”会变成“√”。</p>
+<img alt="The list of posts with images identifying unanswered and answered questions and discussions" src="../_images/Discussion_answers_in_list.png" />
+</div>
+<div class="section" id="report-discussion-misuse">
+<span id="id23"></span><h3>10.4.5.4. 举报违规内容<a class="headerlink" href="#report-discussion-misuse" title="Permalink to this headline">¶</a></h3>
+<p>您可以向论坛协调员举报任何您认为违规的内容：查看该内容，单击“更多”→“举报”。</p>
+<img alt="A post and a response with the &quot;Report&quot; link circled" src="../_images/Discussion_reportmisuse.png" />
+</div>
+</div>
+</div>
+
+
+          <footer>
+  
+    <div class="rst-footer-buttons">
+      
+        <a href="discussion_guidance_moderators.html" class="btn btn-neutral float-right" title="10.5. 论坛协调员指南"/>Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="discussions.html" class="btn btn-neutral" title="10.3. 管理课程讨论项目"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <p>
+      &copy; Copyright 2015, edX.
+  </p>
+
+ 
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+</body>
+</html>

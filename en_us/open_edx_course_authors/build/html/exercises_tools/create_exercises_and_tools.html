@@ -1,0 +1,436 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>6.1. 创建练习和工具 &mdash; Building and Running an Open edX Course  documentation</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="../_static/css/favicon.ico"/>
+  
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  
+  
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:'../',
+        VERSION:'',
+        COLLAPSE_INDEX:false,
+        FILE_SUFFIX:'.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+
+    
+
+  
+
+  
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+
+  
+    <link rel="top" title="Building and Running an Open edX Course  documentation" href="../index.html"/>
+        <link rel="up" title="6. Creating Exercises and Tools" href="index.html"/>
+        <link rel="next" title="6.2. 注释问题" href="annotation.html"/>
+        <link rel="prev" title="6. Creating Exercises and Tools" href="index.html"/> 
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-nav-search">
+        <a href="../index.html" class="icon icon-home"> Building and Running an Open edX Course</a>
+        <form class="wy-form" action="../search.html" method="get">
+  <input type="text" name="q" placeholder="Search document" />
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix">
+        
+        
+            <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../front_matter/index.html">1. For Your Information</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../front_matter/read_me.html">1.1. Read Me</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../front_matter/preface.html">1.2. 序言</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../front_matter/change_log.html">1.3. Change Log</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../front_matter/browsers.html">1.4. edX浏览器支持</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/index.html">2. Getting Started</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../getting_started/dashboard_acctsettings_profile.html">2.1. 搜索你的仪表板、设置和配置文件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../getting_started/get_started.html">2.2. Getting Started with Studio</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../getting_started/accessibility.html">2.3. 创建无障碍课程指南</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../building_course/index.html">3. Setting up Your Course</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/creating_new_course.html">3.1. 新建课程</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/scheduling_course.html">3.2. 设置开始和结束日期</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/setting_up_student_view.html">3.3. 设置课程细节</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/course_prerequisites.html">3.4. 设定入学要求</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/licensing_course.html">3.5. 授权课程</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/course_files.html">3.6. 给课程添加文件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/handouts_updates.html">3.7. 添加课程补充资料及讲义</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/pages.html">3.8. 为课程添加页面</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/textbooks.html">3.9. 添加课本</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/establish_grading_policy.html">3.10. 设定计分政策</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/course_rerun.html">3.11. 重开课程</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/export_import_course.html">3.12. 输出和导入课程</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../developing_course/index.html">4. Developing Your Course</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/workflow.html">4.1. 开始创建课程内容</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/course_outline.html">4.2. 创建课程大纲</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/course_sections.html">4.3. 创建课程章节</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/course_subsections.html">4.4. 构建课程小节</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/course_units.html">4.5. 构建课程单元</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/course_components.html">4.6. 创建课程组件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/controlling_content_visibility.html">4.7. 设置内容可见性</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/testing_courseware.html">4.8. 测试您的课程内容</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../creating_content/index.html">5. Creating Course Content</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../creating_content/create_html_component.html">5.1. 如何使用HTML组件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../creating_content/create_video.html">5.2. 创建影片组件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../creating_content/create_discussion.html">5.3. 创建讨论组件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../creating_content/create_problem.html">5.4. 创建问题组件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../creating_content/libraries.html">5.5. 内容库</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">6. Creating Exercises and Tools</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="">6.1. 创建练习和工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="annotation.html">6.2. 注释问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="checkbox.html">6.3. 复选框问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="chemical_equation.html">6.4. 化学方程式问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="circuit_schematic_builder.html">6.5. 电路原理图搭建问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="conditional_module.html">6.6. 条件模板</a></li>
+<li class="toctree-l2"><a class="reference internal" href="custom_javascript.html">6.7. 自定义JavaScript问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="drag_and_drop.html">6.8. 拖放问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dropdown.html">6.9. 下拉问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="external_graders.html">6.10. 图像映射输入问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="full_screen_image.html">6.11. 全屏图像工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gene_explorer.html">6.12. Gene Explorer工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="google_calendar.html">6.13. 谷歌日历工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="google_docs.html">6.14. 谷歌云文件工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="google_hangouts.html">6.15. 谷歌即时群聊工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="iframe.html">6.16. IFrame工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="image_mapped_input.html">6.17. 图像映射输入问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lti_component.html">6.18. LTI 组件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="math_expression_input.html">6.19. 数学表达式输入问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="molecule_editor.html">6.20. 分子编辑器</a></li>
+<li class="toctree-l2"><a class="reference internal" href="molecule_viewer.html">6.21. 分子浏览器</a></li>
+<li class="toctree-l2"><a class="reference internal" href="multiple_choice.html">6.22. 多项选择问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="mult_choice_num_input.html">6.23. 多项选择和数字输入题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="numerical_input.html">6.24. 数值输入问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="open_response_assessments/index.html">6.25. Open Response Assessments</a></li>
+<li class="toctree-l2"><a class="reference internal" href="periodic_table.html">6.26. 元素周期表工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="poll.html">6.27. 投票工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="problem_with_hint.html">6.28. 带适应性提示的问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="problem_in_latex.html">6.29. LaTeX问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="protein_builder.html">6.30. Protex蛋白质构建工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="randomized_content_blocks.html">6.31. 随机内容块</a></li>
+<li class="toctree-l2"><a class="reference internal" href="recommenderXBlock.html">6.32. 推荐系统</a></li>
+<li class="toctree-l2"><a class="reference internal" href="student_notes.html">6.33. 学生笔记工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="text_input.html">6.34. 文本输入问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="word_cloud.html">6.35. 文字云工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="custom_python.html">6.36. 自定义评分器问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="zooming_image.html">6.37. 图像放大工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="mathjax.html">6.38. Studio中MathJax的简要介绍</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../content_experiments/index.html">7. Creating Content Experiments</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../content_experiments/content_experiments_overview.html">7.1. 内容实验概述</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../content_experiments/content_experiments_configure.html">7.2. Configure Your Course for Content Experiments</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../content_experiments/content_experiments_add.html">7.3. Add Content Experiments to Your Course</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../content_experiments/content_experiments_view.html">7.4. 测试内容实验</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../cohorts/index.html">8. Including Student Cohorts</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../cohorts/cohorts_overview.html">8.1. 使用队列功能建立课程群</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cohorts/cohort_config.html">8.2. 启用、配置分队模式</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cohorts/cohorted_courseware.html">8.3. 创建特定队列课件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cohorts/cohorts_setup_discussions.html">8.4. 在包含队列的课程中设置论坛</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cohorts/cohorts_manage_discussions.html">8.5. 管理有学生队列的论坛</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../releasing_course/index.html">9. Releasing Your Course</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../releasing_course/beta_testing.html">9.1. 贝塔测试</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../releasing_course/course_launching.html">9.2. 课程发布事宜</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../releasing_course/staff_debug_info.html">9.3. 员工调试信息</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../running_course/index.html">10. Running Your Course</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/course_staffing.html">10.1. 安置职工</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/course_enrollment.html">10.2. 招生</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/discussions.html">10.3. 管理课程讨论项目</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/discussions_students.html">10.4. 参与课程讨论</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/discussion_guidance_moderators.html">10.5. 论坛协调员指南</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/bulk_email.html">10.6. 大宗邮件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/course_wiki.html">10.7. 使用课程维基</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/course_data.html">10.8. 课程数据</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/course_student.html">10.9. 学生数据</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/course_answers.html">10.10. 回答问题数据</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/course_grades.html">10.11. 学生成绩与成绩评定</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/checking_student_progress.html">10.12. 总成绩计算与证书发放</a></li>
+</ul>
+</li>
+</ul>
+
+        
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top">
+        <i data-toggle="wy-nav-top" class="icon icon-reorder"></i>
+        <a href="/">Building and Running an Open edX Course</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <ul class="wy-breadcrumbs">
+  <li><a href="../index.html">Table of Contents</a> &raquo;</li>
+  <li><a href="">6.1. 创建练习和工具</a></li>
+  
+</ul>
+<hr/>
+
+          
+  <div class="section" id="create-exercises">
+<span id="id1"></span><h1>6.1. 创建练习和工具<a class="headerlink" href="#create-exercises" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="id2">
+<h2>6.1.1. 练习和工具的说明<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<p>Studio允许你为你的课程创建多种多样的练习和工具.其中有很多的练习和工具在Studio有模板帮助你创建练习. 另外, 个别的课程团队经常创建在Studio没有的练习.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">当你创建问题时你必须包含可访问的标签。可访问的标签通常包含你的主要问题文本。标签的说明会出现在每个人问题的页面中。</p>
+</div>
+</div>
+<div class="section" id="id3">
+<h2>6.1.2. 一般的练习和工具<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="docutils">
+<colgroup>
+<col width="22%" />
+<col width="19%" />
+<col width="44%" />
+<col width="15%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="first last reference internal image-reference" href="../_images/AnnotationExample.png"><img alt="注释问题示例" src="../_images/AnnotationExample.png" style="width: 100px;" /></a>
+</td>
+<td><span class="xref std std-ref">注释</span></td>
+<td>注释问题让学生回答一个特殊的文本区域.这个问题出现在文本上方当学生将光标移动到高亮文本时，这能让学生思考在阅读时能这个问题。</td>
+<td>暂时支持</td>
+</tr>
+<tr class="row-even"><td><a class="first last reference internal image-reference" href="../_images/PollExample.png"><img alt="调查示例" src="../_images/PollExample.png" style="width: 100px;" /></a>
+</td>
+<td><span class="xref std std-ref">条件模块</span></td>
+<td>你可以创建一个条件模板去控制学生可以看到的内容版本.比如，对于一个调查问题回答Yes的学生然后从对这个问题回答No学生看到一块不同的文本.</td>
+<td>暂时支持</td>
+</tr>
+<tr class="row-odd"><td><a class="first last reference internal image-reference" href="../_images/JavaScriptInputExample.png"><img alt="Example JavaScript problem" src="../_images/JavaScriptInputExample.png" style="width: 100px;" /></a>
+</td>
+<td><span class="xref std std-ref">自定义JavaScript</span></td>
+<td>自定义JavaScript显示和评分问题(也叫*自定义JavaScript问题* or <em>JS输入问题</em>)允许你创建一个
+自定义问题或工具使用JavaScript然后吧这个问题或工具直接添加到Studio.</td>
+<td>完全支持</td>
+</tr>
+<tr class="row-even"><td><a class="first last reference internal image-reference" href="../_images/external-grader-correct.png"><img alt="Example external grader" src="../_images/external-grader-correct.png" style="width: 100px;" /></a>
+</td>
+<td><span class="xref std std-ref">External Grader</span></td>
+<td>external grader是一个接受并处理学生对一个问题的回答的服务,然后把这些问题回馈返回到edX平台上.你可以从edX平台上单独创建并配置一个external grader.external           grader对于处理软件编程课程中学生提交的复杂的代码非常有用.</td>
+<td>暂时支持</td>
+</tr>
+<tr class="row-odd"><td>&nbsp;</td>
+<td><span class="xref std std-ref">谷歌日历工具</span></td>
+<td>你可以在你的课程中嵌入谷歌日历以便学生能在你的课件中看到这个日历.你可以使用谷歌日历分享测试日期, 办公时间或其他学生感兴趣的日程.</td>
+<td>完全支持</td>
+</tr>
+<tr class="row-even"><td><a class="first last reference internal image-reference" href="../_images/google-spreadsheet.png"><img alt="谷歌云文件工具" src="../_images/google-spreadsheet.png" style="width: 100px;" /></a>
+</td>
+<td><span class="xref std std-ref">谷歌云文件工具</span></td>
+<td>你可以在你的课程中嵌入一个谷歌云文件,比如文档, 电子表格或图像以便你的学生能在你的课件中看到这个文件.</td>
+<td>完全支持</td>
+</tr>
+<tr class="row-odd"><td><a class="first last reference internal image-reference" href="../_images/GoogleHangout_WithPeople.png"><img alt="谷歌环聊" src="../_images/GoogleHangout_WithPeople.png" style="width: 100px;" /></a>
+</td>
+<td><span class="xref std std-ref">谷歌即时环聊</span></td>
+<td>你可以添加这个工具为了学习你课程的学生参加即时环聊.使用即时环聊学生通过视频和声音可以相互交流,分享屏幕、一起观看和视频协作完成文档。</td>
+<td>暂时支持</td>
+</tr>
+<tr class="row-even"><td><a class="first last reference internal image-reference" href="../_images/IFrame_1.png"><img alt="IFrame工具示例示例" src="../_images/IFrame_1.png" style="width: 100px;" /></a>
+</td>
+<td><a class="reference internal" href="iframe.html#iframe"><span>IFrame工具</span></a></td>
+<td>IFrame允许你从任何网站和工具不分级别的整合练习和工具到你的课程的一个HTML组件。</td>
+<td>暂时支持</td>
+</tr>
+<tr class="row-odd"><td><a class="first last reference internal image-reference" href="../_images/LTIExample.png"><img alt="LTI组件示例" src="../_images/LTIExample.png" style="width: 100px;" /></a>
+</td>
+<td><span class="xref std std-ref">LTI组件</span></td>
+<td>LTI组件允许你添加一个外置的应用程序或者非PDF文本到Studio中.</td>
+<td>完全支持</td>
+</tr>
+<tr class="row-even"><td><a class="first last reference internal image-reference" href="../_images/PA_QandRField.png"><img alt="开放回答评估示例" src="../_images/PA_QandRField.png" style="width: 100px;" /></a>
+</td>
+<td><span class="xref std std-ref">开放回答评估2</span></td>
+<td>在开放回答评估中,学生在回答上传不同长度的回答和图像文件会收到不同的回馈.</td>
+<td>完全支持</td>
+</tr>
+<tr class="row-odd"><td><a class="first last reference internal image-reference" href="../_images/PollExample.png"><img alt="调查示例" src="../_images/PollExample.png" style="width: 100px;" /></a>
+</td>
+<td><span class="xref std std-ref">调查</span></td>
+<td>你可以在你的课程中发起调查以便你的学生能够分享不同的观点.</td>
+<td>暂时支持</td>
+</tr>
+<tr class="row-even"><td><a class="first last reference internal image-reference" href="../_images/ProblemWithAdaptiveHintExample.png"><img alt="自动适配的提示问题示例" src="../_images/ProblemWithAdaptiveHintExample.png" style="width: 100px;" /></a>
+</td>
+<td><span class="xref std std-ref">自动适配的提示问题</span></td>
+<td>一个带有自动适配的提示评估一个学生的回答，然后给学生回馈或基于回答的提示以便这个学生下次一回答更有可能正确回答.这些问题可以是文本输入或多选问题A .</td>
+<td>暂时支持</td>
+</tr>
+<tr class="row-odd"><td><a class="first last reference internal image-reference" href="../_images/ProblemWrittenInLaTeX.png"><img alt="用LaTeX写的问题示例" src="../_images/ProblemWrittenInLaTeX.png" style="width: 100px;" /></a>
+</td>
+<td><span class="xref std std-ref">用LaTeX写的的问题</span></td>
+<td>如果你有一个已经写入了LaTeX的问题,你可以用这个问题很容易键入转换成XML.</td>
+<td>不支持</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="id4">
+<h2>6.1.3. 图像-基于练习与工具<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="docutils">
+<colgroup>
+<col width="22%" />
+<col width="19%" />
+<col width="44%" />
+<col width="15%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="first last reference internal image-reference" href="../_images/DragAndDropProblem.png"><img alt="拖放问题示例" src="../_images/DragAndDropProblem.png" style="width: 100px;" /></a>
+</td>
+<td><a class="reference internal" href="drag_and_drop.html#drag-and-drop"><span>拖放问题</span></a></td>
+<td>在拖放问题中,学生通过拖动文本或对象到一个图像的指定位置回答.</td>
+<td>暂时支持</td>
+</tr>
+<tr class="row-even"><td><a class="first last reference internal image-reference" href="../_images/image-modal.png"><img alt="图像全屏工具示例" src="../_images/image-modal.png" style="width: 100px;" /></a>
+</td>
+<td><span class="xref std std-ref">全屏图像</span></td>
+<td>全屏图像工具允许学生放大图像到在整个浏览器中.当这个图像包含大量且详细的文本这是非常有用的，这能让学生看的时候更容易联系上下文.</td>
+<td>完全支持</td>
+</tr>
+<tr class="row-odd"><td><a class="first last reference internal image-reference" href="../_images/ImageMappedInputExample.png"><img alt="图像映射输入问题示例" src="../_images/ImageMappedInputExample.png" style="width: 100px;" /></a>
+</td>
+<td><span class="xref std std-ref">图像映射输入</span></td>
+<td>在一个图像映射输入中,学生点击在一个图像中限定的地方点击.</td>
+<td>暂时支持</td>
+</tr>
+<tr class="row-even"><td><a class="first last reference internal image-reference" href="../_images/Zooming_Image.png"><img alt="图像放大工具示例" src="../_images/Zooming_Image.png" style="width: 100px;" /></a>
+</td>
+<td><span class="xref std std-ref">图像放大</span></td>
+<td>图像放大工具允许你方法部分图像以便学生能看的更清晰.</td>
+<td>完全支持</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="id5">
+<h2>6.1.4. 多项选择练习和工具<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="docutils">
+<colgroup>
+<col width="22%" />
+<col width="19%" />
+<col width="44%" />
+<col width="15%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="first last reference internal image-reference" href="../_images/CheckboxExample.png"><img alt="复选框问题示例" src="../_images/CheckboxExample.png" style="width: 100px;" /></a>
+</td>
+<td><span class="xref std std-ref">复选框</span></td>
+<td>在复选框问题中,学生选择从可能的是答案的列表中选择一个或多个选项. 学生必须选择所有正确的选项.</td>
+<td>完全支持</td>
+</tr>
+<tr class="row-even"><td><a class="first last reference internal image-reference" href="../_images/DropdownExample.png"><img alt="下拉问题示例" src="../_images/DropdownExample.png" style="width: 100px;" /></a>
+</td>
+<td><span class="xref std std-ref">下拉</span></td>
+<td>下拉问题允许学生从一批答案选项中选择,给出一个下拉列表.和答案总是直接明显的在问题下面的多项选择不同的是,下拉问题不显示选项除非学生点击下拉箭头.</td>
+<td>完全支持</td>
+</tr>
+<tr class="row-odd"><td><a class="first last reference internal image-reference" href="../_images/MultipleChoiceExample.png"><img alt="多选问题示例" src="../_images/MultipleChoiceExample.png" style="width: 100px;" /></a>
+</td>
+<td><span class="xref std std-ref">多项选择</span></td>
+<td>在多项问题中，学生从答案列表中选择一个选项.和答案不直接出现在学生视野中的下拉问题不同的是,多选问题的选项总是直观的出现在问题的下面.</td>
+<td>完全支持</td>
+</tr>
+<tr class="row-even"><td><a class="first last reference internal image-reference" href="../_images/MultipleChoice_NumericalInput.png"><img alt="多项选择和数值输入问题示例" src="../_images/MultipleChoice_NumericalInput.png" style="width: 100px;" /></a>
+</td>
+<td><span class="xref std std-ref">多项选择和数值输入问题</span></td>
+<td>你可以创建一个多选问题和数值输入问提的问题. 学生不仅仅要选择你提供的答案选项，必要的话，还要提供一个更特殊的答案.</td>
+<td>暂时支持</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="stem">
+<h2>6.1.5. STEM练习或工具<a class="headerlink" href="#stem" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+          <footer>
+  
+    <div class="rst-footer-buttons">
+      
+        <a href="annotation.html" class="btn btn-neutral float-right" title="6.2. 注释问题"/>Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="index.html" class="btn btn-neutral" title="6. Creating Exercises and Tools"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <p>
+      &copy; Copyright 2015, edX.
+  </p>
+
+ 
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+</body>
+</html>

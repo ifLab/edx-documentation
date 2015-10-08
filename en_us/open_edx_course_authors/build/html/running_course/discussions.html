@@ -1,0 +1,713 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>10.3. 管理课程讨论项目 &mdash; Building and Running an Open edX Course  documentation</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="../_static/css/favicon.ico"/>
+  
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  
+  
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:'../',
+        VERSION:'',
+        COLLAPSE_INDEX:false,
+        FILE_SUFFIX:'.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+
+    
+
+  
+
+  
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+
+  
+    <link rel="top" title="Building and Running an Open edX Course  documentation" href="../index.html"/>
+        <link rel="up" title="10. Running Your Course" href="index.html"/>
+        <link rel="next" title="10.4. 参与课程讨论" href="discussions_students.html"/>
+        <link rel="prev" title="10.2. 招生" href="course_enrollment.html"/> 
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-nav-search">
+        <a href="../index.html" class="icon icon-home"> Building and Running an Open edX Course</a>
+        <form class="wy-form" action="../search.html" method="get">
+  <input type="text" name="q" placeholder="Search document" />
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix">
+        
+        
+            <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../front_matter/index.html">1. For Your Information</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../front_matter/read_me.html">1.1. Read Me</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../front_matter/preface.html">1.2. 序言</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../front_matter/change_log.html">1.3. Change Log</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../front_matter/browsers.html">1.4. edX浏览器支持</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/index.html">2. Getting Started</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../getting_started/dashboard_acctsettings_profile.html">2.1. 搜索你的仪表板、设置和配置文件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../getting_started/get_started.html">2.2. Getting Started with Studio</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../getting_started/accessibility.html">2.3. 创建无障碍课程指南</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../building_course/index.html">3. Setting up Your Course</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/creating_new_course.html">3.1. 新建课程</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/scheduling_course.html">3.2. 设置开始和结束日期</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/setting_up_student_view.html">3.3. 设置课程细节</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/course_prerequisites.html">3.4. 设定入学要求</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/licensing_course.html">3.5. 授权课程</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/course_files.html">3.6. 给课程添加文件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/handouts_updates.html">3.7. 添加课程补充资料及讲义</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/pages.html">3.8. 为课程添加页面</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/textbooks.html">3.9. 添加课本</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/establish_grading_policy.html">3.10. 设定计分政策</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/course_rerun.html">3.11. 重开课程</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/export_import_course.html">3.12. 输出和导入课程</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../developing_course/index.html">4. Developing Your Course</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/workflow.html">4.1. 开始创建课程内容</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/course_outline.html">4.2. 创建课程大纲</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/course_sections.html">4.3. 创建课程章节</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/course_subsections.html">4.4. 构建课程小节</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/course_units.html">4.5. 构建课程单元</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/course_components.html">4.6. 创建课程组件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/controlling_content_visibility.html">4.7. 设置内容可见性</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/testing_courseware.html">4.8. 测试您的课程内容</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../creating_content/index.html">5. Creating Course Content</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../creating_content/create_html_component.html">5.1. 如何使用HTML组件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../creating_content/create_video.html">5.2. 创建影片组件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../creating_content/create_discussion.html">5.3. 创建讨论组件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../creating_content/create_problem.html">5.4. 创建问题组件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../creating_content/libraries.html">5.5. 内容库</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../exercises_tools/index.html">6. Creating Exercises and Tools</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/create_exercises_and_tools.html">6.1. 创建练习和工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/annotation.html">6.2. 注释问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/checkbox.html">6.3. 复选框问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/chemical_equation.html">6.4. 化学方程式问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/circuit_schematic_builder.html">6.5. 电路原理图搭建问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/conditional_module.html">6.6. 条件模板</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/custom_javascript.html">6.7. 自定义JavaScript问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/drag_and_drop.html">6.8. 拖放问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/dropdown.html">6.9. 下拉问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/external_graders.html">6.10. 图像映射输入问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/full_screen_image.html">6.11. 全屏图像工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/gene_explorer.html">6.12. Gene Explorer工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/google_calendar.html">6.13. 谷歌日历工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/google_docs.html">6.14. 谷歌云文件工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/google_hangouts.html">6.15. 谷歌即时群聊工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/iframe.html">6.16. IFrame工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/image_mapped_input.html">6.17. 图像映射输入问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/lti_component.html">6.18. LTI 组件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/math_expression_input.html">6.19. 数学表达式输入问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/molecule_editor.html">6.20. 分子编辑器</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/molecule_viewer.html">6.21. 分子浏览器</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/multiple_choice.html">6.22. 多项选择问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/mult_choice_num_input.html">6.23. 多项选择和数字输入题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/numerical_input.html">6.24. 数值输入问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/open_response_assessments/index.html">6.25. Open Response Assessments</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/periodic_table.html">6.26. 元素周期表工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/poll.html">6.27. 投票工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/problem_with_hint.html">6.28. 带适应性提示的问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/problem_in_latex.html">6.29. LaTeX问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/protein_builder.html">6.30. Protex蛋白质构建工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/randomized_content_blocks.html">6.31. 随机内容块</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/recommenderXBlock.html">6.32. 推荐系统</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/student_notes.html">6.33. 学生笔记工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/text_input.html">6.34. 文本输入问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/word_cloud.html">6.35. 文字云工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/custom_python.html">6.36. 自定义评分器问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/zooming_image.html">6.37. 图像放大工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/mathjax.html">6.38. Studio中MathJax的简要介绍</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../content_experiments/index.html">7. Creating Content Experiments</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../content_experiments/content_experiments_overview.html">7.1. 内容实验概述</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../content_experiments/content_experiments_configure.html">7.2. Configure Your Course for Content Experiments</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../content_experiments/content_experiments_add.html">7.3. Add Content Experiments to Your Course</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../content_experiments/content_experiments_view.html">7.4. 测试内容实验</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../cohorts/index.html">8. Including Student Cohorts</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../cohorts/cohorts_overview.html">8.1. 使用队列功能建立课程群</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cohorts/cohort_config.html">8.2. 启用、配置分队模式</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cohorts/cohorted_courseware.html">8.3. 创建特定队列课件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cohorts/cohorts_setup_discussions.html">8.4. 在包含队列的课程中设置论坛</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cohorts/cohorts_manage_discussions.html">8.5. 管理有学生队列的论坛</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../releasing_course/index.html">9. Releasing Your Course</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../releasing_course/beta_testing.html">9.1. 贝塔测试</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../releasing_course/course_launching.html">9.2. 课程发布事宜</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../releasing_course/staff_debug_info.html">9.3. 员工调试信息</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">10. Running Your Course</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="course_staffing.html">10.1. 安置职工</a></li>
+<li class="toctree-l2"><a class="reference internal" href="course_enrollment.html">10.2. 招生</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="">10.3. 管理课程讨论项目</a></li>
+<li class="toctree-l2"><a class="reference internal" href="discussions_students.html">10.4. 参与课程讨论</a></li>
+<li class="toctree-l2"><a class="reference internal" href="discussion_guidance_moderators.html">10.5. 论坛协调员指南</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bulk_email.html">10.6. 大宗邮件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="course_wiki.html">10.7. 使用课程维基</a></li>
+<li class="toctree-l2"><a class="reference internal" href="course_data.html">10.8. 课程数据</a></li>
+<li class="toctree-l2"><a class="reference internal" href="course_student.html">10.9. 学生数据</a></li>
+<li class="toctree-l2"><a class="reference internal" href="course_answers.html">10.10. 回答问题数据</a></li>
+<li class="toctree-l2"><a class="reference internal" href="course_grades.html">10.11. 学生成绩与成绩评定</a></li>
+<li class="toctree-l2"><a class="reference internal" href="checking_student_progress.html">10.12. 总成绩计算与证书发放</a></li>
+</ul>
+</li>
+</ul>
+
+        
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top">
+        <i data-toggle="wy-nav-top" class="icon icon-reorder"></i>
+        <a href="/">Building and Running an Open edX Course</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <ul class="wy-breadcrumbs">
+  <li><a href="../index.html">Table of Contents</a> &raquo;</li>
+  <li><a href="">10.3. 管理课程讨论项目</a></li>
+  
+</ul>
+<hr/>
+
+          
+  <div class="section" id="discussions">
+<span id="id1"></span><h1>10.3. 管理课程讨论项目<a class="headerlink" href="#discussions" title="Permalink to this headline">¶</a></h1>
+<p>讨论项目，即论坛，旨在构建学生与工作人员，以及学生与学生之间的有效沟通和交流。
+创建课程时，您可设立各种讨论课题引导课程参与人员之间的互动，
+同时通过运营、管理讨论项目活动鼓励学生参与课程、建立课程社区。</p>
+<p>讨论项目（下或称“论坛”）同时也是课程反馈及未来创意的重要来源。</p>
+<p>关于运营、协调讨论项目的内容，请参见以下章节：</p>
+<ul class="simple">
+<li><a class="reference internal" href="#overview-discussions"><span>概述</span></a></li>
+<li><a class="reference internal" href="#organizing-discussions"><span>建立课堂讨论课题</span></a></li>
+<li><a class="reference internal" href="#assigning-discussion-roles"><span>安排讨论项目管理职能</span></a></li>
+<li><a class="reference internal" href="#visibility-of-discussion-topics"><span>讨论主题可见性</span></a></li>
+<li><a class="reference internal" href="#running-discussions"><span>运营讨论项目</span></a></li>
+<li><a class="reference internal" href="#moderating-discussions"><span>协调论坛工作</span></a></li>
+<li><a class="reference internal" href="#close-discussions"><span>关闭论坛</span></a></li>
+</ul>
+<p>想了解更多关于分队功能对论坛协调事宜的影响，请参考 <a class="reference internal" href="../cohorts/cohorts_manage_discussions.html#moderating-discussions-for-cohorts"><span>管理有学生队列的论坛</span></a>.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last"><a class="reference internal" href="discussions_students.html#discussions-for-students-and-staff"><span>参与课程讨论</span></a> 部分描述的性能对所有论坛成员开放。
+对论坛新人而言帮助也很大。
+您可以和学生一起分享其中的内容。
+方式有很多，比如，您可以发一条名为“第一次使用论坛？”的帖子，
+在帖子中提供您认为对学生最有用的信息。</p>
+</div>
+<div class="section" id="overview-discussions">
+<span id="id2"></span><h2>10.3.1. 概述<a class="headerlink" href="#overview-discussions" title="Permalink to this headline">¶</a></h2>
+<p>学生与员工可以通过论坛分享观点、交流看法、交换意见、解决问题。论坛中的互动分为三种。</p>
+<ul class="simple">
+<li><em>帖子</em> 帖子通常用于展开新话题。帖子一般以问题的形式出现，</li>
+</ul>
+<blockquote>
+<div>要么展开对话，要么引出一个值得关注的问题。您在发帖时，通常将其归类为“提问”或“讨论”。</div></blockquote>
+<ul class="simple">
+<li><em>回复</em> 回复指的是关于某个帖子问题的直接回答，或某个对话的延续。</li>
+<li><em>评论</em> 评论指的是针对某条回复的补充说明或边注。</li>
+</ul>
+<blockquote>
+<div>评论一般不针对整个帖子，只针对某条回复。</div></blockquote>
+<p>由帖子、回复、评论组成的对话有时统称为“话题”。</p>
+<p>所有员工及参与课程的学生均可发帖、回帖或发表评论，
+同时也可以查看其他课程参与者发布的帖子、回复及评语。</p>
+<p>课程社区的所有成员，包括员工和学生，均可以赋予论坛协调员或管理员等讨论项目管理职能。
+讨论话题可以保存，是课程历史的组成部分。</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p>“参与课堂讨论”一章描述了论坛的部分功能，这些功能对所有参加论坛的人都开放，
+对论坛新人而言帮助也很大。
+您可以和学生一起分享其中的内容。
+方式有很多，比如，您可以发一条名为“第一次使用论坛？”的帖子，
+在帖子中提供您认为对学生最有用的信息。</p>
+<p class="last">论坛管理员角色必须为您课程团队中的教员。
+课程作者、有管理权限的团队成员以及导师可以授予管理员权限。
+更多关于添加论坛特权的内容请参考 <a class="reference internal" href="#assigning-discussion-roles"><span>安排讨论项目管理职能</span></a>.</p>
+</div>
+</div>
+<div class="section" id="organizing-discussions">
+<span id="id3"></span><h2>10.3.2. 建立课堂讨论课题<a class="headerlink" href="#organizing-discussions" title="Permalink to this headline">¶</a></h2>
+<p>edX课程的论坛既可以添加您之前专门为某个课程单元设计好的讨论模块，
+也可以开展全课堂范围的讨论课题，比如“课程反馈帖”，“答疑帖”，“技术支持帖”等等。
+您可通过Studio添加各种不同类型的讨论课题。</p>
+<p>更多关于创建讨论主题的内容，请参考 <a class="reference internal" href="#create-coursewide-discussion-topics"><span>创建全课堂讨论课题</span></a> 和 <a class="reference internal" href="#create-contentspecific-discussion-topics"><span>创建内容指定讨论主题</span></a> 。更多关于使用群配置讨论主题的内容请参考 <a class="reference internal" href="../cohorts/cohorts_setup_discussions.html#set-up-discussions-in-cohorted-courses"><span>在包含队列的课程中设置论坛</span></a>.</p>
+<div class="section" id="create-coursewide-discussion-topics">
+<span id="id4"></span><h3>10.3.2.1. 创建全课堂讨论课题<a class="headerlink" href="#create-coursewide-discussion-topics" title="Permalink to this headline">¶</a></h3>
+<p>所有课程均包括一个名为“讨论”的页面。创建课程时，
+系统会在该页面中默认生成一个名为“General”的讨论课题。</p>
+<p>课堂讨论课题，在课堂上引导学生分享、查找信息。
+这类课题可以包含“反馈”、“答疑”、“技术支持”等字样。
+这类课题的可访问时间与课程的可访问时间一致。</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">确保您课程中的讨论主题有唯一的名称，
+无论是全课堂讨论课题或是指定内容讨论课题。
+如果不同的主题名称相同，学生会不知道自己在哪个主题中。
+例如，不要添加名称为“General”的指定内容讨论课题，
+因为全课程讨论问题中已经有叫“General”的问题了。</p>
+</div>
+<p>如何创建全课堂讨论课题：</p>
+<ol class="arabic simple">
+<li>在Studio中打开课程</li>
+<li>单击“设置”→“高级设置”</li>
+<li>将滚动滑块拖至“讨论课题映射”策略键。系统默认值应为：</li>
+</ol>
+<blockquote>
+<div><img alt="Policy value of {&quot;General&quot;: {&quot;id&quot;: &quot;i4x-edX-Open-edx_demo_course&quot;}}" src="../_images/Discussion_Add_initial.png" />
+</div></blockquote>
+<ol class="arabic simple" start="4">
+<li>复制“General”后的三行信息，粘贴到结尾的闭大括号前：</li>
+</ol>
+<blockquote>
+<div><img alt="Policy value of {&quot;General&quot;: {&quot;id&quot;: &quot;i4x-edX-Open-edx_demo_course&quot;} &quot;General&quot;: {&quot;id&quot;: &quot;i4x-edX-Open-edx_demo_course&quot;}}" src="../_images/Discussion_Add_paste.png" />
+</div></blockquote>
+<ol class="arabic simple" start="5">
+<li>将第二个“General”替换为新课题的名称，注意带上双引号</li>
+<li>将第二个“id”值更改为另一个唯一的值。比如，可以为课题名附上一组独一无二的参数</li>
+</ol>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">在讨论主题ID中，您只能使用字母和数字字符，以及以下特殊符号：下划线、连字符和句号。</p>
+</div>
+<ol class="arabic simple" start="7">
+<li>在第一个闭大括号后输入一个逗号</li>
+</ol>
+<blockquote>
+<div><img alt="Policy value of {&quot;General&quot;: {&quot;id&quot;: &quot;i4x-edX-Open-edx_demo_course&quot;}, &quot;Course Q&amp;A&quot;: {&quot;id&quot;: &quot;i4x-edX-Open-edx_demo_course_faq&quot;}}" src="../_images/Discussion_Add_name.png" />
+</div></blockquote>
+<ol class="arabic simple" start="8">
+<li>单击“保存更改”。Studio会重新给您输入的值排序并设定格式。
+将滚动条拖回“讨论课题映射”字段，确认输入内容是否已保存。
+如果您在输入时漏掉了标点符号，输入内容不会保存，且没有警告提示。</li>
+</ol>
+<p>操作成功后，当学生单击课程的“讨论”页面时，您的课程即出现在下拉列表中。</p>
+<blockquote>
+<div><img alt="Image of a new topic named Course Q&amp;A in the list of discussions" src="../_images/NewCategory_Discussion.png" />
+</div></blockquote>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">在分队课堂中，全课堂讨论课题对所有人均可见。
+所有小队中的学生均可访问课题中的帖子及回复。
+您也可以手动将这类课题配置为分队讨论课题。
+详见 <a class="reference internal" href="../cohorts/cohorts_setup_discussions.html#coursewide-discussion-topics-and-cohorts"><span>全课堂讨论主题和队列</span></a>.</p>
+</div>
+</div>
+<div class="section" id="create-contentspecific-discussion-topics">
+<span id="id5"></span><h3>10.3.2.2. 创建内容指定讨论主题<a class="headerlink" href="#create-contentspecific-discussion-topics" title="Permalink to this headline">¶</a></h3>
+<p>您需要在单元中添加讨论组件。一般情况，您在Studio中创建课程的时候需要这么做。
+请遵循 <a class="reference internal" href="../creating_content/create_discussion.html#working-with-discussion-components"><span>创建讨论组件</span></a> 中的指导内容。
+讨论主题将与所在单元相关联。</p>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">按照推荐步骤添加讨论组件。
+不要使用Studio中的 <strong>复制</strong> 创建讨论主题。
+不要在不同区域多次使用同一个论坛ID。
+复制讨论组件将导致讨论主题包含同样的对话，即使学生是在不同的讨论主题下发布信息。</p>
+</div>
+<p>更多关于指定内容讨论主题信息请参考 <a class="reference internal" href="#visibility-of-discussion-topics"><span>讨论主题可见性</span></a>.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p>在包含群组的课程中，所有指定内容讨论主题在您第一次添加的时候就已经分组。
+学生只能看到相同群组中成员的回应。您可以更改内容讨论主题设置，使其对课堂中所有学生可见。</p>
+<blockquote class="last">
+<div>更多信息请参考 <a class="reference internal" href="../cohorts/cohorts_setup_discussions.html#content-specific-discussion-topics-and-cohorts"><span>指定内容讨论主题和队列</span></a>.</div></blockquote>
+</div>
+</div>
+</div>
+<div class="section" id="assigning-discussion-roles">
+<span id="id6"></span><h2>10.3.3. 安排讨论项目管理职能<a class="headerlink" href="#assigning-discussion-roles" title="Permalink to this headline">¶</a></h2>
+<p>您需要指定一个团队帮助您运营讨论项目。</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p>您在Studio中建立的课程团队（或您在教师控制面板中指定的课程工作人员及导师）
+并不默认为论坛管理人员。</p>
+<p class="last">论坛管理人员应由从课程团队中另外指定，其职责是协调、管理课堂讨论项目。
+论坛管理人员可由课程作者、导师（教师控制面板中的）
+或其他有管理权限的团队成员（Studio中的）担任。</p>
+</div>
+<p>论坛管理人员的分类及职能简述如下：</p>
+<ul class="simple">
+<li><em>论坛协调员</em> 论坛协调员可以编辑、删除所有消息（包括帖子、回复、评论）；
+可以审核带有“误用信息”标签的帖子；可以封杀、取消封杀帖子；
+可以将帖子置顶；可以批准回复。在帖子列表中，论坛协调员发布的帖子带有“By:staff”字样，
+协调员发表的回复和评论带有加色的“Staff”标识。
+协调员通常从已担任“课程工作人员”的团队成员中选派。</li>
+</ul>
+<ul class="simple">
+<li><em>论坛社区助教</em> 助教的职能和协调员相同。助教发布的帖子带有“By: Community TA”字样，
+发布的评论和回复带有加色的“Community TA”标识。助教通常由学生担任。</li>
+</ul>
+<ul class="simple">
+<li><em>论坛管理员</em> 拥有以上两种职位的所有职能。
+管理员发布的帖子、回复、评论带有相同的“Staff”标识。
+管理员只能由已担任导师的团队成员出任，
+因为管理员除了具有协调员和助教的只能外，还能在必要的时候赋予其他用户论坛管理职能。</li>
+</ul>
+<p>安排论坛管理人员时，您需要提供他们的邮箱地址或用户名。</p>
+<ul class="simple">
+<li>如何查看课程团队成员的信息？在教师控制面板中，单击“成员”，
+然后从下拉列表中选择“课程工作人员”/“导师”。</li>
+<li>如何查看学生信息？在教师控制面板中，单击“数据下载”
+“以CSV格式下载学生资料”</li>
+</ul>
+<div class="section" id="id7">
+<h3>10.3.3.1. 如何安排职位<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h3>
+<p>首先，您必须是课程作者，或担任“导师”职位（即，您必须在Studio中有管理权限）。</p>
+<ol class="arabic simple">
+<li>查看课程现况</li>
+<li>单击“导师”→“成员”</li>
+<li>在“行政人员列表管理”字段的下拉列表中选择“论坛管理员”、“论坛协调员”或“论坛社区助教”</li>
+<li>在用户列表中输入相应的邮箱地址或用户名，单击“添加”</li>
+</ol>
+</div>
+<div class="section" id="id8">
+<h3>10.3.3.2. 删除角色<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h3>
+<p>要删除用户的特权，您必须是课程作者或导师（您在Studio中有管理员权限
+或在LMS中是导师）。</p>
+<ol class="arabic simple">
+<li>查看课程在线版本</li>
+<li>选择 <strong>导师</strong> ，点击 <strong>成员</strong></li>
+<li>在管理列表中的管理部分，选择下拉列表中的论坛管理员，论坛版主或讨论社区助教。</li>
+<li>在列表中选择您想删除的用户，点击 <strong>删除权限</strong></li>
+</ol>
+</div>
+</div>
+<div class="section" id="visibility-of-discussion-topics">
+<span id="id9"></span><h2>10.3.4. 讨论主题可见性<a class="headerlink" href="#visibility-of-discussion-topics" title="Permalink to this headline">¶</a></h2>
+<p>在课程开始且单元发布之前，
+您为讨论组件指定的种类和子类名称在 <strong>论坛</strong> 栏中不可见。</p>
+<p>然而，您创建在指定内容讨论主题中的基础帖在 <strong>论坛</strong> 栏中立即可见，
+尽管所包含的分类和子类名仍不可见。我们建议您在单元发布前不要在指定内容讨论主题中发帖。
+更多关于发布日期和组件可见性的信息请参阅
+<a class="reference internal" href="../developing_course/controlling_content_visibility.html#controlling-content-visibility"><span>设置内容可见性</span></a>.</p>
+<p>相反，您在Studio中的 <strong>高级设置</strong> 中创建的 <a class="reference internal" href="#create-coursewide-discussion-topics"><span>course-wide discussion topics</span></a> 包含默认&#8221;General&#8221;讨论主题，是立即可见的，无论课程是否已经开始。
+这些主题与任何特定的章节和小节无关，也不受限于发布日期。</p>
+</div>
+<div class="section" id="running-discussions">
+<span id="id10"></span><h2>10.3.5. 运营讨论项目<a class="headerlink" href="#running-discussions" title="Permalink to this headline">¶</a></h2>
+<p>讨论项目管理团队可通过多种方式运营论坛，比如在帖子中作贡献、给回复点赞、
+认可某条回复等等，他们通过这些方法引导学生发布与话题相关的消息。
+下面的几个小技巧能帮助您有效管理讨论项目。</p>
+<div class="section" id="id11">
+<h3>10.3.5.1. 编辑讨论帖主题时采用同一的命名规则<a class="headerlink" href="#id11" title="Permalink to this headline">¶</a></h3>
+<p>为区分不同种类的消息，并使消息更方便查找，
+您可以指定一系列命名规则以区分不同种类的帖子主题以及回复、评论。如下例：</p>
+<ul class="simple">
+<li>通知变更事宜时可在帖子主题开头加上“[OFFICIAL]”字样</li>
+<li>提供错误修复信息的帖子的主题可以用“ERRATA”开头</li>
+<li>告知学生，如果需要课程工作人员帮助时可以在帖子主题中加入“[STAFF]”字样</li>
+</ul>
+<p>讨论项目管理团队和学生均可使用这类命名规则以便更有效地搜索信息。</p>
+<p>创建新帖子时，必须选择帖子的类型，是“提问”还是“讨论”。
+讨论项目团队成员在选择发帖类型时应慎重，同时也应鼓励学生慎重发帖。详见
+<a class="reference internal" href="#find-question-posts-and-discussion-posts"><span>查找提问和讨论</span></a>.</p>
+</div>
+<div class="section" id="id12">
+<h3>10.3.5.2. 为讨论课题做铺垫<a class="headerlink" href="#id12" title="Permalink to this headline">¶</a></h3>
+<p>为帮助学生学会如何在课堂讨论中尽可能多地收获知识，
+教会学生如何根据自己的问题和讨论寻找最佳的讨论课题，
+您可以在课程开始之前发几篇帖子作为课堂讨论的“开胃菜”。示例如下：</p>
+<ul class="simple">
+<li>在“General”课题中，发布一条“[INTRO]”帖子，引导学生和员工做自我介绍。</li>
+<li>您每发布一个讨论课题，第一条帖子应描述如何使用这个课题。
+除了提供指导教程之外，这类“初始消息”还可作为今后学生创建帖子的范例。</li>
+</ul>
+<p>我们强烈建议您不要在课程开始或单元发布前在特定内容讨论主题中创建基础贴。
+特定内容讨论主题的类名和子类名与所在单元的发布可见性相关联，在单元发布之前，
+这些主题是不可见的。更多细节请参考 <a class="reference internal" href="#visibility-of-discussion-topics"><span>讨论主题可见性</span></a>.</p>
+</div>
+<div class="section" id="id13">
+<h3>10.3.5.3. 缩小话题范围<a class="headerlink" href="#id13" title="Permalink to this headline">¶</a></h3>
+<p>为了鼓励学生多发布更长、更线性化的讨论话题，
+少发布大同小异、支离破碎的散帖，论坛管理团队可以试试下面提到的几个技巧。
+但是请注意，长篇讨论（通常指回复、评论数量超过200条的讨论）阅读起来有一定难度，
+有可能影响学生的课堂体验。</p>
+<ul>
+<li><p class="first">帖子置顶。帖子置顶功能可以使某条帖子出现在“讨论”页面中，
+帖子列表的第一条，从而使更多学生能够看见、回复该帖。
+您可以置顶自己写的帖子，也可以置顶其他人的帖子。
+选择“更多”图标，然后点“置顶”即可。</p>
+<blockquote>
+<div><img alt="Image of the pin icon for discussion posts" src="../_images/Pin_Discussion.png" />
+</div></blockquote>
+</li>
+<li><p class="first">给回复点赞。点赞意味着您认为该条回复提供了有价值的信息。
+单击右侧的“√”图标即可。</p>
+<blockquote>
+<div><img alt="Image of the Endorse button for discussion posts" src="../_images/Endorse_Discussion.png" />
+</div></blockquote>
+</li>
+<li><p class="first">将某个问题标记为“已回答”。操作方法同“点赞”。</p>
+</li>
+<li><p class="first">关闭帖子。如果您认为某条帖子很多余，可以在该帖的回复中粘贴一条链接，
+指向您希望学生做出贡献的帖子，然后关闭本条帖子。
+帖子关闭后，无法继续互动。选择“更多”图标中的“关闭”选项即可。</p>
+</li>
+<li><p class="first">通过帖子/回复/评论提供指导信息。您可在全课堂讨论课题的帖子中发布本章第一节中提到的内容，
+也可以设计下一章“edX论坛剖析”中的内容，提示学生何时开始话题，如何回复帖子，如何评论回复。</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="moderating-discussions">
+<span id="id14"></span><h2>10.3.6. 协调论坛工作<a class="headerlink" href="#moderating-discussions" title="Permalink to this headline">¶</a></h2>
+<p>讨论团队成员会随时跟踪监控讨论项目，促使论坛高效运转。
+他们也可以从论坛中收集信息，比如学生对哪些知识存在疑问，
+对哪部分课程比较感兴趣，等等，并将这些信息转告给课程工作人员。</p>
+<p>如果希望培养并维持积极的论坛文化，则需花更多管理时间用于审核、回复论坛内容。
+一个大型开放式在线课程的论坛维护时间每周应不少于5小时，
+维护工作包括阅读讨论话题、回复、编辑讨论帖，以及和其他讨论团队成员及课程工作人员积极交流。</p>
+<p>更多信息请参考
+<a class="reference internal" href="#assigning-discussion-roles"><span>安排讨论项目管理职能</span></a>.</p>
+<div class="section" id="id15">
+<h3>10.3.6.1. 查看论坛参与者的个人信息<a class="headerlink" href="#id15" title="Permalink to this headline">¶</a></h3>
+<p>如果您想了解某个论坛参与者，您可以查看学生的edX信息。学生可以部分或全部开放信息。</p>
+<p>以下步骤查看学生信息：</p>
+<ol class="arabic simple">
+<li>在 <strong>论坛</strong> 页面选择帖子或回应或评论中的用户名。</li>
+<li>在 <strong>活动记录</strong> 页面点击学生的用户名。</li>
+</ol>
+<p>下图呈现了帖子里、活动记录页面的用户名和学生个人页面。</p>
+<a class="reference internal image-reference" href="../_images/SFD_Prof_from_Disc1.png"><img alt="Image of a discussion with a learner's username circled, an image of that learner's active threads page in the course discussions, and an image of the learner's profile" src="../_images/SFD_Prof_from_Disc1.png" style="width: 600px;" /></a>
+<p>更多关于创建个人简介的内容请参考 <a class="reference external" href="http://edx-guide-for-students.readthedocs.org/en/latest/sfd_your_information.html#sfd_profile_page">View, Create, or
+Edit an edX Profile</a>.</p>
+</div>
+<div class="section" id="id16">
+<h3>10.3.6.2. 为学生提供指导<a class="headerlink" href="#id16" title="Permalink to this headline">¶</a></h3>
+<p>关于如何参与论坛活动，您可以选取几个最佳案例作为模范，
+然后以课程讲义文件的形式发放给学生，或在课程中单独开一个页面详述。
+您可以通过这些指南表达自己对学生的期望，也可以介绍edX论坛的功能。</p>
+<p>您也可以选择将 <a class="reference internal" href="discussions_students.html#discussions-for-students-and-staff"><span>参与课程讨论</span></a> 一章中的内容与学生共享。
+它描述了讨论参与者可以使用的所有功能，即使是论坛新手也可以从中受益良多。</p>
+</div>
+<div class="section" id="id17">
+<h3>10.3.6.3. 培养积极的论坛文化<a class="headerlink" href="#id17" title="Permalink to this headline">¶</a></h3>
+<p>论坛管理者可以通过优化论坛互动行为，使论坛传播积极影响，最大化地利用讨论时间。</p>
+<ul class="simple">
+<li>鼓励学生做出高质量的贡献：应该感谢那些发布积极帖子的学生以及踊跃回答问题的学生。</li>
+<li>除文本之外，检查信息中的连接、图片和视频。
+快速删除攻击性或不合理的帖子，并解释原因。</li>
+<li>审阅点赞人数较多的帖子，定期、公开地评选“明星楼主”。</li>
+<li>紧扣主题：请先读完帖子，再发表回复。</li>
+<li>保持积极的态度：发现问题和错误时，不应指责抱怨。</li>
+<li>及时回复：作业、小测验等重要事件的截止日期将近时，应多花时间回答论坛中提出的问题。</li>
+<li>尽量减少赘余的帖子：在回复帖子之前，应看看有没有其他内容类似的帖子。
+回复最紧扣主题或最活跃的帖子，并复制其URL用来回复其他类似的话题。</li>
+<li>将论坛中的问题公开发布：将问题和答案分享到FAQ课题中，或在“课程信息”页面中公布。</li>
+</ul>
+<p>本节内容的模板详见 <a class="reference internal" href="discussion_guidance_moderators.html#guidance-for-discussion-moderators"><span>论坛协调员指南</span></a>.</p>
+</div>
+<div class="section" id="find-question-posts-and-discussion-posts">
+<span id="id18"></span><h3>10.3.6.4. 查找提问和讨论<a class="headerlink" href="#find-question-posts-and-discussion-posts" title="Permalink to this headline">¶</a></h3>
+<p>学生创建新帖子时需指定帖子的类型，是寻找准确的信息（提问）？
+还是开始一场开放性的对话（讨论）？</p>
+<p>在“讨论”页面中，提问帖通常带有“问号”标记，讨论帖带有“对话气泡”标记。
+当提问帖的问题得到解决，且答案被采纳，问号标记自动变成“√”标记。详见 <a class="reference internal" href="discussions_students.html#answer-questions"><span>回答问题/采纳答案</span></a>.</p>
+<p>除了通过这些标记辨别之外，您还可以通过论坛的筛选功能查找之前的提问帖和讨论帖。
+在“讨论”页面上方，筛选条件默认为“所有帖子”。您也可以将其更改为：</p>
+<ul class="simple">
+<li><strong>未读</strong> ，指的是所有您没有阅读过的帖子，包括提问帖和讨论帖。</li>
+<li><strong>未解决</strong> 指的是仍然没有最佳答案的提问帖。</li>
+</ul>
+</div>
+<div class="section" id="id19">
+<h3>10.3.6.5. 编辑消息<a class="headerlink" href="#id19" title="Permalink to this headline">¶</a></h3>
+<p>三种论坛管理职能均有权编辑和更改帖子、回复和评论的内容
+。一旦发现泄露机密、泄露答案，或含有不良信息、偏离主题信息的内容，
+应及时删除其文本、图片和链接。</p>
+<ol class="arabic simple">
+<li>登录官网，在“当前课程”面板中选择相应课程</li>
+<li>打开“讨论”页面，打开需要编辑的帖子。
+您可以从下拉列表中选择，也可以通过筛选功能及搜索功能快速定位帖子</li>
+<li>找到需要修改的内容后，单击右侧的“更多”图标，选择“编辑”</li>
+<li>直接删除有问题的部分，可以附上一行字：“该内容已被管理员删除”</li>
+<li>交代删除原因。例如，“含有违背道德准则的信息”</li>
+</ol>
+</div>
+<div class="section" id="id20">
+<h3>10.3.6.6. 删除消息<a class="headerlink" href="#id20" title="Permalink to this headline">¶</a></h3>
+<p>三种论坛管理职位均有权删除帖子、回复及评论的内容。
+含有垃圾信息以及不文明用语的帖子应直接删除。</p>
+<ol class="arabic simple">
+<li>登录官网，在“当前课程”面板中选择相应课程</li>
+<li>打开“讨论”页面，打开需要编辑的帖子。您可以从下拉列表中选择，
+也可以通过筛选功能及搜索功能快速定位帖子</li>
+<li>找到需要删除的内容。单击右侧的“更多”图标，选择“删除”</li>
+<li>单击“OK”</li>
+</ol>
+<div class="admonition important">
+<p class="first admonition-title">Important</p>
+<p class="last">若发现帖子内容含有威胁性或强烈攻击性的内容，请联系所在学院的校园保卫处，
+报告事件后再考虑采取进一步行动。</p>
+</div>
+</div>
+<div class="section" id="id21">
+<h3>10.3.6.7. 批复不良信息报告<a class="headerlink" href="#id21" title="Permalink to this headline">¶</a></h3>
+<p>学生有权上报他们认为含有不良信息的内容。
+三种论坛管理职位均可查证这些内容，必要时可以编辑或删除该内容。</p>
+<ol class="arabic simple">
+<li>查看课程现况，单击页面顶部的“讨论”面板</li>
+<li>页面左侧显示的是帖子列表，使用筛选列表，选择“被标记的帖子”</li>
+<li>重新查看帖子列表，此时列表中显示的是内容（包括评论、回复）被举报的帖子。
+被举报的内容会带有“被举报”标识</li>
+<li>重新审核帖子，编辑或删除相关内容，或者取消举报标记：
+单击“更多”，选择“取消举报”。</li>
+</ol>
+</div>
+<div class="section" id="id22">
+<h3>10.3.6.8. 冻结账户<a class="headerlink" href="#id22" title="Permalink to this headline">¶</a></h3>
+<p>如果发现有学生持续发布不良内容，您可以开除该学生。详见 <a class="reference internal" href="course_enrollment.html#unenroll-student"><span>开除学生</span></a>.
+如果课程招生时间已过，该生将无法重新参与课程。</p>
+</div>
+</div>
+<div class="section" id="close-discussions">
+<span id="id23"></span><h2>10.3.7. 关闭论坛<a class="headerlink" href="#close-discussions" title="Permalink to this headline">¶</a></h2>
+<p>您可以关闭课程论坛，关闭后，学生无法继续发布信息。
+论坛可以暂时关闭，譬如在考试的时候，也可以永久关闭，譬如在课程结课的时候。</p>
+<p>关闭论坛后，所有课程单元中的讨论课题以及全课堂讨论课题均会受到影响。</p>
+<ul class="simple">
+<li>已经发布的讨论、贡献内容仍然保留。</li>
+<li>论坛关闭后，学生无法发帖、回复、评论，
+但是可以继续为已发布的帖子及收藏的帖子点赞，
+也可以举报不良信息。</li>
+<li>关闭论坛后，课程工作人员、导师、论坛管理员、论坛协调员、
+论坛社区助教等职位的职能不受影响。这些职位可以继续发布讨论内容。</li>
+</ul>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">关闭论坛后，学生无法继续讨论。为使学生理解这种情况，
+您可在“课程信息”页面通知论坛关闭日期，并将该日期挂到“General”讨论课题下。</p>
+</div>
+<div class="section" id="id24">
+<h3>10.3.7.1. 开始-停止日期格式规范<a class="headerlink" href="#id24" title="Permalink to this headline">¶</a></h3>
+<p>您需要在Studio中设置论坛开始关闭与停止关闭的时间。请按下面的格式输入对应值:</p>
+<p><code class="docutils literal"><span class="pre">[&quot;YYYY-MM-DDTHH:MM&quot;,</span> <span class="pre">&quot;YYYY-MM-DDTHH:MM&quot;]</span></code></p>
+<p>其中：</p>
+<ul class="simple">
+<li>您输入的日期与时间应为世界标准时间，而非您所在时区时间。</li>
+<li>数字日期与小时之间用大写字母T分隔。</li>
+<li>第一个时间是论坛开始关闭的时间。</li>
+<li>第二个时间为论坛重新开放的时间。</li>
+<li>如果您希望永久关闭论坛，输入一个远在天边的日期即可。</li>
+<li>不要忘记双引号。</li>
+<li>开始与结束时间之间用逗号分隔。</li>
+<li>不要忘记方括号。</li>
+<li>您可以输入多个开始-结束时间对，每对时间之间用逗号加一个空格分隔。</li>
+</ul>
+<p>例如，如果您希望在七月份的期末考试期间暂时关闭论坛，
+然后在2014年8月9日永久关闭论坛，输入如下两组数值：</p>
+<p><code class="docutils literal"><span class="pre">[&quot;2014-07-22T08:00&quot;,</span> <span class="pre">&quot;2014-07-25T18:00&quot;],</span> <span class="pre">[&quot;2014-08-09T00:00&quot;,</span> <span class="pre">&quot;2099-08-09T00:00&quot;]</span></code></p>
+<p>每对方括号仅表示一组时间对。</p>
+</div>
+<div class="section" id="id25">
+<h3>10.3.7.2. 设置论坛关闭时间<a class="headerlink" href="#id25" title="Permalink to this headline">¶</a></h3>
+<p>步骤：</p>
+<ol class="arabic">
+<li><p class="first">在Studio中打开课程</p>
+</li>
+<li><p class="first">选择“设置”→“高级设置”</p>
+</li>
+<li><p class="first">将滚动条拖至“论坛关闭日期”策略键</p>
+</li>
+<li><p class="first">在策略键后的区域内，将光标放在已有的两个方括号之间。
+输入一个或多个开始-结束时间对，注意一定要采用之前提到的格式规范。</p>
+<p>如果您输入上面例子中提到的日期，则出现下图：</p>
+<img alt="Policy value of [[&quot;2014-07-22T08:00&quot;, &quot;2014-07-25T18:00&quot;], [&quot;2014-08-09T00:00&quot;, &quot;2099-08-09T00:00&quot;]]" src="../_images/Discussion_blackout_unformatted.png" />
+</li>
+</ol>
+<ol class="arabic" start="5">
+<li><p class="first">单击“保存”</p>
+<p>系统会将您输入的数据重组，加入换行符和缩进符，如图示：</p>
+<img alt="Same policy value but with a line feed after each bracket and comma, and an indent before each date" src="../_images/Discussion_blackout_formatted.png" />
+</li>
+</ol>
+<p>您需要发邮件提醒学生论坛关闭和开启的时间，详见 <a class="reference internal" href="bulk_email.html#example-messages-to-students"><span>给学生的消息示例</span></a>.</p>
+</div>
+</div>
+</div>
+
+
+          <footer>
+  
+    <div class="rst-footer-buttons">
+      
+        <a href="discussions_students.html" class="btn btn-neutral float-right" title="10.4. 参与课程讨论"/>Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="course_enrollment.html" class="btn btn-neutral" title="10.2. 招生"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <p>
+      &copy; Copyright 2015, edX.
+  </p>
+
+ 
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+</body>
+</html>

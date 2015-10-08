@@ -1,0 +1,688 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>6.22. 多项选择问题 &mdash; Building and Running an Open edX Course  documentation</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="../_static/css/favicon.ico"/>
+  
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  
+  
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:'../',
+        VERSION:'',
+        COLLAPSE_INDEX:false,
+        FILE_SUFFIX:'.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+
+    
+
+  
+
+  
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+
+  
+    <link rel="top" title="Building and Running an Open edX Course  documentation" href="../index.html"/>
+        <link rel="up" title="6. Creating Exercises and Tools" href="index.html"/>
+        <link rel="next" title="6.23. 多项选择和数字输入题" href="mult_choice_num_input.html"/>
+        <link rel="prev" title="6.21. 分子浏览器" href="molecule_viewer.html"/> 
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-nav-search">
+        <a href="../index.html" class="icon icon-home"> Building and Running an Open edX Course</a>
+        <form class="wy-form" action="../search.html" method="get">
+  <input type="text" name="q" placeholder="Search document" />
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix">
+        
+        
+            <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../front_matter/index.html">1. For Your Information</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../front_matter/read_me.html">1.1. Read Me</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../front_matter/preface.html">1.2. 序言</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../front_matter/change_log.html">1.3. Change Log</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../front_matter/browsers.html">1.4. edX浏览器支持</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/index.html">2. Getting Started</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../getting_started/dashboard_acctsettings_profile.html">2.1. 搜索你的仪表板、设置和配置文件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../getting_started/get_started.html">2.2. Getting Started with Studio</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../getting_started/accessibility.html">2.3. 创建无障碍课程指南</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../building_course/index.html">3. Setting up Your Course</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/creating_new_course.html">3.1. 新建课程</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/scheduling_course.html">3.2. 设置开始和结束日期</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/setting_up_student_view.html">3.3. 设置课程细节</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/course_prerequisites.html">3.4. 设定入学要求</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/licensing_course.html">3.5. 授权课程</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/course_files.html">3.6. 给课程添加文件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/handouts_updates.html">3.7. 添加课程补充资料及讲义</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/pages.html">3.8. 为课程添加页面</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/textbooks.html">3.9. 添加课本</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/establish_grading_policy.html">3.10. 设定计分政策</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/course_rerun.html">3.11. 重开课程</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/export_import_course.html">3.12. 输出和导入课程</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../developing_course/index.html">4. Developing Your Course</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/workflow.html">4.1. 开始创建课程内容</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/course_outline.html">4.2. 创建课程大纲</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/course_sections.html">4.3. 创建课程章节</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/course_subsections.html">4.4. 构建课程小节</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/course_units.html">4.5. 构建课程单元</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/course_components.html">4.6. 创建课程组件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/controlling_content_visibility.html">4.7. 设置内容可见性</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/testing_courseware.html">4.8. 测试您的课程内容</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../creating_content/index.html">5. Creating Course Content</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../creating_content/create_html_component.html">5.1. 如何使用HTML组件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../creating_content/create_video.html">5.2. 创建影片组件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../creating_content/create_discussion.html">5.3. 创建讨论组件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../creating_content/create_problem.html">5.4. 创建问题组件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../creating_content/libraries.html">5.5. 内容库</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">6. Creating Exercises and Tools</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="create_exercises_and_tools.html">6.1. 创建练习和工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="annotation.html">6.2. 注释问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="checkbox.html">6.3. 复选框问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="chemical_equation.html">6.4. 化学方程式问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="circuit_schematic_builder.html">6.5. 电路原理图搭建问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="conditional_module.html">6.6. 条件模板</a></li>
+<li class="toctree-l2"><a class="reference internal" href="custom_javascript.html">6.7. 自定义JavaScript问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="drag_and_drop.html">6.8. 拖放问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dropdown.html">6.9. 下拉问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="external_graders.html">6.10. 图像映射输入问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="full_screen_image.html">6.11. 全屏图像工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gene_explorer.html">6.12. Gene Explorer工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="google_calendar.html">6.13. 谷歌日历工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="google_docs.html">6.14. 谷歌云文件工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="google_hangouts.html">6.15. 谷歌即时群聊工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="iframe.html">6.16. IFrame工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="image_mapped_input.html">6.17. 图像映射输入问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lti_component.html">6.18. LTI 组件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="math_expression_input.html">6.19. 数学表达式输入问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="molecule_editor.html">6.20. 分子编辑器</a></li>
+<li class="toctree-l2"><a class="reference internal" href="molecule_viewer.html">6.21. 分子浏览器</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="">6.22. 多项选择问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="mult_choice_num_input.html">6.23. 多项选择和数字输入题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="numerical_input.html">6.24. 数值输入问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="open_response_assessments/index.html">6.25. Open Response Assessments</a></li>
+<li class="toctree-l2"><a class="reference internal" href="periodic_table.html">6.26. 元素周期表工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="poll.html">6.27. 投票工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="problem_with_hint.html">6.28. 带适应性提示的问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="problem_in_latex.html">6.29. LaTeX问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="protein_builder.html">6.30. Protex蛋白质构建工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="randomized_content_blocks.html">6.31. 随机内容块</a></li>
+<li class="toctree-l2"><a class="reference internal" href="recommenderXBlock.html">6.32. 推荐系统</a></li>
+<li class="toctree-l2"><a class="reference internal" href="student_notes.html">6.33. 学生笔记工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="text_input.html">6.34. 文本输入问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="word_cloud.html">6.35. 文字云工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="custom_python.html">6.36. 自定义评分器问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="zooming_image.html">6.37. 图像放大工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="mathjax.html">6.38. Studio中MathJax的简要介绍</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../content_experiments/index.html">7. Creating Content Experiments</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../content_experiments/content_experiments_overview.html">7.1. 内容实验概述</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../content_experiments/content_experiments_configure.html">7.2. Configure Your Course for Content Experiments</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../content_experiments/content_experiments_add.html">7.3. Add Content Experiments to Your Course</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../content_experiments/content_experiments_view.html">7.4. 测试内容实验</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../cohorts/index.html">8. Including Student Cohorts</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../cohorts/cohorts_overview.html">8.1. 使用队列功能建立课程群</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cohorts/cohort_config.html">8.2. 启用、配置分队模式</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cohorts/cohorted_courseware.html">8.3. 创建特定队列课件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cohorts/cohorts_setup_discussions.html">8.4. 在包含队列的课程中设置论坛</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cohorts/cohorts_manage_discussions.html">8.5. 管理有学生队列的论坛</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../releasing_course/index.html">9. Releasing Your Course</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../releasing_course/beta_testing.html">9.1. 贝塔测试</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../releasing_course/course_launching.html">9.2. 课程发布事宜</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../releasing_course/staff_debug_info.html">9.3. 员工调试信息</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../running_course/index.html">10. Running Your Course</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/course_staffing.html">10.1. 安置职工</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/course_enrollment.html">10.2. 招生</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/discussions.html">10.3. 管理课程讨论项目</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/discussions_students.html">10.4. 参与课程讨论</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/discussion_guidance_moderators.html">10.5. 论坛协调员指南</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/bulk_email.html">10.6. 大宗邮件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/course_wiki.html">10.7. 使用课程维基</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/course_data.html">10.8. 课程数据</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/course_student.html">10.9. 学生数据</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/course_answers.html">10.10. 回答问题数据</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/course_grades.html">10.11. 学生成绩与成绩评定</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/checking_student_progress.html">10.12. 总成绩计算与证书发放</a></li>
+</ul>
+</li>
+</ul>
+
+        
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top">
+        <i data-toggle="wy-nav-top" class="icon icon-reorder"></i>
+        <a href="/">Building and Running an Open edX Course</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <ul class="wy-breadcrumbs">
+  <li><a href="../index.html">Table of Contents</a> &raquo;</li>
+  <li><a href="">6.22. 多项选择问题</a></li>
+  
+</ul>
+<hr/>
+
+          
+  <div class="section" id="multiple-choice">
+<span id="id1"></span><h1>6.22. 多项选择问题<a class="headerlink" href="#multiple-choice" title="Permalink to this headline">¶</a></h1>
+<p>在多项选择问题中，学习者从一列选项中选择一个选项。不像 <a class="reference internal" href="dropdown.html#dropdown"><span>下拉</span></a> 问题，其答案的选择直到学习者点击下拉箭头才显示出来，多项选择问题的选项一直是直接在问题的下部可见。</p>
+<img alt="Image of a multiple choice problem" src="../_images/MultipleChoiceExample.png" />
+<p>对于多项选择问题，在你的课程中，你可以有 edX Insight 来检查聚合的学习者的表现和测试提交的答案。更多信息请参照 <a class="reference external" href="http://edx.readthedocs.org/projects/edx-insights/en/latest/">Using edX Insights</a>.</p>
+<p>多项选择问题同样可以有多个高级选项，比如呈现选择的随机信息给学习者。更多关于这些选项的信息，请参照 <span class="xref std std-ref">多项选择高级选项</span>.</p>
+<div class="section" id="id2">
+<h2>6.22.1. 创建一个多项选择问题<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<p>你可以创建多项选择问在简单编辑器或高级编辑器中。你可以在简单编辑器中提出一个问题，然后切换到高级编辑器中用XML添加更多的配置选项。然而，你不能从高级编辑器切换回简单编辑器。所以在你切换到高级编辑器之前，你要尽可能完全地设计好问题。
+.. _Use the Simple Editor to Create a Multiple Choice Problem:</p>
+<div class="section" id="id3">
+<h3>6.22.1.1. 用简单编辑器创建一个多项选择问题<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h3>
+<p>利用 <a class="reference internal" href="../creating_content/create_problem.html#simple-editor"><span>简单编辑器</span></a> 创建一个检查框问题，请遵循以下步骤</p>
+<ol class="arabic simple">
+<li>在你想创建问题的单元中，在 <strong>添加新的组件</strong> 下面选择 <strong>问题</strong>.</li>
+<li>从 <strong>普通问题类型</strong> 列表中，选择 <strong>多项选择</strong>.
+Studio 会添加一个示例多项选择问题到单元中</li>
+<li>选择 <strong>编辑</strong>. 简单编辑器打开</li>
+<li>用你的文本替换示例问题的文本</li>
+<li>确定描述你想让学习者回答的问题的文本 (<code class="docutils literal"><span class="pre">&gt;&gt;question&lt;&lt;</span></code>).
+这个问题文本是问题的访问标签。</li>
+<li>编辑你的文本来把每个回答的选项放置在分隔的行</li>
+<li>选择你的回答选项集，然后从工具栏中选择 <strong>多项选择</strong> 在每个选项旁会出现一对圆括号</li>
+<li>为了确定正确答案，在选项的圆括号中添加 <strong>x</strong></li>
+<li>为了提供一个解释，选择解释文本然后从工具栏中选择 <strong>解释</strong>  <code class="docutils literal"><span class="pre">[explanation]</span></code> 会出现在解释文本的前面和后面</li>
+<li>选择**设置** 并为问题提供一个为了识别用的 <strong>显示名称</strong></li>
+<li>为问题定义额外的设置。更多信息请参照
+<a class="reference internal" href="../creating_content/create_problem.html#problem-settings"><span>问题设置</span></a>.</li>
+<li>选择 <strong>保存</strong>.</li>
+</ol>
+<p>上面展示了示例问题，接下来的文本显示在问题组件中。</p>
+<div class="highlight-python"><div class="highlight"><pre>&gt;&gt;Lateral inhibition, as was first discovered in the horsehoe crab:&lt;&lt;
+
+( ) is a property of touch sensation, referring to the ability of crabs
+to detect nearby predators.
+( ) is a property of hearing, referring to the ability of crabs to detect
+low frequency noises.
+(x) is a property of vision, referring to the ability of crabs&#39; eyes to
+enhance contrasts.
+( ) has to do with the ability of crabs to use sonar to detect fellow
+horseshoe crabs nearby.
+( ) has to do with a weighting system in the crab&#39;s skeleton that allows
+it to balance in turbulent water.
+
+[Explanation]
+Horseshoe crabs were essential to the discovery of lateral inhibition,
+a property of vision present in horseshoe crabs as well as in humans that
+enables enhancement of contrast at edges of objects as was demonstrated in class.
+In 1967, Haldan Hartline received the Nobel prize for his research on vision
+and in particular his research investigating lateral inhibition using
+horseshoe crabs.
+[Explanation]
+</pre></div>
+</div>
+</div>
+<div class="section" id="id4">
+<h3>6.22.1.2. 用高级编辑器编辑一个多项选择问题<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h3>
+<p>为了有 <a class="reference internal" href="../creating_content/create_problem.html#advanced-editor"><span>高级编辑器</span></a> 来编辑一个多项选择问题，遵循下列步骤</p>
+<ol class="arabic simple">
+<li>遵循在 <span class="xref std std-ref">简单编辑器</span> 中创建问题的步骤.</li>
+<li>选择 <strong>高级编辑器</strong>, 然后编辑XML来添加标签和你想要的属性，接下来是一个示例.</li>
+</ol>
+<div class="highlight-xml"><div class="highlight"><pre><span class="nt">&lt;problem&gt;</span>
+<span class="nt">&lt;fieldset&gt;</span>
+<span class="nt">&lt;legend&gt;</span>Lateral inhibition, as was first discovered in the horseshoe crab...<span class="nt">&lt;/legend&gt;</span>
+<span class="nt">&lt;multiplechoiceresponse&gt;</span>
+  <span class="nt">&lt;choicegroup</span> <span class="na">type=</span><span class="s">&quot;MultipleChoice&quot;</span> <span class="na">label=</span><span class="s">&quot;Lateral inhibition, as was first discovered</span>
+<span class="s">    in the horseshoe crab&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;choice</span> <span class="na">correct=</span><span class="s">&quot;false&quot;</span><span class="nt">&gt;</span>is a property of touch sensation, referring to the ability
+    of crabs to detect nearby predators.<span class="nt">&lt;/choice&gt;</span>
+    <span class="nt">&lt;choice</span> <span class="na">correct=</span><span class="s">&quot;false&quot;</span><span class="nt">&gt;</span>is a property of hearing, referring to the ability of crabs
+    to detect low frequency noises.<span class="nt">&lt;/choice&gt;</span>
+    <span class="nt">&lt;choice</span> <span class="na">correct=</span><span class="s">&quot;false&quot;</span><span class="nt">&gt;</span>is a property of vision, referring to the ability of crabs&#39;
+    eyes to enhance contrasts.<span class="nt">&lt;/choice&gt;</span>
+    <span class="nt">&lt;choice</span> <span class="na">correct=</span><span class="s">&quot;true&quot;</span><span class="nt">&gt;</span>has to do with the ability of crabs to use sonar to detect
+    fellow horseshoe crabs nearby.<span class="nt">&lt;/choice&gt;</span>
+    <span class="nt">&lt;choice</span> <span class="na">correct=</span><span class="s">&quot;false&quot;</span><span class="nt">&gt;</span>has to do with a weighting system in the crab&#39;s skeleton
+    that allows it to balance in turbulent water.<span class="nt">&lt;/choice&gt;</span>
+  <span class="nt">&lt;/choicegroup&gt;</span>
+<span class="nt">&lt;/multiplechoiceresponse&gt;</span>
+<span class="nt">&lt;/fieldset&gt;</span>
+<span class="nt">&lt;solution&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;detailed-solution&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;p&gt;</span>Explanation<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;p&gt;</span>Horseshoe crabs were essential to the discovery of lateral inhibition,
+     a property of vision present in horseshoe crabs as well as humans that
+     enables enhancement of contrast at edges of objects as was demonstrated in class.
+     In 1967, Haldan Hartline received the Nobel prize for his research on vision
+     and in particular his research investigating lateral inhibition using
+     horseshoe crabs.<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/solution&gt;</span>
+<span class="nt">&lt;/problem&gt;</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="xml">
+<span id="multiple-choice-problem-xml"></span><h2>6.22.2. 多项选择问题XML<a class="headerlink" href="#xml" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id5">
+<h3>6.22.2.1. 模板<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-xml"><div class="highlight"><pre><span class="nt">&lt;problem&gt;</span>
+<span class="nt">&lt;fieldset&gt;</span>
+<span class="nt">&lt;legend&gt;</span>Question text<span class="nt">&lt;/legend&gt;</span>
+<span class="nt">&lt;multiplechoiceresponse&gt;</span>
+  <span class="nt">&lt;choicegroup</span> <span class="na">type=</span><span class="s">&quot;MultipleChoice&quot;</span> <span class="na">label=</span><span class="s">&quot;label text&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;choice</span> <span class="na">correct=</span><span class="s">&quot;false&quot;</span> <span class="na">name=</span><span class="s">&quot;a&quot;</span><span class="nt">&gt;</span>Incorrect choice<span class="nt">&lt;/choice&gt;</span>
+    <span class="nt">&lt;choice</span> <span class="na">correct=</span><span class="s">&quot;true&quot;</span> <span class="na">name=</span><span class="s">&quot;b&quot;</span><span class="nt">&gt;</span>Correct choice<span class="nt">&lt;/choice&gt;</span>
+  <span class="nt">&lt;/choicegroup&gt;</span>
+<span class="nt">&lt;/multiplechoiceresponse&gt;</span>
+<span class="nt">&lt;/fieldset&gt;</span>
+
+<span class="nt">&lt;solution&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;detailed-solution&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;p&gt;</span>Explanation or solution header<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;p&gt;</span>Explanation or solution text<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/solution&gt;</span>
+<span class="nt">&lt;/problem&gt;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="id6">
+<h3>6.22.2.2. 标签<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><code class="docutils literal"><span class="pre">&lt;multiplechoiceresponse&gt;</span></code> (必需): 表明问题是一个多项选择问题</li>
+<li><code class="docutils literal"><span class="pre">&lt;choicegroup&gt;</span></code> (必需): 表明选择列表的开始</li>
+<li><code class="docutils literal"><span class="pre">&lt;choice&gt;</span></code> (必需): 列出回答的选项</li>
+</ul>
+<p><strong>标签:</strong> <code class="docutils literal"><span class="pre">&lt;multiplechoiceresponse&gt;</span></code></p>
+<p>表明问题是一个多项选择问题</p>
+<blockquote>
+<div><p>属性</p>
+<p>(空)</p>
+<p>子标签</p>
+<ul class="simple">
+<li><code class="docutils literal"><span class="pre">&lt;choicegroup&gt;</span></code></li>
+<li>所有的标准HTML标签 (可以用来规定文本的格式).</li>
+</ul>
+</div></blockquote>
+<p><strong>标签:</strong> <code class="docutils literal"><span class="pre">&lt;choicegroup&gt;</span></code></p>
+<p>表明选项列表的开始</p>
+<blockquote>
+<div><p>属性</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="20%" />
+<col width="80%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Attribute</th>
+<th class="head">描述</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>label (必需)</td>
+<td>指定回答域的名称</td>
+</tr>
+<tr class="row-odd"><td>type (必需)</td>
+<td>必需设置为 &#8220;MultipleChoice&#8221;.</td>
+</tr>
+</tbody>
+</table>
+<p>子标签</p>
+<ul class="simple">
+<li><code class="docutils literal"><span class="pre">&lt;choice&gt;</span></code></li>
+</ul>
+</div></blockquote>
+<p><strong>标签:</strong> <code class="docutils literal"><span class="pre">&lt;choice&gt;</span></code></p>
+<p>列出一个回答选项</p>
+<blockquote>
+<div><p>属性</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="20%" />
+<col width="80%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Attribute</th>
+<th class="head">描述</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>correct (至少需要一项)</td>
+<td>表明是一个正确或不正确的答案。当这个属性被设置为
+&#8220;true&#8221; 时, 这个选项就是一个正确的回答。当设置为
+&#8220;false&#8221; 时, 这个选项就是不正确的回答。你可以指定不止一个正确答案，
+但是学习者只能选择一个选项然后提交</td>
+</tr>
+<tr class="row-odd"><td>name</td>
+<td>一个后端用来指涉选项的名称</td>
+</tr>
+</tbody>
+</table>
+<p>子标签</p>
+<p>(空)</p>
+</div></blockquote>
+</div>
+</div>
+<div class="section" id="multiple-choice-advanced-options">
+<span id="id7"></span><h2>6.22.3. 多项选择问题的高级选项<a class="headerlink" href="#multiple-choice-advanced-options" title="Permalink to this headline">¶</a></h2>
+<p>多项选择问题有多个高级选项。你可以更改在问题中答案的顺序，包括当学习者选择一个特定的不正确的答案时出现的解释，或显现给每个学习者一个选项的随机集合。更多信息，请参照接下来的主题。</p>
+<ul class="simple">
+<li><span class="xref std std-ref">打乱多项选择问题中的答案顺序</span></li>
+<li><span class="xref std std-ref">多项选择问题中的定向反馈</span></li>
+<li><span class="xref std std-ref">多项选择问题中的答案池</span></li>
+</ul>
+<div class="section" id="shuffle-answers-in-a-multiple-choice-problem">
+<span id="id8"></span><h3>6.22.3.1. 打乱多项选择问题中的答案顺序<a class="headerlink" href="#shuffle-answers-in-a-multiple-choice-problem" title="Permalink to this headline">¶</a></h3>
+<p>可选择地，你可以配置一个多项选择问题，以便打乱可能的答案的顺序</p>
+<p>例如，问题的一次观察可以是这样的：</p>
+<img alt="Image of a multiple choice problem" src="../_images/multiple-choice-shuffle-1.png" />
+<p>同一个问题的另一次观察，对于另一个学习者或同一个学习者的第二次观察，可以是这样的：</p>
+<img alt="Image of a multiple choice problem with shuffled answers" src="../_images/multiple-choice-shuffle-2.png" />
+<p>你也可以把一些回答打乱，而不打乱别的答案。例如，你可能想 &#8220;以上所有&#8221; 的答案总是出现在列表的最后但是把其他的答案打乱</p>
+<p>你可以用简单编辑器或高级编辑器配置问题来打乱答案</p>
+<div class="section" id="id9">
+<h4>6.22.3.1.1. 使用简单编辑器打乱答案<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h4>
+<p>你可以在 :ref:<a href="#id10"><span class="problematic" id="id11">`</span></a>简单编辑器`中配置问题来打乱答案.</p>
+<p>例如，接下来宣言一个多项选择问题，还没有打乱功能。 <code class="docutils literal"><span class="pre">(x)</span></code> 表明正确答案</p>
+<div class="highlight-python"><div class="highlight"><pre>&gt;&gt;What Apple device competed with the portable CD player?&lt;&lt;
+    ( ) The iPad
+    ( ) Napster
+    (x) The iPod
+    ( ) The vegetable peeler
+</pre></div>
+</div>
+<p>添加打乱功能到问题中，则在第一个选项的圆括号中添加 <code class="docutils literal"><span class="pre">!</span></code>.</p>
+<div class="highlight-python"><div class="highlight"><pre>&gt;&gt;What Apple device competed with the portable CD player?&lt;&lt;
+    (!) The iPad
+    ( ) Napster
+    (x) The iPod
+    ( ) The vegetable peeler
+</pre></div>
+</div>
+<p>为了在一个打乱的列表中固定答案的位置，在答案的圆括号中添加 <code class="docutils literal"><span class="pre">&#64;</span></code> .</p>
+<div class="highlight-python"><div class="highlight"><pre>&gt;&gt;What Apple device competed with the portable CD player?&lt;&lt;
+    (!) The iPad
+    ( ) Napster
+    (x) The iPod
+    ( ) The vegetable peeler
+    (@) All of the above
+</pre></div>
+</div>
+<p>如果必要，你可以在圆括号中将它们结合使用。例如，为了在固定正确答案的位置，你可以同时作用 <code class="docutils literal"><span class="pre">x</span></code> 和``&#64;``.</p>
+<div class="highlight-python"><div class="highlight"><pre>(x@) The iPod
+</pre></div>
+</div>
+</div>
+<div class="section" id="id12">
+<h4>6.22.3.1.2. 使用高级编辑器打乱答案<a class="headerlink" href="#id12" title="Permalink to this headline">¶</a></h4>
+<p>你可以通过在:ref:<cite>高级编辑器</cite> 中编辑XML来配置问题以打乱答案。</p>
+<p>例如，接下来定义了一个多项选择问题，还没有打乱功能。</p>
+<div class="highlight-xml"><div class="highlight"><pre><span class="nt">&lt;problem&gt;</span>
+ <span class="nt">&lt;fieldset&gt;</span>
+ <span class="nt">&lt;legend&gt;</span>What Apple device competed with the portable CD player?<span class="nt">&lt;/legend&gt;</span>
+ <span class="nt">&lt;multiplechoiceresponse&gt;</span>
+  <span class="nt">&lt;choicegroup</span> <span class="na">type=</span><span class="s">&quot;MultipleChoice&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;choice</span> <span class="na">correct=</span><span class="s">&quot;false&quot;</span><span class="nt">&gt;</span>The iPad<span class="nt">&lt;/choice&gt;</span>
+    <span class="nt">&lt;choice</span> <span class="na">correct=</span><span class="s">&quot;false&quot;</span><span class="nt">&gt;</span>Napster<span class="nt">&lt;/choice&gt;</span>
+    <span class="nt">&lt;choice</span> <span class="na">correct=</span><span class="s">&quot;true&quot;</span><span class="nt">&gt;</span>The iPod<span class="nt">&lt;/choice&gt;</span>
+    <span class="nt">&lt;choice</span> <span class="na">correct=</span><span class="s">&quot;false&quot;</span><span class="nt">&gt;</span>The vegetable peeler<span class="nt">&lt;/choice&gt;</span>
+  <span class="nt">&lt;/choicegroup&gt;</span>
+ <span class="nt">&lt;/multiplechoiceresponse&gt;</span>
+ <span class="nt">&lt;/fieldset&gt;</span>
+<span class="nt">&lt;/problem&gt;</span>
+</pre></div>
+</div>
+<p>为添加打乱到问题中，添加 <code class="docutils literal"><span class="pre">shuffle=&quot;true&quot;</span></code> 到
+<code class="docutils literal"><span class="pre">&lt;choicegroup&gt;</span></code> 元素中.</p>
+<div class="highlight-xml"><div class="highlight"><pre><span class="nt">&lt;problem&gt;</span>
+ <span class="nt">&lt;fieldset&gt;</span>
+ <span class="nt">&lt;legend&gt;</span>What Apple device competed with the portable CD player?<span class="nt">&lt;/legend&gt;</span>
+ <span class="nt">&lt;multiplechoiceresponse&gt;</span>
+  <span class="nt">&lt;choicegroup</span> <span class="na">type=</span><span class="s">&quot;MultipleChoice&quot;</span> <span class="na">shuffle=</span><span class="s">&quot;true&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;choice</span> <span class="na">correct=</span><span class="s">&quot;false&quot;</span><span class="nt">&gt;</span>The iPad<span class="nt">&lt;/choice&gt;</span>
+    <span class="nt">&lt;choice</span> <span class="na">correct=</span><span class="s">&quot;false&quot;</span><span class="nt">&gt;</span>Napster<span class="nt">&lt;/choice&gt;</span>
+    <span class="nt">&lt;choice</span> <span class="na">correct=</span><span class="s">&quot;true&quot;</span><span class="nt">&gt;</span>The iPod<span class="nt">&lt;/choice&gt;</span>
+    <span class="nt">&lt;choice</span> <span class="na">correct=</span><span class="s">&quot;false&quot;</span><span class="nt">&gt;</span>The vegetable peeler<span class="nt">&lt;/choice&gt;</span>
+  <span class="nt">&lt;/choicegroup&gt;</span>
+ <span class="nt">&lt;/multiplechoiceresponse&gt;</span>
+ <span class="nt">&lt;/fieldset&gt;</span>
+<span class="nt">&lt;/problem&gt;</span>
+</pre></div>
+</div>
+<p>为了在列表中固定答案的位置，添加 <code class="docutils literal"><span class="pre">fixed=&quot;true&quot;</span></code> 到答案的
+<code class="docutils literal"><span class="pre">choice</span></code> 元素中.</p>
+<div class="highlight-xml"><div class="highlight"><pre><span class="nt">&lt;problem&gt;</span>
+ <span class="nt">&lt;fieldset&gt;</span>
+ <span class="nt">&lt;legend&gt;</span>What Apple device competed with the portable CD player?<span class="nt">&lt;/legend&gt;</span>
+ <span class="nt">&lt;multiplechoiceresponse&gt;</span>
+  <span class="nt">&lt;choicegroup</span> <span class="na">type=</span><span class="s">&quot;MultipleChoice&quot;</span> <span class="na">shuffle=</span><span class="s">&quot;true&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;choice</span> <span class="na">correct=</span><span class="s">&quot;false&quot;</span><span class="nt">&gt;</span>The iPad<span class="nt">&lt;/choice&gt;</span>
+    <span class="nt">&lt;choice</span> <span class="na">correct=</span><span class="s">&quot;false&quot;</span><span class="nt">&gt;</span>Napster<span class="nt">&lt;/choice&gt;</span>
+    <span class="nt">&lt;choice</span> <span class="na">correct=</span><span class="s">&quot;true&quot;</span><span class="nt">&gt;</span>The iPod<span class="nt">&lt;/choice&gt;</span>
+    <span class="nt">&lt;choice</span> <span class="na">correct=</span><span class="s">&quot;false&quot;</span><span class="nt">&gt;</span>The vegetable peeler<span class="nt">&lt;/choice&gt;</span>
+    <span class="nt">&lt;choice</span> <span class="na">correct=</span><span class="s">&quot;false&quot;</span> <span class="na">fixed=</span><span class="s">&quot;true&quot;</span><span class="nt">&gt;</span>All of the above<span class="nt">&lt;/choice&gt;</span>
+  <span class="nt">&lt;/choicegroup&gt;</span>
+ <span class="nt">&lt;/multiplechoiceresponse&gt;</span>
+ <span class="nt">&lt;/fieldset&gt;</span>
+<span class="nt">&lt;/problem&gt;</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="targeted-feedback-in-a-multiple-choice-problem">
+<span id="id13"></span><h3>6.22.3.2. 多项选择问题中的定向反馈<a class="headerlink" href="#targeted-feedback-in-a-multiple-choice-problem" title="Permalink to this headline">¶</a></h3>
+<p>你可以配置一个多项选择问题以便对不正确答案的解释能自动显现给学习者。你可以用这些解释来引导学习者选择正确的答案。所以，定向反馈对于多项选择问题很有用，当其对学习者有多种用途时。.</p>
+<div class="section" id="id14">
+<h4>6.22.3.2.1. 使用高级编辑器配置定义反馈<a class="headerlink" href="#id14" title="Permalink to this headline">¶</a></h4>
+<p>你通过编辑在:ref:<cite>高级编辑器</cite> 中的XML来配置问题以提供定义反馈.</p>
+<p>遵循以下的XML指南</p>
+<ul class="simple">
+<li>添加一个 <code class="docutils literal"><span class="pre">targeted-feedback</span></code> 属性到 <code class="docutils literal"><span class="pre">&lt;multiplechoiceresponse&gt;</span></code>
+元素中，而值为空: <code class="docutils literal"><span class="pre">&lt;multiplechoiceresponse</span> <span class="pre">targeted-feedback=&quot;&quot;&gt;</span></code>.</li>
+<li>添加一个 <code class="docutils literal"><span class="pre">&lt;targetedfeedbackset&gt;</span></code> 元素，于 <code class="docutils literal"><span class="pre">&lt;solution&gt;</span></code> 元素之前.</li>
+<li>在``&lt;targetedfeedbackset&gt;`` 中, 添加一个或多个 <code class="docutils literal"><span class="pre">&lt;targetedfeedback&gt;</span></code> 元素.</li>
+<li>在每个 <code class="docutils literal"><span class="pre">&lt;targetedfeedback&gt;</span></code> 元素中，输入你的不正确答案的解释，用以下描述的HTML作标记.</li>
+<li>连接 <code class="docutils literal"><span class="pre">&lt;targetedfeedback&gt;</span></code> 元素到一个特定的不正确答案，通过对使用同样的 <code class="docutils literal"><span class="pre">explanation-id</span></code> 属性值.</li>
+<li>为正确答案使用 <code class="docutils literal"><span class="pre">&lt;solution&gt;</span></code> 元素，用相同的
+<code class="docutils literal"><span class="pre">explanation-id</span></code> 属性值作为正确的  <code class="docutils literal"><span class="pre">&lt;choice&gt;</span></code> 元素.</li>
+</ul>
+<p>例如，多项选择问题的XML如下.</p>
+<div class="highlight-xml"><div class="highlight"><pre><span class="nt">&lt;problem&gt;</span>
+<span class="nt">&lt;fieldset&gt;</span>
+<span class="nt">&lt;legend&gt;</span>What Apple device competed with the portable CD player?<span class="nt">&lt;/legend&gt;</span>
+<span class="nt">&lt;multiplechoiceresponse</span> <span class="na">targeted-feedback=</span><span class="s">&quot;&quot;</span><span class="nt">&gt;</span>
+ <span class="nt">&lt;choicegroup</span> <span class="na">type=</span><span class="s">&quot;MultipleChoice&quot;</span><span class="nt">&gt;</span>
+   <span class="nt">&lt;choice</span> <span class="na">correct=</span><span class="s">&quot;false&quot;</span> <span class="na">explanation-id=</span><span class="s">&quot;feedback1&quot;</span><span class="nt">&gt;</span>The iPad<span class="nt">&lt;/choice&gt;</span>
+   <span class="nt">&lt;choice</span> <span class="na">correct=</span><span class="s">&quot;false&quot;</span> <span class="na">explanation-id=</span><span class="s">&quot;feedback2&quot;</span><span class="nt">&gt;</span>Napster<span class="nt">&lt;/choice&gt;</span>
+   <span class="nt">&lt;choice</span> <span class="na">correct=</span><span class="s">&quot;true&quot;</span> <span class="na">explanation-id=</span><span class="s">&quot;correct&quot;</span><span class="nt">&gt;</span>The iPod<span class="nt">&lt;/choice&gt;</span>
+   <span class="nt">&lt;choice</span> <span class="na">correct=</span><span class="s">&quot;false&quot;</span> <span class="na">explanation-id=</span><span class="s">&quot;feedback3&quot;</span><span class="nt">&gt;</span>The vegetable peeler<span class="nt">&lt;/choice&gt;</span>
+ <span class="nt">&lt;/choicegroup&gt;</span>
+<span class="nt">&lt;/fieldset&gt;</span>
+<span class="nt">&lt;/multiplechoiceresponse&gt;</span>
+...
+</pre></div>
+</div>
+<p>跟着的是如下定义定向反馈的XML</p>
+<div class="highlight-xml"><div class="highlight"><pre>...
+<span class="nt">&lt;targetedfeedbackset&gt;</span>
+  <span class="nt">&lt;targetedfeedback</span> <span class="na">explanation-id=</span><span class="s">&quot;feedback1&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;detailed-targeted-feedback&quot;</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;p&gt;</span>Targeted Feedback<span class="nt">&lt;/p&gt;</span>
+      <span class="nt">&lt;p&gt;</span>The iPad came out later and did not directly compete with portable
+         CD players.<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/targetedfeedback&gt;</span>
+  <span class="nt">&lt;targetedfeedback</span> <span class="na">explanation-id=</span><span class="s">&quot;feedback2&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;detailed-targeted-feedback&quot;</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;p&gt;</span>Targeted Feedback<span class="nt">&lt;/p&gt;</span>
+      <span class="nt">&lt;p&gt;</span>Napster was not an Apple product.<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/targetedfeedback&gt;</span>
+  <span class="nt">&lt;targetedfeedback</span> <span class="na">explanation-id=</span><span class="s">&quot;feedback3&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;detailed-targeted-feedback&quot;</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;p&gt;</span>Targeted Feedback<span class="nt">&lt;/p&gt;</span>
+      <span class="nt">&lt;p&gt;</span>Vegetable peelers do not play music.<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/targetedfeedback&gt;</span>
+ <span class="nt">&lt;/targetedfeedbackset&gt;</span>
+
+ <span class="nt">&lt;solution</span> <span class="na">explanation-id=</span><span class="s">&quot;correct&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;detailed-solution&quot;</span><span class="nt">&gt;</span>
+   <span class="nt">&lt;p&gt;</span>The iPod directly competed with portable CD players.<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+ <span class="nt">&lt;/solution&gt;</span>
+ <span class="nt">&lt;/problem&gt;</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="answer-pools-in-a-multiple-choice-problem">
+<span id="id15"></span><h3>6.22.3.3. 多项选择问题的答案池<a class="headerlink" href="#answer-pools-in-a-multiple-choice-problem" title="Permalink to this headline">¶</a></h3>
+<p>你可以配置一个多项选择问题以便展示给每个学习者的是选项的随机子集。例如，你可以添加10个可能的选项到问题，每个学习者看到其中的5个选项。</p>
+<p>答案池必须有至少一个正确答案，也可以有不止一个正确答案。在每个给学习者的选项集中，包含一个正确答案。例如，你可以在选项集中配置两个正确答案，两个中的一个正确答案被包含在学习者能看到的选项集中。</p>
+<div class="section" id="id16">
+<h4>6.22.3.3.1. 使用高级编辑器配置答案池<a class="headerlink" href="#id16" title="Permalink to this headline">¶</a></h4>
+<p>你通过在:ref:<cite>高级编辑器</cite> 中编辑XML来配置问题以提供答案池.</p>
+<p>遵循以下XML指南:</p>
+<ul class="simple">
+<li>在 <code class="docutils literal"><span class="pre">&lt;choicegroup&gt;</span></code> 元素中，添加 <code class="docutils literal"><span class="pre">answer-pool</span></code> 属性，用数值指定在集合中可能的答案个数。例如 <code class="docutils literal"><span class="pre">&lt;choicegroup</span> <span class="pre">answer-pool=&quot;4&quot;&gt;</span></code>.</li>
+<li>对于每个正确答案，给 <code class="docutils literal"><span class="pre">&lt;choice&gt;</span></code> 元素添加一个 <code class="docutils literal"><span class="pre">explanation-</span>
+<span class="pre">id</span></code> 映射到解决方案的属性和值, <code class="docutils literal"><span class="pre">&lt;choice</span>
+<span class="pre">correct=&quot;true&quot;</span> <span class="pre">explanation-id=&quot;iPod&quot;&gt;The</span> <span class="pre">iPod&lt;/choice&gt;</span></code>.</li>
+<li>对于每个 <code class="docutils literal"><span class="pre">&lt;solution&gt;</span></code> 元素，添加一个 <code class="docutils literal"><span class="pre">explanation-id</span></code> 映射回一个正确答案的属性和值,例如 <code class="docutils literal"><span class="pre">&lt;solution</span>
+<span class="pre">explanation-id=&quot;iPod&quot;&gt;</span></code>.</li>
+</ul>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">如果选项仅包含一个正确答案，你不必使用 <code class="docutils literal"><span class="pre">explanation-id</span></code> ，在 <code class="docutils literal"><span class="pre">choice</span></code> 或 <code class="docutils literal"><span class="pre">&lt;solution&gt;</span></code>
+元素中。但你还是要使用 <code class="docutils literal"><span class="pre">&lt;solutionset&gt;</span></code> 元素来包裹`&lt;solution&gt;`` 元素.</p>
+</div>
+<p>例如，对于接下来的多项选择问题，一个学习者将看到四个选项。在每个集合中，选项中的一个会是两个正确答案中的一个。正确答案显示的解释是与之有相同explanation ID的那个解释.</p>
+<div class="highlight-xml"><div class="highlight"><pre><span class="nt">&lt;problem&gt;</span>
+ <span class="nt">&lt;fieldset&gt;</span>
+ <span class="nt">&lt;legend&gt;</span>What Apple devices let you carry your digital music library in your pocket?<span class="nt">&lt;/legend&gt;</span>
+  <span class="nt">&lt;multiplechoiceresponse&gt;</span>
+   <span class="nt">&lt;choicegroup</span> <span class="na">type=</span><span class="s">&quot;MultipleChoice&quot;</span> <span class="na">answer-pool=</span><span class="s">&quot;4&quot;</span><span class="nt">&gt;</span>
+     <span class="nt">&lt;choice</span> <span class="na">correct=</span><span class="s">&quot;false&quot;</span><span class="nt">&gt;</span>The iPad<span class="nt">&lt;/choice&gt;</span>
+     <span class="nt">&lt;choice</span> <span class="na">correct=</span><span class="s">&quot;false&quot;</span><span class="nt">&gt;</span>Napster<span class="nt">&lt;/choice&gt;</span>
+     <span class="nt">&lt;choice</span> <span class="na">correct=</span><span class="s">&quot;true&quot;</span> <span class="na">explanation-id=</span><span class="s">&quot;iPod&quot;</span><span class="nt">&gt;</span>The iPod<span class="nt">&lt;/choice&gt;</span>
+     <span class="nt">&lt;choice</span> <span class="na">correct=</span><span class="s">&quot;false&quot;</span><span class="nt">&gt;</span>The vegetable peeler<span class="nt">&lt;/choice&gt;</span>
+     <span class="nt">&lt;choice</span> <span class="na">correct=</span><span class="s">&quot;false&quot;</span><span class="nt">&gt;</span>The iMac<span class="nt">&lt;/choice&gt;</span>
+     <span class="nt">&lt;choice</span> <span class="na">correct=</span><span class="s">&quot;true&quot;</span> <span class="na">explanation-id=</span><span class="s">&quot;iPhone&quot;</span><span class="nt">&gt;</span>The iPhone<span class="nt">&lt;/choice&gt;</span>
+   <span class="nt">&lt;/choicegroup&gt;</span>
+  <span class="nt">&lt;/multiplechoiceresponse&gt;</span>
+ <span class="nt">&lt;/fieldset&gt;</span>
+
+   <span class="nt">&lt;solutionset&gt;</span>
+       <span class="nt">&lt;solution</span> <span class="na">explanation-id=</span><span class="s">&quot;iPod&quot;</span><span class="nt">&gt;</span>
+       <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;detailed-solution&quot;</span><span class="nt">&gt;</span>
+           <span class="nt">&lt;p&gt;</span>Explanation<span class="nt">&lt;/p&gt;</span>
+           <span class="nt">&lt;p&gt;</span>Yes, the iPod is Apple&#39;s portable digital music player.<span class="nt">&lt;/p&gt;</span>
+       <span class="nt">&lt;/div&gt;</span>
+       <span class="nt">&lt;/solution&gt;</span>
+       <span class="nt">&lt;solution</span> <span class="na">explanation-id=</span><span class="s">&quot;iPhone&quot;</span><span class="nt">&gt;</span>
+       <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;detailed-solution&quot;</span><span class="nt">&gt;</span>
+           <span class="nt">&lt;p&gt;</span>Explanation<span class="nt">&lt;/p&gt;</span>
+           <span class="nt">&lt;p&gt;</span>In addition to being a cell phone, the iPhone can store and play your
+              digital music.<span class="nt">&lt;/p&gt;</span>
+       <span class="nt">&lt;/div&gt;</span>
+       <span class="nt">&lt;/solution&gt;</span>
+   <span class="nt">&lt;/solutionset&gt;</span>
+<span class="nt">&lt;/problem&gt;</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+          <footer>
+  
+    <div class="rst-footer-buttons">
+      
+        <a href="mult_choice_num_input.html" class="btn btn-neutral float-right" title="6.23. 多项选择和数字输入题"/>Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="molecule_viewer.html" class="btn btn-neutral" title="6.21. 分子浏览器"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <p>
+      &copy; Copyright 2015, edX.
+  </p>
+
+ 
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+</body>
+</html>

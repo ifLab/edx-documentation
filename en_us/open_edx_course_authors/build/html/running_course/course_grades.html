@@ -1,0 +1,706 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>10.11. 学生成绩与成绩评定 &mdash; Building and Running an Open edX Course  documentation</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="../_static/css/favicon.ico"/>
+  
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  
+  
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:'../',
+        VERSION:'',
+        COLLAPSE_INDEX:false,
+        FILE_SUFFIX:'.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+
+    
+
+  
+
+  
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+
+  
+    <link rel="top" title="Building and Running an Open edX Course  documentation" href="../index.html"/>
+        <link rel="up" title="10. Running Your Course" href="index.html"/>
+        <link rel="next" title="10.12. 总成绩计算与证书发放" href="checking_student_progress.html"/>
+        <link rel="prev" title="10.10. 回答问题数据" href="course_answers.html"/> 
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-nav-search">
+        <a href="../index.html" class="icon icon-home"> Building and Running an Open edX Course</a>
+        <form class="wy-form" action="../search.html" method="get">
+  <input type="text" name="q" placeholder="Search document" />
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix">
+        
+        
+            <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../front_matter/index.html">1. For Your Information</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../front_matter/read_me.html">1.1. Read Me</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../front_matter/preface.html">1.2. 序言</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../front_matter/change_log.html">1.3. Change Log</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../front_matter/browsers.html">1.4. edX浏览器支持</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/index.html">2. Getting Started</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../getting_started/dashboard_acctsettings_profile.html">2.1. 搜索你的仪表板、设置和配置文件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../getting_started/get_started.html">2.2. Getting Started with Studio</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../getting_started/accessibility.html">2.3. 创建无障碍课程指南</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../building_course/index.html">3. Setting up Your Course</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/creating_new_course.html">3.1. 新建课程</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/scheduling_course.html">3.2. 设置开始和结束日期</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/setting_up_student_view.html">3.3. 设置课程细节</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/course_prerequisites.html">3.4. 设定入学要求</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/licensing_course.html">3.5. 授权课程</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/course_files.html">3.6. 给课程添加文件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/handouts_updates.html">3.7. 添加课程补充资料及讲义</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/pages.html">3.8. 为课程添加页面</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/textbooks.html">3.9. 添加课本</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/establish_grading_policy.html">3.10. 设定计分政策</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/course_rerun.html">3.11. 重开课程</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/export_import_course.html">3.12. 输出和导入课程</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../developing_course/index.html">4. Developing Your Course</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/workflow.html">4.1. 开始创建课程内容</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/course_outline.html">4.2. 创建课程大纲</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/course_sections.html">4.3. 创建课程章节</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/course_subsections.html">4.4. 构建课程小节</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/course_units.html">4.5. 构建课程单元</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/course_components.html">4.6. 创建课程组件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/controlling_content_visibility.html">4.7. 设置内容可见性</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/testing_courseware.html">4.8. 测试您的课程内容</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../creating_content/index.html">5. Creating Course Content</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../creating_content/create_html_component.html">5.1. 如何使用HTML组件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../creating_content/create_video.html">5.2. 创建影片组件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../creating_content/create_discussion.html">5.3. 创建讨论组件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../creating_content/create_problem.html">5.4. 创建问题组件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../creating_content/libraries.html">5.5. 内容库</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../exercises_tools/index.html">6. Creating Exercises and Tools</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/create_exercises_and_tools.html">6.1. 创建练习和工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/annotation.html">6.2. 注释问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/checkbox.html">6.3. 复选框问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/chemical_equation.html">6.4. 化学方程式问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/circuit_schematic_builder.html">6.5. 电路原理图搭建问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/conditional_module.html">6.6. 条件模板</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/custom_javascript.html">6.7. 自定义JavaScript问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/drag_and_drop.html">6.8. 拖放问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/dropdown.html">6.9. 下拉问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/external_graders.html">6.10. 图像映射输入问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/full_screen_image.html">6.11. 全屏图像工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/gene_explorer.html">6.12. Gene Explorer工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/google_calendar.html">6.13. 谷歌日历工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/google_docs.html">6.14. 谷歌云文件工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/google_hangouts.html">6.15. 谷歌即时群聊工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/iframe.html">6.16. IFrame工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/image_mapped_input.html">6.17. 图像映射输入问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/lti_component.html">6.18. LTI 组件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/math_expression_input.html">6.19. 数学表达式输入问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/molecule_editor.html">6.20. 分子编辑器</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/molecule_viewer.html">6.21. 分子浏览器</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/multiple_choice.html">6.22. 多项选择问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/mult_choice_num_input.html">6.23. 多项选择和数字输入题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/numerical_input.html">6.24. 数值输入问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/open_response_assessments/index.html">6.25. Open Response Assessments</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/periodic_table.html">6.26. 元素周期表工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/poll.html">6.27. 投票工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/problem_with_hint.html">6.28. 带适应性提示的问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/problem_in_latex.html">6.29. LaTeX问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/protein_builder.html">6.30. Protex蛋白质构建工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/randomized_content_blocks.html">6.31. 随机内容块</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/recommenderXBlock.html">6.32. 推荐系统</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/student_notes.html">6.33. 学生笔记工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/text_input.html">6.34. 文本输入问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/word_cloud.html">6.35. 文字云工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/custom_python.html">6.36. 自定义评分器问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/zooming_image.html">6.37. 图像放大工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/mathjax.html">6.38. Studio中MathJax的简要介绍</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../content_experiments/index.html">7. Creating Content Experiments</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../content_experiments/content_experiments_overview.html">7.1. 内容实验概述</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../content_experiments/content_experiments_configure.html">7.2. Configure Your Course for Content Experiments</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../content_experiments/content_experiments_add.html">7.3. Add Content Experiments to Your Course</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../content_experiments/content_experiments_view.html">7.4. 测试内容实验</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../cohorts/index.html">8. Including Student Cohorts</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../cohorts/cohorts_overview.html">8.1. 使用队列功能建立课程群</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cohorts/cohort_config.html">8.2. 启用、配置分队模式</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cohorts/cohorted_courseware.html">8.3. 创建特定队列课件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cohorts/cohorts_setup_discussions.html">8.4. 在包含队列的课程中设置论坛</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cohorts/cohorts_manage_discussions.html">8.5. 管理有学生队列的论坛</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../releasing_course/index.html">9. Releasing Your Course</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../releasing_course/beta_testing.html">9.1. 贝塔测试</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../releasing_course/course_launching.html">9.2. 课程发布事宜</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../releasing_course/staff_debug_info.html">9.3. 员工调试信息</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">10. Running Your Course</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="course_staffing.html">10.1. 安置职工</a></li>
+<li class="toctree-l2"><a class="reference internal" href="course_enrollment.html">10.2. 招生</a></li>
+<li class="toctree-l2"><a class="reference internal" href="discussions.html">10.3. 管理课程讨论项目</a></li>
+<li class="toctree-l2"><a class="reference internal" href="discussions_students.html">10.4. 参与课程讨论</a></li>
+<li class="toctree-l2"><a class="reference internal" href="discussion_guidance_moderators.html">10.5. 论坛协调员指南</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bulk_email.html">10.6. 大宗邮件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="course_wiki.html">10.7. 使用课程维基</a></li>
+<li class="toctree-l2"><a class="reference internal" href="course_data.html">10.8. 课程数据</a></li>
+<li class="toctree-l2"><a class="reference internal" href="course_student.html">10.9. 学生数据</a></li>
+<li class="toctree-l2"><a class="reference internal" href="course_answers.html">10.10. 回答问题数据</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="">10.11. 学生成绩与成绩评定</a></li>
+<li class="toctree-l2"><a class="reference internal" href="checking_student_progress.html">10.12. 总成绩计算与证书发放</a></li>
+</ul>
+</li>
+</ul>
+
+        
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top">
+        <i data-toggle="wy-nav-top" class="icon icon-reorder"></i>
+        <a href="/">Building and Running an Open edX Course</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <ul class="wy-breadcrumbs">
+  <li><a href="../index.html">Table of Contents</a> &raquo;</li>
+  <li><a href="">10.11. 学生成绩与成绩评定</a></li>
+  
+</ul>
+<hr/>
+
+          
+  <div class="section" id="grades">
+<span id="id1"></span><h1>10.11. 学生成绩与成绩评定<a class="headerlink" href="#grades" title="Permalink to this headline">¶</a></h1>
+<p>创建课程后，您可以随时回顾您课程的评分设置，并以此评定学生成绩。
+您可以为单个学生评分、为所有学生评分，或针对某道问题评分。
+关于评分数据以及评分时可以做出的改动，请看下面的内容：</p>
+<ul class="simple">
+<li><a class="reference internal" href="#review-grades"><span>查看课程的评分设置</span></a></li>
+<li><a class="reference internal" href="#access-grades"><span>为所有学生生成成绩（适用于所有课程）</span></a></li>
+<li><a class="reference internal" href="#problem-report"><span>为所有学生生成成绩（适用于所有课程）</span></a></li>
+<li><a class="reference internal" href="#gradebook"><span>学生成绩复核（小规模课程）</span></a></li>
+<li><a class="reference internal" href="#check-student-progress"><span>查看学生进度</span></a></li>
+<li><a class="reference internal" href="#adjust-grades"><span>调整成绩</span></a></li>
+</ul>
+<p>您可以审核某个学生对于某道问题提交的答案，下载全课程范围内的答题数据，
+或者查看某道问题所有的答题数据图表。详见 <a class="reference internal" href="course_answers.html#review-answers"><span>回答问题数据</span></a>.</p>
+<p>关于如何制定评分政策，以及如何使用提问模块，请参考 <a class="reference internal" href="../building_course/establish_grading_policy.html#establish-a-grading-policy"><span>设定计分政策</span></a> 或
+<a class="reference internal" href="../creating_content/create_problem.html#working-with-problem-components"><span>创建问题组件</span></a>.</p>
+<div class="section" id="review-grades">
+<span id="id2"></span><h2>10.11.1. 查看课程的评分设置<a class="headerlink" href="#review-grades" title="Permalink to this headline">¶</a></h2>
+<p>您可在教师面板中查看需要评分的任务类型，以及他们对应的比重。</p>
+<p>在Studio中创建课程时，您可以为课程制定评分标准。
+课程运行时，您可以查看课程中各项任务类型在学习管理系统中的表现以及它们的比重，以此决定学生的评分。</p>
+<ol class="arabic">
+<li><p class="first">查看课程现况</p>
+</li>
+<li><p class="first">单击“导师”→“数据下载”→“评分设置”</p>
+<p>页面显示的是您课程中的任务列表。本例中，“作业”项目在评分中的比重为0.3（50%）。</p>
+<img alt="XML of course assignment types and weights for grading" src="../_images/Grading_Configuration.png" />
+<p>在Studio中，您可以通过“设置”→“评分”更改这些信息。更多信息请参考 <a class="reference internal" href="../building_course/establish_grading_policy.html#configure-the-assignment-types"><span>设定评量类型</span></a>.</p>
+<img alt="Studio example of homework assignment type and grading weight" src="../_images/Grading_Configuration_Studio.png" />
+</li>
+</ol>
+<div class="admonition important">
+<p class="first admonition-title">Important</p>
+<p class="last">课程开始后，任何针对课程评分政策、
+需评分内容以及评分组件的改动会影响学生的课堂体验以及课程数据分析。
+如果不得不作出更改，请在“课程信息”等页面告知学生，
+并仔细咨询研发人员。</p>
+</div>
+</div>
+<div class="section" id="access-grades">
+<span id="id3"></span><h2>10.11.2. 为所有学生生成成绩（适用于所有课程）<a class="headerlink" href="#access-grades" title="Permalink to this headline">¶</a></h2>
+<p>您可以为学生生成成绩，并下载成绩文件。</p>
+<p>当您第使用运算功能计算学生成绩时，edX服务器会自动开始一个进程。
+课程的评分设置以及学生数量决定了该进程时间长短。
+评分进程完成后，您可以下载CSV格式的学生成绩单。</p>
+<p>如果课程学生人数少于200人，您还可以在教师面板中选择复核学生成绩。详见 <a class="reference internal" href="#gradebook"><span>学生成绩复核（小规模课程）</span></a>.</p>
+<p>如何生成成绩单：</p>
+<div class="admonition important">
+<p class="first admonition-title">Important</p>
+<p class="last">由于成绩单文件中包含保密信息，个人认证数据可能受限于家庭教育权与隐私权（FERPA）,
+请确保打开或保存此文件时遵循您所在机构的数据管理员政策。</p>
+</div>
+<ol class="arabic">
+<li><p class="first">查看课程现况</p>
+</li>
+<li><p class="first">单击“导师”→“数据下载”</p>
+</li>
+<li><p class="first">单击“生成成绩单”</p>
+<p>此时会显示评分进度。这个过程可能要花几分钟时间，但是您可以切到其他页面，边干其他工作边等候。</p>
+</li>
+</ol>
+<ol class="arabic" start="4">
+<li><p class="first">刷新浏览器页面，将滚动条拖至“正在处理的教师任务”区域查看评分进程</p>
+<p>评分完成后，一个.csv文件链接出现在 <strong>正在处理的教师任务</strong> 部分上方。
+文件名为 <code class="docutils literal"><span class="pre">{course_id}_grade_report_{datetime}.csv</span></code> 格式。
+最新生成的报告出现在列表的最上方。</p>
+</li>
+<li><p class="first">要打开或者保存成绩单文件，请找到并点击成绩单链接。</p>
+<p>您可以将.csv文件在制表软件中打开，便于排序、生成图表和对比数据。</p>
+</li>
+</ol>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">为防止学生数据意外泄露，您只能通过本页面中的链接下载成绩单文件。
+本链接的有效期只有5分钟，所以不要将本页面中的信息复制到其他地方再次使用。
+另外，如果页面打开时间超过5分钟，链接一样会失效，请刷新页面获取新链接。</p>
+</div>
+<div class="section" id="interpret-the-grade-report">
+<span id="id4"></span><h3>10.11.2.1. 解读成绩单<a class="headerlink" href="#interpret-the-grade-report" title="Permalink to this headline">¶</a></h3>
+<p>成绩单是一个带有时间标记的CSV文件，其中包括：信息列，
+即定义学生身份的信息集合——ID，email，用户名，等等；
+任务列，即您课程中的所有评分项目。</p>
+<p>成绩单中的分数是按任务类别显示的。其中一列显示您评分结构中的每项任务，
+包括每次作业、实验，期中考试，期末考试和其他您添加在课程中的任务类型。</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">成绩单不包括任务中的每个独立问题信息，也不包括学生答案分布。
+关于显示问题层级信息的报告，请参阅 <a class="reference internal" href="#problem-report"><span>为所有学生生成成绩（适用于所有课程）</span></a> 。</p>
+</div>
+<p>报告显示每个学生的注册追踪。专业和验证踪迹学生的报告中还显示学生是否验证了ID。
+报告显示每个学生是否有资格获得证书（取决于他的成绩此时是否达到了要求），
+证书是否已经生成，以及证书类型。</p>
+<p>如果您的课程包含 <a class="reference internal" href="../cohorts/cohorts_overview.html#cohorts-overview"><span>cohorts</span></a> 或 <span class="xref std std-ref">content
+experiments</span> ，
+成绩单中将包含附加列，显示每个学生属于哪个队列或内容小组。</p>
+<img alt="A course grade report, opened in Excel, showing the grades achieved by students on several homework assignments and the midterm" src="../_images/Grade_Report.png" />
+<p>CSV文件每行显示一名学生的成绩，纵列信息如下：</p>
+<ul>
+<li><p class="first">学生身份信息：包括永久ID、email地址和用户名。</p>
+</li>
+<li><p class="first">综合评分：即学生当前获得的总评分。该值表示为小数：
+如果一个学生的评分为0.65，即表示他获得了本课程65%的学分，
+如果为1，则表示满分。</p>
+</li>
+<li><p class="first">每个{assignment type} {number}表示学生的各项得分。
+例如，HW03列显示的是该学生第三次作业的得分。</p>
+</li>
+<li><p class="first">{assignment type} Avg表示该学生某项任务的平均分，比如HW Avg即作业平均分。</p>
+</li>
+<li><dl class="first docutils">
+<dt>如果课程中使用了 <a class="reference internal" href="../cohorts/cohorts_overview.html#cohorts-overview"><span>cohorts</span></a> ，</dt>
+<dd><p class="first last"><strong>队列名</strong> 列显示每个学生所在的队列，包括默认队列。</p>
+</dd>
+</dl>
+<p>没有加入任何队列的学生，此项为空。</p>
+</li>
+<li><dl class="first docutils">
+<dt>如果课程中有 <span class="xref std std-ref">content experiments</span> ，</dt>
+<dd><p class="first last"><strong>实验小组</strong> 列显示每个学生所在的实验小组。此列的标题显示小组配置的名称。</p>
+</dd>
+</dl>
+<p>如果学生没有加入实验小组，此项为空。如果您有多个实验小组配置，每个小组配置中都将含有此列。</p>
+</li>
+<li><p class="first"><strong>注册追踪</strong> 一列显示每个学生是否已在课程的荣誉准则、认证或专业教育轨迹中注册。</p>
+</li>
+<li><p class="first"><strong>验证状态</strong> 一列只对注册了身份验证或专业轨迹的学生开放。
+此列中显示已验证或专业教育学生是否已经通过网络摄像头提交照片和官方身份证明验证了edX中的ID。</p>
+</li>
+<li><p class="first"><strong>证书资格</strong> 一列表明学生是否有获得课程证书的资格。
+“Y”表示学生在报告生成之前已经获得了高于证书要求的成绩。
+所有的白名单学生，无论成绩是否已经取得，此列都为“Y”。
+“N”表示学生未获得证书要求的成绩，或者所处国家无法寄送证书。</p>
+</li>
+<li><p class="first">对于具备获得证书资格的学生，<strong>证书发放</strong> 列中的“Y”值表示证书已生效。
+“N”值表示学生不具备获得证书的资格。</p>
+</li>
+<li><p class="first"><strong>证书类型</strong> 一列说明学生能够取得的证书类型，比如“荣誉证书”或“认证证书”。
+如果学生没有资格获得证书，或者课程的证书未生成，此项将显示“N/A”。</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="problem-report">
+<span id="id5"></span><h2>10.11.3. 为所有学生生成成绩（适用于所有课程）<a class="headerlink" href="#problem-report" title="Permalink to this headline">¶</a></h2>
+<p>对于任何一门课程，您可以为问题计算成绩以及生成可供下载的成绩报告。
+课程的成绩单显示每个学生在每个问题的得分，以及每个问题的总分值。
+此外，报告还显示每个学生的最终成绩。</p>
+<p>生成及下载学生的成绩单请遵循以下步骤。</p>
+<div class="admonition important">
+<p class="first admonition-title">Important</p>
+<p class="last">由于成绩单文件中包含保密信息，个人认证数据可能受限于家庭教育权与隐私权（FERPA）,
+请确保打开或保存此文件时遵循您所在机构的数据管理员政策。</p>
+</div>
+<ol class="arabic">
+<li><p class="first">查看课程现况</p>
+</li>
+<li><p class="first">单击“导师”→“数据下载”</p>
+</li>
+<li><p class="first">单击“生成成绩单”</p>
+<p>此时会显示评分进度。这个过程可能要花几分钟时间，但是您可以切到其他页面，边干其他工作边等候。</p>
+</li>
+</ol>
+<ol class="arabic" start="4">
+<li><p class="first">刷新浏览器页面，将滚动条拖至“正在处理的教师任务”区域查看评分进程</p>
+<p>报告完成后，一个.csv文件链接出现在 <strong>正在处理的教师任务</strong> 部分上方。
+文件名是
+<code class="docutils literal"><span class="pre">{course_id}_problem_grade_report_{datetime}.csv</span></code> 格式的。</p>
+<blockquote>
+<div><p>最近生成的成绩单在列表顶部。</p>
+</div></blockquote>
+</li>
+<li><p class="first">要打开或保存成绩单文件，找到并点击您需要的成绩单链接。</p>
+<p>您可以在制表软件中打开.csv文件，以便于排序、生成图表和对比数据。</p>
+</li>
+</ol>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">为防止学生数据意外泄露，您只能通过本页面中的链接下载成绩单文件。
+本链接的有效期只有5分钟，所以不要将本页面中的信息复制到其他地方再次使用。
+另外，如果页面打开时间超过5分钟，链接一样会失效，请刷新页面获取新链接。</p>
+</div>
+<div class="section" id="interpret-the-problem-grade-report">
+<span id="id6"></span><h3>10.11.3.1. 解读成绩单<a class="headerlink" href="#interpret-the-problem-grade-report" title="Permalink to this headline">¶</a></h3>
+<p>课程的成绩单是时间戳 .csv文件，文件中包含每个注册学生的ID、email地址、用户名和每个问题的得分/总分快照。</p>
+<p>成绩单中每个问题有两列包含您的评分配置。每一次作业、实验、期中考试和期末考试都有一列显示得分，
+另一列显示总分。此外成绩单以小数形式显示每个学生的总成绩。</p>
+<img alt="An example problem grade report shown in Excel, showing the decimal final grade for learners as well as the earned vs possible points that they each achieved on several quiz assignments. A column for a midterm is only partially visible." src="../_images/Problem_Grade_Report_Example.png" />
+<p>CSV文件每行显示一名学生的成绩，纵列信息如下：</p>
+<ul class="simple">
+<li>学生身份信息：包括永久ID、email地址和用户名。</li>
+<li>综合评分：即学生当前获得的总评分。该值表示为小数：
+如果一个学生的评分为0.65，即表示他获得了本课程65%的学分，如果为1，则表示满分。</li>
+<li>对于每个问题（以任务、子章节和问题名标识），都有一列显示每个学生获得的分数。
+如果学生没有访问过问题，此项显示“N/A”。如果学生没有回答问题，此项显示“0”。</li>
+<li>对于每个问题（以任务、子章节和问题名标识），都有一列显示问题的总分值。
+如果学生没有访问过问题，此项显示“N/A”。</li>
+</ul>
+</div>
+</div>
+<div class="section" id="gradebook">
+<span id="id7"></span><h2>10.11.4. 学生成绩复核（小规模课程）<a class="headerlink" href="#gradebook" title="Permalink to this headline">¶</a></h2>
+<p>课程人数不到200人时，您可以查看教师面板中的成绩簿进行成绩复核。</p>
+<ol class="arabic">
+<li><p class="first">查看课程现况</p>
+</li>
+<li><p class="first">单击“导师”→“学生管理”。如果课程学生人数少于200人，该标签会包含一个“学生成绩簿”子标签</p>
+</li>
+<li><p class="first">单击“查看成绩簿”</p>
+<img alt="Course gradebook with rows for students and columns for assignment types" src="../_images/Student_Gradebook.png" />
+</li>
+</ol>
+<p>成绩簿包含下列功能：</p>
+<ul>
+<li><p class="first">您可以单击每行的学生用户名，查看该学生的“课程进度”页面。详见 <a class="reference internal" href="#check-student-progress"><span>查看学生进度</span></a>.</p>
+</li>
+<li><p class="first">每列{assignment type} {number}显示的是学生在该项目中的得分。</p>
+<p>成绩簿没有滚动条，但是可以拖动：如果您想查看被边框挡住的内容，单击成绩簿后向左向右拖动即可。</p>
+</li>
+<li><p class="first">如果某个任务类型下包含多个任务，则{assignment type} Avg一栏中会显示该任务的当前平均分。</p>
+</li>
+<li><p class="first">“总分”一栏显示的是学生目前获得的课程总学分。该值表示为整数：
+65分表示该学生获得了65%的课程学分，满分为100。</p>
+</li>
+<li><p class="first">您可使用“查找学生”选项筛选成绩数据信息。该选项区分大小写，请注意不要输入错误的用户名。</p>
+</li>
+</ul>
+</div>
+<div class="section" id="check-student-progress">
+<span id="id8"></span><h2>10.11.5. 查看学生进度<a class="headerlink" href="#check-student-progress" title="Permalink to this headline">¶</a></h2>
+<p>您可以在成绩单中找到该学生所在行，或通过该学生的“进度”页面查看该生的课程进度。
+“进度”页面中有一张图表，显示了该生目前每个评分项目的得分以及总分。</p>
+<p>您需要提供email地址或用户名，才能查看某个学生的“进度”页面。
+您可查看课程内的学生，也可查看被开除的学生。</p>
+<p>学生登录课程时也可以看见类似的图表，但只能看见自己的进度。详见 <a class="reference internal" href="#a-students-view"><span>学生视角下的课程进度页面</span></a>.</p>
+<p>如何查看学生的“进度”页面</p>
+<ol class="arabic">
+<li><p class="first">查看课程现况</p>
+</li>
+<li><p class="first">单击“导师”→“学生管理”</p>
+</li>
+<li><p class="first">在“查看学生成绩”区域，输入该学生的email地址或用户名</p>
+</li>
+<li><p class="first">单击“学生进度页面”。打开前文所说的图表。</p>
+<p>“进度”页面中有一张图表，显示了该生目前每个评分项目的得分以及总分。
+The chart does not
+reflect any cohort or experiment group assignments.</p>
+<img alt="Progress page chart for a learner: includes a column graph with the score achieved for each assignment" src="../_images/Student_Progress1.png" />
+<p>想了解某个项目的信息，将光标移到该值，会显示一段简短的描述文字。</p>
+<img alt="Progress page with a tooltip for the X that was graphed for the last homework assignment, which indicates that the lowest homework score is dropped" src="../_images/Student_Progress_mouseover.png" />
+<p>图表左下方列出的是课程小节，右下方列出的是包含任务的课程单元。
+同时还会显示该学生回答问题的得分。</p>
+<img alt="Bottom portion of a Progress page for the same student with the score acheived for each problem in the first course subsection" src="../_images/Student_Progress_list.png" />
+</li>
+</ol>
+<div class="section" id="id9">
+<h3>10.11.5.1. 解读学生进度页面<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h3>
+<p>学生进度图标各项目的排列顺序与成绩单中的顺序一致。但是，课程总分的位置不同。</p>
+<p>在下面的成绩单中，学生当前得分为0.43</p>
+<img alt="A course grade report with a single student's information indicated by a rectangle" src="../_images/Grade_Report_example.png" />
+<ul>
+<li><p class="first">该生前四次的作业得分均为满分，但是最近三次得分均为0分</p>
+<p>不过请注意，学生作业的平均得分为0.666666667:
+在本课程作业评分中，会去掉一个最低分，
+因此平均分是基于六次作业成绩得出的，而不是七次。</p>
+</li>
+<li><p class="first">该生其中考试成绩为0.75，期末考试成绩为0。</p>
+</li>
+</ul>
+<p>在该生的“进度”页面中，您会发现，基本信息都差不多相同，但是最右侧的“总分”为43%</p>
+<img alt="Progress page for a student also included on the grade report: includes a column graph with the grade acheived for each assignment" src="../_images/Student_Progress1.png" />
+<p>进度图标的y轴显示的是两块成绩区域（0~60,60~100）本例中，
+及格分设置为60%，因此，课程结束后，成绩高于0.60的学生可以获得合格证书。</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">“进度”页面显示的分数是该生提问数据库中得分的及时快照。
+因此，这个分数与实际的答题分数可能会不同步。举个例子，在某次课堂任务中，
+已经发布的题目比重发生了变动，但是有些学生并没有重新提交答案，
+这就可能导致数据的不同步。</p>
+</div>
+</div>
+<div class="section" id="a-students-view">
+<span id="id10"></span><h3>10.11.5.2. 学生视角下的课程进度页面<a class="headerlink" href="#a-students-view" title="Permalink to this headline">¶</a></h3>
+<p>学生可以单击课程导航栏中的“进度”标签查看课程进度。
+页面顶部显示的是该学生已经评分的项目及得分，下面是各小节的得分。
+进度可以显示为一张图标，里面包含所有任务的得分、当前总得分以及每部分的及格分。
+试看下例：</p>
+<img alt="Image of a student's Course Progress page with the grade cutoffs legend highlighted" src="../_images/StudentView_GradeCutoffs.png" />
+<p>该生可在本页面中发现，edX101课程的及格分为34%，评分项目包括一个任务类型，
+其下总共包含11个任务。该生目前只成功完成了两项任务，因此当前得分为6%。
+将鼠标悬停在各个任务标签上，可以查看每项任务占总分的比重是多少。</p>
+<p>再往下看，会看见该课程所有小节的列表，记录了该生在课程中回答问题的所有得分。试看下例：</p>
+<a class="reference internal image-reference" href="../_images/StudentView_Problems.png"><img alt="Image of a student's Course Progress page with problems highlighted" src="../_images/StudentView_Problems.png" style="width: 800px;" /></a>
+<p>注意，计分小节的得分称为“提问得分”，不计分小节的得分称为“实践得分”。</p>
+</div>
+</div>
+<div class="section" id="adjust-grades">
+<span id="id11"></span><h2>10.11.6. 调整成绩<a class="headerlink" href="#adjust-grades" title="Permalink to this headline">¶</a></h2>
+<p>学生回答完问题后，如果您更改问题，则会影响学生成绩。
+关于如何在Studio中更改问题，参考 <a class="reference internal" href="../creating_content/create_problem.html#modifying-a-released-problem"><span>修改已发布的问题</span></a>.</p>
+<p>如果不得不作出更改，则应该对受影响的学生重新计分：</p>
+<ul class="simple">
+<li>重新为提交的答案评分。您可以为单个学生或所有学生重新计分。详见 <a class="reference internal" href="#rescore"><span>为学生答题重新计分</span></a>.</li>
+<li>将学生尝试回答问题的次数归零，以便学生再次尝试。
+您可以为单个学生或所有学生重新计算尝试次数。详见
+<a class="reference internal" href="#reset-attempts"><span>学生答题尝试次数归零</span></a>.</li>
+<li>完全清除学生关于该问题的历史数据，或“历史状态”。您一次只能删除一名学生的数据。
+比如，如果您发现只有少数学生需要删除数据，您可以重新编辑问题，
+然后删除受影响学生的历史数据，以便学生再次尝试。详见 <a class="reference internal" href="#delete-state"><span>删除学生答题历史数据</span></a>.</li>
+</ul>
+<p>您需要提供新问题的位置ID，才能调整学生成绩。详见 <a class="reference internal" href="#find-url"><span>查找某个问题的位置ID</span></a>.</p>
+<div class="section" id="find-url">
+<span id="id"></span><h3>10.11.6.1. 查找某个问题的位置ID<a class="headerlink" href="#find-url" title="Permalink to this headline">¶</a></h3>
+<p>创建课程问题时，edX系统会自动给问题分配一个独一无二的定位ID。
+您需要提供这个ID，才能调整学生的答题成绩，或查看问题相关数据。</p>
+<p>如何查找定位ID：</p>
+<ol class="arabic">
+<li><p class="first">查看课程现况</p>
+</li>
+<li><p class="first">单击“课件”，导航至问题所在单元</p>
+</li>
+<li><p class="first">查看问题，单击“员工调试信息”</p>
+<p>问题相关信息即显示出来，包括“位置”。</p>
+<img alt="The Staff Debug view of a problem with the location identifier indicated" src="../_images/Problem_URL.png" />
+</li>
+</ol>
+<ol class="arabic simple" start="4">
+<li>选择整个定位ID，右击→“复制”。</li>
+</ol>
+<p>随便点击查看窗口外的页面，即可关闭窗口。</p>
+</div>
+<div class="section" id="rescore">
+<span id="id12"></span><h3>10.11.6.2. 为学生答题重新计分<a class="headerlink" href="#rescore" title="Permalink to this headline">¶</a></h3>
+<p>您在课程中提出的每个问题都应有一个标准答案，
+同时提供其他可行答案。如果您决定对这些内容作出更改，
+则需对之前提交的答案重新评分。此项操作可以针对单个学生，也可针对所有学生。</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">只有在Studio中输入正确答案的问题才能重新评分，</p>
+</div>
+<p>通过其他外挂评分插件输入答案的问题则无法执行重评操作。</p>
+<div class="section" id="id13">
+<h4>10.11.6.2.1. 为单个学生提交的答案重新评分<a class="headerlink" href="#id13" title="Permalink to this headline">¶</a></h4>
+<p>首先，您需要知道该生的用户名或email地址</p>
+<ol class="arabic simple">
+<li>查看课程现况</li>
+<li>单击“课件”，导航至问题所在组件</li>
+<li>查看问题，单击“员工调试信息”。打开查看窗口</li>
+<li>在“用户名”字段中输入该生的用户名或email地址，单击“答案重评”。成功后，会弹出消息提示</li>
+<li>随便点击查看窗口外的页面，即可关闭窗口</li>
+</ol>
+</div>
+<div class="section" id="id14">
+<h4>10.11.6.2.2. 重评所有学生的答案<a class="headerlink" href="#id14" title="Permalink to this headline">¶</a></h4>
+<p>您首先需要知道问题的定位ID，详见 <a class="reference internal" href="#find-url"><span>查找某个问题的位置ID</span></a>.
+重评学生的答案</p>
+<ol class="arabic">
+<li><p class="first">查看课程现况</p>
+</li>
+<li><p class="first">单击“导师”→“学生管理”</p>
+</li>
+<li><p class="first">在“课程评分调整”区域内，输入问题的定位ID，单击“重评所有学生提交的答案”</p>
+</li>
+<li><p class="first">弹出的对话框提示您，重评工作正在进行，单击OK</p>
+<p>这一步可能要花几分钟时间，不过该进程可以后台运行，您可以边等待边干别的工作。</p>
+</li>
+</ol>
+<ol class="arabic" start="6">
+<li><p class="first">（原文序号错误）单击“查看后台学生历史任务”或“查看后台问题历史任务”查看重评进程。</p>
+<p>此时会显示一个表格，阐明当前重评进程。</p>
+</li>
+</ol>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">本流程也可用于单个学生。
+只需在“评分调整”区域内同时输入学生email地址/用户名以及问题定位ID，
+单击“重评学生提交的答案”即可。</p>
+</div>
+</div>
+</div>
+<div class="section" id="reset-attempts">
+<span id="id15"></span><h3>10.11.6.3. 学生答题尝试次数归零<a class="headerlink" href="#reset-attempts" title="Permalink to this headline">¶</a></h3>
+<p>创建问题时，您可以限制学生尝试回答问题的最大次数。
+如果某道问题出现了意外情况，您可以将某个学生的尝试次数归零，
+以便该生重新开始尝试。如果所有学生都受到了影响，则应将所有学生的尝试次数归零。</p>
+<div class="section" id="id16">
+<h4>10.11.6.3.1. 将单个学生的尝试次数归零<a class="headerlink" href="#id16" title="Permalink to this headline">¶</a></h4>
+<p>首先，您需要提供该生的用户名或email地址</p>
+<ol class="arabic simple">
+<li>查看课程现况</li>
+<li>单击“课件”，然后导航至问题所在的组件</li>
+<li>查看问题，单击“员工调试信息”</li>
+<li>在“用户名”字段中，输入该生的email地址或用户名，单击“尝试次数归零”，此时会弹出一条消息，提示操作成功。</li>
+<li>随便点击查看窗口外的页面，即可关闭窗口</li>
+</ol>
+</div>
+<div class="section" id="id17">
+<h4>10.11.6.3.2. 将所有学生的尝试次数归零<a class="headerlink" href="#id17" title="Permalink to this headline">¶</a></h4>
+<p>您首先需要知道问题的定位ID，详见 <a class="reference internal" href="#find-url"><span>查找某个问题的位置ID</span></a> 。</p>
+<p>然后：</p>
+<ol class="arabic">
+<li><p class="first">查看课程现况</p>
+</li>
+<li><p class="first">单击“导师”→“学生管理”</p>
+</li>
+<li><p class="first">在“学生成绩调整”区域，输入该问题的定位ID，单击“重置所有学生的尝试次数”</p>
+</li>
+<li><p class="first">此时会打开一个对话框，提示操作正在进行中，单击OK。</p>
+<p>这一步可能要花几分钟时间，不过该进程可以后台运行，您可以边等待边干别的工作。</p>
+</li>
+</ol>
+<ol class="arabic" start="5">
+<li><p class="first">单击“查看后台学生历史任务”或“查看后台问题历史任务”查看进程。</p>
+<p>此时会出现一个表格，显示当前重评进程。</p>
+</li>
+</ol>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">本流程也可用于单个学生。
+只需在“评分调整”区域内同时输入学生email地址/用户名以及问题定位ID，
+单击“重置学生尝试次数”即可。</p>
+</div>
+</div>
+</div>
+<div class="section" id="delete-state">
+<span id="id18"></span><h3>10.11.6.4. 删除学生答题历史数据<a class="headerlink" href="#delete-state" title="Permalink to this headline">¶</a></h3>
+<p>首先，您需要知道该生的用户名或email地址，才能删除该生的所有答题数据。</p>
+<div class="admonition important">
+<p class="first admonition-title">Important</p>
+<p class="last">经本流程操作而删除的学生数据将无法恢复。</p>
+</div>
+<p>您可使用员工调试信息查看窗口或教师面板删除学生数据。</p>
+<p>员工调适信息查看窗口：</p>
+<ol class="arabic simple">
+<li>查看课程现况</li>
+<li>单击“课件”，然后导航至问题所在的组件</li>
+<li>查看问题，单击“员工调试信息”，打开查看窗口</li>
+<li>在“用户名”字段中，输入该生的email地址或用户名，
+单击“删除学生数据”，此时会弹出一条消息，提示操作成功</li>
+<li>随便点击查看窗口外的页面，即可关闭窗口</li>
+</ol>
+<p>如果使用教师面板操作，则需提供问题的定位ID。详见 <a class="reference internal" href="#find-url"><span>查找某个问题的位置ID</span></a>.</p>
+<ol class="arabic simple">
+<li>单击“导师”→“学生管理”</li>
+<li>在“评分调整”区域内同时输入学生email地址/用户名以及问题定位ID，单击“删除学生答题记录”</li>
+</ol>
+</div>
+</div>
+</div>
+
+
+          <footer>
+  
+    <div class="rst-footer-buttons">
+      
+        <a href="checking_student_progress.html" class="btn btn-neutral float-right" title="10.12. 总成绩计算与证书发放"/>Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="course_answers.html" class="btn btn-neutral" title="10.10. 回答问题数据"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <p>
+      &copy; Copyright 2015, edX.
+  </p>
+
+ 
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+</body>
+</html>

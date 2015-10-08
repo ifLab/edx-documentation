@@ -1,0 +1,488 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>6.7. 自定义JavaScript问题 &mdash; Building and Running an Open edX Course  documentation</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="../_static/css/favicon.ico"/>
+  
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  
+  
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:'../',
+        VERSION:'',
+        COLLAPSE_INDEX:false,
+        FILE_SUFFIX:'.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+
+    
+
+  
+
+  
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+
+  
+    <link rel="top" title="Building and Running an Open edX Course  documentation" href="../index.html"/>
+        <link rel="up" title="6. Creating Exercises and Tools" href="index.html"/>
+        <link rel="next" title="6.8. 拖放问题" href="drag_and_drop.html"/>
+        <link rel="prev" title="6.6. 条件模板" href="conditional_module.html"/> 
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-nav-search">
+        <a href="../index.html" class="icon icon-home"> Building and Running an Open edX Course</a>
+        <form class="wy-form" action="../search.html" method="get">
+  <input type="text" name="q" placeholder="Search document" />
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix">
+        
+        
+            <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../front_matter/index.html">1. For Your Information</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../front_matter/read_me.html">1.1. Read Me</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../front_matter/preface.html">1.2. 序言</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../front_matter/change_log.html">1.3. Change Log</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../front_matter/browsers.html">1.4. edX浏览器支持</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/index.html">2. Getting Started</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../getting_started/dashboard_acctsettings_profile.html">2.1. 搜索你的仪表板、设置和配置文件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../getting_started/get_started.html">2.2. Getting Started with Studio</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../getting_started/accessibility.html">2.3. 创建无障碍课程指南</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../building_course/index.html">3. Setting up Your Course</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/creating_new_course.html">3.1. 新建课程</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/scheduling_course.html">3.2. 设置开始和结束日期</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/setting_up_student_view.html">3.3. 设置课程细节</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/course_prerequisites.html">3.4. 设定入学要求</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/licensing_course.html">3.5. 授权课程</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/course_files.html">3.6. 给课程添加文件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/handouts_updates.html">3.7. 添加课程补充资料及讲义</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/pages.html">3.8. 为课程添加页面</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/textbooks.html">3.9. 添加课本</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/establish_grading_policy.html">3.10. 设定计分政策</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/course_rerun.html">3.11. 重开课程</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/export_import_course.html">3.12. 输出和导入课程</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../developing_course/index.html">4. Developing Your Course</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/workflow.html">4.1. 开始创建课程内容</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/course_outline.html">4.2. 创建课程大纲</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/course_sections.html">4.3. 创建课程章节</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/course_subsections.html">4.4. 构建课程小节</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/course_units.html">4.5. 构建课程单元</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/course_components.html">4.6. 创建课程组件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/controlling_content_visibility.html">4.7. 设置内容可见性</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/testing_courseware.html">4.8. 测试您的课程内容</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../creating_content/index.html">5. Creating Course Content</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../creating_content/create_html_component.html">5.1. 如何使用HTML组件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../creating_content/create_video.html">5.2. 创建影片组件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../creating_content/create_discussion.html">5.3. 创建讨论组件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../creating_content/create_problem.html">5.4. 创建问题组件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../creating_content/libraries.html">5.5. 内容库</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">6. Creating Exercises and Tools</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="create_exercises_and_tools.html">6.1. 创建练习和工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="annotation.html">6.2. 注释问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="checkbox.html">6.3. 复选框问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="chemical_equation.html">6.4. 化学方程式问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="circuit_schematic_builder.html">6.5. 电路原理图搭建问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="conditional_module.html">6.6. 条件模板</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="">6.7. 自定义JavaScript问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="drag_and_drop.html">6.8. 拖放问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dropdown.html">6.9. 下拉问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="external_graders.html">6.10. 图像映射输入问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="full_screen_image.html">6.11. 全屏图像工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gene_explorer.html">6.12. Gene Explorer工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="google_calendar.html">6.13. 谷歌日历工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="google_docs.html">6.14. 谷歌云文件工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="google_hangouts.html">6.15. 谷歌即时群聊工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="iframe.html">6.16. IFrame工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="image_mapped_input.html">6.17. 图像映射输入问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lti_component.html">6.18. LTI 组件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="math_expression_input.html">6.19. 数学表达式输入问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="molecule_editor.html">6.20. 分子编辑器</a></li>
+<li class="toctree-l2"><a class="reference internal" href="molecule_viewer.html">6.21. 分子浏览器</a></li>
+<li class="toctree-l2"><a class="reference internal" href="multiple_choice.html">6.22. 多项选择问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="mult_choice_num_input.html">6.23. 多项选择和数字输入题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="numerical_input.html">6.24. 数值输入问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="open_response_assessments/index.html">6.25. Open Response Assessments</a></li>
+<li class="toctree-l2"><a class="reference internal" href="periodic_table.html">6.26. 元素周期表工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="poll.html">6.27. 投票工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="problem_with_hint.html">6.28. 带适应性提示的问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="problem_in_latex.html">6.29. LaTeX问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="protein_builder.html">6.30. Protex蛋白质构建工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="randomized_content_blocks.html">6.31. 随机内容块</a></li>
+<li class="toctree-l2"><a class="reference internal" href="recommenderXBlock.html">6.32. 推荐系统</a></li>
+<li class="toctree-l2"><a class="reference internal" href="student_notes.html">6.33. 学生笔记工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="text_input.html">6.34. 文本输入问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="word_cloud.html">6.35. 文字云工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="custom_python.html">6.36. 自定义评分器问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="zooming_image.html">6.37. 图像放大工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="mathjax.html">6.38. Studio中MathJax的简要介绍</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../content_experiments/index.html">7. Creating Content Experiments</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../content_experiments/content_experiments_overview.html">7.1. 内容实验概述</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../content_experiments/content_experiments_configure.html">7.2. Configure Your Course for Content Experiments</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../content_experiments/content_experiments_add.html">7.3. Add Content Experiments to Your Course</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../content_experiments/content_experiments_view.html">7.4. 测试内容实验</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../cohorts/index.html">8. Including Student Cohorts</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../cohorts/cohorts_overview.html">8.1. 使用队列功能建立课程群</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cohorts/cohort_config.html">8.2. 启用、配置分队模式</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cohorts/cohorted_courseware.html">8.3. 创建特定队列课件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cohorts/cohorts_setup_discussions.html">8.4. 在包含队列的课程中设置论坛</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cohorts/cohorts_manage_discussions.html">8.5. 管理有学生队列的论坛</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../releasing_course/index.html">9. Releasing Your Course</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../releasing_course/beta_testing.html">9.1. 贝塔测试</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../releasing_course/course_launching.html">9.2. 课程发布事宜</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../releasing_course/staff_debug_info.html">9.3. 员工调试信息</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../running_course/index.html">10. Running Your Course</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/course_staffing.html">10.1. 安置职工</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/course_enrollment.html">10.2. 招生</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/discussions.html">10.3. 管理课程讨论项目</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/discussions_students.html">10.4. 参与课程讨论</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/discussion_guidance_moderators.html">10.5. 论坛协调员指南</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/bulk_email.html">10.6. 大宗邮件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/course_wiki.html">10.7. 使用课程维基</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/course_data.html">10.8. 课程数据</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/course_student.html">10.9. 学生数据</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/course_answers.html">10.10. 回答问题数据</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/course_grades.html">10.11. 学生成绩与成绩评定</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/checking_student_progress.html">10.12. 总成绩计算与证书发放</a></li>
+</ul>
+</li>
+</ul>
+
+        
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top">
+        <i data-toggle="wy-nav-top" class="icon icon-reorder"></i>
+        <a href="/">Building and Running an Open edX Course</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <ul class="wy-breadcrumbs">
+  <li><a href="../index.html">Table of Contents</a> &raquo;</li>
+  <li><a href="">6.7. 自定义JavaScript问题</a></li>
+  
+</ul>
+<hr/>
+
+          
+  <div class="section" id="javascript">
+<span id="custom-javascript"></span><h1>6.7. 自定义JavaScript问题<a class="headerlink" href="#javascript" title="Permalink to this headline">¶</a></h1>
+<p>自定义JavaScript显示和评分问题(也叫*自定义JavaScript问题* or <em>JS输入问题</em>)允许你创建一个自定义问题或工具使用JavaScript然后把这个问题或工具直接添加到Studio.当你创建一个JS输入问题时,
+Studio会把这个问题嵌入内联框架(IFrame)以便你的学生可以在LMS里用它进行互动.你可以使用JavaScript和一些基础的Python对你学生的工作进行评分,并且这个分数会整合到edX评分系统中去.</p>
+<p>你必须使用HTML，JavaScript和CSS创建JS输入问题.你可以使用任何应用app创作工具,比如Google Web Toolkit (GWT),去创建你的JS输入问题.</p>
+<img alt="Image of a JavaScript Input problem" src="../_images/JavaScriptInputExample.png" />
+<div class="admonition caution">
+<p class="first admonition-title">Caution</p>
+<p class="last">你不能在一个包含一个以上问题的组件上使用自定义JavaScript问题.每个自定义JavaScript问题必须在它自己的组件上. 点击 <a class="reference internal" href="../creating_content/create_problem.html#multiple-problems-in-one-component"><span>一个组件内的多个问题</span></a> 查看更多相关信息.</p>
+</div>
+<div class="section" id="id1">
+<h2>6.7.1. 创建一个自定义JavaScript展示和评分问题<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic">
+<li><p class="first">创建你的JavaScript应用，然后上传所有的文件并和那个应用关联到**文件与上传**页面.</p>
+</li>
+<li><p class="first">当你想要创建这个问题的时候,点击**问题** 在**添加新组件**下方,然后点击**高级**标签.</p>
+</li>
+<li><p class="first">点击**自定义JavaScript展示和评分**.</p>
+</li>
+<li><p class="first">在出现的组件里，点击**编辑**.</p>
+</li>
+<li><p class="first">在这个组件编辑器里，根据你的问题修改示例代码。</p>
+<ul>
+<li><p class="first">所有的问题都有不止一个元素，大多数问题符合同源策略(SOP),意味着所有的元素都有同样的协议，主机和端口.比如, <strong>http</strong>://<strong>store.company.com</strong>:<strong>81</strong>/subdirectory_1/JSInputElement.html和**http**://<strong>store.company.com</strong>:<strong>81</strong>/subdirectory_2/JSInputElement.js有相同的协议(http), 主机(store.company.com), 和端口(81).</p>
+<p>如果你的问题的任何元素使用一个不同的的协议，主机或端口，你需要绕开SOP.比如，<strong>https</strong>://<strong>info.company.com</strong>/JSInputElement2.html使用一个不同的协议，主机和端口。要绕开SOP，在示例代码的第8行把**sop=&#8221;false&#8221;<strong>改成**sop=&#8221;true&#8221;</strong>. 更多信息,请在`Mozilla Developer Network &lt;<a class="reference external" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Same_origin_policy_for_JavaScript">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Same_origin_policy_for_JavaScript</a>&gt;`_ 或者在 <a href="#id2"><span class="problematic" id="id3">`</span></a>Wikipedia &lt;<a class="reference external" href="http://en.wikipedia.org/wiki/Same_origin_policy">http://en.wikipedia.org/wiki/Same_origin_policy</a>&gt;`_看同源策略页面.</p>
+</li>
+</ul>
+</li>
+<li><p class="first">如果你想要你的问题有 <strong>保存</strong> 按钮, 点击**设置** 标签, 然后把**最大尝试次数** 设置成一个比0大的整数.</p>
+</li>
+<li><p class="first">点击**保存**.</p>
+</li>
+</ol>
+<div class="section" id="id4">
+<h3>6.7.1.1. 重新创建示例问题<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h3>
+<p>要重新创建上面所说的示例问题,你将需要以下的文件.</p>
+<blockquote>
+<div><ul class="simple">
+<li>webGLDemo.html</li>
+<li>webGLDemo.js</li>
+<li>webGLDemo.css</li>
+<li>three.min.js</li>
+</ul>
+</div></blockquote>
+<p>在http://files.edx.org/JSInput.zip可以下载这些文件的.zip压缩文档.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">如果你需要绕开SOP,你也需要**jschannel.js**文件,并且你的webGLDemo.html文件会有一些不同.在http://files.edx.org/JSInput_BypassSOP.zip可以下载所有文件.zip文件.</p>
+</div>
+<ol class="arabic simple">
+<li>下载并打开JSInput.zip或JSInput_BypassSOP.zip file.</li>
+<li>在**文件&amp;上传**页面, 上传zip压缩文档里面的所有文件.</li>
+<li>创建一个新的自定义JavaScript展示和评分问题组件.</li>
+<li>在**设置**标签, 设置**最大尝试次数**为一个大于0的整数.</li>
+<li>在这个组件编辑器里，根据你的问题修改示例代码。用你的代码代替示例代码</li>
+<li>点击**保存**</li>
+</ol>
+</div>
+<div class="section" id="id5">
+<h3>6.7.1.2. JavaScript输入问题代码<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-xml"><div class="highlight"><pre><span class="nt">&lt;problem</span> <span class="na">display_name=</span><span class="s">&quot;webGLDemo&quot;</span><span class="nt">&gt;</span>
+In the image below, click the cone.
+
+<span class="nt">&lt;script</span> <span class="na">type=</span><span class="s">&quot;loncapa/python&quot;</span><span class="nt">&gt;</span>
+import json
+def vglcfn(e, ans):
+    &#39;&#39;&#39;
+    par is a dictionary containing two keys, &quot;answer&quot; and &quot;state&quot;
+    The value of answer is the JSON string returned by getGrade
+    The value of state is the JSON string returned by getState
+    &#39;&#39;&#39;
+    par = json.loads(ans)
+    # We can use either the value of the answer key to grade
+    answer = json.loads(par[&quot;answer&quot;])
+    return answer[&quot;cylinder&quot;]  and not answer[&quot;cube&quot;]
+    # Or we can use the value of the state key
+    &#39;&#39;&#39;
+    state = json.loads(par[&quot;state&quot;])
+    selectedObjects = state[&quot;selectedObjects&quot;]
+    return selectedObjects[&quot;cylinder&quot;] and not selectedObjects[&quot;cube&quot;]
+    &#39;&#39;&#39;
+<span class="nt">&lt;/script&gt;</span>
+<span class="nt">&lt;customresponse</span> <span class="na">cfn=</span><span class="s">&quot;vglcfn&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;jsinput</span>
+        <span class="na">gradefn=</span><span class="s">&quot;WebGLDemo.getGrade&quot;</span>
+        <span class="na">get_statefn=</span><span class="s">&quot;WebGLDemo.getState&quot;</span>
+        <span class="na">set_statefn=</span><span class="s">&quot;WebGLDemo.setState&quot;</span>
+        <span class="na">width=</span><span class="s">&quot;400&quot;</span>
+        <span class="na">height=</span><span class="s">&quot;400&quot;</span>
+        <span class="na">html_file=</span><span class="s">&quot;/static/webGLDemo.html&quot;</span>
+    <span class="nt">/&gt;</span>
+<span class="nt">&lt;/customresponse&gt;</span>
+<span class="nt">&lt;/problem&gt;</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p>当你创建这个问题时，请记住以下几点。</p>
+<ul class="last simple">
+<li>webGLDemo.js文件定义了三个JavaScript功能(<strong>WebGLDemo.getGrade</strong>, <strong>WebGLDemo.getState</strong>, 和**WebGLDemo.setState**).</li>
+<li>JavaScript输入问题代码使用**WebGLDemo.getGrade**, <strong>WebGLDemo.getState</strong>, 和**WebGLDemo.setState**去评分,保存,或恢复一个问题.这些函数必须在全球范围内.</li>
+<li><strong>WebGLDemo.getState</strong> 和 <a href="#id6"><span class="problematic" id="id7">**</span></a>WebGLDemo.setState**时可选择的. 你只需要定义这些函数如果你想保存这个问题的状态。</li>
+<li><strong>Width</strong> 和 <strong>height</strong> 代表保存在应用程序的IFrame大小。</li>
+<li>当这个问题打开时, 圆锥体和立方体都是蓝色的, 或&#8221;未选择.&#8221; 当你点击二者之一, 这个模型会变成黄色, 或&#8221;已选择.&#8221; 要取消选择这个模型,再点一下它.继续点击这个模型会继续选择它.</li>
+<li>当用户点击**确定**时如果这个圆锥体被选择(黄色)这个答案会被视作正确答案.</li>
+<li>点击**确定**或**保存**保存当前问题的状态.</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="section" id="javascript-xml">
+<span id="js-input-problem-xml"></span><h2>6.7.2. JavaScript XML输入问题<a class="headerlink" href="#javascript-xml" title="Permalink to this headline">¶</a></h2>
+<p>JSInput允许问题的作者把独立HTML文件转成可以整合到edX平台的问题. 由于其目的是灵活的,它可以被看作是输入和客户端相当**CustomResponse**.</p>
+<p>JSInput练习在一个静态的HTML页面里创建一个IFrame,并把author-specified函数的返回值传递给封闭回答类型(通常是 <strong>CustomResponse</strong>). JSInput也可以保存和回复状态.</p>
+<div class="section" id="id8">
+<h3>6.7.2.1. 模板<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h3>
+<p>下面是JSInput问题的基本格式:</p>
+<div class="highlight-xml"><div class="highlight"><pre><span class="nt">&lt;problem&gt;</span>
+       <span class="nt">&lt;script</span> <span class="na">type=</span><span class="s">&quot;loncapa/python&quot;</span><span class="nt">&gt;</span>
+def all_true(exp, ans): return ans == &quot;hi&quot;
+       <span class="nt">&lt;/script&gt;</span>
+       <span class="nt">&lt;customresponse</span> <span class="na">cfn=</span><span class="s">&quot;all_true&quot;</span><span class="nt">&gt;</span>
+           <span class="nt">&lt;jsinput</span> <span class="na">gradefn=</span><span class="s">&quot;gradefn&quot;</span>
+               <span class="na">height=</span><span class="s">&quot;500&quot;</span>
+               <span class="na">get_statefn=</span><span class="s">&quot;getstate&quot;</span>
+               <span class="na">set_statefn=</span><span class="s">&quot;setstate&quot;</span>
+               <span class="na">html_file=</span><span class="s">&quot;/static/jsinput.html&quot;</span><span class="nt">/&gt;</span>
+       <span class="nt">&lt;/customresponse&gt;</span>
+<span class="nt">&lt;/problem&gt;</span>
+</pre></div>
+</div>
+<p>公认的属性:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="30%" />
+<col width="30%" />
+<col width="19%" />
+<col width="21%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">属性名</th>
+<th class="head">类型</th>
+<th class="head">是否必要</th>
+<th class="head">默认</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>html_file</td>
+<td>URL string</td>
+<td>Yes</td>
+<td>None</td>
+</tr>
+<tr class="row-odd"><td>gradefn</td>
+<td>Function name</td>
+<td>Yes</td>
+<td><cite>gradefn</cite></td>
+</tr>
+<tr class="row-even"><td>set_statefn</td>
+<td>Function name</td>
+<td>No</td>
+<td>None</td>
+</tr>
+<tr class="row-odd"><td>get_statefn</td>
+<td>Function name</td>
+<td>No</td>
+<td>None</td>
+</tr>
+<tr class="row-even"><td>height</td>
+<td>Integer</td>
+<td>No</td>
+<td><cite>500</cite></td>
+</tr>
+<tr class="row-odd"><td>width</td>
+<td>Integer</td>
+<td>No</td>
+<td><cite>400</cite></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="id9">
+<h3>6.7.2.2. 必要属性<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><blockquote>
+<div><p><a href="#id10"><span class="problematic" id="id11">**</span></a>html_file**属性指定IFrame将指向的HTML文件.HTML文件必须是位于目录的内容。</p>
+<p>IFrame是使用沙箱属性创建的. 虽然弹出窗口，脚本，允许指针锁定, IFrame不能使用父类属性。</p>
+<p>HTML文件必须包含一个JSInput可以使用的**gradefn**函数. 要确定**gradefn**函数是否可使用,在控制台,确保**gradefn**返回值正确.当JSInput使用**gradefn**函数时, <cite>gradefn`调用`gradefn</cite>.call(<cite>obj</cite>), 在**obj** 是 <strong>gradefn**的部分对象的地方. 比如,如果**gradefn</strong> 是**myprog.myfn**, 则JSInput调用**myprog.myfun.call(myprog)**. (这是确保&#8221;<cite>this</cite>&#8220;继续指向`gradefn` 期望的.)</p>
+</div></blockquote>
+<p>除此之外,或多或少都行. 请注意,目前不支持继承父类的CSS或JavaScript(除了Chrome-只有**seamless** 属性默认设置为真).</p>
+</div></blockquote>
+<ul>
+<li><p class="first"><strong>gradefn</strong></p>
+<p>The <strong>gradefn**属性指定这个函数的名称，当用户点击**确定**时,这个函数会被调用。并且返回学生的答案.除非**get_statefn**和**set_statefn**属性都被使用了,这个答案作为字符串传递到封闭的回答类型. 在上面的**customresponse**例子里, 这意味着 **cfn</strong> 将可以通过``ans``这个答案.</p>
+<p>当学生尝试提交问题时如果**gradefn**函数抛出异常, 这个提交就无效,这个学生会收到一个通用的提示.这个提示可以通过制作异常的名称``Waitfor Exception``;在这种情况下, 意识信息将是异常信息.</p>
+<div class="admonition important">
+<p class="first admonition-title">Important</p>
+<p class="last">为了确保学生的最后答案能顺利提交，确保**gradefn**函数不是异步的. 此外, 确保函数返回迅速.学生目前没有迹象表明,她的答案是计算出的。</p>
+</div>
+</li>
+</ul>
+</div>
+<div class="section" id="id12">
+<h3>6.7.2.3. 可选择的属性<a class="headerlink" href="#id12" title="Permalink to this headline">¶</a></h3>
+<ul>
+<li><p class="first"><strong>set_statefn</strong></p>
+<p>有时一些问题的作者将想要关于学生以前的答案的信息(&#8220;状态&#8221;)保存和加载.如果使用**set_statefn**函数, 函数给出它的值将会通过状态作为一个字符串参数, 学生回到一个问题上.这个函数有责任适当的使用这个状态。 The function has the responsibility to then use this state approriately.</p>
+<p>通过的状态:</p>
+<ul class="simple">
+<li>先前的输出**gradefn** (i.e., 先前的答案) 如果 <strong>get_statefn</strong> 没定义.</li>
+<li>先前的输出 <strong>get_statefn</strong> 否则(看下面) .</li>
+</ul>
+<p>iframe负责通过**set_statefn**做适当的验证参数。</p>
+</li>
+<li><p class="first"><strong>get_statefn</strong></p>
+<p>有时状态和答案有很大的不同.比如,一个问题使用javascript程序可能允许学生基于分子的疏水性改变一个分子,但是从疏水性就不能保存这个状态.在这种情况下,*separate*状态可能通过**set_statefn**存和加载.注意如果定义了**get_statefn**,这个答案(i.e., what is passed to the enclosing response type) 将是下面格式的json代码:</p>
+<div class="highlight-xml"><div class="highlight"><pre>{
+    answer: `[answer string]`
+    state: `[state string]`
+}
+</pre></div>
+</div>
+<p>这个封闭的答案类型必须解析这个json.</p>
+</li>
+<li><p class="first"><strong>height</strong> 和 <strong>width</strong></p>
+<p><strong>height</strong> 和 <a href="#id13"><span class="problematic" id="id14">**</span></a>width**属性是很简单的: 它们指定IFrame的高度和宽度。它们都被封闭的DOM元素限制,所以有个隐含的最大宽度大约900像素</p>
+<p>将来, JSInput也许会尝试使这些大小匹配HTML文件的尺寸(克服上述的限制),但是现在它默认是高`500`像素，宽`400`像素.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+
+
+          <footer>
+  
+    <div class="rst-footer-buttons">
+      
+        <a href="drag_and_drop.html" class="btn btn-neutral float-right" title="6.8. 拖放问题"/>Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="conditional_module.html" class="btn btn-neutral" title="6.6. 条件模板"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <p>
+      &copy; Copyright 2015, edX.
+  </p>
+
+ 
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+</body>
+</html>

@@ -1,0 +1,585 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>7.2. Configure Your Course for Content Experiments &mdash; Building and Running an Open edX Course  documentation</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="../_static/css/favicon.ico"/>
+  
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  
+  
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:'../',
+        VERSION:'',
+        COLLAPSE_INDEX:false,
+        FILE_SUFFIX:'.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+
+    
+
+  
+
+  
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+
+  
+    <link rel="top" title="Building and Running an Open edX Course  documentation" href="../index.html"/>
+        <link rel="up" title="7. Creating Content Experiments" href="index.html"/>
+        <link rel="next" title="7.3. Add Content Experiments to Your Course" href="content_experiments_add.html"/>
+        <link rel="prev" title="7.1. 内容实验概述" href="content_experiments_overview.html"/> 
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-nav-search">
+        <a href="../index.html" class="icon icon-home"> Building and Running an Open edX Course</a>
+        <form class="wy-form" action="../search.html" method="get">
+  <input type="text" name="q" placeholder="Search document" />
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix">
+        
+        
+            <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../front_matter/index.html">1. For Your Information</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../front_matter/read_me.html">1.1. Read Me</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../front_matter/preface.html">1.2. 序言</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../front_matter/change_log.html">1.3. Change Log</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../front_matter/browsers.html">1.4. edX浏览器支持</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/index.html">2. Getting Started</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../getting_started/dashboard_acctsettings_profile.html">2.1. 搜索你的仪表板、设置和配置文件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../getting_started/get_started.html">2.2. Getting Started with Studio</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../getting_started/accessibility.html">2.3. 创建无障碍课程指南</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../building_course/index.html">3. Setting up Your Course</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/creating_new_course.html">3.1. 新建课程</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/scheduling_course.html">3.2. 设置开始和结束日期</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/setting_up_student_view.html">3.3. 设置课程细节</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/course_prerequisites.html">3.4. 设定入学要求</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/licensing_course.html">3.5. 授权课程</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/course_files.html">3.6. 给课程添加文件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/handouts_updates.html">3.7. 添加课程补充资料及讲义</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/pages.html">3.8. 为课程添加页面</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/textbooks.html">3.9. 添加课本</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/establish_grading_policy.html">3.10. 设定计分政策</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/course_rerun.html">3.11. 重开课程</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/export_import_course.html">3.12. 输出和导入课程</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../developing_course/index.html">4. Developing Your Course</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/workflow.html">4.1. 开始创建课程内容</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/course_outline.html">4.2. 创建课程大纲</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/course_sections.html">4.3. 创建课程章节</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/course_subsections.html">4.4. 构建课程小节</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/course_units.html">4.5. 构建课程单元</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/course_components.html">4.6. 创建课程组件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/controlling_content_visibility.html">4.7. 设置内容可见性</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/testing_courseware.html">4.8. 测试您的课程内容</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../creating_content/index.html">5. Creating Course Content</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../creating_content/create_html_component.html">5.1. 如何使用HTML组件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../creating_content/create_video.html">5.2. 创建影片组件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../creating_content/create_discussion.html">5.3. 创建讨论组件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../creating_content/create_problem.html">5.4. 创建问题组件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../creating_content/libraries.html">5.5. 内容库</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../exercises_tools/index.html">6. Creating Exercises and Tools</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/create_exercises_and_tools.html">6.1. 创建练习和工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/annotation.html">6.2. 注释问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/checkbox.html">6.3. 复选框问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/chemical_equation.html">6.4. 化学方程式问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/circuit_schematic_builder.html">6.5. 电路原理图搭建问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/conditional_module.html">6.6. 条件模板</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/custom_javascript.html">6.7. 自定义JavaScript问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/drag_and_drop.html">6.8. 拖放问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/dropdown.html">6.9. 下拉问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/external_graders.html">6.10. 图像映射输入问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/full_screen_image.html">6.11. 全屏图像工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/gene_explorer.html">6.12. Gene Explorer工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/google_calendar.html">6.13. 谷歌日历工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/google_docs.html">6.14. 谷歌云文件工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/google_hangouts.html">6.15. 谷歌即时群聊工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/iframe.html">6.16. IFrame工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/image_mapped_input.html">6.17. 图像映射输入问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/lti_component.html">6.18. LTI 组件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/math_expression_input.html">6.19. 数学表达式输入问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/molecule_editor.html">6.20. 分子编辑器</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/molecule_viewer.html">6.21. 分子浏览器</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/multiple_choice.html">6.22. 多项选择问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/mult_choice_num_input.html">6.23. 多项选择和数字输入题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/numerical_input.html">6.24. 数值输入问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/open_response_assessments/index.html">6.25. Open Response Assessments</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/periodic_table.html">6.26. 元素周期表工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/poll.html">6.27. 投票工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/problem_with_hint.html">6.28. 带适应性提示的问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/problem_in_latex.html">6.29. LaTeX问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/protein_builder.html">6.30. Protex蛋白质构建工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/randomized_content_blocks.html">6.31. 随机内容块</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/recommenderXBlock.html">6.32. 推荐系统</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/student_notes.html">6.33. 学生笔记工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/text_input.html">6.34. 文本输入问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/word_cloud.html">6.35. 文字云工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/custom_python.html">6.36. 自定义评分器问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/zooming_image.html">6.37. 图像放大工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/mathjax.html">6.38. Studio中MathJax的简要介绍</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">7. Creating Content Experiments</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="content_experiments_overview.html">7.1. 内容实验概述</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="">7.2. Configure Your Course for Content Experiments</a></li>
+<li class="toctree-l2"><a class="reference internal" href="content_experiments_add.html">7.3. Add Content Experiments to Your Course</a></li>
+<li class="toctree-l2"><a class="reference internal" href="content_experiments_view.html">7.4. 测试内容实验</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../cohorts/index.html">8. Including Student Cohorts</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../cohorts/cohorts_overview.html">8.1. 使用队列功能建立课程群</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cohorts/cohort_config.html">8.2. 启用、配置分队模式</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cohorts/cohorted_courseware.html">8.3. 创建特定队列课件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cohorts/cohorts_setup_discussions.html">8.4. 在包含队列的课程中设置论坛</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cohorts/cohorts_manage_discussions.html">8.5. 管理有学生队列的论坛</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../releasing_course/index.html">9. Releasing Your Course</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../releasing_course/beta_testing.html">9.1. 贝塔测试</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../releasing_course/course_launching.html">9.2. 课程发布事宜</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../releasing_course/staff_debug_info.html">9.3. 员工调试信息</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../running_course/index.html">10. Running Your Course</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/course_staffing.html">10.1. 安置职工</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/course_enrollment.html">10.2. 招生</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/discussions.html">10.3. 管理课程讨论项目</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/discussions_students.html">10.4. 参与课程讨论</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/discussion_guidance_moderators.html">10.5. 论坛协调员指南</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/bulk_email.html">10.6. 大宗邮件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/course_wiki.html">10.7. 使用课程维基</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/course_data.html">10.8. 课程数据</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/course_student.html">10.9. 学生数据</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/course_answers.html">10.10. 回答问题数据</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/course_grades.html">10.11. 学生成绩与成绩评定</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/checking_student_progress.html">10.12. 总成绩计算与证书发放</a></li>
+</ul>
+</li>
+</ul>
+
+        
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top">
+        <i data-toggle="wy-nav-top" class="icon icon-reorder"></i>
+        <a href="/">Building and Running an Open edX Course</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <ul class="wy-breadcrumbs">
+  <li><a href="../index.html">Table of Contents</a> &raquo;</li>
+  <li><a href="">7.2. Configure Your Course for Content Experiments</a></li>
+  
+</ul>
+<hr/>
+
+          
+  <div class="section" id="configure-your-course-for-content-experiments">
+<span id="id1"></span><h1>7.2. Configure Your Course for Content Experiments<a class="headerlink" href="#configure-your-course-for-content-experiments" title="Permalink to this headline">¶</a></h1>
+<p>This chapter describes how to configure your course so that you can use content
+experiments. See:</p>
+<ul class="simple">
+<li><a class="reference internal" href="#enable-content-experiments"><span>Enable Content Experiments</span></a></li>
+<li><a class="reference internal" href="#overview-of-group-configurations"><span>Overview of Group Configurations</span></a></li>
+<li><a class="reference internal" href="#set-up-group-configurations-in-edx-studio"><span>Set up Group Configurations in edX Studio</span></a></li>
+<li><a class="reference internal" href="#guidelines-for-modifying-group-configurations"><span>Guidelines for Modifying Group Configurations</span></a></li>
+<li><a class="reference internal" href="#set-up-group-configuration-for-olx-courses"><span>Set Up Group Configuration for OLX Courses</span></a></li>
+</ul>
+<div class="section" id="enable-content-experiments">
+<span id="id2"></span><h2>7.2.1. Enable Content Experiments<a class="headerlink" href="#enable-content-experiments" title="Permalink to this headline">¶</a></h2>
+<p>To enable content experiments in your course, you add <code class="docutils literal"><span class="pre">split_test</span></code> to the
+<strong>Advanced Modules List</strong> in Advanced Settings.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last"><code class="docutils literal"><span class="pre">split_test</span></code> is the internal edX Platform name for a content experiment.</p>
+</div>
+<ol class="arabic">
+<li><p class="first">From the <strong>Settings</strong> menu, select <strong>Advanced Settings</strong>.</p>
+</li>
+<li><p class="first">On the <strong>Advanced Settings</strong> page, locate <strong>Advanced Modules List</strong>.</p>
+</li>
+<li><p class="first">In the <strong>Advanced Modules List</strong> field, add <code class="docutils literal"><span class="pre">&quot;split_test&quot;</span></code>. Be sure that
+you include the double quotation marks.</p>
+<p>If you have multiple values, ensure that they are separated by commas
+(<code class="docutils literal"><span class="pre">,</span></code>).</p>
+<p>For example, the text in the <strong>Advanced Modules List</strong> field may resemble
+the following:</p>
+<div class="highlight-json"><div class="highlight"><pre><span class="p">[</span>
+  <span class="s2">&quot;lti&quot;</span><span class="p">,</span>
+  <span class="s2">&quot;word_cloud&quot;</span><span class="p">,</span>
+  <span class="s2">&quot;split_test&quot;</span>
+<span class="p">]</span>
+</pre></div>
+</div>
+</li>
+<li><p class="first">At the bottom of the page, click <strong>Save Changes</strong>.</p>
+</li>
+</ol>
+</div>
+<div class="section" id="overview-of-group-configurations">
+<span id="id3"></span><h2>7.2.2. Overview of Group Configurations<a class="headerlink" href="#overview-of-group-configurations" title="Permalink to this headline">¶</a></h2>
+<p>Before you can create content experiments, you must specify at least one group
+configuration for your course.</p>
+<p>A group configuration defines how many groups of students are in an experiment.
+You can have any number of group configurations in your course. When you create
+a content experiment, you select the group configuration to use.</p>
+<p>For example, you may want to do two different experiments at different times
+during your course. In one content experiment, students either see a video or
+complete a reading assignment. You can then include problems so that you can
+see which group learned the material more completely. For this content
+experiment, you need a group configuration that assigns your students to two
+experiment groups.</p>
+<p>In the other content experiment, you can present the same question using four
+different types of problems. For this content experiment, you need a
+group configuration that assigns your students to four experiment groups.</p>
+<div class="section" id="assigning-students-to-experiment-groups">
+<h3>7.2.2.1. Assigning Students to Experiment Groups<a class="headerlink" href="#assigning-students-to-experiment-groups" title="Permalink to this headline">¶</a></h3>
+<p>The edX Platform assigns students to each experiment group in a group
+configuration.</p>
+<p>Experiment group assignments are:</p>
+<ul>
+<li><p class="first">Dynamic</p>
+<p>The edX Platform assigns a student to an experiment group the first time he or
+she views a content experiment that uses the group configuration.</p>
+</li>
+<li><p class="first">Random</p>
+<p>You cannot control which students are assigned to which experiment group.</p>
+</li>
+<li><p class="first">Evenly distributed</p>
+<p>The edX Platform keeps track of the size of experiment groups, and assigns new
+students to groups evenly. For example, if you have two experiment groups in a
+configuration, each group includes 50% of the students in the course; if you
+have four experiment groups, each group includes 25% of the students.</p>
+</li>
+<li><p class="first">Permanent</p>
+<p>Students remain in their assigned experiment groups regardless of how many
+content experiments you set up that use the same group configuration.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="set-up-group-configurations-in-edx-studio">
+<span id="id4"></span><h2>7.2.3. Set up Group Configurations in edX Studio<a class="headerlink" href="#set-up-group-configurations-in-edx-studio" title="Permalink to this headline">¶</a></h2>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">You must <a class="reference internal" href="#enable-content-experiments"><span>enable content experiments</span></a> before
+you can set up group configurations.</p>
+</div>
+<p>To set up group configurations, on the <strong>Settings</strong> menu, select <strong>Group
+Configurations</strong>. The <strong>Group Configurations</strong> page opens.</p>
+<p>From this page you can <a class="reference internal" href="#create-a-group-configuration"><span>create</span></a>,
+<a class="reference internal" href="#edit-a-group-configuration"><span>edit</span></a>, and <a class="reference internal" href="#delete-a-group-configuration"><span>delete</span></a> group configurations. You can also <a class="reference internal" href="#view-experiments-that-use-a-group-configuration"><span>view experiments that
+use a group configuration</span></a>.</p>
+<div class="section" id="create-a-group-configuration">
+<span id="id5"></span><h3>7.2.3.1. Create a Group Configuration<a class="headerlink" href="#create-a-group-configuration" title="Permalink to this headline">¶</a></h3>
+<p>You can create a group configuration at any time.</p>
+<ol class="arabic simple">
+<li>On the <strong>Group Configurations</strong> page, under <strong>Experiment Groups</strong>, click
+<strong>New Experiment Group</strong>. The following page opens:</li>
+</ol>
+<blockquote>
+<div><a class="reference internal image-reference" href="../_images/create-group-config.png"><img alt="Create a New Group Configuration page" src="../_images/create-group-config.png" style="width: 800px;" /></a>
+</div></blockquote>
+<p>2. Enter a name in the <strong>Group Configuration Name</strong> field. Use a meaningful
+name, because you will select from group configuration names when you create
+content experiments. Students do not see the group configuration name.</p>
+<ol class="arabic simple">
+<li>Optionally, enter a description for the new group configuration.</li>
+<li>By default, a new configuration already contains two groups. Modify the
+groups or add and delete groups as needed. A group configuration must have at
+least one group.</li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li>Modify group names as needed. You see group names in the unit page in
+Studio, but group names are not visible to students.</li>
+<li>Click <strong>Add another group</strong> to include another group as part of
+the configuration.</li>
+<li>Click the <strong>X</strong> to the right of an existing group to remove it from the
+configuration. A group configuration must have at least one group.</li>
+</ul>
+</div></blockquote>
+<ol class="arabic simple" start="5">
+<li>Click <strong>Create</strong> to save the new group configuration.</li>
+</ol>
+<p>The group configuration is then listed in the page. You can see the number of
+groups that the configuration contains, as well as whether the configuration is
+in use in the course:</p>
+<a class="reference internal image-reference" href="../_images/group_configurations_one_listed.png"><img alt="The Group Configurations page with one group configuration" src="../_images/group_configurations_one_listed.png" style="width: 800px;" /></a>
+</div>
+<div class="section" id="edit-a-group-configuration">
+<span id="id6"></span><h3>7.2.3.2. Edit a Group Configuration<a class="headerlink" href="#edit-a-group-configuration" title="Permalink to this headline">¶</a></h3>
+<div class="admonition important">
+<p class="first admonition-title">Important</p>
+<p class="last">You can change the name of a group configuration at any time.
+However, before you modify any other characteristics of a group configuration
+that is currently used in a running course, review <a class="reference internal" href="#guidelines-for-modifying-group-configurations">Guidelines for Modifying
+Group Configurations</a>.</p>
+</div>
+<ol class="arabic">
+<li><p class="first">On the <strong>Group Configurations</strong> page, hover over the group configuration and
+click <strong>Edit</strong>.</p>
+<img alt="The Group Configurations page with Edit button" src="../_images/group_configurations_edit.png" />
+<p>The following page opens:</p>
+<img alt="Edit a Group Configuration page" src="../_images/save-group-config.png" />
+</li>
+<li><p class="first">Modify the name and description as needed.</p>
+</li>
+<li><p class="first">Modify groups in the configuration as needed. See <a class="reference internal" href="#create-a-group-configuration">Create a Group
+Configuration</a> for details.</p>
+</li>
+<li><p class="first">Click <strong>Save</strong> to save your changes.</p>
+</li>
+</ol>
+</div>
+<div class="section" id="delete-a-group-configuration">
+<span id="id7"></span><h3>7.2.3.3. Delete a Group Configuration<a class="headerlink" href="#delete-a-group-configuration" title="Permalink to this headline">¶</a></h3>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">You can only delete a group configuration that is not currently used in a
+content experiment. You cannot delete a group configuration that is used in a
+content experiment.</p>
+</div>
+<ol class="arabic simple">
+<li>On the <strong>Group Configurations</strong> page, hover over the group configuration and
+click the Delete icon.</li>
+</ol>
+<blockquote>
+<div><img alt="Edit a Group Configuration page" src="../_images/group-configuration-delete.png" />
+</div></blockquote>
+<ol class="arabic simple" start="2">
+<li>When prompted to confirm the deletion, click <strong>Delete</strong>.</li>
+</ol>
+</div>
+<div class="section" id="view-experiments-that-use-a-group-configuration">
+<span id="id8"></span><h3>7.2.3.4. View Experiments that Use a Group Configuration<a class="headerlink" href="#view-experiments-that-use-a-group-configuration" title="Permalink to this headline">¶</a></h3>
+<p>You can view the experiments that use each of your group configurations.</p>
+<p>On the <strong>Group Configurations</strong> page, click the name of a group to see its
+details. You see links to experiments that use the group configuration:</p>
+<img alt="A group configuration with the experiments using it circled" src="../_images/group_configurations_experiments.png" />
+<p>Click a link to go to the unit page that contains the experiment.</p>
+</div>
+<div class="section" id="view-a-group-configuration-from-an-experiment">
+<h3>7.2.3.5. View a Group Configuration from an Experiment<a class="headerlink" href="#view-a-group-configuration-from-an-experiment" title="Permalink to this headline">¶</a></h3>
+<p>When working with a content experiment, you can view details about the group
+configuration used by that experiment in two ways:</p>
+<ul class="simple">
+<li>In a unit that contains a content experiment, in the content experiment block,
+click the name of the group configuration.</li>
+</ul>
+<img alt="Content experiment in the unit page with the group configuration link circled" src="../_images/content_experiment_group_config_link.png" />
+<ul class="simple">
+<li>At the top of the content experiment page, click the name of the group
+configuration.</li>
+</ul>
+<img alt="Content experiment page with the group configuration link circled" src="../_images/content_experiment_page_group_config_link.png" />
+<p>In both cases, the group configuration opens:</p>
+<img alt="A Group Configuration with the experiments using it circled" src="../_images/group_configurations_experiments.png" />
+<p>You can use the link in the group configuration to return to the unit that
+contains the content experiment.</p>
+</div>
+</div>
+<div class="section" id="guidelines-for-modifying-group-configurations">
+<span id="id9"></span><h2>7.2.4. Guidelines for Modifying Group Configurations<a class="headerlink" href="#guidelines-for-modifying-group-configurations" title="Permalink to this headline">¶</a></h2>
+<p>Review these guidelines if you must modify a group configuration after a course
+starts. These guidelines apply for courses built in Studio or OLX.</p>
+<div class="section" id="modifying-a-group-configuration">
+<h3>7.2.4.1. Modifying a Group Configuration<a class="headerlink" href="#modifying-a-group-configuration" title="Permalink to this headline">¶</a></h3>
+<p>After the course starts, <strong>do not</strong>:</p>
+<ul class="simple">
+<li>Delete group configurations.</li>
+<li>Change the <code class="docutils literal"><span class="pre">id</span></code> value of a group configuration.</li>
+</ul>
+</div>
+<div class="section" id="modifying-experiment-groups">
+<h3>7.2.4.2. Modifying Experiment Groups<a class="headerlink" href="#modifying-experiment-groups" title="Permalink to this headline">¶</a></h3>
+<p>After the course starts, <strong>do not</strong> change the <code class="docutils literal"><span class="pre">id</span></code> value of an experiment
+group.</p>
+<p>You can change experiment group names at any time.</p>
+</div>
+<div class="section" id="removing-experiment-groups-from-group-configurations">
+<h3>7.2.4.3. Removing Experiment Groups from Group Configurations<a class="headerlink" href="#removing-experiment-groups-from-group-configurations" title="Permalink to this headline">¶</a></h3>
+<p>After a course in which you are running a content experiment has started,
+students in a specific experiment group might have difficulties with the content
+or with the course experience. In this situation, you can remove the experiment
+group from the group configuration. Content that was specified for that
+experiment group is then no longer visible to students.</p>
+<p>Students in the removed experiment group are reassigned evenly to one of the
+other experiment groups in the group configuration. Any problems that these
+students completed in the removed experiment group content do not count toward
+their grades. The students must begin the problem set again and complete all the
+problems in the experiment group content to which they are reassigned.</p>
+<p>Removing an experiment group affects event data for the course. Ensure that
+researchers who are evaluating your course results are aware of the experiment
+group that you removed and the date on which you removed it.</p>
+</div>
+</div>
+<div class="section" id="set-up-group-configuration-for-olx-courses">
+<span id="id10"></span><h2>7.2.5. Set Up Group Configuration for OLX Courses<a class="headerlink" href="#set-up-group-configuration-for-olx-courses" title="Permalink to this headline">¶</a></h2>
+<p>You define group configurations in the <code class="docutils literal"><span class="pre">policy.json</span></code> file in the <code class="docutils literal"><span class="pre">policies</span></code>
+directory of an OLX course.</p>
+<p>To specify group configurations, you modify the value for the
+<code class="docutils literal"><span class="pre">user_partitions</span></code> policy key.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last"><code class="docutils literal"><span class="pre">user_partitions</span></code> is the internal edX Platform name for group
+configurations.</p>
+</div>
+<p>The value for <code class="docutils literal"><span class="pre">user_partitions</span></code> is a JSON collection of group configurations,
+each of which defines the experiment groups of students.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Use names for group configurations that are meaningful. You select from the
+list of group configuration names when you add a content experiment.</p>
+</div>
+<p>See the following examples for more information.</p>
+<div class="section" id="example-one-group-configuration">
+<h3>7.2.5.1. Example: One Group Configuration<a class="headerlink" href="#example-one-group-configuration" title="Permalink to this headline">¶</a></h3>
+<p>The following code shows an example JSON object that defines a group
+configuration with two student segments.</p>
+<div class="highlight-json"><div class="highlight"><pre>&quot;user_partitions&quot;: [{&quot;id&quot;: 0,
+                   &quot;name&quot;: &quot;Name of the group configuration&quot;,
+                   &quot;description&quot;: &quot;Description of the group configuration.&quot;,
+                   &quot;version&quot;: 1,
+                   &quot;groups&quot;: [{&quot;id&quot;: 0,
+                               &quot;name&quot;: &quot;Group 1&quot;,
+                               &quot;version&quot;: 1},
+                              {&quot;id&quot;: 1,
+                               &quot;name&quot;: &quot;Group 2&quot;,
+                               &quot;version&quot;: 1}]
+                            }
+                   ]
+</pre></div>
+</div>
+<p>In this example:</p>
+<ul class="simple">
+<li>The <code class="docutils literal"><span class="pre">&quot;id&quot;:</span> <span class="pre">0</span></code> identifies the group configuration. For XML courses, the
+value is referenced in the <code class="docutils literal"><span class="pre">user_partition</span></code> attribute of the
+<code class="docutils literal"><span class="pre">&lt;split_test&gt;</span></code> element in the content experiment file.</li>
+<li>The <code class="docutils literal"><span class="pre">groups</span></code> array identifies the experiment groups to which students are
+randomly assigned. For XML courses, each group <code class="docutils literal"><span class="pre">id</span></code> value is referenced in
+the <code class="docutils literal"><span class="pre">group_id_to_child</span></code> attribute of the <code class="docutils literal"><span class="pre">&lt;split_test&gt;</span></code> element.</li>
+</ul>
+</div>
+<div class="section" id="example-multiple-group-configurations">
+<h3>7.2.5.2. Example: Multiple Group Configurations<a class="headerlink" href="#example-multiple-group-configurations" title="Permalink to this headline">¶</a></h3>
+<p>The following code shows an example JSON object that defines two group
+configurations. The first group configuration divides students into two
+experiment groups, and the second divides students into three experiment groups.</p>
+<div class="highlight-json"><div class="highlight"><pre>&quot;user_partitions&quot;: [{&quot;id&quot;: 0,
+                     &quot;name&quot;: &quot;Name of Group Configuration 1&quot;,
+                     &quot;description&quot;: &quot;Description of Group Configuration 1.&quot;,
+                     &quot;version&quot;: 1,
+                     &quot;groups&quot;: [{&quot;id&quot;: 0,
+                                 &quot;name&quot;: &quot;Group 1&quot;,
+                                 &quot;version&quot;: 1},
+                                {&quot;id&quot;: 1,
+                                 &quot;name&quot;: &quot;Group 2&quot;,
+                                 &quot;version&quot;: 1}]}
+                    {&quot;id&quot;: 1,
+                     &quot;name&quot;: &quot;Name of Group Configuration 2&quot;,
+                     &quot;description&quot;: &quot;Description of Group Configuration 2.&quot;,
+                     &quot;version&quot;: 1,
+                     &quot;groups&quot;: [{&quot;id&quot;: 0,
+                                 &quot;name&quot;: &quot;Group 1&quot;,
+                                 &quot;version&quot;: 1},
+                                {&quot;id&quot;: 1,
+                                 &quot;name&quot;: &quot;Group 2&quot;,
+                                 &quot;version&quot;: 1}
+                                 {&quot;id&quot;: 2,
+                                 &quot;name&quot;: &quot;Group 3&quot;,
+                                 &quot;version&quot;: 1}
+                                 ]}
+                   ]
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">As this example shows, each group configuration is independent.  Group IDs
+and names must be unique within a group configuration, but not across all
+group configurations in your course.</p>
+</div>
+</div>
+</div>
+</div>
+
+
+          <footer>
+  
+    <div class="rst-footer-buttons">
+      
+        <a href="content_experiments_add.html" class="btn btn-neutral float-right" title="7.3. Add Content Experiments to Your Course"/>Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="content_experiments_overview.html" class="btn btn-neutral" title="7.1. 内容实验概述"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <p>
+      &copy; Copyright 2015, edX.
+  </p>
+
+ 
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+</body>
+</html>

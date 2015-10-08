@@ -1,0 +1,410 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>6.25.2. 创建一个开放题回答评估 &mdash; Building and Running an Open edX Course  documentation</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="../../_static/css/favicon.ico"/>
+  
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  
+  
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:'../../',
+        VERSION:'',
+        COLLAPSE_INDEX:false,
+        FILE_SUFFIX:'.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+      <script type="text/javascript" src="../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../_static/doctools.js"></script>
+
+    
+
+  
+
+  
+  
+  
+    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+
+  
+    <link rel="top" title="Building and Running an Open edX Course  documentation" href="../../index.html"/>
+        <link rel="up" title="6.25. Open Response Assessments" href="index.html"/>
+        <link rel="next" title="6.25.3. Accessing Assignment and Student Metrics" href="Access_ORA_Info.html"/>
+        <link rel="prev" title="6.25.1. Open Response Assessments" href="OpenResponseAssessments.html"/> 
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-nav-search">
+        <a href="../../index.html" class="icon icon-home"> Building and Running an Open edX Course</a>
+        <form class="wy-form" action="../../search.html" method="get">
+  <input type="text" name="q" placeholder="Search document" />
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix">
+        
+        
+            <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../front_matter/index.html">1. For Your Information</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../front_matter/read_me.html">1.1. Read Me</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../front_matter/preface.html">1.2. 序言</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../front_matter/change_log.html">1.3. Change Log</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../front_matter/browsers.html">1.4. edX浏览器支持</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started/index.html">2. Getting Started</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../getting_started/dashboard_acctsettings_profile.html">2.1. 搜索你的仪表板、设置和配置文件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../getting_started/get_started.html">2.2. Getting Started with Studio</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../getting_started/accessibility.html">2.3. 创建无障碍课程指南</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../building_course/index.html">3. Setting up Your Course</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../building_course/creating_new_course.html">3.1. 新建课程</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../building_course/scheduling_course.html">3.2. 设置开始和结束日期</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../building_course/setting_up_student_view.html">3.3. 设置课程细节</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../building_course/course_prerequisites.html">3.4. 设定入学要求</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../building_course/licensing_course.html">3.5. 授权课程</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../building_course/course_files.html">3.6. 给课程添加文件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../building_course/handouts_updates.html">3.7. 添加课程补充资料及讲义</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../building_course/pages.html">3.8. 为课程添加页面</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../building_course/textbooks.html">3.9. 添加课本</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../building_course/establish_grading_policy.html">3.10. 设定计分政策</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../building_course/course_rerun.html">3.11. 重开课程</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../building_course/export_import_course.html">3.12. 输出和导入课程</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../developing_course/index.html">4. Developing Your Course</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../developing_course/workflow.html">4.1. 开始创建课程内容</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../developing_course/course_outline.html">4.2. 创建课程大纲</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../developing_course/course_sections.html">4.3. 创建课程章节</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../developing_course/course_subsections.html">4.4. 构建课程小节</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../developing_course/course_units.html">4.5. 构建课程单元</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../developing_course/course_components.html">4.6. 创建课程组件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../developing_course/controlling_content_visibility.html">4.7. 设置内容可见性</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../developing_course/testing_courseware.html">4.8. 测试您的课程内容</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../creating_content/index.html">5. Creating Course Content</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../creating_content/create_html_component.html">5.1. 如何使用HTML组件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../creating_content/create_video.html">5.2. 创建影片组件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../creating_content/create_discussion.html">5.3. 创建讨论组件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../creating_content/create_problem.html">5.4. 创建问题组件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../creating_content/libraries.html">5.5. 内容库</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">6. Creating Exercises and Tools</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../create_exercises_and_tools.html">6.1. 创建练习和工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../annotation.html">6.2. 注释问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../checkbox.html">6.3. 复选框问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chemical_equation.html">6.4. 化学方程式问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../circuit_schematic_builder.html">6.5. 电路原理图搭建问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../conditional_module.html">6.6. 条件模板</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../custom_javascript.html">6.7. 自定义JavaScript问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../drag_and_drop.html">6.8. 拖放问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../dropdown.html">6.9. 下拉问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../external_graders.html">6.10. 图像映射输入问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../full_screen_image.html">6.11. 全屏图像工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../gene_explorer.html">6.12. Gene Explorer工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../google_calendar.html">6.13. 谷歌日历工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../google_docs.html">6.14. 谷歌云文件工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../google_hangouts.html">6.15. 谷歌即时群聊工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../iframe.html">6.16. IFrame工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../image_mapped_input.html">6.17. 图像映射输入问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lti_component.html">6.18. LTI 组件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../math_expression_input.html">6.19. 数学表达式输入问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../molecule_editor.html">6.20. 分子编辑器</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../molecule_viewer.html">6.21. 分子浏览器</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../multiple_choice.html">6.22. 多项选择问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../mult_choice_num_input.html">6.23. 多项选择和数字输入题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../numerical_input.html">6.24. 数值输入问题</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">6.25. Open Response Assessments</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../periodic_table.html">6.26. 元素周期表工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../poll.html">6.27. 投票工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../problem_with_hint.html">6.28. 带适应性提示的问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../problem_in_latex.html">6.29. LaTeX问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../protein_builder.html">6.30. Protex蛋白质构建工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../randomized_content_blocks.html">6.31. 随机内容块</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../recommenderXBlock.html">6.32. 推荐系统</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../student_notes.html">6.33. 学生笔记工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../text_input.html">6.34. 文本输入问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../word_cloud.html">6.35. 文字云工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../custom_python.html">6.36. 自定义评分器问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../zooming_image.html">6.37. 图像放大工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../mathjax.html">6.38. Studio中MathJax的简要介绍</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../content_experiments/index.html">7. Creating Content Experiments</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../content_experiments/content_experiments_overview.html">7.1. 内容实验概述</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../content_experiments/content_experiments_configure.html">7.2. Configure Your Course for Content Experiments</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../content_experiments/content_experiments_add.html">7.3. Add Content Experiments to Your Course</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../content_experiments/content_experiments_view.html">7.4. 测试内容实验</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../cohorts/index.html">8. Including Student Cohorts</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../cohorts/cohorts_overview.html">8.1. 使用队列功能建立课程群</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../cohorts/cohort_config.html">8.2. 启用、配置分队模式</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../cohorts/cohorted_courseware.html">8.3. 创建特定队列课件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../cohorts/cohorts_setup_discussions.html">8.4. 在包含队列的课程中设置论坛</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../cohorts/cohorts_manage_discussions.html">8.5. 管理有学生队列的论坛</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../releasing_course/index.html">9. Releasing Your Course</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../releasing_course/beta_testing.html">9.1. 贝塔测试</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../releasing_course/course_launching.html">9.2. 课程发布事宜</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../releasing_course/staff_debug_info.html">9.3. 员工调试信息</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../running_course/index.html">10. Running Your Course</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../running_course/course_staffing.html">10.1. 安置职工</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../running_course/course_enrollment.html">10.2. 招生</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../running_course/discussions.html">10.3. 管理课程讨论项目</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../running_course/discussions_students.html">10.4. 参与课程讨论</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../running_course/discussion_guidance_moderators.html">10.5. 论坛协调员指南</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../running_course/bulk_email.html">10.6. 大宗邮件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../running_course/course_wiki.html">10.7. 使用课程维基</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../running_course/course_data.html">10.8. 课程数据</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../running_course/course_student.html">10.9. 学生数据</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../running_course/course_answers.html">10.10. 回答问题数据</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../running_course/course_grades.html">10.11. 学生成绩与成绩评定</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../running_course/checking_student_progress.html">10.12. 总成绩计算与证书发放</a></li>
+</ul>
+</li>
+</ul>
+
+        
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top">
+        <i data-toggle="wy-nav-top" class="icon icon-reorder"></i>
+        <a href="/">Building and Running an Open edX Course</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <ul class="wy-breadcrumbs">
+  <li><a href="../../index.html">Table of Contents</a> &raquo;</li>
+  <li><a href="">6.25.2. 创建一个开放题回答评估</a></li>
+  
+</ul>
+<hr/>
+
+          
+  <div class="section" id="pa-create-an-ora-assignment">
+<span id="id1"></span><h1>6.25.2. 创建一个开放题回答评估<a class="headerlink" href="#pa-create-an-ora-assignment" title="Permalink to this headline">¶</a></h1>
+<p>创建一个开放题回答评估有如下步骤:</p>
+<ul class="simple">
+<li><a class="reference internal" href="#id2"><span>步骤 1. 创建组件</span></a></li>
+<li><a class="reference internal" href="#id4"><span>步骤 2. 添加提示</span></a></li>
+<li><a class="reference internal" href="#id7"><span>步骤 3. 添加标准</span></a></li>
+<li><a class="reference internal" href="#id11"><span>步骤 4. 指定名称和日期评估的名称和日期</span></a></li>
+<li><a class="reference internal" href="#id15"><span>步骤 5. 挑选评估步骤</span></a></li>
+<li><a class="reference internal" href="#id17"><span>步骤 6. 指定步骤设置</span></a></li>
+<li><a class="reference internal" href="#id25"><span>步骤 7. 展示最高分评估</span></a></li>
+<li><a class="reference internal" href="#id27"><span>步骤 8. 测试评估回答</span></a></li>
+</ul>
+<p>这些步骤的详细介绍如下.</p>
+<p>想要了解更多关于开放题回答评估组件的信息，请查看
+<span class="xref std std-ref">开放题回答评估 2</span>. 要了解更多关于浏览标准和学生关于回答开放题回答评估的信息，请查看, see <span class="xref std std-ref">访问ORA评估信息</span>.</p>
+<div class="section" id="id2">
+<span id="id3"></span><h2>6.25.2.1. 步骤 1. 创建组件<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<p>要创建一个你的开放题回答评估组价,有如下步骤。</p>
+<ol class="arabic simple">
+<li>在Studio中, 打开你要创建开放题回答评估的单元.</li>
+<li>在 <strong>添加新组件下方</strong>, 点击 <strong>问题</strong>, 点击 <strong>高级</strong> 标签, 然后点击 <strong>同伴评估</strong>.</li>
+<li>在这个问题组件出现的地方, 点击 <strong>编辑</strong>.</li>
+</ol>
+</div>
+<div class="section" id="id4">
+<span id="id5"></span><h2>6.25.2.2. 步骤 2. 添加提示<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
+<p>要添加提示或者问题，有以下的步骤:</p>
+<ol class="arabic simple">
+<li>在开放题回答评估编辑器中选择**提示**标签.</li>
+<li>添加你的问题文本到文本区域。用你的文本替代默认的文本。</li>
+<li>选择 <strong>添加一个提示</strong> 带另一个提示中.</li>
+</ol>
+<div class="section" id="id6">
+<h3>6.25.2.2.1. 添加格式或者提现到一个提示中<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h3>
+<p>现在，你不能添加文本格式或者图像到同伴评估组件中。要设置格式或者图像到提示文本中，你可以添加一个HTML组件包含你的文本到你的开放题回答评估中, 保持**提示标签** 空白. 这个同伴评估的说明依然会出现在**你的回答**区域.</p>
+<a class="reference internal image-reference" href="../../_images/PA_HTMLComponent.png"><img alt="A peer assessment that has an image in an HTML component" src="../../_images/PA_HTMLComponent.png" style="width: 500px;" /></a>
+</div>
+</div>
+<div class="section" id="id7">
+<span id="id8"></span><h2>6.25.2.3. 步骤 3. 添加标准<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h2>
+<p>在这步，你可以添加你的标准并且提供给你的学生反馈选项。你也可以给每个问题都添加标准，不管问题中提示的个数。
+对于下面的每步，用你自己的文本代替默认的文本.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">所有的开放题评估包含都一个反馈区域在标准下方以便学生可以提供同伴全部回答反馈。你也可以允许或者要求学生提供对于个性标准的回馈。更多相关信息,请查看:ref:<cite>Feedback Options</cite>.</p>
+</div>
+<p>要添加一个标准，有以下的步骤.</p>
+<ol class="arabic simple">
+<li>在开放题回答评估中，店家**标准** 标签.</li>
+<li>在第一个 <strong>标准</strong> 章节, 输入你的第一个标准的名字.</li>
+<li>在第一个 <strong>选项</strong> 章节, 输入第一个选项的名字, 解释, 和分值.</li>
+<li>在下一个**选项** 章节,输入下一个选项的名字, 解释, 和分值.</li>
+<li>对于每个选项重复第四步. 如果你要添加更多选项, 点击 <strong>添加选项</strong>.</li>
+<li>在 <a href="#id9"><span class="problematic" id="id10">**</span></a>这个标准的反馈**旁边, 在下拉菜单中选择一个值.<ul>
+<li>如果你不想要你的学生提供反馈，选择 <strong>None</strong>.</li>
+<li>如果你要求学生必须提供反馈, 选择 <strong>Required</strong>.</li>
+<li>如果你要求学生可选择提供反馈, 选择 <strong>Optional</strong>.</li>
+</ul>
+</li>
+</ol>
+</div>
+<div class="section" id="id11">
+<span id="id12"></span><h2>6.25.2.4. 步骤 4. 指定名称和日期评估的名称和日期<a class="headerlink" href="#id11" title="Permalink to this headline">¶</a></h2>
+<p>要指定一个评估的名称和学生回答的开始与结束的日期，有以下的步骤：</p>
+<ol class="arabic simple">
+<li>在组件编辑器中, 点击**设置** 标签.</li>
+<li>在 <a href="#id13"><span class="problematic" id="id14">**</span></a>展示名称**旁边, 键入你想要给这个评估的名字.</li>
+<li>选择 <strong>回答开始日期</strong> 和 <strong>回答开始时间</strong>, 输入你想要学生开始提交回答的日期. 注意所有的时间都是世界时间(UTC).</li>
+<li>选择 <strong>回答结束日期</strong> 和 <strong>回答结束时间</strong>, 输入你想要学生结束提交回答的日期. 注意所有的时间都是世界时间(UTC).</li>
+</ol>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">我们建议你设置结束日期最少在开始日期两天后. 如果回答结束日期和同伴评估同时关闭，学生提交的回答仅仅在关闭之前，其他的学生可能没时间进行同伴评估在同伴评估之前。</p>
+</div>
+</div>
+<div class="section" id="id15">
+<span id="id16"></span><h2>6.25.2.5. 步骤 5. 挑选评估步骤<a class="headerlink" href="#id15" title="Permalink to this headline">¶</a></h2>
+<p>开放题回答评估可以包含学生练习，同伴评估和自我评估。你可以设置包含一个同伴评估步在自我评估之前，反之亦然。</p>
+<p>如果你设置了包含一个学生练习步骤, 你也 <strong>必须</strong> 包含一个同伴评估步骤。你也可以包含自我评估步骤。学生练习步骤必须在同伴评估和自我评估步骤之前。</p>
+<p>要添加步骤到评估:</p>
+<ol class="arabic simple">
+<li>在组件编辑器中，点击**设置** 标签.</li>
+<li>向下滚动到 <strong>允许图片回答</strong> 区域.</li>
+<li>找到下面的标题:<ul>
+<li><strong>步骤: 学生练习</strong></li>
+<li><strong>步骤: 同伴评估</strong></li>
+<li><strong>步骤: 自我评估</strong></li>
+</ul>
+</li>
+</ol>
+<blockquote>
+<div>在复选框中选择你想要这个评估包含的步骤.</div></blockquote>
+</div>
+<div class="section" id="id17">
+<span id="id18"></span><h2>6.25.2.6. 步骤 6. 指定步骤设置<a class="headerlink" href="#id17" title="Permalink to this headline">¶</a></h2>
+<p>在你选择你想要的步骤之后，你可以指定这些设置.</p>
+<div class="section" id="id19">
+<span id="id20"></span><h3>6.25.2.6.1. 学生练习<a class="headerlink" href="#id19" title="Permalink to this headline">¶</a></h3>
+<p>对于学生练习步骤, 你可以输入一个或者多个你创建的回答, 然后对于每个你制定的标准选择一个选项.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">你必须输入你的完整的标准在**标准** 标签上在你选择为学生选择练习回答之前.如果你之后改变一个你的标准，你必须同时升级学生练习步骤.</p>
+</div>
+<p>要添加给学生练习评估评分步骤:</p>
+<ol class="arabic simple">
+<li>在 <strong>步骤: 学生练习**下面, 选择第一个 **回答评分</strong> 节.</li>
+<li>在**回答** 区域里面, 输入你的示例文本.</li>
+<li>在**回答评分**下方, 选择你想要的给每个标准添加的选项.</li>
+</ol>
+<p>更多相关信息, 请查看 <a class="reference internal" href="#id19"><span>学生练习</span></a>.</p>
+</div>
+<div class="section" id="id21">
+<h3>6.25.2.6.2. 同伴评估<a class="headerlink" href="#id21" title="Permalink to this headline">¶</a></h3>
+<p>对于同伴评估步骤, 你要指定每个学生必须给回答评分的个数,这个学生必须给回答评分的个数,在开始时间和结束时间内，所有的区域都是必要的.</p>
+<p>要指定同伴评估设置:</p>
+<ol class="arabic simple">
+<li>位于 <strong>步骤: 同伴评估</strong> 标题.</li>
+<li>在**必须评分**旁边, 输入学生必须评分的个数.</li>
+<li>在**评分**区域, 输入每个回答学生必须评分的个数.</li>
+<li>在 <strong>开始日期</strong> 和 <a href="#id22"><span class="problematic" id="id23">**</span></a>开始时间**旁边, 输入日期和时间。所有的时间都是世界时间(UTC).</li>
+<li>在 <strong>结束日期</strong> 和 <strong>结束时间</strong>, 输入日期和时间. 所有的时间都是世界时间(UTC).</li>
+</ol>
+</div>
+<div class="section" id="id24">
+<h3>6.25.2.6.3. 自我评估<a class="headerlink" href="#id24" title="Permalink to this headline">¶</a></h3>
+<p>对于自我评估步骤, 你可以指定何时开始和结束.</p>
+<ol class="arabic simple">
+<li>位于在 <strong>步骤: 自我评估</strong> 标题.</li>
+<li>在**开始日期** 和 <strong>开始时间</strong>, 输入日期和时间. 所有的时间都是世界时间(UTC).</li>
+<li>在 <strong>结束日期</strong> 和 <strong>结束时间</strong>, 输入日期和时间. 所有的时间都是世界时间(UTC).</li>
+</ol>
+</div>
+</div>
+<div class="section" id="id25">
+<span id="id26"></span><h2>6.25.2.7. 步骤 7. 展示最高分评估<a class="headerlink" href="#id25" title="Permalink to this headline">¶</a></h2>
+<p>要允许学生看到最高分评估，你可以指定一个数字在**设置** 标签.</p>
+<ol class="arabic simple">
+<li>在组件编辑器里，点击 <strong>设置</strong> 标签.</li>
+<li>在**最高分回答**区域, 指定一个你想要出现在**最高分回答**在学生的最终得分下方。如果你不想要这个节出现，设置为0.最高分是100.</li>
+</ol>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">由于每个回答可以有300像素高，我们建议你设置最高分回答低于20，不然页面就会太长了。</p>
+</div>
+<p>更多相关信息, 请查看:ref:<cite>最高分回答</cite>.</p>
+</div>
+<div class="section" id="id27">
+<span id="id28"></span><h2>6.25.2.8. 步骤 8. 测试评估回答<a class="headerlink" href="#id27" title="Permalink to this headline">¶</a></h2>
+<p>要测试你的评估，开始你课程中的评估，设置未来的章或节日期，测试版测试者可以让你知道是否出现问题。</p>
+<p>更多关于测试版测试信息, 请查看 <span class="xref std std-ref">测试版_测试</span>.</p>
+</div>
+</div>
+
+
+          <footer>
+  
+    <div class="rst-footer-buttons">
+      
+        <a href="Access_ORA_Info.html" class="btn btn-neutral float-right" title="6.25.3. Accessing Assignment and Student Metrics"/>Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="OpenResponseAssessments.html" class="btn btn-neutral" title="6.25.1. Open Response Assessments"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <p>
+      &copy; Copyright 2015, edX.
+  </p>
+
+ 
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+</body>
+</html>

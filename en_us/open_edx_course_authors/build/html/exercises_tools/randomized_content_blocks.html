@@ -1,0 +1,413 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>6.31. 随机内容块 &mdash; Building and Running an Open edX Course  documentation</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="../_static/css/favicon.ico"/>
+  
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  
+  
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:'../',
+        VERSION:'',
+        COLLAPSE_INDEX:false,
+        FILE_SUFFIX:'.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+
+    
+
+  
+
+  
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+
+  
+    <link rel="top" title="Building and Running an Open edX Course  documentation" href="../index.html"/>
+        <link rel="up" title="6. Creating Exercises and Tools" href="index.html"/>
+        <link rel="next" title="6.32. 推荐系统" href="recommenderXBlock.html"/>
+        <link rel="prev" title="6.30. Protex蛋白质构建工具" href="protein_builder.html"/> 
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-nav-search">
+        <a href="../index.html" class="icon icon-home"> Building and Running an Open edX Course</a>
+        <form class="wy-form" action="../search.html" method="get">
+  <input type="text" name="q" placeholder="Search document" />
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix">
+        
+        
+            <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../front_matter/index.html">1. For Your Information</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../front_matter/read_me.html">1.1. Read Me</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../front_matter/preface.html">1.2. 序言</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../front_matter/change_log.html">1.3. Change Log</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../front_matter/browsers.html">1.4. edX浏览器支持</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/index.html">2. Getting Started</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../getting_started/dashboard_acctsettings_profile.html">2.1. 搜索你的仪表板、设置和配置文件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../getting_started/get_started.html">2.2. Getting Started with Studio</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../getting_started/accessibility.html">2.3. 创建无障碍课程指南</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../building_course/index.html">3. Setting up Your Course</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/creating_new_course.html">3.1. 新建课程</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/scheduling_course.html">3.2. 设置开始和结束日期</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/setting_up_student_view.html">3.3. 设置课程细节</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/course_prerequisites.html">3.4. 设定入学要求</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/licensing_course.html">3.5. 授权课程</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/course_files.html">3.6. 给课程添加文件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/handouts_updates.html">3.7. 添加课程补充资料及讲义</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/pages.html">3.8. 为课程添加页面</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/textbooks.html">3.9. 添加课本</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/establish_grading_policy.html">3.10. 设定计分政策</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/course_rerun.html">3.11. 重开课程</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/export_import_course.html">3.12. 输出和导入课程</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../developing_course/index.html">4. Developing Your Course</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/workflow.html">4.1. 开始创建课程内容</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/course_outline.html">4.2. 创建课程大纲</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/course_sections.html">4.3. 创建课程章节</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/course_subsections.html">4.4. 构建课程小节</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/course_units.html">4.5. 构建课程单元</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/course_components.html">4.6. 创建课程组件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/controlling_content_visibility.html">4.7. 设置内容可见性</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/testing_courseware.html">4.8. 测试您的课程内容</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../creating_content/index.html">5. Creating Course Content</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../creating_content/create_html_component.html">5.1. 如何使用HTML组件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../creating_content/create_video.html">5.2. 创建影片组件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../creating_content/create_discussion.html">5.3. 创建讨论组件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../creating_content/create_problem.html">5.4. 创建问题组件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../creating_content/libraries.html">5.5. 内容库</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">6. Creating Exercises and Tools</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="create_exercises_and_tools.html">6.1. 创建练习和工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="annotation.html">6.2. 注释问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="checkbox.html">6.3. 复选框问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="chemical_equation.html">6.4. 化学方程式问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="circuit_schematic_builder.html">6.5. 电路原理图搭建问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="conditional_module.html">6.6. 条件模板</a></li>
+<li class="toctree-l2"><a class="reference internal" href="custom_javascript.html">6.7. 自定义JavaScript问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="drag_and_drop.html">6.8. 拖放问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dropdown.html">6.9. 下拉问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="external_graders.html">6.10. 图像映射输入问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="full_screen_image.html">6.11. 全屏图像工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gene_explorer.html">6.12. Gene Explorer工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="google_calendar.html">6.13. 谷歌日历工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="google_docs.html">6.14. 谷歌云文件工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="google_hangouts.html">6.15. 谷歌即时群聊工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="iframe.html">6.16. IFrame工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="image_mapped_input.html">6.17. 图像映射输入问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lti_component.html">6.18. LTI 组件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="math_expression_input.html">6.19. 数学表达式输入问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="molecule_editor.html">6.20. 分子编辑器</a></li>
+<li class="toctree-l2"><a class="reference internal" href="molecule_viewer.html">6.21. 分子浏览器</a></li>
+<li class="toctree-l2"><a class="reference internal" href="multiple_choice.html">6.22. 多项选择问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="mult_choice_num_input.html">6.23. 多项选择和数字输入题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="numerical_input.html">6.24. 数值输入问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="open_response_assessments/index.html">6.25. Open Response Assessments</a></li>
+<li class="toctree-l2"><a class="reference internal" href="periodic_table.html">6.26. 元素周期表工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="poll.html">6.27. 投票工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="problem_with_hint.html">6.28. 带适应性提示的问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="problem_in_latex.html">6.29. LaTeX问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="protein_builder.html">6.30. Protex蛋白质构建工具</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="">6.31. 随机内容块</a></li>
+<li class="toctree-l2"><a class="reference internal" href="recommenderXBlock.html">6.32. 推荐系统</a></li>
+<li class="toctree-l2"><a class="reference internal" href="student_notes.html">6.33. 学生笔记工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="text_input.html">6.34. 文本输入问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="word_cloud.html">6.35. 文字云工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="custom_python.html">6.36. 自定义评分器问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="zooming_image.html">6.37. 图像放大工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="mathjax.html">6.38. Studio中MathJax的简要介绍</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../content_experiments/index.html">7. Creating Content Experiments</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../content_experiments/content_experiments_overview.html">7.1. 内容实验概述</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../content_experiments/content_experiments_configure.html">7.2. Configure Your Course for Content Experiments</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../content_experiments/content_experiments_add.html">7.3. Add Content Experiments to Your Course</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../content_experiments/content_experiments_view.html">7.4. 测试内容实验</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../cohorts/index.html">8. Including Student Cohorts</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../cohorts/cohorts_overview.html">8.1. 使用队列功能建立课程群</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cohorts/cohort_config.html">8.2. 启用、配置分队模式</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cohorts/cohorted_courseware.html">8.3. 创建特定队列课件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cohorts/cohorts_setup_discussions.html">8.4. 在包含队列的课程中设置论坛</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cohorts/cohorts_manage_discussions.html">8.5. 管理有学生队列的论坛</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../releasing_course/index.html">9. Releasing Your Course</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../releasing_course/beta_testing.html">9.1. 贝塔测试</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../releasing_course/course_launching.html">9.2. 课程发布事宜</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../releasing_course/staff_debug_info.html">9.3. 员工调试信息</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../running_course/index.html">10. Running Your Course</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/course_staffing.html">10.1. 安置职工</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/course_enrollment.html">10.2. 招生</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/discussions.html">10.3. 管理课程讨论项目</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/discussions_students.html">10.4. 参与课程讨论</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/discussion_guidance_moderators.html">10.5. 论坛协调员指南</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/bulk_email.html">10.6. 大宗邮件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/course_wiki.html">10.7. 使用课程维基</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/course_data.html">10.8. 课程数据</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/course_student.html">10.9. 学生数据</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/course_answers.html">10.10. 回答问题数据</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/course_grades.html">10.11. 学生成绩与成绩评定</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/checking_student_progress.html">10.12. 总成绩计算与证书发放</a></li>
+</ul>
+</li>
+</ul>
+
+        
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top">
+        <i data-toggle="wy-nav-top" class="icon icon-reorder"></i>
+        <a href="/">Building and Running an Open edX Course</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <ul class="wy-breadcrumbs">
+  <li><a href="../index.html">Table of Contents</a> &raquo;</li>
+  <li><a href="">6.31. 随机内容块</a></li>
+  
+</ul>
+<hr/>
+
+          
+  <div class="section" id="randomized-content-blocks">
+<span id="id1"></span><h1>6.31. 随机内容块<a class="headerlink" href="#randomized-content-blocks" title="Permalink to this headline">¶</a></h1>
+<p>如果你的课程中有 <a class="reference internal" href="../creating_content/libraries.html#content-libraries"><span>内容库</span></a> 能够使用并且你你能进入一个内容库并使用其中的内容，你就能引用那个库来创建一个随机分配给学生。</p>
+<p>要创建一个随机分配，你需增加一个或多个随机内容块到课程单元中。对于每个随机内容块指定一个将从其中获取内容的库，并指明将随机分配给每个学生的问题的数量和类型。</p>
+<p>你创建或能访问的内容库被列位于Studio首页的 <strong>Libraries</strong>
+标签上。内容库的更多详情请参照:ref:<cite>内容库</cite>.</p>
+<p>在课程中使用内容库组件的更多详情请参照这些主题：</p>
+<ul class="simple">
+<li><span class="xref std std-ref">在课程中使用来自库的组件</span></li>
+<li><span class="xref std std-ref">添加随机内容块到你的课程</span></li>
+<li><span class="xref std std-ref">在随机内容块中查看匹配组件</span></li>
+<li><span class="xref std std-ref">在随机内容块中编辑组件</span></li>
+<li><span class="xref std std-ref">获取库内容的最新版本</span></li>
+</ul>
+<div class="section" id="use-components-from-libraries-in-a-course">
+<span id="id2"></span><h2>6.31.1. 在课程中使用来自库的组件<a class="headerlink" href="#use-components-from-libraries-in-a-course" title="Permalink to this headline">¶</a></h2>
+<p>创建使用来自内容库的组件的随机分配，你至少要对你所使用的库有 <strong>用户</strong> 层的访问权。如果你不能访问库，你的课程团队中有对该库 <strong>管理员</strong> 的成员可以授予你访问权。</p>
+<p>你创建或能访问的内容库被列位于Studio首页的 <strong>Libraries</strong>
+标签上。内容库的更多详情请参照 <span class="xref std std-ref">内容库</span>.</p>
+<p>在你的课程中使用来自内容库的组件包括两个步骤。</p>
+<ol class="arabic simple">
+<li><span class="xref std std-ref">激活内容库</span></li>
+<li><span class="xref std std-ref">添加一个随机内容块到你的课程</span></li>
+</ol>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">在添加一个随机内容块到你的课程后，注意如果在源库中的组件变更了，如果你想让组件保持与库的同步的话你必须联网手动更新在课程中的组件。</p>
+</div>
+<p>关于在你的课程中如何管理随机内容块，请参照以下主题。</p>
+<ul class="simple">
+<li><span class="xref std std-ref">在随机内容块中查看匹配组件</span></li>
+<li><span class="xref std std-ref">在随机内容块中编辑组件</span></li>
+<li><span class="xref std std-ref">获取库内容的最新版本</span></li>
+</ul>
+<div class="section" id="enable-content-libraries">
+<span id="id3"></span><h3>6.31.1.1. 激活内容库<a class="headerlink" href="#enable-content-libraries" title="Permalink to this headline">¶</a></h3>
+<p>能够使用从在你的课程中的 :ref:<a href="#id4"><span class="problematic" id="id5">`</span></a>内容库&lt;Content Libraries&gt;`获得的随机组件之前，你必须激活库。</p>
+<ol class="arabic">
+<li><p class="first">在Studio中，打开你想在其中提供库内容的课程</p>
+</li>
+<li><p class="first">选择 <strong>设置</strong> 然后 <strong>高级设置</strong></p>
+</li>
+<li><p class="first">在 <strong>高级模块列表</strong> 域，把鼠标放在方括号中</p>
+</li>
+<li><p class="first">点击 <strong>保存修改</strong></p>
+<p>Studio重排你刚输入的规则键，在新一行中缩进它。</p>
+</li>
+</ol>
+<blockquote>
+<div><img alt="Advanced Module policy key &quot;library_content&quot;" src="../_images/ContentLibraries_AdvancedSetting.png" />
+</div></blockquote>
+</div>
+<div class="section" id="add-a-randomized-content-block-to-your-course">
+<span id="id6"></span><h3>6.31.1.2. 添加随机内容块到你的课程中<a class="headerlink" href="#add-a-randomized-content-block-to-your-course" title="Permalink to this headline">¶</a></h3>
+<p>在你 <a class="reference internal" href="#enable-content-libraries"><span>激活内容库</span></a> 后，你可以用随机内容块的高级组件添加库内容到你的课程中。</p>
+<ol class="arabic">
+<li><p class="first">在Studio中，打开你想从内容库中添加随机问题的课程。</p>
+</li>
+<li><p class="first">点击 <strong>内容</strong> 再点击 <strong>大纲</strong></p>
+</li>
+<li><p class="first">在你想添加一组随机问题的单元，点击 <strong>添加新的组件</strong></p>
+</li>
+<li><p class="first">点击 <strong>高级</strong> 再点击 <strong>随机内容块</strong></p>
+<p>随机内容块就添加到你的单元中了</p>
+</li>
+<li><p class="first">点击 <strong>编辑</strong> 图标</p>
+</li>
+<li><p class="first">在随机内容块设置中，指定你想添加到块中的内容的细节部分</p>
+</li>
+</ol>
+<blockquote>
+<div><ul>
+<li><p class="first">对于 <strong>计数</strong> 输入你要显示给每位学生的问题数</p>
+</li>
+<li><p class="first">对于 <strong>显示名称</strong> 输入你想让学生从这个块中看到的名称。</p>
+</li>
+<li><p class="first">对于 <strong>库</strong> 选择你想从其中获取问题的库</p>
+</li>
+<li><p class="first">对于 <strong>问题类型</strong> 从下拉列表中选择你想从库中获取问题的类型。选择 <strong>任意类型</strong> ，如果你不想指定特定的问题类型。</p>
+<img alt="Problem type dropdown list in randomized content block settings" src="../_images/ContentLibraries_RCBSelectProblemType.png" />
+</li>
+<li><p class="first">对于 <strong>记分</strong> 从下拉列表中选择 <strong>True</strong> 或 <strong>False</strong> 来表明分配是否会被评分。</p>
+</li>
+</ul>
+</div></blockquote>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">评分取决于该单元的章节或小章节。如果小章节或章节不被评分，选择 <strong>True</strong> 也不会有影响。选择 <strong>False</strong> 意味着即使小章节或章节被评分，这次分配也不会被评分。</p>
+</div>
+<ol class="arabic simple" start="7">
+<li>点击 <strong>保存</strong> 当你结束指定随机内容块的细节时。</li>
+</ol>
+<p>查看匹配你的过滤器设置的源库的组件列表，请参照:ref:<cite>查看在随机内容块中的匹配组件</cite></p>
+<p>查看Studio中库的所有内容，请参照:ref:<cite>查看库内容</cite></p>
+</div>
+</div>
+<div class="section" id="view-the-matching-components-in-a-randomized-content-block">
+<span id="id7"></span><h2>6.31.2. 在随机内容块中查看匹配组件<a class="headerlink" href="#view-the-matching-components-in-a-randomized-content-block" title="Permalink to this headline">¶</a></h2>
+<p>在使用随机内容块的单元中，你可以查看匹配在块中指定的过滤器的所有组件的列表。</p>
+<p>例如，如果你想指定一个提供给每位学生带3个选项的问题的随机内容块，你会看到存在引用库里的所有选择题。换名话说，你可以看到库里的能提供给学生的每道题。</p>
+<ol class="arabic">
+<li><p class="first">在Studio中，导航到包含引用了你的库的随机内容块的单元</p>
+</li>
+<li><p class="first">在随机内容块中，点击 <strong>查看</strong> 图标</p>
+<img alt="The View button for a randomized content block" src="../_images/ContentLibraries_ViewMatching.png" />
+<p>在随机内容块中你会看到能匹配规则的所有组件。在组件列表顶部的文本表明了有多少随机选择并提供给学生的组件</p>
+</li>
+</ol>
+<p>在Studio中查看库内容请参照:ref:<cite>查看库内容</cite></p>
+<p>查看学生能看到的随机内容，请参照:ref:<cite>作为学生查看随机内容</cite></p>
+</div>
+<div class="section" id="view-the-randomized-content-as-a-student">
+<span id="id8"></span><h2>6.31.3. 作为学生查看随机内容<a class="headerlink" href="#view-the-randomized-content-as-a-student" title="Permalink to this headline">¶</a></h2>
+<p>查看作为学生能看到的来自随机内容块的组件的数量和类型，跟随在:ref:<a href="#id9"><span class="problematic" id="id10">`</span></a>单元预览`主题描述的步骤</p>
+<p>查看在库中的匹配组件的列表，请参照:ref:<cite>查看在随机内容块中的匹配组件</cite></p>
+<p>在Studio中查看库的所有内容，请参照:ref:<cite>查看库内容</cite></p>
+</div>
+<div class="section" id="edit-components-in-randomized-content-blocks">
+<span id="id11"></span><h2>6.31.4. 编辑在随机内容块中的组件<a class="headerlink" href="#edit-components-in-randomized-content-blocks" title="Permalink to this headline">¶</a></h2>
+<p>在Studio中，在使用随机内容块的课程单元中，你可以在随机内容块中采用在你的课程中的对其他任意组件使用的方法来编辑组件。</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">注意如果你更改组件的 <strong>编辑</strong> 图标，如果你用来自库中的组件的最新版本来更新随机内容块，这些更改会被覆盖。仅对组件的 <strong>设置</strong> 图标的更改在更新后会被保持。:ref:关于如何在随机内容块中获得库内容的最新版本，请参照`获得库内容最新版本`</p>
+</div>
+<p>在随机内容块里提供的组件设置最初继承自内容库的组件。在随机内容块中，你可以修改设置使得它们与库中的源组件不同。</p>
+<p>你也可以将组件设置重置。如果组件的设置被修改过，紧接着设置域就会有 <strong>清除</strong> 图标显示。</p>
+<blockquote>
+<div><img alt="Clear button in the course component field reverts value to library value." src="../_images/ContentLibraries_ResetComponentField.png" />
+</div></blockquote>
+<p>点击**清除**来恢复默认设置。</p>
+</div>
+<div class="section" id="get-the-latest-version-of-library-content">
+<span id="id12"></span><h2>6.31.5. 获取库内容的最新版本<a class="headerlink" href="#get-the-latest-version-of-library-content" title="Permalink to this headline">¶</a></h2>
+<p>如果你库的内容，而该库又被一个或多个课程中的随机内容块引用，这些课程不会自动采用更新的内容。你可以把库里的随机内容块更新到最近版本。</p>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">在发布后若你想更新问题时要小心。你对已发布的问题做修改会影响该课程中学生的体验，以及课程数据的分析。</p>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">注意，即使你能够保持在随机内容块中的组件的设置，在组件中对 <strong>编辑</strong> 标签的更改还是会被覆盖，如果你将组件更新到最新的版本的话。如果你不将随机内容块中的组件更新到库中的最新版本，你就什么也不用做。</p>
+</div>
+<ul>
+<li><p class="first">如果随机内容块中的组件没有在课程大纲中被编辑，当你下一次在课程大纲中打开随机内容块时，你会看到一条消息，提示在与库中的组件作对比时，你的组件已过期。</p>
+<img alt="Error message shown when the source library has changed, with the Update Now link circled." src="../_images/ContentLibraries_ComponentUpdateNow.png" />
+<p>更新你的随机内容块组件到内容库中的最新版本请点击**立即更新**</p>
+<p>随机内容块更新到它引用的库中的最新内容。</p>
+</li>
+<li><p class="first">如果你编辑的只是课程中的随机内容块的组件的设置，使得它们与库中原始版本不相同，点击 <strong>立即更新</strong> 不会失去更改。. 这种情况下在大纲中的随机内容块中的更改会被保留，但是在组件中的修改域旁边会有一个 <strong>清除</strong> 按钮变得可用。然而，对随机内容块中的组件的 <strong>编辑</strong> 标签的任何更改会丢失，如果你点击 <strong>立即更新</strong> 获取最新版本的库。</p>
+<img alt="Clear icon in the course component field reverts value to library value." src="../_images/ContentLibraries_ResetComponentField.png" />
+<p>为了清除任何对课程大纲所做的编辑并把你做过编辑的组件更新到库中的版本，请点击 <strong>清除</strong></p>
+<p>组件域的值被重置成库中的现有值。</p>
+</li>
+</ul>
+</div>
+</div>
+
+
+          <footer>
+  
+    <div class="rst-footer-buttons">
+      
+        <a href="recommenderXBlock.html" class="btn btn-neutral float-right" title="6.32. 推荐系统"/>Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="protein_builder.html" class="btn btn-neutral" title="6.30. Protex蛋白质构建工具"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <p>
+      &copy; Copyright 2015, edX.
+  </p>
+
+ 
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+</body>
+</html>

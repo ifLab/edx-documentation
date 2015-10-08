@@ -1,0 +1,464 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>4.6. 创建课程组件 &mdash; Building and Running an Open edX Course  documentation</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="../_static/css/favicon.ico"/>
+  
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  
+  
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:'../',
+        VERSION:'',
+        COLLAPSE_INDEX:false,
+        FILE_SUFFIX:'.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+
+    
+
+  
+
+  
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+
+  
+    <link rel="top" title="Building and Running an Open edX Course  documentation" href="../index.html"/>
+        <link rel="up" title="4. Developing Your Course" href="index.html"/>
+        <link rel="next" title="4.7. 设置内容可见性" href="controlling_content_visibility.html"/>
+        <link rel="prev" title="4.5. 构建课程单元" href="course_units.html"/> 
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-nav-search">
+        <a href="../index.html" class="icon icon-home"> Building and Running an Open edX Course</a>
+        <form class="wy-form" action="../search.html" method="get">
+  <input type="text" name="q" placeholder="Search document" />
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix">
+        
+        
+            <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../front_matter/index.html">1. For Your Information</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../front_matter/read_me.html">1.1. Read Me</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../front_matter/preface.html">1.2. 序言</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../front_matter/change_log.html">1.3. Change Log</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../front_matter/browsers.html">1.4. edX浏览器支持</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/index.html">2. Getting Started</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../getting_started/dashboard_acctsettings_profile.html">2.1. 搜索你的仪表板、设置和配置文件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../getting_started/get_started.html">2.2. Getting Started with Studio</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../getting_started/accessibility.html">2.3. 创建无障碍课程指南</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../building_course/index.html">3. Setting up Your Course</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/creating_new_course.html">3.1. 新建课程</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/scheduling_course.html">3.2. 设置开始和结束日期</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/setting_up_student_view.html">3.3. 设置课程细节</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/course_prerequisites.html">3.4. 设定入学要求</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/licensing_course.html">3.5. 授权课程</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/course_files.html">3.6. 给课程添加文件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/handouts_updates.html">3.7. 添加课程补充资料及讲义</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/pages.html">3.8. 为课程添加页面</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/textbooks.html">3.9. 添加课本</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/establish_grading_policy.html">3.10. 设定计分政策</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/course_rerun.html">3.11. 重开课程</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/export_import_course.html">3.12. 输出和导入课程</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">4. Developing Your Course</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="workflow.html">4.1. 开始创建课程内容</a></li>
+<li class="toctree-l2"><a class="reference internal" href="course_outline.html">4.2. 创建课程大纲</a></li>
+<li class="toctree-l2"><a class="reference internal" href="course_sections.html">4.3. 创建课程章节</a></li>
+<li class="toctree-l2"><a class="reference internal" href="course_subsections.html">4.4. 构建课程小节</a></li>
+<li class="toctree-l2"><a class="reference internal" href="course_units.html">4.5. 构建课程单元</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="">4.6. 创建课程组件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="controlling_content_visibility.html">4.7. 设置内容可见性</a></li>
+<li class="toctree-l2"><a class="reference internal" href="testing_courseware.html">4.8. 测试您的课程内容</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../creating_content/index.html">5. Creating Course Content</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../creating_content/create_html_component.html">5.1. 如何使用HTML组件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../creating_content/create_video.html">5.2. 创建影片组件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../creating_content/create_discussion.html">5.3. 创建讨论组件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../creating_content/create_problem.html">5.4. 创建问题组件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../creating_content/libraries.html">5.5. 内容库</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../exercises_tools/index.html">6. Creating Exercises and Tools</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/create_exercises_and_tools.html">6.1. 创建练习和工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/annotation.html">6.2. 注释问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/checkbox.html">6.3. 复选框问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/chemical_equation.html">6.4. 化学方程式问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/circuit_schematic_builder.html">6.5. 电路原理图搭建问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/conditional_module.html">6.6. 条件模板</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/custom_javascript.html">6.7. 自定义JavaScript问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/drag_and_drop.html">6.8. 拖放问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/dropdown.html">6.9. 下拉问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/external_graders.html">6.10. 图像映射输入问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/full_screen_image.html">6.11. 全屏图像工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/gene_explorer.html">6.12. Gene Explorer工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/google_calendar.html">6.13. 谷歌日历工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/google_docs.html">6.14. 谷歌云文件工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/google_hangouts.html">6.15. 谷歌即时群聊工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/iframe.html">6.16. IFrame工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/image_mapped_input.html">6.17. 图像映射输入问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/lti_component.html">6.18. LTI 组件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/math_expression_input.html">6.19. 数学表达式输入问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/molecule_editor.html">6.20. 分子编辑器</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/molecule_viewer.html">6.21. 分子浏览器</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/multiple_choice.html">6.22. 多项选择问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/mult_choice_num_input.html">6.23. 多项选择和数字输入题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/numerical_input.html">6.24. 数值输入问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/open_response_assessments/index.html">6.25. Open Response Assessments</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/periodic_table.html">6.26. 元素周期表工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/poll.html">6.27. 投票工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/problem_with_hint.html">6.28. 带适应性提示的问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/problem_in_latex.html">6.29. LaTeX问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/protein_builder.html">6.30. Protex蛋白质构建工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/randomized_content_blocks.html">6.31. 随机内容块</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/recommenderXBlock.html">6.32. 推荐系统</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/student_notes.html">6.33. 学生笔记工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/text_input.html">6.34. 文本输入问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/word_cloud.html">6.35. 文字云工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/custom_python.html">6.36. 自定义评分器问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/zooming_image.html">6.37. 图像放大工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/mathjax.html">6.38. Studio中MathJax的简要介绍</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../content_experiments/index.html">7. Creating Content Experiments</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../content_experiments/content_experiments_overview.html">7.1. 内容实验概述</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../content_experiments/content_experiments_configure.html">7.2. Configure Your Course for Content Experiments</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../content_experiments/content_experiments_add.html">7.3. Add Content Experiments to Your Course</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../content_experiments/content_experiments_view.html">7.4. 测试内容实验</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../cohorts/index.html">8. Including Student Cohorts</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../cohorts/cohorts_overview.html">8.1. 使用队列功能建立课程群</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cohorts/cohort_config.html">8.2. 启用、配置分队模式</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cohorts/cohorted_courseware.html">8.3. 创建特定队列课件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cohorts/cohorts_setup_discussions.html">8.4. 在包含队列的课程中设置论坛</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cohorts/cohorts_manage_discussions.html">8.5. 管理有学生队列的论坛</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../releasing_course/index.html">9. Releasing Your Course</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../releasing_course/beta_testing.html">9.1. 贝塔测试</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../releasing_course/course_launching.html">9.2. 课程发布事宜</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../releasing_course/staff_debug_info.html">9.3. 员工调试信息</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../running_course/index.html">10. Running Your Course</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/course_staffing.html">10.1. 安置职工</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/course_enrollment.html">10.2. 招生</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/discussions.html">10.3. 管理课程讨论项目</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/discussions_students.html">10.4. 参与课程讨论</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/discussion_guidance_moderators.html">10.5. 论坛协调员指南</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/bulk_email.html">10.6. 大宗邮件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/course_wiki.html">10.7. 使用课程维基</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/course_data.html">10.8. 课程数据</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/course_student.html">10.9. 学生数据</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/course_answers.html">10.10. 回答问题数据</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/course_grades.html">10.11. 学生成绩与成绩评定</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/checking_student_progress.html">10.12. 总成绩计算与证书发放</a></li>
+</ul>
+</li>
+</ul>
+
+        
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top">
+        <i data-toggle="wy-nav-top" class="icon icon-reorder"></i>
+        <a href="/">Building and Running an Open edX Course</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <ul class="wy-breadcrumbs">
+  <li><a href="../index.html">Table of Contents</a> &raquo;</li>
+  <li><a href="">4.6. 创建课程组件</a></li>
+  
+</ul>
+<hr/>
+
+          
+  <div class="section" id="developing-course-components">
+<span id="id1"></span><h1>4.6. 创建课程组件<a class="headerlink" href="#developing-course-components" title="Permalink to this headline">¶</a></h1>
+<p>本章主要描述如何创建课程组件：</p>
+<ul class="simple">
+<li><a class="reference internal" href="#what-is-a-component">What is a Component</a></li>
+<li><a class="reference internal" href="#add-a-component">Add a Component</a></li>
+<li><a class="reference internal" href="#edit-a-component">Edit a Component</a></li>
+<li><a class="reference internal" href="#duplicate-a-component">Duplicate a Component</a></li>
+<li><a class="reference internal" href="#delete-a-component">Delete a Component</a></li>
+<li><a class="reference internal" href="#components-that-contain-other-components">Components that Contain Other Components</a></li>
+</ul>
+<p>要了解更多有关特殊组件类型的信息，请参考以下章节内容：</p>
+<ul class="simple">
+<li><a class="reference internal" href="../creating_content/index.html#creating-course-content-index"><span>Creating Course Content</span></a></li>
+<li><a class="reference internal" href="../exercises_tools/index.html#exercises-and-tools-index"><span>Creating Exercises and Tools</span></a></li>
+</ul>
+<div class="section" id="what-is-a-component">
+<span id="id2"></span><h2>4.6.1. 什么是组件<a class="headerlink" href="#what-is-a-component" title="Permalink to this headline">¶</a></h2>
+<p>课程组件是单元的组成部分，包括了您最具体的课程内容。一个单元可能包含一个或多个课程组件。</p>
+<p>学生能看见某个单元下所有元素的名称，只需将鼠标停留在课程进度条的某个单元上即可。</p>
+<img alt="Image of the component list for a unit" src="../_images/ComponentNames_CourseRibbon.png" />
+<p>系统默认的课程组件有以下四种：</p>
+<ul class="simple">
+<li><strong>讨论组件</strong> 该组件在为您的课程提供讨论空间，以便学生就某节课交换意见。</li>
+<li><strong>HTML组件</strong> 该组件是您能够给课程添加文本、图像以及其他不同类型的学习工具。该板块中的内容默认为HTML格式。</li>
+<li><strong>问答组件</strong> 该组件方便您布置各种练习题或进行课堂提问，从简单的单项选择，到复杂的电路原理图的练习均可。</li>
+<li><strong>视频组件</strong> 该组件包括您在课程中要播放的视频。</li>
+</ul>
+</div>
+<div class="section" id="add-a-component">
+<span id="id3"></span><h2>4.6.2. 添加组件<a class="headerlink" href="#add-a-component" title="Permalink to this headline">¶</a></h2>
+<p>在 <strong>添加新组件</strong> 选项下单击您想添加的组件类型以添加组件。</p>
+<img alt="Image of adding a new component" src="../_images/AddNewComponent.png" />
+<p>更多信息请参考相应组件的软件文档：</p>
+<ul class="simple">
+<li><a class="reference internal" href="../creating_content/create_discussion.html#working-with-discussion-components"><span>创建讨论组件</span></a></li>
+<li><a class="reference internal" href="../creating_content/create_html_component.html#working-with-html-components"><span>如何使用HTML组件</span></a></li>
+<li><a class="reference internal" href="../creating_content/create_problem.html#working-with-problem-components"><span>创建问题组件</span></a></li>
+<li><a class="reference internal" href="../creating_content/create_video.html#working-with-video-components"><span>创建影片组件</span></a></li>
+</ul>
+<p>添加组件以后，您必须
+<a class="reference internal" href="course_units.html#publish-a-unit"><span>publish the unit</span></a> ，学生才能看到。</p>
+</div>
+<div class="section" id="edit-a-component">
+<span id="id4"></span><h2>4.6.3. 编辑组件<a class="headerlink" href="#edit-a-component" title="Permalink to this headline">¶</a></h2>
+<p>点击 <strong>编辑</strong> 以编辑组件。</p>
+<img alt="Image of a unit with Edit icon circled" src="../_images/unit-edit.png" />
+<p>按照指导编辑组件。</p>
+<p>编辑组件之后，您需要
+<a class="reference internal" href="course_units.html#publish-a-unit"><span>publish the unit</span></a> 让学生看到组件。</p>
+<div class="section" id="id5">
+<h3>4.6.3.1. 设置组件的显示名<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h3>
+<p>所有组件都有显示名，当编辑组件时，显示名会出现在标题栏。
+当学生将鼠标指针停留在某个单元标记上时，也能看见组件的显示名。</p>
+<p>如何设置组件的显示名：</p>
+<ol class="arabic simple">
+<li>编辑组件</li>
+<li>单击 <strong>设置</strong></li>
+<li>在 <strong>显示名</strong> 一栏输入名称内容</li>
+</ol>
+<blockquote>
+<div><img alt="Image of the Display Name field for a component." src="../_images/display-name.png" />
+</div></blockquote>
+<ol class="arabic simple" start="4">
+<li>单击 <strong>保存</strong></li>
+</ol>
+<p>不同的板块类型在“设置”对话框中的字段不同，但都有 <strong>显示名</strong> 字段。</p>
+</div>
+</div>
+<div class="section" id="duplicate-a-component">
+<span id="id6"></span><h2>4.6.4. 复制组件<a class="headerlink" href="#duplicate-a-component" title="Permalink to this headline">¶</a></h2>
+<p>当复制某个板块时，该组件的正下方会出现一个新拷贝，您可对它进行操作。
+通常而言，复制组件然后编辑拷贝能更快地创建新内容。</p>
+<p>单击组件标题栏中的“复制”图标：</p>
+<img alt="Image of a unit with Duplicate icon circled" src="../_images/unit-dup.png" />
+<p>按照提示编辑您的组件。</p>
+<p>复制组件之后，您需要重新 <a class="reference internal" href="course_units.html#publish-a-unit"><span>publish the unit</span></a> ，学生才能看到新的组件。</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">您不能复制内容实验。</p>
+</div>
+</div>
+<div class="section" id="delete-a-component">
+<span id="id7"></span><h2>4.6.5. 删除组件<a class="headerlink" href="#delete-a-component" title="Permalink to this headline">¶</a></h2>
+<div class="admonition caution">
+<p class="first admonition-title">Caution</p>
+<p class="last">删除组件前请再次确认是否真的需要删除。删除操作是不可逆的。</p>
+</div>
+<p>遵循以下步骤删除组件：</p>
+<ol class="arabic simple">
+<li>点击标题旁边的删除按钮：</li>
+</ol>
+<img alt="Image of a unit with Delete icon circled" src="../_images/unit-delete.png" />
+<ol class="arabic simple" start="2">
+<li>当确认框弹出时，点击 <strong>是的，删除这个组件</strong> 。</li>
+</ol>
+<p>组件删除后，您需要重新 <a class="reference internal" href="course_units.html#publish-a-unit"><span>publish the unit</span></a> ，否则学生仍能看到已删除的组件。</p>
+</div>
+<div class="section" id="components-that-contain-other-components">
+<span id="id8"></span><h2>4.6.6. 组件嵌套<a class="headerlink" href="#components-that-contain-other-components" title="Permalink to this headline">¶</a></h2>
+<p>在特定情况下，您可能会设置组件中嵌套另一个组件。
+例如，如果您希望组件中包含条件组件或内容实验，您必须在创建嵌套组件。
+详情请参考
+<a class="reference internal" href="../content_experiments/index.html#creating-content-experiments"><span>Creating Content Experiments</span></a> for more information.</p>
+<p>包含其他组件的组件称为 <strong>父组件</strong>；被包含的组件称为 <strong>子组件</strong> 。</p>
+<p>在单元页中，父组件显示组件名和 <strong>查看</strong> 链接，如下：</p>
+<img alt="Image of a unit page with a parent component" src="../_images/component_container.png" />
+<div class="section" id="id9">
+<h3>4.6.6.1. 编辑父组件<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h3>
+<p>父组件不直接包含内容。HTML文件、视频和程序都包含在子组件中。</p>
+<p>父组件显示组件名。当单元为草稿或属性为私有时，点击父组件中的 <strong>编辑</strong> 项更改组件名。</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">特殊类型的父组件，如内容实验，可以编辑附加属性。</p>
+</div>
+</div>
+<div class="section" id="id10">
+<h3>4.6.6.2. 查看子组件<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h3>
+<p>当您在父组件中点击 <strong>查看</strong> 时，父组件页面开启，页面中显示所有的子组件。
+下图中子组件含有HTML组件和视频文件：</p>
+<img alt="Image of an expanded child component" src="../_images/child-components-a.png" />
+<p>单击子组件名旁边的箭头可以收起组件内容：</p>
+<img alt="Image of a child component page" src="../_images/child-components.png" />
+<p>再次点击箭头可以展开内容：</p>
+<p>详情请参阅：</p>
+<ul class="simple">
+<li><a class="reference internal" href="#edit-a-component">Edit a Component</a></li>
+<li><a href="#id14"><span class="problematic" id="id15">`Set the Display Name for a Component`_</span></a></li>
+<li><a class="reference internal" href="#duplicate-a-component">Duplicate a Component</a></li>
+<li><a class="reference internal" href="#delete-a-component">Delete a Component</a></li>
+</ul>
+</div>
+<div class="section" id="id11">
+<h3>4.6.6.3. 添加子组件<a class="headerlink" href="#id11" title="Permalink to this headline">¶</a></h3>
+<p>如果组件内含的单元为私有属性或草稿，您可以为此组件添加子组件。</p>
+<p>打开父组件页面，在 <strong>添加新组件</strong> 栏中选择您想添加的子组件类型。</p>
+<img alt="Image of adding a new component" src="../_images/AddNewComponent.png" />
+<p>更多信息请查阅：</p>
+<ul class="simple">
+<li><a class="reference internal" href="../creating_content/create_discussion.html#working-with-discussion-components"><span>创建讨论组件</span></a></li>
+<li><a class="reference internal" href="../creating_content/create_html_component.html#working-with-html-components"><span>如何使用HTML组件</span></a></li>
+<li><a class="reference internal" href="../creating_content/create_problem.html#working-with-problem-components"><span>创建问题组件</span></a></li>
+<li><a class="reference internal" href="../creating_content/create_video.html#working-with-video-components"><span>创建影片组件</span></a></li>
+</ul>
+</div>
+<div class="section" id="xml">
+<h3>4.6.6.4. 组件中的XML文件<a class="headerlink" href="#xml" title="Permalink to this headline">¶</a></h3>
+<p>如果您用XML创建组件，您可以将XML课程导入Studio中以确认其结构是否符合您的要求。</p>
+<p>更多关于使用XML文件的信息，包括关于术语的信息，请参阅 <a class="reference external" href="http://edx.readthedocs.org/projects/devdata/en/latest/course_data_formats/course_xml.html">edX XML Tutorial</a> 。</p>
+<p>下图是Studio中用来创建单元和组件的XML。</p>
+<p>单元的XML是：</p>
+<div class="highlight-xml"><div class="highlight"><pre><span class="nt">&lt;vertical</span> <span class="na">display_name=</span><span class="s">&quot;Unit 1&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;html</span> <span class="na">url_name=</span><span class="s">&quot;6a5cf0ea41a54b209e0815147896d1b2&quot;</span><span class="nt">/&gt;</span>
+    <span class="nt">&lt;vertical</span> <span class="na">url_name=</span><span class="s">&quot;131a499ddaa3474194c1aa2eced34455&quot;</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;/vertical&gt;</span>
+</pre></div>
+</div>
+<p>上例中的 <code class="docutils literal"><span class="pre">&lt;vertical</span> <span class="pre">url_name=&quot;131a499ddaa3474194c1aa2eced34455&quot;/&gt;</span></code> 元素引用自父组件。</p>
+<div class="highlight-xml"><div class="highlight"><pre><span class="nt">&lt;vertical</span> <span class="na">display_name=</span><span class="s">&quot;Parent Component&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;vertical</span> <span class="na">url_name=</span><span class="s">&quot;2758bbc495dd40d59050da15b40bd9a5&quot;</span><span class="nt">/&gt;</span>
+    <span class="nt">&lt;vertical</span> <span class="na">url_name=</span><span class="s">&quot;c5c8b27c2c5546e784432f3b2b6cf2ea&quot;</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;/vertical&gt;</span>
+</pre></div>
+</div>
+<p>两个引用自父组件的vertical包含了您课程中的实际内容。</p>
+<div class="highlight-xml"><div class="highlight"><pre><span class="nt">&lt;vertical</span> <span class="na">display_name=</span><span class="s">&quot;Child Component A&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;html</span> <span class="na">url_name=</span><span class="s">&quot;4471618afafb45bfb86cbe511973e225&quot;</span><span class="nt">/&gt;</span>
+    <span class="nt">&lt;video</span> <span class="na">url_name=</span><span class="s">&quot;fbd800d0bdbd4cb69ac70c47c9f699e1&quot;</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;/vertical&gt;</span>
+</pre></div>
+</div>
+<div class="highlight-xml"><div class="highlight"><pre><span class="nt">&lt;vertical</span> <span class="na">display_name=</span><span class="s">&quot;Child Component B&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;html</span> <span class="na">url_name=</span><span class="s">&quot;dd6ef295fda74a639842e1a49c66b2c7&quot;</span><span class="nt">/&gt;</span>
+    <span class="nt">&lt;problem</span> <span class="na">url_name=</span><span class="s">&quot;b40ecbe4ed1b4280ae93e2a158edae6f&quot;</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;/vertical&gt;</span>
+</pre></div>
+</div>
+<p>理论上，组件嵌套的层数是无限的。</p>
+</div>
+<div class="section" id="id12">
+<h3>4.6.6.5. 学生视角查看嵌套组件<a class="headerlink" href="#id12" title="Permalink to this headline">¶</a></h3>
+<p>在学生视角中，所有父组件和子组件都陈列在单元页面中。
+下图是学生视角中的单元界面：</p>
+<img alt="Image of the student's view of nested components" src="../_images/nested_components_student_view.png" />
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">嵌套组件的可见性取决于所在单元的可见性。父单元必须是对学生公开的属性，学生才能看到嵌套组件。
+更多信息请参阅： <a class="reference internal" href="course_units.html#unit-states-and-visibility-to-students"><span>单元发布状态与对学生可见性</span></a> 。</p>
+</div>
+</div>
+</div>
+<div class="section" id="id13">
+<h2>4.6.7. 重组子组件<a class="headerlink" href="#id13" title="Permalink to this headline">¶</a></h2>
+<p>与课程大纲中其他部件一样，您可以通过拽操作重组子组件。
+将鼠标悬停在屏幕右边的元素上，直到光标变成四向箭头。
+然后点击并拖拽元素到您希望的位置。</p>
+<p>此外，当您对组件进行多级嵌套时，您可以将子组件拖拽到不同的父组件下。
+例如，您可以选择A子组件中的视频组件，然后将它拖进B子组件。
+选择视频组件，拖拽到B组件然后松开右键。组件就会出现在新的位置里。</p>
+<img alt="Image of dragging a child component to a new location" src="../_images/drag_child_component.png" />
+<p>您也可以将子组件拖拽出父组件，该组件就和父组件处于同一层级了。</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">您不能将内容实验拖拽出测试组。</p>
+</div>
+</div>
+</div>
+
+
+          <footer>
+  
+    <div class="rst-footer-buttons">
+      
+        <a href="controlling_content_visibility.html" class="btn btn-neutral float-right" title="4.7. 设置内容可见性"/>Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="course_units.html" class="btn btn-neutral" title="4.5. 构建课程单元"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <p>
+      &copy; Copyright 2015, edX.
+  </p>
+
+ 
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+</body>
+</html>

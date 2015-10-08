@@ -1,0 +1,670 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>10.6. 大宗邮件 &mdash; Building and Running an Open edX Course  documentation</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="../_static/css/favicon.ico"/>
+  
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  
+  
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:'../',
+        VERSION:'',
+        COLLAPSE_INDEX:false,
+        FILE_SUFFIX:'.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+
+    
+
+  
+
+  
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+
+  
+    <link rel="top" title="Building and Running an Open edX Course  documentation" href="../index.html"/>
+        <link rel="up" title="10. Running Your Course" href="index.html"/>
+        <link rel="next" title="10.7. 使用课程维基" href="course_wiki.html"/>
+        <link rel="prev" title="10.5. 论坛协调员指南" href="discussion_guidance_moderators.html"/> 
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-nav-search">
+        <a href="../index.html" class="icon icon-home"> Building and Running an Open edX Course</a>
+        <form class="wy-form" action="../search.html" method="get">
+  <input type="text" name="q" placeholder="Search document" />
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix">
+        
+        
+            <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../front_matter/index.html">1. For Your Information</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../front_matter/read_me.html">1.1. Read Me</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../front_matter/preface.html">1.2. 序言</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../front_matter/change_log.html">1.3. Change Log</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../front_matter/browsers.html">1.4. edX浏览器支持</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/index.html">2. Getting Started</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../getting_started/dashboard_acctsettings_profile.html">2.1. 搜索你的仪表板、设置和配置文件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../getting_started/get_started.html">2.2. Getting Started with Studio</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../getting_started/accessibility.html">2.3. 创建无障碍课程指南</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../building_course/index.html">3. Setting up Your Course</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/creating_new_course.html">3.1. 新建课程</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/scheduling_course.html">3.2. 设置开始和结束日期</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/setting_up_student_view.html">3.3. 设置课程细节</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/course_prerequisites.html">3.4. 设定入学要求</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/licensing_course.html">3.5. 授权课程</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/course_files.html">3.6. 给课程添加文件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/handouts_updates.html">3.7. 添加课程补充资料及讲义</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/pages.html">3.8. 为课程添加页面</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/textbooks.html">3.9. 添加课本</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/establish_grading_policy.html">3.10. 设定计分政策</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/course_rerun.html">3.11. 重开课程</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/export_import_course.html">3.12. 输出和导入课程</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../developing_course/index.html">4. Developing Your Course</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/workflow.html">4.1. 开始创建课程内容</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/course_outline.html">4.2. 创建课程大纲</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/course_sections.html">4.3. 创建课程章节</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/course_subsections.html">4.4. 构建课程小节</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/course_units.html">4.5. 构建课程单元</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/course_components.html">4.6. 创建课程组件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/controlling_content_visibility.html">4.7. 设置内容可见性</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/testing_courseware.html">4.8. 测试您的课程内容</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../creating_content/index.html">5. Creating Course Content</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../creating_content/create_html_component.html">5.1. 如何使用HTML组件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../creating_content/create_video.html">5.2. 创建影片组件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../creating_content/create_discussion.html">5.3. 创建讨论组件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../creating_content/create_problem.html">5.4. 创建问题组件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../creating_content/libraries.html">5.5. 内容库</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../exercises_tools/index.html">6. Creating Exercises and Tools</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/create_exercises_and_tools.html">6.1. 创建练习和工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/annotation.html">6.2. 注释问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/checkbox.html">6.3. 复选框问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/chemical_equation.html">6.4. 化学方程式问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/circuit_schematic_builder.html">6.5. 电路原理图搭建问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/conditional_module.html">6.6. 条件模板</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/custom_javascript.html">6.7. 自定义JavaScript问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/drag_and_drop.html">6.8. 拖放问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/dropdown.html">6.9. 下拉问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/external_graders.html">6.10. 图像映射输入问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/full_screen_image.html">6.11. 全屏图像工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/gene_explorer.html">6.12. Gene Explorer工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/google_calendar.html">6.13. 谷歌日历工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/google_docs.html">6.14. 谷歌云文件工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/google_hangouts.html">6.15. 谷歌即时群聊工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/iframe.html">6.16. IFrame工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/image_mapped_input.html">6.17. 图像映射输入问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/lti_component.html">6.18. LTI 组件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/math_expression_input.html">6.19. 数学表达式输入问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/molecule_editor.html">6.20. 分子编辑器</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/molecule_viewer.html">6.21. 分子浏览器</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/multiple_choice.html">6.22. 多项选择问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/mult_choice_num_input.html">6.23. 多项选择和数字输入题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/numerical_input.html">6.24. 数值输入问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/open_response_assessments/index.html">6.25. Open Response Assessments</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/periodic_table.html">6.26. 元素周期表工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/poll.html">6.27. 投票工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/problem_with_hint.html">6.28. 带适应性提示的问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/problem_in_latex.html">6.29. LaTeX问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/protein_builder.html">6.30. Protex蛋白质构建工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/randomized_content_blocks.html">6.31. 随机内容块</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/recommenderXBlock.html">6.32. 推荐系统</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/student_notes.html">6.33. 学生笔记工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/text_input.html">6.34. 文本输入问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/word_cloud.html">6.35. 文字云工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/custom_python.html">6.36. 自定义评分器问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/zooming_image.html">6.37. 图像放大工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/mathjax.html">6.38. Studio中MathJax的简要介绍</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../content_experiments/index.html">7. Creating Content Experiments</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../content_experiments/content_experiments_overview.html">7.1. 内容实验概述</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../content_experiments/content_experiments_configure.html">7.2. Configure Your Course for Content Experiments</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../content_experiments/content_experiments_add.html">7.3. Add Content Experiments to Your Course</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../content_experiments/content_experiments_view.html">7.4. 测试内容实验</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../cohorts/index.html">8. Including Student Cohorts</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../cohorts/cohorts_overview.html">8.1. 使用队列功能建立课程群</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cohorts/cohort_config.html">8.2. 启用、配置分队模式</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cohorts/cohorted_courseware.html">8.3. 创建特定队列课件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cohorts/cohorts_setup_discussions.html">8.4. 在包含队列的课程中设置论坛</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cohorts/cohorts_manage_discussions.html">8.5. 管理有学生队列的论坛</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../releasing_course/index.html">9. Releasing Your Course</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../releasing_course/beta_testing.html">9.1. 贝塔测试</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../releasing_course/course_launching.html">9.2. 课程发布事宜</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../releasing_course/staff_debug_info.html">9.3. 员工调试信息</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">10. Running Your Course</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="course_staffing.html">10.1. 安置职工</a></li>
+<li class="toctree-l2"><a class="reference internal" href="course_enrollment.html">10.2. 招生</a></li>
+<li class="toctree-l2"><a class="reference internal" href="discussions.html">10.3. 管理课程讨论项目</a></li>
+<li class="toctree-l2"><a class="reference internal" href="discussions_students.html">10.4. 参与课程讨论</a></li>
+<li class="toctree-l2"><a class="reference internal" href="discussion_guidance_moderators.html">10.5. 论坛协调员指南</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="">10.6. 大宗邮件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="course_wiki.html">10.7. 使用课程维基</a></li>
+<li class="toctree-l2"><a class="reference internal" href="course_data.html">10.8. 课程数据</a></li>
+<li class="toctree-l2"><a class="reference internal" href="course_student.html">10.9. 学生数据</a></li>
+<li class="toctree-l2"><a class="reference internal" href="course_answers.html">10.10. 回答问题数据</a></li>
+<li class="toctree-l2"><a class="reference internal" href="course_grades.html">10.11. 学生成绩与成绩评定</a></li>
+<li class="toctree-l2"><a class="reference internal" href="checking_student_progress.html">10.12. 总成绩计算与证书发放</a></li>
+</ul>
+</li>
+</ul>
+
+        
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top">
+        <i data-toggle="wy-nav-top" class="icon icon-reorder"></i>
+        <a href="/">Building and Running an Open edX Course</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <ul class="wy-breadcrumbs">
+  <li><a href="../index.html">Table of Contents</a> &raquo;</li>
+  <li><a href="">10.6. 大宗邮件</a></li>
+  
+</ul>
+<hr/>
+
+          
+  <div class="section" id="id1">
+<span id="id2"></span><h1>10.6. 大宗邮件<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+<p>对于在 edx.org 上的课程，你可以直接从教导员面板发送大宗邮消息给课程的参与者。消息可以采用HTML格式，可以包含到视频课程的社交媒体页面和其他资料的链接。所有课程的贡献者，那些被指派了课程职员和教导员的角色的人，在课程运行前，运行时和运行后都可以用大宗邮件来与课程的参考者进行通信。
+这章内容包括以下主题.</p>
+<ul class="simple">
+<li><a class="reference internal" href="#id3">消息寻址</a></li>
+<li><a href="#id21"><span class="problematic" id="id22">`发送Email消息到课程参与者`_</span></a></li>
+<li><a class="reference internal" href="#id5">在消息中使用关键字</a></li>
+<li><a href="#id23"><span class="problematic" id="id24">`消息工作流程的状态`_</span></a></li>
+<li><a href="#id25"><span class="problematic" id="id26">`回顾发送消息`_</span></a></li>
+<li><a href="#id27"><span class="problematic" id="id28">`Email任务历史报告`_</span></a></li>
+<li><a href="#id29"><span class="problematic" id="id30">`给学生的示例消息`_</span></a></li>
+</ul>
+<div class="section" id="id3">
+<h2>10.6.1. 消息寻址<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
+<p>当你从教导员面板发送Email消息时，你通过选择以下预先定义的组来选择接收者：</p>
+<ul>
+<li><p class="first"><strong>自己</strong>, 在把消息发送给一个大组之前进行测试.</p>
+</li>
+<li><p class="first"><strong>职员和教导员</strong>, 与其他管理团队中的成员进行交流.</p>
+</li>
+<li><p class="first"><strong>所有 (学生，职员和教导员)</strong>, 与当前登记的学习和管理团队进行通信.</p>
+<p>Email消息改善给所有登记的学习，除了以下例外：</p>
+<ul class="simple">
+<li>在 edx.org 上注册时没有对账号激活邮件消息进行激活的学生.</li>
+<li>通过 <strong>邮件设置</strong> 链接决定退出接收Emial消息的学生。这个设置在 <strong>现有课程</strong> 面板上对每门课程都可用。</li>
+</ul>
+</li>
+</ul>
+<p>在你使用大宗邮件特性之前，要明白消息在它们被发送后 <strong>不能撤消</strong>.如果你计划把消息发送到所有的课程参与者，确保对每一个草稿都复查过，然后再通过把消息发送给自己来进行测试。</p>
+</div>
+<div class="section" id="send-bulk-email">
+<span id="id4"></span><h2>10.6.2. 发送邮件消息到课程参与者<a class="headerlink" href="#send-bulk-email" title="Permalink to this headline">¶</a></h2>
+<p>要发送Email消息到课程参与者:</p>
+<ol class="arabic simple">
+<li>查看你的课程的在线版本.</li>
+<li>点击 <strong>教导员</strong> 然后点击 <strong>电子邮件</strong>.</li>
+<li>从 <strong>发送到</strong> 下拉列表中选择你想把消息发送到的人:</li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li><strong>自己</strong></li>
+<li><strong>职员和教导员</strong></li>
+<li><strong>所有 (学生，职员和教导员)</strong></li>
+</ul>
+</div></blockquote>
+<ol class="arabic" start="4">
+<li><p class="first">给消息输入 <strong>主题</strong> 一个主题是必需的.</p>
+</li>
+<li><p class="first">输入消息的文本，消息文本是必需的.</p>
+<p>要在你的消息中包含一个图片，使用Studio中的 <strong>文件&amp;上传</strong> 页面来添加文件到你的课程，然后点击 <strong>插入或编辑图片</strong> 图标. 更多信息请参照 <span class="xref std std-ref">添加文件到课程</span>.</p>
+<p>消息可以使用HTML格式，包括文本格式和链接。Email消息编辑器提供了Studio中的HTML组件编辑器相同的格式选择    更多信息请参照 <span class="xref std std-ref">使用HTML组件</span>.</p>
+<p>你可以在消息中作用关键字，使得在发送的消息内容中对每个接收者特定的值进行替换 <a class="reference internal" href="#id5">在消息中使用关键字</a> .</p>
+</li>
+<li><p class="first">点击 <strong>发送日子邮件</strong>. 在发送消息等待时，你可以在教导员面板上完成其他的任务，或者导航到其他页面.</p>
+</li>
+</ol>
+<p>在你发送消息后，一个大宗邮件任务就排队等待处理。多个课程使用同一个队列来完成这些任务，所以要花点时间才能把你的消息发送到它的所有接收者。如果你的课程是一个MOOC，要注意你发送到所有课程参与者的消息数的限制是一个星期不超过一个消息。</p>
+</div>
+<div class="section" id="use-keywords-in-messages">
+<span id="id5"></span><h2>10.6.3. 在消息中使用关键字<a class="headerlink" href="#use-keywords-in-messages" title="Permalink to this headline">¶</a></h2>
+<dl class="docutils">
+<dt>你可以在消息中包含关键字。一个关键字是可用的：当你发送消息时，每个接收者特有的值会被关键字取代。例如，</dt>
+<dd>当你使用 <code class="docutils literal"><span class="pre">%%USER_FULLNAME%%</span></code> 关键字时，每个消息包含接收者的名字。.</dd>
+</dl>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">不要在消息的主题行中使用关键字。在主题中的关键字不会被赋值，所以接收者会看到关键字的文本.</p>
+</div>
+<div class="section" id="id6">
+<h3>10.6.3.1. 支持的关键字<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h3>
+<p>你可以在消息中使用以下的关键字</p>
+<ul class="simple">
+<li><code class="docutils literal"><span class="pre">%%USER_ID%%</span></code> - 消息接收者的匿名用户ID</li>
+<li><code class="docutils literal"><span class="pre">%%USER_FULLNAME%%</span></code> - 消息接收者的全名</li>
+<li><code class="docutils literal"><span class="pre">%%COURSE_DISPLAY_NAME%%</span></code> - 课程的显示名称</li>
+<li><code class="docutils literal"><span class="pre">%%COURSE_END_DATE%%</span></code> - 课程的结束日期</li>
+</ul>
+</div>
+<div class="section" id="keyword-formatting">
+<h3>10.6.3.2. Keyword Formatting<a class="headerlink" href="#keyword-formatting" title="Permalink to this headline">¶</a></h3>
+<p>你格式化关键字，如: <code class="docutils literal"><span class="pre">%%Keyword%%</span></code>.  你可以在一封电子邮件消息中的任何HTML标签中包含关键字，例如:</p>
+<div class="highlight-python"><div class="highlight"><pre>&lt;h2&gt;%%COURSE_DISPLAY_NAME%% Updates&lt;/h2&gt;
+
+&lt;p&gt;Dear %%USER_FULLNAME%%, this is a reminder that the last day of the course
+   is &lt;b&gt;%%COURSE_END_DATE%%&lt;/b&gt;&lt;/p&gt;
+. . .
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="email-queuing">
+<span id="id7"></span><h2>10.6.4. 消息工作流程状态<a class="headerlink" href="#email-queuing" title="Permalink to this headline">¶</a></h2>
+<p>当你点击 <strong>发送Email</strong> 来发送一个消息时，服务器就可以处理一个大宗电子邮件任务。服务器指派一系列的不同的工作流程状态到任务.</p>
+<img alt="Flowchart of the possible states of a bulk email task" src="../_images/Bulk_email_states.png" />
+<p>对于一个大宗邮件任务的工作流程状态是:</p>
+<ul class="simple">
+<li>排队: 大宗电子邮件任务被创建并排队等候后台处理.</li>
+<li>挂起: 任务在排队并等待运行.</li>
+<li>已开始: 后台处理正在进行创建电子邮件子任务.</li>
+<li>处理: 电子邮件子任务正在处理.</li>
+<li>成功: 所有的电子邮件子任务完成，注意即使所有或部分电子邮件子任务失败了，大宗邮件任务也会到达这个状态.</li>
+<li>失败: 发生了错误，任务处理没有成功完成.</li>
+</ul>
+<p>当大宗电子邮件任务在处理中时，你可以找出在工作流程中还有多久，通过查找 <strong>挂起教导员任务</strong> 部分于 <strong>电子邮件</strong> 页面.</p>
+<img alt="Information about an email message, including who submitted it and when, in tabular format" src="../_images/Bulk_email_pending.png" />
+<p>当大宗电子邮件任务完成后时，你可以找到它的最终状态，通过查看Email任务历史报告 <span class="xref std std-ref">Email任务历史报告</span>.</p>
+</div>
+<div class="section" id="review-sent-messages">
+<span id="id8"></span><h2>10.6.5. 回顾已发送消息<a class="headerlink" href="#review-sent-messages" title="Permalink to this headline">¶</a></h2>
+<p>你可以回顾一个所有已发送消息的列表。对于列出的任意一个消息，你可以检查主题，邮件发送人的用户名，发送时间，它的被选择的接收者和消息内容.</p>
+<ol class="arabic">
+<li><p class="first">查看你的课程的在线版本.</p>
+</li>
+<li><p class="first">点击 <strong>教导员</strong> 然后点击 <strong>电子邮件</strong>.</p>
+</li>
+<li><p class="first">在页面的 <strong>Email任务历史</strong> 部分，发送Email历史**. 已发送消息列表显示.</p>
+<img alt="A tabular list of sent messages, with columns for subject, sent by, time sent, and number sent" src="../_images/Bulk_email_list.png" />
+</li>
+</ol>
+<ol class="arabic" start="4">
+<li><p class="first">查看消息的附加信息，点击它的主题。消息会在一个对话框中打开。</p>
+<img alt="A dialog box with the subject, sent by, date and time sent, sent to, and message for an email message, and an option to Copy Email to Editor" src="../_images/Bulk_email_sent.png" />
+</li>
+<li><p class="first">随意地，使用消息作为新消息的基础，点击 <strong>复制Email到编辑器</strong>. 对话框关闭，并且你可以编辑复制到 <strong>主题</strong> 和 <strong>消息</strong> 域的内容，链接和格式.</p>
+<p>当你通过复制之前已发送的消息来创建一个新消息时，确保要复查然后对它进行全面的测试再发送给所有的课程参与者.</p>
+</li>
+</ol>
+</div>
+<div class="section" id="email-task-history-report">
+<span id="id9"></span><h2>10.6.6. 电子邮件任务历史报告<a class="headerlink" href="#email-task-history-report" title="Permalink to this headline">¶</a></h2>
+<p>电子邮件任务历史报告能帮助你追踪是谁，在何时发送消息给了多少人。对于每一个已发送的消息，报告会包含请求者的用户名，提交的日期和时间，整个任务的持续时间和状态，还有任务的进展。</p>
+<p>你可以使用历史来调查与已发送的大宗电子邮件消息相关的问题，比如:</p>
+<ul class="simple">
+<li>学生被发送课程相关的电子邮件消息的频次.</li>
+<li>一个消息是否被成功发送.</li>
+<li>随时间被发送课程相关的消息的人数的变化.</li>
+</ul>
+<p>生成电子邮件任务历史报告:</p>
+<ol class="arabic simple">
+<li>查看你的课程在线版本.</li>
+<li>点击 <strong>教导员</strong> 然后点击 <strong>电子邮件</strong>.</li>
+<li>在页面的 <strong>电子邮件任务历史</strong> 部分，点击 <strong>显示电子邮件历史</strong>. 一个像以下例子的报告会显示在教导员面板上.</li>
+</ol>
+<a class="reference internal image-reference" href="../_images/Bulk_email_history.png"><img alt="A tabular report with a row for each message sent and columns for requester, date and time submitted, duration, state, task status, and task progress." src="../_images/Bulk_email_history.png" style="width: 800px;" /></a>
+<div class="section" id="id10">
+<h3>10.6.6.1. 检查电子邮件任务历史<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h3>
+<p>在有成功的 <strong>状态</strong> 的任务里 <strong>任务进展</strong> 列会显示一个提示消息 &#8220;消息成功邮件给了13457位接收者 (跳过 29) (自 13486)&#8221;. 要解释这个信息，注意:</p>
+<ul>
+<li><p class="first">第一个数字 (&#8220;接收者&#8221;) 表明发送给被选择的接收者的消息数.</p>
+</li>
+<li><p class="first">第二个数字 (&#8220;跳过&#8221;) 表明登记并激活的但没有被发送消息的用户数。这个数记录的是选择不接收课程电子邮件的学生的数目.</p>
+</li>
+<li><p class="first">最后的数字 (&#8220;自&#8221;) 表明了当你发送电子邮件消息时，你选择的在课程中登记并激活了用户账号的用户的数目.</p>
+<p>注意 <strong>所有登记者的数目</strong> ，在 <strong>课程信息</strong> 页面显示的，包含所有的当前登记的学生，不管恪的激活状态，结果导致其与这个数目不同.</p>
+</li>
+</ul>
+<p>如果 &#8220;接收者&#8221; 和 &#8220;自&#8221; 数目是一样的，消息会变成&#8221;消息成功邮件给了13457位接收者&#8221; .</p>
+<p>其他带成功 <strong>状态</strong> 的任务的 <strong>任务进展</strong> 消息表明部分或全部的邮件子任务没有成功发送电子邮件:</p>
+<ul class="simple">
+<li>&#8220;消息发送给 {number succeeded} 自 {number attempted} 接收者&#8221;</li>
+<li>&#8220;给 {number attempted} 接收者的消息发送失败&#8221;</li>
+<li>&#8220;无法找到要发送邮件的接收者&#8221;</li>
+</ul>
+<p>没有 <strong>任务进展</strong> 消息显示给有失败 <strong>状态</strong> 的任务.</p>
+</div>
+</div>
+<div class="section" id="example-messages-to-students">
+<span id="id11"></span><h2>10.6.7. 给学生的消息示例<a class="headerlink" href="#example-messages-to-students" title="Permalink to this headline">¶</a></h2>
+<p>你可以使用这些示例消息，在典型的课程里程碑之前的发送准备，作为你自己的课程通信的模型.</p>
+<ul class="simple">
+<li><a class="reference internal" href="#id12">起动前提醒</a></li>
+<li><a href="#id31"><span class="problematic" id="id32">`起动日的问候`_</span></a></li>
+<li><a href="#id33"><span class="problematic" id="id34">`验证注册提醒`_</span></a></li>
+<li><a class="reference internal" href="#id15">每周重点</a></li>
+<li><a class="reference internal" href="#id16">中间课程的鼓励</a></li>
+<li><a class="reference internal" href="#id17">中间课程事件</a></li>
+<li><a class="reference internal" href="#id18">技术问题</a></li>
+<li><a class="reference internal" href="#id19">课程告别和证书</a></li>
+<li><a href="#id35"><span class="problematic" id="id36">`新课程运行公告`_</span></a></li>
+</ul>
+<p>这些消息被设计成Email消息格式，但是你也可以在课程讨论主题或在 <strong>课程信息</strong> 页面中邮件这些信息。要使用 <span class="xref std std-ref">关键字</span>, 你必须发送Email消息;
+关键字在讨论主题或 <strong>课程信息</strong> 页面中不支持.</p>
+<div class="admonition important">
+<p class="first admonition-title">Important</p>
+<p>仔细检查这些消息模板，以包含你的课程的事实，满足学生的需求，反映出你的目标和品格。搜索 &#8220;{&#8221; 和 &#8220;}&#8221; 字符来定位提示和用课程特定的值来替换它们.</p>
+<p class="last">这些消息中的一部分也包含 <span class="xref std std-ref">关键字</span>. 在你发送消息时，特定于你的课程和接收者的值会被关键字替换，确保在你的课程中正确地使用关键字以达到你的目标.</p>
+</div>
+<div class="section" id="prelaunch-reminder">
+<span id="id12"></span><h3>10.6.7.1. 起动前提醒<a class="headerlink" href="#prelaunch-reminder" title="Permalink to this headline">¶</a></h3>
+<p>起动前提醒产生课程开始日期的提醒，分开课程，产生刺激。除了课程开始日期和时间外，下面的例子也让学生获知:</p>
+<ul class="simple">
+<li>UTC被用在edX课程中，你可以包含有关你的课程或者edX平台的信息以助你的学生完成课程.</li>
+<li>课程有一个相伴的社交媒体的网址，你可以包含有关已计划的聚会或者其他社区建设机会.</li>
+</ul>
+<p>你可能会想在课程起动之前发送多个消息：请使用这个模板作为起始点来制作你想发送的不同的消息。把应用到你的课程里的信息替换被 {braces} 括起来的值。另外，检查你是否适当使用了 <span class="xref std std-ref">关键字</span>.</p>
+<div class="highlight-python"><div class="highlight"><pre>主题: {course number} 马上开始!
+
+%%USER_FULLNAME%%你好,
+
+我们很高兴你加入我们的 {course number}
+%%COURSE_DISPLAY_NAME%%, 由 {organization name} 通过 edX 提供. 课程将开始于 {day}, {date}  {time} UTC (即 {time} {local time zone}).
+注意edX课程使用的是世界调整时间（UTC），用于截止日期和发布日期.
+
+如果你还没有找到它, {course number} 有它自己的官方Facebook页面 {add link}. 在课程开始之前你可以上面找到已发布的视频和图片.
+
+如果这是你的第一个edX课程，不妨注册edX示例课程{add link}. 这个课程给你一个探索edX平台的机会，并学会如何回答问题和跟踪你的进展，在 {course
+number} 开始之前.
+
+你的 {course number} 课程老师
+</pre></div>
+</div>
+</div>
+<div class="section" id="launch-day-welcome">
+<span id="id13"></span><h3>10.6.7.2. 起动日问候<a class="headerlink" href="#launch-day-welcome" title="Permalink to this headline">¶</a></h3>
+<p>在你的课程开始的日期，你可以发送一个包含问候和给学生要完成的特定任务的电子邮件消息。这个示例将学生导向课程页面中的两个页面，以鼓励其探索和发现，并亲自介绍课程团队的领队。在这个模板中搜索被{braces}包围的值并用在你课程中的信息替换它们.</p>
+<div class="highlight-python"><div class="highlight"><pre>主题: {course number} 今天开始!
+
+大家好!
+
+此时, edX 课程 {course number} 从你的面板上就可访问了{add link}, 并且教员们将正式欢迎你加入课程!你将在课程页面找到第一个星期的学习资料，包括视频演讲和问题集.
+
+请花点时间浏览课程信息页面，阅读上面的资料并熟悉课程政策和哲学.
+
+我将成为你的课程领导者，并且我希望你将快乐地学习{subject}! 它可能会带一点挑战性，也会让你感到沮丧，但这一切都将是值得的，并且你将获益匪浅.
+
+谨代表所有的教职员式，欢迎你，并祝你好运，学得开心!
+
+{name} 及 {course number} 的所有教员
+</pre></div>
+</div>
+</div>
+<div class="section" id="verified-registration-reminder">
+<span id="id14"></span><h3>10.6.7.3. 提醒注册认证证书<a class="headerlink" href="#verified-registration-reminder" title="Permalink to this headline">¶</a></h3>
+<p>在你的课程起动后，你可以给学生发送邮件来提醒学生注册认证证书的最后日期将临近。你可以用下面的模板作为你自己的消息的开始；搜索被{braces}括起来的值并用你课程中的信息替换它另外，检查你是否适当地使用 <span class="xref std std-ref">关键字</span>.</p>
+<div class="highlight-python"><div class="highlight"><pre>主题: 获得 {course name}的一个edX认证证书!
+
+亲爱的%%USER_FULLNAME%%,
+
+对使用一个edX证书来支持大学申请或来提升你的职业生涯感兴趣吗？拥有一个edX认证证书，你可以向大学，雇主和同事证明你已成功完成了一个具有挑战性的edX课程，同时也帮助支持完成edX的使命.
+
+你们将提醒你 {date} 是在 %%COURSE_DISPLAY_NAME%%上注册认证证书的最后日期. 注册一个证书很简单! 只要到你的edX面板的课程里并点击&quot;挑战自我&quot;.
+
+祝你好运!
+
+{name} 及 {course number} 的所有教员
+</pre></div>
+</div>
+</div>
+<div class="section" id="weekly-highlights">
+<span id="id15"></span><h3>10.6.7.4. 每周重点<a class="headerlink" href="#weekly-highlights" title="Permalink to this headline">¶</a></h3>
+<p>每周发一封电子邮件给学生是一种很好的让学生坚持参与课程和提供鼓励的方法。在每个星期末你可以发送给学生一封电子邮件来总结这周学习的内容，提醒学生要做的作业以及课程中的里程碑.可选择地，鼓励学生参与到讨论论坛中，你可以重点提示特别有趣的点或重要的讨论，提供到讨论主题的链接.</p>
+<p>你可以用以下的模板作为开始设计你自己的消息，可以省略其中的讨论重点，如果它们不适合你的课程的话（示例讨论重点是从一门关于全球水危机的城市解决方案的课程来的）。搜索被{braces}包围的值并用你课程中的信息替换它另外，检查你是否适当使用 <span class="xref std std-ref">关键字</span> .</p>
+<div class="highlight-python"><div class="highlight"><pre>主题: {Course Name} 第一周重点
+
+我们希望大家有愉快的一周！下面，我们提供一些链接到令人激动的已开始的讨论和一个Q&amp;A视频，其中{Professor}教授概括了一些这周提出的问题.
+
+我们也希望提醒你进行每周测验，在 {date}  {time} UTC之前.下个模块会在 {Time and Date}可用.
+
+{Link to Video}
+
+这里是在这个星期从讨论论坛里的一些重点，请在线加入我们并保持对话!
+
+* 一直有一个争论到底城市溪流储藏是否可能，何种类型的储藏是想要的。我们如何提高储藏实施方法和它的输出? {Link to the Discussion}
+
+* 请继续分享你的城市溪流储藏的故事——这里有很多很好的关于什么是可能的示例! {Link to the Discussion}
+
+下周见,
+{name} 及 {course number} 的所有教员
+</pre></div>
+</div>
+</div>
+<div class="section" id="midcourse-encouragement">
+<span id="id16"></span><h3>10.6.7.5. 中间课程的鼓励<a class="headerlink" href="#midcourse-encouragement" title="Permalink to this headline">¶</a></h3>
+<p>当你的课程处在运行中，你可以发送消息来促进交流，提醒学生要到期的日期，提及任何再生的问题。.</p>
+<p>这个例引导学生如何跟上课程的安排并鼓励贡献讨论.在课程运行期间你可能想发送多个消息，你可以使用下面的模板作为你自己消息的开始；搜索被{braces}括起来的值并用你课程中的信息替换它.另外，检查你是否适当使用:ref:<cite>关键字&lt;在消息中使用关键字&gt;</cite>.</p>
+<div class="highlight-python"><div class="highlight"><pre>主题: {course name} 通告
+
+亲爱的学生们,
+
+我们希望你在 {course number}中真正学到东西! 请记住问题集 {number} 于{date} {time} UTC到期. 你可以检查课程安排 {add link} 于课程信息页面的头部课程规划中.
+
+课程讨论的贡献至今为止令人吃惊!你也可以在课程信息页面看到我们已经做几个社团IA以感谢你的独具思考的贡献.请保持这些交流.
+
+我们有一些额外的通告.
+
+* 第{number}周 关于{subject} 现在在课程件页面可以访问了.
+
+* 问题集{number} 也可访问，它于 {date} {time} UTC到期.
+
+* 请记住对于问题集和测验的截止日期是世界调整时间(即格林威治标准时间). 这里可以查看现在的世界调整时间{add link}. 请把时间转换到你的时区!
+
+祝愿你在课程中继续取得成功,
+
+{name}及{course number}的所有教员
+</pre></div>
+</div>
+</div>
+<div class="section" id="midcourse-events">
+<span id="id17"></span><h3>10.6.7.6. 中间课程事件<a class="headerlink" href="#midcourse-events" title="Permalink to this headline">¶</a></h3>
+<p>在测试或其他意义重大的课程事件之前，消息可以提供关于测试的有用信息，传达行为的期望并鼓励学生继续完成课程，这个示例让学生们知道:</p>
+<ul class="simple">
+<li>你们必须在多久之内完成测试，以及何时他们能看到问题的答案.</li>
+<li>如何把任何错误和其他在测试中发现的问题反馈给课程的教员.</li>
+<li>课程讨论是否会在测试期间保持开放或关闭. (在接下来的示例中，讨论会保持 <strong>开放</strong>.)</li>
+<li>哪些会导致荣誉编号的取消.</li>
+<li>如果有，由外部工具带来的技术限制是什么，比如说打分机.</li>
+</ul>
+<p>确保搜索由{braces}括起来的值并用你课程中的信息替换它.另外，检查是否适当使用:ref:<cite>关键字&lt;在消息中使用关键字&gt;</cite>.</p>
+<div class="highlight-python"><div class="highlight"><pre>主题: {course number} 测试信息
+
+%%USER_FULLNAME%%你好,
+
+通过第{number}周的学习做得不错! 如你所知，{course number}测试就在下个星期.如果你错过了问题集，你仍可以获得证书.每个问题集只占总分的{number}%但这个测试占{number}%.
+
+请在你进行测试之前阅读这个关于测试的重要信息.
+
+* 测试开始于{date} {time} UTC ua于{date} {time} UTC结束. 请你据此进行安排.
+
+* 确保清楚UTC截止日期在你的时区是什么时间.请查看当前UTC时间 {add link}. 将不会给予任何延迟.
+
+* 测试不会计时，你可以在截止日期之前任何时间开始，停止和回到测试.
+
+* 每个测试问题只允许一个回答的提交，如果你不小心点击了 &quot;检查&quot;, 问题将不会被重置.
+
+* 测试覆盖了从星期 {number}-{number}的任何内容（视频演讲，阅读和问题集）.如果你错过了任何的这些材料，你需要在你进行测试之前复习它们.
+
+* 你可以使用课本和互联网来弄清关于测试题目的知识，只要你不是刻意地寻找测试问题的答案.
+
+* 课程讨论会在测试期间保持开放，但任何将测试问题答案放上去的人会被取消荣誉编号并有可能被请出课程，没收证书.
+
+* 如果你需要在测试进行时就测试中的问题警告教员时，在通用讨论主题中添加一个告示，在主题行包含 [EXAM].
+
+* 周期地检查课程信息页面，它是教员与延迟，校正和更改最快的联系方式.
+
+祝你好运!
+
+{name} 及 {course number} 的所有教员
+</pre></div>
+</div>
+</div>
+<div class="section" id="technical-issue">
+<span id="id18"></span><h3>10.6.7.7. 技术问题<a class="headerlink" href="#technical-issue" title="Permalink to this headline">¶</a></h3>
+<p>在未预料的系统故障事件中，一个消息可以警告学生这个问题，并使他们安心问题要么被解决或将被解决.消息可以提供课程的任何改变的信息作为结果.</p>
+<p>技术问题会在课程中因为各种原因而产生，所以下面的例子可以需要修正才能应用到你所遇到的问题上.注意确保使被这个问题影响到的学生消除疑虑，消息应该是积极的口吻，并冷静和简明地确认问题，以及解决方案的状态和其他后续的影响.</p>
+<div class="highlight-python"><div class="highlight"><pre>亲爱的学生们,
+
+我们遇到了 {视频，作业等}技术上的问题.
+{我们此刻正在解决它. / 这个问题已经得到解决.}
+
+作为个这问题的结果，我们已经 {延长了截止日期 / 重新记录成绩}
+对于这次的作业所以它不影响到你的打分.
+
+谢谢你的耐心，我们期待你继续这门课程的学习.
+
+{name}及{course number}的所有教员
+</pre></div>
+</div>
+</div>
+<div class="section" id="course-farewell-and-certificates">
+<span id="id19"></span><h3>10.6.7.8. 课程告别和证书<a class="headerlink" href="#course-farewell-and-certificates" title="Permalink to this headline">¶</a></h3>
+<p>在你的课程结束的最后几天里，一个消息可以引导学生到该课程的问卷调查，回答关于证书的问题和提供未来访问课程资料的信息.确保用你的信息替换被{大括号}括起来的值.</p>
+<div class="highlight-python"><div class="highlight"><pre>主题: {course number}最后评价
+
+亲爱的%%USER_FULLNAME%%,
+
+谢谢你在在这最近的几个月里使得%%COURSE_DISPLAY_NAME%%如此有趣!我们也很高兴在通过课程的讨论逐渐认识你，我们感激你对这门课程的投入，并且我们希望你通过edX能享受学习{主题}的乐趣.无论有没有证书，你者应该为自己完成这门课程而感到骄傲.
+
+* 请花几分钟时间来回答最后离去的调查，现在在课程件中可以访问到.我们会利用你的反馈来在以后改进课程.
+
+* 如果你合格能拿到证书 (总得分{number}% 或更高),在不久之后edX面板将包含一个链接链接到在你的证书.当你几天后看到这个链接的时候，edX生成所有的课程证书可能会花费到2周的时候.
+
+* 作为一个已注册的学生，即使在课程结束后你也还能访问视频，但问题集和测试将会从课程归档后移除.
+
+* {course number}的讨论区在{date} {time} UTC关闭. 你将不能在此后参与讨论，但是你能够继续查看所有的课程期间的对话.
+
+我们希望你与你的同事，朋友和家人分享在{course number}学到的东西.
+
+祝在最后测试和以后都好运!
+
+{name}及{course number}的所有教员
+</pre></div>
+</div>
+</div>
+<div class="section" id="new-course-run-announcement">
+<span id="id20"></span><h3>10.6.7.9. 新课程运行的公告<a class="headerlink" href="#new-course-run-announcement" title="Permalink to this headline">¶</a></h3>
+<p>当你准备好一个课程再次运行时，你可以使用在课程之前的运行中的大宗电子邮件特性通知一个参与的并在行的听众：你之前的学生.
+宣布一个针对以前运行的学生新的运行给你强调课程关键方面的机会，比如说讨论区的质量和种类，或者全球兴趣和主题的关联，这些被过去的登记所证明。
+你也可以显示已经添加到新的课程运行的新的特性和内容.通过强调课程的价值，你可以让人们思考并谈论它们的经历，建立兴奋点和鼓励再次登记.</p>
+<p>这个消息模板提供没有完成课程的学生或者之前没有选择认证证书的学生一个完成或获得证书的机会.同样也邀请学生与同事和朋友分享这门课程.</p>
+<p>当从这个模板准备一个消息时，搜索被{大括号}括起来的值并用你课程中的信息替换它们.</p>
+<div class="highlight-python"><div class="highlight"><pre>主题: 宣布一个{course name}的新的运行
+
+{course number}的学习者们你好,
+
+{course number} {course name}的下一次运行在{date}开始! 我们很高兴与你，在{course number}之前的运行里获得成功的学生，分享这次新的运行.
+
+{Success story from the previous run.}
+
+{New content or features for the upcoming run.}
+
+也许你想与朋友或同事分享{course name}的绝对经历，赚取一个带编号的认证证书，或通过一门你之前无法完成的课程的课程内容.当{course number}在{time frame}被提供时, 我们欢迎你再次加入到学习者的社团中.
+
+要了解更多并登记，请访问{course name}页面{add link}.
+
+我们希望在课程中见到你,
+
+{course number}的所有教员
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+
+
+          <footer>
+  
+    <div class="rst-footer-buttons">
+      
+        <a href="course_wiki.html" class="btn btn-neutral float-right" title="10.7. 使用课程维基"/>Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="discussion_guidance_moderators.html" class="btn btn-neutral" title="10.5. 论坛协调员指南"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <p>
+      &copy; Copyright 2015, edX.
+  </p>
+
+ 
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+</body>
+</html>

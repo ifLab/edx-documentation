@@ -1,0 +1,499 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>10.9. 学生数据 &mdash; Building and Running an Open edX Course  documentation</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="../_static/css/favicon.ico"/>
+  
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  
+  
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:'../',
+        VERSION:'',
+        COLLAPSE_INDEX:false,
+        FILE_SUFFIX:'.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+
+    
+
+  
+
+  
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+
+  
+    <link rel="top" title="Building and Running an Open edX Course  documentation" href="../index.html"/>
+        <link rel="up" title="10. Running Your Course" href="index.html"/>
+        <link rel="next" title="10.10. 回答问题数据" href="course_answers.html"/>
+        <link rel="prev" title="10.8. 课程数据" href="course_data.html"/> 
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-nav-search">
+        <a href="../index.html" class="icon icon-home"> Building and Running an Open edX Course</a>
+        <form class="wy-form" action="../search.html" method="get">
+  <input type="text" name="q" placeholder="Search document" />
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix">
+        
+        
+            <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../front_matter/index.html">1. For Your Information</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../front_matter/read_me.html">1.1. Read Me</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../front_matter/preface.html">1.2. 序言</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../front_matter/change_log.html">1.3. Change Log</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../front_matter/browsers.html">1.4. edX浏览器支持</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/index.html">2. Getting Started</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../getting_started/dashboard_acctsettings_profile.html">2.1. 搜索你的仪表板、设置和配置文件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../getting_started/get_started.html">2.2. Getting Started with Studio</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../getting_started/accessibility.html">2.3. 创建无障碍课程指南</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../building_course/index.html">3. Setting up Your Course</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/creating_new_course.html">3.1. 新建课程</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/scheduling_course.html">3.2. 设置开始和结束日期</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/setting_up_student_view.html">3.3. 设置课程细节</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/course_prerequisites.html">3.4. 设定入学要求</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/licensing_course.html">3.5. 授权课程</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/course_files.html">3.6. 给课程添加文件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/handouts_updates.html">3.7. 添加课程补充资料及讲义</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/pages.html">3.8. 为课程添加页面</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/textbooks.html">3.9. 添加课本</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/establish_grading_policy.html">3.10. 设定计分政策</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/course_rerun.html">3.11. 重开课程</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/export_import_course.html">3.12. 输出和导入课程</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../developing_course/index.html">4. Developing Your Course</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/workflow.html">4.1. 开始创建课程内容</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/course_outline.html">4.2. 创建课程大纲</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/course_sections.html">4.3. 创建课程章节</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/course_subsections.html">4.4. 构建课程小节</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/course_units.html">4.5. 构建课程单元</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/course_components.html">4.6. 创建课程组件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/controlling_content_visibility.html">4.7. 设置内容可见性</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/testing_courseware.html">4.8. 测试您的课程内容</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../creating_content/index.html">5. Creating Course Content</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../creating_content/create_html_component.html">5.1. 如何使用HTML组件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../creating_content/create_video.html">5.2. 创建影片组件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../creating_content/create_discussion.html">5.3. 创建讨论组件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../creating_content/create_problem.html">5.4. 创建问题组件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../creating_content/libraries.html">5.5. 内容库</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../exercises_tools/index.html">6. Creating Exercises and Tools</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/create_exercises_and_tools.html">6.1. 创建练习和工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/annotation.html">6.2. 注释问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/checkbox.html">6.3. 复选框问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/chemical_equation.html">6.4. 化学方程式问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/circuit_schematic_builder.html">6.5. 电路原理图搭建问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/conditional_module.html">6.6. 条件模板</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/custom_javascript.html">6.7. 自定义JavaScript问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/drag_and_drop.html">6.8. 拖放问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/dropdown.html">6.9. 下拉问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/external_graders.html">6.10. 图像映射输入问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/full_screen_image.html">6.11. 全屏图像工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/gene_explorer.html">6.12. Gene Explorer工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/google_calendar.html">6.13. 谷歌日历工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/google_docs.html">6.14. 谷歌云文件工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/google_hangouts.html">6.15. 谷歌即时群聊工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/iframe.html">6.16. IFrame工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/image_mapped_input.html">6.17. 图像映射输入问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/lti_component.html">6.18. LTI 组件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/math_expression_input.html">6.19. 数学表达式输入问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/molecule_editor.html">6.20. 分子编辑器</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/molecule_viewer.html">6.21. 分子浏览器</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/multiple_choice.html">6.22. 多项选择问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/mult_choice_num_input.html">6.23. 多项选择和数字输入题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/numerical_input.html">6.24. 数值输入问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/open_response_assessments/index.html">6.25. Open Response Assessments</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/periodic_table.html">6.26. 元素周期表工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/poll.html">6.27. 投票工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/problem_with_hint.html">6.28. 带适应性提示的问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/problem_in_latex.html">6.29. LaTeX问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/protein_builder.html">6.30. Protex蛋白质构建工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/randomized_content_blocks.html">6.31. 随机内容块</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/recommenderXBlock.html">6.32. 推荐系统</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/student_notes.html">6.33. 学生笔记工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/text_input.html">6.34. 文本输入问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/word_cloud.html">6.35. 文字云工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/custom_python.html">6.36. 自定义评分器问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/zooming_image.html">6.37. 图像放大工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/mathjax.html">6.38. Studio中MathJax的简要介绍</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../content_experiments/index.html">7. Creating Content Experiments</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../content_experiments/content_experiments_overview.html">7.1. 内容实验概述</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../content_experiments/content_experiments_configure.html">7.2. Configure Your Course for Content Experiments</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../content_experiments/content_experiments_add.html">7.3. Add Content Experiments to Your Course</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../content_experiments/content_experiments_view.html">7.4. 测试内容实验</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../cohorts/index.html">8. Including Student Cohorts</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../cohorts/cohorts_overview.html">8.1. 使用队列功能建立课程群</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cohorts/cohort_config.html">8.2. 启用、配置分队模式</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cohorts/cohorted_courseware.html">8.3. 创建特定队列课件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cohorts/cohorts_setup_discussions.html">8.4. 在包含队列的课程中设置论坛</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cohorts/cohorts_manage_discussions.html">8.5. 管理有学生队列的论坛</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../releasing_course/index.html">9. Releasing Your Course</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../releasing_course/beta_testing.html">9.1. 贝塔测试</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../releasing_course/course_launching.html">9.2. 课程发布事宜</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../releasing_course/staff_debug_info.html">9.3. 员工调试信息</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">10. Running Your Course</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="course_staffing.html">10.1. 安置职工</a></li>
+<li class="toctree-l2"><a class="reference internal" href="course_enrollment.html">10.2. 招生</a></li>
+<li class="toctree-l2"><a class="reference internal" href="discussions.html">10.3. 管理课程讨论项目</a></li>
+<li class="toctree-l2"><a class="reference internal" href="discussions_students.html">10.4. 参与课程讨论</a></li>
+<li class="toctree-l2"><a class="reference internal" href="discussion_guidance_moderators.html">10.5. 论坛协调员指南</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bulk_email.html">10.6. 大宗邮件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="course_wiki.html">10.7. 使用课程维基</a></li>
+<li class="toctree-l2"><a class="reference internal" href="course_data.html">10.8. 课程数据</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="">10.9. 学生数据</a></li>
+<li class="toctree-l2"><a class="reference internal" href="course_answers.html">10.10. 回答问题数据</a></li>
+<li class="toctree-l2"><a class="reference internal" href="course_grades.html">10.11. 学生成绩与成绩评定</a></li>
+<li class="toctree-l2"><a class="reference internal" href="checking_student_progress.html">10.12. 总成绩计算与证书发放</a></li>
+</ul>
+</li>
+</ul>
+
+        
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top">
+        <i data-toggle="wy-nav-top" class="icon icon-reorder"></i>
+        <a href="/">Building and Running an Open edX Course</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <ul class="wy-breadcrumbs">
+  <li><a href="../index.html">Table of Contents</a> &raquo;</li>
+  <li><a href="">10.9. 学生数据</a></li>
+  
+</ul>
+<hr/>
+
+          
+  <div class="section" id="student-data">
+<span id="id1"></span><h1>10.9. 学生数据<a class="headerlink" href="#student-data" title="Permalink to this headline">¶</a></h1>
+<p>课程创建后，您可以随时访问学生的数据信息。
+请看下面的章节：</p>
+<div class="contents local topic" id="id2">
+<p class="topic-title first">内容包括:</p>
+<ul class="simple">
+<li><a class="reference internal" href="#pii" id="id13">如何维护个人信息</a></li>
+<li><a class="reference internal" href="#access-student-data" id="id14">获取学生数据</a><ul>
+<li><a class="reference internal" href="#id5" id="id15">学生自主提供的信息</a></li>
+<li><a class="reference internal" href="#view-and-download-student-data" id="id16">下载或查看学生数据</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#access-anonymized" id="id17">获取解析后的学生ID</a></li>
+</ul>
+</div>
+<p>出于评分原因，您也可以查看学生的个人信息统计表。详见 <a class="reference external" href="http://edx-insights.readthedocs.org/en/latest/">Using edX Insights</a>.</p>
+<div class="section" id="pii">
+<span id="id3"></span><h2><a class="toc-backref" href="#id13">10.9.1. 如何维护个人信息</a><a class="headerlink" href="#pii" title="Permalink to this headline">¶</a></h2>
+<p>edX从官网登记用户中收集的个人信息可用于认证、联系及定位。
+课程作者有权访问学生的个人信息。</p>
+<p>课程工作人员应遵守所在机构制定的规章制度，同时遵守所在地关于个人信息的法律条款，
+不得将个人信息外泄，不得盗用他人信息。</p>
+</div>
+<div class="section" id="access-student-data">
+<span id="id4"></span><h2><a class="toc-backref" href="#id14">10.9.2. 获取学生数据</a><a class="headerlink" href="#access-student-data" title="Permalink to this headline">¶</a></h2>
+<p>您可以CSV（逗号分隔值）文件格式下载当前参与课程学生的数据。
+如果学生人数少于200人，您也可以在教师面板中查看学生数据。</p>
+<div class="section" id="id5">
+<h3><a class="toc-backref" href="#id15">10.9.2.1. 学生自主提供的信息</a><a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h3>
+<p>当学生注册edX帐户时，会选择一个公开可见的用户名，并提供相关的个人信息。
+但这并不是硬性要求，所以不是所有的学生都会提供个人信息的。</p>
+<blockquote>
+<div><img alt="Fields that collect student information during registration" src="../_images/Registration_page.png" />
+</div></blockquote>
+<p>然后，学生可根据兴趣注册各种各样的课程，注册后则成为该课程的参与者。</p>
+<p>您可以访问课程内所有学生自主提供的个人信息，包括：</p>
+<ul class="simple">
+<li>用户名</li>
+<li>真实姓名</li>
+<li>电子邮箱地址</li>
+<li>出生年月</li>
+<li>性别</li>
+<li>教育水平 更多信息请参考 <strong>edX研究指南</strong> 中的  <a class="reference external" href="http://edx.readthedocs.org/projects/devdata/en/latest/internal_data_formats/sql_schema.html#level-of-education">auth_userprofile.level_of_education</a> 部分</li>
+<li>邮件地址</li>
+<li>学习期望</li>
+</ul>
+<p>程工作人员可访问的个人信息永远只包括当前参与课程的学生。
+学生可以在课程招生日期内注册您的课程，也可以随时退出课程。
+他们也可以随时更改电子邮箱地址和真实姓名。
+所以，您可以定时查看这些信息，掌握学生人数变化趋势。</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">以后的更新中，edX可能会要求学生选择自己的语言和所在地。目前的版本尚未执行。</p>
+</div>
+</div>
+<div class="section" id="view-and-download-student-data">
+<span id="id6"></span><h3><a class="toc-backref" href="#id16">10.9.2.2. 下载或查看学生数据</a><a class="headerlink" href="#view-and-download-student-data" title="Permalink to this headline">¶</a></h3>
+<p>您可在特定时间段下载学生个人信息报告，了解学生人数情况，
+并通过不同时期内学生人数的比较绘制学生人数变化趋势图。
+对于分队课程而言，这份个人信息报告也会包括学生的分队情况。</p>
+<p>当您选择下载学生数据时，edX服务器会创建一个下载进程。
+课程内学生的数量，以及课程是否包含分队功能将决定下载时间长短。
+您可以在下载完毕后将学生信息简报保存为CSV格式。</p>
+<p>如果课程学生人数少于200人，您可以在教师面板中查看学生数据。</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">除了学生数据外，您还可以查看课程员工的数据信息。</p>
+</div>
+<p>如何下载学生数据：</p>
+<ol class="arabic simple">
+<li>查看课程现况</li>
+<li>单击 <strong>导师</strong> → <strong>数据下载</strong></li>
+<li>如果要下载CSV格式的文件，请单击 <strong>将信息简报保存为CSV文件</strong></li>
+</ol>
+<blockquote>
+<div><p>此时会出现提示消息，显示下载正在进行中。
+这个过程可能要持续一段时间，但是在等待过程中您可以跳到其他页面，干别的事情。</p>
+<p>如果想查看下载进度，可以在浏览器中重新加载页面，将滚动条拖至 <strong>正在进行的教师任务</strong> 区域。</p>
+</div></blockquote>
+<ol class="arabic simple" start="4">
+<li>单击页面底部的
+<code class="docutils literal"><span class="pre">{course_id}_student_profile_info_{date}.csv</span></code> 文件名，打开或保存学生信息简报</li>
+</ol>
+<blockquote>
+<div>该文件包含所有学生提供的数据信息。</div></blockquote>
+<p>如何查看学生数据：</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">仅当学生人数少于200时才可选择此功能。</p>
+</div>
+<ol class="arabic">
+<li><p class="first">查看课程现况</p>
+</li>
+<li><p class="first">单击 <strong>导师</strong> → <strong>数据下载</strong></p>
+</li>
+<li><p class="first">单击 <strong>列出学生信息简报</strong> 查看学生数据</p>
+<p>此时会打开一张学生数据表，每一行代表一个学生。比较长的内容，比如学习期望等，只能看见前几句话。</p>
+</li>
+</ol>
+<blockquote>
+<div><img alt="Table with columns for the collected data points and rows for each student on the Instructor Dashboard" src="../_images/StudentData_Table.png" />
+</div></blockquote>
+<p>如果该课程启用了分队功能，则会增加“分队”栏，显示学生的分队情况。</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">为保持向后兼容性，本报告包含“语言”和“所在地”栏。但在学生注册过程中，不会显示这两项。</p>
+</div>
+</div>
+</div>
+<div class="section" id="access-anonymized">
+<span id="id"></span><h2><a class="toc-backref" href="#id17">10.9.3. 获取解析后的学生ID</a><a class="headerlink" href="#access-anonymized" title="Permalink to this headline">¶</a></h2>
+<p>edX平台的某些插件，比如外挂评分工具和调查工具，需要提供解析后的学生数据。
+如果您需要解析之前加密的数据，可以下载一个CSV文件。</p>
+<p>如何下载指定用户ID和匿名用户ID文件：</p>
+<ol class="arabic simple">
+<li>查看课程现况</li>
+<li>单击 <strong>导师</strong> → <strong>数据下载</strong></li>
+<li>单击 <strong>获取学生匿名ID的CSV</strong> 。</li>
+</ol>
+<p>此时您需要打开或保存课程的{course-id}-anon-id.csv文件。
+该文件包含了学生注册时系统自动分配的ID、edX范围内的匿名ID以及某课程范围内的匿名ID。
+只要是曾经参加过课程的学生，都拥有这三个ID。</p>
+<p>您可将这个CSV文件与  <code class="docutils literal"><span class="pre">{course_id}_student_profile_info_{date}.csv</span></code> 学生数据文件、
+<code class="docutils literal"><span class="pre">{course_id}_grade_report_{date}.csv</span></code> 学生成绩文件配合起来使用，
+达到解析学生数据的目的。</p>
+</div>
+<div class="section" id="using-the-learner-engagement-report">
+<span id="id7"></span><h2>10.9.4. 使用学生互动报告<a class="headerlink" href="#using-the-learner-engagement-report" title="Permalink to this headline">¶</a></h2>
+<p>通过学生互动报告，您可以查看每个学生在课程中的表现。
+报告中每个学生占一行，纵列中显示所有课程活动和与问题、视频、论坛和课本的交互情况。</p>
+<p>通过此报告，您可以看出哪些学生在浏览课程内容。进一步，哪些学生尝试回答问题、
+播放视频、参与讨论或浏览课本。</p>
+<p>服务器每天都生成当天的学生互动报告。每周一将生成一周总结报告（自周一至周日）。</p>
+<div class="section" id="id8">
+<h3>10.9.4.1. 理解学生互动报告<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id9">
+<h4>10.9.4.1.1. 报告问题类型<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h4>
+<p>为检测问题相关活动，学生互动报告包含capa问题数据。
+即报告包含学生可选择 <strong>勾选</strong> 的问题，包括以下问题类型。</p>
+<blockquote>
+<div><ul class="simple">
+<li>复选框</li>
+<li>Custom JavaScript</li>
+<li>拖拽</li>
+<li>下拉</li>
+<li>数学方程式输入</li>
+<li>多项选择</li>
+<li>数字输入</li>
+<li>文本输入</li>
+</ul>
+</div></blockquote>
+<p>报告不包含公开响应评估和LIT组件数据。</p>
+<p>更多关于问题类型的信息请参阅
+<a class="reference internal" href="../exercises_tools/index.html#exercises-and-tools-index"><span>Creating Exercises and Tools</span></a> 。</p>
+</div>
+<div class="section" id="id10">
+<h4>10.9.4.1.2. 报告列<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h4>
+<p>学生互动报告.csv文件包含以下内容。</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="25%" />
+<col width="75%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">列</th>
+<th class="head">描述</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>日期</td>
+<td>只在每日报告中。活动日期。</td>
+</tr>
+<tr class="row-odd"><td>结束日期</td>
+<td>只在每周报告中。报告中的最后一天。</td>
+</tr>
+<tr class="row-even"><td>课程 ID</td>
+<td>课程运行的识别符。</td>
+</tr>
+<tr class="row-odd"><td>用户名</td>
+<td>edX账户的唯一用户名。</td>
+</tr>
+<tr class="row-even"><td>Email</td>
+<td>edX账户的唯一邮箱地址。</td>
+</tr>
+<tr class="row-odd"><td>队列</td>
+<td>学生所在队列。如果学生不在任何队列中，此项为空。</td>
+</tr>
+<tr class="row-even"><td>是否活跃Was Active</td>
+<td>只在每日报告中。1指学生在报告日中至少有一次访问课程的任何页面。
+反之为0.</td>
+</tr>
+<tr class="row-odd"><td>本周活跃天数</td>
+<td>只在每周报告中。显示本周学生访问课程任何页面的天数。</td>
+</tr>
+<tr class="row-even"><td>单个问题尝试</td>
+<td>单个问题中学生点击 <strong>确定</strong> 提交答案的次数。</td>
+</tr>
+<tr class="row-odd"><td>问题尝试总数</td>
+<td>学生点击 <strong>确定</strong> 提交答案的总次数。</td>
+</tr>
+<tr class="row-even"><td>单个问题正确回答</td>
+<td>单个问题中学生提交正确答案的次数。</td>
+</tr>
+<tr class="row-odd"><td>单个视频播放</td>
+<td>学生播放单个视频的次数。
+学生开始播放一个视频算一次。</td>
+</tr>
+<tr class="row-even"><td>论坛发帖</td>
+<td>学生在课程论坛发布的新帖数量。</td>
+</tr>
+<tr class="row-odd"><td>论坛回复</td>
+<td>学生在课程论坛中的回复次数。</td>
+</tr>
+<tr class="row-even"><td>论坛评论</td>
+<td>学生在课程论坛中发布的评论数量。</td>
+</tr>
+<tr class="row-odd"><td>课本浏览页数</td>
+<td>学生浏览过的.pdf格式课本的页数。</td>
+</tr>
+<tr class="row-even"><td>最近访问的小节URL</td>
+<td>学生最近一次访问的小节URL</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="section" id="download-the-learner-engagement-report">
+<span id="id11"></span><h3>10.9.4.2. 下载学生交互报告<a class="headerlink" href="#download-the-learner-engagement-report" title="Permalink to this headline">¶</a></h3>
+<p>系统自动每天自动更新学生互动数据并创建日报告和周报告.csv文件以供下载。
+.csv文件的链接在导师面板中可用。</p>
+<p>遵循以下步骤下载学生交互报告。</p>
+<ol class="arabic simple">
+<li>查看课程的在线版本。</li>
+<li>点击 <strong>导师</strong> ，然后点击 <strong>数据下载</strong> 。</li>
+<li>在页面底部点击
+<code class="docutils literal"><span class="pre">student_engagement_daily_{date}.csv</span></code> 或 <code class="docutils literal"><span class="pre">student_engagement_weekly_{end</span>
+<span class="pre">date}.csv</span></code> 文件名。您可以滚动鼠标找到特定的文件。</li>
+</ol>
+</div>
+</div>
+</div>
+
+
+          <footer>
+  
+    <div class="rst-footer-buttons">
+      
+        <a href="course_answers.html" class="btn btn-neutral float-right" title="10.10. 回答问题数据"/>Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="course_data.html" class="btn btn-neutral" title="10.8. 课程数据"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <p>
+      &copy; Copyright 2015, edX.
+  </p>
+
+ 
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+</body>
+</html>

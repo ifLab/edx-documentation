@@ -1,0 +1,407 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>3.6. 给课程添加文件 &mdash; Building and Running an Open edX Course  documentation</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="../_static/css/favicon.ico"/>
+  
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  
+  
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:'../',
+        VERSION:'',
+        COLLAPSE_INDEX:false,
+        FILE_SUFFIX:'.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+
+    
+
+  
+
+  
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+
+  
+    <link rel="top" title="Building and Running an Open edX Course  documentation" href="../index.html"/>
+        <link rel="up" title="3. Setting up Your Course" href="index.html"/>
+        <link rel="next" title="3.7. 添加课程补充资料及讲义" href="handouts_updates.html"/>
+        <link rel="prev" title="3.5. 授权课程" href="licensing_course.html"/> 
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-nav-search">
+        <a href="../index.html" class="icon icon-home"> Building and Running an Open edX Course</a>
+        <form class="wy-form" action="../search.html" method="get">
+  <input type="text" name="q" placeholder="Search document" />
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix">
+        
+        
+            <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../front_matter/index.html">1. For Your Information</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../front_matter/read_me.html">1.1. Read Me</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../front_matter/preface.html">1.2. 序言</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../front_matter/change_log.html">1.3. Change Log</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../front_matter/browsers.html">1.4. edX浏览器支持</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/index.html">2. Getting Started</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../getting_started/dashboard_acctsettings_profile.html">2.1. 搜索你的仪表板、设置和配置文件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../getting_started/get_started.html">2.2. Getting Started with Studio</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../getting_started/accessibility.html">2.3. 创建无障碍课程指南</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">3. Setting up Your Course</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="creating_new_course.html">3.1. 新建课程</a></li>
+<li class="toctree-l2"><a class="reference internal" href="scheduling_course.html">3.2. 设置开始和结束日期</a></li>
+<li class="toctree-l2"><a class="reference internal" href="setting_up_student_view.html">3.3. 设置课程细节</a></li>
+<li class="toctree-l2"><a class="reference internal" href="course_prerequisites.html">3.4. 设定入学要求</a></li>
+<li class="toctree-l2"><a class="reference internal" href="licensing_course.html">3.5. 授权课程</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="">3.6. 给课程添加文件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="handouts_updates.html">3.7. 添加课程补充资料及讲义</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pages.html">3.8. 为课程添加页面</a></li>
+<li class="toctree-l2"><a class="reference internal" href="textbooks.html">3.9. 添加课本</a></li>
+<li class="toctree-l2"><a class="reference internal" href="establish_grading_policy.html">3.10. 设定计分政策</a></li>
+<li class="toctree-l2"><a class="reference internal" href="course_rerun.html">3.11. 重开课程</a></li>
+<li class="toctree-l2"><a class="reference internal" href="export_import_course.html">3.12. 输出和导入课程</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../developing_course/index.html">4. Developing Your Course</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/workflow.html">4.1. 开始创建课程内容</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/course_outline.html">4.2. 创建课程大纲</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/course_sections.html">4.3. 创建课程章节</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/course_subsections.html">4.4. 构建课程小节</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/course_units.html">4.5. 构建课程单元</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/course_components.html">4.6. 创建课程组件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/controlling_content_visibility.html">4.7. 设置内容可见性</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/testing_courseware.html">4.8. 测试您的课程内容</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../creating_content/index.html">5. Creating Course Content</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../creating_content/create_html_component.html">5.1. 如何使用HTML组件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../creating_content/create_video.html">5.2. 创建影片组件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../creating_content/create_discussion.html">5.3. 创建讨论组件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../creating_content/create_problem.html">5.4. 创建问题组件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../creating_content/libraries.html">5.5. 内容库</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../exercises_tools/index.html">6. Creating Exercises and Tools</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/create_exercises_and_tools.html">6.1. 创建练习和工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/annotation.html">6.2. 注释问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/checkbox.html">6.3. 复选框问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/chemical_equation.html">6.4. 化学方程式问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/circuit_schematic_builder.html">6.5. 电路原理图搭建问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/conditional_module.html">6.6. 条件模板</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/custom_javascript.html">6.7. 自定义JavaScript问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/drag_and_drop.html">6.8. 拖放问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/dropdown.html">6.9. 下拉问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/external_graders.html">6.10. 图像映射输入问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/full_screen_image.html">6.11. 全屏图像工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/gene_explorer.html">6.12. Gene Explorer工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/google_calendar.html">6.13. 谷歌日历工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/google_docs.html">6.14. 谷歌云文件工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/google_hangouts.html">6.15. 谷歌即时群聊工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/iframe.html">6.16. IFrame工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/image_mapped_input.html">6.17. 图像映射输入问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/lti_component.html">6.18. LTI 组件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/math_expression_input.html">6.19. 数学表达式输入问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/molecule_editor.html">6.20. 分子编辑器</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/molecule_viewer.html">6.21. 分子浏览器</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/multiple_choice.html">6.22. 多项选择问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/mult_choice_num_input.html">6.23. 多项选择和数字输入题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/numerical_input.html">6.24. 数值输入问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/open_response_assessments/index.html">6.25. Open Response Assessments</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/periodic_table.html">6.26. 元素周期表工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/poll.html">6.27. 投票工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/problem_with_hint.html">6.28. 带适应性提示的问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/problem_in_latex.html">6.29. LaTeX问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/protein_builder.html">6.30. Protex蛋白质构建工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/randomized_content_blocks.html">6.31. 随机内容块</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/recommenderXBlock.html">6.32. 推荐系统</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/student_notes.html">6.33. 学生笔记工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/text_input.html">6.34. 文本输入问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/word_cloud.html">6.35. 文字云工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/custom_python.html">6.36. 自定义评分器问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/zooming_image.html">6.37. 图像放大工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/mathjax.html">6.38. Studio中MathJax的简要介绍</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../content_experiments/index.html">7. Creating Content Experiments</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../content_experiments/content_experiments_overview.html">7.1. 内容实验概述</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../content_experiments/content_experiments_configure.html">7.2. Configure Your Course for Content Experiments</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../content_experiments/content_experiments_add.html">7.3. Add Content Experiments to Your Course</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../content_experiments/content_experiments_view.html">7.4. 测试内容实验</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../cohorts/index.html">8. Including Student Cohorts</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../cohorts/cohorts_overview.html">8.1. 使用队列功能建立课程群</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cohorts/cohort_config.html">8.2. 启用、配置分队模式</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cohorts/cohorted_courseware.html">8.3. 创建特定队列课件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cohorts/cohorts_setup_discussions.html">8.4. 在包含队列的课程中设置论坛</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cohorts/cohorts_manage_discussions.html">8.5. 管理有学生队列的论坛</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../releasing_course/index.html">9. Releasing Your Course</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../releasing_course/beta_testing.html">9.1. 贝塔测试</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../releasing_course/course_launching.html">9.2. 课程发布事宜</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../releasing_course/staff_debug_info.html">9.3. 员工调试信息</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../running_course/index.html">10. Running Your Course</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/course_staffing.html">10.1. 安置职工</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/course_enrollment.html">10.2. 招生</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/discussions.html">10.3. 管理课程讨论项目</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/discussions_students.html">10.4. 参与课程讨论</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/discussion_guidance_moderators.html">10.5. 论坛协调员指南</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/bulk_email.html">10.6. 大宗邮件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/course_wiki.html">10.7. 使用课程维基</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/course_data.html">10.8. 课程数据</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/course_student.html">10.9. 学生数据</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/course_answers.html">10.10. 回答问题数据</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/course_grades.html">10.11. 学生成绩与成绩评定</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/checking_student_progress.html">10.12. 总成绩计算与证书发放</a></li>
+</ul>
+</li>
+</ul>
+
+        
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top">
+        <i data-toggle="wy-nav-top" class="icon icon-reorder"></i>
+        <a href="/">Building and Running an Open edX Course</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <ul class="wy-breadcrumbs">
+  <li><a href="../index.html">Table of Contents</a> &raquo;</li>
+  <li><a href="">3.6. 给课程添加文件</a></li>
+  
+</ul>
+<hr/>
+
+          
+  <div class="section" id="add-files-to-a-course">
+<span id="id1"></span><h1>3.6. 给课程添加文件<a class="headerlink" href="#add-files-to-a-course" title="Permalink to this headline">¶</a></h1>
+<p>想要为您的课程添加图片或文件，您需要先通过Studio将文件上传到您的课程，再将文件地址添加到课程内容中。
+您也可以使用从教师面板发出的大容量邮件中的文件。</p>
+<ul class="simple">
+<li><a class="reference internal" href="#file-size"><span>文件大小</span></a></li>
+<li><a class="reference internal" href="#upload-a-file"><span>上传文件</span></a></li>
+<li><a class="reference internal" href="#file-urls"><span>使用文件的URL作为引用源</span></a></li>
+<li><a class="reference internal" href="#sort-files"><span>文件排序</span></a></li>
+<li><a class="reference internal" href="#filter-files"><span>筛选文件</span></a></li>
+<li><a class="reference internal" href="#find-files"><span>查找文件</span></a></li>
+<li><a class="reference internal" href="#lock-a-file"><span>锁定文件</span></a></li>
+<li><a class="reference internal" href="#delete-a-file"><span>删除文件</span></a></li>
+</ul>
+<div class="section" id="file-size">
+<span id="id2"></span><h2>3.6.1. 文件大小<a class="headerlink" href="#file-size" title="Permalink to this headline">¶</a></h2>
+<p>上传的文件大小不能超过 50 MB。</p>
+<p>在将文件添加到您的课程之前，我们推荐您使用压缩工具将PDF文件或图片文件进行压缩。
+如果您必须使用压缩后仍超出 50 MB的文件，请联系您的edX项目经理。</p>
+<p>如果您需要和学生分享视频或音频文件等大尺寸文件，请用YouTube或者其他网站存储这些文件。
+请勿将这些文件通过“文件与上传”页面上传到您的课程里。如果edX合作伙伴需要储存大尺寸文件，请联系您的edX项目经理。</p>
+</div>
+<div class="section" id="upload-a-file">
+<span id="id3"></span><h2>3.6.2. 上传文件<a class="headerlink" href="#upload-a-file" title="Permalink to this headline">¶</a></h2>
+<p>您将在Studio中的 <strong>文件与上传</strong> 页面中上传文件。</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">请确保您拥有所上传文件或图片的版权许可，以及标明正确的引用来源。</p>
+</div>
+<p>如何上传文件：</p>
+<ol class="arabic">
+<li><p class="first">在您的本地计算机上创建文件</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">由于文件名属于URL的一部分，学生在打开URL时也能看见文件名。因此不要将文件名设置为“答案.pdf”等。</p>
+</div>
+</li>
+<li><p class="first">单击 <strong>内容</strong> 菜单，选择 <strong>文件与上传</strong></p>
+</li>
+<li><p class="first">单击 <strong>上传新文件</strong></p>
+</li>
+<li><p class="first">在跳出的对话框中，单击 <strong>选择文件</strong></p>
+</li>
+<li><p class="first">在 <strong>打开</strong> 对话框中，选择一个或多个上传的文件，单击 <strong>打开</strong></p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">如果上传的文件与已有课程文件重名，则原文件会在无警告的情况下被覆盖。</p>
+</div>
+</li>
+<li><p class="first">想要继续添加文件，单击 <strong>继续添加</strong>，重复以上步骤</p>
+</li>
+<li><p class="first">单击右上角的 <strong>X</strong> 关闭对话框</p>
+</li>
+</ol>
+<p>关闭对话框时，新文件会出现在 <strong>文件与上传</strong> 页面。</p>
+</div>
+<div class="section" id="url">
+<span id="file-urls"></span><h2>3.6.3. 使用文件的URL作为引用源<a class="headerlink" href="#url" title="Permalink to this headline">¶</a></h2>
+<p>在 <strong>文件与上传</strong> 页面，每个文件都有 <strong>Studio URL</strong> 和 <strong>web URL</strong> 。</p>
+<p>如果您需要进行以下操作，请使用web URL：
+通过大容量邮件添加文件或图片...
+提供外部文件或图片的链接。</p>
+<ul>
+<li><p class="first">使用 <strong>Studio URL</strong> 可将组件、补充资料和讲义链接至文件、图片。</p>
+<blockquote>
+<div><p>更多细节请参考 <a class="reference internal" href="../creating_content/create_html_component.html#add-an-image-to-an-html-component"><span>在HTML组件中添加图像</span></a>. 您无法使用 web URL 来引用您课程内部的文件和图片。</p>
+</div></blockquote>
+</li>
+<li><p class="first">使用 <strong>Web URL</strong> 来</p>
+<ul class="simple">
+<li>将文件或图片添加到学习管理系统的大容量邮件中。 详情请参考 <a class="reference internal" href="../running_course/bulk_email.html#send-bulk-email"><span>发送邮件消息到课程参与者</span></a>.</li>
+<li>提供外部文件或图片的链接</li>
+</ul>
+</li>
+</ul>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">如果您不想让课堂以外的人查看文件，您可以锁定文件。
+锁定文件以后，web URL只允许注册本课程的学生查看。
+更多信息请参阅： <a class="reference internal" href="#lock-a-file"><span>锁定文件</span></a>.</p>
+</div>
+<p>双击选中 <strong>URL</strong> 栏中的值进行复制。</p>
+</div>
+<div class="section" id="sort-files">
+<span id="id4"></span><h2>3.6.4. 文件排序<a class="headerlink" href="#sort-files" title="Permalink to this headline">¶</a></h2>
+<p>在 <strong>文件与上传</strong> 页面中，您可以按照任何蓝色标题值排列文件。例如，点击 <strong>文件名</strong> 列可按照文件名排序文件。</p>
+<p>两种排序方式均可在正序与倒序形式中切换，单击列标题即可。</p>
+<p>当前排序顺序显示在文件列表顶部，排序顺序以下划线标出。</p>
+</div>
+<div class="section" id="filter-files">
+<span id="id5"></span><h2>3.6.5. 筛选文件<a class="headerlink" href="#filter-files" title="Permalink to this headline">¶</a></h2>
+<p>您可以选择可见文件类型以过滤文件列表。列表将保持当前的排列方式。</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="33%" />
+<col width="67%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><strong>类型</strong></td>
+<td><strong>文件类型包括</strong></td>
+</tr>
+<tr class="row-even"><td>图片</td>
+<td>.gif、 .ico、 .jpg、 .jpeg、 .png、 .tif 或 .tiff</td>
+</tr>
+<tr class="row-odd"><td>文档</td>
+<td>.pdf、 .txt、 Microsoft Office 和 Open Office 文档，演示文稿或电子表格或电子表格</td>
+</tr>
+<tr class="row-even"><td>其他</td>
+<td>其他类型如 .html、 .js 或 .sjson</td>
+</tr>
+</tbody>
+</table>
+<p>通过类型筛选列表或文件：</p>
+<ol class="arabic simple">
+<li>在 <strong>文件与上传</strong> 页面中，选中 <strong>类型</strong> 列。</li>
+<li>在下拉列表中选择您需要查看的文件类型。</li>
+</ol>
+<p>更新后的列表只包含您选择的文件类型，列名也相应变化。</p>
+<p>点击 <strong>类型</strong> 下拉列表中的 <strong>查看全部</strong> 可以重新设置条件以及查看所有类型的文件。</p>
+</div>
+<div class="section" id="find-files">
+<span id="id6"></span><h2>3.6.6. 查找文件<a class="headerlink" href="#find-files" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><strong>文件与上传</strong> 每页最多显示50个文件，如果您的课程文件数量超过50个，其余的文件将显示在其他页面。</div></blockquote>
+<p>页面内容最上方会显示当前页面停留在哪个文件页以及文件总数。</p>
+<p>您可通过以下两种方法浏览文件页：</p>
+<ul>
+<li><p class="first">点击文件列表最上方和最下方的 <strong>&lt;</strong> 和 <strong>&gt;</strong> 按钮在上一页与下一页之前切换</p>
+</li>
+<li><p class="first">在页面底部点击页码跳转至某页
+在输入框中输入页码可直接跳转至该页面。</p>
+<a class="reference internal image-reference" href="../_images/file_pagination.png"><img alt="Image showing page navigation on the Files &amp; Uploads page." src="../_images/file_pagination.png" style="width: 250px;" /></a>
+</li>
+</ul>
+</div>
+<div class="section" id="lock-a-file">
+<span id="id7"></span><h2>3.6.7. 锁定文件<a class="headerlink" href="#lock-a-file" title="Permalink to this headline">¶</a></h2>
+<p>系统默认，即使是课堂外的人，只要知道文件的URL就可以下载您上传的文件，
+如果您不想让他们访问您的文件，请点击 <strong>锁定</strong> 按钮。</p>
+</div>
+<div class="section" id="delete-a-file">
+<span id="id8"></span><h2>3.6.8. 删除文件<a class="headerlink" href="#delete-a-file" title="Permalink to this headline">¶</a></h2>
+<p>点击文件旁边的 <strong>X</strong> 图标以删除文件，文件删除前会有警告提示。</p>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">如果您的文件包含链接，文件删除后链接将被破坏。
+所以删除文件前，请先将链接备份至其他位置。</p>
+</div>
+</div>
+</div>
+
+
+          <footer>
+  
+    <div class="rst-footer-buttons">
+      
+        <a href="handouts_updates.html" class="btn btn-neutral float-right" title="3.7. 添加课程补充资料及讲义"/>Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="licensing_course.html" class="btn btn-neutral" title="3.5. 授权课程"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <p>
+      &copy; Copyright 2015, edX.
+  </p>
+
+ 
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+</body>
+</html>

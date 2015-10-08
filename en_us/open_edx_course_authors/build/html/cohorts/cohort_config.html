@@ -1,0 +1,705 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>8.2. 启用、配置分队模式 &mdash; Building and Running an Open edX Course  documentation</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="../_static/css/favicon.ico"/>
+  
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  
+  
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:'../',
+        VERSION:'',
+        COLLAPSE_INDEX:false,
+        FILE_SUFFIX:'.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+
+    
+
+  
+
+  
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+
+  
+    <link rel="top" title="Building and Running an Open edX Course  documentation" href="../index.html"/>
+        <link rel="up" title="8. Including Student Cohorts" href="index.html"/>
+        <link rel="next" title="8.3. 创建特定队列课件" href="cohorted_courseware.html"/>
+        <link rel="prev" title="8.1. 使用队列功能建立课程群" href="cohorts_overview.html"/> 
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-nav-search">
+        <a href="../index.html" class="icon icon-home"> Building and Running an Open edX Course</a>
+        <form class="wy-form" action="../search.html" method="get">
+  <input type="text" name="q" placeholder="Search document" />
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix">
+        
+        
+            <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../front_matter/index.html">1. For Your Information</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../front_matter/read_me.html">1.1. Read Me</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../front_matter/preface.html">1.2. 序言</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../front_matter/change_log.html">1.3. Change Log</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../front_matter/browsers.html">1.4. edX浏览器支持</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/index.html">2. Getting Started</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../getting_started/dashboard_acctsettings_profile.html">2.1. 搜索你的仪表板、设置和配置文件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../getting_started/get_started.html">2.2. Getting Started with Studio</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../getting_started/accessibility.html">2.3. 创建无障碍课程指南</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../building_course/index.html">3. Setting up Your Course</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/creating_new_course.html">3.1. 新建课程</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/scheduling_course.html">3.2. 设置开始和结束日期</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/setting_up_student_view.html">3.3. 设置课程细节</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/course_prerequisites.html">3.4. 设定入学要求</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/licensing_course.html">3.5. 授权课程</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/course_files.html">3.6. 给课程添加文件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/handouts_updates.html">3.7. 添加课程补充资料及讲义</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/pages.html">3.8. 为课程添加页面</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/textbooks.html">3.9. 添加课本</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/establish_grading_policy.html">3.10. 设定计分政策</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/course_rerun.html">3.11. 重开课程</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../building_course/export_import_course.html">3.12. 输出和导入课程</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../developing_course/index.html">4. Developing Your Course</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/workflow.html">4.1. 开始创建课程内容</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/course_outline.html">4.2. 创建课程大纲</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/course_sections.html">4.3. 创建课程章节</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/course_subsections.html">4.4. 构建课程小节</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/course_units.html">4.5. 构建课程单元</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/course_components.html">4.6. 创建课程组件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/controlling_content_visibility.html">4.7. 设置内容可见性</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developing_course/testing_courseware.html">4.8. 测试您的课程内容</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../creating_content/index.html">5. Creating Course Content</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../creating_content/create_html_component.html">5.1. 如何使用HTML组件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../creating_content/create_video.html">5.2. 创建影片组件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../creating_content/create_discussion.html">5.3. 创建讨论组件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../creating_content/create_problem.html">5.4. 创建问题组件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../creating_content/libraries.html">5.5. 内容库</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../exercises_tools/index.html">6. Creating Exercises and Tools</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/create_exercises_and_tools.html">6.1. 创建练习和工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/annotation.html">6.2. 注释问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/checkbox.html">6.3. 复选框问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/chemical_equation.html">6.4. 化学方程式问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/circuit_schematic_builder.html">6.5. 电路原理图搭建问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/conditional_module.html">6.6. 条件模板</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/custom_javascript.html">6.7. 自定义JavaScript问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/drag_and_drop.html">6.8. 拖放问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/dropdown.html">6.9. 下拉问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/external_graders.html">6.10. 图像映射输入问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/full_screen_image.html">6.11. 全屏图像工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/gene_explorer.html">6.12. Gene Explorer工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/google_calendar.html">6.13. 谷歌日历工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/google_docs.html">6.14. 谷歌云文件工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/google_hangouts.html">6.15. 谷歌即时群聊工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/iframe.html">6.16. IFrame工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/image_mapped_input.html">6.17. 图像映射输入问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/lti_component.html">6.18. LTI 组件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/math_expression_input.html">6.19. 数学表达式输入问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/molecule_editor.html">6.20. 分子编辑器</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/molecule_viewer.html">6.21. 分子浏览器</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/multiple_choice.html">6.22. 多项选择问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/mult_choice_num_input.html">6.23. 多项选择和数字输入题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/numerical_input.html">6.24. 数值输入问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/open_response_assessments/index.html">6.25. Open Response Assessments</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/periodic_table.html">6.26. 元素周期表工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/poll.html">6.27. 投票工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/problem_with_hint.html">6.28. 带适应性提示的问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/problem_in_latex.html">6.29. LaTeX问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/protein_builder.html">6.30. Protex蛋白质构建工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/randomized_content_blocks.html">6.31. 随机内容块</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/recommenderXBlock.html">6.32. 推荐系统</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/student_notes.html">6.33. 学生笔记工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/text_input.html">6.34. 文本输入问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/word_cloud.html">6.35. 文字云工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/custom_python.html">6.36. 自定义评分器问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/zooming_image.html">6.37. 图像放大工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercises_tools/mathjax.html">6.38. Studio中MathJax的简要介绍</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../content_experiments/index.html">7. Creating Content Experiments</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../content_experiments/content_experiments_overview.html">7.1. 内容实验概述</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../content_experiments/content_experiments_configure.html">7.2. Configure Your Course for Content Experiments</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../content_experiments/content_experiments_add.html">7.3. Add Content Experiments to Your Course</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../content_experiments/content_experiments_view.html">7.4. 测试内容实验</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">8. Including Student Cohorts</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="cohorts_overview.html">8.1. 使用队列功能建立课程群</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="">8.2. 启用、配置分队模式</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cohorted_courseware.html">8.3. 创建特定队列课件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cohorts_setup_discussions.html">8.4. 在包含队列的课程中设置论坛</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cohorts_manage_discussions.html">8.5. 管理有学生队列的论坛</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../releasing_course/index.html">9. Releasing Your Course</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../releasing_course/beta_testing.html">9.1. 贝塔测试</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../releasing_course/course_launching.html">9.2. 课程发布事宜</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../releasing_course/staff_debug_info.html">9.3. 员工调试信息</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../running_course/index.html">10. Running Your Course</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/course_staffing.html">10.1. 安置职工</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/course_enrollment.html">10.2. 招生</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/discussions.html">10.3. 管理课程讨论项目</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/discussions_students.html">10.4. 参与课程讨论</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/discussion_guidance_moderators.html">10.5. 论坛协调员指南</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/bulk_email.html">10.6. 大宗邮件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/course_wiki.html">10.7. 使用课程维基</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/course_data.html">10.8. 课程数据</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/course_student.html">10.9. 学生数据</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/course_answers.html">10.10. 回答问题数据</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/course_grades.html">10.11. 学生成绩与成绩评定</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../running_course/checking_student_progress.html">10.12. 总成绩计算与证书发放</a></li>
+</ul>
+</li>
+</ul>
+
+        
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top">
+        <i data-toggle="wy-nav-top" class="icon icon-reorder"></i>
+        <a href="/">Building and Running an Open edX Course</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <ul class="wy-breadcrumbs">
+  <li><a href="../index.html">Table of Contents</a> &raquo;</li>
+  <li><a href="">8.2. 启用、配置分队模式</a></li>
+  
+</ul>
+<hr/>
+
+          
+  <div class="section" id="enabling-and-configuring-cohorts">
+<span id="id1"></span><h1>8.2. 启用、配置分队模式<a class="headerlink" href="#enabling-and-configuring-cohorts" title="Permalink to this headline">¶</a></h1>
+<p>If you want to use cohorts in your course, you select a strategy for assigning
+your students to cohorts: automated assignment, manual assignment, or a hybrid
+approach. For more information, see <a class="reference internal" href="cohorts_overview.html#options-for-assigning-students-to-cohorts"><span>课题讨论选项</span></a>.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Although you can change the assignment method for cohorts at any time,
+you should have a strategy in mind as you design your course, and only make
+changes to cohorts while the course is running if absolutely necessary.</p>
+</div>
+<p>同时您还需要决定是否将全课堂共享的大讨论改为小规模分队讨论。</p>
+<p>当您最终决定了分队策略后，请完成以下配置步骤：</p>
+<ol class="arabic simple">
+<li><a class="reference internal" href="#enable-cohorts"><span>Enable cohorts</span></a>.</li>
+<li>根据您最终的分队策略，您需要：</li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li><a class="reference internal" href="#implementing-the-automated-assignment-strategy"><span>Implement an automated assignment strategy</span></a></li>
+<li><a class="reference internal" href="#implementing-the-manual-assignment-strategy"><span>Implement a manual assignment strategy</span></a> and <a class="reference internal" href="#assign-students-to-cohorts-manually"><span>manually assign students</span></a> to the cohorts you create</li>
+<li><a class="reference internal" href="cohorts_overview.html#hybrid-assignment"><span>Use a combination of automated and manual assignment</span></a></li>
+</ul>
+</div></blockquote>
+<ol class="arabic simple" start="3">
+<li>将需要更改的大课题转变为分队课题，如不需要，可忽略此步。</li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li>Course-wide discussion topics are unified by default, but you can specify
+that they are <a class="reference internal" href="cohorts_setup_discussions.html#specify-whether-coursewide-discussion-topics-are-cohorted"><span>divided by cohort</span></a>.</li>
+<li>Content-specific discussion topics are divided by cohort by default. You do
+not need to take any action if you want <a class="reference internal" href="cohorts_setup_discussions.html#specify-that-all-contentspecific-discussion-topics-are-cohorted"><span>all content-specific
+discussions</span></a> to be divided by cohort. You only need to change settings if you
+want to make <a class="reference internal" href="cohorts_setup_discussions.html#specify-some-contentspecific-discussion-topics-as-cohorted"><span>only a few discussion topics divided by cohort</span></a> and make the remaining
+topics unified.</li>
+</ul>
+</div></blockquote>
+<p>您需要在Studio和教师指示板上完成这些步骤。</p>
+<p>为保证学生的最佳课堂体验，这些步骤应在课程开始日期前就设置妥当。
+课程开始后，若您仍需更改分队设置，请参考 <a class="reference internal" href="#altering-cohort-configuration"><span>Altering Cohort Configuration in a Running Course</span></a>.</p>
+<div class="section" id="implementing-the-automated-assignment-strategy">
+<span id="id2"></span><h2>8.2.1. 启用分队功能<a class="headerlink" href="#implementing-the-automated-assignment-strategy" title="Permalink to this headline">¶</a></h2>
+<p>To implement an automated assignment strategy of students to cohorts, you
+<a class="reference internal" href="#enable-cohorts"><span>enable the cohort feature</span></a> for your course, and
+<a class="reference internal" href="#add-cohorts"><span>create cohorts</span></a> that have the <strong>Automatic</strong> <a class="reference internal" href="#changing-the-assignment-method-of-a-cohort"><span>assignment
+method</span></a>. To add students to these
+cohorts, you do not need to take any action: the system automatically and
+randomly assigns students to the available automatic cohorts when they first
+access any course content or discussion topic.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">You can <a class="reference internal" href="#assign-students-to-cohorts-manually"><span>add students manually</span></a> to any cohort, whether it was created as an automated cohort or a
+manual cohort.</p>
+</div>
+<p>For a scenario using an automated assignment strategy, see <a class="reference internal" href="cohorts_overview.html#all-automated-assignment"><span>自动分队：让大规模的讨论更易管理</span></a>. For a scenario using a combination of automated and manual
+assignment to cohorts, see <a class="reference internal" href="cohorts_overview.html#hybrid-assignment"><span>混合分队：在课堂内创立小规模课程群体</span></a>.</p>
+<div class="section" id="about-auto-cohorts">
+<span id="id3"></span><h3>8.2.1.1. 自动分队<a class="headerlink" href="#about-auto-cohorts" title="Permalink to this headline">¶</a></h3>
+<p>The first time a student first views any course content, including the course
+<strong>Discussion</strong> page or content-specific discussion topics, if she is not already
+assigned to a cohort, she is randomly assigned to one of the automated cohorts.
+If no automated cohorts exist, the system creates a <a class="reference internal" href="cohorts_overview.html#default-cohort-group"><span>系统默认分队：确保所有学生都有组可分</span></a>
+and assigns the student to this default cohort.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">The default cohort is created to ensure that every student is assigned
+to a cohort. To avoid having to re-assign students from the default cohort to
+other cohorts, make sure you create the automated cohorts that you want in
+your course before the course starts.</p>
+</div>
+</div>
+</div>
+<div class="section" id="implementing-the-manual-assignment-strategy">
+<span id="id4"></span><h2>8.2.2. 采用手动分组策略<a class="headerlink" href="#implementing-the-manual-assignment-strategy" title="Permalink to this headline">¶</a></h2>
+<p>To implement a manual assignment strategy of students to cohorts, you
+<a class="reference internal" href="#enable-cohorts"><span>enable the cohort feature</span></a> for your course, and
+<a class="reference internal" href="#add-cohorts"><span>create cohorts</span></a> that have the <strong>Manual</strong> <a class="reference internal" href="#changing-the-assignment-method-of-a-cohort"><span>assignment
+method</span></a>. To add students to these
+cohorts, you manually assign students to the appropriate cohort.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">手动分队过程应尽量在课程开始之前完成。
+如果课程开始后继续有学生报名参加，您也应该将新加入的学生分到相应队列中。
+If you need to make
+changes to the way you have configured cohorts while your course is running,
+see <a class="reference internal" href="#altering-cohort-configuration"><span>Altering Cohort Configuration in a Running Course</span></a>.</p>
+</div>
+<p>For a scenario using a manual assignment strategy, see <a class="reference internal" href="cohorts_overview.html#all-manual-assignment"><span>手动分组：“人以群分”</span></a>. For a scenario using a combination of automated and manual
+assignment to cohorts, see <a class="reference internal" href="cohorts_overview.html#hybrid-assignment"><span>混合分队：在课堂内创立小规模课程群体</span></a>.</p>
+</div>
+<div class="section" id="enabling-cohorts-in-your-course">
+<span id="enable-cohorts"></span><h2>8.2.3. Enabling Cohorts in your Course<a class="headerlink" href="#enabling-cohorts-in-your-course" title="Permalink to this headline">¶</a></h2>
+<p>To enable cohorts in your course, follow these steps.</p>
+<ol class="arabic simple">
+<li>In the LMS, select <strong>Instructor</strong>, then select <strong>Cohorts</strong>.</li>
+<li>Select <strong>Enable Cohorts</strong>.</li>
+</ol>
+<p>You can now <a class="reference internal" href="#add-cohorts"><span>add cohorts</span></a> to your course.</p>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p>Be very careful in deciding to enable the cohort feature in a live
+course, because doing so affects the course experience for learners. Learners
+might no longer have access to courseware and discussion topics that were
+previously visible to them.</p>
+<p class="last">If you must make changes to cohort configuration while your course is
+running, be sure you understand the consequences of doing so. For details,
+see <a class="reference internal" href="#altering-cohort-configuration"><span>Altering Cohort Configuration in a Running Course</span></a>.</p>
+</div>
+</div>
+<div class="section" id="adding-cohorts">
+<span id="add-cohorts"></span><h2>8.2.4. Adding Cohorts<a class="headerlink" href="#adding-cohorts" title="Permalink to this headline">¶</a></h2>
+<p>After you enable the cohorts feature for your course, you can add cohorts.</p>
+<ol class="arabic simple">
+<li>In the LMS, select <strong>Instructor</strong>, then select <strong>Cohorts</strong>.</li>
+<li>单击“添加队列”</li>
+<li>给队列起名字</li>
+</ol>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Students can see the name of the cohort they are assigned to. The
+message &#8220;This post is visible only to {cohort name}&#8221; appears with each post
+in discussion topics that are divided by cohort. See <a class="reference internal" href="cohorts_manage_discussions.html#read-the-cohort-indicator-in-posts"><span>阅读帖子的队列提示语</span></a>.</p>
+</div>
+<ol class="arabic simple" start="4">
+<li>Specify whether students are automatically or manually assigned to this
+cohort.</li>
+<li>Optionally, select <strong>Select a Content Group</strong> to associate the cohort with a
+<a class="reference internal" href="cohorted_courseware.html#about-content-groups"><span>content group</span></a>. For information about creating
+cohort-specific courseware by associating cohorts with content groups, see
+<a class="reference internal" href="cohorted_courseware.html#cohorted-courseware-overview"><span>创建特定队列课件</span></a>.</li>
+<li>单击“保存”</li>
+</ol>
+<p>Continue implementing your cohort strategy by creating additional cohorts as
+applicable, and specifying the assignment method for each cohort.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">When your course starts, you must have at least one cohort in your
+course that has automatic assignment. If you have not created at least one
+automated assignment cohort in the course by the time that the first student
+accesses your course content, edX creates a default cohort to which students
+are automatically assigned.</p>
+</div>
+<p>For details about adding students to a cohort by uploading a .csv file, see
+<a class="reference internal" href="#assign-students-to-cohort-groups-by-uploading-csv"><span>Assign Students to Cohorts by Uploading a .csv File</span></a>.</p>
+<p>For a report that includes the cohort assignment for every enrolled
+student, review the student profile information for your course. See
+<a class="reference internal" href="../running_course/course_student.html#view-and-download-student-data"><span>下载或查看学生数据</span></a>.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">You cannot delete cohorts, but you can change their names or the way
+in which students are assigned to them. If you need to make changes to the
+way you have configured cohorts while your course is running, see
+<a class="reference internal" href="#altering-cohort-configuration"><span>Altering Cohort Configuration in a Running Course</span></a>.</p>
+</div>
+</div>
+<div class="section" id="assign-students-to-cohorts-manually">
+<span id="id5"></span><h2>8.2.5. Assign Students to Cohorts Manually<a class="headerlink" href="#assign-students-to-cohorts-manually" title="Permalink to this headline">¶</a></h2>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Manual assignments should be as complete as possible before your
+course starts. If student enrollment continues after your course starts, you
+should continue to assign new students to cohorts.</p>
+</div>
+<ol class="arabic simple">
+<li>查看课程的当前状况。在Studio中单击“查看课程现况”</li>
+<li>单击“导师”→“成员”</li>
+<li>将滚动条拖到底部的“队列管理”区域</li>
+<li>在下拉列表中选择一个队列</li>
+<li>在“添加学生”字段后，键入单个或多个学生的用户名或电子邮箱，
+多个用户名和邮箱地址之间用逗号分隔，或另起一行。
+您可以复制CSV文件中的电子邮件地址，粘贴到本字段后。</li>
+<li>单击“添加学生”，即可将学生添加至制定手动分队队列。
+此时会出现一条消息，提示本次加入小队的学生人数。
+因为每个学生只能加入一个小队，该消息同时也提示了加入其他小队的学生人数。</li>
+</ol>
+<p>如果您需要了解每个学生的分组状况，可以查看学生信息简报。详见 <a class="reference internal" href="../running_course/course_student.html#view-and-download-student-data"><span>下载或查看学生数据</span></a>.</p>
+</div>
+<div class="section" id="assign-students-to-cohorts-by-uploading-a-csv-file">
+<span id="assign-students-to-cohort-groups-by-uploading-csv"></span><h2>8.2.6. Assign Students to Cohorts by Uploading a .csv File<a class="headerlink" href="#assign-students-to-cohorts-by-uploading-a-csv-file" title="Permalink to this headline">¶</a></h2>
+<p>In addition to assigning students to cohorts by entering usernames or email
+addresses directly on the <strong>Cohorts</strong> page in the Instructor Dashboard, you can
+also upload a .csv file containing a list of students and the cohorts that you
+want to assign them to.</p>
+<p>Any assignments to cohorts that you specify in the .csv files you upload
+will overwrite or change existing cohort assignments. The configuration of
+your cohorts should be complete and stable before your course begins. You
+should also complete manual cohort assignments as soon as possible after any
+student enrolls, including any enrollments that occur while your course is
+running. To understand the effects of changing cohort assignments after your
+course has started, see <a class="reference internal" href="#altering-cohort-configuration"><span>Altering Cohort Configuration in a Running Course</span></a>.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p>Be aware that the contents of the .csv file are processed row by row,
+from top to bottom, and each row is treated independently.</p>
+<p class="last">For example, if your .csv file contains conflicting information such as
+Student A being first assigned to Cohort 1, then later in the spreadsheet
+being assigned to Cohort 2, the end result of your .csv upload is that Student
+A is assigned to Cohort 2. However, the upload results file will count Student
+A twice in the &#8220;Students Added&#8221; count: once when they are added to Cohort 1,
+and again when they are added to Cohort 2. Before submitting a file for
+upload, check it carefully for errors.</p>
+</div>
+<p>The requirements for the .csv file are summarized in this table.</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="33%" />
+<col width="67%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><strong>Requirement</strong></td>
+<td><strong>Notes</strong></td>
+</tr>
+<tr class="row-even"><td>Valid .csv file</td>
+<td><p class="first">The file must be a properly formatted comma-separated values file:</p>
+<ul class="last simple">
+<li>The file extension is .csv.</li>
+<li>Every row must have the same number of commas, whether or not there
+are values in each cell.</li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td>File size</td>
+<td>The file size of .csv files for upload is limited to a maximum of 2MB.</td>
+</tr>
+<tr class="row-even"><td>UTF-8 encoded</td>
+<td><p class="first">You must save the file with UTF-8 encoding so that Unicode characters
+display correctly.</p>
+<p class="last">See <a class="reference internal" href="#creating-a-unicode-encoded-csv-file"><span>Creating a Unicode-encoded .csv File</span></a>.</p>
+</td>
+</tr>
+<tr class="row-odd"><td>Header row</td>
+<td>You must include a header row, with column names that exactly match those
+specified in &#8220;Columns&#8221; below.</td>
+</tr>
+<tr class="row-even"><td>One or two columns identifying students</td>
+<td><p class="first">You must include at least one column identifying students:
+either &#8220;email&#8221; or &#8220;username&#8221;, or both.</p>
+<p>If both the username and an email address are provided for a student,
+the email address has precedence.</p>
+<p class="last">In other words, if an email address is present, an incorrect or non-
+matching username is ignored.</p>
+</td>
+</tr>
+<tr class="row-odd"><td>One column identifying the cohort</td>
+<td><p class="first">You must include one column named &#8220;cohort&#8221; to identify the cohort
+to which you are assigning each student.</p>
+<p class="last">The specified cohorts must already exist in Studio.</p>
+</td>
+</tr>
+<tr class="row-even"><td>&nbsp;</td>
+<td>Columns with headings other than &#8220;email&#8221;, &#8220;username&#8221; and &#8220;cohort&#8221; are
+ignored.</td>
+</tr>
+</tbody>
+</table>
+<p>Follow these steps to assign students to cohorts by uploading a .csv file.</p>
+<ol class="arabic">
+<li><p class="first">View the live version of your course. For example, in Studio, click <strong>View
+Live</strong>.</p>
+</li>
+<li><p class="first">Click <strong>Instructor</strong>, then click <strong>Cohorts</strong>.</p>
+</li>
+<li><p class="first">From the <strong>Select a cohort</strong> list, select the cohort to which you are adding
+students.</p>
+</li>
+<li><p class="first">Click <strong>Assign students to cohorts by uploading a CSV file</strong>, then click
+<strong>Browse</strong> to navigate to the .csv file you want to upload.</p>
+</li>
+<li><p class="first">Click <strong>Upload File and Assign Students</strong>. A status message displays
+above the <strong>Browse</strong> button.</p>
+</li>
+<li><p class="first">Verify your upload results on the <strong>Data Download</strong> page.</p>
+<p>Under <strong>Reports Available for Download</strong>, locate the link to a .csv file with
+&#8220;cohort_results&#8221; and the date and time of your upload in the filename. The
+list of available reports is sorted chronologically, with the most recently
+generated files at the top.</p>
+</li>
+</ol>
+<p>The results file provides the following information:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="33%" />
+<col width="67%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><strong>Column</strong></td>
+<td><strong>Description</strong></td>
+</tr>
+<tr class="row-even"><td>Cohort</td>
+<td>The name of the cohort to which you are assigning students.</td>
+</tr>
+<tr class="row-odd"><td>Exists</td>
+<td><p class="first">Whether the cohort was found in the system. TRUE/FALSE.</p>
+<p class="last">If the cohort was not found (value is FALSE), no action is taken for students you assigned to that cohort in the .csv file.</p>
+</td>
+</tr>
+<tr class="row-even"><td>Students Added</td>
+<td>The number of students added to the cohort during the row by row
+processing of the .csv file.</td>
+</tr>
+<tr class="row-odd"><td>Students Not Found</td>
+<td>A list of email addresses or usernames (if email addresses were not
+supplied) of students who could not be matched by either email address
+or username and who were therefore not added to the cohort.</td>
+</tr>
+</tbody>
+</table>
+<p>For a report that includes the cohort assignment for every enrolled student,
+review the student profile information for your course. See <a class="reference internal" href="../running_course/course_student.html#view-and-download-student-data"><span>下载或查看学生数据</span></a>.</p>
+<div class="section" id="creating-a-unicode-encoded-csv-file">
+<span id="id6"></span><h3>8.2.6.1. Creating a Unicode-encoded .csv File<a class="headerlink" href="#creating-a-unicode-encoded-csv-file" title="Permalink to this headline">¶</a></h3>
+<p>Make sure the .csv files that you upload are encoded as UTF-8, so that any
+Unicode characters are correctly saved and displayed.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Some spreadsheet applications (for example, MS Excel) do not allow you
+to specify encoding when you save a spreadsheet as a .csv file. To ensure that
+you are able to create a .csv file that is UTF-8 encoded, use a spreadsheet
+application such as Google Sheets, LibreOffice, or Apache OpenOffice.</p>
+</div>
+</div>
+</div>
+<div class="section" id="altering-cohort-configuration-in-a-running-course">
+<span id="altering-cohort-configuration"></span><h2>8.2.7. Altering Cohort Configuration in a Running Course<a class="headerlink" href="#altering-cohort-configuration-in-a-running-course" title="Permalink to this headline">¶</a></h2>
+<p>The configuration of cohorts in your course should be complete and stable before
+your course begins. Manual cohort assignments should be completed as soon as
+possible after any student enrolls, including any enrollments that occur while
+your course is running.</p>
+<p>If you decide that you must alter cohort configuration after your course starts
+and activity in the course discussion begins, be sure that you understand the
+consequences of these actions.</p>
+<ul class="simple">
+<li><a class="reference internal" href="#changing-student-cohort-assignments"><span>更改学生分队</span></a></li>
+<li><a class="reference internal" href="#renaming-a-cohort"><span>重新命名队列</span></a></li>
+<li><a class="reference internal" href="#deleting-a-cohort"><span>Delete a Cohort</span></a></li>
+<li><a class="reference internal" href="#changing-the-assignment-method-of-a-cohort"><span>Changing the Assignment Method of a Cohort</span></a></li>
+<li><a class="reference internal" href="#disabling-the-cohort-feature"><span>Disable Cohorts in Your Course</span></a></li>
+</ul>
+</div>
+<div class="section" id="changing-student-cohort-assignments">
+<span id="id7"></span><h2>8.2.8. 更改学生分队<a class="headerlink" href="#changing-student-cohort-assignments" title="Permalink to this headline">¶</a></h2>
+<p>当课程开始后，学生上传的内容要么对所有人可见，要么只对某一单独小组可见。
+当您更改某个学生的分队后，会出现如下三个现象：</p>
+<ul class="simple">
+<li>该学生能继续看见对所有人可见的内容</li>
+<li>该学生还能看见对新分组可见的内容</li>
+<li>仅对该学生之前所在分队可见的内容将对其不再可见</li>
+</ul>
+<p>某项内容，以及关于该内容的回复、评论的可见性始终保持不变，
+哪怕该内容的作者的已经被分到别的队列，也是如此。
+所以，学生有时会看见内容突然“消失”，这是正常现象。</p>
+<p>为核实学生分队情况，请您下载您课程的学生简报。如果确实需要作出更改，您需要在教师指示板的“成员”页面中将学生手动分配到各个队列中。
+为核实学生分队情况，请您下载您课程的  <a class="reference internal" href="../running_course/course_student.html#view-and-download-student-data"><span>student
+profile report</span></a> 。如果确实需要作出更改，
+您需要在教师指示板的“成员”页面中 <a class="reference internal" href="#assign-students-to-cohorts-manually"><span>assign students</span></a>
+或者在.csv文件里 <a class="reference internal" href="#assign-students-to-cohort-groups-by-uploading-csv"><span>upload cohort assignment changes</span></a></p>
+</div>
+<div class="section" id="renaming-a-cohort">
+<span id="id8"></span><h2>8.2.9. 重新命名队列<a class="headerlink" href="#renaming-a-cohort" title="Permalink to this headline">¶</a></h2>
+<p>您可以更改任何队列的名字。包括系统生成的默认队列。</p>
+<p>To rename a cohort, follow these steps.</p>
+<ol class="arabic simple">
+<li>View the live version of your course. For example, in Studio click <strong>View
+Live</strong>.</li>
+<li>Click <strong>Instructor</strong>, then click <strong>Cohorts</strong>.</li>
+<li>From the <strong>Select a cohort</strong> list, select the cohort whose name you want to
+change.</li>
+<li>On the <strong>Settings</strong> tab, in the <strong>Cohort Name</strong> field, enter a new name for
+the cohort.</li>
+<li>Click <strong>Save</strong>. The name for the cohort is updated throughout the LMS and the
+courseware, including student-visible views.</li>
+</ol>
+<div class="section" id="delete-a-cohort">
+<span id="deleting-a-cohort"></span><h3>8.2.9.1. Delete a Cohort<a class="headerlink" href="#delete-a-cohort" title="Permalink to this headline">¶</a></h3>
+<p>You cannot delete cohorts. However, you can <a class="reference internal" href="#renaming-a-cohort"><span>rename a cohort</span></a>, <a class="reference internal" href="#changing-the-assignment-method-of-a-cohort"><span>change its assignment method</span></a>, or move students to other cohorts.</p>
+<p>If you decide that you must alter cohort configuration after your course starts
+and learners begin viewing the courseware and discussion topics, be sure that
+you understand the consequences of these actions. For more details, see
+<a class="reference internal" href="#altering-cohort-configuration"><span>Altering Cohort Configuration in a Running Course</span></a>.</p>
+</div>
+</div>
+<div class="section" id="changing-the-assignment-method-of-a-cohort">
+<span id="id9"></span><h2>8.2.10. Changing the Assignment Method of a Cohort<a class="headerlink" href="#changing-the-assignment-method-of-a-cohort" title="Permalink to this headline">¶</a></h2>
+<p>Although you can change the assignment method of a cohort at any time after you
+create it, you should have a strategy in mind as you design your course, and
+only make changes to cohorts while the course is running if absolutely
+necessary. Be aware of the implications of changing cohort configuration while
+your course is running. For more information, see <a class="reference internal" href="cohorts_overview.html#options-for-assigning-students-to-cohorts"><span>课题讨论选项</span></a> and <a class="reference internal" href="#altering-cohort-configuration"><span>Altering Cohort Configuration in a Running Course</span></a>.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">When your course starts, you must have at least one cohort in your
+course that has automatic assignment. If you have not created at least one
+automated assignment cohort in the course by the time that the first student
+accesses your course content, edX creates a default cohort to which students are
+automatically assigned. If the <a class="reference internal" href="cohorts_overview.html#default-cohort-group"><span>Default Group</span></a> is the
+only automated assignment cohort in your course, you cannot change its
+assignment method to <strong>Manual</strong>.</p>
+</div>
+<p>To change the assignment method of a cohort, follow these steps.</p>
+<ol class="arabic">
+<li><p class="first">View the live version of your course. For example, in Studio click <strong>View
+Live</strong>.</p>
+</li>
+<li><p class="first">Click <strong>Instructor</strong>, then click <strong>Cohorts</strong>.</p>
+</li>
+<li><p class="first">From the <strong>Select a cohort</strong> list, select the cohort whose assignment method
+you want to change.</p>
+</li>
+<li><p class="first">On the <strong>Settings</strong> tab, the current assignment method is selected. Change
+the assignment method by selecting the other option, either <strong>Automatic</strong> or
+<strong>Manual</strong>.</p>
+</li>
+<li><p class="first">Click <strong>Save</strong>.</p>
+<p>The cohort assignment method is updated.</p>
+</li>
+</ol>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Changing the cohort assignment method has no effect on students who
+are already assigned to this and other cohorts in your course. Students who
+access the course after you make this change are assigned to cohorts based on
+the new assignment method of this cohort combined with the assignment methods
+of all other cohorts in your course.</p>
+</div>
+</div>
+<div class="section" id="disable-cohorts-in-your-course">
+<span id="disabling-the-cohort-feature"></span><h2>8.2.11. Disable Cohorts in Your Course<a class="headerlink" href="#disable-cohorts-in-your-course" title="Permalink to this headline">¶</a></h2>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p>Be very careful in deciding to disable the cohort feature if you
+previously had it enabled in a live course, because doing so affects the
+course experience for learners. Courseware and discussion posts that were
+shared only with members of particular cohorts are now visible to all
+learners in the course.</p>
+<p class="last">If you must make changes to the way you have configured cohorts while your
+course is running, be sure you understand the consequences of doing so. For
+details, see <a class="reference internal" href="#altering-cohort-configuration"><span>Altering Cohort Configuration in a Running Course</span></a>.</p>
+</div>
+<p>To disable cohorts in your course, follow these steps.</p>
+<ol class="arabic simple">
+<li>In the LMS, select <strong>Instructor</strong>, then select <strong>Cohorts</strong>.</li>
+<li>Clear the <strong>Enable Cohorts</strong> option.</li>
+</ol>
+<p>All course content and discussion posts that were previously divided by cohort
+immediately become visible to all students.</p>
+</div>
+</div>
+
+
+          <footer>
+  
+    <div class="rst-footer-buttons">
+      
+        <a href="cohorted_courseware.html" class="btn btn-neutral float-right" title="8.3. 创建特定队列课件"/>Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="cohorts_overview.html" class="btn btn-neutral" title="8.1. 使用队列功能建立课程群"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <p>
+      &copy; Copyright 2015, edX.
+  </p>
+
+ 
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+</body>
+</html>
